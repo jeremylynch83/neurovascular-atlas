@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.bundle
+.DS_Store
+*.log
+.vite/
+coverage/
+tools/pipeline/raw/
+tools/pipeline/.cache/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+
+*.zip
+/anatomy-source/

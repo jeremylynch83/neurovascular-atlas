@@ -1,0 +1,41 @@
+[
+  {
+    "id": "legacy.bodyparts3d",
+    "title": "BodyParts3D-derived legacy skull context from the Dental Scope starter app",
+    "role": "temporary legacy skull context retained in v0.2",
+    "licence": "CC BY-SA 2.1 Japan",
+    "redistribution": "permitted with attribution/share-alike",
+    "notes": "Not accepted as final INR anatomy. Replaced progressively from v0.2."
+  },
+  {
+    "id": "atlas.z-anatomy",
+    "title": "Z-Anatomy human anatomy atlas, neurovascular curves (Startup.blend)",
+    "role": "v0.2 seed geometry for selected extracranial arteries and veins",
+    "licence": "CC BY-SA 4.0",
+    "redistribution": "permitted with attribution/share-alike",
+    "notes": "Curves sampled from Z-Anatomy and previously registered to the BodyParts3D jaws by similarity ICP in the Dental Scope source pipeline. These are atlas-derived teaching geometry, not CTA segmentation and not yet the final INR master anatomy."
+  },
+  {
+    "id": "ref.borden2006",
+    "title": "Neil M. Borden, 3D Angiographic Atlas of Neurovascular Anatomy and Pathology",
+    "year": 2006,
+    "role": "anatomical naming and validation reference",
+    "redistribution": "reference only; book content is not embedded in the app"
+  },
+  {
+    "id": "ref.kiyosue2020",
+    "title": "Hiro Kiyosue (ed.), External Carotid Artery: Imaging Anatomy Atlas for Endovascular Treatment",
+    "year": 2020,
+    "role": "ECA, skull-base and anastomotic validation reference",
+    "redistribution": "reference only; book content is not embedded in the app"
+  },
+  {
+    "id": "dataset.topbrain.v3",
+    "title": "TopBrain Challenge Data Release v3",
+    "year": 2026,
+    "role": "scan-derived reference CTA/MRA and labelled vascular masks",
+    "licence": "Open use; source attribution required; commercial use requires permission",
+    "redistribution": "non-commercial use permitted with source attribution; commercial use requires prior permission from data owner",
+    "notes": "Zenodo record 21972006, released 17 August 2026. 25 paired CTA/MRA cases; CTA has 40 vessel labels, MRA 42."
+  }
+]

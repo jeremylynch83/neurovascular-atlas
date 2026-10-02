@@ -1,0 +1,1056 @@
+[
+  {
+    "id": "bone",
+    "name": "Bone",
+    "parent": null,
+    "system": "bone",
+    "side": "midline",
+    "kind": "group",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006"
+      ]
+    }
+  },
+  {
+    "id": "bone.skull",
+    "name": "Skull",
+    "parent": "bone",
+    "system": "bone",
+    "side": "midline",
+    "kind": "group",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006"
+      ]
+    }
+  },
+  {
+    "id": "bone.cranium",
+    "name": "Cranium",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "midline",
+    "kind": "group",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006"
+      ]
+    }
+  },
+  {
+    "id": "bone.frontal",
+    "name": "Frontal bone",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "frontal-bone"
+    }
+  },
+  {
+    "id": "bone.occipital",
+    "name": "Occipital bone",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "occipital-bone"
+    }
+  },
+  {
+    "id": "bone.sphenoid",
+    "name": "Sphenoid bone",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "sphenoid-bone"
+    }
+  },
+  {
+    "id": "bone.ethmoid",
+    "name": "Ethmoid bone",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "ethmoid-bone"
+    }
+  },
+  {
+    "id": "bone.vomer",
+    "name": "Vomer",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "vomer"
+    }
+  },
+  {
+    "id": "bone.mandible",
+    "name": "Mandible",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-core.glb",
+      "node": "mandible-body"
+    }
+  },
+  {
+    "id": "bone.hyoid",
+    "name": "Hyoid bone",
+    "parent": "bone",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "hyoid-bone"
+    }
+  },
+  {
+    "id": "bone.parietal.right",
+    "name": "Parietal bone, right",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "parietal-bone-right"
+    }
+  },
+  {
+    "id": "bone.parietal.left",
+    "name": "Parietal bone, left",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "parietal-bone-left"
+    }
+  },
+  {
+    "id": "bone.temporal.right",
+    "name": "Temporal bone, right",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "temporal-bone-right"
+    }
+  },
+  {
+    "id": "bone.temporal.left",
+    "name": "Temporal bone, left",
+    "parent": "bone.cranium",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "temporal-bone-left"
+    }
+  },
+  {
+    "id": "bone.zygomatic.right",
+    "name": "Zygomatic bone, right",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "zygomatic-bone-right"
+    }
+  },
+  {
+    "id": "bone.zygomatic.left",
+    "name": "Zygomatic bone, left",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "zygomatic-bone-left"
+    }
+  },
+  {
+    "id": "bone.maxilla.right",
+    "name": "Maxilla, right",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-core.glb",
+      "node": "maxilla-right"
+    }
+  },
+  {
+    "id": "bone.maxilla.left",
+    "name": "Maxilla, left",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-core.glb",
+      "node": "maxilla-left"
+    }
+  },
+  {
+    "id": "bone.palatine.right",
+    "name": "Palatine bone, right",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "palatine-bone-right"
+    }
+  },
+  {
+    "id": "bone.palatine.left",
+    "name": "Palatine bone, left",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "palatine-bone-left"
+    }
+  },
+  {
+    "id": "bone.nasal.right",
+    "name": "Nasal bone, right",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "nasal-bone-right"
+    }
+  },
+  {
+    "id": "bone.nasal.left",
+    "name": "Nasal bone, left",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "nasal-bone-left"
+    }
+  },
+  {
+    "id": "bone.lacrimal.right",
+    "name": "Lacrimal bone, right",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "lacrimal-bone-right"
+    }
+  },
+  {
+    "id": "bone.lacrimal.left",
+    "name": "Lacrimal bone, left",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "lacrimal-bone-left"
+    }
+  },
+  {
+    "id": "bone.inferior_nasal_concha.right",
+    "name": "Inferior nasal concha, right",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "inferior-nasal-concha-right"
+    }
+  },
+  {
+    "id": "bone.inferior_nasal_concha.left",
+    "name": "Inferior nasal concha, left",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "placeholder",
+    "provenance": {
+      "sourceType": "legacy-placeholder",
+      "confidence": "legacy-context-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "legacy.bodyparts3d"
+      ]
+    },
+    "asset": {
+      "file": "models/legacy-context.glb",
+      "node": "inferior-nasal-concha-left"
+    }
+  },
+  {
+    "id": "bone.skull_base",
+    "name": "Skull-base landmarks",
+    "parent": "bone.skull",
+    "system": "bone",
+    "side": "midline",
+    "kind": "group",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_spinosum.right",
+    "name": "Foramen spinosum, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_spinosum.left",
+    "name": "Foramen spinosum, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_ovale.right",
+    "name": "Foramen ovale, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_ovale.left",
+    "name": "Foramen ovale, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_rotundum.right",
+    "name": "Foramen rotundum, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_rotundum.left",
+    "name": "Foramen rotundum, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.carotid_canal.right",
+    "name": "Carotid canal, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.carotid_canal.left",
+    "name": "Carotid canal, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.jugular_foramen.right",
+    "name": "Jugular foramen, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.jugular_foramen.left",
+    "name": "Jugular foramen, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.hypoglossal_canal.right",
+    "name": "Hypoglossal canal, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.hypoglossal_canal.left",
+    "name": "Hypoglossal canal, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.optic_canal.right",
+    "name": "Optic canal, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.optic_canal.left",
+    "name": "Optic canal, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.superior_orbital_fissure.right",
+    "name": "Superior orbital fissure, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.superior_orbital_fissure.left",
+    "name": "Superior orbital fissure, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.inferior_orbital_fissure.right",
+    "name": "Inferior orbital fissure, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.inferior_orbital_fissure.left",
+    "name": "Inferior orbital fissure, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.stylomastoid_foramen.right",
+    "name": "Stylomastoid foramen, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.stylomastoid_foramen.left",
+    "name": "Stylomastoid foramen, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.mastoid_foramen.right",
+    "name": "Mastoid foramen, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.mastoid_foramen.left",
+    "name": "Mastoid foramen, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.posterior_condylar_canal.right",
+    "name": "Posterior condylar canal, right",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "right",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.posterior_condylar_canal.left",
+    "name": "Posterior condylar canal, left",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "left",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  },
+  {
+    "id": "bone.landmark.foramen_magnum",
+    "name": "Foramen magnum",
+    "parent": "bone.skull_base",
+    "system": "bone",
+    "side": "midline",
+    "kind": "structure",
+    "aliases": [],
+    "geometryStatus": "planned",
+    "provenance": {
+      "sourceType": "reference-defined",
+      "confidence": "reference-only",
+      "reviewStatus": "unreviewed",
+      "sourceRefs": [
+        "ref.borden2006",
+        "ref.kiyosue2020"
+      ]
+    }
+  }
+]

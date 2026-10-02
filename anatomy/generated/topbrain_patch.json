@@ -1,0 +1,480 @@
+{
+  "case": "001",
+  "image": "topcow_ct_001_0000.nii.gz",
+  "label": "topcow_ct_001.nii.gz",
+  "patch": [
+    {
+      "id": "artery.basilar",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.basilar"
+      }
+    },
+    {
+      "id": "artery.pca.right.p1p2",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.pca.right.p1p2"
+      }
+    },
+    {
+      "id": "artery.pca.left.p1p2",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.pca.left.p1p2"
+      }
+    },
+    {
+      "id": "artery.carotid.internal.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.carotid.internal.right"
+      }
+    },
+    {
+      "id": "artery.mca.right.m1",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.mca.right.m1"
+      }
+    },
+    {
+      "id": "artery.ica.pcom.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.ica.pcom.right"
+      }
+    },
+    {
+      "id": "artery.aca.right.a1a2",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.aca.right.a1a2"
+      }
+    },
+    {
+      "id": "artery.aca.left.a1a2",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.aca.left.a1a2"
+      }
+    },
+    {
+      "id": "artery.aca.right.a3",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.aca.right.a3"
+      }
+    },
+    {
+      "id": "artery.aca.left.a3",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.aca.left.a3"
+      }
+    },
+    {
+      "id": "artery.mca.right.m2",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.mca.right.m2"
+      }
+    },
+    {
+      "id": "artery.mca.right.m3",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.mca.right.m3"
+      }
+    },
+    {
+      "id": "artery.pca.right.p3p4",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.pca.right.p3p4"
+      }
+    },
+    {
+      "id": "artery.pca.left.p3p4",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.pca.left.p3p4"
+      }
+    },
+    {
+      "id": "artery.vertebral.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.vertebral.right"
+      }
+    },
+    {
+      "id": "artery.vertebral.left",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.vertebral.left"
+      }
+    },
+    {
+      "id": "artery.sca.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.sca.right"
+      }
+    },
+    {
+      "id": "artery.sca.left",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.sca.left"
+      }
+    },
+    {
+      "id": "artery.aica.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.aica.right"
+      }
+    },
+    {
+      "id": "artery.pica.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.pica.right"
+      }
+    },
+    {
+      "id": "artery.pica.left",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.pica.left"
+      }
+    },
+    {
+      "id": "artery.ica.ophthalmic.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "artery.ica.ophthalmic.right"
+      }
+    },
+    {
+      "id": "vein.deep.galen",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "vein.deep.galen"
+      }
+    },
+    {
+      "id": "vein.sinus.straight",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "vein.sinus.straight"
+      }
+    },
+    {
+      "id": "vein.deep.internal_cerebral.pair",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "vein.deep.internal_cerebral.pair"
+      }
+    },
+    {
+      "id": "vein.deep.basal_rosenthal.right",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "vein.deep.basal_rosenthal.right"
+      }
+    },
+    {
+      "id": "vein.deep.basal_rosenthal.left",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "vein.deep.basal_rosenthal.left"
+      }
+    },
+    {
+      "id": "vein.sinus.superior_sagittal",
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "high",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "vein.sinus.superior_sagittal"
+      }
+    },
+    {
+      "id": "bone.skull.scan_reference",
+      "new": true,
+      "name": "CT-derived reference skull (TopBrain 001)",
+      "parent": "bone.skull",
+      "system": "bone",
+      "side": "midline",
+      "kind": "structure",
+      "aliases": [
+        "reference skull"
+      ],
+      "geometryStatus": "master",
+      "provenance": {
+        "sourceType": "scan-derived",
+        "confidence": "moderate",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "dataset.topbrain.v3"
+        ]
+      },
+      "asset": {
+        "file": "models/topbrain-reference.glb",
+        "node": "bone.skull.scan_reference"
+      }
+    }
+  ]
+}
