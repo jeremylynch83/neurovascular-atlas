@@ -13,3 +13,12 @@ __pycache__/
 
 *.zip
 /anatomy-source/
+
+# INR generated files
+node_modules/
+dist/
+*.tsbuildinfo
+*.zip
+.venv/
+anatomy-source/
+docs/review/

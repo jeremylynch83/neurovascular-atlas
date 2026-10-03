@@ -1,0 +1,26 @@
+{
+  "release": "0.7.0",
+  "geometry_review_date": "2026-10-03",
+  "audit_runs_during_app_build": false,
+  "assets": {
+    "craniofacial.glb": {
+      "sha256": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+      "bytes": 5014620
+    },
+    "complete-circulation.glb": {
+      "sha256": "41e06d304b973d6807baed8748979bf0ff55087e58d4d3a1ab544932290e6228",
+      "bytes": 59990424
+    },
+    "complete-anastomoses.glb": {
+      "sha256": "b680c800c164cd9c36890e91d2431c99bacf0282340a35846e2acfb830cc14ab",
+      "bytes": 1081396
+    }
+  },
+  "checks": {
+    "production_build": "passed",
+    "viewer_decoder_named_parts": 479,
+    "visibility_and_landmark_behaviour": "passed",
+    "meshopt_round_trip": "exact"
+  },
+  "limitations": "Regional reconstruction. Incomplete optic, carotid, infraorbital and spinosum lumina are not certified."
+}

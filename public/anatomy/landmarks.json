@@ -1,0 +1,2247 @@
+{
+  "schemaVersion": "1",
+  "coordinates": "RAS mm",
+  "geometryOnly": true,
+  "coordinatePrecision": "Display coordinates rounded for reproducibility, not evidence of submillimetre anatomical accuracy.",
+  "landmarks": [
+    {
+      "id": "landmark.optic-canal.right",
+      "name": "Optic canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        13,
+        -29,
+        74
+      ],
+      "course": [
+        [
+          11.5,
+          -32,
+          74
+        ],
+        [
+          13,
+          -27,
+          73
+        ]
+      ],
+      "connects": "Middle cranial fossa to orbital apex",
+      "contents": "Optic nerve; ophthalmic artery",
+      "vessels": [
+        "Ophthalmic"
+      ],
+      "note": "Expected optic canal region, medial to the superior orbital fissure. No continuous lumen was reliably identified in the source mesh; position and course remain estimated."
+    },
+    {
+      "id": "landmark.optic-canal.left",
+      "name": "Optic canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -11.706,
+        -29,
+        73.95
+      ],
+      "course": [
+        [
+          -10.206,
+          -32,
+          73.95
+        ],
+        [
+          -11.706,
+          -27,
+          72.95
+        ]
+      ],
+      "connects": "Middle cranial fossa to orbital apex",
+      "contents": "Optic nerve; ophthalmic artery",
+      "vessels": [
+        "Ophthalmic"
+      ],
+      "note": "Expected optic canal region, medial to the superior orbital fissure. No continuous lumen was reliably identified in the source mesh; position and course remain estimated."
+    },
+    {
+      "id": "landmark.superior-orbital-fissure.right",
+      "name": "Superior orbital fissure right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        21,
+        -26,
+        68
+      ],
+      "course": [
+        [
+          20,
+          -33,
+          66
+        ],
+        [
+          23,
+          -23,
+          70
+        ]
+      ],
+      "connects": "Middle cranial fossa to orbit",
+      "contents": "III, IV, VI, V1; superior ophthalmic vein; recurrent meningeal communications",
+      "vessels": [
+        "MMA orbital"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.superior-orbital-fissure.left",
+      "name": "Superior orbital fissure left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -19.706,
+        -26,
+        67.95
+      ],
+      "course": [
+        [
+          -18.706,
+          -33,
+          65.95
+        ],
+        [
+          -21.706,
+          -23,
+          69.95
+        ]
+      ],
+      "connects": "Middle cranial fossa to orbit",
+      "contents": "III, IV, VI, V1; superior ophthalmic vein; recurrent meningeal communications",
+      "vessels": [
+        "MMA orbital"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.inferior-orbital-fissure.right",
+      "name": "Inferior orbital fissure right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        30,
+        -10,
+        43
+      ],
+      "course": [
+        [
+          28,
+          -16,
+          44
+        ],
+        [
+          27,
+          -9,
+          44
+        ]
+      ],
+      "connects": "Pterygopalatine/infratemporal fossae to orbit",
+      "contents": "Infraorbital and zygomatic nerves; infraorbital vessels; orbital venous communications",
+      "vessels": [
+        "Infraorbital"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.inferior-orbital-fissure.left",
+      "name": "Inferior orbital fissure left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -28.706,
+        -10,
+        42.95
+      ],
+      "course": [
+        [
+          -26.706,
+          -16,
+          43.95
+        ],
+        [
+          -25.706,
+          -9,
+          43.95
+        ]
+      ],
+      "connects": "Pterygopalatine/infratemporal fossae to orbit",
+      "contents": "Infraorbital and zygomatic nerves; infraorbital vessels; orbital venous communications",
+      "vessels": [
+        "Infraorbital"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.infraorbital-groove.right",
+      "name": "Infraorbital groove and canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        27.5,
+        1,
+        41.8
+      ],
+      "course": [
+        [
+          27,
+          -9,
+          44
+        ],
+        [
+          27.5,
+          -1,
+          42.3
+        ],
+        [
+          27.5,
+          5,
+          40.5
+        ],
+        [
+          26.3,
+          10.8,
+          36
+        ]
+      ],
+      "connects": "Orbital floor to anterior maxilla",
+      "contents": "Infraorbital nerve, artery and vein",
+      "vessels": [
+        "Infraorbital",
+        "Anterior superior alveolar"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.infraorbital-groove.left",
+      "name": "Infraorbital groove and canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -25.206,
+        1,
+        41.75
+      ],
+      "course": [
+        [
+          -24.706,
+          -9,
+          43.95
+        ],
+        [
+          -25.206,
+          -1,
+          42.25
+        ],
+        [
+          -25.206,
+          5,
+          40.45
+        ],
+        [
+          -24.006,
+          10.8,
+          35.95
+        ]
+      ],
+      "connects": "Orbital floor to anterior maxilla",
+      "contents": "Infraorbital nerve, artery and vein",
+      "vessels": [
+        "Infraorbital",
+        "Anterior superior alveolar"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.infraorbital-foramen.right",
+      "name": "Infraorbital foramen right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        26.3,
+        10.8,
+        36
+      ],
+      "course": [],
+      "connects": "Infraorbital canal to face",
+      "contents": "Infraorbital neurovascular bundle",
+      "vessels": [
+        "Infraorbital"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.infraorbital-foramen.left",
+      "name": "Infraorbital foramen left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -24.006,
+        10.8,
+        35.95
+      ],
+      "course": [],
+      "connects": "Infraorbital canal to face",
+      "contents": "Infraorbital neurovascular bundle",
+      "vessels": [
+        "Infraorbital"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.anterior-ethmoidal.right",
+      "name": "Anterior ethmoidal canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        12,
+        5,
+        68
+      ],
+      "course": [],
+      "connects": "Medial orbit to anterior cranial fossa/nasal roof",
+      "contents": "Anterior ethmoidal artery, vein and nerve",
+      "vessels": [
+        "Anterior ethmoidal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.anterior-ethmoidal.left",
+      "name": "Anterior ethmoidal canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -10.706,
+        5,
+        67.95
+      ],
+      "course": [],
+      "connects": "Medial orbit to anterior cranial fossa/nasal roof",
+      "contents": "Anterior ethmoidal artery, vein and nerve",
+      "vessels": [
+        "Anterior ethmoidal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.posterior-ethmoidal.right",
+      "name": "Posterior ethmoidal canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        11,
+        -12,
+        68
+      ],
+      "course": [],
+      "connects": "Posteromedial orbit to cranial/nasal roof",
+      "contents": "Posterior ethmoidal artery, vein and nerve",
+      "vessels": [
+        "Posterior ethmoidal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.posterior-ethmoidal.left",
+      "name": "Posterior ethmoidal canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -9.706,
+        -12,
+        67.95
+      ],
+      "course": [],
+      "connects": "Posteromedial orbit to cranial/nasal roof",
+      "contents": "Posterior ethmoidal artery, vein and nerve",
+      "vessels": [
+        "Posterior ethmoidal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.supraorbital.right",
+      "name": "Supraorbital notch or foramen right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        24,
+        12,
+        78
+      ],
+      "course": [],
+      "connects": "Superior orbital rim to forehead",
+      "contents": "Supraorbital nerve and vessels",
+      "vessels": [
+        "Supraorbital"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.supraorbital.left",
+      "name": "Supraorbital notch or foramen left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -22.706,
+        12,
+        77.95
+      ],
+      "course": [],
+      "connects": "Superior orbital rim to forehead",
+      "contents": "Supraorbital nerve and vessels",
+      "vessels": [
+        "Supraorbital"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.supratrochlear.right",
+      "name": "Frontal notch / supratrochlear exit right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        13,
+        15,
+        76
+      ],
+      "course": [],
+      "connects": "Superomedial orbital rim to forehead",
+      "contents": "Supratrochlear nerve and vessels",
+      "vessels": [
+        "Supratrochlear"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.supratrochlear.left",
+      "name": "Frontal notch / supratrochlear exit left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -11.706,
+        15,
+        75.95
+      ],
+      "course": [],
+      "connects": "Superomedial orbital rim to forehead",
+      "contents": "Supratrochlear nerve and vessels",
+      "vessels": [
+        "Supratrochlear"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.zygomaticofacial.right",
+      "name": "Zygomaticofacial foramen right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Orbit to malar face",
+      "contents": "Zygomaticofacial nerve and vessels",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.zygomaticofacial.left",
+      "name": "Zygomaticofacial foramen left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Orbit to malar face",
+      "contents": "Zygomaticofacial nerve and vessels",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.zygomaticotemporal.right",
+      "name": "Zygomaticotemporal foramen right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Orbit to temporal fossa",
+      "contents": "Zygomaticotemporal nerve and vessels",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.zygomaticotemporal.left",
+      "name": "Zygomaticotemporal foramen left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Orbit to temporal fossa",
+      "contents": "Zygomaticotemporal nerve and vessels",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.cranio-orbital.right",
+      "name": "Cranio-orbital / meningolacrimal canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Middle cranial fossa to orbit",
+      "contents": "Variable meningolacrimal artery",
+      "vessels": [
+        "MMA orbital"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.cranio-orbital.left",
+      "name": "Cranio-orbital / meningolacrimal canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Middle cranial fossa to orbit",
+      "contents": "Variable meningolacrimal artery",
+      "vessels": [
+        "MMA orbital"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.accessory-optic.right",
+      "name": "Accessory optic canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Middle cranial fossa to orbit",
+      "contents": "Variable separate ophthalmic artery canal",
+      "vessels": [
+        "Ophthalmic"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.accessory-optic.left",
+      "name": "Accessory optic canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Middle cranial fossa to orbit",
+      "contents": "Variable separate ophthalmic artery canal",
+      "vessels": [
+        "Ophthalmic"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.nasolacrimal.right",
+      "name": "Nasolacrimal canal right",
+      "region": "Orbit",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        11,
+        12,
+        44
+      ],
+      "course": [],
+      "connects": "Lacrimal fossa to inferior nasal meatus",
+      "contents": "Nasolacrimal duct; surrounding small vessels",
+      "vessels": [],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.nasolacrimal.left",
+      "name": "Nasolacrimal canal left",
+      "region": "Orbit",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -9.706,
+        12,
+        43.95
+      ],
+      "course": [],
+      "connects": "Lacrimal fossa to inferior nasal meatus",
+      "contents": "Nasolacrimal duct; surrounding small vessels",
+      "vessels": [],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.cribriform.right",
+      "name": "Cribriform foramina right",
+      "region": "Anterior base",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        4,
+        -3,
+        71
+      ],
+      "course": [],
+      "connects": "Nasal roof to anterior cranial fossa",
+      "contents": "Olfactory filaments; small vessels",
+      "vessels": [],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.cribriform.left",
+      "name": "Cribriform foramina left",
+      "region": "Anterior base",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -2.706,
+        -3,
+        70.95
+      ],
+      "course": [],
+      "connects": "Nasal roof to anterior cranial fossa",
+      "contents": "Olfactory filaments; small vessels",
+      "vessels": [],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.foramen-caecum.midline",
+      "name": "Foramen caecum",
+      "region": "Anterior base",
+      "side": "midline",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Nasal region to anterior cranial fossa",
+      "contents": "Emissary vein when patent",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.rotundum.right",
+      "name": "Foramen rotundum right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        16.7,
+        -32,
+        60
+      ],
+      "course": [
+        [
+          17,
+          -35,
+          59.6
+        ],
+        [
+          16.5,
+          -28,
+          60.5
+        ]
+      ],
+      "connects": "Middle cranial fossa to pterygopalatine fossa",
+      "contents": "V2; artery of foramen rotundum; emissary veins",
+      "vessels": [
+        "Artery of foramen rotundum"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.rotundum.left",
+      "name": "Foramen rotundum left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -15.406,
+        -32,
+        59.95
+      ],
+      "course": [
+        [
+          -15.706,
+          -35,
+          59.55
+        ],
+        [
+          -15.206,
+          -28,
+          60.45
+        ]
+      ],
+      "connects": "Middle cranial fossa to pterygopalatine fossa",
+      "contents": "V2; artery of foramen rotundum; emissary veins",
+      "vessels": [
+        "Artery of foramen rotundum"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.ovale.right",
+      "name": "Foramen ovale right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        24,
+        -46,
+        51
+      ],
+      "course": [
+        [
+          24,
+          -46,
+          48
+        ],
+        [
+          24,
+          -46,
+          53
+        ]
+      ],
+      "connects": "Middle cranial fossa to infratemporal fossa",
+      "contents": "V3; emissary vein; accessory meningeal artery; variable lesser petrosal nerve",
+      "vessels": [
+        "Accessory meningeal"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.ovale.left",
+      "name": "Foramen ovale left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -22.706,
+        -46,
+        50.95
+      ],
+      "course": [
+        [
+          -22.706,
+          -46,
+          47.95
+        ],
+        [
+          -22.706,
+          -46,
+          52.95
+        ]
+      ],
+      "connects": "Middle cranial fossa to infratemporal fossa",
+      "contents": "V3; emissary vein; accessory meningeal artery; variable lesser petrosal nerve",
+      "vessels": [
+        "Accessory meningeal"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.foramen-spinosum.right",
+      "name": "Foramen spinosum right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        30,
+        -49,
+        49.5
+      ],
+      "course": [
+        [
+          30,
+          -49,
+          47
+        ],
+        [
+          30,
+          -49,
+          52
+        ]
+      ],
+      "connects": "Infratemporal fossa to middle cranial fossa",
+      "contents": "Middle meningeal artery and vein; meningeal branch of V3",
+      "vessels": [
+        "Middle meningeal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.foramen-spinosum.left",
+      "name": "Foramen spinosum left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -28.706,
+        -49,
+        49.45
+      ],
+      "course": [
+        [
+          -28.706,
+          -49,
+          46.95
+        ],
+        [
+          -28.706,
+          -49,
+          51.95
+        ]
+      ],
+      "connects": "Infratemporal fossa to middle cranial fossa",
+      "contents": "Middle meningeal artery and vein; meningeal branch of V3",
+      "vessels": [
+        "Middle meningeal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.foramen-lacerum.right",
+      "name": "Foramen lacerum right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        13,
+        -49,
+        48
+      ],
+      "course": [],
+      "connects": "Cartilage-filled skull-base junction; ICA passes above its superior surface",
+      "contents": "Small emissary vessels; petrosal nerves cross superior region",
+      "vessels": [
+        "Internal carotid",
+        "Vidian"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.foramen-lacerum.left",
+      "name": "Foramen lacerum left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -11.706,
+        -49,
+        47.95
+      ],
+      "course": [],
+      "connects": "Cartilage-filled skull-base junction; ICA passes above its superior surface",
+      "contents": "Small emissary vessels; petrosal nerves cross superior region",
+      "vessels": [
+        "Internal carotid",
+        "Vidian"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.vesalius.right",
+      "name": "Sphenoidal emissary foramen (Vesalius) right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Cavernous sinus to pterygoid plexus",
+      "contents": "Variable emissary vein",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.vesalius.left",
+      "name": "Sphenoidal emissary foramen (Vesalius) left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Cavernous sinus to pterygoid plexus",
+      "contents": "Variable emissary vein",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.greater-petrosal-hiatus.right",
+      "name": "Greater petrosal nerve hiatus right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Facial canal to middle cranial fossa",
+      "contents": "Greater petrosal nerve; petrosal MMA branch",
+      "vessels": [
+        "MMA petrosal"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.greater-petrosal-hiatus.left",
+      "name": "Greater petrosal nerve hiatus left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Facial canal to middle cranial fossa",
+      "contents": "Greater petrosal nerve; petrosal MMA branch",
+      "vessels": [
+        "MMA petrosal"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.lesser-petrosal-hiatus.right",
+      "name": "Lesser petrosal nerve hiatus right",
+      "region": "Middle base",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Tympanic region to middle cranial fossa",
+      "contents": "Lesser petrosal nerve; small vessels",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.lesser-petrosal-hiatus.left",
+      "name": "Lesser petrosal nerve hiatus left",
+      "region": "Middle base",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Tympanic region to middle cranial fossa",
+      "contents": "Lesser petrosal nerve; small vessels",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.carotid-canal.right",
+      "name": "Carotid canal right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        23,
+        -58,
+        42
+      ],
+      "course": [
+        [
+          26,
+          -63,
+          38
+        ],
+        [
+          25,
+          -60,
+          41
+        ],
+        [
+          21,
+          -55,
+          44
+        ],
+        [
+          16.5,
+          -51,
+          46.5
+        ]
+      ],
+      "connects": "External skull base through petrous temporal bone to petrous apex",
+      "contents": "Internal carotid artery; sympathetic and venous plexuses",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.carotid-canal.left",
+      "name": "Carotid canal left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -21.706,
+        -58,
+        41.95
+      ],
+      "course": [
+        [
+          -24.706,
+          -63,
+          37.95
+        ],
+        [
+          -23.706,
+          -60,
+          40.95
+        ],
+        [
+          -19.706,
+          -55,
+          43.95
+        ],
+        [
+          -15.206,
+          -51,
+          46.45
+        ]
+      ],
+      "connects": "External skull base through petrous temporal bone to petrous apex",
+      "contents": "Internal carotid artery; sympathetic and venous plexuses",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.caroticotympanic.right",
+      "name": "Caroticotympanic canaliculi right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Carotid canal to tympanic cavity",
+      "contents": "Caroticotympanic arteries and nerves",
+      "vessels": [
+        "Caroticotympanic"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.caroticotympanic.left",
+      "name": "Caroticotympanic canaliculi left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Carotid canal to tympanic cavity",
+      "contents": "Caroticotympanic arteries and nerves",
+      "vessels": [
+        "Caroticotympanic"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.internal-acoustic.right",
+      "name": "Internal acoustic meatus right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        31,
+        -70,
+        57
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to inner ear / facial canal",
+      "contents": "VII, VIII; labyrinthine vessels",
+      "vessels": [
+        "Labyrinthine"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.internal-acoustic.left",
+      "name": "Internal acoustic meatus left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -29.706,
+        -70,
+        56.95
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to inner ear / facial canal",
+      "contents": "VII, VIII; labyrinthine vessels",
+      "vessels": [
+        "Labyrinthine"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.facial-canal.right",
+      "name": "Facial canal right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Internal acoustic meatus to stylomastoid foramen",
+      "contents": "Facial nerve; facial canal vessels",
+      "vessels": [
+        "Stylomastoid",
+        "MMA petrosal"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.facial-canal.left",
+      "name": "Facial canal left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Internal acoustic meatus to stylomastoid foramen",
+      "contents": "Facial nerve; facial canal vessels",
+      "vessels": [
+        "Stylomastoid",
+        "MMA petrosal"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.stylomastoid.right",
+      "name": "Stylomastoid foramen right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        39,
+        -69,
+        38
+      ],
+      "course": [],
+      "connects": "Facial canal to external skull base",
+      "contents": "Facial nerve; stylomastoid artery",
+      "vessels": [
+        "Stylomastoid"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.stylomastoid.left",
+      "name": "Stylomastoid foramen left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -37.706,
+        -69,
+        37.95
+      ],
+      "course": [],
+      "connects": "Facial canal to external skull base",
+      "contents": "Facial nerve; stylomastoid artery",
+      "vessels": [
+        "Stylomastoid"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.external-acoustic.right",
+      "name": "External acoustic meatus right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        51,
+        -59,
+        47
+      ],
+      "course": [],
+      "connects": "External ear to tympanic membrane",
+      "contents": "External ear canal; local deep auricular supply",
+      "vessels": [
+        "Deep auricular"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.external-acoustic.left",
+      "name": "External acoustic meatus left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -49.706,
+        -59,
+        46.95
+      ],
+      "course": [],
+      "connects": "External ear to tympanic membrane",
+      "contents": "External ear canal; local deep auricular supply",
+      "vessels": [
+        "Deep auricular"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.petrotympanic.right",
+      "name": "Petrotympanic fissure right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        40,
+        -54,
+        45
+      ],
+      "course": [],
+      "connects": "Infratemporal fossa to middle ear",
+      "contents": "Chorda tympani; anterior tympanic artery",
+      "vessels": [
+        "Anterior tympanic"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.petrotympanic.left",
+      "name": "Petrotympanic fissure left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -38.706,
+        -54,
+        44.95
+      ],
+      "course": [],
+      "connects": "Infratemporal fossa to middle ear",
+      "contents": "Chorda tympani; anterior tympanic artery",
+      "vessels": [
+        "Anterior tympanic"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.tympanic-canaliculus.right",
+      "name": "Tympanic canaliculus right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Jugular/carotid region to middle ear",
+      "contents": "Tympanic branch of IX; inferior tympanic artery",
+      "vessels": [
+        "Inferior tympanic"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.tympanic-canaliculus.left",
+      "name": "Tympanic canaliculus left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Jugular/carotid region to middle ear",
+      "contents": "Tympanic branch of IX; inferior tympanic artery",
+      "vessels": [
+        "Inferior tympanic"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.mastoid-canaliculus.right",
+      "name": "Mastoid canaliculus right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Jugular fossa towards tympanomastoid fissure",
+      "contents": "Auricular branch of X",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.mastoid-canaliculus.left",
+      "name": "Mastoid canaliculus left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Jugular fossa towards tympanomastoid fissure",
+      "contents": "Auricular branch of X",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.cochlear-aqueduct.right",
+      "name": "Cochlear aqueduct opening right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Cochlea to posterior cranial fossa",
+      "contents": "Perilymphatic duct; vein of cochlear aqueduct",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.cochlear-aqueduct.left",
+      "name": "Cochlear aqueduct opening left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Cochlea to posterior cranial fossa",
+      "contents": "Perilymphatic duct; vein of cochlear aqueduct",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.vestibular-aqueduct.right",
+      "name": "Vestibular aqueduct opening right",
+      "region": "Temporal bone",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Vestibule to posterior petrous surface",
+      "contents": "Endolymphatic duct; small vein",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.vestibular-aqueduct.left",
+      "name": "Vestibular aqueduct opening left",
+      "region": "Temporal bone",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Vestibule to posterior petrous surface",
+      "contents": "Endolymphatic duct; small vein",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.jugular-foramen.right",
+      "name": "Jugular foramen and fossa right",
+      "region": "Posterior base",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        28,
+        -72,
+        39
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to upper neck",
+      "contents": "IX, X, XI; sigmoid sinus to IJV; inferior petrosal sinus; meningeal branches",
+      "vessels": [
+        "Jugular meningeal"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.jugular-foramen.left",
+      "name": "Jugular foramen and fossa left",
+      "region": "Posterior base",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -26.706,
+        -72,
+        38.95
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to upper neck",
+      "contents": "IX, X, XI; sigmoid sinus to IJV; inferior petrosal sinus; meningeal branches",
+      "vessels": [
+        "Jugular meningeal"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.hypoglossal.right",
+      "name": "Hypoglossal canal right",
+      "region": "Posterior base",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        17,
+        -71,
+        31
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to extracranial condylar region",
+      "contents": "XII; venous plexus; meningeal arterial branch",
+      "vessels": [
+        "Hypoglossal posterior meningeal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.hypoglossal.left",
+      "name": "Hypoglossal canal left",
+      "region": "Posterior base",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -15.706,
+        -71,
+        30.95
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to extracranial condylar region",
+      "contents": "XII; venous plexus; meningeal arterial branch",
+      "vessels": [
+        "Hypoglossal posterior meningeal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.condylar.right",
+      "name": "Condylar canal right",
+      "region": "Posterior base",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Sigmoid sinus to suboccipital venous plexus",
+      "contents": "Posterior condylar emissary vein",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.condylar.left",
+      "name": "Condylar canal left",
+      "region": "Posterior base",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Sigmoid sinus to suboccipital venous plexus",
+      "contents": "Posterior condylar emissary vein",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.mastoid-foramen.right",
+      "name": "Mastoid foramen right",
+      "region": "Posterior base",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Sigmoid sinus to extracranial vessels",
+      "contents": "Mastoid emissary vein; meningeal occipital branch",
+      "vessels": [
+        "Occipital mastoid"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.mastoid-foramen.left",
+      "name": "Mastoid foramen left",
+      "region": "Posterior base",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Sigmoid sinus to extracranial vessels",
+      "contents": "Mastoid emissary vein; meningeal occipital branch",
+      "vessels": [
+        "Occipital mastoid"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.foramen-magnum.midline",
+      "name": "Foramen magnum",
+      "region": "Posterior base",
+      "side": "midline",
+      "status": "visible",
+      "point": [
+        0.65,
+        -85,
+        31
+      ],
+      "course": [],
+      "connects": "Posterior cranial fossa to vertebral canal",
+      "contents": "Medulla/spinal cord; vertebral and spinal arteries; spinal XI roots; venous plexuses",
+      "vessels": [
+        "Vertebral V4"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.pterygomaxillary.right",
+      "name": "Pterygomaxillary fissure right",
+      "region": "Pterygopalatine region",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        28,
+        -22,
+        38
+      ],
+      "course": [],
+      "connects": "Infratemporal fossa to pterygopalatine fossa",
+      "contents": "Maxillary artery; posterior superior alveolar branches; veins",
+      "vessels": [
+        "Maxillary",
+        "Posterior superior alveolar"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.pterygomaxillary.left",
+      "name": "Pterygomaxillary fissure left",
+      "region": "Pterygopalatine region",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -26.706,
+        -22,
+        37.95
+      ],
+      "course": [],
+      "connects": "Infratemporal fossa to pterygopalatine fossa",
+      "contents": "Maxillary artery; posterior superior alveolar branches; veins",
+      "vessels": [
+        "Maxillary",
+        "Posterior superior alveolar"
+      ],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.sphenopalatine-foramen.right",
+      "name": "Sphenopalatine foramen right",
+      "region": "Pterygopalatine region",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        12,
+        -17,
+        43
+      ],
+      "course": [],
+      "connects": "Pterygopalatine fossa to nasal cavity",
+      "contents": "Sphenopalatine vessels; posterior superior nasal nerves",
+      "vessels": [
+        "Sphenopalatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.sphenopalatine-foramen.left",
+      "name": "Sphenopalatine foramen left",
+      "region": "Pterygopalatine region",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -10.706,
+        -17,
+        42.95
+      ],
+      "course": [],
+      "connects": "Pterygopalatine fossa to nasal cavity",
+      "contents": "Sphenopalatine vessels; posterior superior nasal nerves",
+      "vessels": [
+        "Sphenopalatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.pterygoid-canal.right",
+      "name": "Pterygoid (Vidian) canal right",
+      "region": "Pterygopalatine region",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        10,
+        -33,
+        47
+      ],
+      "course": [],
+      "connects": "Lacerum region to pterygopalatine fossa",
+      "contents": "Vidian nerve, artery and vein",
+      "vessels": [
+        "Vidian",
+        "Vidian ICA contribution"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.pterygoid-canal.left",
+      "name": "Pterygoid (Vidian) canal left",
+      "region": "Pterygopalatine region",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -8.706,
+        -33,
+        46.95
+      ],
+      "course": [],
+      "connects": "Lacerum region to pterygopalatine fossa",
+      "contents": "Vidian nerve, artery and vein",
+      "vessels": [
+        "Vidian",
+        "Vidian ICA contribution"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.palatovaginal.right",
+      "name": "Palatovaginal / pharyngeal canal right",
+      "region": "Pterygopalatine region",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        6,
+        -29,
+        36
+      ],
+      "course": [],
+      "connects": "Pterygopalatine fossa to nasopharynx",
+      "contents": "Pharyngeal nerve and artery",
+      "vessels": [
+        "Pterygovaginal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.palatovaginal.left",
+      "name": "Palatovaginal / pharyngeal canal left",
+      "region": "Pterygopalatine region",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -4.706,
+        -29,
+        35.95
+      ],
+      "course": [],
+      "connects": "Pterygopalatine fossa to nasopharynx",
+      "contents": "Pharyngeal nerve and artery",
+      "vessels": [
+        "Pterygovaginal"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.vomerovaginal.right",
+      "name": "Vomerovaginal canal right",
+      "region": "Pterygopalatine region",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Skull-base pharyngeal/pterygopalatine region",
+      "contents": "Variable small pharyngeal vessels",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.vomerovaginal.left",
+      "name": "Vomerovaginal canal left",
+      "region": "Pterygopalatine region",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Skull-base pharyngeal/pterygopalatine region",
+      "contents": "Variable small pharyngeal vessels",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.greater-palatine-canal.right",
+      "name": "Greater palatine canal right",
+      "region": "Palate and maxilla",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        17,
+        -18,
+        29
+      ],
+      "course": [],
+      "connects": "Pterygopalatine fossa to hard palate",
+      "contents": "Descending palatine vessels; palatine nerves",
+      "vessels": [
+        "Descending palatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.greater-palatine-canal.left",
+      "name": "Greater palatine canal left",
+      "region": "Palate and maxilla",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -15.706,
+        -18,
+        28.95
+      ],
+      "course": [],
+      "connects": "Pterygopalatine fossa to hard palate",
+      "contents": "Descending palatine vessels; palatine nerves",
+      "vessels": [
+        "Descending palatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.greater-palatine-foramen.right",
+      "name": "Greater palatine foramen right",
+      "region": "Palate and maxilla",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        16,
+        -20,
+        17
+      ],
+      "course": [],
+      "connects": "Greater palatine canal to hard palate",
+      "contents": "Greater palatine nerve and vessels",
+      "vessels": [
+        "Greater palatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.greater-palatine-foramen.left",
+      "name": "Greater palatine foramen left",
+      "region": "Palate and maxilla",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -14.706,
+        -20,
+        16.95
+      ],
+      "course": [],
+      "connects": "Greater palatine canal to hard palate",
+      "contents": "Greater palatine nerve and vessels",
+      "vessels": [
+        "Greater palatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.lesser-palatine.right",
+      "name": "Lesser palatine foramina right",
+      "region": "Palate and maxilla",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Palatine canals to soft palate",
+      "contents": "Lesser palatine nerves and vessels",
+      "vessels": [
+        "Lesser palatine"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.lesser-palatine.left",
+      "name": "Lesser palatine foramina left",
+      "region": "Palate and maxilla",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Palatine canals to soft palate",
+      "contents": "Lesser palatine nerves and vessels",
+      "vessels": [
+        "Lesser palatine"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.incisive-canal.midline",
+      "name": "Incisive canal and foramina",
+      "region": "Palate and maxilla",
+      "side": "midline",
+      "status": "partial",
+      "point": [
+        1,
+        21,
+        21
+      ],
+      "course": [],
+      "connects": "Nasal floor to incisive fossa",
+      "contents": "Nasopalatine nerves; terminal sphenopalatine/greater palatine vessels",
+      "vessels": [
+        "Incisive",
+        "Greater palatine"
+      ],
+      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+    },
+    {
+      "id": "landmark.superior-alveolar.right",
+      "name": "Posterior superior alveolar foramina right",
+      "region": "Palate and maxilla",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Posterior maxilla to dental canals",
+      "contents": "Posterior superior alveolar nerves and vessels",
+      "vessels": [
+        "Posterior superior alveolar"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.superior-alveolar.left",
+      "name": "Posterior superior alveolar foramina left",
+      "region": "Palate and maxilla",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Posterior maxilla to dental canals",
+      "contents": "Posterior superior alveolar nerves and vessels",
+      "vessels": [
+        "Posterior superior alveolar"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.canalis-sinuosus.right",
+      "name": "Canalis sinuosus right",
+      "region": "Palate and maxilla",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Infraorbital canal to anterior maxillary teeth",
+      "contents": "Anterior superior alveolar nerve and vessels",
+      "vessels": [
+        "Anterior superior alveolar"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.canalis-sinuosus.left",
+      "name": "Canalis sinuosus left",
+      "region": "Palate and maxilla",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Infraorbital canal to anterior maxillary teeth",
+      "contents": "Anterior superior alveolar nerve and vessels",
+      "vessels": [
+        "Anterior superior alveolar"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.mandibular-foramen.right",
+      "name": "Mandibular foramen right",
+      "region": "Mandible",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        32,
+        -36,
+        10
+      ],
+      "course": [],
+      "connects": "Medial ramus to mandibular canal",
+      "contents": "Inferior alveolar nerve and vessels",
+      "vessels": [
+        "Inferior alveolar"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.mandibular-foramen.left",
+      "name": "Mandibular foramen left",
+      "region": "Mandible",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -30.706,
+        -36,
+        9.95
+      ],
+      "course": [],
+      "connects": "Medial ramus to mandibular canal",
+      "contents": "Inferior alveolar nerve and vessels",
+      "vessels": [
+        "Inferior alveolar"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.mandibular-canal.right",
+      "name": "Mandibular canal right",
+      "region": "Mandible",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Mandibular foramen towards mental/incisive division",
+      "contents": "Inferior alveolar neurovascular bundle",
+      "vessels": [
+        "Inferior alveolar"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.mandibular-canal.left",
+      "name": "Mandibular canal left",
+      "region": "Mandible",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Mandibular foramen towards mental/incisive division",
+      "contents": "Inferior alveolar neurovascular bundle",
+      "vessels": [
+        "Inferior alveolar"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.mental-foramen.right",
+      "name": "Mental foramen right",
+      "region": "Mandible",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        27,
+        7,
+        -16
+      ],
+      "course": [],
+      "connects": "Mandibular canal to chin",
+      "contents": "Mental nerve and vessels",
+      "vessels": [
+        "Mental"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.mental-foramen.left",
+      "name": "Mental foramen left",
+      "region": "Mandible",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -25.706,
+        7,
+        -16.05
+      ],
+      "course": [],
+      "connects": "Mandibular canal to chin",
+      "contents": "Mental nerve and vessels",
+      "vessels": [
+        "Mental"
+      ],
+      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+    },
+    {
+      "id": "landmark.mandibular-incisive.right",
+      "name": "Mandibular incisive canal right",
+      "region": "Mandible",
+      "side": "right",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Mandibular canal continuation to anterior teeth",
+      "contents": "Incisive nerve and vessels",
+      "vessels": [
+        "Incisive"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.mandibular-incisive.left",
+      "name": "Mandibular incisive canal left",
+      "region": "Mandible",
+      "side": "left",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Mandibular canal continuation to anterior teeth",
+      "contents": "Incisive nerve and vessels",
+      "vessels": [
+        "Incisive"
+      ],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.lingual-foramina.midline",
+      "name": "Lingual and accessory mandibular foramina",
+      "region": "Mandible",
+      "side": "midline",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Lingual mandibular cortex to intraosseous canals",
+      "contents": "Variable sublingual/submental vessels and nerve branches",
+      "vessels": [
+        "Sublingual",
+        "Submental"
+      ],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.parietal-emissary.right",
+      "name": "Parietal emissary foramen right",
+      "region": "Vault",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Superior sagittal sinus to scalp",
+      "contents": "Parietal emissary vein; variable meningeal branch",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.parietal-emissary.left",
+      "name": "Parietal emissary foramen left",
+      "region": "Vault",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Superior sagittal sinus to scalp",
+      "contents": "Parietal emissary vein; variable meningeal branch",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.occipital-emissary.right",
+      "name": "Occipital emissary foramina right",
+      "region": "Vault",
+      "side": "right",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Occipital dural sinuses to extracranial veins",
+      "contents": "Variable occipital emissary veins",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.occipital-emissary.left",
+      "name": "Occipital emissary foramina left",
+      "region": "Vault",
+      "side": "left",
+      "status": "variant-unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Occipital dural sinuses to extracranial veins",
+      "contents": "Variable occipital emissary veins",
+      "vessels": [],
+      "note": "Variable structure. Presence has not been established; no default route is imposed."
+    },
+    {
+      "id": "landmark.diploic.midline",
+      "name": "Diploic channels and openings",
+      "region": "Vault",
+      "side": "midline",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Diploe to dural and extracranial venous systems",
+      "contents": "Diploic veins",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.piriform.midline",
+      "name": "Piriform aperture",
+      "region": "Nasal boundaries",
+      "side": "midline",
+      "status": "visible",
+      "point": [
+        0.65,
+        24,
+        40
+      ],
+      "course": [],
+      "connects": "Face to anterior nasal cavity",
+      "contents": "Anterior nasal airway boundary",
+      "vessels": [],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.choana.right",
+      "name": "Choana right",
+      "region": "Nasal boundaries",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        9,
+        -29,
+        30
+      ],
+      "course": [],
+      "connects": "Nasal cavity to nasopharynx",
+      "contents": "Posterior nasal airway boundary",
+      "vessels": [],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.choana.left",
+      "name": "Choana left",
+      "region": "Nasal boundaries",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -7.706,
+        -29,
+        29.95
+      ],
+      "course": [],
+      "connects": "Nasal cavity to nasopharynx",
+      "contents": "Posterior nasal airway boundary",
+      "vessels": [],
+      "note": "Opening identifiable on the source mesh. Coordinates are manual regional anchors, not a segmented lumen."
+    },
+    {
+      "id": "landmark.sinus-ostia.midline",
+      "name": "Paranasal sinus ostia",
+      "region": "Nasal boundaries",
+      "side": "midline",
+      "status": "unresolved",
+      "point": null,
+      "course": [],
+      "connects": "Paranasal sinuses to nasal meatuses / sphenoethmoidal recess",
+      "contents": "Sinus drainage openings; not main arterial conduits",
+      "vessels": [],
+      "note": "No reliable coordinate assigned in this mesh review."
+    },
+    {
+      "id": "landmark.transverse-foramina.right",
+      "name": "Cervical transverse foramina right",
+      "region": "Upper cervical",
+      "side": "right",
+      "status": "bone-unavailable",
+      "point": null,
+      "course": [],
+      "connects": "Serial transverse processes",
+      "contents": "Vertebral artery usually C6 to C1; vertebral venous plexus",
+      "vessels": [
+        "Vertebral V2"
+      ],
+      "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    },
+    {
+      "id": "landmark.transverse-foramina.left",
+      "name": "Cervical transverse foramina left",
+      "region": "Upper cervical",
+      "side": "left",
+      "status": "bone-unavailable",
+      "point": null,
+      "course": [],
+      "connects": "Serial transverse processes",
+      "contents": "Vertebral artery usually C6 to C1; vertebral venous plexus",
+      "vessels": [
+        "Vertebral V2"
+      ],
+      "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    },
+    {
+      "id": "landmark.atlas-groove.right",
+      "name": "Atlas vertebral artery groove right",
+      "region": "Upper cervical",
+      "side": "right",
+      "status": "bone-unavailable",
+      "point": null,
+      "course": [],
+      "connects": "C1 transverse foramen to dural entry",
+      "contents": "Vertebral V3 and suboccipital nerve",
+      "vessels": [
+        "Vertebral V3"
+      ],
+      "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    },
+    {
+      "id": "landmark.atlas-groove.left",
+      "name": "Atlas vertebral artery groove left",
+      "region": "Upper cervical",
+      "side": "left",
+      "status": "bone-unavailable",
+      "point": null,
+      "course": [],
+      "connects": "C1 transverse foramen to dural entry",
+      "contents": "Vertebral V3 and suboccipital nerve",
+      "vessels": [
+        "Vertebral V3"
+      ],
+      "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    },
+    {
+      "id": "landmark.arcuate-foramen.right",
+      "name": "Arcuate foramen (when present) right",
+      "region": "Upper cervical",
+      "side": "right",
+      "status": "bone-unavailable",
+      "point": null,
+      "course": [],
+      "connects": "Bony bridge over C1 vertebral groove",
+      "contents": "Variant passage for vertebral artery",
+      "vessels": [
+        "Vertebral V3"
+      ],
+      "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    },
+    {
+      "id": "landmark.arcuate-foramen.left",
+      "name": "Arcuate foramen (when present) left",
+      "region": "Upper cervical",
+      "side": "left",
+      "status": "bone-unavailable",
+      "point": null,
+      "course": [],
+      "connects": "Bony bridge over C1 vertebral groove",
+      "contents": "Variant passage for vertebral artery",
+      "vessels": [
+        "Vertebral V3"
+      ],
+      "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    }
+  ]
+}

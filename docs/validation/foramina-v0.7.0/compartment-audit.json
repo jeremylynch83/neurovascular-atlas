@@ -1,0 +1,157 @@
+{
+  "before": {
+    "MMA frontal": {
+      "samples": 1121,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 256,
+      "minimum_radial_clearance_mm": -12.0319
+    },
+    "MMA frontal left": {
+      "samples": 1120,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 532,
+      "minimum_radial_clearance_mm": -12.3686
+    },
+    "MMA frontal anterior division": {
+      "samples": 625,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 0.4859
+    },
+    "MMA frontal anterior division left": {
+      "samples": 625,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 90,
+      "minimum_radial_clearance_mm": -4.5526
+    },
+    "MMA frontal posterior division": {
+      "samples": 548,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 0.6505
+    },
+    "MMA frontal posterior division left": {
+      "samples": 548,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 265,
+      "minimum_radial_clearance_mm": -1.5636
+    },
+    "MMA posterior convexity": {
+      "samples": 1276,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 24,
+      "minimum_radial_clearance_mm": -3.5578
+    },
+    "MMA posterior convexity left": {
+      "samples": 1278,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 1023,
+      "minimum_radial_clearance_mm": -4.4065
+    },
+    "MMA parietal ascending": {
+      "samples": 747,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 0.4162
+    },
+    "MMA parietal ascending left": {
+      "samples": 747,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 513,
+      "minimum_radial_clearance_mm": -0.8981
+    },
+    "MMA posterior terminal": {
+      "samples": 420,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 0.7307
+    },
+    "MMA posterior terminal left": {
+      "samples": 420,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 263,
+      "minimum_radial_clearance_mm": -0.594
+    }
+  },
+  "revised": {
+    "MMA frontal": {
+      "samples": 1140,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 0.2368
+    },
+    "MMA frontal left": {
+      "samples": 1101,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 0.831
+    },
+    "MMA frontal anterior division": {
+      "samples": 609,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.087
+    },
+    "MMA frontal anterior division left": {
+      "samples": 636,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0756
+    },
+    "MMA frontal posterior division": {
+      "samples": 536,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0846
+    },
+    "MMA frontal posterior division left": {
+      "samples": 537,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.1136
+    },
+    "MMA posterior convexity": {
+      "samples": 1237,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0782
+    },
+    "MMA posterior convexity left": {
+      "samples": 1233,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0773
+    },
+    "MMA parietal ascending": {
+      "samples": 764,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.1031
+    },
+    "MMA parietal ascending left": {
+      "samples": 764,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0723
+    },
+    "MMA posterior terminal": {
+      "samples": 436,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0928
+    },
+    "MMA posterior terminal left": {
+      "samples": 422,
+      "no_ray_hit": 0,
+      "outside_inner_table_samples": 0,
+      "minimum_radial_clearance_mm": 1.0921
+    }
+  },
+  "method": "Actual exported surface vertices sampled on a 0.5 mm spatial grid. First bony intersection from the cranial centre defines the inner table. This is a regional compartment check, not whole-skull anatomical certification.",
+  "mesh_sha256": {
+    "complete-circulation.glb": "977efc737407226aa28d4233edc7052a0718e7ee3a5f5d6685738765c7f9d992",
+    "complete-anastomoses.glb": "01dffab906ae92deabf417a72632e9933ba0d475c791f97a04903a896e59ff29",
+    "craniofacial.glb": "09d793edae65617196a5dc2ac9b883a04ba5993fa16a21c247a14f76feb7ad0a"
+  },
+  "unresolved": "Optic, carotid, infraorbital and spinosum lumina are incomplete or unresolved in this source skull. They do not receive a canal-clearance pass."
+}
