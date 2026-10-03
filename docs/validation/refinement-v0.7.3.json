@@ -1,0 +1,40 @@
+{
+  "release": "0.7.3",
+  "sides": {
+    "right": {
+      "A1_surface_exactly_unchanged": true,
+      "M1_minimum_lateral_sample_step_mm": 0.23795077927013608,
+      "M1_vertical_range_mm": [
+        84.03232535656454,
+        87.00000000000001
+      ],
+      "ophthalmic_origin_mm": [
+        11.772249911389835,
+        -42.08876121937489,
+        73.71311893403798
+      ],
+      "ophthalmic_origin_lowering_mm": 2.996929770746746,
+      "mandibular_body_samples": 70,
+      "minimum_centreline_cortical_envelope_margin_mm": 3.5388566217488524,
+      "mental_exit_region_centreline_distance_mm": 1.3133080594357687
+    },
+    "left": {
+      "A1_surface_exactly_unchanged": true,
+      "M1_minimum_lateral_sample_step_mm": 0.23950995230245553,
+      "M1_vertical_range_mm": [
+        84.02668870998161,
+        87.00000000000001
+      ],
+      "ophthalmic_origin_mm": [
+        -10.316134765472157,
+        -42.160202745473086,
+        73.30718981645661
+      ],
+      "ophthalmic_origin_lowering_mm": 2.7457360332685283,
+      "mandibular_body_samples": 70,
+      "minimum_centreline_cortical_envelope_margin_mm": 3.504805344410876,
+      "mental_exit_region_centreline_distance_mm": 1.316338825636411
+    }
+  },
+  "limits": "Canal course fitted inside the mandibular cortical envelope, not to a segmented lumen. No exhaustive mesh self-intersection proof."
+}

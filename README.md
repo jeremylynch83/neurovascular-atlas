@@ -1,6 +1,6 @@
-# INR Anatomy Atlas v0.7.2
+# INR Anatomy Atlas v0.7.4
 
-Place `inr-anatomy-atlas-v0.7.2.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.7.4.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -9,6 +9,14 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## Panel changes in v0.7.4
+
+Layers/Anatomy and structure details are stacked on the left. Click either title bar to collapse or expand it; the lower panel moves with the upper panel. The 3/4 and Face camera buttons are removed. Details and relationships show structure names without internal IDs, and the reconstruction/provenance/confidence/review fields are removed from the panel. Anatomy assets are unchanged from v0.7.3.
+
+## Corrections in v0.7.3
+
+M1 leaves the terminal ICA laterally with the folded junction corrected. Both A1 surfaces are preserved from v0.7.2. The ophthalmic origins are lower, the cavernous bends are more medial/posterior, and the inferior alveolar/mental routes now follow the mandibular body and visible mental-foramen regions. See `docs/REFINEMENT_v0.7.3.md`.
 
 ## ICA correction in v0.7.2
 
@@ -24,7 +32,6 @@ Both upper cervical/petrous entries now approach the carotid entry region anteri
 - Potential ECA–ICA and ECA–vertebral connections on both sides, always enabled in gold with the artery layer.
 - Simplified UI: removed the screenshot-identified banners, strapline, release subtitle, source list, About explanation, layer instructions, connection toggle and presets.
 - Ghosted bone and teeth are click-through. Opaque bone remains selectable.
-- The Face view frames the restored craniofacial region.
 
 This is a reference-guided teaching reconstruction, not an individual patient segmentation. Vessel calibre, small canals, cervical vertebral and brain-surface relationships remain approximate. The left ECA uses the right template with independent bone fitting. It is not an independent angiographic reconstruction.
 

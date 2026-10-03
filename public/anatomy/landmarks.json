@@ -1069,7 +1069,7 @@
       "vessels": [
         "Internal carotid"
       ],
-      "note": "Corrected v0.7.2: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
+      "note": "Corrected v0.7.3: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
     },
     {
       "id": "landmark.carotid-canal.left",
@@ -1189,7 +1189,7 @@
       "vessels": [
         "Internal carotid"
       ],
-      "note": "Corrected v0.7.2: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
+      "note": "Corrected v0.7.3: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
     },
     {
       "id": "landmark.caroticotympanic.right",
@@ -2037,11 +2037,11 @@
       "name": "Mandibular foramen right",
       "region": "Mandible",
       "side": "right",
-      "status": "regional",
+      "status": "partial",
       "point": [
-        32,
-        -36,
-        10
+        35,
+        -37,
+        12
       ],
       "course": [],
       "connects": "Medial ramus to mandibular canal",
@@ -2049,18 +2049,18 @@
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-foramen.left",
       "name": "Mandibular foramen left",
       "region": "Mandible",
       "side": "left",
-      "status": "regional",
+      "status": "partial",
       "point": [
-        -30.706,
-        -36,
-        9.95
+        -33.7,
+        -37,
+        12
       ],
       "course": [],
       "connects": "Medial ramus to mandibular canal",
@@ -2068,48 +2068,508 @@
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-canal.right",
       "name": "Mandibular canal right",
       "region": "Mandible",
       "side": "right",
-      "status": "unresolved",
-      "point": null,
-      "course": [],
+      "status": "regional",
+      "point": [
+        33.928,
+        -24.826,
+        -10.133
+      ],
+      "course": [
+        [
+          35.111,
+          -37.162,
+          11.832
+        ],
+        [
+          35.954,
+          -36.426,
+          10.763
+        ],
+        [
+          36.269,
+          -35.647,
+          9.225
+        ],
+        [
+          36.409,
+          -34.954,
+          7.204
+        ],
+        [
+          36.52,
+          -34.383,
+          4.984
+        ],
+        [
+          36.605,
+          -33.853,
+          2.686
+        ],
+        [
+          36.662,
+          -33.285,
+          0.429
+        ],
+        [
+          36.691,
+          -32.71,
+          -1.382
+        ],
+        [
+          36.697,
+          -31.887,
+          -3.207
+        ],
+        [
+          36.509,
+          -30.932,
+          -4.619
+        ],
+        [
+          36.091,
+          -29.749,
+          -5.962
+        ],
+        [
+          35.522,
+          -28.414,
+          -7.232
+        ],
+        [
+          34.881,
+          -27.002,
+          -8.428
+        ],
+        [
+          34.336,
+          -25.787,
+          -9.391
+        ],
+        [
+          33.783,
+          -24.475,
+          -10.398
+        ],
+        [
+          33.255,
+          -23.219,
+          -11.3
+        ],
+        [
+          32.699,
+          -21.924,
+          -12.163
+        ],
+        [
+          32.118,
+          -20.6,
+          -12.989
+        ],
+        [
+          31.514,
+          -19.255,
+          -13.777
+        ],
+        [
+          30.981,
+          -18.094,
+          -14.422
+        ],
+        [
+          30.343,
+          -16.736,
+          -15.137
+        ],
+        [
+          29.689,
+          -15.384,
+          -15.814
+        ],
+        [
+          29.024,
+          -14.062,
+          -16.456
+        ],
+        [
+          28.325,
+          -12.748,
+          -17.098
+        ],
+        [
+          27.594,
+          -11.431,
+          -17.728
+        ],
+        [
+          26.844,
+          -10.107,
+          -18.329
+        ],
+        [
+          26.191,
+          -8.964,
+          -18.806
+        ],
+        [
+          25.405,
+          -7.578,
+          -19.315
+        ],
+        [
+          24.59,
+          -6.106,
+          -19.753
+        ],
+        [
+          23.825,
+          -4.661,
+          -20.061
+        ],
+        [
+          23.215,
+          -3.41,
+          -20.242
+        ],
+        [
+          22.602,
+          -2.086,
+          -20.384
+        ],
+        [
+          22.066,
+          -0.919,
+          -20.491
+        ],
+        [
+          21.418,
+          0.443,
+          -20.622
+        ],
+        [
+          20.733,
+          1.763,
+          -20.782
+        ],
+        [
+          20.0,
+          3.0,
+          -21.0
+        ],
+        [
+          18.88,
+          4.607,
+          -21.554
+        ],
+        [
+          17.686,
+          6.103,
+          -22.354
+        ],
+        [
+          16.624,
+          7.307,
+          -23.084
+        ],
+        [
+          15.362,
+          8.634,
+          -23.829
+        ],
+        [
+          14.122,
+          9.853,
+          -24.372
+        ],
+        [
+          12.87,
+          10.985,
+          -24.851
+        ],
+        [
+          11.598,
+          12.048,
+          -25.281
+        ],
+        [
+          10.31,
+          13.049,
+          -25.663
+        ],
+        [
+          9.0,
+          14.0,
+          -26.0
+        ]
+      ],
       "connects": "Mandibular foramen towards mental/incisive division",
       "contents": "Inferior alveolar neurovascular bundle",
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "No reliable coordinate assigned in this mesh review."
+      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-canal.left",
       "name": "Mandibular canal left",
       "region": "Mandible",
       "side": "left",
-      "status": "unresolved",
-      "point": null,
-      "course": [],
+      "status": "regional",
+      "point": [
+        -32.628,
+        -24.826,
+        -10.133
+      ],
+      "course": [
+        [
+          -34.06,
+          -37.289,
+          11.993
+        ],
+        [
+          -34.654,
+          -36.53,
+          10.931
+        ],
+        [
+          -34.945,
+          -35.752,
+          9.468
+        ],
+        [
+          -35.087,
+          -35.019,
+          7.44
+        ],
+        [
+          -35.202,
+          -34.433,
+          5.234
+        ],
+        [
+          -35.292,
+          -33.907,
+          2.955
+        ],
+        [
+          -35.354,
+          -33.36,
+          0.712
+        ],
+        [
+          -35.39,
+          -32.707,
+          -1.391
+        ],
+        [
+          -35.4,
+          -32.0,
+          -3.0
+        ],
+        [
+          -35.252,
+          -31.084,
+          -4.422
+        ],
+        [
+          -34.862,
+          -29.929,
+          -5.775
+        ],
+        [
+          -34.309,
+          -28.612,
+          -7.055
+        ],
+        [
+          -33.674,
+          -27.206,
+          -8.262
+        ],
+        [
+          -33.036,
+          -25.787,
+          -9.391
+        ],
+        [
+          -32.483,
+          -24.475,
+          -10.398
+        ],
+        [
+          -32.032,
+          -23.401,
+          -11.173
+        ],
+        [
+          -31.48,
+          -22.111,
+          -12.042
+        ],
+        [
+          -30.903,
+          -20.79,
+          -12.874
+        ],
+        [
+          -30.302,
+          -19.448,
+          -13.667
+        ],
+        [
+          -29.681,
+          -18.094,
+          -14.422
+        ],
+        [
+          -29.043,
+          -16.736,
+          -15.137
+        ],
+        [
+          -28.389,
+          -15.384,
+          -15.814
+        ],
+        [
+          -27.724,
+          -14.062,
+          -16.456
+        ],
+        [
+          -27.127,
+          -12.936,
+          -17.006
+        ],
+        [
+          -26.4,
+          -11.619,
+          -17.64
+        ],
+        [
+          -25.652,
+          -10.297,
+          -18.246
+        ],
+        [
+          -24.891,
+          -8.964,
+          -18.806
+        ],
+        [
+          -24.105,
+          -7.578,
+          -19.315
+        ],
+        [
+          -23.29,
+          -6.106,
+          -19.753
+        ],
+        [
+          -22.525,
+          -4.661,
+          -20.061
+        ],
+        [
+          -22.002,
+          -3.594,
+          -20.219
+        ],
+        [
+          -21.39,
+          -2.278,
+          -20.365
+        ],
+        [
+          -20.766,
+          -0.919,
+          -20.491
+        ],
+        [
+          -20.118,
+          0.443,
+          -20.622
+        ],
+        [
+          -19.433,
+          1.763,
+          -20.782
+        ],
+        [
+          -18.7,
+          3.0,
+          -21.0
+        ],
+        [
+          -17.58,
+          4.607,
+          -21.554
+        ],
+        [
+          -16.56,
+          5.896,
+          -22.232
+        ],
+        [
+          -15.324,
+          7.307,
+          -23.084
+        ],
+        [
+          -14.062,
+          8.634,
+          -23.829
+        ],
+        [
+          -12.822,
+          9.853,
+          -24.372
+        ],
+        [
+          -11.57,
+          10.985,
+          -24.851
+        ],
+        [
+          -10.298,
+          12.048,
+          -25.281
+        ],
+        [
+          -9.01,
+          13.049,
+          -25.663
+        ],
+        [
+          -7.7,
+          14.0,
+          -26.0
+        ]
+      ],
       "connects": "Mandibular foramen towards mental/incisive division",
       "contents": "Inferior alveolar neurovascular bundle",
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "No reliable coordinate assigned in this mesh review."
+      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mental-foramen.right",
       "name": "Mental foramen right",
       "region": "Mandible",
       "side": "right",
-      "status": "regional",
+      "status": "partial",
       "point": [
-        27,
+        21.5,
         7,
-        -16
+        -19.5
       ],
       "course": [],
       "connects": "Mandibular canal to chin",
@@ -2117,18 +2577,18 @@
       "vessels": [
         "Mental"
       ],
-      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mental-foramen.left",
       "name": "Mental foramen left",
       "region": "Mandible",
       "side": "left",
-      "status": "regional",
+      "status": "partial",
       "point": [
-        -25.706,
+        -20.2,
         7,
-        -16.05
+        -19.5
       ],
       "course": [],
       "connects": "Mandibular canal to chin",
@@ -2136,7 +2596,7 @@
       "vessels": [
         "Mental"
       ],
-      "note": "Anatomical region estimated from adjacent bone. The named opening is not individually resolved."
+      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-incisive.right",
@@ -2953,84 +3413,84 @@
       ],
       "course": [
         [
-          11.024,
-          -41.264,
-          70.238
+          11.101,
+          -42.42,
+          70.173
         ],
         [
-          10.865,
-          -41.352,
-          70.787
+          11.048,
+          -42.469,
+          70.497
         ],
         [
-          10.761,
-          -41.387,
-          71.365
+          11.02,
+          -42.495,
+          70.828
         ],
         [
-          10.716,
-          -41.386,
-          71.964
+          11.018,
+          -42.499,
+          71.162
         ],
         [
-          10.728,
-          -41.367,
+          11.044,
+          -42.484,
+          71.498
+        ],
+        [
+          11.105,
+          -42.447,
+          71.884
+        ],
+        [
+          11.169,
+          -42.408,
+          72.166
+        ],
+        [
+          11.227,
+          -42.375,
+          72.371
+        ],
+        [
+          11.292,
+          -42.338,
           72.576
         ],
         [
-          10.811,
-          -41.346,
-          73.282
+          11.365,
+          -42.298,
+          72.781
         ],
         [
-          10.917,
-          -41.342,
-          73.806
+          11.457,
+          -42.249,
+          73.014
         ],
         [
-          11.022,
-          -41.347,
-          74.205
+          11.543,
+          -42.204,
+          73.218
         ],
         [
-          11.146,
-          -41.361,
-          74.6
+          11.634,
+          -42.157,
+          73.422
         ],
         [
-          11.287,
-          -41.382,
-          74.991
+          11.73,
+          -42.11,
+          73.626
         ],
         [
-          11.468,
-          -41.409,
-          75.431
+          11.829,
+          -42.061,
+          73.829
         ],
         [
-          11.641,
-          -41.433,
-          75.811
-        ],
-        [
-          11.827,
-          -41.452,
-          76.185
-        ],
-        [
-          12.024,
-          -41.462,
-          76.554
-        ],
-        [
-          12.23,
-          -41.461,
-          76.917
-        ],
-        [
-          12.475,
-          -41.441,
-          77.326
+          11.946,
+          -42.004,
+          74.062
         ]
       ],
       "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",
@@ -3592,84 +4052,84 @@
       ],
       "course": [
         [
-          -9.725,
-          -41.264,
-          70.138
+          -9.801,
+          -42.42,
+          70.073
         ],
         [
-          -9.565,
-          -41.352,
-          70.687
+          -9.747,
+          -42.469,
+          70.398
         ],
         [
-          -9.461,
-          -41.387,
-          71.265
+          -9.719,
+          -42.495,
+          70.728
         ],
         [
-          -9.414,
-          -41.384,
-          71.951
+          -9.719,
+          -42.498,
+          71.11
         ],
         [
-          -9.435,
-          -41.364,
-          72.564
+          -9.748,
+          -42.48,
+          71.447
         ],
         [
-          -9.526,
-          -41.344,
-          73.27
+          -9.812,
+          -42.44,
+          71.834
         ],
         [
-          -9.627,
-          -41.342,
-          73.751
+          -9.873,
+          -42.404,
+          72.09
         ],
         [
-          -9.743,
-          -41.349,
-          74.181
+          -9.935,
+          -42.367,
+          72.312
         ],
         [
-          -9.863,
-          -41.363,
-          74.554
+          -9.997,
+          -42.332,
+          72.506
         ],
         [
-          -10.017,
-          -41.386,
-          74.975
+          -10.076,
+          -42.288,
+          72.727
         ],
         [
-          -10.168,
-          -41.409,
-          75.339
+          -10.151,
+          -42.247,
+          72.921
         ],
         [
-          -10.354,
-          -41.434,
-          75.749
+          -10.243,
+          -42.198,
+          73.142
         ],
         [
-          -10.529,
-          -41.451,
-          76.103
+          -10.328,
+          -42.154,
+          73.335
         ],
         [
-          -10.74,
-          -41.461,
-          76.502
+          -10.43,
+          -42.102,
+          73.555
         ],
         [
-          -10.933,
-          -41.458,
-          76.846
+          -10.522,
+          -42.055,
+          73.749
         ],
         [
-          -11.162,
-          -41.438,
-          77.233
+          -10.63,
+          -42.002,
+          73.97
         ]
       ],
       "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",

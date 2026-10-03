@@ -18,6 +18,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [query, setQuery] = useState('');
   const [layers, setLayers] = useState<Record<SystemId, LayerState>>({ bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' });
   const [tab, setTab] = useState<'layers'|'tree'>('layers');
+  const [controlsOpen, setControlsOpen] = useState(true);
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -65,7 +66,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
         {query && <button className="clear" onClick={()=>setQuery('')} aria-label="Clear search">×</button>}
         {query && <div className="search-results panel">
           {results.length ? results.map((s)=><button key={s.id} onClick={()=>select(s)}>
-            <span className={`sys-dot ${s.system}`} /><span><strong>{s.name}</strong><small>{s.id}</small></span><em>{s.landmark?'landmark':s.asset?'geometry':'planned'}</em>
+            <span className={`sys-dot ${s.system}`} /><span><strong>{s.name}</strong></span><em>{s.landmark?'landmark':s.asset?'geometry':'planned'}</em>
           </button>) : <div className="empty">No matching structure</div>}
         </div>}
       </div>
@@ -73,8 +74,10 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       <button className="icon-btn" onClick={()=>setAbout(true)} title={`About v${manifest.release}`}>i</button>
     </div>
 
-    <aside className="left-panel panel">
-
+    <div className="panel-stack">
+    <details className="left-panel panel" open={controlsOpen} onToggle={e=>setControlsOpen(e.currentTarget.open)}>
+      <summary className="panel-title">Layers and anatomy</summary>
+      <div className="panel-body">
       <div className="tabs"><button className={tab==='layers'?'active':''} onClick={()=>setTab('layers')}>Layers</button><button className={tab==='tree'?'active':''} onClick={()=>setTab('tree')}>Anatomy</button></div>
       {tab==='layers' ? <>
         <div className="layer-list">{SYSTEMS.filter(sys=>geometryCount(sys.id)>0).map((sys)=><div className="layer-row" key={sys.id}>
@@ -83,13 +86,14 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
           <div className="counts"><b>{geometryCount(sys.id)}</b><small>mesh</small><b>{plannedCount(sys.id)}</b><small>planned</small></div>
         </div>)}</div>
       </> : <StructureTree manifest={manifest} byId={byId} subtrees={subtrees} hiddenIds={hiddenIds} selectedId={selectedId} onSelect={select} onVisibility={(ids,shown)=>setHidden(ids,!shown)} />}
-    </aside>
+      </div>
+    </details>
 
     {selected && <Detail structure={selected} manifest={manifest} engine={engine.current} hidden={hiddenIds.has(selected.id)} onHidden={(hidden)=>setHidden([selected.id],hidden)} onClose={()=>setSelectedId(null)} />}
-
+    </div>
 
     <div className="camera-bar panel">
-      <div className="views"><button onClick={()=>engine.current?.setView('front')}>AP</button><button onClick={()=>engine.current?.setView('left')}>L</button><button onClick={()=>engine.current?.setView('right')}>R</button><button onClick={()=>engine.current?.setView('superior')}>Sup</button><button onClick={()=>engine.current?.setView('inferior')}>Inf</button><button onClick={()=>engine.current?.setView('three-quarter')}>3/4</button><button onClick={()=>engine.current?.fitAll()}>Fit</button><button onClick={()=>engine.current?.fitCraniofacial()}>Face</button></div>
+      <div className="views"><button onClick={()=>engine.current?.setView('front')}>AP</button><button onClick={()=>engine.current?.setView('left')}>L</button><button onClick={()=>engine.current?.setView('right')}>R</button><button onClick={()=>engine.current?.setView('superior')}>Sup</button><button onClick={()=>engine.current?.setView('inferior')}>Inf</button><button onClick={()=>engine.current?.fitAll()}>Fit</button></div>
       <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>setClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>setClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>setClip({...clip,offset:Number(e.target.value)})}/></div>
     </div>
 
@@ -113,17 +117,22 @@ function StructureTree({manifest,byId,subtrees,hiddenIds,selectedId,onSelect,onV
 }
 
 function Detail({structure,manifest,engine,hidden,onHidden,onClose}:{structure:Structure;manifest:AnatomyManifest;engine:AnatomyEngine|null;hidden:boolean;onHidden:(hidden:boolean)=>void;onClose:()=>void}) {
+  const [open, setOpen] = useState(true);
   const rels=manifest.relationships.filter((r)=>r.from===structure.id||r.to===structure.id||(structure.displayGroup==='anastomoses'&&r.type==='potential_anastomosis'&&r.note===structure.name));
-  return <aside className="detail panel">
-    <button className="detail-close" onClick={onClose}>×</button><div className="detail-system"><span className={`sys-dot ${structure.system}`}/>{structure.system}</div>
-    <h2>{structure.name}</h2><code>{structure.id}</code>
-    <div className={`geometry-status ${structure.asset?'available':'planned'}`}>{structure.landmark?`Landmark · ${structure.landmark.status.replaceAll('-',' ')}`:structure.asset?(structure.provenance.sourceType==='scan-derived'?'Scan-derived anatomy':structure.provenance.sourceType==='atlas-derived'?'Atlas-derived seed geometry':structure.provenance.sourceType==='teaching-reconstruction'?'Reference reconstruction':'Skull context geometry'):'Geometry planned'}</div>
-    <dl><dt>Side</dt><dd>{structure.side}</dd><dt>Provenance</dt><dd>{structure.provenance.sourceType}</dd><dt>Confidence</dt><dd>{structure.provenance.confidence}</dd><dt>Review</dt><dd>{structure.provenance.reviewStatus}</dd></dl>
+  const nameFor=(id:string)=>manifest.structures.find(s=>s.id===id)?.name??'Unknown structure';
+  return <details className="detail panel" open={open} onToggle={e=>setOpen(e.currentTarget.open)}>
+    <summary className="panel-title"><span className={`sys-dot ${structure.system}`}/><h2>{structure.name}</h2></summary>
+    <button className="detail-close" onClick={onClose} aria-label="Close structure details">×</button>
+    <div className="detail-body">
+    <div className="detail-system">{structure.system}</div>
+    {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
+    <dl><dt>Side</dt><dd>{structure.side}</dd></dl>
     {structure.asset||structure.landmark?.point?<div className="detail-actions"><button onClick={()=>engine?.focus(structure.id)}>Focus</button><button onClick={()=>onHidden(!hidden)}>{hidden?'Show':'Hide'}</button></div>:!structure.landmark&&<p className="planned-copy">The logical structure exists now so models, search, relationships and saved views can use a stable ID before geometry is added.</p>}
     {structure.landmark&&<dl><dt>Passage</dt><dd>{structure.landmark.connects}</dd><dt>Contents</dt><dd>{structure.landmark.contents}</dd></dl>}
-    {rels.length>0&&<section><h3>Relationships</h3>{rels.map((r,i)=><div className="relationship" key={i}><b>{r.type.replaceAll('_',' ')}</b><span>{r.from===structure.id?r.to:r.to===structure.id?r.from:`${manifest.structures.find(s=>s.id===r.from)?.name??r.from} → ${manifest.structures.find(s=>s.id===r.to)?.name??r.to}`}</span>{r.note&&<small>{r.note}</small>}</div>)}</section>}
+    {rels.length>0&&<section><h3>Relationships</h3>{rels.map((r,i)=><div className="relationship" key={i}><b>{r.type.replaceAll('_',' ')}</b><span>{r.from===structure.id?nameFor(r.to):r.to===structure.id?nameFor(r.from):`${nameFor(r.from)} → ${nameFor(r.to)}`}</span>{r.note&&<small>{r.note}</small>}</div>)}</section>}
     {structure.notes&&<section><h3>Notes</h3><p>{structure.notes}</p></section>}
-  </aside>;
+    </div>
+  </details>;
 }
 
 function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {

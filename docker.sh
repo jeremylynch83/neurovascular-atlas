@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")"
-IMAGE="inr-anatomy-atlas:0.7.2"
+IMAGE="inr-anatomy-atlas:0.7.4"
 CONTAINER="inr-anatomy-atlas"
 PORT="${PORT:-5173}"
 

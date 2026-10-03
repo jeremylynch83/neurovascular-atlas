@@ -1,3 +1,19 @@
+# v0.7.4
+
+- Stack Layers/Anatomy and structure details on the left, with collapsible title bars.
+- Remove 3/4 and Face camera buttons.
+- Show readable relationship names and remove internal IDs from details and search results.
+- Remove reference-reconstruction, provenance, confidence and review fields from structure details.
+- Retain v0.7.3 anatomical geometry unchanged.
+
+# v0.7.3
+
+- Fixed terminal ICA/M1 junction distortion and rebuilt smooth lateral M1 courses.
+- Preserved both v0.7.2 A1 surfaces exactly.
+- Lowered ophthalmic origins and moved cavernous bends medially/posteriorly.
+- Routed inferior alveolar arteries within the mandible and mental branches out through the visible mental-foramen regions.
+- Restricted junction deformation and fairing to avoid moving unrelated artery surfaces.
+
 # v0.7.2
 
 - Corrected bilateral skull-base ICA entry, petrous course and cavernous/clinoid sweep.
