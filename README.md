@@ -1,6 +1,6 @@
-# INR Anatomy Atlas v0.8.1
+# INR Anatomy Atlas v0.8.5
 
-Place `inr-anatomy-atlas-v0.8.1.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.8.5.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -9,6 +9,26 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## Interface in v0.8.5
+
+A small white FPS readout in the bottom-right corner counts actual rendered frames. It updates at most twice per second and shows `FPS · idle` when drawing stops, without forcing extra renders or rerendering the panels. The selection panel title omits the coloured dot and close button. The mobile logo uses a smaller font and a reserved area beside the responsive search box. Anatomy and rendering optimisations are retained.
+
+## Rendering in v0.8.4
+
+Changes share a single render per browser frame. Selection colours and clipping offsets no longer request unnecessary shader updates; layer changes refresh together and clipping reuses cached model bounds.
+
+On browsers with native `WEBGL_multi_draw`, the 754 opaque vascular parts render in one batch. Their positions, normals, triangles, names and IDs are preserved. Selected vessels render individually to retain the existing highlight, and ghosted vessels keep their existing transparency rendering. The original per-structure meshes still handle picking and focus bounds. Browsers without native multi-draw keep the original rendering path to avoid adding batching overhead without reducing draw calls. Adaptive resolution from v0.8.3 is retained.
+
+## Rendering in v0.8.3
+
+Rotation, panning and zoom use a pixel ratio capped at 1. Full sharpness (device pixel ratio capped at 2) returns 180 ms after camera movement settles, including the damping glide. Anatomy, selection and descriptions are unchanged. Screens with a device pixel ratio of 1 or less keep their native resolution throughout.
+
+## Descriptions and names in v0.8.2
+
+Structures with text in the supplied notes show a **Description** section immediately below **Focus / Hide**. Click a linked structure name to select and focus it. Structures without note text have no Description section. Both panel collapse states continue to be preserved.
+
+The STA temporal branch is named **Posterior deep temporal artery**, and the maxillary temporal branch is named **Middle deep temporal artery**, matching the notes on both sides. Previous names remain searchable aliases. Foramen rotundum artery names are cleaned up, and dental/alveolar terms are searchable synonyms. See `docs/DESCRIPTIONS_v0.8.2.md` and the reviewed catalogue in `docs/STRUCTURE_DESCRIPTIONS.md`.
 
 ## Corrections in v0.8.1
 

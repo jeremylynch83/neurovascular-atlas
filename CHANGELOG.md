@@ -1,3 +1,31 @@
+# v0.8.5
+
+- Add a subtle white FPS readout, measuring actual rendered frames and indicating idle without extra draws.
+- Remove the selection panel close button and coloured title dot.
+- Shrink the mobile logo and prevent overlap with search controls.
+
+# v0.8.4
+
+- Coalesce rendering into one render per browser frame, preserving idle rendering and camera damping.
+- Update material shader state only when transparency or clipping configuration changes.
+- Apply layer state in one refresh and cache full-model bounds for clipping.
+- Batch 754 opaque vascular meshes on browsers with native multi-draw, preserving all positions, normals and triangles exactly.
+- Preserve per-structure picking, focus, selection highlighting, hiding and ghost transparency, with the original path on unsupported browsers.
+
+# v0.8.3
+
+- Cap rendering pixel ratio at 1 during camera navigation and damping.
+- Restore full sharpness 180 ms after movement settles, retaining the existing idle cap of 2.
+- Preserve the model assets, anatomy, descriptions and selection behaviour.
+
+# v0.8.2
+
+- Add 717 descriptions from the supplied notes below Focus / Hide, with 1744 structure selection links.
+- Omit the Description section when the notes provide no text.
+- Match bilateral temporal branch names to the notes, clean up foramen rotundum names, and preserve former names as search aliases.
+- Keep selection links on the existing focus path and preserve panel collapse state.
+- Bundle the reviewed source catalogue and an optional content-import editing tool.
+
 # v0.8.0
 
 ## v0.8.1

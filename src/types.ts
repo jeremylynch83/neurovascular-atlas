@@ -23,6 +23,7 @@ export interface Structure {
   provenance: Provenance;
   asset?: AssetRef;
   segmentOf?: string;
+  description?: string;
   notes?: string;
   color?: string;
   displayGroup?: 'anastomoses';

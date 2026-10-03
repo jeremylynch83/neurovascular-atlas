@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { geometrySubtrees, searchStructures } from './catalogue';
 import { AnatomyEngine } from './engine';
+import { Description } from './Description';
 
 const SYSTEMS: { id: SystemId; label: string; hint: string }[] = [
   { id: 'bone', label: 'Bone', hint: 'Skull, maxillae, mandible and teeth' },
@@ -14,6 +15,7 @@ const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: '
 export function App({ manifest }: { manifest: AnatomyManifest }) {
   const stage = useRef<HTMLDivElement>(null);
   const engine = useRef<AnatomyEngine | null>(null);
+  const fpsReadout = useRef<HTMLDivElement>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [query, setQuery] = useState('');
   const [layers, setLayers] = useState<Record<SystemId, LayerState>>({ bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' });
@@ -35,13 +37,16 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     if (!stage.current) return;
     let cancelled = false;
     setReady(false); setLoadError(null);
-    const e = new AnatomyEngine(stage.current, manifest, setSelectedId); engine.current = e; e.setTheme(dark);
+    const e = new AnatomyEngine(stage.current, manifest, setSelectedId, fps => {
+      // Update this small readout without rerendering the anatomy panels.
+      if (fpsReadout.current) fpsReadout.current.textContent = fps === null ? 'FPS · idle' : `${fps} FPS`;
+    }); engine.current = e; e.setTheme(dark);
     e.load().then(() => { if (cancelled) return; setReady(true); setLoadError(null); e.start(); }).catch((err) => { if (cancelled) return; console.error(err); setLoadError(err instanceof Error ? err.message : String(err)); });
     return () => { cancelled = true; e.dispose(); engine.current = null; };
   }, [manifest]);
   useEffect(() => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; engine.current?.setTheme(dark); }, [dark]);
   useEffect(() => { engine.current?.setSelected(selectedId); }, [selectedId]);
-  useEffect(() => { for (const [k,v] of Object.entries(layers) as [SystemId,LayerState][]) engine.current?.setLayer(k,v); }, [layers]);
+  useEffect(() => { engine.current?.setLayers(layers); }, [layers]);
   useEffect(() => { engine.current?.setClip(clip.enabled, clip.axis, clip.offset); }, [clip]);
   useEffect(() => { engine.current?.setHiddenIds(hiddenIds); }, [hiddenIds, ready]);
 
@@ -90,7 +95,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       </div>
     </details>
 
-    {selected && <Detail open={inspectionOpen} onOpenChange={setInspectionOpen} structure={selected} manifest={manifest} engine={engine.current} hidden={(subtrees.get(selected.id)??[]).length>0&&(subtrees.get(selected.id)??[]).every(id=>hiddenIds.has(id))} onHidden={(hidden)=>setHidden(subtrees.get(selected.id)??[],hidden)} onClose={()=>setSelectedId(null)} />}
+    {selected && <Detail open={inspectionOpen} onOpenChange={setInspectionOpen} structure={selected} manifest={manifest} byId={byId} onSelect={select} engine={engine.current} hidden={(subtrees.get(selected.id)??[]).length>0&&(subtrees.get(selected.id)??[]).every(id=>hiddenIds.has(id))} onHidden={(hidden)=>setHidden(subtrees.get(selected.id)??[],hidden)} />}
     </div>
 
     <div className="camera-bar panel">
@@ -98,6 +103,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>setClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>setClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>setClip({...clip,offset:Number(e.target.value)})}/></div>
     </div>
 
+    <div className="fps-readout" ref={fpsReadout} aria-label="Frame rate" aria-live="off">FPS · idle</div>
     {!ready && !loadError && <div className="loading panel">Loading {manifest.title ?? 'CT-derived reference'}…</div>}
     {loadError && <div className="loading panel load-error"><b>Anatomy failed to load</b><span>{loadError}</span></div>}
     {about && <About manifest={manifest} onClose={()=>setAbout(false)} />}
@@ -117,17 +123,17 @@ function StructureTree({manifest,byId,subtrees,hiddenIds,selectedId,onSelect,onV
   return <div className="tree">{manifest.roots.map((r)=>node(r))}</div>;
 }
 
-function Detail({open,onOpenChange,structure,manifest,engine,hidden,onHidden,onClose}:{open:boolean;onOpenChange:(open:boolean)=>void;structure:Structure;manifest:AnatomyManifest;engine:AnatomyEngine|null;hidden:boolean;onHidden:(hidden:boolean)=>void;onClose:()=>void}) {
+function Detail({open,onOpenChange,structure,manifest,byId,onSelect,engine,hidden,onHidden}:{open:boolean;onOpenChange:(open:boolean)=>void;structure:Structure;manifest:AnatomyManifest;byId:ReadonlyMap<string,Structure>;onSelect:(structure:Structure)=>void;engine:AnatomyEngine|null;hidden:boolean;onHidden:(hidden:boolean)=>void}) {
   const rels=manifest.relationships.filter((r)=>r.type!=='associated_passage'&&(r.from===structure.id||r.to===structure.id||(structure.displayGroup==='anastomoses'&&r.type==='potential_anastomosis'&&r.note===structure.name)));
   const nameFor=(id:string)=>manifest.structures.find(s=>s.id===id)?.name??'Unknown structure';
   return <details className="detail panel" open={open} onToggle={e=>onOpenChange(e.currentTarget.open)}>
-    <summary className="panel-title"><span className={`sys-dot ${structure.system}`}/><h2>{structure.name}</h2></summary>
-    <button className="detail-close" onClick={onClose} aria-label="Close structure details">×</button>
+    <summary className="panel-title"><h2>{structure.name}</h2></summary>
     <div className="detail-body">
     <div className="detail-system">{structure.system}</div>
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
     <dl><dt>Side</dt><dd>{structure.side}</dd></dl>
     {structure.asset||structure.landmark?.point||manifest.structures.some(s=>s.segmentOf===structure.id)?<div className="detail-actions"><button onClick={()=>engine?.focus(structure.id)}>Focus</button><button onClick={()=>onHidden(!hidden)}>{hidden?'Show':'Hide'}</button></div>:!structure.landmark&&structure.kind!=='group'&&<p className="planned-copy">The logical structure exists now so models, search, relationships and saved views can use a stable ID before geometry is added.</p>}
+    {structure.description?.trim()&&<Description text={structure.description} byId={byId} onSelect={onSelect} />}
     {rels.length>0&&<section><h3>Relationships</h3>{rels.map((r,i)=><div className="relationship" key={i}><b>{r.type.replaceAll('_',' ')}</b><span>{r.from===structure.id?nameFor(r.to):r.to===structure.id?nameFor(r.from):`${nameFor(r.from)} → ${nameFor(r.to)}`}</span></div>)}</section>}
     </div>
   </details>;
