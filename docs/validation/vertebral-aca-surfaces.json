@@ -1,0 +1,20 @@
+{
+  "original_circulation_meshes": 587,
+  "new_circulation_meshes": 599,
+  "unchanged_meshes_exact_all_attribute_and_index_bytes": 583,
+  "partitioned_meshes_exact_triangle_position_and_normal_multisets": 4,
+  "circulation_triangles_before_and_after": 5765374,
+  "no_new_caps_or_dropped_triangles": true,
+  "other_model_assets": [
+    {
+      "file": "complete-anastomoses.glb",
+      "sha256": "7414774b9376b8b88b49e2d957921697420eb495f0d9efbb93ddaba4e41ebc78",
+      "unchanged": true
+    },
+    {
+      "file": "craniofacial.glb",
+      "sha256": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+      "unchanged": true
+    }
+  ]
+}

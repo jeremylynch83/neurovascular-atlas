@@ -1,3 +1,20 @@
+# v0.8.7
+
+- Rename the interface to Neurovascular Atlas; replace reconstruction summaries with a brief introduction and Jeremy Lynch’s 2026 authorship.
+- Show loading progress based on model downloads and scene preparation; hide FPS when rendering settles.
+- Use compact panel headers, symmetric mobile margins and scrolling confined to panel bodies.
+- Remove Fit, the Side row and planned counts/labels.
+- Group relationships by type with deduplicated, clickable structure names.
+- Preserve all anatomy assets, definitions and structure descriptions.
+
+# v0.8.6
+
+- Add bilateral selectable vertebral V1–V4 and ACA A1–A5 sections, following the supplied notes.
+- Preserve all existing vessel surface positions, normals and triangles exactly.
+- Add section descriptions, search aliases and branch hierarchy; retain existing description links.
+- Preserve whole-artery focus/highlight and subtree visibility, including the distal pericallosal group.
+- Document estimated section boundaries where cervical vertebrae, corpus callosum and coronal suture are not registered.
+
 # v0.8.5
 
 - Add a subtle white FPS readout, measuring actual rendered frames and indicating idle without extra draws.

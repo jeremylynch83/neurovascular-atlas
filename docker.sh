@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")"
-IMAGE="inr-anatomy-atlas:0.8.5"
+IMAGE="inr-anatomy-atlas:0.8.7"
 CONTAINER="inr-anatomy-atlas"
 PORT="${PORT:-5173}"
 
@@ -27,7 +27,7 @@ docker build -t "$IMAGE" .
 docker rm -f "$CONTAINER" >/dev/null 2>&1 || true
 docker run -d --rm --name "$CONTAINER" -p "${PORT}:80" "$IMAGE" >/dev/null
 
-echo "INR Anatomy Atlas started."
+echo "Neurovascular Atlas started."
 echo "Local:     http://localhost:${PORT}"
 if command -v tailscale >/dev/null 2>&1; then
   TS_IP="$(tailscale ip -4 2>/dev/null | head -n1 || true)"

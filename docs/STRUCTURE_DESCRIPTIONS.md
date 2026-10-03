@@ -2,7 +2,7 @@
 
 Content catalogue for descriptions in the app.
 
-**Model:** neurovascular-atlas, release 0.8.2.  
+**Model:** neurovascular-atlas, release 0.8.6.  
 **Source:** Jeremy Lynch, *Neurovascular anatomy*, supplied `nv(2).pdf` (86 PDF pages, printed pages 7–92).
 
 **Implementation decision, 3 October 2026:** Treat the supplied notes as the authoritative source for this project. Where the model conflicts with their names, origins, branching relationships, ICA segment membership, arterial course or bony passages, update the model to match the notes in the next implementation batch. Do not rewrite a description merely to accommodate the current model. Preserve stable structure IDs when changing display names or anatomy, and update the linked descriptions alongside the model.
@@ -31,10 +31,11 @@ Page references give both the PDF page number and the page printed in the notes.
 - [Bony foramina, passages and regions](#bone-landmarks)
 - [Bones and teeth](#bones)
 - [Catalogue groups](#groups)
+- [Selectable vertebral and ACA sections](#vertebral-aca-sections)
 - [Model amendments required by the notes](#notes-authority-amendments)
 - [Editorial mapping notes](#editorial-mapping-notes)
 
-**Catalogue:** 994 model entries; 717 entries with note-derived descriptions.
+**Catalogue:** 1012 model entries; 735 entries with note-derived descriptions.
 
 <a id="carotid-right"></a>
 
@@ -2440,7 +2441,7 @@ The A1 segment is directed forwards and medially above the optic nerve and chias
 
 **Source:** `nv(2).pdf`, PDF page 34; printed page 40.
 
-**Parent:** [ICA terminus right](#structure-artery.anterior.internal_carotid_right.segment.terminus)
+**Parent:** [ACA right](#structure-artery.anterior.aca_right)
 
 <a id="structure-artery.anterior.aca_pericallosal_right"></a>
 
@@ -2460,7 +2461,7 @@ The A4 segment originates at the body of the corpus callosum and the A5 segment 
 
 **Source:** `nv(2).pdf`, PDF pages 36–37; printed pages 42–43.
 
-**Parent:** [ACA A1 right](#structure-artery.anterior.aca_a1_right)
+**Parent:** [ACA right](#structure-artery.anterior.aca_right)
 
 <a id="structure-artery.anterior.recurrent_artery_of_heubner_right"></a>
 
@@ -2474,7 +2475,7 @@ The recurrent artery of Heubner: the largest laterally projecting perforating br
 
 **Source:** `nv(2).pdf`, PDF pages 34–35; printed pages 40–41.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A2 right](#structure-artery.anterior.aca_pericallosal_right.segment.a2)
 
 <a id="structure-artery.anterior.aca_orbitofrontal_right"></a>
 
@@ -2488,7 +2489,7 @@ The orbitofrontal artery: arising proximally and coursing anteriorly in the inte
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A2 right](#structure-artery.anterior.aca_pericallosal_right.segment.a2)
 
 <a id="structure-artery.anterior.aca_frontopolar_right"></a>
 
@@ -2502,7 +2503,7 @@ The frontopolar artery: this arises just proximal to the genu of the corpus call
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A2 right](#structure-artery.anterior.aca_pericallosal_right.segment.a2)
 
 <a id="structure-artery.anterior.callosomarginal_right"></a>
 
@@ -2516,7 +2517,7 @@ The callosomarginal artery is the major branch of the A3 segment and runs parall
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A3 right](#structure-artery.anterior.aca_pericallosal_right.segment.a3)
 
 <a id="structure-artery.anterior.anterior_internal_frontal_right"></a>
 
@@ -2572,7 +2573,7 @@ The paracentral artery is one of four branches of the [callosomarginal artery](#
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A4 right](#structure-artery.anterior.aca_pericallosal_right.segment.a4)
 
 <a id="structure-artery.anterior.precuneal_right"></a>
 
@@ -2580,7 +2581,7 @@ The paracentral artery is one of four branches of the [callosomarginal artery](#
 
 **Model ID:** `artery.anterior.precuneal_right`
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A5 right](#structure-artery.anterior.aca_pericallosal_right.segment.a5)
 
 <a id="structure-artery.anterior.inferior_internal_parietal_right"></a>
 
@@ -2594,7 +2595,7 @@ Parietal branches of the A4 and A5 segments supply the medial parietal lobe. The
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A5 right](#structure-artery.anterior.aca_pericallosal_right.segment.a5)
 
 <a id="structure-artery.amendment.short_callosal_branch.right"></a>
 
@@ -2608,7 +2609,7 @@ Short callosal perforating arteries: supplying the pillars of the fornix and the
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A4 right](#structure-artery.anterior.aca_pericallosal_right.segment.a4)
 
 <a id="structure-artery.amendment.long_callosal_branch.right"></a>
 
@@ -2622,7 +2623,7 @@ Long callosal arteries: supplying adjacent cortex.
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A5 right](#structure-artery.anterior.aca_pericallosal_right.segment.a5)
 
 <a id="structure-artery.amendment.aca_falcine_branch.right"></a>
 
@@ -2636,7 +2637,7 @@ Dural branches: supplying the falx.
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A5 right](#structure-artery.anterior.aca_pericallosal_right.segment.a5)
 
 <a id="structure-artery.anterior.medial_lenticulostriate_right"></a>
 
@@ -4108,7 +4109,7 @@ The A1 segment is directed forwards and medially above the optic nerve and chias
 
 **Source:** `nv(2).pdf`, PDF page 34; printed page 40.
 
-**Parent:** [ICA terminus left](#structure-artery.anterior.internal_carotid_left.segment.terminus)
+**Parent:** [ACA left](#structure-artery.anterior.aca_left)
 
 <a id="structure-artery.anterior.aca_pericallosal_left"></a>
 
@@ -4128,7 +4129,7 @@ The A4 segment originates at the body of the corpus callosum and the A5 segment 
 
 **Source:** `nv(2).pdf`, PDF pages 36–37; printed pages 42–43.
 
-**Parent:** [ACA A1 left](#structure-artery.anterior.aca_a1_left)
+**Parent:** [ACA left](#structure-artery.anterior.aca_left)
 
 <a id="structure-artery.anterior.recurrent_artery_of_heubner_left"></a>
 
@@ -4142,7 +4143,7 @@ The recurrent artery of Heubner: the largest laterally projecting perforating br
 
 **Source:** `nv(2).pdf`, PDF pages 34–35; printed pages 40–41.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A2 left](#structure-artery.anterior.aca_pericallosal_left.segment.a2)
 
 <a id="structure-artery.anterior.aca_orbitofrontal_left"></a>
 
@@ -4156,7 +4157,7 @@ The orbitofrontal artery: arising proximally and coursing anteriorly in the inte
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A2 left](#structure-artery.anterior.aca_pericallosal_left.segment.a2)
 
 <a id="structure-artery.anterior.aca_frontopolar_left"></a>
 
@@ -4170,7 +4171,7 @@ The frontopolar artery: this arises just proximal to the genu of the corpus call
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A2 left](#structure-artery.anterior.aca_pericallosal_left.segment.a2)
 
 <a id="structure-artery.anterior.callosomarginal_left"></a>
 
@@ -4184,7 +4185,7 @@ The callosomarginal artery is the major branch of the A3 segment and runs parall
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A3 left](#structure-artery.anterior.aca_pericallosal_left.segment.a3)
 
 <a id="structure-artery.anterior.anterior_internal_frontal_left"></a>
 
@@ -4240,7 +4241,7 @@ The paracentral artery is one of four branches of the [callosomarginal artery](#
 
 **Source:** `nv(2).pdf`, PDF page 36; printed page 42.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A4 left](#structure-artery.anterior.aca_pericallosal_left.segment.a4)
 
 <a id="structure-artery.anterior.precuneal_left"></a>
 
@@ -4248,7 +4249,7 @@ The paracentral artery is one of four branches of the [callosomarginal artery](#
 
 **Model ID:** `artery.anterior.precuneal_left`
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A5 left](#structure-artery.anterior.aca_pericallosal_left.segment.a5)
 
 <a id="structure-artery.anterior.inferior_internal_parietal_left"></a>
 
@@ -4262,7 +4263,7 @@ Parietal branches of the A4 and A5 segments supply the medial parietal lobe. The
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A5 left](#structure-artery.anterior.aca_pericallosal_left.segment.a5)
 
 <a id="structure-artery.amendment.short_callosal_branch.left"></a>
 
@@ -4276,7 +4277,7 @@ Short callosal perforating arteries: supplying the pillars of the fornix and the
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A4 left](#structure-artery.anterior.aca_pericallosal_left.segment.a4)
 
 <a id="structure-artery.amendment.long_callosal_branch.left"></a>
 
@@ -4290,7 +4291,7 @@ Long callosal arteries: supplying adjacent cortex.
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A5 left](#structure-artery.anterior.aca_pericallosal_left.segment.a5)
 
 <a id="structure-artery.amendment.aca_falcine_branch.left"></a>
 
@@ -4304,7 +4305,7 @@ Dural branches: supplying the falx.
 
 **Source:** `nv(2).pdf`, PDF page 37; printed page 43.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A5 left](#structure-artery.anterior.aca_pericallosal_left.segment.a5)
 
 <a id="structure-artery.anterior.medial_lenticulostriate_left"></a>
 
@@ -6500,15 +6501,7 @@ The anterior thalamoperforators of the [PCOM](#structure-artery.anterior.posteri
 
 **Description**
 
-The vertebral artery can be divided into four segments .
-
-This segment extends until the artery enters the foramen in the transverse process, typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).
-
-The artery continues vertically upwards to the C2 transverse foramina, surrounded by the vertebral venous plexus.
-
-Starts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a groove on the posterior arch of the atlas, which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.right) (a possible risk factor for paediatric ischaemic stroke).
-
-This segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata.
+The vertebral artery can be divided into four segments.
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
@@ -7184,7 +7177,7 @@ In addition to pial vessels, the posterior meningeal artery may arise from the P
 
 **Source:** `nv(2).pdf`, PDF page 43; printed page 49.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="structure-artery.posterior.pica_vermian_right"></a>
 
@@ -7276,7 +7269,7 @@ The first three [PICA](#structure-artery.posterior.pica_right) segments emit per
 
 **Source:** `nv(2).pdf`, PDF page 42; printed page 48.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="structure-artery.posterior.posterior_spinal_right"></a>
 
@@ -7294,7 +7287,7 @@ The PSAs principally supply the posterior third of the cord, including the dorsa
 
 **Source:** `nv(2).pdf`, PDF pages 74–75; printed pages 80–81.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.posterior.va_muscular_c1_right"></a>
 
@@ -7308,7 +7301,7 @@ The [vertebral artery](#structure-artery.posterior.vertebral_right) gives muscul
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.posterior.va_muscular_c2_right"></a>
 
@@ -7322,7 +7315,7 @@ The [vertebral artery](#structure-artery.posterior.vertebral_right) gives muscul
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.posterior.va_odontoid_contribution_right"></a>
 
@@ -7336,7 +7329,7 @@ The C3 radicular spinal arteries participate in the odontoid arterial arcade (al
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.posterior.posterior_meningeal_va_right"></a>
 
@@ -7350,7 +7343,7 @@ Posterior meningeal artery: the posterior meningeal artery supplies the tentoriu
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.amendment.va_anterior_meningeal.right"></a>
 
@@ -7364,7 +7357,7 @@ Anterior meningeal branch of the [vertebral artery](#structure-artery.posterior.
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.amendment.va_medullary_perforator_1.right"></a>
 
@@ -7378,7 +7371,7 @@ Perforators supplying the medulla and pyramids traverse the foramen caecum on th
 
 **Source:** `nv(2).pdf`, PDF page 42; printed page 48.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="structure-artery.amendment.va_medullary_perforator_2.right"></a>
 
@@ -7392,7 +7385,7 @@ Perforators supplying the medulla and pyramids traverse the foramen caecum on th
 
 **Source:** `nv(2).pdf`, PDF page 42; printed page 48.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="vertebrobasilar-left"></a>
 
@@ -8068,15 +8061,7 @@ Long circumflex branches fully encircle the pons and generally have fewer termin
 
 **Description**
 
-The vertebral artery can be divided into four segments .
-
-This segment extends until the artery enters the foramen in the transverse process, typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).
-
-The artery continues vertically upwards to the C2 transverse foramina, surrounded by the vertebral venous plexus.
-
-Starts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a groove on the posterior arch of the atlas, which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.left) (a possible risk factor for paediatric ischaemic stroke).
-
-This segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata.
+The vertebral artery can be divided into four segments.
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
@@ -8104,7 +8089,7 @@ In addition to pial vessels, the posterior meningeal artery may arise from the P
 
 **Source:** `nv(2).pdf`, PDF page 43; printed page 49.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
 
 <a id="structure-artery.posterior.pica_vermian_left"></a>
 
@@ -8196,7 +8181,7 @@ The first three [PICA](#structure-artery.posterior.pica_left) segments emit perf
 
 **Source:** `nv(2).pdf`, PDF page 42; printed page 48.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
 
 <a id="structure-artery.posterior.posterior_spinal_left"></a>
 
@@ -8214,7 +8199,7 @@ The PSAs principally supply the posterior third of the cord, including the dorsa
 
 **Source:** `nv(2).pdf`, PDF pages 74–75; printed pages 80–81.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.posterior.va_muscular_c1_left"></a>
 
@@ -8228,7 +8213,7 @@ The [vertebral artery](#structure-artery.posterior.vertebral_left) gives muscula
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.posterior.va_muscular_c2_left"></a>
 
@@ -8242,7 +8227,7 @@ The [vertebral artery](#structure-artery.posterior.vertebral_left) gives muscula
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.posterior.va_odontoid_contribution_left"></a>
 
@@ -8256,7 +8241,7 @@ The C3 radicular spinal arteries participate in the odontoid arterial arcade (al
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.posterior.posterior_meningeal_va_left"></a>
 
@@ -8270,7 +8255,7 @@ Posterior meningeal artery: the posterior meningeal artery supplies the tentoriu
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.amendment.va_anterior_meningeal.left"></a>
 
@@ -8284,7 +8269,7 @@ Anterior meningeal branch of the [vertebral artery](#structure-artery.posterior.
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.amendment.va_medullary_perforator_1.left"></a>
 
@@ -8298,7 +8283,7 @@ Perforators supplying the medulla and pyramids traverse the foramen caecum on th
 
 **Source:** `nv(2).pdf`, PDF page 42; printed page 48.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
 
 <a id="structure-artery.amendment.va_medullary_perforator_2.left"></a>
 
@@ -8312,7 +8297,7 @@ Perforators supplying the medulla and pyramids traverse the foramen caecum on th
 
 **Source:** `nv(2).pdf`, PDF page 42; printed page 48.
 
-**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
 
 <a id="midline-arteries"></a>
 
@@ -8358,7 +8343,7 @@ The basilar artery arises at the pontomedullary junction. It runs over the surfa
 
 **Source:** `nv(2).pdf`, PDF page 45; printed page 51.
 
-**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="structure-artery.amendment.pontine_median_perforator.midline"></a>
 
@@ -9420,7 +9405,7 @@ Posterior pericallosal (or splenial) branches: these small vessels originate fro
 
 **Source:** `nv(2).pdf`, PDF page 51; printed page 57.
 
-**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+**Parent:** [ACA A5 right](#structure-artery.anterior.aca_pericallosal_right.segment.a5)
 
 **Connection endpoints:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right); [PCA splenial right](#structure-artery.posterior.pca_splenial_right)
 
@@ -9750,7 +9735,7 @@ Posterior pericallosal (or splenial) branches: these small vessels originate fro
 
 **Source:** `nv(2).pdf`, PDF page 51; printed page 57.
 
-**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+**Parent:** [ACA A5 left](#structure-artery.anterior.aca_pericallosal_left.segment.a5)
 
 **Connection endpoints:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left); [PCA splenial left](#structure-artery.posterior.pca_splenial_left)
 
@@ -13201,6 +13186,272 @@ This segment incorporates the proximal and distal dural rings (the clinoid [ICA]
 ### Arteries
 
 **Model ID:** `artery`
+
+<a id="vertebral-aca-sections"></a>
+
+## Selectable vertebral and ACA sections
+
+Added in v0.8.6. Definitions follow the notes. Existing A1 entries are retained above. Cervical and callosal boundaries remain reference estimates without registered cervical vertebrae or corpus callosum; the A4/A5 station is an estimated coronal-suture level. All vessel courses and surfaces are preserved.
+
+<a id="structure-artery.anterior.aca_right"></a>
+
+### ACA right
+
+**Model ID:** `artery.anterior.aca_right`
+
+**Description**
+
+The ACA is the medial terminal division of the [ICA](#structure-artery.anterior.internal_carotid_right), originating lateral to the optic chiasm and beneath the anterior perforated substance.
+
+ACA territory includes the medial frontal and parietal lobes, extending variably over the convexity, in equilibrium with MCA branches.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ICA terminus right](#structure-artery.anterior.internal_carotid_right.segment.terminus)
+
+<a id="structure-artery.anterior.aca_pericallosal_right.segment.a2"></a>
+
+### ACA A2 right
+
+**Model ID:** `artery.anterior.aca_pericallosal_right.segment.a2`
+
+**Description**
+
+The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+
+<a id="structure-artery.anterior.aca_pericallosal_right.segment.a3"></a>
+
+### ACA A3 right
+
+**Model ID:** `artery.anterior.aca_pericallosal_right.segment.a3`
+
+**Description**
+
+The A3 segment extends around the genu of the corpus callosum.
+
+Segments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+
+<a id="structure-artery.anterior.aca_pericallosal_right.segment.a4"></a>
+
+### ACA A4 right
+
+**Model ID:** `artery.anterior.aca_pericallosal_right.segment.a4`
+
+**Description**
+
+The A4 segment originates at the body of the corpus callosum. The [A5 segment](#structure-artery.anterior.aca_pericallosal_right.segment.a5) is the continuation of the vessel posterior to the coronal suture.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+
+<a id="structure-artery.anterior.aca_pericallosal_right.segment.a5"></a>
+
+### ACA A5 right
+
+**Model ID:** `artery.anterior.aca_pericallosal_right.segment.a5`
+
+**Description**
+
+The A5 segment is the continuation of the vessel posterior to the coronal suture. The [A4 segment](#structure-artery.anterior.aca_pericallosal_right.segment.a4) originates at the body of the corpus callosum.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal right](#structure-artery.anterior.aca_pericallosal_right)
+
+<a id="structure-artery.posterior.vertebral_right.segment.v1"></a>
+
+### Vertebral V1 right
+
+**Model ID:** `artery.posterior.vertebral_right.segment.v1`
+
+**Description**
+
+This segment extends until the artery enters the [foramen in the transverse process](#structure-landmark.transverse-foramina.right), typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+
+<a id="structure-artery.posterior.vertebral_right.segment.v2"></a>
+
+### Vertebral V2 right
+
+**Model ID:** `artery.posterior.vertebral_right.segment.v2`
+
+**Description**
+
+The artery continues vertically upwards to the C2 [transverse foramina](#structure-landmark.transverse-foramina.right), surrounded by the vertebral venous plexus.
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+
+<a id="structure-artery.posterior.vertebral_right.segment.v3"></a>
+
+### Vertebral V3 right
+
+**Model ID:** `artery.posterior.vertebral_right.segment.v3`
+
+**Description**
+
+Starts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a [groove on the posterior arch of the atlas](#structure-landmark.atlas-groove.right), which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.right) (a possible risk factor for paediatric ischaemic stroke).
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+
+<a id="structure-artery.posterior.vertebral_right.segment.v4"></a>
+
+### Vertebral V4 right
+
+**Model ID:** `artery.posterior.vertebral_right.segment.v4`
+
+**Description**
+
+This segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata.
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral right](#structure-artery.posterior.vertebral_right)
+
+<a id="structure-artery.anterior.aca_left"></a>
+
+### ACA left
+
+**Model ID:** `artery.anterior.aca_left`
+
+**Description**
+
+The ACA is the medial terminal division of the [ICA](#structure-artery.anterior.internal_carotid_left), originating lateral to the optic chiasm and beneath the anterior perforated substance.
+
+ACA territory includes the medial frontal and parietal lobes, extending variably over the convexity, in equilibrium with MCA branches.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ICA terminus left](#structure-artery.anterior.internal_carotid_left.segment.terminus)
+
+<a id="structure-artery.anterior.aca_pericallosal_left.segment.a2"></a>
+
+### ACA A2 left
+
+**Model ID:** `artery.anterior.aca_pericallosal_left.segment.a2`
+
+**Description**
+
+The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+
+<a id="structure-artery.anterior.aca_pericallosal_left.segment.a3"></a>
+
+### ACA A3 left
+
+**Model ID:** `artery.anterior.aca_pericallosal_left.segment.a3`
+
+**Description**
+
+The A3 segment extends around the genu of the corpus callosum.
+
+Segments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+
+<a id="structure-artery.anterior.aca_pericallosal_left.segment.a4"></a>
+
+### ACA A4 left
+
+**Model ID:** `artery.anterior.aca_pericallosal_left.segment.a4`
+
+**Description**
+
+The A4 segment originates at the body of the corpus callosum. The [A5 segment](#structure-artery.anterior.aca_pericallosal_left.segment.a5) is the continuation of the vessel posterior to the coronal suture.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+
+<a id="structure-artery.anterior.aca_pericallosal_left.segment.a5"></a>
+
+### ACA A5 left
+
+**Model ID:** `artery.anterior.aca_pericallosal_left.segment.a5`
+
+**Description**
+
+The A5 segment is the continuation of the vessel posterior to the coronal suture. The [A4 segment](#structure-artery.anterior.aca_pericallosal_left.segment.a4) originates at the body of the corpus callosum.
+
+**Source:** `nv(2).pdf`, PDF pages 34–37; printed pages 40–43.
+
+**Parent:** [ACA pericallosal left](#structure-artery.anterior.aca_pericallosal_left)
+
+<a id="structure-artery.posterior.vertebral_left.segment.v1"></a>
+
+### Vertebral V1 left
+
+**Model ID:** `artery.posterior.vertebral_left.segment.v1`
+
+**Description**
+
+This segment extends until the artery enters the [foramen in the transverse process](#structure-landmark.transverse-foramina.left), typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+
+<a id="structure-artery.posterior.vertebral_left.segment.v2"></a>
+
+### Vertebral V2 left
+
+**Model ID:** `artery.posterior.vertebral_left.segment.v2`
+
+**Description**
+
+The artery continues vertically upwards to the C2 [transverse foramina](#structure-landmark.transverse-foramina.left), surrounded by the vertebral venous plexus.
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+
+<a id="structure-artery.posterior.vertebral_left.segment.v3"></a>
+
+### Vertebral V3 left
+
+**Model ID:** `artery.posterior.vertebral_left.segment.v3`
+
+**Description**
+
+Starts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a [groove on the posterior arch of the atlas](#structure-landmark.atlas-groove.left), which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.left) (a possible risk factor for paediatric ischaemic stroke).
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
+
+<a id="structure-artery.posterior.vertebral_left.segment.v4"></a>
+
+### Vertebral V4 left
+
+**Model ID:** `artery.posterior.vertebral_left.segment.v4`
+
+**Description**
+
+This segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata.
+
+**Source:** `nv(2).pdf`, PDF pages 41–42; printed pages 47–48.
+
+**Parent:** [Vertebral left](#structure-artery.posterior.vertebral_left)
 
 <a id="notes-authority-amendments"></a>
 

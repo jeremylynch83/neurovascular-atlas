@@ -45,6 +45,7 @@ export interface AnatomyManifest {
   units: string;
   coordinateSystem?: 'RAS' | 'legacy-y-up';
   assetRevisions?: Record<string, string>;
+  assetByteSizes?: Record<string, number>;
   reference?: { case: string; pipelineVersion: string };
   structures: Structure[];
   relationships: Relationship[];

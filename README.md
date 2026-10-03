@@ -1,6 +1,6 @@
-# INR Anatomy Atlas v0.8.5
+# Neurovascular Atlas v0.8.7
 
-Place `inr-anatomy-atlas-v0.8.5.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.8.7.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -9,6 +9,14 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## Interface in v0.8.7
+
+Use the Neurovascular Atlas name and a brief introduction with Jeremy Lynch’s 2026 authorship. Loading shows a percentage based on actual model downloads and scene preparation. FPS is hidden when rendering settles. Panels have compact title bars, equal mobile side margins and scrolling confined to their bodies. Remove Fit, the separate Side row and planned counts/labels; group relationships by type with clickable names. Anatomy assets, descriptions and definitions are unchanged.
+
+## Vertebral and ACA sections in v0.8.6
+
+Select vertebral V1–V4 and ACA A1–A5 sections on either side. Each has its note-derived description and linked structures. Whole-artery and distal pericallosal focus, highlighting and subtree hiding remain available. The existing vessel surfaces and courses are retained exactly; cervical, callosal and coronal-suture boundaries are reference estimates where tissue is not registered. See `docs/VERTEBRAL_ACA_v0.8.6.md`.
 
 ## Interface in v0.8.5
 

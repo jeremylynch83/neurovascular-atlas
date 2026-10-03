@@ -3,6 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
+import { segmentGeometryMembers } from './catalogue';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
@@ -59,6 +60,7 @@ export class AnatomyEngine {
   private root = new THREE.Group();
   private landmarkMarker = new THREE.Group();
   private entries = new Map<string, Entry>();
+  private segmentMembers: Map<string, Set<string>>;
   private vascularBatches: THREE.BatchedMesh[] = [];
   private objectToId = new Map<THREE.Object3D, string>();
   private loader = new GLTFLoader();
@@ -87,6 +89,7 @@ export class AnatomyEngine {
   constructor(container: HTMLElement, manifest: AnatomyManifest, onSelect: (id: string | null) => void, onFps?: (fps: number | null) => void) {
     this.container = container;
     this.manifest = manifest;
+    this.segmentMembers = segmentGeometryMembers(manifest.structures);
     const initialView = anatomicalView(coordinateSystem(manifest), 'three-quarter');
     this.camera.up.fromArray(initialView.up);
     this.camera.position.fromArray(initialView.direction);
@@ -162,12 +165,26 @@ export class AnatomyEngine {
     this.controls.target.copy(target);
   }
 
-  async load(): Promise<void> {
+  async load(onProgress?: (percent: number) => void): Promise<void> {
     const withAssets = this.manifest.structures.filter((s) => s.asset);
     const files = [...new Set(withAssets.map((s) => s.asset!.file))];
-    for (const file of files) {
+    const sizes = files.map(file => this.manifest.assetByteSizes?.[file] ?? 0);
+    const knownSizes = sizes.length > 0 && sizes.every(size => size > 0);
+    const totalBytes = sizes.reduce((sum, size) => sum + size, 0);
+    let completedBytes = 0, lastProgress = -1;
+    const report = (value: number) => {
+      const percent = Math.max(0, Math.min(100, Math.floor(value)));
+      if (!this.disposed && percent > lastProgress) { lastProgress = percent; onProgress?.(percent); }
+    };
+    report(0);
+    for (const [fileIndex, file] of files.entries()) {
       const revision = this.manifest.assetRevisions?.[file] ?? this.manifest.release;
-      const gltf = await this.loader.loadAsync(`${import.meta.env.BASE_URL}anatomy/${file}?v=${encodeURIComponent(revision)}`);
+      const gltf = await this.loader.loadAsync(`${import.meta.env.BASE_URL}anatomy/${file}?v=${encodeURIComponent(revision)}`, event => {
+        const fraction = knownSizes
+          ? (completedBytes + Math.min(event.loaded, sizes[fileIndex])) / totalBytes
+          : (fileIndex + (event.total > 0 ? Math.min(1, event.loaded / event.total) : 0)) / files.length;
+        report(fraction * 90);
+      });
       if (this.disposed) {
         gltf.scene.traverse((o) => { if ((o as THREE.Mesh).isMesh) (o as THREE.Mesh).geometry.dispose(); });
         return;
@@ -223,14 +240,22 @@ export class AnatomyEngine {
       if (unresolved.length) {
         console.warn(`Could not resolve ${unresolved.length} GLB node(s) in ${file}:`, unresolved);
       }
+      completedBytes += sizes[fileIndex];
+      report((knownSizes ? completedBytes / totalBytes : (fileIndex + 1) / files.length) * 90);
     }
     if (withAssets.length > 0 && this.entries.size === 0) {
       throw new Error(`The manifest declares ${withAssets.length} geometry assets, but none could be matched to GLB nodes. Check GLB node naming/manifest integration.`);
     }
+    report(95);
+    // Let the loading UI paint before the final synchronous scene preparation.
+    if (onProgress) await new Promise<void>(resolve => requestAnimationFrame(() => setTimeout(resolve, 0)));
+    if (this.disposed) return;
     this.buildVascularBatches();
     this.refreshMaterials();
     this.fitAll(false);
     this.render();
+    if (onProgress) await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
+    report(100);
   }
 
   private buildVascularBatches() {
@@ -339,7 +364,7 @@ export class AnatomyEngine {
       const state = this.layers[e.structure.system];
       e.mesh.visible = state !== 'off' && !this.hidden.has(id);
       const mat = e.mesh.material as THREE.MeshStandardMaterial;
-      const selected = id === this.selected || e.structure.segmentOf === this.selected;
+      const selected = this.selected !== null && !!this.segmentMembers.get(this.selected)?.has(id);
       mat.color.set(selected ? 0xf2b84b : e.structure.color ?? COLOURS[e.structure.system]);
       mat.emissive.setHex(selected ? 0x4a2b00 : 0x000000);
       const skullContext = e.structure.system === 'bone' && e.structure.provenance.sourceType === 'legacy-placeholder';
@@ -381,7 +406,10 @@ export class AnatomyEngine {
       this.fitBox(box,true); return;
     }
     const box = new THREE.Box3();
-    for (const [key, e] of this.entries) if (key === id || e.structure.segmentOf === id) box.expandByObject(e.mesh);
+    for (const key of this.segmentMembers.get(id) ?? []) {
+      const entry = this.entries.get(key);
+      if (entry) box.expandByObject(entry.mesh);
+    }
     if (!box.isEmpty()) this.fitBox(box, true);
   }
   fitAll(animate = true) {
@@ -433,7 +461,7 @@ export class AnatomyEngine {
     for (const batch of this.vascularBatches) this.updateClipping(batch.material as THREE.Material);
     this.render();
   }
-  hasGeometry(id: string) { return this.entries.has(id) || [...this.entries.values()].some(e => e.structure.segmentOf === id); }
+  hasGeometry(id: string) { return [...this.segmentMembers.get(id) ?? []].some(key => this.entries.has(key)); }
   // All changes in one browser frame share one render, including React effects
   // and OrbitControls damping. Idle controls still tick without redrawing.
   render() { if (this.disposed) return; this.renderRequested = true; this.requestFrame(); }

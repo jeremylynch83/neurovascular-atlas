@@ -1,13 +1,13 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.8.5",
-  "title": "Combined circulation \u00b7 bilateral ECA",
-  "description": "Bilateral arterial reference with named skull-base recipients, small potential collateral networks, representative perforators and cortical branches, and selectable ICA regions. Tissue registration and unresolved small canal courses remain pending.",
+  "release": "0.8.7",
+  "title": "Neurovascular Atlas",
+  "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
-    "models/complete-circulation.glb": "b08089bfa1c3933da659",
+    "models/complete-circulation.glb": "f7b4bcdc788914d796c1",
     "models/complete-anastomoses.glb": "7414774b9376b8b88b49"
   },
   "structures": [
@@ -4832,9 +4832,8 @@
     {
       "id": "artery.anterior.aca_a1_right",
       "name": "ACA A1 right",
-      "parent": "artery.anterior.internal_carotid_right.segment.terminus",
+      "parent": "artery.anterior.aca_right",
       "children": [
-        "artery.anterior.aca_pericallosal_right",
         "artery.anterior.medial_lenticulostriate_right",
         "artery.anterior.anterior_communicating"
       ],
@@ -4843,7 +4842,9 @@
       "kind": "structure",
       "aliases": [
         "ACA",
-        "cisternal"
+        "cisternal",
+        "A1 pre-communicating ACA right",
+        "Anterior cerebral artery A1 right"
       ],
       "geometryStatus": "web-optimised",
       "provenance": {
@@ -4868,28 +4869,22 @@
         "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
       },
       "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
-      "description": "The A1 segment is directed forwards and medially above the optic nerve and chiasm towards the anterior interhemispheric fissure."
+      "description": "The A1 segment is directed forwards and medially above the optic nerve and chiasm towards the anterior interhemispheric fissure.",
+      "segmentOf": "artery.anterior.aca_right"
     },
     {
       "id": "artery.anterior.aca_pericallosal_right",
       "name": "ACA pericallosal right",
-      "parent": "artery.anterior.aca_a1_right",
+      "parent": "artery.anterior.aca_right",
       "children": [
-        "artery.anterior.recurrent_artery_of_heubner_right",
-        "artery.anterior.aca_orbitofrontal_right",
-        "artery.anterior.aca_frontopolar_right",
-        "artery.anterior.callosomarginal_right",
-        "artery.anterior.paracentral_right",
-        "artery.anterior.precuneal_right",
-        "artery.anterior.inferior_internal_parietal_right",
-        "artery.amendment.short_callosal_branch.right",
-        "artery.amendment.long_callosal_branch.right",
-        "artery.amendment.aca_falcine_branch.right",
-        "artery.connection.pericallosal_splenial.right"
+        "artery.anterior.aca_pericallosal_right.segment.a2",
+        "artery.anterior.aca_pericallosal_right.segment.a3",
+        "artery.anterior.aca_pericallosal_right.segment.a4",
+        "artery.anterior.aca_pericallosal_right.segment.a5"
       ],
       "system": "artery",
       "side": "right",
-      "kind": "structure",
+      "kind": "group",
       "aliases": [
         "ACA",
         "interhemispheric"
@@ -4903,10 +4898,6 @@
           "ref.borden.anterior",
           "ref.ferreira2002"
         ]
-      },
-      "asset": {
-        "file": "models/complete-circulation.glb",
-        "node": "ACA pericallosal right"
       },
       "notes": "A2 ascending, A3 genu, A4-A5 pericallosal course. Callosal relations estimated from atlas. Model compartment: interhemispheric.",
       "color": "#d980bf",
@@ -4986,12 +4977,13 @@
           "status": "provisional reference range; tissue registration pending"
         }
       ],
-      "description": "The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.\n\nThe A3 segment extends around the genu of the corpus callosum.\n\nSegments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such. Small perforating branches supply the corpus callosum and the callosal arteries, and these traverse the corpus callosum to supply the septum, anterior pillars of the fornix, and anterior commissure. Distally, there are anastomoses with the [posterior pericallosal branch of the PCA](#structure-artery.posterior.pca_splenial_right) via perisplenial branches.\n\nThe A4 segment originates at the body of the corpus callosum and the A5 segment is the continuation of the vessel posterior to the coronal suture."
+      "description": "The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.\n\nThe A3 segment extends around the genu of the corpus callosum.\n\nSegments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such. Small perforating branches supply the corpus callosum and the callosal arteries, and these traverse the corpus callosum to supply the septum, anterior pillars of the fornix, and anterior commissure. Distally, there are anastomoses with the [posterior pericallosal branch of the PCA](#structure-artery.posterior.pca_splenial_right) via perisplenial branches.\n\nThe A4 segment originates at the body of the corpus callosum and the A5 segment is the continuation of the vessel posterior to the coronal suture.",
+      "segmentOf": "artery.anterior.aca_right"
     },
     {
       "id": "artery.anterior.recurrent_artery_of_heubner_right",
       "name": "Recurrent artery of Heubner right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a2",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -5027,7 +5019,7 @@
     {
       "id": "artery.anterior.aca_orbitofrontal_right",
       "name": "ACA orbitofrontal right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a2",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -5063,7 +5055,7 @@
     {
       "id": "artery.anterior.aca_frontopolar_right",
       "name": "ACA frontopolar right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a2",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -5099,7 +5091,7 @@
     {
       "id": "artery.anterior.callosomarginal_right",
       "name": "Callosomarginal right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a3",
       "children": [
         "artery.anterior.anterior_internal_frontal_right",
         "artery.anterior.middle_internal_frontal_right",
@@ -5249,7 +5241,7 @@
     {
       "id": "artery.anterior.paracentral_right",
       "name": "Paracentral right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a4",
       "children": [
         "artery.connection.aca_mca_parietal_border_zone.right"
       ],
@@ -5288,7 +5280,7 @@
     {
       "id": "artery.anterior.precuneal_right",
       "name": "Precuneal right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -5324,7 +5316,7 @@
     {
       "id": "artery.anterior.inferior_internal_parietal_right",
       "name": "Inferior internal parietal right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -7724,9 +7716,8 @@
     {
       "id": "artery.anterior.aca_a1_left",
       "name": "ACA A1 left",
-      "parent": "artery.anterior.internal_carotid_left.segment.terminus",
+      "parent": "artery.anterior.aca_left",
       "children": [
-        "artery.anterior.aca_pericallosal_left",
         "artery.anterior.medial_lenticulostriate_left"
       ],
       "system": "artery",
@@ -7734,7 +7725,9 @@
       "kind": "structure",
       "aliases": [
         "ACA",
-        "cisternal"
+        "cisternal",
+        "A1 pre-communicating ACA left",
+        "Anterior cerebral artery A1 left"
       ],
       "geometryStatus": "web-optimised",
       "provenance": {
@@ -7759,28 +7752,22 @@
         "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
       },
       "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
-      "description": "The A1 segment is directed forwards and medially above the optic nerve and chiasm towards the anterior interhemispheric fissure."
+      "description": "The A1 segment is directed forwards and medially above the optic nerve and chiasm towards the anterior interhemispheric fissure.",
+      "segmentOf": "artery.anterior.aca_left"
     },
     {
       "id": "artery.anterior.aca_pericallosal_left",
       "name": "ACA pericallosal left",
-      "parent": "artery.anterior.aca_a1_left",
+      "parent": "artery.anterior.aca_left",
       "children": [
-        "artery.anterior.recurrent_artery_of_heubner_left",
-        "artery.anterior.aca_orbitofrontal_left",
-        "artery.anterior.aca_frontopolar_left",
-        "artery.anterior.callosomarginal_left",
-        "artery.anterior.paracentral_left",
-        "artery.anterior.precuneal_left",
-        "artery.anterior.inferior_internal_parietal_left",
-        "artery.amendment.short_callosal_branch.left",
-        "artery.amendment.long_callosal_branch.left",
-        "artery.amendment.aca_falcine_branch.left",
-        "artery.connection.pericallosal_splenial.left"
+        "artery.anterior.aca_pericallosal_left.segment.a2",
+        "artery.anterior.aca_pericallosal_left.segment.a3",
+        "artery.anterior.aca_pericallosal_left.segment.a4",
+        "artery.anterior.aca_pericallosal_left.segment.a5"
       ],
       "system": "artery",
       "side": "left",
-      "kind": "structure",
+      "kind": "group",
       "aliases": [
         "ACA",
         "interhemispheric"
@@ -7794,10 +7781,6 @@
           "ref.borden.anterior",
           "ref.ferreira2002"
         ]
-      },
-      "asset": {
-        "file": "models/complete-circulation.glb",
-        "node": "ACA pericallosal left"
       },
       "notes": "A2 ascending, A3 genu, A4-A5 pericallosal course. Callosal relations estimated from atlas. Model compartment: interhemispheric.",
       "color": "#d980bf",
@@ -7877,12 +7860,13 @@
           "status": "provisional reference range; tissue registration pending"
         }
       ],
-      "description": "The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.\n\nThe A3 segment extends around the genu of the corpus callosum.\n\nSegments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such. Small perforating branches supply the corpus callosum and the callosal arteries, and these traverse the corpus callosum to supply the septum, anterior pillars of the fornix, and anterior commissure. Distally, there are anastomoses with the [posterior pericallosal branch of the PCA](#structure-artery.posterior.pca_splenial_left) via perisplenial branches.\n\nThe A4 segment originates at the body of the corpus callosum and the A5 segment is the continuation of the vessel posterior to the coronal suture."
+      "description": "The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.\n\nThe A3 segment extends around the genu of the corpus callosum.\n\nSegments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such. Small perforating branches supply the corpus callosum and the callosal arteries, and these traverse the corpus callosum to supply the septum, anterior pillars of the fornix, and anterior commissure. Distally, there are anastomoses with the [posterior pericallosal branch of the PCA](#structure-artery.posterior.pca_splenial_left) via perisplenial branches.\n\nThe A4 segment originates at the body of the corpus callosum and the A5 segment is the continuation of the vessel posterior to the coronal suture.",
+      "segmentOf": "artery.anterior.aca_left"
     },
     {
       "id": "artery.anterior.recurrent_artery_of_heubner_left",
       "name": "Recurrent artery of Heubner left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a2",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -7918,7 +7902,7 @@
     {
       "id": "artery.anterior.aca_orbitofrontal_left",
       "name": "ACA orbitofrontal left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a2",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -7954,7 +7938,7 @@
     {
       "id": "artery.anterior.aca_frontopolar_left",
       "name": "ACA frontopolar left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a2",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -7990,7 +7974,7 @@
     {
       "id": "artery.anterior.callosomarginal_left",
       "name": "Callosomarginal left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a3",
       "children": [
         "artery.anterior.anterior_internal_frontal_left",
         "artery.anterior.middle_internal_frontal_left",
@@ -8140,7 +8124,7 @@
     {
       "id": "artery.anterior.paracentral_left",
       "name": "Paracentral left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a4",
       "children": [
         "artery.connection.aca_mca_parietal_border_zone.left"
       ],
@@ -8179,7 +8163,7 @@
     {
       "id": "artery.anterior.precuneal_left",
       "name": "Precuneal left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -8215,7 +8199,7 @@
     {
       "id": "artery.anterior.inferior_internal_parietal_left",
       "name": "Inferior internal parietal left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -9725,21 +9709,14 @@
       "name": "Vertebral right",
       "parent": "artery",
       "children": [
-        "artery.posterior.basilar",
-        "artery.posterior.pica_right",
-        "artery.posterior.anterior_spinal_root_right",
-        "artery.posterior.posterior_spinal_right",
-        "artery.posterior.va_muscular_c1_right",
-        "artery.posterior.va_muscular_c2_right",
-        "artery.posterior.va_odontoid_contribution_right",
-        "artery.posterior.posterior_meningeal_va_right",
-        "artery.amendment.va_anterior_meningeal.right",
-        "artery.amendment.va_medullary_perforator_1.right",
-        "artery.amendment.va_medullary_perforator_2.right"
+        "artery.posterior.vertebral_right.segment.v1",
+        "artery.posterior.vertebral_right.segment.v2",
+        "artery.posterior.vertebral_right.segment.v3",
+        "artery.posterior.vertebral_right.segment.v4"
       ],
       "system": "artery",
       "side": "right",
-      "kind": "structure",
+      "kind": "group",
       "aliases": [
         "Vertebral",
         "mixed",
@@ -9756,10 +9733,6 @@
           "ref.parraga2011"
         ]
       },
-      "asset": {
-        "file": "models/complete-circulation.glb",
-        "node": "Vertebral right"
-      },
       "notes": "Truncated V1, estimated C6-C1 foraminal course, V3 atlas loop, V4 foramen-magnum entry. No registered cervical vertebrae; no ostial/subclavian geometry. Model compartment: mixed.",
       "color": "#eda97d",
       "calibreProvenance": {
@@ -9768,27 +9741,21 @@
         "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
       },
       "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
-      "description": "The vertebral artery can be divided into four segments .\n\nThis segment extends until the artery enters the foramen in the transverse process, typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).\n\nThe artery continues vertically upwards to the C2 transverse foramina, surrounded by the vertebral venous plexus.\n\nStarts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a groove on the posterior arch of the atlas, which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.right) (a possible risk factor for paediatric ischaemic stroke).\n\nThis segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata."
+      "description": "The vertebral artery can be divided into four segments."
     },
     {
       "id": "artery.posterior.vertebral_left",
       "name": "Vertebral left",
       "parent": "artery",
       "children": [
-        "artery.posterior.pica_left",
-        "artery.posterior.anterior_spinal_root_left",
-        "artery.posterior.posterior_spinal_left",
-        "artery.posterior.va_muscular_c1_left",
-        "artery.posterior.va_muscular_c2_left",
-        "artery.posterior.va_odontoid_contribution_left",
-        "artery.posterior.posterior_meningeal_va_left",
-        "artery.amendment.va_anterior_meningeal.left",
-        "artery.amendment.va_medullary_perforator_1.left",
-        "artery.amendment.va_medullary_perforator_2.left"
+        "artery.posterior.vertebral_left.segment.v1",
+        "artery.posterior.vertebral_left.segment.v2",
+        "artery.posterior.vertebral_left.segment.v3",
+        "artery.posterior.vertebral_left.segment.v4"
       ],
       "system": "artery",
       "side": "left",
-      "kind": "structure",
+      "kind": "group",
       "aliases": [
         "Vertebral",
         "mixed",
@@ -9805,10 +9772,6 @@
           "ref.parraga2011"
         ]
       },
-      "asset": {
-        "file": "models/complete-circulation.glb",
-        "node": "Vertebral left"
-      },
       "notes": "Truncated V1, estimated C6-C1 foraminal course, V3 atlas loop, V4 foramen-magnum entry. No registered cervical vertebrae; no ostial/subclavian geometry. Model compartment: mixed.",
       "color": "#eda97d",
       "calibreProvenance": {
@@ -9817,12 +9780,12 @@
         "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
       },
       "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
-      "description": "The vertebral artery can be divided into four segments .\n\nThis segment extends until the artery enters the foramen in the transverse process, typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).\n\nThe artery continues vertically upwards to the C2 transverse foramina, surrounded by the vertebral venous plexus.\n\nStarts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a groove on the posterior arch of the atlas, which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.left) (a possible risk factor for paediatric ischaemic stroke).\n\nThis segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata."
+      "description": "The vertebral artery can be divided into four segments."
     },
     {
       "id": "artery.posterior.basilar",
       "name": "Basilar",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [
         "artery.posterior.pca_p1_right",
         "artery.posterior.sca_right",
@@ -11201,7 +11164,7 @@
     {
       "id": "artery.posterior.pica_right",
       "name": "PICA right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [
         "artery.posterior.pica_vermian_right",
         "artery.posterior.pica_hemispheric_right",
@@ -11565,7 +11528,7 @@
     {
       "id": "artery.posterior.anterior_spinal_root_right",
       "name": "Anterior spinal root right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [
         "artery.posterior.anterior_spinal"
       ],
@@ -11605,7 +11568,7 @@
     {
       "id": "artery.posterior.posterior_spinal_right",
       "name": "Posterior spinal right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -11643,7 +11606,7 @@
     {
       "id": "artery.posterior.va_muscular_c1_right",
       "name": "VA muscular C1 right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -11681,7 +11644,7 @@
     {
       "id": "artery.posterior.va_muscular_c2_right",
       "name": "VA muscular C2 right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -11719,7 +11682,7 @@
     {
       "id": "artery.posterior.va_odontoid_contribution_right",
       "name": "VA odontoid contribution right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [
         "artery.connection.odontoid_inferior_transverse_arcade.midline"
       ],
@@ -11760,7 +11723,7 @@
     {
       "id": "artery.posterior.posterior_meningeal_va_right",
       "name": "Posterior meningeal VA right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -13271,7 +13234,7 @@
     {
       "id": "artery.posterior.pica_left",
       "name": "PICA left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v4",
       "children": [
         "artery.posterior.pica_vermian_left",
         "artery.posterior.pica_hemispheric_left",
@@ -13635,7 +13598,7 @@
     {
       "id": "artery.posterior.anterior_spinal_root_left",
       "name": "Anterior spinal root left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v4",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13673,7 +13636,7 @@
     {
       "id": "artery.posterior.posterior_spinal_left",
       "name": "Posterior spinal left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13711,7 +13674,7 @@
     {
       "id": "artery.posterior.va_muscular_c1_left",
       "name": "VA muscular C1 left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13749,7 +13712,7 @@
     {
       "id": "artery.posterior.va_muscular_c2_left",
       "name": "VA muscular C2 left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13787,7 +13750,7 @@
     {
       "id": "artery.posterior.va_odontoid_contribution_left",
       "name": "VA odontoid contribution left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13826,7 +13789,7 @@
     {
       "id": "artery.posterior.posterior_meningeal_va_left",
       "name": "Posterior meningeal VA left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -32258,7 +32221,7 @@
     {
       "id": "artery.amendment.short_callosal_branch.right",
       "name": "Short callosal branch right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a4",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -32296,7 +32259,7 @@
     {
       "id": "artery.amendment.short_callosal_branch.left",
       "name": "Short callosal branch left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a4",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -32334,7 +32297,7 @@
     {
       "id": "artery.amendment.long_callosal_branch.right",
       "name": "Long callosal branch right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -32372,7 +32335,7 @@
     {
       "id": "artery.amendment.long_callosal_branch.left",
       "name": "Long callosal branch left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -32410,7 +32373,7 @@
     {
       "id": "artery.amendment.aca_falcine_branch.right",
       "name": "ACA falcine branch right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
       "children": [
         "artery.connection.aca_falcine_mma_falcine.right"
       ],
@@ -32452,7 +32415,7 @@
     {
       "id": "artery.amendment.aca_falcine_branch.left",
       "name": "ACA falcine branch left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
       "children": [
         "artery.connection.aca_falcine_mma_falcine.left"
       ],
@@ -33248,7 +33211,7 @@
     {
       "id": "artery.amendment.va_anterior_meningeal.right",
       "name": "VA anterior meningeal right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -33286,7 +33249,7 @@
     {
       "id": "artery.amendment.va_anterior_meningeal.left",
       "name": "VA anterior meningeal left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -33324,7 +33287,7 @@
     {
       "id": "artery.amendment.va_medullary_perforator_1.right",
       "name": "VA medullary perforator 1 right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -33362,7 +33325,7 @@
     {
       "id": "artery.amendment.va_medullary_perforator_1.left",
       "name": "VA medullary perforator 1 left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v4",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -33400,7 +33363,7 @@
     {
       "id": "artery.amendment.va_medullary_perforator_2.right",
       "name": "VA medullary perforator 2 right",
-      "parent": "artery.posterior.vertebral_right",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -33438,7 +33401,7 @@
     {
       "id": "artery.amendment.va_medullary_perforator_2.left",
       "name": "VA medullary perforator 2 left",
-      "parent": "artery.posterior.vertebral_left",
+      "parent": "artery.posterior.vertebral_left.segment.v4",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -36638,7 +36601,7 @@
     {
       "id": "artery.connection.pericallosal_splenial.right",
       "name": "Pericallosal\u2013splenial right",
-      "parent": "artery.anterior.aca_pericallosal_right",
+      "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -39192,7 +39155,7 @@
     {
       "id": "artery.connection.pericallosal_splenial.left",
       "name": "Pericallosal\u2013splenial left",
-      "parent": "artery.anterior.aca_pericallosal_left",
+      "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -40711,10 +40674,10 @@
       "name": "ICA terminus right",
       "parent": "artery.anterior.internal_carotid_right",
       "children": [
-        "artery.anterior.aca_a1_right",
         "artery.anterior.mca_m1_right",
         "artery.amendment.terminal_ica_perforator_1.right",
-        "artery.amendment.terminal_ica_perforator_2.right"
+        "artery.amendment.terminal_ica_perforator_2.right",
+        "artery.anterior.aca_right"
       ],
       "system": "artery",
       "side": "right",
@@ -41038,10 +41001,10 @@
       "name": "ICA terminus left",
       "parent": "artery.anterior.internal_carotid_left",
       "children": [
-        "artery.anterior.aca_a1_left",
         "artery.anterior.mca_m1_left",
         "artery.amendment.terminal_ica_perforator_1.left",
-        "artery.amendment.terminal_ica_perforator_2.left"
+        "artery.amendment.terminal_ica_perforator_2.left",
+        "artery.anterior.aca_left"
       ],
       "system": "artery",
       "side": "left",
@@ -41377,6 +41340,1543 @@
       },
       "notes": "Not a tissue-derived entry point or lumen boundary.",
       "description": "The [lateral posterior choroidal artery](#structure-artery.posterior.lateral_posterior_choroidal_left) enters the choroidal fissure and lateral ventricle to supply the choroid plexus."
+    },
+    {
+      "id": "artery.anterior.aca_right",
+      "name": "ACA right",
+      "parent": "artery.anterior.internal_carotid_right.segment.terminus",
+      "children": [
+        "artery.anterior.aca_a1_right",
+        "artery.anterior.aca_pericallosal_right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "group",
+      "aliases": [
+        "Anterior cerebral artery right",
+        "ACA A1 A2 A3 A4 A5 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002"
+        ]
+      },
+      "notes": "Whole ACA, including the pre-communicating and distal pericallosal sections.",
+      "color": "#d980bf",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.06436619192113,
+          "startPointMm": [
+            2.3,
+            -26.0,
+            84.0
+          ],
+          "endPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.06436619192113,
+          "endArcMm": 52.264917047909364,
+          "startPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "endPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.264917047909364,
+          "endArcMm": 93.94859298468008,
+          "startPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "endPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 93.94859298468008,
+          "endArcMm": 134.02905063268517,
+          "startPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "endPointMm": [
+            3.0,
+            -97.99999999999999,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The ACA is the medial terminal division of the [ICA](#structure-artery.anterior.internal_carotid_right), originating lateral to the optic chiasm and beneath the anterior perforated substance.\n\nACA territory includes the medial frontal and parietal lobes, extending variably over the convexity, in equilibrium with MCA branches."
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_right.segment.a2",
+      "name": "ACA A2 right",
+      "parent": "artery.anterior.aca_pericallosal_right",
+      "children": [
+        "artery.anterior.recurrent_artery_of_heubner_right",
+        "artery.anterior.aca_orbitofrontal_right",
+        "artery.anterior.aca_frontopolar_right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "A2 post-communicating right",
+        "ACA post-communicating segment right",
+        "Anterior cerebral artery A2 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "ACOM to rostrum/genu junction. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#69b8cb",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.06436619192113,
+          "startPointMm": [
+            2.3,
+            -26.0,
+            84.0
+          ],
+          "endPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.06436619192113,
+          "endArcMm": 52.264917047909364,
+          "startPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "endPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.264917047909364,
+          "endArcMm": 93.94859298468008,
+          "startPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "endPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 93.94859298468008,
+          "endArcMm": 134.02905063268517,
+          "startPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "endPointMm": [
+            3.0,
+            -97.99999999999999,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.",
+      "segmentOf": "artery.anterior.aca_pericallosal_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A2 right"
+      },
+      "segmentRange": {
+        "startArcMm": 0.0,
+        "endArcMm": 32.16697215184444,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_right.segment.a3",
+      "name": "ACA A3 right",
+      "parent": "artery.anterior.aca_pericallosal_right",
+      "children": [
+        "artery.anterior.callosomarginal_right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "A3 precallosal right",
+        "ACA precallosal segment right",
+        "Anterior cerebral artery A3 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Around the genu. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#91b77c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.06436619192113,
+          "startPointMm": [
+            2.3,
+            -26.0,
+            84.0
+          ],
+          "endPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.06436619192113,
+          "endArcMm": 52.264917047909364,
+          "startPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "endPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.264917047909364,
+          "endArcMm": 93.94859298468008,
+          "startPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "endPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 93.94859298468008,
+          "endArcMm": 134.02905063268517,
+          "startPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "endPointMm": [
+            3.0,
+            -97.99999999999999,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A3 segment extends around the genu of the corpus callosum.\n\nSegments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such.",
+      "segmentOf": "artery.anterior.aca_pericallosal_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A3 right"
+      },
+      "segmentRange": {
+        "startArcMm": 32.16697215184444,
+        "endArcMm": 52.27132974674722,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_right.segment.a4",
+      "name": "ACA A4 right",
+      "parent": "artery.anterior.aca_pericallosal_right",
+      "children": [
+        "artery.anterior.paracentral_right",
+        "artery.amendment.short_callosal_branch.right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "A4 supracallosal right",
+        "ACA supracallosal segment right",
+        "Anterior cerebral artery A4 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Body to estimated coronal-suture level. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#e5b35c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.06436619192113,
+          "startPointMm": [
+            2.3,
+            -26.0,
+            84.0
+          ],
+          "endPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.06436619192113,
+          "endArcMm": 52.264917047909364,
+          "startPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "endPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.264917047909364,
+          "endArcMm": 93.94859298468008,
+          "startPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "endPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 93.94859298468008,
+          "endArcMm": 134.02905063268517,
+          "startPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "endPointMm": [
+            3.0,
+            -97.99999999999999,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A4 segment originates at the body of the corpus callosum. The [A5 segment](#structure-artery.anterior.aca_pericallosal_right.segment.a5) is the continuation of the vessel posterior to the coronal suture.",
+      "segmentOf": "artery.anterior.aca_pericallosal_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A4 right"
+      },
+      "segmentRange": {
+        "startArcMm": 52.27132974674722,
+        "endArcMm": 93.82033544287961,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_right.segment.a5",
+      "name": "ACA A5 right",
+      "parent": "artery.anterior.aca_pericallosal_right",
+      "children": [
+        "artery.anterior.precuneal_right",
+        "artery.anterior.inferior_internal_parietal_right",
+        "artery.amendment.long_callosal_branch.right",
+        "artery.amendment.aca_falcine_branch.right",
+        "artery.connection.pericallosal_splenial.right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "A5 postcallosal right",
+        "ACA postcallosal segment right",
+        "Anterior cerebral artery A5 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Posterior to estimated coronal-suture level. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#b969ac",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.06436619192113,
+          "startPointMm": [
+            2.3,
+            -26.0,
+            84.0
+          ],
+          "endPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.06436619192113,
+          "endArcMm": 52.264917047909364,
+          "startPointMm": [
+            3.000540406809447,
+            -10.160570528689037,
+            110.95902406260562
+          ],
+          "endPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.264917047909364,
+          "endArcMm": 93.94859298468008,
+          "startPointMm": [
+            3.000201290763965,
+            -25.37882834869856,
+            121.91727339210307
+          ],
+          "endPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 93.94859298468008,
+          "endArcMm": 134.02905063268517,
+          "startPointMm": [
+            2.999997093865642,
+            -66.75790696961849,
+            122.73191871003475
+          ],
+          "endPointMm": [
+            3.0,
+            -97.99999999999999,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A5 segment is the continuation of the vessel posterior to the coronal suture. The [A4 segment](#structure-artery.anterior.aca_pericallosal_right.segment.a4) originates at the body of the corpus callosum.",
+      "segmentOf": "artery.anterior.aca_pericallosal_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A5 right"
+      },
+      "segmentRange": {
+        "startArcMm": 93.82033544287961,
+        "endArcMm": 134.02905063268517,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_right.segment.v1",
+      "name": "Vertebral V1 right",
+      "parent": "artery.posterior.vertebral_right",
+      "children": [],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "V1 preforaminal right",
+        "Vertebral preforaminal segment right",
+        "Vertebral artery V1 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Truncated proximal course to estimated C6 entry. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#69b8cb",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "This segment extends until the artery enters the [foramen in the transverse process](#structure-landmark.transverse-foramina.right), typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).",
+      "segmentOf": "artery.posterior.vertebral_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V1 right"
+      },
+      "segmentRange": {
+        "startArcMm": 0.0,
+        "endArcMm": 30.306241489829038,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_right.segment.v2",
+      "name": "Vertebral V2 right",
+      "parent": "artery.posterior.vertebral_right",
+      "children": [],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "V2 foraminal right",
+        "Vertebral foraminal segment right",
+        "Vertebral artery V2 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Estimated C6 entry to C2 transverse foramen. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#91b77c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "The artery continues vertically upwards to the C2 [transverse foramina](#structure-landmark.transverse-foramina.right), surrounded by the vertebral venous plexus.",
+      "segmentOf": "artery.posterior.vertebral_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V2 right"
+      },
+      "segmentRange": {
+        "startArcMm": 30.306241489829038,
+        "endArcMm": 97.22002192167577,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_right.segment.v3",
+      "name": "Vertebral V3 right",
+      "parent": "artery.posterior.vertebral_right",
+      "children": [
+        "artery.posterior.posterior_spinal_right",
+        "artery.posterior.va_muscular_c1_right",
+        "artery.posterior.va_muscular_c2_right",
+        "artery.posterior.va_odontoid_contribution_right",
+        "artery.posterior.posterior_meningeal_va_right",
+        "artery.amendment.va_anterior_meningeal.right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "V3 extracranial right",
+        "Vertebral extracranial segment right",
+        "Vertebral artery V3 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "C2, C1 loop and atlas groove to estimated dural entry. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#e5b35c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "Starts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a [groove on the posterior arch of the atlas](#structure-landmark.atlas-groove.right), which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.right) (a possible risk factor for paediatric ischaemic stroke).",
+      "segmentOf": "artery.posterior.vertebral_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V3 right"
+      },
+      "segmentRange": {
+        "startArcMm": 97.22002192167577,
+        "endArcMm": 174.33587383454062,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_right.segment.v4",
+      "name": "Vertebral V4 right",
+      "parent": "artery.posterior.vertebral_right",
+      "children": [
+        "artery.posterior.basilar",
+        "artery.posterior.pica_right",
+        "artery.posterior.anterior_spinal_root_right",
+        "artery.amendment.va_medullary_perforator_1.right",
+        "artery.amendment.va_medullary_perforator_2.right"
+      ],
+      "system": "artery",
+      "side": "right",
+      "kind": "structure",
+      "aliases": [
+        "V4 intracranial right",
+        "Vertebral intracranial segment right",
+        "Vertebral artery V4 right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Intradural course to vertebrobasilar junction. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#b969ac",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "This segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata.",
+      "segmentOf": "artery.posterior.vertebral_right",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V4 right"
+      },
+      "segmentRange": {
+        "startArcMm": 174.33587383454062,
+        "endArcMm": 194.13995787773393,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_left",
+      "name": "ACA left",
+      "parent": "artery.anterior.internal_carotid_left.segment.terminus",
+      "children": [
+        "artery.anterior.aca_a1_left",
+        "artery.anterior.aca_pericallosal_left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "group",
+      "aliases": [
+        "Anterior cerebral artery left",
+        "ACA A1 A2 A3 A4 A5 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002"
+        ]
+      },
+      "notes": "Whole ACA, including the pre-communicating and distal pericallosal sections.",
+      "color": "#d980bf",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.36363205502999,
+          "startPointMm": [
+            -2.3,
+            -25.885714285714286,
+            83.99999999999999
+          ],
+          "endPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.36363205502999,
+          "endArcMm": 52.5508482762287,
+          "startPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "endPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.5508482762287,
+          "endArcMm": 94.2070082394776,
+          "startPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "endPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 94.2070082394776,
+          "endArcMm": 134.5814402168945,
+          "startPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "endPointMm": [
+            -3.0000000000000004,
+            -97.37142857142855,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The ACA is the medial terminal division of the [ICA](#structure-artery.anterior.internal_carotid_left), originating lateral to the optic chiasm and beneath the anterior perforated substance.\n\nACA territory includes the medial frontal and parietal lobes, extending variably over the convexity, in equilibrium with MCA branches."
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_left.segment.a2",
+      "name": "ACA A2 left",
+      "parent": "artery.anterior.aca_pericallosal_left",
+      "children": [
+        "artery.anterior.recurrent_artery_of_heubner_left",
+        "artery.anterior.aca_orbitofrontal_left",
+        "artery.anterior.aca_frontopolar_left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "A2 post-communicating left",
+        "ACA post-communicating segment left",
+        "Anterior cerebral artery A2 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "ACOM to rostrum/genu junction. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#69b8cb",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.36363205502999,
+          "startPointMm": [
+            -2.3,
+            -25.885714285714286,
+            83.99999999999999
+          ],
+          "endPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.36363205502999,
+          "endArcMm": 52.5508482762287,
+          "startPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "endPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.5508482762287,
+          "endArcMm": 94.2070082394776,
+          "startPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "endPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 94.2070082394776,
+          "endArcMm": 134.5814402168945,
+          "startPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "endPointMm": [
+            -3.0000000000000004,
+            -97.37142857142855,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A2 segment arises distal to the [ACOM](#structure-artery.anterior.anterior_communicating) and extends to the junction of the rostrum and genu of the corpus callosum.",
+      "segmentOf": "artery.anterior.aca_pericallosal_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A2 left"
+      },
+      "segmentRange": {
+        "startArcMm": 0.0,
+        "endArcMm": 32.299545652054675,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_left.segment.a3",
+      "name": "ACA A3 left",
+      "parent": "artery.anterior.aca_pericallosal_left",
+      "children": [
+        "artery.anterior.callosomarginal_left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "A3 precallosal left",
+        "ACA precallosal segment left",
+        "Anterior cerebral artery A3 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Around the genu. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#91b77c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.36363205502999,
+          "startPointMm": [
+            -2.3,
+            -25.885714285714286,
+            83.99999999999999
+          ],
+          "endPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.36363205502999,
+          "endArcMm": 52.5508482762287,
+          "startPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "endPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.5508482762287,
+          "endArcMm": 94.2070082394776,
+          "startPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "endPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 94.2070082394776,
+          "endArcMm": 134.5814402168945,
+          "startPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "endPointMm": [
+            -3.0000000000000004,
+            -97.37142857142855,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A3 segment extends around the genu of the corpus callosum.\n\nSegments inclusive of and distal to the A3 are generally called the pericallosal artery, although sometimes the A2 segment is also referred to as such.",
+      "segmentOf": "artery.anterior.aca_pericallosal_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A3 left"
+      },
+      "segmentRange": {
+        "startArcMm": 32.299545652054675,
+        "endArcMm": 52.486761684588856,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_left.segment.a4",
+      "name": "ACA A4 left",
+      "parent": "artery.anterior.aca_pericallosal_left",
+      "children": [
+        "artery.anterior.paracentral_left",
+        "artery.amendment.short_callosal_branch.left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "A4 supracallosal left",
+        "ACA supracallosal segment left",
+        "Anterior cerebral artery A4 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Body to estimated coronal-suture level. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#e5b35c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.36363205502999,
+          "startPointMm": [
+            -2.3,
+            -25.885714285714286,
+            83.99999999999999
+          ],
+          "endPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.36363205502999,
+          "endArcMm": 52.5508482762287,
+          "startPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "endPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.5508482762287,
+          "endArcMm": 94.2070082394776,
+          "startPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "endPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 94.2070082394776,
+          "endArcMm": 134.5814402168945,
+          "startPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "endPointMm": [
+            -3.0000000000000004,
+            -97.37142857142855,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A4 segment originates at the body of the corpus callosum. The [A5 segment](#structure-artery.anterior.aca_pericallosal_left.segment.a5) is the continuation of the vessel posterior to the coronal suture.",
+      "segmentOf": "artery.anterior.aca_pericallosal_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A4 left"
+      },
+      "segmentRange": {
+        "startArcMm": 52.486761684588856,
+        "endArcMm": 94.20700815182614,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_left.segment.a5",
+      "name": "ACA A5 left",
+      "parent": "artery.anterior.aca_pericallosal_left",
+      "children": [
+        "artery.anterior.precuneal_left",
+        "artery.anterior.inferior_internal_parietal_left",
+        "artery.amendment.long_callosal_branch.left",
+        "artery.amendment.aca_falcine_branch.left",
+        "artery.connection.pericallosal_splenial.left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "A5 postcallosal left",
+        "ACA postcallosal segment left",
+        "Anterior cerebral artery A5 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.anterior",
+          "ref.ferreira2002",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Posterior to estimated coronal-suture level. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#b969ac",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "arterialSegments": [
+        {
+          "name": "A2",
+          "startArcMm": 0.0,
+          "endArcMm": 32.36363205502999,
+          "startPointMm": [
+            -2.3,
+            -25.885714285714286,
+            83.99999999999999
+          ],
+          "endPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "boundaryDefinition": "ACom to genu region",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A3",
+          "startArcMm": 32.36363205502999,
+          "endArcMm": 52.5508482762287,
+          "startPointMm": [
+            -3.0004683050863057,
+            -9.271473219244573,
+            110.88350137949983
+          ],
+          "endPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "boundaryDefinition": "Around genu",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A4",
+          "startArcMm": 52.5508482762287,
+          "endArcMm": 94.2070082394776,
+          "startPointMm": [
+            -3.0001985276034433,
+            -24.288177759546397,
+            121.9434494973787
+          ],
+          "endPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "boundaryDefinition": "Supracallosal body",
+          "status": "provisional reference range; tissue registration pending"
+        },
+        {
+          "name": "A5",
+          "startArcMm": 94.2070082394776,
+          "endArcMm": 134.5814402168945,
+          "startPointMm": [
+            -2.9999969707090606,
+            -65.64033135456039,
+            122.71559937625274
+          ],
+          "endPointMm": [
+            -3.0000000000000004,
+            -97.37142857142855,
+            102.0
+          ],
+          "boundaryDefinition": "Posterior pericallosal territory",
+          "status": "provisional reference range; tissue registration pending"
+        }
+      ],
+      "description": "The A5 segment is the continuation of the vessel posterior to the coronal suture. The [A4 segment](#structure-artery.anterior.aca_pericallosal_left.segment.a4) originates at the body of the corpus callosum.",
+      "segmentOf": "artery.anterior.aca_pericallosal_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "ACA A5 left"
+      },
+      "segmentRange": {
+        "startArcMm": 94.20700815182614,
+        "endArcMm": 134.5814402168945,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_left.segment.v1",
+      "name": "Vertebral V1 left",
+      "parent": "artery.posterior.vertebral_left",
+      "children": [],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "V1 preforaminal left",
+        "Vertebral preforaminal segment left",
+        "Vertebral artery V1 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Truncated proximal course to estimated C6 entry. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#69b8cb",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "This segment extends until the artery enters the [foramen in the transverse process](#structure-landmark.transverse-foramina.left), typically at the C6 level (C4 if the vertebral artery arises from the aortic arch).",
+      "segmentOf": "artery.posterior.vertebral_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V1 left"
+      },
+      "segmentRange": {
+        "startArcMm": 0.0,
+        "endArcMm": 30.33893058487912,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_left.segment.v2",
+      "name": "Vertebral V2 left",
+      "parent": "artery.posterior.vertebral_left",
+      "children": [],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "V2 foraminal left",
+        "Vertebral foraminal segment left",
+        "Vertebral artery V2 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Estimated C6 entry to C2 transverse foramen. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#91b77c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "The artery continues vertically upwards to the C2 [transverse foramina](#structure-landmark.transverse-foramina.left), surrounded by the vertebral venous plexus.",
+      "segmentOf": "artery.posterior.vertebral_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V2 left"
+      },
+      "segmentRange": {
+        "startArcMm": 30.33893058487912,
+        "endArcMm": 97.62527137217018,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_left.segment.v3",
+      "name": "Vertebral V3 left",
+      "parent": "artery.posterior.vertebral_left",
+      "children": [
+        "artery.posterior.posterior_spinal_left",
+        "artery.posterior.va_muscular_c1_left",
+        "artery.posterior.va_muscular_c2_left",
+        "artery.posterior.va_odontoid_contribution_left",
+        "artery.posterior.posterior_meningeal_va_left",
+        "artery.amendment.va_anterior_meningeal.left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "V3 extracranial left",
+        "Vertebral extracranial segment left",
+        "Vertebral artery V3 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "C2, C1 loop and atlas groove to estimated dural entry. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#e5b35c",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "Starts at the foramen transversarium of the axis (C2). The artery turns laterally and ascends, passing through the transverse foramen of the atlas (C1). It then curves medially and is directed towards the [foramen magnum](#structure-landmark.foramen-magnum.midline). It imprints a [groove on the posterior arch of the atlas](#structure-landmark.atlas-groove.left), which may rarely form a bony ring called the [arcuate foramen](#structure-landmark.arcuate-foramen.left) (a possible risk factor for paediatric ischaemic stroke).",
+      "segmentOf": "artery.posterior.vertebral_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V3 left"
+      },
+      "segmentRange": {
+        "startArcMm": 97.62527137217018,
+        "endArcMm": 174.22353135260676,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_left.segment.v4",
+      "name": "Vertebral V4 left",
+      "parent": "artery.posterior.vertebral_left",
+      "children": [
+        "artery.posterior.pica_left",
+        "artery.posterior.anterior_spinal_root_left",
+        "artery.amendment.va_medullary_perforator_1.left",
+        "artery.amendment.va_medullary_perforator_2.left"
+      ],
+      "system": "artery",
+      "side": "left",
+      "kind": "structure",
+      "aliases": [
+        "V4 intracranial left",
+        "Vertebral intracranial segment left",
+        "Vertebral artery V4 left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Reference-guided; tissue depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.borden.posterior",
+          "ref.lucifero2021",
+          "ref.parraga2011",
+          "ref.lynch.neurovascular-notes"
+        ]
+      },
+      "notes": "Intradural course to vertebrobasilar junction. Boundary is a reference estimate; existing vessel surface retained.",
+      "color": "#b969ac",
+      "calibreProvenance": {
+        "units": "mm",
+        "measurement": "illustrative radius profile",
+        "displayEnhancement": "Small branches may be enlarged for visibility; no quantitative haemodynamic interpretation."
+      },
+      "referenceConfiguration": "Bilateral template with separate local fitting; not independent bilateral patient segmentations.",
+      "description": "This segment pierces the atlanto-occipital membrane to become intradural (where it is focally smoothly narrowed), entering the cranial cavity via the [foramen magnum](#structure-landmark.foramen-magnum.midline). It continues medially until it joins its counterpart to form the [basilar artery](#structure-artery.posterior.basilar) at the upper edge of the medulla oblongata.",
+      "segmentOf": "artery.posterior.vertebral_left",
+      "asset": {
+        "file": "models/complete-circulation.glb",
+        "node": "Vertebral V4 left"
+      },
+      "segmentRange": {
+        "startArcMm": 174.22353135260676,
+        "endArcMm": 194.64974692989082,
+        "status": "reference-model station; anatomical boundary estimated"
+      }
     }
   ],
   "relationships": [
@@ -43713,32 +45213,22 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.internal_carotid_right.segment.terminus",
-      "to": "artery.anterior.aca_a1_right",
-      "type": "branches_to"
-    },
-    {
-      "from": "artery.anterior.aca_a1_right",
-      "to": "artery.anterior.aca_pericallosal_right",
-      "type": "branches_to"
-    },
-    {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a2",
       "to": "artery.anterior.recurrent_artery_of_heubner_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a2",
       "to": "artery.anterior.aca_orbitofrontal_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a2",
       "to": "artery.anterior.aca_frontopolar_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a3",
       "to": "artery.anterior.callosomarginal_right",
       "type": "branches_to"
     },
@@ -43758,17 +45248,17 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a4",
       "to": "artery.anterior.paracentral_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a5",
       "to": "artery.anterior.precuneal_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a5",
       "to": "artery.anterior.inferior_internal_parietal_right",
       "type": "branches_to"
     },
@@ -44018,32 +45508,22 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.internal_carotid_left.segment.terminus",
-      "to": "artery.anterior.aca_a1_left",
-      "type": "branches_to"
-    },
-    {
-      "from": "artery.anterior.aca_a1_left",
-      "to": "artery.anterior.aca_pericallosal_left",
-      "type": "branches_to"
-    },
-    {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a2",
       "to": "artery.anterior.recurrent_artery_of_heubner_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a2",
       "to": "artery.anterior.aca_orbitofrontal_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a2",
       "to": "artery.anterior.aca_frontopolar_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a3",
       "to": "artery.anterior.callosomarginal_left",
       "type": "branches_to"
     },
@@ -44063,17 +45543,17 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a4",
       "to": "artery.anterior.paracentral_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a5",
       "to": "artery.anterior.precuneal_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a5",
       "to": "artery.anterior.inferior_internal_parietal_left",
       "type": "branches_to"
     },
@@ -44223,7 +45703,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.posterior.basilar",
       "type": "branches_to"
     },
@@ -44378,7 +45858,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.posterior.pica_right",
       "type": "branches_to"
     },
@@ -44413,32 +45893,32 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.posterior.anterior_spinal_root_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.posterior_spinal_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.va_muscular_c1_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.va_muscular_c2_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.va_odontoid_contribution_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.posterior_meningeal_va_right",
       "type": "branches_to"
     },
@@ -44613,7 +46093,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v4",
       "to": "artery.posterior.pica_left",
       "type": "branches_to"
     },
@@ -44648,32 +46128,32 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v4",
       "to": "artery.posterior.anterior_spinal_root_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.posterior_spinal_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.va_muscular_c1_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.va_muscular_c2_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.va_odontoid_contribution_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.posterior_meningeal_va_left",
       "type": "branches_to"
     },
@@ -45723,32 +47203,32 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a4",
       "to": "artery.amendment.short_callosal_branch.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a4",
       "to": "artery.amendment.short_callosal_branch.left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a5",
       "to": "artery.amendment.long_callosal_branch.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a5",
       "to": "artery.amendment.long_callosal_branch.left",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_right",
+      "from": "artery.anterior.aca_pericallosal_right.segment.a5",
       "to": "artery.amendment.aca_falcine_branch.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.anterior.aca_pericallosal_left",
+      "from": "artery.anterior.aca_pericallosal_left.segment.a5",
       "to": "artery.amendment.aca_falcine_branch.left",
       "type": "branches_to"
     },
@@ -45843,32 +47323,32 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.amendment.va_anterior_meningeal.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.amendment.va_anterior_meningeal.left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.amendment.va_medullary_perforator_1.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v4",
       "to": "artery.amendment.va_medullary_perforator_1.left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.amendment.va_medullary_perforator_2.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left",
+      "from": "artery.posterior.vertebral_left.segment.v4",
       "to": "artery.amendment.va_medullary_perforator_2.left",
       "type": "branches_to"
     },
@@ -46126,6 +47606,116 @@
       "from": "artery.anterior.internal_carotid_left",
       "to": "artery.anterior.internal_carotid_left.segment.terminus",
       "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.internal_carotid_right.segment.terminus",
+      "to": "artery.anterior.aca_right",
+      "type": "branches_to"
+    },
+    {
+      "from": "artery.anterior.internal_carotid_left.segment.terminus",
+      "to": "artery.anterior.aca_left",
+      "type": "branches_to"
+    },
+    {
+      "from": "artery.anterior.aca_right",
+      "to": "artery.anterior.aca_a1_right",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_right",
+      "to": "artery.anterior.aca_pericallosal_right",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_left",
+      "to": "artery.anterior.aca_a1_left",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_left",
+      "to": "artery.anterior.aca_pericallosal_left",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_right",
+      "to": "artery.anterior.aca_pericallosal_right.segment.a2",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_right",
+      "to": "artery.anterior.aca_pericallosal_right.segment.a3",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_right",
+      "to": "artery.anterior.aca_pericallosal_right.segment.a4",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_right",
+      "to": "artery.anterior.aca_pericallosal_right.segment.a5",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_right",
+      "to": "artery.posterior.vertebral_right.segment.v1",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_right",
+      "to": "artery.posterior.vertebral_right.segment.v2",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_right",
+      "to": "artery.posterior.vertebral_right.segment.v3",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_right",
+      "to": "artery.posterior.vertebral_right.segment.v4",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_left",
+      "to": "artery.anterior.aca_pericallosal_left.segment.a2",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_left",
+      "to": "artery.anterior.aca_pericallosal_left.segment.a3",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_left",
+      "to": "artery.anterior.aca_pericallosal_left.segment.a4",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.anterior.aca_pericallosal_left",
+      "to": "artery.anterior.aca_pericallosal_left.segment.a5",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_left",
+      "to": "artery.posterior.vertebral_left.segment.v1",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_left",
+      "to": "artery.posterior.vertebral_left.segment.v2",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_left",
+      "to": "artery.posterior.vertebral_left.segment.v3",
+      "type": "has_segment"
+    },
+    {
+      "from": "artery.posterior.vertebral_left",
+      "to": "artery.posterior.vertebral_left.segment.v4",
+      "type": "has_segment"
     }
   ],
   "sources": [
@@ -46270,5 +47860,10 @@
     "bone",
     "artery"
   ],
-  "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register."
+  "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
+  "assetByteSizes": {
+    "models/craniofacial.glb": 5014620,
+    "models/complete-circulation.glb": 70712380,
+    "models/complete-anastomoses.glb": 2972624
+  }
 }

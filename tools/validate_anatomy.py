@@ -92,6 +92,7 @@ def validate_eca(build=False, filename="eca_manifest.json", output="eca-manifest
     if build and not errors:
         manifest['release']=RELEASE
         manifest['assetRevisions']={str(p.relative_to(PUBLIC)):hashlib.sha256(p.read_bytes()).hexdigest()[:20] for p in assets}
+        manifest['assetByteSizes']={str(p.relative_to(PUBLIC)):p.stat().st_size for p in assets}
         (PUBLIC/output).write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     return errors,len(bindings)
 

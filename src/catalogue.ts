@@ -1,5 +1,24 @@
 import type { AnatomyManifest, Structure } from './types';
 
+// Segment ownership can nest: whole ACA -> pericallosal -> A2-A5.
+// Ordinary arterial branches are not members of the parent vessel's surface.
+export function segmentGeometryMembers(structures: Structure[]): Map<string, Set<string>> {
+  const byId = new Map(structures.map(s => [s.id, s]));
+  const members = new Map<string, Set<string>>();
+  for (const structure of structures) {
+    if (!structure.asset) continue;
+    let cursor: Structure | undefined = structure;
+    const visited = new Set<string>();
+    while (cursor && !visited.has(cursor.id)) {
+      visited.add(cursor.id);
+      if (!members.has(cursor.id)) members.set(cursor.id, new Set());
+      members.get(cursor.id)!.add(structure.id);
+      cursor = cursor.segmentOf ? byId.get(cursor.segmentOf) : undefined;
+    }
+  }
+  return members;
+}
+
 export function geometrySubtrees(byId: ReadonlyMap<string, Structure>): Map<string, string[]> {
   const subtrees = new Map<string, string[]>();
   const collect = (id: string): string[] => {
