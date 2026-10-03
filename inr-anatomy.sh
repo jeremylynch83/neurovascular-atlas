@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # INR Anatomy Atlas: GitHub checkout, local Docker app and GitHub Pages.
 set -euo pipefail
-INSTALLER_VERSION="0.7.1"
+INSTALLER_VERSION="0.7.2"
 
 SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
@@ -107,7 +107,7 @@ prepare_checkout() {
 import_release() {
   # Extract safely and copy only application files. The Git history is retained.
   python3 - "$SCRIPT_DIR" "$CHECKOUT" "$ZIP_ARG" "$TEMP_DIR" <<'PY'
-import json,os,re,shutil,stat,sys,zipfile
+import json,os,re,shutil,stat,sys,zipfile,zlib
 from pathlib import Path,PurePosixPath
 source,dest,explicit,tmp=map(Path,(sys.argv[1],sys.argv[2],sys.argv[3] or '.',sys.argv[4]))
 pattern=re.compile(r'inr-anatomy-atlas-v(\d+)\.(\d+)\.(\d+)\.zip$')
@@ -122,19 +122,30 @@ if sys.argv[3]:
     if not archive.is_file(): raise SystemExit(f'Error: release ZIP not found: {archive}')
 else:
     choices=[p for folder in {source,dest} for p in folder.glob('inr-anatomy-atlas-v*.zip') if pattern.fullmatch(p.name)]
-    archive=max(choices,key=key) if choices else None
+    archive=max(choices,key=lambda p:(key(p),str(p))) if choices else None
 if archive is None:
     if current is None: raise SystemExit('Error: empty repository. Place the app ZIP beside this script and run again.')
     print(f'Using Git checkout v{current}.'); raise SystemExit(0)
 if not sys.argv[3] and current and key(archive)<=tuple(map(int,current.split('.'))):
     print(f'Using Git checkout v{current}; adjacent ZIP is not newer.'); raise SystemExit(0)
 staging=tmp/'release'; staging.mkdir()
-with zipfile.ZipFile(archive) as z:
-    for info in z.infolist():
-        p=PurePosixPath(info.filename)
-        if p.is_absolute() or '..' in p.parts or '\\' in info.filename or stat.S_ISLNK(info.external_attr>>16):
-            raise SystemExit(f'Error: unsafe ZIP entry: {info.filename}')
-        z.extract(info,staging)
+print(f'Checking release ZIP: {archive}',flush=True)
+try:
+    with zipfile.ZipFile(archive) as z:
+        for info in z.infolist():
+            p=PurePosixPath(info.filename)
+            if p.is_absolute() or '..' in p.parts or '\\' in info.filename or stat.S_ISLNK(info.external_attr>>16):
+                raise SystemExit(f'Error: unsafe ZIP entry: {info.filename}')
+            z.extract(info,staging)
+except (zipfile.BadZipFile,EOFError,zlib.error) as error:
+    raise SystemExit(
+        f'Error: release ZIP is incomplete or corrupt: {archive}\n'
+        'Replace it with a fresh download, wait for the download or Insync copy to finish, then run again.\n'
+        'No release files were imported; the running app has not been changed.\n'
+        f'Detail: {error}'
+    ) from None
+except (OSError,RuntimeError,NotImplementedError) as error:
+    raise SystemExit(f'Error: cannot read release ZIP: {archive}\nDetail: {error}') from None
 root=staging
 if not (root/'package.json').is_file():
     children=[p for p in root.iterdir() if p.name!='__MACOSX']

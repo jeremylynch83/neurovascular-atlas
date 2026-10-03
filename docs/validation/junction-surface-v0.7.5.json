@@ -1,0 +1,77 @@
+{
+  "release": "0.7.5",
+  "method": "Local swept-tube boolean union, shared-surface junction fairing, retained source skin outside bilateral regions",
+  "regions_mm": [
+    {
+      "min": [
+        5.0,
+        -57.0,
+        69.5
+      ],
+      "max": [
+        35.0,
+        -26.0,
+        94.0
+      ]
+    },
+    {
+      "min": [
+        -33.7,
+        -57.0,
+        69.5
+      ],
+      "max": [
+        -3.7,
+        -26.0,
+        94.0
+      ]
+    }
+  ],
+  "rebuilt_parts": [
+    "ACA A1 left",
+    "ACA A1 right",
+    "Anterior choroidal left",
+    "Anterior choroidal right",
+    "Anterior temporal left",
+    "Anterior temporal right",
+    "Inferior hypophyseal left",
+    "Inferior hypophyseal right",
+    "Internal carotid left",
+    "Internal carotid right",
+    "Lateral lenticulostriate 1 left",
+    "Lateral lenticulostriate 1 right",
+    "Lateral lenticulostriate 2 left",
+    "Lateral lenticulostriate 2 right",
+    "Lateral lenticulostriate 3 left",
+    "Lateral lenticulostriate 3 right",
+    "MCA M1 left",
+    "MCA M1 right",
+    "Medial lenticulostriate left",
+    "Medial lenticulostriate right",
+    "Ophthalmic left",
+    "Ophthalmic right",
+    "PCA P1 left",
+    "PCA P1 right",
+    "PCA P2-P3 left",
+    "PCA P2-P3 right",
+    "PCom perforator left",
+    "PCom perforator right",
+    "Posterior communicating left",
+    "Posterior communicating right",
+    "Recurrent artery of Heubner left",
+    "Recurrent artery of Heubner right",
+    "Superior hypophyseal left",
+    "Superior hypophyseal right"
+  ],
+  "parts": 385,
+  "vertices": 2533193,
+  "faces": 5066390,
+  "box_transition_faces": 1856,
+  "terminal_parent_skin_radius_mm": 1.45,
+  "terminal_taper_length_mm": 2.5,
+  "all_finite": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "euler_number": -2,
+  "volume_mm3": 22911.560058251587
+}

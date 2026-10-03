@@ -1069,7 +1069,7 @@
       "vessels": [
         "Internal carotid"
       ],
-      "note": "Corrected v0.7.3: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
+      "note": "Corrected v0.7.5: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
     },
     {
       "id": "landmark.carotid-canal.left",
@@ -1189,7 +1189,7 @@
       "vessels": [
         "Internal carotid"
       ],
-      "note": "Corrected v0.7.3: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
+      "note": "Corrected v0.7.5: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
     },
     {
       "id": "landmark.caroticotympanic.right",
@@ -2049,7 +2049,7 @@
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
+      "note": "v0.7.5: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-foramen.left",
@@ -2068,7 +2068,7 @@
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
+      "note": "v0.7.5: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-canal.right",
@@ -2313,7 +2313,7 @@
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
+      "note": "v0.7.5: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-canal.left",
@@ -2558,7 +2558,7 @@
       "vessels": [
         "Inferior alveolar"
       ],
-      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
+      "note": "v0.7.5: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mental-foramen.right",
@@ -2577,7 +2577,7 @@
       "vessels": [
         "Mental"
       ],
-      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
+      "note": "v0.7.5: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mental-foramen.left",
@@ -2596,7 +2596,7 @@
       "vessels": [
         "Mental"
       ],
-      "note": "v0.7.3: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
+      "note": "v0.7.5: route fitted to the mandibular body and visible entrance/exit depressions. The complete intraosseous canal lumen is not segmented; the canal course remains an estimate."
     },
     {
       "id": "landmark.mandibular-incisive.right",
@@ -3413,84 +3413,154 @@
       ],
       "course": [
         [
-          11.101,
-          -42.42,
-          70.173
+          11.101258808355416,
+          -42.4199372424565,
+          70.17253836623014
         ],
         [
-          11.048,
-          -42.469,
-          70.497
+          11.075246270487973,
+          -42.44384584396449,
+          70.311019474293
         ],
         [
-          11.02,
-          -42.495,
-          70.828
+          11.04757862087742,
+          -42.46906403438261,
+          70.49736061096255
         ],
         [
-          11.018,
-          -42.499,
-          71.162
+          11.028534449009886,
+          -42.48649800502662,
+          70.68549731321423
         ],
         [
-          11.044,
-          -42.484,
-          71.498
+          11.019597158718788,
+          -42.49499559912085,
+          70.8275418368038
         ],
         [
-          11.105,
-          -42.447,
-          71.884
+          11.015672781576763,
+          -42.49986354125783,
+          71.01809372080284
         ],
         [
-          11.169,
-          -42.408,
-          72.166
+          11.020372625577519,
+          -42.498172632100086,
+          71.2096395599142
         ],
         [
-          11.227,
-          -42.375,
-          72.371
+          11.033687158913741,
+          -42.49035052311375,
+          71.40193046979073
         ],
         [
-          11.292,
-          -42.338,
-          72.576
+          11.049466827473765,
+          -42.48062037754951,
+          71.54650409259587
         ],
         [
-          11.365,
-          -42.298,
-          72.781
+          11.077823252124873,
+          -42.463079994577704,
+          71.73955187919799
         ],
         [
-          11.457,
-          -42.249,
-          73.014
+          11.114378167617332,
+          -42.44075219301694,
+          71.93275165773518
         ],
         [
-          11.543,
-          -42.204,
-          73.218
+          11.147332756432693,
+          -42.42099652360569,
+          72.07764923843256
         ],
         [
-          11.634,
-          -42.157,
-          73.422
+          11.176995497695577,
+          -42.40347522410691,
+          72.19508650526488
         ],
         [
-          11.73,
-          -42.11,
-          73.626
+          11.209686640253755,
+          -42.38448362300367,
+          72.31244937752314
         ],
         [
-          11.829,
-          -42.061,
-          73.829
+          11.244841323723783,
+          -42.36435407134062,
+          72.42973067569774
         ],
         [
-          11.946,
-          -42.004,
-          74.062
+          11.272919810742811,
+          -42.34849903574718,
+          72.51762417399478
+        ],
+        [
+          11.31253195983462,
+          -42.32644062234929,
+          72.63471746943912
+        ],
+        [
+          11.354525393246291,
+          -42.28763630780768,
+          72.75169300879743
+        ],
+        [
+          11.39857164364152,
+          -42.20021238638825,
+          72.86856006173159
+        ],
+        [
+          11.433049616684325,
+          -42.10367137466912,
+          72.95613148823773
+        ],
+        [
+          11.480859288562362,
+          -41.93606858145807,
+          73.07279215847949
+        ],
+        [
+          11.530390713091595,
+          -41.72719022727685,
+          73.18936035952107
+        ],
+        [
+          11.568663206015023,
+          -41.545419408233286,
+          73.27672952896229
+        ],
+        [
+          11.621050607347561,
+          -41.27243581000352,
+          73.39315987843513
+        ],
+        [
+          11.674970684718156,
+          -40.96768721145626,
+          73.50953229405197
+        ],
+        [
+          11.73010077110645,
+          -40.63520570100547,
+          73.62587312289617
+        ],
+        [
+          11.772249911389835,
+          -40.36989714542521,
+          73.71311893403798
+        ],
+        [
+          11.829403938435524,
+          -39.99813302695261,
+          73.82945458284787
+        ],
+        [
+          11.887467230271396,
+          -39.60967927611713,
+          73.94582037483008
+        ],
+        [
+          11.946282302737663,
+          -39.20884841425253,
+          74.06223681171014
         ]
       ],
       "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",
@@ -4052,84 +4122,154 @@
       ],
       "course": [
         [
-          -9.801,
-          -42.42,
-          70.073
+          -9.801181875907776,
+          -42.419798817103825,
+          70.07265317063703
         ],
         [
-          -9.747,
-          -42.469,
-          70.398
+          -9.774939988799261,
+          -42.44387894469422,
+          70.21110683073272
         ],
         [
-          -9.719,
-          -42.495,
-          70.728
+          -9.747404552187376,
+          -42.46888833025446,
+          70.39753184675541
         ],
         [
-          -9.719,
-          -42.498,
-          71.11
+          -9.728142008850217,
+          -42.48641027224545,
+          70.58569133681682
         ],
         [
-          -9.748,
-          -42.48,
-          71.447
+          -9.717317925552674,
+          -42.49671571268414,
+          70.77533045000716
         ],
         [
-          -9.812,
-          -42.44,
-          71.834
+          -9.715219166495718,
+          -42.50000311218282,
+          70.96621154605899
         ],
         [
-          -9.873,
-          -42.404,
-          72.09
+          -9.721966073921672,
+          -42.49662871691805,
+          71.15807353330618
         ],
         [
-          -9.935,
-          -42.367,
-          72.312
+          -9.737261424697374,
+          -42.48723718046077,
+          71.35063904579914
         ],
         [
-          -9.997,
-          -42.332,
-          72.506
+          -9.754332214487404,
+          -42.47649306855874,
+          71.49539135221559
         ],
         [
-          -10.076,
-          -42.288,
-          72.727
+          -9.784480123102112,
+          -42.457591643901885,
+          71.68866818692081
         ],
         [
-          -10.151,
-          -42.247,
-          72.921
+          -9.822675033065932,
+          -42.434025135065404,
+          71.88208740939004
         ],
         [
-          -10.243,
-          -42.198,
-          73.142
+          -9.858396401762635,
+          -42.41241549800948,
+          72.03433856312868
         ],
         [
-          -10.328,
-          -42.154,
-          73.335
+          -9.887241257718825,
+          -42.39522887550118,
+          72.1453859661494
         ],
         [
-          -10.43,
-          -42.102,
-          73.555
+          -9.918642098583744,
+          -42.37680045473249,
+          72.25637845150827
         ],
         [
-          -10.522,
-          -42.055,
-          73.749
+          -9.952347931562839,
+          -42.357301437628124,
+          72.36730519523944
         ],
         [
-          -10.63,
-          -42.002,
-          73.97
+          -9.979031903099045,
+          -42.34205050787171,
+          72.45045285485567
+        ],
+        [
+          -10.016421155224394,
+          -42.320937093873276,
+          72.56124836547829
+        ],
+        [
+          -10.0558066873738,
+          -42.29899815947196,
+          72.67196269257525
+        ],
+        [
+          -10.09725939145291,
+          -42.255636184492786,
+          72.78258878446634
+        ],
+        [
+          -10.14040521121335,
+          -42.17155690918751,
+          72.89314196875813
+        ],
+        [
+          -10.185141676045012,
+          -42.04899387377225,
+          73.00362872635853
+        ],
+        [
+          -10.231584495357831,
+          -41.890102221309455,
+          73.11405036091058
+        ],
+        [
+          -10.267306343874534,
+          -41.748674973758256,
+          73.19683746147119
+        ],
+        [
+          -10.316134765472157,
+          -41.53237417486763,
+          73.30718981645661
+        ],
+        [
+          -10.366118155149014,
+          -41.286915772675904,
+          73.417524703505
+        ],
+        [
+          -10.417220660129795,
+          -41.014954297572615,
+          73.52785900548368
+        ],
+        [
+          -10.469353010199134,
+          -40.71927868946611,
+          73.63821407384032
+        ],
+        [
+          -10.522299030055647,
+          -40.40295550023764,
+          73.74860739182418
+        ],
+        [
+          -10.575963372462578,
+          -40.06898374879898,
+          73.85905750421952
+        ],
+        [
+          -10.630342352760907,
+          -39.72025494529046,
+          73.96959926953424
         ]
       ],
       "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",

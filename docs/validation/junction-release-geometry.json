@@ -1,0 +1,24 @@
+{
+  "release": "0.7.5",
+  "production_local_build_passed": true,
+  "production_pages_build_passed": true,
+  "catalogue_structures": 649,
+  "named_asset_bindings": 479,
+  "bones_unchanged_from_0_7_4": true,
+  "assets": {
+    "craniofacial.glb": {
+      "bytes": 5014620,
+      "sha256": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a"
+    },
+    "complete-circulation.glb": {
+      "bytes": 61619472,
+      "sha256": "acb541cedc9614609afc93eb626c5f1142d9e617f8de1c2da14cfd1b2774d873"
+    },
+    "complete-anastomoses.glb": {
+      "bytes": 1081372,
+      "sha256": "30c353b079f11954d7cc26ea728f5e43d3cfa0daf6f4c883cf8a69f037b92901"
+    }
+  },
+  "interactive_browser_check_performed": false,
+  "review": "Actual exported surfaces rendered with matched cameras."
+}

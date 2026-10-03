@@ -1,0 +1,49 @@
+{
+  "release": "0.7.6",
+  "production_local_build_passed": true,
+  "production_pages_build_passed": true,
+  "catalogue_structures": 663,
+  "named_asset_bindings": 491,
+  "bones_unchanged_from_0_7_5": true,
+  "assets": {
+    "craniofacial.glb": {
+      "bytes": 5014620,
+      "sha256": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a"
+    },
+    "complete-circulation.glb": {
+      "bytes": 61678212,
+      "sha256": "62923d707271c774b456e172b1947c6aedb81ba40cabd335e1072ee6e87b1375"
+    },
+    "complete-anastomoses.glb": {
+      "bytes": 1081372,
+      "sha256": "30c353b079f11954d7cc26ea728f5e43d3cfa0daf6f4c883cf8a69f037b92901"
+    }
+  },
+  "interactive_browser_check_performed": false,
+  "viewer_logic_checks": {
+    "release": "0.7.6",
+    "resolved_meshes": 491,
+    "segment_raycast_picks": [
+      "artery.anterior.internal_carotid_right.segment.cervical",
+      "artery.anterior.internal_carotid_right.segment.petrous",
+      "artery.anterior.internal_carotid_right.segment.cavernous",
+      "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+      "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+      "artery.anterior.internal_carotid_right.segment.terminus",
+      "artery.anterior.internal_carotid_left.segment.cervical",
+      "artery.anterior.internal_carotid_left.segment.petrous",
+      "artery.anterior.internal_carotid_left.segment.cavernous",
+      "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+      "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+      "artery.anterior.internal_carotid_left.segment.terminus"
+    ],
+    "whole_ica_focus_passed": true,
+    "whole_ica_visibility_subtree_passed": true,
+    "segment_branch_visibility_subtree_passed": true,
+    "search_passed": true,
+    "browser_interaction": false
+  },
+  "geometry_checks": "Partition identity, shared normals, retained origins/endpoints, regional edge checks and sphenoid sampling passed. Existing remote tip anomalies are documented separately."
+}

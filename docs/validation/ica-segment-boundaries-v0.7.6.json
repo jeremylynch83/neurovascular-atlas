@@ -1,0 +1,143 @@
+{
+  "release": "0.7.6",
+  "classification": "Shapiro endovascular ICA classification, 2014",
+  "source": {
+    "id": "ica-shapiro-2014",
+    "title": "Shapiro et al. Toward an Endovascular Internal Carotid Artery Classification System",
+    "year": 2014,
+    "role": "Seven endovascular ICA regions and their boundaries",
+    "notes": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7965739/"
+  },
+  "sides": [
+    {
+      "side": "right",
+      "parent": "artery.anterior.internal_carotid_right",
+      "segments": [
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.cervical",
+          "name": "Cervical",
+          "asset_node": "ICA cervical right",
+          "start_arc_mm": 0.0,
+          "end_arc_mm": 79.11964059937362,
+          "faces": 52127
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.petrous",
+          "name": "Petrous",
+          "asset_node": "ICA petrous right",
+          "start_arc_mm": 79.11964059937362,
+          "end_arc_mm": 113.7874016237551,
+          "faces": 17468
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.cavernous",
+          "name": "Cavernous",
+          "asset_node": "ICA cavernous right",
+          "start_arc_mm": 113.7874016237551,
+          "end_arc_mm": 134.54214598762954,
+          "faces": 19992
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+          "name": "Paraophthalmic",
+          "asset_node": "ICA paraophthalmic right",
+          "start_arc_mm": 134.54214598762954,
+          "end_arc_mm": 143.04214898690796,
+          "faces": 8224
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+          "name": "Posterior communicating",
+          "asset_node": "ICA posterior communicating right",
+          "start_arc_mm": 143.04214898690796,
+          "end_arc_mm": 147.72725043153002,
+          "faces": 4100
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+          "name": "Anterior choroidal",
+          "asset_node": "ICA anterior choroidal right",
+          "start_arc_mm": 147.72725043153002,
+          "end_arc_mm": 148.58725043153004,
+          "faces": 799
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.terminus",
+          "name": "Terminus",
+          "asset_node": "ICA terminus right",
+          "start_arc_mm": 148.58725043153004,
+          "end_arc_mm": 151.5127220831526,
+          "faces": 2452
+        }
+      ],
+      "all_faces_assigned_once": true,
+      "source_faces": 105162,
+      "vertices_and_normals_unchanged": true
+    },
+    {
+      "side": "left",
+      "parent": "artery.anterior.internal_carotid_left",
+      "segments": [
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.cervical",
+          "name": "Cervical",
+          "asset_node": "ICA cervical left",
+          "start_arc_mm": 0.0,
+          "end_arc_mm": 78.78957216285968,
+          "faces": 51962
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.petrous",
+          "name": "Petrous",
+          "asset_node": "ICA petrous left",
+          "start_arc_mm": 78.78957216285968,
+          "end_arc_mm": 113.457328442148,
+          "faces": 17521
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.cavernous",
+          "name": "Cavernous",
+          "asset_node": "ICA cavernous left",
+          "start_arc_mm": 113.457328442148,
+          "end_arc_mm": 134.21236028412082,
+          "faces": 20433
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+          "name": "Paraophthalmic",
+          "asset_node": "ICA paraophthalmic left",
+          "start_arc_mm": 134.21236028412082,
+          "end_arc_mm": 142.8399752329783,
+          "faces": 8281
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+          "name": "Posterior communicating",
+          "asset_node": "ICA posterior communicating left",
+          "start_arc_mm": 142.8399752329783,
+          "end_arc_mm": 147.84125186485394,
+          "faces": 4455
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+          "name": "Anterior choroidal",
+          "asset_node": "ICA anterior choroidal left",
+          "start_arc_mm": 147.84125186485394,
+          "end_arc_mm": 148.70125186485396,
+          "faces": 640
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.terminus",
+          "name": "Terminus",
+          "asset_node": "ICA terminus left",
+          "start_arc_mm": 148.70125186485396,
+          "end_arc_mm": 151.99025772440098,
+          "faces": 2994
+        }
+      ],
+      "all_faces_assigned_once": true,
+      "source_faces": 106286,
+      "vertices_and_normals_unchanged": true
+    }
+  ]
+}

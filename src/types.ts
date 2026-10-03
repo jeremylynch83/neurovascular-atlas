@@ -22,6 +22,7 @@ export interface Structure {
   geometryStatus: GeometryStatus;
   provenance: Provenance;
   asset?: AssetRef;
+  segmentOf?: string;
   notes?: string;
   color?: string;
   displayGroup?: 'anastomoses';

@@ -176,6 +176,42 @@ sys.exit('Unexpected mock call: '+cmd+' '+repr(a))
     assert not (root/'escape.txt').exists()
     print('PASS: ZIP traversal rejected')
 
+    # Broken archives must fail during staging, before replacing app files.
+    valid_bytes=archive.read_bytes()
+    corrupt=root/'crc.zip'
+    with zipfile.ZipFile(corrupt,'w',compression=zipfile.ZIP_STORED) as z:
+        z.writestr('sentinel.txt','CRC sentinel')
+    corrupt.write_bytes(corrupt.read_bytes().replace(b'CRC sentinel',b'BAD sentinel'))
+    for name,data in [('not-a-zip',b'<html>Download failed</html>'),
+                      ('truncated-zip',valid_bytes[:-100]),
+                      ('corrupt-entry',corrupt.read_bytes())]:
+        folder,remote,state,env=scenario(name,True)
+        (state/'running').write_text('0.6.0')
+        bad=root/(name+'.zip'); bad.write_bytes(data)
+        p=run(['bash',installer,'update',bad],env,False)
+        checkout=folder/'checkout'
+        assert p.returncode and 'incomplete or corrupt' in p.stderr
+        assert str(bad) in p.stderr and 'Traceback' not in p.stderr
+        assert (checkout/'README.md').read_text()=='old app'
+        assert (checkout/'public/anatomy/models/obsolete.glb').read_text()=='obsolete'
+        assert run(['git','-C',checkout,'status','--porcelain']).stdout==''
+        assert (state/'running').read_text()=='0.6.0'
+        assert "docker ['build'" not in (state/'calls').read_text()
+        assert run(['git','--git-dir',remote,'show','main:package.json']).stdout=='{"version":"0.6.0"}'
+    print('PASS: invalid, truncated and CRC-corrupt ZIPs report their path and preserve the checkout, running app and remote')
+
+    # Automatic selection must report a broken newest release, not fall back.
+    folder,remote,state,env=scenario('newest-incomplete',True)
+    newer=download/'inr-anatomy-atlas-v0.8.0.zip'
+    newer.write_bytes(b'PK\x03\x04incomplete')
+    try:
+        p=run(['bash',installer,'update'],env,False)
+        assert p.returncode and str(newer) in p.stderr
+        assert (folder/'checkout/README.md').read_text()=='old app'
+    finally:
+        newer.unlink()
+    print('PASS: incomplete newest adjacent release rejected without using an older ZIP')
+
     folder,remote,state,env=scenario('pages-denied')
     env['MOCK_PAGES_DENY']='1'
     p=run(['bash',installer],env,False)

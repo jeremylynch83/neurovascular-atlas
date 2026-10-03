@@ -1,0 +1,895 @@
+{
+  "A02": {
+    "branches": [
+      "Mandibular ICA branch right",
+      "Mandibular ICA branch left"
+    ],
+    "connections": [
+      "Tubal\u2013mandibular ICA circle right",
+      "Tubal\u2013mandibular ICA circle left"
+    ]
+  },
+  "X13": {
+    "branches": [
+      "Mandibular ICA branch right",
+      "Mandibular ICA branch left",
+      "Accessory meningeal anterior tubal right",
+      "Accessory meningeal anterior tubal left",
+      "Superior pharyngeal tubal branch right",
+      "Superior pharyngeal tubal branch left"
+    ],
+    "connections": [
+      "Tubal\u2013accessory meningeal circle right",
+      "Tubal\u2013mandibular ICA circle right",
+      "Tubal\u2013pterygovaginal circle right",
+      "Mandibular\u2013vidian circle right",
+      "Tubal\u2013maxillary vidian circle right",
+      "Tubal\u2013accessory meningeal circle left",
+      "Tubal\u2013mandibular ICA circle left",
+      "Tubal\u2013pterygovaginal circle left",
+      "Mandibular\u2013vidian circle left",
+      "Tubal\u2013maxillary vidian circle left"
+    ]
+  },
+  "A03": {
+    "branches": [
+      "Basal tentorial MHT branch right",
+      "Basal tentorial MHT branch left",
+      "Medial clival MHT branch right",
+      "Medial clival MHT branch left",
+      "Lateral clival MHT branch right",
+      "Lateral clival MHT branch left"
+    ]
+  },
+  "X17": {
+    "branches": [
+      "Basal tentorial MHT branch right",
+      "Basal tentorial MHT branch left",
+      "Wollschlaeger and Wollschlaeger artery right",
+      "Wollschlaeger and Wollschlaeger artery left",
+      "Davidoff and Schechter artery right",
+      "Davidoff and Schechter artery left"
+    ],
+    "connections": [
+      "Basal tentorial\u2013SCA dural right",
+      "MMA tentorial\u2013PCA dural right",
+      "APA tentorial\u2013SCA dural right",
+      "Occipital tentorial\u2013PCA dural right",
+      "Basal tentorial\u2013SCA dural left",
+      "MMA tentorial\u2013PCA dural left",
+      "APA tentorial\u2013SCA dural left",
+      "Occipital tentorial\u2013PCA dural left"
+    ]
+  },
+  "X08": {
+    "branches": [
+      "Medial clival MHT branch right",
+      "Medial clival MHT branch left"
+    ],
+    "connections": [
+      "APhA clival\u2013MHT right",
+      "APhA clival\u2013MHT left"
+    ]
+  },
+  "X14": {
+    "branches": [
+      "Medial clival MHT branch right",
+      "Medial clival MHT branch left",
+      "Lateral clival MHT branch right",
+      "Lateral clival MHT branch left"
+    ],
+    "connections": [
+      "Lateral clival APA\u2013MHT right",
+      "Clival\u2013posterior cavernous MMA right",
+      "Lateral clival\u2013recurrent ILT right",
+      "Lateral clival APA\u2013MHT left",
+      "Clival\u2013posterior cavernous MMA left",
+      "Lateral clival\u2013recurrent ILT left",
+      "Contralateral medial clival midline",
+      "Contralateral lateral clival midline"
+    ]
+  },
+  "E18": {
+    "branches": [
+      "Lateral clival MHT branch right",
+      "Lateral clival MHT branch left"
+    ],
+    "connections": [
+      "Lateral clival APA\u2013MHT right",
+      "Lateral clival APA\u2013MHT left",
+      "Contralateral medial clival midline",
+      "Contralateral lateral clival midline"
+    ]
+  },
+  "A04": {
+    "renamed": [
+      "ILT anteromedial ramus right",
+      "ILT posterior division (posterolateral continuation) right",
+      "ILT anteromedial ramus left",
+      "ILT posterior division (posterolateral continuation) left"
+    ],
+    "branches": [
+      "ILT superior ramus right",
+      "ILT superior ramus left",
+      "ILT anterolateral ramus right",
+      "ILT anterolateral ramus left",
+      "ILT posteromedial ramus right",
+      "ILT posteromedial ramus left",
+      "ILT recurrent lacerum ramus right",
+      "ILT recurrent lacerum ramus left"
+    ]
+  },
+  "X04": {
+    "branches": [
+      "ILT superior ramus right",
+      "ILT superior ramus left",
+      "MMA anterior cavernous right",
+      "MMA anterior cavernous left",
+      "MMA posterior cavernous right",
+      "MMA posterior cavernous left"
+    ],
+    "connections": [
+      "MMA cavernous\u2013ILT right",
+      "Posterior cavernous MMA\u2013posterolateral ILT right",
+      "MMA cavernous\u2013ILT left",
+      "Posterior cavernous MMA\u2013posterolateral ILT left"
+    ]
+  },
+  "X02": {
+    "branches": [
+      "ILT anterolateral ramus right",
+      "ILT anterolateral ramus left"
+    ],
+    "connections": [
+      "Foramen rotundum\u2013ILT right",
+      "Foramen rotundum\u2013ILT left"
+    ]
+  },
+  "X03": {
+    "branches": [
+      "ILT posteromedial ramus right",
+      "ILT posteromedial ramus left",
+      "Accessory meningeal posterior intracranial right",
+      "Accessory meningeal posterior intracranial left"
+    ],
+    "connections": [
+      "Accessory meningeal\u2013ILT right",
+      "Accessory meningeal\u2013ILT left"
+    ]
+  },
+  "X10": {
+    "branches": [
+      "ILT recurrent lacerum ramus right",
+      "ILT recurrent lacerum ramus left",
+      "Superior pharyngeal carotid branch right",
+      "Superior pharyngeal carotid branch left"
+    ],
+    "connections": [
+      "Pharyngeal carotid\u2013recurrent lacerum right",
+      "Pharyngeal carotid\u2013recurrent lacerum left"
+    ]
+  },
+  "A05": {
+    "branches": [
+      "Ophthalmic inferior muscular branch right",
+      "Ophthalmic inferior muscular branch left",
+      "Ophthalmic superior muscular branch right",
+      "Ophthalmic superior muscular branch left",
+      "Superficial recurrent meningeal right",
+      "Superficial recurrent meningeal left",
+      "Deep recurrent ophthalmic right",
+      "Deep recurrent ophthalmic left",
+      "Lacrimal inferior branch right",
+      "Lacrimal inferior branch left",
+      "Anterior falcine right",
+      "Anterior falcine left",
+      "Medial superior palpebral right",
+      "Medial superior palpebral left",
+      "Lateral superior palpebral right",
+      "Lateral superior palpebral left",
+      "Medial inferior palpebral right",
+      "Medial inferior palpebral left",
+      "Lateral inferior palpebral right",
+      "Lateral inferior palpebral left"
+    ]
+  },
+  "E12": {
+    "branches": [
+      "Ophthalmic inferior muscular branch right",
+      "Ophthalmic inferior muscular branch left",
+      "Infraorbital muscular branch right",
+      "Infraorbital muscular branch left"
+    ]
+  },
+  "X05": {
+    "branches": [
+      "Ophthalmic inferior muscular branch right",
+      "Ophthalmic inferior muscular branch left",
+      "Lacrimal inferior branch right",
+      "Lacrimal inferior branch left",
+      "Infraorbital muscular branch right",
+      "Infraorbital muscular branch left"
+    ],
+    "connections": [
+      "Infraorbital\u2013ophthalmic right",
+      "Deep temporal\u2013lacrimal right",
+      "Inferior lacrimal\u2013infraorbital muscular right",
+      "Infraorbital\u2013ophthalmic left",
+      "Deep temporal\u2013lacrimal left",
+      "Inferior lacrimal\u2013infraorbital muscular left"
+    ]
+  },
+  "X01": {
+    "branches": [
+      "Superficial recurrent meningeal right",
+      "Superficial recurrent meningeal left",
+      "Deep recurrent ophthalmic right",
+      "Deep recurrent ophthalmic left",
+      "Artery of superior orbital fissure right",
+      "Artery of superior orbital fissure left"
+    ],
+    "connections": [
+      "MMA\u2013ophthalmic (recurrent meningeal) right",
+      "Deep recurrent ophthalmic\u2013ILT right",
+      "SOF artery\u2013anteromedial ILT right",
+      "SOF artery\u2013recurrent meningeal right",
+      "MMA\u2013ophthalmic (recurrent meningeal) left",
+      "Deep recurrent ophthalmic\u2013ILT left",
+      "SOF artery\u2013anteromedial ILT left",
+      "SOF artery\u2013recurrent meningeal left"
+    ]
+  },
+  "A11": {
+    "branches": [
+      "Anterior falcine right",
+      "Anterior falcine left",
+      "Short callosal branch right",
+      "Short callosal branch left",
+      "Long callosal branch right",
+      "Long callosal branch left",
+      "ACA falcine branch right",
+      "ACA falcine branch left"
+    ],
+    "metadata": [
+      "Precuneal right",
+      "PCA splenial right",
+      "Precuneal left",
+      "PCA splenial left"
+    ],
+    "connections": [
+      "Pericallosal\u2013splenial right",
+      "Pericallosal\u2013splenial left"
+    ]
+  },
+  "X16": {
+    "branches": [
+      "Anterior falcine right",
+      "Anterior falcine left",
+      "MMA paramedian right",
+      "MMA paramedian left",
+      "MMA falcine terminal right",
+      "MMA falcine terminal left",
+      "Falx cerebelli artery right",
+      "Falx cerebelli artery left",
+      "ACA falcine branch right",
+      "ACA falcine branch left"
+    ],
+    "connections": [
+      "Anterior falcine\u2013MMA paramedian right",
+      "ACA falcine\u2013MMA falcine right",
+      "Falx cerebelli\u2013VA posterior meningeal right",
+      "Anterior falcine\u2013MMA paramedian left",
+      "ACA falcine\u2013MMA falcine left",
+      "Falx cerebelli\u2013VA posterior meningeal left"
+    ]
+  },
+  "E01": {
+    "branches": [
+      "Superior thyroid SCM branch right",
+      "Superior thyroid SCM branch left",
+      "Cricothyroid right",
+      "Cricothyroid left"
+    ]
+  },
+  "E02": {
+    "branches": [
+      "Facial submandibular gland branch right",
+      "Facial submandibular gland branch left",
+      "Facial masseteric branch right",
+      "Facial masseteric branch left",
+      "Facial buccal branch right",
+      "Facial buccal branch left"
+    ]
+  },
+  "X20": {
+    "branches": [
+      "Facial masseteric branch right",
+      "Facial masseteric branch left",
+      "Facial buccal branch right",
+      "Facial buccal branch left",
+      "Posterior auricular auricular branch right",
+      "Posterior auricular auricular branch left",
+      "STA anterior auricular right",
+      "STA anterior auricular left",
+      "Transverse facial superior division right",
+      "Transverse facial superior division left",
+      "Transverse facial inferior division right",
+      "Transverse facial inferior division left",
+      "Transverse facial masseteric branch right",
+      "Transverse facial masseteric branch left",
+      "Zygomatico-orbital right",
+      "Zygomatico-orbital left",
+      "Inferior septal subdivision right",
+      "Inferior septal subdivision left"
+    ],
+    "connections": [
+      "Facial\u2013maxillary buccal right",
+      "Facial\u2013maxillary masseteric right",
+      "Transverse facial\u2013facial right",
+      "Transverse facial\u2013infraorbital right",
+      "Zygomatico-orbital\u2013lacrimal right",
+      "Septal\u2013palatine network right",
+      "Labial\u2013septal plexus right",
+      "STA\u2013posterior auricular scalp right",
+      "Occipital\u2013posterior auricular scalp right",
+      "STA\u2013occipital scalp right",
+      "STA\u2013supratrochlear scalp right",
+      "Facial\u2013maxillary buccal left",
+      "Facial\u2013maxillary masseteric left",
+      "Transverse facial\u2013facial left",
+      "Transverse facial\u2013infraorbital left",
+      "Zygomatico-orbital\u2013lacrimal left",
+      "Septal\u2013palatine network left",
+      "Labial\u2013septal plexus left",
+      "STA\u2013posterior auricular scalp left",
+      "Occipital\u2013posterior auricular scalp left",
+      "STA\u2013occipital scalp left",
+      "STA\u2013supratrochlear scalp left"
+    ]
+  },
+  "E03": {
+    "branches": [
+      "Medial superior palpebral right",
+      "Medial superior palpebral left",
+      "Lateral superior palpebral right",
+      "Lateral superior palpebral left",
+      "Medial inferior palpebral right",
+      "Medial inferior palpebral left",
+      "Lateral inferior palpebral right",
+      "Lateral inferior palpebral left"
+    ],
+    "connections": [
+      "Superior palpebral arcade right",
+      "Inferior palpebral arcade right",
+      "Superior palpebral arcade left",
+      "Inferior palpebral arcade left"
+    ]
+  },
+  "E04": {
+    "branches": [
+      "Posterior auricular parotid branch right",
+      "Posterior auricular parotid branch left",
+      "Posterior auricular auricular branch right",
+      "Posterior auricular auricular branch left",
+      "STA anterior auricular right",
+      "STA anterior auricular left"
+    ]
+  },
+  "E05": {
+    "branches": [
+      "Transverse facial superior division right",
+      "Transverse facial superior division left",
+      "Transverse facial inferior division right",
+      "Transverse facial inferior division left",
+      "Transverse facial parotid branch right",
+      "Transverse facial parotid branch left",
+      "Transverse facial masseteric branch right",
+      "Transverse facial masseteric branch left"
+    ]
+  },
+  "E06": {
+    "branches": [
+      "Zygomatico-orbital right",
+      "Zygomatico-orbital left"
+    ],
+    "connections": [
+      "Zygomatico-orbital\u2013lacrimal right",
+      "Zygomatico-orbital\u2013lacrimal left"
+    ]
+  },
+  "E09": {
+    "branches": [
+      "Superior tympanic right",
+      "Superior tympanic left",
+      "MMA paramedian right",
+      "MMA paramedian left",
+      "MMA falcine terminal right",
+      "MMA falcine terminal left",
+      "MMA anterior cavernous right",
+      "MMA anterior cavernous left",
+      "MMA posterior cavernous right",
+      "MMA posterior cavernous left"
+    ]
+  },
+  "X07": {
+    "branches": [
+      "Superior tympanic right",
+      "Superior tympanic left",
+      "AICA subarcuate right",
+      "AICA subarcuate left"
+    ],
+    "connections": [
+      "Superior\u2013anterior tympanic right",
+      "Superior\u2013inferior tympanic right",
+      "Stylomastoid\u2013inferior tympanic right",
+      "Subarcuate\u2013petrosal MMA right",
+      "Subarcuate\u2013stylomastoid right",
+      "Superior\u2013anterior tympanic left",
+      "Superior\u2013inferior tympanic left",
+      "Stylomastoid\u2013inferior tympanic left",
+      "Subarcuate\u2013petrosal MMA left",
+      "Subarcuate\u2013stylomastoid left"
+    ]
+  },
+  "E10": {
+    "branches": [
+      "Accessory meningeal anterior tubal right",
+      "Accessory meningeal anterior tubal left",
+      "Accessory meningeal posterior intracranial right",
+      "Accessory meningeal posterior intracranial left"
+    ]
+  },
+  "E11": {
+    "branches": [
+      "Artery of superior orbital fissure right",
+      "Artery of superior orbital fissure left"
+    ],
+    "connections": [
+      "SOF artery\u2013anteromedial ILT right",
+      "SOF artery\u2013recurrent meningeal right",
+      "SOF artery\u2013anteromedial ILT left",
+      "SOF artery\u2013recurrent meningeal left"
+    ]
+  },
+  "E13": {
+    "branches": [
+      "Superior septal subdivision right",
+      "Superior septal subdivision left",
+      "Inferior septal subdivision right",
+      "Inferior septal subdivision left"
+    ],
+    "connections": [
+      "Posterior septal\u2013posterior ethmoidal right",
+      "Septal\u2013palatine network right",
+      "Labial\u2013septal plexus right",
+      "Posterior septal\u2013posterior ethmoidal left",
+      "Septal\u2013palatine network left",
+      "Labial\u2013septal plexus left"
+    ]
+  },
+  "E14": {
+    "branches": [
+      "Occipital SCM branch right",
+      "Occipital SCM branch left",
+      "Occipital mastoid dural branch right",
+      "Occipital mastoid dural branch left"
+    ],
+    "connections": [
+      "Occipital mastoid\u2013APA sigmoid right",
+      "Occipital mastoid\u2013APA sigmoid left"
+    ]
+  },
+  "X15": {
+    "branches": [
+      "Occipital mastoid dural branch right",
+      "Occipital mastoid dural branch left",
+      "Jugular ascending IAC branch right",
+      "Jugular ascending IAC branch left",
+      "AICA subarcuate right",
+      "AICA subarcuate left"
+    ],
+    "connections": [
+      "Occipital mastoid\u2013APA sigmoid right",
+      "Occipital mastoid\u2013MMA petrosquamosal right",
+      "Occipital mastoid\u2013APA jugular right",
+      "Occipital mastoid\u2013hypoglossal meningeal right",
+      "Subarcuate\u2013APA auditory right",
+      "Occipital mastoid\u2013APA sigmoid left",
+      "Occipital mastoid\u2013MMA petrosquamosal left",
+      "Occipital mastoid\u2013APA jugular left",
+      "Occipital mastoid\u2013hypoglossal meningeal left",
+      "Subarcuate\u2013APA auditory left"
+    ]
+  },
+  "E15": {
+    "branches": [
+      "Superior pharyngeal tubal branch right",
+      "Superior pharyngeal tubal branch left",
+      "Superior pharyngeal carotid branch right",
+      "Superior pharyngeal carotid branch left"
+    ]
+  },
+  "E16": {
+    "branches": [
+      "APA musculospinal right",
+      "APA musculospinal left"
+    ]
+  },
+  "X11": {
+    "branches": [
+      "APA musculospinal right",
+      "APA musculospinal left"
+    ],
+    "connections": [
+      "APA musculospinal\u2013VA right",
+      "APA musculospinal\u2013VA left"
+    ]
+  },
+  "E17": {
+    "branches": [
+      "APA prevertebral branch right",
+      "APA prevertebral branch left"
+    ],
+    "metadata": [
+      "VA odontoid contribution right",
+      "VA odontoid contribution left"
+    ],
+    "connections": [
+      "APA prevertebral\u2013odontoid right",
+      "APA prevertebral\u2013odontoid left",
+      "Odontoid transverse arcade midline",
+      "Odontoid inferior transverse arcade midline"
+    ]
+  },
+  "X09": {
+    "branches": [
+      "APA prevertebral branch right",
+      "APA prevertebral branch left"
+    ],
+    "connections": [
+      "APA prevertebral\u2013odontoid right",
+      "APA prevertebral\u2013odontoid left",
+      "Odontoid transverse arcade midline",
+      "Odontoid inferior transverse arcade midline"
+    ]
+  },
+  "E19": {
+    "branches": [
+      "Falx cerebelli artery right",
+      "Falx cerebelli artery left",
+      "Jugular ascending IAC branch right",
+      "Jugular ascending IAC branch left"
+    ]
+  },
+  "A06": {
+    "branches": [
+      "AChA optic tract branch right",
+      "AChA optic tract branch left",
+      "AChA capsular branch right",
+      "AChA capsular branch left",
+      "AChA peduncular branch right",
+      "AChA peduncular branch left",
+      "AChA temporal branch right",
+      "AChA temporal branch left",
+      "Anterior choroidal plexal representative right",
+      "Anterior choroidal plexal representative left"
+    ]
+  },
+  "A07": {
+    "branches": [
+      "Terminal ICA perforator 1 right",
+      "Terminal ICA perforator 1 left",
+      "Terminal ICA perforator 2 right",
+      "Terminal ICA perforator 2 left"
+    ]
+  },
+  "A08": {
+    "branches": [
+      "Subcallosal artery",
+      "ACom hypothalamic perforator right",
+      "ACom hypothalamic perforator left",
+      "ACom septal perforator right",
+      "ACom septal perforator left",
+      "ACom chiasmatic perforator right",
+      "ACom chiasmatic perforator left"
+    ]
+  },
+  "A09": {
+    "branches": [
+      "Medial lenticulostriate superior representative right",
+      "Medial lenticulostriate superior representative left",
+      "Lateral lenticulostriate anterior representative right",
+      "Lateral lenticulostriate anterior representative left"
+    ]
+  },
+  "A13": {
+    "branches": [
+      "Polar temporal right",
+      "Polar temporal left"
+    ],
+    "metadata": [
+      "Temporo-occipital right",
+      "Temporo-occipital left"
+    ]
+  },
+  "A14": {
+    "branches": [
+      "Prefrontal distal ramus right",
+      "Prefrontal distal ramus left",
+      "Precentral distal ramus right",
+      "Precentral distal ramus left",
+      "Central distal ramus right",
+      "Central distal ramus left",
+      "Anterior parietal distal ramus right",
+      "Anterior parietal distal ramus left",
+      "Posterior parietal distal ramus right",
+      "Posterior parietal distal ramus left",
+      "Angular distal ramus right",
+      "Angular distal ramus left",
+      "Middle temporal distal ramus right",
+      "Middle temporal distal ramus left",
+      "Posterior temporal distal ramus right",
+      "Posterior temporal distal ramus left"
+    ],
+    "metadata": [
+      "Anterior parietal right",
+      "Anterior parietal left"
+    ]
+  },
+  "P01": {
+    "branches": [
+      "VA anterior meningeal right",
+      "VA anterior meningeal left"
+    ]
+  },
+  "P02": {
+    "branches": [
+      "VA medullary perforator 1 right",
+      "VA medullary perforator 1 left",
+      "VA medullary perforator 2 right",
+      "VA medullary perforator 2 left"
+    ]
+  },
+  "P04": {
+    "branches": [
+      "AICA subarcuate right",
+      "AICA subarcuate left",
+      "AICA fourth ventricular choroidal right",
+      "AICA fourth ventricular choroidal left",
+      "Common cochlear right",
+      "Common cochlear left",
+      "Anterior vestibular right",
+      "Anterior vestibular left"
+    ],
+    "connections": [
+      "Subarcuate\u2013petrosal MMA right",
+      "Subarcuate\u2013stylomastoid right",
+      "Subarcuate\u2013petrosal MMA left",
+      "Subarcuate\u2013stylomastoid left"
+    ]
+  },
+  "P05": {
+    "branches": [
+      "SCA proximal perforator right",
+      "SCA proximal perforator left",
+      "SCA tectal branch right",
+      "SCA tectal branch left",
+      "Wollschlaeger and Wollschlaeger artery right",
+      "Wollschlaeger and Wollschlaeger artery left"
+    ]
+  },
+  "P08": {
+    "branches": [
+      "SCA tectal branch right",
+      "SCA tectal branch left",
+      "PCA short circumflex right",
+      "PCA short circumflex left",
+      "PCA long circumflex right",
+      "PCA long circumflex left",
+      "PCA collicular right",
+      "PCA collicular left"
+    ],
+    "connections": [
+      "PCA\u2013SCA tectal network right",
+      "PCA\u2013SCA tectal network left"
+    ]
+  },
+  "X19": {
+    "branches": [
+      "SCA tectal branch right",
+      "SCA tectal branch left",
+      "PCA collicular right",
+      "PCA collicular left"
+    ],
+    "connections": [
+      "ACA\u2013MCA frontal border zone right",
+      "ACA\u2013MCA parietal border zone right",
+      "MCA\u2013PCA temporal border zone right",
+      "MCA\u2013PCA occipital border zone right",
+      "Pericallosal\u2013splenial right",
+      "PCA\u2013SCA tectal network right",
+      "PICA\u2013AICA pial border zone right",
+      "AICA\u2013SCA pial border zone right",
+      "PICA\u2013SCA vermian border zone right",
+      "ACA\u2013MCA frontal border zone left",
+      "ACA\u2013MCA parietal border zone left",
+      "MCA\u2013PCA temporal border zone left",
+      "MCA\u2013PCA occipital border zone left",
+      "Pericallosal\u2013splenial left",
+      "PCA\u2013SCA tectal network left",
+      "PICA\u2013AICA pial border zone left",
+      "AICA\u2013SCA pial border zone left",
+      "PICA\u2013SCA vermian border zone left"
+    ]
+  },
+  "P06": {
+    "branches": [
+      "Davidoff and Schechter artery right",
+      "Davidoff and Schechter artery left"
+    ]
+  },
+  "P07": {
+    "branches": [
+      "Pontine short circumflex right",
+      "Pontine short circumflex left",
+      "Pontine long circumflex right",
+      "Pontine long circumflex left",
+      "Pontine median perforator"
+    ]
+  },
+  "P09": {
+    "branches": [
+      "Tuberothalamic artery right",
+      "Tuberothalamic artery left",
+      "Anterior thalamoperforating branch right",
+      "Anterior thalamoperforating branch left"
+    ]
+  },
+  "P11": {
+    "branches": [
+      "Anterior choroidal plexal representative right",
+      "Anterior choroidal plexal representative left",
+      "Lateral posterior choroidal plexal representative right",
+      "Lateral posterior choroidal plexal representative left",
+      "Medial posterior choroidal plexal representative right",
+      "Medial posterior choroidal plexal representative left"
+    ],
+    "connections": [
+      "Anterior\u2013lateral posterior choroidal right",
+      "Medial\u2013lateral posterior choroidal right",
+      "Posterior choroidal\u2013splenial right",
+      "Anterior\u2013lateral posterior choroidal left",
+      "Medial\u2013lateral posterior choroidal left",
+      "Posterior choroidal\u2013splenial left"
+    ]
+  },
+  "X18": {
+    "branches": [
+      "Anterior choroidal plexal representative right",
+      "Anterior choroidal plexal representative left",
+      "Lateral posterior choroidal plexal representative right",
+      "Lateral posterior choroidal plexal representative left",
+      "Medial posterior choroidal plexal representative right",
+      "Medial posterior choroidal plexal representative left"
+    ],
+    "connections": [
+      "Anterior\u2013lateral posterior choroidal right",
+      "Medial\u2013lateral posterior choroidal right",
+      "Posterior choroidal\u2013splenial right",
+      "Anterior\u2013lateral posterior choroidal left",
+      "Medial\u2013lateral posterior choroidal left",
+      "Posterior choroidal\u2013splenial left"
+    ]
+  },
+  "E07": {
+    "metadata": [
+      "Posterior deep temporal artery right",
+      "Middle temporal artery right",
+      "Posterior deep temporal artery left",
+      "Middle temporal artery left"
+    ]
+  },
+  "E08": {
+    "metadata": [
+      "Stylomastoid artery right",
+      "Stylomastoid artery left"
+    ],
+    "connections": [
+      "Facial nerve arcade right",
+      "Facial nerve arcade left"
+    ]
+  },
+  "A10": {
+    "metadata": [
+      "Paracentral right",
+      "Paracentral left"
+    ],
+    "implementation": "Provisional A2-A5 ranges; declared pericallosal paracentral origin."
+  },
+  "X06": {
+    "connections": [
+      "Facial nerve arcade right",
+      "Facial nerve arcade left"
+    ]
+  },
+  "P12": {
+    "connections": [
+      "ACA\u2013MCA frontal border zone right",
+      "ACA\u2013MCA parietal border zone right",
+      "MCA\u2013PCA temporal border zone right",
+      "MCA\u2013PCA occipital border zone right",
+      "Pericallosal\u2013splenial right",
+      "PCA\u2013SCA tectal network right",
+      "PICA\u2013AICA pial border zone right",
+      "AICA\u2013SCA pial border zone right",
+      "PICA\u2013SCA vermian border zone right",
+      "ACA\u2013MCA frontal border zone left",
+      "ACA\u2013MCA parietal border zone left",
+      "MCA\u2013PCA temporal border zone left",
+      "MCA\u2013PCA occipital border zone left",
+      "Pericallosal\u2013splenial left",
+      "PCA\u2013SCA tectal network left",
+      "PICA\u2013AICA pial border zone left",
+      "AICA\u2013SCA pial border zone left",
+      "PICA\u2013SCA vermian border zone left"
+    ]
+  },
+  "X22": {
+    "connections": [
+      "STA\u2013MMA transosseous potential right",
+      "Occipital\u2013MMA transosseous potential right",
+      "STA\u2013MMA transosseous potential left",
+      "Occipital\u2013MMA transosseous potential left"
+    ]
+  },
+  "X21": {
+    "connections": [
+      "Contralateral medial clival midline",
+      "Contralateral lateral clival midline",
+      "Contralateral pharyngeal midline",
+      "Contralateral superior labial midline",
+      "Contralateral inferior labial midline",
+      "Contralateral palatal midline",
+      "Contralateral superior hypophyseal midline"
+    ]
+  },
+  "A12": {
+    "implementation": "Provisional M2/M3/M4 ranges and retained cortical courses."
+  },
+  "P03": {
+    "implementation": "Five provisional PICA ranges and regional loop landmark."
+  },
+  "P10": {
+    "implementation": "Provisional P2/P3/P4 ranges."
+  },
+  "A15": {
+    "implementation": "Physical OA/PCom take-offs refitted; explicit anatomical parents and ostial segment plan; bilateral surface review."
+  },
+  "U01": {
+    "implementation": "Inspection open state lifted above selection lifecycle; independent from anatomy panel."
+  },
+  "U02": {
+    "implementation": "Selected human-readable name retained as collapsed/open inspection title."
+  },
+  "G08": {
+    "implementation": "Preserved existing bone estimates; unresolved canal and dural boundaries remain explicitly unverified."
+  },
+  "G09": {
+    "implementation": "Bilateral reference template declared."
+  },
+  "G10": {
+    "implementation": "Illustrative radius provenance recorded per vessel."
+  },
+  "A01": {
+    "implementation": "Preserved fourteen selectable ICA regions; whole-ICA and segment selection/focus/visibility checked."
+  },
+  "G01": {
+    "implementation": "Retained terminal coordinates and lateral M1 course. The ICA/A1/M1 junction is reviewed with all connected arterial labels present."
+  },
+  "G02": {
+    "implementation": "PCom origin and proximal arc refitted with the paraophthalmic shoulder; AChA remains distal to PCom."
+  },
+  "G03": {
+    "implementation": "Ophthalmic origin and proximal arc refitted, with distal orbital course retained. Optic nerve and resolved canal lumen remain unavailable."
+  }
+}

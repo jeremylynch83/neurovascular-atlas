@@ -1,0 +1,147 @@
+{
+  "release": "0.7.6",
+  "surface": {
+    "release": "0.7.6",
+    "method": "Local swept-tube boolean union, shared-surface junction fairing, retained source skin outside bilateral regions",
+    "regions_mm": [
+      {
+        "min": [
+          5.0,
+          -57.0,
+          69.5
+        ],
+        "max": [
+          35.0,
+          -26.0,
+          94.0
+        ]
+      },
+      {
+        "min": [
+          -33.7,
+          -57.0,
+          69.5
+        ],
+        "max": [
+          -3.7,
+          -26.0,
+          94.0
+        ]
+      }
+    ],
+    "rebuilt_parts": [
+      "ACA A1 left",
+      "ACA A1 right",
+      "Anterior choroidal left",
+      "Anterior choroidal right",
+      "Anterior temporal left",
+      "Anterior temporal right",
+      "Inferior hypophyseal left",
+      "Inferior hypophyseal right",
+      "Internal carotid left",
+      "Internal carotid right",
+      "Lateral lenticulostriate 1 left",
+      "Lateral lenticulostriate 1 right",
+      "Lateral lenticulostriate 2 left",
+      "Lateral lenticulostriate 2 right",
+      "Lateral lenticulostriate 3 left",
+      "Lateral lenticulostriate 3 right",
+      "MCA M1 left",
+      "MCA M1 right",
+      "Medial lenticulostriate left",
+      "Medial lenticulostriate right",
+      "Ophthalmic left",
+      "Ophthalmic right",
+      "PCA P1 left",
+      "PCA P1 right",
+      "PCA P2-P3 left",
+      "PCA P2-P3 right",
+      "PCom perforator left",
+      "PCom perforator right",
+      "Posterior communicating left",
+      "Posterior communicating right",
+      "Recurrent artery of Heubner left",
+      "Recurrent artery of Heubner right",
+      "Superior hypophyseal left",
+      "Superior hypophyseal right"
+    ],
+    "bifurcation_blending": [
+      {
+        "side": "right",
+        "method": "Local smooth implicit union of ICA, A1 and M1 with preserved branch collars",
+        "softness_mm": 0.65,
+        "support_radius_mm": 7,
+        "vertices": 8601,
+        "maximum_displacement_mm": 1.7746550205085776
+      },
+      {
+        "side": "left",
+        "method": "Local smooth implicit union of ICA, A1 and M1 with preserved branch collars",
+        "softness_mm": 0.65,
+        "support_radius_mm": 7,
+        "vertices": 8759,
+        "maximum_displacement_mm": 1.778525391209024
+      }
+    ],
+    "parts": 385,
+    "vertices": 2533560,
+    "faces": 5067124,
+    "box_transition_faces": 1853,
+    "terminal_parent_skin_radius_mm": 1.45,
+    "terminal_taper_length_mm": 2.5,
+    "all_finite": true,
+    "watertight": true,
+    "winding_consistent": true,
+    "euler_number": -2,
+    "volume_mm3": 22968.788455874834
+  },
+  "segment_count": 14,
+  "curves": {
+    "Ophthalmic right": {
+      "origin_unchanged": true,
+      "distal_endpoint_unchanged": true,
+      "maximum_centreline_change_mm": 1.3638795707708242,
+      "edited_samples": 52
+    },
+    "Posterior communicating right": {
+      "origin_unchanged": true,
+      "distal_endpoint_unchanged": true,
+      "maximum_centreline_change_mm": 2.3163512435459244,
+      "edited_samples": 63
+    },
+    "Ophthalmic left": {
+      "origin_unchanged": true,
+      "distal_endpoint_unchanged": true,
+      "maximum_centreline_change_mm": 1.35736551934645,
+      "edited_samples": 52
+    },
+    "Posterior communicating left": {
+      "origin_unchanged": true,
+      "distal_endpoint_unchanged": true,
+      "maximum_centreline_change_mm": 2.2521704501518256,
+      "edited_samples": 64
+    }
+  },
+  "partition": [
+    {
+      "side": "right",
+      "triangles": 105162,
+      "identical_surface": true
+    },
+    {
+      "side": "left",
+      "triangles": 106286,
+      "identical_surface": true
+    }
+  ],
+  "segmented_surface": {
+    "winding_consistent": true,
+    "finite": true,
+    "new_welded_edge_anomalies": 0,
+    "existing_welded_edge_anomalies": 1282,
+    "existing_anomaly_coordinates_identical": true,
+    "terminal_regions_have_no_edge_anomalies": true,
+    "note": "Float32-coincident fine vessel tips outside the edited terminal regions are inherited from v0.7.5. Whole-scene welding by coordinates is not a watertightness pass. Segment partitions retain every source triangle and shared normal exactly."
+  },
+  "a1_centrelines_unchanged": true
+}

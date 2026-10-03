@@ -1,0 +1,131 @@
+{
+  "release": "0.7.5",
+  "origins": {
+    "right": {
+      "Ophthalmic": {
+        "height_change_mm": -1.400669556514842,
+        "ica_station": 1804,
+        "maximum_proximal_direction_step_degrees": 5.498240269590121
+      },
+      "Posterior communicating": {
+        "height_change_mm": 4.749955668989642,
+        "ica_station": 1905,
+        "maximum_proximal_direction_step_degrees": 22.503165538769323
+      },
+      "Anterior choroidal": {
+        "height_change_mm": 1.5797454687420895,
+        "ica_station": 1949,
+        "maximum_proximal_direction_step_degrees": 11.40431452680322
+      }
+    },
+    "left": {
+      "Ophthalmic": {
+        "height_change_mm": -0.995337306730633,
+        "ica_station": 1820,
+        "maximum_proximal_direction_step_degrees": 6.016350905281302
+      },
+      "Posterior communicating": {
+        "height_change_mm": 5.224465968739821,
+        "ica_station": 1918,
+        "maximum_proximal_direction_step_degrees": 20.592545583208977
+      },
+      "Anterior choroidal": {
+        "height_change_mm": 2.6014740705682584,
+        "ica_station": 1960,
+        "maximum_proximal_direction_step_degrees": 14.254903161756662
+      }
+    }
+  },
+  "retained_distal_endpoints": true,
+  "a1_centrelines_unchanged": true,
+  "maximum_shared_seam_normal_difference": 0.0,
+  "named_parts": 385,
+  "surface": {
+    "release": "0.7.5",
+    "method": "Local swept-tube boolean union, shared-surface junction fairing, retained source skin outside bilateral regions",
+    "regions_mm": [
+      {
+        "min": [
+          5.0,
+          -57.0,
+          69.5
+        ],
+        "max": [
+          35.0,
+          -26.0,
+          94.0
+        ]
+      },
+      {
+        "min": [
+          -33.7,
+          -57.0,
+          69.5
+        ],
+        "max": [
+          -3.7,
+          -26.0,
+          94.0
+        ]
+      }
+    ],
+    "rebuilt_parts": [
+      "ACA A1 left",
+      "ACA A1 right",
+      "Anterior choroidal left",
+      "Anterior choroidal right",
+      "Anterior temporal left",
+      "Anterior temporal right",
+      "Inferior hypophyseal left",
+      "Inferior hypophyseal right",
+      "Internal carotid left",
+      "Internal carotid right",
+      "Lateral lenticulostriate 1 left",
+      "Lateral lenticulostriate 1 right",
+      "Lateral lenticulostriate 2 left",
+      "Lateral lenticulostriate 2 right",
+      "Lateral lenticulostriate 3 left",
+      "Lateral lenticulostriate 3 right",
+      "MCA M1 left",
+      "MCA M1 right",
+      "Medial lenticulostriate left",
+      "Medial lenticulostriate right",
+      "Ophthalmic left",
+      "Ophthalmic right",
+      "PCA P1 left",
+      "PCA P1 right",
+      "PCA P2-P3 left",
+      "PCA P2-P3 right",
+      "PCom perforator left",
+      "PCom perforator right",
+      "Posterior communicating left",
+      "Posterior communicating right",
+      "Recurrent artery of Heubner left",
+      "Recurrent artery of Heubner right",
+      "Superior hypophyseal left",
+      "Superior hypophyseal right"
+    ],
+    "parts": 385,
+    "vertices": 2533193,
+    "faces": 5066390,
+    "box_transition_faces": 1856,
+    "terminal_parent_skin_radius_mm": 1.45,
+    "terminal_taper_length_mm": 2.5,
+    "all_finite": true,
+    "watertight": true,
+    "winding_consistent": true,
+    "euler_number": -2,
+    "volume_mm3": 22911.560058251587
+  },
+  "retained_unrebuilt_surfaces": {
+    "parts": 351,
+    "exact_existing_vertex_coordinates": 350,
+    "resampled_source_faces": [
+      {
+        "part": "ACA pericallosal left",
+        "inserted_vertices": 6,
+        "maximum_source_surface_distance_mm": 2.4943579657795503e-06
+      }
+    ]
+  }
+}

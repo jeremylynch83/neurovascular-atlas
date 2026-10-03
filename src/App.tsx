@@ -19,6 +19,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [layers, setLayers] = useState<Record<SystemId, LayerState>>({ bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' });
   const [tab, setTab] = useState<'layers'|'tree'>('layers');
   const [controlsOpen, setControlsOpen] = useState(true);
+  const [inspectionOpen, setInspectionOpen] = useState(true);
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -50,7 +51,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     return next;
   });
 
-  const select = (s: Structure) => { setSelectedId(s.id); setQuery(''); if (s.asset || s.landmark?.point) engine.current?.focus(s.id); };
+  const select = (s: Structure) => { setSelectedId(s.id); setQuery(''); if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id); };
   const geometryCount = (system: SystemId) => manifest.structures.filter((s) => s.system === system && s.asset).length;
   const plannedCount = (system: SystemId) => manifest.structures.filter((s) => s.system === system && !s.asset && !s.landmark && s.kind !== 'group').length;
 
@@ -66,7 +67,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
         {query && <button className="clear" onClick={()=>setQuery('')} aria-label="Clear search">×</button>}
         {query && <div className="search-results panel">
           {results.length ? results.map((s)=><button key={s.id} onClick={()=>select(s)}>
-            <span className={`sys-dot ${s.system}`} /><span><strong>{s.name}</strong></span><em>{s.landmark?'landmark':s.asset?'geometry':'planned'}</em>
+            <span className={`sys-dot ${s.system}`} /><span><strong>{s.name}</strong></span><em>{s.landmark?'landmark':s.asset?'geometry':s.kind==='group'?'group':'planned'}</em>
           </button>) : <div className="empty">No matching structure</div>}
         </div>}
       </div>
@@ -89,7 +90,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       </div>
     </details>
 
-    {selected && <Detail structure={selected} manifest={manifest} engine={engine.current} hidden={hiddenIds.has(selected.id)} onHidden={(hidden)=>setHidden([selected.id],hidden)} onClose={()=>setSelectedId(null)} />}
+    {selected && <Detail open={inspectionOpen} onOpenChange={setInspectionOpen} structure={selected} manifest={manifest} engine={engine.current} hidden={(subtrees.get(selected.id)??[]).length>0&&(subtrees.get(selected.id)??[]).every(id=>hiddenIds.has(id))} onHidden={(hidden)=>setHidden(subtrees.get(selected.id)??[],hidden)} onClose={()=>setSelectedId(null)} />}
     </div>
 
     <div className="camera-bar panel">
@@ -107,7 +108,7 @@ function StructureTree({manifest,byId,subtrees,hiddenIds,selectedId,onSelect,onV
   const [open,setOpen]=useState<Set<string>>(() => new Set());
   const toggle=(id:string)=>setOpen((old)=>{const n=new Set(old);n.has(id)?n.delete(id):n.add(id);return n});
   const node=(id:string,depth=0):ReactNode=>{const s=byId.get(id);if(!s)return null;const has=s.children.length>0;const ids=subtrees.get(id)??[];const shown=ids.filter(id=>!hiddenIds.has(id)).length;return <div key={id}>
-    <div className={`tree-row ${selectedId===id?'selected':''} ${s.asset||s.landmark?.point?'has-geometry':'planned'}`} style={{paddingLeft:8+depth*14}}>
+    <div className={`tree-row ${selectedId===id?'selected':''} ${ids.length?'has-geometry':'planned'}`} style={{paddingLeft:8+depth*14}}>
       <button className="twisty" onClick={()=>has&&toggle(id)} aria-label={`${open.has(id)?'Collapse':'Expand'} ${s.name}`} aria-expanded={has?open.has(id):undefined}>{has?(open.has(id)?'⌄':'›'):''}</button>
       <input className="tree-visibility" type="checkbox" checked={ids.length>0&&shown===ids.length} ref={el=>{if(el)el.indeterminate=shown>0&&shown<ids.length;}} disabled={!ids.length} aria-label={`Show ${s.name} and descendants`} onChange={e=>onVisibility(ids,e.target.checked)} />
       <button className="tree-name" onClick={()=>onSelect(s)}><span>{s.name}</span>{s.kind!=='group'&&<small>{s.landmark?(s.landmark.point?'landmark':'unlocated'):s.asset?'mesh':'planned'}</small>}</button>
@@ -116,21 +117,18 @@ function StructureTree({manifest,byId,subtrees,hiddenIds,selectedId,onSelect,onV
   return <div className="tree">{manifest.roots.map((r)=>node(r))}</div>;
 }
 
-function Detail({structure,manifest,engine,hidden,onHidden,onClose}:{structure:Structure;manifest:AnatomyManifest;engine:AnatomyEngine|null;hidden:boolean;onHidden:(hidden:boolean)=>void;onClose:()=>void}) {
-  const [open, setOpen] = useState(true);
-  const rels=manifest.relationships.filter((r)=>r.from===structure.id||r.to===structure.id||(structure.displayGroup==='anastomoses'&&r.type==='potential_anastomosis'&&r.note===structure.name));
+function Detail({open,onOpenChange,structure,manifest,engine,hidden,onHidden,onClose}:{open:boolean;onOpenChange:(open:boolean)=>void;structure:Structure;manifest:AnatomyManifest;engine:AnatomyEngine|null;hidden:boolean;onHidden:(hidden:boolean)=>void;onClose:()=>void}) {
+  const rels=manifest.relationships.filter((r)=>r.type!=='associated_passage'&&(r.from===structure.id||r.to===structure.id||(structure.displayGroup==='anastomoses'&&r.type==='potential_anastomosis'&&r.note===structure.name)));
   const nameFor=(id:string)=>manifest.structures.find(s=>s.id===id)?.name??'Unknown structure';
-  return <details className="detail panel" open={open} onToggle={e=>setOpen(e.currentTarget.open)}>
+  return <details className="detail panel" open={open} onToggle={e=>onOpenChange(e.currentTarget.open)}>
     <summary className="panel-title"><span className={`sys-dot ${structure.system}`}/><h2>{structure.name}</h2></summary>
     <button className="detail-close" onClick={onClose} aria-label="Close structure details">×</button>
     <div className="detail-body">
     <div className="detail-system">{structure.system}</div>
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
     <dl><dt>Side</dt><dd>{structure.side}</dd></dl>
-    {structure.asset||structure.landmark?.point?<div className="detail-actions"><button onClick={()=>engine?.focus(structure.id)}>Focus</button><button onClick={()=>onHidden(!hidden)}>{hidden?'Show':'Hide'}</button></div>:!structure.landmark&&<p className="planned-copy">The logical structure exists now so models, search, relationships and saved views can use a stable ID before geometry is added.</p>}
-    {structure.landmark&&<dl><dt>Passage</dt><dd>{structure.landmark.connects}</dd><dt>Contents</dt><dd>{structure.landmark.contents}</dd></dl>}
-    {rels.length>0&&<section><h3>Relationships</h3>{rels.map((r,i)=><div className="relationship" key={i}><b>{r.type.replaceAll('_',' ')}</b><span>{r.from===structure.id?nameFor(r.to):r.to===structure.id?nameFor(r.from):`${nameFor(r.from)} → ${nameFor(r.to)}`}</span>{r.note&&<small>{r.note}</small>}</div>)}</section>}
-    {structure.notes&&<section><h3>Notes</h3><p>{structure.notes}</p></section>}
+    {structure.asset||structure.landmark?.point||manifest.structures.some(s=>s.segmentOf===structure.id)?<div className="detail-actions"><button onClick={()=>engine?.focus(structure.id)}>Focus</button><button onClick={()=>onHidden(!hidden)}>{hidden?'Show':'Hide'}</button></div>:!structure.landmark&&structure.kind!=='group'&&<p className="planned-copy">The logical structure exists now so models, search, relationships and saved views can use a stable ID before geometry is added.</p>}
+    {rels.length>0&&<section><h3>Relationships</h3>{rels.map((r,i)=><div className="relationship" key={i}><b>{r.type.replaceAll('_',' ')}</b><span>{r.from===structure.id?nameFor(r.to):r.to===structure.id?nameFor(r.from):`${nameFor(r.from)} → ${nameFor(r.to)}`}</span></div>)}</section>}
     </div>
   </details>;
 }

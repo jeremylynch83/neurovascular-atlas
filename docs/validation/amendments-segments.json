@@ -1,0 +1,316 @@
+[
+  {
+    "side": "right",
+    "boundaries_arc_mm": [
+      0.0,
+      79.11964059937362,
+      113.7874016237551,
+      134.54214598762954,
+      150.23478295851035,
+      153.75707973976304,
+      154.90707973976302,
+      157.51897938987102
+    ],
+    "segment_ids": [
+      "artery.anterior.internal_carotid_right.segment.cervical",
+      "artery.anterior.internal_carotid_right.segment.petrous",
+      "artery.anterior.internal_carotid_right.segment.cavernous",
+      "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+      "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+      "artery.anterior.internal_carotid_right.segment.terminus"
+    ],
+    "origins": {
+      "Caroticotympanic right": {
+        "origin_mm": [
+          34.67629295427726,
+          -56.306609544658976,
+          39.47203167338905
+        ],
+        "arc_mm": 83.61664879743756,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.petrous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Vidian ICA contribution right": {
+        "origin_mm": [
+          16.82695243129759,
+          -51.109553906207765,
+          52.98749781360484
+        ],
+        "arc_mm": 109.28935788255971,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.petrous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Mandibular ICA branch right": {
+        "origin_mm": [
+          23.93442232961888,
+          -52.4965574168463,
+          45.31875460500551
+        ],
+        "arc_mm": 97.27875782560541,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.petrous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Meningohypophyseal trunk right": {
+        "origin_mm": [
+          16.125794036887616,
+          -45.36893349905163,
+          62.33622786243901
+        ],
+        "arc_mm": 120.89912943794245,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.cavernous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Inferolateral trunk right": {
+        "origin_mm": [
+          15.85464457880609,
+          -40.85146293328999,
+          63.935116656801405
+        ],
+        "arc_mm": 125.72936345756972,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.cavernous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Ophthalmic right": {
+        "origin_mm": [
+          11.621050607347561,
+          -41.27243581000352,
+          73.39315987843513
+        ],
+        "arc_mm": 138.44081168126485,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Superior hypophyseal right": {
+        "origin_mm": [
+          13.195536363928639,
+          -34.94463451719205,
+          76.53094821443969
+        ],
+        "arc_mm": 146.41033859326276,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Posterior communicating right": {
+        "origin_mm": [
+          14.340245139586123,
+          -37.33259428915206,
+          79.2804334915184
+        ],
+        "arc_mm": 150.23478295851035,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Anterior choroidal right": {
+        "origin_mm": [
+          15.875342165349215,
+          -39.28790077220204,
+          82.30509343493142
+        ],
+        "arc_mm": 154.20707973976303,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Terminal ICA perforator 1 right": {
+        "origin_mm": [
+          16.522103566396304,
+          -38.97545322331694,
+          83.27284538321842
+        ],
+        "arc_mm": 155.43288223516188,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Terminal ICA perforator 2 right": {
+        "origin_mm": [
+          16.522103566396304,
+          -38.97545322331694,
+          83.27284538321842
+        ],
+        "arc_mm": 155.43288223516188,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      },
+      "ACA A1 right": {
+        "origin_mm": [
+          17.007011118211416,
+          -38.0144760220372,
+          85.00312330736509
+        ],
+        "arc_mm": 157.50897938987103,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      },
+      "MCA M1 right": {
+        "origin_mm": [
+          17.007011118211416,
+          -38.0144760220372,
+          85.00312330736509
+        ],
+        "arc_mm": 157.50897938987103,
+        "expected_segment": "artery.anterior.internal_carotid_right.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      }
+    },
+    "PCom_AChA_arc_separation_mm": 3.9722967812526804,
+    "estimated_soft_tissue_boundaries": true,
+    "physical_surface_review_required": true
+  },
+  {
+    "side": "left",
+    "boundaries_arc_mm": [
+      0.0,
+      78.78957216285968,
+      113.457328442148,
+      134.21236028412082,
+      149.70591718884793,
+      153.70499085025997,
+      154.85499085025995,
+      157.82580124207303
+    ],
+    "segment_ids": [
+      "artery.anterior.internal_carotid_left.segment.cervical",
+      "artery.anterior.internal_carotid_left.segment.petrous",
+      "artery.anterior.internal_carotid_left.segment.cavernous",
+      "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+      "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+      "artery.anterior.internal_carotid_left.segment.terminus"
+    ],
+    "origins": {
+      "Caroticotympanic left": {
+        "origin_mm": [
+          -33.31134044235274,
+          -56.283885999133446,
+          39.62175719010531
+        ],
+        "arc_mm": 83.54562098549961,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.petrous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Vidian ICA contribution left": {
+        "origin_mm": [
+          -15.480861400155716,
+          -51.08044915896857,
+          53.26259726954146
+        ],
+        "arc_mm": 109.33832985985808,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.petrous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Mandibular ICA branch left": {
+        "origin_mm": [
+          -23.725417890386936,
+          -52.799171162536844,
+          45.053568226976815
+        ],
+        "arc_mm": 95.80442893772475,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.petrous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Meningohypophyseal trunk left": {
+        "origin_mm": [
+          -14.790727060450902,
+          -45.01413914105899,
+          62.386402364963594
+        ],
+        "arc_mm": 120.95597427700699,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.cavernous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Inferolateral trunk left": {
+        "origin_mm": [
+          -14.426932662702724,
+          -40.584346094973036,
+          64.02479620606732
+        ],
+        "arc_mm": 125.7512152533176,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.cavernous",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Ophthalmic left": {
+        "origin_mm": [
+          -10.353539225024727,
+          -41.350842718153004,
+          73.3899418290505
+        ],
+        "arc_mm": 138.13936104024478,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Superior hypophyseal left": {
+        "origin_mm": [
+          -11.818173138457922,
+          -34.73936346582579,
+          76.45900423132518
+        ],
+        "arc_mm": 145.99904326455888,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Posterior communicating left": {
+        "origin_mm": [
+          -12.97173161162484,
+          -36.86247218865775,
+          79.25078555843498
+        ],
+        "arc_mm": 149.70591718884793,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Anterior choroidal left": {
+        "origin_mm": [
+          -15.155824460234378,
+          -39.086034403006764,
+          82.33130343494625
+        ],
+        "arc_mm": 154.15499085025996,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Terminal ICA perforator 1 left": {
+        "origin_mm": [
+          -16.17511192305947,
+          -38.84363384309969,
+          83.32148441431508
+        ],
+        "arc_mm": 155.62703615760967,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      },
+      "Terminal ICA perforator 2 left": {
+        "origin_mm": [
+          -16.17511192305947,
+          -38.84363384309969,
+          83.32148441431508
+        ],
+        "arc_mm": 155.62703615760967,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      },
+      "ACA A1 left": {
+        "origin_mm": [
+          -16.99943673598868,
+          -37.863769499898716,
+          85.0067521519517
+        ],
+        "arc_mm": 157.81580124207304,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      },
+      "MCA M1 left": {
+        "origin_mm": [
+          -16.99943673598868,
+          -37.863769499898716,
+          85.0067521519517
+        ],
+        "arc_mm": 157.81580124207304,
+        "expected_segment": "artery.anterior.internal_carotid_left.segment.terminus",
+        "axis_attachment_error_mm": 0.0
+      }
+    },
+    "PCom_AChA_arc_separation_mm": 4.449073661412029,
+    "estimated_soft_tissue_boundaries": true,
+    "physical_surface_review_required": true
+  }
+]

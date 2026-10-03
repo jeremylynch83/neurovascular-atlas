@@ -258,7 +258,7 @@ export class AnatomyEngine {
       const state = this.layers[e.structure.system];
       e.mesh.visible = state !== 'off' && !this.hidden.has(id);
       const mat = e.mesh.material as THREE.MeshStandardMaterial;
-      const selected = id === this.selected;
+      const selected = id === this.selected || e.structure.segmentOf === this.selected;
       mat.color.set(selected ? 0xf2b84b : e.structure.color ?? COLOURS[e.structure.system]);
       mat.emissive.setHex(selected ? 0x4a2b00 : 0x000000);
       const skullContext = e.structure.system === 'bone' && e.structure.provenance.sourceType === 'legacy-placeholder';
@@ -278,8 +278,9 @@ export class AnatomyEngine {
       for (const p of landmark.course) box.expandByPoint(new THREE.Vector3(...p));
       this.fitBox(box,true); return;
     }
-    const e = this.entries.get(id); if (!e) return;
-    const box = new THREE.Box3().setFromObject(e.mesh); this.fitBox(box, true);
+    const box = new THREE.Box3();
+    for (const [key, e] of this.entries) if (key === id || e.structure.segmentOf === id) box.expandByObject(e.mesh);
+    if (!box.isEmpty()) this.fitBox(box, true);
   }
   fitAll(animate = true) {
     const box = new THREE.Box3();
@@ -327,7 +328,7 @@ export class AnatomyEngine {
     const span = Math.abs(n.x)*sz.x + Math.abs(n.y)*sz.y + Math.abs(n.z)*sz.z;
     this.clipPlane.set(n, -(c.dot(n)+offset*span*0.5)); this.refreshMaterials();
   }
-  hasGeometry(id: string) { return this.entries.has(id); }
+  hasGeometry(id: string) { return this.entries.has(id) || [...this.entries.values()].some(e => e.structure.segmentOf === id); }
   render() { if (!this.renderer) return; this.renderer.render(this.scene,this.camera); }
   start() { if (this.disposed) return; this.render(); const loop=()=>{if(this.disposed)return; this.controls.update(); this.raf=requestAnimationFrame(loop)}; loop(); }
   dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.mesh.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }

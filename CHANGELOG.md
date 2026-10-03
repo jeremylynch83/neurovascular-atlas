@@ -1,3 +1,25 @@
+# v0.8.0
+
+- Add 190 named arterial branch meshes and expand to 167 separate potential routes.
+- Correct generic orbital/ILT overlay endpoints and add facial, tympanic, pharyngeal, clival, odontoid, choroidal and pial network representatives.
+- Refit ophthalmic and PCom origins and proximal arcs; keep seven selectable ICA regions per side with explicit anatomical parents.
+- Add provisional arterial segment ranges, selected cortical origin variants, aliases and calibre provenance.
+- Preserve both panel states when selection changes or clears, including collapsed inspection titles.
+- Keep new tissue, venous, arch/access and full spinal modules deferred.
+
+# v0.7.6
+
+- Restore gentle proximal ophthalmic and PCOM curves while retaining corrected origins.
+- Blend the shared terminal ICA, A1 and M1 surface.
+- Add fourteen selectable ICA regions using the Shapiro endovascular classification, with colour coding and branches nested under their region.
+- Support whole-ICA focus/highlight and consistent subtree visibility from details.
+
+# v0.7.5
+
+- Rebuilt bilateral ICA–M1 bifurcations and proximal branch junctions as shared, smoothed surfaces.
+- Raised PCOM and anterior choroidal origins; lowered ophthalmic origins slightly and smoothed proximal courses.
+- Matched panel titles at 13 px, reduced padding and spacing, and removed passage information and notes from structure details.
+
 # v0.7.4
 
 - Stack Layers/Anatomy and structure details on the left, with collapsible title bars.
