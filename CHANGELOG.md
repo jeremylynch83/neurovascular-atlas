@@ -1,3 +1,12 @@
+# v0.7.2
+
+- Corrected bilateral skull-base ICA entry, petrous course and cavernous/clinoid sweep.
+- Added 33 selectable ICA skull-base reference landmarks under Skull.
+- Carotid canal records now use the corrected course and separate entry/bend/exit regions.
+- Ophthalmic origins follow the corrected ICA while their orbital-apex targets are retained.
+- Branch junctions and potential ECA connections follow the same surface deformation.
+- Geometry review remains an authoring operation only.
+
 # v0.7.1
 
 - Git-backed installation at `~/Documents/GitHub/neurovascular-atlas` using the permanent installer.

@@ -958,30 +958,110 @@
       "side": "right",
       "status": "partial",
       "point": [
-        23,
-        -58,
-        42
+        33.7,
+        -56,
+        42.5
       ],
       "course": [
         [
-          26,
-          -63,
-          38
+          34.965,
+          -56.578,
+          35.008
         ],
         [
-          25,
-          -60,
-          41
+          34.996,
+          -56.487,
+          36.362
         ],
         [
-          21,
-          -55,
-          44
+          34.934,
+          -56.411,
+          37.852
         ],
         [
-          16.5,
-          -51,
-          46.5
+          34.747,
+          -56.332,
+          39.155
+        ],
+        [
+          34.557,
+          -56.265,
+          39.908
+        ],
+        [
+          34.322,
+          -56.183,
+          40.566
+        ],
+        [
+          33.992,
+          -56.066,
+          41.234
+        ],
+        [
+          33.584,
+          -55.916,
+          41.836
+        ],
+        [
+          32.489,
+          -55.497,
+          42.847
+        ],
+        [
+          30.373,
+          -54.668,
+          43.841
+        ],
+        [
+          28.984,
+          -54.141,
+          44.263
+        ],
+        [
+          27.613,
+          -53.642,
+          44.618
+        ],
+        [
+          26.212,
+          -53.166,
+          44.932
+        ],
+        [
+          24.781,
+          -52.728,
+          45.194
+        ],
+        [
+          23.373,
+          -52.355,
+          45.393
+        ],
+        [
+          22.541,
+          -52.161,
+          45.502
+        ],
+        [
+          21.656,
+          -51.976,
+          45.64
+        ],
+        [
+          20.818,
+          -51.817,
+          45.834
+        ],
+        [
+          20.05,
+          -51.682,
+          46.119
+        ],
+        [
+          19.367,
+          -51.571,
+          46.522
         ]
       ],
       "connects": "External skull base through petrous temporal bone to petrous apex",
@@ -989,7 +1069,7 @@
       "vessels": [
         "Internal carotid"
       ],
-      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+      "note": "Corrected v0.7.2: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
     },
     {
       "id": "landmark.carotid-canal.left",
@@ -998,30 +1078,110 @@
       "side": "left",
       "status": "partial",
       "point": [
-        -21.706,
-        -58,
-        41.95
+        -32.4,
+        -56,
+        42.4
       ],
       "course": [
         [
-          -24.706,
-          -63,
-          37.95
+          -33.665,
+          -56.578,
+          34.908
         ],
         [
-          -23.706,
-          -60,
-          40.95
+          -33.695,
+          -56.476,
+          36.458
         ],
         [
-          -19.706,
-          -55,
-          43.95
+          -33.592,
+          -56.389,
+          38.161
         ],
         [
-          -15.206,
-          -51,
-          46.45
+          -33.406,
+          -56.317,
+          39.245
+        ],
+        [
+          -33.199,
+          -56.245,
+          39.991
+        ],
+        [
+          -32.947,
+          -56.157,
+          40.639
+        ],
+        [
+          -32.597,
+          -56.032,
+          41.292
+        ],
+        [
+          -32.169,
+          -55.873,
+          41.875
+        ],
+        [
+          -30.866,
+          -55.37,
+          42.952
+        ],
+        [
+          -28.691,
+          -54.521,
+          43.866
+        ],
+        [
+          -27.459,
+          -54.057,
+          44.225
+        ],
+        [
+          -26.085,
+          -53.562,
+          44.573
+        ],
+        [
+          -24.798,
+          -53.13,
+          44.855
+        ],
+        [
+          -23.364,
+          -52.695,
+          45.112
+        ],
+        [
+          -21.997,
+          -52.336,
+          45.303
+        ],
+        [
+          -21.166,
+          -52.145,
+          45.412
+        ],
+        [
+          -20.283,
+          -51.962,
+          45.554
+        ],
+        [
+          -19.517,
+          -51.817,
+          45.734
+        ],
+        [
+          -18.749,
+          -51.682,
+          46.02
+        ],
+        [
+          -18.067,
+          -51.571,
+          46.422
         ]
       ],
       "connects": "External skull base through petrous temporal bone to petrous apex",
@@ -1029,7 +1189,7 @@
       "vessels": [
         "Internal carotid"
       ],
-      "note": "Surface opening/depression or part of the corridor is identifiable; the complete lumen is not resolved."
+      "note": "Corrected v0.7.2: external entry moved out of the jugular-fossa region; initial ascent and anteromedial petrous course. Complete canal lumen remains unresolved. See the separate ICA skull-base landmarks."
     },
     {
       "id": "landmark.caroticotympanic.right",
@@ -2242,6 +2402,1347 @@
         "Vertebral V3"
       ],
       "note": "Registered cervical bone is absent, so this route cannot be fitted to a bony passage."
+    },
+    {
+      "id": "landmark.ica.carotid-entry.right",
+      "name": "External carotid canal opening right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        35,
+        -56.5,
+        35
+      ],
+      "course": [],
+      "connects": "C1/C2 transition. Entry region anterior and lateral to the jugular fossa and medial to the styloid base. The visible depression is partly capped in the coarse source bone.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "C1/C2 transition. Entry region anterior and lateral to the jugular fossa and medial to the styloid base. The visible depression is partly capped in the coarse source bone. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-ascending.right",
+      "name": "Ascending petrous carotid canal right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        35,
+        -56.4,
+        39
+      ],
+      "course": [
+        [
+          34.965,
+          -56.578,
+          35.008
+        ],
+        [
+          34.987,
+          -56.532,
+          35.622
+        ],
+        [
+          34.996,
+          -56.487,
+          36.362
+        ],
+        [
+          34.981,
+          -56.448,
+          37.106
+        ],
+        [
+          34.934,
+          -56.411,
+          37.852
+        ],
+        [
+          34.846,
+          -56.37,
+          38.596
+        ],
+        [
+          34.747,
+          -56.332,
+          39.155
+        ],
+        [
+          34.661,
+          -56.301,
+          39.535
+        ],
+        [
+          34.576,
+          -56.272,
+          39.846
+        ],
+        [
+          34.458,
+          -56.231,
+          40.212
+        ],
+        [
+          34.322,
+          -56.183,
+          40.566
+        ],
+        [
+          34.167,
+          -56.129,
+          40.908
+        ],
+        [
+          33.992,
+          -56.066,
+          41.234
+        ],
+        [
+          33.798,
+          -55.995,
+          41.544
+        ],
+        [
+          33.584,
+          -55.916,
+          41.836
+        ],
+        [
+          33.35,
+          -55.828,
+          42.11
+        ]
+      ],
+      "connects": "Initial ascending part of C2, before its anteromedial bend.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Initial ascending part of C2, before its anteromedial bend. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-genu.right",
+      "name": "Petrous carotid genu right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        33.7,
+        -56,
+        42.5
+      ],
+      "course": [
+        [
+          34.785,
+          -56.346,
+          38.964
+        ],
+        [
+          34.72,
+          -56.322,
+          39.283
+        ],
+        [
+          34.645,
+          -56.296,
+          39.598
+        ],
+        [
+          34.557,
+          -56.265,
+          39.908
+        ],
+        [
+          34.458,
+          -56.231,
+          40.212
+        ],
+        [
+          34.346,
+          -56.192,
+          40.508
+        ],
+        [
+          34.22,
+          -56.148,
+          40.796
+        ],
+        [
+          34.082,
+          -56.098,
+          41.073
+        ],
+        [
+          33.93,
+          -56.044,
+          41.34
+        ],
+        [
+          33.763,
+          -55.983,
+          41.594
+        ],
+        [
+          33.584,
+          -55.916,
+          41.836
+        ],
+        [
+          33.39,
+          -55.843,
+          42.065
+        ],
+        [
+          32.795,
+          -55.616,
+          42.622
+        ],
+        [
+          32.0,
+          -55.305,
+          43.147
+        ],
+        [
+          31.118,
+          -54.959,
+          43.564
+        ],
+        [
+          29.991,
+          -54.521,
+          43.966
+        ]
+      ],
+      "connects": "C2 bend joining the ascending canal to the anteromedial horizontal canal.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "C2 bend joining the ascending canal to the anteromedial horizontal canal. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-horizontal.right",
+      "name": "Horizontal petrous carotid canal right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        26.5,
+        -53.6,
+        44.7
+      ],
+      "course": [
+        [
+          33.35,
+          -55.828,
+          42.11
+        ],
+        [
+          32.0,
+          -55.305,
+          43.147
+        ],
+        [
+          30.373,
+          -54.668,
+          43.841
+        ],
+        [
+          29.21,
+          -54.225,
+          44.2
+        ],
+        [
+          28.188,
+          -53.848,
+          44.475
+        ],
+        [
+          27.149,
+          -53.481,
+          44.728
+        ],
+        [
+          26.093,
+          -53.128,
+          44.956
+        ],
+        [
+          25.021,
+          -52.798,
+          45.154
+        ],
+        [
+          23.934,
+          -52.497,
+          45.319
+        ],
+        [
+          23.069,
+          -52.282,
+          45.432
+        ],
+        [
+          22.391,
+          -52.129,
+          45.522
+        ],
+        [
+          21.728,
+          -51.991,
+          45.627
+        ],
+        [
+          21.091,
+          -51.867,
+          45.761
+        ],
+        [
+          20.489,
+          -51.758,
+          45.94
+        ],
+        [
+          19.93,
+          -51.662,
+          46.178
+        ],
+        [
+          19.367,
+          -51.571,
+          46.522
+        ]
+      ],
+      "connects": "C2 courses anteromedially within the petrous temporal bone towards its apex.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "C2 courses anteromedially within the petrous temporal bone towards its apex. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-exit.right",
+      "name": "Internal carotid canal opening right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "partial",
+      "point": [
+        19.5,
+        -51.8,
+        44.5
+      ],
+      "course": [],
+      "connects": "Petrous-apex exit region. The small source-mesh opening and the complete illustrative artery calibre do not establish a patent canal fit.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Petrous-apex exit region. The small source-mesh opening and the complete illustrative artery calibre do not establish a patent canal fit. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.petrous-apex.right",
+      "name": "Petrous apex right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        13.841,
+        -51.804,
+        45.824
+      ],
+      "course": [],
+      "connects": "Anteromedial end of the petrous temporal bone, beside the lacerum region.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Anteromedial end of the petrous temporal bone, beside the lacerum region. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.temporal.right",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.jugular-fossa.right",
+      "name": "Jugular fossa right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        26.949,
+        -64.721,
+        41.26
+      ],
+      "course": [],
+      "connects": "Depression posterior and medial to the carotid entry region. This is an exclusion landmark for the cervical ICA.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Depression posterior and medial to the carotid entry region. This is an exclusion landmark for the cervical ICA. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.temporal.right",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.styloid-base.right",
+      "name": "Styloid process base right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        39.258,
+        -59.867,
+        35.488
+      ],
+      "course": [],
+      "connects": "Bony reference lateral and posterior to the carotid entry region.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Bony reference lateral and posterior to the carotid entry region. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.temporal.right",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.lingula.right",
+      "name": "Sphenoid lingula region right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        16,
+        -49,
+        53
+      ],
+      "course": [],
+      "connects": "Estimated sphenoid attachment region of the petrolingual ligament. The small process is not separately resolved.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated sphenoid attachment region of the petrolingual ligament. The small process is not separately resolved. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.petrolingual.right",
+      "name": "Petrolingual boundary (estimated) right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        16.5,
+        -50.5,
+        57.5
+      ],
+      "course": [],
+      "connects": "Estimated C3/C4 boundary at the superior edge of the petrolingual ligament. The ligament is not present in the bone mesh.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated C3/C4 boundary at the superior edge of the petrolingual ligament. The ligament is not present in the bone mesh. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-sulcus.right",
+      "name": "Carotid sulcus of sphenoid right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        14.655,
+        -37.562,
+        62.348
+      ],
+      "course": [],
+      "connects": "Bony groove lateral to the sellar body. The cavernous ICA follows the adjacent parasellar space.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Bony groove lateral to the sellar body. The cavernous ICA follows the adjacent parasellar space. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.posterior-clinoid.right",
+      "name": "Posterior clinoid process right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        8.127,
+        -49.146,
+        64.663
+      ],
+      "course": [],
+      "connects": "Lateral end of the dorsum sellae, medial to the posterior cavernous ICA.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Lateral end of the dorsum sellae, medial to the posterior cavernous ICA. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.anterior-clinoid.right",
+      "name": "Anterior clinoid process right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "visible",
+      "point": [
+        15.769,
+        -38.757,
+        70.876
+      ],
+      "course": [],
+      "connects": "Clinoid process over the anterior cavernous bend. C5 ascends medial to this process.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Clinoid process over the anterior cavernous bend. C5 ascends medial to this process. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.optic-strut.right",
+      "name": "Optic strut region right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        12,
+        -33,
+        69
+      ],
+      "course": [],
+      "connects": "Estimated inferior root of the anterior clinoid, between optic canal and superior orbital fissure. A separate strut boundary is not reliably resolved.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated inferior root of the anterior clinoid, between optic canal and superior orbital fissure. A separate strut boundary is not reliably resolved. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.dural-rings.right",
+      "name": "Proximal and distal dural ring region right",
+      "region": "ICA skull-base landmarks",
+      "side": "right",
+      "status": "regional",
+      "point": [
+        10.6,
+        -41,
+        73.7
+      ],
+      "course": [
+        [
+          11.024,
+          -41.264,
+          70.238
+        ],
+        [
+          10.865,
+          -41.352,
+          70.787
+        ],
+        [
+          10.761,
+          -41.387,
+          71.365
+        ],
+        [
+          10.716,
+          -41.386,
+          71.964
+        ],
+        [
+          10.728,
+          -41.367,
+          72.576
+        ],
+        [
+          10.811,
+          -41.346,
+          73.282
+        ],
+        [
+          10.917,
+          -41.342,
+          73.806
+        ],
+        [
+          11.022,
+          -41.347,
+          74.205
+        ],
+        [
+          11.146,
+          -41.361,
+          74.6
+        ],
+        [
+          11.287,
+          -41.382,
+          74.991
+        ],
+        [
+          11.468,
+          -41.409,
+          75.431
+        ],
+        [
+          11.641,
+          -41.433,
+          75.811
+        ],
+        [
+          11.827,
+          -41.452,
+          76.185
+        ],
+        [
+          12.024,
+          -41.462,
+          76.554
+        ],
+        [
+          12.23,
+          -41.461,
+          76.917
+        ],
+        [
+          12.475,
+          -41.441,
+          77.326
+        ]
+      ],
+      "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-entry.left",
+      "name": "External carotid canal opening left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -33.7,
+        -56.5,
+        34.9
+      ],
+      "course": [],
+      "connects": "C1/C2 transition. Entry region anterior and lateral to the jugular fossa and medial to the styloid base. The visible depression is partly capped in the coarse source bone.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "C1/C2 transition. Entry region anterior and lateral to the jugular fossa and medial to the styloid base. The visible depression is partly capped in the coarse source bone. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-ascending.left",
+      "name": "Ascending petrous carotid canal left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -33.7,
+        -56.4,
+        38.9
+      ],
+      "course": [
+        [
+          -33.665,
+          -56.578,
+          34.908
+        ],
+        [
+          -33.689,
+          -56.526,
+          35.61
+        ],
+        [
+          -33.695,
+          -56.476,
+          36.458
+        ],
+        [
+          -33.674,
+          -56.44,
+          37.167
+        ],
+        [
+          -33.608,
+          -56.397,
+          38.02
+        ],
+        [
+          -33.485,
+          -56.346,
+          38.864
+        ],
+        [
+          -33.42,
+          -56.322,
+          39.182
+        ],
+        [
+          -33.328,
+          -56.29,
+          39.56
+        ],
+        [
+          -33.239,
+          -56.259,
+          39.869
+        ],
+        [
+          -33.115,
+          -56.216,
+          40.231
+        ],
+        [
+          -32.972,
+          -56.166,
+          40.582
+        ],
+        [
+          -32.839,
+          -56.119,
+          40.864
+        ],
+        [
+          -32.661,
+          -56.055,
+          41.188
+        ],
+        [
+          -32.498,
+          -55.995,
+          41.445
+        ],
+        [
+          -32.283,
+          -55.916,
+          41.737
+        ],
+        [
+          -32.05,
+          -55.828,
+          42.01
+        ]
+      ],
+      "connects": "Initial ascending part of C2, before its anteromedial bend.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Initial ascending part of C2, before its anteromedial bend. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-genu.left",
+      "name": "Petrous carotid genu left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -32.4,
+        -56,
+        42.4
+      ],
+      "course": [
+        [
+          -33.485,
+          -56.346,
+          38.864
+        ],
+        [
+          -33.42,
+          -56.322,
+          39.182
+        ],
+        [
+          -33.345,
+          -56.296,
+          39.497
+        ],
+        [
+          -33.258,
+          -56.265,
+          39.807
+        ],
+        [
+          -33.158,
+          -56.231,
+          40.111
+        ],
+        [
+          -33.046,
+          -56.192,
+          40.408
+        ],
+        [
+          -32.92,
+          -56.148,
+          40.696
+        ],
+        [
+          -32.782,
+          -56.098,
+          40.974
+        ],
+        [
+          -32.629,
+          -56.043,
+          41.24
+        ],
+        [
+          -32.463,
+          -55.983,
+          41.495
+        ],
+        [
+          -32.283,
+          -55.916,
+          41.737
+        ],
+        [
+          -32.09,
+          -55.843,
+          41.965
+        ],
+        [
+          -31.494,
+          -55.615,
+          42.523
+        ],
+        [
+          -30.698,
+          -55.304,
+          43.048
+        ],
+        [
+          -29.817,
+          -54.958,
+          43.464
+        ],
+        [
+          -28.691,
+          -54.521,
+          43.866
+        ]
+      ],
+      "connects": "C2 bend joining the ascending canal to the anteromedial horizontal canal.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "C2 bend joining the ascending canal to the anteromedial horizontal canal. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-horizontal.left",
+      "name": "Horizontal petrous carotid canal left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -25.2,
+        -53.6,
+        44.6
+      ],
+      "course": [
+        [
+          -32.05,
+          -55.828,
+          42.01
+        ],
+        [
+          -30.698,
+          -55.304,
+          43.048
+        ],
+        [
+          -29.072,
+          -54.668,
+          43.741
+        ],
+        [
+          -27.911,
+          -54.225,
+          44.1
+        ],
+        [
+          -26.89,
+          -53.849,
+          44.375
+        ],
+        [
+          -25.853,
+          -53.482,
+          44.627
+        ],
+        [
+          -24.798,
+          -53.13,
+          44.855
+        ],
+        [
+          -23.725,
+          -52.799,
+          45.054
+        ],
+        [
+          -22.636,
+          -52.497,
+          45.219
+        ],
+        [
+          -21.769,
+          -52.282,
+          45.332
+        ],
+        [
+          -21.091,
+          -52.129,
+          45.422
+        ],
+        [
+          -20.428,
+          -51.99,
+          45.527
+        ],
+        [
+          -19.79,
+          -51.867,
+          45.661
+        ],
+        [
+          -19.187,
+          -51.758,
+          45.841
+        ],
+        [
+          -18.629,
+          -51.662,
+          46.078
+        ],
+        [
+          -18.067,
+          -51.571,
+          46.422
+        ]
+      ],
+      "connects": "C2 courses anteromedially within the petrous temporal bone towards its apex.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "C2 courses anteromedially within the petrous temporal bone towards its apex. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-exit.left",
+      "name": "Internal carotid canal opening left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "partial",
+      "point": [
+        -18.2,
+        -51.8,
+        44.4
+      ],
+      "course": [],
+      "connects": "Petrous-apex exit region. The small source-mesh opening and the complete illustrative artery calibre do not establish a patent canal fit.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Petrous-apex exit region. The small source-mesh opening and the complete illustrative artery calibre do not establish a patent canal fit. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.petrous-apex.left",
+      "name": "Petrous apex left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -12.489,
+        -51.888,
+        45.765
+      ],
+      "course": [],
+      "connects": "Anteromedial end of the petrous temporal bone, beside the lacerum region.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Anteromedial end of the petrous temporal bone, beside the lacerum region. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.temporal.left",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.jugular-fossa.left",
+      "name": "Jugular fossa left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -25.629,
+        -64.774,
+        41.218
+      ],
+      "course": [],
+      "connects": "Depression posterior and medial to the carotid entry region. This is an exclusion landmark for the cervical ICA.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Depression posterior and medial to the carotid entry region. This is an exclusion landmark for the cervical ICA. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.temporal.left",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.styloid-base.left",
+      "name": "Styloid process base left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -37.895,
+        -59.837,
+        35.561
+      ],
+      "course": [],
+      "connects": "Bony reference lateral and posterior to the carotid entry region.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Bony reference lateral and posterior to the carotid entry region. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.temporal.left",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.lingula.left",
+      "name": "Sphenoid lingula region left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -14.7,
+        -49,
+        52.9
+      ],
+      "course": [],
+      "connects": "Estimated sphenoid attachment region of the petrolingual ligament. The small process is not separately resolved.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated sphenoid attachment region of the petrolingual ligament. The small process is not separately resolved. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.petrolingual.left",
+      "name": "Petrolingual boundary (estimated) left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -15.2,
+        -50.5,
+        57.4
+      ],
+      "course": [],
+      "connects": "Estimated C3/C4 boundary at the superior edge of the petrolingual ligament. The ligament is not present in the bone mesh.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated C3/C4 boundary at the superior edge of the petrolingual ligament. The ligament is not present in the bone mesh. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.carotid-sulcus.left",
+      "name": "Carotid sulcus of sphenoid left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -13.517,
+        -37.592,
+        62.164
+      ],
+      "course": [],
+      "connects": "Bony groove lateral to the sellar body. The cavernous ICA follows the adjacent parasellar space.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Bony groove lateral to the sellar body. The cavernous ICA follows the adjacent parasellar space. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.posterior-clinoid.left",
+      "name": "Posterior clinoid process left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -6.882,
+        -49.094,
+        64.598
+      ],
+      "course": [],
+      "connects": "Lateral end of the dorsum sellae, medial to the posterior cavernous ICA.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Lateral end of the dorsum sellae, medial to the posterior cavernous ICA. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.anterior-clinoid.left",
+      "name": "Anterior clinoid process left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "visible",
+      "point": [
+        -14.524,
+        -38.815,
+        70.894
+      ],
+      "course": [],
+      "connects": "Clinoid process over the anterior cavernous bend. C5 ascends medial to this process.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Clinoid process over the anterior cavernous bend. C5 ascends medial to this process. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.optic-strut.left",
+      "name": "Optic strut region left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -10.7,
+        -33,
+        68.9
+      ],
+      "course": [],
+      "connects": "Estimated inferior root of the anterior clinoid, between optic canal and superior orbital fissure. A separate strut boundary is not reliably resolved.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated inferior root of the anterior clinoid, between optic canal and superior orbital fissure. A separate strut boundary is not reliably resolved. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.dural-rings.left",
+      "name": "Proximal and distal dural ring region left",
+      "region": "ICA skull-base landmarks",
+      "side": "left",
+      "status": "regional",
+      "point": [
+        -9.3,
+        -41,
+        73.60000000000001
+      ],
+      "course": [
+        [
+          -9.725,
+          -41.264,
+          70.138
+        ],
+        [
+          -9.565,
+          -41.352,
+          70.687
+        ],
+        [
+          -9.461,
+          -41.387,
+          71.265
+        ],
+        [
+          -9.414,
+          -41.384,
+          71.951
+        ],
+        [
+          -9.435,
+          -41.364,
+          72.564
+        ],
+        [
+          -9.526,
+          -41.344,
+          73.27
+        ],
+        [
+          -9.627,
+          -41.342,
+          73.751
+        ],
+        [
+          -9.743,
+          -41.349,
+          74.181
+        ],
+        [
+          -9.863,
+          -41.363,
+          74.554
+        ],
+        [
+          -10.017,
+          -41.386,
+          74.975
+        ],
+        [
+          -10.168,
+          -41.409,
+          75.339
+        ],
+        [
+          -10.354,
+          -41.434,
+          75.749
+        ],
+        [
+          -10.529,
+          -41.451,
+          76.103
+        ],
+        [
+          -10.74,
+          -41.461,
+          76.502
+        ],
+        [
+          -10.933,
+          -41.458,
+          76.846
+        ],
+        [
+          -11.162,
+          -41.438,
+          77.233
+        ]
+      ],
+      "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "anchorBone": null,
+      "method": "reference-guided regional estimate"
+    },
+    {
+      "id": "landmark.ica.sella.midline",
+      "name": "Sellar floor",
+      "region": "ICA skull-base landmarks",
+      "side": "midline",
+      "status": "visible",
+      "point": [
+        0.69,
+        -40.105,
+        62.131
+      ],
+      "course": [],
+      "connects": "Floor of the hypophyseal fossa. The cavernous carotids lie to either side.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Floor of the hypophyseal fossa. The cavernous carotids lie to either side. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.dorsum-sellae.midline",
+      "name": "Dorsum sellae",
+      "region": "ICA skull-base landmarks",
+      "side": "midline",
+      "status": "visible",
+      "point": [
+        0.643,
+        -46.906,
+        65.324
+      ],
+      "course": [],
+      "connects": "Posterior boundary of the hypophyseal fossa, between the posterior clinoids.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Posterior boundary of the hypophyseal fossa, between the posterior clinoids. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.sphenoid",
+      "method": "closest point on individually reviewed bone"
+    },
+    {
+      "id": "landmark.ica.clivus.midline",
+      "name": "Upper clivus",
+      "region": "ICA skull-base landmarks",
+      "side": "midline",
+      "status": "visible",
+      "point": [
+        0.768,
+        -55.542,
+        53.724
+      ],
+      "course": [],
+      "connects": "Midline sloping skull-base surface posterior to the sella; the posterior cavernous carotids lie laterally.",
+      "contents": "Internal carotid artery anatomical reference",
+      "vessels": [
+        "Internal carotid"
+      ],
+      "note": "Midline sloping skull-base surface posterior to the sella; the posterior cavernous carotids lie laterally. Marker is on the reviewed bone surface; it is a regional anatomical anchor, not a segmented structure boundary.",
+      "anchorBone": "bone.occipital",
+      "method": "closest point on individually reviewed bone"
     }
   ]
 }
