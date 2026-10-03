@@ -5,5 +5,5 @@ case "${1:-help}" in
   ensure-reference|sync|validate|build) python3 tools/validate_anatomy.py --build ;;
   migrate-local) : ;; # Compatibility with the existing installer. Leave old data untouched.
   where) pwd ;;
-  *) echo "INR Anatomy Atlas v0.8.0: prebuilt combined anatomy. Run ./anatomy.sh validate" ;;
+  *) echo "INR Anatomy Atlas v0.8.1: prebuilt combined anatomy. Run ./anatomy.sh validate" ;;
 esac

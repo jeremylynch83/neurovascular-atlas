@@ -1,0 +1,48 @@
+{
+  "release": "0.8.1",
+  "changed_centrelines": [
+    "Ophthalmic right",
+    "Ophthalmic left"
+  ],
+  "unchanged_centrelines": 573,
+  "all_radii_and_parents_unchanged": true,
+  "potential_routes_unchanged": true,
+  "sides": [
+    {
+      "side": "right",
+      "origin_before_mm": [
+        11.621050607347561,
+        -41.27243581000352,
+        73.39315987843513
+      ],
+      "origin_after_mm": [
+        13.145818793957412,
+        -34.88596487529242,
+        76.42598643726603
+      ],
+      "height_change_mm": 3.032826558830905,
+      "maximum_adjacent_tangent_change_degrees": 12.159797789340018,
+      "distal_retained_from_sample": 53,
+      "origin_distal_to_genu_arc_mm": 0.484030466225164,
+      "paraophthalmic_start_before_origin_arc_mm": 1.0
+    },
+    {
+      "side": "left",
+      "origin_before_mm": [
+        -10.353539225024727,
+        -41.350842718153004,
+        73.3899418290505
+      ],
+      "origin_after_mm": [
+        -11.923397266814266,
+        -34.848519718571175,
+        76.7147740529189
+      ],
+      "height_change_mm": 3.3248322238683983,
+      "maximum_adjacent_tangent_change_degrees": 8.6441774427366,
+      "distal_retained_from_sample": 53,
+      "origin_distal_to_genu_arc_mm": 0.5749567625383918,
+      "paraophthalmic_start_before_origin_arc_mm": 1.0
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 # v0.8.0
 
+## v0.8.1
+
+- Move both ophthalmic origins just distal to the anterior genu, retaining a curved proximal departure.
+- Start each selectable paraophthalmic segment 1 mm of centreline arc before its ophthalmic origin.
+- Preserve the ICA centreline, PCom/AChA origins and distal ophthalmic course.
+- Include installer 0.7.2 with clear diagnostics for incomplete release archives.
+
 - Add 190 named arterial branch meshes and expand to 167 separate potential routes.
 - Correct generic orbital/ILT overlay endpoints and add facial, tympanic, pharyngeal, clival, odontoid, choroidal and pial network representatives.
 - Refit ophthalmic and PCom origins and proximal arcs; keep seven selectable ICA regions per side with explicit anatomical parents.
