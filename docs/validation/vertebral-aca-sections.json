@@ -1,5 +1,5 @@
 {
-  "release": "0.8.6",
+  "release": "0.8.9",
   "source": "nv(2).pdf, printed pages 40\u201343 and 47\u201348",
   "geometryOperation": "Existing triangles partitioned once; positions and normals retained exactly; no new caps or altered vessel course.",
   "plans": [
@@ -2171,10 +2171,10 @@
     {
       "sourceNode": "Vertebral right",
       "boundsArcMm": [
-        0.0,
+        0,
         30.306241489829038,
-        97.22002192167577,
-        174.33587383454062,
+        115.523791904779,
+        144.02961030959602,
         194.13995787773393
       ],
       "boundaryPointsMm": [
@@ -2189,14 +2189,14 @@
           -84.94134269198169
         ],
         [
-          18.99208760798657,
-          -81.99822634476904,
-          -18.131607767132056
+          21.89732911469078,
+          -83.94893270885419,
+          -0.26410125763512327
         ],
         [
-          10.000667425782991,
-          -88.90759948843986,
-          33.101270209731894
+          23.695524106710504,
+          -99.78444702150455,
+          16.456194272513734
         ],
         [
           -4.541553493952327e-16,
@@ -2205,10 +2205,10 @@
         ]
       ],
       "boundaryBasis": [
-        "Truncated proximal course to estimated C6 entry",
-        "Estimated C6 entry to C2 transverse foramen",
-        "C2, C1 loop and atlas groove to estimated dural entry",
-        "Intradural course to vertebrobasilar junction"
+        "V1 and C6-entry boundary retained",
+        "Ascending foraminal limb to diagram-marked C2-exit region",
+        "Diagram-marked short outer atlas loop",
+        "Diagram-marked medial/ascending cranial limb to basilar junction"
       ],
       "pathMm": [
         [
@@ -5462,17 +5462,17 @@
         {
           "id": "artery.posterior.vertebral_right.segment.v2",
           "name": "Vertebral V2 right",
-          "faces": 28544
+          "faces": 36561
         },
         {
           "id": "artery.posterior.vertebral_right.segment.v3",
           "name": "Vertebral V3 right",
-          "faces": 32239
+          "faces": 11702
         },
         {
           "id": "artery.posterior.vertebral_right.segment.v4",
           "name": "Vertebral V4 right",
-          "faces": 8349
+          "faces": 20869
         }
       ],
       "allFacesAssignedOnce": true,
@@ -7656,10 +7656,10 @@
     {
       "sourceNode": "Vertebral left",
       "boundsArcMm": [
-        0.0,
+        0,
         30.33893058487912,
-        97.62527137217018,
-        174.22353135260676,
+        115.64839881741287,
+        144.1849641866958,
         194.64974692989082
       ],
       "boundaryPointsMm": [
@@ -7674,14 +7674,14 @@
           -85.05977680956487
         ],
         [
-          -19.007372820219707,
-          -82.6018626732546,
-          -17.877444417027327
+          -21.888197652238052,
+          -84.54435981116126,
+          -0.2879533499338601
         ],
         [
-          -9.998621624184237,
-          -89.68337164846436,
-          32.90689523538362
+          -23.690713434897493,
+          -100.38525113558956,
+          16.4563815663319
         ],
         [
           9.784772140751172e-16,
@@ -7690,10 +7690,10 @@
         ]
       ],
       "boundaryBasis": [
-        "Truncated proximal course to estimated C6 entry",
-        "Estimated C6 entry to C2 transverse foramen",
-        "C2, C1 loop and atlas groove to estimated dural entry",
-        "Intradural course to vertebrobasilar junction"
+        "V1 and C6-entry boundary retained",
+        "Ascending foraminal limb to diagram-marked C2-exit region",
+        "Diagram-marked short outer atlas loop",
+        "Diagram-marked medial/ascending cranial limb to basilar junction"
       ],
       "pathMm": [
         [
@@ -10952,21 +10952,22 @@
         {
           "id": "artery.posterior.vertebral_left.segment.v2",
           "name": "Vertebral V2 left",
-          "faces": 28672
+          "faces": 36574
         },
         {
           "id": "artery.posterior.vertebral_left.segment.v3",
           "name": "Vertebral V3 left",
-          "faces": 33195
+          "faces": 12315
         },
         {
           "id": "artery.posterior.vertebral_left.segment.v4",
           "name": "Vertebral V4 left",
-          "faces": 8871
+          "faces": 21849
         }
       ],
       "allFacesAssignedOnce": true,
       "positionsAndNormalsUnchanged": true
     }
-  ]
+  ],
+  "vertebralBoundaryCorrection": "V2/V3 and V3/V4 follow image(20261003-204543).png; ACA boundaries unchanged."
 }

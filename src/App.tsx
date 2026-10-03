@@ -12,6 +12,7 @@ const SYSTEMS: { id: SystemId; label: string; hint: string }[] = [
   { id: 'brain', label: 'Brain', hint: 'Parenchymal context' },
 ];
 const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: 'on' };
+const panelsInitiallyOpen = () => typeof window === 'undefined' || !window.matchMedia('(max-width: 680px)').matches;
 
 export function App({ manifest }: { manifest: AnatomyManifest }) {
   const stage = useRef<HTMLDivElement>(null);
@@ -21,8 +22,8 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [query, setQuery] = useState('');
   const [layers, setLayers] = useState<Record<SystemId, LayerState>>({ bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' });
   const [tab, setTab] = useState<'layers'|'tree'>('layers');
-  const [controlsOpen, setControlsOpen] = useState(true);
-  const [inspectionOpen, setInspectionOpen] = useState(true);
+  const [controlsOpen, setControlsOpen] = useState(panelsInitiallyOpen);
+  const [inspectionOpen, setInspectionOpen] = useState(panelsInitiallyOpen);
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
   const [loadProgress, setLoadProgress] = useState(0);
@@ -142,7 +143,7 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect,engine,hidde
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
     {structure.asset||structure.landmark?.point||manifest.structures.some(s=>s.segmentOf===structure.id)?<div className="detail-actions"><button onClick={()=>engine?.focus(structure.id)}>Focus</button><button onClick={()=>onHidden(!hidden)}>{hidden?'Show':'Hide'}</button></div>:null}
     {structure.description?.trim()&&<Description text={structure.description} byId={byId} onSelect={onSelect} />}
-    {groups.size>0&&<section><h3>Relationships</h3>{[...groups].map(([type,ids])=><div className="relationship" key={type}><b>{type.replaceAll('_',' ')}: </b>{[...ids].map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();onSelect(byId.get(id)!);}}>{byId.get(id)!.name}</a></span>)}</div>)}</section>}
+    {groups.size>0&&<section><h3>Relationships</h3>{[...groups].map(([type,ids])=><div className="relationship" key={type}><b>{type.replaceAll('_',' ').replace(/^./,letter=>letter.toUpperCase())}: </b>{[...ids].map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();onSelect(byId.get(id)!);}}>{byId.get(id)!.name}</a></span>)}</div>)}</section>}
     </div>
   </section>;
 }

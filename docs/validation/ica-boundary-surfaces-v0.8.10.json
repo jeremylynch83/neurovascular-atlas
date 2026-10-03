@@ -1,0 +1,38 @@
+{
+  "release": "0.8.10",
+  "circulation_meshes_before_and_after": 599,
+  "unchanged_meshes_exact_all_attributes_indices_and_transforms": 593,
+  "repartitioned_ica_meshes": 6,
+  "continuous_ica_surfaces_exact_all_triangle_attributes": true,
+  "welded_branch_junction_checks": [
+    {
+      "side": "right",
+      "original_welded_seam_vertices_retained": 70
+    },
+    {
+      "side": "left",
+      "original_welded_seam_vertices_retained": 70
+    }
+  ],
+  "circulation_triangles_before_and_after": 5765374,
+  "all_model_triangles": 6442421,
+  "no_new_caps_or_dropped_triangles": true,
+  "other_model_assets": [
+    {
+      "file": "complete-anastomoses.glb",
+      "sha256": "7414774b9376b8b88b49e2d957921697420eb495f0d9efbb93ddaba4e41ebc78",
+      "unchanged": true
+    },
+    {
+      "file": "craniofacial.glb",
+      "sha256": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+      "unchanged": true
+    }
+  ],
+  "all_gui_and_engine_sources_unchanged": true,
+  "stable_structure_ids": 1012,
+  "unchanged_descriptions": 735,
+  "all_relationships_and_branch_parents_unchanged": true,
+  "catalogue_parent_links_match_manifest": true,
+  "upper_ica_branches_vertebral_and_aca_byte_exact": true
+}

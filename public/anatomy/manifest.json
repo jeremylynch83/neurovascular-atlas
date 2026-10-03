@@ -1,13 +1,13 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.8.7",
+  "release": "0.8.10",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
-    "models/complete-circulation.glb": "f7b4bcdc788914d796c1",
+    "models/complete-circulation.glb": "ddcb1f79253751267d37",
     "models/complete-anastomoses.glb": "7414774b9376b8b88b49"
   },
   "structures": [
@@ -9733,7 +9733,7 @@
           "ref.parraga2011"
         ]
       },
-      "notes": "Truncated V1, estimated C6-C1 foraminal course, V3 atlas loop, V4 foramen-magnum entry. No registered cervical vertebrae; no ostial/subclavian geometry. Model compartment: mixed.",
+      "notes": "Truncated V1; estimated C6-C2 foraminal V2 course; short V3 outer atlas loop; medial/ascending V4 course. V2/V3 and V3/V4 boundaries corrected to the supplied annotated diagram. No registered cervical vertebrae or dura; vessel course unchanged.",
       "color": "#eda97d",
       "calibreProvenance": {
         "units": "mm",
@@ -9772,7 +9772,7 @@
           "ref.parraga2011"
         ]
       },
-      "notes": "Truncated V1, estimated C6-C1 foraminal course, V3 atlas loop, V4 foramen-magnum entry. No registered cervical vertebrae; no ostial/subclavian geometry. Model compartment: mixed.",
+      "notes": "Truncated V1; estimated C6-C2 foraminal V2 course; short V3 outer atlas loop; medial/ascending V4 course. V2/V3 and V3/V4 boundaries corrected to the supplied annotated diagram. No registered cervical vertebrae or dura; vessel course unchanged.",
       "color": "#eda97d",
       "calibreProvenance": {
         "units": "mm",
@@ -11568,7 +11568,7 @@
     {
       "id": "artery.posterior.posterior_spinal_right",
       "name": "Posterior spinal right",
-      "parent": "artery.posterior.vertebral_right.segment.v3",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -11644,7 +11644,7 @@
     {
       "id": "artery.posterior.va_muscular_c2_right",
       "name": "VA muscular C2 right",
-      "parent": "artery.posterior.vertebral_right.segment.v3",
+      "parent": "artery.posterior.vertebral_right.segment.v2",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -11682,7 +11682,7 @@
     {
       "id": "artery.posterior.va_odontoid_contribution_right",
       "name": "VA odontoid contribution right",
-      "parent": "artery.posterior.vertebral_right.segment.v3",
+      "parent": "artery.posterior.vertebral_right.segment.v2",
       "children": [
         "artery.connection.odontoid_inferior_transverse_arcade.midline"
       ],
@@ -11723,7 +11723,7 @@
     {
       "id": "artery.posterior.posterior_meningeal_va_right",
       "name": "Posterior meningeal VA right",
-      "parent": "artery.posterior.vertebral_right.segment.v3",
+      "parent": "artery.posterior.vertebral_right.segment.v4",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -13636,7 +13636,7 @@
     {
       "id": "artery.posterior.posterior_spinal_left",
       "name": "Posterior spinal left",
-      "parent": "artery.posterior.vertebral_left.segment.v3",
+      "parent": "artery.posterior.vertebral_left.segment.v4",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13712,7 +13712,7 @@
     {
       "id": "artery.posterior.va_muscular_c2_left",
       "name": "VA muscular C2 left",
-      "parent": "artery.posterior.vertebral_left.segment.v3",
+      "parent": "artery.posterior.vertebral_left.segment.v2",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13750,7 +13750,7 @@
     {
       "id": "artery.posterior.va_odontoid_contribution_left",
       "name": "VA odontoid contribution left",
-      "parent": "artery.posterior.vertebral_left.segment.v3",
+      "parent": "artery.posterior.vertebral_left.segment.v2",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13789,7 +13789,7 @@
     {
       "id": "artery.posterior.posterior_meningeal_va_left",
       "name": "Posterior meningeal VA left",
-      "parent": "artery.posterior.vertebral_left.segment.v3",
+      "parent": "artery.posterior.vertebral_left.segment.v4",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -33211,7 +33211,7 @@
     {
       "id": "artery.amendment.va_anterior_meningeal.right",
       "name": "VA anterior meningeal right",
-      "parent": "artery.posterior.vertebral_right.segment.v3",
+      "parent": "artery.posterior.vertebral_right.segment.v2",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -33249,7 +33249,7 @@
     {
       "id": "artery.amendment.va_anterior_meningeal.left",
       "name": "VA anterior meningeal left",
-      "parent": "artery.posterior.vertebral_left.segment.v3",
+      "parent": "artery.posterior.vertebral_left.segment.v2",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -40412,10 +40412,11 @@
           "ref.borden.anterior",
           "ref.ferreira2002",
           "ica-skull-base-2026",
-          "ica-shapiro-2014"
+          "ica-shapiro-2014",
+          "user.ica-segments-2026-10-03"
         ]
       },
-      "notes": "NYU/Shapiro cervical region; not interchangeable with Bouthillier numbering.",
+      "notes": "NYU/Shapiro cervical region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
       "color": "#69b8cb",
       "calibreProvenance": {
         "units": "mm",
@@ -40430,8 +40431,8 @@
       },
       "segmentRange": {
         "startArcMm": 0.0,
-        "endArcMm": 79.11964059937362,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "endArcMm": 85.4672371712451,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       },
       "description": "This begins at the bifurcation of the [CCA](#structure-artery.anterior.common_carotid_right) and ends as the artery enters the [carotid canal](#structure-landmark.carotid-canal.right).\n\nCourse: the [ICA](#structure-artery.anterior.internal_carotid_right) is contained within the carotid sheath, anteromedial to the IJV. The [ECA](#structure-artery.carotid.external.right) is also usually anteromedial initially, before it veers laterally. The vagus nerve and the cranial root of the accessory nerve are located posteriorly."
     },
@@ -40460,10 +40461,11 @@
           "ref.borden.anterior",
           "ref.ferreira2002",
           "ica-skull-base-2026",
-          "ica-shapiro-2014"
+          "ica-shapiro-2014",
+          "user.ica-segments-2026-10-03"
         ]
       },
-      "notes": "NYU/Shapiro petrous region; not interchangeable with Bouthillier numbering.",
+      "notes": "NYU/Shapiro petrous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
       "color": "#91b77c",
       "calibreProvenance": {
         "units": "mm",
@@ -40477,9 +40479,9 @@
         "node": "ICA petrous right"
       },
       "segmentRange": {
-        "startArcMm": 79.11964059937362,
-        "endArcMm": 113.7874016237551,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "startArcMm": 85.4672371712451,
+        "endArcMm": 103.52726907936207,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       },
       "description": "From the [carotid canal](#structure-landmark.carotid-canal.right) to the petrolingual ligament (approximately the anterior aspect of the petrous ridge).\n\nCourse: the segment starts vertically in the [carotid canal](#structure-landmark.carotid-canal.right) before turning anteromedially and running over the cartilage covering the [foramen lacerum](#structure-landmark.foramen-lacerum.right). It is accompanied by sympathetic fibres from the stellate ganglion and a venous plexus."
     },
@@ -40507,10 +40509,11 @@
           "ref.borden.anterior",
           "ref.ferreira2002",
           "ica-skull-base-2026",
-          "ica-shapiro-2014"
+          "ica-shapiro-2014",
+          "user.ica-segments-2026-10-03"
         ]
       },
-      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering.",
+      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
       "color": "#d2c753",
       "calibreProvenance": {
         "units": "mm",
@@ -40524,9 +40527,9 @@
         "node": "ICA cavernous right"
       },
       "segmentRange": {
-        "startArcMm": 113.7874016237551,
+        "startArcMm": 103.52726907936207,
         "endArcMm": 145.280219654165,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       },
       "description": "From the petrolingual ligament to the proximal dural ring.\n\nCourse: the vessel runs superiorly along the [posterior clinoid process](#structure-landmark.ica.posterior-clinoid.right) to the [anterior clinoid process](#structure-landmark.ica.anterior-clinoid.right) before passing through the dural ring. Within the cavernous sinus it lies superomedially to the abducens nerve, and medial to CN III, CN IV, and the ophthalmic and maxillary divisions of CN V and the trigeminal (Gasserian) ganglion."
     },
@@ -40739,10 +40742,11 @@
           "ref.borden.anterior",
           "ref.ferreira2002",
           "ica-skull-base-2026",
-          "ica-shapiro-2014"
+          "ica-shapiro-2014",
+          "user.ica-segments-2026-10-03"
         ]
       },
-      "notes": "NYU/Shapiro cervical region; not interchangeable with Bouthillier numbering.",
+      "notes": "NYU/Shapiro cervical region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
       "color": "#69b8cb",
       "calibreProvenance": {
         "units": "mm",
@@ -40757,8 +40761,8 @@
       },
       "segmentRange": {
         "startArcMm": 0.0,
-        "endArcMm": 78.78957216285968,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "endArcMm": 85.13755488451275,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       },
       "description": "This begins at the bifurcation of the [CCA](#structure-artery.anterior.common_carotid_left) and ends as the artery enters the [carotid canal](#structure-landmark.carotid-canal.left).\n\nCourse: the [ICA](#structure-artery.anterior.internal_carotid_left) is contained within the carotid sheath, anteromedial to the IJV. The [ECA](#structure-artery.carotid.external.right.left) is also usually anteromedial initially, before it veers laterally. The vagus nerve and the cranial root of the accessory nerve are located posteriorly."
     },
@@ -40787,10 +40791,11 @@
           "ref.borden.anterior",
           "ref.ferreira2002",
           "ica-skull-base-2026",
-          "ica-shapiro-2014"
+          "ica-shapiro-2014",
+          "user.ica-segments-2026-10-03"
         ]
       },
-      "notes": "NYU/Shapiro petrous region; not interchangeable with Bouthillier numbering.",
+      "notes": "NYU/Shapiro petrous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
       "color": "#91b77c",
       "calibreProvenance": {
         "units": "mm",
@@ -40804,9 +40809,9 @@
         "node": "ICA petrous left"
       },
       "segmentRange": {
-        "startArcMm": 78.78957216285968,
-        "endArcMm": 113.457328442148,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "startArcMm": 85.13755488451275,
+        "endArcMm": 103.19569552340396,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       },
       "description": "From the [carotid canal](#structure-landmark.carotid-canal.left) to the petrolingual ligament (approximately the anterior aspect of the petrous ridge).\n\nCourse: the segment starts vertically in the [carotid canal](#structure-landmark.carotid-canal.left) before turning anteromedially and running over the cartilage covering the [foramen lacerum](#structure-landmark.foramen-lacerum.left). It is accompanied by sympathetic fibres from the stellate ganglion and a venous plexus."
     },
@@ -40834,10 +40839,11 @@
           "ref.borden.anterior",
           "ref.ferreira2002",
           "ica-skull-base-2026",
-          "ica-shapiro-2014"
+          "ica-shapiro-2014",
+          "user.ica-segments-2026-10-03"
         ]
       },
-      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering.",
+      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
       "color": "#d2c753",
       "calibreProvenance": {
         "units": "mm",
@@ -40851,9 +40857,9 @@
         "node": "ICA cavernous left"
       },
       "segmentRange": {
-        "startArcMm": 113.457328442148,
+        "startArcMm": 103.19569552340396,
         "endArcMm": 145.29663508396226,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       },
       "description": "From the petrolingual ligament to the proximal dural ring.\n\nCourse: the vessel runs superiorly along the [posterior clinoid process](#structure-landmark.ica.posterior-clinoid.left) to the [anterior clinoid process](#structure-landmark.ica.anterior-clinoid.left) before passing through the dural ring. Within the cavernous sinus it lies superomedially to the abducens nerve, and medial to CN III, CN IV, and the ophthalmic and maxillary divisions of CN V and the trigeminal (Gasserian) ganglion."
     },
@@ -41966,7 +41972,11 @@
       "id": "artery.posterior.vertebral_right.segment.v2",
       "name": "Vertebral V2 right",
       "parent": "artery.posterior.vertebral_right",
-      "children": [],
+      "children": [
+        "artery.posterior.va_muscular_c2_right",
+        "artery.posterior.va_odontoid_contribution_right",
+        "artery.amendment.va_anterior_meningeal.right"
+      ],
       "system": "artery",
       "side": "right",
       "kind": "structure",
@@ -41984,10 +41994,11 @@
           "ref.borden.posterior",
           "ref.lucifero2021",
           "ref.parraga2011",
-          "ref.lynch.neurovascular-notes"
+          "ref.lynch.neurovascular-notes",
+          "user.va-segments-2026-10-03"
         ]
       },
-      "notes": "Estimated C6 entry to C2 transverse foramen. Boundary is a reference estimate; existing vessel surface retained.",
+      "notes": "Ascending foraminal limb to the diagram-marked upper cervical exit. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#91b77c",
       "calibreProvenance": {
         "units": "mm",
@@ -42003,8 +42014,8 @@
       },
       "segmentRange": {
         "startArcMm": 30.306241489829038,
-        "endArcMm": 97.22002192167577,
-        "status": "reference-model station; anatomical boundary estimated"
+        "endArcMm": 115.523791904779,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
     {
@@ -42012,12 +42023,7 @@
       "name": "Vertebral V3 right",
       "parent": "artery.posterior.vertebral_right",
       "children": [
-        "artery.posterior.posterior_spinal_right",
-        "artery.posterior.va_muscular_c1_right",
-        "artery.posterior.va_muscular_c2_right",
-        "artery.posterior.va_odontoid_contribution_right",
-        "artery.posterior.posterior_meningeal_va_right",
-        "artery.amendment.va_anterior_meningeal.right"
+        "artery.posterior.va_muscular_c1_right"
       ],
       "system": "artery",
       "side": "right",
@@ -42036,10 +42042,11 @@
           "ref.borden.posterior",
           "ref.lucifero2021",
           "ref.parraga2011",
-          "ref.lynch.neurovascular-notes"
+          "ref.lynch.neurovascular-notes",
+          "user.va-segments-2026-10-03"
         ]
       },
-      "notes": "C2, C1 loop and atlas groove to estimated dural entry. Boundary is a reference estimate; existing vessel surface retained.",
+      "notes": "Short outer atlas loop between the two diagram marks. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#e5b35c",
       "calibreProvenance": {
         "units": "mm",
@@ -42054,9 +42061,9 @@
         "node": "Vertebral V3 right"
       },
       "segmentRange": {
-        "startArcMm": 97.22002192167577,
-        "endArcMm": 174.33587383454062,
-        "status": "reference-model station; anatomical boundary estimated"
+        "startArcMm": 115.523791904779,
+        "endArcMm": 144.02961030959602,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
     {
@@ -42067,6 +42074,8 @@
         "artery.posterior.basilar",
         "artery.posterior.pica_right",
         "artery.posterior.anterior_spinal_root_right",
+        "artery.posterior.posterior_spinal_right",
+        "artery.posterior.posterior_meningeal_va_right",
         "artery.amendment.va_medullary_perforator_1.right",
         "artery.amendment.va_medullary_perforator_2.right"
       ],
@@ -42087,10 +42096,11 @@
           "ref.borden.posterior",
           "ref.lucifero2021",
           "ref.parraga2011",
-          "ref.lynch.neurovascular-notes"
+          "ref.lynch.neurovascular-notes",
+          "user.va-segments-2026-10-03"
         ]
       },
-      "notes": "Intradural course to vertebrobasilar junction. Boundary is a reference estimate; existing vessel surface retained.",
+      "notes": "Medial and ascending cranial limb after the diagram-marked end of the outer loop. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#b969ac",
       "calibreProvenance": {
         "units": "mm",
@@ -42105,9 +42115,9 @@
         "node": "Vertebral V4 right"
       },
       "segmentRange": {
-        "startArcMm": 174.33587383454062,
+        "startArcMm": 144.02961030959602,
         "endArcMm": 194.13995787773393,
-        "status": "reference-model station; anatomical boundary estimated"
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
     {
@@ -42735,7 +42745,11 @@
       "id": "artery.posterior.vertebral_left.segment.v2",
       "name": "Vertebral V2 left",
       "parent": "artery.posterior.vertebral_left",
-      "children": [],
+      "children": [
+        "artery.posterior.va_muscular_c2_left",
+        "artery.posterior.va_odontoid_contribution_left",
+        "artery.amendment.va_anterior_meningeal.left"
+      ],
       "system": "artery",
       "side": "left",
       "kind": "structure",
@@ -42753,10 +42767,11 @@
           "ref.borden.posterior",
           "ref.lucifero2021",
           "ref.parraga2011",
-          "ref.lynch.neurovascular-notes"
+          "ref.lynch.neurovascular-notes",
+          "user.va-segments-2026-10-03"
         ]
       },
-      "notes": "Estimated C6 entry to C2 transverse foramen. Boundary is a reference estimate; existing vessel surface retained.",
+      "notes": "Ascending foraminal limb to the diagram-marked upper cervical exit. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#91b77c",
       "calibreProvenance": {
         "units": "mm",
@@ -42772,8 +42787,8 @@
       },
       "segmentRange": {
         "startArcMm": 30.33893058487912,
-        "endArcMm": 97.62527137217018,
-        "status": "reference-model station; anatomical boundary estimated"
+        "endArcMm": 115.64839881741287,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
     {
@@ -42781,12 +42796,7 @@
       "name": "Vertebral V3 left",
       "parent": "artery.posterior.vertebral_left",
       "children": [
-        "artery.posterior.posterior_spinal_left",
-        "artery.posterior.va_muscular_c1_left",
-        "artery.posterior.va_muscular_c2_left",
-        "artery.posterior.va_odontoid_contribution_left",
-        "artery.posterior.posterior_meningeal_va_left",
-        "artery.amendment.va_anterior_meningeal.left"
+        "artery.posterior.va_muscular_c1_left"
       ],
       "system": "artery",
       "side": "left",
@@ -42805,10 +42815,11 @@
           "ref.borden.posterior",
           "ref.lucifero2021",
           "ref.parraga2011",
-          "ref.lynch.neurovascular-notes"
+          "ref.lynch.neurovascular-notes",
+          "user.va-segments-2026-10-03"
         ]
       },
-      "notes": "C2, C1 loop and atlas groove to estimated dural entry. Boundary is a reference estimate; existing vessel surface retained.",
+      "notes": "Short outer atlas loop between the two diagram marks. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#e5b35c",
       "calibreProvenance": {
         "units": "mm",
@@ -42823,9 +42834,9 @@
         "node": "Vertebral V3 left"
       },
       "segmentRange": {
-        "startArcMm": 97.62527137217018,
-        "endArcMm": 174.22353135260676,
-        "status": "reference-model station; anatomical boundary estimated"
+        "startArcMm": 115.64839881741287,
+        "endArcMm": 144.1849641866958,
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
     {
@@ -42835,6 +42846,8 @@
       "children": [
         "artery.posterior.pica_left",
         "artery.posterior.anterior_spinal_root_left",
+        "artery.posterior.posterior_spinal_left",
+        "artery.posterior.posterior_meningeal_va_left",
         "artery.amendment.va_medullary_perforator_1.left",
         "artery.amendment.va_medullary_perforator_2.left"
       ],
@@ -42855,10 +42868,11 @@
           "ref.borden.posterior",
           "ref.lucifero2021",
           "ref.parraga2011",
-          "ref.lynch.neurovascular-notes"
+          "ref.lynch.neurovascular-notes",
+          "user.va-segments-2026-10-03"
         ]
       },
-      "notes": "Intradural course to vertebrobasilar junction. Boundary is a reference estimate; existing vessel surface retained.",
+      "notes": "Medial and ascending cranial limb after the diagram-marked end of the outer loop. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#b969ac",
       "calibreProvenance": {
         "units": "mm",
@@ -42873,9 +42887,9 @@
         "node": "Vertebral V4 left"
       },
       "segmentRange": {
-        "startArcMm": 174.22353135260676,
+        "startArcMm": 144.1849641866958,
         "endArcMm": 194.64974692989082,
-        "status": "reference-model station; anatomical boundary estimated"
+        "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     }
   ],
@@ -45898,7 +45912,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v3",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.posterior.posterior_spinal_right",
       "type": "branches_to"
     },
@@ -45908,17 +45922,17 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v3",
+      "from": "artery.posterior.vertebral_right.segment.v2",
       "to": "artery.posterior.va_muscular_c2_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v3",
+      "from": "artery.posterior.vertebral_right.segment.v2",
       "to": "artery.posterior.va_odontoid_contribution_right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v3",
+      "from": "artery.posterior.vertebral_right.segment.v4",
       "to": "artery.posterior.posterior_meningeal_va_right",
       "type": "branches_to"
     },
@@ -46133,7 +46147,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v3",
+      "from": "artery.posterior.vertebral_left.segment.v4",
       "to": "artery.posterior.posterior_spinal_left",
       "type": "branches_to"
     },
@@ -46143,17 +46157,17 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v3",
+      "from": "artery.posterior.vertebral_left.segment.v2",
       "to": "artery.posterior.va_muscular_c2_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v3",
+      "from": "artery.posterior.vertebral_left.segment.v2",
       "to": "artery.posterior.va_odontoid_contribution_left",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v3",
+      "from": "artery.posterior.vertebral_left.segment.v4",
       "to": "artery.posterior.posterior_meningeal_va_left",
       "type": "branches_to"
     },
@@ -47323,12 +47337,12 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v3",
+      "from": "artery.posterior.vertebral_right.segment.v2",
       "to": "artery.amendment.va_anterior_meningeal.right",
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v3",
+      "from": "artery.posterior.vertebral_left.segment.v2",
       "to": "artery.amendment.va_anterior_meningeal.left",
       "type": "branches_to"
     },
@@ -47854,6 +47868,20 @@
       "title": "Jeremy Lynch: Neurovascular anatomy, supplied nv(2).pdf",
       "role": "Authoritative structure description text and terminology",
       "notes": "Reviewed mapping and source pages are in docs/STRUCTURE_DESCRIPTIONS.md."
+    },
+    {
+      "id": "user.va-segments-2026-10-03",
+      "title": "Jeremy Lynch: annotated vertebral section correction, 3 October 2026",
+      "year": 2026,
+      "role": "V2/V3 and V3/V4 boundary placement",
+      "notes": "Supplied image(20261003-204543).png. Diagram-guided reference stations, not registered cervical bones or dura."
+    },
+    {
+      "id": "user.ica-segments-2026-10-03",
+      "title": "Jeremy Lynch: annotated ICA section correction, 3 October 2026",
+      "year": 2026,
+      "role": "Cervical/petrous and petrous/cavernous boundary placement",
+      "notes": "Supplied image(20261003-205229).png. Diagram-guided stations on the retained ICA; not measured bone or ligament boundaries."
     }
   ],
   "roots": [
@@ -47863,7 +47891,7 @@
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/craniofacial.glb": 5014620,
-    "models/complete-circulation.glb": 70712380,
+    "models/complete-circulation.glb": 70719548,
     "models/complete-anastomoses.glb": 2972624
   }
 }

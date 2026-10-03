@@ -1,3 +1,20 @@
+# v0.8.10
+
+- Correct cervical/petrous and petrous/cavernous boundaries on both sides to the user’s annotated ICA diagram.
+- Retain the continuous ICA surfaces, upper ICA sections, vertebral/ACA sections and GUI.
+- Retain all branch origins, welded junctions, descriptions and relationships.
+
+# v0.8.9
+
+- Correct bilateral V2/V3 and V3/V4 boundaries to the user’s annotated diagram, confining V3 to the shorter outer atlas loop.
+- Preserve every vessel triangle position and normal; retain V1, ACA/ICA boundaries and GUI behaviour.
+- Update branch segment parents to match their unchanged attachment points.
+
+# v0.8.8
+
+- Start both panels collapsed on mobile, preserving user choices afterwards.
+- Capitalise relationship labels, including Branches to and Has segment.
+
 # v0.8.7
 
 - Rename the interface to Neurovascular Atlas; replace reconstruction summaries with a brief introduction and Jeremy Lynch’s 2026 authorship.

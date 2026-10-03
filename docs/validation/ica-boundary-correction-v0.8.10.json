@@ -1,0 +1,321 @@
+{
+  "release": "0.8.10",
+  "sourceImage": "image(20261003-205229).png",
+  "registration": {
+    "method": "Approximate affine screenshot localisation on the retained right ICA; not bone or ligament registration",
+    "projection": [
+      [
+        -4.368004990884094,
+        -1.4767335541709925
+      ],
+      [
+        5.695254561961474,
+        -0.9662991762275785
+      ],
+      [
+        1.1396737380972017,
+        -9.253516794642334
+      ],
+      [
+        563.0465440852419,
+        714.9357797047016
+      ]
+    ],
+    "controls": [
+      [
+        79.11964059937362,
+        [
+          120,
+          384
+        ]
+      ],
+      [
+        83.09546593451776,
+        [
+          124,
+          354
+        ]
+      ],
+      [
+        86.64337649320186,
+        [
+          151,
+          331
+        ]
+      ],
+      [
+        90.74152779570095,
+        [
+          184,
+          325
+        ]
+      ],
+      [
+        97.78417231121244,
+        [
+          218,
+          317
+        ]
+      ],
+      [
+        102.14664542136,
+        [
+          237,
+          307
+        ]
+      ],
+      [
+        107.7696926953738,
+        [
+          246,
+          268
+        ]
+      ],
+      [
+        113.7874016237551,
+        [
+          267,
+          205
+        ]
+      ],
+      [
+        118.22471055510864,
+        [
+          294,
+          180
+        ]
+      ],
+      [
+        120.51595375973447,
+        [
+          311,
+          170
+        ]
+      ],
+      [
+        122.72827855710506,
+        [
+          331,
+          151
+        ]
+      ],
+      [
+        126.08126526719742,
+        [
+          344,
+          121
+        ]
+      ],
+      [
+        134.54214598762954,
+        [
+          342,
+          76
+        ]
+      ],
+      [
+        136.4724365946352,
+        [
+          351,
+          62
+        ]
+      ],
+      [
+        140.6353410325852,
+        [
+          376,
+          55
+        ]
+      ],
+      [
+        145.280219654165,
+        [
+          382,
+          44
+        ]
+      ]
+    ],
+    "rmsControlErrorPixels": 12.12830572967189,
+    "boundaries": [
+      {
+        "boundary": "cervical/petrous",
+        "index": 1113,
+        "arcMm": 85.4672371712451,
+        "pointMm": [
+          34.02263302839567,
+          -56.07713407801277,
+          41.18120338323161
+        ],
+        "guideLinePixels": [
+          [
+            120,
+            307
+          ],
+          [
+            154,
+            354
+          ]
+        ],
+        "projectedPointPixels": [
+          141.99509553377283,
+          337.80974724489533
+        ],
+        "guideLineDistancePixels": 0.23723915906759854
+      },
+      {
+        "boundary": "petrous/cavernous",
+        "index": 1285,
+        "arcMm": 103.52726907936207,
+        "pointMm": [
+          18.421804166769206,
+          -51.42620754979073,
+          47.50852808700372
+        ],
+        "guideLinePixels": [
+          [
+            212,
+            271
+          ],
+          [
+            272,
+            321
+          ]
+        ],
+        "projectedPointPixels": [
+          243.83889018779274,
+          297.8038228133119
+        ],
+        "guideLineDistancePixels": 0.20850625888841634
+      }
+    ]
+  },
+  "sides": [
+    {
+      "side": "right",
+      "parent": "artery.anterior.internal_carotid_right",
+      "previousBoundsArcMm": [
+        0.0,
+        79.11964059937362,
+        113.7874016237551,
+        145.280219654165
+      ],
+      "boundsArcMm": [
+        0.0,
+        85.4672371712451,
+        103.52726907936207,
+        145.280219654165
+      ],
+      "allSegmentBoundsArcMm": [
+        0,
+        85.4672371712451,
+        103.52726907936207,
+        145.280219654165,
+        150.23478295851035,
+        153.75707973976304,
+        154.90707973976302,
+        157.50897938987103
+      ],
+      "boundaryPointsMm": [
+        [
+          34.02263302839567,
+          -56.07713407801277,
+          41.18120338323161
+        ],
+        [
+          18.421804166769206,
+          -51.42620754979073,
+          47.50852808700372
+        ]
+      ],
+      "sections": [
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.cervical",
+          "name": "ICA cervical right",
+          "startArcMm": 0.0,
+          "endArcMm": 85.4672371712451,
+          "faces": 55557
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.petrous",
+          "name": "ICA petrous right",
+          "startArcMm": 85.4672371712451,
+          "endArcMm": 103.52726907936207,
+          "faces": 8654
+        },
+        {
+          "id": "artery.anterior.internal_carotid_right.segment.cavernous",
+          "name": "ICA cavernous right",
+          "startArcMm": 103.52726907936207,
+          "endArcMm": 145.280219654165,
+          "faces": 36842
+        }
+      ],
+      "allFacesAssignedOnce": true,
+      "positionsAndNormalsUnchanged": true
+    },
+    {
+      "side": "left",
+      "parent": "artery.anterior.internal_carotid_left",
+      "previousBoundsArcMm": [
+        0.0,
+        78.78957216285968,
+        113.457328442148,
+        145.29663508396226
+      ],
+      "boundsArcMm": [
+        0.0,
+        85.13755488451275,
+        103.19569552340396,
+        145.29663508396226
+      ],
+      "allSegmentBoundsArcMm": [
+        0,
+        85.13755488451275,
+        103.19569552340396,
+        145.29663508396226,
+        149.70591718884793,
+        153.70499085025997,
+        154.85499085025995,
+        157.81580124207304
+      ],
+      "boundaryPointsMm": [
+        [
+          -32.72240128625231,
+          -56.07704840162203,
+          41.08151387372721
+        ],
+        [
+          -17.122713874369687,
+          -51.42634277946999,
+          47.407339458663245
+        ]
+      ],
+      "sections": [
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.cervical",
+          "name": "ICA cervical left",
+          "startArcMm": 0.0,
+          "endArcMm": 85.13755488451275,
+          "faces": 55211
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.petrous",
+          "name": "ICA petrous left",
+          "startArcMm": 85.13755488451275,
+          "endArcMm": 103.19569552340396,
+          "faces": 8855
+        },
+        {
+          "id": "artery.anterior.internal_carotid_left.segment.cavernous",
+          "name": "ICA cavernous left",
+          "startArcMm": 103.19569552340396,
+          "endArcMm": 145.29663508396226,
+          "faces": 37518
+        }
+      ],
+      "allFacesAssignedOnce": true,
+      "positionsAndNormalsUnchanged": true
+    }
+  ],
+  "allBranchCoursesAndJunctionsRetained": true
+}

@@ -1,0 +1,245 @@
+{
+  "release": "0.8.9",
+  "sourceImage": "image(20261003-204543).png",
+  "registration": {
+    "method": "Approximate affine view fit to retained bilateral VA course for localisation of hand-marked boundaries; not bone registration",
+    "projection": [
+      [
+        -5.007950674212672,
+        -0.3636994113324432
+      ],
+      [
+        0.19541619228578044,
+        -0.8173964906035023
+      ],
+      [
+        0.3234337921387306,
+        -5.03726318491507
+      ],
+      [
+        238.4257126790125,
+        251.71772831767558
+      ]
+    ],
+    "boundaries": [
+      {
+        "boundary": "V2/V3",
+        "arcMm": 115.523791904779,
+        "pointMm": [
+          21.89732911469078,
+          -83.94893270885419,
+          -0.26410125763512327
+        ],
+        "guideLinePixels": [
+          [
+            75,
+            333
+          ],
+          [
+            140,
+            298
+          ]
+        ],
+        "projectedPointPixels": [
+          112.27456852795501,
+          313.7035931372119
+        ],
+        "guideLineDistancePixels": 0.6819377677852493
+      },
+      {
+        "boundary": "V3/V4",
+        "arcMm": 144.02961030959602,
+        "pointMm": [
+          23.695524106710504,
+          -99.78444702150455,
+          16.456194272513734
+        ],
+        "guideLinePixels": [
+          [
+            96,
+            215
+          ],
+          [
+            117,
+            273
+          ]
+        ],
+        "projectedPointPixels": [
+          105.58268938443518,
+          241.7689553882965
+        ],
+        "guideLineDistancePixels": 0.10297660043883983
+      }
+    ]
+  },
+  "sides": [
+    {
+      "sourceNode": "Vertebral right",
+      "previousBoundsArcMm": [
+        0.0,
+        30.306241489829038,
+        97.22002192167577,
+        174.33587383454062,
+        194.13995787773393
+      ],
+      "boundsArcMm": [
+        0,
+        30.306241489829038,
+        115.523791904779,
+        144.02961030959602,
+        194.13995787773393
+      ],
+      "boundaryPointsMm": [
+        [
+          30.0,
+          -77.0,
+          -112.0
+        ],
+        [
+          18.993275463242647,
+          -83.00550816462058,
+          -84.94134269198169
+        ],
+        [
+          21.89732911469078,
+          -83.94893270885419,
+          -0.26410125763512327
+        ],
+        [
+          23.695524106710504,
+          -99.78444702150455,
+          16.456194272513734
+        ],
+        [
+          -4.541553493952327e-16,
+          -76.0,
+          42.99999999999999
+        ]
+      ],
+      "sourceFaces": 69132,
+      "sectionFaces": [
+        36561,
+        11702,
+        20869
+      ],
+      "sectionNames": [
+        "Vertebral V2 right",
+        "Vertebral V3 right",
+        "Vertebral V4 right"
+      ],
+      "branchParentChanges": [
+        {
+          "id": "artery.posterior.posterior_spinal_right",
+          "from": "artery.posterior.vertebral_right.segment.v3",
+          "to": "artery.posterior.vertebral_right.segment.v4"
+        },
+        {
+          "id": "artery.posterior.va_muscular_c2_right",
+          "from": "artery.posterior.vertebral_right.segment.v3",
+          "to": "artery.posterior.vertebral_right.segment.v2"
+        },
+        {
+          "id": "artery.posterior.va_odontoid_contribution_right",
+          "from": "artery.posterior.vertebral_right.segment.v3",
+          "to": "artery.posterior.vertebral_right.segment.v2"
+        },
+        {
+          "id": "artery.posterior.posterior_meningeal_va_right",
+          "from": "artery.posterior.vertebral_right.segment.v3",
+          "to": "artery.posterior.vertebral_right.segment.v4"
+        },
+        {
+          "id": "artery.amendment.va_anterior_meningeal.right",
+          "from": "artery.posterior.vertebral_right.segment.v3",
+          "to": "artery.posterior.vertebral_right.segment.v2"
+        }
+      ],
+      "allFacesAssignedOnce": true,
+      "positionsAndNormalsUnchanged": true
+    },
+    {
+      "sourceNode": "Vertebral left",
+      "previousBoundsArcMm": [
+        0.0,
+        30.33893058487912,
+        97.62527137217018,
+        174.22353135260676,
+        194.64974692989082
+      ],
+      "boundsArcMm": [
+        0,
+        30.33893058487912,
+        115.64839881741287,
+        144.1849641866958,
+        194.64974692989082
+      ],
+      "boundaryPointsMm": [
+        [
+          -30.0,
+          -77.0,
+          -112.0
+        ],
+        [
+          -19.006944577722372,
+          -83.59474502142142,
+          -85.05977680956487
+        ],
+        [
+          -21.888197652238052,
+          -84.54435981116126,
+          -0.2879533499338601
+        ],
+        [
+          -23.690713434897493,
+          -100.38525113558956,
+          16.4563815663319
+        ],
+        [
+          9.784772140751172e-16,
+          -76.0,
+          42.99999999999999
+        ]
+      ],
+      "sourceFaces": 70738,
+      "sectionFaces": [
+        36574,
+        12315,
+        21849
+      ],
+      "sectionNames": [
+        "Vertebral V2 left",
+        "Vertebral V3 left",
+        "Vertebral V4 left"
+      ],
+      "branchParentChanges": [
+        {
+          "id": "artery.posterior.posterior_spinal_left",
+          "from": "artery.posterior.vertebral_left.segment.v3",
+          "to": "artery.posterior.vertebral_left.segment.v4"
+        },
+        {
+          "id": "artery.posterior.va_muscular_c2_left",
+          "from": "artery.posterior.vertebral_left.segment.v3",
+          "to": "artery.posterior.vertebral_left.segment.v2"
+        },
+        {
+          "id": "artery.posterior.va_odontoid_contribution_left",
+          "from": "artery.posterior.vertebral_left.segment.v3",
+          "to": "artery.posterior.vertebral_left.segment.v2"
+        },
+        {
+          "id": "artery.posterior.posterior_meningeal_va_left",
+          "from": "artery.posterior.vertebral_left.segment.v3",
+          "to": "artery.posterior.vertebral_left.segment.v4"
+        },
+        {
+          "id": "artery.amendment.va_anterior_meningeal.left",
+          "from": "artery.posterior.vertebral_left.segment.v3",
+          "to": "artery.posterior.vertebral_left.segment.v2"
+        }
+      ],
+      "allFacesAssignedOnce": true,
+      "positionsAndNormalsUnchanged": true
+    }
+  ]
+}

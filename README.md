@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.8.7
+# Neurovascular Atlas v0.8.10
 
-Place `inr-anatomy-atlas-v0.8.7.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.8.10.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -9,6 +9,18 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## ICA boundaries in v0.8.10
+
+Correct the bilateral cervical/petrous and petrous/cavernous boundaries to the supplied annotated diagram, shortening the petrous section. The continuous ICA surfaces, upper ICA sections, vertebral/ACA sections and GUI are unchanged. All branch courses and welded junctions are retained. See `docs/ICA_v0.8.10.md`.
+
+## Vertebral boundaries in v0.8.9
+
+Correct the bilateral V2/V3 and V3/V4 boundaries to the supplied annotated diagram. V3 covers the short outer atlas loop; V2 ends at its lower start and V4 begins on its medial return. Vessel courses and surfaces are retained exactly. V1 and all ACA/ICA boundaries are unchanged. Branches remain attached to the same physical points, with their segment parents updated. See `docs/VERTEBRAL_v0.8.9.md`.
+
+## Interface in v0.8.8
+
+Both panels initially collapse at mobile widths up to 680px. The user’s expanded/collapsed choices persist during selection and resizing. Relationship labels start with capital letters, including Branches to and Has segment. Desktop defaults are retained.
 
 ## Interface in v0.8.7
 

@@ -3,8 +3,8 @@
     "side": "right",
     "boundaries_arc_mm": [
       0.0,
-      79.11964059937362,
-      113.7874016237551,
+      85.4672371712451,
+      103.52726907936207,
       145.280219654165,
       150.23478295851035,
       153.75707973976304,
@@ -161,14 +161,15 @@
     "paraophthalmic_start_before_ophthalmic_arc_mm": 1.0,
     "PCom_AChA_arc_separation_mm": 3.9722967812526804,
     "estimated_soft_tissue_boundaries": true,
-    "physical_surface_review_required": true
+    "physical_surface_review_required": true,
+    "lower_boundary_correction": "Diagram-guided cervical/petrous and petrous/cavernous stations, v0.8.10"
   },
   {
     "side": "left",
     "boundaries_arc_mm": [
       0.0,
-      78.78957216285968,
-      113.457328442148,
+      85.13755488451275,
+      103.19569552340396,
       145.29663508396226,
       149.70591718884793,
       153.70499085025997,
@@ -325,6 +326,7 @@
     "paraophthalmic_start_before_ophthalmic_arc_mm": 1.0,
     "PCom_AChA_arc_separation_mm": 4.449073661412029,
     "estimated_soft_tissue_boundaries": true,
-    "physical_surface_review_required": true
+    "physical_surface_review_required": true,
+    "lower_boundary_correction": "Diagram-guided cervical/petrous and petrous/cavernous stations, v0.8.10"
   }
 ]

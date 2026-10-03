@@ -1,5 +1,7 @@
 # Vertebral and ACA sections, v0.8.6
 
+**Superseded VA station placement:** The V2/V3 and V3/V4 stations from this release were corrected in v0.8.9 against the supplied annotated diagram. The definitions below remain applicable; ACA stations are unchanged. See VERTEBRAL_v0.8.9.md.
+
 Both vertebral arteries now have selectable V1–V4 sections. Both ACAs have
 selectable A1–A5 sections. The section definitions and descriptions follow
 the supplied `nv(2).pdf`, printed pages 40–43 and 47–48, including Figures

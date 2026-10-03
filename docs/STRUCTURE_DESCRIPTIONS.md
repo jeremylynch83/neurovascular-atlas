@@ -2,7 +2,7 @@
 
 Content catalogue for descriptions in the app.
 
-**Model:** neurovascular-atlas, release 0.8.6.  
+**Model:** neurovascular-atlas, release 0.8.10.  
 **Source:** Jeremy Lynch, *Neurovascular anatomy*, supplied `nv(2).pdf` (86 PDF pages, printed pages 7–92).
 
 **Implementation decision, 3 October 2026:** Treat the supplied notes as the authoritative source for this project. Where the model conflicts with their names, origins, branching relationships, ICA segment membership, arterial course or bony passages, update the model to match the notes in the next implementation batch. Do not rewrite a description merely to accommodate the current model. Preserve stable structure IDs when changing display names or anatomy, and update the linked descriptions alongside the model.
@@ -7287,7 +7287,7 @@ The PSAs principally supply the posterior third of the cord, including the dorsa
 
 **Source:** `nv(2).pdf`, PDF pages 74–75; printed pages 80–81.
 
-**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="structure-artery.posterior.va_muscular_c1_right"></a>
 
@@ -7315,7 +7315,7 @@ The [vertebral artery](#structure-artery.posterior.vertebral_right) gives muscul
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
+**Parent:** [Vertebral V2 right](#structure-artery.posterior.vertebral_right.segment.v2)
 
 <a id="structure-artery.posterior.va_odontoid_contribution_right"></a>
 
@@ -7329,7 +7329,7 @@ The C3 radicular spinal arteries participate in the odontoid arterial arcade (al
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
+**Parent:** [Vertebral V2 right](#structure-artery.posterior.vertebral_right.segment.v2)
 
 <a id="structure-artery.posterior.posterior_meningeal_va_right"></a>
 
@@ -7343,7 +7343,7 @@ Posterior meningeal artery: the posterior meningeal artery supplies the tentoriu
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
+**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
 
 <a id="structure-artery.amendment.va_anterior_meningeal.right"></a>
 
@@ -7357,7 +7357,7 @@ Anterior meningeal branch of the [vertebral artery](#structure-artery.posterior.
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
+**Parent:** [Vertebral V2 right](#structure-artery.posterior.vertebral_right.segment.v2)
 
 <a id="structure-artery.amendment.va_medullary_perforator_1.right"></a>
 
@@ -8199,7 +8199,7 @@ The PSAs principally supply the posterior third of the cord, including the dorsa
 
 **Source:** `nv(2).pdf`, PDF pages 74–75; printed pages 80–81.
 
-**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
+**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
 
 <a id="structure-artery.posterior.va_muscular_c1_left"></a>
 
@@ -8227,7 +8227,7 @@ The [vertebral artery](#structure-artery.posterior.vertebral_left) gives muscula
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
+**Parent:** [Vertebral V2 left](#structure-artery.posterior.vertebral_left.segment.v2)
 
 <a id="structure-artery.posterior.va_odontoid_contribution_left"></a>
 
@@ -8241,7 +8241,7 @@ The C3 radicular spinal arteries participate in the odontoid arterial arcade (al
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
+**Parent:** [Vertebral V2 left](#structure-artery.posterior.vertebral_left.segment.v2)
 
 <a id="structure-artery.posterior.posterior_meningeal_va_left"></a>
 
@@ -8255,7 +8255,7 @@ Posterior meningeal artery: the posterior meningeal artery supplies the tentoriu
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
+**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
 
 <a id="structure-artery.amendment.va_anterior_meningeal.left"></a>
 
@@ -8269,7 +8269,7 @@ Anterior meningeal branch of the [vertebral artery](#structure-artery.posterior.
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
+**Parent:** [Vertebral V2 left](#structure-artery.posterior.vertebral_left.segment.v2)
 
 <a id="structure-artery.amendment.va_medullary_perforator_1.left"></a>
 
@@ -13191,7 +13191,7 @@ This segment incorporates the proximal and distal dural rings (the clinoid [ICA]
 
 ## Selectable vertebral and ACA sections
 
-Added in v0.8.6. Definitions follow the notes. Existing A1 entries are retained above. Cervical and callosal boundaries remain reference estimates without registered cervical vertebrae or corpus callosum; the A4/A5 station is an estimated coronal-suture level. All vessel courses and surfaces are preserved.
+Added in v0.8.6. Vertebral V2/V3 and V3/V4 boundary placement was corrected in v0.8.9 against the user’s annotated diagram, without changing vessel courses. Definitions follow the notes. Existing A1 entries are retained above. Cervical and callosal boundaries remain reference estimates without registered cervical vertebrae or corpus callosum; the A4/A5 station is an estimated coronal-suture level. All vessel courses and surfaces are preserved.
 
 <a id="structure-artery.anterior.aca_right"></a>
 
@@ -13491,3 +13491,5 @@ These notes are for the later content import, not the Description panel.
 - The notes’ ICA segment boundaries are retained, including the paraophthalmic segment starting just proximal to the ophthalmic ostium. This document does not alter geometry or segment boundaries.
 
 - Light copy-edits include “hard plate” to “hard palate”, “Munro” to “Monro”, restoration of line-break hyphens, and the duplicated wording in the masseteric origin sentence. No external reference material has been added.
+
+**ICA boundary amendment, v0.8.10:** Cervical/petrous and petrous/cavernous stations now follow the supplied annotated ICA image. Descriptions and upper ICA boundaries remain unchanged. All branch origins, welded junctions and anatomical parents are retained. See `ICA_v0.8.10.md`.
