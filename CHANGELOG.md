@@ -1,3 +1,11 @@
+# v0.8.11
+
+- Lower both inferior labial main courses into the lower lip below the visible lower teeth.
+- Lower both superior labial main courses slightly above the visible upper teeth.
+- Raise the submental loops to follow the mandibular inferior surface.
+- Preserve welded facial origins and existing mesh topology; transport four linked potential labial routes.
+- Retain bones, other arteries, ICA/vertebral/ACA sections, descriptions and GUI.
+
 # v0.8.10
 
 - Correct cervical/petrous and petrous/cavernous boundaries on both sides to the user’s annotated ICA diagram.

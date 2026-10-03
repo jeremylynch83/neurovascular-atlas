@@ -2,7 +2,7 @@
 
 Content catalogue for descriptions in the app.
 
-**Model:** neurovascular-atlas, release 0.8.10.  
+**Model:** neurovascular-atlas, release 0.8.11.  
 **Source:** Jeremy Lynch, *Neurovascular anatomy*, supplied `nv(2).pdf` (86 PDF pages, printed pages 7–92).
 
 **Implementation decision, 3 October 2026:** Treat the supplied notes as the authoritative source for this project. Where the model conflicts with their names, origins, branching relationships, ICA segment membership, arterial course or bony passages, update the model to match the notes in the next implementation batch. Do not rewrite a description merely to accommodate the current model. Preserve stable structure IDs when changing display names or anatomy, and update the linked descriptions alongside the model.
@@ -13493,3 +13493,5 @@ These notes are for the later content import, not the Description panel.
 - Light copy-edits include “hard plate” to “hard palate”, “Munro” to “Monro”, restoration of line-break hyphens, and the duplicated wording in the masseteric origin sentence. No external reference material has been added.
 
 **ICA boundary amendment, v0.8.10:** Cervical/petrous and petrous/cavernous stations now follow the supplied annotated ICA image. Descriptions and upper ICA boundaries remain unchanged. All branch origins, welded junctions and anatomical parents are retained. See `ICA_v0.8.10.md`.
+
+**Facial course amendment, v0.8.11:** Inferior labial main courses lie below the visible lower crowns, superior labial main courses are slightly lower in the upper-lip band, and submental loops follow the inferior mandibular border. Facial root collars, names, descriptions and relationships are unchanged. Potential labial routes follow the amended endpoints. See `LABIAL_SUBMENTAL_v0.8.11.md`.

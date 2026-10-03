@@ -1,0 +1,117 @@
+{
+  "release": "0.8.11",
+  "assets": [
+    {
+      "asset": "original.glb",
+      "mesh_count": 599,
+      "unchanged_meshes_exact_all_attribute_bytes": 593,
+      "changed_meshes": 6,
+      "triangles_before_and_after": 5765374
+    },
+    {
+      "asset": "original-connections.glb",
+      "mesh_count": 167,
+      "unchanged_meshes_exact_all_attribute_bytes": 163,
+      "changed_meshes": 4,
+      "triangles_before_and_after": 265600
+    }
+  ],
+  "changed_surface_checks": [
+    {
+      "node": "Submental",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.0007822466424599431,
+      "preserved_facial_seam_vertices": 125,
+      "origin_unchanged": true,
+      "minimum_centreline_bend_radius_mm": 1.674307415279352,
+      "minimum_main_axis_bone_or_tooth_clearance_mm": 1.9843920141986773
+    },
+    {
+      "node": "Inferior labial",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.0007239175036336816,
+      "preserved_facial_seam_vertices": 122,
+      "origin_unchanged": true,
+      "minimum_centreline_bend_radius_mm": 2.2073556640705405,
+      "minimum_main_axis_bone_or_tooth_clearance_mm": 8.594646667044854
+    },
+    {
+      "node": "Superior labial",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.0002596797498222156,
+      "preserved_facial_seam_vertices": 152,
+      "origin_unchanged": true,
+      "minimum_centreline_bend_radius_mm": 1.4236201691012544,
+      "minimum_main_axis_bone_or_tooth_clearance_mm": 1.238228832882263
+    },
+    {
+      "node": "Submental left",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.0009307992006726142,
+      "preserved_facial_seam_vertices": 125,
+      "origin_unchanged": true,
+      "minimum_centreline_bend_radius_mm": 1.674307415279352,
+      "minimum_main_axis_bone_or_tooth_clearance_mm": 1.9970144110647148
+    },
+    {
+      "node": "Inferior labial left",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.0006692579479657706,
+      "preserved_facial_seam_vertices": 122,
+      "origin_unchanged": true,
+      "minimum_centreline_bend_radius_mm": 2.2073556640705405,
+      "minimum_main_axis_bone_or_tooth_clearance_mm": 8.690015721345747
+    },
+    {
+      "node": "Superior labial left",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.00029639835323564366,
+      "preserved_facial_seam_vertices": 152,
+      "origin_unchanged": true,
+      "minimum_centreline_bend_radius_mm": 1.4236201691012544,
+      "minimum_main_axis_bone_or_tooth_clearance_mm": 2.139623881090191
+    },
+    {
+      "node": "Labial\u2013septal plexus right",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.00480024546459852,
+      "potential_endpoint_transport_checked": true
+    },
+    {
+      "node": "Labial\u2013septal plexus left",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.00480024546459852,
+      "potential_endpoint_transport_checked": true
+    },
+    {
+      "node": "Contralateral superior labial midline",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.009796450524125148,
+      "potential_endpoint_transport_checked": true
+    },
+    {
+      "node": "Contralateral inferior labial midline",
+      "indices_colours_and_vertex_counts_unchanged": true,
+      "all_finite": true,
+      "minimum_double_triangle_area_mm2": 0.00979651482470481,
+      "potential_endpoint_transport_checked": true
+    }
+  ],
+  "all_model_triangles": 6442421,
+  "bones_and_teeth_byte_identical": true,
+  "gui_and_engine_source_byte_identical": true,
+  "all_other_circulation_and_connection_mesh_bytes_identical": true,
+  "ica_vertebral_aca_sections_unchanged": true,
+  "all_structure_ids_relationships_and_descriptions_retained": true,
+  "structure_count": 1012,
+  "described_structures": 735
+}

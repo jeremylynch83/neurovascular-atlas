@@ -1,14 +1,14 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.8.10",
+  "release": "0.8.11",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
-    "models/complete-circulation.glb": "ddcb1f79253751267d37",
-    "models/complete-anastomoses.glb": "7414774b9376b8b88b49"
+    "models/complete-circulation.glb": "cef63b1598a7fbf608c0",
+    "models/complete-anastomoses.glb": "72205cfd05318f6af9b8"
   },
   "structures": [
     {
@@ -1182,14 +1182,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.kiyosue2020",
-          "ref.borden2006"
+          "ref.borden2006",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Submental"
       },
-      "notes": "Fig 2.8d: submental branch along mandibular body. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation.",
+      "notes": "Fig 2.8d: submental branch along mandibular body. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Hanging loop raised to follow the retained mandibular inferior surface; fixed facial origin and shared collar retained. Reference clearance is not a measured mylohyoid plane.",
       "calibreProvenance": {
         "units": "mm",
         "measurement": "illustrative radius profile",
@@ -1221,14 +1222,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.kiyosue2020",
-          "ref.borden2006"
+          "ref.borden2006",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Inferior labial"
       },
-      "notes": "Fig 2.8d: labial undulation. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation.",
+      "notes": "Fig 2.8d: labial undulation. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Main course lowered into the lower-lip band below the visible lower crowns; existing facial root and welded collar retained.",
       "calibreProvenance": {
         "units": "mm",
         "measurement": "illustrative radius profile",
@@ -1261,14 +1263,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.kiyosue2020",
-          "ref.borden2006"
+          "ref.borden2006",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Superior labial"
       },
-      "notes": "Fig 2.8c,d: labial course. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation.",
+      "notes": "Fig 2.8c,d: labial course. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Main course slightly lowered into the upper-lip band above the visible upper crowns; existing facial root and welded collar retained.",
       "calibreProvenance": {
         "units": "mm",
         "measurement": "illustrative radius profile",
@@ -14505,14 +14508,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.kiyosue2020",
-          "ref.borden2006"
+          "ref.borden2006",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Submental left"
       },
-      "notes": "Fig 2.8d: submental branch along mandibular body. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Left course uses the right template with independent fitting to left bone. Calibre is illustrative.",
+      "notes": "Fig 2.8d: submental branch along mandibular body. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Left course uses the right template with independent fitting to left bone. Calibre is illustrative. Hanging loop raised to follow the retained mandibular inferior surface; fixed facial origin and shared collar retained. Reference clearance is not a measured mylohyoid plane.",
       "calibreProvenance": {
         "units": "mm",
         "measurement": "illustrative radius profile",
@@ -14542,14 +14546,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.kiyosue2020",
-          "ref.borden2006"
+          "ref.borden2006",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Inferior labial left"
       },
-      "notes": "Fig 2.8d: labial undulation. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Left course uses the right template with independent fitting to left bone. Calibre is illustrative.",
+      "notes": "Fig 2.8d: labial undulation. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Left course uses the right template with independent fitting to left bone. Calibre is illustrative. Main course lowered into the lower-lip band below the visible lower crowns; existing facial root and welded collar retained.",
       "calibreProvenance": {
         "units": "mm",
         "measurement": "illustrative radius profile",
@@ -14581,14 +14586,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.kiyosue2020",
-          "ref.borden2006"
+          "ref.borden2006",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Superior labial left"
       },
-      "notes": "Fig 2.8c,d: labial course. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Left course uses the right template with independent fitting to left bone. Calibre is illustrative.",
+      "notes": "Fig 2.8c,d: labial course. Visually adapted 3D course; unmeasured depth. Illustrative nonuniform profile; no calibrated patient diameter measurement. Draft 03 joins and locally rounds branch surfaces. Named display parts share open interfaces; the complete tree is a closed surface. This remains reference reconstruction, not patient segmentation. Left course uses the right template with independent fitting to left bone. Calibre is illustrative. Main course slightly lowered into the upper-lip band above the visible upper crowns; existing facial root and welded collar retained.",
       "calibreProvenance": {
         "units": "mm",
         "measurement": "illustrative radius profile",
@@ -37201,14 +37207,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.geibprasert2009",
-          "ref.borden.anterior"
+          "ref.borden.anterior",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-anastomoses.glb",
         "node": "Labial\u2013septal plexus right"
       },
-      "notes": "Nasal potential network. Illustrative channel size and regional course; no assertion of normal conspicuous patency or measured diameter.",
+      "notes": "Nasal potential network. Illustrative channel size and regional course; no assertion of normal conspicuous patency or measured diameter. Potential pathway transported with its corrected labial endpoints; named relationships retained.",
       "color": "#ffca48",
       "displayGroup": "anastomoses",
       "endpoints": [
@@ -39755,14 +39762,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.geibprasert2009",
-          "ref.borden.anterior"
+          "ref.borden.anterior",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-anastomoses.glb",
         "node": "Labial\u2013septal plexus left"
       },
-      "notes": "Nasal potential network. Illustrative channel size and regional course; no assertion of normal conspicuous patency or measured diameter.",
+      "notes": "Nasal potential network. Illustrative channel size and regional course; no assertion of normal conspicuous patency or measured diameter. Potential pathway transported with its corrected labial endpoints; named relationships retained.",
       "color": "#ffca48",
       "displayGroup": "anastomoses",
       "endpoints": [
@@ -40251,14 +40259,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.geibprasert2009",
-          "ref.borden.anterior"
+          "ref.borden.anterior",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-anastomoses.glb",
         "node": "Contralateral superior labial midline"
       },
-      "notes": "Small potential cross-midline regional route; tissue course and calibre estimated.",
+      "notes": "Small potential cross-midline regional route; tissue course and calibre estimated. Potential pathway transported with its corrected labial endpoints; named relationships retained.",
       "color": "#ffca48",
       "displayGroup": "anastomoses",
       "endpoints": [
@@ -40291,14 +40300,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.geibprasert2009",
-          "ref.borden.anterior"
+          "ref.borden.anterior",
+          "user.facial-courses-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-anastomoses.glb",
         "node": "Contralateral inferior labial midline"
       },
-      "notes": "Small potential cross-midline regional route; tissue course and calibre estimated.",
+      "notes": "Small potential cross-midline regional route; tissue course and calibre estimated. Potential pathway transported with its corrected labial endpoints; named relationships retained.",
       "color": "#ffca48",
       "displayGroup": "anastomoses",
       "endpoints": [
@@ -47882,6 +47892,13 @@
       "year": 2026,
       "role": "Cervical/petrous and petrous/cavernous boundary placement",
       "notes": "Supplied image(20261003-205229).png. Diagram-guided stations on the retained ICA; not measured bone or ligament boundaries."
+    },
+    {
+      "id": "user.facial-courses-2026-10-03",
+      "title": "Jeremy Lynch: labial and submental course correction, 3 October 2026",
+      "year": 2026,
+      "role": "Inferior and superior labial levels and submental relationship to the mandible",
+      "notes": "Supplied image(20261003-224612).png and image(20261003-224632).png; mandible interpretation follows the reference diagram and note-derived descriptions. Lip soft tissues are not registered."
     }
   ],
   "roots": [
@@ -47891,7 +47908,7 @@
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/craniofacial.glb": 5014620,
-    "models/complete-circulation.glb": 70719548,
-    "models/complete-anastomoses.glb": 2972624
+    "models/complete-circulation.glb": 70714372,
+    "models/complete-anastomoses.glb": 2972528
   }
 }
