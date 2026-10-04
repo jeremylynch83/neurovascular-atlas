@@ -1,3 +1,11 @@
+# v0.9.10
+
+- Rebuild slimmer cavernous cavities with concave lateral walls and roofs.
+- Replace the anterior joining plate with smooth terminal lesser-wing and SMCV channels.
+- Weld both entries into the common venous skin with identical exported normals across label boundaries.
+- Retain all 104 vein labels and the completed arterial, skull and interface assets.
+- Add matched before/after views and independent contour, junction and clearance checks.
+
 # v0.9.9
 
 - Replace the bulbous cavernous envelope with defined wall profiles and a flatter roof.

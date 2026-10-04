@@ -1,0 +1,169 @@
+{
+  "0.9.9": {
+    "contours": {
+      "vein.cavernous.right": {
+        "roof_sample_y_mm": [
+          -49,
+          -43.5,
+          -39
+        ],
+        "wall_sample_y_mm": [
+          -50,
+          -46,
+          -42
+        ],
+        "wall_sample_z_mm": 63.0,
+        "roof_z_mm": [
+          71.75723110042614,
+          73.28774329320427,
+          73.08513529166075
+        ],
+        "lateral_wall_x_in_symmetry_frame_mm": [
+          17.019821095866515,
+          17.004330767471373,
+          17.0041249654116
+        ],
+        "roof_inward_chord_depth_mm": -0.8001648875990952,
+        "lateral_wall_inward_chord_depth_mm": 0.007642263167682017,
+        "temporarily_capped_label_volume_mm3": 1040.7688408166432
+      },
+      "vein.cavernous.left": {
+        "roof_sample_y_mm": [
+          -49,
+          -43.5,
+          -39
+        ],
+        "wall_sample_y_mm": [
+          -50,
+          -46,
+          -42
+        ],
+        "wall_sample_z_mm": 63.0,
+        "roof_z_mm": [
+          71.76531571669392,
+          73.28718597767902,
+          73.10721948392474
+        ],
+        "lateral_wall_x_in_symmetry_frame_mm": [
+          17.016516573594263,
+          17.038411955891526,
+          17.03574407930885
+        ],
+        "roof_inward_chord_depth_mm": -0.783823189008146,
+        "lateral_wall_inward_chord_depth_mm": -0.012281629439968356,
+        "temporarily_capped_label_volume_mm3": 1040.8758683650444
+      }
+    },
+    "joins": {
+      "vein.superficial_middle_cerebral.right": {
+        "shared_welded_edges": 222,
+        "face_dihedral_median_degrees": 15.928118705749512,
+        "face_dihedral_p95_degrees": 63.518341064453125,
+        "face_dihedral_max_degrees": 93.35889434814453
+      },
+      "vein.sphenoparietal.right": {
+        "shared_welded_edges": 31,
+        "face_dihedral_median_degrees": 25.05005645751953,
+        "face_dihedral_p95_degrees": 66.83451843261719,
+        "face_dihedral_max_degrees": 141.69143676757812
+      },
+      "vein.superficial_middle_cerebral.left": {
+        "shared_welded_edges": 217,
+        "face_dihedral_median_degrees": 18.552093505859375,
+        "face_dihedral_p95_degrees": 69.92401123046875,
+        "face_dihedral_max_degrees": 112.33865356445312
+      },
+      "vein.sphenoparietal.left": {
+        "shared_welded_edges": 34,
+        "face_dihedral_median_degrees": 19.687217712402344,
+        "face_dihedral_p95_degrees": 63.24961471557617,
+        "face_dihedral_max_degrees": 82.5987319946289
+      }
+    },
+    "whole_network_volume_mm3": 53903.71665679776
+  },
+  "0.9.10": {
+    "contours": {
+      "vein.cavernous.right": {
+        "roof_sample_y_mm": [
+          -49,
+          -43.5,
+          -39
+        ],
+        "wall_sample_y_mm": [
+          -50,
+          -46,
+          -42
+        ],
+        "wall_sample_z_mm": 63.0,
+        "roof_z_mm": [
+          71.01734384623612,
+          69.64539717231513,
+          70.56508315191566
+        ],
+        "lateral_wall_x_in_symmetry_frame_mm": [
+          17.33554577626199,
+          16.43833331851498,
+          16.35056628313846
+        ],
+        "roof_inward_chord_depth_mm": 1.1232032920447352,
+        "lateral_wall_inward_chord_depth_mm": 0.4047227111852436,
+        "temporarily_capped_label_volume_mm3": 823.6468630489424
+      },
+      "vein.cavernous.left": {
+        "roof_sample_y_mm": [
+          -49,
+          -43.5,
+          -39
+        ],
+        "wall_sample_y_mm": [
+          -50,
+          -46,
+          -42
+        ],
+        "wall_sample_z_mm": 63.0,
+        "roof_z_mm": [
+          71.00891701726326,
+          69.66188366055715,
+          70.61288567039936
+        ],
+        "lateral_wall_x_in_symmetry_frame_mm": [
+          17.346133310869455,
+          16.434441792297697,
+          16.350894488242446
+        ],
+        "roof_inward_chord_depth_mm": 1.1292161159309586,
+        "lateral_wall_inward_chord_depth_mm": 0.41407210725825294,
+        "temporarily_capped_label_volume_mm3": 824.0638050490713
+      }
+    },
+    "joins": {
+      "vein.superficial_middle_cerebral.right": {
+        "shared_welded_edges": 37,
+        "face_dihedral_median_degrees": 11.870859146118164,
+        "face_dihedral_p95_degrees": 28.75453758239746,
+        "face_dihedral_max_degrees": 55.32813262939453
+      },
+      "vein.sphenoparietal.right": {
+        "shared_welded_edges": 37,
+        "face_dihedral_median_degrees": 13.343427658081055,
+        "face_dihedral_p95_degrees": 34.84865188598633,
+        "face_dihedral_max_degrees": 46.9061279296875
+      },
+      "vein.superficial_middle_cerebral.left": {
+        "shared_welded_edges": 39,
+        "face_dihedral_median_degrees": 10.103066444396973,
+        "face_dihedral_p95_degrees": 24.98314666748047,
+        "face_dihedral_max_degrees": 26.422208786010742
+      },
+      "vein.sphenoparietal.left": {
+        "shared_welded_edges": 37,
+        "face_dihedral_median_degrees": 13.349641799926758,
+        "face_dihedral_p95_degrees": 43.3870849609375,
+        "face_dihedral_max_degrees": 56.55583190917969
+      }
+    },
+    "whole_network_volume_mm3": 53452.444353125036
+  },
+  "scope": "Measures actual model surfaces and direct label adjacency. Capped label volumes are authoring estimates, not calibrated patient dimensions; contour checks sample the cavity between venous entries."
+}

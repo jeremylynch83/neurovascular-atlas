@@ -1,0 +1,50 @@
+{
+  "release": "0.9.10",
+  "entries": {
+    "vein.superficial_middle_cerebral.right": {
+      "shared_junction_vertices": 37,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1222,
+      "surface_and_centroid_samples": 1866,
+      "minimum_sampled_skull_gap_mm": 1.1787776763893743,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.sphenoparietal.right": {
+      "shared_junction_vertices": 37,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1240,
+      "surface_and_centroid_samples": 1921,
+      "minimum_sampled_skull_gap_mm": 0.21582484319929995,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.superficial_middle_cerebral.left": {
+      "shared_junction_vertices": 35,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1259,
+      "surface_and_centroid_samples": 1923,
+      "minimum_sampled_skull_gap_mm": 1.5743990881822139,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.sphenoparietal.left": {
+      "shared_junction_vertices": 35,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1234,
+      "surface_and_centroid_samples": 1917,
+      "minimum_sampled_skull_gap_mm": 0.2038462589120708,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    }
+  },
+  "scope": "Actual rebuilt terminal triangles strictly inside the regional replacement bounds, excluding the retained overlap collar. Sampled gaps are mesh clearances, not patient measurements or wall thicknesses. Shared normals are checked on the exact exported GLB coordinates."
+}
