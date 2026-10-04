@@ -8,7 +8,7 @@ import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, t
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
 
-type Entry = { structure: Structure; mesh: THREE.Mesh; baseOpacity: number; batch?: { mesh: THREE.BatchedMesh; instanceId: number } };
+type Entry = { structure: Structure; mesh: THREE.Mesh; baseOpacity: number; opaqueMaterial?: THREE.MeshStandardMaterial; ghostMaterial?: THREE.MeshLambertMaterial; batch?: { mesh: THREE.BatchedMesh; instanceId: number } };
 
 function gltfNameCandidates(name: string): string[] {
   // GLTFLoader sanitises node names through PropertyBinding.sanitizeNodeName().
@@ -140,7 +140,7 @@ export class AnatomyEngine {
   private useMotionResolution() {
     // Keep resolution low through drag/zoom and the remaining damping glide.
     this.qualityRestoreAt = performance.now() + 180;
-    const ratio = Math.min(devicePixelRatio, 1);
+    const ratio = Math.min(devicePixelRatio, 0.75);
     if (this.renderer.getPixelRatio() === ratio) return false;
     this.renderer.setPixelRatio(ratio);
     return true;
@@ -238,7 +238,7 @@ export class AnatomyEngine {
         const mesh = new THREE.Mesh(geometry, material);
         mesh.name = structure.id;
         this.root.add(mesh);
-        this.entries.set(structure.id, { structure, mesh, baseOpacity: 1 });
+        this.entries.set(structure.id, { structure, mesh, baseOpacity: 1, opaqueMaterial: material });
         this.objectToId.set(mesh, structure.id);
       }
       if (unresolved.length) {
@@ -376,15 +376,21 @@ export class AnatomyEngine {
     for (const [id, e] of this.entries) {
       const state = this.visibility?.get(id) ?? this.layers[e.structure.system];
       e.mesh.visible = state !== 'off' && !this.hidden.has(id);
-      const mat = e.mesh.material as THREE.MeshStandardMaterial;
       const selected = this.selected !== null && !!this.segmentMembers.get(this.selected)?.has(id);
-      mat.color.set(selected ? 0xf2b84b : e.structure.color ?? COLOURS[e.structure.system]);
-      mat.emissive.setHex(selected ? 0x4a2b00 : 0x000000);
       const skullContext = e.structure.system === 'bone' && e.structure.provenance.sourceType === 'legacy-placeholder';
       const craniofacial = /mandib|maxill|tooth-/.test(e.structure.asset?.node ?? '');
       const normalOpacity = state === 'ghost' ? (craniofacial ? 0.25 : skullContext ? 0.11 : 0.16) : selected ? 1 : e.baseOpacity;
       const opacity = this.focusedMembers ? (this.focusedMembers.has(id) ? 1 : Math.min(normalOpacity, 0.12)) : normalOpacity;
       const transparent = opacity < 1;
+      // Reuse the original geometry; only faint context gets cheaper shading.
+      // Cache materials so changing visibility does not repeatedly compile them.
+      const opaqueMaterial = e.opaqueMaterial ??= e.mesh.material as THREE.MeshStandardMaterial;
+      const mat = transparent
+        ? (e.ghostMaterial ??= new THREE.MeshLambertMaterial({ side: opaqueMaterial.side, transparent: true, forceSinglePass: true }))
+        : opaqueMaterial;
+      e.mesh.material = mat;
+      mat.color.set(selected ? 0xf2b84b : e.structure.color ?? COLOURS[e.structure.system]);
+      mat.emissive.setHex(selected ? 0x4a2b00 : 0x000000);
       if (mat.transparent !== transparent) { mat.transparent = transparent; mat.needsUpdate = true; }
       mat.opacity = opacity; mat.depthWrite = opacity > 0.4;
       this.updateClipping(mat);
@@ -522,5 +528,5 @@ export class AnatomyEngine {
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.mesh.material as THREE.Material).dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }

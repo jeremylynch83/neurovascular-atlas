@@ -1,3 +1,9 @@
+# v0.9.5
+
+- Use cached Lambert lighting and one pass for translucent context, retaining the existing meshes and full opaque shading.
+- Lower movement resolution to 0.75 pixel ratio, restoring the original resolution when settled.
+- Dispose both cached material variants when closing the renderer.
+
 # v0.9.4
 
 - Add software, BodyParts3D and anatomical reference credits to a bounded, keyboard-scrollable section in the information modal.

@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.4
+# Neurovascular Atlas v0.9.5
 
-Place `inr-anatomy-atlas-v0.9.4.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.9.5.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -9,6 +9,10 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## Rendering in v0.9.5
+
+Translucent context uses cached Lambert materials and a single transparent pass. Full-detail opaque shading is restored when structures become opaque. The same model geometry is used throughout, with no new model downloads or preprocessing. During movement the 3D view uses a 0.75 pixel ratio, restoring its original resolution after the controls settle.
 
 ## Credits in v0.9.4
 
