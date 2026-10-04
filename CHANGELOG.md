@@ -1,3 +1,11 @@
+# v0.9.0
+
+- Add the principal dural sinuses, cerebral veins, posterior fossa collectors, extracranial veins and skull-base connections.
+- Add note-derived descriptions and clickable drainage relationships, with incoming drainage labelled Receives from.
+- Preserve the existing arterial and bony assets exactly.
+- Render opaque veins in a separate multi-draw batch; retain picking, highlighting, ghosting and subtree hiding.
+- Reveal the venous layer when a vein is selected from search or a description link.
+
 # v0.8.11
 
 ## v0.8.12

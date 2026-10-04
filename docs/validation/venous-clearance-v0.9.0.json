@@ -1,0 +1,289 @@
+{
+  "method": "One-off final triangle-centre signed distance screening, threshold -0.2 mm; bone mesh signs and unresolved lumina limit interpretation",
+  "remaining_bone_contacts": [
+    {
+      "id": "vein.deep_facial.left",
+      "bone": "bone.mandible",
+      "triangle_centres_inside": 2,
+      "minimum_signed_distance_mm": -0.388
+    },
+    {
+      "id": "vein.anterior_condylar.right",
+      "bone": "bone.occipital",
+      "triangle_centres_inside": 758,
+      "minimum_signed_distance_mm": -3.542
+    },
+    {
+      "id": "vein.anterior_condylar.left",
+      "bone": "bone.occipital",
+      "triangle_centres_inside": 836,
+      "minimum_signed_distance_mm": -3.532
+    }
+  ],
+  "declared_regional_exception": "Anterior condylar veins follow unresolved hypoglossal canal landmarks; do not interpret as verified lumen clearance",
+  "centreline_arterial_candidates": [
+    {
+      "id": "vein.straight",
+      "arteries": {
+        "Posterior meningeal VA right": 2
+      },
+      "max_overlap": 0.767,
+      "point": [
+        0.65,
+        -135.84,
+        74.21
+      ]
+    },
+    {
+      "id": "vein.internal_jugular.right",
+      "arteries": {
+        "Occipital SCM branch right": 2
+      },
+      "max_overlap": 0.883,
+      "point": [
+        40.1,
+        -69.14,
+        4.24
+      ]
+    },
+    {
+      "id": "vein.sigmoid.right",
+      "arteries": {
+        "MMA petrosquamosal": 1,
+        "Jugular branch": 3
+      },
+      "max_overlap": 1.571,
+      "point": [
+        52.84,
+        -94.69,
+        61.71
+      ]
+    },
+    {
+      "id": "vein.transverse.right",
+      "arteries": {
+        "PCA middle inferior temporal right": 1,
+        "PICA lateral hemispheric right": 7
+      },
+      "max_overlap": 2.073,
+      "point": [
+        30.63,
+        -139.42,
+        66.66
+      ]
+    },
+    {
+      "id": "vein.superior_petrosal.right",
+      "arteries": {
+        "ICA cavernous right": 3,
+        "Dorsal meningeal right": 2
+      },
+      "max_overlap": 1.329,
+      "point": [
+        14.3,
+        -47.86,
+        61.16
+      ]
+    },
+    {
+      "id": "vein.inferior_petrosal.right",
+      "arteries": {
+        "ICA cavernous right": 2
+      },
+      "max_overlap": 1.302,
+      "point": [
+        14.72,
+        -48.55,
+        58.06
+      ]
+    },
+    {
+      "id": "vein.sphenoparietal.right",
+      "arteries": {
+        "MMA frontal": 8
+      },
+      "max_overlap": 1.205,
+      "point": [
+        38.24,
+        -27.33,
+        84.5
+      ]
+    },
+    {
+      "id": "vein.anterior_cerebral.right",
+      "arteries": {
+        "ICA cavernous right": 1
+      },
+      "max_overlap": 0.747,
+      "point": [
+        11.63,
+        -40.13,
+        75.93
+      ]
+    },
+    {
+      "id": "vein.superior_ophthalmic.right",
+      "arteries": {
+        "Anterior ethmoidal right": 3,
+        "Artery of superior orbital fissure right": 9
+      },
+      "max_overlap": 0.732,
+      "point": [
+        20.59,
+        -30.7,
+        67.74
+      ]
+    },
+    {
+      "id": "vein.ovale_emissary.right",
+      "arteries": {
+        "ICA cavernous right": 4
+      },
+      "max_overlap": 0.749,
+      "point": [
+        14.67,
+        -47.76,
+        59.5
+      ]
+    },
+    {
+      "id": "vein.sigmoid.left",
+      "arteries": {
+        "MMA petrosquamosal left": 1,
+        "Jugular branch left": 1
+      },
+      "max_overlap": 1.239,
+      "point": [
+        -52.79,
+        -93.88,
+        62.02
+      ]
+    },
+    {
+      "id": "vein.transverse.left",
+      "arteries": {
+        "PCA middle inferior temporal left": 1,
+        "PICA hemispheric left": 4,
+        "PICA lateral hemispheric left": 2
+      },
+      "max_overlap": 0.954,
+      "point": [
+        -27.76,
+        -140.83,
+        66.39
+      ]
+    },
+    {
+      "id": "vein.superior_petrosal.left",
+      "arteries": {
+        "ICA cavernous left": 3
+      },
+      "max_overlap": 1.329,
+      "point": [
+        -13.0,
+        -47.86,
+        61.11
+      ]
+    },
+    {
+      "id": "vein.inferior_petrosal.left",
+      "arteries": {
+        "ICA cavernous left": 2
+      },
+      "max_overlap": 1.305,
+      "point": [
+        -13.42,
+        -48.55,
+        58.01
+      ]
+    },
+    {
+      "id": "vein.sphenoparietal.left",
+      "arteries": {
+        "ICA cavernous left": 2,
+        "MMA frontal left": 8
+      },
+      "max_overlap": 1.173,
+      "point": [
+        -38.79,
+        -26.98,
+        84.97
+      ]
+    },
+    {
+      "id": "vein.anterior_cerebral.left",
+      "arteries": {
+        "Posterior communicating left": 1
+      },
+      "max_overlap": 0.397,
+      "point": [
+        -13.03,
+        -41.54,
+        76.74
+      ]
+    },
+    {
+      "id": "vein.superior_ophthalmic.left",
+      "arteries": {
+        "Supratrochlear left": 5,
+        "Anterior ethmoidal left": 3,
+        "Deep recurrent ophthalmic left": 3
+      },
+      "max_overlap": 0.643,
+      "point": [
+        -17.59,
+        9.23,
+        70.88
+      ]
+    },
+    {
+      "id": "vein.ovale_emissary.left",
+      "arteries": {
+        "ICA cavernous left": 5
+      },
+      "max_overlap": 0.732,
+      "point": [
+        -13.14,
+        -48.14,
+        60.09
+      ]
+    },
+    {
+      "id": "vein.posterior_communicating",
+      "arteries": {
+        "PCA short circumflex right": 1
+      },
+      "max_overlap": 0.288,
+      "point": [
+        12.85,
+        -61.13,
+        78.25
+      ]
+    },
+    {
+      "id": "vein.basilar_plexus",
+      "arteries": {
+        "ICA cavernous right": 3
+      },
+      "max_overlap": 0.681,
+      "point": [
+        14.67,
+        -48.47,
+        58.48
+      ]
+    },
+    {
+      "id": "vein.basilar_plexus",
+      "arteries": {
+        "ICA cavernous left": 3
+      },
+      "max_overlap": 0.718,
+      "point": [
+        -13.37,
+        -48.47,
+        58.43
+      ]
+    }
+  ],
+  "arterial_candidate_note": "These are pre-surface conservative candidates, not a claim of surface intersection. Cavernous ICA exclusion is applied in the final surface. Tiny meningeal/perforator clearances remain for review."
+}

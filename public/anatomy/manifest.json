@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.8.12",
+  "release": "0.9.0",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
@@ -8,7 +8,8 @@
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
     "models/complete-circulation.glb": "5911ecc90928b8f61ef8",
-    "models/complete-anastomoses.glb": "72205cfd05318f6af9b8"
+    "models/complete-anastomoses.glb": "72205cfd05318f6af9b8",
+    "models/venous.glb": "9bf506da47b6faa10bdc"
   },
   "structures": [
     {
@@ -42909,6 +42910,3183 @@
         "endArcMm": 194.64974692989082,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
+    },
+    {
+      "id": "vein",
+      "name": "Veins",
+      "parent": null,
+      "children": [
+        "vein.dural",
+        "vein.superficial",
+        "vein.deep",
+        "vein.posterior",
+        "vein.extracranial",
+        "vein.skullbase"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.dural",
+      "name": "Dural venous sinuses",
+      "parent": "vein",
+      "children": [
+        "vein.confluence",
+        "vein.marginal",
+        "vein.sigmoid.right",
+        "vein.cavernous.right",
+        "vein.sigmoid.left",
+        "vein.cavernous.left",
+        "vein.anterior_intercavernous",
+        "vein.posterior_intercavernous"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.superficial",
+      "name": "Superficial cerebral veins",
+      "parent": "vein",
+      "children": [
+        "vein.superficial_middle_cerebral.right",
+        "vein.frontal_cortical.right",
+        "vein.parietal_cortical.right",
+        "vein.superficial_middle_cerebral.left",
+        "vein.frontal_cortical.left",
+        "vein.parietal_cortical.left"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.deep",
+      "name": "Deep cerebral veins",
+      "parent": "vein",
+      "children": [
+        "vein.galen",
+        "vein.anterior_communicating",
+        "vein.posterior_communicating"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.posterior",
+      "name": "Posterior fossa and spinal veins",
+      "parent": "vein",
+      "children": [
+        "vein.superior_petrosal_vein.right",
+        "vein.inferior_vermian.right",
+        "vein.superior_petrosal_vein.left",
+        "vein.inferior_vermian.left",
+        "vein.precentral_cerebellar",
+        "vein.anterior_pontomesencephalic"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.extracranial",
+      "name": "Extracranial veins",
+      "parent": "vein",
+      "children": [
+        "vein.internal_jugular.right",
+        "vein.external_jugular.right",
+        "vein.vertebral.right",
+        "vein.deep_cervical.right",
+        "vein.internal_jugular.left",
+        "vein.external_jugular.left",
+        "vein.vertebral.left",
+        "vein.deep_cervical.left"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.skullbase",
+      "name": "Skull-base venous connections",
+      "parent": "vein",
+      "children": [
+        "vein.superior_ophthalmic.right",
+        "vein.inferior_ophthalmic.right",
+        "vein.ovale_emissary.right",
+        "vein.anterior_condylar.right",
+        "vein.superior_ophthalmic.left",
+        "vein.inferior_ophthalmic.left",
+        "vein.ovale_emissary.left",
+        "vein.anterior_condylar.left",
+        "vein.basilar_plexus"
+      ],
+      "kind": "group",
+      "system": "vein",
+      "side": "midline",
+      "aliases": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      }
+    },
+    {
+      "id": "vein.confluence",
+      "name": "Confluence of sinuses",
+      "parent": "vein.dural",
+      "side": "midline",
+      "aliases": [
+        "Torcula",
+        "Torcular Herophili"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.superior_sagittal",
+        "vein.straight",
+        "vein.occipital_sinus"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.confluence"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p64. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The confluence joins the [superior sagittal](#structure-vein.superior_sagittal), [straight](#structure-vein.straight), and [occipital sinuses](#structure-vein.occipital_sinus) and drains into the transverse sinuses."
+    },
+    {
+      "id": "vein.superior_sagittal",
+      "name": "Superior sagittal sinus",
+      "parent": "vein.confluence",
+      "side": "midline",
+      "aliases": [
+        "SSS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_sagittal"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p64. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior sagittal sinus extends from the foramen caecum to the [confluence of sinuses](#structure-vein.confluence). It is located within the superior attachment of the falx to the calvarium. It receives the superficial cerebral veins from the medial and lateral cerebral hemispheres, the largest of which is the vein of Trolard."
+    },
+    {
+      "id": "vein.straight",
+      "name": "Straight sinus",
+      "parent": "vein.confluence",
+      "side": "midline",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.inferior_sagittal"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.straight"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p64. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The straight sinus is an unpaired structure located at the junction between the falx and tentorium in the midline, and it follows a straight course posteriorly. It receives blood from the [inferior sagittal sinus](#structure-vein.inferior_sagittal), [vein of Galen](#structure-vein.galen), posterior cerebral veins, superior cerebellar veins, and falx cerebri, and drains into the [confluence of sinuses](#structure-vein.confluence)."
+    },
+    {
+      "id": "vein.inferior_sagittal",
+      "name": "Inferior sagittal sinus",
+      "parent": "vein.straight",
+      "side": "midline",
+      "aliases": [
+        "ISS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_sagittal"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p64. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "This lies in the inferior edge of the falx parallel to the [superior sagittal sinus](#structure-vein.superior_sagittal). It receives blood from the anterior corpus callosum, cingulate gyrus, medial cerebral hemispheres, and the falx. It joins the [vein of Galen](#structure-vein.galen) to form the [straight sinus](#structure-vein.straight)."
+    },
+    {
+      "id": "vein.occipital_sinus",
+      "name": "Occipital sinus",
+      "parent": "vein.confluence",
+      "side": "midline",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.occipital_sinus"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The occipital sinus usually drains superiorly to the [confluence](#structure-vein.confluence) but may drain inferiorly to the sigmoid or [marginal sinuses](#structure-vein.marginal). It is often hypoplastic or absent in adults."
+    },
+    {
+      "id": "vein.marginal",
+      "name": "Marginal sinus",
+      "parent": "vein.dural",
+      "side": "midline",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.marginal"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The marginal sinus encircles the foramen magnum and is connected to a network of adjacent venous structures including the [clival plexus](#structure-vein.basilar_plexus) anteriorly, the vertebral venous plexus inferiorly, and sigmoid sinuses laterally."
+    },
+    {
+      "id": "vein.galen",
+      "name": "Vein of Galen",
+      "parent": "vein.deep",
+      "side": "midline",
+      "aliases": [
+        "Great cerebral vein",
+        "Great vein of Galen"
+      ],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.internal_cerebral.right",
+        "vein.basal.right",
+        "vein.internal_cerebral.left",
+        "vein.basal.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.galen"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "This short subarachnoid vessel is formed by the midline convergence of the internal cerebral veins, below the splenium, beneath which it curves. It ends at the tentorial hiatus apex, where it joins the [inferior sagittal sinus](#structure-vein.inferior_sagittal) to become the [straight sinus](#structure-vein.straight). The vessel also receives blood from the posterior pericallosal veins, the internal occipital veins, and veins of the posterior fossa."
+    },
+    {
+      "id": "vein.internal_jugular.right",
+      "name": "Internal jugular vein right",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "aliases": [
+        "IJV",
+        "Internal jugular"
+      ],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.facial.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.internal_jugular.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.right) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein."
+    },
+    {
+      "id": "vein.sigmoid.right",
+      "name": "Sigmoid sinus right",
+      "parent": "vein.dural",
+      "side": "right",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.transverse.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.sigmoid.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.right) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins."
+    },
+    {
+      "id": "vein.transverse.right",
+      "name": "Transverse sinus right",
+      "parent": "vein.sigmoid.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.transverse.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labb\u00e9](#structure-vein.labbe.right), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.right). Hypoplasia of one or the other is common, usually the left."
+    },
+    {
+      "id": "vein.cavernous.right",
+      "name": "Cavernous sinus right",
+      "parent": "vein.dural",
+      "side": "right",
+      "aliases": [
+        "CS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.superior_petrosal.right",
+        "vein.inferior_petrosal.right",
+        "vein.sphenoparietal.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.cavernous.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.right), [superior petrosal sinus](#structure-vein.superior_petrosal.right), [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses."
+    },
+    {
+      "id": "vein.superior_petrosal.right",
+      "name": "Superior petrosal sinus right",
+      "parent": "vein.cavernous.right",
+      "side": "right",
+      "aliases": [
+        "SPS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_petrosal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the junction of the [transverse](#structure-vein.transverse.right) and [sigmoid sinuses](#structure-vein.sigmoid.right). They may receive blood from supra- or infratentorial structures."
+    },
+    {
+      "id": "vein.inferior_petrosal.right",
+      "name": "Inferior petrosal sinus right",
+      "parent": "vein.cavernous.right",
+      "side": "right",
+      "aliases": [
+        "IPS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_petrosal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the [jugular vein](#structure-vein.internal_jugular.right) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures."
+    },
+    {
+      "id": "vein.sphenoparietal.right",
+      "name": "Sphenoparietal sinus right",
+      "parent": "vein.cavernous.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.sphenoparietal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.right). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus."
+    },
+    {
+      "id": "vein.superficial_middle_cerebral.right",
+      "name": "Superficial middle cerebral vein right",
+      "parent": "vein.superficial",
+      "side": "right",
+      "aliases": [
+        "SMV",
+        "SMCV",
+        "Superficial Sylvian vein"
+      ],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.trolard.right",
+        "vein.labbe.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superficial_middle_cerebral.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right)."
+    },
+    {
+      "id": "vein.trolard.right",
+      "name": "Superior anastomotic vein of Trolard right",
+      "parent": "vein.superficial_middle_cerebral.right",
+      "side": "right",
+      "aliases": [
+        "Trolard"
+      ],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.trolard.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labb\u00e9 are in haemodynamic balance such that either may be absent."
+    },
+    {
+      "id": "vein.labbe.right",
+      "name": "Posterior anastomotic vein of Labb\u00e9 right",
+      "parent": "vein.superficial_middle_cerebral.right",
+      "side": "right",
+      "aliases": [
+        "Labbe",
+        "Labb\u00e9",
+        "Inferior anastomotic vein"
+      ],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.labbe.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The posterior anastomotic vein of Labb\u00e9 is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [transverse sinus](#structure-vein.transverse.right). Trolard and Labb\u00e9 are in haemodynamic balance such that either may be absent."
+    },
+    {
+      "id": "vein.frontal_cortical.right",
+      "name": "Frontal cortical vein right",
+      "parent": "vein.superficial",
+      "side": "right",
+      "aliases": [],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.frontal_cortical.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus."
+    },
+    {
+      "id": "vein.parietal_cortical.right",
+      "name": "Parietal cortical vein right",
+      "parent": "vein.superficial",
+      "side": "right",
+      "aliases": [],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.parietal_cortical.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus."
+    },
+    {
+      "id": "vein.internal_cerebral.right",
+      "name": "Internal cerebral vein right",
+      "parent": "vein.galen",
+      "side": "right",
+      "aliases": [
+        "ICV"
+      ],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.thalamostriate.right",
+        "vein.anterior_septal.right",
+        "vein.superior_choroidal.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.internal_cerebral.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen)."
+    },
+    {
+      "id": "vein.basal.right",
+      "name": "Basal vein of Rosenthal right",
+      "parent": "vein.galen",
+      "side": "right",
+      "aliases": [
+        "BVR",
+        "Basal vein"
+      ],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.anterior_cerebral.right",
+        "vein.deep_middle_cerebral.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.basal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p71. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.right). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.right)."
+    },
+    {
+      "id": "vein.thalamostriate.right",
+      "name": "Superior thalamostriate vein right",
+      "parent": "vein.internal_cerebral.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.thalamostriate.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p71. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.right)."
+    },
+    {
+      "id": "vein.anterior_septal.right",
+      "name": "Anterior septal vein right",
+      "parent": "vein.internal_cerebral.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_septal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p70. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.right) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly."
+    },
+    {
+      "id": "vein.superior_choroidal.right",
+      "name": "Superior choroidal vein right",
+      "parent": "vein.internal_cerebral.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_choroidal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.right). The internal cerebral veins drain the subependymal and choroid venous systems."
+    },
+    {
+      "id": "vein.anterior_cerebral.right",
+      "name": "Anterior cerebral vein right",
+      "parent": "vein.basal.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_cerebral.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p71. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right)."
+    },
+    {
+      "id": "vein.deep_middle_cerebral.right",
+      "name": "Deep middle cerebral vein right",
+      "parent": "vein.basal.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_middle_cerebral.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right)."
+    },
+    {
+      "id": "vein.superior_petrosal_vein.right",
+      "name": "Superior petrosal vein right",
+      "parent": "vein.posterior",
+      "side": "right",
+      "aliases": [
+        "Petrosal vein",
+        "Vein of Dandy"
+      ],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.lateral_mesencephalic.right",
+        "vein.cerebellopontine_fissure.right",
+        "vein.transverse_pontine.right",
+        "vein.pontomedullary.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_petrosal_vein.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior petrosal vein, or petrosal vein, is the largest vein in the posterior cranial fossa. It drains the anterior cerebellum and brainstem into the [superior petrosal sinus](#structure-vein.superior_petrosal.right). It is usually formed by multiple smaller veins converging into one, but sometimes there are two or three. Major contributors include the vein of the cerebellopontine fissure, and the petrosal, posterior mesencephalic, anterior pontomesencephalic, and tentorial groups."
+    },
+    {
+      "id": "vein.lateral_mesencephalic.right",
+      "name": "Lateral mesencephalic vein right",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.lateral_mesencephalic.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The lateral mesencephalic veins connect the [basal vein of Rosenthal](#structure-vein.basal.right) to lateral brainstem and medullary fissure veins. They act as a crucial collateral drainage route, especially when the basal vein is discontinuous, draining posteriorly to infratentorial veins."
+    },
+    {
+      "id": "vein.cerebellopontine_fissure.right",
+      "name": "Vein of the cerebellopontine fissure right",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.cerebellopontine_fissure.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.right) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.right)."
+    },
+    {
+      "id": "vein.inferior_vermian.right",
+      "name": "Inferior vermian vein right",
+      "parent": "vein.posterior",
+      "side": "right",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.inferior_hemispheric.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_vermian.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The paired inferior vermian veins lie in the cerebellovermian fissure and drain the inferior vermis and medial suboccipital surface into the [torcular](#structure-vein.confluence) or transverse sinus, directly or via a tentorial sinus."
+    },
+    {
+      "id": "vein.inferior_hemispheric.right",
+      "name": "Inferior hemispheric vein right",
+      "parent": "vein.inferior_vermian.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_hemispheric.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.right)."
+    },
+    {
+      "id": "vein.external_jugular.right",
+      "name": "External jugular vein right",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "aliases": [
+        "EJV"
+      ],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.retromandibular.right",
+        "vein.posterior_auricular.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.external_jugular.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "The EJV drains the deep face, scalp, and posterolateral neck. It originates from the convergence of the retromandibular, posterior auricular, and superficial temporal veins in front of the angle of the mandible. The vein runs caudally on top of the sternocleidomastoid to join the subclavian vein. Like the IJV, it has a valve just prior to its termination."
+    },
+    {
+      "id": "vein.retromandibular.right",
+      "name": "Retromandibular vein right",
+      "parent": "vein.external_jugular.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.maxillary.right",
+        "vein.superficial_temporal.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.retromandibular.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The maxillary vein converges with the [superficial temporal vein](#structure-vein.superficial_temporal.right) to form the retromandibular vein. It contributes to drainage of the deep face and scalp into the [external jugular vein](#structure-vein.external_jugular.right)."
+    },
+    {
+      "id": "vein.maxillary.right",
+      "name": "Maxillary vein right",
+      "parent": "vein.retromandibular.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.pterygoid_plexus.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.maxillary.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) becomes the maxillary vein, which later converges with the [superficial temporal vein](#structure-vein.superficial_temporal.right) to form the [retromandibular vein](#structure-vein.retromandibular.right)."
+    },
+    {
+      "id": "vein.pterygoid_plexus.right",
+      "name": "Pterygoid venous plexus right",
+      "parent": "vein.maxillary.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.pterygoid_plexus.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The pterygoid plexus is a large venous network located between the temporalis and lateral pterygoid muscles. It drains into the [maxillary vein](#structure-vein.maxillary.right) and connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins. The plexus receives numerous tributaries, including the sphenopalatine, middle meningeal, deep temporal, pterygoid, masseteric, buccinator, alveolar, and palatine veins. It also receives blood from the [inferior ophthalmic vein](#structure-vein.inferior_ophthalmic.right), [deep facial vein](#structure-vein.deep_facial.right), and infraorbital vein."
+    },
+    {
+      "id": "vein.superficial_temporal.right",
+      "name": "Superficial temporal vein right",
+      "parent": "vein.retromandibular.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superficial_temporal.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superficial temporal vein drains the scalp and converges with the [maxillary vein](#structure-vein.maxillary.right) to form the [retromandibular vein](#structure-vein.retromandibular.right)."
+    },
+    {
+      "id": "vein.posterior_auricular.right",
+      "name": "Posterior auricular vein right",
+      "parent": "vein.external_jugular.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_auricular.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The posterior auricular vein contributes to drainage of the scalp and posterolateral neck into the [external jugular vein](#structure-vein.external_jugular.right)."
+    },
+    {
+      "id": "vein.facial.right",
+      "name": "Facial vein right",
+      "parent": "vein.internal_jugular.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.angular.right",
+        "vein.deep_facial.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.facial.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The extracranial drainage of the head and neck mirrors the arteries. The supratrochlear and supraorbital veins drain to the facial vein, which is a tributary of the [internal jugular vein](#structure-vein.internal_jugular.right). The [deep facial vein](#structure-vein.deep_facial.right) connects with the pterygoid plexus."
+    },
+    {
+      "id": "vein.angular.right",
+      "name": "Angular vein right",
+      "parent": "vein.facial.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.angular.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative."
+    },
+    {
+      "id": "vein.deep_facial.right",
+      "name": "Deep facial vein right",
+      "parent": "vein.facial.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_facial.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The deep facial vein connects the [facial vein](#structure-vein.facial.right) with the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right)."
+    },
+    {
+      "id": "vein.superior_ophthalmic.right",
+      "name": "Superior ophthalmic vein right",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "aliases": [
+        "SOV"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_ophthalmic.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.right), an important bidirectional confluence of the intracranial and extracranial venous systems."
+    },
+    {
+      "id": "vein.inferior_ophthalmic.right",
+      "name": "Inferior ophthalmic vein right",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "aliases": [
+        "IOV"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_ophthalmic.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The inferior ophthalmic vein contributes to drainage into the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). The ophthalmic veins also connect with the [cavernous sinus](#structure-vein.cavernous.right)."
+    },
+    {
+      "id": "vein.ovale_emissary.right",
+      "name": "Emissary vein of foramen ovale right",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "aliases": [],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.ovale_emissary.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins."
+    },
+    {
+      "id": "vein.vertebral.right",
+      "name": "Vertebral vein right",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.suboccipital_plexus.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.vertebral.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p63. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "The vertebral artery venous plexus arises at C2 and receives blood from the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and the anterior, lateral, and posterior condylar veins. It continues as a solitary vertebral vein in the vertebral canal surrounding the vertebral artery, leaving at C6 via the foramen transversarium to join the brachiocephalic vein."
+    },
+    {
+      "id": "vein.suboccipital_plexus.right",
+      "name": "Suboccipital venous plexus right",
+      "parent": "vein.vertebral.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.suboccipital_plexus.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p63. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The suboccipital venous plexus contributes to the vertebral venous system through the [vertebral artery venous plexus](#structure-vein.vertebral.right) and [deep cervical vein](#structure-vein.deep_cervical.right). It also communicates with condylar veins."
+    },
+    {
+      "id": "vein.deep_cervical.right",
+      "name": "Deep cervical vein right",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_cervical.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p63. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "The deep cervical vein receives tributaries of the [suboccipital venous plexus](#structure-vein.suboccipital_plexus.right). It follows the deep cervical artery to end in the IJV or brachiocephalic vein."
+    },
+    {
+      "id": "vein.anterior_condylar.right",
+      "name": "Anterior condylar vein right",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "aliases": [
+        "Vein of hypoglossal canal"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.lateral_condylar.right"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_condylar.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Hypoglossal canal region follows the existing landmark; its lumen is unresolved in this bone mesh.",
+      "description": "The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.right) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus."
+    },
+    {
+      "id": "vein.lateral_condylar.right",
+      "name": "Lateral condylar vein right",
+      "parent": "vein.anterior_condylar.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.lateral_condylar.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and vertebral venous system."
+    },
+    {
+      "id": "vein.internal_jugular.left",
+      "name": "Internal jugular vein left",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "aliases": [
+        "IJV",
+        "Internal jugular"
+      ],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.facial.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.internal_jugular.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.left) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein."
+    },
+    {
+      "id": "vein.sigmoid.left",
+      "name": "Sigmoid sinus left",
+      "parent": "vein.dural",
+      "side": "left",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.transverse.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.sigmoid.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.left) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins."
+    },
+    {
+      "id": "vein.transverse.left",
+      "name": "Transverse sinus left",
+      "parent": "vein.sigmoid.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.transverse.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labb\u00e9](#structure-vein.labbe.left), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.left). Hypoplasia of one or the other is common, usually the left."
+    },
+    {
+      "id": "vein.cavernous.left",
+      "name": "Cavernous sinus left",
+      "parent": "vein.dural",
+      "side": "left",
+      "aliases": [
+        "CS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.superior_petrosal.left",
+        "vein.inferior_petrosal.left",
+        "vein.sphenoparietal.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.cavernous.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.left), [superior petrosal sinus](#structure-vein.superior_petrosal.left), [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses."
+    },
+    {
+      "id": "vein.superior_petrosal.left",
+      "name": "Superior petrosal sinus left",
+      "parent": "vein.cavernous.left",
+      "side": "left",
+      "aliases": [
+        "SPS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_petrosal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the junction of the [transverse](#structure-vein.transverse.left) and [sigmoid sinuses](#structure-vein.sigmoid.left). They may receive blood from supra- or infratentorial structures."
+    },
+    {
+      "id": "vein.inferior_petrosal.left",
+      "name": "Inferior petrosal sinus left",
+      "parent": "vein.cavernous.left",
+      "side": "left",
+      "aliases": [
+        "IPS"
+      ],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_petrosal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the [jugular vein](#structure-vein.internal_jugular.left) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures."
+    },
+    {
+      "id": "vein.sphenoparietal.left",
+      "name": "Sphenoparietal sinus left",
+      "parent": "vein.cavernous.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.sphenoparietal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.left). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus."
+    },
+    {
+      "id": "vein.superficial_middle_cerebral.left",
+      "name": "Superficial middle cerebral vein left",
+      "parent": "vein.superficial",
+      "side": "left",
+      "aliases": [
+        "SMV",
+        "SMCV",
+        "Superficial Sylvian vein"
+      ],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.trolard.left",
+        "vein.labbe.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superficial_middle_cerebral.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left)."
+    },
+    {
+      "id": "vein.trolard.left",
+      "name": "Superior anastomotic vein of Trolard left",
+      "parent": "vein.superficial_middle_cerebral.left",
+      "side": "left",
+      "aliases": [
+        "Trolard"
+      ],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.trolard.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labb\u00e9 are in haemodynamic balance such that either may be absent."
+    },
+    {
+      "id": "vein.labbe.left",
+      "name": "Posterior anastomotic vein of Labb\u00e9 left",
+      "parent": "vein.superficial_middle_cerebral.left",
+      "side": "left",
+      "aliases": [
+        "Labbe",
+        "Labb\u00e9",
+        "Inferior anastomotic vein"
+      ],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.labbe.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The posterior anastomotic vein of Labb\u00e9 is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [transverse sinus](#structure-vein.transverse.left). Trolard and Labb\u00e9 are in haemodynamic balance such that either may be absent."
+    },
+    {
+      "id": "vein.frontal_cortical.left",
+      "name": "Frontal cortical vein left",
+      "parent": "vein.superficial",
+      "side": "left",
+      "aliases": [],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.frontal_cortical.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus."
+    },
+    {
+      "id": "vein.parietal_cortical.left",
+      "name": "Parietal cortical vein left",
+      "parent": "vein.superficial",
+      "side": "left",
+      "aliases": [],
+      "color": "#74bde8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.parietal_cortical.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus."
+    },
+    {
+      "id": "vein.internal_cerebral.left",
+      "name": "Internal cerebral vein left",
+      "parent": "vein.galen",
+      "side": "left",
+      "aliases": [
+        "ICV"
+      ],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.thalamostriate.left",
+        "vein.anterior_septal.left",
+        "vein.superior_choroidal.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.internal_cerebral.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen)."
+    },
+    {
+      "id": "vein.basal.left",
+      "name": "Basal vein of Rosenthal left",
+      "parent": "vein.galen",
+      "side": "left",
+      "aliases": [
+        "BVR",
+        "Basal vein"
+      ],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.anterior_cerebral.left",
+        "vein.deep_middle_cerebral.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.basal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p71. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.left). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.left)."
+    },
+    {
+      "id": "vein.thalamostriate.left",
+      "name": "Superior thalamostriate vein left",
+      "parent": "vein.internal_cerebral.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.thalamostriate.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p71. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.left)."
+    },
+    {
+      "id": "vein.anterior_septal.left",
+      "name": "Anterior septal vein left",
+      "parent": "vein.internal_cerebral.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_septal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p70. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.left) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly."
+    },
+    {
+      "id": "vein.superior_choroidal.left",
+      "name": "Superior choroidal vein left",
+      "parent": "vein.internal_cerebral.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_choroidal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.left). The internal cerebral veins drain the subependymal and choroid venous systems."
+    },
+    {
+      "id": "vein.anterior_cerebral.left",
+      "name": "Anterior cerebral vein left",
+      "parent": "vein.basal.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_cerebral.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p71. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left)."
+    },
+    {
+      "id": "vein.deep_middle_cerebral.left",
+      "name": "Deep middle cerebral vein left",
+      "parent": "vein.basal.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_middle_cerebral.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left)."
+    },
+    {
+      "id": "vein.superior_petrosal_vein.left",
+      "name": "Superior petrosal vein left",
+      "parent": "vein.posterior",
+      "side": "left",
+      "aliases": [
+        "Petrosal vein",
+        "Vein of Dandy"
+      ],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.lateral_mesencephalic.left",
+        "vein.cerebellopontine_fissure.left",
+        "vein.transverse_pontine.left",
+        "vein.pontomedullary.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_petrosal_vein.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior petrosal vein, or petrosal vein, is the largest vein in the posterior cranial fossa. It drains the anterior cerebellum and brainstem into the [superior petrosal sinus](#structure-vein.superior_petrosal.left). It is usually formed by multiple smaller veins converging into one, but sometimes there are two or three. Major contributors include the vein of the cerebellopontine fissure, and the petrosal, posterior mesencephalic, anterior pontomesencephalic, and tentorial groups."
+    },
+    {
+      "id": "vein.lateral_mesencephalic.left",
+      "name": "Lateral mesencephalic vein left",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.lateral_mesencephalic.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The lateral mesencephalic veins connect the [basal vein of Rosenthal](#structure-vein.basal.left) to lateral brainstem and medullary fissure veins. They act as a crucial collateral drainage route, especially when the basal vein is discontinuous, draining posteriorly to infratentorial veins."
+    },
+    {
+      "id": "vein.cerebellopontine_fissure.left",
+      "name": "Vein of the cerebellopontine fissure left",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.cerebellopontine_fissure.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.left) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.left)."
+    },
+    {
+      "id": "vein.inferior_vermian.left",
+      "name": "Inferior vermian vein left",
+      "parent": "vein.posterior",
+      "side": "left",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.inferior_hemispheric.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_vermian.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The paired inferior vermian veins lie in the cerebellovermian fissure and drain the inferior vermis and medial suboccipital surface into the [torcular](#structure-vein.confluence) or transverse sinus, directly or via a tentorial sinus."
+    },
+    {
+      "id": "vein.inferior_hemispheric.left",
+      "name": "Inferior hemispheric vein left",
+      "parent": "vein.inferior_vermian.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_hemispheric.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.left)."
+    },
+    {
+      "id": "vein.external_jugular.left",
+      "name": "External jugular vein left",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "aliases": [
+        "EJV"
+      ],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.retromandibular.left",
+        "vein.posterior_auricular.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.external_jugular.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "The EJV drains the deep face, scalp, and posterolateral neck. It originates from the convergence of the retromandibular, posterior auricular, and superficial temporal veins in front of the angle of the mandible. The vein runs caudally on top of the sternocleidomastoid to join the subclavian vein. Like the IJV, it has a valve just prior to its termination."
+    },
+    {
+      "id": "vein.retromandibular.left",
+      "name": "Retromandibular vein left",
+      "parent": "vein.external_jugular.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.maxillary.left",
+        "vein.superficial_temporal.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.retromandibular.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The maxillary vein converges with the [superficial temporal vein](#structure-vein.superficial_temporal.left) to form the retromandibular vein. It contributes to drainage of the deep face and scalp into the [external jugular vein](#structure-vein.external_jugular.left)."
+    },
+    {
+      "id": "vein.maxillary.left",
+      "name": "Maxillary vein left",
+      "parent": "vein.retromandibular.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.pterygoid_plexus.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.maxillary.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) becomes the maxillary vein, which later converges with the [superficial temporal vein](#structure-vein.superficial_temporal.left) to form the [retromandibular vein](#structure-vein.retromandibular.left)."
+    },
+    {
+      "id": "vein.pterygoid_plexus.left",
+      "name": "Pterygoid venous plexus left",
+      "parent": "vein.maxillary.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.pterygoid_plexus.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The pterygoid plexus is a large venous network located between the temporalis and lateral pterygoid muscles. It drains into the [maxillary vein](#structure-vein.maxillary.left) and connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins. The plexus receives numerous tributaries, including the sphenopalatine, middle meningeal, deep temporal, pterygoid, masseteric, buccinator, alveolar, and palatine veins. It also receives blood from the [inferior ophthalmic vein](#structure-vein.inferior_ophthalmic.left), [deep facial vein](#structure-vein.deep_facial.left), and infraorbital vein."
+    },
+    {
+      "id": "vein.superficial_temporal.left",
+      "name": "Superficial temporal vein left",
+      "parent": "vein.retromandibular.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superficial_temporal.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superficial temporal vein drains the scalp and converges with the [maxillary vein](#structure-vein.maxillary.left) to form the [retromandibular vein](#structure-vein.retromandibular.left)."
+    },
+    {
+      "id": "vein.posterior_auricular.left",
+      "name": "Posterior auricular vein left",
+      "parent": "vein.external_jugular.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_auricular.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The posterior auricular vein contributes to drainage of the scalp and posterolateral neck into the [external jugular vein](#structure-vein.external_jugular.left)."
+    },
+    {
+      "id": "vein.facial.left",
+      "name": "Facial vein left",
+      "parent": "vein.internal_jugular.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.angular.left",
+        "vein.deep_facial.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.facial.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The extracranial drainage of the head and neck mirrors the arteries. The supratrochlear and supraorbital veins drain to the facial vein, which is a tributary of the [internal jugular vein](#structure-vein.internal_jugular.left). The [deep facial vein](#structure-vein.deep_facial.left) connects with the pterygoid plexus."
+    },
+    {
+      "id": "vein.angular.left",
+      "name": "Angular vein left",
+      "parent": "vein.facial.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.angular.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative."
+    },
+    {
+      "id": "vein.deep_facial.left",
+      "name": "Deep facial vein left",
+      "parent": "vein.facial.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_facial.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The deep facial vein connects the [facial vein](#structure-vein.facial.left) with the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left)."
+    },
+    {
+      "id": "vein.superior_ophthalmic.left",
+      "name": "Superior ophthalmic vein left",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "aliases": [
+        "SOV"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_ophthalmic.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.left), an important bidirectional confluence of the intracranial and extracranial venous systems."
+    },
+    {
+      "id": "vein.inferior_ophthalmic.left",
+      "name": "Inferior ophthalmic vein left",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "aliases": [
+        "IOV"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_ophthalmic.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p62. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The inferior ophthalmic vein contributes to drainage into the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). The ophthalmic veins also connect with the [cavernous sinus](#structure-vein.cavernous.left)."
+    },
+    {
+      "id": "vein.ovale_emissary.left",
+      "name": "Emissary vein of foramen ovale left",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "aliases": [],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.ovale_emissary.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins."
+    },
+    {
+      "id": "vein.vertebral.left",
+      "name": "Vertebral vein left",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.suboccipital_plexus.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.vertebral.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p63. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "The vertebral artery venous plexus arises at C2 and receives blood from the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and the anterior, lateral, and posterior condylar veins. It continues as a solitary vertebral vein in the vertebral canal surrounding the vertebral artery, leaving at C6 via the foramen transversarium to join the brachiocephalic vein."
+    },
+    {
+      "id": "vein.suboccipital_plexus.left",
+      "name": "Suboccipital venous plexus left",
+      "parent": "vein.vertebral.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.suboccipital_plexus.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p63. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The suboccipital venous plexus contributes to the vertebral venous system through the [vertebral artery venous plexus](#structure-vein.vertebral.left) and [deep cervical vein](#structure-vein.deep_cervical.left). It also communicates with condylar veins."
+    },
+    {
+      "id": "vein.deep_cervical.left",
+      "name": "Deep cervical vein left",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "aliases": [],
+      "color": "#598fcd",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_cervical.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p63. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Lower cervical end is truncated to the current field of view; thoracic termination is not modelled.",
+      "description": "The deep cervical vein receives tributaries of the [suboccipital venous plexus](#structure-vein.suboccipital_plexus.left). It follows the deep cervical artery to end in the IJV or brachiocephalic vein."
+    },
+    {
+      "id": "vein.anterior_condylar.left",
+      "name": "Anterior condylar vein left",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "aliases": [
+        "Vein of hypoglossal canal"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.lateral_condylar.left"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_condylar.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Hypoglossal canal region follows the existing landmark; its lumen is unresolved in this bone mesh.",
+      "description": "The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.left) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus."
+    },
+    {
+      "id": "vein.lateral_condylar.left",
+      "name": "Lateral condylar vein left",
+      "parent": "vein.anterior_condylar.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.lateral_condylar.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and vertebral venous system."
+    },
+    {
+      "id": "vein.anterior_intercavernous",
+      "name": "Anterior intercavernous sinus",
+      "parent": "vein.dural",
+      "side": "midline",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_intercavernous"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses."
+    },
+    {
+      "id": "vein.posterior_intercavernous",
+      "name": "Posterior intercavernous sinus",
+      "parent": "vein.dural",
+      "side": "midline",
+      "aliases": [],
+      "color": "#6f95e8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_intercavernous"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses."
+    },
+    {
+      "id": "vein.basilar_plexus",
+      "name": "Basilar venous plexus",
+      "parent": "vein.skullbase",
+      "side": "midline",
+      "aliases": [
+        "Clival plexus",
+        "Basilar plexus"
+      ],
+      "color": "#839acb",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.basilar_plexus"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below."
+    },
+    {
+      "id": "vein.anterior_communicating",
+      "name": "Anterior communicating vein",
+      "parent": "vein.deep",
+      "side": "midline",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_communicating"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The anterior cerebral veins are connected by the anterior communicating vein in half the population. This contributes to the anterior venous circle in the suprasellar cistern."
+    },
+    {
+      "id": "vein.posterior_communicating",
+      "name": "Posterior communicating vein",
+      "parent": "vein.deep",
+      "side": "midline",
+      "aliases": [],
+      "color": "#939de8",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_communicating"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p72. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The posterior communicating vein is a constant vessel in the interpeduncular fossa. This, in addition to hypothalamic and ventral mesencephalic veins, contributes to the posterior aspect of the venous circle."
+    },
+    {
+      "id": "vein.precentral_cerebellar",
+      "name": "Precentral cerebellar vein",
+      "parent": "vein.posterior",
+      "side": "midline",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.superior_vermian"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.precentral_cerebellar"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The precentral cerebellar vein, an unpaired vein, ascends in the quadrigeminal cistern behind the tectal plate to drain into the [vein of Galen](#structure-vein.galen). It can merge with the [superior vermian vein](#structure-vein.superior_vermian) to form the superior cerebellar vein or drain directly into the vein of Galen independently."
+    },
+    {
+      "id": "vein.superior_vermian",
+      "name": "Superior vermian vein",
+      "parent": "vein.precentral_cerebellar",
+      "side": "midline",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_vermian"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p76. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The superior vermian veins drain the superior vermis and the medial parts of the superior cerebellar hemispheres. The anterior veins drain into the [vein of Galen](#structure-vein.galen), and the posterior veins drain into the [confluence of sinuses](#structure-vein.confluence)."
+    },
+    {
+      "id": "vein.anterior_pontomesencephalic",
+      "name": "Median anterior pontomesencephalic vein",
+      "parent": "vein.posterior",
+      "side": "midline",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.anterior_pontine"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_pontomesencephalic"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The midline brainstem veins form a continuous anastomotic venous channel comprising the median anterior pontomesencephalic, median anterior pontine, and median anterior medullary veins. Blood may flow cranially to the posterior communicating vein or peduncular veins, or caudally into the spinal veins."
+    },
+    {
+      "id": "vein.anterior_pontine",
+      "name": "Median anterior pontine vein",
+      "parent": "vein.anterior_pontomesencephalic",
+      "side": "midline",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.anterior_medullary"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_pontine"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The median anterior pontine vein forms part of the continuous midline anastomotic channel between the [median anterior pontomesencephalic vein](#structure-vein.anterior_pontomesencephalic) and [median anterior medullary vein](#structure-vein.anterior_medullary)."
+    },
+    {
+      "id": "vein.anterior_medullary",
+      "name": "Median anterior medullary vein",
+      "parent": "vein.anterior_pontine",
+      "side": "midline",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [
+        "vein.anterior_spinal"
+      ],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_medullary"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The median anterior medullary vein continues inferiorly as the [anterior spinal vein](#structure-vein.anterior_spinal). It forms part of the continuous midline venous channel on the anterior brainstem."
+    },
+    {
+      "id": "vein.anterior_spinal",
+      "name": "Anterior spinal vein",
+      "parent": "vein.anterior_medullary",
+      "side": "midline",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_spinal"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "description": "The anterior spinal vein is the inferior continuation of the [median anterior medullary vein](#structure-vein.anterior_medullary). Blood may flow cranially through the brainstem venous channel or caudally into the spinal veins."
+    },
+    {
+      "id": "vein.transverse_pontine.right",
+      "name": "Transverse pontine vein right",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.transverse_pontine.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative."
+    },
+    {
+      "id": "vein.pontomedullary.right",
+      "name": "Vein of the pontomedullary sulcus right",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.pontomedullary.right"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative."
+    },
+    {
+      "id": "vein.transverse_pontine.left",
+      "name": "Transverse pontine vein left",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.transverse_pontine.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative."
+    },
+    {
+      "id": "vein.pontomedullary.left",
+      "name": "Vein of the pontomedullary sulcus left",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "aliases": [],
+      "color": "#76c7d3",
+      "system": "vein",
+      "kind": "structure",
+      "children": [],
+      "geometryStatus": "web-optimised",
+      "provenance": {
+        "sourceType": "teaching-reconstruction",
+        "confidence": "Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated",
+        "reviewStatus": "unreviewed",
+        "sourceRefs": [
+          "ref.lynch.neurovascular-notes",
+          "ref.venous-authoring-2026"
+        ]
+      },
+      "asset": {
+        "file": "models/venous.glb",
+        "node": "vein.pontomedullary.left"
+      },
+      "notes": "Lynch Neurovascular anatomy, printed p74. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative."
     }
   ],
   "relationships": [
@@ -47748,6 +50926,641 @@
       "from": "artery.posterior.vertebral_left",
       "to": "artery.posterior.vertebral_left.segment.v4",
       "type": "has_segment"
+    },
+    {
+      "from": "vein.sigmoid.right",
+      "to": "vein.internal_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.transverse.right",
+      "to": "vein.sigmoid.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal.right",
+      "to": "vein.sigmoid.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_petrosal.right",
+      "to": "vein.internal_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.sphenoparietal.right",
+      "to": "vein.cavernous.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.right",
+      "to": "vein.sphenoparietal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.labbe.right",
+      "to": "vein.transverse.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.thalamostriate.right",
+      "to": "vein.internal_cerebral.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_septal.right",
+      "to": "vein.internal_cerebral.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_choroidal.right",
+      "to": "vein.thalamostriate.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_cerebral.right",
+      "to": "vein.basal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.deep_middle_cerebral.right",
+      "to": "vein.basal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal_vein.right",
+      "to": "vein.superior_petrosal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.cerebellopontine_fissure.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_hemispheric.right",
+      "to": "vein.inferior_vermian.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.retromandibular.right",
+      "to": "vein.external_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.maxillary.right",
+      "to": "vein.retromandibular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.pterygoid_plexus.right",
+      "to": "vein.maxillary.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_temporal.right",
+      "to": "vein.retromandibular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.posterior_auricular.right",
+      "to": "vein.external_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.angular.right",
+      "to": "vein.facial.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.facial.right",
+      "to": "vein.internal_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_ophthalmic.right",
+      "to": "vein.cavernous.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_ophthalmic.right",
+      "to": "vein.pterygoid_plexus.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.suboccipital_plexus.right",
+      "to": "vein.vertebral.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.right",
+      "to": "vein.trolard.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.right",
+      "to": "vein.labbe.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.right",
+      "to": "vein.superior_petrosal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.right",
+      "to": "vein.inferior_petrosal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.right",
+      "to": "vein.facial.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.right",
+      "to": "vein.pterygoid_plexus.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.right",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.right",
+      "to": "vein.pterygoid_plexus.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superior_ophthalmic.right",
+      "to": "vein.angular.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.right",
+      "to": "vein.basal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_condylar.right",
+      "to": "vein.internal_jugular.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.right",
+      "to": "vein.anterior_condylar.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.right",
+      "to": "vein.suboccipital_plexus.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.suboccipital_plexus.right",
+      "to": "vein.deep_cervical.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.internal_cerebral.right",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.basal.right",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.trolard.right",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.frontal_cortical.right",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.parietal_cortical.right",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_vermian.right",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.confluence",
+      "to": "vein.transverse.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_condylar.right",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.sigmoid.left",
+      "to": "vein.internal_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.transverse.left",
+      "to": "vein.sigmoid.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal.left",
+      "to": "vein.sigmoid.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_petrosal.left",
+      "to": "vein.internal_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.sphenoparietal.left",
+      "to": "vein.cavernous.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.left",
+      "to": "vein.sphenoparietal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.labbe.left",
+      "to": "vein.transverse.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.thalamostriate.left",
+      "to": "vein.internal_cerebral.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_septal.left",
+      "to": "vein.internal_cerebral.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_choroidal.left",
+      "to": "vein.thalamostriate.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_cerebral.left",
+      "to": "vein.basal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.deep_middle_cerebral.left",
+      "to": "vein.basal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal_vein.left",
+      "to": "vein.superior_petrosal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.cerebellopontine_fissure.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_hemispheric.left",
+      "to": "vein.inferior_vermian.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.retromandibular.left",
+      "to": "vein.external_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.maxillary.left",
+      "to": "vein.retromandibular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.pterygoid_plexus.left",
+      "to": "vein.maxillary.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_temporal.left",
+      "to": "vein.retromandibular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.posterior_auricular.left",
+      "to": "vein.external_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.angular.left",
+      "to": "vein.facial.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.facial.left",
+      "to": "vein.internal_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_ophthalmic.left",
+      "to": "vein.cavernous.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_ophthalmic.left",
+      "to": "vein.pterygoid_plexus.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.suboccipital_plexus.left",
+      "to": "vein.vertebral.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.left",
+      "to": "vein.trolard.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.left",
+      "to": "vein.labbe.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.left",
+      "to": "vein.superior_petrosal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.left",
+      "to": "vein.inferior_petrosal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.left",
+      "to": "vein.facial.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.left",
+      "to": "vein.pterygoid_plexus.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.left",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.left",
+      "to": "vein.pterygoid_plexus.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superior_ophthalmic.left",
+      "to": "vein.angular.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.left",
+      "to": "vein.basal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_condylar.left",
+      "to": "vein.internal_jugular.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.left",
+      "to": "vein.anterior_condylar.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.left",
+      "to": "vein.suboccipital_plexus.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.suboccipital_plexus.left",
+      "to": "vein.deep_cervical.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.internal_cerebral.left",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.basal.left",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.trolard.left",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.frontal_cortical.left",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.parietal_cortical.left",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_vermian.left",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.confluence",
+      "to": "vein.transverse.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_condylar.left",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.right",
+      "to": "vein.anterior_pontine",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.right",
+      "to": "vein.anterior_medullary",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_intercavernous",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_intercavernous",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_communicating",
+      "to": "vein.anterior_cerebral.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_communicating",
+      "to": "vein.basal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.left",
+      "to": "vein.anterior_pontine",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.left",
+      "to": "vein.anterior_medullary",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_intercavernous",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_intercavernous",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_communicating",
+      "to": "vein.anterior_cerebral.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_communicating",
+      "to": "vein.basal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superior_sagittal",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.straight",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.occipital_sinus",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_sagittal",
+      "to": "vein.straight",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.galen",
+      "to": "vein.straight",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.precentral_cerebellar",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_vermian",
+      "to": "vein.precentral_cerebellar",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.occipital_sinus",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_pontomesencephalic",
+      "to": "vein.posterior_communicating",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_pontine",
+      "to": "vein.anterior_pontomesencephalic",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_medullary",
+      "to": "vein.anterior_pontine",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_spinal",
+      "to": "vein.anterior_medullary",
+      "type": "communicates_with"
     }
   ],
   "sources": [
@@ -47914,16 +51727,25 @@
       "year": 2026,
       "role": "V3 and V4 starting levels and ASA-root origins",
       "notes": "Supplied image(20261003-233148).png. Diagram-guided reference stations, not registered cervical bones or dura."
+    },
+    {
+      "id": "ref.venous-authoring-2026",
+      "title": "Main venous reconstruction, 4 October 2026",
+      "year": 2026,
+      "role": "Lynch pp62-76 and Figs2.16-2.19: principal courses, drainage relationships and descriptions; fitted to retained atlas bone and arterial landmarks.",
+      "notes": "docs/VENOUS_v0.9.0.md records variant choices, source discrepancy resolution and limitations. Neuroangio original angiographic cases were used as a spatial cross-check, not as measured geometry: https://neuroangio.org/venous-brain-anatomy/"
     }
   ],
   "roots": [
     "bone",
-    "artery"
+    "artery",
+    "vein"
   ],
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/craniofacial.glb": 5014620,
     "models/complete-circulation.glb": 70725440,
-    "models/complete-anastomoses.glb": 2972528
+    "models/complete-anastomoses.glb": 2972528,
+    "models/venous.glb": 5910504
   }
 }

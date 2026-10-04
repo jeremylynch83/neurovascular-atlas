@@ -13495,3 +13495,1063 @@ These notes are for the later content import, not the Description panel.
 **ICA boundary amendment, v0.8.10:** Cervical/petrous and petrous/cavernous stations now follow the supplied annotated ICA image. Descriptions and upper ICA boundaries remain unchanged. All branch origins, welded junctions and anatomical parents are retained. See `ICA_v0.8.10.md`.
 
 **Facial course amendment, v0.8.11:** Inferior labial main courses lie below the visible lower crowns, superior labial main courses are slightly lower in the upper-lip band, and submental loops follow the inferior mandibular border. Facial root collars, names, descriptions and relationships are unchanged. Potential labial routes follow the amended endpoints. See `LABIAL_SUBMENTAL_v0.8.11.md`.
+
+## Venous structures added in v0.9.0
+
+<a id="structure-vein"></a>
+
+### Veins
+
+**Source:** Display group.
+
+<a id="structure-vein.dural"></a>
+
+### Dural venous sinuses
+
+**Source:** Display group.
+
+<a id="structure-vein.superficial"></a>
+
+### Superficial cerebral veins
+
+**Source:** Display group.
+
+<a id="structure-vein.deep"></a>
+
+### Deep cerebral veins
+
+**Source:** Display group.
+
+<a id="structure-vein.posterior"></a>
+
+### Posterior fossa and spinal veins
+
+**Source:** Display group.
+
+<a id="structure-vein.extracranial"></a>
+
+### Extracranial veins
+
+**Source:** Display group.
+
+<a id="structure-vein.skullbase"></a>
+
+### Skull-base venous connections
+
+**Source:** Display group.
+
+<a id="structure-vein.confluence"></a>
+
+### Confluence of sinuses
+
+**Description**
+
+The confluence joins the [superior sagittal](#structure-vein.superior_sagittal), [straight](#structure-vein.straight), and [occipital sinuses](#structure-vein.occipital_sinus) and drains into the transverse sinuses.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p64.
+
+<a id="structure-vein.superior_sagittal"></a>
+
+### Superior sagittal sinus
+
+**Description**
+
+The superior sagittal sinus extends from the foramen caecum to the [confluence of sinuses](#structure-vein.confluence). It is located within the superior attachment of the falx to the calvarium. It receives the superficial cerebral veins from the medial and lateral cerebral hemispheres, the largest of which is the vein of Trolard.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p64.
+
+<a id="structure-vein.straight"></a>
+
+### Straight sinus
+
+**Description**
+
+The straight sinus is an unpaired structure located at the junction between the falx and tentorium in the midline, and it follows a straight course posteriorly. It receives blood from the [inferior sagittal sinus](#structure-vein.inferior_sagittal), [vein of Galen](#structure-vein.galen), posterior cerebral veins, superior cerebellar veins, and falx cerebri, and drains into the [confluence of sinuses](#structure-vein.confluence).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p64.
+
+<a id="structure-vein.inferior_sagittal"></a>
+
+### Inferior sagittal sinus
+
+**Description**
+
+This lies in the inferior edge of the falx parallel to the [superior sagittal sinus](#structure-vein.superior_sagittal). It receives blood from the anterior corpus callosum, cingulate gyrus, medial cerebral hemispheres, and the falx. It joins the [vein of Galen](#structure-vein.galen) to form the [straight sinus](#structure-vein.straight).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p64.
+
+<a id="structure-vein.occipital_sinus"></a>
+
+### Occipital sinus
+
+**Description**
+
+The occipital sinus usually drains superiorly to the [confluence](#structure-vein.confluence) but may drain inferiorly to the sigmoid or [marginal sinuses](#structure-vein.marginal). It is often hypoplastic or absent in adults.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.marginal"></a>
+
+### Marginal sinus
+
+**Description**
+
+The marginal sinus encircles the foramen magnum and is connected to a network of adjacent venous structures including the [clival plexus](#structure-vein.basilar_plexus) anteriorly, the vertebral venous plexus inferiorly, and sigmoid sinuses laterally.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.galen"></a>
+
+### Vein of Galen
+
+**Description**
+
+This short subarachnoid vessel is formed by the midline convergence of the internal cerebral veins, below the splenium, beneath which it curves. It ends at the tentorial hiatus apex, where it joins the [inferior sagittal sinus](#structure-vein.inferior_sagittal) to become the [straight sinus](#structure-vein.straight). The vessel also receives blood from the posterior pericallosal veins, the internal occipital veins, and veins of the posterior fossa.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.internal_jugular.right"></a>
+
+### Internal jugular vein right
+
+**Description**
+
+Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.right) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.sigmoid.right"></a>
+
+### Sigmoid sinus right
+
+**Description**
+
+This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.right) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.transverse.right"></a>
+
+### Transverse sinus right
+
+**Description**
+
+The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labbé](#structure-vein.labbe.right), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.right). Hypoplasia of one or the other is common, usually the left.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.cavernous.right"></a>
+
+### Cavernous sinus right
+
+**Description**
+
+The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.right), [superior petrosal sinus](#structure-vein.superior_petrosal.right), [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p68.
+
+<a id="structure-vein.superior_petrosal.right"></a>
+
+### Superior petrosal sinus right
+
+**Description**
+
+These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the junction of the [transverse](#structure-vein.transverse.right) and [sigmoid sinuses](#structure-vein.sigmoid.right). They may receive blood from supra- or infratentorial structures.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.inferior_petrosal.right"></a>
+
+### Inferior petrosal sinus right
+
+**Description**
+
+These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the [jugular vein](#structure-vein.internal_jugular.right) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.sphenoparietal.right"></a>
+
+### Sphenoparietal sinus right
+
+**Description**
+
+This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.right). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.superficial_middle_cerebral.right"></a>
+
+### Superficial middle cerebral vein right
+
+**Description**
+
+The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.trolard.right"></a>
+
+### Superior anastomotic vein of Trolard right
+
+**Description**
+
+The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labbé are in haemodynamic balance such that either may be absent.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.labbe.right"></a>
+
+### Posterior anastomotic vein of Labbé right
+
+**Description**
+
+The posterior anastomotic vein of Labbé is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [transverse sinus](#structure-vein.transverse.right). Trolard and Labbé are in haemodynamic balance such that either may be absent.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.frontal_cortical.right"></a>
+
+### Frontal cortical vein right
+
+**Description**
+
+Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.parietal_cortical.right"></a>
+
+### Parietal cortical vein right
+
+**Description**
+
+Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.internal_cerebral.right"></a>
+
+### Internal cerebral vein right
+
+**Description**
+
+The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.basal.right"></a>
+
+### Basal vein of Rosenthal right
+
+**Description**
+
+The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.right). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p71.
+
+<a id="structure-vein.thalamostriate.right"></a>
+
+### Superior thalamostriate vein right
+
+**Description**
+
+The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p71.
+
+<a id="structure-vein.anterior_septal.right"></a>
+
+### Anterior septal vein right
+
+**Description**
+
+The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.right) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p70.
+
+<a id="structure-vein.superior_choroidal.right"></a>
+
+### Superior choroidal vein right
+
+**Description**
+
+The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.right). The internal cerebral veins drain the subependymal and choroid venous systems.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.anterior_cerebral.right"></a>
+
+### Anterior cerebral vein right
+
+**Description**
+
+The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p71.
+
+<a id="structure-vein.deep_middle_cerebral.right"></a>
+
+### Deep middle cerebral vein right
+
+**Description**
+
+The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.superior_petrosal_vein.right"></a>
+
+### Superior petrosal vein right
+
+**Description**
+
+The superior petrosal vein, or petrosal vein, is the largest vein in the posterior cranial fossa. It drains the anterior cerebellum and brainstem into the [superior petrosal sinus](#structure-vein.superior_petrosal.right). It is usually formed by multiple smaller veins converging into one, but sometimes there are two or three. Major contributors include the vein of the cerebellopontine fissure, and the petrosal, posterior mesencephalic, anterior pontomesencephalic, and tentorial groups.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.lateral_mesencephalic.right"></a>
+
+### Lateral mesencephalic vein right
+
+**Description**
+
+The lateral mesencephalic veins connect the [basal vein of Rosenthal](#structure-vein.basal.right) to lateral brainstem and medullary fissure veins. They act as a crucial collateral drainage route, especially when the basal vein is discontinuous, draining posteriorly to infratentorial veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.cerebellopontine_fissure.right"></a>
+
+### Vein of the cerebellopontine fissure right
+
+**Description**
+
+Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.right) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.inferior_vermian.right"></a>
+
+### Inferior vermian vein right
+
+**Description**
+
+The paired inferior vermian veins lie in the cerebellovermian fissure and drain the inferior vermis and medial suboccipital surface into the [torcular](#structure-vein.confluence) or transverse sinus, directly or via a tentorial sinus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.inferior_hemispheric.right"></a>
+
+### Inferior hemispheric vein right
+
+**Description**
+
+Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.external_jugular.right"></a>
+
+### External jugular vein right
+
+**Description**
+
+The EJV drains the deep face, scalp, and posterolateral neck. It originates from the convergence of the retromandibular, posterior auricular, and superficial temporal veins in front of the angle of the mandible. The vein runs caudally on top of the sternocleidomastoid to join the subclavian vein. Like the IJV, it has a valve just prior to its termination.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.retromandibular.right"></a>
+
+### Retromandibular vein right
+
+**Description**
+
+The maxillary vein converges with the [superficial temporal vein](#structure-vein.superficial_temporal.right) to form the retromandibular vein. It contributes to drainage of the deep face and scalp into the [external jugular vein](#structure-vein.external_jugular.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.maxillary.right"></a>
+
+### Maxillary vein right
+
+**Description**
+
+The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) becomes the maxillary vein, which later converges with the [superficial temporal vein](#structure-vein.superficial_temporal.right) to form the [retromandibular vein](#structure-vein.retromandibular.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.pterygoid_plexus.right"></a>
+
+### Pterygoid venous plexus right
+
+**Description**
+
+The pterygoid plexus is a large venous network located between the temporalis and lateral pterygoid muscles. It drains into the [maxillary vein](#structure-vein.maxillary.right) and connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins. The plexus receives numerous tributaries, including the sphenopalatine, middle meningeal, deep temporal, pterygoid, masseteric, buccinator, alveolar, and palatine veins. It also receives blood from the [inferior ophthalmic vein](#structure-vein.inferior_ophthalmic.right), [deep facial vein](#structure-vein.deep_facial.right), and infraorbital vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.superficial_temporal.right"></a>
+
+### Superficial temporal vein right
+
+**Description**
+
+The superficial temporal vein drains the scalp and converges with the [maxillary vein](#structure-vein.maxillary.right) to form the [retromandibular vein](#structure-vein.retromandibular.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.posterior_auricular.right"></a>
+
+### Posterior auricular vein right
+
+**Description**
+
+The posterior auricular vein contributes to drainage of the scalp and posterolateral neck into the [external jugular vein](#structure-vein.external_jugular.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.facial.right"></a>
+
+### Facial vein right
+
+**Description**
+
+The extracranial drainage of the head and neck mirrors the arteries. The supratrochlear and supraorbital veins drain to the facial vein, which is a tributary of the [internal jugular vein](#structure-vein.internal_jugular.right). The [deep facial vein](#structure-vein.deep_facial.right) connects with the pterygoid plexus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.angular.right"></a>
+
+### Angular vein right
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.deep_facial.right"></a>
+
+### Deep facial vein right
+
+**Description**
+
+The deep facial vein connects the [facial vein](#structure-vein.facial.right) with the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.superior_ophthalmic.right"></a>
+
+### Superior ophthalmic vein right
+
+**Description**
+
+The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.right), an important bidirectional confluence of the intracranial and extracranial venous systems.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p68.
+
+<a id="structure-vein.inferior_ophthalmic.right"></a>
+
+### Inferior ophthalmic vein right
+
+**Description**
+
+The inferior ophthalmic vein contributes to drainage into the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). The ophthalmic veins also connect with the [cavernous sinus](#structure-vein.cavernous.right).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.ovale_emissary.right"></a>
+
+### Emissary vein of foramen ovale right
+
+**Description**
+
+Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.vertebral.right"></a>
+
+### Vertebral vein right
+
+**Description**
+
+The vertebral artery venous plexus arises at C2 and receives blood from the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and the anterior, lateral, and posterior condylar veins. It continues as a solitary vertebral vein in the vertebral canal surrounding the vertebral artery, leaving at C6 via the foramen transversarium to join the brachiocephalic vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p63.
+
+<a id="structure-vein.suboccipital_plexus.right"></a>
+
+### Suboccipital venous plexus right
+
+**Description**
+
+The suboccipital venous plexus contributes to the vertebral venous system through the [vertebral artery venous plexus](#structure-vein.vertebral.right) and [deep cervical vein](#structure-vein.deep_cervical.right). It also communicates with condylar veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p63.
+
+<a id="structure-vein.deep_cervical.right"></a>
+
+### Deep cervical vein right
+
+**Description**
+
+The deep cervical vein receives tributaries of the [suboccipital venous plexus](#structure-vein.suboccipital_plexus.right). It follows the deep cervical artery to end in the IJV or brachiocephalic vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p63.
+
+<a id="structure-vein.anterior_condylar.right"></a>
+
+### Anterior condylar vein right
+
+**Description**
+
+The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.right) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.lateral_condylar.right"></a>
+
+### Lateral condylar vein right
+
+**Description**
+
+The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and vertebral venous system.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.internal_jugular.left"></a>
+
+### Internal jugular vein left
+
+**Description**
+
+Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.left) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.sigmoid.left"></a>
+
+### Sigmoid sinus left
+
+**Description**
+
+This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.left) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.transverse.left"></a>
+
+### Transverse sinus left
+
+**Description**
+
+The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labbé](#structure-vein.labbe.left), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.left). Hypoplasia of one or the other is common, usually the left.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.cavernous.left"></a>
+
+### Cavernous sinus left
+
+**Description**
+
+The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.left), [superior petrosal sinus](#structure-vein.superior_petrosal.left), [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p68.
+
+<a id="structure-vein.superior_petrosal.left"></a>
+
+### Superior petrosal sinus left
+
+**Description**
+
+These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the junction of the [transverse](#structure-vein.transverse.left) and [sigmoid sinuses](#structure-vein.sigmoid.left). They may receive blood from supra- or infratentorial structures.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.inferior_petrosal.left"></a>
+
+### Inferior petrosal sinus left
+
+**Description**
+
+These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the [jugular vein](#structure-vein.internal_jugular.left) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.sphenoparietal.left"></a>
+
+### Sphenoparietal sinus left
+
+**Description**
+
+This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.left). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.superficial_middle_cerebral.left"></a>
+
+### Superficial middle cerebral vein left
+
+**Description**
+
+The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.trolard.left"></a>
+
+### Superior anastomotic vein of Trolard left
+
+**Description**
+
+The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labbé are in haemodynamic balance such that either may be absent.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.labbe.left"></a>
+
+### Posterior anastomotic vein of Labbé left
+
+**Description**
+
+The posterior anastomotic vein of Labbé is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [transverse sinus](#structure-vein.transverse.left). Trolard and Labbé are in haemodynamic balance such that either may be absent.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.frontal_cortical.left"></a>
+
+### Frontal cortical vein left
+
+**Description**
+
+Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.parietal_cortical.left"></a>
+
+### Parietal cortical vein left
+
+**Description**
+
+Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.internal_cerebral.left"></a>
+
+### Internal cerebral vein left
+
+**Description**
+
+The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.basal.left"></a>
+
+### Basal vein of Rosenthal left
+
+**Description**
+
+The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.left). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p71.
+
+<a id="structure-vein.thalamostriate.left"></a>
+
+### Superior thalamostriate vein left
+
+**Description**
+
+The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p71.
+
+<a id="structure-vein.anterior_septal.left"></a>
+
+### Anterior septal vein left
+
+**Description**
+
+The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.left) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p70.
+
+<a id="structure-vein.superior_choroidal.left"></a>
+
+### Superior choroidal vein left
+
+**Description**
+
+The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.left). The internal cerebral veins drain the subependymal and choroid venous systems.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.anterior_cerebral.left"></a>
+
+### Anterior cerebral vein left
+
+**Description**
+
+The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p71.
+
+<a id="structure-vein.deep_middle_cerebral.left"></a>
+
+### Deep middle cerebral vein left
+
+**Description**
+
+The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.superior_petrosal_vein.left"></a>
+
+### Superior petrosal vein left
+
+**Description**
+
+The superior petrosal vein, or petrosal vein, is the largest vein in the posterior cranial fossa. It drains the anterior cerebellum and brainstem into the [superior petrosal sinus](#structure-vein.superior_petrosal.left). It is usually formed by multiple smaller veins converging into one, but sometimes there are two or three. Major contributors include the vein of the cerebellopontine fissure, and the petrosal, posterior mesencephalic, anterior pontomesencephalic, and tentorial groups.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.lateral_mesencephalic.left"></a>
+
+### Lateral mesencephalic vein left
+
+**Description**
+
+The lateral mesencephalic veins connect the [basal vein of Rosenthal](#structure-vein.basal.left) to lateral brainstem and medullary fissure veins. They act as a crucial collateral drainage route, especially when the basal vein is discontinuous, draining posteriorly to infratentorial veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.cerebellopontine_fissure.left"></a>
+
+### Vein of the cerebellopontine fissure left
+
+**Description**
+
+Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.left) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.inferior_vermian.left"></a>
+
+### Inferior vermian vein left
+
+**Description**
+
+The paired inferior vermian veins lie in the cerebellovermian fissure and drain the inferior vermis and medial suboccipital surface into the [torcular](#structure-vein.confluence) or transverse sinus, directly or via a tentorial sinus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.inferior_hemispheric.left"></a>
+
+### Inferior hemispheric vein left
+
+**Description**
+
+Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.external_jugular.left"></a>
+
+### External jugular vein left
+
+**Description**
+
+The EJV drains the deep face, scalp, and posterolateral neck. It originates from the convergence of the retromandibular, posterior auricular, and superficial temporal veins in front of the angle of the mandible. The vein runs caudally on top of the sternocleidomastoid to join the subclavian vein. Like the IJV, it has a valve just prior to its termination.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.retromandibular.left"></a>
+
+### Retromandibular vein left
+
+**Description**
+
+The maxillary vein converges with the [superficial temporal vein](#structure-vein.superficial_temporal.left) to form the retromandibular vein. It contributes to drainage of the deep face and scalp into the [external jugular vein](#structure-vein.external_jugular.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.maxillary.left"></a>
+
+### Maxillary vein left
+
+**Description**
+
+The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) becomes the maxillary vein, which later converges with the [superficial temporal vein](#structure-vein.superficial_temporal.left) to form the [retromandibular vein](#structure-vein.retromandibular.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.pterygoid_plexus.left"></a>
+
+### Pterygoid venous plexus left
+
+**Description**
+
+The pterygoid plexus is a large venous network located between the temporalis and lateral pterygoid muscles. It drains into the [maxillary vein](#structure-vein.maxillary.left) and connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins. The plexus receives numerous tributaries, including the sphenopalatine, middle meningeal, deep temporal, pterygoid, masseteric, buccinator, alveolar, and palatine veins. It also receives blood from the [inferior ophthalmic vein](#structure-vein.inferior_ophthalmic.left), [deep facial vein](#structure-vein.deep_facial.left), and infraorbital vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.superficial_temporal.left"></a>
+
+### Superficial temporal vein left
+
+**Description**
+
+The superficial temporal vein drains the scalp and converges with the [maxillary vein](#structure-vein.maxillary.left) to form the [retromandibular vein](#structure-vein.retromandibular.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.posterior_auricular.left"></a>
+
+### Posterior auricular vein left
+
+**Description**
+
+The posterior auricular vein contributes to drainage of the scalp and posterolateral neck into the [external jugular vein](#structure-vein.external_jugular.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.facial.left"></a>
+
+### Facial vein left
+
+**Description**
+
+The extracranial drainage of the head and neck mirrors the arteries. The supratrochlear and supraorbital veins drain to the facial vein, which is a tributary of the [internal jugular vein](#structure-vein.internal_jugular.left). The [deep facial vein](#structure-vein.deep_facial.left) connects with the pterygoid plexus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.angular.left"></a>
+
+### Angular vein left
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.deep_facial.left"></a>
+
+### Deep facial vein left
+
+**Description**
+
+The deep facial vein connects the [facial vein](#structure-vein.facial.left) with the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.superior_ophthalmic.left"></a>
+
+### Superior ophthalmic vein left
+
+**Description**
+
+The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.left), an important bidirectional confluence of the intracranial and extracranial venous systems.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p68.
+
+<a id="structure-vein.inferior_ophthalmic.left"></a>
+
+### Inferior ophthalmic vein left
+
+**Description**
+
+The inferior ophthalmic vein contributes to drainage into the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). The ophthalmic veins also connect with the [cavernous sinus](#structure-vein.cavernous.left).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p62.
+
+<a id="structure-vein.ovale_emissary.left"></a>
+
+### Emissary vein of foramen ovale left
+
+**Description**
+
+Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p69.
+
+<a id="structure-vein.vertebral.left"></a>
+
+### Vertebral vein left
+
+**Description**
+
+The vertebral artery venous plexus arises at C2 and receives blood from the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and the anterior, lateral, and posterior condylar veins. It continues as a solitary vertebral vein in the vertebral canal surrounding the vertebral artery, leaving at C6 via the foramen transversarium to join the brachiocephalic vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p63.
+
+<a id="structure-vein.suboccipital_plexus.left"></a>
+
+### Suboccipital venous plexus left
+
+**Description**
+
+The suboccipital venous plexus contributes to the vertebral venous system through the [vertebral artery venous plexus](#structure-vein.vertebral.left) and [deep cervical vein](#structure-vein.deep_cervical.left). It also communicates with condylar veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p63.
+
+<a id="structure-vein.deep_cervical.left"></a>
+
+### Deep cervical vein left
+
+**Description**
+
+The deep cervical vein receives tributaries of the [suboccipital venous plexus](#structure-vein.suboccipital_plexus.left). It follows the deep cervical artery to end in the IJV or brachiocephalic vein.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p63.
+
+<a id="structure-vein.anterior_condylar.left"></a>
+
+### Anterior condylar vein left
+
+**Description**
+
+The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.left) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.lateral_condylar.left"></a>
+
+### Lateral condylar vein left
+
+**Description**
+
+The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and vertebral venous system.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.anterior_intercavernous"></a>
+
+### Anterior intercavernous sinus
+
+**Description**
+
+The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p68.
+
+<a id="structure-vein.posterior_intercavernous"></a>
+
+### Posterior intercavernous sinus
+
+**Description**
+
+The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p68.
+
+<a id="structure-vein.basilar_plexus"></a>
+
+### Basilar venous plexus
+
+**Description**
+
+The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p67.
+
+<a id="structure-vein.anterior_communicating"></a>
+
+### Anterior communicating vein
+
+**Description**
+
+The anterior cerebral veins are connected by the anterior communicating vein in half the population. This contributes to the anterior venous circle in the suprasellar cistern.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.posterior_communicating"></a>
+
+### Posterior communicating vein
+
+**Description**
+
+The posterior communicating vein is a constant vessel in the interpeduncular fossa. This, in addition to hypothalamic and ventral mesencephalic veins, contributes to the posterior aspect of the venous circle.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p72.
+
+<a id="structure-vein.precentral_cerebellar"></a>
+
+### Precentral cerebellar vein
+
+**Description**
+
+The precentral cerebellar vein, an unpaired vein, ascends in the quadrigeminal cistern behind the tectal plate to drain into the [vein of Galen](#structure-vein.galen). It can merge with the [superior vermian vein](#structure-vein.superior_vermian) to form the superior cerebellar vein or drain directly into the vein of Galen independently.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.superior_vermian"></a>
+
+### Superior vermian vein
+
+**Description**
+
+The superior vermian veins drain the superior vermis and the medial parts of the superior cerebellar hemispheres. The anterior veins drain into the [vein of Galen](#structure-vein.galen), and the posterior veins drain into the [confluence of sinuses](#structure-vein.confluence).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p76.
+
+<a id="structure-vein.anterior_pontomesencephalic"></a>
+
+### Median anterior pontomesencephalic vein
+
+**Description**
+
+The midline brainstem veins form a continuous anastomotic venous channel comprising the median anterior pontomesencephalic, median anterior pontine, and median anterior medullary veins. Blood may flow cranially to the posterior communicating vein or peduncular veins, or caudally into the spinal veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.anterior_pontine"></a>
+
+### Median anterior pontine vein
+
+**Description**
+
+The median anterior pontine vein forms part of the continuous midline anastomotic channel between the [median anterior pontomesencephalic vein](#structure-vein.anterior_pontomesencephalic) and [median anterior medullary vein](#structure-vein.anterior_medullary).
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.anterior_medullary"></a>
+
+### Median anterior medullary vein
+
+**Description**
+
+The median anterior medullary vein continues inferiorly as the [anterior spinal vein](#structure-vein.anterior_spinal). It forms part of the continuous midline venous channel on the anterior brainstem.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.anterior_spinal"></a>
+
+### Anterior spinal vein
+
+**Description**
+
+The anterior spinal vein is the inferior continuation of the [median anterior medullary vein](#structure-vein.anterior_medullary). Blood may flow cranially through the brainstem venous channel or caudally into the spinal veins.
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.transverse_pontine.right"></a>
+
+### Transverse pontine vein right
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.pontomedullary.right"></a>
+
+### Vein of the pontomedullary sulcus right
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.transverse_pontine.left"></a>
+
+### Transverse pontine vein left
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.
+
+<a id="structure-vein.pontomedullary.left"></a>
+
+### Vein of the pontomedullary sulcus left
+
+**Source:** Lynch, supplied nv(2).pdf, printed p74.

@@ -62,7 +62,11 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     return next;
   });
 
-  const select = (s: Structure) => { setSelectedId(s.id); setQuery(''); if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id); };
+  const select = (s: Structure) => {
+    setSelectedId(s.id); setQuery('');
+    if (s.system === 'vein' && s.asset) setLayers(old => old.vein === 'off' ? { ...old, vein: 'on' } : old);
+    if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
+  };
   const geometryCount = (system: SystemId) => manifest.structures.filter((s) => s.system === system && s.asset).length;
 
   return <div className="atlas-app">
@@ -133,8 +137,9 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect,engine,hidde
   const groups=new Map<string,Set<string>>();
   for (const r of rels) {
     const ids=r.from===structure.id?[r.to]:r.to===structure.id?[r.from]:[r.from,r.to];
-    if (!groups.has(r.type)) groups.set(r.type,new Set());
-    for (const id of ids) if (byId.has(id)) groups.get(r.type)!.add(id);
+    const type = r.type === 'drains_to' && r.to === structure.id ? 'receives_from' : r.type;
+    if (!groups.has(type)) groups.set(type,new Set());
+    for (const id of ids) if (byId.has(id)) groups.get(type)!.add(id);
   }
   return <section className="detail panel">
     <button className="panel-title" aria-expanded={open} aria-controls="structure-panel-body" onClick={()=>onOpenChange(!open)}><span className="structure-title">{structure.name}</span></button>

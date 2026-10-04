@@ -1,0 +1,11 @@
+{
+  "release": "0.9.0",
+  "root_build": "passed",
+  "github_pages_subpath_build": "passed",
+  "asset_revision_and_byte_size_checks": "passed",
+  "unchanged_installer_and_original_model_assets": "byte-exact",
+  "venous_asset_bytes": 5910504,
+  "compression_roundtrip_buffers": 312,
+  "docker_test": "not run; Docker unavailable",
+  "browser_gpu_test": "not run; Three.js and React fixture checks plus VTK rendering used"
+}

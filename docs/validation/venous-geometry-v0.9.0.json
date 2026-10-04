@@ -1,0 +1,535 @@
+{
+  "parts": [
+    {
+      "id": "vein.confluence",
+      "vertices": 184,
+      "triangles": 279
+    },
+    {
+      "id": "vein.superior_sagittal",
+      "vertices": 10016,
+      "triangles": 19756
+    },
+    {
+      "id": "vein.straight",
+      "vertices": 1859,
+      "triangles": 3617
+    },
+    {
+      "id": "vein.inferior_sagittal",
+      "vertices": 3104,
+      "triangles": 6178
+    },
+    {
+      "id": "vein.occipital_sinus",
+      "vertices": 1672,
+      "triangles": 3278
+    },
+    {
+      "id": "vein.marginal",
+      "vertices": 3663,
+      "triangles": 7181
+    },
+    {
+      "id": "vein.galen",
+      "vertices": 671,
+      "triangles": 1170
+    },
+    {
+      "id": "vein.internal_jugular.right",
+      "vertices": 6270,
+      "triangles": 12394
+    },
+    {
+      "id": "vein.sigmoid.right",
+      "vertices": 3658,
+      "triangles": 7149
+    },
+    {
+      "id": "vein.transverse.right",
+      "vertices": 3711,
+      "triangles": 7250
+    },
+    {
+      "id": "vein.cavernous.right",
+      "vertices": 2706,
+      "triangles": 5165
+    },
+    {
+      "id": "vein.superior_petrosal.right",
+      "vertices": 2420,
+      "triangles": 4645
+    },
+    {
+      "id": "vein.inferior_petrosal.right",
+      "vertices": 1499,
+      "triangles": 2822
+    },
+    {
+      "id": "vein.sphenoparietal.right",
+      "vertices": 1706,
+      "triangles": 3309
+    },
+    {
+      "id": "vein.superficial_middle_cerebral.right",
+      "vertices": 2040,
+      "triangles": 3982
+    },
+    {
+      "id": "vein.trolard.right",
+      "vertices": 3344,
+      "triangles": 6626
+    },
+    {
+      "id": "vein.labbe.right",
+      "vertices": 2248,
+      "triangles": 4395
+    },
+    {
+      "id": "vein.frontal_cortical.right",
+      "vertices": 2986,
+      "triangles": 5929
+    },
+    {
+      "id": "vein.parietal_cortical.right",
+      "vertices": 2488,
+      "triangles": 4945
+    },
+    {
+      "id": "vein.internal_cerebral.right",
+      "vertices": 2030,
+      "triangles": 3988
+    },
+    {
+      "id": "vein.basal.right",
+      "vertices": 2506,
+      "triangles": 4911
+    },
+    {
+      "id": "vein.thalamostriate.right",
+      "vertices": 1429,
+      "triangles": 2823
+    },
+    {
+      "id": "vein.anterior_septal.right",
+      "vertices": 741,
+      "triangles": 1463
+    },
+    {
+      "id": "vein.superior_choroidal.right",
+      "vertices": 1004,
+      "triangles": 1988
+    },
+    {
+      "id": "vein.anterior_cerebral.right",
+      "vertices": 1701,
+      "triangles": 3342
+    },
+    {
+      "id": "vein.deep_middle_cerebral.right",
+      "vertices": 1463,
+      "triangles": 2894
+    },
+    {
+      "id": "vein.superior_petrosal_vein.right",
+      "vertices": 973,
+      "triangles": 1835
+    },
+    {
+      "id": "vein.lateral_mesencephalic.right",
+      "vertices": 1041,
+      "triangles": 2041
+    },
+    {
+      "id": "vein.cerebellopontine_fissure.right",
+      "vertices": 1005,
+      "triangles": 1967
+    },
+    {
+      "id": "vein.inferior_vermian.right",
+      "vertices": 1306,
+      "triangles": 2563
+    },
+    {
+      "id": "vein.inferior_hemispheric.right",
+      "vertices": 1464,
+      "triangles": 2903
+    },
+    {
+      "id": "vein.external_jugular.right",
+      "vertices": 4159,
+      "triangles": 8264
+    },
+    {
+      "id": "vein.retromandibular.right",
+      "vertices": 1621,
+      "triangles": 3129
+    },
+    {
+      "id": "vein.maxillary.right",
+      "vertices": 1135,
+      "triangles": 2144
+    },
+    {
+      "id": "vein.pterygoid_plexus.right",
+      "vertices": 2388,
+      "triangles": 4658
+    },
+    {
+      "id": "vein.superficial_temporal.right",
+      "vertices": 3490,
+      "triangles": 6909
+    },
+    {
+      "id": "vein.posterior_auricular.right",
+      "vertices": 2476,
+      "triangles": 4919
+    },
+    {
+      "id": "vein.facial.right",
+      "vertices": 5301,
+      "triangles": 10515
+    },
+    {
+      "id": "vein.angular.right",
+      "vertices": 864,
+      "triangles": 1687
+    },
+    {
+      "id": "vein.deep_facial.right",
+      "vertices": 2150,
+      "triangles": 4202
+    },
+    {
+      "id": "vein.superior_ophthalmic.right",
+      "vertices": 2152,
+      "triangles": 4256
+    },
+    {
+      "id": "vein.inferior_ophthalmic.right",
+      "vertices": 1643,
+      "triangles": 3264
+    },
+    {
+      "id": "vein.ovale_emissary.right",
+      "vertices": 1059,
+      "triangles": 2075
+    },
+    {
+      "id": "vein.vertebral.right",
+      "vertices": 4703,
+      "triangles": 9303
+    },
+    {
+      "id": "vein.suboccipital_plexus.right",
+      "vertices": 3436,
+      "triangles": 6784
+    },
+    {
+      "id": "vein.deep_cervical.right",
+      "vertices": 4344,
+      "triangles": 8553
+    },
+    {
+      "id": "vein.anterior_condylar.right",
+      "vertices": 631,
+      "triangles": 1177
+    },
+    {
+      "id": "vein.lateral_condylar.right",
+      "vertices": 1429,
+      "triangles": 2789
+    },
+    {
+      "id": "vein.internal_jugular.left",
+      "vertices": 6093,
+      "triangles": 12036
+    },
+    {
+      "id": "vein.sigmoid.left",
+      "vertices": 3419,
+      "triangles": 6678
+    },
+    {
+      "id": "vein.transverse.left",
+      "vertices": 3809,
+      "triangles": 7452
+    },
+    {
+      "id": "vein.cavernous.left",
+      "vertices": 2572,
+      "triangles": 4942
+    },
+    {
+      "id": "vein.superior_petrosal.left",
+      "vertices": 2182,
+      "triangles": 4241
+    },
+    {
+      "id": "vein.inferior_petrosal.left",
+      "vertices": 1529,
+      "triangles": 2916
+    },
+    {
+      "id": "vein.sphenoparietal.left",
+      "vertices": 1753,
+      "triangles": 3437
+    },
+    {
+      "id": "vein.superficial_middle_cerebral.left",
+      "vertices": 2072,
+      "triangles": 4037
+    },
+    {
+      "id": "vein.trolard.left",
+      "vertices": 3301,
+      "triangles": 6524
+    },
+    {
+      "id": "vein.labbe.left",
+      "vertices": 2611,
+      "triangles": 5108
+    },
+    {
+      "id": "vein.frontal_cortical.left",
+      "vertices": 2844,
+      "triangles": 5644
+    },
+    {
+      "id": "vein.parietal_cortical.left",
+      "vertices": 2365,
+      "triangles": 4703
+    },
+    {
+      "id": "vein.internal_cerebral.left",
+      "vertices": 2114,
+      "triangles": 4156
+    },
+    {
+      "id": "vein.basal.left",
+      "vertices": 2730,
+      "triangles": 5350
+    },
+    {
+      "id": "vein.thalamostriate.left",
+      "vertices": 1478,
+      "triangles": 2893
+    },
+    {
+      "id": "vein.anterior_septal.left",
+      "vertices": 767,
+      "triangles": 1514
+    },
+    {
+      "id": "vein.superior_choroidal.left",
+      "vertices": 1020,
+      "triangles": 2017
+    },
+    {
+      "id": "vein.anterior_cerebral.left",
+      "vertices": 1660,
+      "triangles": 3282
+    },
+    {
+      "id": "vein.deep_middle_cerebral.left",
+      "vertices": 1395,
+      "triangles": 2764
+    },
+    {
+      "id": "vein.superior_petrosal_vein.left",
+      "vertices": 997,
+      "triangles": 1894
+    },
+    {
+      "id": "vein.lateral_mesencephalic.left",
+      "vertices": 809,
+      "triangles": 1581
+    },
+    {
+      "id": "vein.cerebellopontine_fissure.left",
+      "vertices": 1053,
+      "triangles": 2056
+    },
+    {
+      "id": "vein.inferior_vermian.left",
+      "vertices": 1304,
+      "triangles": 2554
+    },
+    {
+      "id": "vein.inferior_hemispheric.left",
+      "vertices": 1552,
+      "triangles": 3080
+    },
+    {
+      "id": "vein.external_jugular.left",
+      "vertices": 4134,
+      "triangles": 8232
+    },
+    {
+      "id": "vein.retromandibular.left",
+      "vertices": 1652,
+      "triangles": 3215
+    },
+    {
+      "id": "vein.maxillary.left",
+      "vertices": 1314,
+      "triangles": 2524
+    },
+    {
+      "id": "vein.pterygoid_plexus.left",
+      "vertices": 2264,
+      "triangles": 4397
+    },
+    {
+      "id": "vein.superficial_temporal.left",
+      "vertices": 3629,
+      "triangles": 7222
+    },
+    {
+      "id": "vein.posterior_auricular.left",
+      "vertices": 2731,
+      "triangles": 5422
+    },
+    {
+      "id": "vein.facial.left",
+      "vertices": 5383,
+      "triangles": 10670
+    },
+    {
+      "id": "vein.angular.left",
+      "vertices": 775,
+      "triangles": 1507
+    },
+    {
+      "id": "vein.deep_facial.left",
+      "vertices": 2791,
+      "triangles": 5472
+    },
+    {
+      "id": "vein.superior_ophthalmic.left",
+      "vertices": 2128,
+      "triangles": 4214
+    },
+    {
+      "id": "vein.inferior_ophthalmic.left",
+      "vertices": 1780,
+      "triangles": 3533
+    },
+    {
+      "id": "vein.ovale_emissary.left",
+      "vertices": 932,
+      "triangles": 1817
+    },
+    {
+      "id": "vein.vertebral.left",
+      "vertices": 4654,
+      "triangles": 9203
+    },
+    {
+      "id": "vein.suboccipital_plexus.left",
+      "vertices": 3458,
+      "triangles": 6828
+    },
+    {
+      "id": "vein.deep_cervical.left",
+      "vertices": 4340,
+      "triangles": 8556
+    },
+    {
+      "id": "vein.anterior_condylar.left",
+      "vertices": 694,
+      "triangles": 1309
+    },
+    {
+      "id": "vein.lateral_condylar.left",
+      "vertices": 1530,
+      "triangles": 2995
+    },
+    {
+      "id": "vein.anterior_intercavernous",
+      "vertices": 960,
+      "triangles": 1857
+    },
+    {
+      "id": "vein.posterior_intercavernous",
+      "vertices": 456,
+      "triangles": 855
+    },
+    {
+      "id": "vein.basilar_plexus",
+      "vertices": 4856,
+      "triangles": 9531
+    },
+    {
+      "id": "vein.anterior_communicating",
+      "vertices": 677,
+      "triangles": 1317
+    },
+    {
+      "id": "vein.posterior_communicating",
+      "vertices": 1984,
+      "triangles": 3912
+    },
+    {
+      "id": "vein.precentral_cerebellar",
+      "vertices": 773,
+      "triangles": 1497
+    },
+    {
+      "id": "vein.superior_vermian",
+      "vertices": 1603,
+      "triangles": 3180
+    },
+    {
+      "id": "vein.anterior_pontomesencephalic",
+      "vertices": 436,
+      "triangles": 835
+    },
+    {
+      "id": "vein.anterior_pontine",
+      "vertices": 1016,
+      "triangles": 1973
+    },
+    {
+      "id": "vein.anterior_medullary",
+      "vertices": 604,
+      "triangles": 1146
+    },
+    {
+      "id": "vein.anterior_spinal",
+      "vertices": 306,
+      "triangles": 595
+    },
+    {
+      "id": "vein.transverse_pontine.right",
+      "vertices": 836,
+      "triangles": 1638
+    },
+    {
+      "id": "vein.pontomedullary.right",
+      "vertices": 905,
+      "triangles": 1773
+    },
+    {
+      "id": "vein.transverse_pontine.left",
+      "vertices": 882,
+      "triangles": 1731
+    },
+    {
+      "id": "vein.pontomedullary.left",
+      "vertices": 1017,
+      "triangles": 1995
+    }
+  ],
+  "vertices": 224515,
+  "triangles": 449226,
+  "components": 1,
+  "authoring_grid_mm": 0.4,
+  "method": "Implicit envelope union, common-surface smoothing and topology-preserving reduction; not imaging data",
+  "watertight": true,
+  "winding_consistent": true,
+  "volume_mm3": 60222.22278617281,
+  "all_finite": true,
+  "minimum_triangle_area_mm2": 0.0005732019723160124,
+  "normals_finite": true
+}

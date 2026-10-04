@@ -262,12 +262,13 @@ export class AnatomyEngine {
     // Without native multi-draw, retain the original path rather than add
     // batching texture work to millions of vertices without reducing draws.
     if (!this.renderer.extensions.has('WEBGL_multi_draw')) return;
-    const groups = new Map<boolean, Entry[]>();
+    const groups = new Map<string, Entry[]>();
     for (const e of this.entries.values()) {
-      if (e.structure.system !== 'artery' || e.baseOpacity !== 1) continue;
+      if (!['artery', 'vein'].includes(e.structure.system) || e.baseOpacity !== 1) continue;
       const indexed = !!e.mesh.geometry.index;
-      const group = groups.get(indexed) ?? [];
-      group.push(e); groups.set(indexed, group);
+      const key = `${e.structure.system}:${indexed}`;
+      const group = groups.get(key) ?? [];
+      group.push(e); groups.set(key, group);
     }
     for (const group of groups.values()) {
       if (group.length < 2) continue;
@@ -279,6 +280,7 @@ export class AnatomyEngine {
       material.opacity = 1; material.transparent = false; material.depthWrite = true;
       const batch = new THREE.BatchedMesh(group.length, vertices, indices, material);
       batch.name = 'Opaque vasculature';
+      batch.userData.system = group[0].structure.system;
       for (const e of group) {
         // Copy every position, normal and triangle exactly. The individual
         // mesh stays available for picking, bounds, highlighting and ghosting.
@@ -385,7 +387,7 @@ export class AnatomyEngine {
       }
     }
     for (const batch of this.vascularBatches) {
-      batch.visible = this.layers.artery === 'on';
+      batch.visible = this.layers[batch.userData.system as SystemId] === 'on';
       this.updateClipping(batch.material as THREE.Material);
     }
     this.render();

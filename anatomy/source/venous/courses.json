@@ -1,0 +1,5392 @@
+{
+  "release": "0.9.0",
+  "coordinates": "RAS mm",
+  "groups": {
+    "dural": "Dural venous sinuses",
+    "superficial": "Superficial cerebral veins",
+    "deep": "Deep cerebral veins",
+    "posterior": "Posterior fossa and spinal veins",
+    "extracranial": "Extracranial veins",
+    "skullbase": "Skull-base venous connections"
+  },
+  "structures": [
+    {
+      "id": "vein.confluence",
+      "name": "Confluence of sinuses",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -142,
+          68
+        ],
+        [
+          0.65,
+          -144.5,
+          67
+        ],
+        [
+          0.65,
+          -147,
+          66
+        ]
+      ],
+      "radius": 3.5,
+      "description": "The confluence joins the [superior sagittal](#structure-vein.superior_sagittal), [straight](#structure-vein.straight), and [occipital sinuses](#structure-vein.occipital_sinus) and drains into the transverse sinuses.",
+      "fit": "dural",
+      "aliases": [
+        "Torcula",
+        "Torcular Herophili"
+      ],
+      "page": 64,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.superior_sagittal",
+      "name": "Superior sagittal sinus",
+      "group": "dural",
+      "parent": "vein.confluence",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          8,
+          80
+        ],
+        [
+          0.65,
+          17,
+          109
+        ],
+        [
+          0.65,
+          -2,
+          142
+        ],
+        [
+          0.65,
+          -35,
+          160
+        ],
+        [
+          0.65,
+          -77,
+          167
+        ],
+        [
+          0.65,
+          -117,
+          150
+        ],
+        [
+          0.65,
+          -143,
+          119
+        ],
+        [
+          0.65,
+          -151,
+          90
+        ],
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.5
+        }
+      ],
+      "radius": [
+        1.2,
+        3.4
+      ],
+      "description": "The superior sagittal sinus extends from the foramen caecum to the [confluence of sinuses](#structure-vein.confluence). It is located within the superior attachment of the falx to the calvarium. It receives the superficial cerebral veins from the medial and lateral cerebral hemispheres, the largest of which is the vein of Trolard.",
+      "fit": "dural",
+      "aliases": [
+        "SSS"
+      ],
+      "page": 64,
+      "shape": "sinus",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.straight",
+      "name": "Straight sinus",
+      "group": "dural",
+      "parent": "vein.confluence",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -103,
+          101
+        ],
+        [
+          0.65,
+          -114,
+          93
+        ],
+        [
+          0.65,
+          -129,
+          80
+        ],
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.5
+        }
+      ],
+      "radius": [
+        2.4,
+        3.1
+      ],
+      "description": "The straight sinus is an unpaired structure located at the junction between the falx and tentorium in the midline, and it follows a straight course posteriorly. It receives blood from the [inferior sagittal sinus](#structure-vein.inferior_sagittal), [vein of Galen](#structure-vein.galen), posterior cerebral veins, superior cerebellar veins, and falx cerebri, and drains into the [confluence of sinuses](#structure-vein.confluence).",
+      "fit": null,
+      "aliases": [],
+      "page": 64,
+      "shape": "sinus",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.inferior_sagittal",
+      "name": "Inferior sagittal sinus",
+      "group": "dural",
+      "parent": "vein.straight",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -14,
+          124
+        ],
+        [
+          0.65,
+          -35,
+          133
+        ],
+        [
+          0.65,
+          -64,
+          135
+        ],
+        [
+          0.65,
+          -86,
+          124
+        ],
+        {
+          "structure": "vein.straight",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        0.65,
+        1.45
+      ],
+      "description": "This lies in the inferior edge of the falx parallel to the [superior sagittal sinus](#structure-vein.superior_sagittal). It receives blood from the anterior corpus callosum, cingulate gyrus, medial cerebral hemispheres, and the falx. It joins the [vein of Galen](#structure-vein.galen) to form the [straight sinus](#structure-vein.straight).",
+      "fit": null,
+      "aliases": [
+        "ISS"
+      ],
+      "page": 64,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.occipital_sinus",
+      "name": "Occipital sinus",
+      "group": "dural",
+      "parent": "vein.confluence",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -104,
+          35
+        ],
+        [
+          0.65,
+          -122,
+          40
+        ],
+        [
+          0.65,
+          -138,
+          52
+        ],
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.65
+        }
+      ],
+      "radius": [
+        1,
+        1.6
+      ],
+      "description": "The occipital sinus usually drains superiorly to the [confluence](#structure-vein.confluence) but may drain inferiorly to the sigmoid or [marginal sinuses](#structure-vein.marginal). It is often hypoplastic or absent in adults.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.marginal",
+      "name": "Marginal sinus",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -104,
+          35
+        ],
+        [
+          12,
+          -99,
+          34
+        ],
+        [
+          18,
+          -88,
+          32
+        ],
+        [
+          13,
+          -73,
+          34
+        ],
+        [
+          0.65,
+          -68,
+          35
+        ],
+        [
+          -11.7,
+          -73,
+          34
+        ],
+        [
+          -16.7,
+          -88,
+          32
+        ],
+        [
+          -10.7,
+          -99,
+          34
+        ],
+        [
+          0.65,
+          -104,
+          35
+        ]
+      ],
+      "radius": 1.05,
+      "description": "The marginal sinus encircles the foramen magnum and is connected to a network of adjacent venous structures including the [clival plexus](#structure-vein.basilar_plexus) anteriorly, the vertebral venous plexus inferiorly, and sigmoid sinuses laterally.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.galen",
+      "name": "Vein of Galen",
+      "group": "deep",
+      "parent": "vein.deep",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -92,
+          96
+        ],
+        [
+          0.65,
+          -96,
+          97
+        ],
+        [
+          0.65,
+          -100,
+          100
+        ],
+        {
+          "structure": "vein.straight",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        2.5,
+        2.8
+      ],
+      "description": "This short subarachnoid vessel is formed by the midline convergence of the internal cerebral veins, below the splenium, beneath which it curves. It ends at the tentorial hiatus apex, where it joins the [inferior sagittal sinus](#structure-vein.inferior_sagittal) to become the [straight sinus](#structure-vein.straight). The vessel also receives blood from the posterior pericallosal veins, the internal occipital veins, and veins of the posterior fossa.",
+      "fit": null,
+      "aliases": [
+        "Great cerebral vein",
+        "Great vein of Galen"
+      ],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.internal_jugular.right",
+      "name": "Internal jugular vein right",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "points": [
+        [
+          27,
+          -65,
+          38
+        ],
+        [
+          31,
+          -69,
+          27
+        ],
+        [
+          38,
+          -69,
+          12
+        ],
+        [
+          41,
+          -67,
+          -10
+        ],
+        [
+          42,
+          -63,
+          -35
+        ],
+        [
+          42,
+          -58,
+          -70
+        ],
+        [
+          34,
+          -46,
+          -107
+        ]
+      ],
+      "radius": [
+        2.4,
+        4.2,
+        4.8
+      ],
+      "description": "Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.right) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein.",
+      "fit": null,
+      "aliases": [
+        "IJV",
+        "Internal jugular"
+      ],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.sigmoid.right",
+      "name": "Sigmoid sinus right",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "right",
+      "points": [
+        [
+          58,
+          -95,
+          66
+        ],
+        [
+          54,
+          -89,
+          61
+        ],
+        [
+          46,
+          -92,
+          48
+        ],
+        [
+          34,
+          -86,
+          40
+        ],
+        [
+          28,
+          -73,
+          37
+        ],
+        {
+          "structure": "vein.internal_jugular.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 3.5,
+      "description": "This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.right) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.transverse.right",
+      "name": "Transverse sinus right",
+      "group": "dural",
+      "parent": "vein.sigmoid.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.5
+        },
+        [
+          20,
+          -143,
+          67
+        ],
+        [
+          40,
+          -132,
+          67
+        ],
+        [
+          53,
+          -114,
+          67
+        ],
+        {
+          "structure": "vein.sigmoid.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 3.0,
+      "description": "The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labbé](#structure-vein.labbe.right), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.right). Hypoplasia of one or the other is common, usually the left.",
+      "fit": "dural",
+      "aliases": [],
+      "page": 67,
+      "shape": "sinus",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.cavernous.right",
+      "name": "Cavernous sinus right",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "right",
+      "points": [
+        [
+          15,
+          -49,
+          56
+        ],
+        [
+          14,
+          -47,
+          63
+        ],
+        [
+          13,
+          -42,
+          67
+        ],
+        [
+          14,
+          -35,
+          69
+        ]
+      ],
+      "radius": [
+        3.6,
+        4.6
+      ],
+      "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.right), [superior petrosal sinus](#structure-vein.superior_petrosal.right), [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.",
+      "fit": null,
+      "aliases": [
+        "CS"
+      ],
+      "page": 68,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.superior_petrosal.right",
+      "name": "Superior petrosal sinus right",
+      "group": "dural",
+      "parent": "vein.cavernous.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.25
+        },
+        [
+          24,
+          -60,
+          64
+        ],
+        [
+          38,
+          -71,
+          66
+        ],
+        [
+          48,
+          -82,
+          67
+        ],
+        {
+          "structure": "vein.sigmoid.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.45,
+      "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the junction of the [transverse](#structure-vein.transverse.right) and [sigmoid sinuses](#structure-vein.sigmoid.right). They may receive blood from supra- or infratentorial structures.",
+      "fit": null,
+      "aliases": [
+        "SPS"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.inferior_petrosal.right",
+      "name": "Inferior petrosal sinus right",
+      "group": "dural",
+      "parent": "vein.cavernous.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.1
+        },
+        [
+          13,
+          -57,
+          57
+        ],
+        [
+          13,
+          -65,
+          51
+        ],
+        [
+          18,
+          -72,
+          44
+        ],
+        [
+          25,
+          -71,
+          35
+        ],
+        {
+          "structure": "vein.internal_jugular.right",
+          "fraction": 0.065
+        }
+      ],
+      "radius": 1.4,
+      "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the [jugular vein](#structure-vein.internal_jugular.right) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.",
+      "fit": null,
+      "aliases": [
+        "IPS"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.sphenoparietal.right",
+      "name": "Sphenoparietal sinus right",
+      "group": "dural",
+      "parent": "vein.cavernous.right",
+      "side": "right",
+      "points": [
+        [
+          48,
+          -24,
+          85
+        ],
+        [
+          40,
+          -27,
+          85
+        ],
+        [
+          29,
+          -28,
+          79
+        ],
+        [
+          22,
+          -32,
+          72
+        ],
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.9
+        }
+      ],
+      "radius": 1.25,
+      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.right). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.superficial_middle_cerebral.right",
+      "name": "Superficial middle cerebral vein right",
+      "group": "superficial",
+      "parent": "vein.superficial",
+      "side": "right",
+      "points": [
+        [
+          64,
+          -72,
+          111
+        ],
+        [
+          62,
+          -60,
+          107
+        ],
+        [
+          57,
+          -41,
+          97
+        ],
+        [
+          53,
+          -27,
+          87
+        ],
+        {
+          "structure": "vein.sphenoparietal.right",
+          "fraction": 0.05
+        }
+      ],
+      "radius": 1.3,
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).",
+      "fit": "cortical",
+      "aliases": [
+        "SMV",
+        "SMCV",
+        "Superficial Sylvian vein"
+      ],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.trolard.right",
+      "name": "Superior anastomotic vein of Trolard right",
+      "group": "superficial",
+      "parent": "vein.superficial_middle_cerebral.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.superficial_middle_cerebral.right",
+          "fraction": 0.12
+        },
+        [
+          63,
+          -70,
+          124
+        ],
+        [
+          55,
+          -77,
+          145
+        ],
+        [
+          36,
+          -87,
+          159
+        ],
+        [
+          17,
+          -91,
+          161
+        ],
+        {
+          "structure": "vein.superior_sagittal",
+          "fraction": 0.55
+        }
+      ],
+      "radius": [
+        1.35,
+        1.8
+      ],
+      "description": "The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
+      "fit": "cortical",
+      "aliases": [
+        "Trolard"
+      ],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.labbe.right",
+      "name": "Posterior anastomotic vein of Labbé right",
+      "group": "superficial",
+      "parent": "vein.superficial_middle_cerebral.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.superficial_middle_cerebral.right",
+          "fraction": 0.15
+        },
+        [
+          65,
+          -79,
+          98
+        ],
+        [
+          62,
+          -94,
+          86
+        ],
+        [
+          58,
+          -112,
+          77
+        ],
+        {
+          "structure": "vein.transverse.right",
+          "fraction": 0.76
+        }
+      ],
+      "radius": [
+        1.4,
+        1.7
+      ],
+      "description": "The posterior anastomotic vein of Labbé is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [transverse sinus](#structure-vein.transverse.right). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
+      "fit": "cortical",
+      "aliases": [
+        "Labbe",
+        "Labbé",
+        "Inferior anastomotic vein"
+      ],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.frontal_cortical.right",
+      "name": "Frontal cortical vein right",
+      "group": "superficial",
+      "parent": "vein.superficial",
+      "side": "right",
+      "points": [
+        [
+          47,
+          -3,
+          114
+        ],
+        [
+          40,
+          -2,
+          130
+        ],
+        [
+          26,
+          -13,
+          147
+        ],
+        [
+          11,
+          -27,
+          156
+        ],
+        {
+          "structure": "vein.superior_sagittal",
+          "fraction": 0.28
+        }
+      ],
+      "radius": [
+        0.65,
+        1.2
+      ],
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
+      "fit": "cortical",
+      "aliases": [],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.parietal_cortical.right",
+      "name": "Parietal cortical vein right",
+      "group": "superficial",
+      "parent": "vein.superficial",
+      "side": "right",
+      "points": [
+        [
+          59,
+          -118,
+          113
+        ],
+        [
+          48,
+          -132,
+          129
+        ],
+        [
+          30,
+          -137,
+          140
+        ],
+        [
+          13,
+          -133,
+          144
+        ],
+        {
+          "structure": "vein.superior_sagittal",
+          "fraction": 0.7
+        }
+      ],
+      "radius": [
+        0.65,
+        1.2
+      ],
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
+      "fit": "cortical",
+      "aliases": [],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.internal_cerebral.right",
+      "name": "Internal cerebral vein right",
+      "group": "deep",
+      "parent": "vein.galen",
+      "side": "right",
+      "points": [
+        [
+          3,
+          -39,
+          105
+        ],
+        [
+          3,
+          -54,
+          106
+        ],
+        [
+          4,
+          -72,
+          105
+        ],
+        [
+          7,
+          -83,
+          101
+        ],
+        {
+          "structure": "vein.galen",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1.35,
+        1.7
+      ],
+      "description": "The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen).",
+      "fit": null,
+      "aliases": [
+        "ICV"
+      ],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.basal.right",
+      "name": "Basal vein of Rosenthal right",
+      "group": "deep",
+      "parent": "vein.galen",
+      "side": "right",
+      "points": [
+        [
+          20,
+          -43,
+          81
+        ],
+        [
+          25,
+          -53,
+          79
+        ],
+        [
+          27,
+          -69,
+          82
+        ],
+        [
+          26,
+          -83,
+          87
+        ],
+        [
+          18,
+          -91,
+          92
+        ],
+        {
+          "structure": "vein.galen",
+          "fraction": 0.12
+        }
+      ],
+      "radius": [
+        1.2,
+        1.65
+      ],
+      "description": "The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.right). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.right).",
+      "fit": null,
+      "aliases": [
+        "BVR",
+        "Basal vein"
+      ],
+      "page": 71,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.thalamostriate.right",
+      "name": "Superior thalamostriate vein right",
+      "group": "deep",
+      "parent": "vein.internal_cerebral.right",
+      "side": "right",
+      "points": [
+        [
+          14,
+          -79,
+          107
+        ],
+        [
+          16,
+          -65,
+          109
+        ],
+        [
+          13,
+          -51,
+          108
+        ],
+        [
+          8,
+          -42,
+          106
+        ],
+        {
+          "structure": "vein.internal_cerebral.right",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1,
+        1.2
+      ],
+      "description": "The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 71,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.anterior_septal.right",
+      "name": "Anterior septal vein right",
+      "group": "deep",
+      "parent": "vein.internal_cerebral.right",
+      "side": "right",
+      "points": [
+        [
+          3,
+          -14,
+          106
+        ],
+        [
+          4,
+          -22,
+          109
+        ],
+        [
+          4,
+          -31,
+          108
+        ],
+        {
+          "structure": "vein.internal_cerebral.right",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        0.65,
+        0.95
+      ],
+      "description": "The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.right) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly.",
+      "fit": null,
+      "aliases": [],
+      "page": 70,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.superior_choroidal.right",
+      "name": "Superior choroidal vein right",
+      "group": "deep",
+      "parent": "vein.internal_cerebral.right",
+      "side": "right",
+      "points": [
+        [
+          8,
+          -83,
+          109
+        ],
+        [
+          9,
+          -68,
+          111
+        ],
+        [
+          9,
+          -52,
+          110
+        ],
+        {
+          "structure": "vein.thalamostriate.right",
+          "fraction": 0.96
+        }
+      ],
+      "radius": 0.65,
+      "description": "The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.right). The internal cerebral veins drain the subependymal and choroid venous systems.",
+      "fit": null,
+      "aliases": [],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.anterior_cerebral.right",
+      "name": "Anterior cerebral vein right",
+      "group": "deep",
+      "parent": "vein.basal.right",
+      "side": "right",
+      "points": [
+        [
+          3,
+          -14,
+          92
+        ],
+        [
+          7,
+          -23,
+          80
+        ],
+        [
+          11,
+          -34,
+          78
+        ],
+        {
+          "structure": "vein.basal.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.8,
+      "description": "The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 71,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.deep_middle_cerebral.right",
+      "name": "Deep middle cerebral vein right",
+      "group": "deep",
+      "parent": "vein.basal.right",
+      "side": "right",
+      "points": [
+        [
+          40,
+          -62,
+          95
+        ],
+        [
+          38,
+          -48,
+          88
+        ],
+        [
+          29,
+          -41,
+          82
+        ],
+        {
+          "structure": "vein.basal.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.95,
+      "description": "The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.superior_petrosal_vein.right",
+      "name": "Superior petrosal vein right",
+      "group": "posterior",
+      "parent": "vein.posterior",
+      "side": "right",
+      "points": [
+        [
+          24,
+          -84,
+          58
+        ],
+        [
+          28,
+          -80,
+          61
+        ],
+        [
+          32,
+          -74,
+          64
+        ],
+        {
+          "structure": "vein.superior_petrosal.right",
+          "fraction": 0.55
+        }
+      ],
+      "radius": [
+        1.2,
+        1.65
+      ],
+      "description": "The superior petrosal vein, or petrosal vein, is the largest vein in the posterior cranial fossa. It drains the anterior cerebellum and brainstem into the [superior petrosal sinus](#structure-vein.superior_petrosal.right). It is usually formed by multiple smaller veins converging into one, but sometimes there are two or three. Major contributors include the vein of the cerebellopontine fissure, and the petrosal, posterior mesencephalic, anterior pontomesencephalic, and tentorial groups.",
+      "fit": null,
+      "aliases": [
+        "Petrosal vein",
+        "Vein of Dandy"
+      ],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.lateral_mesencephalic.right",
+      "name": "Lateral mesencephalic vein right",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.basal.right",
+          "fraction": 0.65
+        },
+        [
+          24,
+          -85,
+          77
+        ],
+        [
+          23,
+          -86,
+          67
+        ],
+        {
+          "structure": "vein.superior_petrosal_vein.right",
+          "fraction": 0.12
+        }
+      ],
+      "radius": 0.85,
+      "description": "The lateral mesencephalic veins connect the [basal vein of Rosenthal](#structure-vein.basal.right) to lateral brainstem and medullary fissure veins. They act as a crucial collateral drainage route, especially when the basal vein is discontinuous, draining posteriorly to infratentorial veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.cerebellopontine_fissure.right",
+      "name": "Vein of the cerebellopontine fissure right",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "points": [
+        [
+          22,
+          -95,
+          44
+        ],
+        [
+          29,
+          -94,
+          49
+        ],
+        [
+          30,
+          -89,
+          54
+        ],
+        {
+          "structure": "vein.superior_petrosal_vein.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 1,
+      "description": "Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.right) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.inferior_vermian.right",
+      "name": "Inferior vermian vein right",
+      "group": "posterior",
+      "parent": "vein.posterior",
+      "side": "right",
+      "points": [
+        [
+          5,
+          -115,
+          43
+        ],
+        [
+          7,
+          -126,
+          47
+        ],
+        [
+          8,
+          -137,
+          55
+        ],
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.45
+        }
+      ],
+      "radius": [
+        0.8,
+        1.1
+      ],
+      "description": "The paired inferior vermian veins lie in the cerebellovermian fissure and drain the inferior vermis and medial suboccipital surface into the [torcular](#structure-vein.confluence) or transverse sinus, directly or via a tentorial sinus.",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.inferior_hemispheric.right",
+      "name": "Inferior hemispheric vein right",
+      "group": "posterior",
+      "parent": "vein.inferior_vermian.right",
+      "side": "right",
+      "points": [
+        [
+          41,
+          -112,
+          43
+        ],
+        [
+          33,
+          -127,
+          43
+        ],
+        [
+          19,
+          -134,
+          48
+        ],
+        {
+          "structure": "vein.inferior_vermian.right",
+          "fraction": 0.56
+        }
+      ],
+      "radius": [
+        0.6,
+        0.85
+      ],
+      "description": "Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.external_jugular.right",
+      "name": "External jugular vein right",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "points": [
+        [
+          46,
+          -57,
+          -7
+        ],
+        [
+          52,
+          -63,
+          -26
+        ],
+        [
+          52,
+          -64,
+          -51
+        ],
+        [
+          50,
+          -55,
+          -78
+        ],
+        [
+          45,
+          -42,
+          -107
+        ]
+      ],
+      "radius": [
+        2.2,
+        2.7
+      ],
+      "description": "The EJV drains the deep face, scalp, and posterolateral neck. It originates from the convergence of the retromandibular, posterior auricular, and superficial temporal veins in front of the angle of the mandible. The vein runs caudally on top of the sternocleidomastoid to join the subclavian vein. Like the IJV, it has a valve just prior to its termination.",
+      "fit": null,
+      "aliases": [
+        "EJV"
+      ],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.retromandibular.right",
+      "name": "Retromandibular vein right",
+      "group": "extracranial",
+      "parent": "vein.external_jugular.right",
+      "side": "right",
+      "points": [
+        [
+          46,
+          -40,
+          32
+        ],
+        [
+          49,
+          -42,
+          18
+        ],
+        [
+          48,
+          -46,
+          3
+        ],
+        {
+          "structure": "vein.external_jugular.right",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1.8,
+        2.2
+      ],
+      "description": "The maxillary vein converges with the [superficial temporal vein](#structure-vein.superficial_temporal.right) to form the retromandibular vein. It contributes to drainage of the deep face and scalp into the [external jugular vein](#structure-vein.external_jugular.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.maxillary.right",
+      "name": "Maxillary vein right",
+      "group": "extracranial",
+      "parent": "vein.retromandibular.right",
+      "side": "right",
+      "points": [
+        [
+          30,
+          -33,
+          35
+        ],
+        [
+          38,
+          -34,
+          32
+        ],
+        {
+          "structure": "vein.retromandibular.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.65,
+      "description": "The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) becomes the maxillary vein, which later converges with the [superficial temporal vein](#structure-vein.superficial_temporal.right) to form the [retromandibular vein](#structure-vein.retromandibular.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.pterygoid_plexus.right",
+      "name": "Pterygoid venous plexus right",
+      "group": "extracranial",
+      "parent": "vein.maxillary.right",
+      "side": "right",
+      "points": [
+        [
+          24,
+          -27,
+          43
+        ],
+        [
+          28,
+          -34,
+          42
+        ],
+        [
+          30,
+          -38,
+          38
+        ],
+        {
+          "structure": "vein.maxillary.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.15,
+      "description": "The pterygoid plexus is a large venous network located between the temporalis and lateral pterygoid muscles. It drains into the [maxillary vein](#structure-vein.maxillary.right) and connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins. The plexus receives numerous tributaries, including the sphenopalatine, middle meningeal, deep temporal, pterygoid, masseteric, buccinator, alveolar, and palatine veins. It also receives blood from the [inferior ophthalmic vein](#structure-vein.inferior_ophthalmic.right), [deep facial vein](#structure-vein.deep_facial.right), and infraorbital vein.",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd",
+      "additionalPaths": [
+        [
+          {
+            "structure": "vein.pterygoid_plexus.right",
+            "fraction": 0.08
+          },
+          [
+            32,
+            -24,
+            44
+          ],
+          [
+            38,
+            -29,
+            39
+          ],
+          {
+            "structure": "vein.pterygoid_plexus.right",
+            "fraction": 0.95
+          }
+        ],
+        [
+          {
+            "structure": "vein.pterygoid_plexus.right",
+            "fraction": 0.3
+          },
+          [
+            29,
+            -37,
+            34
+          ],
+          [
+            34,
+            -39,
+            33
+          ],
+          {
+            "structure": "vein.pterygoid_plexus.right",
+            "fraction": 0.96
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vein.superficial_temporal.right",
+      "name": "Superficial temporal vein right",
+      "group": "extracranial",
+      "parent": "vein.retromandibular.right",
+      "side": "right",
+      "points": [
+        [
+          65,
+          -39,
+          121
+        ],
+        [
+          69,
+          -32,
+          103
+        ],
+        [
+          65,
+          -27,
+          82
+        ],
+        [
+          61,
+          -27,
+          59
+        ],
+        [
+          54,
+          -31,
+          43
+        ],
+        {
+          "structure": "vein.retromandibular.right",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1.1,
+        1.65
+      ],
+      "description": "The superficial temporal vein drains the scalp and converges with the [maxillary vein](#structure-vein.maxillary.right) to form the [retromandibular vein](#structure-vein.retromandibular.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.posterior_auricular.right",
+      "name": "Posterior auricular vein right",
+      "group": "extracranial",
+      "parent": "vein.external_jugular.right",
+      "side": "right",
+      "points": [
+        [
+          70,
+          -74,
+          70
+        ],
+        [
+          69,
+          -73,
+          48
+        ],
+        [
+          60,
+          -68,
+          24
+        ],
+        {
+          "structure": "vein.external_jugular.right",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1,
+        1.5
+      ],
+      "description": "The posterior auricular vein contributes to drainage of the scalp and posterolateral neck into the [external jugular vein](#structure-vein.external_jugular.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.facial.right",
+      "name": "Facial vein right",
+      "group": "extracranial",
+      "parent": "vein.internal_jugular.right",
+      "side": "right",
+      "points": [
+        [
+          15,
+          25,
+          55
+        ],
+        [
+          23,
+          30,
+          41
+        ],
+        [
+          31,
+          22,
+          22
+        ],
+        [
+          40,
+          9,
+          5
+        ],
+        [
+          43,
+          -9,
+          -12
+        ],
+        [
+          43,
+          -23,
+          -26
+        ],
+        [
+          36,
+          -36,
+          -37
+        ],
+        {
+          "structure": "vein.internal_jugular.right",
+          "fraction": 0.55
+        }
+      ],
+      "radius": [
+        1.3,
+        2.2
+      ],
+      "description": "The extracranial drainage of the head and neck mirrors the arteries. The supratrochlear and supraorbital veins drain to the facial vein, which is a tributary of the [internal jugular vein](#structure-vein.internal_jugular.right). The [deep facial vein](#structure-vein.deep_facial.right) connects with the pterygoid plexus.",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.angular.right",
+      "name": "Angular vein right",
+      "group": "extracranial",
+      "parent": "vein.facial.right",
+      "side": "right",
+      "points": [
+        [
+          10,
+          21,
+          75
+        ],
+        [
+          12,
+          26,
+          67
+        ],
+        {
+          "structure": "vein.facial.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.05,
+      "description": "",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.deep_facial.right",
+      "name": "Deep facial vein right",
+      "group": "extracranial",
+      "parent": "vein.facial.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.facial.right",
+          "fraction": 0.24
+        },
+        [
+          38,
+          7,
+          20
+        ],
+        [
+          38,
+          0,
+          21
+        ],
+        [
+          38,
+          -9,
+          26
+        ],
+        [
+          35,
+          -20,
+          31
+        ],
+        {
+          "structure": "vein.pterygoid_plexus.right",
+          "fraction": 0.65
+        }
+      ],
+      "radius": 1,
+      "description": "The deep facial vein connects the [facial vein](#structure-vein.facial.right) with the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.superior_ophthalmic.right",
+      "name": "Superior ophthalmic vein right",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.angular.right",
+          "fraction": 0.35
+        },
+        [
+          15,
+          14,
+          70
+        ],
+        [
+          25,
+          2,
+          72
+        ],
+        [
+          27,
+          -12,
+          72
+        ],
+        [
+          23.0,
+          -20.0,
+          70.0
+        ],
+        [
+          22.49371,
+          -20.5635,
+          70.0
+        ],
+        [
+          22.10446,
+          -21.03201,
+          70.0
+        ],
+        [
+          21.75491,
+          -21.51716,
+          70.0
+        ],
+        [
+          21.47383,
+          -22.00784,
+          69.99998
+        ],
+        [
+          21.26934,
+          -22.5031,
+          69.99988
+        ],
+        [
+          21.13704,
+          -23.00106,
+          69.99948
+        ],
+        [
+          21.06179,
+          -23.50031,
+          69.99809
+        ],
+        [
+          21.02448,
+          -24.00008,
+          69.99392
+        ],
+        [
+          21.00846,
+          -24.50002,
+          69.98329
+        ],
+        [
+          21.00254,
+          -25.0,
+          69.96004
+        ],
+        [
+          21.00065,
+          -25.5,
+          69.91605
+        ],
+        [
+          21.00012,
+          -26.0,
+          69.84309
+        ],
+        [
+          20.99989,
+          -26.5,
+          69.73507
+        ],
+        [
+          20.99937,
+          -27.0,
+          69.58917
+        ],
+        [
+          20.99761,
+          -27.5,
+          69.40552
+        ],
+        [
+          20.99218,
+          -28.0,
+          69.18701
+        ],
+        [
+          20.97799,
+          -28.49998,
+          68.93952
+        ],
+        [
+          20.94638,
+          -28.99992,
+          68.67174
+        ],
+        [
+          20.88645,
+          -29.49969,
+          68.39347
+        ],
+        [
+          20.78962,
+          -29.99894,
+          68.11433
+        ],
+        [
+          20.65628,
+          -30.4969,
+          67.84477
+        ],
+        [
+          20.49963,
+          -30.99216,
+          67.59776
+        ],
+        [
+          20.34213,
+          -31.48284,
+          67.38751
+        ],
+        [
+          20.20505,
+          -31.96799,
+          67.22345
+        ],
+        [
+          20.09942,
+          -32.4365,
+          67.10573
+        ],
+        [
+          20.0,
+          -33.0,
+          67.0
+        ],
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.9
+        }
+      ],
+      "radius": 0.85,
+      "description": "The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.right), an important bidirectional confluence of the intracranial and extracranial venous systems.",
+      "fit": null,
+      "aliases": [
+        "SOV"
+      ],
+      "page": 68,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.inferior_ophthalmic.right",
+      "name": "Inferior ophthalmic vein right",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "points": [
+        [
+          18,
+          12,
+          48
+        ],
+        [
+          28,
+          0,
+          47
+        ],
+        [
+          30,
+          -10,
+          45
+        ],
+        [
+          26,
+          -22,
+          42
+        ],
+        {
+          "structure": "vein.pterygoid_plexus.right",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        0.8,
+        1
+      ],
+      "description": "The inferior ophthalmic vein contributes to drainage into the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). The ophthalmic veins also connect with the [cavernous sinus](#structure-vein.cavernous.right).",
+      "fit": null,
+      "aliases": [
+        "IOV"
+      ],
+      "page": 62,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.ovale_emissary.right",
+      "name": "Emissary vein of foramen ovale right",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.2
+        },
+        [
+          21,
+          -46,
+          54
+        ],
+        [
+          24,
+          -46,
+          51
+        ],
+        [
+          24,
+          -46,
+          48
+        ],
+        [
+          28,
+          -40,
+          43
+        ],
+        {
+          "structure": "vein.pterygoid_plexus.right",
+          "fraction": 0.55
+        }
+      ],
+      "radius": 0.8,
+      "description": "Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 69,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.vertebral.right",
+      "name": "Vertebral vein right",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "points": [
+        [
+          22,
+          -86,
+          1
+        ],
+        [
+          23,
+          -87,
+          -24
+        ],
+        [
+          23,
+          -87,
+          -51
+        ],
+        [
+          24,
+          -85,
+          -79
+        ],
+        [
+          27,
+          -75,
+          -96
+        ],
+        [
+          29,
+          -58,
+          -107
+        ]
+      ],
+      "radius": [
+        1.5,
+        2.1
+      ],
+      "description": "The vertebral artery venous plexus arises at C2 and receives blood from the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and the anterior, lateral, and posterior condylar veins. It continues as a solitary vertebral vein in the vertebral canal surrounding the vertebral artery, leaving at C6 via the foramen transversarium to join the brachiocephalic vein.",
+      "fit": null,
+      "aliases": [],
+      "page": 63,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.suboccipital_plexus.right",
+      "name": "Suboccipital venous plexus right",
+      "group": "extracranial",
+      "parent": "vein.vertebral.right",
+      "side": "right",
+      "points": [
+        [
+          24,
+          -110,
+          16
+        ],
+        [
+          29,
+          -108,
+          10
+        ],
+        [
+          29,
+          -98,
+          5
+        ],
+        {
+          "structure": "vein.vertebral.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.15,
+      "description": "The suboccipital venous plexus contributes to the vertebral venous system through the [vertebral artery venous plexus](#structure-vein.vertebral.right) and [deep cervical vein](#structure-vein.deep_cervical.right). It also communicates with condylar veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 63,
+      "shape": "round",
+      "color": "#598fcd",
+      "additionalPaths": [
+        [
+          {
+            "structure": "vein.suboccipital_plexus.right",
+            "fraction": 0.03
+          },
+          [
+            18,
+            -113,
+            12
+          ],
+          [
+            17,
+            -101,
+            6
+          ],
+          {
+            "structure": "vein.suboccipital_plexus.right",
+            "fraction": 0.98
+          }
+        ],
+        [
+          {
+            "structure": "vein.suboccipital_plexus.right",
+            "fraction": 0.25
+          },
+          [
+            32,
+            -116,
+            7
+          ],
+          [
+            33,
+            -103,
+            2
+          ],
+          {
+            "structure": "vein.suboccipital_plexus.right",
+            "fraction": 0.9
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vein.deep_cervical.right",
+      "name": "Deep cervical vein right",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.suboccipital_plexus.right",
+          "fraction": 0.25
+        },
+        [
+          29,
+          -112,
+          -9
+        ],
+        [
+          27,
+          -108,
+          -43
+        ],
+        [
+          29,
+          -93,
+          -78
+        ],
+        [
+          30,
+          -71,
+          -103
+        ]
+      ],
+      "radius": 1.5,
+      "description": "The deep cervical vein receives tributaries of the [suboccipital venous plexus](#structure-vein.suboccipital_plexus.right). It follows the deep cervical artery to end in the IJV or brachiocephalic vein.",
+      "fit": null,
+      "aliases": [],
+      "page": 63,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.anterior_condylar.right",
+      "name": "Anterior condylar vein right",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "right",
+      "points": [
+        [
+          11,
+          -75,
+          34
+        ],
+        [
+          17,
+          -71,
+          31
+        ],
+        [
+          21,
+          -69,
+          29
+        ],
+        {
+          "structure": "vein.internal_jugular.right",
+          "fraction": 0.07
+        }
+      ],
+      "radius": 1,
+      "description": "The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.right) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus.",
+      "fit": null,
+      "aliases": [
+        "Vein of hypoglossal canal"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.lateral_condylar.right",
+      "name": "Lateral condylar vein right",
+      "group": "skullbase",
+      "parent": "vein.anterior_condylar.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.anterior_condylar.right",
+          "fraction": 0.82
+        },
+        [
+          29,
+          -73,
+          24
+        ],
+        [
+          32,
+          -87,
+          17
+        ],
+        {
+          "structure": "vein.suboccipital_plexus.right",
+          "fraction": 0.58
+        }
+      ],
+      "radius": 0.9,
+      "description": "The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and vertebral venous system.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.internal_jugular.left",
+      "name": "Internal jugular vein left",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "points": [
+        [
+          -25.7,
+          -65,
+          37.95
+        ],
+        [
+          -29.7,
+          -69,
+          26.95
+        ],
+        [
+          -36.7,
+          -69,
+          11.95
+        ],
+        [
+          -39.7,
+          -67,
+          -10.05
+        ],
+        [
+          -40.7,
+          -63,
+          -35.05
+        ],
+        [
+          -40.7,
+          -58,
+          -70.05
+        ],
+        [
+          -32.7,
+          -46,
+          -107.05
+        ]
+      ],
+      "radius": [
+        2.4,
+        3.7,
+        4.2
+      ],
+      "description": "Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.left) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein.",
+      "fit": null,
+      "aliases": [
+        "IJV",
+        "Internal jugular"
+      ],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.sigmoid.left",
+      "name": "Sigmoid sinus left",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "left",
+      "points": [
+        [
+          -56.7,
+          -95,
+          65.95
+        ],
+        [
+          -52.7,
+          -89,
+          60.95
+        ],
+        [
+          -44.7,
+          -92,
+          47.95
+        ],
+        [
+          -32.7,
+          -86,
+          39.95
+        ],
+        [
+          -26.7,
+          -73,
+          36.95
+        ],
+        {
+          "structure": "vein.internal_jugular.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 3.0,
+      "description": "This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.left) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.transverse.left",
+      "name": "Transverse sinus left",
+      "group": "dural",
+      "parent": "vein.sigmoid.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.5
+        },
+        [
+          -18.7,
+          -143,
+          66.95
+        ],
+        [
+          -38.7,
+          -132,
+          66.95
+        ],
+        [
+          -51.7,
+          -114,
+          66.95
+        ],
+        {
+          "structure": "vein.sigmoid.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 2.6,
+      "description": "The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labbé](#structure-vein.labbe.left), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.left). Hypoplasia of one or the other is common, usually the left.",
+      "fit": "dural",
+      "aliases": [],
+      "page": 67,
+      "shape": "sinus",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.cavernous.left",
+      "name": "Cavernous sinus left",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "left",
+      "points": [
+        [
+          -13.7,
+          -49,
+          55.95
+        ],
+        [
+          -12.7,
+          -47,
+          62.95
+        ],
+        [
+          -11.7,
+          -42,
+          66.95
+        ],
+        [
+          -12.7,
+          -35,
+          68.95
+        ]
+      ],
+      "radius": [
+        3.6,
+        4.6
+      ],
+      "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.left), [superior petrosal sinus](#structure-vein.superior_petrosal.left), [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.",
+      "fit": null,
+      "aliases": [
+        "CS"
+      ],
+      "page": 68,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.superior_petrosal.left",
+      "name": "Superior petrosal sinus left",
+      "group": "dural",
+      "parent": "vein.cavernous.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.25
+        },
+        [
+          -22.7,
+          -60,
+          63.95
+        ],
+        [
+          -36.7,
+          -71,
+          65.95
+        ],
+        [
+          -46.7,
+          -82,
+          66.95
+        ],
+        {
+          "structure": "vein.sigmoid.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.45,
+      "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the junction of the [transverse](#structure-vein.transverse.left) and [sigmoid sinuses](#structure-vein.sigmoid.left). They may receive blood from supra- or infratentorial structures.",
+      "fit": null,
+      "aliases": [
+        "SPS"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.inferior_petrosal.left",
+      "name": "Inferior petrosal sinus left",
+      "group": "dural",
+      "parent": "vein.cavernous.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.1
+        },
+        [
+          -11.7,
+          -57,
+          56.95
+        ],
+        [
+          -11.7,
+          -65,
+          50.95
+        ],
+        [
+          -16.7,
+          -72,
+          43.95
+        ],
+        [
+          -23.7,
+          -71,
+          34.95
+        ],
+        {
+          "structure": "vein.internal_jugular.left",
+          "fraction": 0.065
+        }
+      ],
+      "radius": 1.4,
+      "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the [jugular vein](#structure-vein.internal_jugular.left) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.",
+      "fit": null,
+      "aliases": [
+        "IPS"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.sphenoparietal.left",
+      "name": "Sphenoparietal sinus left",
+      "group": "dural",
+      "parent": "vein.cavernous.left",
+      "side": "left",
+      "points": [
+        [
+          -46.7,
+          -24,
+          84.95
+        ],
+        [
+          -38.7,
+          -27,
+          84.95
+        ],
+        [
+          -27.7,
+          -28,
+          78.95
+        ],
+        [
+          -20.7,
+          -32,
+          71.95
+        ],
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.9
+        }
+      ],
+      "radius": 1.25,
+      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.left). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.superficial_middle_cerebral.left",
+      "name": "Superficial middle cerebral vein left",
+      "group": "superficial",
+      "parent": "vein.superficial",
+      "side": "left",
+      "points": [
+        [
+          -62.7,
+          -72,
+          110.95
+        ],
+        [
+          -60.7,
+          -60,
+          106.95
+        ],
+        [
+          -55.7,
+          -41,
+          96.95
+        ],
+        [
+          -51.7,
+          -27,
+          86.95
+        ],
+        {
+          "structure": "vein.sphenoparietal.left",
+          "fraction": 0.05
+        }
+      ],
+      "radius": 1.3,
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).",
+      "fit": "cortical",
+      "aliases": [
+        "SMV",
+        "SMCV",
+        "Superficial Sylvian vein"
+      ],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.trolard.left",
+      "name": "Superior anastomotic vein of Trolard left",
+      "group": "superficial",
+      "parent": "vein.superficial_middle_cerebral.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.superficial_middle_cerebral.left",
+          "fraction": 0.12
+        },
+        [
+          -61.7,
+          -70,
+          123.95
+        ],
+        [
+          -53.7,
+          -77,
+          144.95
+        ],
+        [
+          -34.7,
+          -87,
+          158.95
+        ],
+        [
+          -15.7,
+          -91,
+          160.95
+        ],
+        {
+          "structure": "vein.superior_sagittal",
+          "fraction": 0.55
+        }
+      ],
+      "radius": [
+        1.35,
+        1.8
+      ],
+      "description": "The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
+      "fit": "cortical",
+      "aliases": [
+        "Trolard"
+      ],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.labbe.left",
+      "name": "Posterior anastomotic vein of Labbé left",
+      "group": "superficial",
+      "parent": "vein.superficial_middle_cerebral.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.superficial_middle_cerebral.left",
+          "fraction": 0.15
+        },
+        [
+          -63.7,
+          -79,
+          97.95
+        ],
+        [
+          -60.7,
+          -94,
+          85.95
+        ],
+        [
+          -56.7,
+          -112,
+          76.95
+        ],
+        {
+          "structure": "vein.transverse.left",
+          "fraction": 0.76
+        }
+      ],
+      "radius": [
+        1.4,
+        1.7
+      ],
+      "description": "The posterior anastomotic vein of Labbé is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [transverse sinus](#structure-vein.transverse.left). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
+      "fit": "cortical",
+      "aliases": [
+        "Labbe",
+        "Labbé",
+        "Inferior anastomotic vein"
+      ],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.frontal_cortical.left",
+      "name": "Frontal cortical vein left",
+      "group": "superficial",
+      "parent": "vein.superficial",
+      "side": "left",
+      "points": [
+        [
+          -45.7,
+          -3,
+          113.95
+        ],
+        [
+          -38.7,
+          -2,
+          129.95
+        ],
+        [
+          -24.7,
+          -13,
+          146.95
+        ],
+        [
+          -9.7,
+          -27,
+          155.95
+        ],
+        {
+          "structure": "vein.superior_sagittal",
+          "fraction": 0.28
+        }
+      ],
+      "radius": [
+        0.65,
+        1.2
+      ],
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
+      "fit": "cortical",
+      "aliases": [],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.parietal_cortical.left",
+      "name": "Parietal cortical vein left",
+      "group": "superficial",
+      "parent": "vein.superficial",
+      "side": "left",
+      "points": [
+        [
+          -57.7,
+          -118,
+          112.95
+        ],
+        [
+          -46.7,
+          -132,
+          128.95
+        ],
+        [
+          -28.7,
+          -137,
+          139.95
+        ],
+        [
+          -11.7,
+          -133,
+          143.95
+        ],
+        {
+          "structure": "vein.superior_sagittal",
+          "fraction": 0.7
+        }
+      ],
+      "radius": [
+        0.65,
+        1.2
+      ],
+      "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
+      "fit": "cortical",
+      "aliases": [],
+      "page": 69,
+      "shape": "round",
+      "color": "#74bde8"
+    },
+    {
+      "id": "vein.internal_cerebral.left",
+      "name": "Internal cerebral vein left",
+      "group": "deep",
+      "parent": "vein.galen",
+      "side": "left",
+      "points": [
+        [
+          -1.7,
+          -39,
+          104.95
+        ],
+        [
+          -1.7,
+          -54,
+          105.95
+        ],
+        [
+          -2.7,
+          -72,
+          104.95
+        ],
+        [
+          -5.7,
+          -83,
+          100.95
+        ],
+        {
+          "structure": "vein.galen",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1.35,
+        1.7
+      ],
+      "description": "The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen).",
+      "fit": null,
+      "aliases": [
+        "ICV"
+      ],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.basal.left",
+      "name": "Basal vein of Rosenthal left",
+      "group": "deep",
+      "parent": "vein.galen",
+      "side": "left",
+      "points": [
+        [
+          -18.7,
+          -43,
+          80.95
+        ],
+        [
+          -23.7,
+          -53,
+          78.95
+        ],
+        [
+          -25.7,
+          -69,
+          81.95
+        ],
+        [
+          -24.7,
+          -83,
+          86.95
+        ],
+        [
+          -16.7,
+          -91,
+          91.95
+        ],
+        {
+          "structure": "vein.galen",
+          "fraction": 0.12
+        }
+      ],
+      "radius": [
+        1.2,
+        1.65
+      ],
+      "description": "The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.left). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.left).",
+      "fit": null,
+      "aliases": [
+        "BVR",
+        "Basal vein"
+      ],
+      "page": 71,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.thalamostriate.left",
+      "name": "Superior thalamostriate vein left",
+      "group": "deep",
+      "parent": "vein.internal_cerebral.left",
+      "side": "left",
+      "points": [
+        [
+          -12.7,
+          -79,
+          106.95
+        ],
+        [
+          -14.7,
+          -65,
+          108.95
+        ],
+        [
+          -11.7,
+          -51,
+          107.95
+        ],
+        [
+          -6.7,
+          -42,
+          105.95
+        ],
+        {
+          "structure": "vein.internal_cerebral.left",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1,
+        1.2
+      ],
+      "description": "The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 71,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.anterior_septal.left",
+      "name": "Anterior septal vein left",
+      "group": "deep",
+      "parent": "vein.internal_cerebral.left",
+      "side": "left",
+      "points": [
+        [
+          -1.7,
+          -14,
+          105.95
+        ],
+        [
+          -2.7,
+          -22,
+          108.95
+        ],
+        [
+          -2.7,
+          -31,
+          107.95
+        ],
+        {
+          "structure": "vein.internal_cerebral.left",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        0.65,
+        0.95
+      ],
+      "description": "The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.left) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly.",
+      "fit": null,
+      "aliases": [],
+      "page": 70,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.superior_choroidal.left",
+      "name": "Superior choroidal vein left",
+      "group": "deep",
+      "parent": "vein.internal_cerebral.left",
+      "side": "left",
+      "points": [
+        [
+          -6.7,
+          -83,
+          108.95
+        ],
+        [
+          -7.7,
+          -68,
+          110.95
+        ],
+        [
+          -7.7,
+          -52,
+          109.95
+        ],
+        {
+          "structure": "vein.thalamostriate.left",
+          "fraction": 0.96
+        }
+      ],
+      "radius": 0.65,
+      "description": "The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.left). The internal cerebral veins drain the subependymal and choroid venous systems.",
+      "fit": null,
+      "aliases": [],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.anterior_cerebral.left",
+      "name": "Anterior cerebral vein left",
+      "group": "deep",
+      "parent": "vein.basal.left",
+      "side": "left",
+      "points": [
+        [
+          -1.7,
+          -14,
+          91.95
+        ],
+        [
+          -5.7,
+          -23,
+          79.95
+        ],
+        [
+          -9.7,
+          -34,
+          77.95
+        ],
+        {
+          "structure": "vein.basal.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.8,
+      "description": "The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 71,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.deep_middle_cerebral.left",
+      "name": "Deep middle cerebral vein left",
+      "group": "deep",
+      "parent": "vein.basal.left",
+      "side": "left",
+      "points": [
+        [
+          -38.7,
+          -62,
+          94.95
+        ],
+        [
+          -36.7,
+          -48,
+          87.95
+        ],
+        [
+          -27.7,
+          -41,
+          81.95
+        ],
+        {
+          "structure": "vein.basal.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.95,
+      "description": "The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.superior_petrosal_vein.left",
+      "name": "Superior petrosal vein left",
+      "group": "posterior",
+      "parent": "vein.posterior",
+      "side": "left",
+      "points": [
+        [
+          -22.7,
+          -84,
+          57.95
+        ],
+        [
+          -26.7,
+          -80,
+          60.95
+        ],
+        [
+          -30.7,
+          -74,
+          63.95
+        ],
+        {
+          "structure": "vein.superior_petrosal.left",
+          "fraction": 0.55
+        }
+      ],
+      "radius": [
+        1.2,
+        1.65
+      ],
+      "description": "The superior petrosal vein, or petrosal vein, is the largest vein in the posterior cranial fossa. It drains the anterior cerebellum and brainstem into the [superior petrosal sinus](#structure-vein.superior_petrosal.left). It is usually formed by multiple smaller veins converging into one, but sometimes there are two or three. Major contributors include the vein of the cerebellopontine fissure, and the petrosal, posterior mesencephalic, anterior pontomesencephalic, and tentorial groups.",
+      "fit": null,
+      "aliases": [
+        "Petrosal vein",
+        "Vein of Dandy"
+      ],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.lateral_mesencephalic.left",
+      "name": "Lateral mesencephalic vein left",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.basal.left",
+          "fraction": 0.65
+        },
+        [
+          -22.7,
+          -85,
+          76.95
+        ],
+        [
+          -21.7,
+          -86,
+          66.95
+        ],
+        {
+          "structure": "vein.superior_petrosal_vein.left",
+          "fraction": 0.12
+        }
+      ],
+      "radius": 0.85,
+      "description": "The lateral mesencephalic veins connect the [basal vein of Rosenthal](#structure-vein.basal.left) to lateral brainstem and medullary fissure veins. They act as a crucial collateral drainage route, especially when the basal vein is discontinuous, draining posteriorly to infratentorial veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.cerebellopontine_fissure.left",
+      "name": "Vein of the cerebellopontine fissure left",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "points": [
+        [
+          -20.7,
+          -95,
+          43.95
+        ],
+        [
+          -27.7,
+          -94,
+          48.95
+        ],
+        [
+          -28.7,
+          -89,
+          53.95
+        ],
+        {
+          "structure": "vein.superior_petrosal_vein.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 1,
+      "description": "Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.left) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.inferior_vermian.left",
+      "name": "Inferior vermian vein left",
+      "group": "posterior",
+      "parent": "vein.posterior",
+      "side": "left",
+      "points": [
+        [
+          -3.7,
+          -115,
+          42.95
+        ],
+        [
+          -5.7,
+          -126,
+          46.95
+        ],
+        [
+          -6.7,
+          -137,
+          54.95
+        ],
+        {
+          "structure": "vein.confluence",
+          "fraction": 0.45
+        }
+      ],
+      "radius": [
+        0.8,
+        1.1
+      ],
+      "description": "The paired inferior vermian veins lie in the cerebellovermian fissure and drain the inferior vermis and medial suboccipital surface into the [torcular](#structure-vein.confluence) or transverse sinus, directly or via a tentorial sinus.",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.inferior_hemispheric.left",
+      "name": "Inferior hemispheric vein left",
+      "group": "posterior",
+      "parent": "vein.inferior_vermian.left",
+      "side": "left",
+      "points": [
+        [
+          -39.7,
+          -112,
+          42.95
+        ],
+        [
+          -31.7,
+          -127,
+          42.95
+        ],
+        [
+          -17.7,
+          -134,
+          47.95
+        ],
+        {
+          "structure": "vein.inferior_vermian.left",
+          "fraction": 0.56
+        }
+      ],
+      "radius": [
+        0.6,
+        0.85
+      ],
+      "description": "Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.external_jugular.left",
+      "name": "External jugular vein left",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "points": [
+        [
+          -44.7,
+          -57,
+          -7.05
+        ],
+        [
+          -50.7,
+          -63,
+          -26.05
+        ],
+        [
+          -50.7,
+          -64,
+          -51.05
+        ],
+        [
+          -48.7,
+          -55,
+          -78.05
+        ],
+        [
+          -43.7,
+          -42,
+          -107.05
+        ]
+      ],
+      "radius": [
+        2.2,
+        2.7
+      ],
+      "description": "The EJV drains the deep face, scalp, and posterolateral neck. It originates from the convergence of the retromandibular, posterior auricular, and superficial temporal veins in front of the angle of the mandible. The vein runs caudally on top of the sternocleidomastoid to join the subclavian vein. Like the IJV, it has a valve just prior to its termination.",
+      "fit": null,
+      "aliases": [
+        "EJV"
+      ],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.retromandibular.left",
+      "name": "Retromandibular vein left",
+      "group": "extracranial",
+      "parent": "vein.external_jugular.left",
+      "side": "left",
+      "points": [
+        [
+          -44.7,
+          -40,
+          31.95
+        ],
+        [
+          -47.7,
+          -42,
+          17.95
+        ],
+        [
+          -46.7,
+          -46,
+          2.95
+        ],
+        {
+          "structure": "vein.external_jugular.left",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1.8,
+        2.2
+      ],
+      "description": "The maxillary vein converges with the [superficial temporal vein](#structure-vein.superficial_temporal.left) to form the retromandibular vein. It contributes to drainage of the deep face and scalp into the [external jugular vein](#structure-vein.external_jugular.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.maxillary.left",
+      "name": "Maxillary vein left",
+      "group": "extracranial",
+      "parent": "vein.retromandibular.left",
+      "side": "left",
+      "points": [
+        [
+          -28.7,
+          -33,
+          34.95
+        ],
+        [
+          -36.7,
+          -34,
+          31.95
+        ],
+        {
+          "structure": "vein.retromandibular.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.65,
+      "description": "The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) becomes the maxillary vein, which later converges with the [superficial temporal vein](#structure-vein.superficial_temporal.left) to form the [retromandibular vein](#structure-vein.retromandibular.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.pterygoid_plexus.left",
+      "name": "Pterygoid venous plexus left",
+      "group": "extracranial",
+      "parent": "vein.maxillary.left",
+      "side": "left",
+      "points": [
+        [
+          -22.7,
+          -27,
+          42.95
+        ],
+        [
+          -26.7,
+          -34,
+          41.95
+        ],
+        [
+          -28.7,
+          -38,
+          37.95
+        ],
+        {
+          "structure": "vein.maxillary.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.15,
+      "description": "The pterygoid plexus is a large venous network located between the temporalis and lateral pterygoid muscles. It drains into the [maxillary vein](#structure-vein.maxillary.left) and connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins. The plexus receives numerous tributaries, including the sphenopalatine, middle meningeal, deep temporal, pterygoid, masseteric, buccinator, alveolar, and palatine veins. It also receives blood from the [inferior ophthalmic vein](#structure-vein.inferior_ophthalmic.left), [deep facial vein](#structure-vein.deep_facial.left), and infraorbital vein.",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd",
+      "additionalPaths": [
+        [
+          {
+            "structure": "vein.pterygoid_plexus.left",
+            "fraction": 0.08
+          },
+          [
+            -30.7,
+            -24,
+            44
+          ],
+          [
+            -36.7,
+            -29,
+            39
+          ],
+          {
+            "structure": "vein.pterygoid_plexus.left",
+            "fraction": 0.95
+          }
+        ],
+        [
+          {
+            "structure": "vein.pterygoid_plexus.left",
+            "fraction": 0.3
+          },
+          [
+            -27.7,
+            -37,
+            33.95
+          ],
+          [
+            -32.7,
+            -39,
+            32.95
+          ],
+          {
+            "structure": "vein.pterygoid_plexus.left",
+            "fraction": 0.96
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vein.superficial_temporal.left",
+      "name": "Superficial temporal vein left",
+      "group": "extracranial",
+      "parent": "vein.retromandibular.left",
+      "side": "left",
+      "points": [
+        [
+          -63.7,
+          -39,
+          120.95
+        ],
+        [
+          -67.7,
+          -32,
+          102.95
+        ],
+        [
+          -63.7,
+          -27,
+          81.95
+        ],
+        [
+          -59.7,
+          -27,
+          58.95
+        ],
+        [
+          -52.7,
+          -31,
+          42.95
+        ],
+        {
+          "structure": "vein.retromandibular.left",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1.1,
+        1.65
+      ],
+      "description": "The superficial temporal vein drains the scalp and converges with the [maxillary vein](#structure-vein.maxillary.left) to form the [retromandibular vein](#structure-vein.retromandibular.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.posterior_auricular.left",
+      "name": "Posterior auricular vein left",
+      "group": "extracranial",
+      "parent": "vein.external_jugular.left",
+      "side": "left",
+      "points": [
+        [
+          -68.7,
+          -74,
+          69.95
+        ],
+        [
+          -67.7,
+          -73,
+          47.95
+        ],
+        [
+          -58.7,
+          -68,
+          23.95
+        ],
+        {
+          "structure": "vein.external_jugular.left",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        1,
+        1.5
+      ],
+      "description": "The posterior auricular vein contributes to drainage of the scalp and posterolateral neck into the [external jugular vein](#structure-vein.external_jugular.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.facial.left",
+      "name": "Facial vein left",
+      "group": "extracranial",
+      "parent": "vein.internal_jugular.left",
+      "side": "left",
+      "points": [
+        [
+          -13.7,
+          25,
+          54.95
+        ],
+        [
+          -21.7,
+          30,
+          40.95
+        ],
+        [
+          -29.7,
+          22,
+          21.95
+        ],
+        [
+          -38.7,
+          9,
+          4.95
+        ],
+        [
+          -41.7,
+          -9,
+          -12.05
+        ],
+        [
+          -41.7,
+          -23,
+          -26.05
+        ],
+        [
+          -34.7,
+          -36,
+          -37.05
+        ],
+        {
+          "structure": "vein.internal_jugular.left",
+          "fraction": 0.55
+        }
+      ],
+      "radius": [
+        1.3,
+        2.2
+      ],
+      "description": "The extracranial drainage of the head and neck mirrors the arteries. The supratrochlear and supraorbital veins drain to the facial vein, which is a tributary of the [internal jugular vein](#structure-vein.internal_jugular.left). The [deep facial vein](#structure-vein.deep_facial.left) connects with the pterygoid plexus.",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.angular.left",
+      "name": "Angular vein left",
+      "group": "extracranial",
+      "parent": "vein.facial.left",
+      "side": "left",
+      "points": [
+        [
+          -8.7,
+          21,
+          74.95
+        ],
+        [
+          -10.7,
+          26,
+          66.95
+        ],
+        {
+          "structure": "vein.facial.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.05,
+      "description": "",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.deep_facial.left",
+      "name": "Deep facial vein left",
+      "group": "extracranial",
+      "parent": "vein.facial.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.facial.left",
+          "fraction": 0.24
+        },
+        [
+          -36.7,
+          7,
+          19.95
+        ],
+        [
+          -36.7,
+          0,
+          20.95
+        ],
+        [
+          -36.7,
+          -9,
+          25.95
+        ],
+        [
+          -33.7,
+          -20,
+          30.95
+        ],
+        {
+          "structure": "vein.pterygoid_plexus.left",
+          "fraction": 0.65
+        }
+      ],
+      "radius": 1,
+      "description": "The deep facial vein connects the [facial vein](#structure-vein.facial.left) with the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).",
+      "fit": null,
+      "aliases": [],
+      "page": 62,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.superior_ophthalmic.left",
+      "name": "Superior ophthalmic vein left",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.angular.left",
+          "fraction": 0.35
+        },
+        [
+          -13.7,
+          14,
+          70
+        ],
+        [
+          -23.7,
+          2,
+          72
+        ],
+        [
+          -25.7,
+          -12,
+          72
+        ],
+        [
+          -21.7,
+          -20.0,
+          70.0
+        ],
+        [
+          -21.19371,
+          -20.5635,
+          70.0
+        ],
+        [
+          -20.80446,
+          -21.03201,
+          70.0
+        ],
+        [
+          -20.45491,
+          -21.51716,
+          70.0
+        ],
+        [
+          -20.17383,
+          -22.00784,
+          69.99998
+        ],
+        [
+          -19.96934,
+          -22.5031,
+          69.99988
+        ],
+        [
+          -19.83704,
+          -23.00106,
+          69.99948
+        ],
+        [
+          -19.76179,
+          -23.50031,
+          69.99809
+        ],
+        [
+          -19.72448,
+          -24.00008,
+          69.99392
+        ],
+        [
+          -19.70846,
+          -24.50002,
+          69.98329
+        ],
+        [
+          -19.70254,
+          -25.0,
+          69.96004
+        ],
+        [
+          -19.70065,
+          -25.5,
+          69.91605
+        ],
+        [
+          -19.70012,
+          -26.0,
+          69.84309
+        ],
+        [
+          -19.69989,
+          -26.5,
+          69.73507
+        ],
+        [
+          -19.69937,
+          -27.0,
+          69.58917
+        ],
+        [
+          -19.69761,
+          -27.5,
+          69.40552
+        ],
+        [
+          -19.69218,
+          -28.0,
+          69.18701
+        ],
+        [
+          -19.67799,
+          -28.49998,
+          68.93952
+        ],
+        [
+          -19.64638,
+          -28.99992,
+          68.67174
+        ],
+        [
+          -19.58645,
+          -29.49969,
+          68.39347
+        ],
+        [
+          -19.48962,
+          -29.99894,
+          68.11433
+        ],
+        [
+          -19.35628,
+          -30.4969,
+          67.84477
+        ],
+        [
+          -19.19963,
+          -30.99216,
+          67.59776
+        ],
+        [
+          -19.04213,
+          -31.48284,
+          67.38751
+        ],
+        [
+          -18.90505,
+          -31.96799,
+          67.22345
+        ],
+        [
+          -18.79942,
+          -32.4365,
+          67.10573
+        ],
+        [
+          -18.7,
+          -33.0,
+          67.0
+        ],
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.9
+        }
+      ],
+      "radius": 0.85,
+      "description": "The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.left), an important bidirectional confluence of the intracranial and extracranial venous systems.",
+      "fit": null,
+      "aliases": [
+        "SOV"
+      ],
+      "page": 68,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.inferior_ophthalmic.left",
+      "name": "Inferior ophthalmic vein left",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "points": [
+        [
+          -16.7,
+          12,
+          47.95
+        ],
+        [
+          -26.7,
+          0,
+          46.95
+        ],
+        [
+          -28.7,
+          -10,
+          44.95
+        ],
+        [
+          -24.7,
+          -22,
+          41.95
+        ],
+        {
+          "structure": "vein.pterygoid_plexus.left",
+          "fraction": 0
+        }
+      ],
+      "radius": [
+        0.8,
+        1
+      ],
+      "description": "The inferior ophthalmic vein contributes to drainage into the [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). The ophthalmic veins also connect with the [cavernous sinus](#structure-vein.cavernous.left).",
+      "fit": null,
+      "aliases": [
+        "IOV"
+      ],
+      "page": 62,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.ovale_emissary.left",
+      "name": "Emissary vein of foramen ovale left",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.2
+        },
+        [
+          -19.7,
+          -46,
+          53.95
+        ],
+        [
+          -22.7,
+          -46,
+          50.95
+        ],
+        [
+          -22.7,
+          -46,
+          47.95
+        ],
+        [
+          -26.7,
+          -40,
+          42.95
+        ],
+        {
+          "structure": "vein.pterygoid_plexus.left",
+          "fraction": 0.55
+        }
+      ],
+      "radius": 0.8,
+      "description": "Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 69,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.vertebral.left",
+      "name": "Vertebral vein left",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "points": [
+        [
+          -20.7,
+          -86,
+          0.95
+        ],
+        [
+          -21.7,
+          -87,
+          -24.05
+        ],
+        [
+          -21.7,
+          -87,
+          -51.05
+        ],
+        [
+          -22.7,
+          -85,
+          -79.05
+        ],
+        [
+          -25.7,
+          -75,
+          -96.05
+        ],
+        [
+          -27.7,
+          -58,
+          -107.05
+        ]
+      ],
+      "radius": [
+        1.5,
+        2.1
+      ],
+      "description": "The vertebral artery venous plexus arises at C2 and receives blood from the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and the anterior, lateral, and posterior condylar veins. It continues as a solitary vertebral vein in the vertebral canal surrounding the vertebral artery, leaving at C6 via the foramen transversarium to join the brachiocephalic vein.",
+      "fit": null,
+      "aliases": [],
+      "page": 63,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.suboccipital_plexus.left",
+      "name": "Suboccipital venous plexus left",
+      "group": "extracranial",
+      "parent": "vein.vertebral.left",
+      "side": "left",
+      "points": [
+        [
+          -22.7,
+          -110,
+          15.95
+        ],
+        [
+          -27.7,
+          -108,
+          9.95
+        ],
+        [
+          -27.7,
+          -98,
+          4.95
+        ],
+        {
+          "structure": "vein.vertebral.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 1.15,
+      "description": "The suboccipital venous plexus contributes to the vertebral venous system through the [vertebral artery venous plexus](#structure-vein.vertebral.left) and [deep cervical vein](#structure-vein.deep_cervical.left). It also communicates with condylar veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 63,
+      "shape": "round",
+      "color": "#598fcd",
+      "additionalPaths": [
+        [
+          {
+            "structure": "vein.suboccipital_plexus.left",
+            "fraction": 0.03
+          },
+          [
+            -16.7,
+            -113,
+            12
+          ],
+          [
+            -15.7,
+            -101,
+            6
+          ],
+          {
+            "structure": "vein.suboccipital_plexus.left",
+            "fraction": 0.98
+          }
+        ],
+        [
+          {
+            "structure": "vein.suboccipital_plexus.left",
+            "fraction": 0.25
+          },
+          [
+            -30.7,
+            -116,
+            7
+          ],
+          [
+            -31.7,
+            -103,
+            2
+          ],
+          {
+            "structure": "vein.suboccipital_plexus.left",
+            "fraction": 0.9
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vein.deep_cervical.left",
+      "name": "Deep cervical vein left",
+      "group": "extracranial",
+      "parent": "vein.extracranial",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.suboccipital_plexus.left",
+          "fraction": 0.25
+        },
+        [
+          -27.7,
+          -112,
+          -9.05
+        ],
+        [
+          -25.7,
+          -108,
+          -43.05
+        ],
+        [
+          -27.7,
+          -93,
+          -78.05
+        ],
+        [
+          -28.7,
+          -71,
+          -103.05
+        ]
+      ],
+      "radius": 1.5,
+      "description": "The deep cervical vein receives tributaries of the [suboccipital venous plexus](#structure-vein.suboccipital_plexus.left). It follows the deep cervical artery to end in the IJV or brachiocephalic vein.",
+      "fit": null,
+      "aliases": [],
+      "page": 63,
+      "shape": "round",
+      "color": "#598fcd"
+    },
+    {
+      "id": "vein.anterior_condylar.left",
+      "name": "Anterior condylar vein left",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "left",
+      "points": [
+        [
+          -9.7,
+          -75,
+          33.95
+        ],
+        [
+          -15.7,
+          -71,
+          30.95
+        ],
+        [
+          -19.7,
+          -69,
+          28.95
+        ],
+        {
+          "structure": "vein.internal_jugular.left",
+          "fraction": 0.07
+        }
+      ],
+      "radius": 1,
+      "description": "The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.left) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus.",
+      "fit": null,
+      "aliases": [
+        "Vein of hypoglossal canal"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.lateral_condylar.left",
+      "name": "Lateral condylar vein left",
+      "group": "skullbase",
+      "parent": "vein.anterior_condylar.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.anterior_condylar.left",
+          "fraction": 0.82
+        },
+        [
+          -27.7,
+          -73,
+          23.95
+        ],
+        [
+          -30.7,
+          -87,
+          16.95
+        ],
+        {
+          "structure": "vein.suboccipital_plexus.left",
+          "fraction": 0.58
+        }
+      ],
+      "radius": 0.9,
+      "description": "The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and vertebral venous system.",
+      "fit": null,
+      "aliases": [],
+      "page": 67,
+      "shape": "round",
+      "color": "#839acb"
+    },
+    {
+      "id": "vein.anterior_intercavernous",
+      "name": "Anterior intercavernous sinus",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "midline",
+      "points": [
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.92
+        },
+        [
+          6,
+          -32,
+          67
+        ],
+        [
+          0.65,
+          -31,
+          67
+        ],
+        [
+          -5,
+          -32,
+          67
+        ],
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.92
+        }
+      ],
+      "radius": 1.1,
+      "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.",
+      "fit": null,
+      "aliases": [],
+      "page": 68,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.posterior_intercavernous",
+      "name": "Posterior intercavernous sinus",
+      "group": "dural",
+      "parent": "vein.dural",
+      "side": "midline",
+      "points": [
+        {
+          "structure": "vein.cavernous.right",
+          "fraction": 0.4
+        },
+        [
+          6,
+          -43,
+          67
+        ],
+        [
+          0.65,
+          -43,
+          67
+        ],
+        [
+          -5,
+          -43,
+          67
+        ],
+        {
+          "structure": "vein.cavernous.left",
+          "fraction": 0.4
+        }
+      ],
+      "radius": 0.95,
+      "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.",
+      "fit": null,
+      "aliases": [],
+      "page": 68,
+      "shape": "round",
+      "color": "#6f95e8"
+    },
+    {
+      "id": "vein.basilar_plexus",
+      "name": "Basilar venous plexus",
+      "group": "skullbase",
+      "parent": "vein.skullbase",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -50,
+          61
+        ],
+        [
+          0.65,
+          -57,
+          51
+        ],
+        [
+          0.65,
+          -64,
+          41
+        ],
+        {
+          "structure": "vein.marginal",
+          "fraction": 0.5
+        }
+      ],
+      "radius": 1,
+      "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below.",
+      "fit": null,
+      "aliases": [
+        "Clival plexus",
+        "Basilar plexus"
+      ],
+      "page": 67,
+      "shape": "round",
+      "color": "#839acb",
+      "additionalPaths": [
+        [
+          {
+            "structure": "vein.cavernous.right",
+            "fraction": 0.12
+          },
+          [
+            7,
+            -57,
+            51
+          ],
+          [
+            8,
+            -65,
+            40
+          ],
+          {
+            "structure": "vein.anterior_condylar.right",
+            "fraction": 0
+          }
+        ],
+        [
+          {
+            "structure": "vein.cavernous.left",
+            "fraction": 0.12
+          },
+          [
+            -5.7,
+            -57,
+            51
+          ],
+          [
+            -6.7,
+            -65,
+            40
+          ],
+          {
+            "structure": "vein.anterior_condylar.left",
+            "fraction": 0
+          }
+        ],
+        [
+          [
+            7,
+            -57,
+            51
+          ],
+          [
+            0.65,
+            -57,
+            51
+          ],
+          [
+            -5.7,
+            -57,
+            51
+          ]
+        ],
+        [
+          [
+            8,
+            -65,
+            40
+          ],
+          [
+            0.65,
+            -64,
+            41
+          ],
+          [
+            -6.7,
+            -65,
+            40
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "vein.anterior_communicating",
+      "name": "Anterior communicating vein",
+      "group": "deep",
+      "parent": "vein.deep",
+      "side": "midline",
+      "points": [
+        {
+          "structure": "vein.anterior_cerebral.right",
+          "fraction": 0.72
+        },
+        [
+          0.65,
+          -31,
+          80
+        ],
+        {
+          "structure": "vein.anterior_cerebral.left",
+          "fraction": 0.72
+        }
+      ],
+      "radius": 0.65,
+      "description": "The anterior cerebral veins are connected by the anterior communicating vein in half the population. This contributes to the anterior venous circle in the suprasellar cistern.",
+      "fit": null,
+      "aliases": [],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.posterior_communicating",
+      "name": "Posterior communicating vein",
+      "group": "deep",
+      "parent": "vein.deep",
+      "side": "midline",
+      "points": [
+        {
+          "structure": "vein.basal.right",
+          "fraction": 0.3
+        },
+        [
+          12,
+          -60,
+          78
+        ],
+        [
+          0.65,
+          -62,
+          78
+        ],
+        [
+          -10.7,
+          -60,
+          78
+        ],
+        {
+          "structure": "vein.basal.left",
+          "fraction": 0.3
+        }
+      ],
+      "radius": 0.75,
+      "description": "The posterior communicating vein is a constant vessel in the interpeduncular fossa. This, in addition to hypothalamic and ventral mesencephalic veins, contributes to the posterior aspect of the venous circle.",
+      "fit": null,
+      "aliases": [],
+      "page": 72,
+      "shape": "round",
+      "color": "#939de8"
+    },
+    {
+      "id": "vein.precentral_cerebellar",
+      "name": "Precentral cerebellar vein",
+      "group": "posterior",
+      "parent": "vein.posterior",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -100,
+          72
+        ],
+        [
+          0.65,
+          -97,
+          79
+        ],
+        [
+          0.65,
+          -95,
+          87
+        ],
+        {
+          "structure": "vein.galen",
+          "fraction": 0.25
+        }
+      ],
+      "radius": 1.1,
+      "description": "The precentral cerebellar vein, an unpaired vein, ascends in the quadrigeminal cistern behind the tectal plate to drain into the [vein of Galen](#structure-vein.galen). It can merge with the [superior vermian vein](#structure-vein.superior_vermian) to form the superior cerebellar vein or drain directly into the vein of Galen independently.",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.superior_vermian",
+      "name": "Superior vermian vein",
+      "group": "posterior",
+      "parent": "vein.precentral_cerebellar",
+      "side": "midline",
+      "points": [
+        [
+          0.65,
+          -133,
+          66
+        ],
+        [
+          0.65,
+          -123,
+          76
+        ],
+        [
+          0.65,
+          -110,
+          80
+        ],
+        {
+          "structure": "vein.precentral_cerebellar",
+          "fraction": 0.78
+        }
+      ],
+      "radius": 1,
+      "description": "The superior vermian veins drain the superior vermis and the medial parts of the superior cerebellar hemispheres. The anterior veins drain into the [vein of Galen](#structure-vein.galen), and the posterior veins drain into the [confluence of sinuses](#structure-vein.confluence).",
+      "fit": null,
+      "aliases": [],
+      "page": 76,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.anterior_pontomesencephalic",
+      "name": "Median anterior pontomesencephalic vein",
+      "group": "posterior",
+      "parent": "vein.posterior",
+      "side": "midline",
+      "points": [
+        [
+          2.8,
+          -66,
+          67
+        ],
+        [
+          2.5,
+          -61,
+          71
+        ],
+        {
+          "structure": "vein.posterior_communicating",
+          "fraction": 0.5
+        }
+      ],
+      "radius": 0.75,
+      "description": "The midline brainstem veins form a continuous anastomotic venous channel comprising the median anterior pontomesencephalic, median anterior pontine, and median anterior medullary veins. Blood may flow cranially to the posterior communicating vein or peduncular veins, or caudally into the spinal veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.anterior_pontine",
+      "name": "Median anterior pontine vein",
+      "group": "posterior",
+      "parent": "vein.anterior_pontomesencephalic",
+      "side": "midline",
+      "points": [
+        [
+          3,
+          -81,
+          45
+        ],
+        [
+          3,
+          -76,
+          52
+        ],
+        [
+          3,
+          -71,
+          59
+        ],
+        {
+          "structure": "vein.anterior_pontomesencephalic",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.8,
+      "description": "The median anterior pontine vein forms part of the continuous midline anastomotic channel between the [median anterior pontomesencephalic vein](#structure-vein.anterior_pontomesencephalic) and [median anterior medullary vein](#structure-vein.anterior_medullary).",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.anterior_medullary",
+      "name": "Median anterior medullary vein",
+      "group": "posterior",
+      "parent": "vein.anterior_pontine",
+      "side": "midline",
+      "points": [
+        [
+          2.8,
+          -90,
+          27
+        ],
+        [
+          3,
+          -87,
+          35
+        ],
+        {
+          "structure": "vein.anterior_pontine",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.65,
+      "description": "The median anterior medullary vein continues inferiorly as the [anterior spinal vein](#structure-vein.anterior_spinal). It forms part of the continuous midline venous channel on the anterior brainstem.",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.anterior_spinal",
+      "name": "Anterior spinal vein",
+      "group": "posterior",
+      "parent": "vein.anterior_medullary",
+      "side": "midline",
+      "points": [
+        [
+          2.8,
+          -89,
+          -24
+        ],
+        [
+          2.8,
+          -89,
+          0
+        ],
+        {
+          "structure": "vein.anterior_medullary",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.65,
+      "description": "The anterior spinal vein is the inferior continuation of the [median anterior medullary vein](#structure-vein.anterior_medullary). Blood may flow cranially through the brainstem venous channel or caudally into the spinal veins.",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.transverse_pontine.right",
+      "name": "Transverse pontine vein right",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.anterior_pontine",
+          "fraction": 0.55
+        },
+        [
+          11,
+          -72,
+          56
+        ],
+        [
+          19,
+          -77,
+          57
+        ],
+        {
+          "structure": "vein.superior_petrosal_vein.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.7,
+      "description": "",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.pontomedullary.right",
+      "name": "Vein of the pontomedullary sulcus right",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.right",
+      "side": "right",
+      "points": [
+        {
+          "structure": "vein.anterior_medullary",
+          "fraction": 0.8
+        },
+        [
+          12,
+          -83,
+          41
+        ],
+        [
+          22,
+          -91,
+          43
+        ],
+        {
+          "structure": "vein.cerebellopontine_fissure.right",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.7,
+      "description": "",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.transverse_pontine.left",
+      "name": "Transverse pontine vein left",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.anterior_pontine",
+          "fraction": 0.55
+        },
+        [
+          -9.7,
+          -72,
+          56
+        ],
+        [
+          -17.7,
+          -77,
+          57
+        ],
+        {
+          "structure": "vein.superior_petrosal_vein.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.7,
+      "description": "",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    },
+    {
+      "id": "vein.pontomedullary.left",
+      "name": "Vein of the pontomedullary sulcus left",
+      "group": "posterior",
+      "parent": "vein.superior_petrosal_vein.left",
+      "side": "left",
+      "points": [
+        {
+          "structure": "vein.anterior_medullary",
+          "fraction": 0.8
+        },
+        [
+          -10.7,
+          -83,
+          41
+        ],
+        [
+          -20.7,
+          -91,
+          43
+        ],
+        {
+          "structure": "vein.cerebellopontine_fissure.left",
+          "fraction": 0
+        }
+      ],
+      "radius": 0.7,
+      "description": "",
+      "fit": null,
+      "aliases": [],
+      "page": 74,
+      "shape": "round",
+      "color": "#76c7d3"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "vein.sigmoid.right",
+      "to": "vein.internal_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.transverse.right",
+      "to": "vein.sigmoid.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal.right",
+      "to": "vein.sigmoid.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_petrosal.right",
+      "to": "vein.internal_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.sphenoparietal.right",
+      "to": "vein.cavernous.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.right",
+      "to": "vein.sphenoparietal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.labbe.right",
+      "to": "vein.transverse.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.thalamostriate.right",
+      "to": "vein.internal_cerebral.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_septal.right",
+      "to": "vein.internal_cerebral.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_choroidal.right",
+      "to": "vein.thalamostriate.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_cerebral.right",
+      "to": "vein.basal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.deep_middle_cerebral.right",
+      "to": "vein.basal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal_vein.right",
+      "to": "vein.superior_petrosal.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.cerebellopontine_fissure.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_hemispheric.right",
+      "to": "vein.inferior_vermian.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.retromandibular.right",
+      "to": "vein.external_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.maxillary.right",
+      "to": "vein.retromandibular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.pterygoid_plexus.right",
+      "to": "vein.maxillary.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_temporal.right",
+      "to": "vein.retromandibular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.posterior_auricular.right",
+      "to": "vein.external_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.angular.right",
+      "to": "vein.facial.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.facial.right",
+      "to": "vein.internal_jugular.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_ophthalmic.right",
+      "to": "vein.cavernous.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_ophthalmic.right",
+      "to": "vein.pterygoid_plexus.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.suboccipital_plexus.right",
+      "to": "vein.vertebral.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.right",
+      "to": "vein.trolard.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.right",
+      "to": "vein.labbe.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.right",
+      "to": "vein.superior_petrosal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.right",
+      "to": "vein.inferior_petrosal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.right",
+      "to": "vein.facial.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.right",
+      "to": "vein.pterygoid_plexus.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.right",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.right",
+      "to": "vein.pterygoid_plexus.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superior_ophthalmic.right",
+      "to": "vein.angular.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.right",
+      "to": "vein.basal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_condylar.right",
+      "to": "vein.internal_jugular.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.right",
+      "to": "vein.anterior_condylar.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.right",
+      "to": "vein.suboccipital_plexus.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.suboccipital_plexus.right",
+      "to": "vein.deep_cervical.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.internal_cerebral.right",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.basal.right",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.trolard.right",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.frontal_cortical.right",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.parietal_cortical.right",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_vermian.right",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.confluence",
+      "to": "vein.transverse.right",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_condylar.right",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.sigmoid.left",
+      "to": "vein.internal_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.transverse.left",
+      "to": "vein.sigmoid.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal.left",
+      "to": "vein.sigmoid.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_petrosal.left",
+      "to": "vein.internal_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.sphenoparietal.left",
+      "to": "vein.cavernous.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.left",
+      "to": "vein.sphenoparietal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.labbe.left",
+      "to": "vein.transverse.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.thalamostriate.left",
+      "to": "vein.internal_cerebral.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_septal.left",
+      "to": "vein.internal_cerebral.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_choroidal.left",
+      "to": "vein.thalamostriate.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_cerebral.left",
+      "to": "vein.basal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.deep_middle_cerebral.left",
+      "to": "vein.basal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_petrosal_vein.left",
+      "to": "vein.superior_petrosal.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.cerebellopontine_fissure.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_hemispheric.left",
+      "to": "vein.inferior_vermian.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.retromandibular.left",
+      "to": "vein.external_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.maxillary.left",
+      "to": "vein.retromandibular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.pterygoid_plexus.left",
+      "to": "vein.maxillary.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_temporal.left",
+      "to": "vein.retromandibular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.posterior_auricular.left",
+      "to": "vein.external_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.angular.left",
+      "to": "vein.facial.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.facial.left",
+      "to": "vein.internal_jugular.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_ophthalmic.left",
+      "to": "vein.cavernous.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_ophthalmic.left",
+      "to": "vein.pterygoid_plexus.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.suboccipital_plexus.left",
+      "to": "vein.vertebral.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.left",
+      "to": "vein.trolard.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superficial_middle_cerebral.left",
+      "to": "vein.labbe.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.left",
+      "to": "vein.superior_petrosal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.cavernous.left",
+      "to": "vein.inferior_petrosal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.left",
+      "to": "vein.facial.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.deep_facial.left",
+      "to": "vein.pterygoid_plexus.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.left",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.ovale_emissary.left",
+      "to": "vein.pterygoid_plexus.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superior_ophthalmic.left",
+      "to": "vein.angular.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.left",
+      "to": "vein.basal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_mesencephalic.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_condylar.left",
+      "to": "vein.internal_jugular.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.left",
+      "to": "vein.anterior_condylar.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.lateral_condylar.left",
+      "to": "vein.suboccipital_plexus.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.suboccipital_plexus.left",
+      "to": "vein.deep_cervical.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.internal_cerebral.left",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.basal.left",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.trolard.left",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.frontal_cortical.left",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.parietal_cortical.left",
+      "to": "vein.superior_sagittal",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_vermian.left",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.confluence",
+      "to": "vein.transverse.left",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.anterior_condylar.left",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.right",
+      "to": "vein.anterior_pontine",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.right",
+      "to": "vein.anterior_medullary",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.right",
+      "to": "vein.superior_petrosal_vein.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_intercavernous",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_intercavernous",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_communicating",
+      "to": "vein.anterior_cerebral.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_communicating",
+      "to": "vein.basal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.cavernous.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.left",
+      "to": "vein.anterior_pontine",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.transverse_pontine.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.left",
+      "to": "vein.anterior_medullary",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.pontomedullary.left",
+      "to": "vein.superior_petrosal_vein.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_intercavernous",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_intercavernous",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_communicating",
+      "to": "vein.anterior_cerebral.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.posterior_communicating",
+      "to": "vein.basal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.cavernous.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.superior_sagittal",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.straight",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.occipital_sinus",
+      "to": "vein.confluence",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.inferior_sagittal",
+      "to": "vein.straight",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.galen",
+      "to": "vein.straight",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.precentral_cerebellar",
+      "to": "vein.galen",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.superior_vermian",
+      "to": "vein.precentral_cerebellar",
+      "type": "drains_to"
+    },
+    {
+      "from": "vein.occipital_sinus",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.marginal",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_pontomesencephalic",
+      "to": "vein.posterior_communicating",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_pontine",
+      "to": "vein.anterior_pontomesencephalic",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_medullary",
+      "to": "vein.anterior_pontine",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.anterior_spinal",
+      "to": "vein.anterior_medullary",
+      "type": "communicates_with"
+    }
+  ]
+}
