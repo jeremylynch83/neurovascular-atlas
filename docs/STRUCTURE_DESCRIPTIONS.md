@@ -7287,7 +7287,7 @@ The PSAs principally supply the posterior third of the cord, including the dorsa
 
 **Source:** `nv(2).pdf`, PDF pages 74–75; printed pages 80–81.
 
-**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.posterior.va_muscular_c1_right"></a>
 
@@ -7343,7 +7343,7 @@ Posterior meningeal artery: the posterior meningeal artery supplies the tentoriu
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V4 right](#structure-artery.posterior.vertebral_right.segment.v4)
+**Parent:** [Vertebral V3 right](#structure-artery.posterior.vertebral_right.segment.v3)
 
 <a id="structure-artery.amendment.va_anterior_meningeal.right"></a>
 
@@ -8199,7 +8199,7 @@ The PSAs principally supply the posterior third of the cord, including the dorsa
 
 **Source:** `nv(2).pdf`, PDF pages 74–75; printed pages 80–81.
 
-**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.posterior.va_muscular_c1_left"></a>
 
@@ -8255,7 +8255,7 @@ Posterior meningeal artery: the posterior meningeal artery supplies the tentoriu
 
 **Source:** `nv(2).pdf`, PDF page 41; printed page 47.
 
-**Parent:** [Vertebral V4 left](#structure-artery.posterior.vertebral_left.segment.v4)
+**Parent:** [Vertebral V3 left](#structure-artery.posterior.vertebral_left.segment.v3)
 
 <a id="structure-artery.amendment.va_anterior_meningeal.left"></a>
 

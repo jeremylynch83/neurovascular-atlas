@@ -1,0 +1,53 @@
+{
+  "release": "0.8.12",
+  "circulationMeshes": 599,
+  "unchangedCirculationMeshesExactAllAttributeBytes": 591,
+  "circulationTrianglesBeforeAndAfter": 5765374,
+  "totalModelTriangles": 6442421,
+  "noAddedTriangles": true,
+  "allCorrectedVaTrianglesAssignedOnce": true,
+  "segmentRepartitionPreservesAllCorrectedSurfaceAttributes": true,
+  "weldedAsaOstiaAndDistalSeams": true,
+  "otherVaBranchSeamsFixed": true,
+  "surfaceChecks": [
+    {
+      "node": "Anterior spinal root right",
+      "allFacesAgreeWithVertexNormals": true,
+      "consistentManifoldEdgeWinding": true,
+      "minimumDoubleAreaMm2": 1.695710238891479e-11,
+      "connectivityRetained": true
+    },
+    {
+      "node": "Vertebral V4 right",
+      "allFacesAgreeWithVertexNormals": true,
+      "consistentManifoldEdgeWinding": true,
+      "minimumDoubleAreaMm2": 1.3108356667024944e-07,
+      "connectivityRetained": false
+    },
+    {
+      "node": "Anterior spinal root left",
+      "allFacesAgreeWithVertexNormals": true,
+      "consistentManifoldEdgeWinding": true,
+      "minimumDoubleAreaMm2": 7.645261079274095e-07,
+      "connectivityRetained": true
+    },
+    {
+      "node": "Vertebral V4 left",
+      "allFacesAgreeWithVertexNormals": true,
+      "consistentManifoldEdgeWinding": true,
+      "minimumDoubleAreaMm2": 4.518990392268555e-07,
+      "connectivityRetained": false
+    }
+  ],
+  "bonesConnectionsIcaAcaAndLabialSurfacesByteIdentical": true,
+  "guiAndEngineSourceByteIdentical": true,
+  "stableStructureIdsNamesDescriptionsAndLinks": true,
+  "changedBranchParents": [
+    "artery.posterior.posterior_spinal_right",
+    "artery.posterior.posterior_meningeal_va_right",
+    "artery.posterior.posterior_spinal_left",
+    "artery.posterior.posterior_meningeal_va_left"
+  ],
+  "structureCount": 1012,
+  "describedStructures": 735
+}

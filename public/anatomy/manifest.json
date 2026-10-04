@@ -1,13 +1,13 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.8.11",
+  "release": "0.8.12",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
-    "models/complete-circulation.glb": "cef63b1598a7fbf608c0",
+    "models/complete-circulation.glb": "5911ecc90928b8f61ef8",
     "models/complete-anastomoses.glb": "72205cfd05318f6af9b8"
   },
   "structures": [
@@ -9736,7 +9736,7 @@
           "ref.parraga2011"
         ]
       },
-      "notes": "Truncated V1; estimated C6-C2 foraminal V2 course; short V3 outer atlas loop; medial/ascending V4 course. V2/V3 and V3/V4 boundaries corrected to the supplied annotated diagram. No registered cervical vertebrae or dura; vessel course unchanged.",
+      "notes": "Truncated V1; estimated foraminal V2 course; V3 upper cervical and atlas loop; V4 ascending cranial course. V2/V3 and V3/V4 boundaries corrected to the supplied annotated diagram. Boundary levels follow the user annotation. Retained VA centreline and calibre; local ASA-facing wall resampled with its relocated welded root. Dura is not registered.",
       "color": "#eda97d",
       "calibreProvenance": {
         "units": "mm",
@@ -9775,7 +9775,7 @@
           "ref.parraga2011"
         ]
       },
-      "notes": "Truncated V1; estimated C6-C2 foraminal V2 course; short V3 outer atlas loop; medial/ascending V4 course. V2/V3 and V3/V4 boundaries corrected to the supplied annotated diagram. No registered cervical vertebrae or dura; vessel course unchanged.",
+      "notes": "Truncated V1; estimated foraminal V2 course; V3 upper cervical and atlas loop; V4 ascending cranial course. V2/V3 and V3/V4 boundaries corrected to the supplied annotated diagram. Boundary levels follow the user annotation. Retained VA centreline and calibre; local ASA-facing wall resampled with its relocated welded root. Dura is not registered.",
       "color": "#eda97d",
       "calibreProvenance": {
         "units": "mm",
@@ -11551,14 +11551,15 @@
         "sourceRefs": [
           "ref.borden.posterior",
           "ref.lucifero2021",
-          "ref.parraga2011"
+          "ref.parraga2011",
+          "user.va-asa-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Anterior spinal root right"
       },
-      "notes": " Model compartment: cisternal.",
+      "notes": " Model compartment: cisternal. Origin moved to the red-marked V4 level; welded VA collar and central ASA confluence retained.",
       "color": "#e2b0cc",
       "calibreProvenance": {
         "units": "mm",
@@ -11571,7 +11572,7 @@
     {
       "id": "artery.posterior.posterior_spinal_right",
       "name": "Posterior spinal right",
-      "parent": "artery.posterior.vertebral_right.segment.v4",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -11726,7 +11727,7 @@
     {
       "id": "artery.posterior.posterior_meningeal_va_right",
       "name": "Posterior meningeal VA right",
-      "parent": "artery.posterior.vertebral_right.segment.v4",
+      "parent": "artery.posterior.vertebral_right.segment.v3",
       "children": [],
       "system": "artery",
       "side": "right",
@@ -13619,14 +13620,15 @@
         "sourceRefs": [
           "ref.borden.posterior",
           "ref.lucifero2021",
-          "ref.parraga2011"
+          "ref.parraga2011",
+          "user.va-asa-2026-10-03"
         ]
       },
       "asset": {
         "file": "models/complete-circulation.glb",
         "node": "Anterior spinal root left"
       },
-      "notes": " Model compartment: cisternal.",
+      "notes": " Model compartment: cisternal. Origin moved to the red-marked V4 level; welded VA collar and central ASA confluence retained.",
       "color": "#e2b0cc",
       "calibreProvenance": {
         "units": "mm",
@@ -13639,7 +13641,7 @@
     {
       "id": "artery.posterior.posterior_spinal_left",
       "name": "Posterior spinal left",
-      "parent": "artery.posterior.vertebral_left.segment.v4",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -13792,7 +13794,7 @@
     {
       "id": "artery.posterior.posterior_meningeal_va_left",
       "name": "Posterior meningeal VA left",
-      "parent": "artery.posterior.vertebral_left.segment.v4",
+      "parent": "artery.posterior.vertebral_left.segment.v3",
       "children": [],
       "system": "artery",
       "side": "left",
@@ -42005,10 +42007,11 @@
           "ref.lucifero2021",
           "ref.parraga2011",
           "ref.lynch.neurovascular-notes",
-          "user.va-segments-2026-10-03"
+          "user.va-segments-2026-10-03",
+          "user.va-asa-2026-10-03"
         ]
       },
-      "notes": "Ascending foraminal limb to the diagram-marked upper cervical exit. Existing course retained; cervical bone and dural registration unavailable.",
+      "notes": "Ascending foraminal limb to the revised lower V3 start mark. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#91b77c",
       "calibreProvenance": {
         "units": "mm",
@@ -42024,7 +42027,7 @@
       },
       "segmentRange": {
         "startArcMm": 30.306241489829038,
-        "endArcMm": 115.523791904779,
+        "endArcMm": 121.82509082887873,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
@@ -42033,7 +42036,9 @@
       "name": "Vertebral V3 right",
       "parent": "artery.posterior.vertebral_right",
       "children": [
-        "artery.posterior.va_muscular_c1_right"
+        "artery.posterior.posterior_spinal_right",
+        "artery.posterior.va_muscular_c1_right",
+        "artery.posterior.posterior_meningeal_va_right"
       ],
       "system": "artery",
       "side": "right",
@@ -42053,10 +42058,11 @@
           "ref.lucifero2021",
           "ref.parraga2011",
           "ref.lynch.neurovascular-notes",
-          "user.va-segments-2026-10-03"
+          "user.va-segments-2026-10-03",
+          "user.va-asa-2026-10-03"
         ]
       },
-      "notes": "Short outer atlas loop between the two diagram marks. Existing course retained; cervical bone and dural registration unavailable.",
+      "notes": "Upper cervical and atlas loop from the revised V3 start to the revised V4 start. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#e5b35c",
       "calibreProvenance": {
         "units": "mm",
@@ -42071,8 +42077,8 @@
         "node": "Vertebral V3 right"
       },
       "segmentRange": {
-        "startArcMm": 115.523791904779,
-        "endArcMm": 144.02961030959602,
+        "startArcMm": 121.82509082887873,
+        "endArcMm": 165.03395473865945,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
@@ -42084,8 +42090,6 @@
         "artery.posterior.basilar",
         "artery.posterior.pica_right",
         "artery.posterior.anterior_spinal_root_right",
-        "artery.posterior.posterior_spinal_right",
-        "artery.posterior.posterior_meningeal_va_right",
         "artery.amendment.va_medullary_perforator_1.right",
         "artery.amendment.va_medullary_perforator_2.right"
       ],
@@ -42107,10 +42111,11 @@
           "ref.lucifero2021",
           "ref.parraga2011",
           "ref.lynch.neurovascular-notes",
-          "user.va-segments-2026-10-03"
+          "user.va-segments-2026-10-03",
+          "user.va-asa-2026-10-03"
         ]
       },
-      "notes": "Medial and ascending cranial limb after the diagram-marked end of the outer loop. Existing course retained; cervical bone and dural registration unavailable.",
+      "notes": "Ascending cranial limb after the revised V4 start mark, continuing to the basilar junction. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#b969ac",
       "calibreProvenance": {
         "units": "mm",
@@ -42125,7 +42130,7 @@
         "node": "Vertebral V4 right"
       },
       "segmentRange": {
-        "startArcMm": 144.02961030959602,
+        "startArcMm": 165.03395473865945,
         "endArcMm": 194.13995787773393,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
@@ -42778,10 +42783,11 @@
           "ref.lucifero2021",
           "ref.parraga2011",
           "ref.lynch.neurovascular-notes",
-          "user.va-segments-2026-10-03"
+          "user.va-segments-2026-10-03",
+          "user.va-asa-2026-10-03"
         ]
       },
-      "notes": "Ascending foraminal limb to the diagram-marked upper cervical exit. Existing course retained; cervical bone and dural registration unavailable.",
+      "notes": "Ascending foraminal limb to the revised lower V3 start mark. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#91b77c",
       "calibreProvenance": {
         "units": "mm",
@@ -42797,7 +42803,7 @@
       },
       "segmentRange": {
         "startArcMm": 30.33893058487912,
-        "endArcMm": 115.64839881741287,
+        "endArcMm": 121.95649448690072,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
@@ -42806,7 +42812,9 @@
       "name": "Vertebral V3 left",
       "parent": "artery.posterior.vertebral_left",
       "children": [
-        "artery.posterior.va_muscular_c1_left"
+        "artery.posterior.posterior_spinal_left",
+        "artery.posterior.va_muscular_c1_left",
+        "artery.posterior.posterior_meningeal_va_left"
       ],
       "system": "artery",
       "side": "left",
@@ -42826,10 +42834,11 @@
           "ref.lucifero2021",
           "ref.parraga2011",
           "ref.lynch.neurovascular-notes",
-          "user.va-segments-2026-10-03"
+          "user.va-segments-2026-10-03",
+          "user.va-asa-2026-10-03"
         ]
       },
-      "notes": "Short outer atlas loop between the two diagram marks. Existing course retained; cervical bone and dural registration unavailable.",
+      "notes": "Upper cervical and atlas loop from the revised V3 start to the revised V4 start. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#e5b35c",
       "calibreProvenance": {
         "units": "mm",
@@ -42844,8 +42853,8 @@
         "node": "Vertebral V3 left"
       },
       "segmentRange": {
-        "startArcMm": 115.64839881741287,
-        "endArcMm": 144.1849641866958,
+        "startArcMm": 121.95649448690072,
+        "endArcMm": 165.2119645096426,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
     },
@@ -42856,8 +42865,6 @@
       "children": [
         "artery.posterior.pica_left",
         "artery.posterior.anterior_spinal_root_left",
-        "artery.posterior.posterior_spinal_left",
-        "artery.posterior.posterior_meningeal_va_left",
         "artery.amendment.va_medullary_perforator_1.left",
         "artery.amendment.va_medullary_perforator_2.left"
       ],
@@ -42879,10 +42886,11 @@
           "ref.lucifero2021",
           "ref.parraga2011",
           "ref.lynch.neurovascular-notes",
-          "user.va-segments-2026-10-03"
+          "user.va-segments-2026-10-03",
+          "user.va-asa-2026-10-03"
         ]
       },
-      "notes": "Medial and ascending cranial limb after the diagram-marked end of the outer loop. Existing course retained; cervical bone and dural registration unavailable.",
+      "notes": "Ascending cranial limb after the revised V4 start mark, continuing to the basilar junction. Existing course retained; cervical bone and dural registration unavailable.",
       "color": "#b969ac",
       "calibreProvenance": {
         "units": "mm",
@@ -42897,7 +42905,7 @@
         "node": "Vertebral V4 left"
       },
       "segmentRange": {
-        "startArcMm": 144.1849641866958,
+        "startArcMm": 165.2119645096426,
         "endArcMm": 194.64974692989082,
         "status": "diagram-guided reference station; anatomical boundary estimated"
       }
@@ -45922,7 +45930,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v4",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.posterior_spinal_right",
       "type": "branches_to"
     },
@@ -45942,7 +45950,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_right.segment.v4",
+      "from": "artery.posterior.vertebral_right.segment.v3",
       "to": "artery.posterior.posterior_meningeal_va_right",
       "type": "branches_to"
     },
@@ -46157,7 +46165,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v4",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.posterior_spinal_left",
       "type": "branches_to"
     },
@@ -46177,7 +46185,7 @@
       "type": "branches_to"
     },
     {
-      "from": "artery.posterior.vertebral_left.segment.v4",
+      "from": "artery.posterior.vertebral_left.segment.v3",
       "to": "artery.posterior.posterior_meningeal_va_left",
       "type": "branches_to"
     },
@@ -47899,6 +47907,13 @@
       "year": 2026,
       "role": "Inferior and superior labial levels and submental relationship to the mandible",
       "notes": "Supplied image(20261003-224612).png and image(20261003-224632).png; mandible interpretation follows the reference diagram and note-derived descriptions. Lip soft tissues are not registered."
+    },
+    {
+      "id": "user.va-asa-2026-10-03",
+      "title": "Jeremy Lynch: revised V3/V4 starts and ASA origins, 3 October 2026",
+      "year": 2026,
+      "role": "V3 and V4 starting levels and ASA-root origins",
+      "notes": "Supplied image(20261003-233148).png. Diagram-guided reference stations, not registered cervical bones or dura."
     }
   ],
   "roots": [
@@ -47908,7 +47923,7 @@
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/craniofacial.glb": 5014620,
-    "models/complete-circulation.glb": 70714372,
+    "models/complete-circulation.glb": 70725440,
     "models/complete-anastomoses.glb": 2972528
   }
 }

@@ -1,5 +1,13 @@
 # v0.8.11
 
+## v0.8.12
+
+- Set bilateral V3 and V4 starts from the latest black-line annotation.
+- Move the paired ASA origins to the red-marked V4 level, keeping the shared vertebral collars welded and the central ASA confluence fixed.
+- Retain the vertebral courses, calibre, other branch origins, all other anatomy and GUI. Re-triangulate only the affected vertebral wall patches without adding triangles.
+- Update posterior spinal and posterior meningeal branch parents to the revised V3 regions.
+
+
 - Lower both inferior labial main courses into the lower lip below the visible lower teeth.
 - Lower both superior labial main courses slightly above the visible upper teeth.
 - Raise the submental loops to follow the mandibular inferior surface.

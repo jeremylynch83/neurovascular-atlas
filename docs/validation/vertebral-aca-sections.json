@@ -1,5 +1,5 @@
 {
-  "release": "0.8.9",
+  "release": "0.8.12",
   "source": "nv(2).pdf, printed pages 40\u201343 and 47\u201348",
   "geometryOperation": "Existing triangles partitioned once; positions and normals retained exactly; no new caps or altered vessel course.",
   "plans": [
@@ -2173,8 +2173,8 @@
       "boundsArcMm": [
         0,
         30.306241489829038,
-        115.523791904779,
-        144.02961030959602,
+        121.82509082887873,
+        165.03395473865945,
         194.13995787773393
       ],
       "boundaryPointsMm": [
@@ -2189,14 +2189,14 @@
           -84.94134269198169
         ],
         [
-          21.89732911469078,
-          -83.94893270885419,
-          -0.26410125763512327
+          24.53728860267126,
+          -85.33061369324824,
+          5.278691632954948
         ],
         [
-          23.695524106710504,
-          -99.78444702150455,
-          16.456194272513734
+          8.71534916857168,
+          -94.31515427625801,
+          25.672936911480697
         ],
         [
           -4.541553493952327e-16,
@@ -2207,8 +2207,8 @@
       "boundaryBasis": [
         "V1 and C6-entry boundary retained",
         "Ascending foraminal limb to diagram-marked C2-exit region",
-        "Diagram-marked short outer atlas loop",
-        "Diagram-marked medial/ascending cranial limb to basilar junction"
+        "V3 upper cervical and atlas loop between revised start marks",
+        "V4 ascending cranial limb from revised start mark to basilar junction"
       ],
       "pathMm": [
         [
@@ -5462,17 +5462,17 @@
         {
           "id": "artery.posterior.vertebral_right.segment.v2",
           "name": "Vertebral V2 right",
-          "faces": 36561
+          "faces": 39249
         },
         {
           "id": "artery.posterior.vertebral_right.segment.v3",
           "name": "Vertebral V3 right",
-          "faces": 11702
+          "faces": 17605
         },
         {
           "id": "artery.posterior.vertebral_right.segment.v4",
           "name": "Vertebral V4 right",
-          "faces": 20869
+          "faces": 12278
         }
       ],
       "allFacesAssignedOnce": true,
@@ -7658,8 +7658,8 @@
       "boundsArcMm": [
         0,
         30.33893058487912,
-        115.64839881741287,
-        144.1849641866958,
+        121.95649448690072,
+        165.2119645096426,
         194.64974692989082
       ],
       "boundaryPointsMm": [
@@ -7674,14 +7674,14 @@
           -85.05977680956487
         ],
         [
-          -21.888197652238052,
-          -84.54435981116126,
-          -0.2879533499338601
+          -24.528610507610782,
+          -85.92484287409604,
+          5.262613899544293
         ],
         [
-          -23.690713434897493,
-          -100.38525113558956,
-          16.4563815663319
+          -8.721355836623816,
+          -94.89589311817613,
+          25.692364604472825
         ],
         [
           9.784772140751172e-16,
@@ -7692,8 +7692,8 @@
       "boundaryBasis": [
         "V1 and C6-entry boundary retained",
         "Ascending foraminal limb to diagram-marked C2-exit region",
-        "Diagram-marked short outer atlas loop",
-        "Diagram-marked medial/ascending cranial limb to basilar junction"
+        "V3 upper cervical and atlas loop between revised start marks",
+        "V4 ascending cranial limb from revised start mark to basilar junction"
       ],
       "pathMm": [
         [
@@ -10952,22 +10952,22 @@
         {
           "id": "artery.posterior.vertebral_left.segment.v2",
           "name": "Vertebral V2 left",
-          "faces": 36574
+          "faces": 39263
         },
         {
           "id": "artery.posterior.vertebral_left.segment.v3",
           "name": "Vertebral V3 left",
-          "faces": 12315
+          "faces": 18764
         },
         {
           "id": "artery.posterior.vertebral_left.segment.v4",
           "name": "Vertebral V4 left",
-          "faces": 21849
+          "faces": 12711
         }
       ],
       "allFacesAssignedOnce": true,
       "positionsAndNormalsUnchanged": true
     }
   ],
-  "vertebralBoundaryCorrection": "V2/V3 and V3/V4 follow image(20261003-204543).png; ACA boundaries unchanged."
+  "vertebralBoundaryCorrection": "V2/V3 and V3/V4 follow image(20261003-233148).png; ACA boundaries unchanged."
 }
