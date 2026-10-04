@@ -1,15 +1,15 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.9.5",
+  "release": "0.9.8",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
-    "models/complete-circulation.glb": "5911ecc90928b8f61ef8",
-    "models/complete-anastomoses.glb": "72205cfd05318f6af9b8",
-    "models/venous.glb": "64cd63829d3cf5cbd5e1"
+    "models/complete-circulation.glb": "0d695d3b304bdb9b3d01",
+    "models/complete-anastomoses.glb": "e5cd282e1028ac6daf51",
+    "models/venous.glb": "ed765ddd0f9b580b6f52"
   },
   "structures": [
     {
@@ -25984,164 +25984,164 @@
           "ica-ferreira-2002"
         ]
       },
-      "notes": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "notes": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh. v0.9.7: arterial reference follows the local cavernous coordinate correction.",
       "landmark": {
         "status": "regional",
         "point": [
-          10.6,
-          -41,
-          73.7
+          10.261401720828701,
+          -41.0,
+          73.85801253027994
         ],
         "course": [
           [
-            11.101258808355416,
+            9.467455521264444,
             -42.4199372424565,
-            70.17253836623014
+            70.93497990020593
           ],
           [
-            11.075246270487973,
+            9.497966479989318,
             -42.44384584396449,
-            70.311019474293
+            71.0470833765257
           ],
           [
-            11.04757862087742,
+            9.54649887089953,
             -42.46906403438261,
-            70.49736061096255
+            71.19786449428555
           ],
           [
-            11.028534449009886,
+            9.604390940445668,
             -42.48649800502662,
-            70.68549731321423
+            71.35009761721086
           ],
           [
-            11.019597158718788,
+            9.653433139806276,
             -42.49499559912085,
-            70.8275418368038
+            71.46508504562964
           ],
           [
-            11.015672781576763,
+            9.726993312942284,
             -42.49986354125783,
-            71.01809372080284
+            71.61947747283226
           ],
           [
-            11.020372625577519,
+            9.809068751253305,
             -42.498172632100086,
-            71.2096395599142
+            71.77491470126549
           ],
           [
-            11.033687158913741,
+            9.89935127171282,
             -42.49035052311375,
-            71.40193046979073
+            71.93128721715115
           ],
           [
-            11.049466827473765,
+            9.972415643381629,
             -42.48062037754951,
-            71.54650409259587
+            72.04912797850552
           ],
           [
-            11.077823252124873,
+            10.076327123117757,
             -42.463079994577704,
-            71.73955187919799
+            72.20691673940131
           ],
           [
-            11.114378167617332,
+            10.187245603417516,
             -42.44075219301694,
-            71.93275165773518
+            72.36541352102843
           ],
           [
-            11.147332756432693,
+            10.275033442521304,
             -42.42099652360569,
-            72.07764923843256
+            72.48472225159121
           ],
           [
-            11.176995497695577,
+            10.348484200975982,
             -42.40347522410691,
-            72.19508650526488
+            72.5817251104007
           ],
           [
-            11.209686640253755,
+            10.424303924407344,
             -42.38448362300367,
-            72.31244937752314
+            72.6789613115848
           ],
           [
-            11.244841323723783,
+            10.50188269570525,
             -42.36435407134062,
-            72.42973067569774
+            72.77644470210639
           ],
           [
-            11.272919810742811,
+            10.561286608152713,
             -42.34849903574718,
-            72.51762417399478
+            72.84971966853682
           ],
           [
-            11.31253195983462,
+            10.641972964998937,
             -42.32644062234929,
-            72.63471746943912
+            72.94764500036244
           ],
           [
-            11.354525393246291,
+            10.72420886563557,
             -42.28763630780768,
-            72.75169300879743
+            73.04584072168244
           ],
           [
-            11.39857164364152,
+            10.807628090662742,
             -42.20021238638825,
-            72.86856006173159
+            73.14433371978835
           ],
           [
-            11.433049616684325,
+            10.871038128607456,
             -42.10367137466912,
-            72.95613148823773
+            73.21840351600693
           ],
           [
-            11.480859288562362,
+            10.956595920279778,
             -41.93606858145807,
-            73.07279215847949
+            73.31744839701136
           ],
           [
-            11.530390713091595,
+            11.042899619924572,
             -41.72719022727685,
-            73.18936035952107
+            73.41685620299901
           ],
           [
-            11.568663206015023,
+            11.1080876542897,
             -41.545419408233286,
-            73.27672952896229
+            73.49166478643411
           ],
           [
-            11.621050607347561,
+            11.19544923321944,
             -41.27243581000352,
-            73.39315987843513
+            73.59177385302826
           ],
           [
-            11.674970684718156,
+            11.283266094626475,
             -40.96768721145626,
-            73.50953229405197
+            73.69232776942809
           ],
           [
-            11.73010077110645,
+            11.37118185686682,
             -40.63520570100547,
-            73.62587312289617
+            73.793368616208
           ],
           [
-            11.772249911389835,
+            11.437168957809291,
             -40.36989714542521,
-            73.71311893403798
+            73.8694900457089
           ],
           [
-            11.829403938435524,
+            11.525076850459074,
             -39.99813302695261,
-            73.82945458284787
+            73.97147389057022
           ],
           [
-            11.887467230271396,
+            11.612682725001783,
             -39.60967927611713,
-            73.94582037483008
+            74.0740531439559
           ],
           [
-            11.946282302737663,
+            11.699790383182318,
             -39.20884841425253,
-            74.06223681171014
+            74.17726637416929
           ]
         ],
         "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",
@@ -26966,164 +26966,164 @@
           "ica-ferreira-2002"
         ]
       },
-      "notes": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh.",
+      "notes": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide. Manually reconstructed anatomical region. A complete canal lumen or soft-tissue boundary is not resolved in this mesh. v0.9.7: arterial reference follows the local cavernous coordinate correction.",
       "landmark": {
         "status": "regional",
         "point": [
-          -9.3,
-          -41,
-          73.60000000000001
+          -8.933914669703984,
+          -41.0,
+          73.77083982080481
         ],
         "course": [
           [
-            -9.801181875907776,
+            -8.126709988230527,
             -42.419798817103825,
-            70.07265317063703
+            70.8540733848864
           ],
           [
-            -9.774939988799261,
+            -8.156865108408843,
             -42.44387894469422,
-            70.21110683073272
+            70.96620844158159
           ],
           [
-            -9.747404552187376,
+            -8.205490612203397,
             -42.46888833025446,
-            70.39753184675541
+            71.11709168541461
           ],
           [
-            -9.728142008850217,
+            -8.263194719222241,
             -42.48641027224545,
-            70.58569133681682
+            71.26933340530988
           ],
           [
-            -9.717317925552674,
+            -8.32985902128001,
             -42.49671571268414,
-            70.77533045000716
+            71.42281127200107
           ],
           [
-            -9.715219166495718,
+            -8.405485275725436,
             -42.50000311218282,
-            70.96621154605899
+            71.57742069508512
           ],
           [
-            -9.721966073921672,
+            -8.489893289457534,
             -42.49662871691805,
-            71.15807353330618
+            71.73304083272278
           ],
           [
-            -9.737261424697374,
+            -8.582475469323402,
             -42.48723718046077,
-            71.35063904579914
+            71.889539158307
           ],
           [
-            -9.754332214487404,
+            -8.657091917879896,
             -42.47649306855874,
-            71.49539135221559
+            72.00743682396576
           ],
           [
-            -9.784480123102112,
+            -8.763182439742508,
             -42.457591643901885,
-            71.68866818692081
+            72.16527377248862
           ],
           [
-            -9.822675033065932,
+            -8.87617352998521,
             -42.434025135065404,
-            71.88208740939004
+            72.3237881108277
           ],
           [
-            -9.858396401762635,
+            -8.969797270418438,
             -42.41241549800948,
-            72.03433856312868
+            72.44901815775597
           ],
           [
-            -9.887241257718825,
+            -9.040273104145662,
             -42.39522887550118,
-            72.1453859661494
+            72.54063777115022
           ],
           [
-            -9.918642098583744,
+            -9.11273595401842,
             -42.37680045473249,
-            72.25637845150827
+            72.63246798563875
           ],
           [
-            -9.952347931562839,
+            -9.186894767638798,
             -42.357301437628124,
-            72.36730519523944
+            72.72451667173732
           ],
           [
-            -9.979031903099045,
+            -9.243495709725295,
             -42.34205050787171,
-            72.45045285485567
+            72.79370307843008
           ],
           [
-            -10.016421155224394,
+            -9.320180302525515,
             -42.320937093873276,
-            72.56124836547829
+            72.88616076340443
           ],
           [
-            -10.0558066873738,
+            -9.398148760537728,
             -42.29899815947196,
-            72.67196269257525
+            72.97886972509875
           ],
           [
-            -10.09725939145291,
+            -9.477434425507525,
             -42.255636184492786,
-            72.78258878446634
+            73.07184043524086
           ],
           [
-            -10.14040521121335,
+            -9.557633470263138,
             -42.17155690918751,
-            72.89314196875813
+            73.16510211453489
           ],
           [
-            -10.185141676045012,
+            -9.638610509219857,
             -42.04899387377225,
-            73.00362872635853
+            73.25867660421027
           ],
           [
-            -10.231584495357831,
+            -9.720446642650293,
             -41.890102221309455,
-            73.11405036091058
+            73.35258135884077
           ],
           [
-            -10.267306343874534,
+            -9.782140679100987,
             -41.748674973758256,
-            73.19683746147119
+            73.42324810503217
           ],
           [
-            -10.316134765472157,
+            -9.864809161100895,
             -41.53237417486763,
-            73.30718981645661
+            73.51780843182986
           ],
           [
-            -10.366118155149014,
+            -9.947702864190415,
             -41.286915772675904,
-            73.417524703505
+            73.61278517261901
           ],
           [
-            -10.417220660129795,
+            -10.030754866860933,
             -41.014954297572615,
-            73.52785900548368
+            73.70820970900914
           ],
           [
-            -10.469353010199134,
+            -10.113845476227699,
             -40.71927868946611,
-            73.63821407384032
+            73.80411758969365
           ],
           [
-            -10.522299030055647,
+            -10.196726250973365,
             -40.40295550023764,
-            73.74860739182418
+            73.90054135539592
           ],
           [
-            -10.575963372462578,
+            -10.279269118919986,
             -40.06898374879898,
-            73.85905750421952
+            73.9975148225394
           ],
           [
-            -10.630342352760907,
+            -10.361440855413065,
             -39.72025494529046,
-            73.96959926953424
+            74.09508663496324
           ]
         ],
         "connects": "Estimated clinoid C5 region between the dural rings. Dura is not segmented; the clinoid bone provides a regional guide.",
@@ -40445,7 +40445,7 @@
       "segmentRange": {
         "startArcMm": 0.0,
         "endArcMm": 85.4672371712451,
-        "status": "diagram-guided reference station; anatomical boundary estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "This begins at the bifurcation of the [CCA](#structure-artery.anterior.common_carotid_right) and ends as the artery enters the [carotid canal](#structure-landmark.carotid-canal.right).\n\nCourse: the [ICA](#structure-artery.anterior.internal_carotid_right) is contained within the carotid sheath, anteromedial to the IJV. The [ECA](#structure-artery.carotid.external.right) is also usually anteromedial initially, before it veers laterally. The vagus nerve and the cranial root of the accessory nerve are located posteriorly."
     },
@@ -40494,7 +40494,7 @@
       "segmentRange": {
         "startArcMm": 85.4672371712451,
         "endArcMm": 103.52726907936207,
-        "status": "diagram-guided reference station; anatomical boundary estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the [carotid canal](#structure-landmark.carotid-canal.right) to the petrolingual ligament (approximately the anterior aspect of the petrous ridge).\n\nCourse: the segment starts vertically in the [carotid canal](#structure-landmark.carotid-canal.right) before turning anteromedially and running over the cartilage covering the [foramen lacerum](#structure-landmark.foramen-lacerum.right). It is accompanied by sympathetic fibres from the stellate ganglion and a venous plexus."
     },
@@ -40523,10 +40523,11 @@
           "ref.ferreira2002",
           "ica-skull-base-2026",
           "ica-shapiro-2014",
-          "user.ica-segments-2026-10-03"
+          "user.ica-segments-2026-10-03",
+          "ref.cavernous-refinement-2026"
         ]
       },
-      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
+      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md.",
       "color": "#d2c753",
       "calibreProvenance": {
         "units": "mm",
@@ -40542,7 +40543,7 @@
       "segmentRange": {
         "startArcMm": 103.52726907936207,
         "endArcMm": 145.280219654165,
-        "status": "diagram-guided reference station; anatomical boundary estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the petrolingual ligament to the proximal dural ring.\n\nCourse: the vessel runs superiorly along the [posterior clinoid process](#structure-landmark.ica.posterior-clinoid.right) to the [anterior clinoid process](#structure-landmark.ica.anterior-clinoid.right) before passing through the dural ring. Within the cavernous sinus it lies superomedially to the abducens nerve, and medial to CN III, CN IV, and the ophthalmic and maxillary divisions of CN V and the trigeminal (Gasserian) ganglion."
     },
@@ -40589,7 +40590,7 @@
       "segmentRange": {
         "startArcMm": 145.280219654165,
         "endArcMm": 150.23478295851035,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the estimated distal border of the cavernous segment, just proximal to the [ophthalmic artery](#structure-artery.anterior.ophthalmic_right) ostium, to the ostium of the [PCOM](#structure-artery.anterior.posterior_communicating_right).\n\nThis segment incorporates the proximal and distal dural rings (the clinoid [ICA](#structure-artery.anterior.internal_carotid_right) segment); however, the dural anatomy in the anterior clinoid region is complex, variable, and impossible to reliably define on imaging, making it difficult to differentiate intradural and extradural aneurysms in this region."
     },
@@ -40635,7 +40636,7 @@
       "segmentRange": {
         "startArcMm": 150.23478295851035,
         "endArcMm": 153.75707973976304,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the [PCOM](#structure-artery.anterior.posterior_communicating_right) ostium to the [anterior choroidal artery](#structure-artery.anterior.anterior_choroidal_right) ostium."
     },
@@ -40681,7 +40682,7 @@
       "segmentRange": {
         "startArcMm": 153.75707973976304,
         "endArcMm": 154.90707973976302,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the [anterior choroidal artery](#structure-artery.anterior.anterior_choroidal_right) ostium and immediately adjacent."
     },
@@ -40730,7 +40731,7 @@
       "segmentRange": {
         "startArcMm": 154.90707973976302,
         "endArcMm": 157.50897938987103,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From just distal to the [anterior choroidal artery](#structure-artery.anterior.anterior_choroidal_right) to the [ICA](#structure-artery.anterior.internal_carotid_right) bifurcation.\n\nThis segment contains a variable number of perforating arteries to the anterior perforating substance, which contribute to the collateral reconstitution in Moyamoya disease. Anastomoses are found with the posterior choroidal arteries and ACA."
     },
@@ -40775,7 +40776,7 @@
       "segmentRange": {
         "startArcMm": 0.0,
         "endArcMm": 85.13755488451275,
-        "status": "diagram-guided reference station; anatomical boundary estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "This begins at the bifurcation of the [CCA](#structure-artery.anterior.common_carotid_left) and ends as the artery enters the [carotid canal](#structure-landmark.carotid-canal.left).\n\nCourse: the [ICA](#structure-artery.anterior.internal_carotid_left) is contained within the carotid sheath, anteromedial to the IJV. The [ECA](#structure-artery.carotid.external.right.left) is also usually anteromedial initially, before it veers laterally. The vagus nerve and the cranial root of the accessory nerve are located posteriorly."
     },
@@ -40824,7 +40825,7 @@
       "segmentRange": {
         "startArcMm": 85.13755488451275,
         "endArcMm": 103.19569552340396,
-        "status": "diagram-guided reference station; anatomical boundary estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the [carotid canal](#structure-landmark.carotid-canal.left) to the petrolingual ligament (approximately the anterior aspect of the petrous ridge).\n\nCourse: the segment starts vertically in the [carotid canal](#structure-landmark.carotid-canal.left) before turning anteromedially and running over the cartilage covering the [foramen lacerum](#structure-landmark.foramen-lacerum.left). It is accompanied by sympathetic fibres from the stellate ganglion and a venous plexus."
     },
@@ -40853,10 +40854,11 @@
           "ref.ferreira2002",
           "ica-skull-base-2026",
           "ica-shapiro-2014",
-          "user.ica-segments-2026-10-03"
+          "user.ica-segments-2026-10-03",
+          "ref.cavernous-refinement-2026"
         ]
       },
-      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained.",
+      "notes": "NYU/Shapiro cavernous region; not interchangeable with Bouthillier numbering. Cervical/petrous and petrous/cavernous stations corrected to the user\u2019s annotated diagram; continuous ICA course retained. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md.",
       "color": "#d2c753",
       "calibreProvenance": {
         "units": "mm",
@@ -40872,7 +40874,7 @@
       "segmentRange": {
         "startArcMm": 103.19569552340396,
         "endArcMm": 145.29663508396226,
-        "status": "diagram-guided reference station; anatomical boundary estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the petrolingual ligament to the proximal dural ring.\n\nCourse: the vessel runs superiorly along the [posterior clinoid process](#structure-landmark.ica.posterior-clinoid.left) to the [anterior clinoid process](#structure-landmark.ica.anterior-clinoid.left) before passing through the dural ring. Within the cavernous sinus it lies superomedially to the abducens nerve, and medial to CN III, CN IV, and the ophthalmic and maxillary divisions of CN V and the trigeminal (Gasserian) ganglion."
     },
@@ -40919,7 +40921,7 @@
       "segmentRange": {
         "startArcMm": 145.29663508396226,
         "endArcMm": 149.70591718884793,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the estimated distal border of the cavernous segment, just proximal to the [ophthalmic artery](#structure-artery.anterior.ophthalmic_left) ostium, to the ostium of the [PCOM](#structure-artery.anterior.posterior_communicating_left).\n\nThis segment incorporates the proximal and distal dural rings (the clinoid [ICA](#structure-artery.anterior.internal_carotid_left) segment); however, the dural anatomy in the anterior clinoid region is complex, variable, and impossible to reliably define on imaging, making it difficult to differentiate intradural and extradural aneurysms in this region."
     },
@@ -40965,7 +40967,7 @@
       "segmentRange": {
         "startArcMm": 149.70591718884793,
         "endArcMm": 153.70499085025997,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the [PCOM](#structure-artery.anterior.posterior_communicating_left) ostium to the [anterior choroidal artery](#structure-artery.anterior.anterior_choroidal_left) ostium."
     },
@@ -41011,7 +41013,7 @@
       "segmentRange": {
         "startArcMm": 153.70499085025997,
         "endArcMm": 154.85499085025995,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From the [anterior choroidal artery](#structure-artery.anterior.anterior_choroidal_left) ostium and immediately adjacent."
     },
@@ -41060,7 +41062,7 @@
       "segmentRange": {
         "startArcMm": 154.85499085025995,
         "endArcMm": 157.81580124207304,
-        "status": "reference-model station; soft-tissue boundaries estimated"
+        "status": "diagram-guided authoring-template station; anatomical boundary estimated; arc length not remeasured after local deformation"
       },
       "description": "From just distal to the [anterior choroidal artery](#structure-artery.anterior.anterior_choroidal_left) to the [ICA](#structure-artery.anterior.internal_carotid_left) bifurcation.\n\nThis segment contains a variable number of perforating arteries to the anterior perforating substance, which contribute to the collateral reconstitution in Moyamoya disease. Anastomoses are found with the posterior choroidal arteries and ACA."
     },
@@ -42972,10 +42974,8 @@
       "name": "Superficial cerebral veins",
       "parent": "vein",
       "children": [
-        "vein.superficial_middle_cerebral.right",
         "vein.frontal_cortical.right",
         "vein.parietal_cortical.right",
-        "vein.superficial_middle_cerebral.left",
         "vein.frontal_cortical.left",
         "vein.parietal_cortical.left"
       ],
@@ -43416,7 +43416,8 @@
       "children": [
         "vein.superior_petrosal.right",
         "vein.inferior_petrosal.right",
-        "vein.sphenoparietal.right"
+        "vein.sphenoparietal.right",
+        "vein.superficial_middle_cerebral.right"
       ],
       "geometryStatus": "web-optimised",
       "provenance": {
@@ -43425,14 +43426,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.lynch.neurovascular-notes",
-          "ref.venous-authoring-2026"
+          "ref.venous-authoring-2026",
+          "ref.cavernous-refinement-2026"
         ]
       },
       "asset": {
         "file": "models/venous.glb",
         "node": "vein.cavernous.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md.",
       "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.right), [superior petrosal sinus](#structure-vein.superior_petrosal.right), [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses."
     },
     {
@@ -43518,12 +43520,12 @@
         "node": "vein.sphenoparietal.right"
       },
       "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
-      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.right). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus."
+      "description": "This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.right). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) enters the cavernous region separately."
     },
     {
       "id": "vein.superficial_middle_cerebral.right",
       "name": "Superficial middle cerebral vein right",
-      "parent": "vein.superficial",
+      "parent": "vein.cavernous.right",
       "side": "right",
       "aliases": [
         "SMV",
@@ -43552,7 +43554,7 @@
         "node": "vein.superficial_middle_cerebral.right"
       },
       "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
-      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right)."
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel."
     },
     {
       "id": "vein.trolard.right",
@@ -44597,7 +44599,8 @@
       "children": [
         "vein.superior_petrosal.left",
         "vein.inferior_petrosal.left",
-        "vein.sphenoparietal.left"
+        "vein.sphenoparietal.left",
+        "vein.superficial_middle_cerebral.left"
       ],
       "geometryStatus": "web-optimised",
       "provenance": {
@@ -44606,14 +44609,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.lynch.neurovascular-notes",
-          "ref.venous-authoring-2026"
+          "ref.venous-authoring-2026",
+          "ref.cavernous-refinement-2026"
         ]
       },
       "asset": {
         "file": "models/venous.glb",
         "node": "vein.cavernous.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md.",
       "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.left), [superior petrosal sinus](#structure-vein.superior_petrosal.left), [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses."
     },
     {
@@ -44699,12 +44703,12 @@
         "node": "vein.sphenoparietal.left"
       },
       "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
-      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.left). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus."
+      "description": "This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.left). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) enters the cavernous region separately."
     },
     {
       "id": "vein.superficial_middle_cerebral.left",
       "name": "Superficial middle cerebral vein left",
-      "parent": "vein.superficial",
+      "parent": "vein.cavernous.left",
       "side": "left",
       "aliases": [
         "SMV",
@@ -44733,7 +44737,7 @@
         "node": "vein.superficial_middle_cerebral.left"
       },
       "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
-      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left)."
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel."
     },
     {
       "id": "vein.trolard.left",
@@ -45693,14 +45697,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.lynch.neurovascular-notes",
-          "ref.venous-authoring-2026"
+          "ref.venous-authoring-2026",
+          "ref.cavernous-refinement-2026"
         ]
       },
       "asset": {
         "file": "models/venous.glb",
         "node": "vein.anterior_intercavernous"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md.",
       "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses."
     },
     {
@@ -45720,14 +45725,15 @@
         "reviewStatus": "unreviewed",
         "sourceRefs": [
           "ref.lynch.neurovascular-notes",
-          "ref.venous-authoring-2026"
+          "ref.venous-authoring-2026",
+          "ref.cavernous-refinement-2026"
         ]
       },
       "asset": {
         "file": "models/venous.glb",
         "node": "vein.posterior_intercavernous"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md.",
       "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses."
     },
     {
@@ -45758,7 +45764,7 @@
         "node": "vein.basilar_plexus"
       },
       "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative.",
-      "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below."
+      "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below. It forms a variable plexiform network along the posterior clivus, with communications to both [inferior petrosal sinuses](#structure-vein.inferior_petrosal.right). The displayed interconnected channels represent one selected reference pattern."
     },
     {
       "id": "vein.anterior_communicating",
@@ -50954,7 +50960,7 @@
     },
     {
       "from": "vein.superficial_middle_cerebral.right",
-      "to": "vein.sphenoparietal.right",
+      "to": "vein.cavernous.right",
       "type": "drains_to"
     },
     {
@@ -51194,7 +51200,7 @@
     },
     {
       "from": "vein.superficial_middle_cerebral.left",
-      "to": "vein.sphenoparietal.left",
+      "to": "vein.cavernous.left",
       "type": "drains_to"
     },
     {
@@ -51561,6 +51567,26 @@
       "from": "vein.anterior_spinal",
       "to": "vein.anterior_medullary",
       "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.inferior_petrosal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.anterior_condylar.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.inferior_petrosal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.anterior_condylar.left",
+      "type": "communicates_with"
     }
   ],
   "sources": [
@@ -51732,8 +51758,15 @@
       "id": "ref.venous-authoring-2026",
       "title": "Venous reconstruction and morphology review, 4 October 2026",
       "year": 2026,
-      "role": "Lynch pp62-76 and Figs2.16-2.19 for descriptions and drainage. Morphology: Borden 2006 Figs7.1-7.7, Bradac 2017 Figs9.5,9.6,9.14,9.17 and selected Neuroangio angiographic cases; fitted to the retained skull.",
-      "notes": "docs/VENOUS_v0.9.2.md records changes, source figures and geometric validation. Image appearance guides broad courses and relative calibre; no calibrated patient reconstruction is claimed. https://neuroangio.org/venous-brain-anatomy/venous-sinuses/"
+      "role": "Lynch pp62-76 and Figs2.16-2.19 for descriptions and drainage. Morphology: Borden 2006 Figs7.1-7.7, Bradac 2017 Figs9.5,9.6,9.14,9.17 and selected Neuroangio angiographic cases; fitted to the retained skull. Skull-base review: Neuroangio cavernous/clival venograms, San Millan Ruiz 2004, Tubbs 2007, Ekanem 2022 and Evans 1996.",
+      "notes": "docs/VENOUS_v0.9.6.md records changes, source figures and geometric validation. Image appearance guides broad courses and relative calibre; no calibrated patient reconstruction is claimed. https://neuroangio.org/venous-brain-anatomy/venous-sinuses/"
+    },
+    {
+      "id": "ref.cavernous-refinement-2026",
+      "title": "Cavernous ICA and venous envelope refinement, October 2026",
+      "year": 2026,
+      "role": "Skull-registered coronal sections; normal Neuroangio venous-phase angiography and DynaCT references; primary sellar ICA morphometry and cavernous venous-space dissections.",
+      "notes": "Teaching reconstruction with illustrative calibres; see docs/CAVERNOUS_v0.9.7.md. https://pubmed.ncbi.nlm.nih.gov/23524760/ ; https://pubmed.ncbi.nlm.nih.gov/18262607/ ; https://www.nature.com/articles/s41598-022-21254-9 ; https://neuroangio.org/venous-brain-anatomy/cavernous-sinus/"
     }
   ],
   "roots": [
@@ -51744,8 +51777,8 @@
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/craniofacial.glb": 5014620,
-    "models/complete-circulation.glb": 70725440,
-    "models/complete-anastomoses.glb": 2972528,
-    "models/venous.glb": 5699812
+    "models/complete-circulation.glb": 70727588,
+    "models/complete-anastomoses.glb": 2973236,
+    "models/venous.glb": 6142424
   }
 }

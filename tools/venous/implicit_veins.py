@@ -100,7 +100,7 @@ normals=np.zeros_like(p);fn=np.cross(p[f[:,1]]-p[f[:,0]],p[f[:,2]]-p[f[:,0]])
 for k in range(3):np.add.at(normals,f[:,k],fn)
 normals/=np.maximum(np.linalg.norm(normals,axis=1)[:,None],1e-12)
 np.savez_compressed(ROOT/'venous-mesh.npz',positions=p,faces=f,normals=normals,labels=labels)
-doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas venous authoring v0.9.2'},'scene':0,'scenes':[{'nodes':[]}],'nodes':[],'meshes':[],'accessors':[],'bufferViews':[],'buffers':[]};chunks=[];offset=0
+doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas venous authoring v'+spec['release']},'scene':0,'scenes':[{'nodes':[]}],'nodes':[],'meshes':[],'accessors':[],'bufferViews':[],'buffers':[]};chunks=[];offset=0
 def acc(arr,typ,component,target,bounds=False):
  global offset
  arr=np.ascontiguousarray(arr);raw=arr.tobytes();pad=(-len(raw))%4;bv=len(doc['bufferViews']);doc['bufferViews'].append({'buffer':0,'byteOffset':offset,'byteLength':len(raw),'target':target});chunks.append(raw+b'\0'*pad);offset+=len(raw)+pad

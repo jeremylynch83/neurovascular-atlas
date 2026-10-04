@@ -1,8 +1,6 @@
 # Attributions
 
-- **BodyParts3D**: © The Database Center for Life Science. Legacy context geometry inherited from the Dental Scope starter project under its recorded CC BY-SA 2.1 Japan terms.
-- **Z-Anatomy**: Models of human anatomy, CC BY-SA 4.0. Selected vascular curves are used as v0.2 atlas-derived seed geometry.
+- **BodyParts3D**: © The Database Center for Life Science. Source geometry for the retained bony context, under CC BY-SA 2.1 Japan. These geometry terms apply separately from the application's code licence.
+- **Authored vascular geometry**: reference teaching reconstructions, with per-structure provenance and source references in `anatomy/generated/complete_manifest.json`. Calibre and depth remain illustrative.
 
-- **TopBrain Challenge Data Release v3**: TopBrain Challenge Organizers, 17 August 2026, [Zenodo record 21972006](https://zenodo.org/records/21972006). Case 001 CTA vessel labels and threshold-derived skull supplied the included reference surfaces. Non-commercial use with source attribution is permitted; commercial use requires prior permission from the data owner. These terms apply to the derived reference anatomy separately from the application code licence.
-
-Borden (2006) and Kiyosue (2020) guide and cross-check the hand-authored right ECA Draft 02 reconstruction. Vessel courses have been visually adapted from angiographic references; calibre and depth remain estimates. No figures from those books are embedded in the application.
+Software and anatomical reference credits are listed in [CREDITS.md](CREDITS.md) and the application's scrollable information modal. The venous morphology reviews in [VENOUS_v0.9.2.md](docs/VENOUS_v0.9.2.md) and [VENOUS_v0.9.6.md](docs/VENOUS_v0.9.6.md) identify the reviewed angiographic sources. Book figures and downloaded source angiograms are not embedded in the application.

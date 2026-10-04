@@ -9,7 +9,7 @@ import numpy as np
 import trimesh
 from scipy.ndimage import gaussian_filter1d
 from scipy.spatial import cKDTree
-from reference import APP, ROOT, bone_surface, vtk
+from reference import APP, ROOT, bone_surface, vtk, records, arrays, poly
 
 spec = json.loads((APP/'anatomy/source/venous/courses.json').read_text())
 paths = json.loads((APP/'anatomy/source/venous/fitted-paths.json').read_text())
@@ -61,24 +61,32 @@ def turning(row):
     return dict(median=float(np.median(angles)),p95=float(np.percentile(angles,95)),maximum=float(angles.max()))
 
 major=['vein.superior_sagittal']+[f'vein.{name}.{side}' for name in ['transverse','sigmoid'] for side in ['right','left']]
-baseline={}
-if (ROOT/'baseline-fitted-paths.json').exists():
-    for row in json.loads((ROOT/'baseline-fitted-paths.json').read_text()): baseline.setdefault(row['id'],row)
+baseline={};baseline_mesh=None
+checkpoint=ROOT/'checkpoint-v0.9.5'
+if (checkpoint/'fitted-paths.json').exists():
+    for row in json.loads((checkpoint/'fitted-paths.json').read_text()):baseline.setdefault(row['id'],row)
+    baseline_mesh=np.load(checkpoint/'venous-mesh.npz')
+    report['comparison_baseline_release']='0.9.5'
+elif (ROOT/'baseline-fitted-paths.json').exists():
+    for row in json.loads((ROOT/'baseline-fitted-paths.json').read_text()):baseline.setdefault(row['id'],row)
+    report['comparison_baseline_release']='historical authoring snapshot'
+
 report['turn_degrees_over_4mm']={sid:{'after':turning(main[sid]),**({'before':turning(baseline[sid])} if baseline else {})} for sid in major}
 
 sdf=vtk.vtkImplicitPolyDataDistance(); sdf.SetInput(bone_surface())
-def bone_gap(pp, ff, row):
+def bone_gap(pp, ff, row, distance_field=None):
+    distance_field=distance_field or sdf
     # Closest surface-to-bone distance within each 2 mm course bin. Exclude
     # collector junctions (first/last 5%) and the open lower sigmoid outlet.
     q=np.asarray(row['points']);arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))]
     _,nearest=cKDTree(q).query(pp);along=arc[nearest];fraction=along/arc[-1]
     keep=(fraction>.05)&(fraction<(.72 if 'sigmoid' in row['id'] else .95))
-    dist=np.array([sdf.EvaluateFunction(v) for v in pp])
+    dist=np.array([distance_field.EvaluateFunction(v) for v in pp])
     bins=np.floor(along[keep]/2).astype(int);dd=dist[keep]
     minima=np.array([dd[bins==b].min() for b in np.unique(bins)])
     centres=pp[ff].mean(1);_,ix=cKDTree(q).query(centres);frac=arc[ix]/arc[-1]
     cc=centres[(frac>.05)&(frac<(.72 if 'sigmoid' in row['id'] else .95))]
-    cd=np.array([sdf.EvaluateFunction(v) for v in cc])
+    cd=np.array([distance_field.EvaluateFunction(v) for v in cc])
     return dict(bins=len(minima),median_closest_gap_mm=float(np.median(minima)),
                 p90_closest_gap_mm=float(np.percentile(minima,90)),
                 minimum_vertex_signed_distance_mm=float(dd.min()),
@@ -90,7 +98,10 @@ for sid in major:
     index=next(i for i,s in enumerate(spec['structures']) if s['id']==sid)
     ff=f[labels==index];used,inv=np.unique(ff,return_inverse=True)
     result={'after':bone_gap(p[used],inv.reshape(-1,3),main[sid])}
-    if sid in old_records:
+    if baseline_mesh is not None:
+        old_f=baseline_mesh['faces'][baseline_mesh['labels']==index];used_old,inv_old=np.unique(old_f,return_inverse=True)
+        result['before']=bone_gap(baseline_mesh['positions'][used_old],inv_old.reshape(-1,3),baseline[sid])
+    elif sid in old_records:
         rec=old_records[sid]
         pp=np.memmap(ROOT/'baseline-reference.bin',dtype='<f4',mode='r',offset=rec['positionOffset'],shape=(rec['vertices'],3))
         ff=np.memmap(ROOT/'baseline-reference.bin',dtype='<u4',mode='r',offset=rec['indexOffset'],shape=(rec['indices']//3,3))
@@ -105,6 +116,54 @@ if (ROOT/'baseline-asset-hashes.json').exists():
         assert actual==expected,name
         retained[name]=actual
     report['unchanged_asset_sha256']=retained
-dest=APP/'docs/validation/venous-morphology-v0.9.2.json'
+report['skullbase_apposition']={}
+for index,structure in enumerate(spec['structures']):
+    profile=structure.get('profile',{})
+    names=profile.get('bone_names')
+    if not profile.get('bone_apposition') or not names:continue
+    append=vtk.vtkAppendPolyData()
+    for rec in records:
+        if rec['name'] in names:append.AddInputData(poly(*arrays(rec)))
+    append.Update();local=vtk.vtkImplicitPolyDataDistance();local.SetInput(append.GetOutput())
+    ff=f[labels==index];used,inv=np.unique(ff,return_inverse=True)
+    report['skullbase_apposition'][structure['id']]={'named_bones':names,'surface':bone_gap(p[used],inv.reshape(-1,3),main[structure['id']],local)}
+    assert report['skullbase_apposition'][structure['id']]['surface']['median_closest_gap_mm']<.5,structure['id']
+    if baseline_mesh is not None:
+        old_f=baseline_mesh['faces'][baseline_mesh['labels']==index];used_old,inv_old=np.unique(old_f,return_inverse=True)
+        report['skullbase_apposition'][structure['id']]['before']=bone_gap(baseline_mesh['positions'][used_old],inv_old.reshape(-1,3),baseline[structure['id']],local)
+# Check the actual sinus skin around both retained cavernous ICAs.
+report['cavernous_ica_clearance']={}
+for side in ['right','left']:
+    rec=next(rec for rec in records if rec['name']=='ICA cavernous '+side)
+    arterial_surface=poly(*arrays(rec))
+    artery=vtk.vtkImplicitPolyDataDistance();artery.SetInput(arterial_surface)
+    index=next(i for i,row in enumerate(spec['structures']) if row['id']=='vein.cavernous.'+side)
+    vertices=p[np.unique(f[labels==index])];centroids=p[f[labels==index]].mean(1)
+    # Named arterial segments have open label boundaries, so their signed
+    # distances can be negative outside the true lumen. Use surface distance
+    # and an actual triangle intersection check rather than that ambiguous sign.
+    vertex_min=min(abs(artery.EvaluateFunction(v)) for v in vertices)
+    centroid_min=min(abs(artery.EvaluateFunction(v)) for v in centroids)
+    intersections=vtk.vtkIntersectionPolyDataFilter()
+    intersections.SetInputData(0,poly(p,f[labels==index]));intersections.SetInputData(1,arterial_surface)
+    intersections.SplitFirstOutputOff();intersections.SplitSecondOutputOff();intersections.Update()
+    lines=intersections.GetOutput(0).GetNumberOfLines()
+    assert lines==0,(side,lines)
+    assert min(vertex_min,centroid_min)>.05,(side,vertex_min,centroid_min)
+    report['cavernous_ica_clearance'][side]={'minimum_vertex_surface_distance_mm':vertex_min,'minimum_face_centroid_surface_distance_mm':centroid_min,'triangle_intersection_lines':lines}
+# Check that the thin authored basilar channels survived common-surface meshing.
+# Near an ICA attachment a path centre may be in the deliberate ICA exclusion.
+final_sdf=vtk.vtkImplicitPolyDataDistance();final_sdf.SetInput(poly(p,f))
+coverage=[]
+for row in paths:
+    if row['id']!='vein.basilar_plexus':continue
+    qq=np.asarray(row['points']);rr=np.asarray(row['radii']);keep=np.arange(len(qq))[max(1,int(len(qq)*.1)):max(2,int(len(qq)*.9))]
+    distance=np.array([final_sdf.EvaluateFunction(v) for v in qq[keep]])
+    coverage.append({'interior_samples':len(keep),'fraction_inside_or_within_0_3mm':float(np.mean(distance<=.3)), 'maximum_distance_mm':float(distance.max())})
+assert len(coverage)==11
+assert min(c['fraction_inside_or_within_0_3mm'] for c in coverage)>.85,coverage
+report['basilar_channel_coverage']=coverage
+report['unresolved_bone_detail']='The retained hypoglossal canal lumen is not resolved. Anterior condylar routing remains a regional teaching representation.'
+dest=APP/('docs/validation/venous-morphology-v'+spec['release']+'.json')
 dest.write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2),flush=True)

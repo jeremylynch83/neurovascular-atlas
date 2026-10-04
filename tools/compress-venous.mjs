@@ -7,11 +7,15 @@ const output=process.argv[3]??'public/anatomy/models/venous.glb';
 const raw=fs.readFileSync(input),jlen=raw.readUInt32LE(12);
 const doc=JSON.parse(raw.subarray(20,20+jlen));const bin=raw.subarray(28+jlen);
 const chunks=[];let compressedOffset=0,decodedOffset=0;
+const indexViews=new Set(doc.meshes.flatMap(m=>m.primitives.map(p=>doc.accessors[p.indices]?.bufferView)));
 for(const [i,v] of doc.bufferViews.entries()){
   const accessor=doc.accessors.find(a=>a.bufferView===i);
-  const stride=accessor.type==='VEC3'?12:4, count=accessor.count;
+  const components={SCALAR:1,VEC2:2,VEC3:3,VEC4:4}[accessor.type];
+  const componentBytes={5121:1,5123:2,5125:4,5126:4}[accessor.componentType];
+  const stride=v.byteStride??components*componentBytes, count=accessor.count;
+  if((accessor.byteOffset??0)!==0||stride*count!==v.byteLength)throw Error(`Non-packed authoring view ${i}`);
   // INDICES mode preserves triangle ordering exactly (TRIANGLES may rotate indices).
-  const mode=v.target===34963?'INDICES':'ATTRIBUTES';
+  const mode=indexViews.has(i)?'INDICES':'ATTRIBUTES';
   const bytes=bin.subarray(v.byteOffset,v.byteOffset+v.byteLength);
   const encoded=MeshoptEncoder.encodeGltfBuffer(bytes,count,stride,mode);
   const decoded=new Uint8Array(bytes.length);MeshoptDecoder.decodeGltfBuffer(decoded,count,stride,encoded,mode);

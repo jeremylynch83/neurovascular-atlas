@@ -1,0 +1,460 @@
+{
+  "release": "0.9.6",
+  "vertices": 220028,
+  "triangles": 440328,
+  "named_structures": 104,
+  "watertight": true,
+  "winding_consistent": true,
+  "connected_components": 1,
+  "positive_volume": true,
+  "minimum_triangle_area_mm2": 2.6620548406977052e-05,
+  "scope": "Authoring geometry checks, not calibrated anatomical measurements",
+  "major_sinus_faces_flipped_by_final_fit": 0,
+  "main_attachment_endpoints": {
+    "count": 122,
+    "maximum_error_mm": 9.943842312741692e-06
+  },
+  "comparison_baseline_release": "0.9.5",
+  "turn_degrees_over_4mm": {
+    "vein.superior_sagittal": {
+      "after": {
+        "median": 3.570674646326847,
+        "p95": 8.38102616200369,
+        "maximum": 22.11397610866831
+      },
+      "before": {
+        "median": 3.676180479746743,
+        "p95": 8.446191938407367,
+        "maximum": 22.282243925365705
+      }
+    },
+    "vein.transverse.right": {
+      "after": {
+        "median": 8.346505569375617,
+        "p95": 20.198511462199626,
+        "maximum": 29.570287061598147
+      },
+      "before": {
+        "median": 9.074825422340115,
+        "p95": 22.84098902085865,
+        "maximum": 26.135428748387497
+      }
+    },
+    "vein.transverse.left": {
+      "after": {
+        "median": 9.13839635896994,
+        "p95": 18.843679776341226,
+        "maximum": 27.426052468458494
+      },
+      "before": {
+        "median": 9.154271733861293,
+        "p95": 23.9236680234964,
+        "maximum": 27.769498962963706
+      }
+    },
+    "vein.sigmoid.right": {
+      "after": {
+        "median": 21.095653883484268,
+        "p95": 63.51103028060968,
+        "maximum": 79.13244565547443
+      },
+      "before": {
+        "median": 16.02436735318864,
+        "p95": 37.57767129254207,
+        "maximum": 47.83323096190484
+      }
+    },
+    "vein.sigmoid.left": {
+      "after": {
+        "median": 21.82256145646937,
+        "p95": 64.41275753491828,
+        "maximum": 78.24507252910412
+      },
+      "before": {
+        "median": 16.81655502988355,
+        "p95": 33.87263122410181,
+        "maximum": 45.63221269895817
+      }
+    }
+  },
+  "bone_apposition": {
+    "method": "Signed distance to retained inner skull; closest surface point per 2 mm course bin. Junction end 5% excluded; sigmoid distal 28% excluded at open skull base. Positive is outside bone. Vertex and centroid sampling does not prove absence of triangle intersections.",
+    "structures": {
+      "vein.superior_sagittal": {
+        "after": {
+          "bins": 132,
+          "median_closest_gap_mm": 0.18055300442238342,
+          "p90_closest_gap_mm": 0.19843731676037585,
+          "minimum_vertex_signed_distance_mm": 0.12181586206838631,
+          "minimum_face_centroid_signed_distance_mm": 0.08785610831258996
+        },
+        "before": {
+          "bins": 131,
+          "median_closest_gap_mm": 0.1954630275153033,
+          "p90_closest_gap_mm": 0.25828492276745657,
+          "minimum_vertex_signed_distance_mm": 0.10860702870648115,
+          "minimum_face_centroid_signed_distance_mm": 0.07005048796717762
+        }
+      },
+      "vein.transverse.right": {
+        "after": {
+          "bins": 39,
+          "median_closest_gap_mm": 0.18925383245287344,
+          "p90_closest_gap_mm": 0.1966415933802479,
+          "minimum_vertex_signed_distance_mm": 0.10074204065283435,
+          "minimum_face_centroid_signed_distance_mm": 0.09347315107665619
+        },
+        "before": {
+          "bins": 38,
+          "median_closest_gap_mm": 0.22348796990595476,
+          "p90_closest_gap_mm": 0.39295830027929185,
+          "minimum_vertex_signed_distance_mm": 0.12265650056351493,
+          "minimum_face_centroid_signed_distance_mm": 0.09319196532167798
+        }
+      },
+      "vein.transverse.left": {
+        "after": {
+          "bins": 40,
+          "median_closest_gap_mm": 0.18943930253781438,
+          "p90_closest_gap_mm": 0.21015412473470163,
+          "minimum_vertex_signed_distance_mm": 0.13115523570073984,
+          "minimum_face_centroid_signed_distance_mm": 0.08762938933186327
+        },
+        "before": {
+          "bins": 39,
+          "median_closest_gap_mm": 0.23310881577056689,
+          "p90_closest_gap_mm": 0.38994066595077315,
+          "minimum_vertex_signed_distance_mm": 0.1274122684337321,
+          "minimum_face_centroid_signed_distance_mm": 0.0882170745066115
+        }
+      },
+      "vein.sigmoid.right": {
+        "after": {
+          "bins": 21,
+          "median_closest_gap_mm": 0.18814870880668835,
+          "p90_closest_gap_mm": 0.4949468624420203,
+          "minimum_vertex_signed_distance_mm": 0.16809635227911313,
+          "minimum_face_centroid_signed_distance_mm": 0.08113739025417528
+        },
+        "before": {
+          "bins": 22,
+          "median_closest_gap_mm": 0.2144467420534316,
+          "p90_closest_gap_mm": 3.428716481207002,
+          "minimum_vertex_signed_distance_mm": 0.15734806112178584,
+          "minimum_face_centroid_signed_distance_mm": 0.11402624744799354
+        }
+      },
+      "vein.sigmoid.left": {
+        "after": {
+          "bins": 22,
+          "median_closest_gap_mm": 0.18799630238097476,
+          "p90_closest_gap_mm": 0.8522270177599817,
+          "minimum_vertex_signed_distance_mm": 0.16855684180973662,
+          "minimum_face_centroid_signed_distance_mm": 0.08712509260650436
+        },
+        "before": {
+          "bins": 22,
+          "median_closest_gap_mm": 0.24470808101425767,
+          "p90_closest_gap_mm": 3.5312329154701985,
+          "minimum_vertex_signed_distance_mm": 0.1590131036145425,
+          "minimum_face_centroid_signed_distance_mm": 0.11398900911239798
+        }
+      }
+    }
+  },
+  "unchanged_asset_sha256": {
+    "complete-circulation.glb": "5911ecc90928b8f61ef8be26cfbd9ab65248e3a3a1e2fd39907d914aeed48ffc",
+    "complete-anastomoses.glb": "72205cfd05318f6af9b833e5675ad6c1812ecd3a3046221abfa178f75deaff75",
+    "craniofacial.glb": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a"
+  },
+  "skullbase_apposition": {
+    "vein.marginal": {
+      "named_bones": [
+        "bone.occipital"
+      ],
+      "surface": {
+        "bins": 54,
+        "median_closest_gap_mm": 0.18750238934105182,
+        "p90_closest_gap_mm": 0.36059723619086326,
+        "minimum_vertex_signed_distance_mm": 0.14276839788448786,
+        "minimum_face_centroid_signed_distance_mm": 0.14485146104888727
+      },
+      "before": {
+        "bins": 50,
+        "median_closest_gap_mm": 0.5917594420597189,
+        "p90_closest_gap_mm": 5.654410824519279,
+        "minimum_vertex_signed_distance_mm": 0.24411886411623693,
+        "minimum_face_centroid_signed_distance_mm": 0.3529677899419278
+      }
+    },
+    "vein.sigmoid.right": {
+      "named_bones": [
+        "bone.temporal.right",
+        "bone.occipital"
+      ],
+      "surface": {
+        "bins": 21,
+        "median_closest_gap_mm": 0.18814870880668835,
+        "p90_closest_gap_mm": 0.4949468624420203,
+        "minimum_vertex_signed_distance_mm": 0.16809635227911313,
+        "minimum_face_centroid_signed_distance_mm": 0.08113739025417528
+      },
+      "before": {
+        "bins": 22,
+        "median_closest_gap_mm": 0.2144467420534316,
+        "p90_closest_gap_mm": 3.428716481207002,
+        "minimum_vertex_signed_distance_mm": 0.15734806112178584,
+        "minimum_face_centroid_signed_distance_mm": 0.11402624744799354
+      }
+    },
+    "vein.superior_petrosal.right": {
+      "named_bones": [
+        "bone.temporal.right",
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 29,
+        "median_closest_gap_mm": 0.193699928812899,
+        "p90_closest_gap_mm": 0.4097483876423846,
+        "minimum_vertex_signed_distance_mm": 0.15216761026901854,
+        "minimum_face_centroid_signed_distance_mm": 0.09788643710921616
+      },
+      "before": {
+        "bins": 33,
+        "median_closest_gap_mm": 2.935634422744343,
+        "p90_closest_gap_mm": 5.315924279257486,
+        "minimum_vertex_signed_distance_mm": 2.015954275892612,
+        "minimum_face_centroid_signed_distance_mm": 2.0300530442970204
+      }
+    },
+    "vein.inferior_petrosal.right": {
+      "named_bones": [
+        "bone.temporal.right",
+        "bone.occipital",
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 21,
+        "median_closest_gap_mm": 0.18114096647484668,
+        "p90_closest_gap_mm": 0.316349926092993,
+        "minimum_vertex_signed_distance_mm": 0.10961659139121455,
+        "minimum_face_centroid_signed_distance_mm": 0.08855220898666154
+      },
+      "before": {
+        "bins": 26,
+        "median_closest_gap_mm": 0.9022725448184501,
+        "p90_closest_gap_mm": 2.5985818501097957,
+        "minimum_vertex_signed_distance_mm": 0.36462862647397276,
+        "minimum_face_centroid_signed_distance_mm": 0.39622505526010643
+      }
+    },
+    "vein.sphenoparietal.right": {
+      "named_bones": [
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 18,
+        "median_closest_gap_mm": 0.2917326822776081,
+        "p90_closest_gap_mm": 0.4125579366689744,
+        "minimum_vertex_signed_distance_mm": 0.1519063952335667,
+        "minimum_face_centroid_signed_distance_mm": 0.11434353772233537
+      },
+      "before": {
+        "bins": 22,
+        "median_closest_gap_mm": 0.5944687068533099,
+        "p90_closest_gap_mm": 2.3333619310604177,
+        "minimum_vertex_signed_distance_mm": 0.28299620587511765,
+        "minimum_face_centroid_signed_distance_mm": 0.3242371646577819
+      }
+    },
+    "vein.sigmoid.left": {
+      "named_bones": [
+        "bone.temporal.left",
+        "bone.occipital"
+      ],
+      "surface": {
+        "bins": 22,
+        "median_closest_gap_mm": 0.18799630238097476,
+        "p90_closest_gap_mm": 0.8522270177599817,
+        "minimum_vertex_signed_distance_mm": 0.16855684180973662,
+        "minimum_face_centroid_signed_distance_mm": 0.08712509260650436
+      },
+      "before": {
+        "bins": 22,
+        "median_closest_gap_mm": 0.24470808101425767,
+        "p90_closest_gap_mm": 3.5312329154701985,
+        "minimum_vertex_signed_distance_mm": 0.1590131036145425,
+        "minimum_face_centroid_signed_distance_mm": 0.11398900911239798
+      }
+    },
+    "vein.superior_petrosal.left": {
+      "named_bones": [
+        "bone.temporal.left",
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 30,
+        "median_closest_gap_mm": 0.20194943030108622,
+        "p90_closest_gap_mm": 0.3769559987774972,
+        "minimum_vertex_signed_distance_mm": 0.17780189298688856,
+        "minimum_face_centroid_signed_distance_mm": 0.09280329318700954
+      },
+      "before": {
+        "bins": 33,
+        "median_closest_gap_mm": 3.5375098859192815,
+        "p90_closest_gap_mm": 5.956223197106071,
+        "minimum_vertex_signed_distance_mm": 2.0290069317831616,
+        "minimum_face_centroid_signed_distance_mm": 2.04539147117237
+      }
+    },
+    "vein.inferior_petrosal.left": {
+      "named_bones": [
+        "bone.temporal.left",
+        "bone.occipital",
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 21,
+        "median_closest_gap_mm": 0.18368930930813768,
+        "p90_closest_gap_mm": 0.3080151892635203,
+        "minimum_vertex_signed_distance_mm": 0.1513477198236979,
+        "minimum_face_centroid_signed_distance_mm": 0.05051218551083308
+      },
+      "before": {
+        "bins": 26,
+        "median_closest_gap_mm": 0.9507988388619802,
+        "p90_closest_gap_mm": 2.549812386860213,
+        "minimum_vertex_signed_distance_mm": 0.4739832590066941,
+        "minimum_face_centroid_signed_distance_mm": 0.45189528309781185
+      }
+    },
+    "vein.sphenoparietal.left": {
+      "named_bones": [
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 18,
+        "median_closest_gap_mm": 0.30881335838992474,
+        "p90_closest_gap_mm": 0.4841129592884839,
+        "minimum_vertex_signed_distance_mm": 0.15551872776464482,
+        "minimum_face_centroid_signed_distance_mm": 0.14456484150107432
+      },
+      "before": {
+        "bins": 22,
+        "median_closest_gap_mm": 0.6664586885145156,
+        "p90_closest_gap_mm": 2.1931131662454275,
+        "minimum_vertex_signed_distance_mm": 0.31819318607470304,
+        "minimum_face_centroid_signed_distance_mm": 0.290710834786454
+      }
+    },
+    "vein.posterior_intercavernous": {
+      "named_bones": [
+        "bone.sphenoid"
+      ],
+      "surface": {
+        "bins": 14,
+        "median_closest_gap_mm": 0.30128126928264565,
+        "p90_closest_gap_mm": 1.3422082802701163,
+        "minimum_vertex_signed_distance_mm": 0.16986767715520817,
+        "minimum_face_centroid_signed_distance_mm": 0.17261960308983176
+      },
+      "before": {
+        "bins": 10,
+        "median_closest_gap_mm": 3.173532372485882,
+        "p90_closest_gap_mm": 3.358828896061873,
+        "minimum_vertex_signed_distance_mm": 1.8590166864750903,
+        "minimum_face_centroid_signed_distance_mm": 2.022853220205577
+      }
+    },
+    "vein.basilar_plexus": {
+      "named_bones": [
+        "bone.sphenoid",
+        "bone.occipital"
+      ],
+      "surface": {
+        "bins": 15,
+        "median_closest_gap_mm": 0.1758054425516476,
+        "p90_closest_gap_mm": 0.18828187923150225,
+        "minimum_vertex_signed_distance_mm": 0.13063387680009866,
+        "minimum_face_centroid_signed_distance_mm": 0.13993031797468905
+      },
+      "before": {
+        "bins": 15,
+        "median_closest_gap_mm": 0.49461412600585714,
+        "p90_closest_gap_mm": 0.523994969415183,
+        "minimum_vertex_signed_distance_mm": 0.29840094875311635,
+        "minimum_face_centroid_signed_distance_mm": 0.31931111429107756
+      }
+    }
+  },
+  "cavernous_ica_clearance": {
+    "right": {
+      "minimum_vertex_surface_distance_mm": 0.2320103799926994,
+      "minimum_face_centroid_surface_distance_mm": 0.16885566209454636,
+      "triangle_intersection_lines": 0
+    },
+    "left": {
+      "minimum_vertex_surface_distance_mm": 0.17913667524848878,
+      "minimum_face_centroid_surface_distance_mm": 0.13134528903358808,
+      "triangle_intersection_lines": 0
+    }
+  },
+  "basilar_channel_coverage": [
+    {
+      "interior_samples": 40,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.2077899233840854
+    },
+    {
+      "interior_samples": 51,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": 0.2563109850356309
+    },
+    {
+      "interior_samples": 55,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.06499471627943831
+    },
+    {
+      "interior_samples": 39,
+      "fraction_inside_or_within_0_3mm": 0.9487179487179487,
+      "maximum_distance_mm": 0.39739013041146437
+    },
+    {
+      "interior_samples": 27,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.23047944690447417
+    },
+    {
+      "interior_samples": 24,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.37150635222231393
+    },
+    {
+      "interior_samples": 24,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.27214667348192895
+    },
+    {
+      "interior_samples": 30,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.24241889963677715
+    },
+    {
+      "interior_samples": 31,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.11362078439757019
+    },
+    {
+      "interior_samples": 37,
+      "fraction_inside_or_within_0_3mm": 0.918918918918919,
+      "maximum_distance_mm": 0.8349332327877199
+    },
+    {
+      "interior_samples": 24,
+      "fraction_inside_or_within_0_3mm": 1.0,
+      "maximum_distance_mm": -0.25967519746005285
+    }
+  ],
+  "unresolved_bone_detail": "The retained hypoglossal canal lumen is not resolved. Anterior condylar routing remains a regional teaching representation."
+}

@@ -1,3 +1,27 @@
+# v0.9.8
+
+- Retain the completed v0.9.7 ICA correction and refine the local cavernous venous envelope.
+- Correct temporary artery exclusion masks at open label boundaries, restoring posterosuperior venous space around the displayed ICA.
+- Preserve the lesser-wing entry and all 104 named veins in one connected, watertight network.
+- Check the actual displayed sinus/ICA surfaces for intersections on both sides, and preserve 196,494 exterior venous vertices exactly.
+- Add the follow-up geometry review and record the unresolved low petrous/lacerum skull canal relationship.
+
+# v0.9.7
+
+- Move the lower cavernous ICA medially with smooth transitions; apply the same coordinate deformation to local branches and anastomoses.
+- Rebuild broader parasellar cavernous sinuses and flatter anterior/posterior sellar cross-connections.
+- Retain the skull and GUI, and document residual skull-canal uncertainty.
+
+# v0.9.6
+
+- Rework the basilar plexus into a shallow, irregular interconnected clival network.
+- Fit the lesser-sphenoid-wing channels separately from superficial Sylvian venous drainage.
+- Rework cavernous/intercavernous spaces around the retained cavernous ICA and sellar bone.
+- Fit superior and inferior petrosal sinuses to the petrous crest and intracranial petroclival groove, with corrected cavernous and jugular junctions.
+- Flatten bone-facing transverse/sigmoid walls and refine jugular bulb calibre.
+- Fit the marginal sinus to the foramen-magnum rim, vary calibre and add selected condylar communications.
+- Preserve existing UI and v0.9.5 translucent rendering behaviour.
+
 # v0.9.5
 
 - Use cached Lambert lighting and one pass for translucent context, retaining the existing meshes and full opaque shading.

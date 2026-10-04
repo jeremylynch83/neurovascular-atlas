@@ -16,10 +16,21 @@ lookup={s['id']:s for s in spec['structures']}; curves={};paths=[]
 skull=bone_surface();loc=locator(skull);centre=np.array([.65,-65,105])
 skull_sdf=vtk.vtkImplicitPolyDataDistance();skull_sdf.SetInput(skull)
 bone_fields=[]
+regional_fields={}
 for rec in records:
  if rec['file']!='craniofacial' or 'tooth' in rec['name'] or rec['name']=='mandibular-alveolar-process':continue
  sdf=vtk.vtkImplicitPolyDataDistance();sdf.SetInput(poly(*arrays(rec)))
  bone_fields.append((rec['name'],sdf,np.array(rec['bounds'])))
+def profile_reference(profile):
+ names=tuple(sorted(profile.get('bone_names',[])))
+ if not names:return skull_sdf,loc
+ if names not in regional_fields:
+  app=vtk.vtkAppendPolyData()
+  for rec in records:
+   if rec['name'] in names:app.AddInputData(poly(*arrays(rec)))
+  app.Update();pd=app.GetOutput();field=vtk.vtkImplicitPolyDataDistance();field.SetInput(pd)
+  regional_fields[names]=(field,locator(pd))
+ return regional_fields[names]
 artery_append=vtk.vtkAppendPolyData()
 for rec in records:
  if rec['file']=='complete-circulation':artery_append.AddInputData(poly(*arrays(rec)))
@@ -58,6 +69,7 @@ def sample(points,radius,entry_tangent=None):
  p=np.array(points,float); d=np.r_[0,np.cumsum(np.linalg.norm(np.diff(p,axis=0),axis=1))]
  assert np.all(np.diff(d)>1e-5),(p,d)
  tang=np.gradient(p,d,axis=0)
+ if np.linalg.norm(p[0]-p[-1])<1e-5:tang[0]=tang[-1]=(p[1]-p[-2])/(d[1]+d[-1]-d[-2])
  if entry_tangent is not None:
   direction=np.asarray(entry_tangent,float);tang[0]=direction/np.linalg.norm(direction)
  cs=CubicHermiteSpline(d,p,tang);t=np.linspace(0,d[-1],max(6,int(d[-1]/.6)+1));q=cs(t)
@@ -92,7 +104,7 @@ while todo:
   if any(isinstance(p,dict) and p['structure'] not in curves for p in s['points']):continue
   q,r=sample([point(p) for p in s['points']],s['radius'],s.get('entry_tangent'))
   if s.get('profile',{}).get('bone_apposition'):
-   q=fit_sinus(q,r,s['profile'],skull_sdf,loc,isinstance(s['points'][0],dict),isinstance(s['points'][-1],dict))
+   q=fit_sinus(q,r,s['profile'],*profile_reference(s['profile']),isinstance(s['points'][0],dict),isinstance(s['points'][-1],dict))
   else:
    q=fit(q,r,s['fit'],isinstance(s['points'][0],dict),isinstance(s['points'][-1],dict))
    q=clearance(q,r,s['id'])
@@ -102,24 +114,30 @@ while todo:
     shift=point(s['points'][end])-q[end]
     for k in range(min(12,len(q)//2)):
      idx=k if step==1 else -1-k;q[idx]+=shift*(1-k/12)**2
-  if s.get('continue_into'):q=continue_tangent(q,curves[s['continue_into']][0])
-  curves[s['id']]=(q,r);paths.append((s['id'],q,r,s['shape']));todo.remove(s);progressed=True
+  if s.get('continue_into'):q=continue_tangent(q,curves[s['continue_into']][0],s.get('continuation_length_mm',24))
+  curves[s['id']]=(q,r);paths.append((s['id'],q,r,s['shape'],s.get('profile')));todo.remove(s);progressed=True
  if not progressed:raise ValueError('Unresolved attachments '+str([s['id'] for s in todo]))
 for s in spec['structures']:
- for p in s.get('additionalPaths',[]):
-  q,r=sample([point(a) for a in p],.85 if 'pterygoid' in s['id'] else .8);q=clearance(q,r,s['id'])
+ for extra in s.get('additionalPaths',[]):
+  if isinstance(extra,dict):
+   p=extra['points'];radius=extra['radius'];profile=extra.get('profile')
+  else:p=extra;radius=.85 if 'pterygoid' in s['id'] else .8;profile=None
+  q,r=sample([point(a) for a in p],radius)
+  if profile and profile.get('bone_apposition'):
+   q=fit_sinus(q,r,profile,*profile_reference(profile),isinstance(p[0],dict),isinstance(p[-1],dict))
+  else:q=clearance(q,r,s['id'])
   for end,step in [(0,1),(-1,-1)]:
    if isinstance(p[end],dict):
     shift=point(p[end])-q[end]
     for k in range(min(12,len(q)//2)):
      idx=k if step==1 else -1-k;q[idx]+=shift*(1-k/12)**2
-  paths.append((s['id'],q,r,'round'))
+  paths.append((s['id'],q,r,'round',profile))
 
 fitted=[]
-for sid,q,r,shape in paths:
+for sid,q,r,shape,profile in paths:
  row={'id':sid,'points':q.round(5).tolist(),'radii':r.round(5).tolist(),'shape':shape}
- if lookup[sid].get('profile'):
-  row['profile']=lookup[sid]['profile'];row['wallNormals']=oriented_frames(q,row['profile'],skull_sdf)[1].round(6).tolist()
+ if profile:
+  row['profile']=profile;row['wallNormals']=oriented_frames(q,profile,profile_reference(profile)[0] if profile.get('bone_apposition') else None)[1].round(6).tolist()
  fitted.append(row)
 (APP/'anatomy/source/venous/fitted-paths.json').write_text(json.dumps(fitted,separators=(',',':'))+'\n')
 np.savez_compressed(ROOT/'venous-curves.npz',**{sid.replace('.','_'):np.c_[q,r] for sid,(q,r) in curves.items()})
@@ -148,7 +166,7 @@ def tube(q,r,shape='round',n=20):
 
 print('Curves',len(curves),'paths',len(paths),flush=True)
 ids=list(lookup);original=mf.Manifold.reserve_ids(len(ids));solids=[]
-for sid,q,r,shape in paths:
+for sid,q,r,shape,profile in paths:
  p,f=tube(q,r,shape)
  mesh=mf.Mesh(p,f,run_index=np.array([0,len(f)*3],np.uint32),run_original_id=np.array([original+ids.index(sid)],np.uint32))
  solid=mf.Manifold(mesh)

@@ -29,7 +29,7 @@ def render(items,path,view=(1,0,0),center=(0,-65,55),scale=155):
  ren=vtk.vtkRenderer();ren.SetBackground(.06,.07,.085)
  win=vtk.vtkRenderWindow();win.SetOffScreenRendering(1);win.SetSize(1200,1200);win.SetMultiSamples(0);win.AddRenderer(ren)
  for pd,col,op in items:ren.AddActor(actor(pd,col,op))
- cam=ren.GetActiveCamera();cam.SetPosition(*(np.array(center)+np.array(view)*600));cam.SetFocalPoint(*center);cam.SetViewUp(0,0,1 if abs(view[2])<.9 else .001);cam.ParallelProjectionOn();cam.SetParallelScale(scale)
+ cam=ren.GetActiveCamera();cam.SetPosition(*(np.array(center)+np.array(view)*600));cam.SetFocalPoint(*center);cam.SetViewUp(*( (0,0,1) if abs(view[2])<.9 else (0,1,0) ));cam.ParallelProjectionOn();cam.SetParallelScale(scale)
  ren.ResetCameraClippingRange();win.Render();w=vtk.vtkWindowToImageFilter();w.SetInput(win);w.Update();png=vtk.vtkPNGWriter();png.SetFileName(str(path));png.SetInputConnection(w.GetOutputPort());png.Write();win.Finalize()
 if __name__=='__main__':
  skull=bone_surface(); loc=locator(skull)

@@ -1,0 +1,8 @@
+{
+  "release": "0.9.8",
+  "command": "npm run build",
+  "passed": true,
+  "advisory": "Main JavaScript chunk exceeds 900 kB; existing application bundling advisory",
+  "installer_integration_passed": true,
+  "installer_scope": "Real Git with simulated Docker, GitHub CLI and HTTP services; no deployment performed"
+}

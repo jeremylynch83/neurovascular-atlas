@@ -220,6 +220,8 @@ if orbital.exists():
 
 from venous.morphology import amend_courses
 amend_courses(rows)
-document={'release':'0.9.2','coordinates':'RAS mm','groups':{'dural':'Dural venous sinuses','superficial':'Superficial cerebral veins','deep':'Deep cerebral veins','posterior':'Posterior fossa and spinal veins','extracranial':'Extracranial veins','skullbase':'Skull-base venous connections'},'structures':rows,'relationships':relations}
+from venous.skullbase import amend_skullbase
+amend_skullbase(rows,relations)
+document={'release':'0.9.6','coordinates':'RAS mm','groups':{'dural':'Dural venous sinuses','superficial':'Superficial cerebral veins','deep':'Deep cerebral veins','posterior':'Posterior fossa and spinal veins','extracranial':'Extracranial veins','skullbase':'Skull-base venous connections'},'structures':rows,'relationships':relations}
 (OUT/'courses.json').write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n')
 print(f'Authored {len(rows)} venous structures and {len(relations)} relationships')

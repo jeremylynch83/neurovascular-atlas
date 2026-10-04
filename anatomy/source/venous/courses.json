@@ -1,5 +1,5 @@
 {
-  "release": "0.9.2",
+  "release": "0.9.7",
   "coordinates": "RAS mm",
   "groups": {
     "dural": "Dural venous sinuses",
@@ -54,7 +54,8 @@
         ],
         "bone_apposition": true,
         "wall_clearance": 0.2,
-        "fit_until": 1
+        "fit_until": 1,
+        "wall_support": 0.78
       }
     },
     {
@@ -136,7 +137,8 @@
         ],
         "bone_apposition": true,
         "wall_clearance": 0.2,
-        "fit_until": 1
+        "fit_until": 1,
+        "wall_support": 0.78
       }
     },
     {
@@ -316,13 +318,165 @@
           35
         ]
       ],
-      "radius": 1.05,
+      "radius": [
+        0.7,
+        0.85,
+        0.65,
+        0.9,
+        0.75,
+        0.7,
+        0.95,
+        0.8,
+        0.7
+      ],
       "description": "The marginal sinus encircles the foramen magnum and is connected to a network of adjacent venous structures including the [clival plexus](#structure-vein.basilar_plexus) anteriorly, the vertebral venous plexus inferiorly, and sigmoid sinuses laterally.",
       "fit": null,
       "aliases": [],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.25,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -86,
+          31
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.occipital"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2
+      },
+      "additionalPaths": [
+        {
+          "points": [
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.07
+            },
+            [
+              15,
+              -101,
+              32
+            ],
+            [
+              21,
+              -92,
+              30
+            ],
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.3
+            }
+          ],
+          "radius": [
+            0.45,
+            0.6,
+            0.45
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.25,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -86,
+              31
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.72,
+            "wall_clearance": 0.2,
+            "fair_mm": 2
+          }
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.64
+            },
+            [
+              -18,
+              -89,
+              31
+            ],
+            [
+              -12,
+              -101,
+              31
+            ],
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.95
+            }
+          ],
+          "radius": [
+            0.48,
+            0.55,
+            0.45
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.25,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -86,
+              31
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.72,
+            "wall_clearance": 0.2,
+            "fair_mm": 2
+          }
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.32
+            },
+            {
+              "structure": "vein.anterior_condylar.right",
+              "fraction": 0
+            }
+          ],
+          "radius": [
+            0.65,
+            0.8
+          ]
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.67
+            },
+            {
+              "structure": "vein.anterior_condylar.left",
+              "fraction": 0
+            }
+          ],
+          "radius": [
+            0.6,
+            0.8
+          ]
+        }
+      ]
     },
     {
       "id": "vein.galen",
@@ -410,7 +564,10 @@
       ],
       "radius": [
         2.4,
-        4.2,
+        4.25,
+        4.65,
+        4.4,
+        4.5,
         4.8
       ],
       "description": "Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.right) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein.",
@@ -482,7 +639,7 @@
       "profile": {
         "kind": "oval",
         "width": 1.05,
-        "depth": 0.9,
+        "depth": 0.76,
         "centre": [
           0.65,
           -105,
@@ -490,14 +647,22 @@
         ],
         "bone_apposition": true,
         "wall_clearance": 0.2,
-        "fit_until": 0.72
+        "fit_until": 0.86,
+        "wall_support": 0.76,
+        "fit_mode": "nearest",
+        "bone_direction_mode": "radial",
+        "bone_names": [
+          "bone.temporal.right",
+          "bone.occipital"
+        ]
       },
       "entry_tangent": [
         0.18,
         0.95,
         -0.25
       ],
-      "continue_into": "vein.internal_jugular.right"
+      "continue_into": "vein.internal_jugular.right",
+      "continuation_length_mm": 14
     },
     {
       "id": "vein.transverse.right",
@@ -546,7 +711,7 @@
       "profile": {
         "kind": "oval",
         "width": 1.15,
-        "depth": 0.8,
+        "depth": 0.66,
         "centre": [
           0.65,
           -65,
@@ -554,7 +719,8 @@
         ],
         "bone_apposition": true,
         "wall_clearance": 0.2,
-        "fit_until": 1
+        "fit_until": 1,
+        "wall_support": 0.74
       },
       "continue_into": "vein.sigmoid.right"
     },
@@ -566,19 +732,24 @@
       "side": "right",
       "points": [
         [
-          15,
+          19,
+          -51,
+          49
+        ],
+        [
+          17,
           -49,
           56
         ],
         [
-          14,
+          15,
           -47,
           63
         ],
         [
-          13,
-          -42,
-          67
+          14,
+          -41,
+          68
         ],
         [
           14,
@@ -587,8 +758,11 @@
         ]
       ],
       "radius": [
-        3.6,
-        4.6
+        2.65,
+        3.7,
+        4.4,
+        4.6,
+        3.25
       ],
       "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.right), [superior petrosal sinus](#structure-vein.superior_petrosal.right), [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.",
       "fit": null,
@@ -597,7 +771,78 @@
       ],
       "page": 68,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.12,
+        "depth": 0.85,
+        "centre": [
+          0.65,
+          -43,
+          61
+        ],
+        "frame_normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      "additionalPaths": [
+        {
+          "points": [
+            {
+              "structure": "vein.cavernous.right",
+              "fraction": 0.2
+            },
+            [
+              20,
+              -46,
+              61
+            ],
+            [
+              19,
+              -39,
+              67
+            ],
+            {
+              "structure": "vein.cavernous.right",
+              "fraction": 0.98
+            }
+          ],
+          "radius": [
+            2.2,
+            2.7,
+            2.3
+          ]
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.cavernous.right",
+              "fraction": 0.12
+            },
+            [
+              11,
+              -47,
+              58
+            ],
+            [
+              10,
+              -42,
+              64
+            ],
+            {
+              "structure": "vein.cavernous.right",
+              "fraction": 0.94
+            }
+          ],
+          "radius": [
+            1.8,
+            2.3,
+            2.0
+          ]
+        }
+      ]
     },
     {
       "id": "vein.superior_petrosal.right",
@@ -608,29 +853,34 @@
       "points": [
         {
           "structure": "vein.cavernous.right",
-          "fraction": 0.25
+          "fraction": 0.6
         },
         [
-          24,
-          -60,
-          64
+          23,
+          -59,
+          60
         ],
         [
-          38,
-          -71,
-          66
+          35,
+          -70,
+          61
         ],
         [
-          48,
-          -82,
-          67
+          46,
+          -81,
+          63
         ],
         {
           "structure": "vein.sigmoid.right",
           "fraction": 0
         }
       ],
-      "radius": 1.45,
+      "radius": [
+        0.95,
+        1.15,
+        1.25,
+        1.4
+      ],
       "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the junction of the [transverse](#structure-vein.transverse.right) and [sigmoid sinuses](#structure-vein.sigmoid.right). They may receive blood from supra- or infratentorial structures.",
       "fit": null,
       "aliases": [
@@ -638,7 +888,31 @@
       ],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.25,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -73,
+          78
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.temporal.right",
+          "bone.sphenoid"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0,
+          -1
+        ]
+      }
     },
     {
       "id": "vein.inferior_petrosal.right",
@@ -649,34 +923,39 @@
       "points": [
         {
           "structure": "vein.cavernous.right",
-          "fraction": 0.1
+          "fraction": 0.2
         },
         [
           13,
-          -57,
-          57
+          -58,
+          54
         ],
         [
-          13,
-          -65,
-          51
+          16,
+          -66,
+          47
         ],
         [
-          18,
+          21,
           -72,
-          44
+          40
         ],
         [
-          25,
-          -71,
-          35
+          27,
+          -72,
+          34
         ],
         {
           "structure": "vein.internal_jugular.right",
-          "fraction": 0.065
+          "fraction": 0.025
         }
       ],
-      "radius": 1.4,
+      "radius": [
+        1.05,
+        1.25,
+        1.3,
+        1.4
+      ],
       "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the [jugular vein](#structure-vein.internal_jugular.right) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.",
       "fit": null,
       "aliases": [
@@ -684,7 +963,32 @@
       ],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.35,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -75,
+          70
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.temporal.right",
+          "bone.occipital",
+          "bone.sphenoid"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0.8,
+          -0.6
+        ]
+      }
     },
     {
       "id": "vein.sphenoparietal.right",
@@ -694,43 +998,72 @@
       "side": "right",
       "points": [
         [
-          48,
-          -24,
-          85
-        ],
-        [
-          40,
-          -27,
-          85
-        ],
-        [
-          29,
+          47,
           -28,
-          79
+          84
+        ],
+        [
+          38,
+          -28,
+          81
+        ],
+        [
+          30,
+          -29,
+          77
         ],
         [
           22,
-          -32,
+          -34,
           72
         ],
         {
           "structure": "vein.cavernous.right",
-          "fraction": 0.9
+          "fraction": 0.92
         }
       ],
-      "radius": 1.25,
-      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.right). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.",
+      "radius": [
+        0.6,
+        0.8,
+        1.05,
+        1.2
+      ],
+      "description": "This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.right). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) enters the cavernous region separately.",
       "fit": null,
       "aliases": [],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.35,
+        "depth": 0.65,
+        "centre": [
+          0.65,
+          -25,
+          70
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.sphenoid"
+        ],
+        "fit_mode": "directional",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0.85,
+          0.5
+        ],
+        "attachment_ramp_mm": 4
+      }
     },
     {
       "id": "vein.superficial_middle_cerebral.right",
       "name": "Superficial middle cerebral vein right",
       "group": "superficial",
-      "parent": "vein.superficial",
+      "parent": "vein.cavernous.right",
       "side": "right",
       "points": [
         [
@@ -749,13 +1082,23 @@
           97
         ],
         [
-          53,
-          -27,
+          49,
+          -35,
           87
         ],
+        [
+          38,
+          -36,
+          80
+        ],
+        [
+          26,
+          -39,
+          74
+        ],
         {
-          "structure": "vein.sphenoparietal.right",
-          "fraction": 0.05
+          "structure": "vein.cavernous.right",
+          "fraction": 0.87
         }
       ],
       "radius": [
@@ -764,7 +1107,7 @@
         1.25,
         1.45
       ],
-      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).",
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel.",
       "fit": "cortical",
       "aliases": [
         "SMV",
@@ -2333,7 +2676,12 @@
           "fraction": 0.07
         }
       ],
-      "radius": 1,
+      "radius": [
+        0.65,
+        0.9,
+        1.35,
+        1.1
+      ],
       "description": "The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.right) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus.",
       "fit": null,
       "aliases": [
@@ -2369,7 +2717,12 @@
           "fraction": 0.58
         }
       ],
-      "radius": 0.9,
+      "radius": [
+        0.9,
+        1.05,
+        0.8,
+        0.65
+      ],
       "description": "The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.right) and vertebral venous system.",
       "fit": null,
       "aliases": [],
@@ -2422,7 +2775,10 @@
       ],
       "radius": [
         2.4,
-        3.7,
+        3.75,
+        4.1,
+        3.9,
+        4.0,
         4.2
       ],
       "description": "Together with the vertebral venous plexus, the IJV is the largest drainage pathway for the brain, face, and neck. It is the continuation of the [sigmoid sinus](#structure-vein.sigmoid.left) in the jugular foramen, runs vertically in the carotid sheath in the neck, and joins the subclavian vein to form the brachiocephalic vein. Its tributaries include the [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), anterior condylar vein, facial vein, lingual vein, pharyngeal vein, superior thyroid vein, and middle thyroid vein.",
@@ -2494,7 +2850,7 @@
       "profile": {
         "kind": "oval",
         "width": 1.05,
-        "depth": 0.9,
+        "depth": 0.76,
         "centre": [
           0.65,
           -105,
@@ -2502,14 +2858,22 @@
         ],
         "bone_apposition": true,
         "wall_clearance": 0.2,
-        "fit_until": 0.72
+        "fit_until": 0.86,
+        "wall_support": 0.76,
+        "fit_mode": "nearest",
+        "bone_direction_mode": "radial",
+        "bone_names": [
+          "bone.temporal.left",
+          "bone.occipital"
+        ]
       },
       "entry_tangent": [
         -0.18,
         0.95,
         -0.25
       ],
-      "continue_into": "vein.internal_jugular.left"
+      "continue_into": "vein.internal_jugular.left",
+      "continuation_length_mm": 14
     },
     {
       "id": "vein.transverse.left",
@@ -2558,7 +2922,7 @@
       "profile": {
         "kind": "oval",
         "width": 1.15,
-        "depth": 0.8,
+        "depth": 0.66,
         "centre": [
           0.65,
           -65,
@@ -2566,7 +2930,8 @@
         ],
         "bone_apposition": true,
         "wall_clearance": 0.2,
-        "fit_until": 1
+        "fit_until": 1,
+        "wall_support": 0.74
       },
       "continue_into": "vein.sigmoid.left"
     },
@@ -2578,19 +2943,24 @@
       "side": "left",
       "points": [
         [
-          -13.7,
+          -17.7,
+          -51,
+          48.95
+        ],
+        [
+          -15.7,
           -49,
           55.95
         ],
         [
-          -12.7,
+          -13.7,
           -47,
           62.95
         ],
         [
-          -11.7,
-          -42,
-          66.95
+          -12.7,
+          -41,
+          67.95
         ],
         [
           -12.7,
@@ -2599,8 +2969,11 @@
         ]
       ],
       "radius": [
-        3.6,
-        4.6
+        2.65,
+        3.7,
+        4.4,
+        4.6,
+        3.25
       ],
       "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.left), [superior petrosal sinus](#structure-vein.superior_petrosal.left), [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.",
       "fit": null,
@@ -2609,7 +2982,78 @@
       ],
       "page": 68,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.12,
+        "depth": 0.85,
+        "centre": [
+          0.65,
+          -43,
+          61
+        ],
+        "frame_normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "additionalPaths": [
+        {
+          "points": [
+            {
+              "structure": "vein.cavernous.left",
+              "fraction": 0.2
+            },
+            [
+              -18.7,
+              -46,
+              60.95
+            ],
+            [
+              -17.7,
+              -39,
+              66.95
+            ],
+            {
+              "structure": "vein.cavernous.left",
+              "fraction": 0.98
+            }
+          ],
+          "radius": [
+            2.2,
+            2.7,
+            2.3
+          ]
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.cavernous.left",
+              "fraction": 0.12
+            },
+            [
+              -9.7,
+              -47,
+              57.95
+            ],
+            [
+              -8.7,
+              -42,
+              63.95
+            ],
+            {
+              "structure": "vein.cavernous.left",
+              "fraction": 0.94
+            }
+          ],
+          "radius": [
+            1.8,
+            2.3,
+            2.0
+          ]
+        }
+      ]
     },
     {
       "id": "vein.superior_petrosal.left",
@@ -2620,29 +3064,34 @@
       "points": [
         {
           "structure": "vein.cavernous.left",
-          "fraction": 0.25
+          "fraction": 0.6
         },
         [
-          -22.7,
-          -60,
-          63.95
+          -21.7,
+          -59,
+          59.95
         ],
         [
-          -36.7,
-          -71,
-          65.95
+          -33.7,
+          -70,
+          60.95
         ],
         [
-          -46.7,
-          -82,
-          66.95
+          -44.7,
+          -81,
+          62.95
         ],
         {
           "structure": "vein.sigmoid.left",
           "fraction": 0
         }
       ],
-      "radius": 1.45,
+      "radius": [
+        0.95,
+        1.15,
+        1.25,
+        1.4
+      ],
       "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the junction of the [transverse](#structure-vein.transverse.left) and [sigmoid sinuses](#structure-vein.sigmoid.left). They may receive blood from supra- or infratentorial structures.",
       "fit": null,
       "aliases": [
@@ -2650,7 +3099,31 @@
       ],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.25,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -73,
+          78
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.temporal.left",
+          "bone.sphenoid"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0,
+          -1
+        ]
+      }
     },
     {
       "id": "vein.inferior_petrosal.left",
@@ -2661,34 +3134,39 @@
       "points": [
         {
           "structure": "vein.cavernous.left",
-          "fraction": 0.1
+          "fraction": 0.2
         },
         [
           -11.7,
-          -57,
-          56.95
+          -58,
+          53.95
         ],
         [
-          -11.7,
-          -65,
-          50.95
+          -14.7,
+          -66,
+          46.95
         ],
         [
-          -16.7,
+          -19.7,
           -72,
-          43.95
+          39.95
         ],
         [
-          -23.7,
-          -71,
-          34.95
+          -25.7,
+          -72,
+          33.95
         ],
         {
           "structure": "vein.internal_jugular.left",
-          "fraction": 0.065
+          "fraction": 0.025
         }
       ],
-      "radius": 1.4,
+      "radius": [
+        1.05,
+        1.25,
+        1.3,
+        1.4
+      ],
       "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the [jugular vein](#structure-vein.internal_jugular.left) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.",
       "fit": null,
       "aliases": [
@@ -2696,7 +3174,32 @@
       ],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.35,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -75,
+          70
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.temporal.left",
+          "bone.occipital",
+          "bone.sphenoid"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0.8,
+          -0.6
+        ]
+      }
     },
     {
       "id": "vein.sphenoparietal.left",
@@ -2706,43 +3209,72 @@
       "side": "left",
       "points": [
         [
-          -46.7,
-          -24,
-          84.95
-        ],
-        [
-          -38.7,
-          -27,
-          84.95
-        ],
-        [
-          -27.7,
+          -45.7,
           -28,
-          78.95
+          83.95
+        ],
+        [
+          -36.7,
+          -28,
+          80.95
+        ],
+        [
+          -28.7,
+          -29,
+          76.95
         ],
         [
           -20.7,
-          -32,
+          -34,
           71.95
         ],
         {
           "structure": "vein.cavernous.left",
-          "fraction": 0.9
+          "fraction": 0.92
         }
       ],
-      "radius": 1.25,
-      "description": "This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.left). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.",
+      "radius": [
+        0.6,
+        0.8,
+        1.05,
+        1.2
+      ],
+      "description": "This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.left). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) enters the cavernous region separately.",
       "fit": null,
       "aliases": [],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.35,
+        "depth": 0.65,
+        "centre": [
+          0.65,
+          -25,
+          70
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.sphenoid"
+        ],
+        "fit_mode": "directional",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0.85,
+          0.5
+        ],
+        "attachment_ramp_mm": 4
+      }
     },
     {
       "id": "vein.superficial_middle_cerebral.left",
       "name": "Superficial middle cerebral vein left",
       "group": "superficial",
-      "parent": "vein.superficial",
+      "parent": "vein.cavernous.left",
       "side": "left",
       "points": [
         [
@@ -2761,13 +3293,23 @@
           96.95
         ],
         [
-          -51.7,
-          -27,
+          -47.7,
+          -35,
           86.95
         ],
+        [
+          -36.7,
+          -36,
+          79.95
+        ],
+        [
+          -24.7,
+          -39,
+          73.95
+        ],
         {
-          "structure": "vein.sphenoparietal.left",
-          "fraction": 0.05
+          "structure": "vein.cavernous.left",
+          "fraction": 0.87
         }
       ],
       "radius": [
@@ -2776,7 +3318,7 @@
         1.25,
         1.45
       ],
-      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).",
+      "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel.",
       "fit": "cortical",
       "aliases": [
         "SMV",
@@ -4345,7 +4887,12 @@
           "fraction": 0.07
         }
       ],
-      "radius": 1,
+      "radius": [
+        0.65,
+        0.9,
+        1.35,
+        1.1
+      ],
       "description": "The anterior condylar vein, or vein of the hypoglossal canal, connects the [marginal sinus](#structure-vein.marginal) and adjacent skull-base venous network to the [internal jugular vein](#structure-vein.internal_jugular.left) at the bulb. The anterior condylar confluence is formed by the anterior and lateral condylar veins and tributaries of the clival plexus.",
       "fit": null,
       "aliases": [
@@ -4381,7 +4928,12 @@
           "fraction": 0.58
         }
       ],
-      "radius": 0.9,
+      "radius": [
+        0.9,
+        1.05,
+        0.8,
+        0.65
+      ],
       "description": "The lateral condylar vein connects the jugular and anterior condylar region with the [suboccipital plexus](#structure-vein.suboccipital_plexus.left) and vertebral venous system.",
       "fit": null,
       "aliases": [],
@@ -4420,13 +4972,32 @@
           "fraction": 0.92
         }
       ],
-      "radius": 1.1,
+      "radius": [
+        0.8,
+        1.0,
+        0.85
+      ],
       "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.",
       "fit": null,
       "aliases": [],
       "page": 68,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.0,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -35,
+          60
+        ],
+        "frame_normal": [
+          0,
+          0,
+          1
+        ]
+      }
     },
     {
       "id": "vein.posterior_intercavernous",
@@ -4437,35 +5008,62 @@
       "points": [
         {
           "structure": "vein.cavernous.right",
-          "fraction": 0.4
+          "fraction": 0.6
         },
         [
           6,
-          -43,
-          67
+          -48,
+          65
         ],
         [
           0.65,
-          -43,
-          67
+          -49,
+          65
         ],
         [
           -5,
-          -43,
-          67
+          -48,
+          65
         ],
         {
           "structure": "vein.cavernous.left",
-          "fraction": 0.4
+          "fraction": 0.6
         }
       ],
-      "radius": 0.95,
+      "radius": [
+        0.75,
+        1.1,
+        0.85
+      ],
       "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.",
       "fit": null,
       "aliases": [],
       "page": 68,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.15,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -56,
+          67
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.sphenoid"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.72,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          1,
+          -0.2
+        ]
+      }
     },
     {
       "id": "vein.basilar_plexus",
@@ -4475,18 +5073,23 @@
       "side": "midline",
       "points": [
         [
-          0.65,
-          -50,
-          61
+          1.2,
+          -51,
+          62
         ],
         [
-          0.65,
-          -57,
-          51
+          -0.7,
+          -55,
+          56
         ],
         [
-          0.65,
-          -64,
+          2,
+          -60,
+          49
+        ],
+        [
+          0.2,
+          -65,
           41
         ],
         {
@@ -4494,8 +5097,14 @@
           "fraction": 0.5
         }
       ],
-      "radius": 1,
-      "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below.",
+      "radius": [
+        0.58,
+        0.68,
+        0.55,
+        0.6,
+        0.52
+      ],
+      "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below. It forms a variable plexiform network along the posterior clivus, with communications to both [inferior petrosal sinuses](#structure-vein.inferior_petrosal.right). The displayed interconnected channels represent one selected reference pattern.",
       "fit": null,
       "aliases": [
         "Clival plexus",
@@ -4505,81 +5114,589 @@
       "shape": "round",
       "color": "#839acb",
       "additionalPaths": [
-        [
-          {
-            "structure": "vein.cavernous.right",
-            "fraction": 0.12
-          },
-          [
-            7,
-            -57,
-            51
+        {
+          "points": [
+            {
+              "structure": "vein.cavernous.right",
+              "fraction": 0.2
+            },
+            [
+              11,
+              -54,
+              57
+            ],
+            [
+              9.5,
+              -58,
+              53
+            ],
+            [
+              12,
+              -62,
+              48
+            ],
+            [
+              10,
+              -67,
+              40
+            ],
+            {
+              "structure": "vein.anterior_condylar.right",
+              "fraction": 0
+            }
           ],
-          [
-            8,
-            -65,
-            40
-          ],
-          {
-            "structure": "vein.anterior_condylar.right",
-            "fraction": 0
-          }
-        ],
-        [
-          {
-            "structure": "vein.cavernous.left",
-            "fraction": 0.12
-          },
-          [
-            -5.7,
-            -57,
-            51
-          ],
-          [
-            -6.7,
-            -65,
-            40
-          ],
-          {
-            "structure": "vein.anterior_condylar.left",
-            "fraction": 0
-          }
-        ],
-        [
-          [
-            7,
-            -57,
-            51
-          ],
-          [
+          "radius": [
             0.65,
-            -57,
-            51
+            0.8,
+            0.6,
+            0.5
           ],
-          [
-            -5.7,
-            -57,
-            51
-          ]
-        ],
-        [
-          [
-            8,
-            -65,
-            40
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.cavernous.left",
+              "fraction": 0.22
+            },
+            [
+              -8,
+              -54,
+              58
+            ],
+            [
+              -10,
+              -59,
+              52
+            ],
+            [
+              -7,
+              -64,
+              46
+            ],
+            [
+              -8,
+              -68,
+              39
+            ],
+            {
+              "structure": "vein.anterior_condylar.left",
+              "fraction": 0
+            }
           ],
-          [
+          "radius": [
+            0.7,
             0.65,
-            -64,
-            41
+            0.75,
+            0.5
           ],
-          [
-            -6.7,
-            -65,
-            40
-          ]
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.inferior_petrosal.right",
+              "fraction": 0.22
+            },
+            [
+              7,
+              -53,
+              59
+            ],
+            [
+              1.2,
+              -54,
+              58
+            ],
+            [
+              -6,
+              -56,
+              55
+            ],
+            {
+              "structure": "vein.inferior_petrosal.left",
+              "fraction": 0.28
+            }
+          ],
+          "radius": [
+            0.48,
+            0.65,
+            0.5
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            [
+              9.5,
+              -58,
+              53
+            ],
+            [
+              4,
+              -58,
+              52
+            ],
+            [
+              -1,
+              -59,
+              50
+            ],
+            [
+              -7,
+              -61,
+              48
+            ],
+            [
+              -7,
+              -64,
+              46
+            ]
+          ],
+          "radius": [
+            0.6,
+            0.55,
+            0.7,
+            0.55
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.inferior_petrosal.right",
+              "fraction": 0.57
+            },
+            [
+              9,
+              -64,
+              45
+            ],
+            [
+              4,
+              -63,
+              47
+            ],
+            [
+              2,
+              -60,
+              49
+            ]
+          ],
+          "radius": [
+            0.6,
+            0.7,
+            0.55
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            [
+              10,
+              -67,
+              40
+            ],
+            [
+              4,
+              -65,
+              42
+            ],
+            [
+              0.2,
+              -65,
+              41
+            ],
+            [
+              -3,
+              -67,
+              40
+            ],
+            [
+              -8,
+              -68,
+              39
+            ]
+          ],
+          "radius": [
+            0.55,
+            0.65,
+            0.48
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            [
+              10,
+              -67,
+              40
+            ],
+            [
+              6,
+              -62,
+              47
+            ],
+            [
+              1,
+              -58,
+              52
+            ],
+            [
+              -2,
+              -55,
+              56
+            ]
+          ],
+          "radius": [
+            0.48,
+            0.56,
+            0.45
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            [
+              -7,
+              -64,
+              46
+            ],
+            [
+              -3,
+              -62,
+              48
+            ],
+            [
+              2,
+              -60,
+              49
+            ],
+            [
+              6,
+              -56,
+              55
+            ],
+            [
+              11,
+              -54,
+              57
+            ]
+          ],
+          "radius": [
+            0.5,
+            0.6,
+            0.55
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            {
+              "structure": "vein.inferior_petrosal.left",
+              "fraction": 0.62
+            },
+            [
+              -8,
+              -66,
+              43
+            ],
+            [
+              -3,
+              -67,
+              40
+            ],
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.43
+            }
+          ],
+          "radius": [
+            0.55,
+            0.65,
+            0.5
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        },
+        {
+          "points": [
+            [
+              10,
+              -67,
+              40
+            ],
+            [
+              6,
+              -70,
+              37
+            ],
+            {
+              "structure": "vein.marginal",
+              "fraction": 0.58
+            }
+          ],
+          "radius": [
+            0.48,
+            0.6,
+            0.45
+          ],
+          "profile": {
+            "kind": "oval",
+            "width": 1.35,
+            "depth": 0.7,
+            "centre": [
+              0.65,
+              -78,
+              66
+            ],
+            "bone_apposition": true,
+            "bone_names": [
+              "bone.sphenoid",
+              "bone.occipital"
+            ],
+            "fit_mode": "nearest",
+            "wall_support": 0.7,
+            "wall_clearance": 0.2,
+            "fair_mm": 2,
+            "bone_direction": [
+              0,
+              0.85,
+              -0.53
+            ]
+          }
+        }
+      ],
+      "profile": {
+        "kind": "oval",
+        "width": 1.35,
+        "depth": 0.7,
+        "centre": [
+          0.65,
+          -78,
+          66
+        ],
+        "bone_apposition": true,
+        "bone_names": [
+          "bone.sphenoid",
+          "bone.occipital"
+        ],
+        "fit_mode": "nearest",
+        "wall_support": 0.7,
+        "wall_clearance": 0.2,
+        "fair_mm": 2,
+        "bone_direction": [
+          0,
+          0.85,
+          -0.53
         ]
-      ]
+      }
     },
     {
       "id": "vein.anterior_communicating",
@@ -5014,7 +6131,7 @@
     },
     {
       "from": "vein.superficial_middle_cerebral.right",
-      "to": "vein.sphenoparietal.right",
+      "to": "vein.cavernous.right",
       "type": "drains_to"
     },
     {
@@ -5254,7 +6371,7 @@
     },
     {
       "from": "vein.superficial_middle_cerebral.left",
-      "to": "vein.sphenoparietal.left",
+      "to": "vein.cavernous.left",
       "type": "drains_to"
     },
     {
@@ -5621,6 +6738,30 @@
       "from": "vein.anterior_spinal",
       "to": "vein.anterior_medullary",
       "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.inferior_petrosal.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.anterior_condylar.right",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.inferior_petrosal.left",
+      "type": "communicates_with"
+    },
+    {
+      "from": "vein.basilar_plexus",
+      "to": "vein.anterior_condylar.left",
+      "type": "communicates_with"
     }
-  ]
+  ],
+  "regionalGeometryAuthoring": {
+    "cavernous_v0_9_7": "tools/venous/refine_cavernous.py",
+    "note": "The cavernous and intercavernous surfaces are locally replaced as implicit volumes. Sparse courses and fitted paths retain connection references from v0.9.6; they do not fully define the regional surface."
+  }
 }

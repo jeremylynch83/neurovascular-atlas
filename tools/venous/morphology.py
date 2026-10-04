@@ -78,15 +78,16 @@ def unit(v):
 def oriented_frames(q, profile, sdf=None):
     tangent = unit(np.gradient(q, axis=0))
     outward = unit(q - np.asarray(profile['centre']))
-    if sdf is not None:
+    if 'frame_normal' in profile:
+        outward=np.tile(unit(np.asarray(profile['frame_normal'],float)),(len(q),1))
+    elif sdf is not None:
         raw=[]
         for p in q:
             grad=[0.,0.,0.]
             sdf.EvaluateGradient(p,grad)
+            # Wall normals point towards bone; the triangular profile keeps
+            # its broad base at bone and its apex on the intracranial side.
             n=-np.asarray(grad)
-            # Retain the intended intracranial side at ambiguous bone seams.
-            if np.dot(n,p-np.asarray(profile['centre'])) < 0:
-                n=-n
             raw.append(n)
         step=np.median(np.linalg.norm(np.diff(q,axis=0),axis=1))
         outward=unit(gaussian_filter1d(np.asarray(raw),max(1,3/max(step,.1)),axis=0,mode='nearest'))
@@ -114,20 +115,40 @@ def fit_sinus(q, r, profile, sdf, loc, fixed_start, fixed_end):
     fractions=np.linspace(0,1,len(q))
     for i,(p,rad) in enumerate(zip(q,r)):
         if fractions[i]>endfit: continue
-        points=vtk.vtkPoints();loc.IntersectWithLine(centre,centre+(p-centre)*4,points,None)
-        if not points.GetNumberOfPoints(): continue
-        wall=np.asarray(points.GetPoint(0));grad=[0.,0.,0.];sdf.EvaluateGradient(wall,grad)
-        inward=unit(np.asarray(grad))
-        if np.dot(inward,centre-wall)<0: inward=-inward
-        target[i]=wall+inward*(rad*outward_extent+profile['wall_clearance'])
+        if profile.get('fit_mode') in ['nearest','directional']:
+            wall=[0.,0.,0.];sdf.EvaluateFunctionAndGetClosestPoint(p,wall)
+            wall=np.asarray(wall);grad=[0.,0.,0.];sdf.EvaluateGradient(wall,grad)
+            inward=unit(np.asarray(grad))
+            if 'bone_direction' in profile or profile.get('bone_direction_mode')=='radial':
+                direction=unit(np.asarray(profile['bone_direction'],float)) if 'bone_direction' in profile else unit(p-centre)
+                points=vtk.vtkPoints();loc.IntersectWithLine(p-direction*10,p+direction*16,points,None)
+                candidates=[]
+                for j in range(points.GetNumberOfPoints()):
+                    w=np.asarray(points.GetPoint(j));g=[0.,0.,0.];sdf.EvaluateGradient(w,g);n=unit(np.asarray(g))
+                    if np.dot(n,-direction)>.25 and sdf.EvaluateFunction(w+n*.4)>.1:
+                        candidates.append((np.linalg.norm(w-p),w,n))
+                if candidates:
+                    _,wall,inward=min(candidates,key=lambda c:c[0])
+                elif profile['fit_mode']=='directional' or profile.get('bone_direction_mode')=='radial':
+                    # Do not attach to the opposite surface of a thin wing.
+                    if np.dot(inward,-direction)<.25:continue
+            if np.linalg.norm(wall-p)>16:continue
+        else:
+            points=vtk.vtkPoints();loc.IntersectWithLine(centre,centre+(p-centre)*4,points,None)
+            if not points.GetNumberOfPoints(): continue
+            wall=np.asarray(points.GetPoint(0));grad=[0.,0.,0.];sdf.EvaluateGradient(wall,grad)
+            inward=unit(np.asarray(grad))
+            if np.dot(inward,centre-wall)<0: inward=-inward
+        target[i]=wall+inward*(rad*outward_extent*profile.get('wall_support',1)+profile['wall_clearance'])
     # Fair the displacement, preserving the broad authored anatomical course.
-    delta=gaussian_filter1d(target-q,max(1,3/max(step,.1)),axis=0,mode='nearest')
+    closed=np.linalg.norm(q[0]-q[-1])<1e-5
+    delta=gaussian_filter1d(target-q,max(1,profile.get('fair_mm',3)/max(step,.1)),axis=0,mode='wrap' if closed else 'nearest')
     weight=np.ones(len(q));arc=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))]
     if endfit<1:
         t=np.clip((endfit-fractions)/.14,0,1);weight*=t*t*(3-2*t)
     for fixed,distance in [(fixed_start,arc),(fixed_end,arc[-1]-arc)]:
         if fixed:
-            t=np.clip(distance/12,0,1);weight*=t*t*(3-2*t)
+            t=np.clip(distance/profile.get('attachment_ramp_mm',12),0,1);weight*=t*t*(3-2*t)
     fitted=q+delta*weight[:,None]
     # Fair the course itself as well as its wall displacement. This prevents a
     # local bone ridge from surviving as a short hook in an otherwise broad arc.
@@ -136,9 +157,21 @@ def fit_sinus(q, r, profile, sdf, loc, fixed_start, fixed_end):
     before=fitted[0]+np.arange(-pad,0)[:,None]*(fitted[1]-fitted[0])
     after=fitted[-1]+np.arange(1,pad+1)[:,None]*(fitted[-1]-fitted[-2])
     fair=gaussian_filter1d(np.vstack([before,fitted,after]),sigma,axis=0)[pad:-pad]
+    if closed:
+        fair=gaussian_filter1d(fitted,sigma,axis=0,mode='wrap')
+        fair[0]=fair[-1]=(fair[0]+fair[-1])/2
+        return fair
     # Endpoint attachment coordinates remain exact.
     u=np.linspace(0,1,len(q));fair+=(fitted[0]-fair[0])*(1-u[:,None])**3
     fair+=(fitted[-1]-fair[-1])*u[:,None]**3
+    if profile.get('fit_mode') in ['nearest','directional']:
+        # Fairing a medial wing turn must not put its small lumen back into bone.
+        for i,p in enumerate(fair):
+            distance=sdf.EvaluateFunction(p)
+            margin=r[i]*outward_extent*profile.get('wall_support',1)+profile['wall_clearance']
+            if distance<margin:
+                grad=[0.,0.,0.];sdf.EvaluateGradient(p,grad)
+                fair[i]+=unit(np.asarray(grad))*(margin-distance)*weight[i]
     return fair
 
 

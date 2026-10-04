@@ -13676,7 +13676,7 @@ These sinuses run inferiorly and laterally to connect the posterior aspect of th
 
 **Description**
 
-This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.right). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.
+This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.right). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) enters the cavernous region separately.
 
 **Source:** Lynch, supplied nv(2).pdf, printed p67.
 
@@ -13686,7 +13686,7 @@ This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inf
 
 **Description**
 
-The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).
+The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel.
 
 **Source:** Lynch, supplied nv(2).pdf, printed p69.
 
@@ -14082,7 +14082,7 @@ These sinuses run inferiorly and laterally to connect the posterior aspect of th
 
 **Description**
 
-This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inferior frontal, meningeal, diploic, and orbital veins before draining into the [cavernous sinus](#structure-vein.cavernous.left). Variants may drain into the transverse sinus, superior petrosal sinus, tentorial sinuses, or pterygoid venous plexus.
+This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.left). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) enters the cavernous region separately.
 
 **Source:** Lynch, supplied nv(2).pdf, printed p67.
 
@@ -14092,7 +14092,7 @@ This runs along the lesser sphenoid wing, receiving adjacent Sylvian, uncal, inf
 
 **Description**
 
-The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).
+The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel.
 
 **Source:** Lynch, supplied nv(2).pdf, printed p69.
 
@@ -14448,7 +14448,7 @@ The cavernous sinuses connect medially to the contralateral side through the int
 
 **Description**
 
-The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below.
+The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below. It forms a variable plexiform network along the posterior clivus, with communications to both [inferior petrosal sinuses](#structure-vein.inferior_petrosal.right). The displayed interconnected channels represent one selected reference pattern.
 
 **Source:** Lynch, supplied nv(2).pdf, printed p67.
 

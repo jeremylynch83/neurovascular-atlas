@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.5
+# Neurovascular Atlas v0.9.8
 
-Place `inr-anatomy-atlas-v0.9.5.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.9.8.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -151,3 +151,15 @@ The release contains only three anatomy assets. Meshopt compression preserves th
 ## Development
 
 `npm ci`, then `npm run dev`. `npm run build` validates the bundled catalogue and creates the production site. The normal installation needs Docker, not the Python modelling libraries. The modelling workflow and release-specific checks are in `docs/`. The one-off foraminal/compartment review is **not** part of `npm run build`, Docker, or the installer. Revisit it only after changing artery or bone geometry. See `docs/FORAMINA_v0.7.0.md` for the remaining canal limitations.
+
+## Venous morphology in v0.9.6
+
+All six skull-base regions are revised using angiographic appearances and local bone landmarks. See [the morphology review](docs/VENOUS_v0.9.6.md) for references, geometric checks and retained skull-mesh limits. The GUI and economical translucent renderer from v0.9.5 are retained.
+
+## Cavernous refinement in v0.9.7
+
+The lower cavernous ICA is moved medially with a smooth transition to the petrous and upper siphon segments. The cavernous sinuses are locally rebuilt as broad parasellar envelopes with flattened sellar cross-connections. Nearby arterial branches use the same coordinate deformation. See [the geometry review and matched renders](docs/CAVERNOUS_v0.9.7.md).
+
+## Cavernous refinement in v0.9.8
+
+Retain the completed v0.9.7 ICA correction and refine the venous exclusions around the displayed carotid, restoring posterosuperior space and preserving the lesser-wing entry. All 104 venous structures remain in one connected, watertight network. See [the follow-up review](docs/CAVERNOUS_v0.9.8.md) for checks and the unresolved low petrous/lacerum skull canal. The companion PDF provides matched views and qualitative angiographic comparisons.

@@ -18,5 +18,5 @@ for side in ['right','left']:
  for rec in records:
   if rec['name'] in ['bone.sphenoid','bone.temporal.'+side]:
    sdf=vtk.vtkImplicitPolyDataDistance();sdf.SetInput(poly(*arrays(rec)));union.AddFunction(sdf)
- lo=np.array([4 if side=='right' else -23,-56,50]);hi=np.array([24 if side=='right' else -2,-28,76])
+ lo=np.array([4 if side=='right' else -26,-59,43]);hi=np.array([27 if side=='right' else -2,-28,81])
  export_field(union,lo,hi,.35,'cavernous-bone-'+side)
