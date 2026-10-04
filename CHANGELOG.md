@@ -1,3 +1,11 @@
+# v0.9.11
+
+- Replace the broad box-like cavernous body with a narrower curved profile and rounded edges.
+- Rebuild the SOV and ovale emissary attachments and fit the cerebral/petrosal terminal channels to the smaller receiving space.
+- Preserve thin intercavernous channels and direct basilar connections.
+- Add checks for every direct cavernous attachment and each tributary's continuous route to its retained course.
+- Retain all 104 venous labels and the completed arterial, skull and interface assets.
+
 # v0.9.10
 
 - Rebuild slimmer cavernous cavities with concave lateral walls and roofs.

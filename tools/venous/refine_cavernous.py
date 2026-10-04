@@ -1,4 +1,4 @@
-"""Local cavernous v0.9.10 authoring pass in atlas RAS millimetres.
+"""Local cavernous v0.9.11 authoring pass in atlas RAS millimetres.
 
 Run from the app root with the original venous skin, retained v0.9.7 corrected
 arteries and bone reference extraction available in .authoring. This release
@@ -167,7 +167,7 @@ def export_veins(p,f,labels,ids,dest):
     for k in range(3):np.add.at(normals,f[:,k],fn)
     normals/=np.maximum(np.linalg.norm(normals,axis=1)[:,None],1e-12)
     np.savez_compressed(ROOT/'venous-mesh.npz',positions=p,faces=f,labels=labels,normals=normals)
-    doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas local cavernous authoring v0.9.10'},
+    doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas local cavernous authoring v0.9.11'},
          'scene':0,'scenes':[{'nodes':list(range(len(ids)))}],'nodes':[],
          'meshes':[],'accessors':[],'bufferViews':[],'buffers':[]};data=bytearray()
     def acc(a,typ,component,target,bounds=False):
@@ -198,7 +198,7 @@ def refine_veins(arteries):
     print('Original common venous skin',len(p),len(f),flush=True)
     # Closed regional replacement with a 2 mm overlap collar. Original mesh is
     # untouched beyond the collar; all tributaries are retained in the new field.
-    cache=ROOT/'regional-replacement-v0910-concave-cavity-junctions.npz'
+    cache=ROOT/'regional-replacement-v0911-curved-slim-c.npz'
     if cache.exists():
         saved=np.load(cache);np_,nf,nl=saved['p'],saved['f'],saved['labels']
         lo,hi,innerlo,innerhi=[saved[k] for k in ['lo','hi','innerlo','innerhi']];step=.30
@@ -223,7 +223,7 @@ def refine_veins(arteries):
         innerlo=lo+2.1;innerhi=hi-2.1
         inside=((x>innerlo[0])&(x<innerhi[0])&(y>innerlo[1])&(y<innerhi[1])&(z>innerlo[2])&(z<innerhi[2]))
         junction_ids={ids.index('vein.'+name+'.'+side)
-                      for name in ['sphenoparietal','superficial_middle_cerebral']
+                      for name in ['sphenoparietal','superficial_middle_cerebral','superior_ophthalmic','ovale_emissary','superior_petrosal','inferior_petrosal']
                       for side in ['right','left']}
         replace=inside&np.isin(owners,list(primary|junction_ids))
         field=np.where(replace,50.,old)
@@ -276,43 +276,51 @@ def refine_veins(arteries):
             return branch,centres
         for side,sign in [('right',1),('left',-1)]:
             def c(cx,cy,cz):return [cx if sign==1 else 1.3-cx,cy,cz]
-            # A slimmer wall-defined cavity with an inward lateral bow and
-            # a genuinely concave roof, rather than a clipped rounded bulb.
+            # Thin curved lens, with a tapered oval perimeter and a gently
+            # indented roof. No planar side, anterior or posterior walls.
             lateral=x if sign==1 else 1.3-x
-            outer=(16.3+.025*(y+43.5)**2+.004*(z-63)**2
-                   +1.4*(1-smoothstep((z-50)/8))-.2*smoothstep((z-60)/12))
-            medial=np.interp(z,[49,57,65,72],[12.2,10.2,8.2,8.4])
-            posterior=-54.2+.16*(z-50)+.3*np.sin(np.pi*np.clip((z-50)/23,0,1))**2
-            anterior=np.interp(z,[50,55,60,65,70],[-50.0,-47.0,-42.4,-39.0,-37.6])
-            roof=69.6+.045*(y+43.5)**2
-            body=lateral-outer
-            for constraint in [medial-lateral,posterior-y,y-anterior,z-roof,49.2-z]:
-                body=softmax(body,constraint,.9)
+            centre_x=15.0-.26*(z-60)+.022*(y+44)**2
+            centre_z=61.8+.5*(y+45.8)
+            body=(np.sqrt(((lateral-centre_x)/2.05)**2+
+                          ((y+45.8)/9.0)**2+((z-centre_z)/9.5)**2)-1)*2.05
+            roof=68.0+.035*(y+44)**2-.28*(lateral-centre_x)**2
+            body=softmax(body,z-roof,1.4)
             mask=body<field;new_owner[mask]=ids.index('vein.cavernous.'+side)
             field=softmin(field,body,.85)
             # Rebuild the terminal receiving channels with tangent-continuous
             # curves and smoothly blended mouths. No flat joining plates.
             dz=-.05 if side=='left' else 0
             for name,q,width,depth in [
-                ('sphenoparietal',[[25.5,-30.96,74.77],[23,-33.1,72.8],[20,-35.5,70.6],[17.5,-37.8,68.9],[14.8,-39.0,68.2]],1.45,.7),
-                ('superficial_middle_cerebral',[[25.5,-31.2,60.2],[23,-32.8,61.3],[20,-35.7,62.9],[17.4,-39.0,64.6],[14.9,-41.4,66.2]],1.45,1.4)]:
+                ('sphenoparietal',[[25.5,-30.96,74.77],[23,-33.1,72.8],[20,-35.5,70.6],[17.2,-37.9,68.5],[14.2,-40.2,67.5]],1.45,.7),
+                ('superficial_middle_cerebral',[[25.5,-31.2,60.2],[23,-32.8,61.3],[20,-35.7,62.9],[16.9,-39.7,65.1],[14.7,-42.5,65.8]],1.3,1.2),
+                ('superior_ophthalmic',[[20.9,-27.8,69.2],[20.5,-31,67.6],[18.5,-35.2,67],[16,-37.8,66.5],[14.5,-40.2,66.2]],.95,.85),
+                ('ovale_emissary',[[26.5,-43.5,45.0],[24.3,-45.8,49.4],[21.5,-46.6,53],[18.5,-47.2,55.4],[16.4,-47.8,58.2]],.9,.8),
+                ('superior_petrosal',[[22.6,-57.5,56.7],[21.8,-56.8,56.3],[19,-54.7,56.8],[17,-53.2,58.4],[15.8,-51.6,60]],1.05,.8),
+                ('inferior_petrosal',[[13.3,-58,51.5],[13.3,-56.6,52.2],[13.8,-54.7,53.8],[14.6,-53.6,56],[15.1,-52.2,58.2]],1.05,.9)]:
                 if side=='left' and name=='superficial_middle_cerebral':
-                    q=[[25.5,-31.4,60.7],[23,-33.1,61.9],[20,-35.9,63.5],[17.4,-39.3,64.7],[14.9,-41.4,66.2]]
+                    q=[[25.5,-31.4,60.7],[23,-33.1,61.9],[20,-35.9,63.5],[16.9,-39.7,65.1],[14.7,-42.5,65.8]]
                 q=[c(cx,cy,cz+dz) for cx,cy,cz in q]
                 branch,centres=branch_field(q,width,depth)
                 mask=branch<field;new_owner[mask]=ids.index('vein.'+name+'.'+side)
                 rebuilt_entry|=mask;field=softmin(field,branch,.95)
                 junction_paths.append({'id':'vein.'+name+'.'+side,'points':centres.tolist(),
                                        'width_radius_mm':width,'depth_radius_mm':depth})
-        # Low, smooth dural cross-connections surrounding the inferred sellar space.
-        for name,q,rr in [
-            ('anterior_intercavernous',[[13.0,-38.0,70.3],[6,-38.0,70.4],[.65,-38.0,70.4],[-4.7,-38.0,70.4],[-11.7,-38.0,70.3]],(1.1,1.1,.65)),
-            ('posterior_intercavernous',[[13,-46.5,66.5],[8,-49,67],[5,-52.4,66.4],[.65,-52.6,66.3],[-3.7,-52.4,66.4],[-6.7,-49,67],[-11.7,-46.5,66.5]],(1.1,1.1,.72))]:
-            q=np.array(q);a=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))]
-            dense=np.column_stack([np.interp(np.arange(0,a[-1]+.001,.18),a,q[:,k]) for k in range(3)])
-            bridge=np.full_like(field,50.)
-            for c in dense:bridge=np.minimum(bridge,ellipsoid(c,rr))
-            mask=bridge<field;new_owner[mask]=ids.index('vein.'+name);field=np.minimum(field,bridge)
+            # Short posterior communication to the retained clival plexus.
+            q=([c(11,-53.5,54.8),c(12.8,-54.5,56),c(14.4,-54.7,57.8),c(15.9,-53.7,59.7),c(15.6,-51.7,60.8)]
+               if side=='right' else
+               [c(11,-53.0,57.3),c(12.8,-54.5,57.2),c(14.4,-54.7,58.3),c(15.9,-53.7,59.7),c(15.6,-51.7,60.8)])
+            neck,centres=branch_field(q,.75,.65)
+            mask=neck<field;new_owner[mask]=ids.index('vein.cavernous.'+side)
+            field=softmin(field,neck,.8)
+            junction_paths.append({'id':'vein.cavernous.'+side,'role':'basilar receiving neck','points':centres.tolist(),'width_radius_mm':.75,'depth_radius_mm':.65})
+        # Thin curved sellar cross-connections, with centres fitted clear of bone.
+        for name,q,width,depth in [
+            ('anterior_intercavernous',[[14.4,-41,67.2],[14.7,-39,68.6],[13,-37.8,70.3],[7,-37.5,70.6],[.65,-37.5,70.7],[-5.7,-37.5,70.6],[-11.7,-37.8,70.3],[-13.4,-39,68.6],[-13.1,-41,67.2]],.8,.6),
+            ('posterior_intercavernous',[[14.8,-49,64.8],[9,-51.8,65.8],[5,-52.7,66.2],[.65,-52.9,66.2],[-3.7,-52.7,66.2],[-7.7,-51.8,65.8],[-13.5,-49,64.8]],.9,.65)]:
+            bridge,centres=branch_field(q,width,depth)
+            mask=bridge<field;new_owner[mask]=ids.index('vein.'+name)
+            field=softmin(field,bridge,.8)
+            junction_paths.append({'id':'vein.'+name,'points':centres.tolist(),'width_radius_mm':width,'depth_radius_mm':depth})
         # Exclude only the inferred pituitary/sellar soft-tissue space. No gland,
         # cranial nerves or invented septal compartments are added to the catalogue.
         sellar=ellipsoid([.65,-43,68.2],[7.2,6,5.7]);field=np.maximum(field,-sellar)
@@ -334,7 +342,7 @@ def refine_veins(arteries):
         field[mask]=np.maximum(field[mask],.25-bone)
         field[[0,-1],:,:]=50;field[:,[0,-1],:]=50;field[:,:,[0,-1]]=50
         print('Built slim concave cavities and smooth entries',flush=True)
-        (ROOT/'cavernous-junction-paths-v0.9.10.json').write_text(json.dumps(junction_paths,indent=2)+'\n')
+        (ROOT/'cavernous-junction-paths-v0.9.11.json').write_text(json.dumps(junction_paths,indent=2)+'\n')
         im=vtk.vtkImageData();im.SetDimensions(*shape);im.SetOrigin(*lo);im.SetSpacing(step,step,step)
         im.GetPointData().SetScalars(numpy_to_vtk(field.ravel(),deep=True))
         cont=vtk.vtkFlyingEdges3D();cont.SetInputData(im);cont.SetValue(0,0);cont.ComputeNormalsOff();cont.Update()
@@ -417,6 +425,6 @@ if __name__=='__main__':
         arteries[node['name']]=(accessor(doc,data,prim['attributes']['POSITION']).copy(),
                               accessor(doc,data,prim['indices']).reshape(-1,3).copy())
     report=refine_veins(arteries)
-    report.update(release='0.9.10',arterial_parts_changed=[],anastomotic_parts_changed=[],
-                  method='Slim concave cavernous cavity and rebuilt smooth SMCV/lesser-wing entries; ICA and skull retained')
+    report.update(release='0.9.11',arterial_parts_changed=[],anastomotic_parts_changed=[],
+                  method='Narrow curved cavernous space with direct ophthalmic, emissary and cerebral/petrosal venous attachments; ICA and skull retained')
     (ROOT/'cavernous-local-build.json').write_text(json.dumps(report,indent=2)+'\n')
