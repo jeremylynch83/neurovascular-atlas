@@ -1,3 +1,9 @@
+# v0.9.4
+
+- Add software, BodyParts3D and anatomical reference credits to a bounded, keyboard-scrollable section in the information modal.
+- Include Neurointervention (Lynch, Renowden and White, Oxford University Press, 2026).
+- Omit historical Z-Anatomy and the separate supplied-notes credit from the modal.
+
 # v0.9.3
 
 - Open the anatomy tree directly and remove the Layers/Anatomy tabs and mesh labels.
