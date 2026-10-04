@@ -8,7 +8,7 @@ path=ROOT/'anatomy/generated/complete_manifest.json'
 m=json.loads(path.read_text())
 m['structures']=[s for s in m['structures'] if s['system']!='vein']
 m['relationships']=[r for r in m['relationships'] if not r['from'].startswith('vein') and not r['to'].startswith('vein')]
-provenance={'sourceType':'teaching-reconstruction','confidence':'Note-guided courses fitted to existing bone and arterial landmarks; depth and calibre estimated','reviewStatus':'unreviewed','sourceRefs':['ref.lynch.neurovascular-notes','ref.venous-authoring-2026']}
+provenance={'sourceType':'teaching-reconstruction','confidence':'Note-guided connections and angiogram-guided morphology fitted to retained bone; calibre and depth remain illustrative','reviewStatus':'unreviewed','sourceRefs':['ref.lynch.neurovascular-notes','ref.venous-authoring-2026']}
 def group(id,name,parent):return {'id':id,'name':name,'parent':parent,'children':[],'kind':'group','system':'vein','side':'midline','aliases':[],'geometryStatus':'web-optimised','provenance':provenance.copy()}
 m['structures'].append(group('vein','Veins',None))
 for key,name in spec['groups'].items():m['structures'].append(group('vein.'+key,name,'vein'))
@@ -24,7 +24,7 @@ byid={s['id']:s for s in m['structures']}
 for s in m['structures']:
  if s['system']=='vein':s['children']=[r['id'] for r in m['structures'] if r.get('parent')==s['id']]
 m['relationships']+=spec['relationships'];m['roots']=[s['id'] for s in m['structures'] if s['parent'] is None]
-source={'id':'ref.venous-authoring-2026','title':'Main venous reconstruction, 4 October 2026','year':2026,'role':'Lynch pp62-76 and Figs2.16-2.19: principal courses, drainage relationships and descriptions; fitted to retained atlas bone and arterial landmarks.','notes':'docs/VENOUS_v0.9.0.md records variant choices, source discrepancy resolution and limitations. Neuroangio original angiographic cases were used as a spatial cross-check, not as measured geometry: https://neuroangio.org/venous-brain-anatomy/'}
+source={'id':'ref.venous-authoring-2026','title':'Venous reconstruction and morphology review, 4 October 2026','year':2026,'role':'Lynch pp62-76 and Figs2.16-2.19 for descriptions and drainage. Morphology: Borden 2006 Figs7.1-7.7, Bradac 2017 Figs9.5,9.6,9.14,9.17 and selected Neuroangio angiographic cases; fitted to the retained skull.','notes':'docs/VENOUS_v0.9.2.md records changes, source figures and geometric validation. Image appearance guides broad courses and relative calibre; no calibrated patient reconstruction is claimed. https://neuroangio.org/venous-brain-anatomy/venous-sinuses/'}
 m['sources']=[s for s in m['sources'] if s['id']!=source['id']]+[source]
 m['release']=spec['release']
 for asset in {s['asset']['file'] for s in m['structures'] if s.get('asset')}:

@@ -1,3 +1,11 @@
+# v0.9.2
+
+- Refine venous morphology against the curated Borden, Bradač and Neuroangio angiograms.
+- Fit the superior sagittal, transverse and sigmoid sinuses against the retained inner skull with oriented triangular/oval profiles.
+- Smooth transverse/sigmoid courses and their jugular transitions; vary collecting-sinus calibre and taper peripheral veins.
+- Retain all 104 venous structures and the v0.9.1 interface; preserve arterial, connection and bone assets exactly.
+- Include source notes, authoring changes and geometry/viewer validation.
+
 # v0.9.1
 
 - Start Anatomy and inspection panels collapsed on desktop and mobile.

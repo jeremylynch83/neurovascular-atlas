@@ -9,10 +9,12 @@ import manifold3d as mf
 import vtk
 from vtk.util.numpy_support import vtk_to_numpy
 from reference import *
+from morphology import fit_sinus, oriented_frames, continue_tangent
 APP=ROOT.parents[1]
 spec=json.loads((APP/'anatomy/source/venous/courses.json').read_text())
 lookup={s['id']:s for s in spec['structures']}; curves={};paths=[]
 skull=bone_surface();loc=locator(skull);centre=np.array([.65,-65,105])
+skull_sdf=vtk.vtkImplicitPolyDataDistance();skull_sdf.SetInput(skull)
 bone_fields=[]
 for rec in records:
  if rec['file']!='craniofacial' or 'tooth' in rec['name'] or rec['name']=='mandibular-alveolar-process':continue
@@ -52,10 +54,12 @@ def clearance(q,r,sid):
   # Smoothed displacement avoids creating tube kinks at a collision boundary.
   target+=gaussian_filter1d(changes,1.4,axis=0,mode='nearest')
  return target
-def sample(points,radius):
+def sample(points,radius,entry_tangent=None):
  p=np.array(points,float); d=np.r_[0,np.cumsum(np.linalg.norm(np.diff(p,axis=0),axis=1))]
  assert np.all(np.diff(d)>1e-5),(p,d)
  tang=np.gradient(p,d,axis=0)
+ if entry_tangent is not None:
+  direction=np.asarray(entry_tangent,float);tang[0]=direction/np.linalg.norm(direction)
  cs=CubicHermiteSpline(d,p,tang);t=np.linspace(0,d[-1],max(6,int(d[-1]/.6)+1));q=cs(t)
  arcs=np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))]
  t2=np.linspace(0,arcs[-1],max(6,int(arcs[-1]/.65)+1));q=np.column_stack([np.interp(t2,arcs,q[:,i]) for i in range(3)])
@@ -86,15 +90,19 @@ while todo:
  progressed=False
  for s in todo[:]:
   if any(isinstance(p,dict) and p['structure'] not in curves for p in s['points']):continue
-  q,r=sample([point(p) for p in s['points']],s['radius'])
-  q=fit(q,r,s['fit'],isinstance(s['points'][0],dict),isinstance(s['points'][-1],dict))
-  q=clearance(q,r,s['id'])
+  q,r=sample([point(p) for p in s['points']],s['radius'],s.get('entry_tangent'))
+  if s.get('profile',{}).get('bone_apposition'):
+   q=fit_sinus(q,r,s['profile'],skull_sdf,loc,isinstance(s['points'][0],dict),isinstance(s['points'][-1],dict))
+  else:
+   q=fit(q,r,s['fit'],isinstance(s['points'][0],dict),isinstance(s['points'][-1],dict))
+   q=clearance(q,r,s['id'])
   # Preserve exact collector attachments after local fitting.
   for end,step in [(0,1),(-1,-1)]:
    if isinstance(s['points'][end],dict):
     shift=point(s['points'][end])-q[end]
     for k in range(min(12,len(q)//2)):
      idx=k if step==1 else -1-k;q[idx]+=shift*(1-k/12)**2
+  if s.get('continue_into'):q=continue_tangent(q,curves[s['continue_into']][0])
   curves[s['id']]=(q,r);paths.append((s['id'],q,r,s['shape']));todo.remove(s);progressed=True
  if not progressed:raise ValueError('Unresolved attachments '+str([s['id'] for s in todo]))
 for s in spec['structures']:
@@ -106,6 +114,17 @@ for s in spec['structures']:
     for k in range(min(12,len(q)//2)):
      idx=k if step==1 else -1-k;q[idx]+=shift*(1-k/12)**2
   paths.append((s['id'],q,r,'round'))
+
+fitted=[]
+for sid,q,r,shape in paths:
+ row={'id':sid,'points':q.round(5).tolist(),'radii':r.round(5).tolist(),'shape':shape}
+ if lookup[sid].get('profile'):
+  row['profile']=lookup[sid]['profile'];row['wallNormals']=oriented_frames(q,row['profile'],skull_sdf)[1].round(6).tolist()
+ fitted.append(row)
+(APP/'anatomy/source/venous/fitted-paths.json').write_text(json.dumps(fitted,separators=(',',':'))+'\n')
+np.savez_compressed(ROOT/'venous-curves.npz',**{sid.replace('.','_'):np.c_[q,r] for sid,(q,r) in curves.items()})
+if '--paths-only' in sys.argv:
+ print('Exported fitted paths',len(paths),flush=True);sys.exit(0)
 
 def tube(q,r,shape='round',n=20):
  tangent=np.gradient(q,axis=0);tangent/=np.linalg.norm(tangent,axis=1)[:,None]
@@ -167,7 +186,6 @@ for k in range(3):np.add.at(vnorm,f[:,k],fn)
 vnorm/=np.maximum(np.linalg.norm(vnorm,axis=1)[:,None],1e-12)
 np.savez_compressed(ROOT/'venous-mesh.npz',positions=p,faces=f,normals=vnorm,labels=labels)
 np.savez_compressed(ROOT/'venous-curves.npz',**{sid.replace('.','_'):np.c_[q,r] for sid,(q,r) in curves.items()})
-(APP/'anatomy/source/venous/fitted-paths.json').write_text(json.dumps([{'id':sid,'points':q.round(5).tolist(),'radii':r.round(5).tolist(),'shape':shape} for sid,q,r,shape in paths],separators=(',',':'))+'\n')
 
 # Small, self-contained GLB with one named mesh per selectable structure.
 doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas venous authoring v0.9.0'},'scene':0,'scenes':[{'nodes':[]}],'nodes':[],'meshes':[],'accessors':[],'bufferViews':[],'buffers':[]}

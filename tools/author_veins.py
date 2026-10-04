@@ -218,6 +218,8 @@ if orbital.exists():
   lookup[ref('superior_ophthalmic',side)]['points']=[attach('angular',.35,side),p(15,14,70),p(25,2,72),p(27,-12,72)]+corridor+[attach('cavernous',.9,side)]
   lookup[ref('superior_ophthalmic',side)]['radius']=.85
 
-document={'release':'0.9.0','coordinates':'RAS mm','groups':{'dural':'Dural venous sinuses','superficial':'Superficial cerebral veins','deep':'Deep cerebral veins','posterior':'Posterior fossa and spinal veins','extracranial':'Extracranial veins','skullbase':'Skull-base venous connections'},'structures':rows,'relationships':relations}
+from venous.morphology import amend_courses
+amend_courses(rows)
+document={'release':'0.9.2','coordinates':'RAS mm','groups':{'dural':'Dural venous sinuses','superficial':'Superficial cerebral veins','deep':'Deep cerebral veins','posterior':'Posterior fossa and spinal veins','extracranial':'Extracranial veins','skullbase':'Skull-base venous connections'},'structures':rows,'relationships':relations}
 (OUT/'courses.json').write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n')
 print(f'Authored {len(rows)} venous structures and {len(relations)} relationships')

@@ -1,5 +1,5 @@
 {
-  "release": "0.9.0",
+  "release": "0.9.2",
   "coordinates": "RAS mm",
   "groups": {
     "dural": "Dural venous sinuses",
@@ -33,7 +33,7 @@
           66
         ]
       ],
-      "radius": 3.5,
+      "radius": 3.15,
       "description": "The confluence joins the [superior sagittal](#structure-vein.superior_sagittal), [straight](#structure-vein.straight), and [occipital sinuses](#structure-vein.occipital_sinus) and drains into the transverse sinuses.",
       "fit": "dural",
       "aliases": [
@@ -42,7 +42,20 @@
       ],
       "page": 64,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.08,
+        "depth": 0.82,
+        "centre": [
+          0.65,
+          -65,
+          105
+        ],
+        "bone_apposition": true,
+        "wall_clearance": 0.2,
+        "fit_until": 1
+      }
     },
     {
       "id": "vein.superior_sagittal",
@@ -97,8 +110,12 @@
         }
       ],
       "radius": [
-        1.2,
-        3.4
+        0.55,
+        0.95,
+        1.55,
+        2.2,
+        2.75,
+        3.2
       ],
       "description": "The superior sagittal sinus extends from the foramen caecum to the [confluence of sinuses](#structure-vein.confluence). It is located within the superior attachment of the falx to the calvarium. It receives the superficial cerebral veins from the medial and lateral cerebral hemispheres, the largest of which is the vein of Trolard.",
       "fit": "dural",
@@ -107,7 +124,20 @@
       ],
       "page": 64,
       "shape": "sinus",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "rounded_triangle",
+        "width": 1.15,
+        "depth": 0.9,
+        "centre": [
+          0.65,
+          -65,
+          105
+        ],
+        "bone_apposition": true,
+        "wall_clearance": 0.2,
+        "fit_until": 1
+      }
     },
     {
       "id": "vein.straight",
@@ -137,8 +167,9 @@
         }
       ],
       "radius": [
-        2.4,
-        3.1
+        2.15,
+        2.35,
+        2.65
       ],
       "description": "The straight sinus is an unpaired structure located at the junction between the falx and tentorium in the midline, and it follows a straight course posteriorly. It receives blood from the [inferior sagittal sinus](#structure-vein.inferior_sagittal), [vein of Galen](#structure-vein.galen), posterior cerebral veins, superior cerebellar veins, and falx cerebri, and drains into the [confluence of sinuses](#structure-vein.confluence).",
       "fit": null,
@@ -180,8 +211,10 @@
         }
       ],
       "radius": [
-        0.65,
-        1.45
+        0.28,
+        0.55,
+        0.9,
+        1.3
       ],
       "description": "This lies in the inferior edge of the falx parallel to the [superior sagittal sinus](#structure-vein.superior_sagittal). It receives blood from the anterior corpus callosum, cingulate gyrus, medial cerebral hemispheres, and the falx. It joins the [vein of Galen](#structure-vein.galen) to form the [straight sinus](#structure-vein.straight).",
       "fit": null,
@@ -340,9 +373,9 @@
       "side": "right",
       "points": [
         [
-          27,
-          -65,
-          38
+          29,
+          -69,
+          36
         ],
         [
           31,
@@ -398,42 +431,73 @@
       "side": "right",
       "points": [
         [
-          58,
-          -95,
-          66
+          59,
+          -98,
+          69
         ],
         [
-          54,
-          -89,
-          61
+          57,
+          -90,
+          59
         ],
         [
-          46,
-          -92,
+          49,
+          -91,
           48
         ],
         [
-          34,
-          -86,
-          40
+          40,
+          -89,
+          44
         ],
         [
-          28,
-          -73,
-          37
+          33,
+          -81,
+          42
+        ],
+        [
+          30,
+          -75,
+          39
         ],
         {
           "structure": "vein.internal_jugular.right",
           "fraction": 0
         }
       ],
-      "radius": 3.5,
+      "radius": [
+        3.35,
+        3.6,
+        3.5,
+        3.2,
+        2.7,
+        2.4
+      ],
       "description": "This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.right) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins.",
       "fit": null,
       "aliases": [],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.05,
+        "depth": 0.9,
+        "centre": [
+          0.65,
+          -105,
+          65
+        ],
+        "bone_apposition": true,
+        "wall_clearance": 0.2,
+        "fit_until": 0.72
+      },
+      "entry_tangent": [
+        0.18,
+        0.95,
+        -0.25
+      ],
+      "continue_into": "vein.internal_jugular.right"
     },
     {
       "id": "vein.transverse.right",
@@ -448,17 +512,17 @@
         },
         [
           20,
-          -143,
-          67
+          -144,
+          66
         ],
         [
-          40,
-          -132,
-          67
+          38,
+          -134,
+          66
         ],
         [
-          53,
-          -114,
+          52,
+          -116,
           67
         ],
         {
@@ -466,13 +530,33 @@
           "fraction": 0
         }
       ],
-      "radius": 3.0,
+      "radius": [
+        2.65,
+        2.8,
+        3.0,
+        3.2,
+        3.35
+      ],
       "description": "The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labbé](#structure-vein.labbe.right), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.right). Hypoplasia of one or the other is common, usually the left.",
       "fit": "dural",
       "aliases": [],
       "page": 67,
       "shape": "sinus",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.15,
+        "depth": 0.8,
+        "centre": [
+          0.65,
+          -65,
+          105
+        ],
+        "bone_apposition": true,
+        "wall_clearance": 0.2,
+        "fit_until": 1
+      },
+      "continue_into": "vein.sigmoid.right"
     },
     {
       "id": "vein.cavernous.right",
@@ -674,7 +758,12 @@
           "fraction": 0.05
         }
       ],
-      "radius": 1.3,
+      "radius": [
+        0.35,
+        1.05,
+        1.25,
+        1.45
+      ],
       "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right).",
       "fit": "cortical",
       "aliases": [
@@ -723,8 +812,10 @@
         }
       ],
       "radius": [
-        1.35,
-        1.8
+        0.85,
+        1.15,
+        1.45,
+        1.7
       ],
       "description": "The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
       "fit": "cortical",
@@ -767,7 +858,9 @@
         }
       ],
       "radius": [
-        1.4,
+        0.95,
+        1.2,
+        1.45,
         1.7
       ],
       "description": "The posterior anastomotic vein of Labbé is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) with the [transverse sinus](#structure-vein.transverse.right). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
@@ -814,7 +907,10 @@
         }
       ],
       "radius": [
-        0.65,
+        0.28,
+        0.5,
+        0.75,
+        1.0,
         1.2
       ],
       "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
@@ -857,7 +953,10 @@
         }
       ],
       "radius": [
-        0.65,
+        0.28,
+        0.5,
+        0.75,
+        1.0,
         1.2
       ],
       "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
@@ -900,7 +999,9 @@
         }
       ],
       "radius": [
-        1.35,
+        1.05,
+        1.2,
+        1.45,
         1.7
       ],
       "description": "The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen).",
@@ -950,7 +1051,9 @@
         }
       ],
       "radius": [
+        1.05,
         1.2,
+        1.4,
         1.65
       ],
       "description": "The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.right). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.right).",
@@ -996,8 +1099,10 @@
         }
       ],
       "radius": [
-        1,
-        1.2
+        0.35,
+        0.65,
+        0.9,
+        1.15
       ],
       "description": "The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.right).",
       "fit": null,
@@ -1034,7 +1139,9 @@
         }
       ],
       "radius": [
-        0.65,
+        0.26,
+        0.45,
+        0.7,
         0.95
       ],
       "description": "The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.right) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly.",
@@ -1071,7 +1178,12 @@
           "fraction": 0.96
         }
       ],
-      "radius": 0.65,
+      "radius": [
+        0.25,
+        0.38,
+        0.55,
+        0.65
+      ],
       "description": "The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.right). The internal cerebral veins drain the subependymal and choroid venous systems.",
       "fit": null,
       "aliases": [],
@@ -1106,7 +1218,12 @@
           "fraction": 0
         }
       ],
-      "radius": 0.8,
+      "radius": [
+        0.28,
+        0.45,
+        0.65,
+        0.8
+      ],
       "description": "The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right).",
       "fit": null,
       "aliases": [],
@@ -1141,7 +1258,12 @@
           "fraction": 0
         }
       ],
-      "radius": 0.95,
+      "radius": [
+        0.3,
+        0.5,
+        0.75,
+        0.95
+      ],
       "description": "The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.right) to form the [basal vein of Rosenthal](#structure-vein.basal.right).",
       "fit": null,
       "aliases": [],
@@ -1251,7 +1373,12 @@
           "fraction": 0
         }
       ],
-      "radius": 1,
+      "radius": [
+        0.35,
+        0.6,
+        0.85,
+        1.0
+      ],
       "description": "Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.right) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.right).",
       "fit": null,
       "aliases": [],
@@ -1287,6 +1414,8 @@
         }
       ],
       "radius": [
+        0.3,
+        0.55,
         0.8,
         1.1
       ],
@@ -1325,7 +1454,9 @@
         }
       ],
       "radius": [
-        0.6,
+        0.28,
+        0.42,
+        0.65,
         0.85
       ],
       "description": "Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.right).",
@@ -2254,9 +2385,9 @@
       "side": "left",
       "points": [
         [
-          -25.7,
-          -65,
-          37.95
+          -27.7,
+          -69,
+          35.95
         ],
         [
           -29.7,
@@ -2312,42 +2443,73 @@
       "side": "left",
       "points": [
         [
-          -56.7,
-          -95,
-          65.95
+          -57.7,
+          -98,
+          68.95
         ],
         [
-          -52.7,
-          -89,
-          60.95
+          -55.7,
+          -90,
+          58.95
         ],
         [
-          -44.7,
-          -92,
+          -47.7,
+          -91,
           47.95
         ],
         [
-          -32.7,
-          -86,
-          39.95
+          -38.7,
+          -89,
+          43.95
         ],
         [
-          -26.7,
-          -73,
-          36.95
+          -31.7,
+          -81,
+          41.95
+        ],
+        [
+          -28.7,
+          -75,
+          38.95
         ],
         {
           "structure": "vein.internal_jugular.left",
           "fraction": 0
         }
       ],
-      "radius": 3.0,
+      "radius": [
+        2.95,
+        3.2,
+        3.1,
+        2.85,
+        2.6,
+        2.4
+      ],
       "description": "This is the anteromedial inferior continuation of the [transverse sinus](#structure-vein.transverse.left) and ends within the jugular fossa. It receives blood from the pons and medulla. It also connects to the scalp veins through the mastoid and condylar veins.",
       "fit": null,
       "aliases": [],
       "page": 67,
       "shape": "round",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.05,
+        "depth": 0.9,
+        "centre": [
+          0.65,
+          -105,
+          65
+        ],
+        "bone_apposition": true,
+        "wall_clearance": 0.2,
+        "fit_until": 0.72
+      },
+      "entry_tangent": [
+        -0.18,
+        0.95,
+        -0.25
+      ],
+      "continue_into": "vein.internal_jugular.left"
     },
     {
       "id": "vein.transverse.left",
@@ -2362,17 +2524,17 @@
         },
         [
           -18.7,
-          -143,
-          66.95
+          -144,
+          65.95
         ],
         [
-          -38.7,
-          -132,
-          66.95
+          -36.7,
+          -134,
+          65.95
         ],
         [
-          -51.7,
-          -114,
+          -50.7,
+          -116,
           66.95
         ],
         {
@@ -2380,13 +2542,33 @@
           "fraction": 0
         }
       ],
-      "radius": 2.6,
+      "radius": [
+        2.3,
+        2.4,
+        2.6,
+        2.8,
+        2.95
+      ],
       "description": "The transverse sinuses arise at the [confluence of sinuses](#structure-vein.confluence) and sweep around anterolaterally, confined by the tentorium. They receive veins from the temporal and occipital lobes, particularly the [vein of Labbé](#structure-vein.labbe.left), cerebellar veins, and the [superior petrosal sinus](#structure-vein.superior_petrosal.left). Hypoplasia of one or the other is common, usually the left.",
       "fit": "dural",
       "aliases": [],
       "page": 67,
       "shape": "sinus",
-      "color": "#6f95e8"
+      "color": "#6f95e8",
+      "profile": {
+        "kind": "oval",
+        "width": 1.15,
+        "depth": 0.8,
+        "centre": [
+          0.65,
+          -65,
+          105
+        ],
+        "bone_apposition": true,
+        "wall_clearance": 0.2,
+        "fit_until": 1
+      },
+      "continue_into": "vein.sigmoid.left"
     },
     {
       "id": "vein.cavernous.left",
@@ -2588,7 +2770,12 @@
           "fraction": 0.05
         }
       ],
-      "radius": 1.3,
+      "radius": [
+        0.35,
+        1.05,
+        1.25,
+        1.45
+      ],
       "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left).",
       "fit": "cortical",
       "aliases": [
@@ -2637,8 +2824,10 @@
         }
       ],
       "radius": [
-        1.35,
-        1.8
+        0.85,
+        1.15,
+        1.45,
+        1.7
       ],
       "description": "The superior anastomotic vein of Trolard is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [superior sagittal sinus](#structure-vein.superior_sagittal). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
       "fit": "cortical",
@@ -2681,7 +2870,9 @@
         }
       ],
       "radius": [
-        1.4,
+        0.95,
+        1.2,
+        1.45,
         1.7
       ],
       "description": "The posterior anastomotic vein of Labbé is the largest anastomotic vein connecting the [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) with the [transverse sinus](#structure-vein.transverse.left). Trolard and Labbé are in haemodynamic balance such that either may be absent.",
@@ -2728,7 +2919,10 @@
         }
       ],
       "radius": [
-        0.65,
+        0.28,
+        0.5,
+        0.75,
+        1.0,
         1.2
       ],
       "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
@@ -2771,7 +2965,10 @@
         }
       ],
       "radius": [
-        0.65,
+        0.28,
+        0.5,
+        0.75,
+        1.0,
         1.2
       ],
       "description": "Cortical veins drain regions of the cerebral cortex into nearby sinuses. The peripheral medial surfaces drain to the [superior sagittal sinus](#structure-vein.superior_sagittal). Bridging veins cross the subdural space and may fuse with meningeal veins before entering a major sinus.",
@@ -2814,7 +3011,9 @@
         }
       ],
       "radius": [
-        1.35,
+        1.05,
+        1.2,
+        1.45,
         1.7
       ],
       "description": "The paired internal cerebral veins form at the foramen of Monro from the junction of the superior choroidal and superior thalamostriate veins and drain the subependymal and choroid venous systems. They extend posteriorly along the roof of the third ventricle and the velum interpositum. Initially running parallel to the midline, they diverge laterally near the pineal recess, tracing the pineal body. They then join with the basal vein and converge under the splenium to form the [vein of Galen](#structure-vein.galen).",
@@ -2864,7 +3063,9 @@
         }
       ],
       "radius": [
+        1.05,
         1.2,
+        1.4,
         1.65
       ],
       "description": "The basal vein of Rosenthal originates under the anterior perforated substance in the chiasmatic cistern medial to the uncus of the temporal lobe, runs posteriorly, and terminates in either the [vein of Galen](#structure-vein.galen) or [internal cerebral vein](#structure-vein.internal_cerebral.left). It is formed by the confluence of the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) and [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left). Its second segment encircles the cerebral peduncle, and its third segment is located behind the midbrain. It connects to the superior petrosal sinus via the [lateral mesencephalic vein](#structure-vein.lateral_mesencephalic.left).",
@@ -2910,8 +3111,10 @@
         }
       ],
       "radius": [
-        1,
-        1.2
+        0.35,
+        0.65,
+        0.9,
+        1.15
       ],
       "description": "The thalamostriate vein primarily drains the lateral subependymal, posterior frontal, and anterior parietal veins, as well as the caudate nucleus and internal capsule. It receives minimal drainage from the thalamus itself, but does receive the superior choroidal vein. It runs along the thalamocaudate groove towards the [internal cerebral vein](#structure-vein.internal_cerebral.left).",
       "fit": null,
@@ -2948,7 +3151,9 @@
         }
       ],
       "radius": [
-        0.65,
+        0.26,
+        0.45,
+        0.7,
         0.95
       ],
       "description": "The anterior septal vein starts in the frontal horn of the lateral ventricle, formed from the deep medullary veins of the anterior frontal lobe. It runs posteriorly to join the [thalamostriate vein](#structure-vein.thalamostriate.left) at the venous angle near the foramen of Monro. It may instead join the internal cerebral vein more posteriorly.",
@@ -2985,7 +3190,12 @@
           "fraction": 0.96
         }
       ],
-      "radius": 0.65,
+      "radius": [
+        0.25,
+        0.38,
+        0.55,
+        0.65
+      ],
       "description": "The superior choroidal vein joins the superior thalamostriate vein near the foramen of Monro to form the [internal cerebral vein](#structure-vein.internal_cerebral.left). The internal cerebral veins drain the subependymal and choroid venous systems.",
       "fit": null,
       "aliases": [],
@@ -3020,7 +3230,12 @@
           "fraction": 0
         }
       ],
-      "radius": 0.8,
+      "radius": [
+        0.28,
+        0.45,
+        0.65,
+        0.8
+      ],
       "description": "The anterior cerebral vein receives olfactory, posterior orbitofrontal, and anterior pericallosal veins. It joins the [deep middle cerebral vein](#structure-vein.deep_middle_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left).",
       "fit": null,
       "aliases": [],
@@ -3055,7 +3270,12 @@
           "fraction": 0
         }
       ],
-      "radius": 0.95,
+      "radius": [
+        0.3,
+        0.5,
+        0.75,
+        0.95
+      ],
       "description": "The deep middle cerebral vein is formed from insular and inferior striate veins. It joins the [anterior cerebral vein](#structure-vein.anterior_cerebral.left) to form the [basal vein of Rosenthal](#structure-vein.basal.left).",
       "fit": null,
       "aliases": [],
@@ -3165,7 +3385,12 @@
           "fraction": 0
         }
       ],
-      "radius": 1,
+      "radius": [
+        0.35,
+        0.6,
+        0.85,
+        1.0
+      ],
       "description": "Anterior hemispheric veins draining the petrosal surface converge near the flocculus to form the vein of the cerebellopontine fissure, which drains into the [superior petrosal sinus](#structure-vein.superior_petrosal.left) through the [superior petrosal vein](#structure-vein.superior_petrosal_vein.left).",
       "fit": null,
       "aliases": [],
@@ -3201,6 +3426,8 @@
         }
       ],
       "radius": [
+        0.3,
+        0.55,
         0.8,
         1.1
       ],
@@ -3239,7 +3466,9 @@
         }
       ],
       "radius": [
-        0.6,
+        0.28,
+        0.42,
+        0.65,
         0.85
       ],
       "description": "Inferior hemispheric veins can run longitudinally or transversely. Longitudinal veins join superior hemispheric veins and drain into a dural or tentorial sinus, while transverse veins are associated with cerebellar fissures and drain into the [inferior vermian vein](#structure-vein.inferior_vermian.left).",
@@ -4482,7 +4711,12 @@
           "fraction": 0.78
         }
       ],
-      "radius": 1,
+      "radius": [
+        0.3,
+        0.5,
+        0.75,
+        0.95
+      ],
       "description": "The superior vermian veins drain the superior vermis and the medial parts of the superior cerebellar hemispheres. The anterior veins drain into the [vein of Galen](#structure-vein.galen), and the posterior veins drain into the [confluence of sinuses](#structure-vein.confluence).",
       "fit": null,
       "aliases": [],
