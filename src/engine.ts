@@ -42,9 +42,9 @@ function toFloatGeometry(src: THREE.BufferGeometry): THREE.BufferGeometry {
   return geo;
 }
 
-export function pickAnatomy(raycaster: THREE.Raycaster, entries: Entry[], layers: Record<SystemId, LayerState>, clip: THREE.Plane | null) {
+export function pickAnatomy(raycaster: THREE.Raycaster, entries: Entry[], layers: Record<SystemId, LayerState>, clip: THREE.Plane | null, visibility?: ReadonlyMap<string, LayerState>) {
   const selectable = entries
-    .filter(e => e.mesh.visible && !(e.structure.system === 'bone' && layers.bone === 'ghost'))
+    .filter(e => e.mesh.visible && !(e.structure.system === 'bone' && (visibility?.get(e.structure.id) ?? layers.bone) === 'ghost'))
     .map(e => e.mesh);
   return raycaster.intersectObjects(selectable, false)
     .find(hit => !clip || clip.distanceToPoint(hit.point) >= 0);
@@ -76,6 +76,8 @@ export class AnatomyEngine {
   private selected: string | null = null;
   private focusedMembers: Set<string> | null = null;
   private hidden = new Set<string>();
+  private visibility = new Map<string, LayerState>();
+  private focusDistanceFloor = 0;
   private layers: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' };
   private clipPlane = new THREE.Plane(new THREE.Vector3(1, 0, 0), 0);
   private clipEnabled = false;
@@ -120,6 +122,7 @@ export class AnatomyEngine {
     controls.enableDamping = true;
     controls.dampingFactor = 0.08;
     controls.addEventListener('start', () => {
+      this.focusDistanceFloor = 0;
       this.cameraInteracting = true;
       if (this.useMotionResolution()) this.render();
     });
@@ -303,7 +306,7 @@ export class AnatomyEngine {
     const rect = this.renderer.domElement.getBoundingClientRect();
     this.pointer.set(((ev.clientX - rect.left) / rect.width) * 2 - 1, -((ev.clientY - rect.top) / rect.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
-    const hit = pickAnatomy(this.raycaster, [...this.entries.values()], this.layers, this.clipEnabled ? this.clipPlane : null);
+    const hit = pickAnatomy(this.raycaster, [...this.entries.values()], this.layers, this.clipEnabled ? this.clipPlane : null, this.visibility);
     this.onSelect(hit ? this.objectToId.get(hit.object) ?? null : null);
   };
 
@@ -360,15 +363,18 @@ export class AnatomyEngine {
     this.refreshMaterials();
   }
   setHiddenIds(ids: ReadonlySet<string>) { this.hidden = new Set(ids); this.refreshMaterials(); }
+  setVisibility(states: ReadonlyMap<string, LayerState>) { this.visibility = new Map(states); this.refreshMaterials(); }
   setFocus(id: string | null) {
     this.focusedMembers = id ? focusGeometryMembers(this.manifest, id) : null;
     this.refreshMaterials();
   }
 
   private refreshMaterials() {
-    this.landmarkMarker.visible = this.layers.bone !== 'off' && !!this.selected && !this.hidden.has(this.selected);
+    const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers.bone : 'off';
+    this.landmarkMarker.visible = markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
+    const visibleBatches = new Set<THREE.BatchedMesh>();
     for (const [id, e] of this.entries) {
-      const state = this.layers[e.structure.system];
+      const state = this.visibility?.get(id) ?? this.layers[e.structure.system];
       e.mesh.visible = state !== 'off' && !this.hidden.has(id);
       const mat = e.mesh.material as THREE.MeshStandardMaterial;
       const selected = this.selected !== null && !!this.segmentMembers.get(this.selected)?.has(id);
@@ -384,6 +390,7 @@ export class AnatomyEngine {
       this.updateClipping(mat);
       if (e.batch) {
         const useBatch = e.mesh.visible && state === 'on' && !selected && !transparent;
+        if (useBatch) visibleBatches.add(e.batch.mesh);
         e.batch.mesh.setVisibleAt(e.batch.instanceId, useBatch);
         // Detached meshes remain the authoritative per-structure pick/bounds
         // proxies. Only highlighted or transparent meshes render separately.
@@ -393,7 +400,7 @@ export class AnatomyEngine {
       }
     }
     for (const batch of this.vascularBatches) {
-      batch.visible = this.layers[batch.userData.system as SystemId] === 'on';
+      batch.visible = visibleBatches.has(batch);
       this.updateClipping(batch.material as THREE.Material);
     }
     this.render();
@@ -411,24 +418,34 @@ export class AnatomyEngine {
     if (landmark?.point) {
       const box = new THREE.Box3().setFromCenterAndSize(new THREE.Vector3(...landmark.point), new THREE.Vector3(38,38,38));
       for (const p of landmark.course) box.expandByPoint(new THREE.Vector3(...p));
-      this.fitBox(box,true); return;
+      this.fitBox(box,true,true); return;
     }
     const box = new THREE.Box3();
     for (const key of this.segmentMembers.get(id) ?? []) {
       const entry = this.entries.get(key);
       if (entry) box.expandByObject(entry.mesh);
     }
-    if (!box.isEmpty()) this.fitBox(box, true);
+    if (!box.isEmpty()) this.fitBox(box, true, true);
   }
   fitAll(animate = true) {
     const box = new THREE.Box3();
     for (const e of this.entries.values()) if (e.mesh.visible) box.expandByObject(e.mesh);
     if (!box.isEmpty()) this.fitBox(box, animate);
   }
-  private fitBox(box: THREE.Box3, _animate: boolean) {
+  private fitBox(box: THREE.Box3, _animate: boolean, gentle = false) {
     const centre = box.getCenter(new THREE.Vector3()); const size = box.getSize(new THREE.Vector3());
     const radius = Math.max(size.x, size.y, size.z) * 0.64 || 1;
-    const distance = radius / Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2)) * 1.22;
+    const framingScale = 1.22 / Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
+    let distance = radius * framingScale;
+    if (gentle) {
+      const current = this.camera.position.distanceTo(this.controls.target);
+      // Limit automatic magnification to 25%, without accumulating another
+      // zoom on each selection. Manual navigation or a whole-scene view resets it.
+      this.focusDistanceFloor ||= current * .8;
+      const sceneSize = this.bounds.getSize(new THREE.Vector3());
+      const context = Math.max(sceneSize.x, sceneSize.y, sceneSize.z) * .35 * .64 * framingScale;
+      distance = Math.max(distance, current * .8, this.focusDistanceFloor, context);
+    } else this.focusDistanceFloor = 0;
     const dir = this.camera.position.clone().sub(this.controls.target).normalize();
     if (!Number.isFinite(dir.x) || dir.lengthSq() < 0.1) dir.fromArray(anatomicalView(coordinateSystem(this.manifest), 'three-quarter').direction).normalize();
     this.controls.target.copy(centre); this.camera.position.copy(centre).addScaledVector(dir, distance);

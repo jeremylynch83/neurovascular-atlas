@@ -1,0 +1,22 @@
+{
+  "release": "0.9.3",
+  "rootProductionBuild": "passed",
+  "githubPagesSubpathBuild": "passed",
+  "typecheck": "passed",
+  "reactInteractionChecks": "passed",
+  "actualThreeJsStateAndCameraChecks": "passed",
+  "desktopMobileLayoutWidths": [
+    240,
+    280,
+    320,
+    375,
+    680,
+    681,
+    768,
+    1024,
+    1440
+  ],
+  "allModelsPreserved": "byte-exact to v0.9.2",
+  "installerWorkflow": "unchanged",
+  "dockerBuild": "not run"
+}

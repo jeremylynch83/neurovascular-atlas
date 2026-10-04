@@ -68,10 +68,36 @@ const basal=entries.get('vein.basal.left');assert.equal(basal.mesh.material.opac
 e.setFocus(null);e.setLayers({bone:'off',artery:'off',vein:'on',brain:'off'});
 for(let i=0;i<veins.length;i++){assert.deepEqual(veins[i].mesh.geometry.getAttribute('position').array,saved[i][0]);assert.deepEqual(veins[i].mesh.geometry.index.array,saved[i][1]);}
 for(const q of ['SSS','Galen','Labbe','IJV','SOV'])assert(searchStructures(manifest.structures,q).some(s=>s.system==='vein'),q);
+// Per-structure states work even when the former system layer is off.
+e.setLayers({bone:'ghost',artery:'off',vein:'off',brain:'off'});
+const states=new Map(veins.map(x=>[x.structure.id,'on']));
+states.set('vein.basal.left','ghost');states.set('vein.internal_jugular.right','off');
+e.setVisibility(states);assert(vb.visible&&!ab.visible);
+assert.equal(basal.mesh.material.opacity,.16);assert(!entries.get('vein.internal_jugular.right').mesh.visible);
+e.setFocus('vein.galen');assert.equal(basal.mesh.material.opacity,1);assert(!entries.get('vein.internal_jugular.right').mesh.visible);
+e.setFocus(null);assert.equal(basal.mesh.material.opacity,.16);
+// Ghosted bone remains click-through; an individual opaque bone is selectable.
+const bone=[...entries.values()].find(x=>x.structure.system==='bone');
+const geometry=bone.mesh.geometry,index=geometry.index.array,attribute=geometry.getAttribute('position');
+const pa=new THREE.Vector3().fromBufferAttribute(attribute,index[0]),pb=new THREE.Vector3().fromBufferAttribute(attribute,index[1]),pc=new THREE.Vector3().fromBufferAttribute(attribute,index[2]);
+const normal=pb.clone().sub(pa).cross(pc.clone().sub(pa)).normalize(),centre=pa.add(pb).add(pc).divideScalar(3);
+rc.set(centre.clone().addScaledVector(normal,.08),normal.negate());rc.far=.2;
+states.set(bone.structure.id,'ghost');e.setVisibility(states);assert(!pickAnatomy(rc,[bone],e.layers,null,states));
+states.set(bone.structure.id,'on');e.setVisibility(states);assert(pickAnatomy(rc,[bone],e.layers,null,states));
+// Camera framing retains context and repeated automatic focus cannot stack zoom.
+e.camera=new THREE.PerspectiveCamera(35,1,.01,10000);e.camera.position.set(0,-900,200);
+e.controls={target:new THREE.Vector3(0,0,50),update(){}};
+const startDistance=e.camera.position.distanceTo(e.controls.target);
+e.focus('vein.superior_choroidal.right');const gentleDistance=e.camera.position.distanceTo(e.controls.target);
+assert(gentleDistance>=startDistance*.8-1e-6);
+e.focus('vein.superior_choroidal.right');assert(Math.abs(e.camera.position.distanceTo(e.controls.target)-gentleDistance)<1e-6);
+e.focus('vein.anterior_septal.left');assert(e.camera.position.distanceTo(e.controls.target)>=gentleDistance-1e-6);
 // Fallback uses the same proxies when native multi-draw is absent.
 for(const x of entries.values())delete x.batch;
 const fallback=fixture(false);fallback.buildVascularBatches();fallback.refreshMaterials();assert.equal(fallback.vascularBatches.length,0);assert(veins.every(x=>x.mesh.parent===fallback.root&&x.mesh.visible));
 fallback.setFocus('vein.galen');assert.equal(entries.get('vein.basal.left').mesh.material.opacity,1);assert(entries.get('vein.internal_jugular.right').mesh.material.opacity<1);fallback.setFocus(null);
+fallback.setVisibility(states);assert.equal(basal.mesh.material.opacity,.16);assert(!entries.get('vein.internal_jugular.right').mesh.visible);
 const report={release:manifest.release,loadedParts:entries.size,venousParts:veins.length,venousTriangles:triangles,realRaycastSelections:picked,nativeBatches:2,independentLayers:true,selectionGhostingClippingAndSubtreeHiding:true,geometryUnchangedByBatching:true,nativeAndFallback:true,scope:'Three.js loader/raycaster and engine-method fixtures; not browser/GPU benchmarking'};
 report.focusRetainsImmediateBranchesAndRestoresLayers=true;
+report.perStructureThreeStateVisibility=true;report.individualGhostBoneClickThrough=true;report.gentleFocusAndNoRepeatedZoom=true;
 fs.writeFileSync(`docs/validation/venous-viewer-v${manifest.release}.json`,JSON.stringify(report,null,2)+'\n');console.log(report);

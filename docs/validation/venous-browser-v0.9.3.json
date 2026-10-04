@@ -1,0 +1,17 @@
+{
+  "release": "0.9.3",
+  "githubPagesBase": "/neurovascular-atlas/",
+  "actualWebGL2": true,
+  "softwareRenderer": true,
+  "downloadedModels": [
+    "craniofacial.glb",
+    "complete-circulation.glb",
+    "complete-anastomoses.glb",
+    "venous.glb"
+  ],
+  "threeStateTreeVisibilityAndOrientation": true,
+  "searchFocusHideShow": true,
+  "collapsedPanels": true,
+  "pageErrors": [],
+  "scope": "Chromium software WebGL smoke check of the production bundle; no hardware performance claim"
+}

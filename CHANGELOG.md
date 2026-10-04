@@ -1,3 +1,11 @@
+# v0.9.3
+
+- Open the anatomy tree directly and remove the Layers/Anatomy tabs and mesh labels.
+- Cycle each tree visibility control through visible, translucent and absent; apply group changes to descendants and indicate mixed states.
+- Fade the desktop orientation toolbar until hover or keyboard focus.
+- Use gentler camera focus with a 25% zoom-in cap, surrounding context and no cumulative selection zoom.
+- Retain all v0.9.2 anatomy assets exactly.
+
 # v0.9.2
 
 - Refine venous morphology against the curated Borden, Bradač and Neuroangio angiograms.

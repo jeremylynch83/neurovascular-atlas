@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.2
+# Neurovascular Atlas v0.9.3
 
-Place `inr-anatomy-atlas-v0.9.2.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.9.3.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -9,6 +9,17 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## Interface in v0.9.3
+
+The anatomy tree opens directly, with no Layers/Anatomy tabs or mesh labels.
+Right-hand visibility controls cycle through fully visible, translucent and
+absent. Group controls apply to descendants and show a mixed indicator when
+children differ. Structure names select and centre anatomy; arrows expand it.
+The desktop orientation toolbar fades like the side panels until hovered or
+keyboard-focused. Mobile controls remain fully opaque. Automatic camera focus
+uses a wider frame, caps zoom-in at 25% and avoids cumulative zoom on repeated
+selections. Manual navigation resets that limit.
 
 ## Venous morphology in v0.9.2
 
@@ -26,11 +37,11 @@ Focus and Hide are now on the left of the orientation toolbar. Focus keeps the
 selected structure, its vessel segments and immediate named branches/tributaries
 opaque while dimming other visible structures. Click elsewhere or press Focus
 again to restore the previous opacity. Hidden structures remain hidden.
-Anatomy checkboxes sit on the right of their labels, away from the expand arrows.
+Anatomy visibility controls sit on the right of their labels, away from the expand arrows.
 
 ## Main venous anatomy in v0.9.0
 
-Add 104 selectable venous structures with 98 note-derived descriptions and linked drainage relationships. Enable **Veins** in Layers, or select a vein through search to reveal the layer. On supported browsers, veins use a separate multi-draw batch, so they remain independent of artery visibility. The existing artery, connection and bone models are byte-for-byte unchanged. See `docs/VENOUS_v0.9.0.md` for scope, sources and authoring limitations.
+Add 104 selectable venous structures with 98 note-derived descriptions and linked drainage relationships. Use the **Veins** tree visibility control, or select a vein through search to reveal veins. On supported browsers, veins use a separate multi-draw batch, so they remain independent of artery visibility. The existing artery, connection and bone models are byte-for-byte unchanged. See `docs/VENOUS_v0.9.0.md` for scope, sources and authoring limitations.
 
 ## Revised V3/V4 starts and ASA origins in v0.8.12
 
