@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
-import { segmentGeometryMembers } from './catalogue';
+import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
@@ -74,6 +74,7 @@ export class AnatomyEngine {
   private cameraInteracting = false;
   private qualityRestoreAt = 0;
   private selected: string | null = null;
+  private focusedMembers: Set<string> | null = null;
   private hidden = new Set<string>();
   private layers: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' };
   private clipPlane = new THREE.Plane(new THREE.Vector3(1, 0, 0), 0);
@@ -359,6 +360,10 @@ export class AnatomyEngine {
     this.refreshMaterials();
   }
   setHiddenIds(ids: ReadonlySet<string>) { this.hidden = new Set(ids); this.refreshMaterials(); }
+  setFocus(id: string | null) {
+    this.focusedMembers = id ? focusGeometryMembers(this.manifest, id) : null;
+    this.refreshMaterials();
+  }
 
   private refreshMaterials() {
     this.landmarkMarker.visible = this.layers.bone !== 'off' && !!this.selected && !this.hidden.has(this.selected);
@@ -371,13 +376,14 @@ export class AnatomyEngine {
       mat.emissive.setHex(selected ? 0x4a2b00 : 0x000000);
       const skullContext = e.structure.system === 'bone' && e.structure.provenance.sourceType === 'legacy-placeholder';
       const craniofacial = /mandib|maxill|tooth-/.test(e.structure.asset?.node ?? '');
-      const opacity = state === 'ghost' ? (craniofacial ? 0.25 : skullContext ? 0.11 : 0.16) : selected ? 1 : e.baseOpacity;
+      const normalOpacity = state === 'ghost' ? (craniofacial ? 0.25 : skullContext ? 0.11 : 0.16) : selected ? 1 : e.baseOpacity;
+      const opacity = this.focusedMembers ? (this.focusedMembers.has(id) ? 1 : Math.min(normalOpacity, 0.12)) : normalOpacity;
       const transparent = opacity < 1;
       if (mat.transparent !== transparent) { mat.transparent = transparent; mat.needsUpdate = true; }
       mat.opacity = opacity; mat.depthWrite = opacity > 0.4;
       this.updateClipping(mat);
       if (e.batch) {
-        const useBatch = e.mesh.visible && !selected && !transparent;
+        const useBatch = e.mesh.visible && state === 'on' && !selected && !transparent;
         e.batch.mesh.setVisibleAt(e.batch.instanceId, useBatch);
         // Detached meshes remain the authoritative per-structure pick/bounds
         // proxies. Only highlighted or transparent meshes render separately.

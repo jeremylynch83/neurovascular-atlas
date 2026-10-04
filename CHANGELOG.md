@@ -1,3 +1,11 @@
+# v0.9.1
+
+- Start Anatomy and inspection panels collapsed on desktop and mobile.
+- Dock desktop panels to the bottom screen edges, expanding upwards beside the orientation toolbar; fade until hovered or keyboard-focused.
+- Move Focus and Hide to the left of the orientation toolbar.
+- Focus dims other visible structures, retaining the selected structure, its segments and immediate branches/tributaries; clicking elsewhere restores opacity.
+- Keep the mobile title on one line and move anatomy checkboxes after the label.
+
 # v0.9.0
 
 - Add the principal dural sinuses, cerebral veins, posterior fossa collectors, extracranial veins and skull-base connections.

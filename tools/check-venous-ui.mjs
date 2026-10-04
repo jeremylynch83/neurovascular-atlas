@@ -12,7 +12,7 @@ await build({entryPoints:['src/App.tsx'],bundle:true,platform:'node',format:'esm
 export class AnatomyEngine {
  constructor(container,manifest,onSelect){this.manifest=manifest;this.onSelect=onSelect;globalThis.engineFixture=this;}
  async load(cb){cb(100)} start(){} dispose(){} setTheme(){} setClip(){} setView(){}
- setLayers(l){this.layers=l} setSelected(id){this.selected=id} setHiddenIds(ids){this.hidden=new Set(ids)}
+ setLayers(l){this.layers=l} setSelected(id){this.selected=id} setHiddenIds(ids){this.hidden=new Set(ids)} setFocus(id){this.focusMode=id}
  hasGeometry(id){return !!this.manifest.structures.find(s=>s.id===id)?.asset} focus(id){this.focused=id}
 }`,loader:'js'}))}}]});
 const React=await import('react');const {createRoot}=await import('react-dom/client');const {App}=await import('./.qa/App-ui.mjs');const {act}=React;
@@ -30,6 +30,13 @@ await click(document.querySelector('.detail .panel-title'));assert(!document.que
 const body=document.querySelector('#structure-panel-body');assert(body.textContent.includes('Receives from:'));assert(body.textContent.includes('Drains to:'));
 const galen=[...body.querySelectorAll('a')].find(a=>a.getAttribute('href')==='#structure-vein.galen');assert(galen);await click(galen);
 assert.equal(globalThis.engineFixture.selected,'vein.galen');assert.equal(globalThis.engineFixture.focused,'vein.galen');assert(!document.querySelector('#structure-panel-body').hidden);
+assert(document.querySelector('.camera-bar .selection-actions').contains(button('Focus')));
+assert(!document.querySelector('.detail .detail-actions'));
+await click(button('Focus'));assert.equal(globalThis.engineFixture.focusMode,'vein.galen');assert.equal(button('Focus').getAttribute('aria-pressed'),'true');
+await click(button('Layers and anatomy'));assert.equal(globalThis.engineFixture.focusMode,null);
+await click(button('Focus'));await act(async()=>globalThis.engineFixture.onSelect('vein.straight'));assert.equal(globalThis.engineFixture.focusMode,null);
+await act(async()=>globalThis.engineFixture.onSelect('vein.galen'));
+const row=name('Straight sinus').parentElement;assert.equal(row.lastElementChild.className,'tree-visibility');
 await click(button('Hide'));assert(globalThis.engineFixture.hidden.has('vein.internal_cerebral.right'));assert(globalThis.engineFixture.hidden.has('vein.thalamostriate.left'));assert(!globalThis.engineFixture.hidden.has('vein.internal_jugular.right'));await click(button('Show'));
 assert(!globalThis.engineFixture.hidden.has('vein.internal_cerebral.right'));
 // An actual tree selection with no notes omits the entire Description section.
@@ -37,5 +44,10 @@ await click(document.querySelector('[aria-label="Expand Posterior fossa and spin
 await click(document.querySelector('[aria-label="Expand Superior petrosal vein right"]'));
 await click(name('Transverse pontine vein right'));assert(!document.querySelector('.detail-body').textContent.includes('Description'));
 await act(async()=>root.unmount());
-const report={mobilePanelsInitiallyCollapsed:true,selectingVeinRevealsLayer:true,drainageDirectionLabels:true,descriptionLinksSelectAndFocus:true,selectionPreservesExpandedPanel:true,hideShowIncludesDescendants:true,missingDescriptionOmitted:true,scope:'Actual React components and event handlers in jsdom; rendering engine fixture, not a browser/GPU test'};
-fs.writeFileSync('docs/validation/venous-ui-v0.9.0.json',JSON.stringify(report,null,2)+'\n');console.log(report);
+window.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
+const desktop=createRoot(document.getElementById('app'));await act(async()=>desktop.render(React.createElement(App,{manifest})));
+assert(document.querySelector('#anatomy-panel-body').hidden);
+await act(async()=>globalThis.engineFixture.onSelect('vein.galen'));assert(document.querySelector('#structure-panel-body').hidden);
+await act(async()=>desktop.unmount());
+const report={release:manifest.release,allPanelsInitiallyCollapsed:true,toolbarSelectionActions:true,focusClearsOnOtherClicksAndCanvasSelection:true,checkboxAfterLabel:true,selectingVeinRevealsLayer:true,drainageDirectionLabels:true,descriptionLinksSelectAndFocus:true,selectionPreservesExpandedPanel:true,hideShowIncludesDescendants:true,missingDescriptionOmitted:true,scope:'Actual React components and event handlers in jsdom; rendering engine fixture, not a browser/GPU test'};
+fs.writeFileSync(`docs/validation/venous-ui-v${manifest.release}.json`,JSON.stringify(report,null,2)+'\n');console.log(report);

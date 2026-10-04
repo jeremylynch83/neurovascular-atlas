@@ -12,7 +12,6 @@ const SYSTEMS: { id: SystemId; label: string; hint: string }[] = [
   { id: 'brain', label: 'Brain', hint: 'Parenchymal context' },
 ];
 const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: 'on' };
-const panelsInitiallyOpen = () => typeof window === 'undefined' || !window.matchMedia('(max-width: 680px)').matches;
 
 export function App({ manifest }: { manifest: AnatomyManifest }) {
   const stage = useRef<HTMLDivElement>(null);
@@ -22,8 +21,9 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [query, setQuery] = useState('');
   const [layers, setLayers] = useState<Record<SystemId, LayerState>>({ bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' });
   const [tab, setTab] = useState<'layers'|'tree'>('layers');
-  const [controlsOpen, setControlsOpen] = useState(panelsInitiallyOpen);
-  const [inspectionOpen, setInspectionOpen] = useState(panelsInitiallyOpen);
+  const [controlsOpen, setControlsOpen] = useState(false);
+  const [inspectionOpen, setInspectionOpen] = useState(false);
+  const [focusedId, setFocusedId] = useState<string | null>(null);
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
   const [loadProgress, setLoadProgress] = useState(0);
@@ -34,13 +34,16 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const byId = useMemo(() => new Map(manifest.structures.map((s) => [s.id, s])), [manifest]);
   const subtrees = useMemo(() => geometrySubtrees(byId), [byId]);
   const selected = selectedId ? byId.get(selectedId) ?? null : null;
+  const selectedGeometry = selected ? subtrees.get(selected.id) ?? [] : [];
+  const selectedHidden = selectedGeometry.length > 0 && selectedGeometry.every(id => hiddenIds.has(id));
+  const canFocus = !!selected && !!(selected.asset || selected.landmark?.point || manifest.structures.some(s => s.segmentOf === selected.id));
   const results = useMemo(() => searchStructures(manifest.structures, query), [manifest.structures, query]);
 
   useEffect(() => {
     if (!stage.current) return;
     let cancelled = false;
     setReady(false); setLoadError(null); setLoadProgress(0);
-    const e = new AnatomyEngine(stage.current, manifest, setSelectedId, fps => {
+    const e = new AnatomyEngine(stage.current, manifest, id => { setSelectedId(id); setFocusedId(null); }, fps => {
       // Update this small readout without rerendering the anatomy panels.
       if (fpsReadout.current) {
         fpsReadout.current.textContent = fps === null ? '' : `${fps} FPS`;
@@ -52,6 +55,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   }, [manifest]);
   useEffect(() => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; engine.current?.setTheme(dark); }, [dark]);
   useEffect(() => { engine.current?.setSelected(selectedId); }, [selectedId]);
+  useEffect(() => { engine.current?.setFocus(focusedId); }, [focusedId, ready]);
   useEffect(() => { engine.current?.setLayers(layers); }, [layers]);
   useEffect(() => { engine.current?.setClip(clip.enabled, clip.axis, clip.offset); }, [clip]);
   useEffect(() => { engine.current?.setHiddenIds(hiddenIds); }, [hiddenIds, ready]);
@@ -63,13 +67,15 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   });
 
   const select = (s: Structure) => {
-    setSelectedId(s.id); setQuery('');
+    setSelectedId(s.id); setFocusedId(null); setQuery('');
     if (s.system === 'vein' && s.asset) setLayers(old => old.vein === 'off' ? { ...old, vein: 'on' } : old);
     if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
   };
   const geometryCount = (system: SystemId) => manifest.structures.filter((s) => s.system === system && s.asset).length;
 
-  return <div className="atlas-app">
+  return <div className="atlas-app" onClickCapture={e => {
+    if (focusedId && !(e.target as Element).closest('[data-focus-control]')) setFocusedId(null);
+  }}>
     <div className="atlas-stage" ref={stage} />
     <header className="identity">
       <h1>Neurovascular Atlas</h1>
@@ -89,6 +95,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       <button className="icon-btn" onClick={()=>setAbout(true)} title={`About v${manifest.release}`}>i</button>
     </div>
 
+    <div className="bottom-dock">
     <div className="panel-stack">
     <section className="left-panel panel">
       <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={()=>setControlsOpen(!controlsOpen)}>Layers and anatomy</button>
@@ -104,12 +111,21 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       </div>
     </section>
 
-    {selected && <Detail open={inspectionOpen} onOpenChange={setInspectionOpen} structure={selected} manifest={manifest} byId={byId} onSelect={select} engine={engine.current} hidden={(subtrees.get(selected.id)??[]).length>0&&(subtrees.get(selected.id)??[]).every(id=>hiddenIds.has(id))} onHidden={(hidden)=>setHidden(subtrees.get(selected.id)??[],hidden)} />}
+    {selected && <Detail open={inspectionOpen} onOpenChange={setInspectionOpen} structure={selected} manifest={manifest} byId={byId} onSelect={select} />}
     </div>
 
     <div className="camera-bar panel">
+      <div className="selection-actions">
+        <button data-focus-control aria-pressed={focusedId !== null} disabled={!ready || !canFocus} onClick={() => {
+          if (!selected) return;
+          setFocusedId(focusedId === selected.id ? null : selected.id);
+          if (focusedId !== selected.id) engine.current?.focus(selected.id);
+        }}>Focus</button>
+        <button disabled={!ready || !selectedGeometry.length} onClick={() => setHidden(selectedGeometry, !selectedHidden)}>{selectedHidden ? 'Show' : 'Hide'}</button>
+      </div>
       <div className="views"><button onClick={()=>engine.current?.setView('front')}>AP</button><button onClick={()=>engine.current?.setView('left')}>L</button><button onClick={()=>engine.current?.setView('right')}>R</button><button onClick={()=>engine.current?.setView('superior')}>Sup</button><button onClick={()=>engine.current?.setView('inferior')}>Inf</button></div>
       <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>setClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>setClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>setClip({...clip,offset:Number(e.target.value)})}/></div>
+    </div>
     </div>
 
     <div className="fps-readout" ref={fpsReadout} aria-label="Frame rate" aria-live="off" hidden />
@@ -125,14 +141,14 @@ function StructureTree({manifest,byId,subtrees,hiddenIds,selectedId,onSelect,onV
   const node=(id:string,depth=0):ReactNode=>{const s=byId.get(id);if(!s)return null;const has=s.children.length>0;const ids=subtrees.get(id)??[];const shown=ids.filter(id=>!hiddenIds.has(id)).length;return <div key={id}>
     <div className={`tree-row ${selectedId===id?'selected':''} ${ids.length?'has-geometry':'planned'}`} style={{paddingLeft:8+depth*14}}>
       <button className="twisty" onClick={()=>has&&toggle(id)} aria-label={`${open.has(id)?'Collapse':'Expand'} ${s.name}`} aria-expanded={has?open.has(id):undefined}>{has?(open.has(id)?'⌄':'›'):''}</button>
-      <input className="tree-visibility" type="checkbox" checked={ids.length>0&&shown===ids.length} ref={el=>{if(el)el.indeterminate=shown>0&&shown<ids.length;}} disabled={!ids.length} aria-label={`Show ${s.name} and descendants`} onChange={e=>onVisibility(ids,e.target.checked)} />
       <button className="tree-name" onClick={()=>onSelect(s)}><span>{s.name}</span>{s.kind!=='group'&&<small>{s.landmark?(s.landmark.point?'landmark':'unlocated'):s.asset?'mesh':''}</small>}</button>
+      <input className="tree-visibility" type="checkbox" checked={ids.length>0&&shown===ids.length} ref={el=>{if(el)el.indeterminate=shown>0&&shown<ids.length;}} disabled={!ids.length} aria-label={`Show ${s.name} and descendants`} onChange={e=>onVisibility(ids,e.target.checked)} />
     </div>{has&&open.has(id)&&s.children.map((c)=>node(c,depth+1))}
   </div>};
   return <div className="tree">{manifest.roots.map((r)=>node(r))}</div>;
 }
 
-function Detail({open,onOpenChange,structure,manifest,byId,onSelect,engine,hidden,onHidden}:{open:boolean;onOpenChange:(open:boolean)=>void;structure:Structure;manifest:AnatomyManifest;byId:ReadonlyMap<string,Structure>;onSelect:(structure:Structure)=>void;engine:AnatomyEngine|null;hidden:boolean;onHidden:(hidden:boolean)=>void}) {
+function Detail({open,onOpenChange,structure,manifest,byId,onSelect}:{open:boolean;onOpenChange:(open:boolean)=>void;structure:Structure;manifest:AnatomyManifest;byId:ReadonlyMap<string,Structure>;onSelect:(structure:Structure)=>void}) {
   const rels=manifest.relationships.filter((r)=>r.type!=='associated_passage'&&(r.from===structure.id||r.to===structure.id||(structure.displayGroup==='anastomoses'&&r.type==='potential_anastomosis'&&r.note===structure.name)));
   const groups=new Map<string,Set<string>>();
   for (const r of rels) {
@@ -146,7 +162,6 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect,engine,hidde
     <div className="detail-body" id="structure-panel-body" hidden={!open}>
     <div className="detail-system">{structure.system}</div>
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
-    {structure.asset||structure.landmark?.point||manifest.structures.some(s=>s.segmentOf===structure.id)?<div className="detail-actions"><button onClick={()=>engine?.focus(structure.id)}>Focus</button><button onClick={()=>onHidden(!hidden)}>{hidden?'Show':'Hide'}</button></div>:null}
     {structure.description?.trim()&&<Description text={structure.description} byId={byId} onSelect={onSelect} />}
     {groups.size>0&&<section><h3>Relationships</h3>{[...groups].map(([type,ids])=><div className="relationship" key={type}><b>{type.replaceAll('_',' ').replace(/^./,letter=>letter.toUpperCase())}: </b>{[...ids].map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();onSelect(byId.get(id)!);}}>{byId.get(id)!.name}</a></span>)}</div>)}</section>}
     </div>

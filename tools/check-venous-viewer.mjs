@@ -53,10 +53,25 @@ e.setSelected(null);e.setLayers({bone:'off',artery:'off',vein:'on',brain:'off'})
 const subtrees=geometrySubtrees(byId),hidden=new Set(subtrees.get('vein.galen'));assert(hidden.size>=15);e.setHiddenIds(hidden);assert([...hidden].every(id=>!entries.get(id).mesh.visible));assert(entries.get('vein.internal_jugular.right').mesh.visible);
 e.setHiddenIds(new Set(subtrees.get('vein')));assert(veins.every(x=>!vb.getVisibleAt(x.batch.instanceId)));e.setHiddenIds(new Set());
 e.setClip(true,'sagittal',0);assert(vb.material.clippingPlanes.length===1);e.setClip(false,'sagittal',0);assert(vb.material.clippingPlanes.length===0);
+e.setLayers({bone:'ghost',artery:'on',vein:'on',brain:'off'});
+const original=new Map([...entries].map(([id,x])=>[id,[x.mesh.material.opacity,x.mesh.visible]]));
+e.setFocus('vein.galen');
+for(const id of ['vein.galen','vein.internal_cerebral.right','vein.basal.left'])assert.equal(entries.get(id).mesh.material.opacity,1);
+assert(entries.get('vein.thalamostriate.left').mesh.material.opacity<1);assert(entries.get('vein.internal_jugular.right').mesh.material.opacity<1);
+e.setHiddenIds(new Set(['vein.basal.left']));assert(!entries.get('vein.basal.left').mesh.visible);e.setHiddenIds(new Set());
+e.setFocus(null);for(const [id,x] of entries)assert.deepEqual([x.mesh.material.opacity,x.mesh.visible],original.get(id));
+const eca=manifest.structures.find(s=>s.name==='External carotid artery left');e.setFocus(eca.id);
+assert.equal(entries.get(eca.children[0]).mesh.material.opacity,1);
+const facial=manifest.structures.find(s=>s.name==='Facial artery left');assert.equal(entries.get(facial.id).mesh.material.opacity,1);assert(entries.get(facial.children[0]).mesh.material.opacity<1);
+e.setLayers({bone:'off',artery:'off',vein:'ghost',brain:'off'});e.setFocus('vein.galen');
+const basal=entries.get('vein.basal.left');assert.equal(basal.mesh.material.opacity,1);assert(basal.mesh.parent===e.root&&basal.mesh.visible&&!vb.visible);
+e.setFocus(null);e.setLayers({bone:'off',artery:'off',vein:'on',brain:'off'});
 for(let i=0;i<veins.length;i++){assert.deepEqual(veins[i].mesh.geometry.getAttribute('position').array,saved[i][0]);assert.deepEqual(veins[i].mesh.geometry.index.array,saved[i][1]);}
 for(const q of ['SSS','Galen','Labbe','IJV','SOV'])assert(searchStructures(manifest.structures,q).some(s=>s.system==='vein'),q);
 // Fallback uses the same proxies when native multi-draw is absent.
 for(const x of entries.values())delete x.batch;
 const fallback=fixture(false);fallback.buildVascularBatches();fallback.refreshMaterials();assert.equal(fallback.vascularBatches.length,0);assert(veins.every(x=>x.mesh.parent===fallback.root&&x.mesh.visible));
+fallback.setFocus('vein.galen');assert.equal(entries.get('vein.basal.left').mesh.material.opacity,1);assert(entries.get('vein.internal_jugular.right').mesh.material.opacity<1);fallback.setFocus(null);
 const report={release:manifest.release,loadedParts:entries.size,venousParts:veins.length,venousTriangles:triangles,realRaycastSelections:picked,nativeBatches:2,independentLayers:true,selectionGhostingClippingAndSubtreeHiding:true,geometryUnchangedByBatching:true,nativeAndFallback:true,scope:'Three.js loader/raycaster and engine-method fixtures; not browser/GPU benchmarking'};
-fs.writeFileSync('docs/validation/venous-viewer-v0.9.0.json',JSON.stringify(report,null,2)+'\n');console.log(report);
+report.focusRetainsImmediateBranchesAndRestoresLayers=true;
+fs.writeFileSync(`docs/validation/venous-viewer-v${manifest.release}.json`,JSON.stringify(report,null,2)+'\n');console.log(report);

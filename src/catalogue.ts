@@ -33,6 +33,23 @@ export function geometrySubtrees(byId: ReadonlyMap<string, Structure>): Map<stri
   return subtrees;
 }
 
+// Keep a vessel's own segments and its immediate named branches/tributaries
+// clear, without following the entire downstream tree or potential connections.
+export function focusGeometryMembers(manifest: AnatomyManifest, id: string): Set<string> {
+  const members = segmentGeometryMembers(manifest.structures);
+  const own = members.get(id) ?? new Set<string>();
+  const origins = new Set([id, ...own]);
+  const targets = new Set(origins);
+  for (const s of manifest.structures) {
+    if (s.parent && origins.has(s.parent) && s.kind !== 'group' && s.displayGroup !== 'anastomoses') targets.add(s.id);
+  }
+  for (const r of manifest.relationships) {
+    if (r.type === 'branches_to' && origins.has(r.from)) targets.add(r.to);
+    if (r.type === 'drains_to' && origins.has(r.to)) targets.add(r.from);
+  }
+  return new Set([...targets].flatMap(target => [...(members.get(target) ?? [])]));
+}
+
 export async function loadCatalogue(file = 'manifest.json'): Promise<AnatomyManifest> {
   const response = await fetch(`${import.meta.env.BASE_URL}anatomy/${file}`, { cache: 'no-store' });
   if (!response.ok) throw new Error(`Could not load anatomy manifest (${response.status})`);

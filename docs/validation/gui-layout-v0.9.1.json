@@ -1,0 +1,69 @@
+{
+  "release": "0.9.1",
+  "layouts": [
+    {
+      "width": 240,
+      "desktop": false,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 280,
+      "desktop": false,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 320,
+      "desktop": false,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 375,
+      "desktop": false,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 680,
+      "desktop": false,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 681,
+      "desktop": true,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 768,
+      "desktop": true,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 1024,
+      "desktop": true,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    },
+    {
+      "width": 1440,
+      "desktop": true,
+      "titleLines": 1,
+      "panelsWithinViewport": true,
+      "noToolbarOverlap": true
+    }
+  ],
+  "scope": "Chromium rendering of real React UI and fonts with a scene fixture; model rendering tested separately"
+}
