@@ -1,0 +1,20 @@
+{
+  "release": "0.9.12",
+  "loadedParts": 930,
+  "venousParts": 104,
+  "venousTriangles": 498012,
+  "realRaycastSelections": 104,
+  "nativeBatches": 2,
+  "independentLayers": true,
+  "selectionGhostingClippingAndSubtreeHiding": true,
+  "geometryUnchangedByBatching": true,
+  "nativeAndFallback": true,
+  "scope": "Three.js loader/raycaster and engine-method fixtures; not browser/GPU benchmarking",
+  "lightweightGhostMaterialAndSinglePass": true,
+  "materialCacheAndOriginalGeometryReused": true,
+  "motionResolutionRestored": true,
+  "focusRetainsImmediateBranchesAndRestoresLayers": true,
+  "perStructureThreeStateVisibility": true,
+  "individualGhostBoneClickThrough": true,
+  "gentleFocusAndNoRepeatedZoom": true
+}

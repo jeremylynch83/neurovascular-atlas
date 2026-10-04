@@ -1,3 +1,10 @@
+# v0.9.12
+
+- Fit the slim cavernous envelope around the retained ICA course and to the medial carotid-sulcus bone.
+- Retain curved lateral contours, the sellar exclusion and the direct venous entries.
+- Add independent checks of ICA enclosure and medial bone apposition on the exported meshes.
+- Preserve the arterial, anastomotic and skull assets and document the unresolved low skull-canal relationship.
+
 # v0.9.11
 
 - Replace the broad box-like cavernous body with a narrower curved profile and rounded edges.

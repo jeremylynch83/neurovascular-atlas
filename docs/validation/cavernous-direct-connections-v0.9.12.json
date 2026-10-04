@@ -1,0 +1,294 @@
+{
+  "release": "0.9.12",
+  "direct_attachments": {
+    "right": {
+      "vein.superior_ophthalmic.right": {
+        "direct_shared_edges": 15
+      },
+      "vein.ovale_emissary.right": {
+        "direct_shared_edges": 41
+      },
+      "vein.superior_petrosal.right": {
+        "direct_shared_edges": 44
+      },
+      "vein.inferior_petrosal.right": {
+        "direct_shared_edges": 59
+      },
+      "vein.sphenoparietal.right": {
+        "direct_shared_edges": 12
+      },
+      "vein.superficial_middle_cerebral.right": {
+        "direct_shared_edges": 47
+      },
+      "vein.basilar_plexus": {
+        "direct_shared_edges": 53
+      },
+      "vein.anterior_intercavernous": {
+        "direct_shared_edges": 65
+      },
+      "vein.posterior_intercavernous": {
+        "direct_shared_edges": 52
+      }
+    },
+    "left": {
+      "vein.superior_ophthalmic.left": {
+        "direct_shared_edges": 14
+      },
+      "vein.ovale_emissary.left": {
+        "direct_shared_edges": 39
+      },
+      "vein.superior_petrosal.left": {
+        "direct_shared_edges": 43
+      },
+      "vein.inferior_petrosal.left": {
+        "direct_shared_edges": 62
+      },
+      "vein.sphenoparietal.left": {
+        "direct_shared_edges": 18
+      },
+      "vein.superficial_middle_cerebral.left": {
+        "direct_shared_edges": 42
+      },
+      "vein.basilar_plexus": {
+        "direct_shared_edges": 25
+      },
+      "vein.anterior_intercavernous": {
+        "direct_shared_edges": 54
+      },
+      "vein.posterior_intercavernous": {
+        "direct_shared_edges": 50
+      }
+    }
+  },
+  "end_to_end_paths": {
+    "vein.superior_ophthalmic.right": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 2934,
+          "direct_cs_vertices": 16,
+          "retained_exterior_vertices": 2293
+        }
+      ]
+    },
+    "vein.ovale_emissary.right": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 1955,
+          "direct_cs_vertices": 40,
+          "retained_exterior_vertices": 967
+        }
+      ]
+    },
+    "vein.superior_petrosal.right": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 1640,
+          "direct_cs_vertices": 43,
+          "retained_exterior_vertices": 1320
+        }
+      ]
+    },
+    "vein.inferior_petrosal.right": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 2021,
+          "direct_cs_vertices": 59,
+          "retained_exterior_vertices": 1684
+        }
+      ]
+    },
+    "vein.sphenoparietal.right": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 2250,
+          "direct_cs_vertices": 16,
+          "retained_exterior_vertices": 1316
+        }
+      ]
+    },
+    "vein.superficial_middle_cerebral.right": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 4161,
+          "direct_cs_vertices": 39,
+          "retained_exterior_vertices": 2955
+        }
+      ]
+    },
+    "vein.superior_ophthalmic.left": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 2946,
+          "direct_cs_vertices": 14,
+          "retained_exterior_vertices": 2286
+        }
+      ]
+    },
+    "vein.ovale_emissary.left": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 1670,
+          "direct_cs_vertices": 38,
+          "retained_exterior_vertices": 844
+        }
+      ]
+    },
+    "vein.superior_petrosal.left": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 1521,
+          "direct_cs_vertices": 43,
+          "retained_exterior_vertices": 1209
+        }
+      ]
+    },
+    "vein.inferior_petrosal.left": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 1856,
+          "direct_cs_vertices": 58,
+          "retained_exterior_vertices": 1519
+        }
+      ]
+    },
+    "vein.sphenoparietal.left": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 2264,
+          "direct_cs_vertices": 21,
+          "retained_exterior_vertices": 1324
+        }
+      ]
+    },
+    "vein.superficial_middle_cerebral.left": {
+      "continuous_to_retained_course": true,
+      "qualifying_components": [
+        {
+          "vertices": 4284,
+          "direct_cs_vertices": 40,
+          "retained_exterior_vertices": 3096
+        }
+      ]
+    },
+    "vein.anterior_intercavernous": {
+      "continuous_between_both_cavernous_sinuses": true,
+      "components": [
+        {
+          "right": 0,
+          "left": 3
+        },
+        {
+          "right": 60,
+          "left": 52
+        },
+        {
+          "right": 5,
+          "left": 0
+        }
+      ]
+    },
+    "vein.posterior_intercavernous": {
+      "continuous_between_both_cavernous_sinuses": true,
+      "components": [
+        {
+          "right": 0,
+          "left": 17
+        },
+        {
+          "right": 31,
+          "left": 29
+        },
+        {
+          "right": 18,
+          "left": 0
+        }
+      ]
+    }
+  },
+  "model_dimensions": {
+    "0.9.11": {
+      "vein.cavernous.right": {
+        "temporarily_capped_label_volume_mm3": 369.8868441967069,
+        "sample_yz_mm": [
+          [
+            -48,
+            58
+          ],
+          [
+            -46,
+            61
+          ]
+        ],
+        "transverse_surface_spans_mm": [
+          2.913504542045038,
+          1.6458251250336087
+        ]
+      },
+      "vein.cavernous.left": {
+        "temporarily_capped_label_volume_mm3": 372.47066315518566,
+        "sample_yz_mm": [
+          [
+            -48,
+            58
+          ],
+          [
+            -46,
+            61
+          ]
+        ],
+        "transverse_surface_spans_mm": [
+          2.899928942964939,
+          1.764956043687505
+        ]
+      }
+    },
+    "0.9.12": {
+      "vein.cavernous.right": {
+        "temporarily_capped_label_volume_mm3": 645.5456897001064,
+        "sample_yz_mm": [
+          [
+            -48,
+            58
+          ],
+          [
+            -46,
+            61
+          ]
+        ],
+        "transverse_surface_spans_mm": [
+          4.100930468626835,
+          6.279113897818052
+        ]
+      },
+      "vein.cavernous.left": {
+        "temporarily_capped_label_volume_mm3": 656.8335056424853,
+        "sample_yz_mm": [
+          [
+            -48,
+            58
+          ],
+          [
+            -46,
+            61
+          ]
+        ],
+        "transverse_surface_spans_mm": [
+          4.23802174478196,
+          6.389081211404479
+        ]
+      }
+    }
+  },
+  "scope": "Direct common mesh edges, with separate same-label paths to the retained peripheral course or opposite cavernous sinus. Whole-network connectivity alone does not establish these attachments. Width samples are transverse surface spans at named model coordinates; capped volumes are authoring estimates, not patient morphometry."
+}
