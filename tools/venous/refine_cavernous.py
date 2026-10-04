@@ -1,4 +1,4 @@
-"""Local v0.9.6 to v0.9.8 authoring pass in atlas RAS millimetres.
+"""Local v0.9.6 to v0.9.9 authoring pass in atlas RAS millimetres.
 
 Run from the app root after decode_glb.mjs has decoded the two v0.9.6
 assets into .authoring/circulation-raw.glb and .authoring/venous-original.glb.
@@ -166,7 +166,7 @@ def export_veins(p,f,labels,ids,dest):
     for k in range(3):np.add.at(normals,f[:,k],fn)
     normals/=np.maximum(np.linalg.norm(normals,axis=1)[:,None],1e-12)
     np.savez_compressed(ROOT/'venous-mesh.npz',positions=p,faces=f,labels=labels,normals=normals)
-    doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas local cavernous authoring v0.9.8'},
+    doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas local cavernous authoring v0.9.9'},
          'scene':0,'scenes':[{'nodes':list(range(len(ids)))}],'nodes':[],
          'meshes':[],'accessors':[],'bufferViews':[],'buffers':[]};data=bytearray()
     def acc(a,typ,component,target,bounds=False):
@@ -197,7 +197,7 @@ def refine_veins(arteries):
     print('Original common venous skin',len(p),len(f),flush=True)
     # Closed regional replacement with a 2 mm overlap collar. Original mesh is
     # untouched beyond the collar; all tributaries are retained in the new field.
-    cache=ROOT/'regional-replacement-v097-closed-carotid-all-veins.npz'
+    cache=ROOT/'regional-replacement-v099-tapered-walls-cleared-entry.npz'
     if cache.exists():
         saved=np.load(cache);np_,nf,nl=saved['p'],saved['f'],saved['labels']
         lo,hi,innerlo,innerhi=[saved[k] for k in ['lo','hi','innerlo','innerhi']];step=.30
@@ -228,16 +228,31 @@ def refine_veins(arteries):
         def ellipsoid(center,radii):
             return (np.sqrt(((x-center[0])/radii[0])**2+((y-center[1])/radii[1])**2+
                             ((z-center[2])/radii[2])**2)-1)*min(radii)
+        new_flat_entry=np.zeros_like(field,dtype=bool)
         for side,sign in [('right',1),('left',-1)]:
             def c(cx,cy,cz):return [cx if sign==1 else 1.3-cx,cy,cz]
+            # Wall-defined parasellar envelope. Piecewise planar sides replace
+            # the ellipsoidal dome and separate anterior rounded recess.
+            lateral=x if sign==1 else 1.3-x
+            outer=np.interp(z,[49,56,63,70,74],[18.8,17.8,17.0,17.4,18.0])
+            posterior=-55.2+.20*(z-49)+.25*np.sin(np.pi*np.clip((z-49)/25,0,1))**2
+            anterior=np.interp(z,[49,55,61,67,74],[-48.0,-45.0,-40.5,-35.4,-35.4])
+            # Retain a tapered envelope, then flatten its lateral and posterior
+            # walls. A full intersection of planar bounds would produce a box.
             body=softmin(ellipsoid(c(14.8,-50,57),(4.1,4.7,9)),
                          ellipsoid(c(12.9,-43.5,66),(5.2,9,7.3)))
-            body=softmin(body,ellipsoid(c(12.4,-35.5,71.5),(3.8,4,4.5)))
-            # Small anterolateral entry recess under the lesser wing. Keeping
-            # this recess connected avoids isolating the original dural wing
-            # channel when the medial parasellar body is refitted to bone.
-            body=softmin(body,ellipsoid(c(17.3,-39.0,69.2),(3.0,3.6,2.8)),.8)
+            body=np.maximum.reduce([body,lateral-outer,posterior-y,y-anterior])
+            # Thin anterior roof connection instead of the old rounded horn.
+            entry=np.maximum.reduce([8.7-lateral,lateral-14.6,-40.5-y,y+35.3,
+                                     71.6-z,z-73.1])
+            body=softmin(body,entry,.45)
             mask=body<field;new_owner[mask]=ids.index('vein.cavernous.'+side);field=np.minimum(field,body)
+            # A thin, flat lesser-wing entry, labelled as its receiving channel.
+            # This replaces the bulging anterior recess while retaining the join.
+            wing=np.maximum.reduce([16.5-lateral,lateral-19.2,-39.0-y,y+36.5,
+                                    68.5-z,z-70.2])
+            mask=wing<field;new_flat_entry|=mask
+            new_owner[mask]=ids.index('vein.sphenoparietal.'+side);field=np.minimum(field,wing)
         # Low, smooth dural cross-connections surrounding the inferred sellar space.
         for name,q,rr in [
             ('anterior_intercavernous',[[12.4,-35.5,72.4],[6,-35.5,72.5],[.65,-35.5,72.5],[-4.7,-35.5,72.5],[-11.1,-35.5,72.4]],(1.25,1.25,.72)),
@@ -267,7 +282,7 @@ def refine_veins(arteries):
         # Keep pre-existing emissary/other channels intact even where the skull
         # model does not resolve their foramina. The new envelope alone receives
         # this bone exclusion; it must not sever unrelated retained tributaries.
-        mask=inside&np.isin(new_owner,list(primary))&(field<.8)
+        mask=inside&(np.isin(new_owner,list(primary))|new_flat_entry)&(field<.8)
         bone=np.array([signed.EvaluateFunction(point) for point in points[mask.ravel()]])
         field[mask]=np.maximum(field[mask],.25-bone)
         field[[0,-1],:,:]=50;field[:,[0,-1],:]=50;field[:,:,[0,-1]]=50
@@ -311,6 +326,8 @@ def refine_veins(arteries):
         cm=component.to_mesh();cp=np.asarray(cm.vert_properties)
         assert np.all((cp>=lo-.01)&(cp<=hi+.01))
         assert abs(component.volume())<.05 or set(cm.face_id).issubset(primary),set(cm.face_id)
+    # Allow only bounded fragments of the newly drawn envelope; none may
+    # contain a retained tributary.
     assert not removed or (max(map(abs,removed))<6 and sum(map(abs,removed))<15),removed[:10]
     final=components[0]
     out=final.to_mesh();p2=np.asarray(out.vert_properties)[:,:3].copy();f2=np.asarray(out.tri_verts).copy()
@@ -350,6 +367,6 @@ if __name__=='__main__':
     changed_anast=[]
     if anast.exists():changed_anast,_=refine_arteries(anast,APP/'.authoring/anastomoses-refined.glb')
     report=refine_veins(arteries)
-    report.update(release='0.9.8',arterial_parts_changed=changed,anastomotic_parts_changed=changed_anast,
-                  method='Local continuous arterial deformation and regional venous replacement; teaching reconstruction, not patient imaging')
+    report.update(release='0.9.9',arterial_parts_changed=changed,anastomotic_parts_changed=changed_anast,
+                  method='Wall-defined cavernous envelope with gently concave lateral walls and no anterior rounded recess; teaching reconstruction, not patient imaging')
     (ROOT/'cavernous-local-build.json').write_text(json.dumps(report,indent=2)+'\n')

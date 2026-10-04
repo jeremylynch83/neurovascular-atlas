@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.8
+# Neurovascular Atlas v0.9.9
 
-Place `inr-anatomy-atlas-v0.9.8.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.9.9.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. Review screenshots are excluded from this install ZIP.
 
@@ -163,3 +163,7 @@ The lower cavernous ICA is moved medially with a smooth transition to the petrou
 ## Cavernous refinement in v0.9.8
 
 Retain the completed v0.9.7 ICA correction and refine the venous exclusions around the displayed carotid, restoring posterosuperior space and preserving the lesser-wing entry. All 104 venous structures remain in one connected, watertight network. See [the follow-up review](docs/CAVERNOUS_v0.9.8.md) for checks and the unresolved low petrous/lacerum skull canal. The companion PDF provides matched views and qualitative angiographic comparisons.
+
+## Cavernous wall correction in v0.9.9
+
+Replace the rounded cavernous envelope with straight to gently concave lateral walls, a flatter roof and a sloping posterior contour. Remove the anterior rounded recess, retaining its lesser-wing connection through a thin flat entry. See [the wall correction review](docs/CAVERNOUS_v0.9.9.md).

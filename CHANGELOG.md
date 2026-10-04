@@ -1,3 +1,11 @@
+# v0.9.9
+
+- Replace the bulbous cavernous envelope with defined wall profiles and a flatter roof.
+- Make the outer lateral wall straight to gently concave, and reduce the domed posterior contour.
+- Remove the anterior rounded recess; retain the lesser-wing connection through a thin flat entry.
+- Retain the completed ICA, anastomotic and skull assets and GUI.
+- Preserve all 104 venous labels and verify continuity, topology and cavernous ICA clearance.
+
 # v0.9.8
 
 - Retain the completed v0.9.7 ICA correction and refine the local cavernous venous envelope.
