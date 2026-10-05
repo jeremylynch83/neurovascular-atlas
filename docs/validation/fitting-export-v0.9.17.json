@@ -1,0 +1,23 @@
+{
+  "release": "0.9.17",
+  "assets": {
+    "arteries": {
+      "file": "complete-circulation.glb",
+      "sha256": "80fe4a34a46b2ee4c56a786e314b262bd0df9821841349e5c21fb8d4bd22993f",
+      "labels": 599,
+      "changedLabels": [],
+      "triangleIndicesRetainedExactly": true
+    },
+    "veins": {
+      "file": "venous.glb",
+      "sha256": "0699bebd7a38b934753f889b03e750d7e42be30559efe7f34a58d2f094c2f92b",
+      "labels": 104,
+      "changedLabels": [],
+      "triangleIndicesRetainedExactly": true
+    }
+  },
+  "allDeliveredAccessorsMatchAuthoring": true,
+  "brainAssetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+  "allBrainGeometryUnchanged": true,
+  "courseHashesMatchDeliveredAssets": true
+}

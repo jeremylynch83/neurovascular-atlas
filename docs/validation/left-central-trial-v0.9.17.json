@@ -1,0 +1,2071 @@
+{
+  "release": "0.9.17",
+  "status": "rejected-not-applied",
+  "reason": "The primary artery cleared its banks, but its adjoining cortical branch and distal ramus introduced 254 and 351 postcentral contacts from zero. The joined arterial family cannot be published. Branch-specific target courses and regional joined-skin reconstruction are required.",
+  "report": {
+    "release": "0.9.16",
+    "baseline": "0.9.15",
+    "duralExperimentApplied": false,
+    "brainstemExperimentApplied": false,
+    "brainAdjustments": [],
+    "batches": [
+      {
+        "name": "artery.anterior.central_left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 5.0272289036480995,
+            "movedVertices": 942
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 24.940269883392407,
+            "movedVertices": 6828
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 24.940269883392407,
+            "movedVertices": 3655
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 24.09092011695674,
+            "movedVertices": 1507
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.0779822950290858,
+            "movedVertices": 191
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 1.061164261992953,
+            "movedVertices": 5195
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.43716932180756807,
+            "movedVertices": 3477
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.29396080934049645,
+            "movedVertices": 1507
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.06652482732269659,
+            "movedVertices": 200
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.4670739232088113,
+            "movedVertices": 4817
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.4528503894848649,
+            "movedVertices": 3451
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.19295435752499113,
+            "movedVertices": 1466
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.0391790392396663,
+            "movedVertices": 208
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.7446156671066145,
+            "movedVertices": 4484
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.2983302070743343,
+            "movedVertices": 3486
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.09441903324028789,
+            "movedVertices": 1439
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.024204146477409018,
+            "movedVertices": 209
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.4850667256253921,
+            "movedVertices": 4235
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.30660018622291085,
+            "movedVertices": 3446
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.27417231554954175,
+            "movedVertices": 1408
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.021906718063600266,
+            "movedVertices": 210
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.4815884483728028,
+            "movedVertices": 4077
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.13085869432306313,
+            "movedVertices": 3227
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.2084939539174826,
+            "movedVertices": 1362
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.011389253780112109,
+            "movedVertices": 210
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.5188024250162788,
+            "movedVertices": 3470
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.15021219552726606,
+            "movedVertices": 2872
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.2881477202391163,
+            "movedVertices": 1253
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.007477448327124185,
+            "movedVertices": 165
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.4985229363274712,
+            "movedVertices": 3010
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.14209531898853203,
+            "movedVertices": 2472
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.33046290536812356,
+            "movedVertices": 867
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.004000071265111997,
+            "movedVertices": 210
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.5104665286078932,
+            "movedVertices": 2416
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.16341683251103348,
+            "movedVertices": 1721
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.3961063289040277,
+            "movedVertices": 286
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.0022720055466332544,
+            "movedVertices": 161
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.5936478861165783,
+            "movedVertices": 2183
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.17484197405027443,
+            "movedVertices": 1673
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.23123760184317346,
+            "movedVertices": 286
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.0015513575460341256,
+            "movedVertices": 210
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.41702929185672044,
+            "movedVertices": 1844
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.12697393487669908,
+            "movedVertices": 1289
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.30106415865620945,
+            "movedVertices": 207
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.0007666987332907348,
+            "movedVertices": 106
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.32371515938565926,
+            "movedVertices": 1136
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.09945285122050582,
+            "movedVertices": 1024
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.1760057950962258,
+            "movedVertices": 191
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.0003989953853060476,
+            "movedVertices": 196
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.22720311216494826,
+            "movedVertices": 1218
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.06955657850793612,
+            "movedVertices": 1049
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.1215397675282981,
+            "movedVertices": 205
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 0.00020189317480952086,
+            "movedVertices": 87
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.010688960107091439,
+            "movedVertices": 1024
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 0.0031064990615991567,
+            "movedVertices": 952
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 0.004123842102107745,
+            "movedVertices": 137
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 9.755129528999734e-05,
+            "movedVertices": 171
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.001062303795908612,
+            "movedVertices": 998
+          },
+          {
+            "node": "Central cortical branch left",
+            "maximumDisplacementMm": 4.103447409029264e-05,
+            "movedVertices": 651
+          },
+          {
+            "node": "Central distal ramus left",
+            "maximumDisplacementMm": 5.451636386690632e-05,
+            "movedVertices": 73
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 4.8932496285176303e-05,
+            "movedVertices": 75
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.0007943088452958272,
+            "movedVertices": 542
+          }
+        ]
+      },
+      {
+        "name": "central-corridor-wall-clearance-left",
+        "selectedNodes": [
+          "Central cortical branch left",
+          "Central distal ramus left",
+          "Central left",
+          "MCA superior division left"
+        ],
+        "fixedBoundaryCoordinates": 466,
+        "changedNodes": [
+          {
+            "node": "MCA superior division left",
+            "maximumDisplacementMm": 2.3567077561419987e-05,
+            "movedVertices": 99
+          },
+          {
+            "node": "Central left",
+            "maximumDisplacementMm": 0.00025659937116707655,
+            "movedVertices": 650
+          }
+        ]
+      }
+    ],
+    "geometry": [
+      {
+        "asset": "arteries",
+        "node": "MCA superior division left",
+        "maximumDisplacementMm": 4.834665903975954,
+        "movedVertices": 942,
+        "triangleCountRetained": 11375,
+        "vertexCountRetained": 5992,
+        "minimumTriangleAreaRatio": 0.6452935771860365,
+        "medianTriangleAreaRatio": 1.0,
+        "unchangedVerticesBitIdentical": true
+      },
+      {
+        "asset": "arteries",
+        "node": "Central left",
+        "maximumDisplacementMm": 24.798580936628394,
+        "movedVertices": 6828,
+        "triangleCountRetained": 13453,
+        "vertexCountRetained": 6908,
+        "minimumTriangleAreaRatio": 0.35477596361899216,
+        "medianTriangleAreaRatio": 1.1100556557556838,
+        "unchangedVerticesBitIdentical": true
+      },
+      {
+        "asset": "arteries",
+        "node": "Central cortical branch left",
+        "maximumDisplacementMm": 24.94027047235841,
+        "movedVertices": 3655,
+        "triangleCountRetained": 7196,
+        "vertexCountRetained": 3655,
+        "minimumTriangleAreaRatio": 0.13281950531058237,
+        "medianTriangleAreaRatio": 1.0025458555308187,
+        "unchangedVerticesBitIdentical": true
+      },
+      {
+        "asset": "arteries",
+        "node": "Central distal ramus left",
+        "maximumDisplacementMm": 23.690146712013885,
+        "movedVertices": 1507,
+        "triangleCountRetained": 2908,
+        "vertexCountRetained": 1507,
+        "minimumTriangleAreaRatio": 0.13557988324513348,
+        "medianTriangleAreaRatio": 1.1564006151390718,
+        "unchangedVerticesBitIdentical": true
+      }
+    ],
+    "limitations": [
+      "Atlas teaching reconstruction; anatomical review remains required.",
+      "Common-skin junction topology is retained; this is not a separately segmented lumen.",
+      "Unedited posterior arterial courses and remaining brain/vessel relationships need subsequent regional fitting.",
+      "Right central artery fitting is rejected; its original joined family remains unchanged."
+    ],
+    "rightCentralExperimentApplied": false
+  },
+  "surroundingTissue": {
+    "release": "0.9.16",
+    "checks": [
+      {
+        "node": "MCA superior division left",
+        "phase": "z >= 120 mm",
+        "status": "no triangles in cortical test phase",
+        "contacts": []
+      },
+      {
+        "node": "Central left",
+        "phase": "z >= 120 mm",
+        "contacts": []
+      },
+      {
+        "node": "Central cortical branch left",
+        "phase": "z >= 120 mm",
+        "contacts": [
+          {
+            "tissue": "brain.postcentral-gyrus.left",
+            "beforeTriangleContacts": 0,
+            "afterTriangleContacts": 254
+          }
+        ]
+      },
+      {
+        "node": "Central distal ramus left",
+        "phase": "z >= 120 mm",
+        "contacts": [
+          {
+            "tissue": "brain.postcentral-gyrus.left",
+            "beforeTriangleContacts": 0,
+            "afterTriangleContacts": 351
+          }
+        ]
+      }
+    ],
+    "excludedReferenceSheets": [
+      "falx",
+      "tentorium",
+      "sulcal/fissural references",
+      "ventricular references"
+    ],
+    "limitations": [
+      "Parent transitions below z = 120 mm remain outside this cortical-phase check. Open tissue contacts are tested, but full solid containment cannot be inferred from them."
+    ]
+  },
+  "calibre": {
+    "release": "0.9.16",
+    "method": "Convex hull of the actual GLB skin intersection with matched station planes in the central 70% of the primary course. Cortical stations additionally exclude the proximal phase below z = 125 mm.",
+    "interpretation": "Cross-section envelope-area proxy, not an internal lumen segmentation or proof of patency. Shared branch junctions and retained attachment collars require visual review. Matched plane areas reflect vessel inclination and do not directly measure lumen diameter.",
+    "checks": [
+      {
+        "node": "vein.straight",
+        "axis": 1,
+        "stationsMm": [
+          -139.2343204498291,
+          -138.3573819777545,
+          -137.48044350567986,
+          -136.60350503360524,
+          -135.72656656153063,
+          -134.84962808945602,
+          -133.97268961738138,
+          -133.09575114530676,
+          -132.21881267323215,
+          -131.3418742011575,
+          -130.4649357290829,
+          -129.58799725700828,
+          -128.71105878493367,
+          -127.83412031285904,
+          -126.95718184078441,
+          -126.0802433687098,
+          -125.20330489663517,
+          -124.32636642456055,
+          -123.44942795248593,
+          -122.5724894804113,
+          -121.6955510083367,
+          -120.81861253626207,
+          -119.94167406418745,
+          -119.06473559211283,
+          -118.1877971200382,
+          -117.31085864796358,
+          -116.43392017588897,
+          -115.55698170381434,
+          -114.68004323173972,
+          -113.8031047596651,
+          -112.92616628759048,
+          -112.04922781551585,
+          -111.17228934344124,
+          -110.29535087136662,
+          -109.418412399292
+        ],
+        "beforeSkinEnvelopeAreaMm2": [
+          26.433066662019918,
+          23.023849195394945,
+          22.150900647718437,
+          22.187671755517833,
+          22.626988009238346,
+          23.373645889385894,
+          24.572810602247227,
+          25.449494018121694,
+          24.803081638350562,
+          23.30054410389518,
+          23.007099358420614,
+          22.977168239785538,
+          22.793367778812055,
+          22.783194888890417,
+          22.783472158728475,
+          22.809500394611213,
+          22.667309629173804,
+          22.607453437760526,
+          22.465247096050902,
+          22.342498261494107,
+          22.06489538544123,
+          21.88444609865564,
+          21.50680292142413,
+          21.22750736409119,
+          21.07749359088274,
+          20.758992956341935,
+          20.37898572812481,
+          19.992458663095483,
+          19.70699765912013,
+          19.330488520502254,
+          19.155473720465892,
+          18.644242886997095,
+          18.487015522469687,
+          18.336514818102263,
+          18.143627471361913
+        ],
+        "afterSkinEnvelopeAreaMm2": [
+          26.433066662019918,
+          23.023849195394945,
+          22.150900647718437,
+          22.187671755517833,
+          22.626988009238346,
+          23.373645889385894,
+          24.572810602247227,
+          25.449494018121694,
+          24.803081638350562,
+          23.30054410389518,
+          23.007099358420614,
+          22.977168239785538,
+          22.793367778812055,
+          22.783194888890417,
+          22.783472158728475,
+          22.809500394611213,
+          22.667309629173804,
+          22.607453437760526,
+          22.465247096050902,
+          22.342498261494107,
+          22.06489538544123,
+          21.88444609865564,
+          21.50680292142413,
+          21.22750736409119,
+          21.07749359088274,
+          20.758992956341935,
+          20.37898572812481,
+          19.992458663095483,
+          19.70699765912013,
+          19.330488520502254,
+          19.155473720465892,
+          18.644242886997095,
+          18.487015522469687,
+          18.336514818102263,
+          18.143627471361913
+        ],
+        "minimumAreaRatio": 1.0,
+        "medianAreaRatio": 1.0,
+        "maximumAreaRatio": 1.0
+      },
+      {
+        "node": "Central left",
+        "axis": 2,
+        "stationsMm": [
+          125.0,
+          125.67125833174762,
+          126.34251666349523,
+          127.01377499524285,
+          127.68503332699046,
+          128.3562916587381,
+          129.0275499904857,
+          129.6988083222333,
+          130.37006665398093,
+          131.04132498572855,
+          131.71258331747617,
+          132.38384164922377,
+          133.0550999809714,
+          133.72635831271901,
+          134.39761664446664,
+          135.06887497621426,
+          135.74013330796186,
+          136.41139163970948,
+          137.0826499714571,
+          137.75390830320472,
+          138.42516663495232,
+          139.09642496669994,
+          139.76768329844757,
+          140.4389416301952,
+          141.11019996194278,
+          141.7814582936904,
+          142.45271662543803,
+          143.12397495718565,
+          143.79523328893328,
+          144.46649162068087,
+          145.1377499524285,
+          145.80900828417612,
+          146.4802666159237,
+          147.15152494767133,
+          147.82278327941896
+        ],
+        "beforeSkinEnvelopeAreaMm2": [
+          1.560264023561308,
+          1.5677328042058587,
+          1.5783296728112965,
+          1.5900697922481797,
+          1.6032598496281367,
+          1.6148965893355585,
+          1.6193478537612989,
+          1.6106893276776648,
+          1.5828604144697123,
+          1.5256589960737517,
+          1.4231596416465704,
+          1.2747391412944473,
+          1.1152360285506535,
+          0.988038200139991,
+          0.9063085193721149,
+          0.8535581374806829,
+          0.8068531935519797,
+          0.755440996004298,
+          0.7006436043350068,
+          0.6457267926576855,
+          0.5947141618942522,
+          0.5491907669398534,
+          0.5151282338824273,
+          0.49860282849227566,
+          0.5021598338386816,
+          0.5253336041150909,
+          0.5749179995160314,
+          0.5525601897153756,
+          0.5556700742230297,
+          0.4974452587400379,
+          0.5035191558329547,
+          0.47598553326491294,
+          0.44738718315253945,
+          0.42208410454727113,
+          0.40412014445525174
+        ],
+        "afterSkinEnvelopeAreaMm2": [
+          1.9013312549609551,
+          2.2286890457040314,
+          1.8200292384238566,
+          1.637124685303969,
+          1.5767798203771617,
+          1.6185138494906257,
+          1.6242567858411496,
+          1.6143339014328348,
+          1.582508378807532,
+          1.52535539930657,
+          1.4239153322715448,
+          1.277963561301999,
+          1.120330508491838,
+          0.9949062358946474,
+          0.9035867981069852,
+          0.854199270337482,
+          0.8085338624832032,
+          0.7561670367798488,
+          0.7011473038114121,
+          0.6476379420921854,
+          0.6343159901447479,
+          0.6618269754461258,
+          0.587569732463147,
+          0.5002911063049331,
+          0.5004299203529137,
+          0.5302260235421973,
+          0.5692721419529968,
+          0.5161041352858503,
+          0.4959950113122296,
+          0.47560364969117114,
+          0.5142219635829807,
+          0.4867957932633466,
+          0.4464696867873859,
+          0.41211787488442303,
+          0.382324906020637
+        ],
+        "minimumAreaRatio": 0.8926070240614609,
+        "medianAreaRatio": 1.0022399329956821,
+        "maximumAreaRatio": 1.421600058201871
+      },
+      {
+        "node": "Central right",
+        "axis": 2,
+        "stationsMm": [
+          125.0,
+          125.6907200532801,
+          126.3814401065602,
+          127.07216015984031,
+          127.76288021312041,
+          128.4536002664005,
+          129.14432031968062,
+          129.83504037296072,
+          130.52576042624082,
+          131.2164804795209,
+          131.907200532801,
+          132.5979205860811,
+          133.2886406393612,
+          133.9793606926413,
+          134.6700807459214,
+          135.3608007992015,
+          136.05152085248162,
+          136.74224090576172,
+          137.43296095904182,
+          138.12368101232192,
+          138.81440106560203,
+          139.50512111888213,
+          140.19584117216223,
+          140.88656122544234,
+          141.57728127872244,
+          142.26800133200254,
+          142.95872138528262,
+          143.64944143856272,
+          144.34016149184282,
+          145.03088154512292,
+          145.72160159840303,
+          146.41232165168313,
+          147.10304170496323,
+          147.79376175824333,
+          148.48448181152344
+        ],
+        "beforeSkinEnvelopeAreaMm2": [
+          1.5708314954367621,
+          1.5816807818873613,
+          1.5903559997964336,
+          1.5989866834542175,
+          1.6086290192600863,
+          1.6212097869889328,
+          1.6346598517995499,
+          1.6430304321030436,
+          1.6377853808568659,
+          1.5998786521894508,
+          1.5024251581128896,
+          1.340320364274355,
+          1.1548439972791025,
+          1.0013573872866115,
+          0.9015740928408212,
+          0.8422630786277534,
+          0.7987364132966177,
+          0.7542692661737871,
+          0.7047603433416885,
+          0.6527712775498057,
+          0.6009126241544415,
+          0.5543244296894091,
+          0.5169780415257148,
+          0.49509784050690797,
+          0.4933224109568246,
+          0.5113613829284872,
+          0.5375154323713397,
+          0.5986312247489062,
+          0.5647163607194697,
+          0.5282866106214679,
+          0.5274435203289967,
+          0.49822778115351596,
+          0.47077106154470094,
+          0.4470296141808378,
+          0.4203976694983278
+        ],
+        "afterSkinEnvelopeAreaMm2": [
+          1.5708314954367621,
+          1.5816807818873613,
+          1.5903559997964336,
+          1.5989866834542175,
+          1.6086290192600863,
+          1.6212097869889328,
+          1.6346598517995499,
+          1.6430304321030436,
+          1.6377853808568659,
+          1.5998786521894508,
+          1.5024251581128896,
+          1.340320364274355,
+          1.1548439972791025,
+          1.0013573872866115,
+          0.9015740928408212,
+          0.8422630786277534,
+          0.7987364132966177,
+          0.7542692661737871,
+          0.7047603433416885,
+          0.6527712775498057,
+          0.6009126241544415,
+          0.5543244296894091,
+          0.5169780415257148,
+          0.49509784050690797,
+          0.4933224109568246,
+          0.5113613829284872,
+          0.5375154323713397,
+          0.5986312247489062,
+          0.5647163607194697,
+          0.5282866106214679,
+          0.5274435203289967,
+          0.49822778115351596,
+          0.47077106154470094,
+          0.4470296141808378,
+          0.4203976694983278
+        ],
+        "minimumAreaRatio": 1.0,
+        "medianAreaRatio": 1.0,
+        "maximumAreaRatio": 1.0
+      }
+    ]
+  },
+  "primaryChecks": {
+    "release": "0.9.16",
+    "baseline": "0.9.15",
+    "geometry": [
+      {
+        "asset": "veins",
+        "labelsRetained": 104,
+        "unchangedLabels": [
+          "vein.confluence",
+          "vein.superior_sagittal",
+          "vein.straight",
+          "vein.inferior_sagittal",
+          "vein.occipital_sinus",
+          "vein.marginal",
+          "vein.galen",
+          "vein.internal_jugular.right",
+          "vein.sigmoid.right",
+          "vein.transverse.right",
+          "vein.cavernous.right",
+          "vein.superior_petrosal.right",
+          "vein.inferior_petrosal.right",
+          "vein.sphenoparietal.right",
+          "vein.superficial_middle_cerebral.right",
+          "vein.trolard.right",
+          "vein.labbe.right",
+          "vein.frontal_cortical.right",
+          "vein.parietal_cortical.right",
+          "vein.internal_cerebral.right",
+          "vein.basal.right",
+          "vein.thalamostriate.right",
+          "vein.anterior_septal.right",
+          "vein.superior_choroidal.right",
+          "vein.anterior_cerebral.right",
+          "vein.deep_middle_cerebral.right",
+          "vein.superior_petrosal_vein.right",
+          "vein.lateral_mesencephalic.right",
+          "vein.cerebellopontine_fissure.right",
+          "vein.inferior_vermian.right",
+          "vein.inferior_hemispheric.right",
+          "vein.external_jugular.right",
+          "vein.retromandibular.right",
+          "vein.maxillary.right",
+          "vein.pterygoid_plexus.right",
+          "vein.superficial_temporal.right",
+          "vein.posterior_auricular.right",
+          "vein.facial.right",
+          "vein.angular.right",
+          "vein.deep_facial.right",
+          "vein.superior_ophthalmic.right",
+          "vein.inferior_ophthalmic.right",
+          "vein.ovale_emissary.right",
+          "vein.vertebral.right",
+          "vein.suboccipital_plexus.right",
+          "vein.deep_cervical.right",
+          "vein.anterior_condylar.right",
+          "vein.lateral_condylar.right",
+          "vein.internal_jugular.left",
+          "vein.sigmoid.left",
+          "vein.transverse.left",
+          "vein.cavernous.left",
+          "vein.superior_petrosal.left",
+          "vein.inferior_petrosal.left",
+          "vein.sphenoparietal.left",
+          "vein.superficial_middle_cerebral.left",
+          "vein.trolard.left",
+          "vein.labbe.left",
+          "vein.frontal_cortical.left",
+          "vein.parietal_cortical.left",
+          "vein.internal_cerebral.left",
+          "vein.basal.left",
+          "vein.thalamostriate.left",
+          "vein.anterior_septal.left",
+          "vein.superior_choroidal.left",
+          "vein.anterior_cerebral.left",
+          "vein.deep_middle_cerebral.left",
+          "vein.superior_petrosal_vein.left",
+          "vein.lateral_mesencephalic.left",
+          "vein.cerebellopontine_fissure.left",
+          "vein.inferior_vermian.left",
+          "vein.inferior_hemispheric.left",
+          "vein.external_jugular.left",
+          "vein.retromandibular.left",
+          "vein.maxillary.left",
+          "vein.pterygoid_plexus.left",
+          "vein.superficial_temporal.left",
+          "vein.posterior_auricular.left",
+          "vein.facial.left",
+          "vein.angular.left",
+          "vein.deep_facial.left",
+          "vein.superior_ophthalmic.left",
+          "vein.inferior_ophthalmic.left",
+          "vein.ovale_emissary.left",
+          "vein.vertebral.left",
+          "vein.suboccipital_plexus.left",
+          "vein.deep_cervical.left",
+          "vein.anterior_condylar.left",
+          "vein.lateral_condylar.left",
+          "vein.anterior_intercavernous",
+          "vein.posterior_intercavernous",
+          "vein.basilar_plexus",
+          "vein.anterior_communicating",
+          "vein.posterior_communicating",
+          "vein.precentral_cerebellar",
+          "vein.superior_vermian",
+          "vein.anterior_pontomesencephalic",
+          "vein.anterior_pontine",
+          "vein.anterior_medullary",
+          "vein.anterior_spinal",
+          "vein.transverse_pontine.right",
+          "vein.pontomedullary.right",
+          "vein.transverse_pontine.left",
+          "vein.pontomedullary.left"
+        ],
+        "changedLabels": [],
+        "maximumSharedLabelBoundaryGapMm": 0.0,
+        "triangleIndicesRetainedExactly": true
+      },
+      {
+        "asset": "arteries",
+        "labelsRetained": 599,
+        "unchangedLabels": [
+          "Common carotid right",
+          "ICA cervical right",
+          "ICA petrous right",
+          "ICA cavernous right",
+          "ICA paraophthalmic right",
+          "ICA posterior communicating right",
+          "ICA anterior choroidal right",
+          "ICA terminus right",
+          "Ophthalmic right",
+          "Lacrimal right",
+          "Central retinal right",
+          "Posterior ciliary medial right",
+          "Posterior ciliary lateral right",
+          "Supraorbital right",
+          "Supratrochlear right",
+          "Dorsal nasal right",
+          "Anterior ethmoidal right",
+          "Posterior ethmoidal right",
+          "Superior hypophyseal right",
+          "Posterior communicating right",
+          "Anterior choroidal right",
+          "Meningohypophyseal trunk right",
+          "Tentorial marginal right",
+          "Dorsal meningeal right",
+          "Inferior hypophyseal right",
+          "Inferolateral trunk right",
+          "ILT anterior branch right",
+          "ILT posterior branch right",
+          "Caroticotympanic right",
+          "Vidian ICA contribution right",
+          "ACA A1 right",
+          "ACA A2 right",
+          "Recurrent artery of Heubner right",
+          "ACA orbitofrontal right",
+          "ACA frontopolar right",
+          "Callosomarginal right",
+          "Anterior internal frontal right",
+          "Middle internal frontal right",
+          "Posterior internal frontal right",
+          "Paracentral right",
+          "Precuneal right",
+          "Inferior internal parietal right",
+          "MCA M1 right",
+          "MCA superior division right",
+          "MCA inferior division right",
+          "Anterior temporal right",
+          "MCA orbitofrontal right",
+          "Prefrontal right",
+          "Precentral right",
+          "Central right",
+          "Anterior parietal right",
+          "Posterior parietal right",
+          "Angular right",
+          "Temporo-occipital right",
+          "Middle temporal right",
+          "Posterior temporal right",
+          "Prefrontal cortical branch right",
+          "Precentral cortical branch right",
+          "Central cortical branch right",
+          "Anterior parietal cortical branch right",
+          "Posterior parietal cortical branch right",
+          "Angular cortical branch right",
+          "Middle temporal cortical branch right",
+          "Posterior temporal cortical branch right",
+          "Lateral lenticulostriate 1 right",
+          "Lateral lenticulostriate 2 right",
+          "Lateral lenticulostriate 3 right",
+          "Medial lenticulostriate right",
+          "Common carotid left",
+          "ICA cervical left",
+          "ICA petrous left",
+          "ICA cavernous left",
+          "ICA paraophthalmic left",
+          "ICA posterior communicating left",
+          "ICA anterior choroidal left",
+          "ICA terminus left",
+          "Ophthalmic left",
+          "Lacrimal left",
+          "Central retinal left",
+          "Posterior ciliary medial left",
+          "Posterior ciliary lateral left",
+          "Supraorbital left",
+          "Supratrochlear left",
+          "Dorsal nasal left",
+          "Anterior ethmoidal left",
+          "Posterior ethmoidal left",
+          "Superior hypophyseal left",
+          "Posterior communicating left",
+          "Anterior choroidal left",
+          "Meningohypophyseal trunk left",
+          "Tentorial marginal left",
+          "Dorsal meningeal left",
+          "Inferior hypophyseal left",
+          "Inferolateral trunk left",
+          "ILT anterior branch left",
+          "ILT posterior branch left",
+          "Caroticotympanic left",
+          "Vidian ICA contribution left",
+          "ACA A1 left",
+          "ACA A2 left",
+          "Recurrent artery of Heubner left",
+          "ACA orbitofrontal left",
+          "ACA frontopolar left",
+          "Callosomarginal left",
+          "Anterior internal frontal left",
+          "Middle internal frontal left",
+          "Posterior internal frontal left",
+          "Paracentral left",
+          "Precuneal left",
+          "Inferior internal parietal left",
+          "MCA M1 left",
+          "MCA inferior division left",
+          "Anterior temporal left",
+          "MCA orbitofrontal left",
+          "Prefrontal left",
+          "Precentral left",
+          "Anterior parietal left",
+          "Posterior parietal left",
+          "Angular left",
+          "Temporo-occipital left",
+          "Middle temporal left",
+          "Posterior temporal left",
+          "Prefrontal cortical branch left",
+          "Precentral cortical branch left",
+          "Anterior parietal cortical branch left",
+          "Posterior parietal cortical branch left",
+          "Angular cortical branch left",
+          "Middle temporal cortical branch left",
+          "Posterior temporal cortical branch left",
+          "Lateral lenticulostriate 1 left",
+          "Lateral lenticulostriate 2 left",
+          "Lateral lenticulostriate 3 left",
+          "Medial lenticulostriate left",
+          "Anterior communicating",
+          "Vertebral V1 right",
+          "Vertebral V1 left",
+          "Basilar",
+          "PCA P1 right",
+          "PCA P2-P3 right",
+          "PCA calcarine right",
+          "PCA parieto-occipital right",
+          "PCA anterior inferior temporal right",
+          "PCA middle inferior temporal right",
+          "PCA posterior inferior temporal right",
+          "Calcarine superior cortical right",
+          "Calcarine inferior cortical right",
+          "Parieto-occipital cuneal right",
+          "PCA lateral occipital right",
+          "PCA splenial right",
+          "PCA hippocampal right",
+          "Medial posterior choroidal right",
+          "Lateral posterior choroidal right",
+          "Thalamoperforator 1 right",
+          "Thalamoperforator 2 right",
+          "Thalamogeniculate right",
+          "Peduncular perforator right",
+          "PCom perforator right",
+          "SCA right",
+          "SCA vermian right",
+          "SCA medial hemispheric right",
+          "SCA lateral hemispheric right",
+          "SCA rostral hemispheric right",
+          "SCA caudal hemispheric right",
+          "AICA right",
+          "Labyrinthine right",
+          "AICA rostral branch right",
+          "AICA caudal branch right",
+          "PICA right",
+          "PICA vermian right",
+          "PICA hemispheric right",
+          "PICA lateral hemispheric right",
+          "PICA tonsillar right",
+          "PICA choroidal right",
+          "PICA medullary perforator right",
+          "Anterior spinal root right",
+          "Posterior spinal right",
+          "VA muscular C1 right",
+          "VA muscular C2 right",
+          "VA odontoid contribution right",
+          "Posterior meningeal VA right",
+          "Pontine paramedian 1 right",
+          "Pontine paramedian 2 right",
+          "Pontine paramedian 3 right",
+          "Pontine circumferential right",
+          "PCA P1 left",
+          "PCA P2-P3 left",
+          "PCA calcarine left",
+          "PCA parieto-occipital left",
+          "PCA anterior inferior temporal left",
+          "PCA middle inferior temporal left",
+          "PCA posterior inferior temporal left",
+          "Calcarine superior cortical left",
+          "Calcarine inferior cortical left",
+          "Parieto-occipital cuneal left",
+          "PCA lateral occipital left",
+          "PCA splenial left",
+          "PCA hippocampal left",
+          "Medial posterior choroidal left",
+          "Lateral posterior choroidal left",
+          "Thalamoperforator 1 left",
+          "Thalamoperforator 2 left",
+          "Thalamogeniculate left",
+          "Peduncular perforator left",
+          "PCom perforator left",
+          "SCA left",
+          "SCA vermian left",
+          "SCA medial hemispheric left",
+          "SCA lateral hemispheric left",
+          "SCA rostral hemispheric left",
+          "SCA caudal hemispheric left",
+          "AICA left",
+          "Labyrinthine left",
+          "AICA rostral branch left",
+          "AICA caudal branch left",
+          "PICA left",
+          "PICA vermian left",
+          "PICA hemispheric left",
+          "PICA lateral hemispheric left",
+          "PICA tonsillar left",
+          "PICA choroidal left",
+          "PICA medullary perforator left",
+          "Anterior spinal root left",
+          "Posterior spinal left",
+          "VA muscular C1 left",
+          "VA muscular C2 left",
+          "VA odontoid contribution left",
+          "Posterior meningeal VA left",
+          "Pontine paramedian 1 left",
+          "Pontine paramedian 2 left",
+          "Pontine paramedian 3 left",
+          "Pontine circumferential left",
+          "Anterior spinal",
+          "External carotid",
+          "Superior thyroid",
+          "Superior laryngeal",
+          "Infrahyoid",
+          "Lingual",
+          "Deep lingual",
+          "Dorsal lingual",
+          "Sublingual",
+          "Facial",
+          "Angular",
+          "Ascending palatine",
+          "Tonsillar",
+          "Submental",
+          "Inferior labial",
+          "Superior labial",
+          "Lateral nasal",
+          "Occipital",
+          "Occipital lateral scalp",
+          "Occipital medial scalp",
+          "Occipital descending",
+          "Occipital mastoid",
+          "Posterior auricular",
+          "Stylomastoid",
+          "Superficial temporal",
+          "STA frontal",
+          "STA frontal anterior twig",
+          "STA parietal",
+          "STA parietal anterior twig",
+          "Transverse facial",
+          "Middle temporal",
+          "Maxillary",
+          "Deep auricular",
+          "Anterior tympanic",
+          "Inferior alveolar",
+          "Mental",
+          "Incisive",
+          "Mylohyoid",
+          "Posterior deep temporal",
+          "Anterior deep temporal",
+          "Masseteric",
+          "Buccal",
+          "Pterygoid muscular",
+          "Posterior superior alveolar",
+          "PSA anterior division",
+          "Infraorbital",
+          "Anterior superior alveolar",
+          "Descending palatine",
+          "Greater palatine",
+          "Lesser palatine",
+          "Sphenopalatine",
+          "Posterior septal",
+          "Posterior lateral nasal",
+          "Pterygovaginal",
+          "Vidian",
+          "Artery of foramen rotundum",
+          "Accessory meningeal",
+          "Middle meningeal",
+          "MMA frontal",
+          "MMA frontal anterior division",
+          "MMA frontal posterior division",
+          "MMA posterior convexity",
+          "MMA parietal ascending",
+          "MMA posterior terminal",
+          "MMA petrosquamosal",
+          "MMA petrosal",
+          "MMA cavernous",
+          "MMA orbital",
+          "Ascending pharyngeal",
+          "Pharyngeal trunk",
+          "Inferior pharyngeal",
+          "Middle pharyngeal",
+          "Superior pharyngeal",
+          "Neuromeningeal trunk",
+          "Hypoglossal branch",
+          "Medial clival",
+          "Odontoid descending",
+          "Hypoglossal posterior meningeal",
+          "Jugular branch",
+          "Lateral clival",
+          "Jugular sigmoid branch",
+          "Inferior tympanic",
+          "External carotid left",
+          "Superior thyroid left",
+          "Superior laryngeal left",
+          "Infrahyoid left",
+          "Lingual left",
+          "Deep lingual left",
+          "Dorsal lingual left",
+          "Sublingual left",
+          "Facial left",
+          "ECA Angular left",
+          "Ascending palatine left",
+          "Tonsillar left",
+          "Submental left",
+          "Inferior labial left",
+          "Superior labial left",
+          "Lateral nasal left",
+          "Occipital left",
+          "Occipital lateral scalp left",
+          "Occipital medial scalp left",
+          "Occipital descending left",
+          "Occipital mastoid left",
+          "Posterior auricular left",
+          "Stylomastoid left",
+          "Superficial temporal left",
+          "STA frontal left",
+          "STA frontal anterior twig left",
+          "STA parietal left",
+          "STA parietal anterior twig left",
+          "Transverse facial left",
+          "ECA Middle temporal left",
+          "Maxillary left",
+          "Deep auricular left",
+          "Anterior tympanic left",
+          "Inferior alveolar left",
+          "Mental left",
+          "Incisive left",
+          "Mylohyoid left",
+          "Posterior deep temporal left",
+          "Anterior deep temporal left",
+          "Masseteric left",
+          "Buccal left",
+          "Pterygoid muscular left",
+          "Posterior superior alveolar left",
+          "PSA anterior division left",
+          "Infraorbital left",
+          "Anterior superior alveolar left",
+          "Descending palatine left",
+          "Greater palatine left",
+          "Lesser palatine left",
+          "Sphenopalatine left",
+          "Posterior septal left",
+          "Posterior lateral nasal left",
+          "Pterygovaginal left",
+          "Vidian left",
+          "Artery of foramen rotundum left",
+          "Accessory meningeal left",
+          "Middle meningeal left",
+          "MMA frontal left",
+          "MMA frontal anterior division left",
+          "MMA frontal posterior division left",
+          "MMA posterior convexity left",
+          "MMA parietal ascending left",
+          "MMA posterior terminal left",
+          "MMA petrosquamosal left",
+          "MMA petrosal left",
+          "MMA cavernous left",
+          "MMA orbital left",
+          "Ascending pharyngeal left",
+          "Pharyngeal trunk left",
+          "Inferior pharyngeal left",
+          "Middle pharyngeal left",
+          "Superior pharyngeal left",
+          "Neuromeningeal trunk left",
+          "Hypoglossal branch left",
+          "Medial clival left",
+          "Odontoid descending left",
+          "Hypoglossal posterior meningeal left",
+          "Jugular branch left",
+          "Lateral clival left",
+          "Jugular sigmoid branch left",
+          "Inferior tympanic left",
+          "Mandibular ICA branch right",
+          "Mandibular ICA branch left",
+          "Basal tentorial MHT branch right",
+          "Basal tentorial MHT branch left",
+          "Medial clival MHT branch right",
+          "Medial clival MHT branch left",
+          "Lateral clival MHT branch right",
+          "Lateral clival MHT branch left",
+          "ILT superior ramus right",
+          "ILT superior ramus left",
+          "ILT anterolateral ramus right",
+          "ILT anterolateral ramus left",
+          "ILT posteromedial ramus right",
+          "ILT posteromedial ramus left",
+          "ILT recurrent lacerum ramus right",
+          "ILT recurrent lacerum ramus left",
+          "Ophthalmic inferior muscular branch right",
+          "Ophthalmic inferior muscular branch left",
+          "Ophthalmic superior muscular branch right",
+          "Ophthalmic superior muscular branch left",
+          "Superficial recurrent meningeal right",
+          "Superficial recurrent meningeal left",
+          "Deep recurrent ophthalmic right",
+          "Deep recurrent ophthalmic left",
+          "Lacrimal inferior branch right",
+          "Lacrimal inferior branch left",
+          "Anterior falcine right",
+          "Anterior falcine left",
+          "Superior thyroid SCM branch right",
+          "Superior thyroid SCM branch left",
+          "Cricothyroid right",
+          "Cricothyroid left",
+          "Facial submandibular gland branch right",
+          "Facial submandibular gland branch left",
+          "Facial masseteric branch right",
+          "Facial masseteric branch left",
+          "Facial buccal branch right",
+          "Facial buccal branch left",
+          "Medial superior palpebral right",
+          "Medial superior palpebral left",
+          "Lateral superior palpebral right",
+          "Lateral superior palpebral left",
+          "Medial inferior palpebral right",
+          "Medial inferior palpebral left",
+          "Lateral inferior palpebral right",
+          "Lateral inferior palpebral left",
+          "Posterior auricular parotid branch right",
+          "Posterior auricular parotid branch left",
+          "Posterior auricular auricular branch right",
+          "Posterior auricular auricular branch left",
+          "STA anterior auricular right",
+          "STA anterior auricular left",
+          "Transverse facial superior division right",
+          "Transverse facial superior division left",
+          "Transverse facial inferior division right",
+          "Transverse facial inferior division left",
+          "Transverse facial parotid branch right",
+          "Transverse facial parotid branch left",
+          "Transverse facial masseteric branch right",
+          "Transverse facial masseteric branch left",
+          "Zygomatico-orbital right",
+          "Zygomatico-orbital left",
+          "Superior tympanic right",
+          "Superior tympanic left",
+          "MMA paramedian right",
+          "MMA paramedian left",
+          "MMA falcine terminal right",
+          "MMA falcine terminal left",
+          "MMA anterior cavernous right",
+          "MMA anterior cavernous left",
+          "MMA posterior cavernous right",
+          "MMA posterior cavernous left",
+          "Accessory meningeal anterior tubal right",
+          "Accessory meningeal anterior tubal left",
+          "Accessory meningeal posterior intracranial right",
+          "Accessory meningeal posterior intracranial left",
+          "Artery of superior orbital fissure right",
+          "Artery of superior orbital fissure left",
+          "Infraorbital muscular branch right",
+          "Infraorbital muscular branch left",
+          "Superior septal subdivision right",
+          "Superior septal subdivision left",
+          "Inferior septal subdivision right",
+          "Inferior septal subdivision left",
+          "Occipital SCM branch right",
+          "Occipital SCM branch left",
+          "Occipital mastoid dural branch right",
+          "Occipital mastoid dural branch left",
+          "Superior pharyngeal tubal branch right",
+          "Superior pharyngeal tubal branch left",
+          "Superior pharyngeal carotid branch right",
+          "Superior pharyngeal carotid branch left",
+          "APA musculospinal right",
+          "APA musculospinal left",
+          "APA prevertebral branch right",
+          "APA prevertebral branch left",
+          "Falx cerebelli artery right",
+          "Falx cerebelli artery left",
+          "Jugular ascending IAC branch right",
+          "Jugular ascending IAC branch left",
+          "AChA optic tract branch right",
+          "AChA optic tract branch left",
+          "AChA capsular branch right",
+          "AChA capsular branch left",
+          "AChA peduncular branch right",
+          "AChA peduncular branch left",
+          "AChA temporal branch right",
+          "AChA temporal branch left",
+          "Terminal ICA perforator 1 right",
+          "Terminal ICA perforator 1 left",
+          "Terminal ICA perforator 2 right",
+          "Terminal ICA perforator 2 left",
+          "Subcallosal artery",
+          "ACom hypothalamic perforator right",
+          "ACom hypothalamic perforator left",
+          "ACom septal perforator right",
+          "ACom septal perforator left",
+          "ACom chiasmatic perforator right",
+          "ACom chiasmatic perforator left",
+          "Medial lenticulostriate superior representative right",
+          "Medial lenticulostriate superior representative left",
+          "Lateral lenticulostriate anterior representative right",
+          "Lateral lenticulostriate anterior representative left",
+          "Short callosal branch right",
+          "Short callosal branch left",
+          "Long callosal branch right",
+          "Long callosal branch left",
+          "ACA falcine branch right",
+          "ACA falcine branch left",
+          "Polar temporal right",
+          "Polar temporal left",
+          "Prefrontal distal ramus right",
+          "Prefrontal distal ramus left",
+          "Precentral distal ramus right",
+          "Precentral distal ramus left",
+          "Central distal ramus right",
+          "Anterior parietal distal ramus right",
+          "Anterior parietal distal ramus left",
+          "Posterior parietal distal ramus right",
+          "Posterior parietal distal ramus left",
+          "Angular distal ramus right",
+          "Angular distal ramus left",
+          "Middle temporal distal ramus right",
+          "Middle temporal distal ramus left",
+          "Posterior temporal distal ramus right",
+          "Posterior temporal distal ramus left",
+          "VA anterior meningeal right",
+          "VA anterior meningeal left",
+          "VA medullary perforator 1 right",
+          "VA medullary perforator 1 left",
+          "VA medullary perforator 2 right",
+          "VA medullary perforator 2 left",
+          "AICA subarcuate right",
+          "AICA subarcuate left",
+          "AICA fourth ventricular choroidal right",
+          "AICA fourth ventricular choroidal left",
+          "Common cochlear right",
+          "Common cochlear left",
+          "Anterior vestibular right",
+          "Anterior vestibular left",
+          "SCA proximal perforator right",
+          "SCA proximal perforator left",
+          "SCA tectal branch right",
+          "SCA tectal branch left",
+          "Wollschlaeger and Wollschlaeger artery right",
+          "Wollschlaeger and Wollschlaeger artery left",
+          "Davidoff and Schechter artery right",
+          "Davidoff and Schechter artery left",
+          "Pontine short circumflex right",
+          "Pontine short circumflex left",
+          "Pontine long circumflex right",
+          "Pontine long circumflex left",
+          "Pontine median perforator",
+          "PCA short circumflex right",
+          "PCA short circumflex left",
+          "PCA long circumflex right",
+          "PCA long circumflex left",
+          "PCA collicular right",
+          "PCA collicular left",
+          "Tuberothalamic artery right",
+          "Tuberothalamic artery left",
+          "Anterior thalamoperforating branch right",
+          "Anterior thalamoperforating branch left",
+          "Anterior choroidal plexal representative right",
+          "Anterior choroidal plexal representative left",
+          "Lateral posterior choroidal plexal representative right",
+          "Lateral posterior choroidal plexal representative left",
+          "Medial posterior choroidal plexal representative right",
+          "Medial posterior choroidal plexal representative left",
+          "ACA A3 right",
+          "ACA A4 right",
+          "ACA A5 right",
+          "Vertebral V2 right",
+          "Vertebral V3 right",
+          "Vertebral V4 right",
+          "ACA A3 left",
+          "ACA A4 left",
+          "ACA A5 left",
+          "Vertebral V2 left",
+          "Vertebral V3 left",
+          "Vertebral V4 left"
+        ],
+        "changedLabels": [
+          "MCA superior division left",
+          "Central left",
+          "Central cortical branch left",
+          "Central distal ramus left"
+        ],
+        "maximumSharedLabelBoundaryGapMm": 9.344061823971473e-06,
+        "triangleIndicesRetainedExactly": true
+      }
+    ],
+    "relationships": [
+      {
+        "id": "artery.anterior.central_left",
+        "status": "fitted",
+        "phase": "sulcal wall, z >= 120 mm",
+        "before": {
+          "wallToBanks": {
+            "minimumMm": 0.00022505662036260388,
+            "medianMm": 0.8356341870884205,
+            "p95Mm": 1.8045553068098277,
+            "maximumMm": 2.1667866702034475
+          },
+          "wallVerticesInsideBanks": null,
+          "wallVerticesChecked": 5226,
+          "triangleContactsWithBanks": 475,
+          "closedSurfacesForContainment": 0
+        },
+        "after": {
+          "wallToBanks": {
+            "minimumMm": 0.3498011302306304,
+            "medianMm": 1.183907606957975,
+            "p95Mm": 1.9534511258659957,
+            "maximumMm": 2.462639059264104
+          },
+          "wallVerticesInsideBanks": null,
+          "wallVerticesChecked": 5226,
+          "triangleContactsWithBanks": 0,
+          "closedSurfacesForContainment": 0
+        }
+      },
+      {
+        "id": "artery.anterior.central_right",
+        "status": "retained-blocked-terminal-junction",
+        "phase": "sulcal wall, z >= 120 mm",
+        "before": {
+          "wallToBanks": {
+            "minimumMm": 7.741342769323067e-05,
+            "medianMm": 0.6130217021758317,
+            "p95Mm": 1.71274235880727,
+            "maximumMm": 2.0254972394199284
+          },
+          "wallVerticesInsideBanks": null,
+          "wallVerticesChecked": 5410,
+          "triangleContactsWithBanks": 750,
+          "closedSurfacesForContainment": 0
+        },
+        "after": {
+          "wallToBanks": {
+            "minimumMm": 7.741342769323067e-05,
+            "medianMm": 0.6130217021758317,
+            "p95Mm": 1.71274235880727,
+            "maximumMm": 2.0254972394199284
+          },
+          "wallVerticesInsideBanks": null,
+          "wallVerticesChecked": 5410,
+          "triangleContactsWithBanks": 750,
+          "closedSurfacesForContainment": 0
+        }
+      },
+      {
+        "id": "vein.anterior_medullary",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0011544524364060723,
+            "medianMm": 0.6337965517954918,
+            "p95Mm": 1.5526886672700466,
+            "maximumMm": 1.899453913497029
+          },
+          "wallVerticesInsideBrainstem": 519,
+          "wallVerticesChecked": 770,
+          "triangleContactsWithBrainstem": 145,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0011544524364060723,
+            "medianMm": 0.6337965517954918,
+            "p95Mm": 1.5526886672700466,
+            "maximumMm": 1.899453913497029
+          },
+          "wallVerticesInsideBrainstem": 519,
+          "wallVerticesChecked": 770,
+          "triangleContactsWithBrainstem": 145,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.anterior_pontine",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 8.061769714155945e-05,
+            "medianMm": 1.6775597510554163,
+            "p95Mm": 2.9808400318231842,
+            "maximumMm": 3.2848922472892426
+          },
+          "wallVerticesInsideBrainstem": 38,
+          "wallVerticesChecked": 1063,
+          "triangleContactsWithBrainstem": 152,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 8.061769714155945e-05,
+            "medianMm": 1.6775597510554163,
+            "p95Mm": 2.9808400318231842,
+            "maximumMm": 3.2848922472892426
+          },
+          "wallVerticesInsideBrainstem": 38,
+          "wallVerticesChecked": 1063,
+          "triangleContactsWithBrainstem": 152,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.anterior_pontomesencephalic",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0013244567827538644,
+            "medianMm": 1.0044535405533976,
+            "p95Mm": 2.152554578136239,
+            "maximumMm": 2.8870276241681467
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 495,
+          "triangleContactsWithBrainstem": 142,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0013244567827538644,
+            "medianMm": 1.0044535405533976,
+            "p95Mm": 2.152554578136239,
+            "maximumMm": 2.8870276241681467
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 495,
+          "triangleContactsWithBrainstem": 142,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.lateral_mesencephalic.left",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 5.712211731891956,
+            "medianMm": 13.713293333814018,
+            "p95Mm": 17.729211964954423,
+            "maximumMm": 18.648719439750327
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 989,
+          "triangleContactsWithBrainstem": 0,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 5.712211731891956,
+            "medianMm": 13.713293333814018,
+            "p95Mm": 17.729211964954423,
+            "maximumMm": 18.648719439750327
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 989,
+          "triangleContactsWithBrainstem": 0,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.lateral_mesencephalic.right",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 5.778012115390458,
+            "medianMm": 13.135797901448429,
+            "p95Mm": 17.58687410650678,
+            "maximumMm": 18.620396867574566
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 1202,
+          "triangleContactsWithBrainstem": 0,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 5.778012115390458,
+            "medianMm": 13.135797901448429,
+            "p95Mm": 17.58687410650678,
+            "maximumMm": 18.620396867574566
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 1202,
+          "triangleContactsWithBrainstem": 0,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.transverse_pontine.left",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0010480579797823245,
+            "medianMm": 3.9665817363878175,
+            "p95Mm": 7.769161027327292,
+            "maximumMm": 8.259592350578552
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 993,
+          "triangleContactsWithBrainstem": 128,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0010480579797823245,
+            "medianMm": 3.9665817363878175,
+            "p95Mm": 7.769161027327292,
+            "maximumMm": 8.259592350578552
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 993,
+          "triangleContactsWithBrainstem": 128,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.transverse_pontine.right",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 0.00592251790243213,
+            "medianMm": 4.1500258434913135,
+            "p95Mm": 7.8135770714978285,
+            "maximumMm": 8.346061659209019
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 951,
+          "triangleContactsWithBrainstem": 50,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 0.00592251790243213,
+            "medianMm": 4.1500258434913135,
+            "p95Mm": 7.8135770714978285,
+            "maximumMm": 8.346061659209019
+          },
+          "wallVerticesInsideBrainstem": 0,
+          "wallVerticesChecked": 951,
+          "triangleContactsWithBrainstem": 50,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.pontomedullary.left",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0014394698867825622,
+            "medianMm": 3.1690776673620955,
+            "p95Mm": 14.404872353167404,
+            "maximumMm": 15.658453012733725
+          },
+          "wallVerticesInsideBrainstem": 216,
+          "wallVerticesChecked": 1172,
+          "triangleContactsWithBrainstem": 226,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 0.0014394698867825622,
+            "medianMm": 3.1690776673620955,
+            "p95Mm": 14.404872353167404,
+            "maximumMm": 15.658453012733725
+          },
+          "wallVerticesInsideBrainstem": 216,
+          "wallVerticesChecked": 1172,
+          "triangleContactsWithBrainstem": 226,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.pontomedullary.right",
+        "phase": "exported vessel wall, including outlet collars",
+        "before": {
+          "wallToBrainstem": {
+            "minimumMm": 0.004726219415698806,
+            "medianMm": 3.923913474097533,
+            "p95Mm": 14.719961230805808,
+            "maximumMm": 15.682418951034471
+          },
+          "wallVerticesInsideBrainstem": 319,
+          "wallVerticesChecked": 1089,
+          "triangleContactsWithBrainstem": 102,
+          "closedSurfacesForContainment": 2
+        },
+        "after": {
+          "wallToBrainstem": {
+            "minimumMm": 0.004726219415698806,
+            "medianMm": 3.923913474097533,
+            "p95Mm": 14.719961230805808,
+            "maximumMm": 15.682418951034471
+          },
+          "wallVerticesInsideBrainstem": 319,
+          "wallVerticesChecked": 1089,
+          "triangleContactsWithBrainstem": 102,
+          "closedSurfacesForContainment": 2
+        }
+      },
+      {
+        "id": "vein.straight",
+        "phase": "wall along retained AP extent of sinus",
+        "before": {
+          "wallToAttachmentLine": {
+            "minimumMm": 6.0895503266729865,
+            "medianMm": 13.99557409125047,
+            "p95Mm": 18.818866746545773,
+            "maximumMm": 20.810174854071832
+          }
+        },
+        "after": {
+          "wallToAttachmentLine": {
+            "minimumMm": 6.0895503266729865,
+            "medianMm": 13.99557409125047,
+            "p95Mm": 18.818866746545773,
+            "maximumMm": 20.810174854071832
+          }
+        }
+      }
+    ],
+    "authoringGeometryHashes": {
+      "veins": "5482b497d6c404b636344e17f761c0ec47ef15bee2d27a355cd723f2b616cd55",
+      "arteries": "0971d39f4a6b59fc1829f04fb18c7efed0d52704b5394267d34fdd7c5375c597"
+    },
+    "brainAdjustments": [],
+    "limitations": [
+      "Vertex containment is reported only for closed surfaces. Triangle contact tests separately include all named open and closed tissue surfaces.",
+      "Open sulcal and dural references are excluded from solid tissue containment tests.",
+      "All venous geometry is retained. Dural and brainstem trials were rejected and their baseline contacts remain unresolved.",
+      "Preserved skin connectivity does not establish a separately segmented lumen or patient anatomical accuracy."
+    ]
+  },
+  "trialAsset": "anatomy/source/brain/trials/left-central-v0.9.16.glb"
+}

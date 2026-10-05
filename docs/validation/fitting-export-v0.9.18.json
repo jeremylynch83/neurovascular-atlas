@@ -1,0 +1,32 @@
+{
+  "release": "0.9.18",
+  "assets": {
+    "arteries": {
+      "file": "complete-circulation.glb",
+      "sha256": "ebf56fca2ca84969a1b014fbed4caa12032c81c9e64aa4a05c55081103dfae63",
+      "labels": 599,
+      "changedLabels": [
+        "MCA superior division right",
+        "Central right",
+        "Central cortical branch right",
+        "MCA superior division left",
+        "Central left",
+        "Central cortical branch left",
+        "Central distal ramus right",
+        "Central distal ramus left"
+      ],
+      "triangleIndicesRetainedExactly": true
+    },
+    "veins": {
+      "file": "venous.glb",
+      "sha256": "0699bebd7a38b934753f889b03e750d7e42be30559efe7f34a58d2f094c2f92b",
+      "labels": 104,
+      "changedLabels": [],
+      "triangleIndicesRetainedExactly": true
+    }
+  },
+  "allDeliveredAccessorsMatchAuthoring": true,
+  "brainAssetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+  "allBrainGeometryUnchanged": true,
+  "courseHashesMatchDeliveredAssets": true
+}

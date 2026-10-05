@@ -1,0 +1,67 @@
+{
+  "release": "0.9.17",
+  "phase": "central sulcal families, z >= 120 mm",
+  "checks": [
+    {
+      "node": "Central left",
+      "target": "brain.precentral-gyrus.left",
+      "beforeTriangleContacts": 475,
+      "afterTriangleContacts": 0,
+      "newContactRelationship": false
+    },
+    {
+      "node": "Central cortical branch left",
+      "target": "brain.precentral-gyrus.left",
+      "beforeTriangleContacts": 234,
+      "afterTriangleContacts": 0,
+      "newContactRelationship": false
+    },
+    {
+      "node": "Central cortical branch left",
+      "target": "brain.postcentral-gyrus.left",
+      "beforeTriangleContacts": 0,
+      "afterTriangleContacts": 584,
+      "newContactRelationship": true
+    },
+    {
+      "node": "Central distal ramus left",
+      "target": "brain.precentral-gyrus.left",
+      "beforeTriangleContacts": 40,
+      "afterTriangleContacts": 0,
+      "newContactRelationship": false
+    },
+    {
+      "node": "Central distal ramus left",
+      "target": "brain.postcentral-gyrus.left",
+      "beforeTriangleContacts": 0,
+      "afterTriangleContacts": 188,
+      "newContactRelationship": true
+    },
+    {
+      "node": "Central right",
+      "target": "brain.precentral-gyrus.right",
+      "beforeTriangleContacts": 750,
+      "afterTriangleContacts": 0,
+      "newContactRelationship": false
+    },
+    {
+      "node": "Central cortical branch right",
+      "target": "brain.precentral-gyrus.right",
+      "beforeTriangleContacts": 174,
+      "afterTriangleContacts": 0,
+      "newContactRelationship": false
+    },
+    {
+      "node": "Central cortical branch right",
+      "target": "brain.postcentral-gyrus.right",
+      "beforeTriangleContacts": 44,
+      "afterTriangleContacts": 706,
+      "newContactRelationship": false
+    }
+  ],
+  "limitations": [
+    "Reference sheets and ventricular surfaces are excluded. Existing contact counts do not establish anatomical acceptability."
+  ],
+  "status": "rejected-review-only",
+  "appliedToApp": false
+}

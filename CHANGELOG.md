@@ -1,3 +1,25 @@
+## 0.9.17
+
+Expanded cortical-family validation and review-only refinement tooling. Preserve all production geometry after the connected branch candidate fails tissue and skull checks. Include the exact rejected eight-label trial and matched comparison views.
+
+# v0.9.17
+
+- Implement offline fitting of delivered shared vascular skin, with common junction fields, versioned targets and wall clearance refinement.
+- Add exact-buffer, tissue, skull, arterial-neighbour, calibre and context checks, plus stale-validation publication guards.
+- Reject both central arterial families, dural and brainstem trials after expanded family and neighbouring anatomy checks. Record failure evidence, a review-only left trial mesh and matched images.
+- Retain all five production geometry assets byte-for-byte and mark the trial courses blocked. This is an implementation checkpoint; the first anatomy fitting batch remains incomplete.
+- Verify the production build, browser controls, bindings and existing installer.
+
+# v0.9.15
+
+- Establish the delivered-mesh baseline audit and add 16 registered anatomical targets, including both central sulci.
+- Replace the single falcotentorial point with a 25-station attachment course bound to both tentorial leaves and the falx; add ordered sulcal guides.
+- Store version-bound anatomical course records for all vascular labels, with 290 intracranial specifications and explicit remaining target dependencies.
+- Add anatomical course information and clickable brain target links to the vessel panel.
+- Validate target bindings, course references, retained geometry and production browser interactions; include numerical reports and target review images.
+- Preserve the original four skull/vascular assets and all 172 existing brain meshes. Vessel fitting remains the next stage.
+- Allow the first section-control click to work while a structure is focused.
+
 # v0.9.14
 
 - Register Z-Anatomy brain and dural surfaces to the retained v0.9.13 skull through seven corresponding cranial bones.

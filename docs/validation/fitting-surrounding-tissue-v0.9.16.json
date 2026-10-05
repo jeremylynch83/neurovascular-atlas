@@ -1,0 +1,14 @@
+{
+  "release": "0.9.16",
+  "authoringGeometrySha256": "c46f70af22e2eb9e35b1720888a44498198bbf4505bdbc28d2186cf2eac04663",
+  "checks": [],
+  "excludedReferenceSheets": [
+    "falx",
+    "tentorium",
+    "sulcal/fissural references",
+    "ventricular references"
+  ],
+  "limitations": [
+    "Parent transitions below z = 120 mm remain outside this cortical-phase check. Open tissue contacts are tested, but full solid containment cannot be inferred from them."
+  ]
+}

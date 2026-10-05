@@ -1,0 +1,86 @@
+{
+  "release": "0.9.18",
+  "baseline": "0.9.15",
+  "geometry": [
+    {
+      "node": "MCA superior division right",
+      "maximumDisplacementMm": 4.979543394518974,
+      "movedVertices": 953,
+      "minimumTriangleAreaRatio": 0.6675489062113404,
+      "medianTriangleAreaRatio": 1.0,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "Central right",
+      "maximumDisplacementMm": 27.445153748325588,
+      "movedVertices": 6977,
+      "minimumTriangleAreaRatio": 0.20587846530542525,
+      "medianTriangleAreaRatio": 1.0949561188423471,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "Central cortical branch right",
+      "maximumDisplacementMm": 24.420987715330078,
+      "movedVertices": 3691,
+      "minimumTriangleAreaRatio": 0.012008883289584361,
+      "medianTriangleAreaRatio": 0.916733585979702,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "MCA superior division left",
+      "maximumDisplacementMm": 4.834665903975954,
+      "movedVertices": 942,
+      "minimumTriangleAreaRatio": 0.6452935771860365,
+      "medianTriangleAreaRatio": 1.0,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "Central left",
+      "maximumDisplacementMm": 25.114309353572185,
+      "movedVertices": 6828,
+      "minimumTriangleAreaRatio": 0.35477596361899216,
+      "medianTriangleAreaRatio": 1.103737523085999,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "Central cortical branch left",
+      "maximumDisplacementMm": 25.670710602255667,
+      "movedVertices": 3655,
+      "minimumTriangleAreaRatio": 0.021790266697359967,
+      "medianTriangleAreaRatio": 0.9293499483317198,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "Central distal ramus right",
+      "maximumDisplacementMm": 26.958675115751582,
+      "movedVertices": 1553,
+      "minimumTriangleAreaRatio": 0.2602981552527142,
+      "medianTriangleAreaRatio": 1.7163985204561385,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    },
+    {
+      "node": "Central distal ramus left",
+      "maximumDisplacementMm": 28.149385231335042,
+      "movedVertices": 1507,
+      "minimumTriangleAreaRatio": 0.28299080912859526,
+      "medianTriangleAreaRatio": 1.899272883125056,
+      "triangleIndicesRetained": true,
+      "asset": "arteries"
+    }
+  ],
+  "brainAdjustments": [],
+  "deferredGroups": [
+    "dural",
+    "brainstem"
+  ],
+  "method": "Independent cortical branch courses, rotation-minimising wall transport, source-bound joins and ramus prefixes, rigid cap transport, ordered right terminal sections and local join adjustments of 1.2 mm medially and 0.6 mm posteriorly.",
+  "status": "applied-atlas-fit-awaiting-anatomical-review",
+  "appliedToApp": true
+}

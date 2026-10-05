@@ -1,0 +1,15 @@
+{
+  "release": "0.9.17",
+  "baseline": "0.9.15",
+  "status": "implementation-checkpoint-no-trial-geometry-applied",
+  "rightCentralExperimentApplied": false,
+  "leftCentralExperimentApplied": false,
+  "duralExperimentApplied": false,
+  "brainstemExperimentApplied": false,
+  "brainAdjustments": [],
+  "batches": [],
+  "geometry": [],
+  "limitations": [
+    "All vascular and brain geometry remains exact. Every fitting trial is rejected; the first anatomy fitting batch is incomplete."
+  ]
+}

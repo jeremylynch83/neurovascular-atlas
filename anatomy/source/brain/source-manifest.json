@@ -14,10 +14,10 @@
   ],
   "registration": "Not registered to Neurovascular Atlas; internal source transforms preserved",
   "version_note": "Official FBX download README notes that these models may not be the latest release. Check the current Z-Anatomy atlas before final implementation.",
-  "triangle_count": 363132,
-  "detailed_mesh_count": 172,
+  "triangle_count": 391136,
+  "detailed_mesh_count": 188,
   "basic_mesh_count": 29,
-  "changes": "Selected anatomical meshes; baked native transforms; converted source centimetres to millimetres; rigid recentering; triangulated polygon faces; corrected reflected winding; applied display colours; combined groups in the basic file. No smoothing, decimation or anatomical deformation. Extended with eight named deep structures from the same source FBX before app registration.",
+  "changes": "Selected anatomical meshes; baked native transforms; converted source centimetres to millimetres; rigid recentering; triangulated polygon faces; corrected reflected winding; applied display colours; combined groups in the basic file. No smoothing, decimation or anatomical deformation. Extended with eight named deep structures from the same source FBX before app registration. v0.9.15: added 16 named sulcal/deep targets; retained source geometry unchanged.",
   "records": [
     {
       "name": "Wing of central lobule.l",
@@ -9229,6 +9229,868 @@
         ""
       ],
       "orientation_group": "Fornix.l"
+    },
+    {
+      "name": "Optic tract.r",
+      "category": "deep_landmarks",
+      "fbx_node_index": 319,
+      "triangles": 2332,
+      "vertices": 1168,
+      "source_world_bounds_mm": [
+        [
+          -24.70959067965536,
+          1608.189601416677,
+          -18.275435408021785
+        ],
+        [
+          -0.6334986574648371,
+          1615.9752261008343,
+          18.43395720902889
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          97.07764490631446,
+          -0.0,
+          0.0,
+          -1.45845028196705
+        ],
+        [
+          0.0,
+          -2.772714089590139e-06,
+          97.07764441906531,
+          161.22249658400708
+        ],
+        [
+          0.0,
+          -97.07764070041499,
+          -2.7727129841116595e-06,
+          -0.3497833060383386
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Diencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Optic tract.l",
+      "category": "deep_landmarks",
+      "fbx_node_index": 320,
+      "triangles": 2332,
+      "vertices": 1168,
+      "source_world_bounds_mm": [
+        [
+          0.6335910152639856,
+          1608.1896040185827,
+          -18.275435353222875
+        ],
+        [
+          24.70968303745451,
+          1615.975220723399,
+          18.433957238488166
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -97.07764490631446,
+          0.0,
+          0.0,
+          1.4584595177469648
+        ],
+        [
+          0.0,
+          2.885919751854622e-05,
+          97.07764441906104,
+          161.22249658400708
+        ],
+        [
+          -0.0,
+          -97.07764070041073,
+          2.885919741233463e-05,
+          -0.3497833060383386
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Diencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Optic chiasm.r",
+      "category": "deep_landmarks",
+      "fbx_node_index": 329,
+      "triangles": 890,
+      "vertices": 448,
+      "source_world_bounds_mm": [
+        [
+          -7.145353286807521,
+          1608.1314064606781,
+          11.322898845066865
+        ],
+        [
+          -0.03584641934811228,
+          1615.9849530333681,
+          21.326739898850985
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          97.07764490631446,
+          -0.0,
+          0.0,
+          -0.38296787111691244
+        ],
+        [
+          0.0,
+          -2.772714089590139e-06,
+          97.07764441906531,
+          161.19604377520932
+        ],
+        [
+          0.0,
+          -97.07764070041499,
+          -2.7727129841116595e-06,
+          1.6396439274586272
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Diencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Optic chiasm.l",
+      "category": "deep_landmarks",
+      "fbx_node_index": 332,
+      "triangles": 890,
+      "vertices": 448,
+      "source_world_bounds_mm": [
+        [
+          0.03593947563911293,
+          1608.131405446646,
+          11.322899732564501
+        ],
+        [
+          7.14544634309852,
+          1615.9849541045091,
+          21.32673940086791
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -97.07764490631446,
+          0.0,
+          0.0,
+          0.3829771767460125
+        ],
+        [
+          0.0,
+          2.885919751854622e-05,
+          97.07764441906104,
+          161.19604377520932
+        ],
+        [
+          -0.0,
+          -97.07764070041073,
+          2.885919741233463e-05,
+          1.6396439274586272
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Diencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Central sulcus.l",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 522,
+      "triangles": 1440,
+      "vertices": 722,
+      "source_world_bounds_mm": [
+        [
+          8.036547173302289,
+          1635.959912008568,
+          -39.87091413334283
+        ],
+        [
+          59.369213675108526,
+          1689.1343448530622,
+          8.524988579009062
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          100.00001262823415,
+          -0.0,
+          0.0,
+          4.151366405174174
+        ],
+        [
+          0.0,
+          -2.856182066524459e-06,
+          100.00000652471104,
+          166.58432794407253
+        ],
+        [
+          0.0,
+          -100.0000026941169,
+          -2.8561809277673744e-06,
+          -1.47352727993891
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Parieto-occipital sulcus.l",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 523,
+      "triangles": 1636,
+      "vertices": 824,
+      "source_world_bounds_mm": [
+        [
+          6.147335851592675,
+          1622.0838808151457,
+          -79.39403649947236
+        ],
+        [
+          28.605305734285604,
+          1672.8147778379953,
+          -49.5317315537455
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          100.00001262823415,
+          -0.0,
+          0.0,
+          1.3813090649866293
+        ],
+        [
+          0.0,
+          -2.856182066524459e-06,
+          100.00000652471104,
+          163.35338692213648
+        ],
+        [
+          0.0,
+          -100.0000026941169,
+          -2.8561809277673744e-06,
+          -6.371846841746732
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Circular sulcus of insula.l",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 525,
+      "triangles": 798,
+      "vertices": 401,
+      "source_world_bounds_mm": [
+        [
+          29.36190836962199,
+          1629.8869089318841,
+          -18.439972664709266
+        ],
+        [
+          49.150870863530336,
+          1647.8127635322476,
+          40.94111372700914
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          100.00001262823415,
+          -0.0,
+          0.0,
+          3.8882484044747025
+        ],
+        [
+          0.0,
+          -2.856182066524459e-06,
+          100.00000652471104,
+          164.00717806811494
+        ],
+        [
+          0.0,
+          -100.0000026941169,
+          -2.8561809277673744e-06,
+          1.0069877963305467
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Lat_Fis-post.l",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 529,
+      "triangles": 480,
+      "vertices": 242,
+      "source_world_bounds_mm": [
+        [
+          30.420025527182073,
+          1628.1123122080985,
+          -38.570651360075814
+        ],
+        [
+          55.0178960254619,
+          1651.1536680520042,
+          -14.991548699495834
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          100.00001262823415,
+          -0.0,
+          0.0,
+          4.276303701971558
+        ],
+        [
+          0.0,
+          -2.856182066524459e-06,
+          100.00000652471104,
+          164.0307220304659
+        ],
+        [
+          0.0,
+          -100.0000026941169,
+          -2.8561809277673744e-06,
+          -2.725286701378705
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Central sulcus.r",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 532,
+      "triangles": 1440,
+      "vertices": 722,
+      "source_world_bounds_mm": [
+        [
+          -59.36921172946491,
+          1635.9599126716175,
+          -39.870914803119845
+        ],
+        [
+          -8.036545227658669,
+          1689.1343442591728,
+          8.524989414703832
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -100.00001262823415,
+          -0.0,
+          0.0,
+          -4.151366210609812
+        ],
+        [
+          0.0,
+          -6.034833194177003e-06,
+          100.00000652471091,
+          166.58432794407253
+        ],
+        [
+          -0.0,
+          -100.00000269411677,
+          -6.034831933658702e-06,
+          -1.47352727993891
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Parieto-occipital sulcus.r",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 533,
+      "triangles": 1636,
+      "vertices": 824,
+      "source_world_bounds_mm": [
+        [
+          -28.605303788641983,
+          1622.0838811945941,
+          -79.39403713290932
+        ],
+        [
+          -6.147333905949055,
+          1672.8147775420148,
+          -49.53173123630671
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -100.00001262823415,
+          -0.0,
+          0.0,
+          -1.3813088704222674
+        ],
+        [
+          0.0,
+          -6.034833194177003e-06,
+          100.00000652471091,
+          163.35338692213648
+        ],
+        [
+          -0.0,
+          -100.00000269411677,
+          -6.034831933658702e-06,
+          -6.371846841746732
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Circular sulcus of insula.r",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 535,
+      "triangles": 798,
+      "vertices": 401,
+      "source_world_bounds_mm": [
+        [
+          -49.150865192596385,
+          1629.8869088741271,
+          -18.43997286222246
+        ],
+        [
+          -29.36190269868804,
+          1647.8127640543898,
+          40.94111383585354
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -100.00001262823415,
+          -0.0,
+          0.0,
+          -3.8882478373813076
+        ],
+        [
+          0.0,
+          -6.034833194177003e-06,
+          100.00000652471091,
+          164.00717806811494
+        ],
+        [
+          -0.0,
+          -100.00000269411677,
+          -6.034831933658702e-06,
+          1.0069877963305467
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Lat_Fis-post.r",
+      "category": "cerebral_cortex",
+      "fbx_node_index": 538,
+      "triangles": 480,
+      "vertices": 242,
+      "source_world_bounds_mm": [
+        [
+          -55.017894079818284,
+          1628.1123121990233,
+          -38.570651443225124
+        ],
+        [
+          -30.42002358153845,
+          1651.1536678740094,
+          -14.991548765065133
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -100.00001262823415,
+          -0.0,
+          0.0,
+          -4.276303507407196
+        ],
+        [
+          0.0,
+          -6.034833194177003e-06,
+          100.00000652471091,
+          164.0307220304659
+        ],
+        [
+          -0.0,
+          -100.00000269411677,
+          -6.034831933658702e-06,
+          -2.725286701378705
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Interlobar sulci.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Globus pallidus.r",
+      "category": "deep_landmarks",
+      "fbx_node_index": 656,
+      "triangles": 5276,
+      "vertices": 2640,
+      "source_world_bounds_mm": [
+        [
+          -28.841014448048405,
+          1618.2133823589547,
+          -7.988870759901554
+        ],
+        [
+          -12.59663397442119,
+          1635.0077229557305,
+          20.42689511774818
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          97.07765139569342,
+          -0.0,
+          0.0,
+          -2.2087647600715297
+        ],
+        [
+          0.0,
+          -2.7727134436303876e-06,
+          97.0776218028672,
+          162.59496524254828
+        ],
+        [
+          0.0,
+          -97.07761808421775,
+          -2.7727123381521638e-06,
+          0.7484953680872126
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Corpus striatum.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Globus pallidus.l",
+      "category": "deep_landmarks",
+      "fbx_node_index": 657,
+      "triangles": 5276,
+      "vertices": 2640,
+      "source_world_bounds_mm": [
+        [
+          12.596728200972924,
+          1618.21338590412,
+          -7.988871847801522
+        ],
+        [
+          28.841108674600136,
+          1635.007724053403,
+          20.426894890257337
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -97.07765139569342,
+          0.0,
+          0.0,
+          2.208774182726703
+        ],
+        [
+          0.0,
+          2.8859190795213243e-05,
+          97.07762180286294,
+          162.59496524254828
+        ],
+        [
+          -0.0,
+          -97.07761808421348,
+          2.8859190689001674e-05,
+          0.7484953680872126
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Corpus striatum.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Putamen.r",
+      "category": "deep_landmarks",
+      "fbx_node_index": 788,
+      "triangles": 1150,
+      "vertices": 577,
+      "source_world_bounds_mm": [
+        [
+          -34.10664334280102,
+          1617.4800475991915,
+          -12.61123014933929
+        ],
+        [
+          -16.424039315862025,
+          1642.6700272114829,
+          29.035861663993643
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          97.07766918999522,
+          -0.0,
+          0.0,
+          -2.6380682961209185
+        ],
+        [
+          0.0,
+          -2.772708282732454e-06,
+          97.07762223833215,
+          162.83452878731364
+        ],
+        [
+          0.0,
+          -97.07761851968269,
+          -2.7727071772544265e-06,
+          0.8187240349201719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Dorsal striatum.g",
+        "Corpus striatum.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
+    },
+    {
+      "name": "Putamen.l",
+      "category": "deep_landmarks",
+      "fbx_node_index": 789,
+      "triangles": 1150,
+      "vertices": 577,
+      "source_world_bounds_mm": [
+        [
+          16.42413529606373,
+          1617.4800523819708,
+          -12.611231174170944
+        ],
+        [
+          34.10673932300273,
+          1642.6700268992981,
+          29.03586190340188
+        ]
+      ],
+      "source_geometry_to_world_cm": [
+        [
+          -97.07766918999522,
+          0.0,
+          0.0,
+          2.638077894141089
+        ],
+        [
+          0.0,
+          2.885919609800367e-05,
+          97.07762223832789,
+          162.83452878731364
+        ],
+        [
+          -0.0,
+          -97.07761851967842,
+          2.8859195991791904e-05,
+          0.8187240349201719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_ancestors": [
+        "Dorsal striatum.g",
+        "Corpus striatum.g",
+        "Telencephalon.g",
+        "Cerebrum.g",
+        "Brain.g",
+        "Central nervous system.g",
+        ""
+      ],
+      "orientation_group": "Additional vessel targets"
     }
   ]
 }

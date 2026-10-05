@@ -1,0 +1,62 @@
+{
+  "release": "0.9.18",
+  "currentAcceptedReportPasses": true,
+  "invalidFixtures": [
+    {
+      "case": "stale-geometry",
+      "rejected": true,
+      "reason": "Stale central authoring validation"
+    },
+    {
+      "case": "stale-context",
+      "rejected": true,
+      "reason": "Stale central brain context validation"
+    },
+    {
+      "case": "failed-status",
+      "rejected": true,
+      "reason": "Failed central connected-family acceptance"
+    },
+    {
+      "case": "missing-family",
+      "rejected": true,
+      "reason": "Incomplete central connected family"
+    },
+    {
+      "case": "opened-join",
+      "rejected": true,
+      "reason": "Opened shared junction"
+    },
+    {
+      "case": "self-intersection",
+      "rejected": true,
+      "reason": "New skin self-intersection"
+    },
+    {
+      "case": "tissue-contact",
+      "rejected": true,
+      "reason": "New tissueChecks"
+    },
+    {
+      "case": "skull-contact",
+      "rejected": true,
+      "reason": "New skullChecks"
+    },
+    {
+      "case": "arterial-crossing",
+      "rejected": true,
+      "reason": "New arterial crossing"
+    },
+    {
+      "case": "branch-narrowing",
+      "rejected": true,
+      "reason": "Missing or failed branch skin-envelope check"
+    },
+    {
+      "case": "primary-narrowing",
+      "rejected": true,
+      "reason": "Missing or failed primary skin-envelope check"
+    }
+  ],
+  "geometryAndMetadataUnchanged": true
+}

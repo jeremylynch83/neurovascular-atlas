@@ -21,3 +21,12 @@ export function resolveSurfaceAnchor(anchor: SurfaceAnchor, geometry: BufferGeom
 export function vesselCourseGuides(manifest: AnatomyManifest, vesselId: string) {
   return manifest.structures.filter(s => s.vesselGuide?.vesselIds.includes(vesselId));
 }
+
+export function vesselCourseSpecification(manifest: AnatomyManifest, vesselId: string) {
+  const specification = manifest.structures.find(s => s.id === vesselId)?.vesselCourse;
+  if (specification && (specification.registrationId !== manifest.brainRegistration?.id
+    || specification.brainAssetSha256 !== manifest.brainRegistration?.registeredAssetSha256)) {
+    throw new Error('Vessel course brain asset revision mismatch');
+  }
+  return specification;
+}

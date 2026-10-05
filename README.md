@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.14
+# Neurovascular Atlas v0.9.18
 
-Place `inr-anatomy-atlas-v0.9.14.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+Place `inr-anatomy-atlas-v0.9.18.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
 
 The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. The brain registration review and validation reports are included.
 
@@ -9,6 +9,18 @@ Subsequent updates use the newest adjacent ZIP when it is newer than the checkou
 The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
 
 A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+
+## Bilateral central arterial family fit in v0.9.18
+
+Applies both central arteries, their cortical branches and distal rami, and the adjoining MCA transitions. The complete eight-label family passes tissue, skull, vessel-neighbour, self-intersection, shared-join and wall-envelope checks. The build reproduces byte-for-byte from the supplied seed. Dural and brainstem groups remain deferred; brain, skull, venous and protected ICA/cavernous geometry are retained. See [fitting evidence and limits](docs/FITTING_v0.9.18.md).
+
+## Fitting validation checkpoint in v0.9.17
+
+Adds expanded cortical-family tissue checks, exact exported-buffer verification, dominant-axis branch refinement and a separate rejected eight-label trial for review. No fitting geometry is accepted. Every production geometry asset remains identical to v0.9.15. See [checkpoint findings and next work](docs/FITTING_v0.9.17.md). The first fitting batch remains incomplete.
+
+## Previous anatomical targets and course rules in v0.9.15
+
+Implements sections 1–2 of the vessel fitting plan on v0.9.14. Adds 16 missing sulcal/deep targets, ordered central sulcal and falcotentorial guides, 290 intracranial vessel course specifications and a measured baseline audit. Vessel panels link to their brain targets. The original skull, vascular assets and 172 brain meshes are preserved. See [release details](docs/VESSEL_TARGETS_v0.9.15.md) and [anatomical audit](docs/ANATOMICAL_AUDIT_v0.9.15.md). Vessel fitting itself is the next stage.
 
 ## Brain and dural orientation in v0.9.14
 

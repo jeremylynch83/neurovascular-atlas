@@ -1,0 +1,45 @@
+{
+  "release": "0.9.15",
+  "baseline": "Delivered v0.9.14, based on v0.9.13",
+  "implementedPlanSections": [
+    1,
+    2
+  ],
+  "brainMeshes": 188,
+  "brainTriangles": 391136,
+  "newBrainTargets": 16,
+  "retainedBrainMeshesExact": 172,
+  "primarySurfaceBoundAnchors": 131,
+  "falcotentorialCourseStations": 25,
+  "centralSulcusStationsPerSide": 9,
+  "vascularCourseRecords": 870,
+  "intracranialCourseSpecifications": 290,
+  "requiresAdditionalTargetRecords": 64,
+  "catalogueValidation": "passed",
+  "courseContractFailureChecks": "passed",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "viewerGeometryAndCourseChecks": "passed",
+  "browserProductionInteractions": "passed",
+  "existingVenousUiRegression": "passed",
+  "installerOfflineIntegration": "passed",
+  "targetGeometryVisualReview": "completed",
+  "baselineZipSha256": "6769a4ff00ffdcc21ae4f48aafda3d749a5c8a2c34ccd59c79873fdcfbcc2fb2",
+  "retainedAssets": {
+    "public/anatomy/models/complete-circulation.glb": "80fe4a34a46b2ee4c56a786e314b262bd0df9821841349e5c21fb8d4bd22993f",
+    "public/anatomy/models/complete-anastomoses.glb": "4f2e45a13d20646b95cf320e663772019067dd1313607a2db9eb04a88a2da66d",
+    "public/anatomy/models/venous.glb": "0699bebd7a38b934753f889b03e750d7e42be30559efe7f34a58d2f094c2f92b",
+    "public/anatomy/models/craniofacial.glb": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a"
+  },
+  "overallRegistrationRetained": true,
+  "brainAdjustmentsApplied": [],
+  "vesselFitting": "not applied; delivered vessel geometry retained",
+  "licence": "Adapted brain geometry CC BY-SA 4.0; source credits retained",
+  "knownLimits": [
+    "Regional course specifications require anatomical review before geometric segment fitting.",
+    "Unsigned sampled wall distances do not establish containment or physical junction patency.",
+    "Reviewed perforator entry sites, choroidal attachments and cervical spinal cord target remain dependencies.",
+    "Atlas-derived dural guide surface agreement is not a segmented sinus lumen.",
+    "Physical GPU performance has not been benchmarked."
+  ]
+}

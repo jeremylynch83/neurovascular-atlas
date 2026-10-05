@@ -23,6 +23,26 @@ export interface BrainRegistration {
   status: string;
   limitations: string;
 }
+export type VesselCourseMode = 'dural-attachment' | 'dural-free-edge' | 'bony-groove' | 'cisternal' | 'pial' | 'opercular' | 'insular' | 'sulcal' | 'surface-vein' | 'bridging' | 'deep-venous' | 'subependymal' | 'penetrating' | 'choroidal';
+export interface VesselCourse {
+  vesselId: string;
+  side: Side;
+  scope: 'intracranial' | 'protected-baseline' | 'potential-anastomosis';
+  geometry: AssetRef;
+  geometrySha256: string;
+  registrationId: string;
+  brainAssetSha256: string;
+  summary: string;
+  targetStructureIds: string[];
+  stationIds: string[];
+  stationOrder: 'anatomical-sequence' | 'regional-references-only' | 'not-applicable';
+  radiusPolicy: 'preserve-delivered-profile';
+  reviewStatus: 'requires-anatomical-review' | 'requires-anatomical-target' | 'protected-baseline';
+  missingTargets: string[];
+  attachments: { parentId: string | null; incoming: Relationship[]; outgoing: Relationship[]; status: string };
+  segments: { order: number; mode: VesselCourseMode; targetStructureIds: string[]; stationIds: string[]; stationRole: string;
+    constraints: { wallClearance: 'radius-aware'; allowTissueEntry: boolean; avoidAtlasCutFaces: boolean; preserveJoinedAttachments: boolean }; reviewStatus: string }[];
+}
 export interface Provenance {
   sourceType: 'scan-derived' | 'atlas-derived' | 'teaching-reconstruction' | 'reference-defined' | 'legacy-placeholder';
   confidence: string;
@@ -46,8 +66,10 @@ export interface Structure {
   notes?: string;
   color?: string;
   displayGroup?: 'anastomoses';
-  anatomy?: { category: string; sourceLabel: string; registrationId: string; bounds: number[][]; centroid: [number, number, number] };
+  anatomy?: { category: string; sourceLabel: string; registrationId: string; bounds: number[][]; centroid: [number, number, number]; surfaceRole?: 'sulcal-reference' | 'csf-boundary' | 'dural-surface' | 'parenchymal-surface' };
   surfaceAnchor?: SurfaceAnchor;
+  secondarySurfaceAnchors?: SurfaceAnchor[];
+  vesselCourse?: VesselCourse;
   vesselGuide?: { role: 'course-guide'; vesselNames: string[]; vesselIds: string[]; surfaceStructureIds: string[]; anchorIds?: string[] };
   landmark?: {
     kind?: 'brain-surface' | 'brain-course';
@@ -71,6 +93,9 @@ export interface AnatomyManifest {
   assetByteSizes?: Record<string, number>;
   reference?: { case: string; pipelineVersion: string };
   brainRegistration?: BrainRegistration;
+  vesselCourseSchemaVersion?: string;
+  vesselCourseState?: 'specified-not-fitted' | 'partially-fitted-awaiting-review';
+  brainAdjustmentPolicy?: { scope: string; preserve: string[]; afterAdjustment: string[]; bounds: string; appliedAdjustments: unknown[] };
   structures: Structure[];
   relationships: Relationship[];
   sources: SourceRef[];

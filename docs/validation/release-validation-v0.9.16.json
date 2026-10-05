@@ -1,0 +1,72 @@
+{
+  "release": "0.9.16",
+  "baseline": "0.9.15",
+  "status": "implementation-checkpoint",
+  "geometryFitsAccepted": 0,
+  "firstFittingBatchComplete": false,
+  "productionGeometryRetainedExactly": [
+    {
+      "file": "public/anatomy/models/brain-context.glb",
+      "sha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+      "baselineByteIdentical": true
+    },
+    {
+      "file": "public/anatomy/models/complete-anastomoses.glb",
+      "sha256": "4f2e45a13d20646b95cf320e663772019067dd1313607a2db9eb04a88a2da66d",
+      "baselineByteIdentical": true
+    },
+    {
+      "file": "public/anatomy/models/complete-circulation.glb",
+      "sha256": "80fe4a34a46b2ee4c56a786e314b262bd0df9821841349e5c21fb8d4bd22993f",
+      "baselineByteIdentical": true
+    },
+    {
+      "file": "public/anatomy/models/craniofacial.glb",
+      "sha256": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+      "baselineByteIdentical": true
+    },
+    {
+      "file": "public/anatomy/models/venous.glb",
+      "sha256": "0699bebd7a38b934753f889b03e750d7e42be30559efe7f34a58d2f094c2f92b",
+      "baselineByteIdentical": true
+    }
+  ],
+  "checks": {
+    "catalogueAndAssets": "passed",
+    "productionBuild": "passed",
+    "courseFailureContracts": "passed",
+    "staleReportAndFamilyContactPublicationGuards": "passed",
+    "installerRegression": "passed with simulated Docker, gh and HTTP; real local Git",
+    "productionBrowser": "passed",
+    "brainBindingsAndViewer": "passed",
+    "nativeAndFallbackViewer": "passed"
+  },
+  "browser": {
+    "release": "0.9.16",
+    "browser": "Chromium 134, headless SwiftShader",
+    "productionBuild": true,
+    "loaded": true,
+    "orientationPresets": true,
+    "alternateNameSearchAndPanel": true,
+    "selectionPreservesOpenPanel": true,
+    "surfaceLandmarkSelection": true,
+    "centralSulcusSearchAndCourseLink": true,
+    "falcotentorialCourseSelection": true,
+    "focus": true,
+    "hideShow": true,
+    "sections": true,
+    "pageErrors": [],
+    "warnings": []
+  },
+  "trialReports": [
+    "left-central-trial-v0.9.16.json",
+    "right-central-trial-v0.9.16.json",
+    "dural-trial-v0.9.16.json",
+    "brainstem-trial-v0.9.16.json"
+  ],
+  "limitations": [
+    "No anatomical fitting trial met the complete family/context acceptance criteria.",
+    "The runnable app retains every original production geometry asset.",
+    "Trial meshes are review-only authoring evidence and are not loaded by the app."
+  ]
+}

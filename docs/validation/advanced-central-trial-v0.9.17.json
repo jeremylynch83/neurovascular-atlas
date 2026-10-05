@@ -1,0 +1,2909 @@
+{
+  "release": "0.9.17",
+  "baseline": "0.9.15",
+  "duralExperimentApplied": false,
+  "brainstemExperimentApplied": false,
+  "brainAdjustments": [],
+  "batches": [
+    {
+      "name": "artery.anterior.central_left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 5.0272289036480995,
+          "movedVertices": 942
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 24.940269883392407,
+          "movedVertices": 6828
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 24.940269883392407,
+          "movedVertices": 3655
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 24.09092011695674,
+          "movedVertices": 1507
+        }
+      ]
+    },
+    {
+      "name": "artery.anterior.central_right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 5.040986979870137,
+          "movedVertices": 953
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 25.386134668119894,
+          "movedVertices": 6977
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 25.386001438762143,
+          "movedVertices": 3691
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 25.386136301810218,
+          "movedVertices": 1553
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.0779822950290858,
+          "movedVertices": 191
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 1.061164261992953,
+          "movedVertices": 5195
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.43716932180756807,
+          "movedVertices": 3477
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.29396080934049645,
+          "movedVertices": 1507
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.08348423187962094,
+          "movedVertices": 120
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.049801442391818,
+          "movedVertices": 5804
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.2863910431661083,
+          "movedVertices": 3407
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0165204027152124,
+          "movedVertices": 1519
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.06652482732269659,
+          "movedVertices": 200
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.4670739232088113,
+          "movedVertices": 4817
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.4528503894848649,
+          "movedVertices": 3451
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.19295435752499113,
+          "movedVertices": 1466
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.0666797149385858,
+          "movedVertices": 134
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0277136075326563,
+          "movedVertices": 5475
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.16014679847627572,
+          "movedVertices": 3287
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0102831932207446,
+          "movedVertices": 1479
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.0391790392396663,
+          "movedVertices": 208
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.7446156671066145,
+          "movedVertices": 4484
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.2983302070743343,
+          "movedVertices": 3486
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.09441903324028789,
+          "movedVertices": 1439
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.06085961173577792,
+          "movedVertices": 145
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0629060162539585,
+          "movedVertices": 5153
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.12069759519925909,
+          "movedVertices": 3242
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0224592705185473,
+          "movedVertices": 1431
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.024204146477409018,
+          "movedVertices": 209
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.4850667256253921,
+          "movedVertices": 4235
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.30660018622291085,
+          "movedVertices": 3446
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.27417231554954175,
+          "movedVertices": 1408
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.0316502698838311,
+          "movedVertices": 148
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.022630358746767,
+          "movedVertices": 4470
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.058503989995451304,
+          "movedVertices": 3052
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0175777526810592,
+          "movedVertices": 1410
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.021906718063600266,
+          "movedVertices": 210
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.4815884483728028,
+          "movedVertices": 4077
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.13085869432306313,
+          "movedVertices": 3227
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.2084939539174826,
+          "movedVertices": 1362
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.015330769600908484,
+          "movedVertices": 149
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0152029532763602,
+          "movedVertices": 3469
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.05130239876623859,
+          "movedVertices": 2756
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.013931106054909,
+          "movedVertices": 1228
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.011389253780112109,
+          "movedVertices": 210
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.5188024250162788,
+          "movedVertices": 3470
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.15021219552726606,
+          "movedVertices": 2872
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.2881477202391163,
+          "movedVertices": 1253
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.0031346394359258426,
+          "movedVertices": 151
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0190909858912236,
+          "movedVertices": 3169
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.03686042837351177,
+          "movedVertices": 2520
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0170989771142869,
+          "movedVertices": 953
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.007477448327124185,
+          "movedVertices": 165
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.4985229363274712,
+          "movedVertices": 3010
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.14209531898853203,
+          "movedVertices": 2472
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.33046290536812356,
+          "movedVertices": 867
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.0006680038122194445,
+          "movedVertices": 151
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.042601220816862,
+          "movedVertices": 2915
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.04573591931795499,
+          "movedVertices": 1676
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.042601220816862,
+          "movedVertices": 869
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.004000071265111997,
+          "movedVertices": 210
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.5104665286078932,
+          "movedVertices": 2416
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.16341683251103348,
+          "movedVertices": 1721
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.3961063289040277,
+          "movedVertices": 286
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 0.0001560784086547102,
+          "movedVertices": 151
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.5037737264862736,
+          "movedVertices": 2268
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.08867985384862674,
+          "movedVertices": 1474
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.50188064473707,
+          "movedVertices": 453
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.0022720055466332544,
+          "movedVertices": 161
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.5936478861165783,
+          "movedVertices": 2183
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.17484197405027443,
+          "movedVertices": 1673
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.23123760184317346,
+          "movedVertices": 286
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "MCA superior division right",
+          "maximumDisplacementMm": 3.1207759904728696e-05,
+          "movedVertices": 124
+        },
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0522978918158306,
+          "movedVertices": 2072
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.10334683028852724,
+          "movedVertices": 1453
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0517087137883399,
+          "movedVertices": 422
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.0015513575460341256,
+          "movedVertices": 210
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.41702929185672044,
+          "movedVertices": 1844
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.12697393487669908,
+          "movedVertices": 1289
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.30106415865620945,
+          "movedVertices": 207
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0033972365859416,
+          "movedVertices": 812
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.10277417476478727,
+          "movedVertices": 1254
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9873061861640295,
+          "movedVertices": 399
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.0007666987332907348,
+          "movedVertices": 106
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.32371515938565926,
+          "movedVertices": 1136
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.09945285122050582,
+          "movedVertices": 1024
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.1760057950962258,
+          "movedVertices": 191
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9867916133156278,
+          "movedVertices": 555
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.14237992675506267,
+          "movedVertices": 1245
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.986139663660116,
+          "movedVertices": 352
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.0003989953853060476,
+          "movedVertices": 196
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.22720311216494826,
+          "movedVertices": 1218
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.06955657850793612,
+          "movedVertices": 1049
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.1215397675282981,
+          "movedVertices": 205
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0147455549655768,
+          "movedVertices": 605
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.1885295800277208,
+          "movedVertices": 1293
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.007879681460077,
+          "movedVertices": 379
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 0.00020189317480952086,
+          "movedVertices": 87
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.010688960107091439,
+          "movedVertices": 1024
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.0031064990615991567,
+          "movedVertices": 952
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.004123842102107745,
+          "movedVertices": 137
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9927167241913277,
+          "movedVertices": 614
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.24259181939449662,
+          "movedVertices": 1313
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9912705560977491,
+          "movedVertices": 383
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 9.755129528999734e-05,
+          "movedVertices": 171
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.001062303795908612,
+          "movedVertices": 998
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 4.103447409029264e-05,
+          "movedVertices": 651
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 5.451636386690632e-05,
+          "movedVertices": 73
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0590846543528503,
+          "movedVertices": 547
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.3261944179344226,
+          "movedVertices": 1313
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0447116674624648,
+          "movedVertices": 342
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 4.8932496285176303e-05,
+          "movedVertices": 75
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.0007943088452958272,
+          "movedVertices": 542
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0432910723391597,
+          "movedVertices": 532
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.39014900978678657,
+          "movedVertices": 1294
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.6043931910329833,
+          "movedVertices": 351
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 2.3567077561419987e-05,
+          "movedVertices": 99
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.00025659937116707655,
+          "movedVertices": 650
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.0912842866884953,
+          "movedVertices": 592
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.38924643088185545,
+          "movedVertices": 1313
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.7163909472854304,
+          "movedVertices": 371
+        }
+      ]
+    },
+    {
+      "name": "central-terminal-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 2.692582403567252,
+          "movedVertices": 1904
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 2.692582403567252,
+          "movedVertices": 2634
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 2.692582403567252,
+          "movedVertices": 1526
+        }
+      ],
+      "terminalWallConstraint": {
+        "shiftMm": [
+          -1.0,
+          0.0,
+          -2.5
+        ],
+        "startZMm": 145.0,
+        "fullZMm": 152.5,
+        "minimumSignedWallClearanceMm": 0.12,
+        "minimumUnpinnedJacobianDeterminant": 0.5,
+        "interpretation": "Local signed distances choose the candidate. Exported triangle contact checks decide acceptance."
+      }
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.7103888743094513,
+          "movedVertices": 2858
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 2.050095420213589,
+          "movedVertices": 2768
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 1.4242265817972584,
+          "movedVertices": 2843
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 1.4242265817972584,
+          "movedVertices": 1338
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "MCA superior division left",
+          "maximumDisplacementMm": 1.1792927257076154e-05,
+          "movedVertices": 4
+        },
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.655139770766919,
+          "movedVertices": 2978
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.26228595784670444,
+          "movedVertices": 2536
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.6551307790849916,
+          "movedVertices": 1353
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.7101459980753055,
+          "movedVertices": 2650
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.7978835437447134,
+          "movedVertices": 2672
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.28590376517205707,
+          "movedVertices": 2300
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.28592474179714655,
+          "movedVertices": 1107
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.13055734371338523,
+          "movedVertices": 1636
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.042051362953227284,
+          "movedVertices": 1551
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.11121165635362747,
+          "movedVertices": 369
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.8749040890228409,
+          "movedVertices": 2883
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.874262772480787,
+          "movedVertices": 2770
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 1.0656985897737263,
+          "movedVertices": 2461
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 1.0658088640855108,
+          "movedVertices": 1164
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.26885266018406473,
+          "movedVertices": 1779
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.09370924252791464,
+          "movedVertices": 1556
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.26804355546854614,
+          "movedVertices": 876
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.6562264595800887,
+          "movedVertices": 2503
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.5431687305716502,
+          "movedVertices": 2626
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.13823221979953978,
+          "movedVertices": 1873
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.06313414861515461,
+          "movedVertices": 876
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.001305478519962517,
+          "movedVertices": 371
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.0004159602378211222,
+          "movedVertices": 1002
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.000978439284434106,
+          "movedVertices": 160
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.9076685759528056,
+          "movedVertices": 2337
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.3856057678433684,
+          "movedVertices": 2346
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.3201917087805615,
+          "movedVertices": 2499
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.3291855896125812,
+          "movedVertices": 1207
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.16045893754025267,
+          "movedVertices": 1495
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.07899688157213122,
+          "movedVertices": 1570
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.16034101413045965,
+          "movedVertices": 806
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.6384325153691846,
+          "movedVertices": 2372
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.7216292403800142,
+          "movedVertices": 2514
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.07880380126231545,
+          "movedVertices": 1843
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.06673738350932405,
+          "movedVertices": 804
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 3.73536071271341e-05,
+          "movedVertices": 342
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.190125014814531e-05,
+          "movedVertices": 267
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 2.7996928355901533e-05,
+          "movedVertices": 109
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 1.0659755356794653,
+          "movedVertices": 2474
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.6140173355756902,
+          "movedVertices": 2470
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.30740598217972936,
+          "movedVertices": 2339
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.3311776215229862,
+          "movedVertices": 851
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.1320047338845681,
+          "movedVertices": 1477
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.053406189578065956,
+          "movedVertices": 1444
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.13197514440530894,
+          "movedVertices": 788
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.4690628544884123,
+          "movedVertices": 2175
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.4041352787134167,
+          "movedVertices": 2524
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.12716001443017114,
+          "movedVertices": 1822
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.059334360615313636,
+          "movedVertices": 752
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": []
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.8643782418728715,
+          "movedVertices": 2262
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.6087828219973115,
+          "movedVertices": 2222
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.24010413219726418,
+          "movedVertices": 1863
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.1668654892037449,
+          "movedVertices": 520
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.032863233220319844,
+          "movedVertices": 1120
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.013417094713180665,
+          "movedVertices": 1152
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.03276513395664628,
+          "movedVertices": 655
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.7698816247029983,
+          "movedVertices": 1803
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.603672174828779,
+          "movedVertices": 2455
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.08202193496048567,
+          "movedVertices": 1716
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.06299016639092994,
+          "movedVertices": 518
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": []
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.7061021288137833,
+          "movedVertices": 2253
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.8321166852317585,
+          "movedVertices": 2360
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.2157885529285499,
+          "movedVertices": 1866
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.13390092148022747,
+          "movedVertices": 510
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.03599269108444301,
+          "movedVertices": 673
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.015525195888297132,
+          "movedVertices": 593
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.03598905349090017,
+          "movedVertices": 614
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.4885267432054751,
+          "movedVertices": 1817
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.3259329291211006,
+          "movedVertices": 2550
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.07680456494708256,
+          "movedVertices": 1707
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.05635233444730151,
+          "movedVertices": 517
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": []
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.7841158840959358,
+          "movedVertices": 2474
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.7949302097938968,
+          "movedVertices": 2812
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.17115573847674945,
+          "movedVertices": 1851
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.09856768875078004,
+          "movedVertices": 503
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.038073196050781626,
+          "movedVertices": 635
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.01438816839780816,
+          "movedVertices": 594
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.03804380089033713,
+          "movedVertices": 616
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.43718338113370503,
+          "movedVertices": 1929
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.3215078101300148,
+          "movedVertices": 2111
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.11257802702922927,
+          "movedVertices": 1713
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.05445886634803117,
+          "movedVertices": 518
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": []
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.9293894189142738,
+          "movedVertices": 2545
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.8933808210823697,
+          "movedVertices": 2804
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.11194358421048949,
+          "movedVertices": 1832
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.07056474628398293,
+          "movedVertices": 494
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.03668201115056897,
+          "movedVertices": 648
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.010984135770095861,
+          "movedVertices": 585
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.03666583145352029,
+          "movedVertices": 609
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.6411307501386866,
+          "movedVertices": 1844
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.7351879247978954,
+          "movedVertices": 2542
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.08063170050004258,
+          "movedVertices": 1701
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.049421801516757714,
+          "movedVertices": 511
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": []
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.8543256937516441,
+          "movedVertices": 2280
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.848134907528226,
+          "movedVertices": 2540
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.07183175595862577,
+          "movedVertices": 1641
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.06646687546537286,
+          "movedVertices": 457
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.03193291323935325,
+          "movedVertices": 650
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.01057001307581243,
+          "movedVertices": 549
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.031861383326803674,
+          "movedVertices": 578
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.5881506640139963,
+          "movedVertices": 1970
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.3443157646530113,
+          "movedVertices": 2564
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.09644642431942292,
+          "movedVertices": 1699
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.046838982605433864,
+          "movedVertices": 496
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.13735110449917085,
+          "movedVertices": 810
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.03034636761101459,
+          "movedVertices": 187
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.13735186307007033,
+          "movedVertices": 770
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.9413533498742817,
+          "movedVertices": 2232
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.6116449136060036,
+          "movedVertices": 2519
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.05615294293012448,
+          "movedVertices": 1419
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.06177005386347113,
+          "movedVertices": 455
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.02372018511543772,
+          "movedVertices": 588
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.006102699613268776,
+          "movedVertices": 514
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.02377752509903279,
+          "movedVertices": 617
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.29539597833062275,
+          "movedVertices": 1817
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.3417631437892563,
+          "movedVertices": 2470
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.08651100483650248,
+          "movedVertices": 1688
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.04223451969642191,
+          "movedVertices": 498
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.0794204691620343,
+          "movedVertices": 734
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.019706660137992788,
+          "movedVertices": 245
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.07942049733299214,
+          "movedVertices": 707
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.2871354165611415,
+          "movedVertices": 1786
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.6257468931792234,
+          "movedVertices": 2516
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.05591259361861694,
+          "movedVertices": 1344
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.0576326018526781,
+          "movedVertices": 461
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.020894909948653128,
+          "movedVertices": 671
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.007120431842434968,
+          "movedVertices": 543
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.02118382438941101,
+          "movedVertices": 613
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.18119728975308494,
+          "movedVertices": 1855
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.3136464411152884,
+          "movedVertices": 2496
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.060610225934890856,
+          "movedVertices": 1680
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.0394446768280933,
+          "movedVertices": 494
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.10204042359139981,
+          "movedVertices": 726
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.026074893645626384,
+          "movedVertices": 125
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.10204973783912591,
+          "movedVertices": 707
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.43735053499092846,
+          "movedVertices": 1878
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.3052054188885274,
+          "movedVertices": 2540
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus left",
+      "selectedNodes": [
+        "Central distal ramus left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 261,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.06310613122219776,
+          "movedVertices": 1226
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.0694661277740668,
+          "movedVertices": 424
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.11323589565784613,
+          "movedVertices": 651
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 0.036711815778157283,
+          "movedVertices": 403
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.11483982408388728,
+          "movedVertices": 594
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.38992315290878904,
+          "movedVertices": 1885
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.3170482249251794,
+          "movedVertices": 2468
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central distal ramus right",
+      "selectedNodes": [
+        "Central distal ramus right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 268,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.07505358748934965,
+          "movedVertices": 1663
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.03703453802952535,
+          "movedVertices": 482
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.2865535681770145,
+          "movedVertices": 807
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 0.08518529067315053,
+          "movedVertices": 166
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.2865516820920929,
+          "movedVertices": 772
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.2539787403279022,
+          "movedVertices": 2441
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.3413346555153622,
+          "movedVertices": 2674
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.5510160507773754,
+          "movedVertices": 2147
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.512957851452571,
+          "movedVertices": 1982
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.6292024378503249,
+          "movedVertices": 2132
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.4847348709100683,
+          "movedVertices": 2552
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.5953568332910485,
+          "movedVertices": 2099
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.4842701601562511,
+          "movedVertices": 1995
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central left"
+      ],
+      "fixedBoundaryCoordinates": 253,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 0.7133971619746805,
+          "movedVertices": 1752
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.425901603322939,
+          "movedVertices": 2405
+        }
+      ]
+    },
+    {
+      "name": "central-corridor-wall-clearance-Central cortical branch right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central right"
+      ],
+      "fixedBoundaryCoordinates": 254,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.5766073506194883,
+          "movedVertices": 2165
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.4458124361840163,
+          "movedVertices": 1999
+        }
+      ]
+    },
+    {
+      "name": "central-terminal-wall-clearance-left",
+      "selectedNodes": [
+        "Central cortical branch left",
+        "Central distal ramus left",
+        "Central left",
+        "MCA superior division left"
+      ],
+      "fixedBoundaryCoordinates": 466,
+      "changedNodes": [
+        {
+          "node": "Central left",
+          "maximumDisplacementMm": 1.0,
+          "movedVertices": 1630
+        },
+        {
+          "node": "Central cortical branch left",
+          "maximumDisplacementMm": 1.0,
+          "movedVertices": 1870
+        },
+        {
+          "node": "Central distal ramus left",
+          "maximumDisplacementMm": 0.9831070091865115,
+          "movedVertices": 1351
+        }
+      ],
+      "terminalWallConstraint": {
+        "shiftMm": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "startZMm": 145.0,
+        "fullZMm": 152.5,
+        "minimumSignedWallClearanceMm": 0.12,
+        "minimumUnpinnedJacobianDeterminant": 1.0,
+        "interpretation": "Local signed distances choose the candidate. Exported triangle contact checks decide acceptance."
+      }
+    },
+    {
+      "name": "central-terminal-wall-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 1.1176795730151912,
+          "movedVertices": 1872
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 1.118033988749895,
+          "movedVertices": 1694
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 1.0853080906047814,
+          "movedVertices": 1510
+        }
+      ],
+      "terminalWallConstraint": {
+        "shiftMm": [
+          -0.5,
+          -1.0,
+          0.0
+        ],
+        "startZMm": 145.0,
+        "fullZMm": 152.5,
+        "minimumSignedWallClearanceMm": 0.12,
+        "minimumUnpinnedJacobianDeterminant": 1.0,
+        "interpretation": "Local signed distances choose the candidate. Exported triangle contact checks decide acceptance."
+      }
+    }
+  ],
+  "geometry": [
+    {
+      "asset": "arteries",
+      "node": "MCA superior division right",
+      "maximumDisplacementMm": 4.979543394518974,
+      "movedVertices": 953,
+      "triangleCountRetained": 11415,
+      "vertexCountRetained": 6014,
+      "minimumTriangleAreaRatio": 0.6675489062113404,
+      "medianTriangleAreaRatio": 1.0,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central right",
+      "maximumDisplacementMm": 28.553236861775314,
+      "movedVertices": 6977,
+      "triangleCountRetained": 13772,
+      "vertexCountRetained": 7070,
+      "minimumTriangleAreaRatio": 0.09232548706215297,
+      "medianTriangleAreaRatio": 1.1141534195313352,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central cortical branch right",
+      "maximumDisplacementMm": 27.076320826857707,
+      "movedVertices": 3691,
+      "triangleCountRetained": 7264,
+      "vertexCountRetained": 3691,
+      "minimumTriangleAreaRatio": 0.0339586588300635,
+      "medianTriangleAreaRatio": 1.0236879325044022,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "MCA superior division left",
+      "maximumDisplacementMm": 4.834663183001886,
+      "movedVertices": 942,
+      "triangleCountRetained": 11375,
+      "vertexCountRetained": 5992,
+      "minimumTriangleAreaRatio": 0.6452727162192594,
+      "medianTriangleAreaRatio": 1.0,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central left",
+      "maximumDisplacementMm": 25.942795294949043,
+      "movedVertices": 6828,
+      "triangleCountRetained": 13453,
+      "vertexCountRetained": 6908,
+      "minimumTriangleAreaRatio": 0.01633872960756638,
+      "medianTriangleAreaRatio": 1.1095091820074865,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central cortical branch left",
+      "maximumDisplacementMm": 26.33598706751041,
+      "movedVertices": 3655,
+      "triangleCountRetained": 7196,
+      "vertexCountRetained": 3655,
+      "minimumTriangleAreaRatio": 0.04297397678326988,
+      "medianTriangleAreaRatio": 1.0651655638780264,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central distal ramus right",
+      "maximumDisplacementMm": 28.5476221749931,
+      "movedVertices": 1553,
+      "triangleCountRetained": 3002,
+      "vertexCountRetained": 1553,
+      "minimumTriangleAreaRatio": 0.014744365437297511,
+      "medianTriangleAreaRatio": 1.2459733679947518,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central distal ramus left",
+      "maximumDisplacementMm": 25.245781474208833,
+      "movedVertices": 1507,
+      "triangleCountRetained": 2908,
+      "vertexCountRetained": 1507,
+      "minimumTriangleAreaRatio": 0.12867206465339745,
+      "medianTriangleAreaRatio": 1.2088467548925819,
+      "unchangedVerticesBitIdentical": true
+    }
+  ],
+  "limitations": [
+    "Atlas teaching reconstruction; anatomical review remains required.",
+    "Common-skin junction topology is retained; this is not a separately segmented lumen.",
+    "Unedited posterior arterial courses and remaining brain/vessel relationships need subsequent regional fitting."
+  ],
+  "status": "rejected-review-only",
+  "appliedToApp": false
+}

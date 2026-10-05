@@ -1,0 +1,89 @@
+{
+  "release": "0.9.18",
+  "productionGeometryChanged": true,
+  "changedArterialLabels": [
+    "MCA superior division right",
+    "Central right",
+    "Central cortical branch right",
+    "MCA superior division left",
+    "Central left",
+    "Central cortical branch left",
+    "Central distal ramus right",
+    "Central distal ramus left"
+  ],
+  "unchangedArterialLabels": 591,
+  "unchangedVenousLabels": 104,
+  "unchangedBrainMeshes": 188,
+  "deferredGroups": [
+    "dural",
+    "brainstem"
+  ],
+  "buildPassed": true,
+  "catalogueValidationPassed": true,
+  "namedParts": 1481,
+  "assetCount": 5,
+  "productionBrowserPassed": true,
+  "browserPageErrors": [],
+  "exportedBuffersExact": true,
+  "courseHashesCurrent": true,
+  "sharedLabelBoundaryMaximumGapMm": 8.996945325634442e-06,
+  "selfIntersectionChecks": [
+    {
+      "node": "MCA superior division right",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "Central right",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "Central cortical branch right",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "MCA superior division left",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "Central left",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "Central cortical branch left",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "Central distal ramus right",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    },
+    {
+      "node": "Central distal ramus left",
+      "beforeNonadjacentTriangleContacts": 0,
+      "afterNonadjacentTriangleContacts": 0
+    }
+  ],
+  "reproductionByteIdentical": true,
+  "publicationRejectionFixtures": 11,
+  "productionAssetHashes": {
+    "brain-context.glb": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+    "venous.glb": "0699bebd7a38b934753f889b03e750d7e42be30559efe7f34a58d2f094c2f92b",
+    "craniofacial.glb": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+    "complete-circulation.glb": "ebf56fca2ca84969a1b014fbed4caa12032c81c9e64aa4a05c55081103dfae63",
+    "complete-anastomoses.glb": "4f2e45a13d20646b95cf320e663772019067dd1313607a2db9eb04a88a2da66d"
+  },
+  "installerChanged": false,
+  "remoteDeploymentPerformed": false,
+  "limitations": [
+    "Checks concern the labelled atlas skin, not a separately segmented lumen or patient anatomy.",
+    "Open cortical tissue surfaces prevent reliable solid containment. Whole-wall triangle contacts and source-bound joins are checked separately.",
+    "Existing proximal tissue contacts are reported, including the retained Sylvian approach. No increase is accepted.",
+    "Guide sheets and ventricular reference surfaces are excluded from tissue contact checks."
+  ]
+}

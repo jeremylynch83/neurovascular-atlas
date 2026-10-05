@@ -1,0 +1,53 @@
+{
+  "release": "0.9.16",
+  "status": "rejected-not-applied",
+  "contextTrial": {
+    "release": "0.9.16",
+    "changes": [
+      {
+        "id": "brain.falx-cerebri",
+        "maximumDisplacementMm": 7.549563241337322,
+        "movedVertices": 1018,
+        "volumeInterpretation": "Local coordinate deformation; tissue volume and clearance are checked separately."
+      },
+      {
+        "id": "brain.tentorium-cerebelli.left",
+        "maximumDisplacementMm": 7.54118168567994,
+        "movedVertices": 261,
+        "volumeInterpretation": "Local coordinate deformation; tissue volume and clearance are checked separately."
+      },
+      {
+        "id": "brain.tentorium-cerebelli.right",
+        "maximumDisplacementMm": 7.54108401796785,
+        "movedVertices": 261,
+        "volumeInterpretation": "Local coordinate deformation; tissue volume and clearance are checked separately."
+      }
+    ],
+    "unchangedBrainSurfaces": 185,
+    "parenchymalSurfacesRetainedExactly": true,
+    "overallSkullRegistrationMatrixRetained": true,
+    "maximumRequestedDisplacementMm": 7.810249675906654,
+    "purpose": "Reconcile the posterior medial dural seam with the unchanged bony torcular region, and create anterior brainstem clearance against the clivus using a smooth posterior adjustment bounded at 6 mm."
+  },
+  "newTissueContacts": [
+    {
+      "vessel": "vein.straight",
+      "tissue": "brain.declive",
+      "before": 0,
+      "after": 91
+    },
+    {
+      "vessel": "vein.galen",
+      "tissue": "brain.culmen",
+      "before": 0,
+      "after": 45
+    },
+    {
+      "vessel": "vein.inferior_sagittal",
+      "tissue": "brain.corpus-callosum",
+      "before": 0,
+      "after": 95
+    }
+  ],
+  "reason": "The falcotentorial guide and neighbouring tissue do not yet support the proposed junction displacement without new unintended contacts. All dural/venous/context geometry is retained in the release."
+}

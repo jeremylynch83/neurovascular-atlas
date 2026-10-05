@@ -1,0 +1,335 @@
+{
+  "release": "0.9.17",
+  "status": "rejected-not-applied",
+  "vessel": "artery.anterior.central_right",
+  "reason": "Shared terminal join refinement failed to converge to a clear bank corridor. The last rejected trial had 38 precentral and 188 postcentral triangle contacts. The original right arterial family is retained. A supported terminal route and regional joined-skin reconstruction are required.",
+  "rejectedGeometry": [
+    {
+      "asset": "arteries",
+      "node": "MCA superior division right",
+      "maximumDisplacementMm": 4.979543394518974,
+      "movedVertices": 953,
+      "triangleCountRetained": 11415,
+      "vertexCountRetained": 6014,
+      "minimumTriangleAreaRatio": 0.6675489062113404,
+      "medianTriangleAreaRatio": 1.0,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central right",
+      "maximumDisplacementMm": 31.608753436469765,
+      "movedVertices": 6977,
+      "triangleCountRetained": 13772,
+      "vertexCountRetained": 7070,
+      "minimumTriangleAreaRatio": 0.03549603970897536,
+      "medianTriangleAreaRatio": 1.0678821799722513,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central cortical branch right",
+      "maximumDisplacementMm": 27.51621767290487,
+      "movedVertices": 3691,
+      "triangleCountRetained": 7264,
+      "vertexCountRetained": 3691,
+      "minimumTriangleAreaRatio": 0.028064198255935445,
+      "medianTriangleAreaRatio": 1.0195492244618454,
+      "unchangedVerticesBitIdentical": true
+    },
+    {
+      "asset": "arteries",
+      "node": "Central distal ramus right",
+      "maximumDisplacementMm": 27.59604785248334,
+      "movedVertices": 1553,
+      "triangleCountRetained": 3002,
+      "vertexCountRetained": 1553,
+      "minimumTriangleAreaRatio": 0.046107619526374294,
+      "medianTriangleAreaRatio": 1.1438207065137025,
+      "unchangedVerticesBitIdentical": true
+    }
+  ],
+  "rejectedContactIterations": [
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.966353656860132,
+          "movedVertices": 744
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9504792995526624,
+          "movedVertices": 449
+        }
+      ],
+      "inputContacts": 150
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9716640545682647,
+          "movedVertices": 790
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9618976498574278,
+          "movedVertices": 469
+        }
+      ],
+      "inputContacts": 170
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9741491769107874,
+          "movedVertices": 837
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.8850861950462893,
+          "movedVertices": 486
+        }
+      ],
+      "inputContacts": 212
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9501529648987828,
+          "movedVertices": 1025
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.959070621914617,
+          "movedVertices": 736
+        }
+      ],
+      "inputContacts": 280
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9368706422769935,
+          "movedVertices": 1055
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9492411925312406,
+          "movedVertices": 831
+        }
+      ],
+      "inputContacts": 272
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9923170364599286,
+          "movedVertices": 1013
+        },
+        {
+          "node": "Central cortical branch right",
+          "maximumDisplacementMm": 2.0643316435317025e-05,
+          "movedVertices": 1
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.8174533510575808,
+          "movedVertices": 710
+        }
+      ],
+      "inputContacts": 198
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.989097627555454,
+          "movedVertices": 766
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9036978678351437,
+          "movedVertices": 453
+        }
+      ],
+      "inputContacts": 182
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.990238876535095,
+          "movedVertices": 1039
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.9011201843878947,
+          "movedVertices": 806
+        }
+      ],
+      "inputContacts": 202
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9706665265131834,
+          "movedVertices": 1138
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.7683382223228025,
+          "movedVertices": 973
+        }
+      ],
+      "inputContacts": 280
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.9174185837078979,
+          "movedVertices": 804
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.6066536168734578,
+          "movedVertices": 456
+        }
+      ],
+      "inputContacts": 208
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.8412691449388197,
+          "movedVertices": 1098
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.5219116262455535,
+          "movedVertices": 941
+        }
+      ],
+      "inputContacts": 276
+    },
+    {
+      "name": "actual-triangle-contact-clearance-right",
+      "selectedNodes": [
+        "Central cortical branch right",
+        "Central distal ramus right",
+        "Central right",
+        "MCA superior division right"
+      ],
+      "fixedBoundaryCoordinates": 467,
+      "changedNodes": [
+        {
+          "node": "Central right",
+          "maximumDisplacementMm": 0.7556923312563146,
+          "movedVertices": 770
+        },
+        {
+          "node": "Central distal ramus right",
+          "maximumDisplacementMm": 0.5046224003369271,
+          "movedVertices": 456
+        }
+      ],
+      "inputContacts": 216
+    }
+  ]
+}

@@ -31,9 +31,28 @@ def validate_brain(manifest):
  for s in rows.values():
   g=s.get('vesselGuide')
   if not g:continue
-  if any(id not in rows or rows[id]['system']!='vein' for id in g['vesselIds']):errors.append(f'{s["id"]}: unknown guide vessel')
+  if any(id not in rows or rows[id]['system'] not in ['vein','artery'] for id in g['vesselIds']):errors.append(f'{s["id"]}: unknown guide vessel')
   if any(id not in rows or not rows[id].get('asset') for id in g['surfaceStructureIds']):errors.append(f'{s["id"]}: unknown guide surface')
   if any(id not in rows or not rows[id].get('surfaceAnchor') for id in g.get('anchorIds',[])):errors.append(f'{s["id"]}: unknown course anchor')
+  keys=g.get('anchorIds',[])
+  if keys:
+   points=s['landmark']['course']
+   if len(points)!=len(keys) or any(max(abs(x-y) for x,y in zip(point,rows[key]['surfaceAnchor']['position']))>1e-4 for point,key in zip(points,keys)):
+    errors.append(f'{s["id"]}: course differs from its bound stations')
+ # Secondary witnesses carry the same stale-asset and triangle checks.
+ for s in rows.values():
+  for a in s.get('secondarySurfaceAnchors',[]):
+   try:
+    target=rows[a['structureId']];node=target['asset']['node']
+    assert a['assetSha256']==sha and a['registrationId']==reg['id']
+    if node not in cache:
+     primitive=doc['meshes'][nodes[node]['mesh']]['primitives'][0];cache[node]=(accessor(primitive['attributes']['POSITION']),accessor(primitive['indices']))
+    vertices,indices=cache[node];weights=a['barycentric'];triangle=a['triangleIndex']
+    assert isinstance(triangle,int) and 0<=3*triangle<len(indices)-2
+    assert len(weights)==3 and all(math.isfinite(x) and -1e-6<=x<=1+1e-6 for x in weights) and abs(sum(weights)-1)<1e-6
+    p=[sum(weights[j]*vertices[indices[3*triangle+j][0]][k] for j in range(3)) for k in range(3)]
+    assert max(abs(x-y) for x,y in zip(p,a['position']))<1e-4
+   except (AssertionError,KeyError,ValueError,IndexError) as e:errors.append(f'{s["id"]}: invalid secondary surface anchor {e}')
  return errors
 if __name__=='__main__':
  manifest=json.loads((ROOT/'public/anatomy/manifest.json').read_text());errors=validate_brain(manifest)

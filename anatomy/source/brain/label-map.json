@@ -1030,5 +1030,101 @@
     "name": "Fornix, left",
     "sourceLabel": "Fornix.l",
     "parent": "brain.deep"
+  },
+  {
+    "id": "brain.optic-tract.right",
+    "name": "Optic tract, right",
+    "sourceLabel": "Optic tract.r",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.optic-tract.left",
+    "name": "Optic tract, left",
+    "sourceLabel": "Optic tract.l",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.optic-chiasm.right",
+    "name": "Optic chiasm, right",
+    "sourceLabel": "Optic chiasm.r",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.optic-chiasm.left",
+    "name": "Optic chiasm, left",
+    "sourceLabel": "Optic chiasm.l",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.central-sulcus.left",
+    "name": "Central sulcus, left",
+    "sourceLabel": "Central sulcus.l",
+    "parent": "brain.cerebrum.left.cortical-regions"
+  },
+  {
+    "id": "brain.parieto-occipital-sulcus.left",
+    "name": "Parieto-occipital sulcus, left",
+    "sourceLabel": "Parieto-occipital sulcus.l",
+    "parent": "brain.cerebrum.left.cortical-regions"
+  },
+  {
+    "id": "brain.circular-sulcus-of-insula.left",
+    "name": "Circular sulcus of insula, left",
+    "sourceLabel": "Circular sulcus of insula.l",
+    "parent": "brain.cerebrum.left.cortical-regions"
+  },
+  {
+    "id": "brain.lat-fis-post.left",
+    "name": "Lateral fissure, posterior ramus, left",
+    "sourceLabel": "Lat_Fis-post.l",
+    "parent": "brain.cerebrum.left.cortical-regions"
+  },
+  {
+    "id": "brain.central-sulcus.right",
+    "name": "Central sulcus, right",
+    "sourceLabel": "Central sulcus.r",
+    "parent": "brain.cerebrum.right.cortical-regions"
+  },
+  {
+    "id": "brain.parieto-occipital-sulcus.right",
+    "name": "Parieto-occipital sulcus, right",
+    "sourceLabel": "Parieto-occipital sulcus.r",
+    "parent": "brain.cerebrum.right.cortical-regions"
+  },
+  {
+    "id": "brain.circular-sulcus-of-insula.right",
+    "name": "Circular sulcus of insula, right",
+    "sourceLabel": "Circular sulcus of insula.r",
+    "parent": "brain.cerebrum.right.cortical-regions"
+  },
+  {
+    "id": "brain.lat-fis-post.right",
+    "name": "Lateral fissure, posterior ramus, right",
+    "sourceLabel": "Lat_Fis-post.r",
+    "parent": "brain.cerebrum.right.cortical-regions"
+  },
+  {
+    "id": "brain.globus-pallidus.right",
+    "name": "Globus pallidus, right",
+    "sourceLabel": "Globus pallidus.r",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.globus-pallidus.left",
+    "name": "Globus pallidus, left",
+    "sourceLabel": "Globus pallidus.l",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.putamen.right",
+    "name": "Putamen, right",
+    "sourceLabel": "Putamen.r",
+    "parent": "brain.deep"
+  },
+  {
+    "id": "brain.putamen.left",
+    "name": "Putamen, left",
+    "sourceLabel": "Putamen.l",
+    "parent": "brain.deep"
   }
 ]

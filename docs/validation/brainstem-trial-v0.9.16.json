@@ -1,0 +1,107 @@
+{
+  "release": "0.9.16",
+  "status": "rejected-not-applied",
+  "trial": "6 mm posterior brainstem and fourth ventricular shear",
+  "changes": [
+    {
+      "id": "brain.superior-cerebellar-peduncle.left",
+      "maximumDisplacementMm": 6.0,
+      "minJacobianDeterminant": 1.00000000000189,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.superior-cerebellar-peduncle.right",
+      "maximumDisplacementMm": 6.0,
+      "minJacobianDeterminant": 1.00000000000189,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.pons.right",
+      "maximumDisplacementMm": 6.000003814697266,
+      "minJacobianDeterminant": 0.9999999999894555,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.pons.left",
+      "maximumDisplacementMm": 6.000003814697266,
+      "minJacobianDeterminant": 0.9999999999876792,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.fourth-ventricle",
+      "maximumDisplacementMm": 6.0,
+      "minJacobianDeterminant": 1.00000000000189,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.medulla-oblongata.left",
+      "maximumDisplacementMm": 6.000003814697266,
+      "minJacobianDeterminant": 1.00000000000189,
+      "isClosed": true,
+      "volumeChangePercent": 0.5051270826090803
+    },
+    {
+      "id": "brain.medulla-oblongata.right",
+      "maximumDisplacementMm": 6.000003814697266,
+      "minJacobianDeterminant": 1.00000000000189,
+      "isClosed": true,
+      "volumeChangePercent": 0.5046897224022517
+    },
+    {
+      "id": "brain.tentorium-cerebelli.right",
+      "maximumDisplacementMm": 7.541082300786558,
+      "minJacobianDeterminant": 0.31421849285971193,
+      "isClosed": true,
+      "volumeChangePercent": 1.7008661356145538
+    },
+    {
+      "id": "brain.falx-cerebri",
+      "maximumDisplacementMm": 7.54956521296717,
+      "minJacobianDeterminant": 0.16762061996148545,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.tentorium-cerebelli.left",
+      "maximumDisplacementMm": 7.541179985174219,
+      "minJacobianDeterminant": 0.3141118927762851,
+      "isClosed": true,
+      "volumeChangePercent": 1.6996480848640028
+    },
+    {
+      "id": "brain.midbrain.right",
+      "maximumDisplacementMm": 5.322837829589844,
+      "minJacobianDeterminant": 0.9999999999947846,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.midbrain.left",
+      "maximumDisplacementMm": 5.323020935058594,
+      "minJacobianDeterminant": 1.00000000000189,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.base-of-peduncle.right",
+      "maximumDisplacementMm": 5.08917236328125,
+      "minJacobianDeterminant": 0.9999999999947846,
+      "isClosed": false,
+      "volumeChangePercent": null
+    },
+    {
+      "id": "brain.base-of-peduncle.left",
+      "maximumDisplacementMm": 5.0909881591796875,
+      "minJacobianDeterminant": 0.9999999999947846,
+      "isClosed": false,
+      "volumeChangePercent": null
+    }
+  ],
+  "reason": "Cleared clival bone contacts but introduced medulla\u2013tonsil surface crossings, 206 left and 207 right versus zero in the baseline. Pons\u2013tonsil contacts increased from 36 to 115 per side. This fails the neighbour continuity constraint.",
+  "retainedBehaviour": "Original brainstem context and brainstem vessel geometry remain in the runnable release. Exposed-surface projection without a supported cisternal corridor is blocked."
+}

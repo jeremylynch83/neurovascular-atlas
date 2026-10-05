@@ -59,6 +59,10 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     for (const id of ids) next.set(id, state);
     return next;
   });
+  const changeClip = (next: typeof clip) => {
+    setFocusedId(null);
+    setClip(next);
+  };
 
   const select = (s: Structure) => {
     setSelectedId(s.id); setFocusedId(null); setQuery('');
@@ -94,7 +98,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   };
 
   return <div className="atlas-app" onClickCapture={e => {
-    if (focusedId && !(e.target as Element).closest('[data-focus-control]')) setFocusedId(null);
+    if (focusedId && !(e.target as Element).closest('[data-focus-control], .clip-tools')) setFocusedId(null);
   }}>
     <div className="atlas-stage" ref={stage} />
     <header className="identity">
@@ -138,7 +142,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
         <button disabled={!ready || !selectedGeometry.length} onClick={() => changeVisibility(selectedGeometry, selectedHidden ? 'on' : 'off')}>{selectedHidden ? 'Show' : 'Hide'}</button>
       </div>
       <div className="views"><button onClick={()=>engine.current?.setView('front')}>AP</button><button onClick={()=>engine.current?.setView('left')}>L</button><button onClick={()=>engine.current?.setView('right')}>R</button><button onClick={()=>engine.current?.setView('superior')}>Sup</button><button onClick={()=>engine.current?.setView('inferior')}>Inf</button></div>
-      <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>setClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>setClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>setClip({...clip,offset:Number(e.target.value)})}/></div>
+      <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>changeClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>changeClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>changeClip({...clip,offset:Number(e.target.value)})}/></div>
     </div>
     </div>
 
@@ -181,6 +185,9 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect}:{open:boole
     {structure.aliases.length>0&&<section><h3>Alternate names</h3><p>{structure.aliases.join(' · ')}</p></section>}
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
     {structure.description?.trim()&&<Description text={structure.description} byId={byId} onSelect={onSelect} />}
+    {structure.vesselCourse?.scope==='intracranial'&&<section><h3>Anatomical course</h3><p>{structure.vesselCourse.summary}</p>
+      <p>{structure.vesselCourse.targetStructureIds.map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();const target=byId.get(id);if(target)onSelect(target);}}>{byId.get(id)?.name}</a></span>)}</p>
+    </section>}
     {structure.vesselGuide&&<section><h3>Vessel course guides</h3><p>{structure.vesselGuide.vesselNames.join(' · ')}</p><p>Regional orientation points; vessel courses require individual fitting.</p></section>}
     {groups.size>0&&<section><h3>Relationships</h3>{[...groups].map(([type,ids])=><div className="relationship" key={type}><b>{type.replaceAll('_',' ').replace(/^./,letter=>letter.toUpperCase())}: </b>{[...ids].map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();onSelect(byId.get(id)!);}}>{byId.get(id)!.name}</a></span>)}</div>)}</section>}
     </div>
