@@ -4,6 +4,25 @@ export type GeometryStatus = 'planned' | 'placeholder' | 'master' | 'web-optimis
 export type LayerState = 'on' | 'ghost' | 'off';
 
 export interface AssetRef { file: string; node: string }
+export interface SurfaceAnchor {
+  structureId: string;
+  triangleIndex: number;
+  barycentric: [number, number, number];
+  position: [number, number, number];
+  assetSha256: string;
+  registrationId: string;
+}
+export interface BrainRegistration {
+  id: string;
+  coordinateSystem: 'RAS';
+  units: 'mm';
+  matrixFromSourceOrientation: number[][];
+  sourceAssetSha256: string;
+  registeredAssetSha256: string;
+  method: string;
+  status: string;
+  limitations: string;
+}
 export interface Provenance {
   sourceType: 'scan-derived' | 'atlas-derived' | 'teaching-reconstruction' | 'reference-defined' | 'legacy-placeholder';
   confidence: string;
@@ -27,7 +46,11 @@ export interface Structure {
   notes?: string;
   color?: string;
   displayGroup?: 'anastomoses';
+  anatomy?: { category: string; sourceLabel: string; registrationId: string; bounds: number[][]; centroid: [number, number, number] };
+  surfaceAnchor?: SurfaceAnchor;
+  vesselGuide?: { role: 'course-guide'; vesselNames: string[]; vesselIds: string[]; surfaceStructureIds: string[]; anchorIds?: string[] };
   landmark?: {
+    kind?: 'brain-surface' | 'brain-course';
     status: 'visible' | 'partial' | 'regional' | 'unresolved' | 'variant-unresolved' | 'bone-unavailable';
     point: [number, number, number] | null;
     course: [number, number, number][];
@@ -47,6 +70,7 @@ export interface AnatomyManifest {
   assetRevisions?: Record<string, string>;
   assetByteSizes?: Record<string, number>;
   reference?: { case: string; pipelineVersion: string };
+  brainRegistration?: BrainRegistration;
   structures: Structure[];
   relationships: Relationship[];
   sources: SourceRef[];

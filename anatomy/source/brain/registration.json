@@ -1,0 +1,78 @@
+{
+  "matrix": [
+    [
+      -0.9689975810000006,
+      -0.00016723059068858651,
+      -9.279822799189383e-05,
+      0.6359182504845362
+    ],
+    [
+      -9.288495756585614e-05,
+      0.0005026084331349398,
+      0.9689974650733518,
+      -59.087590342194126
+    ],
+    [
+      -0.00016718243400093855,
+      0.9689974550947628,
+      -0.0005026244535256265,
+      87.40590217777478
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scale": 0.9689975998739286,
+  "rotation_radians_after_RAS": [
+    -0.0005186973313420625,
+    -0.00017255617655797539,
+    9.581199948984532e-05
+  ],
+  "skull_residuals": {
+    "Parietal bone.r": {
+      "median_vertex_distance_mm": 0.2640963022765984,
+      "p95_vertex_distance_mm": 1.3256673495239213
+    },
+    "Parietal bone.l": {
+      "median_vertex_distance_mm": 0.2688187284500865,
+      "p95_vertex_distance_mm": 1.111519038466381
+    },
+    "Frontal bone": {
+      "median_vertex_distance_mm": 0.520096097172154,
+      "p95_vertex_distance_mm": 2.101578446095772
+    },
+    "Occipital bone": {
+      "median_vertex_distance_mm": 0.48870713507157726,
+      "p95_vertex_distance_mm": 1.7338499399599654
+    },
+    "Sphenoid bone": {
+      "median_vertex_distance_mm": 0.38087601097986723,
+      "p95_vertex_distance_mm": 2.2746547812396414
+    },
+    "Temporal bone.r": {
+      "median_vertex_distance_mm": 2.078393647633576,
+      "p95_vertex_distance_mm": 5.414847788771894
+    },
+    "Temporal bone.l": {
+      "median_vertex_distance_mm": 2.0435836141268062,
+      "p95_vertex_distance_mm": 5.515525813379202
+    }
+  },
+  "method": "Bone-correspondence similarity ICP, 85% trimmed nearest vertices, robust least squares; 7 cranial bone meshes; source Z-Anatomy skull to retained v0.9.13 skull. No independent brain deformation.",
+  "sourceSkullUrl": "https://github.com/LluisV/Z-Anatomy/blob/PC-Version/Resources/Models/FBX/SkeletalSystem100.fbx",
+  "sourceSkullSha256": "294a649765cd060a62a4095da52b9c8ef2d97769aa447e196448aa5f7d596dea",
+  "sourceOrientationAxes": {
+    "+X": "left",
+    "+Y": "superior",
+    "+Z": "anterior"
+  },
+  "targetAxes": {
+    "+X": "right",
+    "+Y": "anterior",
+    "+Z": "superior"
+  },
+  "sourceOrientationPreprocessing": "FBX object transforms baked; centimetres to millimetres (x10); translated [0,-1620,0] mm before this registration matrix."
+}

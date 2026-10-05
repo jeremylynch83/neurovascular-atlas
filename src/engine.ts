@@ -4,6 +4,7 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
+import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
@@ -44,7 +45,7 @@ function toFloatGeometry(src: THREE.BufferGeometry): THREE.BufferGeometry {
 
 export function pickAnatomy(raycaster: THREE.Raycaster, entries: Entry[], layers: Record<SystemId, LayerState>, clip: THREE.Plane | null, visibility?: ReadonlyMap<string, LayerState>) {
   const selectable = entries
-    .filter(e => e.mesh.visible && !(e.structure.system === 'bone' && (visibility?.get(e.structure.id) ?? layers.bone) === 'ghost'))
+    .filter(e => e.mesh.visible && !(['bone', 'brain'].includes(e.structure.system) && (visibility?.get(e.structure.id) ?? layers[e.structure.system]) === 'ghost'))
     .map(e => e.mesh);
   return raycaster.intersectObjects(selectable, false)
     .find(hit => !clip || clip.distanceToPoint(hit.point) >= 0);
@@ -334,7 +335,8 @@ export class AnatomyEngine {
     if (landmark?.point) {
       const colour = landmark.status === 'visible' ? 0x75d3cc : 0xf2b84b;
       const dot = new THREE.Mesh(new THREE.SphereGeometry(0.6, 12, 8), new THREE.MeshBasicMaterial({color: colour, depthTest: false}));
-      dot.position.fromArray(landmark.point); dot.renderOrder = 20;
+      const anchoredPoint = s?.surfaceAnchor ? this.resolveBrainAnchor(s.id) : null;
+      dot.position.copy(anchoredPoint ?? new THREE.Vector3(...landmark.point)); dot.renderOrder = 20;
       this.landmarkMarker.add(dot);
       if (landmark.course.length > 1) {
         const geometry = new THREE.BufferGeometry().setFromPoints(landmark.course.map(p => new THREE.Vector3(...p)));
@@ -346,12 +348,13 @@ export class AnatomyEngine {
       const ctx = canvas.getContext('2d');
       if (ctx) {
         ctx.fillStyle = 'rgba(17,19,23,0.9)'; ctx.fillRect(0,0,768,96);
-        ctx.fillStyle = '#f5efe2'; ctx.font = '26px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillStyle = '#f5efe2'; ctx.font = landmark.kind ? '32px sans-serif' : '26px sans-serif'; ctx.textAlign = 'center';
         ctx.fillText(s!.name,384,35,748); ctx.fillStyle = '#e4bf80'; ctx.font = '21px sans-serif';
-        ctx.fillText(landmark.status === 'visible' ? 'Opening landmark' : 'Estimated region · lumen not verified',384,72,748);
+        ctx.fillText(landmark.kind ? 'Regional vessel course guide' : landmark.status === 'visible' ? 'Opening landmark' : 'Estimated region · lumen not verified',384,72,748);
         const texture = new THREE.CanvasTexture(canvas);
         const label = new THREE.Sprite(new THREE.SpriteMaterial({map:texture,depthTest:false,depthWrite:false}));
-        label.position.fromArray(landmark.point); label.position.z += 5; label.scale.set(38,4.75,1); label.renderOrder = 21;
+        label.position.fromArray(landmark.point); label.position.z += 5;
+        label.scale.set(landmark.kind ? 76 : 38, landmark.kind ? 9.5 : 4.75, 1); label.renderOrder = 21;
         this.landmarkMarker.add(label);
       }
     }
@@ -370,7 +373,8 @@ export class AnatomyEngine {
   }
 
   private refreshMaterials() {
-    const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers.bone : 'off';
+    const selectedStructure = this.manifest.structures.find(s => s.id === this.selected);
+    const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers[selectedStructure?.system ?? 'bone'] : 'off';
     this.landmarkMarker.visible = markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
     const visibleBatches = new Set<THREE.BatchedMesh>();
     for (const [id, e] of this.entries) {
@@ -493,6 +497,14 @@ export class AnatomyEngine {
     this.render();
   }
   hasGeometry(id: string) { return [...this.segmentMembers.get(id) ?? []].some(key => this.entries.has(key)); }
+  resolveBrainAnchor(id: string): THREE.Vector3 | null {
+    const anchor = this.manifest.structures.find(s => s.id === id)?.surfaceAnchor;
+    const registration = this.manifest.brainRegistration;
+    if (!anchor || !registration) return null;
+    if (anchor.registrationId !== registration.id) throw new Error('Brain anchor registration mismatch');
+    const entry = this.entries.get(anchor.structureId);
+    return entry ? resolveSurfaceAnchor(anchor, entry.mesh.geometry, registration.registeredAssetSha256) : null;
+  }
   // All changes in one browser frame share one render, including React effects
   // and OrbitControls damping. Idle controls still tick without redrawing.
   render() { if (this.disposed) return; this.renderRequested = true; this.requestFrame(); }

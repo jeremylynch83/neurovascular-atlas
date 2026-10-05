@@ -31,7 +31,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const selected = selectedId ? byId.get(selectedId) ?? null : null;
   const selectedGeometry = selected ? subtrees.get(selected.id) ?? [] : [];
   const selectedHidden = selectedGeometry.length > 0 && selectedGeometry.every(id => visibility.get(id) === 'off');
-  const canFocus = !!selected && !!(selected.asset || selected.landmark?.point || manifest.structures.some(s => s.segmentOf === selected.id));
+  const canFocus = !!selected && !!(selected.asset || selected.landmark?.point || (selected.system === 'brain' && selectedGeometry.length) || manifest.structures.some(s => s.segmentOf === selected.id));
   const results = useMemo(() => searchStructures(manifest.structures, query), [manifest.structures, query]);
 
   useEffect(() => {
@@ -66,7 +66,31 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       const veins = manifest.structures.filter(row => row.system === 'vein' && row.asset).map(row => row.id);
       if (veins.every(id => visibility.get(id) === 'off')) changeVisibility(veins, 'on');
     }
+    if (s.system === 'brain') {
+      const ids = s.landmark ? [s.id, ...(s.vesselGuide?.surfaceStructureIds ?? [])] : subtrees.get(s.id) ?? [];
+      changeVisibility(ids.filter(id => visibility.get(id) === 'off'), 'on');
+    }
     if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
+  };
+
+  const orientBrain = (posterior: boolean) => {
+    setFocusedId(null);
+    setVisibility(old => {
+      const next = new Map(old);
+      for (const s of manifest.structures) {
+        if (!(s.asset || s.landmark?.point)) continue;
+        if (s.system === 'bone') next.set(s.id, 'ghost');
+        if (s.system === 'artery') next.set(s.id, 'off');
+        if (s.system === 'vein') next.set(s.id, 'on');
+        if (s.system === 'brain') {
+          const category = s.anatomy?.category;
+          next.set(s.id, s.landmark ? 'off' : category === 'dural_reflections' ? 'ghost' : category === 'cerebral_cortex' ? (posterior ? 'off' : 'ghost') : 'on');
+        }
+      }
+      return next;
+    });
+    setSelectedId(null);
+    engine.current?.focus(posterior ? 'brain.brainstem' : 'brain');
   };
 
   return <div className="atlas-app" onClickCapture={e => {
@@ -79,7 +103,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     <div className="top-actions">
       <div className="search-wrap">
         <span className="search-icon">⌕</span>
-        <input value={query} onChange={(e)=>setQuery(e.target.value)} placeholder="Search vessel, vein, bone or landmark…" aria-label="Search anatomy" />
+        <input value={query} onChange={(e)=>setQuery(e.target.value)} placeholder="Search anatomy or alternate name…" aria-label="Search anatomy" />
         {query && <button className="clear" onClick={()=>setQuery('')} aria-label="Clear search">×</button>}
         {query && <div className="search-results panel">
           {results.length ? results.map((s)=><button key={s.id} onClick={()=>select(s)}>
@@ -96,6 +120,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     <section className="left-panel panel">
       <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={()=>setControlsOpen(!controlsOpen)}>Layers and anatomy</button>
       <div className="panel-body" id="anatomy-panel-body" hidden={!controlsOpen}>
+      {manifest.brainRegistration && <div className="orientation-presets" aria-label="Brain orientation views"><button disabled={!ready} onClick={()=>orientBrain(false)}>Brain overview</button><button disabled={!ready} onClick={()=>orientBrain(true)}>Deep / posterior fossa</button></div>}
       <StructureTree manifest={manifest} byId={byId} subtrees={subtrees} visibility={visibility} selectedId={selectedId} onSelect={select} onVisibility={changeVisibility} />
       </div>
     </section>
@@ -153,8 +178,10 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect}:{open:boole
     <button className="panel-title" aria-expanded={open} aria-controls="structure-panel-body" onClick={()=>onOpenChange(!open)}><span className="structure-title">{structure.name}</span></button>
     <div className="detail-body" id="structure-panel-body" hidden={!open}>
     <div className="detail-system">{structure.system}</div>
+    {structure.aliases.length>0&&<section><h3>Alternate names</h3><p>{structure.aliases.join(' · ')}</p></section>}
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
     {structure.description?.trim()&&<Description text={structure.description} byId={byId} onSelect={onSelect} />}
+    {structure.vesselGuide&&<section><h3>Vessel course guides</h3><p>{structure.vesselGuide.vesselNames.join(' · ')}</p><p>Regional orientation points; vessel courses require individual fitting.</p></section>}
     {groups.size>0&&<section><h3>Relationships</h3>{[...groups].map(([type,ids])=><div className="relationship" key={type}><b>{type.replaceAll('_',' ').replace(/^./,letter=>letter.toUpperCase())}: </b>{[...ids].map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();onSelect(byId.get(id)!);}}>{byId.get(id)!.name}</a></span>)}</div>)}</section>}
     </div>
   </section>;
@@ -180,7 +207,7 @@ function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
         <li><strong>Inter Tight, JetBrains Mono and Source Serif 4</strong>, distributed through Fontsource: interface typography. SIL Open Font Licence 1.1.</li>
       </ul>
       <h3>Anatomical model credits</h3>
-      <ul><li><strong>BodyParts3D</strong>, © The Database Center for Life Science: source geometry for bony anatomical context. CC BY-SA 2.1 Japan.</li></ul>
+      <ul><li><strong>BodyParts3D</strong>, © The Database Center for Life Science: source geometry for bony anatomical context. CC BY-SA 2.1 Japan.</li><li><strong><a href="https://www.z-anatomy.com/" target="_blank" rel="noopener noreferrer">Z-Anatomy</a></strong>: brain, ventricles, falx and tentorium, registered to this atlas. Adapted surfaces: CC BY-SA 4.0, with original BodyParts3D credit retained. <a href={`${import.meta.env.BASE_URL}anatomy/licenses/Z_Anatomy_Source_Licence.txt`} target="_blank" rel="noopener noreferrer">Source licence and credits</a>.</li></ul>
       <h3>Anatomical references</h3>
       <ul>
         <li><strong>Jeremy Lynch, Shelley Renowden and Philip White</strong>, editors. <a href="https://academic.oup.com/book/63036" target="_blank" rel="noopener noreferrer"><em>Neurointervention</em></a>. Oxford Specialist Handbooks. Oxford University Press, 2026.</li>

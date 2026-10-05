@@ -1,0 +1,118 @@
+{
+  "release": "0.9.14",
+  "registration": {
+    "matrix": [
+      [
+        -0.9689975810000006,
+        -0.00016723059068858651,
+        -9.279822799189383e-05,
+        0.6359182504845362
+      ],
+      [
+        -9.288495756585614e-05,
+        0.0005026084331349398,
+        0.9689974650733518,
+        -59.087590342194126
+      ],
+      [
+        -0.00016718243400093855,
+        0.9689974550947628,
+        -0.0005026244535256265,
+        87.40590217777478
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 0.9689975998739286,
+    "rotation_radians_after_RAS": [
+      -0.0005186973313420625,
+      -0.00017255617655797539,
+      9.581199948984532e-05
+    ],
+    "skull_residuals": {
+      "Parietal bone.r": {
+        "median_vertex_distance_mm": 0.2640963022765984,
+        "p95_vertex_distance_mm": 1.3256673495239213
+      },
+      "Parietal bone.l": {
+        "median_vertex_distance_mm": 0.2688187284500865,
+        "p95_vertex_distance_mm": 1.111519038466381
+      },
+      "Frontal bone": {
+        "median_vertex_distance_mm": 0.520096097172154,
+        "p95_vertex_distance_mm": 2.101578446095772
+      },
+      "Occipital bone": {
+        "median_vertex_distance_mm": 0.48870713507157726,
+        "p95_vertex_distance_mm": 1.7338499399599654
+      },
+      "Sphenoid bone": {
+        "median_vertex_distance_mm": 0.38087601097986723,
+        "p95_vertex_distance_mm": 2.2746547812396414
+      },
+      "Temporal bone.r": {
+        "median_vertex_distance_mm": 2.078393647633576,
+        "p95_vertex_distance_mm": 5.414847788771894
+      },
+      "Temporal bone.l": {
+        "median_vertex_distance_mm": 2.0435836141268062,
+        "p95_vertex_distance_mm": 5.515525813379202
+      }
+    },
+    "method": "Bone-correspondence similarity ICP, 85% trimmed nearest vertices, robust least squares; 7 cranial bone meshes; source Z-Anatomy skull to retained v0.9.13 skull. No independent brain deformation.",
+    "sourceSkullUrl": "https://github.com/LluisV/Z-Anatomy/blob/PC-Version/Resources/Models/FBX/SkeletalSystem100.fbx",
+    "sourceSkullSha256": "294a649765cd060a62a4095da52b9c8ef2d97769aa447e196448aa5f7d596dea",
+    "sourceOrientationAxes": {
+      "+X": "left",
+      "+Y": "superior",
+      "+Z": "anterior"
+    },
+    "targetAxes": {
+      "+X": "right",
+      "+Y": "anterior",
+      "+Z": "superior"
+    },
+    "sourceOrientationPreprocessing": "FBX object transforms baked; centimetres to millimetres (x10); translated [0,-1620,0] mm before this registration matrix."
+  },
+  "surfaces": 172,
+  "triangles": 363132,
+  "baseline_asset_hashes": {
+    "public/anatomy/models/complete-anastomoses.glb": "4f2e45a13d20646b95cf320e663772019067dd1313607a2db9eb04a88a2da66d",
+    "public/anatomy/models/complete-circulation.glb": "80fe4a34a46b2ee4c56a786e314b262bd0df9821841349e5c21fb8d4bd22993f",
+    "public/anatomy/models/craniofacial.glb": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+    "public/anatomy/models/venous.glb": "0699bebd7a38b934753f889b03e750d7e42be30559efe7f34a58d2f094c2f92b"
+  },
+  "baseline_catalogue_preserved": true,
+  "laterality": "All sided mesh centroids retain RAS laterality",
+  "sampled_skull_proximity": {
+    "cerebral_cortex": {
+      "sampled_vertices": 5451,
+      "minimum_skull_surface_distance_mm": 0.0028299466852110774,
+      "median_skull_surface_distance_mm": 9.4331312338928,
+      "within_0_5_mm_count": 122
+    },
+    "cerebellum": {
+      "sampled_vertices": 5058,
+      "minimum_skull_surface_distance_mm": 0.0036039504633884212,
+      "median_skull_surface_distance_mm": 14.775110990531115,
+      "within_0_5_mm_count": 80
+    },
+    "brainstem": {
+      "sampled_vertices": 5672,
+      "minimum_skull_surface_distance_mm": 0.0014160202689579475,
+      "median_skull_surface_distance_mm": 12.290870244877938,
+      "within_0_5_mm_count": 248
+    },
+    "dural_reflections": {
+      "sampled_vertices": 5788,
+      "minimum_skull_surface_distance_mm": 0.0032227360063627826,
+      "median_skull_surface_distance_mm": 10.730753286121594,
+      "within_0_5_mm_count": 468
+    }
+  },
+  "scope": "Shared atlas registration. Nearest-vertex skull registration residuals and sampled surface proximity are not patient accuracy estimates or exhaustive intersection tests. Visual review includes AP, lateral section, superior and posterior fossa views."
+}

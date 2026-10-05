@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {pathToFileURL} from 'node:url';
+const {build}=await import(pathToFileURL(`${process.env.VENOUS_QA_MODULES}/esbuild/lib/main.js`));
+for(const name of ['brainAnchors','catalogue','engine'])await build({entryPoints:[`src/${name}.ts`],bundle:true,platform:'node',format:'esm',packages:'external',outfile:`tools/.qa/${name}.mjs`});
+const {resolveSurfaceAnchor,vesselCourseGuides}=await import('./.qa/brainAnchors.mjs');
+const {segmentGeometryMembers,searchStructures}=await import('./.qa/catalogue.mjs');
+const {pickAnatomy}=await import('./.qa/engine.mjs');
+const manifest=JSON.parse(fs.readFileSync('public/anatomy/manifest.json'));const bytes=fs.readFileSync('public/anatomy/models/brain-context.glb');const loader=new GLTFLoader();const gltf=await loader.parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');gltf.scene.updateMatrixWorld(true);const meshes=new Map();gltf.scene.traverse(o=>{if(o.isMesh){const a=gltf.parser.associations.get(o);meshes.set(gltf.parser.json.nodes[a.nodes].name,o)}});
+assert.equal(meshes.size,172);
+let count=0;
+for(const s of manifest.structures){if(!s.surfaceAnchor)continue;const a=s.surfaceAnchor;const mesh=meshes.get(a.structureId);assert(mesh);const point=resolveSurfaceAnchor(a,mesh.geometry,manifest.brainRegistration.registeredAssetSha256);assert(point.distanceTo(new THREE.Vector3(...s.landmark.point))<.0001);assert.throws(()=>resolveSurfaceAnchor(a,mesh.geometry,'stale'));count++}
+assert.equal(count,69);
+const members=segmentGeometryMembers(manifest.structures);assert.equal(members.get('brain').size,172);assert(members.get('brain.cerebellum').size===31);assert(members.get('brain.brainstem').size===12);
+assert(searchStructures(manifest.structures,'brachium conjunctivum').some(s=>s.id==='brain.superior-cerebellar-peduncle.left'));
+assert(vesselCourseGuides(manifest,'vein.basal.left').length>0);
+const make=(system,z)=>{const mesh=new THREE.Mesh(new THREE.SphereGeometry(1),new THREE.MeshBasicMaterial());mesh.position.z=z;mesh.updateMatrixWorld();return {mesh,structure:{id:system,system},baseOpacity:1}};
+const entries=[make('brain',4),make('vein',0)];const ray=new THREE.Raycaster(new THREE.Vector3(0,0,10),new THREE.Vector3(0,0,-1));
+assert.equal(pickAnatomy(ray,entries,{brain:'ghost',vein:'on'},null).object,entries[1].mesh);
+assert.equal(pickAnatomy(ray,entries,{brain:'on',vein:'on'},null).object,entries[0].mesh);
+assert.equal(pickAnatomy(ray,entries,{brain:'on',vein:'on'},null,new Map([['brain','ghost']])).object,entries[1].mesh);
+const report={release:manifest.release,meshes:meshes.size,surfaceAnchors:count,exactSurfaceBindings:true,staleAssetRejected:true,brainGroupMembership:true,aliasSearch:true,vesselGuideLookup:true,ghostBrainClickThrough:true,scope:'Actual GLTF loader, Three.js geometry and ray tests; GPU appearance checked separately in browser.'};fs.writeFileSync('docs/validation/brain-viewer-v0.9.14.json',JSON.stringify(report,null,2)+'\n');console.log(report);

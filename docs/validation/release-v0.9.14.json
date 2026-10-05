@@ -1,0 +1,23 @@
+{
+  "release": "0.9.14",
+  "baseline": "0.9.13",
+  "brainMeshes": 172,
+  "brainTriangles": 363132,
+  "surfaceBoundGuides": 69,
+  "sparseCourseGuides": 2,
+  "catalogueValidation": "passed",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "browserProductionInteractions": "passed",
+  "originalAssetBytePreservation": "passed",
+  "originalCatalogueRowPreservation": "passed",
+  "vesselRefitting": "not performed; original geometry retained",
+  "licence": "Adapted brain geometry CC BY-SA 4.0; source credits retained",
+  "knownLimits": [
+    "Atlas registration, not patient-specific.",
+    "Temporal source skull differences exceed those of the cranial vault.",
+    "Regional guide selection is approximate; triangle binding is exact on this mesh.",
+    "Simplified cerebellar lobules; middle and inferior cerebellar peduncles not separately labelled by source.",
+    "Physical GPU performance not benchmarked."
+  ]
+}

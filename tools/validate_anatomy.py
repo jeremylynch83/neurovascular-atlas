@@ -7,6 +7,7 @@ seed atlas-derived vascular geometry. Medical-image segmentation remains a separ
 from __future__ import annotations
 import argparse, json, struct, shutil, hashlib, math
 from pathlib import Path
+from brain.validate_brain import validate_brain
 
 ROOT=Path(__file__).resolve().parents[1]
 CAT=ROOT/'anatomy'/'catalogue'
@@ -89,6 +90,7 @@ def validate_eca(build=False, filename="eca_manifest.json", output="eca-manifest
             errors.append('ECA: relationship references an unknown structure')
         elif r['type']=='branches_to' and byid[r['to']]['parent']!=r['from']:
             errors.append('ECA: branching relationship differs from hierarchy')
+    errors.extend(validate_brain(manifest))
     if build and not errors:
         manifest['release']=RELEASE
         manifest['assetRevisions']={str(p.relative_to(PUBLIC)):hashlib.sha256(p.read_bytes()).hexdigest()[:20] for p in assets}

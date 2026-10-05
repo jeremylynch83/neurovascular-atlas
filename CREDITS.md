@@ -17,3 +17,5 @@ Anatomical reference catalogue informed by:
 The skull-base venous review also credits the primary studies by San Millán Ruïz et al., Tubbs et al., Ekanem et al. and Evans et al. listed with links in [VENOUS_v0.9.6.md](docs/VENOUS_v0.9.6.md). Detailed structure provenance is retained in the anatomy manifest.
 
 References inform reconstructions and descriptions. Book figures and downloaded angiographic reference images are not distributed inside the application.
+
+- **Z-Anatomy brain and dura**: 172 selected surfaces from the official PC-Version FBX collection, registered and labelled for Neurovascular Atlas. CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), with original BodyParts3D / Database Center for Life Science credit retained. Both `anatomy/source/brain/source-orientation.glb` and `public/anatomy/models/brain-context.glb` are share-alike model assets. Adaptations: object transforms baked, units converted, shared skull registration, triangulation, normals and label metadata. Original licence: `public/anatomy/licenses/Z_Anatomy_Source_Licence.txt`.

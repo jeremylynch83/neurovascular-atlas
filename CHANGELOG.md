@@ -1,3 +1,12 @@
+# v0.9.14
+
+- Register Z-Anatomy brain and dural surfaces to the retained v0.9.13 skull through seven corresponding cranial bones.
+- Add 172 named surface meshes, 69 triangle-bound regional vessel guides and two sparse course-guide sequences.
+- Add brain orientation views, group focus, searchable labels and visible alternate names.
+- Make translucent brain surfaces pass clicks through to vessels.
+- Preserve the original four skull and vascular assets byte-for-byte. Existing vessels are not refitted.
+- Include source attribution, transformation/provenance, machine-readable guide data and validation reports.
+
 # v0.9.13
 
 - Remove the upper cavernous ICA sleeve and rebuild one slim cavity with curved walls and an independently defined roof.

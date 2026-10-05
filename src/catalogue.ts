@@ -13,7 +13,10 @@ export function segmentGeometryMembers(structures: Structure[]): Map<string, Set
       visited.add(cursor.id);
       if (!members.has(cursor.id)) members.set(cursor.id, new Set());
       members.get(cursor.id)!.add(structure.id);
-      cursor = cursor.segmentOf ? byId.get(cursor.segmentOf) : undefined;
+      // Brain parcels are parts of their containing anatomy, so a hemisphere
+      // or brainstem group can be focused/highlighted without duplicate meshes.
+      const owner: string | null = cursor.segmentOf ?? (cursor.system === 'brain' ? cursor.parent : null);
+      cursor = owner ? byId.get(owner) : undefined;
     }
   }
   return members;
@@ -36,6 +39,8 @@ export function geometrySubtrees(byId: ReadonlyMap<string, Structure>): Map<stri
 // Keep a vessel's own segments and its immediate named branches/tributaries
 // clear, without following the entire downstream tree or potential connections.
 export function focusGeometryMembers(manifest: AnatomyManifest, id: string): Set<string> {
+  const guide = manifest.structures.find(s => s.id === id)?.vesselGuide;
+  if (guide) return new Set(guide.surfaceStructureIds);
   const members = segmentGeometryMembers(manifest.structures);
   const own = members.get(id) ?? new Set<string>();
   const origins = new Set([id, ...own]);

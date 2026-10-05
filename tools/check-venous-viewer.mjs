@@ -28,7 +28,9 @@ for(const file of new Set(manifest.structures.filter(s=>s.asset).map(s=>s.asset.
  }
 }
 const veins=[...entries.values()].filter(e=>e.structure.system==='vein');assert.equal(veins.length,104);
-const stats=JSON.parse(fs.readFileSync(`docs/validation/venous-morphology-v${manifest.release}.json`));assert.equal(triangles,stats.triangles);
+// Brain-only v0.9.14 retains the v0.9.13 vascular asset byte-for-byte.
+const vascularRelease = manifest.release === '0.9.14' ? '0.9.13' : manifest.release;
+const stats=JSON.parse(fs.readFileSync(`docs/validation/venous-morphology-v${vascularRelease}.json`));assert.equal(triangles,stats.triangles);
 const fixture=(native)=>{const e=Object.create(AnatomyEngine.prototype);Object.assign(e,{manifest,entries,root:new THREE.Group(),vascularBatches:[],landmarkMarker:new THREE.Group(),hidden:new Set(),selected:null,segmentMembers:segmentGeometryMembers(manifest.structures),layers:{bone:'off',artery:'off',vein:'on',brain:'off'},clipEnabled:false,clipPlane:new THREE.Plane(),renderer:{extensions:{has:()=>native}},render:()=>{}});for(const x of entries.values())e.root.add(x.mesh);return e;};
 const e=fixture(true);e.buildVascularBatches();assert.equal(e.vascularBatches.length,2);e.refreshMaterials();
 e.bounds=new THREE.Box3();for(const x of entries.values())e.bounds.union(x.mesh.geometry.boundingBox);
