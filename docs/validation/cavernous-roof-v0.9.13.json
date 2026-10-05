@@ -1,0 +1,34 @@
+{
+  "release": "0.9.13",
+  "results": {
+    "right": {
+      "0.9.12": {
+        "upper_course_samples": 2758,
+        "minimum_distance_to_cavernous_surface_mm": 8.033907831289368e-05,
+        "fraction_within_1mm_of_cavernous_surface": 0.9985496736765772,
+        "maximum_cavernous_label_height_mm": 78.22288513183594
+      },
+      "0.9.13": {
+        "upper_course_samples": 2758,
+        "minimum_distance_to_cavernous_surface_mm": 2.0191398916338423,
+        "fraction_within_1mm_of_cavernous_surface": 0.0,
+        "maximum_cavernous_label_height_mm": 70.08758544921875
+      }
+    },
+    "left": {
+      "0.9.12": {
+        "upper_course_samples": 2770,
+        "minimum_distance_to_cavernous_surface_mm": 0.003347926028609981,
+        "fraction_within_1mm_of_cavernous_surface": 0.9996389891696751,
+        "maximum_cavernous_label_height_mm": 78.30259704589844
+      },
+      "0.9.13": {
+        "upper_course_samples": 2770,
+        "minimum_distance_to_cavernous_surface_mm": 1.9270333313623345,
+        "fraction_within_1mm_of_cavernous_surface": 0.0,
+        "maximum_cavernous_label_height_mm": 70.24238586425781
+      }
+    }
+  },
+  "scope": "Actual cavernous label surface, with fixed arterial slab z=72.5 to 75 mm. Tests absence of upper sleeve, independently of the positive inferior enclosure test. The inferred roof is constrained by model clinoid bone landmarks; it is not a segmented dural ring."
+}

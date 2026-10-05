@@ -1,0 +1,238 @@
+{
+  "release": "0.9.13",
+  "maximum_requested_inferior_adjustment_mm": 0.9,
+  "files": {
+    "circulation-refined.glb": {
+      "changed_meshes": [
+        {
+          "name": "ICA cavernous right",
+          "vertices_moved": 11453,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Meningohypophyseal trunk right",
+          "vertices_moved": 499,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Tentorial marginal right",
+          "vertices_moved": 1129,
+          "maximum_displacement_mm": 0.8920617904854851
+        },
+        {
+          "name": "Dorsal meningeal right",
+          "vertices_moved": 1542,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Inferior hypophyseal right",
+          "vertices_moved": 4594,
+          "maximum_displacement_mm": 0.8948484410467898
+        },
+        {
+          "name": "Inferolateral trunk right",
+          "vertices_moved": 355,
+          "maximum_displacement_mm": 0.2630641005869734
+        },
+        {
+          "name": "ICA cavernous left",
+          "vertices_moved": 11647,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Meningohypophyseal trunk left",
+          "vertices_moved": 433,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Tentorial marginal left",
+          "vertices_moved": 1138,
+          "maximum_displacement_mm": 0.897193275240582
+        },
+        {
+          "name": "Dorsal meningeal left",
+          "vertices_moved": 1539,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Inferior hypophyseal left",
+          "vertices_moved": 5555,
+          "maximum_displacement_mm": 0.8961628366724455
+        },
+        {
+          "name": "Inferolateral trunk left",
+          "vertices_moved": 267,
+          "maximum_displacement_mm": 0.14843384661296
+        },
+        {
+          "name": "Artery of foramen rotundum",
+          "vertices_moved": 201,
+          "maximum_displacement_mm": 0.07838394209000654
+        },
+        {
+          "name": "Accessory meningeal",
+          "vertices_moved": 203,
+          "maximum_displacement_mm": 0.08222612302083121
+        },
+        {
+          "name": "MMA cavernous",
+          "vertices_moved": 1061,
+          "maximum_displacement_mm": 0.2151252990243293
+        },
+        {
+          "name": "Medial clival",
+          "vertices_moved": 1441,
+          "maximum_displacement_mm": 0.11378115962977375
+        },
+        {
+          "name": "Artery of foramen rotundum left",
+          "vertices_moved": 201,
+          "maximum_displacement_mm": 0.07706569541512209
+        },
+        {
+          "name": "Accessory meningeal left",
+          "vertices_moved": 184,
+          "maximum_displacement_mm": 0.0735165272774978
+        },
+        {
+          "name": "MMA cavernous left",
+          "vertices_moved": 1034,
+          "maximum_displacement_mm": 0.2180436486869226
+        },
+        {
+          "name": "Medial clival left",
+          "vertices_moved": 1481,
+          "maximum_displacement_mm": 0.32807874604017684
+        },
+        {
+          "name": "Lateral clival left",
+          "vertices_moved": 19,
+          "maximum_displacement_mm": 8.986965480062281e-05
+        },
+        {
+          "name": "Basal tentorial MHT branch right",
+          "vertices_moved": 1205,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Basal tentorial MHT branch left",
+          "vertices_moved": 1186,
+          "maximum_displacement_mm": 0.9000000000000057
+        },
+        {
+          "name": "Lateral clival MHT branch right",
+          "vertices_moved": 894,
+          "maximum_displacement_mm": 0.8975326860826982
+        },
+        {
+          "name": "Lateral clival MHT branch left",
+          "vertices_moved": 892,
+          "maximum_displacement_mm": 0.8999999999999986
+        },
+        {
+          "name": "ILT superior ramus right",
+          "vertices_moved": 975,
+          "maximum_displacement_mm": 0.29610163613486407
+        },
+        {
+          "name": "ILT superior ramus left",
+          "vertices_moved": 717,
+          "maximum_displacement_mm": 0.19215634181448138
+        },
+        {
+          "name": "ILT recurrent lacerum ramus right",
+          "vertices_moved": 790,
+          "maximum_displacement_mm": 0.8637272270620358
+        },
+        {
+          "name": "ILT recurrent lacerum ramus left",
+          "vertices_moved": 816,
+          "maximum_displacement_mm": 0.8596334025494841
+        },
+        {
+          "name": "MMA anterior cavernous right",
+          "vertices_moved": 650,
+          "maximum_displacement_mm": 0.23389643510562763
+        },
+        {
+          "name": "MMA anterior cavernous left",
+          "vertices_moved": 633,
+          "maximum_displacement_mm": 0.21639922070731643
+        },
+        {
+          "name": "MMA posterior cavernous right",
+          "vertices_moved": 302,
+          "maximum_displacement_mm": 0.1865913089420843
+        },
+        {
+          "name": "Accessory meningeal posterior intracranial right",
+          "vertices_moved": 301,
+          "maximum_displacement_mm": 0.3676238892948689
+        },
+        {
+          "name": "Accessory meningeal posterior intracranial left",
+          "vertices_moved": 280,
+          "maximum_displacement_mm": 0.30710036010922437
+        }
+      ],
+      "minimum_coordinate_field_jacobian_determinant": 0.7300000172186829,
+      "unchanged_vertices_bit_identical": true
+    },
+    "anastomoses-refined.glb": {
+      "changed_meshes": [
+        {
+          "name": "Accessory meningeal\u2013ILT right",
+          "vertices_moved": 103,
+          "maximum_displacement_mm": 0.3649713288077976
+        },
+        {
+          "name": "MMA cavernous\u2013ILT right",
+          "vertices_moved": 193,
+          "maximum_displacement_mm": 0.30174030583992817
+        },
+        {
+          "name": "Accessory meningeal\u2013ILT left",
+          "vertices_moved": 81,
+          "maximum_displacement_mm": 0.30514545342224153
+        },
+        {
+          "name": "MMA cavernous\u2013ILT left",
+          "vertices_moved": 193,
+          "maximum_displacement_mm": 0.15294246574980264
+        },
+        {
+          "name": "Posterior cavernous MMA\u2013posterolateral ILT right",
+          "vertices_moved": 165,
+          "maximum_displacement_mm": 0.21477165619177896
+        },
+        {
+          "name": "Clival\u2013posterior cavernous MMA right",
+          "vertices_moved": 406,
+          "maximum_displacement_mm": 0.16777357434319384
+        },
+        {
+          "name": "Lateral clival\u2013recurrent ILT right",
+          "vertices_moved": 96,
+          "maximum_displacement_mm": 0.005809048292377383
+        },
+        {
+          "name": "Clival\u2013posterior cavernous MMA left",
+          "vertices_moved": 244,
+          "maximum_displacement_mm": 0.01518513819411993
+        },
+        {
+          "name": "Lateral clival\u2013recurrent ILT left",
+          "vertices_moved": 96,
+          "maximum_displacement_mm": 0.005785131794347365
+        },
+        {
+          "name": "Contralateral lateral clival midline",
+          "vertices_moved": 1545,
+          "maximum_displacement_mm": 0.41089309685478526
+        }
+      ],
+      "minimum_coordinate_field_jacobian_determinant": 0.7527238549718801,
+      "unchanged_vertices_bit_identical": true
+    }
+  }
+}

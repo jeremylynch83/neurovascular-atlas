@@ -1,0 +1,30 @@
+{
+  "release": "0.9.13",
+  "files": [
+    {
+      "source": ".authoring/circulation-refined.glb",
+      "target": "public/anatomy/models/complete-circulation.glb",
+      "buffer_views_verified": 2309,
+      "exact_roundtrip": true,
+      "source_bytes": 150362004,
+      "asset_bytes": 70727584
+    },
+    {
+      "source": ".authoring/anastomoses-refined.glb",
+      "target": "public/anatomy/models/complete-anastomoses.glb",
+      "buffer_views_verified": 463,
+      "exact_roundtrip": true,
+      "source_bytes": 5254104,
+      "asset_bytes": 2973108
+    },
+    {
+      "source": ".authoring/venous/venous-raw.glb",
+      "target": "public/anatomy/models/venous.glb",
+      "buffer_views_verified": 312,
+      "exact_roundtrip": true,
+      "source_bytes": 11955960,
+      "asset_bytes": 6907092
+    }
+  ],
+  "scope": "Exact decoded buffer bytes of final on-disk GLBs compared with raw authoring sources."
+}

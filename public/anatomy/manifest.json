@@ -1,15 +1,15 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.9.12",
+  "release": "0.9.13",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/craniofacial.glb": "8339b8ca742b11268077",
-    "models/complete-circulation.glb": "0d695d3b304bdb9b3d01",
-    "models/complete-anastomoses.glb": "e5cd282e1028ac6daf51",
-    "models/venous.glb": "9c920a77b083b240d050"
+    "models/complete-circulation.glb": "80fe4a34a46b2ee4c56a",
+    "models/complete-anastomoses.glb": "4f2e45a13d20646b95cf",
+    "models/venous.glb": "0699bebd7a38b934753f"
   },
   "structures": [
     {
@@ -51777,8 +51777,8 @@
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/craniofacial.glb": 5014620,
-    "models/complete-circulation.glb": 70727588,
-    "models/complete-anastomoses.glb": 2973236,
-    "models/venous.glb": 6353092
+    "models/complete-circulation.glb": 70727584,
+    "models/complete-anastomoses.glb": 2973108,
+    "models/venous.glb": 6907092
   }
 }

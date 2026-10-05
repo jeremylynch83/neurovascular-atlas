@@ -1,0 +1,17 @@
+{
+  "release": "0.9.13",
+  "units": "model RAS millimetres",
+  "outer_shape": "One ellipsoidal body with height-dependent medial extension, independent of ICA distance",
+  "centre_x": "13 - .08*(z-61) - .08*(y+45) + .012*(y+45)^2 - medial_reach/2",
+  "medial_reach": "2.8*smoothstep((z-61)/5)*(1-smoothstep((y+38)/4))",
+  "half_width": "3.5 + medial_reach/2",
+  "y_centre": -45.8,
+  "y_radius": 13.5,
+  "z_centre": 60.5,
+  "z_radius": 14,
+  "roof": "69.7 + .06*(y+44) - .008*(y+44)^2 - .04*(lateral-11)^2 - .25*exp(-((lateral-14)/2)^2)",
+  "roof_soft_intersection_mm": 0.8,
+  "arterial_lumen_exclusion_mm": 0.22,
+  "bone_clearance_mm": 0.18,
+  "scope": "Inferred reconstruction parameters, not measured anatomy. Arterial surface distance is used only for lumen exclusion."
+}

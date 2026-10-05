@@ -1,3 +1,11 @@
+# v0.9.13
+
+- Remove the upper cavernous ICA sleeve and rebuild one slim cavity with curved walls and an independently defined roof.
+- Lower the intracavernous ICA region smoothly by up to 0.9 mm, preserving shared coordinates across adjoining segments and branches.
+- Fit the medial cavity to the carotid sulcus while retaining the skull and smooth SOV, emissary, SMCV, lesser-wing and petrosal connections.
+- Check inferior ICA enclosure and absence of the upper sleeve separately. The arterial label is not an anatomical dural boundary.
+- Include matched views and coronal sections. Dural roof position remains inferred from model bone landmarks.
+
 # v0.9.12
 
 - Fit the slim cavernous envelope around the retained ICA course and to the medial carotid-sulcus bone.

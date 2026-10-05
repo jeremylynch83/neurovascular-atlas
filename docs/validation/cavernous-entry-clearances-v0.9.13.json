@@ -1,0 +1,138 @@
+{
+  "release": "0.9.13",
+  "entries": {
+    "vein.superficial_middle_cerebral.right": {
+      "shared_junction_vertices": 52,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 2304,
+      "surface_and_centroid_samples": 3506,
+      "minimum_sampled_skull_gap_mm": 1.280451976640788,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.sphenoparietal.right": {
+      "shared_junction_vertices": 26,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1713,
+      "surface_and_centroid_samples": 2622,
+      "minimum_sampled_skull_gap_mm": 0.1447462996337835,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.superior_ophthalmic.right": {
+      "shared_junction_vertices": 25,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1228,
+      "surface_and_centroid_samples": 1889,
+      "minimum_sampled_skull_gap_mm": 0.5211540446475893,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.ovale_emissary.right": {
+      "shared_junction_vertices": 30,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1722,
+      "surface_and_centroid_samples": 2617,
+      "minimum_sampled_skull_gap_mm": 0.24656224803719393,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.superior_petrosal.right": {
+      "shared_junction_vertices": 38,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 649,
+      "surface_and_centroid_samples": 1008,
+      "minimum_sampled_skull_gap_mm": 0.2744573115954464,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.inferior_petrosal.right": {
+      "shared_junction_vertices": 49,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 274,
+      "surface_and_centroid_samples": 459,
+      "minimum_sampled_skull_gap_mm": 0.12173349110852039,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.superficial_middle_cerebral.left": {
+      "shared_junction_vertices": 64,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 2292,
+      "surface_and_centroid_samples": 3496,
+      "minimum_sampled_skull_gap_mm": 1.6979363223228514,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.sphenoparietal.left": {
+      "shared_junction_vertices": 25,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1640,
+      "surface_and_centroid_samples": 2507,
+      "minimum_sampled_skull_gap_mm": 0.11156237981415554,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.superior_ophthalmic.left": {
+      "shared_junction_vertices": 30,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1256,
+      "surface_and_centroid_samples": 1927,
+      "minimum_sampled_skull_gap_mm": 0.5296129910689181,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.ovale_emissary.left": {
+      "shared_junction_vertices": 32,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 1562,
+      "surface_and_centroid_samples": 2375,
+      "minimum_sampled_skull_gap_mm": 0.20010131953191615,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.superior_petrosal.left": {
+      "shared_junction_vertices": 42,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 629,
+      "surface_and_centroid_samples": 978,
+      "minimum_sampled_skull_gap_mm": 0.33317806400380084,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    },
+    "vein.inferior_petrosal.left": {
+      "shared_junction_vertices": 27,
+      "maximum_exported_junction_normal_difference": 0.0,
+      "local_terminal_triangles": 253,
+      "surface_and_centroid_samples": 408,
+      "minimum_sampled_skull_gap_mm": 0.1528965798355121,
+      "triangle_intersection_lines": {
+        "skull": 0,
+        "ICA": 0
+      }
+    }
+  },
+  "scope": "ICA clearance includes the continuous retained petrous, cavernous and paraophthalmic skin. Actual rebuilt terminal triangles strictly inside the regional replacement bounds, excluding the retained overlap collar. Sampled gaps are mesh clearances, not patient measurements or wall thicknesses. Shared normals are checked on the exact exported GLB coordinates."
+}

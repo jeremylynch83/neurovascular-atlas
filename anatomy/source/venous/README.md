@@ -45,3 +45,5 @@ They are not proof of clinical accuracy; see `docs/VENOUS_v0.9.0.md` for limitat
 
 The existing artery and bone assets are read as fixed references and are never
 rewritten by these commands. Reference images and the notes PDF are not included.
+
+The v0.9.13 local reconstruction uses `tools/venous/lower_cavernous_ica_v0913.py`, followed by `tools/venous/refine_cavernous.py`. It requires the v0.9.12 raw artery/anastomotic baseline, the original venous skin, and extracted bone reference. The new outer cavity is independent of artery distance; `cavernous-cavity-v0.9.13.json` records its shape and roof parameters. `cavernous-junction-paths-v0.9.13.json` and `medial-bone-apposition-v0.9.13.json` preserve the sampled junction paths and bone-facing seeds. See `docs/CAVERNOUS_v0.9.13.md` for independent checks and limitations. The earlier v0.9.12 full-label enclosure requirement was anatomically inappropriate and is superseded.

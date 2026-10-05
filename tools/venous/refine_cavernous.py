@@ -1,8 +1,8 @@
-"""Local cavernous v0.9.12 authoring pass in atlas RAS millimetres.
+"""Local cavernous v0.9.13 authoring pass in atlas RAS millimetres.
 
 Run from the app root with the original venous skin, retained v0.9.7 corrected
 arteries and bone reference extraction available in .authoring. This release
-retains the corrected arteries. The historical arterial deformation functions
+locally lowers the corrected intracavernous course. The historical arterial deformation functions
 remain for verification. Regional venous replacement preserves the delivered
 surface outside the box. This is a teaching reconstruction, not segmentation.
 """
@@ -29,7 +29,16 @@ def atomic_npz(path,**arrays):
 
 
 def read_glb(path):
-    data = path.read_bytes(); size = struct.unpack_from('<I', data, 12)[0]
+    with path.open('rb') as stream:
+        chunks=[]
+        while True:
+            chunk=stream.read(1048576)
+            if not chunk:break
+            chunks.append(chunk)
+    data=b''.join(chunks)
+    assert len(data)==path.stat().st_size
+    assert struct.unpack_from('<I',data,8)[0]==len(data)
+    size = struct.unpack_from('<I', data, 12)[0]
     return json.loads(data[20:20+size]), bytearray(data[28+size:])
 
 
@@ -37,12 +46,18 @@ def write_glb(path, doc, data):
     j = json.dumps(doc, separators=(',', ':')).encode(); j += b' '*(-len(j) % 4)
     data = bytes(data); data += b'\0'*(-len(data) % 4)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open('wb') as out:
+    temp=path.with_suffix('.tmp')
+    with temp.open('wb') as out:
         out.write(struct.pack('<4sII', b'glTF', 2, 28+len(j)+len(data)))
         out.write(struct.pack('<II', len(j), 0x4e4f534a)); out.write(j)
         out.write(struct.pack('<II', len(data), 0x004e4942))
-        for start in range(0, len(data), 4*1024*1024): out.write(data[start:start+4*1024*1024])
+        for start in range(0, len(data), 1048576): out.write(data[start:start+1048576])
+        out.flush();os.fsync(out.fileno())
+    temp.replace(path)
     assert path.stat().st_size == 28+len(j)+len(data)
+    check_doc,check_data=read_glb(path)
+    assert bytes(check_data)==data
+    for i in range(len(check_doc['accessors'])):accessor(check_doc,check_data,i)
 
 
 def accessor(doc, data, index):
@@ -194,7 +209,7 @@ def export_veins(p,f,labels,ids,dest):
     for k in range(3):np.add.at(normals,f[:,k],fn)
     normals/=np.maximum(np.linalg.norm(normals,axis=1)[:,None],1e-12)
     atomic_npz(ROOT/'venous-mesh.npz',positions=p,faces=f,labels=labels,normals=normals)
-    doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas local cavernous authoring v0.9.12'},
+    doc={'asset':{'version':'2.0','generator':'Neurovascular Atlas local cavernous authoring v0.9.13'},
          'scene':0,'scenes':[{'nodes':list(range(len(ids)))}],'nodes':[],
          'meshes':[],'accessors':[],'bufferViews':[],'buffers':[]};data=bytearray()
     def acc(a,typ,component,target,bounds=False):
@@ -225,7 +240,7 @@ def refine_veins(arteries):
     print('Original common venous skin',len(p),len(f),flush=True)
     # Closed regional replacement with a 2 mm overlap collar. Original mesh is
     # untouched beyond the collar; all tributaries are retained in the new field.
-    cache=ROOT/'regional-replacement-v0912-ica-bone-g.npz'
+    cache=ROOT/'regional-replacement-v0913-single-cavity-e.npz'
     if cache.exists():
         saved=np.load(cache);np_,nf,nl=saved['p'],saved['f'],saved['labels']
         lo,hi,innerlo,innerhi=[saved[k] for k in ['lo','hi','innerlo','innerhi']];step=.30
@@ -268,31 +283,6 @@ def refine_veins(arteries):
         append.Update();bone_sdf=vtk.vtkImplicitPolyDataDistance();bone_sdf.SetInput(append.GetOutput())
         rebuilt_entry=np.zeros_like(field,dtype=bool)
         junction_paths=[]
-        artery_fields={}
-        # Fit the receiving envelope to the actual retained cavernous ICA skin.
-        # Cache its closed-mask distance on this authoring grid for iterations.
-        for name,(ap,af) in arteries.items():
-            side=name.split()[-1]
-            acache=ROOT/('artery-distance-v097-enclosed-'+side+'.npz')
-            if acache.exists():cut=np.load(acache)['distance']
-            else:
-                closed=closed_artery(ap,af)
-                # Closest-normal signed distances can misclassify exterior
-                # points beside a nonplanar temporary cap. Obtain occupancy
-                # independently with ray-based enclosed-point classification.
-                old_cache=ROOT/('artery-distance-v097-'+side+'.npz')
-                if old_cache.exists():cut=np.load(old_cache)['distance']
-                else:cut,_=sdf_sample(closed,lo,hi,shape)
-                cloud=vtk.vtkPolyData();cloud_points=vtk.vtkPoints()
-                cloud_points.SetData(numpy_to_vtk(points,deep=True));cloud.SetPoints(cloud_points)
-                enclosed=vtk.vtkSelectEnclosedPoints();enclosed.SetInputData(cloud)
-                enclosed.SetSurfaceData(closed);enclosed.SetTolerance(1e-6)
-                enclosed.CheckSurfaceOn();enclosed.Update()
-                membership=vtk_to_numpy(enclosed.GetOutput().GetPointData().GetArray('SelectedPoints')).reshape(cut.shape).astype(bool)
-                cut=np.where(membership,-np.abs(cut),np.abs(cut))
-                atomic_npz(acache,distance=cut)
-                print('Cached robust ICA occupancy',side,flush=True)
-            artery_fields[side]=cut
         bone_locator=vtk.vtkStaticCellLocator();bone_locator.SetDataSet(append.GetOutput());bone_locator.BuildLocator()
         apposition_seeds=[]
         def capsule(a,b,radius):
@@ -340,18 +330,15 @@ def refine_veins(arteries):
             return branch,centres
         for side,sign in [('right',1),('left',-1)]:
             def c(cx,cy,cz):return [cx if sign==1 else 1.3-cx,cy,cz]
-            # Thin curved lens, with a tapered oval perimeter and a gently
-            # indented roof. No planar side, anterior or posterior walls.
+            # One continuous narrow cavity with independently defined outer
+            # walls. Its outer surface is never generated from ICA distance.
             lateral=x if sign==1 else 1.3-x
-            centre_x=14.4-.26*(z-60)+.022*(y+44)**2
-            centre_z=61.8+.5*(y+45.8)
-            body=(np.sqrt(((lateral-centre_x)/1.45)**2+
-                          ((y+45.8)/9.0)**2+((z-centre_z)/9.5)**2)-1)*1.45
-            roof=68.0+.035*(y+44)**2-.28*(lateral-centre_x)**2
-            body=softmax(body,z-roof,1.4)
-            # A slim periarterial receiving space continues around the entire
-            # labelled cavernous course, including its superior bend and exit.
-            body=softmin(body,artery_fields[side]-.85,.55)
+            centre_x=13.0-.08*(z-61)-.08*(y+45)+.012*(y+45)**2
+            medial_reach=2.8*smoothstep((z-61)/5)*(1-smoothstep((y+38)/4))
+            centre_x-=medial_reach/2
+            half_width=3.5+medial_reach/2
+            body=(np.sqrt(((lateral-centre_x)/half_width)**2+
+                          ((y+45.8)/13.5)**2+((z-60.5)/14.0)**2)-1)*3.5
             # Fit the sphenoidal medial wall to nearby facing carotid-sulcus
             # bone. The later bone cut sets a small numerical surface clearance.
             ap,af=arteries['ICA cavernous '+side]
@@ -387,6 +374,12 @@ def refine_veins(arteries):
                 medial[sl]=softmin(medial[sl],distance,.35)
                 apposition_seeds.append({'side':side,'bone_point':q.tolist(),'arterial_neighbourhood':point.tolist(),'gap_mm':float(gap),'method':'facing sulcus patch'})
             body=softmin(body,medial,.55)
+            # Curved dural-roof approximation below the retained clinoid/strut
+            # undersurface (~69-71 mm here), independently of artery label ends.
+            # Apply AFTER all body unions so the periarterial envelope cannot
+            # override the roof and extend over the upper arterial bend.
+            roof=69.7+.06*(y+44)-.008*(y+44)**2-.04*(lateral-11.0)**2-.25*np.exp(-((lateral-14.0)/2.0)**2)
+            body=softmax(body,z-roof,.8)
             mask=body<field;new_owner[mask]=ids.index('vein.cavernous.'+side)
             field=softmin(field,body,.85)
             # Rebuild the terminal receiving channels with tangent-continuous
@@ -426,11 +419,6 @@ def refine_veins(arteries):
         # Exclude only the inferred pituitary/sellar soft-tissue space. No gland,
         # cranial nerves or invented septal compartments are added to the catalogue.
         sellar=ellipsoid([.65,-43,68.2],[5.9,5.6,5.6]);field=np.maximum(field,-sellar)
-        # The artery stays excluded from venous volume while its outer
-        # receiving envelope surrounds it. No arterial geometry is changed.
-        for side,cut in artery_fields.items():
-            mask=inside&(np.isin(new_owner,list(primary))|rebuilt_entry)
-            field[mask]=np.maximum(field[mask],(.22-cut)[mask])
         # Clear the actual continuing ICA too. A cavernous-label-only closed
         # mask ends at the label port and can leave a venous disk over the next
         # arterial segment, although it clears the labelled cavernous skin.
@@ -456,9 +444,9 @@ def refine_veins(arteries):
         bone=np.array([signed.EvaluateFunction(point) for point in points[mask.ravel()]])
         field[mask]=np.maximum(field[mask],.18-bone)
         field[[0,-1],:,:]=50;field[:,[0,-1],:]=50;field[:,:,[0,-1]]=50
-        (ROOT/'medial-bone-apposition-v0.9.12.json').write_text(json.dumps(apposition_seeds,indent=2)+'\n')
-        print('Built ICA-conforming envelope and medial bone apposition',len(apposition_seeds),'seeds',flush=True)
-        (ROOT/'cavernous-junction-paths-v0.9.12.json').write_text(json.dumps(junction_paths,indent=2)+'\n')
+        (ROOT/'medial-bone-apposition-v0.9.13.json').write_text(json.dumps(apposition_seeds,indent=2)+'\n')
+        print('Built single roof-bounded cavity and medial bone apposition',len(apposition_seeds),'seeds',flush=True)
+        (ROOT/'cavernous-junction-paths-v0.9.13.json').write_text(json.dumps(junction_paths,indent=2)+'\n')
         im=vtk.vtkImageData();im.SetDimensions(*shape);im.SetOrigin(*lo);im.SetSpacing(step,step,step)
         im.GetPointData().SetScalars(numpy_to_vtk(field.ravel(),deep=True))
         cont=vtk.vtkFlyingEdges3D();cont.SetInputData(im);cont.SetValue(0,0);cont.ComputeNormalsOff();cont.Update()
@@ -518,6 +506,12 @@ def refine_veins(arteries):
         assert gaps.max()<.65,'Regional collar closure departs from retained skin'
         l2[cut]=labels[nearest]
     assert set(l2)==set(range(104)),set(l2)
+    # Boolean seam vertices can coincide at float32 export precision. Weld
+    # exact coordinates and remove only the resulting collapsed edge faces.
+    old_vertices=len(p2);old_faces=len(f2)
+    p2,remap=np.unique(p2,axis=0,return_inverse=True);f2=remap[f2].astype(np.uint32)
+    valid=(f2[:,0]!=f2[:,1])&(f2[:,0]!=f2[:,2])&(f2[:,1]!=f2[:,2])
+    f2=f2[valid];l2=l2[valid]
     stats=export_veins(p2,f2,l2,ids,ROOT/'venous-raw.glb')
     print('Exported local replacement',len(p2),len(f2),flush=True)
     exterior=(p[:,0]<lo[0]+.3)|(p[:,0]>hi[0]-.3)|(p[:,1]<lo[1]+.3)|(p[:,1]>hi[1]-.3)|(p[:,2]<lo[2]+.3)|(p[:,2]>hi[2]-.3)
@@ -525,6 +519,8 @@ def refine_veins(arteries):
     assert distances.max()<1e-5
     return dict(vertices=len(p2),triangles=len(f2),parts=stats,
                 connected_components=1,exterior_vertices_preserved=int(exterior.sum()),
+                exact_coincident_seam_vertices_welded=old_vertices-len(p2),
+                collapsed_edge_triangles_removed=old_faces-len(f2),
                 maximum_exterior_vertex_difference_mm=float(distances.max()),
                 replacement_bounds_mm=[lo.tolist(),hi.tolist()],authoring_grid_mm=step,
                 collar_closure_faces=int(cut.sum()),
@@ -533,7 +529,7 @@ def refine_veins(arteries):
 
 
 if __name__=='__main__':
-    # The completed v0.9.7 arterial correction is retained in this release.
+    # Start from the v0.9.7 correction with the local v0.9.13 inferior adjustment.
     doc,data=read_glb(APP/'.authoring/circulation-refined.glb');arteries={}
     for node in doc['nodes']:
         if 'ICA cavernous' not in node['name']:continue
@@ -541,6 +537,7 @@ if __name__=='__main__':
         arteries[node['name']]=(accessor(doc,data,prim['attributes']['POSITION']).copy(),
                               accessor(doc,data,prim['indices']).reshape(-1,3).copy())
     report=refine_veins(arteries)
-    report.update(release='0.9.12',arterial_parts_changed=[],anastomotic_parts_changed=[],
-                  method='Slim ICA-conforming cavernous envelope with carotid-sulcus bone apposition and retained direct tributary attachments; ICA and skull retained')
+    lowering=json.loads((APP/'docs/validation/cavernous-ica-lowering-v0.9.13.json').read_text())
+    report.update(release='0.9.13',arterial_parts_changed=lowering['files']['circulation-refined.glb']['changed_meshes'],anastomotic_parts_changed=lowering['files']['anastomoses-refined.glb']['changed_meshes'],
+                  method='Single roof-bounded cavernous cavity with medial sulcus fit; no periarterial outer sleeve; intracavernous ICA region lowered by up to 0.9 mm with shared junction deformation; skull retained')
     (ROOT/'cavernous-local-build.json').write_text(json.dumps(report,indent=2)+'\n')
