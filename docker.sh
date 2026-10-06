@@ -20,8 +20,8 @@ case "${1:-start}" in
   *) echo "Usage: ./docker.sh [start|restart|stop|logs]"; exit 2 ;;
 esac
 
-# The complete model is bundled; historical cached models are not imported.
-
+# Docker's npm run build validates the bundled anatomy after npm ci installs
+# its decoder dependency. Do not require Node/npm packages on the host.
 docker build -t "$IMAGE" .
 docker rm -f "$CONTAINER" >/dev/null 2>&1 || true
 docker run -d --rm --name "$CONTAINER" -p "${PORT}:80" "$IMAGE" >/dev/null

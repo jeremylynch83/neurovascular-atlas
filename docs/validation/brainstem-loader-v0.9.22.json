@@ -1,0 +1,35 @@
+{
+  "release": "0.9.22",
+  "passed": true,
+  "actualThreeGLTFLoader": true,
+  "models": [
+    {
+      "file": "brain-context.glb",
+      "labels": 189,
+      "triangles": 2755544,
+      "changedLabels": 28,
+      "allPositionsMatchStagedOrBaseline": true,
+      "indicesExact": true,
+      "normalsUnit": true
+    },
+    {
+      "file": "complete-circulation.glb",
+      "labels": 599,
+      "triangles": 6590375,
+      "changedLabels": 66,
+      "allPositionsMatchStagedOrBaseline": true,
+      "indicesExact": true,
+      "normalsUnit": true
+    },
+    {
+      "file": "venous.glb",
+      "labels": 104,
+      "triangles": 780478,
+      "changedLabels": 16,
+      "allPositionsMatchStagedOrBaseline": true,
+      "indicesExact": true,
+      "normalsUnit": true
+    }
+  ],
+  "plexusCatalogueBindingRestored": true
+}

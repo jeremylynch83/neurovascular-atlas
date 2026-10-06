@@ -1,0 +1,2221 @@
+{
+  "release": "0.9.22",
+  "baseline": "0.9.21",
+  "proposedPonsAdvanceMm": 1.7,
+  "proposedMidbrainAdvanceMm": 0.8,
+  "contacts": [
+    {
+      "domain": "restored-plexus",
+      "one": "Vertebral V4 right",
+      "two": "vein.basilar_plexus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "restored-plexus",
+      "one": "Vertebral V4 left",
+      "two": "vein.basilar_plexus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "bone",
+      "one": "brain.peduncle-of-flocculus.left",
+      "two": "bone.temporal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "bone",
+      "one": "brain.flocculus.left",
+      "two": "bone.temporal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "bone",
+      "one": "vein.superior_petrosal_vein.left",
+      "two": "bone.temporal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "bone",
+      "one": "brain.flocculus.right",
+      "two": "bone.temporal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "bone",
+      "one": "brain.peduncle-of-flocculus.right",
+      "two": "bone.temporal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "bone",
+      "one": "vein.superior_petrosal_vein.right",
+      "two": "bone.temporal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA capsular branch right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA capsular branch right",
+      "two": "brain.globus-pallidus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCom perforator left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCom perforator left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Tuberothalamic artery right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Tuberothalamic artery right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Tuberothalamic artery right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "SCA proximal perforator left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA long circumflex left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 2 right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 2 right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 2 right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "SCA proximal perforator right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "SCA proximal perforator right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "SCA proximal perforator right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA peduncular branch right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA peduncular branch right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 1 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior thalamoperforating branch left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior thalamoperforating branch left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine circumferential left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.lateral-occipitotemporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.inferior-temporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 3 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Wollschlaeger and Wollschlaeger artery right",
+      "two": "brain.lingual-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Wollschlaeger and Wollschlaeger artery right",
+      "two": "brain.lateral-occipitotemporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Wollschlaeger and Wollschlaeger artery right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior thalamoperforating branch right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior thalamoperforating branch right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA long circumflex right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA long circumflex right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCom perforator right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCom perforator right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.superior-colliculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.inferior-colliculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.septum-pellucidum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.caudate-nucleus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Peduncular perforator left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine circumferential right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior choroidal right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "SCA right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.left",
+      "two": "brain.cingulate-gyrus-posteroventral-part.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.left",
+      "two": "brain.caudate-nucleus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.left",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.posterior_communicating",
+      "two": "brain.fornix.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.posterior_communicating",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.posterior_communicating",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.posterior_communicating",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.lateral-occipitotemporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.inferior-temporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine long circumflex right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 3 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "VA medullary perforator 2 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "VA medullary perforator 2 right",
+      "two": "brain.medulla-oblongata.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.superior_petrosal_vein.left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.superior_petrosal_vein.left",
+      "two": "brain.lateral-occipitotemporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.superior_petrosal_vein.left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PICA medullary perforator left",
+      "two": "brain.tonsil-of-cerebellum.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PICA medullary perforator left",
+      "two": "brain.biventral-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Wollschlaeger and Wollschlaeger artery left",
+      "two": "brain.lingual-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Wollschlaeger and Wollschlaeger artery left",
+      "two": "brain.lateral-occipitotemporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Wollschlaeger and Wollschlaeger artery left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA short circumflex right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "VA medullary perforator 2 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "VA medullary perforator 2 left",
+      "two": "brain.medulla-oblongata.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Tuberothalamic artery left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Tuberothalamic artery left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Tuberothalamic artery left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA capsular branch left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA capsular branch left",
+      "two": "brain.globus-pallidus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Peduncular perforator right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 2 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.superior-colliculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.inferior-colliculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.caudate-nucleus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.fornix.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Medial posterior choroidal right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine median perforator",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "SCA left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA temporal branch left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 1 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 1 right",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.fornix.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA peduncular branch left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "AChA peduncular branch left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 2 left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 2 left",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 2 left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA P2-P3 left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA P2-P3 left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Posterior communicating left",
+      "two": "brain.orbital-gyri.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.left",
+      "two": "brain.caudate-nucleus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.left",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.lateral_mesencephalic.left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA P2-P3 right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA P2-P3 right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "PCA P2-P3 right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.superior_petrosal_vein.right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.superior_petrosal_vein.right",
+      "two": "brain.lateral-occipitotemporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.superior_petrosal_vein.right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.right",
+      "two": "brain.cingulate-gyrus-posteroventral-part.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.right",
+      "two": "brain.caudate-nucleus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "vein.basal.right",
+      "two": "brain.fornix.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 1 left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 1 left",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 1 left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior choroidal left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior choroidal left",
+      "two": "brain.caudate-nucleus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Anterior choroidal left",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 1 right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 1 right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Thalamoperforator 1 right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 2 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine paramedian 2 right",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue",
+      "one": "Pontine long circumflex left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.aqueduct-of-midbrain",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.aqueduct-of-midbrain",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.left",
+      "two": "brain.wing-of-central-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.left",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.left",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.left",
+      "two": "brain.superior-colliculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.right",
+      "two": "brain.superior-semilunar-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.right",
+      "two": "brain.folium-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.right",
+      "two": "brain.declive",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.right",
+      "two": "brain.culmen",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.right",
+      "two": "brain.superior-semilunar-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.right",
+      "two": "brain.inferior-semilunar-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.tonsil-of-cerebellum.left",
+      "two": "brain.uvula-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.tonsil-of-cerebellum.left",
+      "two": "brain.nodule-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.peduncle-of-flocculus.left",
+      "two": "brain.superior-cerebellar-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.peduncle-of-flocculus.left",
+      "two": "brain.nodule-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.superior-semilunar-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.inferior-semilunar-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.folium-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.declive",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.culmen",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.superior-semilunar-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.posterior-quadrangular-lobule.left",
+      "two": "brain.posterior-quadrangular-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.left",
+      "two": "brain.wing-of-central-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.left",
+      "two": "brain.superior-cerebellar-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.left",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.left",
+      "two": "brain.superior-colliculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.left",
+      "two": "brain.hypothalamus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.wing-of-central-lobule.left",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.wing-of-central-lobule.left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.flocculus.left",
+      "two": "brain.tonsil-of-cerebellum.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.flocculus.left",
+      "two": "brain.peduncle-of-flocculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.flocculus.left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.medulla-oblongata.left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.medulla-oblongata.left",
+      "two": "brain.upper-cervical-cord",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.right",
+      "two": "brain.wing-of-central-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.right",
+      "two": "brain.superior-colliculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.inferior-colliculus.right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.superior-cerebellar-peduncle.left",
+      "two": "brain.lingula-of-cerebellum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.right",
+      "two": "brain.hypothalamus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.right",
+      "two": "brain.lingula-of-cerebellum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.right",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.right",
+      "two": "brain.wing-of-central-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.right",
+      "two": "brain.tonsil-of-cerebellum.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.right",
+      "two": "brain.superior-cerebellar-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.flocculus.right",
+      "two": "brain.tonsil-of-cerebellum.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.flocculus.right",
+      "two": "brain.peduncle-of-flocculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.flocculus.right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.tonsil-of-cerebellum.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.superior-cerebellar-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.lingula-of-cerebellum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.tonsil-of-cerebellum.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.superior-cerebellar-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.medulla-oblongata.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.fourth-ventricle",
+      "two": "brain.medulla-oblongata.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.left",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.left",
+      "two": "brain.hypothalamus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.base-of-peduncle.left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.medulla-oblongata.right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.medulla-oblongata.right",
+      "two": "brain.upper-cervical-cord",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.left",
+      "two": "brain.wing-of-central-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.left",
+      "two": "brain.posterior-quadrangular-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.left",
+      "two": "brain.culmen",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.left",
+      "two": "brain.anterior-quadrangular-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.wing-of-central-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.tonsil-of-cerebellum.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.superior-cerebellar-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.lingula-of-cerebellum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.pons.left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.tonsil-of-cerebellum.right",
+      "two": "brain.uvula-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.tonsil-of-cerebellum.right",
+      "two": "brain.nodule-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.peduncle-of-flocculus.right",
+      "two": "brain.nodule-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.peduncle-of-flocculus.right",
+      "two": "brain.superior-cerebellar-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.wing-of-central-lobule.right",
+      "two": "brain.lingula-of-cerebellum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.wing-of-central-lobule.right",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.wing-of-central-lobule.right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.left",
+      "two": "brain.uvula-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.left",
+      "two": "brain.tonsil-of-cerebellum.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.left",
+      "two": "brain.pyramis-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.left",
+      "two": "brain.inferior-semilunar-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.left",
+      "two": "brain.gracile-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.left",
+      "two": "brain.flocculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.right",
+      "two": "brain.central-lobule",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.right",
+      "two": "brain.wing-of-central-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.right",
+      "two": "brain.superior-cerebellar-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.right",
+      "two": "brain.superior-colliculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.midbrain.right",
+      "two": "brain.hypothalamus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.right",
+      "two": "brain.uvula-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.right",
+      "two": "brain.pyramis-of-vermis",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.right",
+      "two": "brain.tonsil-of-cerebellum.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.right",
+      "two": "brain.inferior-semilunar-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.right",
+      "two": "brain.gracile-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.biventral-lobule.right",
+      "two": "brain.flocculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.right",
+      "two": "brain.culmen",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.right",
+      "two": "brain.wing-of-central-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.right",
+      "two": "brain.posterior-quadrangular-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "tissue-interface",
+      "one": "brain.anterior-quadrangular-lobule.right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Anterior choroidal right",
+      "two": "vein.basal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Posterior communicating left",
+      "two": "vein.anterior_cerebral.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "PCom perforator right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Basal tentorial MHT branch left",
+      "two": "vein.superior_petrosal_vein.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Tuberothalamic artery right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Tuberothalamic artery left",
+      "two": "vein.posterior_communicating",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Anterior choroidal plexal representative right",
+      "two": "vein.basal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Vertebral V4 right",
+      "two": "vein.basilar_plexus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Vertebral V4 left",
+      "two": "vein.anterior_condylar.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "domain": "artery-vein",
+      "one": "Vertebral V4 left",
+      "two": "vein.basilar_plexus",
+      "baselineContact": true,
+      "newContact": true
+    }
+  ],
+  "newUnintendedContactPairs": [],
+  "checks": {
+    "sharedInterfaces": [
+      {
+        "file": "brain-context.glb",
+        "maximumGapMm": 0.0,
+        "passed": true
+      },
+      {
+        "file": "complete-circulation.glb",
+        "maximumGapMm": 0.0,
+        "passed": true
+      },
+      {
+        "file": "venous.glb",
+        "maximumGapMm": 0.0,
+        "passed": true
+      }
+    ],
+    "anteriorWallAdherence": [
+      {
+        "node": "Basilar",
+        "states": [
+          {
+            "samples": 2115,
+            "minimumSignedGapMm": 0.039890289306640625,
+            "medianSignedGapMm": 2.6039352416992188,
+            "wallSamplesBehindExposedSurface": 0
+          },
+          {
+            "samples": 2115,
+            "minimumSignedGapMm": 0.039875030517578125,
+            "medianSignedGapMm": 2.604339599609375,
+            "wallSamplesBehindExposedSurface": 0
+          }
+        ],
+        "noAdditionalWallSamplesBehindSurface": true
+      },
+      {
+        "node": "vein.anterior_pontine",
+        "states": [
+          {
+            "samples": 2049,
+            "minimumSignedGapMm": 0.15360260009765625,
+            "medianSignedGapMm": 2.036346435546875,
+            "wallSamplesBehindExposedSurface": 0
+          },
+          {
+            "samples": 2049,
+            "minimumSignedGapMm": 0.15355300903320312,
+            "medianSignedGapMm": 2.0363540649414062,
+            "wallSamplesBehindExposedSurface": 0
+          }
+        ],
+        "noAdditionalWallSamplesBehindSurface": true
+      },
+      {
+        "node": "vein.anterior_pontomesencephalic",
+        "states": [
+          {
+            "samples": 3397,
+            "minimumSignedGapMm": 0.13946533203125,
+            "medianSignedGapMm": 5.009372711181641,
+            "wallSamplesBehindExposedSurface": 0
+          },
+          {
+            "samples": 3397,
+            "minimumSignedGapMm": 0.13559722900390625,
+            "medianSignedGapMm": 5.009037017822266,
+            "wallSamplesBehindExposedSurface": 0
+          }
+        ],
+        "noAdditionalWallSamplesBehindSurface": true
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "states": [
+          {
+            "samples": 2050,
+            "minimumSignedGapMm": 0.64837646484375,
+            "medianSignedGapMm": 3.063457489013672,
+            "wallSamplesBehindExposedSurface": 0
+          },
+          {
+            "samples": 2050,
+            "minimumSignedGapMm": 0.6490936279296875,
+            "medianSignedGapMm": 3.0636348724365234,
+            "wallSamplesBehindExposedSurface": 0
+          }
+        ],
+        "noAdditionalWallSamplesBehindSurface": true
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "states": [
+          {
+            "samples": 2284,
+            "minimumSignedGapMm": 0.41717529296875,
+            "medianSignedGapMm": 1.5435028076171875,
+            "wallSamplesBehindExposedSurface": 0
+          },
+          {
+            "samples": 2284,
+            "minimumSignedGapMm": 0.4193229675292969,
+            "medianSignedGapMm": 1.5446434020996094,
+            "wallSamplesBehindExposedSurface": 0
+          }
+        ],
+        "noAdditionalWallSamplesBehindSurface": true
+      }
+    ],
+    "basilarPlexusWallClearanceMm": {
+      "minimumSampled": 0.9592026349083067,
+      "median": 6.330094378370718,
+      "sampleCount": 11756
+    },
+    "relativeMaterialCalibre": [
+      {
+        "node": "Basilar",
+        "sections": [
+          {
+            "levelMm": 48.0,
+            "minimumWidthRatio": 0.9999717189889621,
+            "maximumWidthRatio": 1.0000209068287005
+          },
+          {
+            "levelMm": 51.0,
+            "minimumWidthRatio": 0.9999921555591773,
+            "maximumWidthRatio": 1.000008661531292
+          },
+          {
+            "levelMm": 54.0,
+            "minimumWidthRatio": 0.9996987440063547,
+            "maximumWidthRatio": 1.0001882296885238
+          },
+          {
+            "levelMm": 57.0,
+            "minimumWidthRatio": 0.999502854354619,
+            "maximumWidthRatio": 1.0000168726913887
+          },
+          {
+            "levelMm": 60.0,
+            "minimumWidthRatio": 0.999037674553623,
+            "maximumWidthRatio": 1.000087314730285
+          },
+          {
+            "levelMm": 63.0,
+            "minimumWidthRatio": 0.9995783762319336,
+            "maximumWidthRatio": 1.0000158235617655
+          },
+          {
+            "levelMm": 66.0,
+            "minimumWidthRatio": 0.9999865076657477,
+            "maximumWidthRatio": 1.000022893033274
+          },
+          {
+            "levelMm": 69.0,
+            "minimumWidthRatio": 0.9966284363075115,
+            "maximumWidthRatio": 1.0000313055167447
+          },
+          {
+            "levelMm": 72.0,
+            "minimumWidthRatio": 0.993747477990217,
+            "maximumWidthRatio": 1.0000297938159204
+          },
+          {
+            "levelMm": 75.0,
+            "minimumWidthRatio": 0.9992091420182606,
+            "maximumWidthRatio": 1.000026602569514
+          }
+        ],
+        "passed": true
+      },
+      {
+        "node": "vein.anterior_pontine",
+        "sections": [
+          {
+            "levelMm": 47.0,
+            "minimumWidthRatio": 0.9999835898140713,
+            "maximumWidthRatio": 1.0000171724998783
+          },
+          {
+            "levelMm": 50.0,
+            "minimumWidthRatio": 0.9999915192658971,
+            "maximumWidthRatio": 1.0000067869077751
+          },
+          {
+            "levelMm": 53.0,
+            "minimumWidthRatio": 0.9999832910203136,
+            "maximumWidthRatio": 1.0000399547727987
+          },
+          {
+            "levelMm": 56.0,
+            "minimumWidthRatio": 0.999954915677684,
+            "maximumWidthRatio": 1.0000785059772845
+          },
+          {
+            "levelMm": 59.0,
+            "minimumWidthRatio": 0.999917161041474,
+            "maximumWidthRatio": 1.0000825515033855
+          },
+          {
+            "levelMm": 62.0,
+            "minimumWidthRatio": 0.9999954997577182,
+            "maximumWidthRatio": 1.0000438394643716
+          }
+        ],
+        "passed": true
+      },
+      {
+        "node": "vein.anterior_pontomesencephalic",
+        "sections": [
+          {
+            "levelMm": 69.0,
+            "minimumWidthRatio": 0.999882083162972,
+            "maximumWidthRatio": 1.0000117114066378
+          },
+          {
+            "levelMm": 71.0,
+            "minimumWidthRatio": 0.9923062979405591,
+            "maximumWidthRatio": 1.000154299282993
+          },
+          {
+            "levelMm": 73.0,
+            "minimumWidthRatio": 0.9574278238081441,
+            "maximumWidthRatio": 1.0001636823145033
+          },
+          {
+            "levelMm": 75.0,
+            "minimumWidthRatio": 0.9533107710186063,
+            "maximumWidthRatio": 1.0
+          },
+          {
+            "levelMm": 77.0,
+            "minimumWidthRatio": 0.9614699684721358,
+            "maximumWidthRatio": 1.0
+          }
+        ],
+        "passed": true
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "sections": [
+          {
+            "levelMm": -12.0,
+            "minimumWidthRatio": 0.9716226869690551,
+            "maximumWidthRatio": 1.029443945368111
+          },
+          {
+            "levelMm": -8.0,
+            "minimumWidthRatio": 0.9485235281192699,
+            "maximumWidthRatio": 1.0546562786778988
+          },
+          {
+            "levelMm": -4.0,
+            "minimumWidthRatio": 0.9391349975287715,
+            "maximumWidthRatio": 1.022487449045917
+          }
+        ],
+        "passed": true
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "sections": [
+          {
+            "levelMm": 5.0,
+            "minimumWidthRatio": 0.9750773757861225,
+            "maximumWidthRatio": 1.0255697663115957
+          },
+          {
+            "levelMm": 9.0,
+            "minimumWidthRatio": 0.9815996767708979,
+            "maximumWidthRatio": 1.0192905860581445
+          },
+          {
+            "levelMm": 13.0,
+            "minimumWidthRatio": 0.9735362973597337,
+            "maximumWidthRatio": 1.0276516741893804
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "restoredPlexusAndCavernousPositionsUnchanged": true,
+    "cerebellarSCADistalSurfacesUnchanged": true
+  },
+  "passed": true,
+  "scope": "Actual triangle surfaces, new intersection pairs, shared material interfaces, sampled anterior-wall adherence and relative section calibre. Existing atlas contacts are recorded separately; open tissue skins do not prove solid containment.",
+  "deliveredAssetSha256": {
+    "complete-circulation.glb": "ba893a243d09f5cf09599be2d25423c72a8aba0607a6232d95a5b554d3192ffe",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-anastomoses.glb": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+    "venous.glb": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+    "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123"
+  }
+}

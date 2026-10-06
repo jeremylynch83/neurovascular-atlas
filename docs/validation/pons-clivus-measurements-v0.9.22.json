@@ -1,0 +1,180 @@
+{
+  "release": "0.9.22",
+  "units": "mm",
+  "existingPonsAdvanceUpToMm": 3,
+  "sourceAssetSha256": {
+    "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-circulation.glb": "ba893a243d09f5cf09599be2d25423c72a8aba0607a6232d95a5b554d3192ffe"
+  },
+  "method": "Anterior pons triangle envelope at each x/z; first anterior ray hit on endocranial occipital/sphenoid clival plate. Shortest distance is from the sampled anterior pons point to the actual bone triangles, with each nearest point checked to lie on the clival region.",
+  "coordinateSystem": "RAS; +Y anterior; +Z superior",
+  "modelMidlineXMm": 0.65,
+  "nearMidlineOffsetsMm": [
+    -0.5,
+    0.5
+  ],
+  "nearMidlineSampleCount": 190,
+  "widerSampleCount": 880,
+  "widerClivusNearestPointCount": 792,
+  "sampleDomain": {
+    "zMm": [
+      45,
+      69
+    ],
+    "xOffsetsMm": [
+      -10,
+      10
+    ]
+  },
+  "regions": [
+    {
+      "region": "Lower",
+      "zRangeMm": [
+        45,
+        53
+      ],
+      "representativeZMm": 49.0,
+      "representativeAPGapMm": 11.244561628843456,
+      "representativeShortestDistanceMm": 9.824531580004912,
+      "nearMidlineAPGapMm": {
+        "minimum": 9.743072820614174,
+        "median": 11.203261783412188,
+        "maximum": 12.238376819734938
+      },
+      "nearMidlineShortestDistanceMm": {
+        "minimum": 8.19175167396554,
+        "median": 9.767422950254222,
+        "maximum": 10.39594467972236
+      }
+    },
+    {
+      "region": "Middle",
+      "zRangeMm": [
+        53,
+        62
+      ],
+      "representativeZMm": 58.0,
+      "representativeAPGapMm": 6.434935775226929,
+      "representativeShortestDistanceMm": 6.203705884392969,
+      "nearMidlineAPGapMm": {
+        "minimum": 6.016475017676754,
+        "median": 6.797383485519365,
+        "maximum": 9.634869470611093
+      },
+      "nearMidlineShortestDistanceMm": {
+        "minimum": 5.779331072534714,
+        "median": 6.4252712645651355,
+        "maximum": 8.095106725324577
+      }
+    },
+    {
+      "region": "Upper",
+      "zRangeMm": [
+        62,
+        69
+      ],
+      "representativeZMm": 66.0,
+      "representativeAPGapMm": 9.62201901838607,
+      "representativeShortestDistanceMm": 8.620437244761037,
+      "nearMidlineAPGapMm": {
+        "minimum": 6.896523405988262,
+        "median": 8.965421364129043,
+        "maximum": 9.7633676121282
+      },
+      "nearMidlineShortestDistanceMm": {
+        "minimum": 6.476334947147725,
+        "median": 8.524810498579463,
+        "maximum": 8.953778894345831
+      }
+    }
+  ],
+  "nearMidlineAPGapMm": {
+    "minimum": 6.016475017676754,
+    "median": 8.984598597900586,
+    "maximum": 12.238376819734938
+  },
+  "nearMidlineShortestDistanceMm": {
+    "minimum": 5.779331072534714,
+    "median": 8.15576669007265,
+    "maximum": 10.39594467972236
+  },
+  "widerAPGapMm": {
+    "minimum": 6.020490108877198,
+    "median": 9.364141424060648,
+    "maximum": 16.161987344436568
+  },
+  "widerShortestDistanceMm": {
+    "minimum": 5.765451564481862,
+    "median": 8.048820321783408,
+    "maximum": 11.110527253997965
+  },
+  "widerMinimumAPLocation": {
+    "xMm": -0.34999999999999964,
+    "zMm": 59.0,
+    "ponsYMm": -60.689143340693796,
+    "clivusYMm": -54.6686532318166,
+    "apGapMm": 6.020490108877198,
+    "shortestBoneDistanceMm": 5.856423722197842,
+    "bone": "bone.sphenoid",
+    "nearestClivalPoint": [
+      -0.4197435826970913,
+      -54.94194971309926,
+      57.87634522493295
+    ]
+  },
+  "widerMinimumShortestLocation": {
+    "xMm": -0.34999999999999964,
+    "zMm": 60.0,
+    "ponsYMm": -60.399258797200524,
+    "clivusYMm": -54.25488684334533,
+    "apGapMm": 6.144371953855192,
+    "shortestBoneDistanceMm": 5.765451564481862,
+    "bone": "bone.sphenoid",
+    "nearestClivalPoint": [
+      -0.40089985486208896,
+      -54.76889413003216,
+      58.76030864249869
+    ]
+  },
+  "independentRayChecks": [
+    {
+      "xMm": 0.15000000000000002,
+      "zMm": 49.0,
+      "independentPonsAndClivusRayChecks": true
+    },
+    {
+      "xMm": 0.15000000000000002,
+      "zMm": 58.0,
+      "independentPonsAndClivusRayChecks": true
+    },
+    {
+      "xMm": 0.15000000000000002,
+      "zMm": 66.0,
+      "independentPonsAndClivusRayChecks": true
+    },
+    {
+      "xMm": 1.15,
+      "zMm": 49.0,
+      "independentPonsAndClivusRayChecks": true
+    },
+    {
+      "xMm": 1.15,
+      "zMm": 58.0,
+      "independentPonsAndClivusRayChecks": true
+    },
+    {
+      "xMm": 1.15,
+      "zMm": 66.0,
+      "independentPonsAndClivusRayChecks": true
+    }
+  ],
+  "limits": [
+    "Geometric clearance in this composite atlas, not patient measurements.",
+    "The pons and clivus endpoint margins are excluded; the pons meshes are open and have a small midline seam. Near-midline paired sections avoid that seam.",
+    "The gap contains the basilar artery and other prepontine structures, so it is not all unoccupied space.",
+    "This measurement report does not substitute for the separate geometry validation in brainstem-geometry-v0.9.22.json."
+  ],
+  "additionalPonsAmplitudeMm": 1.7,
+  "additionalMidbrainAmplitudeMm": 0.8
+}

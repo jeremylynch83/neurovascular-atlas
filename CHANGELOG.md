@@ -1,3 +1,11 @@
+# v0.9.22
+
+- Restore the selectable clival/basilar venous plexus using its retained clival geometry.
+- Add up to 1.7 mm pontine prominence and up to 0.8 mm midbrain advance with a common smooth field for attached vessels and adjoining tissue.
+- Keep the skull, cavernous sinuses, clival plexus and dural outlets stationary; retain cerebellar SCA hemispheric and vermian surfaces.
+- Preserve every structure, triangle and vertex order. Rebind brain surface anchors and vessel course identities to the updated delivery assets.
+- Include staged geometry, wall-contact, shared-join, calibre and loader evidence plus updated clival measurements. Checks assess changes relative to v0.9.21; existing atlas discrepancies remain for anatomical review.
+
 # v0.9.21
 
 Ventral pons and accompanying vessels advanced by up to 3 mm; preceding SCA/PICA and cerebellar surface fitting integrated; catalogue and surface references refreshed. Wider regional trial excluded after failed wall checks. Anatomical review remains pending.

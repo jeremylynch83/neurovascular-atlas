@@ -1,0 +1,32 @@
+{
+  "release": "0.9.22",
+  "baseline": "0.9.21",
+  "checks": [
+    {
+      "file": "brain-context.glb",
+      "oldSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+      "sha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "labels": 189,
+      "indicesAndVertexOrderRetained": true,
+      "exactPositionCodecRoundtrip": true
+    },
+    {
+      "file": "complete-circulation.glb",
+      "oldSha256": "4dddd00470c48fa0788a6a01ec3aa049bc475b986f006bd6ff143234ad03dc81",
+      "sha256": "ba893a243d09f5cf09599be2d25423c72a8aba0607a6232d95a5b554d3192ffe",
+      "labels": 599,
+      "indicesAndVertexOrderRetained": true,
+      "exactPositionCodecRoundtrip": true
+    },
+    {
+      "file": "venous.glb",
+      "oldSha256": "e0692a7a585608beb5256548312b308ffd5aad7ce4e56d55c7c40ee34eff95d0",
+      "sha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "labels": 104,
+      "indicesAndVertexOrderRetained": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ],
+  "sharedLabelsAndTopologyPreserved": true,
+  "restoredPlexusNode": "vein.basilar_plexus"
+}

@@ -10,6 +10,8 @@ This remains an anatomical review build. The local posterior-fossa surface walls
 
 Run `./docker.sh start` for local review, or use the existing installer with this v0.9.21 ZIP. The separate posterior-fossa authoring viewer is available in the review checkpoint.
 
+The Docker launcher validates anatomy inside the build after installing npm dependencies. No host Node/npm installation is required for Docker startup.
+
 ## Bilateral central arterial family fit in v0.9.18
 
 Applies both central arteries, their cortical branches and distal rami, and the adjoining MCA transitions. The complete eight-label family passes tissue, skull, vessel-neighbour, self-intersection, shared-join and wall-envelope checks. The build reproduces byte-for-byte from the supplied seed. Dural and brainstem groups remain deferred; brain, skull, venous and protected ICA/cavernous geometry are retained. See [fitting evidence and limits](docs/FITTING_v0.9.18.md).

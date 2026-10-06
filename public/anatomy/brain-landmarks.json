@@ -31,7 +31,7 @@
       ]
     ],
     "sourceAssetSha256": "90a715af24911abf97d94be205144e1639514fb5629c4cf8e7faa0dcaff99925",
-    "registeredAssetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+    "registeredAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
     "method": "Bone-correspondence similarity ICP, 85% trimmed nearest vertices, robust least squares; 7 cranial bone meshes; source Z-Anatomy skull to retained v0.9.13 skull. No independent brain deformation.",
     "status": "atlas-registered",
     "limitations": "Regional teaching context. Temporal skull residuals are greater than vault residuals. Source cerebellar lobules are simplified; no separate middle/inferior cerebellar peduncle meshes. Existing vessels have not been refitted to the new brain surfaces.",
@@ -55,7 +55,13 @@
         "method": "Ventral pons advances by up to 3 mm with its vessels; preceding reviewed cerebellar arterial fitting retained.",
         "evidence": "docs/validation/pons-advance-v0.9.21.json"
       }
-    ]
+    ],
+    "brainstemAdjustment": {
+      "release": "0.9.22",
+      "additionalPonsAmplitudeMm": 1.7,
+      "additionalMidbrainAmplitudeMm": 0.8,
+      "method": "Common smooth +Y map with rounded pontine prominence, smaller midbrain adjustment, fixed posterior tissue, and constant anterior shift across attached vessel walls. Dural collectors and clival plexus remain stationary."
+    }
   },
   "anchors": [
     {
@@ -83,7 +89,7 @@
         "status": "regional",
         "point": [
           -12.437498754675824,
-          -66.74913388945598,
+          -66.44904616592535,
           78.46375801521005
         ],
         "course": [],
@@ -101,10 +107,10 @@
         ],
         "position": [
           -12.437498754675824,
-          -66.74913388945598,
+          -66.44904616592535,
           78.46375801521005
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -145,7 +151,7 @@
         "status": "regional",
         "point": [
           -14.334674035885996,
-          -61.59671929575567,
+          -61.07641983734033,
           76.3610645380312
         ],
         "course": [],
@@ -163,10 +169,10 @@
         ],
         "position": [
           -14.334674035885996,
-          -61.59671929575567,
+          -61.07641983734033,
           76.3610645380312
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -229,7 +235,7 @@
           -76.67107795274524,
           81.73977782261176
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -290,7 +296,7 @@
           -76.57923627497652,
           74.1207255313565
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -332,7 +338,7 @@
         "status": "regional",
         "point": [
           -17.203369140625,
-          -67.460693359375,
+          -66.76545715332031,
           57.386962890625
         ],
         "course": [],
@@ -350,10 +356,10 @@
         ],
         "position": [
           -17.203369140625,
-          -67.460693359375,
+          -66.76545715332031,
           57.386962890625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -393,7 +399,7 @@
         "status": "regional",
         "point": [
           -3.2372761669731966,
-          -64.7334953927939,
+          -64.57233583429867,
           69.9790999825541
         ],
         "course": [],
@@ -411,10 +417,10 @@
         ],
         "position": [
           -3.2372761669731966,
-          -64.7334953927939,
+          -64.57233583429867,
           69.9790999825541
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -452,7 +458,7 @@
         "status": "regional",
         "point": [
           -5.130045316623824,
-          -76.94604354420166,
+          -76.85813449955359,
           45.12453360991763
         ],
         "course": [],
@@ -470,10 +476,10 @@
         ],
         "position": [
           -5.130045316623824,
-          -76.94604354420166,
+          -76.85813449955359,
           45.12453360991763
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -533,7 +539,7 @@
           -75.33688501636618,
           36.569456136543046
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -591,7 +597,7 @@
           -80.43635724406151,
           63.43762371560521
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -629,7 +635,7 @@
         "status": "regional",
         "point": [
           -20.498159333974115,
-          -78.05258202329398,
+          -77.95003736999143,
           50.80547238279206
         ],
         "course": [],
@@ -647,10 +653,10 @@
         ],
         "position": [
           -20.498159333974115,
-          -78.05258202329398,
+          -77.95003736999143,
           50.80547238279206
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -710,7 +716,7 @@
           -97.40864921905761,
           39.7879781619352
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -769,7 +775,7 @@
           -100.23714495905635,
           39.24414502952864
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -832,7 +838,7 @@
           -113.44192819665794,
           63.15060281053465
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -892,7 +898,7 @@
           -126.2499705041171,
           46.25321187863237
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -931,7 +937,7 @@
         "status": "regional",
         "point": [
           -15.61739563467855,
-          -71.92755344704537,
+          -71.753439007723,
           66.11463195066956
         ],
         "course": [],
@@ -949,10 +955,10 @@
         ],
         "position": [
           -15.61739563467855,
-          -71.92755344704537,
+          -71.753439007723,
           66.11463195066956
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1015,7 +1021,7 @@
           -80.73371675028089,
           71.73552552124221
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1076,7 +1082,7 @@
           -107.55373680262544,
           64.48477609072148
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1137,7 +1143,7 @@
           -69.13305056536862,
           102.95286700873845
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1200,7 +1206,7 @@
           -81.71355727380951,
           94.12806474587755
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1261,7 +1267,7 @@
           -69.23283759028837,
           113.06174976019018
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1325,7 +1331,7 @@
           -105.87305352969256,
           90.69157231254897
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1384,7 +1390,7 @@
           -58.40780521292183,
           76.08108454638922
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1442,7 +1448,7 @@
           -68.73660373072477,
           75.01972709637107
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1503,7 +1509,7 @@
           -30.82099096708787,
           98.96740191560154
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1562,7 +1568,7 @@
           -68.76971041205663,
           110.7230573633331
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1621,7 +1627,7 @@
           -59.051312323295925,
           104.15808997219861
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1682,7 +1688,7 @@
           -61.442344532931514,
           104.22594143648433
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1725,7 +1731,7 @@
         "status": "regional",
         "point": [
           13.719618562840257,
-          -66.79396413624214,
+          -66.51809456615452,
           78.46535729572994
         ],
         "course": [],
@@ -1743,10 +1749,10 @@
         ],
         "position": [
           13.719618562840257,
-          -66.79396413624214,
+          -66.51809456615452,
           78.46535729572994
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1787,7 +1793,7 @@
         "status": "regional",
         "point": [
           15.554308328740719,
-          -61.40827204913204,
+          -60.888262791450025,
           76.22555217214716
         ],
         "course": [],
@@ -1805,10 +1811,10 @@
         ],
         "position": [
           15.554308328740719,
-          -61.40827204913204,
+          -60.888262791450025,
           76.22555217214716
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1871,7 +1877,7 @@
           -76.67563177072651,
           81.74277080458953
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1932,7 +1938,7 @@
           -76.55944873763742,
           74.11010058355461
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1974,7 +1980,7 @@
         "status": "regional",
         "point": [
           18.486572265625,
-          -67.4189453125,
+          -66.72068786621094,
           57.39306640625
         ],
         "course": [],
@@ -1992,10 +1998,10 @@
         ],
         "position": [
           18.486572265625,
-          -67.4189453125,
+          -66.72068786621094,
           57.39306640625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2035,7 +2041,7 @@
         "status": "regional",
         "point": [
           4.514911363235113,
-          -64.80971549271248,
+          -64.64951046115313,
           69.97496040079932
         ],
         "course": [],
@@ -2053,10 +2059,10 @@
         ],
         "position": [
           4.514911363235113,
-          -64.80971549271248,
+          -64.64951046115313,
           69.97496040079932
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2094,7 +2100,7 @@
         "status": "regional",
         "point": [
           6.416610912820818,
-          -76.9432677878294,
+          -76.85509004990797,
           45.12592588834548
         ],
         "course": [],
@@ -2112,10 +2118,10 @@
         ],
         "position": [
           6.416610912820818,
-          -76.9432677878294,
+          -76.85509004990797,
           45.12592588834548
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2175,7 +2181,7 @@
           -75.27548952149608,
           36.57061118949456
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2233,7 +2239,7 @@
           -80.45984739102579,
           63.43612236673083
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2271,7 +2277,7 @@
         "status": "regional",
         "point": [
           21.792830504880925,
-          -78.07805839543255,
+          -77.9908830028974,
           50.83208605071412
         ],
         "course": [],
@@ -2289,10 +2295,10 @@
         ],
         "position": [
           21.792830504880925,
-          -78.07805839543255,
+          -77.9908830028974,
           50.83208605071412
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2352,7 +2358,7 @@
           -97.38376179786788,
           39.79538471718246
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2411,7 +2417,7 @@
           -100.23490324898852,
           39.24789193912766
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2474,7 +2480,7 @@
           -113.44317673711303,
           63.158719201380634
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2534,7 +2540,7 @@
           -126.24569451047051,
           46.26176778442363
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2573,7 +2579,7 @@
         "status": "regional",
         "point": [
           16.900383358274553,
-          -71.9275826876264,
+          -71.73452991977126,
           66.12299795882109
         ],
         "course": [],
@@ -2591,10 +2597,10 @@
         ],
         "position": [
           16.900383358274553,
-          -71.9275826876264,
+          -71.73452991977126,
           66.12299795882109
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2657,7 +2663,7 @@
           -80.73090876109327,
           71.74067931050308
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2718,7 +2724,7 @@
           -107.54528441509927,
           64.50016005925768
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2779,7 +2785,7 @@
           -69.1311844291067,
           102.95614591781764
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2842,7 +2848,7 @@
           -81.71126080065058,
           94.13206885976825
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2903,7 +2909,7 @@
           -69.23115285496786,
           113.0645151272096
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2967,7 +2973,7 @@
           -105.86871500886642,
           90.69938748384703
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3026,7 +3032,7 @@
           -58.40196807281922,
           76.09170516527712
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3084,7 +3090,7 @@
           -68.73201112632289,
           75.032560944457
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3145,7 +3151,7 @@
           -30.819541418173564,
           98.97001927160731
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3204,7 +3210,7 @@
           -68.76667116200223,
           110.72847106924037
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3263,7 +3269,7 @@
           -59.05058365198291,
           104.1591607146658
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3324,7 +3330,7 @@
           -61.44137628685132,
           104.22751344223346
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3388,7 +3394,7 @@
           -43.3918035805963,
           105.70320087770176
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3450,7 +3456,7 @@
           -46.77914780740973,
           74.23852934966911
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3493,7 +3499,7 @@
         "status": "regional",
         "point": [
           -1.6101043175653442,
-          -62.39871377596867,
+          -60.7421826946715,
           58.981571432181234
         ],
         "course": [],
@@ -3511,10 +3517,10 @@
         ],
         "position": [
           -1.6101043175653442,
-          -62.39871377596867,
+          -60.7421826946715,
           58.981571432181234
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3576,7 +3582,7 @@
           -73.19642518867424,
           34.78969415692324
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3636,7 +3642,7 @@
           -82.77167920380886,
           64.45471612509624
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3696,7 +3702,7 @@
           -92.78010983214035,
           78.86895999143269
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3757,7 +3763,7 @@
           -113.87748642295176,
           45.59938302775949
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3818,7 +3824,7 @@
           -101.4470493383464,
           39.243599836156235
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3880,7 +3886,7 @@
           -91.8914070959656,
           56.886929913590606
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3938,7 +3944,7 @@
           -76.92832168488084,
           53.94154744928866
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3998,7 +4004,7 @@
           -98.50521974448543,
           102.09423344491634
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4061,7 +4067,7 @@
           -22.28398198888493,
           105.36489153361866
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4119,7 +4125,7 @@
           -63.93228653110649,
           99.1012833607013
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4177,7 +4183,7 @@
           -59.32326679056602,
           117.65664021947481
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4507,18 +4513,18 @@
         "status": "regional",
         "point": [
           -3.2372761669731966,
-          -64.7334953927939,
+          -64.57233583429867,
           69.9790999825541
         ],
         "course": [
           [
             -3.2372761669731966,
-            -64.7334953927939,
+            -64.57233583429867,
             69.9790999825541
           ],
           [
             -1.6101043175653442,
-            -62.39871377596867,
+            -60.7421826946715,
             58.981571432181234
           ],
           [
@@ -4656,7 +4662,7 @@
           -85.92441560627012,
           78.99498221210354
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4686,7 +4692,7 @@
             -85.92630455175058,
             78.9905677010957
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4702,7 +4708,7 @@
             -85.9505967348089,
             78.93970820004745
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4739,7 +4745,7 @@
           -88.24349683144271,
           79.93779756817445
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4769,7 +4775,7 @@
             -88.26114696547626,
             79.94400935412362
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4785,7 +4791,7 @@
             -88.2050962946986,
             80.00869855405955
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4822,7 +4828,7 @@
           -90.52629836647253,
           80.90164387438531
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4852,7 +4858,7 @@
             -90.56361223089858,
             80.91428541695834
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4868,7 +4874,7 @@
             -90.50733219131453,
             80.92663502668977
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4905,7 +4911,7 @@
           -92.81858053018718,
           81.64022826858643
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4935,7 +4941,7 @@
             -92.85635370740535,
             81.64904048543599
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4951,7 +4957,7 @@
             -92.87273496461606,
             81.57664657675423
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4988,7 +4994,7 @@
           -95.10654442204812,
           82.1441453256271
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5018,7 +5024,7 @@
             -95.13564430136151,
             82.14513994945281
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5034,7 +5040,7 @@
             -95.02575584504902,
             82.23920493367267
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5071,7 +5077,7 @@
           -97.39394013186458,
           82.11379374101392
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5101,7 +5107,7 @@
             -97.4143258739994,
             82.11143903228648
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5117,7 +5123,7 @@
             -97.39345719535295,
             82.12089629436265
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5154,7 +5160,7 @@
           -99.68046474550411,
           81.8195707965826
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5184,7 +5190,7 @@
             -99.68978063048579,
             81.8085827791252
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5200,7 +5206,7 @@
             -99.68377104663973,
             81.8537407578365
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5237,7 +5243,7 @@
           -101.96799463468597,
           81.16390480952994
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5267,7 +5273,7 @@
             -101.9682245917689,
             81.14655885884441
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5283,7 +5289,7 @@
             -101.93575709176486,
             81.02188288332397
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5320,7 +5326,7 @@
           -104.25679284095037,
           80.29277385231282
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5350,7 +5356,7 @@
             -104.25061151274282,
             80.27074255818988
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5366,7 +5372,7 @@
             -104.25371162730116,
             80.28161455777246
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5403,7 +5409,7 @@
           -106.54684721250906,
           79.35193297263396
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5433,7 +5439,7 @@
             -106.54135709995187,
             79.33546415934303
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5449,7 +5455,7 @@
             -106.53719295562966,
             79.33490257447552
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5486,7 +5492,7 @@
           -108.84066077621216,
           78.00826085754332
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5516,7 +5522,7 @@
             -108.83385394705411,
             77.99396169126496
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5532,7 +5538,7 @@
             -108.80865380961748,
             77.9644565906876
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5569,7 +5575,7 @@
           -111.13388517628012,
           76.42940666202611
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5599,7 +5605,7 @@
             -111.12944354744602,
             76.42340305678687
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5615,7 +5621,7 @@
             -111.08008995395807,
             76.36213724150298
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5652,7 +5658,7 @@
           -113.42805957069383,
           74.4788038940553
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5682,7 +5688,7 @@
             -113.42788200275983,
             74.47856839782737
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5698,7 +5704,7 @@
             -113.42826817991578,
             74.47861102335601
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5735,7 +5741,7 @@
           -115.7033978285381,
           72.73062795606273
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5765,7 +5771,7 @@
             -115.70337113121062,
             72.73059176614655
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5781,7 +5787,7 @@
             -115.72615752893924,
             72.7577578277705
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5818,7 +5824,7 @@
           -117.9411287289141,
           71.05759017622375
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5848,7 +5854,7 @@
             -117.93990647407601,
             71.05600094406522
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5864,7 +5870,7 @@
             -117.91300148071683,
             71.02392589477171
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5901,7 +5907,7 @@
           -120.15912795314374,
           69.3109892674943
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5931,7 +5937,7 @@
             -120.15374250606096,
             69.30440932501547
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5947,7 +5953,7 @@
             -120.10108818775826,
             69.24332159230248
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5984,7 +5990,7 @@
           -122.3510572932879,
           67.49835543041459
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6014,7 +6020,7 @@
             -122.34338458650205,
             67.48945855700431
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6030,7 +6036,7 @@
             -122.35109768404224,
             67.49841034907814
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6067,7 +6073,7 @@
           -124.81598318082752,
           65.66420465831136
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6097,7 +6103,7 @@
             -124.81282100690498,
             65.66627708893107
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6113,7 +6119,7 @@
             -124.81606079314201,
             65.66422004173546
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6150,7 +6156,7 @@
           -127.08842131027404,
           64.27605726761709
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6180,7 +6186,7 @@
             -127.07465610673188,
             64.2836884255247
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6196,7 +6202,7 @@
             -127.08835128550406,
             64.27610899702253
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6233,7 +6239,7 @@
           -129.3693946137954,
           63.156854002434244
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6263,7 +6269,7 @@
             -129.3680910738503,
             63.15752445585207
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6279,7 +6285,7 @@
             -129.3694389643893,
             63.156608229907825
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6316,7 +6322,7 @@
           -131.7133030153551,
           62.06111608732075
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6346,7 +6352,7 @@
             -131.72693859225006,
             62.05498093983635
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6362,7 +6368,7 @@
             -131.7133450311283,
             62.06111470591337
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6399,7 +6405,7 @@
           -134.04968365325956,
           61.72880738993208
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6429,7 +6435,7 @@
             -134.04844515510715,
             61.62492920990849
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6445,7 +6451,7 @@
             -134.0497473494389,
             61.72881205876049
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6482,7 +6488,7 @@
           -136.29235949478218,
           61.5545260423765
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6512,7 +6518,7 @@
             -136.28453030346756,
             61.48439313801306
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6528,7 +6534,7 @@
             -136.29228011456317,
             61.55460975834004
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6565,7 +6571,7 @@
           -138.5188801314269,
           61.01258957246106
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6595,7 +6601,7 @@
             -138.50949517998137,
             60.986629593322384
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6611,7 +6617,7 @@
             -138.51865115149604,
             61.01270867404513
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6648,7 +6654,7 @@
           -140.92185888403952,
           59.84605254996477
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6678,7 +6684,7 @@
             -140.92160594667925,
             59.8458830874246
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6694,7 +6700,7 @@
             -140.50685814016526,
             60.187317572588135
           ],
-          "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6731,7 +6737,7 @@
           -54.86820129469557,
           103.35861220458386
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6780,7 +6786,7 @@
           -58.00889658362144,
           109.67759776922232
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6829,7 +6835,7 @@
           -62.47127477729227,
           115.99669061133288
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6878,7 +6884,7 @@
           -65.44095621070294,
           122.31586940780866
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6927,7 +6933,7 @@
           -76.86010227099156,
           128.63489107834204
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6976,7 +6982,7 @@
           -78.5567793586565,
           134.9539699496404
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7025,7 +7031,7 @@
           -82.65853908170337,
           141.27298607733218
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7074,7 +7080,7 @@
           -86.73901638637187,
           147.59198887345224
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7123,7 +7129,7 @@
           -91.35821769306048,
           153.91112521267632
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7284,7 +7290,7 @@
           -54.8578735448668,
           103.37729635256213
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7333,7 +7339,7 @@
           -57.997595267600204,
           109.69460201263429
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7382,7 +7388,7 @@
           -62.45936368795114,
           116.01192461246704
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7431,7 +7437,7 @@
           -65.42870556837231,
           122.32941818139207
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7480,7 +7486,7 @@
           -76.86565547044054,
           128.6467671269432
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7529,7 +7535,7 @@
           -78.54759278209241,
           134.96416759490967
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7578,7 +7584,7 @@
           -82.64492033675242,
           141.28147989702444
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7627,7 +7633,7 @@
           -86.72929189374662,
           147.59890640168032
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7676,7 +7682,7 @@
           -91.35527899439131,
           153.91625596527996
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7837,7 +7843,7 @@
           -85.38720703125,
           95.625244140625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7886,7 +7892,7 @@
           -85.60546875,
           101.06591796875
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7935,7 +7941,7 @@
           -91.801513671875,
           106.42822265625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7984,7 +7990,7 @@
           -75.60693359375,
           111.755126953125
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8033,7 +8039,7 @@
           -89.656494140625,
           116.97607421875
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8166,7 +8172,7 @@
           -109.934326171875,
           90.103515625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8215,7 +8221,7 @@
           -129.3818359375,
           101.990478515625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8264,7 +8270,7 @@
           -129.889404296875,
           114.013916015625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8313,7 +8319,7 @@
           -125.267333984375,
           125.92041015625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8362,7 +8368,7 @@
           -131.279052734375,
           137.9287109375
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8495,7 +8501,7 @@
           -85.379150390625,
           95.6396484375
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8544,7 +8550,7 @@
           -85.597412109375,
           101.080322265625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8593,7 +8599,7 @@
           -91.79443359375,
           106.44091796875
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8642,7 +8648,7 @@
           -75.599853515625,
           111.76806640625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8691,7 +8697,7 @@
           -89.6474609375,
           116.99267578125
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8824,7 +8830,7 @@
           -109.932373046875,
           90.106689453125
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8873,7 +8879,7 @@
           -129.379638671875,
           101.994140625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8922,7 +8928,7 @@
           -129.88623046875,
           114.019775390625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8971,7 +8977,7 @@
           -125.264404296875,
           125.925537109375
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -9020,7 +9026,7 @@
           -131.27490234375,
           137.935791015625
         ],
-        "assetSha256": "33d185b66c51480f711547fc3217f99bba47f8f11028360da2f0d7925665bd3e",
+        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
