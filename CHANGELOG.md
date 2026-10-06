@@ -1,3 +1,31 @@
+# v0.9.26
+
+- Deliver a smaller install/build ZIP without modelling buffers, authoring tools or historical validation artefacts.
+- Preserve v0.9.25 geometry and behaviour exactly; retain current anatomical review findings and credits.
+
+# v0.9.25
+
+- Keep a fixed rendering pixel ratio during selection, rotation, pan and zoom.
+- Match desktop search opacity to the other bars, restoring full opacity on hover or focus.
+- Point panel arrows up to open and down to close on desktop, reversing them for mobile panels that open below their header.
+- Remove the Brain overview and Deep / posterior fossa preset buttons, retaining system and Description labels.
+- Retain v0.9.24 anatomical geometry and its documented review limitations.
+
+# v0.9.24
+
+- Reconstruct seven posterior intracranial trunks with smooth geodesic centrelines and circular sweeps, replacing repeated bulges and angular segment seams.
+- Join 61 adjacent labelled surfaces through rebuilt proximal branch necks. Preserve external source collars within a 0.025 mm surface tolerance and keep all atlas labels.
+- Apply a shared smooth placement field to remove new brainstem intersections, retaining the venous and brain assets.
+- Include actual mesh before/after render, loader checks and explicit remaining vessel-to-vein contact report. Complete clearance review remains pending.
+
+# v0.9.23
+
+- Smooth the bilateral PCA, basilar and vertebral arterial surface with shared branch collars and recomputed joined-surface normals.
+- Correct uniform shaft contraction before smoothing; bound movement by unchanged tissue, skull and venous wall clearance, with fixed external joins and local face-quality guards.
+- Retain original labels, vertex order and triangle indices. Refresh circulation hashes and versioned course identities.
+- Retain v0.9.22 brainstem geometry and the clival/basilar venous plexus.
+- Include paired calibre, triangle contact, exact exported-buffer and loader checks. Existing atlas contacts and large junction bulges remain subject to anatomical review.
+
 # v0.9.22
 
 - Restore the selectable clival/basilar venous plexus using its retained clival geometry.

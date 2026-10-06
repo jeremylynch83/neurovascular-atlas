@@ -77,26 +77,6 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
   };
 
-  const orientBrain = (posterior: boolean) => {
-    setFocusedId(null);
-    setVisibility(old => {
-      const next = new Map(old);
-      for (const s of manifest.structures) {
-        if (!(s.asset || s.landmark?.point)) continue;
-        if (s.system === 'bone') next.set(s.id, 'ghost');
-        if (s.system === 'artery') next.set(s.id, 'off');
-        if (s.system === 'vein') next.set(s.id, 'on');
-        if (s.system === 'brain') {
-          const category = s.anatomy?.category;
-          next.set(s.id, s.landmark ? 'off' : category === 'dural_reflections' ? 'ghost' : category === 'cerebral_cortex' ? (posterior ? 'off' : 'ghost') : 'on');
-        }
-      }
-      return next;
-    });
-    setSelectedId(null);
-    engine.current?.focus(posterior ? 'brain.brainstem' : 'brain');
-  };
-
   return <div className="atlas-app" onClickCapture={e => {
     if (focusedId && !(e.target as Element).closest('[data-focus-control], .clip-tools')) setFocusedId(null);
   }}>
@@ -124,7 +104,6 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     <section className="left-panel panel">
       <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={()=>setControlsOpen(!controlsOpen)}>Layers and anatomy</button>
       <div className="panel-body" id="anatomy-panel-body" hidden={!controlsOpen}>
-      {manifest.brainRegistration && <div className="orientation-presets" aria-label="Brain orientation views"><button disabled={!ready} onClick={()=>orientBrain(false)}>Brain overview</button><button disabled={!ready} onClick={()=>orientBrain(true)}>Deep / posterior fossa</button></div>}
       <StructureTree manifest={manifest} byId={byId} subtrees={subtrees} visibility={visibility} selectedId={selectedId} onSelect={select} onVisibility={changeVisibility} />
       </div>
     </section>

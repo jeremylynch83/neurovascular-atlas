@@ -72,8 +72,6 @@ export class AnatomyEngine {
   private started = false;
   private renderRequested = false;
   private bounds = new THREE.Box3();
-  private cameraInteracting = false;
-  private qualityRestoreAt = 0;
   private selected: string | null = null;
   private focusedMembers: Set<string> | null = null;
   private hidden = new Set<string>();
@@ -124,37 +122,9 @@ export class AnatomyEngine {
     controls.dampingFactor = 0.08;
     controls.addEventListener('start', () => {
       this.focusDistanceFloor = 0;
-      this.cameraInteracting = true;
-      if (this.useMotionResolution()) this.render();
     });
-    controls.addEventListener('end', () => {
-      this.cameraInteracting = false;
-      this.qualityRestoreAt = performance.now() + 180;
-    });
-    controls.addEventListener('change', () => {
-      this.useMotionResolution();
-      this.render();
-    });
+    controls.addEventListener('change', () => this.render());
     return controls;
-  }
-
-  private useMotionResolution() {
-    // Keep resolution low through drag/zoom and the remaining damping glide.
-    this.qualityRestoreAt = performance.now() + 180;
-    const ratio = Math.min(devicePixelRatio, 0.75);
-    if (this.renderer.getPixelRatio() === ratio) return false;
-    this.renderer.setPixelRatio(ratio);
-    return true;
-  }
-
-  private restoreSettledResolution() {
-    if (this.cameraInteracting || !this.qualityRestoreAt || performance.now() < this.qualityRestoreAt) return;
-    this.qualityRestoreAt = 0;
-    const ratio = Math.min(devicePixelRatio, 2);
-    if (this.renderer.getPixelRatio() !== ratio) {
-      this.renderer.setPixelRatio(ratio);
-      this.render();
-    }
   }
 
   private setCameraUp(up: [number, number, number], reset = false) {
@@ -528,7 +498,6 @@ export class AnatomyEngine {
   private tick = () => {
     if (this.disposed) return;
     if (this.started) this.controls.update();
-    this.restoreSettledResolution();
     const rendered = this.renderRequested;
     const frameTime = performance.now();
     if (rendered) {

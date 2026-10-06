@@ -1,0 +1,48 @@
+{
+  "release": "0.9.24",
+  "scope": "Geodesic source versus fitted circular-sweep centrelines, before the final common clearance field. Not a guarantee of anatomical course or constant final diameter.",
+  "parts": [
+    {
+      "node": "Basilar",
+      "sourceCentrelineTotalTurnDegrees": 650.7615495185905,
+      "rebuiltCentrelineTotalTurnDegrees": 226.53350674954595,
+      "regularShaftRadiusMm": 1.657143443821063
+    },
+    {
+      "node": "PCA P1 left",
+      "sourceCentrelineTotalTurnDegrees": 831.6043119693514,
+      "rebuiltCentrelineTotalTurnDegrees": 127.75463737854669,
+      "regularShaftRadiusMm": 1.0644871204035866
+    },
+    {
+      "node": "PCA P1 right",
+      "sourceCentrelineTotalTurnDegrees": 740.417961353168,
+      "rebuiltCentrelineTotalTurnDegrees": 89.16323046170845,
+      "regularShaftRadiusMm": 1.1550880522992273
+    },
+    {
+      "node": "PCA P2-P3 left",
+      "sourceCentrelineTotalTurnDegrees": 1881.9624549716798,
+      "rebuiltCentrelineTotalTurnDegrees": 331.2915018090519,
+      "regularShaftRadiusMm": 0.9249694250149105
+    },
+    {
+      "node": "PCA P2-P3 right",
+      "sourceCentrelineTotalTurnDegrees": 1689.703570099345,
+      "rebuiltCentrelineTotalTurnDegrees": 285.12897805776214,
+      "regularShaftRadiusMm": 0.9468980977436591
+    },
+    {
+      "node": "Vertebral V4 left",
+      "sourceCentrelineTotalTurnDegrees": 1154.9353436195556,
+      "rebuiltCentrelineTotalTurnDegrees": 394.2136775852052,
+      "regularShaftRadiusMm": 1.323334470779108
+    },
+    {
+      "node": "Vertebral V4 right",
+      "sourceCentrelineTotalTurnDegrees": 827.8060655590172,
+      "rebuiltCentrelineTotalTurnDegrees": 353.98983051004274,
+      "regularShaftRadiusMm": 1.322022641384402
+    }
+  ]
+}

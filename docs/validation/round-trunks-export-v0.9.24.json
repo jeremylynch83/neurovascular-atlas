@@ -1,0 +1,17 @@
+{
+  "release": "0.9.24",
+  "baseline": "0.9.23",
+  "checks": [
+    {
+      "file": "complete-circulation.glb",
+      "oldSha256": "5151b76ad36418447c05b0be45a0bb16379b16d93e453dc0fea7ab532c2f1a4a",
+      "sha256": "2a3a4f21af11a730d990b65b5d3b300b859b522c02e77171fd84fb078c8c86cc",
+      "labels": 599,
+      "rebuiltMeshTopology": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ],
+  "sharedLabelsPreserved": true,
+  "topologyRebuilt": true,
+  "brainAndVeinsUnchanged": true
+}

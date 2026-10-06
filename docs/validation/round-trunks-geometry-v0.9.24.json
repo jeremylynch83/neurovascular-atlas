@@ -1,0 +1,3406 @@
+{
+  "release": "0.9.24",
+  "baseline": "0.9.23",
+  "contacts": [
+    {
+      "one": "AICA left",
+      "two": "Basilar",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA left",
+      "two": "Labyrinthine left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA left",
+      "two": "AICA rostral branch left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA left",
+      "two": "AICA caudal branch left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA left",
+      "two": "AICA subarcuate left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA right",
+      "two": "Basilar",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA right",
+      "two": "Labyrinthine right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA right",
+      "two": "AICA rostral branch right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA right",
+      "two": "AICA caudal branch right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "AICA right",
+      "two": "AICA subarcuate right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Anterior spinal root left",
+      "two": "Anterior spinal root right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Anterior spinal root left",
+      "two": "Anterior spinal",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Anterior spinal root left",
+      "two": "Vertebral V4 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Anterior spinal root right",
+      "two": "Anterior spinal",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Anterior spinal root right",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "PCA P1 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "SCA right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine paramedian 1 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine paramedian 2 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine paramedian 3 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine circumferential right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "PCA P1 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "SCA left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine paramedian 1 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine paramedian 2 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine paramedian 3 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine circumferential left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine short circumflex right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine short circumflex left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine long circumflex right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine long circumflex left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Pontine median perforator",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "Vertebral V4 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Basilar",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "brain.lateral-ventricle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "brain.precuneus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "brain.calcarine-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "brain.parieto-occipital-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery left",
+      "two": "PCA P2-P3 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery right",
+      "two": "brain.lateral-ventricle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery right",
+      "two": "brain.precuneus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery right",
+      "two": "brain.calcarine-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Davidoff and Schechter artery right",
+      "two": "PCA P2-P3 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal left",
+      "two": "brain.lateral-ventricle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal left",
+      "two": "PCA P2-P3 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal left",
+      "two": "Lateral posterior choroidal plexal representative left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal right",
+      "two": "brain.lateral-ventricle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal right",
+      "two": "PCA P2-P3 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Lateral posterior choroidal right",
+      "two": "Lateral posterior choroidal plexal representative right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.lateral-ventricle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.superior-colliculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.inferior-colliculus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.septum-pellucidum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.choroid-plexus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.caudate-nucleus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "PCA P2-P3 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "Medial posterior choroidal plexal representative left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.lateral-ventricle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.superior-colliculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.inferior-colliculus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.choroid-plexus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.caudate-nucleus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.fornix.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "PCA P2-P3 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Medial posterior choroidal right",
+      "two": "Medial posterior choroidal plexal representative right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "Posterior communicating left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "PCA P1 right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "PCA P2-P3 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "Thalamoperforator 1 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "Thalamoperforator 2 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "PCA short circumflex left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "PCA long circumflex left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "Posterior communicating right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "PCA P2-P3 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "Thalamoperforator 1 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "Thalamoperforator 2 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "PCA short circumflex right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "PCA long circumflex right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "brain.lateral-ventricle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "brain.calcarine-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "Posterior communicating left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA calcarine left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA parieto-occipital left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA anterior inferior temporal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA middle inferior temporal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA posterior inferior temporal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA splenial left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA hippocampal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "Thalamogeniculate left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "Peduncular perforator left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA short circumflex left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "brain.calcarine-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "Posterior communicating right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA calcarine right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA parieto-occipital right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA anterior inferior temporal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA middle inferior temporal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA posterior inferior temporal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA splenial right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA hippocampal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "Thalamogeniculate right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "Peduncular perforator right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA short circumflex right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA long circumflex right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.lateral-occipitotemporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal left",
+      "two": "brain.inferior-temporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.lateral-occipitotemporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA anterior inferior temporal right",
+      "two": "brain.inferior-temporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "brain.precuneus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "brain.calcarine-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "brain.cuneus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "brain.superior-occipital-gyri.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "brain.parieto-occipital-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "PCA parieto-occipital left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "Calcarine superior cortical left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine left",
+      "two": "Calcarine inferior cortical left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "brain.precuneus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "brain.calcarine-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "brain.cuneus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "brain.superior-occipital-gyri.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "brain.parieto-occipital-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "PCA parieto-occipital right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "Calcarine superior cortical right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA calcarine right",
+      "two": "Calcarine inferior cortical right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA hippocampal left",
+      "two": "brain.lateral-ventricle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA hippocampal left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA hippocampal left",
+      "two": "brain.choroid-plexus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA hippocampal right",
+      "two": "brain.lateral-ventricle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA hippocampal right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA hippocampal right",
+      "two": "brain.choroid-plexus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA long circumflex left",
+      "two": "brain.optic-tract.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA long circumflex left",
+      "two": "PCA collicular left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA long circumflex right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA long circumflex right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA long circumflex right",
+      "two": "PCA collicular right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal left",
+      "two": "brain.inferior-occipital-gyrus-and-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal left",
+      "two": "brain.lateral-occipitotemporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal left",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal left",
+      "two": "brain.inferior-temporal-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal right",
+      "two": "brain.inferior-occipital-gyrus-and-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal right",
+      "two": "brain.lateral-occipitotemporal-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA middle inferior temporal right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital left",
+      "two": "brain.angular-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital left",
+      "two": "brain.precuneus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital left",
+      "two": "brain.superior-parietal-lobule.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital left",
+      "two": "brain.calcarine-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital left",
+      "two": "brain.parieto-occipital-sulcus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital left",
+      "two": "Parieto-occipital cuneal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital right",
+      "two": "brain.angular-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital right",
+      "two": "brain.precuneus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital right",
+      "two": "brain.superior-parietal-lobule.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital right",
+      "two": "brain.calcarine-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital right",
+      "two": "brain.parieto-occipital-sulcus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA parieto-occipital right",
+      "two": "Parieto-occipital cuneal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA posterior inferior temporal left",
+      "two": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA posterior inferior temporal left",
+      "two": "brain.occipitotemporal-sulcus-lateral-part.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA posterior inferior temporal left",
+      "two": "PCA lateral occipital left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA posterior inferior temporal right",
+      "two": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA posterior inferior temporal right",
+      "two": "PCA lateral occipital right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA short circumflex right",
+      "two": "brain.optic-tract.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA short circumflex right",
+      "two": "Posterior communicating right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA splenial left",
+      "two": "brain.cingulate-gyrus-posteroventral-part.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA splenial left",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA splenial right",
+      "two": "brain.cingulate-gyrus-posteroventral-part.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PCA splenial right",
+      "two": "brain.corpus-callosum",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "PICA vermian left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "PICA hemispheric left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "PICA tonsillar left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "PICA choroidal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "PICA medullary perforator left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "Posterior spinal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "Hypoglossal posterior meningeal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "Vertebral V4 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA left",
+      "two": "vein.marginal",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "PICA vermian right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "PICA hemispheric right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "PICA tonsillar right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "PICA choroidal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "PICA medullary perforator right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "Posterior spinal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "PICA right",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Peduncular perforator left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Peduncular perforator right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine circumferential left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine circumferential left",
+      "two": "Pontine long circumflex left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine circumferential right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine circumferential right",
+      "two": "SCA right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine circumferential right",
+      "two": "Pontine long circumflex right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine long circumflex left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine long circumflex left",
+      "two": "SCA left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine long circumflex right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine long circumflex right",
+      "two": "SCA right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine median perforator",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine median perforator",
+      "two": "brain.fourth-ventricle",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 1 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 1 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 1 right",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 2 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 2 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 2 right",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 3 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Pontine paramedian 3 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating left",
+      "two": "brain.orbital-gyri.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating left",
+      "two": "ICA posterior communicating left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating left",
+      "two": "PCom perforator left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating left",
+      "two": "Tuberothalamic artery left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating left",
+      "two": "Anterior thalamoperforating branch left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating left",
+      "two": "vein.anterior_cerebral.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "ICA posterior communicating right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "PCom perforator right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "Tuberothalamic artery right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "Anterior thalamoperforating branch right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "SCA left",
+      "two": "brain.tentorium-cerebelli.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "SCA vermian left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "SCA medial hemispheric left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "SCA lateral hemispheric left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "AICA fourth ventricular choroidal left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "SCA proximal perforator left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "SCA tectal branch left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA left",
+      "two": "Wollschlaeger and Wollschlaeger artery left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "brain.tentorium-cerebelli.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "Tentorial marginal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "SCA vermian right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "SCA medial hemispheric right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "SCA lateral hemispheric right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "AICA fourth ventricular choroidal right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "SCA proximal perforator right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "SCA tectal branch right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "Wollschlaeger and Wollschlaeger artery right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "SCA right",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Thalamogeniculate left",
+      "two": "brain.lateral-ventricle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate left",
+      "two": "brain.hippocampus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate left",
+      "two": "brain.choroid-plexus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate left",
+      "two": "brain.fornix.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate right",
+      "two": "brain.lateral-ventricle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate right",
+      "two": "brain.hippocampus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate right",
+      "two": "brain.choroid-plexus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamogeniculate right",
+      "two": "brain.fornix.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 1 left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 1 left",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 1 left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 1 right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 1 right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 1 right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 left",
+      "two": "brain.thalamus.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 left",
+      "two": "brain.midbrain.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 left",
+      "two": "brain.base-of-peduncle.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "brain.thalamus.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "brain.midbrain.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "brain.base-of-peduncle.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "VA medullary perforator 1 left",
+      "two": "brain.medulla-oblongata.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 1 left",
+      "two": "Vertebral V4 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 1 right",
+      "two": "brain.medulla-oblongata.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 1 right",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 left",
+      "two": "brain.pons.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 left",
+      "two": "brain.fourth-ventricle",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 left",
+      "two": "brain.medulla-oblongata.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 left",
+      "two": "Vertebral V4 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 right",
+      "two": "brain.pons.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 right",
+      "two": "brain.fourth-ventricle",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 right",
+      "two": "brain.medulla-oblongata.right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "VA medullary perforator 2 right",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 left",
+      "two": "VA muscular C1 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 left",
+      "two": "Posterior meningeal VA left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 left",
+      "two": "Vertebral V2 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 left",
+      "two": "Vertebral V4 left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 right",
+      "two": "VA muscular C1 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 right",
+      "two": "Posterior meningeal VA right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 right",
+      "two": "Vertebral V2 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V3 right",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "Vertebral V4 right",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.marginal",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.anterior_condylar.left",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.basilar_plexus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.pontomedullary.left",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.basilar_plexus",
+      "baselineContact": true,
+      "newContact": true
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.anterior_medullary",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.left",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    }
+  ],
+  "newUnintendedContactPairs": [
+    {
+      "one": "Basilar",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P1 left",
+      "two": "PCA P1 right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA short circumflex right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "PCA long circumflex right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "PCA short circumflex right",
+      "two": "Posterior communicating right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "vein.posterior_communicating",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "SCA right",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.marginal",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.pontomedullary.left",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.anterior_medullary",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.right",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.left",
+      "baselineContact": false,
+      "newContact": true,
+      "sharedSourceVertices": 0
+    }
+  ],
+  "checks": {
+    "interfaces": {
+      "pairs": [
+        {
+          "one": "AICA left",
+          "two": "Basilar",
+          "sourceSharedVertices": 17,
+          "newSharedVertices": 146,
+          "passed": true
+        },
+        {
+          "one": "AICA left",
+          "two": "Labyrinthine left",
+          "sourceSharedVertices": 72,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "AICA left",
+          "two": "AICA rostral branch left",
+          "sourceSharedVertices": 102,
+          "maximumSourceCollarGapMm": 0.000244140625,
+          "passed": true
+        },
+        {
+          "one": "AICA left",
+          "two": "AICA caudal branch left",
+          "sourceSharedVertices": 93,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "AICA left",
+          "two": "AICA subarcuate left",
+          "sourceSharedVertices": 80,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "AICA right",
+          "two": "Basilar",
+          "sourceSharedVertices": 44,
+          "newSharedVertices": 148,
+          "passed": true
+        },
+        {
+          "one": "AICA right",
+          "two": "Labyrinthine right",
+          "sourceSharedVertices": 199,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "AICA right",
+          "two": "AICA rostral branch right",
+          "sourceSharedVertices": 129,
+          "maximumSourceCollarGapMm": 0.00039867997115031466,
+          "passed": true
+        },
+        {
+          "one": "AICA right",
+          "two": "AICA caudal branch right",
+          "sourceSharedVertices": 246,
+          "maximumSourceCollarGapMm": 0.00039867997115031466,
+          "passed": true
+        },
+        {
+          "one": "AICA right",
+          "two": "AICA subarcuate right",
+          "sourceSharedVertices": 162,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Anterior spinal root left",
+          "two": "Anterior spinal root right",
+          "sourceSharedVertices": 176,
+          "newSharedVertices": 175,
+          "passed": true
+        },
+        {
+          "one": "Anterior spinal root left",
+          "two": "Anterior spinal",
+          "sourceSharedVertices": 63,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Anterior spinal root left",
+          "two": "Vertebral V4 left",
+          "sourceSharedVertices": 98,
+          "newSharedVertices": 116,
+          "passed": true
+        },
+        {
+          "one": "Anterior spinal root right",
+          "two": "Anterior spinal",
+          "sourceSharedVertices": 77,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Anterior spinal root right",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 887,
+          "newSharedVertices": 231,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "PCA P1 right",
+          "sourceSharedVertices": 41,
+          "newSharedVertices": 197,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "SCA right",
+          "sourceSharedVertices": 335,
+          "newSharedVertices": 185,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine paramedian 1 right",
+          "sourceSharedVertices": 72,
+          "newSharedVertices": 105,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine paramedian 2 right",
+          "sourceSharedVertices": 74,
+          "newSharedVertices": 109,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine paramedian 3 right",
+          "sourceSharedVertices": 70,
+          "newSharedVertices": 104,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine circumferential right",
+          "sourceSharedVertices": 8,
+          "newSharedVertices": 120,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "PCA P1 left",
+          "sourceSharedVertices": 69,
+          "newSharedVertices": 117,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "SCA left",
+          "sourceSharedVertices": 30,
+          "newSharedVertices": 186,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine paramedian 1 left",
+          "sourceSharedVertices": 72,
+          "newSharedVertices": 108,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine paramedian 2 left",
+          "sourceSharedVertices": 72,
+          "newSharedVertices": 103,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine paramedian 3 left",
+          "sourceSharedVertices": 72,
+          "newSharedVertices": 106,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine circumferential left",
+          "sourceSharedVertices": 76,
+          "newSharedVertices": 103,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine short circumflex right",
+          "sourceSharedVertices": 119,
+          "newSharedVertices": 114,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine short circumflex left",
+          "sourceSharedVertices": 120,
+          "newSharedVertices": 113,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine long circumflex right",
+          "sourceSharedVertices": 116,
+          "newSharedVertices": 117,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine long circumflex left",
+          "sourceSharedVertices": 74,
+          "newSharedVertices": 110,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Pontine median perforator",
+          "sourceSharedVertices": 62,
+          "newSharedVertices": 105,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 211,
+          "newSharedVertices": 120,
+          "passed": true
+        },
+        {
+          "one": "Basilar",
+          "two": "Vertebral V4 left",
+          "sourceSharedVertices": 181,
+          "newSharedVertices": 224,
+          "passed": true
+        },
+        {
+          "one": "Davidoff and Schechter artery left",
+          "two": "PCA P2-P3 left",
+          "sourceSharedVertices": 114,
+          "newSharedVertices": 136,
+          "passed": true
+        },
+        {
+          "one": "Davidoff and Schechter artery right",
+          "two": "PCA P2-P3 right",
+          "sourceSharedVertices": 113,
+          "newSharedVertices": 141,
+          "passed": true
+        },
+        {
+          "one": "Lateral posterior choroidal left",
+          "two": "PCA P2-P3 left",
+          "sourceSharedVertices": 121,
+          "newSharedVertices": 128,
+          "passed": true
+        },
+        {
+          "one": "Lateral posterior choroidal left",
+          "two": "Lateral posterior choroidal plexal representative left",
+          "sourceSharedVertices": 90,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Lateral posterior choroidal right",
+          "two": "PCA P2-P3 right",
+          "sourceSharedVertices": 115,
+          "newSharedVertices": 130,
+          "passed": true
+        },
+        {
+          "one": "Lateral posterior choroidal right",
+          "two": "Lateral posterior choroidal plexal representative right",
+          "sourceSharedVertices": 90,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Medial posterior choroidal left",
+          "two": "PCA P2-P3 left",
+          "sourceSharedVertices": 94,
+          "newSharedVertices": 134,
+          "passed": true
+        },
+        {
+          "one": "Medial posterior choroidal left",
+          "two": "Medial posterior choroidal plexal representative left",
+          "sourceSharedVertices": 90,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Medial posterior choroidal right",
+          "two": "PCA P2-P3 right",
+          "sourceSharedVertices": 90,
+          "newSharedVertices": 132,
+          "passed": true
+        },
+        {
+          "one": "Medial posterior choroidal right",
+          "two": "Medial posterior choroidal plexal representative right",
+          "sourceSharedVertices": 90,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 left",
+          "two": "Posterior communicating left",
+          "sourceSharedVertices": 95,
+          "newSharedVertices": 131,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 left",
+          "two": "PCA P2-P3 left",
+          "sourceSharedVertices": 467,
+          "newSharedVertices": 167,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 left",
+          "two": "Thalamoperforator 1 left",
+          "sourceSharedVertices": 110,
+          "newSharedVertices": 114,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 left",
+          "two": "Thalamoperforator 2 left",
+          "sourceSharedVertices": 95,
+          "newSharedVertices": 112,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 left",
+          "two": "PCA short circumflex left",
+          "sourceSharedVertices": 167,
+          "newSharedVertices": 36,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 left",
+          "two": "PCA long circumflex left",
+          "sourceSharedVertices": 154,
+          "newSharedVertices": 148,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 right",
+          "two": "Posterior communicating right",
+          "sourceSharedVertices": 30,
+          "newSharedVertices": 163,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 right",
+          "two": "PCA P2-P3 right",
+          "sourceSharedVertices": 658,
+          "newSharedVertices": 266,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 right",
+          "two": "Thalamoperforator 1 right",
+          "sourceSharedVertices": 110,
+          "newSharedVertices": 107,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 right",
+          "two": "Thalamoperforator 2 right",
+          "sourceSharedVertices": 83,
+          "newSharedVertices": 108,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 right",
+          "two": "PCA short circumflex right",
+          "sourceSharedVertices": 95,
+          "newSharedVertices": 20,
+          "passed": true
+        },
+        {
+          "one": "PCA P1 right",
+          "two": "PCA long circumflex right",
+          "sourceSharedVertices": 139,
+          "newSharedVertices": 119,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "Posterior communicating left",
+          "sourceSharedVertices": 20,
+          "newSharedVertices": 213,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA calcarine left",
+          "sourceSharedVertices": 139,
+          "newSharedVertices": 40,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA parieto-occipital left",
+          "sourceSharedVertices": 127,
+          "newSharedVertices": 203,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA anterior inferior temporal left",
+          "sourceSharedVertices": 150,
+          "newSharedVertices": 158,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA middle inferior temporal left",
+          "sourceSharedVertices": 122,
+          "newSharedVertices": 160,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA posterior inferior temporal left",
+          "sourceSharedVertices": 146,
+          "newSharedVertices": 170,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA splenial left",
+          "sourceSharedVertices": 135,
+          "newSharedVertices": 129,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA hippocampal left",
+          "sourceSharedVertices": 103,
+          "newSharedVertices": 124,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "Thalamogeniculate left",
+          "sourceSharedVertices": 116,
+          "newSharedVertices": 119,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "Peduncular perforator left",
+          "sourceSharedVertices": 208,
+          "newSharedVertices": 110,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 left",
+          "two": "PCA short circumflex left",
+          "sourceSharedVertices": 521,
+          "newSharedVertices": 497,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "Posterior communicating right",
+          "sourceSharedVertices": 114,
+          "newSharedVertices": 159,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA calcarine right",
+          "sourceSharedVertices": 78,
+          "newSharedVertices": 28,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA parieto-occipital right",
+          "sourceSharedVertices": 111,
+          "newSharedVertices": 184,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA anterior inferior temporal right",
+          "sourceSharedVertices": 130,
+          "newSharedVertices": 158,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA middle inferior temporal right",
+          "sourceSharedVertices": 134,
+          "newSharedVertices": 159,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA posterior inferior temporal right",
+          "sourceSharedVertices": 163,
+          "newSharedVertices": 174,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA splenial right",
+          "sourceSharedVertices": 150,
+          "newSharedVertices": 130,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "PCA hippocampal right",
+          "sourceSharedVertices": 114,
+          "newSharedVertices": 123,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "Thalamogeniculate right",
+          "sourceSharedVertices": 113,
+          "newSharedVertices": 120,
+          "passed": true
+        },
+        {
+          "one": "PCA P2-P3 right",
+          "two": "Peduncular perforator right",
+          "sourceSharedVertices": 49,
+          "newSharedVertices": 109,
+          "passed": true
+        },
+        {
+          "one": "PCA calcarine left",
+          "two": "PCA parieto-occipital left",
+          "sourceSharedVertices": 74,
+          "newSharedVertices": 135,
+          "passed": true
+        },
+        {
+          "one": "PCA calcarine left",
+          "two": "Calcarine superior cortical left",
+          "sourceSharedVertices": 104,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA calcarine left",
+          "two": "Calcarine inferior cortical left",
+          "sourceSharedVertices": 87,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA calcarine right",
+          "two": "PCA parieto-occipital right",
+          "sourceSharedVertices": 80,
+          "newSharedVertices": 167,
+          "passed": true
+        },
+        {
+          "one": "PCA calcarine right",
+          "two": "Calcarine superior cortical right",
+          "sourceSharedVertices": 102,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA calcarine right",
+          "two": "Calcarine inferior cortical right",
+          "sourceSharedVertices": 88,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA long circumflex left",
+          "two": "PCA collicular left",
+          "sourceSharedVertices": 274,
+          "maximumSourceCollarGapMm": 0.0003390454466918568,
+          "passed": true
+        },
+        {
+          "one": "PCA long circumflex right",
+          "two": "PCA collicular right",
+          "sourceSharedVertices": 282,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA parieto-occipital left",
+          "two": "Parieto-occipital cuneal left",
+          "sourceSharedVertices": 108,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA parieto-occipital right",
+          "two": "Parieto-occipital cuneal right",
+          "sourceSharedVertices": 106,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA posterior inferior temporal left",
+          "two": "PCA lateral occipital left",
+          "sourceSharedVertices": 132,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PCA posterior inferior temporal right",
+          "two": "PCA lateral occipital right",
+          "sourceSharedVertices": 130,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "PICA vermian left",
+          "sourceSharedVertices": 669,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "PICA hemispheric left",
+          "sourceSharedVertices": 134,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "PICA tonsillar left",
+          "sourceSharedVertices": 218,
+          "maximumSourceCollarGapMm": 0.0005215038520734799,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "PICA choroidal left",
+          "sourceSharedVertices": 151,
+          "maximumSourceCollarGapMm": 0.0003121114564314916,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "PICA medullary perforator left",
+          "sourceSharedVertices": 61,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "Posterior spinal left",
+          "sourceSharedVertices": 103,
+          "maximumSourceCollarGapMm": 0.0005819843289947779,
+          "passed": true
+        },
+        {
+          "one": "PICA left",
+          "two": "Vertebral V4 left",
+          "sourceSharedVertices": 380,
+          "newSharedVertices": 193,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "PICA vermian right",
+          "sourceSharedVertices": 676,
+          "maximumSourceCollarGapMm": 0.0004882812499955591,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "PICA hemispheric right",
+          "sourceSharedVertices": 57,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "PICA tonsillar right",
+          "sourceSharedVertices": 64,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "PICA choroidal right",
+          "sourceSharedVertices": 391,
+          "maximumSourceCollarGapMm": 0.01948628631487187,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "PICA medullary perforator right",
+          "sourceSharedVertices": 64,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "Posterior spinal right",
+          "sourceSharedVertices": 190,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "PICA right",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 216,
+          "newSharedVertices": 160,
+          "passed": true
+        },
+        {
+          "one": "Pontine circumferential left",
+          "two": "Pontine long circumflex left",
+          "sourceSharedVertices": 232,
+          "newSharedVertices": 210,
+          "passed": true
+        },
+        {
+          "one": "Pontine circumferential right",
+          "two": "SCA right",
+          "sourceSharedVertices": 218,
+          "newSharedVertices": 205,
+          "passed": true
+        },
+        {
+          "one": "Pontine circumferential right",
+          "two": "Pontine long circumflex right",
+          "sourceSharedVertices": 701,
+          "newSharedVertices": 729,
+          "passed": true
+        },
+        {
+          "one": "Pontine long circumflex left",
+          "two": "SCA left",
+          "sourceSharedVertices": 282,
+          "newSharedVertices": 277,
+          "passed": true
+        },
+        {
+          "one": "Pontine long circumflex right",
+          "two": "SCA right",
+          "sourceSharedVertices": 84,
+          "newSharedVertices": 228,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating left",
+          "two": "ICA posterior communicating left",
+          "sourceSharedVertices": 115,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating left",
+          "two": "PCom perforator left",
+          "sourceSharedVertices": 82,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating left",
+          "two": "Tuberothalamic artery left",
+          "sourceSharedVertices": 82,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating left",
+          "two": "Anterior thalamoperforating branch left",
+          "sourceSharedVertices": 72,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating right",
+          "two": "ICA posterior communicating right",
+          "sourceSharedVertices": 112,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating right",
+          "two": "PCom perforator right",
+          "sourceSharedVertices": 81,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating right",
+          "two": "Tuberothalamic artery right",
+          "sourceSharedVertices": 78,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Posterior communicating right",
+          "two": "Anterior thalamoperforating branch right",
+          "sourceSharedVertices": 72,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA left",
+          "two": "SCA vermian left",
+          "sourceSharedVertices": 313,
+          "maximumSourceCollarGapMm": 0.00017263349150062197,
+          "passed": true
+        },
+        {
+          "one": "SCA left",
+          "two": "SCA medial hemispheric left",
+          "sourceSharedVertices": 253,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA left",
+          "two": "SCA lateral hemispheric left",
+          "sourceSharedVertices": 144,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA left",
+          "two": "SCA proximal perforator left",
+          "sourceSharedVertices": 172,
+          "maximumSourceCollarGapMm": 0.00015240646485985444,
+          "passed": true
+        },
+        {
+          "one": "SCA left",
+          "two": "SCA tectal branch left",
+          "sourceSharedVertices": 132,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA left",
+          "two": "Wollschlaeger and Wollschlaeger artery left",
+          "sourceSharedVertices": 81,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA right",
+          "two": "SCA vermian right",
+          "sourceSharedVertices": 42,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA right",
+          "two": "SCA medial hemispheric right",
+          "sourceSharedVertices": 155,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA right",
+          "two": "SCA lateral hemispheric right",
+          "sourceSharedVertices": 146,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA right",
+          "two": "SCA proximal perforator right",
+          "sourceSharedVertices": 64,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA right",
+          "two": "SCA tectal branch right",
+          "sourceSharedVertices": 128,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "SCA right",
+          "two": "Wollschlaeger and Wollschlaeger artery right",
+          "sourceSharedVertices": 233,
+          "maximumSourceCollarGapMm": 0.0002994784633198644,
+          "passed": true
+        },
+        {
+          "one": "VA medullary perforator 1 left",
+          "two": "Vertebral V4 left",
+          "sourceSharedVertices": 94,
+          "newSharedVertices": 109,
+          "passed": true
+        },
+        {
+          "one": "VA medullary perforator 1 right",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 41,
+          "newSharedVertices": 109,
+          "passed": true
+        },
+        {
+          "one": "VA medullary perforator 2 left",
+          "two": "Vertebral V4 left",
+          "sourceSharedVertices": 101,
+          "newSharedVertices": 107,
+          "passed": true
+        },
+        {
+          "one": "VA medullary perforator 2 right",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 34,
+          "newSharedVertices": 100,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 left",
+          "two": "VA muscular C1 left",
+          "sourceSharedVertices": 78,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 left",
+          "two": "Posterior meningeal VA left",
+          "sourceSharedVertices": 80,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 left",
+          "two": "Vertebral V2 left",
+          "sourceSharedVertices": 66,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 left",
+          "two": "Vertebral V4 left",
+          "sourceSharedVertices": 29,
+          "newSharedVertices": 322,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 right",
+          "two": "VA muscular C1 right",
+          "sourceSharedVertices": 79,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 right",
+          "two": "Posterior meningeal VA right",
+          "sourceSharedVertices": 80,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 right",
+          "two": "Vertebral V2 right",
+          "sourceSharedVertices": 66,
+          "maximumSourceCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V3 right",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 67,
+          "newSharedVertices": 384,
+          "passed": true
+        },
+        {
+          "one": "Vertebral V4 left",
+          "two": "Vertebral V4 right",
+          "sourceSharedVertices": 1100,
+          "newSharedVertices": 70,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "meshQuality": {
+      "parts": [
+        {
+          "node": "Lateral posterior choroidal left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.633311675744346e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA P1 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.1417913267243122e-08,
+          "passed": true
+        },
+        {
+          "node": "PCA anterior inferior temporal left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 7.814426389057295e-07,
+          "passed": true
+        },
+        {
+          "node": "Lateral posterior choroidal right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.0049939625690701e-07,
+          "passed": true
+        },
+        {
+          "node": "Thalamogeniculate left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.6369067753782618e-08,
+          "passed": true
+        },
+        {
+          "node": "Vertebral V3 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.86663509112511e-08,
+          "passed": true
+        },
+        {
+          "node": "AICA left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.6259119989657102e-09,
+          "passed": true
+        },
+        {
+          "node": "PICA right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.093170329928398e-11,
+          "passed": true
+        },
+        {
+          "node": "Posterior communicating left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.535926359839975e-10,
+          "passed": true
+        },
+        {
+          "node": "Vertebral V4 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.9560287982843647e-06,
+          "passed": true
+        },
+        {
+          "node": "Posterior communicating right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.47178056774661e-08,
+          "passed": true
+        },
+        {
+          "node": "Pontine paramedian 3 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.211925487555417e-08,
+          "passed": true
+        },
+        {
+          "node": "Pontine paramedian 3 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.8022311328436603e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA parieto-occipital right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.9920332756244567e-06,
+          "passed": true
+        },
+        {
+          "node": "Pontine long circumflex right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.921495594326336e-09,
+          "passed": true
+        },
+        {
+          "node": "PCA anterior inferior temporal right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.600983790066367e-07,
+          "passed": true
+        },
+        {
+          "node": "Pontine paramedian 2 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.917665892268214e-07,
+          "passed": true
+        },
+        {
+          "node": "Pontine paramedian 1 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.536287362371625e-08,
+          "passed": true
+        },
+        {
+          "node": "Thalamoperforator 2 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.354653113081893e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA short circumflex left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.1751065748523932e-09,
+          "passed": true
+        },
+        {
+          "node": "Thalamoperforator 1 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.0592796952676487e-08,
+          "passed": true
+        },
+        {
+          "node": "Davidoff and Schechter artery right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.7883343351626812e-07,
+          "passed": true
+        },
+        {
+          "node": "VA medullary perforator 2 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.2186594781364675e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA middle inferior temporal left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.668423103860169e-07,
+          "passed": true
+        },
+        {
+          "node": "Thalamoperforator 2 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.546559991196901e-10,
+          "passed": true
+        },
+        {
+          "node": "Anterior spinal root left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.2426876786962426e-08,
+          "passed": true
+        },
+        {
+          "node": "PCA middle inferior temporal right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.149726039269856e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA short circumflex right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.535228609696999e-09,
+          "passed": true
+        },
+        {
+          "node": "VA medullary perforator 1 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.840363897289818e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA posterior inferior temporal right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.199681592924991e-08,
+          "passed": true
+        },
+        {
+          "node": "Medial posterior choroidal right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.796479062941273e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA hippocampal left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.3851957068784075e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA calcarine right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.1619198286733647e-06,
+          "passed": true
+        },
+        {
+          "node": "Pontine short circumflex right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.1752905121959256e-07,
+          "passed": true
+        },
+        {
+          "node": "Peduncular perforator left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.2600094946987367e-10,
+          "passed": true
+        },
+        {
+          "node": "Anterior spinal root right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 6.322323881076364e-09,
+          "passed": true
+        },
+        {
+          "node": "PCA splenial right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.180569178463876e-07,
+          "passed": true
+        },
+        {
+          "node": "Pontine long circumflex left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.387187222930923e-09,
+          "passed": true
+        },
+        {
+          "node": "Pontine median perforator",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.205997067281656e-07,
+          "passed": true
+        },
+        {
+          "node": "Vertebral V4 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.7758457894612744e-07,
+          "passed": true
+        },
+        {
+          "node": "Thalamoperforator 1 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.6237187297438976e-07,
+          "passed": true
+        },
+        {
+          "node": "SCA right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.960464477539063e-08,
+          "passed": true
+        },
+        {
+          "node": "PCA P1 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.9216098974782126e-08,
+          "passed": true
+        },
+        {
+          "node": "PCA splenial left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 9.795253463886165e-07,
+          "passed": true
+        },
+        {
+          "node": "Pontine circumferential right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 6.060887466426539e-10,
+          "passed": true
+        },
+        {
+          "node": "PICA left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.391001894356274e-09,
+          "passed": true
+        },
+        {
+          "node": "VA medullary perforator 2 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 4.7074437813906994e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA P2-P3 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 6.636418649143881e-08,
+          "passed": true
+        },
+        {
+          "node": "Pontine paramedian 1 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.413791349765276e-08,
+          "passed": true
+        },
+        {
+          "node": "SCA left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.384185791015625e-07,
+          "passed": true
+        },
+        {
+          "node": "VA medullary perforator 1 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 7.242224662077941e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA posterior inferior temporal left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.2971660342071845e-06,
+          "passed": true
+        },
+        {
+          "node": "PCA hippocampal right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 9.128538355994067e-07,
+          "passed": true
+        },
+        {
+          "node": "Peduncular perforator right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.345779665424047e-08,
+          "passed": true
+        },
+        {
+          "node": "PCA long circumflex right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.0886731664089106e-08,
+          "passed": true
+        },
+        {
+          "node": "Pontine circumferential left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.4599658140690566e-08,
+          "passed": true
+        },
+        {
+          "node": "Davidoff and Schechter artery left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.216941129808314e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA long circumflex left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 8.673154655382391e-08,
+          "passed": true
+        },
+        {
+          "node": "Pontine paramedian 2 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.3376939026363178e-08,
+          "passed": true
+        },
+        {
+          "node": "Vertebral V3 left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.106986241194106e-06,
+          "passed": true
+        },
+        {
+          "node": "PCA P2-P3 right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.813427197267934e-08,
+          "passed": true
+        },
+        {
+          "node": "PCA calcarine left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.457375617921971e-06,
+          "passed": true
+        },
+        {
+          "node": "AICA right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.106131414079898e-07,
+          "passed": true
+        },
+        {
+          "node": "PCA parieto-occipital left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 3.0028838782317756e-08,
+          "passed": true
+        },
+        {
+          "node": "Basilar",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 2.7563690012160857e-08,
+          "passed": true
+        },
+        {
+          "node": "Medial posterior choroidal left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 1.713212152176449e-07,
+          "passed": true
+        },
+        {
+          "node": "Thalamogeniculate right",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 9.335100915437539e-08,
+          "passed": true
+        },
+        {
+          "node": "Pontine short circumflex left",
+          "zeroAreaTriangles": 0,
+          "minimumDoubleAreaMm2": 5.561769249956562e-08,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "passed": false,
+  "scope": "Actual triangle surface intersection pairs versus v0.9.22, with existing contacts recorded separately. No claim of solid containment for open tissue skins.",
+  "externalCollarToleranceMm": 0.025
+}

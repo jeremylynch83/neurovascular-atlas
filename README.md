@@ -1,16 +1,15 @@
-# Neurovascular Atlas v0.9.21 review build
+# Neurovascular Atlas v0.9.26 review build
 
-Includes the ventral pons advancement of up to 3 mm, carried with the basilar artery and local pontine vessels. Cavernous sinuses retain their reviewed shape. The rejected PCA and deep venous fitting trials are excluded; those fitting tasks remain unfinished.
+This compact release omits modelling buffers, authoring utilities and historical validation artefacts. Anatomy is identical to v0.9.25. It retains the installer, build tools, credits and current anatomical review findings.
 
-This compact installation package retains all 1,482 catalogue structures and all model triangles. Delivery assets use Meshopt compression, positions rounded on a 1/4096 mm grid (maximum displacement below 0.00022 mm), and high-precision packed shading normals. Surface anchors and asset hashes are updated and validated. Historical review images and authoring trial models are omitted from this installation package. See [delivery checks](docs/validation/delivery-optimisation-v0.9.21.json).
+Keeps full rendering resolution during selection and camera movement. Desktop search fades like the other control bars; panel arrows follow their opening and closing direction. The Brain overview and Deep / posterior fossa buttons are removed.
 
-This build resumes posterior-fossa candidate 59 and applies candidate 61 to the full app. It brings the anterior veins closer to the brainstem, preserves circular tube sweeps and arterial overpasses, repairs the right P1/basilar and left SCA/proximal perforator joins, and places both posterior spinal arteries on the dorsal medulla and illustrative upper cervical cord from proximal PICA origins. Clival/basilar plexus geometry is omitted.
+Rebuilds the basilar, bilateral PCA P1/P2/P3 and intracranial vertebral V4 trunks as circular sweeps with smoother centrelines. Repeated shaft bulges are removed and short branch necks are rebuilt, while retaining all named atlas structures. Mesh topology changes in the rebuilt cohort. Brain, skull and venous assets retain the preceding version.
 
-This remains an anatomical review build. The local posterior-fossa surface walls, closed-tissue containment, vein/artery crossings, sampled tube diameters and 151 source joins pass. Wider upper collecting-vein and cerebral parenchymal relationships are unfinished. The full scope and limitations are in [the fitting report](docs/POSTERIOR_FOSSA_v0.9.20.md).
+This is a visual and anatomical review build. The actual mesh render shows the stronger smoothing. Triangle checks record remaining contacts with neighbouring veins; this revision has not passed the complete clearance gate. See [round trunk review](docs/ROUND_TRUNKS_v0.9.24.md).
 
-Run `./docker.sh start` for local review, or use the existing installer with this v0.9.21 ZIP. The separate posterior-fossa authoring viewer is available in the review checkpoint.
 
-The Docker launcher validates anatomy inside the build after installing npm dependencies. No host Node/npm installation is required for Docker startup.
+Run `./inr-anatomy.sh` with the existing installer, or `./docker.sh start` for local review. The Docker launcher validates anatomy after installing npm dependencies; no host Node/npm installation is required for Docker startup.
 
 ## Bilateral central arterial family fit in v0.9.18
 
