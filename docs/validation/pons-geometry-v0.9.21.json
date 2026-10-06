@@ -1,0 +1,251 @@
+{
+  "source": "posterior-fossa-surface-continuation",
+  "amplitudeMm": 3.0,
+  "anteriorDirection": [
+    0,
+    1,
+    0
+  ],
+  "support": {
+    "xMm": [
+      -23.35,
+      24.65
+    ],
+    "yMm": [
+      -84,
+      -40
+    ],
+    "zMm": [
+      44,
+      66
+    ]
+  },
+  "method": "Shared smooth coordinate map, original faces and labelled boundaries retained",
+  "changes": {
+    "brain-trial": [
+      {
+        "node": "brain.pons.right",
+        "maximumAdvanceMm": 3.0,
+        "movedVertices": 29583,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "brain.pons.left",
+        "maximumAdvanceMm": 3.0,
+        "movedVertices": 27112,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "brain.medulla-oblongata.left",
+        "maximumAdvanceMm": 0.3265534710507154,
+        "movedVertices": 5311,
+        "volumeChangeFraction": 0.0008209095309683612
+      },
+      {
+        "node": "brain.medulla-oblongata.right",
+        "maximumAdvanceMm": 0.3253106168200901,
+        "movedVertices": 5858,
+        "volumeChangeFraction": 0.0008132965767098099
+      }
+    ],
+    "arteries-trial": [
+      {
+        "node": "Basilar",
+        "maximumAdvanceMm": 2.9999998664586087,
+        "movedVertices": 6985,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "AICA right",
+        "maximumAdvanceMm": 1.2921887964862009,
+        "movedVertices": 7348,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine paramedian 1 right",
+        "maximumAdvanceMm": 1.9500475984136472,
+        "movedVertices": 674,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine paramedian 2 right",
+        "maximumAdvanceMm": 2.7725607940127546,
+        "movedVertices": 648,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine circumferential right",
+        "maximumAdvanceMm": 2.999999992772885,
+        "movedVertices": 16911,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "AICA left",
+        "maximumAdvanceMm": 1.378748545771117,
+        "movedVertices": 6915,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine paramedian 1 left",
+        "maximumAdvanceMm": 1.9517154070721148,
+        "movedVertices": 572,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine paramedian 2 left",
+        "maximumAdvanceMm": 2.7233806005716517,
+        "movedVertices": 557,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine circumferential left",
+        "maximumAdvanceMm": 2.9999999768837284,
+        "movedVertices": 8574,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine short circumflex right",
+        "maximumAdvanceMm": 2.962416657049424,
+        "movedVertices": 3880,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine short circumflex left",
+        "maximumAdvanceMm": 2.9523027600066385,
+        "movedVertices": 3127,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine long circumflex right",
+        "maximumAdvanceMm": 2.7135881488055844,
+        "movedVertices": 8045,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine long circumflex left",
+        "maximumAdvanceMm": 2.7495068805101965,
+        "movedVertices": 7873,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Pontine median perforator",
+        "maximumAdvanceMm": 2.999999867015589,
+        "movedVertices": 504,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "Vertebral V4 left",
+        "maximumAdvanceMm": 0.0010882090113284448,
+        "movedVertices": 37,
+        "volumeChangeFraction": null
+      }
+    ],
+    "veins-trial": [
+      {
+        "node": "vein.superior_petrosal_vein.right",
+        "maximumAdvanceMm": 2.0915516657118616,
+        "movedVertices": 3300,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "maximumAdvanceMm": 1.9551476488767605,
+        "movedVertices": 2877,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.cerebellopontine_fissure.right",
+        "maximumAdvanceMm": 1.736820875123513,
+        "movedVertices": 4530,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.superior_petrosal_vein.left",
+        "maximumAdvanceMm": 1.9714060231374475,
+        "movedVertices": 2427,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.lateral_mesencephalic.left",
+        "maximumAdvanceMm": 1.8990597458345633,
+        "movedVertices": 2864,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.cerebellopontine_fissure.left",
+        "maximumAdvanceMm": 1.8911442194804096,
+        "movedVertices": 4304,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.anterior_pontine",
+        "maximumAdvanceMm": 2.9999967703369848,
+        "movedVertices": 6325,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "maximumAdvanceMm": 0.07447110211468555,
+        "movedVertices": 633,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "maximumAdvanceMm": 2.918580668182905,
+        "movedVertices": 5550,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.pontomedullary.right",
+        "maximumAdvanceMm": 0.030379855897777475,
+        "movedVertices": 331,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "maximumAdvanceMm": 2.8965886603070317,
+        "movedVertices": 6978,
+        "volumeChangeFraction": null
+      },
+      {
+        "node": "vein.pontomedullary.left",
+        "maximumAdvanceMm": 0.0452231418876039,
+        "movedVertices": 590,
+        "volumeChangeFraction": null
+      }
+    ],
+    "arteries-collision-solid": [
+      {
+        "node": "geometry_0",
+        "maximumAdvanceMm": 2.999999992772885,
+        "movedVertices": 68757,
+        "volumeChangeFraction": 1.853164515175365e-07
+      }
+    ],
+    "veins-collision-solid": [
+      {
+        "node": "geometry_0",
+        "maximumAdvanceMm": 2.9999967703369848,
+        "movedVertices": 36236,
+        "volumeChangeFraction": -0.002161713827415035
+      }
+    ]
+  },
+  "hashes": {
+    "brain-trial": "742debb2756d57a4df8d89d9a3ce02057241182204fc3a38f1943e72ab8020ed",
+    "arteries-trial": "9acafad50b0bad18ee152e4ddc95e5b4056e560e806db49f4431f0b46d1776c1",
+    "veins-trial": "435d51ff86106d803aaa5c08332623ffe5766dc78daa53605adb82cd2a1279cb",
+    "arteries-collision-solid": "d392e64f449ffcb29ffa74aa4c2c8fe42feac4955f35dbd36490fd59edfefb5d",
+    "veins-collision-solid": "21313e2d7d579fe2e08341db20059636b39d38514c73fa981d68d08a83f01c10"
+  },
+  "minimumAnalyticYDerivative": 0.6538461538461539,
+  "posteriorSupport": "3 mm transition behind an X/Z-dependent ventral contour",
+  "sourceLimitations": [
+    "Upper inferior-vermian outlets still intersect occipital cortex. Upper collecting and deep venous routes remain unfinished.",
+    "The baseline PICA/marginal-sinus wall contact is retained. Triangle counts from different mesh densities must not be interpreted as a measure of improvement.",
+    "One sampled left inferior-vermian free section has a minimum minor diameter of approximately 92% of intended; strict section validation remains false.",
+    "Open atlas parts permit triangle-contact checking rather than complete containment proof. The model is an educational anatomy review, not a patient-specific reconstruction."
+  ],
+  "cavernousSinuses": "Retained: counterfactual tissue and arterial clearance showed no need to advance them",
+  "venousOutletProtection": "Common distance taper to stationary cavernous and intercavernous skins, over 8 mm"
+}

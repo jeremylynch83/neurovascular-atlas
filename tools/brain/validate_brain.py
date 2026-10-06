@@ -1,5 +1,5 @@
 """Standard-library checks for persisted brain geometry/semantic bindings."""
-import json,hashlib,struct,math
+import json,hashlib,struct,math,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 def validate_brain(manifest):
@@ -8,6 +8,8 @@ def validate_brain(manifest):
  rows={s['id']:s for s in manifest['structures']};path=ROOT/'public/anatomy/models/brain-context.glb';data=path.read_bytes();sha=hashlib.sha256(data).hexdigest()
  if sha!=reg['registeredAssetSha256']:errors.append('Brain registration asset hash mismatch')
  ln=struct.unpack_from('<I',data,12)[0];doc=json.loads(data[20:20+ln]);binary=memoryview(data)[28+ln:];nodes={n['name']:n for n in doc['nodes'] if 'mesh' in n}
+ if any(v.get('extensions',{}).get('EXT_meshopt_compression') for v in doc['bufferViews']):
+  binary=memoryview(subprocess.check_output(['node',str(ROOT/'tools/decode-meshopt-views.mjs'),str(path)],cwd=ROOT))
  def accessor(index):
   a=doc['accessors'][index];bv=doc['bufferViews'][a['bufferView']];code={5123:'H',5125:'I',5126:'f'}[a['componentType']];width={'VEC3':3,'SCALAR':1}[a['type']];fmt='<'+code*width;size=struct.calcsize(fmt);stride=bv.get('byteStride',size);start=bv.get('byteOffset',0)+a.get('byteOffset',0)
   return [struct.unpack_from(fmt,binary,start+i*stride) for i in range(a['count'])]

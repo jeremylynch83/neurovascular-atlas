@@ -1,0 +1,1935 @@
+{
+  "geometry": [
+    {
+      "kind": "brain",
+      "labelsRetained": true,
+      "facesRetainedExactly": true,
+      "maximumSharedBoundaryGapMm": 8.529922399520072e-06
+    },
+    {
+      "kind": "arteries",
+      "labelsRetained": true,
+      "facesRetainedExactly": true,
+      "maximumSharedBoundaryGapMm": 1.1444091796875e-05
+    },
+    {
+      "kind": "veins",
+      "labelsRetained": true,
+      "facesRetainedExactly": true,
+      "maximumSharedBoundaryGapMm": 3.814697265625e-06
+    }
+  ],
+  "contacts": [
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.lingula-of-cerebellum",
+      "before": {
+        "contacts": 545,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 545,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.central-lobule",
+      "before": {
+        "contacts": 77,
+        "insideVertices": 48
+      },
+      "after": {
+        "contacts": 77,
+        "insideVertices": 48
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.wing-of-central-lobule.right",
+      "before": {
+        "contacts": 1106,
+        "insideVertices": 2731
+      },
+      "after": {
+        "contacts": 1106,
+        "insideVertices": 2731
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.tonsil-of-cerebellum.right",
+      "before": {
+        "contacts": 105,
+        "insideVertices": 50
+      },
+      "after": {
+        "contacts": 104,
+        "insideVertices": 49
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.superior-cerebellar-peduncle.right",
+      "before": {
+        "contacts": 971,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 971,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.flocculus.right",
+      "before": {
+        "contacts": 544,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 541,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.anterior-quadrangular-lobule.right",
+      "before": {
+        "contacts": 745,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 730,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.base-of-peduncle.right",
+      "before": {
+        "contacts": 1377,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 1377,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.wing-of-central-lobule.left",
+      "before": {
+        "contacts": 1100,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 1100,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.tonsil-of-cerebellum.left",
+      "before": {
+        "contacts": 121,
+        "insideVertices": 65
+      },
+      "after": {
+        "contacts": 121,
+        "insideVertices": 65
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.superior-cerebellar-peduncle.left",
+      "before": {
+        "contacts": 932,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 932,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.lingula-of-cerebellum",
+      "before": {
+        "contacts": 555,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 555,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.flocculus.left",
+      "before": {
+        "contacts": 561,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 561,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.central-lobule",
+      "before": {
+        "contacts": 327,
+        "insideVertices": 345
+      },
+      "after": {
+        "contacts": 327,
+        "insideVertices": 345
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.anterior-quadrangular-lobule.left",
+      "before": {
+        "contacts": 705,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 683,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.pons.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.base-of-peduncle.left",
+      "before": {
+        "contacts": 1432,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 1432,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.medulla-oblongata.left",
+      "targetKind": "neighbourTissue",
+      "target": "brain.upper-cervical-cord",
+      "before": {
+        "contacts": 552,
+        "insideVertices": 2640
+      },
+      "after": {
+        "contacts": 552,
+        "insideVertices": 2640
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "brain",
+      "node": "brain.medulla-oblongata.right",
+      "targetKind": "neighbourTissue",
+      "target": "brain.upper-cervical-cord",
+      "before": {
+        "contacts": 582,
+        "insideVertices": 2490
+      },
+      "after": {
+        "contacts": 582,
+        "insideVertices": 2490
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 1 right",
+      "targetKind": "tissue",
+      "target": "brain.pons.right",
+      "before": {
+        "contacts": 101,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 101,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 1 right",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 52,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 52,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 2 right",
+      "targetKind": "tissue",
+      "target": "brain.pons.right",
+      "before": {
+        "contacts": 94,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 94,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 2 right",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 171,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 171,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 3 right",
+      "targetKind": "tissue",
+      "target": "brain.pons.right",
+      "before": {
+        "contacts": 70,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 70,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine circumferential right",
+      "targetKind": "tissue",
+      "target": "brain.pons.right",
+      "before": {
+        "contacts": 74,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 74,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 1 left",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 91,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 91,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 2 left",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 91,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 91,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine paramedian 3 left",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 70,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 70,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "VA medullary perforator 1 right",
+      "targetKind": "tissue",
+      "target": "brain.medulla-oblongata.right",
+      "before": {
+        "contacts": 127,
+        "insideVertices": 299
+      },
+      "after": {
+        "contacts": 127,
+        "insideVertices": 299
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "VA medullary perforator 1 left",
+      "targetKind": "tissue",
+      "target": "brain.medulla-oblongata.left",
+      "before": {
+        "contacts": 138,
+        "insideVertices": 235
+      },
+      "after": {
+        "contacts": 138,
+        "insideVertices": 235
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "VA medullary perforator 2 right",
+      "targetKind": "tissue",
+      "target": "brain.pons.right",
+      "before": {
+        "contacts": 131,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 131,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "VA medullary perforator 2 right",
+      "targetKind": "tissue",
+      "target": "brain.medulla-oblongata.right",
+      "before": {
+        "contacts": 129,
+        "insideVertices": 471
+      },
+      "after": {
+        "contacts": 129,
+        "insideVertices": 471
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "VA medullary perforator 2 left",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 154,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 152,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "VA medullary perforator 2 left",
+      "targetKind": "tissue",
+      "target": "brain.medulla-oblongata.left",
+      "before": {
+        "contacts": 137,
+        "insideVertices": 312
+      },
+      "after": {
+        "contacts": 136,
+        "insideVertices": 312
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA proximal perforator right",
+      "targetKind": "tissue",
+      "target": "brain.pons.right",
+      "before": {
+        "contacts": 191,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 191,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine median perforator",
+      "targetKind": "tissue",
+      "target": "brain.pons.left",
+      "before": {
+        "contacts": 156,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 156,
+        "insideVertices": 0
+      },
+      "penetratingArtery": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "targetKind": "bone",
+      "target": "bone.temporal.right",
+      "before": {
+        "contacts": 136,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 136,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "targetKind": "tissue",
+      "target": "brain.lateral-occipitotemporal-gyrus.right",
+      "before": {
+        "contacts": 234,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 234,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "targetKind": "tissue",
+      "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "before": {
+        "contacts": 273,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 273,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "targetKind": "tissue",
+      "target": "brain.thalamus.right",
+      "before": {
+        "contacts": 155,
+        "insideVertices": 151
+      },
+      "after": {
+        "contacts": 155,
+        "insideVertices": 151
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "targetKind": "tissue",
+      "target": "brain.hippocampus.right",
+      "before": {
+        "contacts": 80,
+        "insideVertices": 55
+      },
+      "after": {
+        "contacts": 80,
+        "insideVertices": 55
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "targetKind": "tissue",
+      "target": "brain.choroid-plexus.right",
+      "before": {
+        "contacts": 73,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 73,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "targetKind": "tissue",
+      "target": "brain.fornix.right",
+      "before": {
+        "contacts": 192,
+        "insideVertices": 414
+      },
+      "after": {
+        "contacts": 192,
+        "insideVertices": 414
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "targetKind": "tissue",
+      "target": "brain.optic-tract.right",
+      "before": {
+        "contacts": 56,
+        "insideVertices": 32
+      },
+      "after": {
+        "contacts": 56,
+        "insideVertices": 32
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "targetKind": "bone",
+      "target": "bone.temporal.left",
+      "before": {
+        "contacts": 136,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 136,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "targetKind": "tissue",
+      "target": "brain.lateral-occipitotemporal-gyrus.left",
+      "before": {
+        "contacts": 363,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 357,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "targetKind": "tissue",
+      "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "before": {
+        "contacts": 46,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 46,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "targetKind": "tissue",
+      "target": "brain.thalamus.left",
+      "before": {
+        "contacts": 152,
+        "insideVertices": 188
+      },
+      "after": {
+        "contacts": 152,
+        "insideVertices": 188
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "targetKind": "tissue",
+      "target": "brain.choroid-plexus.left",
+      "before": {
+        "contacts": 59,
+        "insideVertices": 0
+      },
+      "after": {
+        "contacts": 59,
+        "insideVertices": 0
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "targetKind": "tissue",
+      "target": "brain.caudate-nucleus.left",
+      "before": {
+        "contacts": 18,
+        "insideVertices": 18
+      },
+      "after": {
+        "contacts": 18,
+        "insideVertices": 18
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "targetKind": "tissue",
+      "target": "brain.fornix.left",
+      "before": {
+        "contacts": 145,
+        "insideVertices": 310
+      },
+      "after": {
+        "contacts": 145,
+        "insideVertices": 310
+      },
+      "penetratingArtery": false
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "targetKind": "tissue",
+      "target": "brain.optic-tract.left",
+      "before": {
+        "contacts": 67,
+        "insideVertices": 27
+      },
+      "after": {
+        "contacts": 67,
+        "insideVertices": 27
+      },
+      "penetratingArtery": false
+    }
+  ],
+  "newOrIncreasedContacts": [],
+  "arteryVeinCrossings": [
+    {
+      "artery": "Vertebral V4 left",
+      "vein": "vein.anterior_condylar.left",
+      "beforeContacts": 20,
+      "afterContacts": 20
+    },
+    {
+      "artery": "Vertebral V4 left",
+      "vein": "vein.basilar_plexus",
+      "beforeContacts": 235,
+      "afterContacts": 235
+    }
+  ],
+  "stationaryCavernousConflict": [],
+  "sections": [
+    {
+      "kind": "arteries",
+      "node": "Pontine short circumflex left",
+      "samples": [
+        {
+          "index": 14,
+          "before": {
+            "minorMajorRatio": 0.9969482078531329,
+            "minorDiameterMm": 0.4674070666472176,
+            "majorDiameterMm": 0.4688378623537026,
+            "minimumDiameterToIntendedRatio": 0.9969549092274238,
+            "areaEquivalentRadiusMm": 0.23393546773186585
+          },
+          "after": {
+            "minorMajorRatio": 0.996943932404554,
+            "minorDiameterMm": 0.46740378207719147,
+            "majorDiameterMm": 0.46883657835185233,
+            "minimumDiameterToIntendedRatio": 0.9969479034107687,
+            "areaEquivalentRadiusMm": 0.2339354856436368
+          }
+        },
+        {
+          "index": 19,
+          "before": {
+            "minorMajorRatio": 0.9969576475103604,
+            "minorDiameterMm": 0.45389323942020043,
+            "majorDiameterMm": 0.4552783566620703,
+            "minimumDiameterToIntendedRatio": 0.9969587058940348,
+            "areaEquivalentRadiusMm": 0.22717134913228934
+          },
+          "after": {
+            "minorMajorRatio": 0.9969414841204141,
+            "minorDiameterMm": 0.45388825989035764,
+            "majorDiameterMm": 0.4552807432733288,
+            "minimumDiameterToIntendedRatio": 0.9969477685519533,
+            "areaEquivalentRadiusMm": 0.22717141041399874
+          }
+        },
+        {
+          "index": 24,
+          "before": {
+            "minorMajorRatio": 0.9969421093995702,
+            "minorDiameterMm": 0.43489387492237547,
+            "majorDiameterMm": 0.4362278118478711,
+            "minimumDiameterToIntendedRatio": 0.9969529865261508,
+            "areaEquivalentRadiusMm": 0.217663027388265
+          },
+          "after": {
+            "minorMajorRatio": 0.9969439499199005,
+            "minorDiameterMm": 0.43489492516260975,
+            "majorDiameterMm": 0.4362280599601927,
+            "minimumDiameterToIntendedRatio": 0.9969553941023401,
+            "areaEquivalentRadiusMm": 0.2176630245214757
+          }
+        },
+        {
+          "index": 29,
+          "before": {
+            "minorMajorRatio": 0.9969356443863756,
+            "minorDiameterMm": 0.40783247153812724,
+            "majorDiameterMm": 0.4090860566924081,
+            "minimumDiameterToIntendedRatio": 0.9969411894083965,
+            "areaEquivalentRadiusMm": 0.20412121384301513
+          },
+          "after": {
+            "minorMajorRatio": 0.996937785136293,
+            "minorDiameterMm": 0.4078304815836605,
+            "majorDiameterMm": 0.4090831821846388,
+            "minimumDiameterToIntendedRatio": 0.9969363249905009,
+            "areaEquivalentRadiusMm": 0.204119706223502
+          }
+        },
+        {
+          "index": 34,
+          "before": {
+            "minorMajorRatio": 0.9969384120066445,
+            "minorDiameterMm": 0.38072358970717307,
+            "majorDiameterMm": 0.38189278808191374,
+            "minimumDiameterToIntendedRatio": 0.996941452308183,
+            "areaEquivalentRadiusMm": 0.19055311957069204
+          },
+          "after": {
+            "minorMajorRatio": 0.9969393022719738,
+            "minorDiameterMm": 0.380728434317821,
+            "majorDiameterMm": 0.3818973065362759,
+            "minimumDiameterToIntendedRatio": 0.9969541381340834,
+            "areaEquivalentRadiusMm": 0.19055189222292562
+          }
+        },
+        {
+          "index": 39,
+          "before": {
+            "minorMajorRatio": 0.9969483774172941,
+            "minorDiameterMm": 0.3577120434222648,
+            "majorDiameterMm": 0.35880698692640206,
+            "minimumDiameterToIntendedRatio": 0.9969555255576904,
+            "areaEquivalentRadiusMm": 0.17903353235629987
+          },
+          "after": {
+            "minorMajorRatio": 0.9969341485102401,
+            "minorDiameterMm": 0.35770704697896416,
+            "majorDiameterMm": 0.3588070962495372,
+            "minimumDiameterToIntendedRatio": 0.9969416003017525,
+            "areaEquivalentRadiusMm": 0.17903338539469624
+          }
+        },
+        {
+          "index": 44,
+          "before": {
+            "minorMajorRatio": 0.9969681368647538,
+            "minorDiameterMm": 0.3343877196515004,
+            "majorDiameterMm": 0.3354046205559552,
+            "minimumDiameterToIntendedRatio": 0.9969709935322643,
+            "areaEquivalentRadiusMm": 0.16735664461619779
+          },
+          "after": {
+            "minorMajorRatio": 0.9969417475781528,
+            "minorDiameterMm": 0.3343780947016619,
+            "majorDiameterMm": 0.335403844320853,
+            "minimumDiameterToIntendedRatio": 0.9969422969168109,
+            "areaEquivalentRadiusMm": 0.16735609996744225
+          }
+        },
+        {
+          "index": 49,
+          "before": {
+            "minorMajorRatio": 0.9969208537111872,
+            "minorDiameterMm": 0.3101634366627304,
+            "majorDiameterMm": 0.31112142504402485,
+            "minimumDiameterToIntendedRatio": 0.9969332444503302,
+            "areaEquivalentRadiusMm": 0.15523901756778846
+          },
+          "after": {
+            "minorMajorRatio": 0.9969489332470456,
+            "minorDiameterMm": 0.3101747417589284,
+            "majorDiameterMm": 0.31112400185704053,
+            "minimumDiameterToIntendedRatio": 0.9969695815065376,
+            "areaEquivalentRadiusMm": 0.1552397690402932
+          }
+        },
+        {
+          "index": 54,
+          "before": {
+            "minorMajorRatio": 0.9969551641003801,
+            "minorDiameterMm": 0.28697808859019613,
+            "majorDiameterMm": 0.28785455848373664,
+            "minimumDiameterToIntendedRatio": 0.9969574781799828,
+            "areaEquivalentRadiusMm": 0.14363070620037027
+          },
+          "after": {
+            "minorMajorRatio": 0.996905688048222,
+            "minorDiameterMm": 0.2869675919854032,
+            "majorDiameterMm": 0.2878583154111988,
+            "minimumDiameterToIntendedRatio": 0.996921013135926,
+            "areaEquivalentRadiusMm": 0.1436306494086071
+          }
+        },
+        {
+          "index": 59,
+          "before": {
+            "minorMajorRatio": 0.9969007149394297,
+            "minorDiameterMm": 0.2621468592888594,
+            "majorDiameterMm": 0.2629618530314597,
+            "minimumDiameterToIntendedRatio": 0.9969112956017862,
+            "areaEquivalentRadiusMm": 0.13120892075410392
+          },
+          "after": {
+            "minorMajorRatio": 0.9969380147838821,
+            "minorDiameterMm": 0.2621573653317167,
+            "majorDiameterMm": 0.2629625527807239,
+            "minimumDiameterToIntendedRatio": 0.9969512487518064,
+            "areaEquivalentRadiusMm": 0.13120898410089843
+          }
+        }
+      ]
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine short circumflex right",
+      "samples": [
+        {
+          "index": 18,
+          "before": {
+            "minorMajorRatio": 0.9969168059864025,
+            "minorDiameterMm": 0.2711852550957541,
+            "majorDiameterMm": 0.272023957733794,
+            "minimumDiameterToIntendedRatio": 0.9969278393979821,
+            "areaEquivalentRadiusMm": 0.13573111189482026
+          },
+          "after": {
+            "minorMajorRatio": 0.9969131232036688,
+            "minorDiameterMm": 0.2711860256635513,
+            "majorDiameterMm": 0.27202573559476373,
+            "minimumDiameterToIntendedRatio": 0.9969306721496705,
+            "areaEquivalentRadiusMm": 0.13573140743530687
+          }
+        },
+        {
+          "index": 24,
+          "before": {
+            "minorMajorRatio": 0.9969262851759353,
+            "minorDiameterMm": 0.29571799709118596,
+            "majorDiameterMm": 0.2966297523582682,
+            "minimumDiameterToIntendedRatio": 0.9969299995149747,
+            "areaEquivalentRadiusMm": 0.14800949611588243
+          },
+          "after": {
+            "minorMajorRatio": 0.9967971632617106,
+            "minorDiameterMm": 0.2956798982008857,
+            "majorDiameterMm": 0.29662995552010263,
+            "minimumDiameterToIntendedRatio": 0.9968015598289828,
+            "areaEquivalentRadiusMm": 0.14799446667575827
+          }
+        },
+        {
+          "index": 31,
+          "before": {
+            "minorMajorRatio": 0.9969047068898357,
+            "minorDiameterMm": 0.32334866677813046,
+            "majorDiameterMm": 0.32435263324909,
+            "minimumDiameterToIntendedRatio": 0.9969186564240432,
+            "areaEquivalentRadiusMm": 0.16184025127237292
+          },
+          "after": {
+            "minorMajorRatio": 0.9968714946392285,
+            "minorDiameterMm": 0.3233382566370029,
+            "majorDiameterMm": 0.3243529967260426,
+            "minimumDiameterToIntendedRatio": 0.9968865608412486,
+            "areaEquivalentRadiusMm": 0.16183833530836447
+          }
+        },
+        {
+          "index": 37,
+          "before": {
+            "minorMajorRatio": 0.9969158502871651,
+            "minorDiameterMm": 0.3455371689933904,
+            "majorDiameterMm": 0.3466061542645321,
+            "minimumDiameterToIntendedRatio": 0.9969221814937589,
+            "areaEquivalentRadiusMm": 0.17294593382070625
+          },
+          "after": {
+            "minorMajorRatio": 0.9969332891193408,
+            "minorDiameterMm": 0.34556086590283264,
+            "majorDiameterMm": 0.3466238610690693,
+            "minimumDiameterToIntendedRatio": 0.9969905503315446,
+            "areaEquivalentRadiusMm": 0.1729507111685079
+          }
+        },
+        {
+          "index": 43,
+          "before": {
+            "minorMajorRatio": 0.9969380831708564,
+            "minorDiameterMm": 0.3677328053376582,
+            "majorDiameterMm": 0.3688622308098102,
+            "minimumDiameterToIntendedRatio": 0.9969451335058578,
+            "areaEquivalentRadiusMm": 0.18405025777021713
+          },
+          "after": {
+            "minorMajorRatio": 0.9968997075892208,
+            "minorDiameterMm": 0.36771923996003,
+            "majorDiameterMm": 0.3688628225694607,
+            "minimumDiameterToIntendedRatio": 0.9969083569740544,
+            "areaEquivalentRadiusMm": 0.18404996650508704
+          }
+        },
+        {
+          "index": 49,
+          "before": {
+            "minorMajorRatio": 0.9969256831507601,
+            "minorDiameterMm": 0.3883620226573629,
+            "majorDiameterMm": 0.3895596524607069,
+            "minimumDiameterToIntendedRatio": 0.9969264826628393,
+            "areaEquivalentRadiusMm": 0.19437917974077284
+          },
+          "after": {
+            "minorMajorRatio": 0.9969229809313507,
+            "minorDiameterMm": 0.3883672215434747,
+            "majorDiameterMm": 0.3895659233180202,
+            "minimumDiameterToIntendedRatio": 0.9969398282191575,
+            "areaEquivalentRadiusMm": 0.19437989099676106
+          }
+        },
+        {
+          "index": 55,
+          "before": {
+            "minorMajorRatio": 0.9969479907937107,
+            "minorDiameterMm": 0.4091164316513298,
+            "majorDiameterMm": 0.4103688812548944,
+            "minimumDiameterToIntendedRatio": 0.9969551865621202,
+            "areaEquivalentRadiusMm": 0.20476104197540848
+          },
+          "after": {
+            "minorMajorRatio": 0.9969330431234087,
+            "minorDiameterMm": 0.40910933837417196,
+            "majorDiameterMm": 0.4103679190855438,
+            "minimumDiameterToIntendedRatio": 0.9969379013129707,
+            "areaEquivalentRadiusMm": 0.2047610066153572
+          }
+        },
+        {
+          "index": 62,
+          "before": {
+            "minorMajorRatio": 0.9969358027113813,
+            "minorDiameterMm": 0.43580778620161187,
+            "majorDiameterMm": 0.4371472917477122,
+            "minimumDiameterToIntendedRatio": 0.9969369471346858,
+            "areaEquivalentRadiusMm": 0.21812408379260909
+          },
+          "after": {
+            "minorMajorRatio": 0.9969378172929834,
+            "minorDiameterMm": 0.43581242478492316,
+            "majorDiameterMm": 0.43715106120489877,
+            "minimumDiameterToIntendedRatio": 0.9969475581775167,
+            "areaEquivalentRadiusMm": 0.21812422281420654
+          }
+        },
+        {
+          "index": 68,
+          "before": {
+            "minorMajorRatio": 0.9969617679832214,
+            "minorDiameterMm": 0.4581520533148833,
+            "majorDiameterMm": 0.4595482675746838,
+            "minimumDiameterToIntendedRatio": 0.9969618367203068,
+            "areaEquivalentRadiusMm": 0.22930149279371567
+          },
+          "after": {
+            "minorMajorRatio": 0.9969476528918209,
+            "minorDiameterMm": 0.45814888847256374,
+            "majorDiameterMm": 0.4595515994682598,
+            "minimumDiameterToIntendedRatio": 0.9969549498647553,
+            "areaEquivalentRadiusMm": 0.22930173174514837
+          }
+        },
+        {
+          "index": 74,
+          "before": {
+            "minorMajorRatio": 0.9969657197433935,
+            "minorDiameterMm": 0.4763156257155508,
+            "majorDiameterMm": 0.47776529953121005,
+            "minimumDiameterToIntendedRatio": 0.9969653640820951,
+            "areaEquivalentRadiusMm": 0.23839155995392677
+          },
+          "after": {
+            "minorMajorRatio": 0.9969302310405507,
+            "minorDiameterMm": 0.4763013308441246,
+            "majorDiameterMm": 0.47776796812248623,
+            "minimumDiameterToIntendedRatio": 0.9969354438129995,
+            "areaEquivalentRadiusMm": 0.2383916838934179
+          }
+        }
+      ]
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA left",
+      "samples": [
+        {
+          "index": 119,
+          "before": {
+            "minorMajorRatio": 0.9969595815142398,
+            "minorDiameterMm": 1.1682573702122023,
+            "majorDiameterMm": 1.1718201939920028,
+            "minimumDiameterToIntendedRatio": 0.9969607913374803,
+            "areaEquivalentRadiusMm": 0.5847051027199597
+          },
+          "after": {
+            "minorMajorRatio": 0.960821887445874,
+            "minorDiameterMm": 1.12927736457037,
+            "majorDiameterMm": 1.1753243544152563,
+            "minimumDiameterToIntendedRatio": 0.9636962571159142,
+            "areaEquivalentRadiusMm": 0.5771388102745028
+          }
+        },
+        {
+          "index": 159,
+          "before": {
+            "minorMajorRatio": 0.9969573518900399,
+            "minorDiameterMm": 1.126060441248562,
+            "majorDiameterMm": 1.1294971034756576,
+            "minimumDiameterToIntendedRatio": 0.9969574329557083,
+            "areaEquivalentRadiusMm": 0.563587749497392
+          },
+          "after": {
+            "minorMajorRatio": 0.9800024960868786,
+            "minorDiameterMm": 1.1159151939016068,
+            "majorDiameterMm": 1.1386860731043273,
+            "minimumDiameterToIntendedRatio": 0.9879753398271135,
+            "areaEquivalentRadiusMm": 0.5631389290806509
+          }
+        },
+        {
+          "index": 199,
+          "before": {
+            "minorMajorRatio": 0.9969262791574376,
+            "minorDiameterMm": 1.1013120681647106,
+            "majorDiameterMm": 1.1047076310351611,
+            "minimumDiameterToIntendedRatio": 0.9969256693004044,
+            "areaEquivalentRadiusMm": 0.5512185055575838
+          },
+          "after": {
+            "minorMajorRatio": 0.9969262791574376,
+            "minorDiameterMm": 1.1013120681647106,
+            "majorDiameterMm": 1.1047076310351611,
+            "minimumDiameterToIntendedRatio": 0.9969256693004044,
+            "areaEquivalentRadiusMm": 0.5512185055575838
+          }
+        },
+        {
+          "index": 239,
+          "before": {
+            "minorMajorRatio": 0.9969222821781677,
+            "minorDiameterMm": 1.1014296617639332,
+            "majorDiameterMm": 1.1048300167967238,
+            "minimumDiameterToIntendedRatio": 0.996922878021419,
+            "areaEquivalentRadiusMm": 0.5512788704299244
+          },
+          "after": {
+            "minorMajorRatio": 0.9969222821781677,
+            "minorDiameterMm": 1.1014296617639332,
+            "majorDiameterMm": 1.1048300167967238,
+            "minimumDiameterToIntendedRatio": 0.996922878021419,
+            "areaEquivalentRadiusMm": 0.5512788704299244
+          }
+        },
+        {
+          "index": 319,
+          "before": {
+            "minorMajorRatio": 0.9969488065305624,
+            "minorDiameterMm": 0.8088842001191652,
+            "majorDiameterMm": 0.8113598158907752,
+            "minimumDiameterToIntendedRatio": 0.9969524456524342,
+            "areaEquivalentRadiusMm": 0.4048445642022276
+          },
+          "after": {
+            "minorMajorRatio": 0.9969488065305624,
+            "minorDiameterMm": 0.8088842001191652,
+            "majorDiameterMm": 0.8113598158907752,
+            "minimumDiameterToIntendedRatio": 0.9969524456524342,
+            "areaEquivalentRadiusMm": 0.4048445642022276
+          }
+        },
+        {
+          "index": 359,
+          "before": {
+            "minorMajorRatio": 0.996953941374454,
+            "minorDiameterMm": 0.8038919030515693,
+            "majorDiameterMm": 0.8063480865959374,
+            "minimumDiameterToIntendedRatio": 0.9969580284870729,
+            "areaEquivalentRadiusMm": 0.4023443684449396
+          },
+          "after": {
+            "minorMajorRatio": 0.996953941374454,
+            "minorDiameterMm": 0.8038919030515693,
+            "majorDiameterMm": 0.8063480865959374,
+            "minimumDiameterToIntendedRatio": 0.9969580284870729,
+            "areaEquivalentRadiusMm": 0.4023443684449396
+          }
+        },
+        {
+          "index": 399,
+          "before": {
+            "minorMajorRatio": 0.9969618139613222,
+            "minorDiameterMm": 0.8010442905769629,
+            "majorDiameterMm": 0.8034854287889907,
+            "minimumDiameterToIntendedRatio": 0.9969619717820251,
+            "areaEquivalentRadiusMm": 0.40091701080446907
+          },
+          "after": {
+            "minorMajorRatio": 0.9969618139613222,
+            "minorDiameterMm": 0.8010442905769629,
+            "majorDiameterMm": 0.8034854287889907,
+            "minimumDiameterToIntendedRatio": 0.9969619717820251,
+            "areaEquivalentRadiusMm": 0.40091701080446907
+          }
+        },
+        {
+          "index": 439,
+          "before": {
+            "minorMajorRatio": 0.9969416038469602,
+            "minorDiameterMm": 0.7967050663615669,
+            "majorDiameterMm": 0.7991491811428793,
+            "minimumDiameterToIntendedRatio": 0.9969418057053152,
+            "areaEquivalentRadiusMm": 0.3987531825355499
+          },
+          "after": {
+            "minorMajorRatio": 0.9969416038469602,
+            "minorDiameterMm": 0.7967050663615669,
+            "majorDiameterMm": 0.7991491811428793,
+            "minimumDiameterToIntendedRatio": 0.9969418057053152,
+            "areaEquivalentRadiusMm": 0.3987531825355499
+          }
+        },
+        {
+          "index": 479,
+          "before": {
+            "minorMajorRatio": 0.9969354022630484,
+            "minorDiameterMm": 0.7818911000513245,
+            "majorDiameterMm": 0.784294647653627,
+            "minimumDiameterToIntendedRatio": 0.9969366982160012,
+            "areaEquivalentRadiusMm": 0.3913407017304395
+          },
+          "after": {
+            "minorMajorRatio": 0.9969354022630484,
+            "minorDiameterMm": 0.7818911000513245,
+            "majorDiameterMm": 0.784294647653627,
+            "minimumDiameterToIntendedRatio": 0.9969366982160012,
+            "areaEquivalentRadiusMm": 0.3913407017304395
+          }
+        }
+      ]
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA right",
+      "samples": [
+        {
+          "index": 127,
+          "before": {
+            "minorMajorRatio": 0.9969237071704142,
+            "minorDiameterMm": 0.8202385196956938,
+            "majorDiameterMm": 0.8227695999163176,
+            "minimumDiameterToIntendedRatio": 0.9969265255986915,
+            "areaEquivalentRadiusMm": 0.41053806875296306
+          },
+          "after": {
+            "minorMajorRatio": 0.9969237071704142,
+            "minorDiameterMm": 0.8202385196956938,
+            "majorDiameterMm": 0.8227695999163176,
+            "minimumDiameterToIntendedRatio": 0.9969265255986915,
+            "areaEquivalentRadiusMm": 0.41053806875296306
+          }
+        },
+        {
+          "index": 170,
+          "before": {
+            "minorMajorRatio": 0.9969551985407308,
+            "minorDiameterMm": 0.8306276076892201,
+            "majorDiameterMm": 0.8331644279552695,
+            "minimumDiameterToIntendedRatio": 0.9969552413284166,
+            "areaEquivalentRadiusMm": 0.4157256509657689
+          },
+          "after": {
+            "minorMajorRatio": 0.9969551985407308,
+            "minorDiameterMm": 0.8306276076892201,
+            "majorDiameterMm": 0.8331644279552695,
+            "minimumDiameterToIntendedRatio": 0.9969552413284166,
+            "areaEquivalentRadiusMm": 0.4157256509657689
+          }
+        },
+        {
+          "index": 213,
+          "before": {
+            "minorMajorRatio": 0.9969352006370923,
+            "minorDiameterMm": 0.8345828980575514,
+            "majorDiameterMm": 0.8371485905244498,
+            "minimumDiameterToIntendedRatio": 0.996936093774925,
+            "areaEquivalentRadiusMm": 0.41771346965089
+          },
+          "after": {
+            "minorMajorRatio": 0.9969352006370923,
+            "minorDiameterMm": 0.8345828980575514,
+            "majorDiameterMm": 0.8371485905244498,
+            "minimumDiameterToIntendedRatio": 0.996936093774925,
+            "areaEquivalentRadiusMm": 0.41771346965089
+          }
+        },
+        {
+          "index": 255,
+          "before": {
+            "minorMajorRatio": 0.9969505400161102,
+            "minorDiameterMm": 0.8386691636714815,
+            "majorDiameterMm": 0.8412344745386557,
+            "minimumDiameterToIntendedRatio": 0.9969507994832205,
+            "areaEquivalentRadiusMm": 0.4197525766562875
+          },
+          "after": {
+            "minorMajorRatio": 0.9969505400161102,
+            "minorDiameterMm": 0.8386691636714815,
+            "majorDiameterMm": 0.8412344745386557,
+            "minimumDiameterToIntendedRatio": 0.9969507994832205,
+            "areaEquivalentRadiusMm": 0.4197525766562875
+          }
+        },
+        {
+          "index": 298,
+          "before": {
+            "minorMajorRatio": 0.783171014023808,
+            "minorDiameterMm": 0.8632421268207963,
+            "majorDiameterMm": 1.1022396275694573,
+            "minimumDiameterToIntendedRatio": 1.0172960580055077,
+            "areaEquivalentRadiusMm": 0.4684602210693522
+          },
+          "after": {
+            "minorMajorRatio": 0.783171014023808,
+            "minorDiameterMm": 0.8632421268207963,
+            "majorDiameterMm": 1.1022396275694573,
+            "minimumDiameterToIntendedRatio": 1.0172960580055077,
+            "areaEquivalentRadiusMm": 0.4684602210693522
+          }
+        },
+        {
+          "index": 383,
+          "before": {
+            "minorMajorRatio": 0.9969579466533804,
+            "minorDiameterMm": 1.2370091556042757,
+            "majorDiameterMm": 1.2407836857679972,
+            "minimumDiameterToIntendedRatio": 0.996959903203021,
+            "areaEquivalentRadiusMm": 0.6191151092588306
+          },
+          "after": {
+            "minorMajorRatio": 0.9969579466533804,
+            "minorDiameterMm": 1.2370091556042757,
+            "majorDiameterMm": 1.2407836857679972,
+            "minimumDiameterToIntendedRatio": 0.996959903203021,
+            "areaEquivalentRadiusMm": 0.6191151092588306
+          }
+        },
+        {
+          "index": 426,
+          "before": {
+            "minorMajorRatio": 0.9969519015966294,
+            "minorDiameterMm": 1.2041188946335237,
+            "majorDiameterMm": 1.2078003890710416,
+            "minimumDiameterToIntendedRatio": 0.9969550034653442,
+            "areaEquivalentRadiusMm": 0.6026569243726181
+          },
+          "after": {
+            "minorMajorRatio": 0.9969519015966294,
+            "minorDiameterMm": 1.2041188946335237,
+            "majorDiameterMm": 1.2078003890710416,
+            "minimumDiameterToIntendedRatio": 0.9969550034653442,
+            "areaEquivalentRadiusMm": 0.6026569243726181
+          }
+        },
+        {
+          "index": 468,
+          "before": {
+            "minorMajorRatio": 0.9969253686086381,
+            "minorDiameterMm": 1.2364068341435572,
+            "majorDiameterMm": 1.2402200536527144,
+            "minimumDiameterToIntendedRatio": 0.9969286273395674,
+            "areaEquivalentRadiusMm": 0.6188332333991782
+          },
+          "after": {
+            "minorMajorRatio": 0.9790138364075284,
+            "minorDiameterMm": 1.2243625927821626,
+            "majorDiameterMm": 1.2506080580790733,
+            "minimumDiameterToIntendedRatio": 0.9872172211291037,
+            "areaEquivalentRadiusMm": 0.6181901439884545
+          }
+        },
+        {
+          "index": 511,
+          "before": {
+            "minorMajorRatio": 0.9969577509558976,
+            "minorDiameterMm": 1.2771518324123234,
+            "majorDiameterMm": 1.2810491028208284,
+            "minimumDiameterToIntendedRatio": 0.9969594038874728,
+            "areaEquivalentRadiusMm": 0.63920676629632
+          },
+          "after": {
+            "minorMajorRatio": 0.9374389170779749,
+            "minorDiameterMm": 1.2032389086001918,
+            "majorDiameterMm": 1.2835384649388393,
+            "minimumDiameterToIntendedRatio": 0.9392621257775252,
+            "areaEquivalentRadiusMm": 0.6233327337645652
+          }
+        }
+      ]
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_pontine",
+      "samples": [
+        {
+          "index": 29,
+          "before": {
+            "minorMajorRatio": 0.9969442958017687,
+            "minorDiameterMm": 1.5951101213628918,
+            "majorDiameterMm": 1.5999992457753744,
+            "minimumDiameterToIntendedRatio": 0.9969438258518073,
+            "areaEquivalentRadiusMm": 0.7983552192275885
+          },
+          "after": {
+            "minorMajorRatio": 0.9956070873086347,
+            "minorDiameterMm": 1.5942808091024652,
+            "majorDiameterMm": 1.6013152471746555,
+            "minimumDiameterToIntendedRatio": 0.9964255056890406,
+            "areaEquivalentRadiusMm": 0.7984790319812928
+          }
+        },
+        {
+          "index": 38,
+          "before": {
+            "minorMajorRatio": 0.9969451769788182,
+            "minorDiameterMm": 1.595111439894268,
+            "majorDiameterMm": 1.5999991541442191,
+            "minimumDiameterToIntendedRatio": 0.9969446499339175,
+            "areaEquivalentRadiusMm": 0.7983554262042122
+          },
+          "after": {
+            "minorMajorRatio": 0.9969494399587303,
+            "minorDiameterMm": 1.595304715931528,
+            "majorDiameterMm": 1.6001861799506774,
+            "minimumDiameterToIntendedRatio": 0.9970654474572049,
+            "areaEquivalentRadiusMm": 0.7983972675235836
+          }
+        },
+        {
+          "index": 48,
+          "before": {
+            "minorMajorRatio": 0.9969292726753766,
+            "minorDiameterMm": 1.5950848915181224,
+            "majorDiameterMm": 1.5999980492472903,
+            "minimumDiameterToIntendedRatio": 0.9969280571988265,
+            "areaEquivalentRadiusMm": 0.7983554017963959
+          },
+          "after": {
+            "minorMajorRatio": 0.9969276825059432,
+            "minorDiameterMm": 1.5950903254145534,
+            "majorDiameterMm": 1.6000060519987058,
+            "minimumDiameterToIntendedRatio": 0.9969314533840958,
+            "areaEquivalentRadiusMm": 0.798347569698403
+          }
+        },
+        {
+          "index": 58,
+          "before": {
+            "minorMajorRatio": 0.9969349621644266,
+            "minorDiameterMm": 1.5950945625637014,
+            "majorDiameterMm": 1.5999986188673951,
+            "minimumDiameterToIntendedRatio": 0.9969341016023133,
+            "areaEquivalentRadiusMm": 0.7983552782718801
+          },
+          "after": {
+            "minorMajorRatio": 0.9969401329837607,
+            "minorDiameterMm": 1.5952091426207946,
+            "majorDiameterMm": 1.6001052519036056,
+            "minimumDiameterToIntendedRatio": 0.9970057141379965,
+            "areaEquivalentRadiusMm": 0.7983679987871558
+          }
+        },
+        {
+          "index": 96,
+          "before": {
+            "minorMajorRatio": 0.9969500509280921,
+            "minorDiameterMm": 1.5951181014295601,
+            "majorDiameterMm": 1.5999980138870695,
+            "minimumDiameterToIntendedRatio": 0.9969488133934751,
+            "areaEquivalentRadiusMm": 0.7983553130587774
+          },
+          "after": {
+            "minorMajorRatio": 0.9969360246549985,
+            "minorDiameterMm": 1.5953296198853923,
+            "majorDiameterMm": 1.6002326934042483,
+            "minimumDiameterToIntendedRatio": 0.9970810124283702,
+            "areaEquivalentRadiusMm": 0.7984147616161548
+          }
+        },
+        {
+          "index": 106,
+          "before": {
+            "minorMajorRatio": 0.9969349635152487,
+            "minorDiameterMm": 1.59509681606116,
+            "majorDiameterMm": 1.6000008771251828,
+            "minimumDiameterToIntendedRatio": 0.996935510038225,
+            "areaEquivalentRadiusMm": 0.7983553219358357
+          },
+          "after": {
+            "minorMajorRatio": 0.9966288571048646,
+            "minorDiameterMm": 1.594586672336713,
+            "majorDiameterMm": 1.5999804350125613,
+            "minimumDiameterToIntendedRatio": 0.9966166702104456,
+            "areaEquivalentRadiusMm": 0.7981765633363646
+          }
+        },
+        {
+          "index": 116,
+          "before": {
+            "minorMajorRatio": 0.9969283317311548,
+            "minorDiameterMm": 1.5950869459454529,
+            "majorDiameterMm": 1.6000016201521752,
+            "minimumDiameterToIntendedRatio": 0.996929341215908,
+            "areaEquivalentRadiusMm": 0.7983552951564453
+          },
+          "after": {
+            "minorMajorRatio": 0.9969287623406038,
+            "minorDiameterMm": 1.5951349750350579,
+            "majorDiameterMm": 1.6000491061066158,
+            "minimumDiameterToIntendedRatio": 0.9969593593969112,
+            "areaEquivalentRadiusMm": 0.7983622363280023
+          }
+        }
+      ]
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse_pontine.left",
+      "samples": [
+        {
+          "index": 47,
+          "before": {
+            "minorMajorRatio": 0.9969422991118622,
+            "minorDiameterMm": 1.395720152184284,
+            "majorDiameterMm": 1.4000009362905734,
+            "minimumDiameterToIntendedRatio": 0.9969429658459171,
+            "areaEquivalentRadiusMm": 0.6985610096471289
+          },
+          "after": {
+            "minorMajorRatio": 0.9635649907288375,
+            "minorDiameterMm": 1.3955790829824541,
+            "majorDiameterMm": 1.448349718400253,
+            "minimumDiameterToIntendedRatio": 0.9968422021303245,
+            "areaEquivalentRadiusMm": 0.7085127942263656
+          }
+        },
+        {
+          "index": 59,
+          "before": {
+            "minorMajorRatio": 0.9969543581138136,
+            "minorDiameterMm": 1.395736935455771,
+            "majorDiameterMm": 1.4000008366445515,
+            "minimumDiameterToIntendedRatio": 0.9969549538969793,
+            "areaEquivalentRadiusMm": 0.6985611550628745
+          },
+          "after": {
+            "minorMajorRatio": 0.9965289996772662,
+            "minorDiameterMm": 1.3956731015477555,
+            "majorDiameterMm": 1.4005343567520416,
+            "minimumDiameterToIntendedRatio": 0.9969093582483969,
+            "areaEquivalentRadiusMm": 0.6986292501930672
+          }
+        },
+        {
+          "index": 70,
+          "before": {
+            "minorMajorRatio": 0.9969660365546261,
+            "minorDiameterMm": 1.3957533903792472,
+            "majorDiameterMm": 1.4000009420609492,
+            "minimumDiameterToIntendedRatio": 0.996966707413748,
+            "areaEquivalentRadiusMm": 0.6985604964380101
+          },
+          "after": {
+            "minorMajorRatio": 0.996872017421489,
+            "minorDiameterMm": 1.395709692512837,
+            "majorDiameterMm": 1.4000891469729306,
+            "minimumDiameterToIntendedRatio": 0.9969354946520265,
+            "areaEquivalentRadiusMm": 0.6985804784736998
+          }
+        },
+        {
+          "index": 82,
+          "before": {
+            "minorMajorRatio": 0.9969622573848169,
+            "minorDiameterMm": 1.3957512138630417,
+            "majorDiameterMm": 1.400004065875381,
+            "minimumDiameterToIntendedRatio": 0.9969651527593155,
+            "areaEquivalentRadiusMm": 0.6985614381956188
+          },
+          "after": {
+            "minorMajorRatio": 0.996764433406803,
+            "minorDiameterMm": 1.3956887525402526,
+            "majorDiameterMm": 1.400219255185482,
+            "minimumDiameterToIntendedRatio": 0.9969205375287519,
+            "areaEquivalentRadiusMm": 0.6985961941774201
+          }
+        },
+        {
+          "index": 94,
+          "before": {
+            "minorMajorRatio": 0.9969619716241197,
+            "minorDiameterMm": 1.3957489745680074,
+            "majorDiameterMm": 1.400002221041828,
+            "minimumDiameterToIntendedRatio": 0.9969635532628625,
+            "areaEquivalentRadiusMm": 0.6985612156066657
+          },
+          "after": {
+            "minorMajorRatio": 0.9962510021119055,
+            "minorDiameterMm": 1.3953048143408706,
+            "majorDiameterMm": 1.4005554939297724,
+            "minimumDiameterToIntendedRatio": 0.9966462959577648,
+            "areaEquivalentRadiusMm": 0.6986027086558648
+          }
+        },
+        {
+          "index": 106,
+          "before": {
+            "minorMajorRatio": 0.996951957374545,
+            "minorDiameterMm": 1.3957334508097463,
+            "majorDiameterMm": 1.400000712657594,
+            "minimumDiameterToIntendedRatio": 0.9969524648641046,
+            "areaEquivalentRadiusMm": 0.6985612264337199
+          },
+          "after": {
+            "minorMajorRatio": 0.9940774819198287,
+            "minorDiameterMm": 1.391719548619723,
+            "majorDiameterMm": 1.4000111399082709,
+            "minimumDiameterToIntendedRatio": 0.9940853918712307,
+            "areaEquivalentRadiusMm": 0.697490602709497
+          }
+        },
+        {
+          "index": 118,
+          "before": {
+            "minorMajorRatio": 0.9969519587566816,
+            "minorDiameterMm": 1.395733093303134,
+            "majorDiameterMm": 1.400000352117047,
+            "minimumDiameterToIntendedRatio": 0.9969522095022386,
+            "areaEquivalentRadiusMm": 0.6985607663115082
+          },
+          "after": {
+            "minorMajorRatio": 0.9940710578954268,
+            "minorDiameterMm": 1.394705979499435,
+            "majorDiameterMm": 1.4030244301169,
+            "minimumDiameterToIntendedRatio": 0.9962185567853108,
+            "areaEquivalentRadiusMm": 0.6990610086040615
+          }
+        },
+        {
+          "index": 129,
+          "before": {
+            "minorMajorRatio": 0.9969318017412595,
+            "minorDiameterMm": 1.3957035784129934,
+            "majorDiameterMm": 1.3999990530698607,
+            "minimumDiameterToIntendedRatio": 0.9969311274378525,
+            "areaEquivalentRadiusMm": 0.6985605295537788
+          },
+          "after": {
+            "minorMajorRatio": 0.9966177356104048,
+            "minorDiameterMm": 1.3953615225783045,
+            "majorDiameterMm": 1.400097020873985,
+            "minimumDiameterToIntendedRatio": 0.9966868018416462,
+            "areaEquivalentRadiusMm": 0.6984985833959817
+          }
+        },
+        {
+          "index": 141,
+          "before": {
+            "minorMajorRatio": 0.9969201081683786,
+            "minorDiameterMm": 1.3956882242044553,
+            "majorDiameterMm": 1.4000000729935373,
+            "minimumDiameterToIntendedRatio": 0.9969201601460396,
+            "areaEquivalentRadiusMm": 0.6985610090211551
+          },
+          "after": {
+            "minorMajorRatio": 0.9960272957189636,
+            "minorDiameterMm": 1.3960810985709378,
+            "majorDiameterMm": 1.4016494372909758,
+            "minimumDiameterToIntendedRatio": 0.997200784693527,
+            "areaEquivalentRadiusMm": 0.6989730783883965
+          }
+        }
+      ]
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse_pontine.right",
+      "samples": [
+        {
+          "index": 27,
+          "before": {
+            "minorMajorRatio": 0.9969255223342254,
+            "minorDiameterMm": 1.3956992269507338,
+            "majorDiameterMm": 1.4000035064633616,
+            "minimumDiameterToIntendedRatio": 0.9969280192505242,
+            "areaEquivalentRadiusMm": 0.698560966438097
+          },
+          "after": {
+            "minorMajorRatio": 0.9968930929837642,
+            "minorDiameterMm": 1.3956653093515246,
+            "majorDiameterMm": 1.400015025858199,
+            "minimumDiameterToIntendedRatio": 0.9969037923939462,
+            "areaEquivalentRadiusMm": 0.6985512751159809
+          }
+        },
+        {
+          "index": 36,
+          "before": {
+            "minorMajorRatio": 0.9969163356164712,
+            "minorDiameterMm": 1.3956860239010305,
+            "majorDiameterMm": 1.4000031637940498,
+            "minimumDiameterToIntendedRatio": 0.9969185885007361,
+            "areaEquivalentRadiusMm": 0.6985604761214461
+          },
+          "after": {
+            "minorMajorRatio": 0.9968048197693576,
+            "minorDiameterMm": 1.395545542434999,
+            "majorDiameterMm": 1.4000188550030312,
+            "minimumDiameterToIntendedRatio": 0.9968182445964279,
+            "areaEquivalentRadiusMm": 0.6985166012705821
+          }
+        },
+        {
+          "index": 46,
+          "before": {
+            "minorMajorRatio": 0.9969171775115601,
+            "minorDiameterMm": 1.3956828430303219,
+            "majorDiameterMm": 1.3999987907863467,
+            "minimumDiameterToIntendedRatio": 0.9969163164502299,
+            "areaEquivalentRadiusMm": 0.6985608614759915
+          },
+          "after": {
+            "minorMajorRatio": 0.9968264335393935,
+            "minorDiameterMm": 1.3956967176463042,
+            "majorDiameterMm": 1.4001401554838964,
+            "minimumDiameterToIntendedRatio": 0.9969262268902174,
+            "areaEquivalentRadiusMm": 0.6985669321195734
+          }
+        },
+        {
+          "index": 55,
+          "before": {
+            "minorMajorRatio": 0.9969616600274028,
+            "minorDiameterMm": 1.395747838193351,
+            "majorDiameterMm": 1.4000015187695252,
+            "minimumDiameterToIntendedRatio": 0.9969627415666794,
+            "areaEquivalentRadiusMm": 0.6985611057252114
+          },
+          "after": {
+            "minorMajorRatio": 0.9966828951805602,
+            "minorDiameterMm": 1.3959427178680106,
+            "majorDiameterMm": 1.4005886171199116,
+            "minimumDiameterToIntendedRatio": 0.9971019413342933,
+            "areaEquivalentRadiusMm": 0.6987077064462525
+          }
+        },
+        {
+          "index": 64,
+          "before": {
+            "minorMajorRatio": 0.9969471180542271,
+            "minorDiameterMm": 1.3957315321040498,
+            "majorDiameterMm": 1.4000055838750431,
+            "minimumDiameterToIntendedRatio": 0.9969510943600356,
+            "areaEquivalentRadiusMm": 0.6985612484197544
+          },
+          "after": {
+            "minorMajorRatio": 0.9969089940793155,
+            "minorDiameterMm": 1.3956790949604554,
+            "majorDiameterMm": 1.4000065234133228,
+            "minimumDiameterToIntendedRatio": 0.9969136392574682,
+            "areaEquivalentRadiusMm": 0.6985548207247166
+          }
+        },
+        {
+          "index": 73,
+          "before": {
+            "minorMajorRatio": 0.9969402268803212,
+            "minorDiameterMm": 1.395716804420292,
+            "majorDiameterMm": 1.400000488281874,
+            "minimumDiameterToIntendedRatio": 0.9969405745859229,
+            "areaEquivalentRadiusMm": 0.6985611191399442
+          },
+          "after": {
+            "minorMajorRatio": 0.99680656955515,
+            "minorDiameterMm": 1.3957909902217198,
+            "majorDiameterMm": 1.4002626315400657,
+            "minimumDiameterToIntendedRatio": 0.9969935644440856,
+            "areaEquivalentRadiusMm": 0.6986173598269162
+          }
+        },
+        {
+          "index": 82,
+          "before": {
+            "minorMajorRatio": 0.9969179171346891,
+            "minorDiameterMm": 1.3956892905332494,
+            "majorDiameterMm": 1.4000042195496865,
+            "minimumDiameterToIntendedRatio": 0.9969209218094639,
+            "areaEquivalentRadiusMm": 0.6985608376376506
+          },
+          "after": {
+            "minorMajorRatio": 0.9968034470802836,
+            "minorDiameterMm": 1.3955244062897714,
+            "majorDiameterMm": 1.399999579031727,
+            "minimumDiameterToIntendedRatio": 0.9968031473498368,
+            "areaEquivalentRadiusMm": 0.6984376240357802
+          }
+        },
+        {
+          "index": 110,
+          "before": {
+            "minorMajorRatio": 0.8315061493302293,
+            "minorDiameterMm": 1.4001003713681706,
+            "majorDiameterMm": 1.6838124077566219,
+            "minimumDiameterToIntendedRatio": 1.0000716938344076,
+            "areaEquivalentRadiusMm": 0.7768526390634826
+          },
+          "after": {
+            "minorMajorRatio": 0.8393340239006206,
+            "minorDiameterMm": 1.3984760888961483,
+            "majorDiameterMm": 1.666173476915707,
+            "minimumDiameterToIntendedRatio": 0.9989114920686774,
+            "areaEquivalentRadiusMm": 0.7728089983171773
+          }
+        }
+      ]
+    }
+  ],
+  "apposition": [
+    {
+      "kind": "arteries",
+      "node": "Basilar",
+      "before": {
+        "minimumWallGapMm": 0.04326132813734342,
+        "medianWallGapMm": 1.4464315889036201
+      },
+      "after": {
+        "minimumWallGapMm": 0.03772897401492838,
+        "medianWallGapMm": 1.5326291528856122
+      }
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_pontine",
+      "before": {
+        "minimumWallGapMm": 0.14963503011271925,
+        "medianWallGapMm": 1.5341759105559098
+      },
+      "after": {
+        "minimumWallGapMm": 0.16310882961613052,
+        "medianWallGapMm": 1.6798343687196755
+      }
+    }
+  ],
+  "closedSolids": {
+    "arteries": true,
+    "veins": true
+  },
+  "scope": "Incremental geometry comparison; baseline tissue penetrations and unresolved upper venous outlets remain reported.",
+  "incrementalChecksPassed": true
+}

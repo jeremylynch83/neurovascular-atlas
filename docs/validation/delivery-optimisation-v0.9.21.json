@@ -1,0 +1,122 @@
+{
+  "release": "0.9.21",
+  "kind": "delivery-optimisation",
+  "structures": 1482,
+  "models": [
+    {
+      "filename": "brain-context.glb",
+      "inputBytes": 66328696,
+      "outputBytes": 21715968,
+      "triangleCount": 2755544,
+      "vertexCount": 1378416,
+      "maximumPositionErrorMm": 0.0002114319833458102,
+      "positionGridMm": 0.000244140625,
+      "unusedVertexColoursRemoved": true,
+      "orientedTrianglesUnchanged": true,
+      "brainTriangleOrderPreserved": true,
+      "maximumNormalAngleDegrees": 0.059832178143383305,
+      "buffersVerified": 567
+    },
+    {
+      "filename": "complete-anastomoses.glb",
+      "inputBytes": 2973108,
+      "outputBytes": 1749636,
+      "triangleCount": 265600,
+      "vertexCount": 133134,
+      "maximumPositionErrorMm": 0.00020925274889987912,
+      "positionGridMm": 0.000244140625,
+      "unusedVertexColoursRemoved": true,
+      "orientedTrianglesUnchanged": true,
+      "brainTriangleOrderPreserved": false,
+      "maximumNormalAngleDegrees": 0.05944307861903825,
+      "buffersVerified": 501
+    },
+    {
+      "filename": "complete-circulation.glb",
+      "inputBytes": 80753504,
+      "outputBytes": 37536996,
+      "triangleCount": 6590375,
+      "vertexCount": 3381041,
+      "maximumPositionErrorMm": 0.0002114319833458102,
+      "positionGridMm": 0.000244140625,
+      "unusedVertexColoursRemoved": true,
+      "orientedTrianglesUnchanged": true,
+      "brainTriangleOrderPreserved": false,
+      "maximumNormalAngleDegrees": 0.059579210744945314,
+      "buffersVerified": 1797
+    },
+    {
+      "filename": "craniofacial.glb",
+      "inputBytes": 5014620,
+      "outputBytes": 2531976,
+      "triangleCount": 411447,
+      "vertexCount": 206888,
+      "maximumPositionErrorMm": 0.0002114319833458102,
+      "positionGridMm": 0.000244140625,
+      "unusedVertexColoursRemoved": true,
+      "orientedTrianglesUnchanged": true,
+      "brainTriangleOrderPreserved": false,
+      "maximumNormalAngleDegrees": 0.05883177178535061,
+      "buffersVerified": 180
+    },
+    {
+      "filename": "venous.glb",
+      "inputBytes": 9839800,
+      "outputBytes": 4872120,
+      "triangleCount": 780478,
+      "vertexCount": 404828,
+      "maximumPositionErrorMm": 0.00021136129953673686,
+      "positionGridMm": 0.000244140625,
+      "unusedVertexColoursRemoved": true,
+      "orientedTrianglesUnchanged": true,
+      "brainTriangleOrderPreserved": false,
+      "maximumNormalAngleDegrees": 0.0583714514300436,
+      "buffersVerified": 312
+    }
+  ],
+  "loaderChecks": [
+    {
+      "file": "brain-context.glb",
+      "meshes": 189,
+      "triangles": 2755544,
+      "positionsFinite": true,
+      "normalPackingDecoded": true
+    },
+    {
+      "file": "complete-anastomoses.glb",
+      "meshes": 167,
+      "triangles": 265600,
+      "positionsFinite": true,
+      "normalPackingDecoded": true
+    },
+    {
+      "file": "complete-circulation.glb",
+      "meshes": 599,
+      "triangles": 6590375,
+      "positionsFinite": true,
+      "normalPackingDecoded": true
+    },
+    {
+      "file": "craniofacial.glb",
+      "meshes": 60,
+      "triangles": 411447,
+      "positionsFinite": true,
+      "normalPackingDecoded": true
+    },
+    {
+      "file": "venous.glb",
+      "meshes": 104,
+      "triangles": 780478,
+      "positionsFinite": true,
+      "normalPackingDecoded": true
+    }
+  ],
+  "surfaceAnchors": 131,
+  "secondarySurfaceAnchors": 50,
+  "anchorBindingsVerified": true,
+  "ponsAdvancementRetained": true,
+  "maximumPositionErrorMm": 0.0002114319833458102,
+  "triangleCountUnchanged": true,
+  "geometryFittingChanged": false,
+  "scope": "Mesh decoding, topology preservation, normal precision and surface-anchor checks; no fresh browser GPU appearance check."
+}

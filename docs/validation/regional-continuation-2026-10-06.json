@@ -1,0 +1,31 @@
+{
+  "checkpoint": "PCA and deep venous regional continuation, 6 October 2026",
+  "appliedToApp": false,
+  "appRelease": "0.9.21",
+  "trialAccepted": false,
+  "latestTrial": "canonical basal-vein centreline with original calibre profile, rigid section transport and fixed shared outlet collars",
+  "changes": [
+    "Independent before/after checks of full exported vessel walls against tissue, bone and the opposite closed vascular network.",
+    "Original labelled faces retained.",
+    "Native external outlets fixed; shared joins retained.",
+    "Local arterial and venous alternatives tested and rejected."
+  ],
+  "latestResults": {
+    "newOrIncreasedContacts": 22,
+    "sourceFacesRetained": true,
+    "closedVenousSolid": true,
+    "maximumSharedBoundaryGapMm": 3.814697265625e-06,
+    "allCheckedJoinsRetained": true
+  },
+  "remaining": [
+    "PCA trunk and native branch/outlet registration requires correction against neighbouring brain tissue.",
+    "Basal, lateral mesencephalic and communicating venous courses still require a connected reconstruction.",
+    "Native Galenic collars conflict with the composite deep/parenchymal atlas; maintaining these fixed collars leaves no accepted connected fit.",
+    "App is an anatomical review build with preceding accepted incremental changes; wider anatomical accuracy is unresolved."
+  ],
+  "hashes": {
+    "brain": "742debb2756d57a4df8d89d9a3ce02057241182204fc3a38f1943e72ab8020ed",
+    "arteries": "9acafad50b0bad18ee152e4ddc95e5b4056e560e806db49f4431f0b46d1776c1",
+    "veins": "45b176a6a3e5c1502bc5aa59d0b72f5004b13ba2b9a5654782a248e283b4652c"
+  }
+}

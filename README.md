@@ -1,10 +1,14 @@
-# Neurovascular Atlas v0.9.20 review build
+# Neurovascular Atlas v0.9.21 review build
+
+Includes the ventral pons advancement of up to 3 mm, carried with the basilar artery and local pontine vessels. Cavernous sinuses retain their reviewed shape. The rejected PCA and deep venous fitting trials are excluded; those fitting tasks remain unfinished.
+
+This compact installation package retains all 1,482 catalogue structures and all model triangles. Delivery assets use Meshopt compression, positions rounded on a 1/4096 mm grid (maximum displacement below 0.00022 mm), and high-precision packed shading normals. Surface anchors and asset hashes are updated and validated. Historical review images and authoring trial models are omitted from this installation package. See [delivery checks](docs/validation/delivery-optimisation-v0.9.21.json).
 
 This build resumes posterior-fossa candidate 59 and applies candidate 61 to the full app. It brings the anterior veins closer to the brainstem, preserves circular tube sweeps and arterial overpasses, repairs the right P1/basilar and left SCA/proximal perforator joins, and places both posterior spinal arteries on the dorsal medulla and illustrative upper cervical cord from proximal PICA origins. Clival/basilar plexus geometry is omitted.
 
 This remains an anatomical review build. The local posterior-fossa surface walls, closed-tissue containment, vein/artery crossings, sampled tube diameters and 151 source joins pass. Wider upper collecting-vein and cerebral parenchymal relationships are unfinished. The full scope and limitations are in [the fitting report](docs/POSTERIOR_FOSSA_v0.9.20.md).
 
-Run `./docker.sh start` for local review, or use the existing installer with `inr-anatomy-atlas-v0.9.20.zip`. The independent posterior-fossa viewer includes opaque tissue views and can be started with `python3 serve.py`.
+Run `./docker.sh start` for local review, or use the existing installer with this v0.9.21 ZIP. The separate posterior-fossa authoring viewer is available in the review checkpoint.
 
 ## Bilateral central arterial family fit in v0.9.18
 

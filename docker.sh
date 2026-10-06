@@ -21,7 +21,6 @@ case "${1:-start}" in
 esac
 
 # The complete model is bundled; historical cached models are not imported.
-./anatomy.sh ensure-reference
 
 docker build -t "$IMAGE" .
 docker rm -f "$CONTAINER" >/dev/null 2>&1 || true

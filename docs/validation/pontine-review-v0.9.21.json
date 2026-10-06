@@ -1,0 +1,27 @@
+{
+  "release": "0.9.21",
+  "sourceHashes": {
+    "brain": "742debb2756d57a4df8d89d9a3ce02057241182204fc3a38f1943e72ab8020ed",
+    "arteries": "9acafad50b0bad18ee152e4ddc95e5b4056e560e806db49f4431f0b46d1776c1",
+    "veins": "435d51ff86106d803aaa5c08332623ffe5766dc78daa53605adb82cd2a1279cb"
+  },
+  "deliveredHashes": {
+    "models/complete-anastomoses.glb": "4f2e45a13d20646b95cf320e663772019067dd1313607a2db9eb04a88a2da66d",
+    "models/venous.glb": "211fab51ad972d01fc05dac2451ec27f8959f6850f2d26cc9eb27a910fa30fa7",
+    "models/complete-circulation.glb": "d80cf2342786c4e9b6f1d926eed6652de5532d63dec08d1275237e78945905f5",
+    "models/craniofacial.glb": "8339b8ca742b1126807740c73905366ce12b446f5d994df44d218a0ebee1f91a",
+    "models/brain-context.glb": "742debb2756d57a4df8d89d9a3ce02057241182204fc3a38f1943e72ab8020ed"
+  },
+  "appliedToApp": true,
+  "anatomicallyComplete": false,
+  "maximumPontineAdvanceMm": 3.0,
+  "pontineIncrementalChecksPassed": true,
+  "cavernousSinusesMoved": false,
+  "widerRegionalTrialApplied": false,
+  "remaining": [
+    "Upper inferior-vermian outlets still intersect occipital cortex. Upper collecting and deep venous routes remain unfinished.",
+    "The baseline PICA/marginal-sinus wall contact is retained. Triangle counts from different mesh densities must not be interpreted as a measure of improvement.",
+    "One sampled left inferior-vermian free section has a minimum minor diameter of approximately 92% of intended; strict section validation remains false.",
+    "Open atlas parts permit triangle-contact checking rather than complete containment proof. The model is an educational anatomy review, not a patient-specific reconstruction."
+  ]
+}

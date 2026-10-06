@@ -1,3 +1,7 @@
+# v0.9.21
+
+Ventral pons and accompanying vessels advanced by up to 3 mm; preceding SCA/PICA and cerebellar surface fitting integrated; catalogue and surface references refreshed. Wider regional trial excluded after failed wall checks. Anatomical review remains pending.
+
 ## 0.9.20 anatomical review build
 
 - Resume the lossless posterior-fossa checkpoint, retaining its tissue registration.

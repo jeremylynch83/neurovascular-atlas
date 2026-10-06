@@ -1,0 +1,207 @@
+{
+  "parent": "posterior-fossa-fitting-checkpoint-v0.9.20.zip",
+  "reconstructed": [
+    "PICA choroidal left",
+    "PICA choroidal right",
+    "PICA hemispheric left",
+    "PICA hemispheric right",
+    "PICA lateral hemispheric left",
+    "PICA lateral hemispheric right",
+    "PICA left",
+    "PICA right",
+    "PICA tonsillar left",
+    "PICA tonsillar right",
+    "PICA vermian left",
+    "PICA vermian right",
+    "SCA caudal hemispheric left",
+    "SCA caudal hemispheric right",
+    "SCA lateral hemispheric left",
+    "SCA lateral hemispheric right",
+    "SCA left",
+    "SCA medial hemispheric left",
+    "SCA medial hemispheric right",
+    "SCA right",
+    "SCA rostral hemispheric left",
+    "SCA rostral hemispheric right",
+    "SCA tectal branch left",
+    "SCA tectal branch right",
+    "SCA vermian left",
+    "SCA vermian right"
+  ],
+  "retainedInterfaces": [
+    "Basilar",
+    "PICA medullary perforator left",
+    "PICA medullary perforator right",
+    "Pontine circumferential right",
+    "Pontine long circumflex left",
+    "Pontine long circumflex right",
+    "Posterior spinal left",
+    "Posterior spinal right",
+    "SCA proximal perforator left",
+    "SCA proximal perforator right",
+    "Vertebral V4 left",
+    "Vertebral V4 right",
+    "Wollschlaeger and Wollschlaeger artery left",
+    "Wollschlaeger and Wollschlaeger artery right"
+  ],
+  "linkedBranchAnchors": 25,
+  "brainChanges": [
+    {
+      "node": "brain.peduncle-of-flocculus.right",
+      "maximumMovementMm": 0.201570217837244
+    },
+    {
+      "node": "brain.flocculus.right",
+      "maximumMovementMm": 0.049552050760526184
+    },
+    {
+      "node": "brain.folium-of-vermis",
+      "maximumMovementMm": 2.6667319739586883
+    },
+    {
+      "node": "brain.lingula-of-cerebellum",
+      "maximumMovementMm": 0.14780026876754543
+    },
+    {
+      "node": "brain.superior-semilunar-lobule.left",
+      "maximumMovementMm": 4.071118125005098
+    },
+    {
+      "node": "brain.posterior-quadrangular-lobule.left",
+      "maximumMovementMm": 2.3616210810102385
+    },
+    {
+      "node": "brain.gracile-lobule.left",
+      "maximumMovementMm": 2.3428745912587394
+    },
+    {
+      "node": "brain.wing-of-central-lobule.right",
+      "maximumMovementMm": 0.0545851559550244
+    },
+    {
+      "node": "brain.superior-semilunar-lobule.right",
+      "maximumMovementMm": 4.069119372359561
+    },
+    {
+      "node": "brain.biventral-lobule.left",
+      "maximumMovementMm": 1.8239399502628464
+    },
+    {
+      "node": "brain.gracile-lobule.right",
+      "maximumMovementMm": 2.338923493727813
+    },
+    {
+      "node": "brain.superior-cerebellar-peduncle.left",
+      "maximumMovementMm": 0.591909945162047
+    },
+    {
+      "node": "brain.biventral-lobule.right",
+      "maximumMovementMm": 1.8232578153170196
+    },
+    {
+      "node": "brain.declive",
+      "maximumMovementMm": 2.43191061315131
+    },
+    {
+      "node": "brain.tonsil-of-cerebellum.right",
+      "maximumMovementMm": 0.9458712562831988
+    },
+    {
+      "node": "brain.posterior-quadrangular-lobule.right",
+      "maximumMovementMm": 2.3615372488420032
+    },
+    {
+      "node": "brain.central-lobule",
+      "maximumMovementMm": 0.1603885535908063
+    },
+    {
+      "node": "brain.tuber-of-vermis",
+      "maximumMovementMm": 2.616663938724777
+    },
+    {
+      "node": "brain.anterior-quadrangular-lobule.left",
+      "maximumMovementMm": 1.0995421371032912
+    },
+    {
+      "node": "brain.tonsil-of-cerebellum.left",
+      "maximumMovementMm": 0.9472953576965271
+    },
+    {
+      "node": "brain.culmen",
+      "maximumMovementMm": 1.1512421827149464
+    },
+    {
+      "node": "brain.peduncle-of-flocculus.left",
+      "maximumMovementMm": 0.20175864444704528
+    },
+    {
+      "node": "brain.inferior-semilunar-lobule.left",
+      "maximumMovementMm": 3.99418808497393
+    },
+    {
+      "node": "brain.superior-cerebellar-peduncle.right",
+      "maximumMovementMm": 0.5913809247568422
+    },
+    {
+      "node": "brain.anterior-quadrangular-lobule.right",
+      "maximumMovementMm": 1.0995109876514693
+    },
+    {
+      "node": "brain.pyramis-of-vermis",
+      "maximumMovementMm": 2.0699597068721456
+    },
+    {
+      "node": "brain.flocculus.left",
+      "maximumMovementMm": 0.04966827317775305
+    },
+    {
+      "node": "brain.uvula-of-vermis",
+      "maximumMovementMm": 1.1300876539810387
+    },
+    {
+      "node": "brain.wing-of-central-lobule.left",
+      "maximumMovementMm": 0.054617428347039594
+    },
+    {
+      "node": "brain.nodule-of-vermis",
+      "maximumMovementMm": 0.1548193565078597
+    },
+    {
+      "node": "brain.inferior-semilunar-lobule.right",
+      "maximumMovementMm": 3.999338999379146
+    }
+  ],
+  "veinsUnchanged": false,
+  "posteriorSpinalCoursesUnchanged": true,
+  "choroidalOriginChanges": {
+    "PICA choroidal left": [
+      "PICA left",
+      596
+    ],
+    "PICA choroidal right": [
+      "PICA right",
+      247
+    ]
+  },
+  "removedAccidentalChoroidalVermianSeams": true,
+  "method": "separate superior and inferior cerebellar surface targets; coupled anchors; round sweeps; native Boolean joins; modest bone-clearance cerebellar contraction",
+  "accepted": false,
+  "status": "Regional anatomy review; global fitting incomplete",
+  "regionalArterialChecks": {
+    "primaryArterialTissueChecksPassed": true,
+    "arterialBoneChecksPassed": true,
+    "revisedCrossingChecksPassed": true,
+    "joinsPassed": true
+  },
+  "hashes": {
+    "brain": "12f6aae3bd0ae1736a303603219922fe90454ed3d5e97f3f5a7e3f5f064fdde9",
+    "arteries": "e6b738174d6c0d0c4dab8040f6c4d9938c7ff2d6fada3918b8ea4a79ea5a8de1",
+    "veins": "62d0092860cb59907074a8d3fd6066fe099df02bd62630db7d7d7132a61d13e8"
+  },
+  "limitations": [
+    "Upper inferior-vermian outlets still intersect occipital cortex. Upper collecting and deep venous routes remain unfinished.",
+    "The baseline PICA/marginal-sinus wall contact is retained. Triangle counts from different mesh densities must not be interpreted as a measure of improvement.",
+    "One sampled left inferior-vermian free section has a minimum minor diameter of approximately 92% of intended; strict section validation remains false.",
+    "Open atlas parts permit triangle-contact checking rather than complete containment proof. The model is an educational anatomy review, not a patient-specific reconstruction."
+  ]
+}
