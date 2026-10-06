@@ -1,6 +1,8 @@
-# Neurovascular Atlas v0.9.26 review build
+# Neurovascular Atlas v0.9.27 review build
 
-This compact release omits modelling buffers, authoring utilities and historical validation artefacts. Anatomy is identical to v0.9.25. It retains the installer, build tools, credits and current anatomical review findings.
+Adds the 22 deep venous families on page 2 of the reference catalogue, excluding transmedullary veins. There are 44 side-specific mesh labels with representative tributaries, searchable names, descriptions and drainage relationships. New courses are guided by the registered brain surfaces and physically joined to their receiving veins. Fine anatomy and calibres remain illustrative. See [deep venous additions](docs/DEEP_VEINS_v0.9.27.md).
+
+This compact release omits modelling buffers, authoring utilities and historical validation artefacts. Arterial, brain and skull assets retain v0.9.26; existing venous courses retain their geometry apart from joined ostia. It retains the installer, build tools, credits and current anatomical review findings.
 
 Keeps full rendering resolution during selection and camera movement. Desktop search fades like the other control bars; panel arrows follow their opening and closing direction. The Brain overview and Deep / posterior fossa buttons are removed.
 

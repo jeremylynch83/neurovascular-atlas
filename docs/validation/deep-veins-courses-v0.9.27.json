@@ -1,0 +1,400 @@
+[
+  {
+    "node": "vein.direct_lateral.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.14539956693001987
+  },
+  {
+    "node": "vein.medial_atrial.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.12347808339488972
+  },
+  {
+    "node": "vein.lateral_atrial.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.1080821239585007
+  },
+  {
+    "node": "vein.inferior_ventricular.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.17213374557005798
+  },
+  {
+    "node": "vein.longitudinal_caudate.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.09625035035502046
+  },
+  {
+    "node": "vein.longitudinal_caudate.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.07654115493416495
+  },
+  {
+    "node": "vein.anterior_caudate.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.3274217831442614
+  },
+  {
+    "node": "vein.transverse_caudate.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.018276702513134135
+  },
+  {
+    "node": "vein.transverse_caudate.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.008332200283243654
+  },
+  {
+    "node": "vein.transverse_caudate.right",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.009888091992882053
+  },
+  {
+    "node": "vein.posterior_callosal.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.2926605675665852,
+    "minimumBodyTargetSignedDistanceMm": 0.6123045569728487,
+    "radiusMm": 0.5,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.internal_occipital.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.9217804113778235,
+    "minimumBodyTargetSignedDistanceMm": 0.5516987175317555,
+    "radiusMm": 0.48,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.anterior_thalamic.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.13696430138017687
+  },
+  {
+    "node": "vein.superior_thalamic.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.487605904023456
+  },
+  {
+    "node": "vein.inferior_thalamic.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.05524721585912144,
+    "minimumBodyTargetSignedDistanceMm": 0.40439617428751484,
+    "radiusMm": 0.27,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.uncal.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.1041934813592927,
+    "minimumBodyTargetSignedDistanceMm": 0.4280357818684826,
+    "radiusMm": 0.32,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.hippocampal.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.45673454240129696,
+    "minimumBodyTargetSignedDistanceMm": 0.3175822250010991,
+    "radiusMm": 0.28,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.hippocampal.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.24797004204557946
+  },
+  {
+    "node": "vein.hippocampal.right",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.07362474447926647
+  },
+  {
+    "node": "vein.hippocampal.right",
+    "part": 3,
+    "maximumRadiusCurvatureProduct": 0.0039324523309058204
+  },
+  {
+    "node": "vein.inferior_striate.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.04617306213778738
+  },
+  {
+    "node": "vein.inferior_striate.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.008783039287460182
+  },
+  {
+    "node": "vein.inferior_striate.right",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.009776162960829908
+  },
+  {
+    "node": "vein.insular.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.26192760430415335,
+    "minimumBodyTargetSignedDistanceMm": 0.40283549196208823,
+    "radiusMm": 0.32,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.insular.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.14731920264052106
+  },
+  {
+    "node": "vein.insular.right",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.44543871239985167
+  },
+  {
+    "node": "vein.posterior_septal.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.2603042039126237
+  },
+  {
+    "node": "vein.inferior_choroidal.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.03200140971665303
+  },
+  {
+    "node": "vein.olfactory.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.3146984726120108,
+    "minimumBodyTargetSignedDistanceMm": 0.34830012392504167,
+    "radiusMm": 0.24,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.posterior_orbitofrontal.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.4099062165587211,
+    "minimumBodyTargetSignedDistanceMm": 0.3799083664818219,
+    "radiusMm": 0.25,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.hypothalamic_tributaries.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.036489609374674686
+  },
+  {
+    "node": "vein.hypothalamic_tributaries.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.005300487509847343
+  },
+  {
+    "node": "vein.deep_medullary.right",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.02544318007822315
+  },
+  {
+    "node": "vein.deep_medullary.right",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.006389849887821634
+  },
+  {
+    "node": "vein.deep_medullary.right",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 1.7996107313396813e-08
+  },
+  {
+    "node": "vein.direct_lateral.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.1499014685161088
+  },
+  {
+    "node": "vein.medial_atrial.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.10691215176096097
+  },
+  {
+    "node": "vein.lateral_atrial.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.0961698932447693
+  },
+  {
+    "node": "vein.inferior_ventricular.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.1576304801401784
+  },
+  {
+    "node": "vein.longitudinal_caudate.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.09000548256811981
+  },
+  {
+    "node": "vein.longitudinal_caudate.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.07195857136117982
+  },
+  {
+    "node": "vein.anterior_caudate.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.30477740769863787
+  },
+  {
+    "node": "vein.transverse_caudate.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.016881185725927485
+  },
+  {
+    "node": "vein.transverse_caudate.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.007683672394691645
+  },
+  {
+    "node": "vein.transverse_caudate.left",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.008382786261437394
+  },
+  {
+    "node": "vein.posterior_callosal.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.2700293902809625,
+    "minimumBodyTargetSignedDistanceMm": 0.5757316517000041,
+    "radiusMm": 0.46,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.internal_occipital.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.825823267178898,
+    "minimumBodyTargetSignedDistanceMm": 0.5158852771077568,
+    "radiusMm": 0.4416,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.anterior_thalamic.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.12704160709523726
+  },
+  {
+    "node": "vein.superior_thalamic.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.45174287554313297
+  },
+  {
+    "node": "vein.inferior_thalamic.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.053271165237959085,
+    "minimumBodyTargetSignedDistanceMm": 0.38538270603073826,
+    "radiusMm": 0.24840000000000004,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.uncal.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.0965903093293215,
+    "minimumBodyTargetSignedDistanceMm": 0.39812045847049743,
+    "radiusMm": 0.2944,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.hippocampal.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.4253532024530235,
+    "minimumBodyTargetSignedDistanceMm": 0.2833332138344603,
+    "radiusMm": 0.25760000000000005,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.hippocampal.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.2333635928811899
+  },
+  {
+    "node": "vein.hippocampal.left",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.09095249794267718
+  },
+  {
+    "node": "vein.hippocampal.left",
+    "part": 3,
+    "maximumRadiusCurvatureProduct": 0.0031278475579973783
+  },
+  {
+    "node": "vein.inferior_striate.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.0416043200454188
+  },
+  {
+    "node": "vein.inferior_striate.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.007917221347802489
+  },
+  {
+    "node": "vein.inferior_striate.left",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.011530326242670646
+  },
+  {
+    "node": "vein.insular.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.2539604202152033,
+    "minimumBodyTargetSignedDistanceMm": 0.3620004996839597,
+    "radiusMm": 0.2944,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.insular.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.13411141780478816
+  },
+  {
+    "node": "vein.insular.left",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 0.49574040000047603
+  },
+  {
+    "node": "vein.posterior_septal.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.23473447109153997
+  },
+  {
+    "node": "vein.inferior_choroidal.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.02855505194047452
+  },
+  {
+    "node": "vein.olfactory.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.2889531899709704,
+    "minimumBodyTargetSignedDistanceMm": 0.3322292662745657,
+    "radiusMm": 0.2208,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.posterior_orbitofrontal.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.3248159267107514,
+    "minimumBodyTargetSignedDistanceMm": 0.35911424737055564,
+    "radiusMm": 0.23,
+    "insideBodySamples": 0
+  },
+  {
+    "node": "vein.hypothalamic_tributaries.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.023587790196238006
+  },
+  {
+    "node": "vein.hypothalamic_tributaries.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.005652038939368259
+  },
+  {
+    "node": "vein.deep_medullary.left",
+    "part": 0,
+    "maximumRadiusCurvatureProduct": 0.02351259923194688
+  },
+  {
+    "node": "vein.deep_medullary.left",
+    "part": 1,
+    "maximumRadiusCurvatureProduct": 0.006891565038747574
+  },
+  {
+    "node": "vein.deep_medullary.left",
+    "part": 2,
+    "maximumRadiusCurvatureProduct": 1.6390035088833644e-08
+  }
+]

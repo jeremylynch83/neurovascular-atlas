@@ -1,3 +1,12 @@
+# v0.9.27
+
+- Add catalogue D01-D22 as 22 deep venous families and 44 side-specific labelled meshes, with 70 collector/tributary components. Exclude D23 transmedullary veins.
+- Guide courses with registered ventricular, caudate, thalamic, hippocampal, insular, callosal and basal frontal surfaces. Fine channels and calibres are representative teaching reconstructions.
+- Join new receiving ostia with a labelled surface union, retaining existing venous courses beyond their local junctions.
+- Add descriptions, alternate names, family hierarchy, drainage relationships, source locators and vessel-course contracts.
+- Validate selected new drainage junctions, existing collars, triangle quality, exact export/loader buffers and new artery/bone/neighbouring-vein contacts. Retain the preceding wider atlas review limitations.
+- Preserve the compact packaging and v0.9.25 display changes.
+
 # v0.9.26
 
 - Deliver a smaller install/build ZIP without modelling buffers, authoring tools or historical validation artefacts.

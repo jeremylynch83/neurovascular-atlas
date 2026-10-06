@@ -1,0 +1,1179 @@
+{
+  "release": "0.9.27",
+  "baseline": "0.9.26",
+  "newFamilies": 22,
+  "newMeshLabels": 44,
+  "excluded": "Transmedullary veins",
+  "checks": {
+    "meshQuality": {
+      "parts": [
+        {
+          "node": "vein.direct_lateral.left",
+          "vertices": 1571,
+          "triangles": 2964,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_choroidal.left",
+          "vertices": 1707,
+          "triangles": 3318,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_atrial.left",
+          "vertices": 4782,
+          "triangles": 9341,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.internal_occipital.right",
+          "vertices": 6676,
+          "triangles": 13242,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.hippocampal.left",
+          "vertices": 6929,
+          "triangles": 13498,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.olfactory.left",
+          "vertices": 2583,
+          "triangles": 5102,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.medial_atrial.right",
+          "vertices": 4075,
+          "triangles": 7927,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_atrial.right",
+          "vertices": 4829,
+          "triangles": 9425,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_ventricular.right",
+          "vertices": 7632,
+          "triangles": 14626,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.deep_medullary.left",
+          "vertices": 8564,
+          "triangles": 16956,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.direct_lateral.right",
+          "vertices": 1610,
+          "triangles": 3033,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.insular.left",
+          "vertices": 9928,
+          "triangles": 19790,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_ventricular.left",
+          "vertices": 7670,
+          "triangles": 14680,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.insular.right",
+          "vertices": 9800,
+          "triangles": 19527,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_callosal.right",
+          "vertices": 3188,
+          "triangles": 6210,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.uncal.left",
+          "vertices": 1627,
+          "triangles": 3160,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_septal.right",
+          "vertices": 820,
+          "triangles": 1568,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_septal.left",
+          "vertices": 1826,
+          "triangles": 3594,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.deep_middle_cerebral.left",
+          "vertices": 2950,
+          "triangles": 5701,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_choroidal.right",
+          "vertices": 1693,
+          "triangles": 3288,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.thalamostriate.right",
+          "vertices": 1597,
+          "triangles": 2905,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.internal_cerebral.left",
+          "vertices": 2455,
+          "triangles": 4521,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.thalamostriate.left",
+          "vertices": 1594,
+          "triangles": 2901,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.basal.left",
+          "vertices": 9294,
+          "triangles": 17302,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_thalamic.right",
+          "vertices": 1666,
+          "triangles": 3275,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_cerebral.left",
+          "vertices": 2776,
+          "triangles": 5327,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.basal.right",
+          "vertices": 9154,
+          "triangles": 17043,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_thalamic.right",
+          "vertices": 1478,
+          "triangles": 2890,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.uncal.right",
+          "vertices": 1602,
+          "triangles": 3112,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_communicating",
+          "vertices": 1601,
+          "triangles": 3144,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.deep_medullary.right",
+          "vertices": 8568,
+          "triangles": 16952,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.internal_occipital.left",
+          "vertices": 6611,
+          "triangles": 13112,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.hypothalamic_tributaries.right",
+          "vertices": 2829,
+          "triangles": 5504,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_septal.right",
+          "vertices": 1827,
+          "triangles": 3590,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_callosal.left",
+          "vertices": 3196,
+          "triangles": 6224,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_orbitofrontal.left",
+          "vertices": 2762,
+          "triangles": 5451,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_striate.right",
+          "vertices": 5401,
+          "triangles": 10732,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_thalamic.right",
+          "vertices": 1463,
+          "triangles": 2851,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_cerebral.right",
+          "vertices": 2968,
+          "triangles": 5701,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.longitudinal_caudate.right",
+          "vertices": 8159,
+          "triangles": 15939,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.medial_atrial.left",
+          "vertices": 3943,
+          "triangles": 7663,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.longitudinal_caudate.left",
+          "vertices": 8149,
+          "triangles": 15937,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_thalamic.left",
+          "vertices": 1666,
+          "triangles": 3271,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_caudate.right",
+          "vertices": 5822,
+          "triangles": 11570,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_caudate.left",
+          "vertices": 2601,
+          "triangles": 5139,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_thalamic.left",
+          "vertices": 1477,
+          "triangles": 2891,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.hypothalamic_tributaries.left",
+          "vertices": 2761,
+          "triangles": 5446,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.olfactory.right",
+          "vertices": 2580,
+          "triangles": 5099,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_orbitofrontal.right",
+          "vertices": 2720,
+          "triangles": 5361,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.hippocampal.right",
+          "vertices": 6948,
+          "triangles": 13448,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_septal.left",
+          "vertices": 814,
+          "triangles": 1565,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.galen",
+          "vertices": 758,
+          "triangles": 1142,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_thalamic.left",
+          "vertices": 1453,
+          "triangles": 2837,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.internal_cerebral.right",
+          "vertices": 2438,
+          "triangles": 4497,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_caudate.left",
+          "vertices": 5815,
+          "triangles": 11558,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.deep_middle_cerebral.right",
+          "vertices": 3165,
+          "triangles": 6108,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_striate.left",
+          "vertices": 5406,
+          "triangles": 10746,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_caudate.right",
+          "vertices": 2580,
+          "triangles": 5097,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "physicalJunctions": {
+      "pairs": [
+        {
+          "from": "vein.direct_lateral.right",
+          "to": "vein.internal_cerebral.right",
+          "sharedVertices": 65,
+          "passed": true
+        },
+        {
+          "from": "vein.direct_lateral.right",
+          "to": "vein.thalamostriate.right",
+          "sharedVertices": 68,
+          "passed": true
+        },
+        {
+          "from": "vein.medial_atrial.right",
+          "to": "vein.internal_cerebral.right",
+          "sharedVertices": 61,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_atrial.right",
+          "to": "vein.medial_atrial.right",
+          "sharedVertices": 166,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_ventricular.right",
+          "to": "vein.basal.right",
+          "sharedVertices": 363,
+          "passed": true
+        },
+        {
+          "from": "vein.longitudinal_caudate.right",
+          "to": "vein.direct_lateral.right",
+          "sharedVertices": 57,
+          "passed": true
+        },
+        {
+          "from": "vein.longitudinal_caudate.right",
+          "to": "vein.inferior_ventricular.right",
+          "sharedVertices": 82,
+          "passed": true
+        },
+        {
+          "from": "vein.longitudinal_caudate.right",
+          "to": "vein.thalamostriate.right",
+          "sharedVertices": 105,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_caudate.right",
+          "to": "vein.thalamostriate.right",
+          "sharedVertices": 61,
+          "passed": true
+        },
+        {
+          "from": "vein.transverse_caudate.right",
+          "to": "vein.longitudinal_caudate.right",
+          "sharedVertices": 72,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_callosal.right",
+          "to": "vein.galen",
+          "sharedVertices": 58,
+          "passed": true
+        },
+        {
+          "from": "vein.internal_occipital.right",
+          "to": "vein.posterior_callosal.right",
+          "sharedVertices": 108,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_thalamic.right",
+          "to": "vein.internal_cerebral.right",
+          "sharedVertices": 64,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_thalamic.right",
+          "to": "vein.internal_cerebral.right",
+          "sharedVertices": 55,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_thalamic.right",
+          "to": "vein.basal.right",
+          "sharedVertices": 73,
+          "passed": true
+        },
+        {
+          "from": "vein.uncal.right",
+          "to": "vein.basal.right",
+          "sharedVertices": 90,
+          "passed": true
+        },
+        {
+          "from": "vein.hippocampal.right",
+          "to": "vein.basal.right",
+          "sharedVertices": 348,
+          "passed": true
+        },
+        {
+          "from": "vein.hippocampal.right",
+          "to": "vein.inferior_ventricular.right",
+          "sharedVertices": 102,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_striate.right",
+          "to": "vein.deep_middle_cerebral.right",
+          "sharedVertices": 68,
+          "passed": true
+        },
+        {
+          "from": "vein.insular.right",
+          "to": "vein.deep_middle_cerebral.right",
+          "sharedVertices": 71,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_septal.right",
+          "to": "vein.internal_cerebral.right",
+          "sharedVertices": 62,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_choroidal.right",
+          "to": "vein.inferior_ventricular.right",
+          "sharedVertices": 96,
+          "passed": true
+        },
+        {
+          "from": "vein.olfactory.right",
+          "to": "vein.anterior_cerebral.right",
+          "sharedVertices": 59,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_orbitofrontal.right",
+          "to": "vein.anterior_cerebral.right",
+          "sharedVertices": 78,
+          "passed": true
+        },
+        {
+          "from": "vein.hypothalamic_tributaries.right",
+          "to": "vein.basal.right",
+          "sharedVertices": 44,
+          "passed": true
+        },
+        {
+          "from": "vein.deep_medullary.right",
+          "to": "vein.anterior_septal.right",
+          "sharedVertices": 49,
+          "passed": true
+        },
+        {
+          "from": "vein.deep_medullary.right",
+          "to": "vein.lateral_atrial.right",
+          "sharedVertices": 63,
+          "passed": true
+        },
+        {
+          "from": "vein.deep_medullary.right",
+          "to": "vein.longitudinal_caudate.right",
+          "sharedVertices": 67,
+          "passed": true
+        },
+        {
+          "from": "vein.direct_lateral.left",
+          "to": "vein.internal_cerebral.left",
+          "sharedVertices": 66,
+          "passed": true
+        },
+        {
+          "from": "vein.direct_lateral.left",
+          "to": "vein.thalamostriate.left",
+          "sharedVertices": 64,
+          "passed": true
+        },
+        {
+          "from": "vein.medial_atrial.left",
+          "to": "vein.internal_cerebral.left",
+          "sharedVertices": 67,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_atrial.left",
+          "to": "vein.medial_atrial.left",
+          "sharedVertices": 160,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_ventricular.left",
+          "to": "vein.basal.left",
+          "sharedVertices": 386,
+          "passed": true
+        },
+        {
+          "from": "vein.longitudinal_caudate.left",
+          "to": "vein.direct_lateral.left",
+          "sharedVertices": 50,
+          "passed": true
+        },
+        {
+          "from": "vein.longitudinal_caudate.left",
+          "to": "vein.inferior_ventricular.left",
+          "sharedVertices": 82,
+          "passed": true
+        },
+        {
+          "from": "vein.longitudinal_caudate.left",
+          "to": "vein.thalamostriate.left",
+          "sharedVertices": 96,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_caudate.left",
+          "to": "vein.thalamostriate.left",
+          "sharedVertices": 61,
+          "passed": true
+        },
+        {
+          "from": "vein.transverse_caudate.left",
+          "to": "vein.longitudinal_caudate.left",
+          "sharedVertices": 70,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_callosal.left",
+          "to": "vein.galen",
+          "sharedVertices": 60,
+          "passed": true
+        },
+        {
+          "from": "vein.internal_occipital.left",
+          "to": "vein.posterior_callosal.left",
+          "sharedVertices": 108,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_thalamic.left",
+          "to": "vein.internal_cerebral.left",
+          "sharedVertices": 61,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_thalamic.left",
+          "to": "vein.internal_cerebral.left",
+          "sharedVertices": 59,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_thalamic.left",
+          "to": "vein.basal.left",
+          "sharedVertices": 67,
+          "passed": true
+        },
+        {
+          "from": "vein.uncal.left",
+          "to": "vein.basal.left",
+          "sharedVertices": 92,
+          "passed": true
+        },
+        {
+          "from": "vein.hippocampal.left",
+          "to": "vein.basal.left",
+          "sharedVertices": 259,
+          "passed": true
+        },
+        {
+          "from": "vein.hippocampal.left",
+          "to": "vein.inferior_ventricular.left",
+          "sharedVertices": 103,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_striate.left",
+          "to": "vein.deep_middle_cerebral.left",
+          "sharedVertices": 62,
+          "passed": true
+        },
+        {
+          "from": "vein.insular.left",
+          "to": "vein.deep_middle_cerebral.left",
+          "sharedVertices": 64,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_septal.left",
+          "to": "vein.internal_cerebral.left",
+          "sharedVertices": 56,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_choroidal.left",
+          "to": "vein.inferior_ventricular.left",
+          "sharedVertices": 95,
+          "passed": true
+        },
+        {
+          "from": "vein.olfactory.left",
+          "to": "vein.anterior_cerebral.left",
+          "sharedVertices": 62,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_orbitofrontal.left",
+          "to": "vein.anterior_cerebral.left",
+          "sharedVertices": 71,
+          "passed": true
+        },
+        {
+          "from": "vein.hypothalamic_tributaries.left",
+          "to": "vein.basal.left",
+          "sharedVertices": 74,
+          "passed": true
+        },
+        {
+          "from": "vein.deep_medullary.left",
+          "to": "vein.anterior_septal.left",
+          "sharedVertices": 41,
+          "passed": true
+        },
+        {
+          "from": "vein.deep_medullary.left",
+          "to": "vein.lateral_atrial.left",
+          "sharedVertices": 59,
+          "passed": true
+        },
+        {
+          "from": "vein.deep_medullary.left",
+          "to": "vein.longitudinal_caudate.left",
+          "sharedVertices": 66,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "junctionAdjacency": {
+      "pairs": [
+        {
+          "one": "vein.anterior_caudate.left",
+          "two": "vein.thalamostriate.left",
+          "sharedVertices": 61,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_caudate.right",
+          "two": "vein.thalamostriate.right",
+          "sharedVertices": 61,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_cerebral.left",
+          "two": "vein.olfactory.left",
+          "sharedVertices": 62,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_cerebral.left",
+          "two": "vein.posterior_orbitofrontal.left",
+          "sharedVertices": 71,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_cerebral.right",
+          "two": "vein.hypothalamic_tributaries.right",
+          "sharedVertices": 27,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_cerebral.right",
+          "two": "vein.olfactory.right",
+          "sharedVertices": 59,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_cerebral.right",
+          "two": "vein.posterior_orbitofrontal.right",
+          "sharedVertices": 77,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_septal.left",
+          "two": "vein.deep_medullary.left",
+          "sharedVertices": 41,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_septal.right",
+          "two": "vein.deep_medullary.right",
+          "sharedVertices": 48,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_thalamic.left",
+          "two": "vein.internal_cerebral.left",
+          "sharedVertices": 61,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_thalamic.right",
+          "two": "vein.internal_cerebral.right",
+          "sharedVertices": 64,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.hippocampal.left",
+          "sharedVertices": 259,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.hypothalamic_tributaries.left",
+          "sharedVertices": 74,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.inferior_thalamic.left",
+          "sharedVertices": 67,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.inferior_ventricular.left",
+          "sharedVertices": 385,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.uncal.left",
+          "sharedVertices": 92,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.hippocampal.right",
+          "sharedVertices": 346,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.hypothalamic_tributaries.right",
+          "sharedVertices": 41,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.inferior_thalamic.right",
+          "sharedVertices": 73,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.inferior_ventricular.right",
+          "sharedVertices": 363,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.uncal.right",
+          "sharedVertices": 92,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_medullary.left",
+          "two": "vein.lateral_atrial.left",
+          "sharedVertices": 59,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_medullary.left",
+          "two": "vein.longitudinal_caudate.left",
+          "sharedVertices": 66,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_medullary.right",
+          "two": "vein.lateral_atrial.right",
+          "sharedVertices": 63,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_medullary.right",
+          "two": "vein.longitudinal_caudate.right",
+          "sharedVertices": 67,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_middle_cerebral.left",
+          "two": "vein.inferior_striate.left",
+          "sharedVertices": 62,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_middle_cerebral.left",
+          "two": "vein.insular.left",
+          "sharedVertices": 64,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_middle_cerebral.right",
+          "two": "vein.inferior_striate.right",
+          "sharedVertices": 68,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.deep_middle_cerebral.right",
+          "two": "vein.insular.right",
+          "sharedVertices": 72,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.direct_lateral.left",
+          "two": "vein.internal_cerebral.left",
+          "sharedVertices": 66,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.direct_lateral.left",
+          "two": "vein.longitudinal_caudate.left",
+          "sharedVertices": 50,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.direct_lateral.left",
+          "two": "vein.thalamostriate.left",
+          "sharedVertices": 64,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.direct_lateral.right",
+          "two": "vein.internal_cerebral.right",
+          "sharedVertices": 65,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.direct_lateral.right",
+          "two": "vein.longitudinal_caudate.right",
+          "sharedVertices": 56,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.direct_lateral.right",
+          "two": "vein.thalamostriate.right",
+          "sharedVertices": 68,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.posterior_callosal.left",
+          "sharedVertices": 60,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.posterior_callosal.right",
+          "sharedVertices": 58,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.hippocampal.left",
+          "two": "vein.inferior_ventricular.left",
+          "sharedVertices": 103,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.hippocampal.right",
+          "two": "vein.inferior_ventricular.right",
+          "sharedVertices": 102,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_choroidal.left",
+          "two": "vein.inferior_ventricular.left",
+          "sharedVertices": 95,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_choroidal.right",
+          "two": "vein.inferior_ventricular.right",
+          "sharedVertices": 96,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_ventricular.left",
+          "two": "vein.longitudinal_caudate.left",
+          "sharedVertices": 82,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_ventricular.right",
+          "two": "vein.longitudinal_caudate.right",
+          "sharedVertices": 82,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_cerebral.left",
+          "two": "vein.medial_atrial.left",
+          "sharedVertices": 67,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_cerebral.left",
+          "two": "vein.posterior_septal.left",
+          "sharedVertices": 56,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_cerebral.left",
+          "two": "vein.superior_thalamic.left",
+          "sharedVertices": 59,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_cerebral.right",
+          "two": "vein.medial_atrial.right",
+          "sharedVertices": 61,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_cerebral.right",
+          "two": "vein.posterior_septal.right",
+          "sharedVertices": 62,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_cerebral.right",
+          "two": "vein.superior_thalamic.right",
+          "sharedVertices": 55,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_occipital.left",
+          "two": "vein.posterior_callosal.left",
+          "sharedVertices": 108,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.internal_occipital.right",
+          "two": "vein.posterior_callosal.right",
+          "sharedVertices": 108,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_atrial.left",
+          "two": "vein.medial_atrial.left",
+          "sharedVertices": 160,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_atrial.right",
+          "two": "vein.medial_atrial.right",
+          "sharedVertices": 166,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.longitudinal_caudate.left",
+          "two": "vein.thalamostriate.left",
+          "sharedVertices": 96,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.longitudinal_caudate.left",
+          "two": "vein.transverse_caudate.left",
+          "sharedVertices": 70,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.longitudinal_caudate.right",
+          "two": "vein.thalamostriate.right",
+          "sharedVertices": 105,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.longitudinal_caudate.right",
+          "two": "vein.transverse_caudate.right",
+          "sharedVertices": 72,
+          "authoredDirectJoin": true
+        }
+      ],
+      "passed": true
+    },
+    "retainedCollars": {
+      "pairs": [
+        {
+          "one": "vein.basal.left",
+          "two": "vein.lateral_mesencephalic.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.posterior_communicating",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.lateral_mesencephalic.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.posterior_communicating",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.straight",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.inferior_sagittal",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.precentral_cerebellar",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.thalamostriate.left",
+          "two": "vein.superior_choroidal.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.thalamostriate.right",
+          "two": "vein.superior_choroidal.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        }
+      ],
+      "toleranceMm": 0.025,
+      "passed": true
+    },
+    "newArteryAndBoneClearance": {
+      "passed": true
+    },
+    "otherExistingVeinClearance": {
+      "passed": true
+    }
+  },
+  "newArteryOrBoneContacts": [],
+  "unexpectedVenousJoins": [],
+  "otherExistingVeinContacts": [],
+  "passed": true,
+  "scope": "Actual triangle skin intersections, labelled shared ostia, finite non-degenerate geometry and catalogue coverage. Intentional intraparenchymal/subependymal/choroidal courses can intersect their target tissue. No clinical accuracy or general solid containment claim."
+}

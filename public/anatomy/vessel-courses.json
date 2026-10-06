@@ -10,11 +10,11 @@
       [
         -0.9689975810000006,
         -0.00016723059068858651,
-        -0.00009279822799189383,
+        -9.279822799189383e-05,
         0.6359182504845362
       ],
       [
-        -0.00009288495756585614,
+        -9.288495756585614e-05,
         0.0005026084331349398,
         0.9689974650733518,
         -59.087590342194126
@@ -41274,7 +41274,7 @@
         "file": "models/venous.glb",
         "node": "vein.confluence"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41383,7 +41383,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_sagittal"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41482,7 +41482,7 @@
         "file": "models/venous.glb",
         "node": "vein.straight"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41614,7 +41614,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_sagittal"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41687,7 +41687,7 @@
         "file": "models/venous.glb",
         "node": "vein.occipital_sinus"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41725,7 +41725,7 @@
         "file": "models/venous.glb",
         "node": "vein.marginal"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41802,7 +41802,7 @@
         "file": "models/venous.glb",
         "node": "vein.galen"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41830,6 +41830,16 @@
           },
           {
             "from": "vein.precentral_cerebellar",
+            "to": "vein.galen",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.posterior_callosal.right",
+            "to": "vein.galen",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.posterior_callosal.left",
             "to": "vein.galen",
             "type": "drains_to"
           }
@@ -41903,7 +41913,7 @@
         "maximumDisplacementMm": 0,
         "status": "blocked-target-reconciliation"
       },
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.internal_jugular.right",
@@ -41913,7 +41923,7 @@
         "file": "models/venous.glb",
         "node": "vein.internal_jugular.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -41961,7 +41971,7 @@
         "file": "models/venous.glb",
         "node": "vein.sigmoid.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42034,7 +42044,7 @@
         "file": "models/venous.glb",
         "node": "vein.transverse.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42125,7 +42135,7 @@
         "file": "models/venous.glb",
         "node": "vein.cavernous.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42199,7 +42209,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_petrosal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42278,7 +42288,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_petrosal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42351,7 +42361,7 @@
         "file": "models/venous.glb",
         "node": "vein.sphenoparietal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42384,7 +42394,7 @@
         "file": "models/venous.glb",
         "node": "vein.superficial_middle_cerebral.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42462,7 +42472,7 @@
         "file": "models/venous.glb",
         "node": "vein.trolard.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42539,7 +42549,7 @@
         "file": "models/venous.glb",
         "node": "vein.labbe.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42616,7 +42626,7 @@
         "file": "models/venous.glb",
         "node": "vein.frontal_cortical.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42687,7 +42697,7 @@
         "file": "models/venous.glb",
         "node": "vein.parietal_cortical.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42758,7 +42768,7 @@
         "file": "models/venous.glb",
         "node": "vein.internal_cerebral.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42771,6 +42781,31 @@
           },
           {
             "from": "vein.anterior_septal.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.direct_lateral.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.medial_atrial.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.anterior_thalamic.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.superior_thalamic.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.posterior_septal.right",
             "to": "vein.internal_cerebral.right",
             "type": "drains_to"
           }
@@ -42875,7 +42910,7 @@
         "brain.landmark.callosal-splenium"
       ],
       "stationOrder": "anatomical-sequence",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.basal.right",
@@ -42885,7 +42920,7 @@
         "file": "models/venous.glb",
         "node": "vein.basal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -42910,6 +42945,31 @@
             "from": "vein.posterior_communicating",
             "to": "vein.basal.right",
             "type": "communicates_with"
+          },
+          {
+            "from": "vein.inferior_ventricular.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.inferior_thalamic.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.uncal.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hippocampal.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hypothalamic_tributaries.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
           }
         ],
         "outgoing": [
@@ -43000,7 +43060,7 @@
         "brain.landmark.thalamic-posterior.right"
       ],
       "stationOrder": "anatomical-sequence",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.thalamostriate.right",
@@ -43010,7 +43070,7 @@
         "file": "models/venous.glb",
         "node": "vein.thalamostriate.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43018,6 +43078,21 @@
         "incoming": [
           {
             "from": "vein.superior_choroidal.right",
+            "to": "vein.thalamostriate.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.direct_lateral.right",
+            "to": "vein.thalamostriate.right",
+            "type": "communicates_with"
+          },
+          {
+            "from": "vein.longitudinal_caudate.right",
+            "to": "vein.thalamostriate.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.anterior_caudate.right",
             "to": "vein.thalamostriate.right",
             "type": "drains_to"
           }
@@ -43062,7 +43137,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.anterior_septal.right",
@@ -43072,12 +43147,18 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_septal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
         "parentId": "vein.internal_cerebral.right",
-        "incoming": [],
+        "incoming": [
+          {
+            "from": "vein.deep_medullary.right",
+            "to": "vein.anterior_septal.right",
+            "type": "drains_to"
+          }
+        ],
         "outgoing": [
           {
             "from": "vein.anterior_septal.right",
@@ -43128,7 +43209,7 @@
         "brain.landmark.septum-pellucidum"
       ],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.superior_choroidal.right",
@@ -43138,7 +43219,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_choroidal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43202,7 +43283,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_cerebral.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43212,6 +43293,22 @@
             "from": "vein.anterior_communicating",
             "to": "vein.anterior_cerebral.right",
             "type": "communicates_with"
+          },
+          {
+            "from": "vein.olfactory.right",
+            "to": "vein.anterior_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.posterior_orbitofrontal.right",
+            "to": "vein.anterior_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hypothalamic_tributaries.right",
+            "to": "vein.anterior_cerebral.right",
+            "type": "communicates_with",
+            "note": "Shared anterior basal confluence, not an independently authored long channel."
           }
         ],
         "outgoing": [
@@ -43254,7 +43351,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.deep_middle_cerebral.right",
@@ -43264,12 +43361,23 @@
         "file": "models/venous.glb",
         "node": "vein.deep_middle_cerebral.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
         "parentId": "vein.basal.right",
-        "incoming": [],
+        "incoming": [
+          {
+            "from": "vein.inferior_striate.right",
+            "to": "vein.deep_middle_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.insular.right",
+            "to": "vein.deep_middle_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
         "outgoing": [
           {
             "from": "vein.deep_middle_cerebral.right",
@@ -43310,7 +43418,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.superior_petrosal_vein.right",
@@ -43320,7 +43428,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_petrosal_vein.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43436,7 +43544,7 @@
         "file": "models/venous.glb",
         "node": "vein.lateral_mesencephalic.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43528,7 +43636,7 @@
         "file": "models/venous.glb",
         "node": "vein.cerebellopontine_fissure.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43614,7 +43722,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_vermian.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43730,7 +43838,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_hemispheric.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43801,7 +43909,7 @@
         "file": "models/venous.glb",
         "node": "vein.external_jugular.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43839,7 +43947,7 @@
         "file": "models/venous.glb",
         "node": "vein.retromandibular.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43883,7 +43991,7 @@
         "file": "models/venous.glb",
         "node": "vein.maxillary.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43922,7 +44030,7 @@
         "file": "models/venous.glb",
         "node": "vein.pterygoid_plexus.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -43971,7 +44079,7 @@
         "file": "models/venous.glb",
         "node": "vein.superficial_temporal.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44004,7 +44112,7 @@
         "file": "models/venous.glb",
         "node": "vein.posterior_auricular.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44037,7 +44145,7 @@
         "file": "models/venous.glb",
         "node": "vein.facial.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44081,7 +44189,7 @@
         "file": "models/venous.glb",
         "node": "vein.angular.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44120,7 +44228,7 @@
         "file": "models/venous.glb",
         "node": "vein.deep_facial.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44158,7 +44266,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_ophthalmic.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44196,7 +44304,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_ophthalmic.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44229,7 +44337,7 @@
         "file": "models/venous.glb",
         "node": "vein.ovale_emissary.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44267,7 +44375,7 @@
         "file": "models/venous.glb",
         "node": "vein.vertebral.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44300,7 +44408,7 @@
         "file": "models/venous.glb",
         "node": "vein.suboccipital_plexus.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44344,7 +44452,7 @@
         "file": "models/venous.glb",
         "node": "vein.deep_cervical.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44377,7 +44485,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_condylar.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44426,7 +44534,7 @@
         "file": "models/venous.glb",
         "node": "vein.lateral_condylar.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44464,7 +44572,7 @@
         "file": "models/venous.glb",
         "node": "vein.internal_jugular.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44512,7 +44620,7 @@
         "file": "models/venous.glb",
         "node": "vein.sigmoid.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44585,7 +44693,7 @@
         "file": "models/venous.glb",
         "node": "vein.transverse.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44676,7 +44784,7 @@
         "file": "models/venous.glb",
         "node": "vein.cavernous.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44750,7 +44858,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_petrosal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44829,7 +44937,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_petrosal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44902,7 +45010,7 @@
         "file": "models/venous.glb",
         "node": "vein.sphenoparietal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -44935,7 +45043,7 @@
         "file": "models/venous.glb",
         "node": "vein.superficial_middle_cerebral.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45013,7 +45121,7 @@
         "file": "models/venous.glb",
         "node": "vein.trolard.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45090,7 +45198,7 @@
         "file": "models/venous.glb",
         "node": "vein.labbe.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45167,7 +45275,7 @@
         "file": "models/venous.glb",
         "node": "vein.frontal_cortical.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45238,7 +45346,7 @@
         "file": "models/venous.glb",
         "node": "vein.parietal_cortical.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45309,7 +45417,7 @@
         "file": "models/venous.glb",
         "node": "vein.internal_cerebral.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45322,6 +45430,31 @@
           },
           {
             "from": "vein.anterior_septal.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.direct_lateral.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.medial_atrial.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.anterior_thalamic.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.superior_thalamic.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.posterior_septal.left",
             "to": "vein.internal_cerebral.left",
             "type": "drains_to"
           }
@@ -45426,7 +45559,7 @@
         "brain.landmark.callosal-splenium"
       ],
       "stationOrder": "anatomical-sequence",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.basal.left",
@@ -45436,7 +45569,7 @@
         "file": "models/venous.glb",
         "node": "vein.basal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45461,6 +45594,31 @@
             "from": "vein.posterior_communicating",
             "to": "vein.basal.left",
             "type": "communicates_with"
+          },
+          {
+            "from": "vein.inferior_ventricular.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.inferior_thalamic.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.uncal.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hippocampal.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hypothalamic_tributaries.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
           }
         ],
         "outgoing": [
@@ -45551,7 +45709,7 @@
         "brain.landmark.thalamic-posterior.left"
       ],
       "stationOrder": "anatomical-sequence",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.thalamostriate.left",
@@ -45561,7 +45719,7 @@
         "file": "models/venous.glb",
         "node": "vein.thalamostriate.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45569,6 +45727,21 @@
         "incoming": [
           {
             "from": "vein.superior_choroidal.left",
+            "to": "vein.thalamostriate.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.direct_lateral.left",
+            "to": "vein.thalamostriate.left",
+            "type": "communicates_with"
+          },
+          {
+            "from": "vein.longitudinal_caudate.left",
+            "to": "vein.thalamostriate.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.anterior_caudate.left",
             "to": "vein.thalamostriate.left",
             "type": "drains_to"
           }
@@ -45613,7 +45786,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.anterior_septal.left",
@@ -45623,12 +45796,18 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_septal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
         "parentId": "vein.internal_cerebral.left",
-        "incoming": [],
+        "incoming": [
+          {
+            "from": "vein.deep_medullary.left",
+            "to": "vein.anterior_septal.left",
+            "type": "drains_to"
+          }
+        ],
         "outgoing": [
           {
             "from": "vein.anterior_septal.left",
@@ -45679,7 +45858,7 @@
         "brain.landmark.septum-pellucidum"
       ],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.superior_choroidal.left",
@@ -45689,7 +45868,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_choroidal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45753,7 +45932,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_cerebral.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45763,6 +45942,16 @@
             "from": "vein.anterior_communicating",
             "to": "vein.anterior_cerebral.left",
             "type": "communicates_with"
+          },
+          {
+            "from": "vein.olfactory.left",
+            "to": "vein.anterior_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.posterior_orbitofrontal.left",
+            "to": "vein.anterior_cerebral.left",
+            "type": "drains_to"
           }
         ],
         "outgoing": [
@@ -45805,7 +45994,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.deep_middle_cerebral.left",
@@ -45815,12 +46004,23 @@
         "file": "models/venous.glb",
         "node": "vein.deep_middle_cerebral.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
         "parentId": "vein.basal.left",
-        "incoming": [],
+        "incoming": [
+          {
+            "from": "vein.inferior_striate.left",
+            "to": "vein.deep_middle_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.insular.left",
+            "to": "vein.deep_middle_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
         "outgoing": [
           {
             "from": "vein.deep_middle_cerebral.left",
@@ -45861,7 +46061,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.superior_petrosal_vein.left",
@@ -45871,7 +46071,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_petrosal_vein.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -45987,7 +46187,7 @@
         "file": "models/venous.glb",
         "node": "vein.lateral_mesencephalic.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46079,7 +46279,7 @@
         "file": "models/venous.glb",
         "node": "vein.cerebellopontine_fissure.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46165,7 +46365,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_vermian.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46281,7 +46481,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_hemispheric.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46352,7 +46552,7 @@
         "file": "models/venous.glb",
         "node": "vein.external_jugular.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46390,7 +46590,7 @@
         "file": "models/venous.glb",
         "node": "vein.retromandibular.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46434,7 +46634,7 @@
         "file": "models/venous.glb",
         "node": "vein.maxillary.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46473,7 +46673,7 @@
         "file": "models/venous.glb",
         "node": "vein.pterygoid_plexus.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46522,7 +46722,7 @@
         "file": "models/venous.glb",
         "node": "vein.superficial_temporal.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46555,7 +46755,7 @@
         "file": "models/venous.glb",
         "node": "vein.posterior_auricular.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46588,7 +46788,7 @@
         "file": "models/venous.glb",
         "node": "vein.facial.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46632,7 +46832,7 @@
         "file": "models/venous.glb",
         "node": "vein.angular.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46671,7 +46871,7 @@
         "file": "models/venous.glb",
         "node": "vein.deep_facial.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46709,7 +46909,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_ophthalmic.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46747,7 +46947,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_ophthalmic.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46780,7 +46980,7 @@
         "file": "models/venous.glb",
         "node": "vein.ovale_emissary.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46818,7 +47018,7 @@
         "file": "models/venous.glb",
         "node": "vein.vertebral.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46851,7 +47051,7 @@
         "file": "models/venous.glb",
         "node": "vein.suboccipital_plexus.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46895,7 +47095,7 @@
         "file": "models/venous.glb",
         "node": "vein.deep_cervical.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46928,7 +47128,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_condylar.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -46977,7 +47177,7 @@
         "file": "models/venous.glb",
         "node": "vein.lateral_condylar.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47015,7 +47215,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_intercavernous"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47053,7 +47253,7 @@
         "file": "models/venous.glb",
         "node": "vein.posterior_intercavernous"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47091,7 +47291,7 @@
         "file": "models/venous.glb",
         "node": "vein.basilar_plexus"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47154,7 +47354,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_communicating"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47209,7 +47409,7 @@
       ],
       "stationIds": [],
       "stationOrder": "regional-references-only",
-      "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+      "candidateReviewStatus": "Retained course with local joined ostia for the new deep tributaries; wider anatomical review remains pending"
     },
     {
       "vesselId": "vein.posterior_communicating",
@@ -47219,7 +47419,7 @@
         "file": "models/venous.glb",
         "node": "vein.posterior_communicating"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47290,7 +47490,7 @@
         "file": "models/venous.glb",
         "node": "vein.precentral_cerebellar"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47406,7 +47606,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_vermian"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47498,7 +47698,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_pontomesencephalic"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47588,7 +47788,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_pontine"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47706,7 +47906,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_medullary"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47818,7 +48018,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_spinal"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47874,7 +48074,7 @@
         "file": "models/venous.glb",
         "node": "vein.transverse_pontine.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -47966,7 +48166,7 @@
         "file": "models/venous.glb",
         "node": "vein.pontomedullary.right"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -48061,7 +48261,7 @@
         "file": "models/venous.glb",
         "node": "vein.transverse_pontine.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -48153,7 +48353,7 @@
         "file": "models/venous.glb",
         "node": "vein.pontomedullary.left"
       },
-      "geometrySha256": "d5a58427a8593e53b2174c14df595ca301c3834709bd5c1205d5e5d490e0c9e0",
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
       "registrationId": "z-anatomy-skull-v0.9.14",
       "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
       "attachments": {
@@ -48239,6 +48439,2542 @@
         "status": "blocked-target-reconciliation"
       },
       "candidateReviewStatus": "Pontine incremental checks completed; wider anatomical review remains pending"
+    },
+    {
+      "vesselId": "vein.direct_lateral.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.direct_lateral.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.direct_lateral",
+        "incoming": [
+          {
+            "from": "vein.longitudinal_caudate.right",
+            "to": "vein.direct_lateral.right",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.direct_lateral.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.direct_lateral.right",
+            "to": "vein.thalamostriate.right",
+            "type": "communicates_with"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.right",
+            "brain.caudate-nucleus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.right",
+        "brain.caudate-nucleus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.medial_atrial.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.medial_atrial.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.medial_atrial",
+        "incoming": [
+          {
+            "from": "vein.lateral_atrial.right",
+            "to": "vein.medial_atrial.right",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.medial_atrial.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.right",
+            "brain.corpus-callosum"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.right",
+        "brain.corpus-callosum"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.lateral_atrial.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.lateral_atrial.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.lateral_atrial",
+        "incoming": [
+          {
+            "from": "vein.deep_medullary.right",
+            "to": "vein.lateral_atrial.right",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.lateral_atrial.right",
+            "to": "vein.medial_atrial.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.right",
+            "brain.caudate-nucleus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Follow the lateral wall of the atrium and occipital horn towards a common atrial stem, inferior ventricular vein or basal system.",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.right",
+        "brain.caudate-nucleus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_ventricular.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_ventricular.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_ventricular",
+        "incoming": [
+          {
+            "from": "vein.longitudinal_caudate.right",
+            "to": "vein.inferior_ventricular.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hippocampal.right",
+            "to": "vein.inferior_ventricular.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.inferior_choroidal.right",
+            "to": "vein.inferior_ventricular.right",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.inferior_ventricular.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.right",
+            "brain.caudate-nucleus.right",
+            "brain.hippocampus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.right",
+        "brain.caudate-nucleus.right",
+        "brain.hippocampus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.longitudinal_caudate.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.longitudinal_caudate.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.longitudinal_caudate",
+        "incoming": [
+          {
+            "from": "vein.transverse_caudate.right",
+            "to": "vein.longitudinal_caudate.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.deep_medullary.right",
+            "to": "vein.longitudinal_caudate.right",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.longitudinal_caudate.right",
+            "to": "vein.direct_lateral.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.longitudinal_caudate.right",
+            "to": "vein.inferior_ventricular.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.longitudinal_caudate.right",
+            "to": "vein.thalamostriate.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.caudate-nucleus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Runs along the ventricular aspect of the caudate, with anterior and posterior longitudinal portions and transverse inputs.",
+      "targetStructureIds": [
+        "brain.caudate-nucleus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.anterior_caudate.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_caudate.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.anterior_caudate",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.anterior_caudate.right",
+            "to": "vein.thalamostriate.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.caudate-nucleus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.caudate-nucleus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.transverse_caudate.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.transverse_caudate.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.transverse_caudate",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.transverse_caudate.right",
+            "to": "vein.longitudinal_caudate.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.caudate-nucleus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Pass approximately across the longitudinal collector from adjacent caudate/deep white matter territories.",
+      "targetStructureIds": [
+        "brain.caudate-nucleus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.posterior_callosal.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_callosal.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.posterior_callosal",
+        "incoming": [
+          {
+            "from": "vein.internal_occipital.right",
+            "to": "vein.posterior_callosal.right",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.posterior_callosal.right",
+            "to": "vein.galen",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "cisternal",
+          "targetStructureIds": [
+            "brain.corpus-callosum"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.corpus-callosum"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.internal_occipital.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.internal_occipital.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.internal_occipital",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.internal_occipital.right",
+            "to": "vein.posterior_callosal.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.calcarine-sulcus.right",
+            "brain.corpus-callosum"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Runs anteriorly from the medial occipital/calcarine region into posterior callosal or adjacent Galenic tributaries.",
+      "targetStructureIds": [
+        "brain.calcarine-sulcus.right",
+        "brain.corpus-callosum"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.anterior_thalamic.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_thalamic.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.anterior_thalamic",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.anterior_thalamic.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.thalamus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Emerges from the anterior thalamic region towards the anterior ICV near the foramen of Monro.",
+      "targetStructureIds": [
+        "brain.thalamus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.superior_thalamic.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_thalamic.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.superior_thalamic",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.superior_thalamic.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.thalamus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.thalamus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_thalamic.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_thalamic.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_thalamic",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.inferior_thalamic.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "cisternal",
+          "targetStructureIds": [
+            "brain.thalamus.right",
+            "brain.base-of-peduncle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Emerges inferiorly towards peduncular/basal or posterior mesencephalic collectors.",
+      "targetStructureIds": [
+        "brain.thalamus.right",
+        "brain.base-of-peduncle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.uncal.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.uncal.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.uncal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.uncal.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.hippocampal.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.hippocampal.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.hippocampal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.hippocampal.right",
+            "to": "vein.inferior_ventricular.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hippocampal.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.hippocampus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Transverse channels cross the hippocampal surface and join longitudinal collectors along the fimbrial/parahippocampal region.",
+      "targetStructureIds": [
+        "brain.hippocampus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_striate.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_striate.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_striate",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.inferior_striate.right",
+            "to": "vein.deep_middle_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.putamen.right",
+            "brain.caudate-nucleus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.putamen.right",
+        "brain.caudate-nucleus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.insular.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.insular.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.insular",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.insular.right",
+            "to": "vein.deep_middle_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.circular-sulcus-of-insula.right",
+            "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Descends across insular sulci towards the insular pole, converging into the deep middle cerebral vein.",
+      "targetStructureIds": [
+        "brain.circular-sulcus-of-insula.right",
+        "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.posterior_septal.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_septal.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.posterior_septal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.posterior_septal.right",
+            "to": "vein.internal_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.septum-pellucidum",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.septum-pellucidum",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_choroidal.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_choroidal.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_choroidal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.inferior_choroidal.right",
+            "to": "vein.inferior_ventricular.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "choroidal",
+          "targetStructureIds": [
+            "brain.choroid-plexus.right",
+            "brain.lateral-ventricle.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Follows the temporal choroid plexus towards the basal drainage route, sometimes via the inferior ventricular collector.",
+      "targetStructureIds": [
+        "brain.choroid-plexus.right",
+        "brain.lateral-ventricle.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.olfactory.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.olfactory.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.olfactory",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.olfactory.right",
+            "to": "vein.anterior_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.straight-gyrus-gyrus-rectus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.straight-gyrus-gyrus-rectus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.posterior_orbitofrontal.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_orbitofrontal.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.posterior_orbitofrontal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.posterior_orbitofrontal.right",
+            "to": "vein.anterior_cerebral.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.orbital-gyri.right",
+            "brain.straight-gyrus-gyrus-rectus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Runs on the posterior orbital surface of the frontal lobe towards the anterior perforated/basal junction.",
+      "targetStructureIds": [
+        "brain.orbital-gyri.right",
+        "brain.straight-gyrus-gyrus-rectus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.hypothalamic_tributaries.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.hypothalamic_tributaries.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.hypothalamic_tributaries",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.hypothalamic_tributaries.right",
+            "to": "vein.basal.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hypothalamic_tributaries.right",
+            "to": "vein.anterior_cerebral.right",
+            "type": "communicates_with",
+            "note": "Shared anterior basal confluence, not an independently authored long channel."
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.hypothalamus",
+            "brain.third-ventricle"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.hypothalamus",
+        "brain.third-ventricle"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.deep_medullary.right",
+      "side": "right",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_medullary.right"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.deep_medullary",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.deep_medullary.right",
+            "to": "vein.anterior_septal.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.deep_medullary.right",
+            "to": "vein.lateral_atrial.right",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.deep_medullary.right",
+            "to": "vein.longitudinal_caudate.right",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.right",
+            "brain.caudate-nucleus.right"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Converges through deep white matter towards the ventricular subependymal network.",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.right",
+        "brain.caudate-nucleus.right"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.direct_lateral.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.direct_lateral.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.direct_lateral",
+        "incoming": [
+          {
+            "from": "vein.longitudinal_caudate.left",
+            "to": "vein.direct_lateral.left",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.direct_lateral.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.direct_lateral.left",
+            "to": "vein.thalamostriate.left",
+            "type": "communicates_with"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.left",
+            "brain.caudate-nucleus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.left",
+        "brain.caudate-nucleus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.medial_atrial.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.medial_atrial.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.medial_atrial",
+        "incoming": [
+          {
+            "from": "vein.lateral_atrial.left",
+            "to": "vein.medial_atrial.left",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.medial_atrial.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.left",
+            "brain.corpus-callosum"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.left",
+        "brain.corpus-callosum"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.lateral_atrial.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.lateral_atrial.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.lateral_atrial",
+        "incoming": [
+          {
+            "from": "vein.deep_medullary.left",
+            "to": "vein.lateral_atrial.left",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.lateral_atrial.left",
+            "to": "vein.medial_atrial.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.left",
+            "brain.caudate-nucleus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Follow the lateral wall of the atrium and occipital horn towards a common atrial stem, inferior ventricular vein or basal system.",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.left",
+        "brain.caudate-nucleus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_ventricular.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_ventricular.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_ventricular",
+        "incoming": [
+          {
+            "from": "vein.longitudinal_caudate.left",
+            "to": "vein.inferior_ventricular.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hippocampal.left",
+            "to": "vein.inferior_ventricular.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.inferior_choroidal.left",
+            "to": "vein.inferior_ventricular.left",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.inferior_ventricular.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.left",
+            "brain.caudate-nucleus.left",
+            "brain.hippocampus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.left",
+        "brain.caudate-nucleus.left",
+        "brain.hippocampus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.longitudinal_caudate.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.longitudinal_caudate.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.longitudinal_caudate",
+        "incoming": [
+          {
+            "from": "vein.transverse_caudate.left",
+            "to": "vein.longitudinal_caudate.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.deep_medullary.left",
+            "to": "vein.longitudinal_caudate.left",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.longitudinal_caudate.left",
+            "to": "vein.direct_lateral.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.longitudinal_caudate.left",
+            "to": "vein.inferior_ventricular.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.longitudinal_caudate.left",
+            "to": "vein.thalamostriate.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.caudate-nucleus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Runs along the ventricular aspect of the caudate, with anterior and posterior longitudinal portions and transverse inputs.",
+      "targetStructureIds": [
+        "brain.caudate-nucleus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.anterior_caudate.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_caudate.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.anterior_caudate",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.anterior_caudate.left",
+            "to": "vein.thalamostriate.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.caudate-nucleus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.caudate-nucleus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.transverse_caudate.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.transverse_caudate.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.transverse_caudate",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.transverse_caudate.left",
+            "to": "vein.longitudinal_caudate.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.caudate-nucleus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Pass approximately across the longitudinal collector from adjacent caudate/deep white matter territories.",
+      "targetStructureIds": [
+        "brain.caudate-nucleus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.posterior_callosal.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_callosal.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.posterior_callosal",
+        "incoming": [
+          {
+            "from": "vein.internal_occipital.left",
+            "to": "vein.posterior_callosal.left",
+            "type": "drains_to"
+          }
+        ],
+        "outgoing": [
+          {
+            "from": "vein.posterior_callosal.left",
+            "to": "vein.galen",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "cisternal",
+          "targetStructureIds": [
+            "brain.corpus-callosum"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.corpus-callosum"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.internal_occipital.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.internal_occipital.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.internal_occipital",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.internal_occipital.left",
+            "to": "vein.posterior_callosal.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.calcarine-sulcus.left",
+            "brain.corpus-callosum"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Runs anteriorly from the medial occipital/calcarine region into posterior callosal or adjacent Galenic tributaries.",
+      "targetStructureIds": [
+        "brain.calcarine-sulcus.left",
+        "brain.corpus-callosum"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.anterior_thalamic.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.anterior_thalamic.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.anterior_thalamic",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.anterior_thalamic.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.thalamus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Emerges from the anterior thalamic region towards the anterior ICV near the foramen of Monro.",
+      "targetStructureIds": [
+        "brain.thalamus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.superior_thalamic.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.superior_thalamic.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.superior_thalamic",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.superior_thalamic.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.thalamus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.thalamus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_thalamic.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_thalamic.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_thalamic",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.inferior_thalamic.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "cisternal",
+          "targetStructureIds": [
+            "brain.thalamus.left",
+            "brain.base-of-peduncle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Emerges inferiorly towards peduncular/basal or posterior mesencephalic collectors.",
+      "targetStructureIds": [
+        "brain.thalamus.left",
+        "brain.base-of-peduncle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.uncal.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.uncal.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.uncal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.uncal.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.medial-occipitotemporal-gyrus-parahippocampal.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.medial-occipitotemporal-gyrus-parahippocampal.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.hippocampal.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.hippocampal.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.hippocampal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.hippocampal.left",
+            "to": "vein.inferior_ventricular.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.hippocampal.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.hippocampus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Transverse channels cross the hippocampal surface and join longitudinal collectors along the fimbrial/parahippocampal region.",
+      "targetStructureIds": [
+        "brain.hippocampus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_striate.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_striate.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_striate",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.inferior_striate.left",
+            "to": "vein.deep_middle_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.putamen.left",
+            "brain.caudate-nucleus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.putamen.left",
+        "brain.caudate-nucleus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.insular.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.insular.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.insular",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.insular.left",
+            "to": "vein.deep_middle_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.circular-sulcus-of-insula.left",
+            "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Descends across insular sulci towards the insular pole, converging into the deep middle cerebral vein.",
+      "targetStructureIds": [
+        "brain.circular-sulcus-of-insula.left",
+        "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.posterior_septal.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_septal.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.posterior_septal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.posterior_septal.left",
+            "to": "vein.internal_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "subependymal",
+          "targetStructureIds": [
+            "brain.septum-pellucidum",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.septum-pellucidum",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.inferior_choroidal.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.inferior_choroidal.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.inferior_choroidal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.inferior_choroidal.left",
+            "to": "vein.inferior_ventricular.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "choroidal",
+          "targetStructureIds": [
+            "brain.choroid-plexus.left",
+            "brain.lateral-ventricle.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Follows the temporal choroid plexus towards the basal drainage route, sometimes via the inferior ventricular collector.",
+      "targetStructureIds": [
+        "brain.choroid-plexus.left",
+        "brain.lateral-ventricle.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.olfactory.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.olfactory.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.olfactory",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.olfactory.left",
+            "to": "vein.anterior_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.straight-gyrus-gyrus-rectus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.straight-gyrus-gyrus-rectus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.posterior_orbitofrontal.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.posterior_orbitofrontal.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.posterior_orbitofrontal",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.posterior_orbitofrontal.left",
+            "to": "vein.anterior_cerebral.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "pial",
+          "targetStructureIds": [
+            "brain.orbital-gyri.left",
+            "brain.straight-gyrus-gyrus-rectus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": false,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Runs on the posterior orbital surface of the frontal lobe towards the anterior perforated/basal junction.",
+      "targetStructureIds": [
+        "brain.orbital-gyri.left",
+        "brain.straight-gyrus-gyrus-rectus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.hypothalamic_tributaries.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.hypothalamic_tributaries.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.hypothalamic_tributaries",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.hypothalamic_tributaries.left",
+            "to": "vein.basal.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.hypothalamus",
+            "brain.third-ventricle"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "",
+      "targetStructureIds": [
+        "brain.hypothalamus",
+        "brain.third-ventricle"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
+    },
+    {
+      "vesselId": "vein.deep_medullary.left",
+      "side": "left",
+      "scope": "intracranial",
+      "geometry": {
+        "file": "models/venous.glb",
+        "node": "vein.deep_medullary.left"
+      },
+      "geometrySha256": "878400f53d58a81fbeb927c1ed43f960c596adb9b837be7c433abc2e08e903e5",
+      "registrationId": "z-anatomy-skull-v0.9.14",
+      "brainAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "attachments": {
+        "parentId": "vein.deep.deep_medullary",
+        "incoming": [],
+        "outgoing": [
+          {
+            "from": "vein.deep_medullary.left",
+            "to": "vein.anterior_septal.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.deep_medullary.left",
+            "to": "vein.lateral_atrial.left",
+            "type": "drains_to"
+          },
+          {
+            "from": "vein.deep_medullary.left",
+            "to": "vein.longitudinal_caudate.left",
+            "type": "drains_to"
+          }
+        ],
+        "status": "Selected new drainage junctions verified in the labelled union skin"
+      },
+      "radiusPolicy": "preserve-delivered-profile",
+      "reviewStatus": "requires-anatomical-review",
+      "segments": [
+        {
+          "order": 0,
+          "mode": "penetrating",
+          "targetStructureIds": [
+            "brain.lateral-ventricle.left",
+            "brain.caudate-nucleus.left"
+          ],
+          "stationIds": [],
+          "stationRole": "registered-surface-course",
+          "constraints": {
+            "wallClearance": "radius-aware",
+            "allowTissueEntry": true,
+            "avoidAtlasCutFaces": true,
+            "preserveJoinedAttachments": true
+          },
+          "reviewStatus": "representative-course-requires-anatomical-review"
+        }
+      ],
+      "missingTargets": [],
+      "summary": "Converges through deep white matter towards the ventricular subependymal network.",
+      "targetStructureIds": [
+        "brain.lateral-ventricle.left",
+        "brain.caudate-nucleus.left"
+      ],
+      "stationIds": [],
+      "stationOrder": "anatomical-sequence",
+      "candidateReviewStatus": "Teaching reconstruction; see deep venous geometry and placement checks"
     }
   ],
   "release": "0.9.21"
