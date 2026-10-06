@@ -1,0 +1,26 @@
+{
+  "release": "0.9.19",
+  "channel": "anatomical-review",
+  "baseline": "0.9.18",
+  "appliedToApp": true,
+  "appliedGroups": [
+    "lower-brainstem-context-size-registration"
+  ],
+  "complete": false,
+  "deferredGroups": [
+    "anterior-brainstem-vein-refit",
+    "posterior-arterial-transport",
+    "wider-upper-brainstem-registration"
+  ],
+  "brainAssetSha256": "68e36a031f0483dcf537dd676824d36f0ae24fc9f9a6a48662550b47ad10fdd2",
+  "brainContextChecksPassed": true,
+  "clivalPlexusTriangleContactsAfter": 0,
+  "vesselAssetsRetainedExactly": true,
+  "limitations": [
+    "The model is a composite atlas, not patient-specific anatomy.",
+    "Complete venous routing is unresolved. The solver could not fit the full anterior/transverse venous system with its existing fixed collectors.",
+    "The failed posterior arterial transport and wider context candidates are excluded. Existing arterial and venous anatomy requires further fitting to the adjusted context.",
+    "Open atlas cut surfaces do not establish solid containment.",
+    "Context checks pass independently of complete vascular fitting; this is a partial review build."
+  ]
+}

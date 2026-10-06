@@ -24,6 +24,7 @@ def inside(p,m):
 def stats(a):return {'minimumMm':float(a.min()),'medianMm':float(np.median(a)),'p95Mm':float(np.quantile(a,.95)),'maximumMm':float(a.max())}
 
 def collisions(m,target):
+    if np.any(m.bounds[1]<target.bounds[0]) or np.any(target.bounds[1]<m.bounds[0]):return 0
     # Broad-phase rejection retains every target triangle whose box could
     # intersect the vessel box, avoiding repeated whole-skull BVH builds.
     tri=target.vertices[target.faces];lo,hi=m.bounds

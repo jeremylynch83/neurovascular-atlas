@@ -9,6 +9,7 @@ from verify_fitting import collisions
 from build_targets import poly
 
 def contact_faces(a,b):
+    if np.any(a.bounds[1]<b.bounds[0]) or np.any(b.bounds[1]<a.bounds[0]):return np.array([],int),np.array([],int)
     triangles=b.vertices[b.faces];lo,hi=a.bounds
     keep=np.all(triangles.max(1)>=lo,axis=1)&np.all(triangles.min(1)<=hi,axis=1)
     ids=np.flatnonzero(keep)
@@ -47,7 +48,7 @@ def plane_area(mesh,centre,tangent):
     tangent=tangent/np.linalg.norm(tangent);u=np.cross(tangent,[0,0,1]);u/=np.linalg.norm(u);v=np.cross(tangent,u)
     return float(ConvexHull(np.column_stack([(p-centre)@u,(p-centre)@v])).volume)
 
-def material_section(before,after,centre,tangent):
+def material_section(before,after,centre,tangent,radius=1.5):
     # Interpolate the final wall position on the EXACT source intersection
     # edges. A moved, blended join does not share the proposal curve's planes.
     data=poly(before);values=numpy_to_vtk(after.vertices,deep=True);values.SetName('final_wall_position');data.GetPointData().AddArray(values)
@@ -55,7 +56,7 @@ def material_section(before,after,centre,tangent):
     cut=vtk.vtkCutter();cut.SetInputData(data);cut.SetCutFunction(plane);cut.Update();out=cut.GetOutput()
     assert out.GetPoints() is not None,'Missing source skin section'
     p=vtk_to_numpy(out.GetPoints().GetData());q=vtk_to_numpy(out.GetPointData().GetArray('final_wall_position'))
-    keep=np.linalg.norm(p-centre,axis=1)<1.5;p,q=p[keep],q[keep]
+    keep=np.linalg.norm(p-centre,axis=1)<radius;p,q=p[keep],q[keep]
     assert len(p)>=3,'Missing local source skin envelope'
     areas=[];warps=[]
     for points in [p,q]:

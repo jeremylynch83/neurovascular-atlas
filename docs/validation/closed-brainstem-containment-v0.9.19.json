@@ -1,0 +1,284 @@
+{
+  "brainSha256": "68e36a031f0483dcf537dd676824d36f0ae24fc9f9a6a48662550b47ad10fdd2",
+  "veinsSha256": "5482b497d6c404b636344e17f761c0ec47ef15bee2d27a355cd723f2b616cd55",
+  "checks": [
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.pons.right",
+      "closedTissue": false,
+      "wallVertices": 770,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.pons.left",
+      "closedTissue": false,
+      "wallVertices": 770,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.medulla-oblongata.left",
+      "closedTissue": true,
+      "wallVertices": 770,
+      "containedWallVertices": 0,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.medulla-oblongata.right",
+      "closedTissue": true,
+      "wallVertices": 770,
+      "containedWallVertices": 770,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.midbrain.right",
+      "closedTissue": false,
+      "wallVertices": 770,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.midbrain.left",
+      "closedTissue": false,
+      "wallVertices": 770,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.base-of-peduncle.right",
+      "closedTissue": false,
+      "wallVertices": 770,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.base-of-peduncle.left",
+      "closedTissue": false,
+      "wallVertices": 770,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.pons.right",
+      "closedTissue": false,
+      "wallVertices": 1063,
+      "containedWallVertices": null,
+      "triangleContacts": 83
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.pons.left",
+      "closedTissue": false,
+      "wallVertices": 1063,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.medulla-oblongata.left",
+      "closedTissue": true,
+      "wallVertices": 1063,
+      "containedWallVertices": 0,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.medulla-oblongata.right",
+      "closedTissue": true,
+      "wallVertices": 1063,
+      "containedWallVertices": 105,
+      "triangleContacts": 82
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.midbrain.right",
+      "closedTissue": false,
+      "wallVertices": 1063,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.midbrain.left",
+      "closedTissue": false,
+      "wallVertices": 1063,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.base-of-peduncle.right",
+      "closedTissue": false,
+      "wallVertices": 1063,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.base-of-peduncle.left",
+      "closedTissue": false,
+      "wallVertices": 1063,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.pons.right",
+      "closedTissue": false,
+      "wallVertices": 495,
+      "containedWallVertices": null,
+      "triangleContacts": 63
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.pons.left",
+      "closedTissue": false,
+      "wallVertices": 495,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.medulla-oblongata.left",
+      "closedTissue": true,
+      "wallVertices": 495,
+      "containedWallVertices": 0,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.medulla-oblongata.right",
+      "closedTissue": true,
+      "wallVertices": 495,
+      "containedWallVertices": 0,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.midbrain.right",
+      "closedTissue": false,
+      "wallVertices": 495,
+      "containedWallVertices": null,
+      "triangleContacts": 136
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.midbrain.left",
+      "closedTissue": false,
+      "wallVertices": 495,
+      "containedWallVertices": null,
+      "triangleContacts": 62
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.base-of-peduncle.right",
+      "closedTissue": false,
+      "wallVertices": 495,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_pontomesencephalic",
+      "target": "brain.base-of-peduncle.left",
+      "closedTissue": false,
+      "wallVertices": 495,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.pons.right",
+      "closedTissue": false,
+      "wallVertices": 422,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.pons.left",
+      "closedTissue": false,
+      "wallVertices": 422,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.medulla-oblongata.left",
+      "closedTissue": true,
+      "wallVertices": 422,
+      "containedWallVertices": 0,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.medulla-oblongata.right",
+      "closedTissue": true,
+      "wallVertices": 422,
+      "containedWallVertices": 184,
+      "triangleContacts": 53
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.midbrain.right",
+      "closedTissue": false,
+      "wallVertices": 422,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.midbrain.left",
+      "closedTissue": false,
+      "wallVertices": 422,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.base-of-peduncle.right",
+      "closedTissue": false,
+      "wallVertices": 422,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.base-of-peduncle.left",
+      "closedTissue": false,
+      "wallVertices": 422,
+      "containedWallVertices": null,
+      "triangleContacts": 0
+    }
+  ],
+  "failures": [
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.medulla-oblongata.right",
+      "containedWallVertices": 770
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.medulla-oblongata.right",
+      "containedWallVertices": 105
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.medulla-oblongata.right",
+      "containedWallVertices": 184
+    }
+  ],
+  "limitations": [
+    "Containment is evaluated only on closed tissue surfaces. Open pons and midbrain surfaces require an exposed-surface or cisternal-corridor check.",
+    "The app geometry is unchanged by this audit."
+  ],
+  "closedTissueContainmentPassed": false
+}

@@ -1,14 +1,10 @@
-# Neurovascular Atlas v0.9.18
+# Neurovascular Atlas v0.9.20 review build
 
-Place `inr-anatomy-atlas-v0.9.18.zip` beside the updated `inr-anatomy.sh`, then run `./inr-anatomy.sh`. It clones or updates `https://github.com/jeremylynch83/neurovascular-atlas.git` into `~/Documents/GitHub/neurovascular-atlas`, imports the app, starts it with Docker on port 5173, verifies the served release, commits and pushes to `main`, and configures GitHub Pages through Actions. GitHub CLI handles your login; on Linux Mint/Ubuntu the script installs it with apt if missing. Docker, Git, Python 3 and curl must already be installed. You need write access to the repository and permission to configure Pages.
+This build resumes posterior-fossa candidate 59 and applies candidate 61 to the full app. It brings the anterior veins closer to the brainstem, preserves circular tube sweeps and arterial overpasses, repairs the right P1/basilar and left SCA/proximal perforator joins, and places both posterior spinal arteries on the dorsal medulla and illustrative upper cervical cord from proximal PICA origins. Clival/basilar plexus geometry is omitted.
 
-The complete model is bundled; no historical CT data are downloaded or restored. The old `~/INR-Anatomy-Atlas` installation and anatomy data remain available. The brain registration review and validation reports are included.
+This remains an anatomical review build. The local posterior-fossa surface walls, closed-tissue containment, vein/artery crossings, sampled tube diameters and 151 source joins pass. Wider upper collecting-vein and cerebral parenchymal relationships are unfinished. The full scope and limitations are in [the fitting report](docs/POSTERIOR_FOSSA_v0.9.20.md).
 
-Subsequent updates use the newest adjacent ZIP when it is newer than the checkout, or the latest `main` when there is no newer ZIP. The checkout must be clean; the script uses fast-forward pulls and never force-pushes. `./inr-anatomy.sh local` installs without publishing; `./inr-anatomy.sh publish` publishes a prepared checkout or retries a failed push/deployment. `restart`, `status`, `stop` and `logs` manage the local app. Override the checkout with `INR_CHECKOUT=/your/path`.
-
-The Pages workflow builds with the repository subpath from `actions/configure-pages`, so model and application URLs work at `https://jeremylynch83.github.io/neurovascular-atlas/`. Local Docker builds continue to use `/`. GitHub Actions reports whether deployment succeeded; requesting deployment does not mean the site is live yet.
-
-A release that fails to build is not pushed. If the served manifest has the wrong version, the installer restores the previous Docker image and does not publish. Files imported into the checkout remain available for inspection after a failed build.
+Run `./docker.sh start` for local review, or use the existing installer with `inr-anatomy-atlas-v0.9.20.zip`. The independent posterior-fossa viewer includes opaque tissue views and can be started with `python3 serve.py`.
 
 ## Bilateral central arterial family fit in v0.9.18
 
@@ -174,7 +170,7 @@ Every row has a visibility checkbox. Unticking hides its geometry and all descen
 
 ## Download and serving
 
-The release contains only three anatomy assets. Meshopt compression preserves the original floating-point positions, normals and index data exactly. There is no coordinate quantisation or triangle reduction. Model requests carry content hashes; nginx serves gzip and caches unchanged assets. The manifest is revalidated so a new release loads the new hashes.
+The release contains five anatomy assets. Meshopt compression of the vascular assets preserves the original floating-point positions, normals and index data exactly. The adjusted brain context uses additional material facets to represent the registration field. Model requests carry content hashes; nginx serves gzip and caches unchanged assets. The manifest is revalidated so a new release loads the new hashes.
 
 ## Development
 

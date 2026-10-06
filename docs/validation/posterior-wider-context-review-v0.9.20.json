@@ -1,0 +1,5567 @@
+{
+  "sourceHashes": {
+    "brain": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
+    "arteries": "df31bdd3dc70f232393fff4a1b601fbdc4489495c6fa4bd2d19fdc3aa3da8955",
+    "veins": "05c3ad6aef8714ee4939033605ecb5ed683b7b9f1daccf6c1d864bd9037a2d63"
+  },
+  "geometry": {
+    "arteries": {
+      "labels": 599,
+      "changedLabels": [
+        "Posterior communicating right",
+        "Dorsal meningeal right",
+        "Inferior hypophyseal right",
+        "Anterior ethmoidal left",
+        "Posterior communicating left",
+        "Anterior choroidal left",
+        "Dorsal meningeal left",
+        "Inferior hypophyseal left",
+        "Lateral lenticulostriate 2 left",
+        "Basilar",
+        "PCA P1 right",
+        "PCA P2-P3 right",
+        "PCA calcarine right",
+        "PCA parieto-occipital right",
+        "PCA anterior inferior temporal right",
+        "PCA middle inferior temporal right",
+        "PCA posterior inferior temporal right",
+        "PCA splenial right",
+        "PCA hippocampal right",
+        "Medial posterior choroidal right",
+        "Lateral posterior choroidal right",
+        "Thalamoperforator 1 right",
+        "Thalamoperforator 2 right",
+        "Thalamogeniculate right",
+        "Peduncular perforator right",
+        "SCA right",
+        "SCA vermian right",
+        "SCA medial hemispheric right",
+        "SCA lateral hemispheric right",
+        "SCA rostral hemispheric right",
+        "SCA caudal hemispheric right",
+        "AICA right",
+        "Labyrinthine right",
+        "AICA rostral branch right",
+        "AICA caudal branch right",
+        "PICA right",
+        "PICA vermian right",
+        "PICA hemispheric right",
+        "PICA lateral hemispheric right",
+        "PICA tonsillar right",
+        "PICA choroidal right",
+        "PICA medullary perforator right",
+        "Anterior spinal root right",
+        "Posterior spinal right",
+        "Pontine paramedian 1 right",
+        "Pontine paramedian 2 right",
+        "Pontine paramedian 3 right",
+        "Pontine circumferential right",
+        "PCA P1 left",
+        "PCA P2-P3 left",
+        "PCA calcarine left",
+        "PCA parieto-occipital left",
+        "PCA anterior inferior temporal left",
+        "PCA middle inferior temporal left",
+        "PCA posterior inferior temporal left",
+        "PCA splenial left",
+        "PCA hippocampal left",
+        "Medial posterior choroidal left",
+        "Lateral posterior choroidal left",
+        "Thalamoperforator 1 left",
+        "Thalamoperforator 2 left",
+        "Thalamogeniculate left",
+        "Peduncular perforator left",
+        "SCA left",
+        "SCA vermian left",
+        "SCA medial hemispheric left",
+        "SCA lateral hemispheric left",
+        "SCA rostral hemispheric left",
+        "SCA caudal hemispheric left",
+        "AICA left",
+        "Labyrinthine left",
+        "AICA rostral branch left",
+        "AICA caudal branch left",
+        "PICA left",
+        "PICA vermian left",
+        "PICA hemispheric left",
+        "PICA lateral hemispheric left",
+        "PICA tonsillar left",
+        "PICA choroidal left",
+        "PICA medullary perforator left",
+        "Anterior spinal root left",
+        "Posterior spinal left",
+        "Pontine paramedian 1 left",
+        "Pontine paramedian 2 left",
+        "Pontine paramedian 3 left",
+        "Pontine circumferential left",
+        "Anterior spinal",
+        "Occipital",
+        "Sphenopalatine",
+        "Posterior septal",
+        "Medial clival",
+        "Occipital left",
+        "Sphenopalatine left",
+        "Posterior septal left",
+        "Medial clival left",
+        "Medial clival MHT branch right",
+        "Medial clival MHT branch left",
+        "Anterior falcine left",
+        "Occipital SCM branch right",
+        "Occipital SCM branch left",
+        "AChA capsular branch left",
+        "VA medullary perforator 1 right",
+        "VA medullary perforator 1 left",
+        "VA medullary perforator 2 right",
+        "VA medullary perforator 2 left",
+        "AICA subarcuate right",
+        "AICA subarcuate left",
+        "AICA fourth ventricular choroidal right",
+        "AICA fourth ventricular choroidal left",
+        "Common cochlear right",
+        "Common cochlear left",
+        "Anterior vestibular right",
+        "Anterior vestibular left",
+        "SCA proximal perforator right",
+        "SCA proximal perforator left",
+        "SCA tectal branch right",
+        "SCA tectal branch left",
+        "Wollschlaeger and Wollschlaeger artery right",
+        "Wollschlaeger and Wollschlaeger artery left",
+        "Davidoff and Schechter artery right",
+        "Davidoff and Schechter artery left",
+        "Pontine short circumflex right",
+        "Pontine short circumflex left",
+        "Pontine long circumflex right",
+        "Pontine long circumflex left",
+        "Pontine median perforator",
+        "PCA short circumflex right",
+        "PCA short circumflex left",
+        "PCA long circumflex right",
+        "PCA long circumflex left",
+        "PCA collicular right",
+        "PCA collicular left",
+        "Tuberothalamic artery right",
+        "Anterior thalamoperforating branch right",
+        "Anterior thalamoperforating branch left",
+        "Vertebral V3 right",
+        "Vertebral V4 right",
+        "Vertebral V3 left",
+        "Vertebral V4 left"
+      ],
+      "unchangedLabels": [
+        "ACA A1 left",
+        "ACA A1 right",
+        "ACA A2 left",
+        "ACA A2 right",
+        "ACA A3 left",
+        "ACA A3 right",
+        "ACA A4 left",
+        "ACA A4 right",
+        "ACA A5 left",
+        "ACA A5 right",
+        "ACA falcine branch left",
+        "ACA falcine branch right",
+        "ACA frontopolar left",
+        "ACA frontopolar right",
+        "ACA orbitofrontal left",
+        "ACA orbitofrontal right",
+        "AChA capsular branch right",
+        "AChA optic tract branch left",
+        "AChA optic tract branch right",
+        "AChA peduncular branch left",
+        "AChA peduncular branch right",
+        "AChA temporal branch left",
+        "AChA temporal branch right",
+        "ACom chiasmatic perforator left",
+        "ACom chiasmatic perforator right",
+        "ACom hypothalamic perforator left",
+        "ACom hypothalamic perforator right",
+        "ACom septal perforator left",
+        "ACom septal perforator right",
+        "APA musculospinal left",
+        "APA musculospinal right",
+        "APA prevertebral branch left",
+        "APA prevertebral branch right",
+        "Accessory meningeal",
+        "Accessory meningeal anterior tubal left",
+        "Accessory meningeal anterior tubal right",
+        "Accessory meningeal left",
+        "Accessory meningeal posterior intracranial left",
+        "Accessory meningeal posterior intracranial right",
+        "Angular",
+        "Angular cortical branch left",
+        "Angular cortical branch right",
+        "Angular distal ramus left",
+        "Angular distal ramus right",
+        "Angular left",
+        "Angular right",
+        "Anterior choroidal plexal representative left",
+        "Anterior choroidal plexal representative right",
+        "Anterior choroidal right",
+        "Anterior communicating",
+        "Anterior deep temporal",
+        "Anterior deep temporal left",
+        "Anterior ethmoidal right",
+        "Anterior falcine right",
+        "Anterior internal frontal left",
+        "Anterior internal frontal right",
+        "Anterior parietal cortical branch left",
+        "Anterior parietal cortical branch right",
+        "Anterior parietal distal ramus left",
+        "Anterior parietal distal ramus right",
+        "Anterior parietal left",
+        "Anterior parietal right",
+        "Anterior superior alveolar",
+        "Anterior superior alveolar left",
+        "Anterior temporal left",
+        "Anterior temporal right",
+        "Anterior tympanic",
+        "Anterior tympanic left",
+        "Artery of foramen rotundum",
+        "Artery of foramen rotundum left",
+        "Artery of superior orbital fissure left",
+        "Artery of superior orbital fissure right",
+        "Ascending palatine",
+        "Ascending palatine left",
+        "Ascending pharyngeal",
+        "Ascending pharyngeal left",
+        "Basal tentorial MHT branch left",
+        "Basal tentorial MHT branch right",
+        "Buccal",
+        "Buccal left",
+        "Calcarine inferior cortical left",
+        "Calcarine inferior cortical right",
+        "Calcarine superior cortical left",
+        "Calcarine superior cortical right",
+        "Callosomarginal left",
+        "Callosomarginal right",
+        "Caroticotympanic left",
+        "Caroticotympanic right",
+        "Central cortical branch left",
+        "Central cortical branch right",
+        "Central distal ramus left",
+        "Central distal ramus right",
+        "Central left",
+        "Central retinal left",
+        "Central retinal right",
+        "Central right",
+        "Common carotid left",
+        "Common carotid right",
+        "Cricothyroid left",
+        "Cricothyroid right",
+        "Deep auricular",
+        "Deep auricular left",
+        "Deep lingual",
+        "Deep lingual left",
+        "Deep recurrent ophthalmic left",
+        "Deep recurrent ophthalmic right",
+        "Descending palatine",
+        "Descending palatine left",
+        "Dorsal lingual",
+        "Dorsal lingual left",
+        "Dorsal nasal left",
+        "Dorsal nasal right",
+        "ECA Angular left",
+        "ECA Middle temporal left",
+        "External carotid",
+        "External carotid left",
+        "Facial",
+        "Facial buccal branch left",
+        "Facial buccal branch right",
+        "Facial left",
+        "Facial masseteric branch left",
+        "Facial masseteric branch right",
+        "Facial submandibular gland branch left",
+        "Facial submandibular gland branch right",
+        "Falx cerebelli artery left",
+        "Falx cerebelli artery right",
+        "Greater palatine",
+        "Greater palatine left",
+        "Hypoglossal branch",
+        "Hypoglossal branch left",
+        "Hypoglossal posterior meningeal",
+        "Hypoglossal posterior meningeal left",
+        "ICA anterior choroidal left",
+        "ICA anterior choroidal right",
+        "ICA cavernous left",
+        "ICA cavernous right",
+        "ICA cervical left",
+        "ICA cervical right",
+        "ICA paraophthalmic left",
+        "ICA paraophthalmic right",
+        "ICA petrous left",
+        "ICA petrous right",
+        "ICA posterior communicating left",
+        "ICA posterior communicating right",
+        "ICA terminus left",
+        "ICA terminus right",
+        "ILT anterior branch left",
+        "ILT anterior branch right",
+        "ILT anterolateral ramus left",
+        "ILT anterolateral ramus right",
+        "ILT posterior branch left",
+        "ILT posterior branch right",
+        "ILT posteromedial ramus left",
+        "ILT posteromedial ramus right",
+        "ILT recurrent lacerum ramus left",
+        "ILT recurrent lacerum ramus right",
+        "ILT superior ramus left",
+        "ILT superior ramus right",
+        "Incisive",
+        "Incisive left",
+        "Inferior alveolar",
+        "Inferior alveolar left",
+        "Inferior internal parietal left",
+        "Inferior internal parietal right",
+        "Inferior labial",
+        "Inferior labial left",
+        "Inferior pharyngeal",
+        "Inferior pharyngeal left",
+        "Inferior septal subdivision left",
+        "Inferior septal subdivision right",
+        "Inferior tympanic",
+        "Inferior tympanic left",
+        "Inferolateral trunk left",
+        "Inferolateral trunk right",
+        "Infrahyoid",
+        "Infrahyoid left",
+        "Infraorbital",
+        "Infraorbital left",
+        "Infraorbital muscular branch left",
+        "Infraorbital muscular branch right",
+        "Jugular ascending IAC branch left",
+        "Jugular ascending IAC branch right",
+        "Jugular branch",
+        "Jugular branch left",
+        "Jugular sigmoid branch",
+        "Jugular sigmoid branch left",
+        "Lacrimal inferior branch left",
+        "Lacrimal inferior branch right",
+        "Lacrimal left",
+        "Lacrimal right",
+        "Lateral clival",
+        "Lateral clival MHT branch left",
+        "Lateral clival MHT branch right",
+        "Lateral clival left",
+        "Lateral inferior palpebral left",
+        "Lateral inferior palpebral right",
+        "Lateral lenticulostriate 1 left",
+        "Lateral lenticulostriate 1 right",
+        "Lateral lenticulostriate 2 right",
+        "Lateral lenticulostriate 3 left",
+        "Lateral lenticulostriate 3 right",
+        "Lateral lenticulostriate anterior representative left",
+        "Lateral lenticulostriate anterior representative right",
+        "Lateral nasal",
+        "Lateral nasal left",
+        "Lateral posterior choroidal plexal representative left",
+        "Lateral posterior choroidal plexal representative right",
+        "Lateral superior palpebral left",
+        "Lateral superior palpebral right",
+        "Lesser palatine",
+        "Lesser palatine left",
+        "Lingual",
+        "Lingual left",
+        "Long callosal branch left",
+        "Long callosal branch right",
+        "MCA M1 left",
+        "MCA M1 right",
+        "MCA inferior division left",
+        "MCA inferior division right",
+        "MCA orbitofrontal left",
+        "MCA orbitofrontal right",
+        "MCA superior division left",
+        "MCA superior division right",
+        "MMA anterior cavernous left",
+        "MMA anterior cavernous right",
+        "MMA cavernous",
+        "MMA cavernous left",
+        "MMA falcine terminal left",
+        "MMA falcine terminal right",
+        "MMA frontal",
+        "MMA frontal anterior division",
+        "MMA frontal anterior division left",
+        "MMA frontal left",
+        "MMA frontal posterior division",
+        "MMA frontal posterior division left",
+        "MMA orbital",
+        "MMA orbital left",
+        "MMA paramedian left",
+        "MMA paramedian right",
+        "MMA parietal ascending",
+        "MMA parietal ascending left",
+        "MMA petrosal",
+        "MMA petrosal left",
+        "MMA petrosquamosal",
+        "MMA petrosquamosal left",
+        "MMA posterior cavernous left",
+        "MMA posterior cavernous right",
+        "MMA posterior convexity",
+        "MMA posterior convexity left",
+        "MMA posterior terminal",
+        "MMA posterior terminal left",
+        "Mandibular ICA branch left",
+        "Mandibular ICA branch right",
+        "Masseteric",
+        "Masseteric left",
+        "Maxillary",
+        "Maxillary left",
+        "Medial inferior palpebral left",
+        "Medial inferior palpebral right",
+        "Medial lenticulostriate left",
+        "Medial lenticulostriate right",
+        "Medial lenticulostriate superior representative left",
+        "Medial lenticulostriate superior representative right",
+        "Medial posterior choroidal plexal representative left",
+        "Medial posterior choroidal plexal representative right",
+        "Medial superior palpebral left",
+        "Medial superior palpebral right",
+        "Meningohypophyseal trunk left",
+        "Meningohypophyseal trunk right",
+        "Mental",
+        "Mental left",
+        "Middle internal frontal left",
+        "Middle internal frontal right",
+        "Middle meningeal",
+        "Middle meningeal left",
+        "Middle pharyngeal",
+        "Middle pharyngeal left",
+        "Middle temporal",
+        "Middle temporal cortical branch left",
+        "Middle temporal cortical branch right",
+        "Middle temporal distal ramus left",
+        "Middle temporal distal ramus right",
+        "Middle temporal left",
+        "Middle temporal right",
+        "Mylohyoid",
+        "Mylohyoid left",
+        "Neuromeningeal trunk",
+        "Neuromeningeal trunk left",
+        "Occipital descending",
+        "Occipital descending left",
+        "Occipital lateral scalp",
+        "Occipital lateral scalp left",
+        "Occipital mastoid",
+        "Occipital mastoid dural branch left",
+        "Occipital mastoid dural branch right",
+        "Occipital mastoid left",
+        "Occipital medial scalp",
+        "Occipital medial scalp left",
+        "Odontoid descending",
+        "Odontoid descending left",
+        "Ophthalmic inferior muscular branch left",
+        "Ophthalmic inferior muscular branch right",
+        "Ophthalmic left",
+        "Ophthalmic right",
+        "Ophthalmic superior muscular branch left",
+        "Ophthalmic superior muscular branch right",
+        "PCA lateral occipital left",
+        "PCA lateral occipital right",
+        "PCom perforator left",
+        "PCom perforator right",
+        "PSA anterior division",
+        "PSA anterior division left",
+        "Paracentral left",
+        "Paracentral right",
+        "Parieto-occipital cuneal left",
+        "Parieto-occipital cuneal right",
+        "Pharyngeal trunk",
+        "Pharyngeal trunk left",
+        "Polar temporal left",
+        "Polar temporal right",
+        "Posterior auricular",
+        "Posterior auricular auricular branch left",
+        "Posterior auricular auricular branch right",
+        "Posterior auricular left",
+        "Posterior auricular parotid branch left",
+        "Posterior auricular parotid branch right",
+        "Posterior ciliary lateral left",
+        "Posterior ciliary lateral right",
+        "Posterior ciliary medial left",
+        "Posterior ciliary medial right",
+        "Posterior deep temporal",
+        "Posterior deep temporal left",
+        "Posterior ethmoidal left",
+        "Posterior ethmoidal right",
+        "Posterior internal frontal left",
+        "Posterior internal frontal right",
+        "Posterior lateral nasal",
+        "Posterior lateral nasal left",
+        "Posterior meningeal VA left",
+        "Posterior meningeal VA right",
+        "Posterior parietal cortical branch left",
+        "Posterior parietal cortical branch right",
+        "Posterior parietal distal ramus left",
+        "Posterior parietal distal ramus right",
+        "Posterior parietal left",
+        "Posterior parietal right",
+        "Posterior superior alveolar",
+        "Posterior superior alveolar left",
+        "Posterior temporal cortical branch left",
+        "Posterior temporal cortical branch right",
+        "Posterior temporal distal ramus left",
+        "Posterior temporal distal ramus right",
+        "Posterior temporal left",
+        "Posterior temporal right",
+        "Precentral cortical branch left",
+        "Precentral cortical branch right",
+        "Precentral distal ramus left",
+        "Precentral distal ramus right",
+        "Precentral left",
+        "Precentral right",
+        "Precuneal left",
+        "Precuneal right",
+        "Prefrontal cortical branch left",
+        "Prefrontal cortical branch right",
+        "Prefrontal distal ramus left",
+        "Prefrontal distal ramus right",
+        "Prefrontal left",
+        "Prefrontal right",
+        "Pterygoid muscular",
+        "Pterygoid muscular left",
+        "Pterygovaginal",
+        "Pterygovaginal left",
+        "Recurrent artery of Heubner left",
+        "Recurrent artery of Heubner right",
+        "STA anterior auricular left",
+        "STA anterior auricular right",
+        "STA frontal",
+        "STA frontal anterior twig",
+        "STA frontal anterior twig left",
+        "STA frontal left",
+        "STA parietal",
+        "STA parietal anterior twig",
+        "STA parietal anterior twig left",
+        "STA parietal left",
+        "Short callosal branch left",
+        "Short callosal branch right",
+        "Stylomastoid",
+        "Stylomastoid left",
+        "Subcallosal artery",
+        "Sublingual",
+        "Sublingual left",
+        "Submental",
+        "Submental left",
+        "Superficial recurrent meningeal left",
+        "Superficial recurrent meningeal right",
+        "Superficial temporal",
+        "Superficial temporal left",
+        "Superior hypophyseal left",
+        "Superior hypophyseal right",
+        "Superior labial",
+        "Superior labial left",
+        "Superior laryngeal",
+        "Superior laryngeal left",
+        "Superior pharyngeal",
+        "Superior pharyngeal carotid branch left",
+        "Superior pharyngeal carotid branch right",
+        "Superior pharyngeal left",
+        "Superior pharyngeal tubal branch left",
+        "Superior pharyngeal tubal branch right",
+        "Superior septal subdivision left",
+        "Superior septal subdivision right",
+        "Superior thyroid",
+        "Superior thyroid SCM branch left",
+        "Superior thyroid SCM branch right",
+        "Superior thyroid left",
+        "Superior tympanic left",
+        "Superior tympanic right",
+        "Supraorbital left",
+        "Supraorbital right",
+        "Supratrochlear left",
+        "Supratrochlear right",
+        "Temporo-occipital left",
+        "Temporo-occipital right",
+        "Tentorial marginal left",
+        "Tentorial marginal right",
+        "Terminal ICA perforator 1 left",
+        "Terminal ICA perforator 1 right",
+        "Terminal ICA perforator 2 left",
+        "Terminal ICA perforator 2 right",
+        "Tonsillar",
+        "Tonsillar left",
+        "Transverse facial",
+        "Transverse facial inferior division left",
+        "Transverse facial inferior division right",
+        "Transverse facial left",
+        "Transverse facial masseteric branch left",
+        "Transverse facial masseteric branch right",
+        "Transverse facial parotid branch left",
+        "Transverse facial parotid branch right",
+        "Transverse facial superior division left",
+        "Transverse facial superior division right",
+        "Tuberothalamic artery left",
+        "VA anterior meningeal left",
+        "VA anterior meningeal right",
+        "VA muscular C1 left",
+        "VA muscular C1 right",
+        "VA muscular C2 left",
+        "VA muscular C2 right",
+        "VA odontoid contribution left",
+        "VA odontoid contribution right",
+        "Vertebral V1 left",
+        "Vertebral V1 right",
+        "Vertebral V2 left",
+        "Vertebral V2 right",
+        "Vidian",
+        "Vidian ICA contribution left",
+        "Vidian ICA contribution right",
+        "Vidian left",
+        "Zygomatico-orbital left",
+        "Zygomatico-orbital right"
+      ]
+    },
+    "veins": {
+      "labels": 104,
+      "changedLabels": [
+        "vein.confluence",
+        "vein.superior_sagittal",
+        "vein.straight",
+        "vein.inferior_sagittal",
+        "vein.occipital_sinus",
+        "vein.marginal",
+        "vein.galen",
+        "vein.internal_jugular.right",
+        "vein.sigmoid.right",
+        "vein.transverse.right",
+        "vein.cavernous.right",
+        "vein.superior_petrosal.right",
+        "vein.inferior_petrosal.right",
+        "vein.sphenoparietal.right",
+        "vein.superficial_middle_cerebral.right",
+        "vein.trolard.right",
+        "vein.labbe.right",
+        "vein.frontal_cortical.right",
+        "vein.parietal_cortical.right",
+        "vein.internal_cerebral.right",
+        "vein.basal.right",
+        "vein.thalamostriate.right",
+        "vein.anterior_septal.right",
+        "vein.superior_choroidal.right",
+        "vein.anterior_cerebral.right",
+        "vein.deep_middle_cerebral.right",
+        "vein.superior_petrosal_vein.right",
+        "vein.lateral_mesencephalic.right",
+        "vein.cerebellopontine_fissure.right",
+        "vein.inferior_vermian.right",
+        "vein.inferior_hemispheric.right",
+        "vein.external_jugular.right",
+        "vein.retromandibular.right",
+        "vein.maxillary.right",
+        "vein.pterygoid_plexus.right",
+        "vein.superficial_temporal.right",
+        "vein.posterior_auricular.right",
+        "vein.facial.right",
+        "vein.angular.right",
+        "vein.deep_facial.right",
+        "vein.superior_ophthalmic.right",
+        "vein.inferior_ophthalmic.right",
+        "vein.ovale_emissary.right",
+        "vein.vertebral.right",
+        "vein.suboccipital_plexus.right",
+        "vein.deep_cervical.right",
+        "vein.anterior_condylar.right",
+        "vein.lateral_condylar.right",
+        "vein.internal_jugular.left",
+        "vein.sigmoid.left",
+        "vein.transverse.left",
+        "vein.cavernous.left",
+        "vein.superior_petrosal.left",
+        "vein.inferior_petrosal.left",
+        "vein.sphenoparietal.left",
+        "vein.superficial_middle_cerebral.left",
+        "vein.trolard.left",
+        "vein.labbe.left",
+        "vein.frontal_cortical.left",
+        "vein.parietal_cortical.left",
+        "vein.internal_cerebral.left",
+        "vein.basal.left",
+        "vein.thalamostriate.left",
+        "vein.anterior_septal.left",
+        "vein.superior_choroidal.left",
+        "vein.anterior_cerebral.left",
+        "vein.deep_middle_cerebral.left",
+        "vein.superior_petrosal_vein.left",
+        "vein.lateral_mesencephalic.left",
+        "vein.cerebellopontine_fissure.left",
+        "vein.inferior_vermian.left",
+        "vein.inferior_hemispheric.left",
+        "vein.external_jugular.left",
+        "vein.retromandibular.left",
+        "vein.maxillary.left",
+        "vein.pterygoid_plexus.left",
+        "vein.superficial_temporal.left",
+        "vein.posterior_auricular.left",
+        "vein.facial.left",
+        "vein.angular.left",
+        "vein.deep_facial.left",
+        "vein.superior_ophthalmic.left",
+        "vein.inferior_ophthalmic.left",
+        "vein.ovale_emissary.left",
+        "vein.vertebral.left",
+        "vein.suboccipital_plexus.left",
+        "vein.deep_cervical.left",
+        "vein.anterior_condylar.left",
+        "vein.lateral_condylar.left",
+        "vein.anterior_intercavernous",
+        "vein.posterior_intercavernous",
+        "vein.basilar_plexus",
+        "vein.anterior_communicating",
+        "vein.posterior_communicating",
+        "vein.precentral_cerebellar",
+        "vein.superior_vermian",
+        "vein.anterior_pontomesencephalic",
+        "vein.anterior_pontine",
+        "vein.anterior_medullary",
+        "vein.anterior_spinal",
+        "vein.transverse_pontine.right",
+        "vein.pontomedullary.right",
+        "vein.transverse_pontine.left",
+        "vein.pontomedullary.left"
+      ],
+      "unchangedLabels": []
+    }
+  },
+  "physicalJoins": [
+    {
+      "kind": "arteries",
+      "node": "AICA caudal branch left",
+      "other": "AICA left",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 93,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA caudal branch left",
+      "other": "AICA rostral branch left",
+      "beforeSharedVertices": 45,
+      "afterSharedVertices": 88,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA caudal branch right",
+      "other": "AICA right",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 244,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA caudal branch right",
+      "other": "AICA rostral branch right",
+      "beforeSharedVertices": 45,
+      "afterSharedVertices": 147,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA fourth ventricular choroidal left",
+      "other": "AICA rostral branch left",
+      "beforeSharedVertices": 92,
+      "afterSharedVertices": 198,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA fourth ventricular choroidal right",
+      "other": "AICA rostral branch right",
+      "beforeSharedVertices": 90,
+      "afterSharedVertices": 189,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA left",
+      "other": "Basilar",
+      "beforeSharedVertices": 100,
+      "afterSharedVertices": 14,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA left",
+      "other": "Labyrinthine left",
+      "beforeSharedVertices": 78,
+      "afterSharedVertices": 72,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA left",
+      "other": "AICA rostral branch left",
+      "beforeSharedVertices": 101,
+      "afterSharedVertices": 101,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA left",
+      "other": "AICA subarcuate left",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 80,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA right",
+      "other": "Basilar",
+      "beforeSharedVertices": 104,
+      "afterSharedVertices": 41,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA right",
+      "other": "Labyrinthine right",
+      "beforeSharedVertices": 80,
+      "afterSharedVertices": 199,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA right",
+      "other": "AICA rostral branch right",
+      "beforeSharedVertices": 101,
+      "afterSharedVertices": 126,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "AICA right",
+      "other": "AICA subarcuate right",
+      "beforeSharedVertices": 126,
+      "afterSharedVertices": 162,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior spinal",
+      "other": "Anterior spinal root right",
+      "beforeSharedVertices": 65,
+      "afterSharedVertices": 77,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior spinal",
+      "other": "Anterior spinal root left",
+      "beforeSharedVertices": 66,
+      "afterSharedVertices": 63,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior spinal root left",
+      "other": "Anterior spinal root right",
+      "beforeSharedVertices": 72,
+      "afterSharedVertices": 176,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior spinal root left",
+      "other": "Vertebral V4 left",
+      "beforeSharedVertices": 80,
+      "afterSharedVertices": 98,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior spinal root right",
+      "other": "Vertebral V4 right",
+      "beforeSharedVertices": 80,
+      "afterSharedVertices": 888,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior vestibular left",
+      "other": "Labyrinthine left",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 173,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior vestibular right",
+      "other": "Labyrinthine right",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 166,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Common cochlear left",
+      "other": "Labyrinthine left",
+      "beforeSharedVertices": 92,
+      "afterSharedVertices": 185,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Common cochlear right",
+      "other": "Labyrinthine right",
+      "beforeSharedVertices": 90,
+      "afterSharedVertices": 316,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "Posterior communicating left",
+      "beforeSharedVertices": 77,
+      "afterSharedVertices": 95,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "Basilar",
+      "beforeSharedVertices": 106,
+      "afterSharedVertices": 69,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "PCA P2-P3 left",
+      "beforeSharedVertices": 123,
+      "afterSharedVertices": 468,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "Thalamoperforator 1 left",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 110,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "Thalamoperforator 2 left",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 95,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "PCA short circumflex left",
+      "beforeSharedVertices": 93,
+      "afterSharedVertices": 167,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 left",
+      "other": "PCA long circumflex left",
+      "beforeSharedVertices": 90,
+      "afterSharedVertices": 154,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "Posterior communicating right",
+      "beforeSharedVertices": 66,
+      "afterSharedVertices": 30,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "Basilar",
+      "beforeSharedVertices": 107,
+      "afterSharedVertices": 0,
+      "passed": false
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "PCA P2-P3 right",
+      "beforeSharedVertices": 131,
+      "afterSharedVertices": 657,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "Thalamoperforator 1 right",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 110,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "Thalamoperforator 2 right",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 83,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "PCA short circumflex right",
+      "beforeSharedVertices": 83,
+      "afterSharedVertices": 92,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P1 right",
+      "other": "PCA long circumflex right",
+      "beforeSharedVertices": 96,
+      "afterSharedVertices": 140,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "Posterior communicating left",
+      "beforeSharedVertices": 88,
+      "afterSharedVertices": 20,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA calcarine left",
+      "beforeSharedVertices": 79,
+      "afterSharedVertices": 138,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA parieto-occipital left",
+      "beforeSharedVertices": 87,
+      "afterSharedVertices": 126,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA anterior inferior temporal left",
+      "beforeSharedVertices": 102,
+      "afterSharedVertices": 150,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA middle inferior temporal left",
+      "beforeSharedVertices": 102,
+      "afterSharedVertices": 122,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA posterior inferior temporal left",
+      "beforeSharedVertices": 107,
+      "afterSharedVertices": 146,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA splenial left",
+      "beforeSharedVertices": 98,
+      "afterSharedVertices": 135,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "PCA hippocampal left",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 103,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "Medial posterior choroidal left",
+      "beforeSharedVertices": 82,
+      "afterSharedVertices": 94,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "Lateral posterior choroidal left",
+      "beforeSharedVertices": 84,
+      "afterSharedVertices": 121,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "Thalamogeniculate left",
+      "beforeSharedVertices": 82,
+      "afterSharedVertices": 116,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "Peduncular perforator left",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 208,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "other": "Davidoff and Schechter artery left",
+      "beforeSharedVertices": 78,
+      "afterSharedVertices": 114,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "Posterior communicating right",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 114,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA calcarine right",
+      "beforeSharedVertices": 75,
+      "afterSharedVertices": 78,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA parieto-occipital right",
+      "beforeSharedVertices": 82,
+      "afterSharedVertices": 107,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA anterior inferior temporal right",
+      "beforeSharedVertices": 102,
+      "afterSharedVertices": 130,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA middle inferior temporal right",
+      "beforeSharedVertices": 102,
+      "afterSharedVertices": 134,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA posterior inferior temporal right",
+      "beforeSharedVertices": 110,
+      "afterSharedVertices": 163,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA splenial right",
+      "beforeSharedVertices": 94,
+      "afterSharedVertices": 150,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "PCA hippocampal right",
+      "beforeSharedVertices": 88,
+      "afterSharedVertices": 114,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "Medial posterior choroidal right",
+      "beforeSharedVertices": 80,
+      "afterSharedVertices": 90,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "Lateral posterior choroidal right",
+      "beforeSharedVertices": 84,
+      "afterSharedVertices": 115,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "Thalamogeniculate right",
+      "beforeSharedVertices": 81,
+      "afterSharedVertices": 113,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "Peduncular perforator right",
+      "beforeSharedVertices": 70,
+      "afterSharedVertices": 49,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "other": "Davidoff and Schechter artery right",
+      "beforeSharedVertices": 78,
+      "afterSharedVertices": 113,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular left",
+      "other": "PCA long circumflex left",
+      "beforeSharedVertices": 88,
+      "afterSharedVertices": 272,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular right",
+      "other": "PCA long circumflex right",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 282,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA choroidal left",
+      "other": "PICA left",
+      "beforeSharedVertices": 88,
+      "afterSharedVertices": 116,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA choroidal right",
+      "other": "PICA right",
+      "beforeSharedVertices": 84,
+      "afterSharedVertices": 106,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA hemispheric left",
+      "other": "PICA left",
+      "beforeSharedVertices": 83,
+      "afterSharedVertices": 251,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA hemispheric left",
+      "other": "PICA vermian left",
+      "beforeSharedVertices": 48,
+      "afterSharedVertices": 90,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA hemispheric left",
+      "other": "PICA lateral hemispheric left",
+      "beforeSharedVertices": 118,
+      "afterSharedVertices": 271,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA hemispheric right",
+      "other": "PICA right",
+      "beforeSharedVertices": 83,
+      "afterSharedVertices": 151,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA hemispheric right",
+      "other": "PICA vermian right",
+      "beforeSharedVertices": 47,
+      "afterSharedVertices": 87,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA hemispheric right",
+      "other": "PICA lateral hemispheric right",
+      "beforeSharedVertices": 118,
+      "afterSharedVertices": 591,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA left",
+      "other": "PICA vermian left",
+      "beforeSharedVertices": 71,
+      "afterSharedVertices": 329,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA left",
+      "other": "PICA tonsillar left",
+      "beforeSharedVertices": 86,
+      "afterSharedVertices": 120,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA left",
+      "other": "PICA medullary perforator left",
+      "beforeSharedVertices": 80,
+      "afterSharedVertices": 60,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA left",
+      "other": "Vertebral V4 left",
+      "beforeSharedVertices": 96,
+      "afterSharedVertices": 407,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA right",
+      "other": "PICA vermian right",
+      "beforeSharedVertices": 71,
+      "afterSharedVertices": 326,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA right",
+      "other": "PICA tonsillar right",
+      "beforeSharedVertices": 87,
+      "afterSharedVertices": 116,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA right",
+      "other": "PICA medullary perforator right",
+      "beforeSharedVertices": 78,
+      "afterSharedVertices": 33,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA right",
+      "other": "Vertebral V4 right",
+      "beforeSharedVertices": 98,
+      "afterSharedVertices": 144,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine circumferential left",
+      "other": "Basilar",
+      "beforeSharedVertices": 76,
+      "afterSharedVertices": 71,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine circumferential right",
+      "other": "Basilar",
+      "beforeSharedVertices": 76,
+      "afterSharedVertices": 8,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine long circumflex left",
+      "other": "Basilar",
+      "beforeSharedVertices": 66,
+      "afterSharedVertices": 70,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine long circumflex right",
+      "other": "Basilar",
+      "beforeSharedVertices": 64,
+      "afterSharedVertices": 107,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine short circumflex left",
+      "other": "Basilar",
+      "beforeSharedVertices": 66,
+      "afterSharedVertices": 115,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Pontine short circumflex right",
+      "other": "Basilar",
+      "beforeSharedVertices": 64,
+      "afterSharedVertices": 111,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA caudal hemispheric left",
+      "other": "SCA lateral hemispheric left",
+      "beforeSharedVertices": 124,
+      "afterSharedVertices": 319,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA caudal hemispheric right",
+      "other": "SCA lateral hemispheric right",
+      "beforeSharedVertices": 122,
+      "afterSharedVertices": 282,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA lateral hemispheric left",
+      "other": "SCA left",
+      "beforeSharedVertices": 110,
+      "afterSharedVertices": 265,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA lateral hemispheric right",
+      "other": "SCA right",
+      "beforeSharedVertices": 108,
+      "afterSharedVertices": 234,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "other": "Basilar",
+      "beforeSharedVertices": 112,
+      "afterSharedVertices": 30,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "other": "SCA vermian left",
+      "beforeSharedVertices": 125,
+      "afterSharedVertices": 410,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "other": "SCA medial hemispheric left",
+      "beforeSharedVertices": 126,
+      "afterSharedVertices": 350,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "other": "SCA proximal perforator left",
+      "beforeSharedVertices": 80,
+      "afterSharedVertices": 0,
+      "passed": false
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "other": "SCA tectal branch left",
+      "beforeSharedVertices": 68,
+      "afterSharedVertices": 114,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "other": "Wollschlaeger and Wollschlaeger artery left",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 115,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric left",
+      "other": "SCA rostral hemispheric left",
+      "beforeSharedVertices": 96,
+      "afterSharedVertices": 131,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "other": "SCA right",
+      "beforeSharedVertices": 89,
+      "afterSharedVertices": 239,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "other": "SCA vermian right",
+      "beforeSharedVertices": 49,
+      "afterSharedVertices": 291,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "other": "SCA rostral hemispheric right",
+      "beforeSharedVertices": 93,
+      "afterSharedVertices": 237,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "other": "Basilar",
+      "beforeSharedVertices": 107,
+      "afterSharedVertices": 16,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "other": "SCA vermian right",
+      "beforeSharedVertices": 98,
+      "afterSharedVertices": 109,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "other": "SCA proximal perforator right",
+      "beforeSharedVertices": 64,
+      "afterSharedVertices": 75,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "other": "SCA tectal branch right",
+      "beforeSharedVertices": 72,
+      "afterSharedVertices": 116,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "other": "Wollschlaeger and Wollschlaeger artery right",
+      "beforeSharedVertices": 76,
+      "afterSharedVertices": 292,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 left",
+      "other": "Basilar",
+      "beforeSharedVertices": 82,
+      "afterSharedVertices": 180,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 left",
+      "other": "VA medullary perforator 1 left",
+      "beforeSharedVertices": 62,
+      "afterSharedVertices": 94,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 left",
+      "other": "VA medullary perforator 2 left",
+      "beforeSharedVertices": 68,
+      "afterSharedVertices": 101,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 left",
+      "other": "Vertebral V4 right",
+      "beforeSharedVertices": 85,
+      "afterSharedVertices": 1110,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 left",
+      "other": "Vertebral V3 left",
+      "beforeSharedVertices": 64,
+      "afterSharedVertices": 29,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 right",
+      "other": "Basilar",
+      "beforeSharedVertices": 63,
+      "afterSharedVertices": 210,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 right",
+      "other": "VA medullary perforator 1 right",
+      "beforeSharedVertices": 64,
+      "afterSharedVertices": 41,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 right",
+      "other": "VA medullary perforator 2 right",
+      "beforeSharedVertices": 70,
+      "afterSharedVertices": 34,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Vertebral V4 right",
+      "other": "Vertebral V3 right",
+      "beforeSharedVertices": 64,
+      "afterSharedVertices": 66,
+      "passed": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Posterior spinal left",
+      "other": "Vertebral V3 left",
+      "beforeSharedVertices": 78,
+      "afterSharedVertices": 0,
+      "passed": false,
+      "intentionalOriginReplacement": true
+    },
+    {
+      "kind": "arteries",
+      "node": "Posterior spinal right",
+      "other": "Vertebral V3 right",
+      "beforeSharedVertices": 76,
+      "afterSharedVertices": 0,
+      "passed": false,
+      "intentionalOriginReplacement": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_medullary",
+      "other": "vein.anterior_pontine",
+      "beforeSharedVertices": 68,
+      "afterSharedVertices": 388,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_medullary",
+      "other": "vein.anterior_spinal",
+      "beforeSharedVertices": 93,
+      "afterSharedVertices": 92,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_medullary",
+      "other": "vein.pontomedullary.right",
+      "beforeSharedVertices": 188,
+      "afterSharedVertices": 249,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_medullary",
+      "other": "vein.pontomedullary.left",
+      "beforeSharedVertices": 152,
+      "afterSharedVertices": 274,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_pontine",
+      "other": "vein.anterior_pontomesencephalic",
+      "beforeSharedVertices": 51,
+      "afterSharedVertices": 94,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_pontine",
+      "other": "vein.transverse_pontine.right",
+      "beforeSharedVertices": 121,
+      "afterSharedVertices": 154,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_pontine",
+      "other": "vein.transverse_pontine.left",
+      "beforeSharedVertices": 128,
+      "afterSharedVertices": 533,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_pontomesencephalic",
+      "other": "vein.posterior_communicating",
+      "beforeSharedVertices": 160,
+      "afterSharedVertices": 371,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.cerebellopontine_fissure.left",
+      "other": "vein.superior_petrosal_vein.left",
+      "beforeSharedVertices": 55,
+      "afterSharedVertices": 198,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.cerebellopontine_fissure.left",
+      "other": "vein.transverse_pontine.left",
+      "beforeSharedVertices": 4,
+      "afterSharedVertices": 390,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.cerebellopontine_fissure.left",
+      "other": "vein.pontomedullary.left",
+      "beforeSharedVertices": 152,
+      "afterSharedVertices": 294,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.cerebellopontine_fissure.right",
+      "other": "vein.superior_petrosal_vein.right",
+      "beforeSharedVertices": 50,
+      "afterSharedVertices": 313,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.cerebellopontine_fissure.right",
+      "other": "vein.transverse_pontine.right",
+      "beforeSharedVertices": 56,
+      "afterSharedVertices": 440,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.cerebellopontine_fissure.right",
+      "other": "vein.pontomedullary.right",
+      "beforeSharedVertices": 53,
+      "afterSharedVertices": 144,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_hemispheric.left",
+      "other": "vein.inferior_vermian.left",
+      "beforeSharedVertices": 41,
+      "afterSharedVertices": 114,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_hemispheric.right",
+      "other": "vein.inferior_vermian.right",
+      "beforeSharedVertices": 32,
+      "afterSharedVertices": 374,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.left",
+      "other": "vein.confluence",
+      "beforeSharedVertices": 7,
+      "afterSharedVertices": 27,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.left",
+      "other": "vein.occipital_sinus",
+      "beforeSharedVertices": 24,
+      "afterSharedVertices": 154,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.left",
+      "other": "vein.transverse.left",
+      "beforeSharedVertices": 11,
+      "afterSharedVertices": 66,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.right",
+      "other": "vein.confluence",
+      "beforeSharedVertices": 6,
+      "afterSharedVertices": 43,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.right",
+      "other": "vein.occipital_sinus",
+      "beforeSharedVertices": 21,
+      "afterSharedVertices": 156,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.right",
+      "other": "vein.transverse.right",
+      "beforeSharedVertices": 16,
+      "afterSharedVertices": 101,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "other": "vein.basal.left",
+      "beforeSharedVertices": 74,
+      "afterSharedVertices": 211,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "other": "vein.superior_petrosal_vein.left",
+      "beforeSharedVertices": 120,
+      "afterSharedVertices": 286,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "other": "vein.basal.right",
+      "beforeSharedVertices": 65,
+      "afterSharedVertices": 211,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "other": "vein.superior_petrosal_vein.right",
+      "beforeSharedVertices": 118,
+      "afterSharedVertices": 413,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "other": "vein.basal.right",
+      "beforeSharedVertices": 49,
+      "afterSharedVertices": 99,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "other": "vein.basal.left",
+      "beforeSharedVertices": 52,
+      "afterSharedVertices": 93,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.precentral_cerebellar",
+      "other": "vein.galen",
+      "beforeSharedVertices": 27,
+      "afterSharedVertices": 60,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.precentral_cerebellar",
+      "other": "vein.superior_vermian",
+      "beforeSharedVertices": 27,
+      "afterSharedVertices": 542,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "other": "vein.superior_petrosal.left",
+      "beforeSharedVertices": 154,
+      "afterSharedVertices": 258,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "other": "vein.transverse_pontine.left",
+      "beforeSharedVertices": 123,
+      "afterSharedVertices": 84,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "other": "vein.superior_petrosal.right",
+      "beforeSharedVertices": 184,
+      "afterSharedVertices": 298,
+      "passed": true
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "other": "vein.transverse_pontine.right",
+      "beforeSharedVertices": 105,
+      "afterSharedVertices": 297,
+      "passed": true
+    }
+  ],
+  "neighbourContacts": [
+    {
+      "kind": "arteries",
+      "node": "Posterior communicating left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 17,
+      "baselineTriangleContacts": 17,
+      "containedWallVertices": 11
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior choroidal left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 139,
+      "baselineTriangleContacts": 139,
+      "containedWallVertices": 473
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior choroidal left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 134,
+      "baselineTriangleContacts": 134,
+      "containedWallVertices": 294
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior choroidal left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 138,
+      "baselineTriangleContacts": 138,
+      "containedWallVertices": 146
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral lenticulostriate 2 left",
+      "tissue": "brain.putamen.left",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 1922
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 254,
+      "baselineTriangleContacts": 21,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 503,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 896
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 231,
+      "baselineTriangleContacts": 163,
+      "containedWallVertices": 2644
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 100,
+      "baselineTriangleContacts": 100,
+      "containedWallVertices": 114
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine right",
+      "tissue": "brain.cuneus.right",
+      "triangleContacts": 218,
+      "baselineTriangleContacts": 218,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine right",
+      "tissue": "brain.superior-occipital-gyri.right",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 74,
+      "containedWallVertices": 426
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital right",
+      "tissue": "brain.angular-gyrus.right",
+      "triangleContacts": 155,
+      "baselineTriangleContacts": 155,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 173,
+      "baselineTriangleContacts": 173,
+      "containedWallVertices": 373
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital right",
+      "tissue": "brain.superior-parietal-lobule.right",
+      "triangleContacts": 38,
+      "baselineTriangleContacts": 38,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA anterior inferior temporal right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 224,
+      "baselineTriangleContacts": 224,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA anterior inferior temporal right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA anterior inferior temporal right",
+      "tissue": "brain.inferior-temporal-gyrus.right",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 66,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA middle inferior temporal right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 296,
+      "baselineTriangleContacts": 295,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA middle inferior temporal right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA posterior inferior temporal right",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.right",
+      "triangleContacts": 258,
+      "baselineTriangleContacts": 258,
+      "containedWallVertices": 417
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial right",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 154,
+      "baselineTriangleContacts": 154,
+      "containedWallVertices": 537
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 2630
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA hippocampal right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 72,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 997
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA hippocampal right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 144,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 833
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.superior-colliculus.right",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 146,
+      "containedWallVertices": 26
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.inferior-colliculus.right",
+      "triangleContacts": 144,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 277
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 1678
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 66,
+      "containedWallVertices": 82
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 1736
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 13,
+      "baselineTriangleContacts": 156,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral posterior choroidal right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 145,
+      "baselineTriangleContacts": 114,
+      "containedWallVertices": 292
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral posterior choroidal right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 66,
+      "containedWallVertices": 207
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 219,
+      "baselineTriangleContacts": 148,
+      "containedWallVertices": 1220
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 453
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 170,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 54,
+      "baselineTriangleContacts": 39,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA vermian right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 1365,
+      "baselineTriangleContacts": 714,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 104,
+      "baselineTriangleContacts": 70,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 564,
+      "baselineTriangleContacts": 393,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA lateral hemispheric right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 450,
+      "baselineTriangleContacts": 268,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA vermian right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 100,
+      "baselineTriangleContacts": 74,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA choroidal right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 174,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 848,
+      "baselineTriangleContacts": 208,
+      "containedWallVertices": 2984
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 234,
+      "baselineTriangleContacts": 163,
+      "containedWallVertices": 2550
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 315
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine left",
+      "tissue": "brain.cuneus.left",
+      "triangleContacts": 154,
+      "baselineTriangleContacts": 154,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine left",
+      "tissue": "brain.superior-occipital-gyri.left",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 339
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital left",
+      "tissue": "brain.angular-gyrus.left",
+      "triangleContacts": 188,
+      "baselineTriangleContacts": 188,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 345,
+      "baselineTriangleContacts": 345,
+      "containedWallVertices": 694
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital left",
+      "tissue": "brain.superior-parietal-lobule.left",
+      "triangleContacts": 133,
+      "baselineTriangleContacts": 133,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA anterior inferior temporal left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 152,
+      "baselineTriangleContacts": 152,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA anterior inferior temporal left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA anterior inferior temporal left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 70,
+      "baselineTriangleContacts": 70,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA middle inferior temporal left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 286,
+      "baselineTriangleContacts": 286,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA middle inferior temporal left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 54,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA middle inferior temporal left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 166,
+      "baselineTriangleContacts": 166,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA posterior inferior temporal left",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.left",
+      "triangleContacts": 314,
+      "baselineTriangleContacts": 314,
+      "containedWallVertices": 819
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial left",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 162,
+      "baselineTriangleContacts": 162,
+      "containedWallVertices": 185
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 2905
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA hippocampal left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 72,
+      "baselineTriangleContacts": 76,
+      "containedWallVertices": 818
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA hippocampal left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 141,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 972
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.superior-colliculus.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 154,
+      "containedWallVertices": 19
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.inferior-colliculus.left",
+      "triangleContacts": 79,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 56
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 1470
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.septum-pellucidum",
+      "triangleContacts": 148,
+      "baselineTriangleContacts": 148,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 156,
+      "baselineTriangleContacts": 156,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 257
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 144,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 1032
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 177,
+      "containedWallVertices": 41
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral posterior choroidal left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 112,
+      "baselineTriangleContacts": 116,
+      "containedWallVertices": 304
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 80,
+      "baselineTriangleContacts": 72,
+      "containedWallVertices": 930
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 138,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 150,
+      "baselineTriangleContacts": 148,
+      "containedWallVertices": 611
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 220,
+      "baselineTriangleContacts": 89,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 453,
+      "baselineTriangleContacts": 249,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 332,
+      "baselineTriangleContacts": 92,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA vermian left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 758,
+      "baselineTriangleContacts": 482,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 440,
+      "baselineTriangleContacts": 310,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA lateral hemispheric left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 148,
+      "baselineTriangleContacts": 88,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA vermian left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 202,
+      "baselineTriangleContacts": 146,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA choroidal left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 176,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior falcine left",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.left",
+      "triangleContacts": 102,
+      "baselineTriangleContacts": 102,
+      "containedWallVertices": 597
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior falcine left",
+      "tissue": "brain.superior-frontal-gyrus.left",
+      "triangleContacts": 98,
+      "baselineTriangleContacts": 98,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "AChA capsular branch left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 114,
+      "baselineTriangleContacts": 114,
+      "containedWallVertices": 157
+    },
+    {
+      "kind": "arteries",
+      "node": "AChA capsular branch left",
+      "tissue": "brain.globus-pallidus.left",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 361
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA tectal branch right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 181,
+      "baselineTriangleContacts": 116,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA tectal branch left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 82,
+      "baselineTriangleContacts": 104,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 200,
+      "baselineTriangleContacts": 200,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 110,
+      "baselineTriangleContacts": 110,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 112,
+      "baselineTriangleContacts": 112,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Wollschlaeger and Wollschlaeger artery left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 102,
+      "baselineTriangleContacts": 102,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Wollschlaeger and Wollschlaeger artery left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 104,
+      "baselineTriangleContacts": 104,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Wollschlaeger and Wollschlaeger artery left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 102,
+      "baselineTriangleContacts": 102,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 96,
+      "baselineTriangleContacts": 96,
+      "containedWallVertices": 216
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 110,
+      "baselineTriangleContacts": 110,
+      "containedWallVertices": 1219
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 108,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 136
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 150,
+      "baselineTriangleContacts": 150,
+      "containedWallVertices": 256
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 54,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 1365
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 100,
+      "baselineTriangleContacts": 100,
+      "containedWallVertices": 57
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA short circumflex right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 191,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 266
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA short circumflex left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 34,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 14
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA long circumflex right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 214,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 823
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA long circumflex right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 489,
+      "baselineTriangleContacts": 164,
+      "containedWallVertices": 2611
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA long circumflex left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 220,
+      "baselineTriangleContacts": 117,
+      "containedWallVertices": 2147
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 1473
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 220,
+      "baselineTriangleContacts": 52,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 113,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 185
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 86,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Tuberothalamic artery right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 54,
+      "baselineTriangleContacts": 54,
+      "containedWallVertices": 505
+    },
+    {
+      "kind": "arteries",
+      "node": "Tuberothalamic artery right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 108,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 246
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior thalamoperforating branch right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 145
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior thalamoperforating branch left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 148
+    },
+    {
+      "kind": "veins",
+      "node": "vein.confluence",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 5,
+      "baselineTriangleContacts": 5,
+      "containedWallVertices": 41
+    },
+    {
+      "kind": "veins",
+      "node": "vein.confluence",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 2,
+      "baselineTriangleContacts": 8,
+      "containedWallVertices": 33
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 32,
+      "baselineTriangleContacts": 32,
+      "containedWallVertices": 30
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 192,
+      "baselineTriangleContacts": 192,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.cuneus.left",
+      "triangleContacts": 119,
+      "baselineTriangleContacts": 119,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 30,
+      "baselineTriangleContacts": 30,
+      "containedWallVertices": 32
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 165,
+      "baselineTriangleContacts": 165,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.cuneus.right",
+      "triangleContacts": 128,
+      "baselineTriangleContacts": 128,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 122,
+      "baselineTriangleContacts": 122,
+      "containedWallVertices": 96
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 119,
+      "baselineTriangleContacts": 119,
+      "containedWallVertices": 72
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 16,
+      "baselineTriangleContacts": 16,
+      "containedWallVertices": 20
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 372,
+      "baselineTriangleContacts": 372,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.cuneus.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 52,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 22,
+      "baselineTriangleContacts": 22,
+      "containedWallVertices": 24
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 360,
+      "baselineTriangleContacts": 360,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.cuneus.right",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 52,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 29,
+      "baselineTriangleContacts": 29,
+      "containedWallVertices": 10
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 22,
+      "baselineTriangleContacts": 22,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_sagittal",
+      "tissue": "brain.superior-frontal-gyrus.left",
+      "triangleContacts": 101,
+      "baselineTriangleContacts": 101,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_sagittal",
+      "tissue": "brain.superior-frontal-gyrus.right",
+      "triangleContacts": 104,
+      "baselineTriangleContacts": 104,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_sagittal",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 15,
+      "baselineTriangleContacts": 15,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_sagittal",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 12,
+      "baselineTriangleContacts": 12,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 14,
+      "baselineTriangleContacts": 14,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 15,
+      "baselineTriangleContacts": 15,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 76,
+      "baselineTriangleContacts": 76,
+      "containedWallVertices": 76
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 72,
+      "baselineTriangleContacts": 72,
+      "containedWallVertices": 71
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 74,
+      "containedWallVertices": 439
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sigmoid.right",
+      "tissue": "brain.inferior-temporal-gyrus.right",
+      "triangleContacts": 287,
+      "baselineTriangleContacts": 287,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sigmoid.right",
+      "tissue": "brain.middle-temporal-gyrus.right",
+      "triangleContacts": 18,
+      "baselineTriangleContacts": 18,
+      "containedWallVertices": 11
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 411,
+      "baselineTriangleContacts": 414,
+      "containedWallVertices": 498
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.right",
+      "triangleContacts": 26,
+      "baselineTriangleContacts": 26,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.inferior-temporal-gyrus.right",
+      "triangleContacts": 290,
+      "baselineTriangleContacts": 290,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.middle-temporal-gyrus.right",
+      "triangleContacts": 39,
+      "baselineTriangleContacts": 39,
+      "containedWallVertices": 53
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal.right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 131,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal.right",
+      "tissue": "brain.inferior-temporal-gyrus.right",
+      "triangleContacts": 214,
+      "baselineTriangleContacts": 217,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sphenoparietal.right",
+      "tissue": "brain.orbital-gyri.right",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 485
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.opercular-part-of-inferior-frontal-gyrus.right",
+      "triangleContacts": 116,
+      "baselineTriangleContacts": 116,
+      "containedWallVertices": 106
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.supramarginal-gyrus.right",
+      "triangleContacts": 26,
+      "baselineTriangleContacts": 26,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.temporal-pole.right",
+      "triangleContacts": 167,
+      "baselineTriangleContacts": 167,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.right",
+      "triangleContacts": 300,
+      "baselineTriangleContacts": 300,
+      "containedWallVertices": 510
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right",
+      "triangleContacts": 287,
+      "baselineTriangleContacts": 287,
+      "containedWallVertices": 724
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.right",
+      "tissue": "brain.precentral-gyrus.right",
+      "triangleContacts": 242,
+      "baselineTriangleContacts": 242,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.right",
+      "tissue": "brain.postcentral-gyrus.right",
+      "triangleContacts": 932,
+      "baselineTriangleContacts": 932,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.right",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right",
+      "triangleContacts": 71,
+      "baselineTriangleContacts": 71,
+      "containedWallVertices": 223
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.temporal-plane.right",
+      "triangleContacts": 30,
+      "baselineTriangleContacts": 30,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.right",
+      "triangleContacts": 166,
+      "baselineTriangleContacts": 166,
+      "containedWallVertices": 754
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.inferior-temporal-gyrus.right",
+      "triangleContacts": 268,
+      "baselineTriangleContacts": 268,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.middle-temporal-gyrus.right",
+      "triangleContacts": 206,
+      "baselineTriangleContacts": 206,
+      "containedWallVertices": 420
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 446
+    },
+    {
+      "kind": "veins",
+      "node": "vein.frontal_cortical.right",
+      "tissue": "brain.middle-frontal-gyrus.right",
+      "triangleContacts": 151,
+      "baselineTriangleContacts": 151,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.frontal_cortical.right",
+      "tissue": "brain.superior-frontal-gyrus.right",
+      "triangleContacts": 277,
+      "baselineTriangleContacts": 277,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.right",
+      "tissue": "brain.angular-gyrus.right",
+      "triangleContacts": 128,
+      "baselineTriangleContacts": 128,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.right",
+      "tissue": "brain.supramarginal-gyrus.right",
+      "triangleContacts": 19,
+      "baselineTriangleContacts": 19,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 110,
+      "baselineTriangleContacts": 110,
+      "containedWallVertices": 117
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.right",
+      "tissue": "brain.superior-parietal-lobule.right",
+      "triangleContacts": 219,
+      "baselineTriangleContacts": 219,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 90,
+      "containedWallVertices": 449
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.septum-pellucidum",
+      "triangleContacts": 131,
+      "baselineTriangleContacts": 131,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 376,
+      "baselineTriangleContacts": 376,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 191,
+      "baselineTriangleContacts": 191,
+      "containedWallVertices": 183
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 165,
+      "baselineTriangleContacts": 165,
+      "containedWallVertices": 75
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 18,
+      "baselineTriangleContacts": 18,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 351,
+      "baselineTriangleContacts": 204,
+      "containedWallVertices": 228
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 47,
+      "containedWallVertices": 1470
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 499,
+      "baselineTriangleContacts": 500,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 423,
+      "baselineTriangleContacts": 259,
+      "containedWallVertices": 933
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 440,
+      "baselineTriangleContacts": 491,
+      "containedWallVertices": 688
+    },
+    {
+      "kind": "veins",
+      "node": "vein.thalamostriate.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 203,
+      "baselineTriangleContacts": 203,
+      "containedWallVertices": 742
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_septal.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 197
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_septal.right",
+      "tissue": "brain.septum-pellucidum",
+      "triangleContacts": 73,
+      "baselineTriangleContacts": 73,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 28,
+      "baselineTriangleContacts": 28,
+      "containedWallVertices": 155
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 47,
+      "baselineTriangleContacts": 47,
+      "containedWallVertices": 701
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.right",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.right",
+      "triangleContacts": 353,
+      "baselineTriangleContacts": 353,
+      "containedWallVertices": 1066
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.right",
+      "tissue": "brain.orbital-gyri.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 160
+    },
+    {
+      "kind": "veins",
+      "node": "vein.deep_middle_cerebral.right",
+      "tissue": "brain.orbital-gyri.right",
+      "triangleContacts": 208,
+      "baselineTriangleContacts": 208,
+      "containedWallVertices": 564
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 233,
+      "baselineTriangleContacts": 168,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 246,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 138,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 161
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 43,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 51,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 50
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 116,
+      "baselineTriangleContacts": 45,
+      "containedWallVertices": 162
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 80,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 77
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.right",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 431,
+      "baselineTriangleContacts": 92,
+      "containedWallVertices": 1540
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sigmoid.left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 271,
+      "baselineTriangleContacts": 271,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sigmoid.left",
+      "tissue": "brain.middle-temporal-gyrus.left",
+      "triangleContacts": 3,
+      "baselineTriangleContacts": 3,
+      "containedWallVertices": 1
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 367,
+      "baselineTriangleContacts": 384,
+      "containedWallVertices": 495
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.left",
+      "triangleContacts": 15,
+      "baselineTriangleContacts": 15,
+      "containedWallVertices": 1
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 240,
+      "baselineTriangleContacts": 240,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.middle-temporal-gyrus.left",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 48
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal.left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 88,
+      "baselineTriangleContacts": 112,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal.left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 222,
+      "baselineTriangleContacts": 201,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sphenoparietal.left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 145,
+      "baselineTriangleContacts": 145,
+      "containedWallVertices": 483
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.opercular-part-of-inferior-frontal-gyrus.left",
+      "triangleContacts": 118,
+      "baselineTriangleContacts": 118,
+      "containedWallVertices": 97
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.supramarginal-gyrus.left",
+      "triangleContacts": 17,
+      "baselineTriangleContacts": 17,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.temporal-pole.left",
+      "triangleContacts": 200,
+      "baselineTriangleContacts": 200,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.left",
+      "triangleContacts": 267,
+      "baselineTriangleContacts": 267,
+      "containedWallVertices": 509
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left",
+      "triangleContacts": 285,
+      "baselineTriangleContacts": 285,
+      "containedWallVertices": 719
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.left",
+      "tissue": "brain.precentral-gyrus.left",
+      "triangleContacts": 252,
+      "baselineTriangleContacts": 252,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.left",
+      "tissue": "brain.postcentral-gyrus.left",
+      "triangleContacts": 944,
+      "baselineTriangleContacts": 944,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.left",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left",
+      "triangleContacts": 64,
+      "baselineTriangleContacts": 64,
+      "containedWallVertices": 252
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.temporal-plane.left",
+      "triangleContacts": 34,
+      "baselineTriangleContacts": 34,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.left",
+      "triangleContacts": 192,
+      "baselineTriangleContacts": 192,
+      "containedWallVertices": 740
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 290,
+      "baselineTriangleContacts": 290,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.middle-temporal-gyrus.left",
+      "triangleContacts": 270,
+      "baselineTriangleContacts": 270,
+      "containedWallVertices": 458
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left",
+      "triangleContacts": 42,
+      "baselineTriangleContacts": 42,
+      "containedWallVertices": 401
+    },
+    {
+      "kind": "veins",
+      "node": "vein.frontal_cortical.left",
+      "tissue": "brain.middle-frontal-gyrus.left",
+      "triangleContacts": 148,
+      "baselineTriangleContacts": 148,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.frontal_cortical.left",
+      "tissue": "brain.superior-frontal-gyrus.left",
+      "triangleContacts": 276,
+      "baselineTriangleContacts": 276,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.left",
+      "tissue": "brain.angular-gyrus.left",
+      "triangleContacts": 130,
+      "baselineTriangleContacts": 130,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.left",
+      "tissue": "brain.supramarginal-gyrus.left",
+      "triangleContacts": 24,
+      "baselineTriangleContacts": 24,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 91,
+      "baselineTriangleContacts": 91,
+      "containedWallVertices": 113
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.left",
+      "tissue": "brain.superior-parietal-lobule.left",
+      "triangleContacts": 247,
+      "baselineTriangleContacts": 247,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 78,
+      "baselineTriangleContacts": 78,
+      "containedWallVertices": 480
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.septum-pellucidum",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 391,
+      "baselineTriangleContacts": 391,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 214,
+      "baselineTriangleContacts": 214,
+      "containedWallVertices": 179
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 183,
+      "baselineTriangleContacts": 183,
+      "containedWallVertices": 82
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 24,
+      "baselineTriangleContacts": 21,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 402,
+      "baselineTriangleContacts": 222,
+      "containedWallVertices": 262
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 89,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 62
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 102,
+      "baselineTriangleContacts": 56,
+      "containedWallVertices": 1527
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 480,
+      "baselineTriangleContacts": 542,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 422,
+      "baselineTriangleContacts": 282,
+      "containedWallVertices": 901
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 457,
+      "baselineTriangleContacts": 555,
+      "containedWallVertices": 808
+    },
+    {
+      "kind": "veins",
+      "node": "vein.thalamostriate.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 216,
+      "baselineTriangleContacts": 216,
+      "containedWallVertices": 770
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_septal.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 75,
+      "baselineTriangleContacts": 75,
+      "containedWallVertices": 206
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_septal.left",
+      "tissue": "brain.septum-pellucidum",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 90,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 30,
+      "baselineTriangleContacts": 30,
+      "containedWallVertices": 153
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 629
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.left",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.left",
+      "triangleContacts": 295,
+      "baselineTriangleContacts": 295,
+      "containedWallVertices": 842
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 114,
+      "baselineTriangleContacts": 114,
+      "containedWallVertices": 125
+    },
+    {
+      "kind": "veins",
+      "node": "vein.deep_middle_cerebral.left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 183,
+      "baselineTriangleContacts": 183,
+      "containedWallVertices": 526
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 355,
+      "baselineTriangleContacts": 133,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 143,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 130,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 152
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 78,
+      "baselineTriangleContacts": 46,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 13,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 8
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 112,
+      "baselineTriangleContacts": 42,
+      "containedWallVertices": 162
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 92,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 68
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.left",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 293,
+      "baselineTriangleContacts": 98,
+      "containedWallVertices": 731
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_communicating",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.left",
+      "triangleContacts": 56,
+      "baselineTriangleContacts": 56,
+      "containedWallVertices": 603
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_communicating",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.right",
+      "triangleContacts": 78,
+      "baselineTriangleContacts": 78,
+      "containedWallVertices": 674
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 70,
+      "baselineTriangleContacts": 18,
+      "containedWallVertices": 85
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 21,
+      "containedWallVertices": 69
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 216,
+      "baselineTriangleContacts": 109,
+      "containedWallVertices": 886
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 228,
+      "baselineTriangleContacts": 99,
+      "containedWallVertices": 922
+    },
+    {
+      "kind": "veins",
+      "node": "vein.precentral_cerebellar",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 104,
+      "baselineTriangleContacts": 46,
+      "containedWallVertices": 3943
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_vermian",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 276,
+      "baselineTriangleContacts": 83,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_vermian",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 255,
+      "baselineTriangleContacts": 88,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_vermian",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 94,
+      "baselineTriangleContacts": 38,
+      "containedWallVertices": 1485
+    }
+  ],
+  "newNeighbourContacts": [
+    {
+      "kind": "arteries",
+      "node": "Posterior communicating left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 17,
+      "baselineTriangleContacts": 17,
+      "containedWallVertices": 11
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior choroidal left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 139,
+      "baselineTriangleContacts": 139,
+      "containedWallVertices": 473
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior choroidal left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 134,
+      "baselineTriangleContacts": 134,
+      "containedWallVertices": 294
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior choroidal left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 138,
+      "baselineTriangleContacts": 138,
+      "containedWallVertices": 146
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral lenticulostriate 2 left",
+      "tissue": "brain.putamen.left",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 1922
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 254,
+      "baselineTriangleContacts": 21,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 503,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 896
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 231,
+      "baselineTriangleContacts": 163,
+      "containedWallVertices": 2644
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 100,
+      "baselineTriangleContacts": 100,
+      "containedWallVertices": 114
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine right",
+      "tissue": "brain.superior-occipital-gyri.right",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 74,
+      "containedWallVertices": 426
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 173,
+      "baselineTriangleContacts": 173,
+      "containedWallVertices": 373
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA middle inferior temporal right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 296,
+      "baselineTriangleContacts": 295,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA posterior inferior temporal right",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.right",
+      "triangleContacts": 258,
+      "baselineTriangleContacts": 258,
+      "containedWallVertices": 417
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial right",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 154,
+      "baselineTriangleContacts": 154,
+      "containedWallVertices": 537
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 2630
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA hippocampal right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 72,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 997
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 144,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 833
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.superior-colliculus.right",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 146,
+      "containedWallVertices": 26
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.inferior-colliculus.right",
+      "triangleContacts": 144,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 277
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 1678
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 66,
+      "containedWallVertices": 82
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 1736
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral posterior choroidal right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 145,
+      "baselineTriangleContacts": 114,
+      "containedWallVertices": 292
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral posterior choroidal right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 66,
+      "baselineTriangleContacts": 66,
+      "containedWallVertices": 207
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 219,
+      "baselineTriangleContacts": 148,
+      "containedWallVertices": 1220
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 453
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 170,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 54,
+      "baselineTriangleContacts": 39,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA vermian right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 1365,
+      "baselineTriangleContacts": 714,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 104,
+      "baselineTriangleContacts": 70,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 564,
+      "baselineTriangleContacts": 393,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA lateral hemispheric right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 450,
+      "baselineTriangleContacts": 268,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA vermian right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 100,
+      "baselineTriangleContacts": 74,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA choroidal right",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 174,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 848,
+      "baselineTriangleContacts": 208,
+      "containedWallVertices": 2984
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA P2-P3 left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 234,
+      "baselineTriangleContacts": 163,
+      "containedWallVertices": 2550
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 315
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA calcarine left",
+      "tissue": "brain.superior-occipital-gyri.left",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 339
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA parieto-occipital left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 345,
+      "baselineTriangleContacts": 345,
+      "containedWallVertices": 694
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA posterior inferior temporal left",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.left",
+      "triangleContacts": 314,
+      "baselineTriangleContacts": 314,
+      "containedWallVertices": 819
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial left",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 162,
+      "baselineTriangleContacts": 162,
+      "containedWallVertices": 185
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA splenial left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 140,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 2905
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA hippocampal left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 72,
+      "baselineTriangleContacts": 76,
+      "containedWallVertices": 818
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 141,
+      "baselineTriangleContacts": 140,
+      "containedWallVertices": 972
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.superior-colliculus.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 154,
+      "containedWallVertices": 19
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.inferior-colliculus.left",
+      "triangleContacts": 79,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 56
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 1470
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 257
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 144,
+      "baselineTriangleContacts": 144,
+      "containedWallVertices": 1032
+    },
+    {
+      "kind": "arteries",
+      "node": "Medial posterior choroidal left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 177,
+      "containedWallVertices": 41
+    },
+    {
+      "kind": "arteries",
+      "node": "Lateral posterior choroidal left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 112,
+      "baselineTriangleContacts": 116,
+      "containedWallVertices": 304
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 80,
+      "baselineTriangleContacts": 72,
+      "containedWallVertices": 930
+    },
+    {
+      "kind": "arteries",
+      "node": "Thalamogeniculate left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 150,
+      "baselineTriangleContacts": 148,
+      "containedWallVertices": 611
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 220,
+      "baselineTriangleContacts": 89,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 453,
+      "baselineTriangleContacts": 249,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 332,
+      "baselineTriangleContacts": 92,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA vermian left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 758,
+      "baselineTriangleContacts": 482,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA medial hemispheric left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 440,
+      "baselineTriangleContacts": 310,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA lateral hemispheric left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 148,
+      "baselineTriangleContacts": 88,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA vermian left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 202,
+      "baselineTriangleContacts": 146,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PICA choroidal left",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 176,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior falcine left",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.left",
+      "triangleContacts": 102,
+      "baselineTriangleContacts": 102,
+      "containedWallVertices": 597
+    },
+    {
+      "kind": "arteries",
+      "node": "AChA capsular branch left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 114,
+      "baselineTriangleContacts": 114,
+      "containedWallVertices": 157
+    },
+    {
+      "kind": "arteries",
+      "node": "AChA capsular branch left",
+      "tissue": "brain.globus-pallidus.left",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 361
+    },
+    {
+      "kind": "arteries",
+      "node": "SCA tectal branch right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 181,
+      "baselineTriangleContacts": 116,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 96,
+      "baselineTriangleContacts": 96,
+      "containedWallVertices": 216
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery right",
+      "tissue": "brain.hippocampus.right",
+      "triangleContacts": 110,
+      "baselineTriangleContacts": 110,
+      "containedWallVertices": 1219
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 108,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 136
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 150,
+      "baselineTriangleContacts": 150,
+      "containedWallVertices": 256
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 54,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 1365
+    },
+    {
+      "kind": "arteries",
+      "node": "Davidoff and Schechter artery left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 100,
+      "baselineTriangleContacts": 100,
+      "containedWallVertices": 57
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA short circumflex right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 191,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 266
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA short circumflex left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 34,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 14
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA long circumflex right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 214,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 823
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA long circumflex right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 489,
+      "baselineTriangleContacts": 164,
+      "containedWallVertices": 2611
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA long circumflex left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 220,
+      "baselineTriangleContacts": 117,
+      "containedWallVertices": 2147
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 1473
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 220,
+      "baselineTriangleContacts": 52,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 113,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 185
+    },
+    {
+      "kind": "arteries",
+      "node": "PCA collicular left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 86,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "arteries",
+      "node": "Tuberothalamic artery right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 54,
+      "baselineTriangleContacts": 54,
+      "containedWallVertices": 505
+    },
+    {
+      "kind": "arteries",
+      "node": "Tuberothalamic artery right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 108,
+      "baselineTriangleContacts": 108,
+      "containedWallVertices": 246
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior thalamoperforating branch right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 145
+    },
+    {
+      "kind": "arteries",
+      "node": "Anterior thalamoperforating branch left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 50,
+      "containedWallVertices": 148
+    },
+    {
+      "kind": "veins",
+      "node": "vein.confluence",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 5,
+      "baselineTriangleContacts": 5,
+      "containedWallVertices": 41
+    },
+    {
+      "kind": "veins",
+      "node": "vein.confluence",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 2,
+      "baselineTriangleContacts": 8,
+      "containedWallVertices": 33
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 32,
+      "baselineTriangleContacts": 32,
+      "containedWallVertices": 30
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_sagittal",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 30,
+      "baselineTriangleContacts": 30,
+      "containedWallVertices": 32
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 122,
+      "baselineTriangleContacts": 122,
+      "containedWallVertices": 96
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 119,
+      "baselineTriangleContacts": 119,
+      "containedWallVertices": 72
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 16,
+      "baselineTriangleContacts": 16,
+      "containedWallVertices": 20
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 22,
+      "baselineTriangleContacts": 22,
+      "containedWallVertices": 24
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 29,
+      "baselineTriangleContacts": 29,
+      "containedWallVertices": 10
+    },
+    {
+      "kind": "veins",
+      "node": "vein.straight",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 22,
+      "baselineTriangleContacts": 22,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_sagittal",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 15,
+      "baselineTriangleContacts": 15,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_sagittal",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 12,
+      "baselineTriangleContacts": 12,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 14,
+      "baselineTriangleContacts": 14,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 15,
+      "baselineTriangleContacts": 15,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 76,
+      "baselineTriangleContacts": 76,
+      "containedWallVertices": 76
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 72,
+      "baselineTriangleContacts": 72,
+      "containedWallVertices": 71
+    },
+    {
+      "kind": "veins",
+      "node": "vein.galen",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 74,
+      "containedWallVertices": 439
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sigmoid.right",
+      "tissue": "brain.middle-temporal-gyrus.right",
+      "triangleContacts": 18,
+      "baselineTriangleContacts": 18,
+      "containedWallVertices": 11
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 411,
+      "baselineTriangleContacts": 414,
+      "containedWallVertices": 498
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.right",
+      "triangleContacts": 26,
+      "baselineTriangleContacts": 26,
+      "containedWallVertices": 6
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.right",
+      "tissue": "brain.middle-temporal-gyrus.right",
+      "triangleContacts": 39,
+      "baselineTriangleContacts": 39,
+      "containedWallVertices": 53
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal.right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 131,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sphenoparietal.right",
+      "tissue": "brain.orbital-gyri.right",
+      "triangleContacts": 142,
+      "baselineTriangleContacts": 142,
+      "containedWallVertices": 485
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.opercular-part-of-inferior-frontal-gyrus.right",
+      "triangleContacts": 116,
+      "baselineTriangleContacts": 116,
+      "containedWallVertices": 106
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.right",
+      "triangleContacts": 300,
+      "baselineTriangleContacts": 300,
+      "containedWallVertices": 510
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.right",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right",
+      "triangleContacts": 287,
+      "baselineTriangleContacts": 287,
+      "containedWallVertices": 724
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.right",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right",
+      "triangleContacts": 71,
+      "baselineTriangleContacts": 71,
+      "containedWallVertices": 223
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.temporal-plane.right",
+      "triangleContacts": 30,
+      "baselineTriangleContacts": 30,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.right",
+      "triangleContacts": 166,
+      "baselineTriangleContacts": 166,
+      "containedWallVertices": 754
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.middle-temporal-gyrus.right",
+      "triangleContacts": 206,
+      "baselineTriangleContacts": 206,
+      "containedWallVertices": 420
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.right",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 446
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.right",
+      "tissue": "brain.precuneus.right",
+      "triangleContacts": 110,
+      "baselineTriangleContacts": 110,
+      "containedWallVertices": 117
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 90,
+      "containedWallVertices": 449
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 191,
+      "baselineTriangleContacts": 191,
+      "containedWallVertices": 183
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 165,
+      "baselineTriangleContacts": 165,
+      "containedWallVertices": 75
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.right",
+      "triangleContacts": 351,
+      "baselineTriangleContacts": 204,
+      "containedWallVertices": 228
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 90,
+      "baselineTriangleContacts": 47,
+      "containedWallVertices": 1470
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 423,
+      "baselineTriangleContacts": 259,
+      "containedWallVertices": 933
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 440,
+      "baselineTriangleContacts": 491,
+      "containedWallVertices": 688
+    },
+    {
+      "kind": "veins",
+      "node": "vein.thalamostriate.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 203,
+      "baselineTriangleContacts": 203,
+      "containedWallVertices": 742
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_septal.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 68,
+      "baselineTriangleContacts": 68,
+      "containedWallVertices": 197
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.right",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 28,
+      "baselineTriangleContacts": 28,
+      "containedWallVertices": 155
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 47,
+      "baselineTriangleContacts": 47,
+      "containedWallVertices": 701
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.right",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.right",
+      "triangleContacts": 353,
+      "baselineTriangleContacts": 353,
+      "containedWallVertices": 1066
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.right",
+      "tissue": "brain.orbital-gyri.right",
+      "triangleContacts": 136,
+      "baselineTriangleContacts": 136,
+      "containedWallVertices": 160
+    },
+    {
+      "kind": "veins",
+      "node": "vein.deep_middle_cerebral.right",
+      "tissue": "brain.orbital-gyri.right",
+      "triangleContacts": 208,
+      "baselineTriangleContacts": 208,
+      "containedWallVertices": 564
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.right",
+      "triangleContacts": 233,
+      "baselineTriangleContacts": 168,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.right",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "triangleContacts": 246,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.thalamus.right",
+      "triangleContacts": 138,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 161
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.choroid-plexus.right",
+      "triangleContacts": 74,
+      "baselineTriangleContacts": 43,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.caudate-nucleus.right",
+      "triangleContacts": 51,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 50
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 116,
+      "baselineTriangleContacts": 45,
+      "containedWallVertices": 162
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.right",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 80,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 77
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.right",
+      "tissue": "brain.occipital-pole.right",
+      "triangleContacts": 431,
+      "baselineTriangleContacts": 92,
+      "containedWallVertices": 1540
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sigmoid.left",
+      "tissue": "brain.middle-temporal-gyrus.left",
+      "triangleContacts": 3,
+      "baselineTriangleContacts": 3,
+      "containedWallVertices": 1
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 367,
+      "baselineTriangleContacts": 384,
+      "containedWallVertices": 495
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.lateral-occipital-gyrus-middle-occipital-gyrus.left",
+      "triangleContacts": 15,
+      "baselineTriangleContacts": 15,
+      "containedWallVertices": 1
+    },
+    {
+      "kind": "veins",
+      "node": "vein.transverse.left",
+      "tissue": "brain.middle-temporal-gyrus.left",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 48
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal.left",
+      "tissue": "brain.inferior-temporal-gyrus.left",
+      "triangleContacts": 222,
+      "baselineTriangleContacts": 201,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.sphenoparietal.left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 145,
+      "baselineTriangleContacts": 145,
+      "containedWallVertices": 483
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.opercular-part-of-inferior-frontal-gyrus.left",
+      "triangleContacts": 118,
+      "baselineTriangleContacts": 118,
+      "containedWallVertices": 97
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.left",
+      "triangleContacts": 267,
+      "baselineTriangleContacts": 267,
+      "containedWallVertices": 509
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superficial_middle_cerebral.left",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left",
+      "triangleContacts": 285,
+      "baselineTriangleContacts": 285,
+      "containedWallVertices": 719
+    },
+    {
+      "kind": "veins",
+      "node": "vein.trolard.left",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left",
+      "triangleContacts": 64,
+      "baselineTriangleContacts": 64,
+      "containedWallVertices": 252
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.temporal-plane.left",
+      "triangleContacts": 34,
+      "baselineTriangleContacts": 34,
+      "containedWallVertices": 9
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.superior-temporal-gyrus-lateral-part.left",
+      "triangleContacts": 192,
+      "baselineTriangleContacts": 192,
+      "containedWallVertices": 740
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.middle-temporal-gyrus.left",
+      "triangleContacts": 270,
+      "baselineTriangleContacts": 270,
+      "containedWallVertices": 458
+    },
+    {
+      "kind": "veins",
+      "node": "vein.labbe.left",
+      "tissue": "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left",
+      "triangleContacts": 42,
+      "baselineTriangleContacts": 42,
+      "containedWallVertices": 401
+    },
+    {
+      "kind": "veins",
+      "node": "vein.parietal_cortical.left",
+      "tissue": "brain.precuneus.left",
+      "triangleContacts": 91,
+      "baselineTriangleContacts": 91,
+      "containedWallVertices": 113
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 78,
+      "baselineTriangleContacts": 78,
+      "containedWallVertices": 480
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 214,
+      "baselineTriangleContacts": 214,
+      "containedWallVertices": 179
+    },
+    {
+      "kind": "veins",
+      "node": "vein.internal_cerebral.left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 183,
+      "baselineTriangleContacts": 183,
+      "containedWallVertices": 82
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 24,
+      "baselineTriangleContacts": 21,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.cingulate-gyrus-posteroventral-part.left",
+      "triangleContacts": 402,
+      "baselineTriangleContacts": 222,
+      "containedWallVertices": 262
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.hippocampus.left",
+      "triangleContacts": 89,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 62
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 102,
+      "baselineTriangleContacts": 56,
+      "containedWallVertices": 1527
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 422,
+      "baselineTriangleContacts": 282,
+      "containedWallVertices": 901
+    },
+    {
+      "kind": "veins",
+      "node": "vein.basal.left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 457,
+      "baselineTriangleContacts": 555,
+      "containedWallVertices": 808
+    },
+    {
+      "kind": "veins",
+      "node": "vein.thalamostriate.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 216,
+      "baselineTriangleContacts": 216,
+      "containedWallVertices": 770
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_septal.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 75,
+      "baselineTriangleContacts": 75,
+      "containedWallVertices": 206
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.left",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 30,
+      "baselineTriangleContacts": 30,
+      "containedWallVertices": 153
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_choroidal.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 48,
+      "baselineTriangleContacts": 48,
+      "containedWallVertices": 629
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.left",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.left",
+      "triangleContacts": 295,
+      "baselineTriangleContacts": 295,
+      "containedWallVertices": 842
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_cerebral.left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 114,
+      "baselineTriangleContacts": 114,
+      "containedWallVertices": 125
+    },
+    {
+      "kind": "veins",
+      "node": "vein.deep_middle_cerebral.left",
+      "tissue": "brain.orbital-gyri.left",
+      "triangleContacts": 183,
+      "baselineTriangleContacts": 183,
+      "containedWallVertices": 526
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "tissue": "brain.lateral-occipitotemporal-gyrus.left",
+      "triangleContacts": 355,
+      "baselineTriangleContacts": 133,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_petrosal_vein.left",
+      "tissue": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "triangleContacts": 143,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.thalamus.left",
+      "triangleContacts": 130,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 152
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.choroid-plexus.left",
+      "triangleContacts": 78,
+      "baselineTriangleContacts": 46,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.caudate-nucleus.left",
+      "triangleContacts": 13,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 8
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 112,
+      "baselineTriangleContacts": 42,
+      "containedWallVertices": 162
+    },
+    {
+      "kind": "veins",
+      "node": "vein.lateral_mesencephalic.left",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 92,
+      "baselineTriangleContacts": 0,
+      "containedWallVertices": 68
+    },
+    {
+      "kind": "veins",
+      "node": "vein.inferior_vermian.left",
+      "tissue": "brain.occipital-pole.left",
+      "triangleContacts": 293,
+      "baselineTriangleContacts": 98,
+      "containedWallVertices": 731
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_communicating",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.left",
+      "triangleContacts": 56,
+      "baselineTriangleContacts": 56,
+      "containedWallVertices": 603
+    },
+    {
+      "kind": "veins",
+      "node": "vein.anterior_communicating",
+      "tissue": "brain.straight-gyrus-gyrus-rectus.right",
+      "triangleContacts": 78,
+      "baselineTriangleContacts": 78,
+      "containedWallVertices": 674
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.fornix.right",
+      "triangleContacts": 70,
+      "baselineTriangleContacts": 18,
+      "containedWallVertices": 85
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.fornix.left",
+      "triangleContacts": 52,
+      "baselineTriangleContacts": 21,
+      "containedWallVertices": 69
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.optic-tract.right",
+      "triangleContacts": 216,
+      "baselineTriangleContacts": 109,
+      "containedWallVertices": 886
+    },
+    {
+      "kind": "veins",
+      "node": "vein.posterior_communicating",
+      "tissue": "brain.optic-tract.left",
+      "triangleContacts": 228,
+      "baselineTriangleContacts": 99,
+      "containedWallVertices": 922
+    },
+    {
+      "kind": "veins",
+      "node": "vein.precentral_cerebellar",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 104,
+      "baselineTriangleContacts": 46,
+      "containedWallVertices": 3943
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_vermian",
+      "tissue": "brain.lingual-gyrus.left",
+      "triangleContacts": 276,
+      "baselineTriangleContacts": 83,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_vermian",
+      "tissue": "brain.lingual-gyrus.right",
+      "triangleContacts": 255,
+      "baselineTriangleContacts": 88,
+      "containedWallVertices": 0
+    },
+    {
+      "kind": "veins",
+      "node": "vein.superior_vermian",
+      "tissue": "brain.corpus-callosum",
+      "triangleContacts": 94,
+      "baselineTriangleContacts": 38,
+      "containedWallVertices": 1485
+    }
+  ],
+  "passed": false,
+  "scope": "Changed exported labels against neighbouring parenchymal skins outside the separately audited posterior-fossa group. Reference sheets excluded. Existing surface contacts reported. Original exported seam pairs checked for shared positions."
+}

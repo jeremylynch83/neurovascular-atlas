@@ -22,9 +22,9 @@ def validate_courses(manifest):
             assert all(k in rows and rows[k]['system']=='brain' and rows[k].get('asset') for k in c['targetStructureIds'])
             assert all(k in rows and rows[k].get('surfaceAnchor') for k in c['stationIds'])
             assert c['radiusPolicy']=='preserve-delivered-profile'
-            assert c['scope'] in ['intracranial','protected-baseline','potential-anastomosis']
+            assert c['scope'] in ['intracranial','intracranial-and-upper-cervical','protected-baseline','potential-anastomosis']
             assert c['reviewStatus'] in ['requires-anatomical-review','requires-anatomical-target','protected-baseline']
-            assert bool(c['segments'])==(c['scope']=='intracranial')
+            assert bool(c['segments'])==(c['scope'] in ['intracranial','intracranial-and-upper-cervical'])
             assert not c['missingTargets'] or c['reviewStatus']=='requires-anatomical-target'
             for i,segment in enumerate(c['segments']):
                 assert segment['order']==i and segment['mode'] in MODES

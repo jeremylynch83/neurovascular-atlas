@@ -1,0 +1,200 @@
+{
+  "method": "lower-fossa ordered AP resizing, fixed upper midbrain, exact recovered material facets",
+  "requestedAPScale": 0.94,
+  "requestedSagittalRotationDegrees": -2,
+  "minimumYDerivative": 0.8499999999999999,
+  "maximumDisplacementMm": 4.010221997404585,
+  "brainSha256": "68e36a031f0483dcf537dd676824d36f0ae24fc9f9a6a48662550b47ad10fdd2",
+  "changes": [
+    {
+      "node": "brain.wing-of-central-lobule.left",
+      "maximumDisplacementMm": 2.078329743519646,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.uvula-of-vermis",
+      "maximumDisplacementMm": 1.9434305450984937,
+      "volumeChangeFraction": -0.06313413079880548
+    },
+    {
+      "node": "brain.tuber-of-vermis",
+      "maximumDisplacementMm": 0.6830029608502883,
+      "volumeChangeFraction": -0.055488651031993075
+    },
+    {
+      "node": "brain.tonsil-of-cerebellum.left",
+      "maximumDisplacementMm": 2.60573978488938,
+      "volumeChangeFraction": -0.06123906429381332
+    },
+    {
+      "node": "brain.superior-semilunar-lobule.left",
+      "maximumDisplacementMm": 1.1826045874130955,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.superior-cerebellar-peduncle.left",
+      "maximumDisplacementMm": 2.255876442513113,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.pyramis-of-vermis",
+      "maximumDisplacementMm": 1.0958407104387788,
+      "volumeChangeFraction": -0.0669135732552687
+    },
+    {
+      "node": "brain.posterior-quadrangular-lobule.left",
+      "maximumDisplacementMm": 1.7681005305174153,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.peduncle-of-flocculus.left",
+      "maximumDisplacementMm": 2.205630058451746,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.nodule-of-vermis",
+      "maximumDisplacementMm": 1.9674314588219062,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.lingula-of-cerebellum",
+      "maximumDisplacementMm": 1.7296425410090848,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.inferior-semilunar-lobule.left",
+      "maximumDisplacementMm": 0.9742215362010143,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.gracile-lobule.left",
+      "maximumDisplacementMm": 1.222035720439223,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.flocculus.left",
+      "maximumDisplacementMm": 2.780082985701071,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.declive",
+      "maximumDisplacementMm": 0.6902191515144409,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.culmen",
+      "maximumDisplacementMm": 1.1405059451626016,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.central-lobule",
+      "maximumDisplacementMm": 1.5916889619754357,
+      "volumeChangeFraction": -0.027830683831191028
+    },
+    {
+      "node": "brain.biventral-lobule.left",
+      "maximumDisplacementMm": 2.573829139027538,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.anterior-quadrangular-lobule.left",
+      "maximumDisplacementMm": 2.109378087575564,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.wing-of-central-lobule.right",
+      "maximumDisplacementMm": 2.077494285699842,
+      "volumeChangeFraction": -0.02143994768246249
+    },
+    {
+      "node": "brain.tonsil-of-cerebellum.right",
+      "maximumDisplacementMm": 2.6048107561946665,
+      "volumeChangeFraction": -0.0613734942208074
+    },
+    {
+      "node": "brain.superior-semilunar-lobule.right",
+      "maximumDisplacementMm": 1.0500000000000114,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.superior-cerebellar-peduncle.right",
+      "maximumDisplacementMm": 2.255860730010312,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.posterior-quadrangular-lobule.right",
+      "maximumDisplacementMm": 1.7602956390546893,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.peduncle-of-flocculus.right",
+      "maximumDisplacementMm": 2.210958662850871,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.inferior-semilunar-lobule.right",
+      "maximumDisplacementMm": 0.9928382896426342,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.gracile-lobule.right",
+      "maximumDisplacementMm": 1.2229851822473563,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.flocculus.right",
+      "maximumDisplacementMm": 2.7940713166434534,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.biventral-lobule.right",
+      "maximumDisplacementMm": 2.5720488133948294,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.anterior-quadrangular-lobule.right",
+      "maximumDisplacementMm": 2.272438567925164,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.pons.right",
+      "maximumDisplacementMm": 3.5169408452903212,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.pons.left",
+      "maximumDisplacementMm": 3.516957239043464,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.fourth-ventricle",
+      "maximumDisplacementMm": 2.6956703635810157,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.medulla-oblongata.left",
+      "maximumDisplacementMm": 3.588432043141907,
+      "volumeChangeFraction": -0.059587822753078945
+    },
+    {
+      "node": "brain.medulla-oblongata.right",
+      "maximumDisplacementMm": 3.5884324185713723,
+      "volumeChangeFraction": -0.059995092663562954
+    },
+    {
+      "node": "brain.midbrain.right",
+      "maximumDisplacementMm": 0.005575873448535162,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.midbrain.left",
+      "maximumDisplacementMm": 0.0056085388856246254,
+      "volumeChangeFraction": null
+    },
+    {
+      "node": "brain.inferior-occipital-gyrus-and-sulcus.right",
+      "maximumDisplacementMm": 0.008782403091657898,
+      "volumeChangeFraction": -1.3174871816623579e-05
+    }
+  ]
+}

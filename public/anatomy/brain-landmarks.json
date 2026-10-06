@@ -31,10 +31,25 @@
       ]
     ],
     "sourceAssetSha256": "90a715af24911abf97d94be205144e1639514fb5629c4cf8e7faa0dcaff99925",
-    "registeredAssetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+    "registeredAssetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
     "method": "Bone-correspondence similarity ICP, 85% trimmed nearest vertices, robust least squares; 7 cranial bone meshes; source Z-Anatomy skull to retained v0.9.13 skull. No independent brain deformation.",
     "status": "atlas-registered",
-    "limitations": "Regional teaching context. Temporal skull residuals are greater than vault residuals. Source cerebellar lobules are simplified; no separate middle/inferior cerebellar peduncle meshes. Existing vessels have not been refitted to the new brain surfaces."
+    "limitations": "Regional teaching context. Temporal skull residuals are greater than vault residuals. Source cerebellar lobules are simplified; no separate middle/inferior cerebellar peduncle meshes. Existing vessels have not been refitted to the new brain surfaces.",
+    "regionalAdjustments": [
+      {
+        "release": "0.9.19",
+        "requestedAPScale": 0.94,
+        "requestedSagittalRotationDegrees": -2,
+        "fieldSha256": "39dae38687263bb9269511711a7a31aaa589808a4c66501663b15f4d0a462cf1",
+        "method": "lower-fossa ordered AP resizing, fixed upper midbrain, exact recovered material facets",
+        "contextEvidence": "docs/validation/brainstem-context-v0.9.19.json"
+      },
+      {
+        "release": "0.9.20",
+        "method": "Recovered posterior-fossa candidate 59, with illustrative cervical continuation; tissue geometry retained through candidates 60 and 61",
+        "brainSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada"
+      }
+    ]
   },
   "anchors": [
     {
@@ -61,9 +76,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -12.443139991601646,
-          -68.28335218044556,
-          78.46088573999432
+          -12.437478470761967,
+          -66.7491354677065,
+          78.46378776027781
         ],
         "course": [],
         "connects": "Midbrain.l",
@@ -72,18 +87,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.midbrain.left",
-        "triangleIndex": 151,
+        "triangleIndex": 1765,
         "barycentric": [
-          0.29386357560040016,
-          0.7061364243996241,
-          -2.4249983642852973e-14
+          0.5333616093673341,
+          0.1894390025983748,
+          0.27719938803429117
         ],
         "position": [
-          -12.443139991601646,
-          -68.28335218044556,
-          78.46088573999432
+          -12.437478470761967,
+          -66.7491354677065,
+          78.46378776027781
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -123,9 +138,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -15.242443445926767,
-          -56.18578601676321,
-          75.26642340349986
+          -14.33464232652023,
+          -61.59674064381991,
+          76.36098054348918
         ],
         "course": [],
         "connects": "Base of peduncle.l",
@@ -134,18 +149,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.base-of-peduncle.left",
-        "triangleIndex": 1208,
+        "triangleIndex": 17421,
         "barycentric": [
-          0.23025045645680403,
-          0.6250290878517999,
-          0.14472045569139608
+          9.43689570931383e-15,
+          0.26604449241893524,
+          0.7339555075810553
         ],
         "position": [
-          -15.242443445926767,
-          -56.18578601676321,
-          75.26642340349986
+          -14.33464232652023,
+          -61.59674064381991,
+          76.36098054348918
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -186,9 +201,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -4.345680443012154,
-          -77.76220024002494,
-          82.03600663285853
+          -4.30787613732858,
+          -76.67112259295843,
+          81.73977982404725
         ],
         "course": [],
         "connects": "Superior colliculus.l",
@@ -199,16 +214,16 @@
         "structureId": "brain.superior-colliculus.left",
         "triangleIndex": 391,
         "barycentric": [
-          0.4855820285116567,
-          0.3468643201948645,
-          0.16755365129347882
+          0.47508745600634156,
+          0.3623850909911434,
+          0.16252745300251498
         ],
         "position": [
-          -4.345680443012154,
-          -77.76220024002494,
-          82.03600663285853
+          -4.30787613732858,
+          -76.67112259295843,
+          81.73977982404725
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -247,9 +262,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -3.8673761233512898,
-          -78.07430730048337,
-          74.35224308425455
+          -3.8119302763020086,
+          -76.5792771721616,
+          74.12069974588064
         ],
         "course": [],
         "connects": "Inferior colliculus.l",
@@ -260,16 +275,16 @@
         "structureId": "brain.inferior-colliculus.left",
         "triangleIndex": 124,
         "barycentric": [
-          0.35944997071895735,
-          0.38596040555996547,
-          0.2545896237210772
+          0.36025085850448757,
+          0.37990388136389497,
+          0.25984526013161746
         ],
         "position": [
-          -3.8673761233512898,
-          -78.07430730048337,
-          74.35224308425455
+          -3.8119302763020086,
+          -76.5792771721616,
+          74.12069974588064
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -311,7 +326,7 @@
         "status": "regional",
         "point": [
           -17.203401565551758,
-          -64.32901000976562,
+          -69.96865844726562,
           57.38690185546875
         ],
         "course": [],
@@ -321,18 +336,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.left",
-        "triangleIndex": 1011,
+        "triangleIndex": 13093,
         "barycentric": [
-          1.0,
           0.0,
-          0.0
+          0.0,
+          1.0
         ],
         "position": [
           -17.203401565551758,
-          -64.32901000976562,
+          -69.96865844726562,
           57.38690185546875
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -371,9 +386,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -3.237185731637791,
-          -58.129072005002776,
-          69.98303510185626
+          -3.237204310232551,
+          -64.73348527819321,
+          69.97916774546702
         ],
         "course": [],
         "connects": "Pons.l",
@@ -382,18 +397,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.left",
-        "triangleIndex": 3892,
+        "triangleIndex": 46722,
         "barycentric": [
-          0.37708867617411695,
-          0.18028969906289416,
-          0.4426216247629889
+          0.19448757936282401,
+          0.7708158944184026,
+          0.03469652621877339
         ],
         "position": [
-          -3.237185731637791,
-          -58.129072005002776,
-          69.98303510185626
+          -3.237204310232551,
+          -64.73348527819321,
+          69.97916774546702
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -430,9 +445,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -5.1971673553088475,
-          -66.18395927881326,
-          45.01363485692367
+          -5.129992822343275,
+          -76.9909398275266,
+          45.12453826049011
         ],
         "course": [],
         "connects": "Pons.l",
@@ -441,18 +456,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.left",
-        "triangleIndex": 6623,
+        "triangleIndex": 71871,
         "barycentric": [
-          0.036132364059796473,
-          0.07217425004189046,
-          0.891693385898313
+          0.3551890137055419,
+          0.6433889189172854,
+          0.0014220673771726316
         ],
         "position": [
-          -5.1971673553088475,
-          -66.18395927881326,
-          45.01363485692367
+          -5.129992822343275,
+          -76.9909398275266,
+          45.12453826049011
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -490,9 +505,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -9.625126626046752,
-          -73.01880350138119,
-          36.43829083304188
+          -9.549698183449106,
+          -75.33688198894858,
+          36.569422047663565
         ],
         "course": [],
         "connects": "Medulla oblongata.l",
@@ -501,18 +516,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.medulla-oblongata.left",
-        "triangleIndex": 812,
+        "triangleIndex": 7165,
         "barycentric": [
-          0.10801371300500562,
-          0.35351247331172825,
-          0.5384738136832661
+          0.5959737440051147,
+          0.16956838996957782,
+          0.23445786602530747
         ],
         "position": [
-          -9.625126626046752,
-          -73.01880350138119,
-          36.43829083304188
+          -9.549698183449106,
+          -75.33688198894858,
+          36.569422047663565
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -548,9 +563,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -5.056751531832274,
-          -79.7303456175106,
-          63.65382104091445
+          -4.930410804277552,
+          -80.43630706301411,
+          63.437572027575676
         ],
         "course": [],
         "connects": "Superior cerebellar peduncle.l",
@@ -559,18 +574,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.superior-cerebellar-peduncle.left",
-        "triangleIndex": 7266,
+        "triangleIndex": 45942,
         "barycentric": [
-          0.6504307455895232,
-          0.34956925441048015,
-          -3.3242475700887926e-15
+          0.011854794465679164,
+          0.6065607818374943,
+          0.38158442369682655
         ],
         "position": [
-          -5.056751531832274,
-          -79.7303456175106,
-          63.65382104091445
+          -4.930410804277552,
+          -80.43630706301411,
+          63.437572027575676
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -607,9 +622,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -20.830985196062812,
-          -77.55226173131084,
-          50.76996369475386
+          -20.498181284548757,
+          -78.0525343974834,
+          50.80552019532924
         ],
         "course": [],
         "connects": "Flocculus.l",
@@ -618,18 +633,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.flocculus.left",
-        "triangleIndex": 2581,
+        "triangleIndex": 20570,
         "barycentric": [
-          0.2470059156237795,
-          0.1951521336234844,
-          0.5578419507527361
+          0.4241668075630478,
+          0.16163908497499055,
+          0.4141941074619616
         ],
         "position": [
-          -20.830985196062812,
-          -77.55226173131084,
-          50.76996369475386
+          -20.498181284548757,
+          -78.0525343974834,
+          50.80552019532924
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -667,9 +682,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -1.106778102047805,
-          -97.38002803246587,
-          38.839015187657765
+          -1.035576872301922,
+          -97.51228213152572,
+          39.44421681033444
         ],
         "course": [],
         "connects": "Tonsil of cerebellum.l",
@@ -678,18 +693,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.left",
-        "triangleIndex": 39,
+        "triangleIndex": 471,
         "barycentric": [
-          0.19502928295492822,
-          0.6142523924907428,
-          0.19071832455432897
+          0.439741572925681,
+          0.25069742136381373,
+          0.3095610057105052
         ],
         "position": [
-          -1.106778102047805,
-          -97.38002803246587,
-          38.839015187657765
+          -1.035576872301922,
+          -97.51228213152572,
+          39.44421681033444
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -726,9 +741,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -8.63999084023557,
-          -100.8153911944193,
-          38.14906325382605
+          -8.263509111927789,
+          -100.64519721591465,
+          38.77966552088177
         ],
         "course": [],
         "connects": "Tonsil of cerebellum.l",
@@ -737,18 +752,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.left",
-        "triangleIndex": 971,
+        "triangleIndex": 13178,
         "barycentric": [
-          0.1715102257344081,
-          0.20626894689650424,
-          0.6222208273690877
+          0.32737097175554863,
+          0.11395751367704175,
+          0.5586715145674096
         ],
         "position": [
-          -8.63999084023557,
-          -100.8153911944193,
-          38.14906325382605
+          -8.263509111927789,
+          -100.64519721591465,
+          38.77966552088177
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -789,9 +804,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -25.579108743150144,
-          -115.86747068999098,
-          64.01592733503077
+          -24.5279552354422,
+          -115.379836954385,
+          63.61520454401482
         ],
         "course": [],
         "connects": "Superior semilunar lobule.l",
@@ -800,18 +815,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.superior-semilunar-lobule.left",
-        "triangleIndex": 1379,
+        "triangleIndex": 28427,
         "barycentric": [
-          0.4331289205865483,
-          -5.827262683227717e-16,
-          0.5668710794134524
+          0.042004792119339995,
+          0.5462693210160555,
+          0.4117258868646045
         ],
         "position": [
-          -25.579108743150144,
-          -115.86747068999098,
-          64.01592733503077
+          -24.5279552354422,
+          -115.379836954385,
+          63.61520454401482
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -849,9 +864,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -26.171919902912965,
-          -130.4244885811726,
-          45.680405913448155
+          -25.094276739427354,
+          -129.61113317259557,
+          46.0137606509854
         ],
         "course": [],
         "connects": "Inferior semilunar lobule.l",
@@ -860,18 +875,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.inferior-semilunar-lobule.left",
-        "triangleIndex": 4313,
+        "triangleIndex": 75132,
         "barycentric": [
-          0.19890846815046465,
-          0.7080351365299573,
-          0.09305639531957803
+          0.5131927708650079,
+          0.44414265503489236,
+          0.04266457410009984
         ],
         "position": [
-          -26.171919902912965,
-          -130.4244885811726,
-          45.680405913448155
+          -25.094276739427354,
+          -129.61113317259557,
+          46.0137606509854
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -909,9 +924,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -15.631482845141702,
-          -71.61774015053157,
-          66.12374486755799
+          -15.617351433233072,
+          -71.92759078224141,
+          66.11466928586562
         ],
         "course": [],
         "connects": "Wing of central lobule.l",
@@ -920,18 +935,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.wing-of-central-lobule.left",
-        "triangleIndex": 1682,
+        "triangleIndex": 17287,
         "barycentric": [
-          0.2522238409696018,
-          0.18975057024545813,
-          0.55802558878494
+          0.6014606972003028,
+          0.3532995756446514,
+          0.04523972715504575
         ],
         "position": [
-          -15.631482845141702,
-          -71.61774015053157,
-          66.12374486755799
+          -15.617351433233072,
+          -71.92759078224141,
+          66.11466928586562
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -972,8 +987,8 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -14.035192824979912,
-          -80.73369724109912,
+          -14.03519282497991,
+          -80.73369724109915,
           71.73555111458407
         ],
         "course": [],
@@ -985,16 +1000,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 1450,
         "barycentric": [
-          0.643787304848401,
-          0.257910415577849,
-          0.09830227957375004
+          0.6437873048483969,
+          0.257910415577848,
+          0.09830227957375526
         ],
         "position": [
-          -14.035192824979912,
-          -80.73369724109912,
+          -14.03519282497991,
+          -80.73369724109915,
           71.73555111458407
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1055,7 +1070,7 @@
           -107.55381479996925,
           64.48476405359058
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1094,7 +1109,7 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -8.759283512433843,
+          -8.759283512433838,
           -69.13302414223602,
           102.95293652623062
         ],
@@ -1107,16 +1122,16 @@
         "structureId": "brain.thalamus.left",
         "triangleIndex": 433,
         "barycentric": [
-          0.21061108724712607,
-          0.2466605783402533,
-          0.5427283344126206
+          0.21061108724712363,
+          0.2466605783402553,
+          0.542728334412621
         ],
         "position": [
-          -8.759283512433843,
+          -8.759283512433838,
           -69.13302414223602,
           102.95293652623062
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1179,7 +1194,7 @@
           -81.71358726656597,
           94.12801041275515
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1240,7 +1255,7 @@
           -69.23273505646888,
           113.06169881292388
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1282,7 +1297,7 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -22.195420721085,
+          -22.195420721085004,
           -105.87301813433787,
           90.69157163913245
         ],
@@ -1295,16 +1310,16 @@
         "structureId": "brain.lateral-ventricle.left",
         "triangleIndex": 163,
         "barycentric": [
-          0.258512313092397,
-          0.7414876869076025,
-          5.623480049820997e-16
+          0.2585123130923937,
+          0.7414876869076064,
+          0.0
         ],
         "position": [
-          -22.195420721085,
+          -22.195420721085004,
           -105.87301813433787,
           90.69157163913245
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1363,7 +1378,7 @@
           -58.40781687777893,
           76.08106302626771
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1412,16 +1427,16 @@
         "structureId": "brain.hippocampus.left",
         "triangleIndex": 625,
         "barycentric": [
-          0.004524950995212884,
-          0.13464331602072246,
-          0.8608317329840647
+          0.004524950995211996,
+          0.13464331602072244,
+          0.8608317329840656
         ],
         "position": [
           -23.889610317028524,
           -68.7366249441634,
           75.01964086261336
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1482,7 +1497,7 @@
           -30.820979216792193,
           98.96741964994622
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1519,9 +1534,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -14.936854288832363,
-          -68.76968502036722,
-          110.72308158604973
+          -14.936854288832368,
+          -68.76968502036725,
+          110.72308158604976
         ],
         "course": [],
         "connects": "Caudate nucleus.l",
@@ -1532,16 +1547,16 @@
         "structureId": "brain.caudate-nucleus.left",
         "triangleIndex": 1274,
         "barycentric": [
-          0.4557931108367448,
-          0.4808507002416044,
-          0.06335618892165071
+          0.45579311083674173,
+          0.4808507002416081,
+          0.06335618892165022
         ],
         "position": [
-          -14.936854288832363,
-          -68.76968502036722,
-          110.72308158604973
+          -14.936854288832368,
+          -68.76968502036725,
+          110.72308158604976
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1578,9 +1593,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -2.65773389121125,
+          -2.65773389121126,
           -59.05131519462433,
-          104.15811981247928
+          104.15811981247927
         ],
         "course": [],
         "connects": "Fornix.l",
@@ -1591,16 +1606,16 @@
         "structureId": "brain.fornix.left",
         "triangleIndex": 1520,
         "barycentric": [
-          0.6094458616637315,
-          0.2090916827790906,
-          0.1814624555571779
+          0.6094458616637469,
+          0.20909168277906823,
+          0.18146245555718485
         ],
         "position": [
-          -2.65773389121125,
+          -2.65773389121126,
           -59.05131519462433,
-          104.15811981247928
+          104.15811981247927
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1639,8 +1654,8 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -4.113202236814209,
-          -61.44231401535338,
+          -4.113202236814201,
+          -61.442314015353396,
           104.2259194510145
         ],
         "course": [],
@@ -1650,18 +1665,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.choroid-plexus.left",
-        "triangleIndex": 1921,
+        "triangleIndex": 1922,
         "barycentric": [
-          0.5591602497054182,
-          5.1051097749035924e-15,
-          0.4408397502945766
+          0.5591602497054147,
+          0.44083975029456496,
+          2.0401190988593987e-14
         ],
         "position": [
-          -4.113202236814209,
-          -61.44231401535338,
+          -4.113202236814201,
+          -61.442314015353396,
           104.2259194510145
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1703,9 +1718,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          13.719738027132903,
-          -68.2808449209355,
-          78.4654176826907
+          13.719652599421785,
+          -66.79391169922609,
+          78.46543315121603
         ],
         "course": [],
         "connects": "Midbrain.r",
@@ -1714,18 +1729,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.midbrain.right",
-        "triangleIndex": 142,
+        "triangleIndex": 1842,
         "barycentric": [
-          0.706120559482292,
-          -2.8265119730537425e-14,
-          0.2938794405177362
+          0.0031986563244000297,
+          0.9902979436078434,
+          0.00650340006775657
         ],
         "position": [
-          13.719738027132903,
-          -68.2808449209355,
-          78.4654176826907
+          13.719652599421785,
+          -66.79391169922609,
+          78.46543315121603
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1765,9 +1780,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          16.517849745111768,
-          -56.18279224559899,
-          75.27193017370654
+          15.55428122166169,
+          -61.40831789213885,
+          76.22557192273534
         ],
         "course": [],
         "connects": "Base of peduncle.r",
@@ -1776,18 +1791,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.base-of-peduncle.right",
-        "triangleIndex": 1208,
+        "triangleIndex": 16507,
         "barycentric": [
-          0.14480602263527023,
-          0.624997844333784,
-          0.23019613303094574
+          0.0,
+          0.41125090657842517,
+          0.5887490934215748
         ],
         "position": [
-          16.517849745111768,
-          -56.18279224559899,
-          75.27193017370654
+          15.55428122166169,
+          -61.40831789213885,
+          76.22557192273534
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1828,9 +1843,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          5.622952212729549,
-          -77.76125107794957,
-          82.03773037685097
+          5.585004401092338,
+          -76.6756955789571,
+          81.74275313243166
         ],
         "course": [],
         "connects": "Superior colliculus.r",
@@ -1841,16 +1856,16 @@
         "structureId": "brain.superior-colliculus.right",
         "triangleIndex": 391,
         "barycentric": [
-          0.16753195492586465,
-          0.34690184945604297,
-          0.4855661956180924
+          0.16168529823297534,
+          0.3615499214981223,
+          0.4767647802689023
         ],
         "position": [
-          5.622952212729549,
-          -77.76125107794957,
-          82.03773037685097
+          5.585004401092338,
+          -76.6756955789571,
+          81.74275313243166
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1889,9 +1904,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          5.147354962587408,
-          -78.07343514941451,
-          74.35379675310234
+          5.081482223370123,
+          -76.5594414915937,
+          74.11006361767421
         ],
         "course": [],
         "connects": "Inferior colliculus.r",
@@ -1902,16 +1917,16 @@
         "structureId": "brain.inferior-colliculus.right",
         "triangleIndex": 124,
         "barycentric": [
-          0.25458934665304106,
-          0.3859756197752539,
-          0.359435033571705
+          0.2685372829472208,
+          0.3697853883578099,
+          0.36167732869496927
         ],
         "position": [
-          5.147354962587408,
-          -78.07343514941451,
-          74.35379675310234
+          5.081482223370123,
+          -76.5594414915937,
+          74.11006361767421
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1953,7 +1968,7 @@
         "status": "regional",
         "point": [
           18.48650360107422,
-          -64.32559204101562,
+          -69.93406677246094,
           57.393062591552734
         ],
         "course": [],
@@ -1963,7 +1978,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.right",
-        "triangleIndex": 1010,
+        "triangleIndex": 13968,
         "barycentric": [
           0.0,
           1.0,
@@ -1971,10 +1986,10 @@
         ],
         "position": [
           18.48650360107422,
-          -64.32559204101562,
+          -69.93406677246094,
           57.393062591552734
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2013,9 +2028,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          4.514850169007271,
-          -58.12832931028674,
-          69.98437984754091
+          4.5149200436343655,
+          -64.80973375296628,
+          69.97494887146254
         ],
         "course": [],
         "connects": "Pons.r",
@@ -2024,18 +2039,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.right",
-        "triangleIndex": 3892,
+        "triangleIndex": 51952,
         "barycentric": [
-          0.4426006569491034,
-          0.18029374803460183,
-          0.37710559501629476
+          0.5201176186956897,
+          0.17817667266039453,
+          0.30170570864391577
         ],
         "position": [
-          4.514850169007271,
-          -58.12832931028674,
-          69.98437984754091
+          4.5149200436343655,
+          -64.80973375296628,
+          69.97494887146254
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2072,9 +2087,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          6.4849371592413565,
-          -66.18284541276812,
-          45.01560741467383
+          6.416579862228897,
+          -76.98821680986447,
+          45.125907863007676
         ],
         "course": [],
         "connects": "Pons.r",
@@ -2083,18 +2098,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.right",
-        "triangleIndex": 6623,
+        "triangleIndex": 79553,
         "barycentric": [
-          0.8917063171980171,
-          0.0722745528274792,
-          0.036019129974503794
+          0.04567652159977331,
+          0.11436798335395292,
+          0.8399554950462738
         ],
         "position": [
-          6.4849371592413565,
-          -66.18284541276812,
-          45.01560741467383
+          6.416579862228897,
+          -76.98821680986447,
+          45.125907863007676
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2132,9 +2147,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          10.917190721997686,
-          -73.0168667767083,
-          36.441868621694255
+          10.84435260921012,
+          -75.27541752858725,
+          36.570660755439555
         ],
         "course": [],
         "connects": "Medulla oblongata.r",
@@ -2143,18 +2158,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.medulla-oblongata.right",
-        "triangleIndex": 812,
+        "triangleIndex": 7214,
         "barycentric": [
-          0.5384928109867932,
-          0.3535820709026865,
-          0.10792511811052029
+          0.09560200590412804,
+          0.09443475889278068,
+          0.8099632352030913
         ],
         "position": [
-          10.917190721997686,
-          -73.0168667767083,
-          36.441868621694255
+          10.84435260921012,
+          -75.27541752858725,
+          36.570660755439555
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2190,9 +2205,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          6.340767255735398,
-          -79.72925602796639,
-          63.65578846989182
+          6.213627833748726,
+          -80.45979636489378,
+          63.43617874523741
         ],
         "course": [],
         "connects": "Superior cerebellar peduncle.r",
@@ -2201,18 +2216,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.superior-cerebellar-peduncle.right",
-        "triangleIndex": 7266,
+        "triangleIndex": 49068,
         "barycentric": [
-          -3.3306690738754696e-16,
-          0.34956770171164475,
-          0.6504322982883556
+          0.11740954581368439,
+          0.7926436945376808,
+          0.08994675964863481
         ],
         "position": [
-          6.340767255735398,
-          -79.72925602796639,
-          63.65578846989182
+          6.213627833748726,
+          -80.45979636489378,
+          63.43617874523741
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2249,9 +2264,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          22.118995668439187,
-          -77.54814958972283,
-          50.77735605401688
+          21.792807702198907,
+          -78.07808287227788,
+          50.83213280056465
         ],
         "course": [],
         "connects": "Flocculus.r",
@@ -2260,18 +2275,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.flocculus.right",
-        "triangleIndex": 2581,
+        "triangleIndex": 17950,
         "barycentric": [
-          0.5578894485384586,
-          0.19511985698353243,
-          0.24699069447800903
+          0.29891678036828045,
+          0.6153301299393764,
+          0.08575308969234313
         ],
         "position": [
-          22.118995668439187,
-          -77.54814958972283,
-          50.77735605401688
+          21.792807702198907,
+          -78.07808287227788,
+          50.83213280056465
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2309,9 +2324,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          2.402746650933663,
-          -97.3796847405041,
-          38.8396217230899
+          2.3326208497724776,
+          -97.4851727596298,
+          39.45290280434914
         ],
         "course": [],
         "connects": "Tonsil of cerebellum.r",
@@ -2320,18 +2335,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.right",
-        "triangleIndex": 39,
+        "triangleIndex": 555,
         "barycentric": [
-          0.1907269558569272,
-          0.6142510886897168,
-          0.19502195545335602
+          0.33228943315343107,
+          0.3751179265207448,
+          0.2925926403258241
         ],
         "position": [
-          2.402746650933663,
-          -97.3796847405041,
-          38.8396217230899
+          2.3326208497724776,
+          -97.4851727596298,
+          39.45290280434914
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2368,9 +2383,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          9.936931764348172,
-          -100.81358483143194,
-          38.15229141498598
+          9.562969650831347,
+          -100.64262705090994,
+          38.783633458950085
         ],
         "course": [],
         "connects": "Tonsil of cerebellum.r",
@@ -2379,18 +2394,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.right",
-        "triangleIndex": 971,
+        "triangleIndex": 13245,
         "barycentric": [
-          0.6221920535096348,
-          0.20634646039603158,
-          0.17146148609433362
+          0.22624047666437308,
+          0.209689334286435,
+          0.5640701890491919
         ],
         "position": [
-          9.936931764348172,
-          -100.81358483143194,
-          38.15229141498598
+          9.562969650831347,
+          -100.64262705090994,
+          38.783633458950085
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2431,9 +2446,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          26.86992944328218,
-          -115.86243842546521,
-          64.02497724066309
+          25.81586645811062,
+          -115.38131618681504,
+          63.62369406173618
         ],
         "course": [],
         "connects": "Superior semilunar lobule.r",
@@ -2442,18 +2457,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.superior-semilunar-lobule.right",
-        "triangleIndex": 1379,
+        "triangleIndex": 26263,
         "barycentric": [
-          0.5668737718220368,
-          -3.7877053972058935e-15,
-          0.433126228177967
+          0.033103556035187665,
+          0.4609716741531099,
+          0.5059247698117024
         ],
         "position": [
-          26.86992944328218,
-          -115.86243842546521,
-          64.02497724066309
+          25.81586645811062,
+          -115.38131618681504,
+          63.62369406173618
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2491,9 +2506,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          27.47184294572395,
-          -130.4193567230541,
-          45.689654810659924
+          26.39396809141417,
+          -129.60640173600177,
+          46.02260986169313
         ],
         "course": [],
         "connects": "Inferior semilunar lobule.r",
@@ -2502,18 +2517,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.inferior-semilunar-lobule.right",
-        "triangleIndex": 4313,
+        "triangleIndex": 74657,
         "barycentric": [
-          0.09305707099227725,
-          0.7080574118132442,
-          0.19888551719447853
+          0.16389104412549782,
+          0.5062051053249532,
+          0.32990385054954896
         ],
         "position": [
-          27.47184294572395,
-          -130.4193567230541,
-          45.689654810659924
+          26.39396809141417,
+          -129.60640173600177,
+          46.02260986169313
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2551,9 +2566,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          16.913075765864185,
-          -71.61461492114603,
-          66.12937077015107
+          16.90049509015546,
+          -71.92763861470789,
+          66.1230517874831
         ],
         "course": [],
         "connects": "Wing of central lobule.r",
@@ -2562,18 +2577,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.wing-of-central-lobule.right",
-        "triangleIndex": 1682,
+        "triangleIndex": 16903,
         "barycentric": [
-          0.5580302928865704,
-          0.18976561449659723,
-          0.2522040926168324
+          0.6998245066410895,
+          0.13528959708701382,
+          0.1648858962718967
         ],
         "position": [
-          16.913075765864185,
-          -71.61461492114603,
-          66.12937077015107
+          16.90049509015546,
+          -71.92763861470789,
+          66.1230517874831
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2614,9 +2629,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          15.31655964452881,
+          15.316559644528812,
           -80.73086124232476,
-          71.74062917237504
+          71.74062917237505
         ],
         "course": [],
         "connects": "Tentorium cerebelli.r",
@@ -2627,16 +2642,16 @@
         "structureId": "brain.tentorium-cerebelli.right",
         "triangleIndex": 1450,
         "barycentric": [
-          0.0983122574909544,
-          0.25787762349706134,
-          0.6438101190119843
+          0.09831225749095751,
+          0.25787762349706445,
+          0.643810119011978
         ],
         "position": [
-          15.31655964452881,
+          15.316559644528812,
           -80.73086124232476,
-          71.74062917237504
+          71.74062917237505
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2688,16 +2703,16 @@
         "structureId": "brain.tentorium-cerebelli.right",
         "triangleIndex": 243,
         "barycentric": [
-          0.3732170684135688,
-          0.383333864428806,
-          0.2434490671576252
+          0.37321706841357444,
+          0.38333386442881123,
+          0.24344906715761433
         ],
         "position": [
           45.04391301917026,
           -107.54530272503955,
           64.5000933292609
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2736,7 +2751,7 @@
       "landmark": {
         "status": "regional",
         "point": [
-          10.027676671144384,
+          10.027676671144388,
           -69.13123085170282,
           102.95620058794681
         ],
@@ -2749,16 +2764,16 @@
         "structureId": "brain.thalamus.right",
         "triangleIndex": 433,
         "barycentric": [
-          0.5427210052878733,
-          0.2466241396040644,
-          0.2106548551080624
+          0.5427210052878729,
+          0.2466241396040627,
+          0.2106548551080644
         ],
         "position": [
-          10.027676671144384,
+          10.027676671144388,
           -69.13123085170282,
           102.95620058794681
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2812,16 +2827,16 @@
         "structureId": "brain.thalamus.right",
         "triangleIndex": 367,
         "barycentric": [
-          0.1780837368910519,
-          0.7328208991296981,
-          0.08909536397925007
+          0.1780837368910509,
+          0.7328208991296985,
+          0.08909536397925062
         ],
         "position": [
           12.632768320071225,
           -81.71129857475643,
           94.1321559587249
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2860,9 +2875,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          8.705675698995051,
+          8.705675698995057,
           -69.23120044061656,
-          113.06451286467282
+          113.0645128646728
         ],
         "course": [],
         "connects": "Lateral ventricle.r",
@@ -2873,16 +2888,16 @@
         "structureId": "brain.lateral-ventricle.right",
         "triangleIndex": 1587,
         "barycentric": [
-          0.735991003588925,
-          0.09584994921065282,
-          0.1681590472004222
+          0.7359910035889254,
+          0.09584994921065532,
+          0.16815904720041924
         ],
         "position": [
-          8.705675698995051,
+          8.705675698995057,
           -69.23120044061656,
-          113.06451286467282
+          113.0645128646728
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2924,9 +2939,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          23.475007016297102,
-          -105.86863108552654,
-          90.69943616620668
+          23.475007016297106,
+          -105.86863108552656,
+          90.69943616620671
         ],
         "course": [],
         "connects": "Lateral ventricle.r",
@@ -2937,16 +2952,16 @@
         "structureId": "brain.lateral-ventricle.right",
         "triangleIndex": 180,
         "barycentric": [
-          0.2585075537897491,
-          0.7414924462102517,
-          -7.83824990589877e-16
+          0.2585075537897482,
+          0.7414924462102509,
+          1.02929331504507e-15
         ],
         "position": [
-          23.475007016297102,
-          -105.86863108552654,
-          90.69943616620668
+          23.475007016297106,
+          -105.86863108552656,
+          90.69943616620671
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3005,7 +3020,7 @@
           -58.401894622798196,
           76.09172167104131
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3041,7 +3056,7 @@
       "landmark": {
         "status": "regional",
         "point": [
-          25.167508316305163,
+          25.16750831630516,
           -68.73193212841893,
           75.0280634835835
         ],
@@ -3054,16 +3069,16 @@
         "structureId": "brain.hippocampus.right",
         "triangleIndex": 625,
         "barycentric": [
-          0.8608559831551947,
-          0.13464267520988918,
-          0.004501341634916103
+          0.8608559831551956,
+          0.13464267520988912,
+          0.004501341634915173
         ],
         "position": [
-          25.167508316305163,
+          25.16750831630516,
           -68.73193212841893,
           75.0280634835835
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3124,7 +3139,7 @@
           -30.81952318679529,
           98.9699679763732
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3174,16 +3189,16 @@
         "structureId": "brain.caudate-nucleus.right",
         "triangleIndex": 1274,
         "barycentric": [
-          0.06331856173755729,
-          0.4808241191877803,
-          0.4558573190746625
+          0.06331856173756018,
+          0.4808241191877852,
+          0.4558573190746546
         ],
         "position": [
           16.202449228172735,
           -68.76669817993138,
           110.72840886148417
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3220,8 +3235,8 @@
       "landmark": {
         "status": "regional",
         "point": [
-          3.9237077796902384,
-          -59.050689094052245,
+          3.923707779690229,
+          -59.05068909405225,
           104.15920275840116
         ],
         "course": [],
@@ -3233,16 +3248,16 @@
         "structureId": "brain.fornix.right",
         "triangleIndex": 1520,
         "barycentric": [
-          0.1814610904535079,
-          0.20903096680040517,
-          0.609507942746087
+          0.18146109045350056,
+          0.20903096680042724,
+          0.6095079427460722
         ],
         "position": [
-          3.9237077796902384,
-          -59.050689094052245,
+          3.923707779690229,
+          -59.05068909405225,
           104.15920275840116
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3281,7 +3296,7 @@
       "landmark": {
         "status": "regional",
         "point": [
-          5.3796965932925875,
+          5.379696593292577,
           -61.441411318473065,
           104.22755454557428
         ],
@@ -3294,16 +3309,16 @@
         "structureId": "brain.choroid-plexus.right",
         "triangleIndex": 1922,
         "barycentric": [
-          -1.3322676295501878e-15,
-          0.4408335274126753,
-          0.559166472587326
+          3.219646771412954e-14,
+          0.44083352741265946,
+          0.5591664725873083
         ],
         "position": [
-          5.3796965932925875,
+          5.379696593292577,
           -61.441411318473065,
           104.22755454557428
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3345,7 +3360,7 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.28263435101119516,
+          0.2826343510111961,
           -43.39176499697333,
           105.7032231683854
         ],
@@ -3358,16 +3373,16 @@
         "structureId": "brain.septum-pellucidum",
         "triangleIndex": 1061,
         "barycentric": [
-          0.4397593592183991,
-          0.5602406407816071,
-          -6.168203043846325e-15
+          0.4397593592183964,
+          0.5602406407816036,
+          0.0
         ],
         "position": [
-          0.28263435101119516,
+          0.2826343510111961,
           -43.39176499697333,
           105.7032231683854
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3407,9 +3422,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.7005654679009924,
-          -46.77911857053663,
-          74.23853851012835
+          0.7005654679009944,
+          -46.779118570536625,
+          74.23853851012834
         ],
         "course": [],
         "connects": "Hypothalamus",
@@ -3420,16 +3435,16 @@
         "structureId": "brain.hypothalamus",
         "triangleIndex": 721,
         "barycentric": [
-          0.3109919272656683,
-          0.5975692996465815,
-          0.09143877308775022
+          0.3109919272656625,
+          0.5975692996465843,
+          0.0914387730877532
         ],
         "position": [
-          0.7005654679009924,
-          -46.77911857053663,
-          74.23853851012835
+          0.7005654679009944,
+          -46.779118570536625,
+          74.23853851012834
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3471,9 +3486,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -1.6165639520976072,
-          -54.32274594700265,
-          58.94123233454864
+          -1.6101395789744495,
+          -65.39853252614648,
+          58.981583467091525
         ],
         "course": [],
         "connects": "Pons.l",
@@ -3482,18 +3497,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pons.left",
-        "triangleIndex": 8327,
+        "triangleIndex": 88169,
         "barycentric": [
-          0.6177325396442627,
-          1.5581375169773143e-15,
-          0.3822674603557358
+          0.5998445972665285,
+          0.11684738976115797,
+          0.2833080129723136
         ],
         "position": [
-          -1.6165639520976072,
-          -54.32274594700265,
-          58.94123233454864
+          -1.6101395789744495,
+          -65.39853252614648,
+          58.981583467091525
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3533,9 +3548,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -1.1295781220935541,
-          -67.95792138682137,
-          34.73218305053331
+          -1.1261043754493845,
+          -73.19645378272304,
+          34.78970053979471
         ],
         "course": [],
         "connects": "Medulla oblongata.l",
@@ -3544,18 +3559,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.medulla-oblongata.left",
-        "triangleIndex": 4477,
+        "triangleIndex": 53900,
         "barycentric": [
-          0.5246478675967051,
-          0.4655346762819298,
-          0.009817456121365038
+          0.021565534540413323,
+          0.6756113541861007,
+          0.30282311127348593
         ],
         "position": [
-          -1.1295781220935541,
-          -67.95792138682137,
-          34.73218305053331
+          -1.1261043754493845,
+          -73.19645378272304,
+          34.78970053979471
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3593,9 +3608,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.6175843375680256,
-          -83.05848826141631,
-          64.770166169266
+          0.6165572571065157,
+          -82.77161996972274,
+          64.45470607212661
         ],
         "course": [],
         "connects": "Lingula of cerebellum",
@@ -3604,18 +3619,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.lingula-of-cerebellum",
-        "triangleIndex": 529,
+        "triangleIndex": 7584,
         "barycentric": [
-          0.07699524820593495,
-          0.3027342223479038,
-          0.6202705294461612
+          0.3175849591752262,
+          0.03148809564514254,
+          0.6509269451796312
         ],
         "position": [
-          0.6175843375680256,
-          -83.05848826141631,
-          64.770166169266
+          0.6165572571065157,
+          -82.77161996972274,
+          64.45470607212661
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3653,9 +3668,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.5751593344671424,
-          -93.76121143651204,
-          80.27623703647136
+          0.5771899101732637,
+          -92.6708496802153,
+          79.22681021409674
         ],
         "course": [],
         "connects": "Culmen",
@@ -3664,18 +3679,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.culmen",
-        "triangleIndex": 2005,
+        "triangleIndex": 31447,
         "barycentric": [
-          0.5797570788539528,
-          0.35724532895289285,
-          0.06299759219315439
+          0.11214455781074417,
+          0.10396515698219284,
+          0.7838902852070629
         ],
         "position": [
-          0.5751593344671424,
-          -93.76121143651204,
-          80.27623703647136
+          0.5771899101732637,
+          -92.6708496802153,
+          79.22681021409674
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3714,9 +3729,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.5571095283185739,
-          -116.50517385847785,
-          44.972265669776405
+          0.5629658844545611,
+          -115.86391026957189,
+          45.33277303368212
         ],
         "course": [],
         "connects": "Pyramis of vermis",
@@ -3725,18 +3740,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pyramis-of-vermis",
-        "triangleIndex": 639,
+        "triangleIndex": 11213,
         "barycentric": [
-          0.22243688720160038,
-          0.704903021768255,
-          0.07266009103014458
+          0.1380524506250409,
+          0.6476647471763135,
+          0.2142828021986456
         ],
         "position": [
-          0.5571095283185739,
-          -116.50517385847785,
-          44.972265669776405
+          0.5629658844545611,
+          -115.86391026957189,
+          45.33277303368212
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3775,9 +3790,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.7535452583669987,
-          -102.98389944032506,
-          38.1103445200128
+          0.7395396019884813,
+          -102.01204546323008,
+          38.7453829286741
         ],
         "course": [],
         "connects": "Uvula of vermis",
@@ -3786,18 +3801,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.uvula-of-vermis",
-        "triangleIndex": 313,
+        "triangleIndex": 4830,
         "barycentric": [
-          0.490189721952993,
-          0.162900667327431,
-          0.346909610719576
+          0.2758377162623361,
+          0.07216084193946087,
+          0.6520014417982031
         ],
         "position": [
-          0.7535452583669987,
-          -102.98389944032506,
-          38.1103445200128
+          0.7395396019884813,
+          -102.01204546323008,
+          38.7453829286741
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3837,9 +3852,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.7298276136560891,
-          -91.77109230364117,
-          57.00742936690279
+          0.7300578005225103,
+          -91.89138709352095,
+          56.886949528142395
         ],
         "course": [],
         "connects": "Fourth ventricle",
@@ -3848,18 +3863,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.fourth-ventricle",
-        "triangleIndex": 547,
+        "triangleIndex": 7098,
         "barycentric": [
-          -1.7208456881689926e-15,
-          0.9181898473720991,
-          0.08181015262790264
+          6.964820912835901e-06,
+          0.6013526263983047,
+          0.3986404087807825
         ],
         "position": [
-          0.7298276136560891,
-          -91.77109230364117,
-          57.00742936690279
+          0.7300578005225103,
+          -91.89138709352095,
+          56.886949528142395
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3895,9 +3910,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          1.600529088097926,
-          -75.978538327265,
-          53.94123284456373
+          1.5879310833599412,
+          -76.92833724808497,
+          53.94152856482973
         ],
         "course": [],
         "connects": "Fourth ventricle",
@@ -3906,18 +3921,18 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.fourth-ventricle",
-        "triangleIndex": 289,
+        "triangleIndex": 3964,
         "barycentric": [
-          0.6285255744854382,
-          0.03278128544102564,
-          0.3386931400735361
+          0.24537740304009992,
+          0.4500406911910103,
+          0.30458190576888977
         ],
         "position": [
-          1.600529088097926,
-          -75.978538327265,
-          53.94123284456373
+          1.5879310833599412,
+          -76.92833724808497,
+          53.94152856482973
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3955,9 +3970,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          1.010687904004225,
+          1.010687904004224,
           -98.50526370587494,
-          102.09423344491633
+          102.09423344491634
         ],
         "course": [],
         "connects": "Corpus callosum",
@@ -3968,16 +3983,16 @@
         "structureId": "brain.corpus-callosum",
         "triangleIndex": 3569,
         "barycentric": [
-          2.7755575615628914e-15,
+          3.3029134982598407e-15,
           0.7621072465382642,
-          0.237892753461733
+          0.23789275346173247
         ],
         "position": [
-          1.010687904004225,
+          1.010687904004224,
           -98.50526370587494,
-          102.09423344491633
+          102.09423344491634
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4018,9 +4033,9 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.6796374310231158,
-          -22.28397082006682,
-          105.36487729818839
+          0.6796374310231166,
+          -22.28397082006683,
+          105.36487729818842
         ],
         "course": [],
         "connects": "Corpus callosum",
@@ -4031,16 +4046,16 @@
         "structureId": "brain.corpus-callosum",
         "triangleIndex": 2585,
         "barycentric": [
-          0.713585405584683,
-          0.2648969642587888,
-          0.02151763015652821
+          0.7135854055846691,
+          0.26489696425880244,
+          0.021517630156528512
         ],
         "position": [
-          0.6796374310231158,
-          -22.28397082006682,
-          105.36487729818839
+          0.6796374310231166,
+          -22.28397082006683,
+          105.36487729818842
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4098,7 +4113,7 @@
           -63.93235101693864,
           99.10134094811504
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4134,8 +4149,8 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.5990478225383304,
-          -59.32330003316546,
+          0.5990478225383338,
+          -59.32330003316547,
           117.65662060198196
         ],
         "course": [],
@@ -4147,16 +4162,16 @@
         "structureId": "brain.falx-cerebri",
         "triangleIndex": 13231,
         "barycentric": [
-          -1.4432899320127035e-15,
-          0.6607065013166301,
-          0.33929349868337133
+          6.161737786669619e-15,
+          0.6607065013166256,
+          0.3392934986833683
         ],
         "position": [
-          0.5990478225383304,
-          -59.32330003316546,
+          0.5990478225383338,
+          -59.32330003316547,
           117.65662060198196
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4295,7 +4310,7 @@
             74.47883983998557
           ],
           [
-            0.6430754115499104,
+            0.6430754115499103,
             -115.7033746654815,
             72.73058977449354
           ],
@@ -4305,14 +4320,14 @@
             71.05754759904276
           ],
           [
-            0.6026976456341872,
+            0.602697645634186,
             -120.15912351697543,
-            69.31095174203128
+            69.31095174203126
           ],
           [
-            0.57945635538888,
-            -122.3510213260671,
-            67.49839544141076
+            0.5794563553888787,
+            -122.35102132606707,
+            67.49839544141074
           ],
           [
             0.5968992932352446,
@@ -4320,37 +4335,37 @@
             65.66411760239552
           ],
           [
-            0.480882147042184,
+            0.4808821470421824,
             -127.0884334191298,
-            64.2760145241491
+            64.27601452414909
           ],
           [
-            0.40566153559372303,
+            0.40566153559372337,
             -129.36944621210657,
-            63.156779715735645
+            63.15677971573563
           ],
           [
-            0.5528243243427844,
+            0.5528243243427843,
             -131.71339156104182,
             62.061112440286536
           ],
           [
-            0.4627653726727599,
+            0.4627653726727609,
             -134.04974449611655,
             61.728772741101075
           ],
           [
-            0.5081781436567642,
-            -136.29233623540964,
+            0.5081781436567653,
+            -136.2923362354096,
             61.55456939390532
           ],
           [
-            0.5762141374129062,
+            0.576214137412906,
             -138.51886249118274,
             61.012653544117505
           ],
           [
-            0.6464742224792204,
+            0.6464742224792192,
             -140.92180320491528,
             59.846154982873095
           ]
@@ -4485,25 +4500,25 @@
       "landmark": {
         "status": "regional",
         "point": [
-          -3.237185731637791,
-          -58.129072005002776,
-          69.98303510185626
+          -3.237204310232551,
+          -64.73348527819321,
+          69.97916774546702
         ],
         "course": [
           [
-            -3.237185731637791,
-            -58.129072005002776,
-            69.98303510185626
+            -3.237204310232551,
+            -64.73348527819321,
+            69.97916774546702
           ],
           [
-            -1.6165639520976072,
-            -54.32274594700265,
-            58.94123233454864
+            -1.6101395789744495,
+            -65.39853252614648,
+            58.981583467091525
           ],
           [
-            -1.1295781220935541,
-            -67.95792138682137,
-            34.73218305053331
+            -1.1261043754493845,
+            -73.19645378272304,
+            34.78970053979471
           ]
         ],
         "connects": "brain.landmark.pontomesencephalic.left, brain.landmark.anterior-pons, brain.landmark.anterior-medulla",
@@ -4555,25 +4570,25 @@
       "landmark": {
         "status": "regional",
         "point": [
-          0.5751593344671424,
-          -93.76121143651204,
-          80.27623703647136
+          0.5771899101732637,
+          -92.6708496802153,
+          79.22681021409674
         ],
         "course": [
           [
-            0.5751593344671424,
-            -93.76121143651204,
-            80.27623703647136
+            0.5771899101732637,
+            -92.6708496802153,
+            79.22681021409674
           ],
           [
-            0.5571095283185739,
-            -116.50517385847785,
-            44.972265669776405
+            0.5629658844545611,
+            -115.86391026957189,
+            45.33277303368212
           ],
           [
-            0.7535452583669987,
-            -102.98389944032506,
-            38.1103445200128
+            0.7395396019884813,
+            -102.01204546323008,
+            38.7453829286741
           ]
         ],
         "connects": "brain.landmark.superior-vermis, brain.landmark.inferior-vermis, brain.landmark.uvula",
@@ -4635,7 +4650,7 @@
           -85.92448007773916,
           78.99502489473957
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4656,32 +4671,32 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 4474,
           "barycentric": [
-            0.23061426226111478,
-            0.7613364804054609,
-            0.008049257333424358
+            0.23061426226111978,
+            0.7613364804054487,
+            0.008049257333431554
           ],
           "position": [
-            1.2757217931883604,
+            1.2757217931883602,
             -85.92630306148425,
             78.99058710929205
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 11166,
           "barycentric": [
-            0.24090793583486547,
-            0.08514646676297453,
-            0.67394559740216
+            0.24090793583487413,
+            0.08514646676296535,
+            0.6739455974021605
           ],
           "position": [
-            0.029851902708844916,
+            0.029851902708838793,
             -85.95051522714566,
             78.93969882017396
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4718,7 +4733,7 @@
           -88.24341560320121,
           79.93780026327279
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4748,23 +4763,23 @@
             -88.26118767221423,
             79.94398395607614
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 11452,
           "barycentric": [
-            0.24091969379585232,
-            0.11287518782727703,
-            0.6462051183768707
+            0.24091969379585854,
+            0.11287518782727042,
+            0.646205118376871
           ],
           "position": [
-            -0.017575749802255018,
+            -0.01757574980225971,
             -88.20518632671725,
             80.00858555837131
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4801,7 +4816,7 @@
           -90.52631007904594,
           80.90171662211498
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4831,23 +4846,23 @@
             -90.56351962369803,
             80.91430924441741
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 4661,
           "barycentric": [
-            0.3473755740533982,
-            0.36159628128077337,
-            0.29102814466582844
+            0.34737557405341823,
+            0.36159628128074434,
+            0.2910281446658375
           ],
           "position": [
-            0.02997034772493035,
-            -90.5074275795939,
+            0.029970347724924074,
+            -90.50742757959392,
             80.92666583214334
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4884,7 +4899,7 @@
           -92.81861525289081,
           81.64032195388438
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4914,23 +4929,23 @@
             -92.85632331808877,
             81.64907748177227
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 404,
           "barycentric": [
-            0.19727249375835215,
-            0.6050408436999336,
-            0.19768666254171424
+            0.19727249375833528,
+            0.6050408436999605,
+            0.19768666254170425
           ],
           "position": [
-            -0.19843362610350845,
+            -0.19843362610351045,
             -92.8727625413425,
             81.57673236763061
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4967,7 +4982,7 @@
           -95.10647625346995,
           82.14411124133801
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4997,23 +5012,23 @@
             -95.13573556260471,
             82.14521626971465
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 4797,
           "barycentric": [
-            0.1793758716442645,
-            0.2553520403789959,
-            0.5652720879767396
+            0.17937587164425517,
+            0.25535204037902703,
+            0.5652720879767178
           ],
           "position": [
-            0.3435634691838607,
+            0.34356346918385583,
             -95.02582459712897,
-            82.23924557431233
+            82.23924557431232
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5050,7 +5065,7 @@
           -97.394001189504,
           82.11382429981118
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5080,7 +5095,7 @@
             -97.41433165132713,
             82.11141955209982
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5096,7 +5111,7 @@
             -97.39342407472328,
             82.12080704852374
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5133,7 +5148,7 @@
           -99.6805157608582,
           81.81960694558155
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5163,23 +5178,23 @@
             -99.6897904133641,
             81.80869548851439
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 11087,
           "barycentric": [
-            0.5838451233744635,
-            0.10063625588457037,
-            0.3155186207409662
+            0.5838451233745182,
+            0.10063625588456761,
+            0.3155186207409142
           ],
           "position": [
-            0.37528275182490656,
+            0.37528275182491644,
             -99.68384267684368,
             81.85380265618471
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5216,7 +5231,7 @@
           -101.96802619386827,
           81.16392996469595
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5246,7 +5261,7 @@
             -101.9682253633984,
             81.14664324312487
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5254,15 +5269,15 @@
           "triangleIndex": 3948,
           "barycentric": [
             0.37996073651362233,
-            0.5114326762642222,
-            0.10860658722215549
+            0.5114326762641748,
+            0.1086065872222029
           ],
           "position": [
-            0.6361630492575481,
+            0.6361630492575544,
             -101.93570772368568,
             81.02192765663985
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5290,16 +5305,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 4464,
         "barycentric": [
-          0.012322355473170829,
+          0.012322355473170968,
           0.912940299439392,
-          0.07473734508743714
+          0.074737345087437
         ],
         "position": [
           0.5235107281292987,
           -104.25685087196827,
           80.29269056867369
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5329,23 +5344,23 @@
             -104.25064895339584,
             80.27070774530237
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 3945,
           "barycentric": [
-            0.5583914989595098,
-            0.11835441152189646,
-            0.32325408951859386
+            0.5583914989594203,
+            0.11835441152189624,
+            0.3232540895186835
           ],
           "position": [
-            0.5407912085297556,
-            -104.25370754619908,
+            0.540791208529766,
+            -104.2537075461991,
             80.2816231182854
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5373,16 +5388,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 4468,
         "barycentric": [
-          0.013093284446992023,
+          0.013093284446992332,
           0.9812427109660631,
-          0.005664004586944896
+          0.005664004586944588
         ],
         "position": [
           0.5514027971382658,
           -106.54678733567486,
           79.35182703602803
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5403,16 +5418,16 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 4469,
           "barycentric": [
-            0.9687121040120029,
-            0.011691717901415712,
-            0.019596178086581366
+            0.9687121040120237,
+            0.01169171790139355,
+            0.01959617808658272
           ],
           "position": [
-            0.730450043162206,
-            -106.54128355240375,
+            0.7304500431622077,
+            -106.54128355240377,
             79.33538940818731
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5420,15 +5435,15 @@
           "triangleIndex": 4076,
           "barycentric": [
             0.4200321207353839,
-            0.43569845192390433,
-            0.14426942734071183
+            0.4356984519239083,
+            0.14426942734070783
           ],
           "position": [
-            0.5823025596975498,
+            0.5823025596975504,
             -106.53727642292127,
             79.33498333732508
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5456,16 +5471,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 4468,
         "barycentric": [
-          0.008649368907653998,
+          0.00864936890765411,
           0.38255933320844154,
-          0.6087912978839044
+          0.6087912978839043
         ],
         "position": [
           0.5825578469563446,
           -108.84062820321493,
           78.00820540177666
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5486,32 +5501,32 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 4468,
           "barycentric": [
-            0.5924367430907351,
-            0.38192306464960496,
-            0.025640192259659855
+            0.5924367430907238,
+            0.3819230646496031,
+            0.0256401922596732
           ],
           "position": [
-            0.6999564123923683,
-            -108.83381183569317,
+            0.6999564123923666,
+            -108.83381183569318,
             77.9939252942459
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 2910,
           "barycentric": [
-            0.6266909699702793,
-            0.2777482547595941,
-            0.09556077527012663
+            0.6266909699702718,
+            0.277748254759602,
+            0.09556077527012624
           ],
           "position": [
-            0.6444243232733153,
-            -108.80861165808756,
-            77.96437943347011
+            0.6444243232733166,
+            -108.80861165808757,
+            77.96437943347013
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5539,8 +5554,8 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 4466,
         "barycentric": [
-          0.004077833671744413,
-          0.5963141522272136,
+          0.004077833671744524,
+          0.5963141522272135,
           0.39960801410104196
         ],
         "position": [
@@ -5548,7 +5563,7 @@
           -111.13389440096284,
           76.42937440976111
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5578,23 +5593,23 @@
             -111.12944864928119,
             76.42338203369044
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 439,
           "barycentric": [
-            0.31081965645417226,
-            0.4637965966101376,
-            0.2253837469356902
+            0.3108196564541694,
+            0.46379659661014616,
+            0.22538374693568441
           ],
           "position": [
-            0.7225365085608922,
+            0.7225365085608931,
             -111.08003687156715,
             76.3621269488419
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5631,7 +5646,7 @@
           -113.428126228833,
           74.47883983998557
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5652,32 +5667,32 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 4424,
           "barycentric": [
-            0.02883367687788887,
-            0.9706937777729434,
-            0.00047254534916772175
+            0.028833676877894485,
+            0.9706937777729474,
+            0.0004725453491581062
           ],
           "position": [
-            0.6455356299638455,
+            0.6455356299638462,
             -113.42794861535444,
             74.47860433054412
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 572,
           "barycentric": [
-            0.6133910254942603,
-            0.38121679162101635,
-            0.005392182884723466
+            0.6133910254942433,
+            0.38121679162103234,
+            0.005392182884724386
           ],
           "position": [
-            0.7512000100532843,
+            0.7512000100532842,
             -113.42830014769697,
             74.47864075806734
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5705,16 +5720,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2075,
         "barycentric": [
-          0.2530023460646743,
-          0.7465854141929614,
-          0.00041223974236423834
+          0.2530023460646784,
+          0.7465854141929573,
+          0.00041223974236428686
         ],
         "position": [
-          0.6430754115499104,
+          0.6430754115499103,
           -115.7033746654815,
           72.73058977449354
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5722,7 +5737,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.6430754115499104,
+          0.6430754115499103,
           -115.7033746654815,
           72.73058977449354
         ],
@@ -5744,23 +5759,23 @@
             -115.70334793141996,
             72.73055361917389
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 11897,
           "barycentric": [
-            0.5288332172764068,
-            0.3139680342681002,
-            0.15719874845549314
+            0.5288332172764212,
+            0.31396803426809944,
+            0.15719874845547938
           ],
           "position": [
-            0.6713410324430309,
+            0.6713410324430247,
             -115.72609945295419,
-            72.75782734930549
+            72.75782734930547
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5797,7 +5812,7 @@
           -117.94107231017595,
           71.05754759904276
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5818,32 +5833,32 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 2071,
           "barycentric": [
-            4.996003610813204e-16,
-            0.7149100132496303,
-            0.2850899867503692
+            2.1094237467877974e-15,
+            0.7149100132496344,
+            0.28508998675036346
           ],
           "position": [
-            0.6429506474249802,
-            -117.93984972236542,
+            0.6429506474249852,
+            -117.93984972236541,
             71.05595844696458
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 12253,
           "barycentric": [
-            0.26945102889877337,
-            0.6984079865570334,
-            0.03214098454419325
+            0.2694510288987791,
+            0.6984079865570266,
+            0.0321409845441943
           ],
           "position": [
-            0.5965273725553638,
+            0.5965273725553664,
             -117.91304359713543,
             71.02387473050031
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5871,16 +5886,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2067,
         "barycentric": [
-          0.3548684200769736,
-          0.629215576060897,
-          0.015916003862129463
+          0.35486842007698105,
+          0.6292155760608891,
+          0.01591600386212988
         ],
         "position": [
-          0.6026976456341872,
+          0.602697645634186,
           -120.15912351697543,
-          69.31095174203128
+          69.31095174203126
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5888,9 +5903,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.6026976456341872,
+          0.602697645634186,
           -120.15912351697543,
-          69.31095174203128
+          69.31095174203126
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5899,34 +5914,34 @@
       "secondarySurfaceAnchors": [
         {
           "structureId": "brain.tentorium-cerebelli.right",
-          "triangleIndex": 2067,
+          "triangleIndex": 4454,
           "barycentric": [
-            1.1102230246251565e-16,
-            0.631901183781962,
-            0.36809881621803786
+            0.3680988162180381,
+            0.6319011837819601,
+            1.8003416957898968e-15
           ],
           "position": [
-            0.6412867126333233,
+            0.6412867126333232,
             -120.15373651481485,
             69.30437276948032
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 12032,
           "barycentric": [
-            0.6251889003350508,
-            0.25385876778883754,
-            0.12095233187611182
+            0.625188900335036,
+            0.25385876778888333,
+            0.12095233187608065
           ],
           "position": [
-            0.5365506197480724,
-            -120.1010552550817,
-            69.24331330219307
+            0.5365506197480577,
+            -120.10105525508172,
+            69.24331330219306
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5954,16 +5969,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2057,
         "barycentric": [
-          0.5973792968581746,
-          0.381810832434961,
-          0.02080987070686447
+          0.5973792968581684,
+          0.38181083243496666,
+          0.020809870706864873
         ],
         "position": [
-          0.57945635538888,
-          -122.3510213260671,
-          67.49839544141076
+          0.5794563553888787,
+          -122.35102132606707,
+          67.49839544141074
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5971,9 +5986,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.57945635538888,
-          -122.3510213260671,
-          67.49839544141076
+          0.5794563553888787,
+          -122.35102132606707,
+          67.49839544141074
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5993,7 +6008,7 @@
             -122.34334880006415,
             67.48950259321572
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6009,7 +6024,7 @@
             -122.35107290598354,
             67.49837984972086
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6037,16 +6052,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 4448,
         "barycentric": [
-          5.329070518200751e-15,
-          0.772941857403213,
-          0.2270581425967817
+          5.495603971894525e-15,
+          0.7729418574032129,
+          0.22705814259678164
         ],
         "position": [
           0.5968992932352446,
           -124.81602829308211,
           65.66411760239552
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6076,7 +6091,7 @@
             -124.81286304129021,
             65.66620266597673
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6092,7 +6107,7 @@
             -124.81607403510978,
             65.6641251717005
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6118,18 +6133,18 @@
       "description": "Ordered atlas course station bound to the named surface.",
       "surfaceAnchor": {
         "structureId": "brain.tentorium-cerebelli.left",
-        "triangleIndex": 2101,
+        "triangleIndex": 4444,
         "barycentric": [
-          0.37920756194123895,
-          0.6207924380587609,
-          1.1929506725720369e-16
+          1.0269562977782698e-14,
+          0.6207924380587553,
+          0.37920756194123445
         ],
         "position": [
-          0.480882147042184,
+          0.4808821470421824,
           -127.0884334191298,
-          64.2760145241491
+          64.27601452414909
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6137,9 +6152,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.480882147042184,
+          0.4808821470421824,
           -127.0884334191298,
-          64.2760145241491
+          64.27601452414909
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -6150,16 +6165,16 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 4444,
           "barycentric": [
-            0.36624313938233105,
-            0.633756860617669,
-            0.0
+            0.3662431393823429,
+            0.6337568606176571,
+            1.0626854867254365e-17
           ],
           "position": [
-            0.8112510791480082,
+            0.8112510791480089,
             -127.07463579399237,
-            64.28370561589684
+            64.28370561589682
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6175,7 +6190,7 @@
             -127.08843284205965,
             64.27601818677242
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6201,18 +6216,18 @@
       "description": "Ordered atlas course station bound to the named surface.",
       "surfaceAnchor": {
         "structureId": "brain.tentorium-cerebelli.left",
-        "triangleIndex": 2087,
+        "triangleIndex": 4440,
         "barycentric": [
-          0.46051563994759437,
-          0.5394843600524056,
-          1.604928272310935e-16
+          0.0,
+          0.5394843600523836,
+          0.46051563994761635
         ],
         "position": [
-          0.40566153559372303,
+          0.40566153559372337,
           -129.36944621210657,
-          63.156779715735645
+          63.15677971573563
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6220,9 +6235,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.40566153559372303,
+          0.40566153559372337,
           -129.36944621210657,
-          63.156779715735645
+          63.15677971573563
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -6233,16 +6248,16 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 4440,
           "barycentric": [
-            0.4594145263953281,
-            0.5405854736046705,
-            1.4175020291408012e-15
+            0.4594145263953089,
+            0.5405854736046757,
+            1.5450772117634733e-14
           ],
           "position": [
-            0.8880430315177824,
+            0.8880430315177845,
             -129.3680968453893,
-            63.15753579461565
+            63.157535794615654
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6258,7 +6273,7 @@
             -129.36949592682595,
             63.15654328820956
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6286,16 +6301,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 4438,
         "barycentric": [
-          6.439293542825908e-15,
-          0.1970698757449609,
-          0.8029301242550326
+          6.994405055138486e-15,
+          0.19706987574496054,
+          0.8029301242550325
         ],
         "position": [
-          0.5528243243427844,
+          0.5528243243427843,
           -131.71339156104182,
           62.061112440286536
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6303,7 +6318,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.5528243243427844,
+          0.5528243243427843,
           -131.71339156104182,
           62.061112440286536
         ],
@@ -6314,18 +6329,18 @@
       "secondarySurfaceAnchors": [
         {
           "structureId": "brain.tentorium-cerebelli.right",
-          "triangleIndex": 4438,
+          "triangleIndex": 2083,
           "barycentric": [
-            0.8093505545299635,
-            0.19064944547003332,
-            3.131936203634671e-15
+            2.220446049250313e-15,
+            0.19064944547002277,
+            0.8093505545299751
           ],
           "position": [
-            0.7405238261437901,
-            -131.72700615895633,
+            0.7405238261437942,
+            -131.72700615895636,
             62.05500982452696
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6341,7 +6356,7 @@
             -131.71336464393383,
             62.0611089616885
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6369,16 +6384,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2073,
         "barycentric": [
-          0.20790721637780418,
-          0.6195208074523818,
-          0.172571976169814
+          0.20790721637780446,
+          0.619520807452382,
+          0.1725719761698135
         ],
         "position": [
-          0.4627653726727599,
+          0.4627653726727609,
           -134.04974449611655,
           61.728772741101075
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6386,7 +6401,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.4627653726727599,
+          0.4627653726727609,
           -134.04974449611655,
           61.728772741101075
         ],
@@ -6400,15 +6415,15 @@
           "triangleIndex": 2073,
           "barycentric": [
             0.0023648873127792847,
-            0.676049193155304,
-            0.32158591953191673
+            0.6760491931553043,
+            0.3215859195319164
           ],
           "position": [
             0.4947506618350993,
             -134.04851779444937,
             61.62490101016167
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6424,7 +6439,7 @@
             -134.04975131687723,
             61.728773622573364
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6452,16 +6467,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2063,
         "barycentric": [
-          0.641097448162695,
-          0.17344708756999344,
-          0.18545546426731158
+          0.6410974481626959,
+          0.17344708756999297,
+          0.18545546426731108
         ],
         "position": [
-          0.5081781436567642,
-          -136.29233623540964,
+          0.5081781436567653,
+          -136.2923362354096,
           61.55456939390532
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6469,8 +6484,8 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.5081781436567642,
-          -136.29233623540964,
+          0.5081781436567653,
+          -136.2923362354096,
           61.55456939390532
         ],
         "course": [],
@@ -6482,16 +6497,16 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 2063,
           "barycentric": [
-            0.07383874064291618,
+            0.0738387406429154,
             0.19813827435666473,
-            0.7280229850004191
+            0.7280229850004198
           ],
           "position": [
-            0.5273625608971776,
+            0.5273625608971758,
             -136.28457867382332,
             61.484386443627244
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6507,7 +6522,7 @@
             -136.29230384036995,
             61.55460158285778
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6535,16 +6550,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2059,
         "barycentric": [
-          0.15416370783470384,
-          0.6637793437604166,
-          0.18205694840487957
+          0.15416370783470382,
+          0.6637793437604165,
+          0.1820569484048797
         ],
         "position": [
-          0.5762141374129062,
+          0.576214137412906,
           -138.51886249118274,
           61.012653544117505
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6552,7 +6567,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.5762141374129062,
+          0.576214137412906,
           -138.51886249118274,
           61.012653544117505
         ],
@@ -6565,16 +6580,16 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 2059,
           "barycentric": [
-            0.12405323597512702,
-            0.6961464193171536,
-            0.17980034470771938
+            0.12405323597512674,
+            0.696146419317155,
+            0.17980034470771822
           ],
           "position": [
-            0.5817557267208107,
+            0.58175572672081,
             -138.50946925425737,
             60.98662858322242
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6590,7 +6605,7 @@
             -138.51875193435737,
             61.01276339761451
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6618,16 +6633,16 @@
         "structureId": "brain.tentorium-cerebelli.left",
         "triangleIndex": 2055,
         "barycentric": [
-          0.768444811867488,
-          0.03546103292673144,
-          0.19609415520578058
+          0.7684448118674898,
+          0.035461032926729134,
+          0.19609415520578113
         ],
         "position": [
-          0.6464742224792204,
+          0.6464742224792192,
           -140.92180320491528,
           59.846154982873095
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6635,7 +6650,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.6464742224792204,
+          0.6464742224792192,
           -140.92180320491528,
           59.846154982873095
         ],
@@ -6648,32 +6663,32 @@
           "structureId": "brain.tentorium-cerebelli.right",
           "triangleIndex": 2055,
           "barycentric": [
-            0.19457865985930667,
-            0.03623215281688864,
-            0.7691891873238047
+            0.1945786598593069,
+            0.03623215281689073,
+            0.7691891873238024
           ],
           "position": [
-            0.6465034932940253,
+            0.6465034932940262,
             -140.92163811869997,
             59.84585209279565
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
           "structureId": "brain.falx-cerebri",
           "triangleIndex": 1187,
           "barycentric": [
-            0.23641208340118103,
-            0.2814924537591004,
-            0.4820954628397186
+            0.23641208340117692,
+            0.2814924537591029,
+            0.48209546283972016
           ],
           "position": [
-            -0.23563061354408732,
+            -0.2356306135440861,
             -140.50677517789885,
             60.18727380060364
           ],
-          "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+          "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6701,8 +6716,8 @@
         "structureId": "brain.central-sulcus.left",
         "triangleIndex": 1252,
         "barycentric": [
-          0.9937069277550995,
-          0.006293072244900385,
+          0.9937069277551049,
+          0.006293072244895089,
           0.0
         ],
         "position": [
@@ -6710,7 +6725,7 @@
           -54.86827391798061,
           103.3585968017578
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6759,7 +6774,7 @@
           -58.00888927963464,
           109.67766380310059
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6808,7 +6823,7 @@
           -62.47127183281711,
           115.99673080444336
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6857,7 +6872,7 @@
           -65.441019448963,
           122.31579780578613
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6895,18 +6910,18 @@
       "description": "Ordered atlas course station bound to the named surface.",
       "surfaceAnchor": {
         "structureId": "brain.central-sulcus.left",
-        "triangleIndex": 1201,
+        "triangleIndex": 1288,
         "barycentric": [
-          2.6229018956769323e-15,
-          0.9443420446316897,
-          0.055657955368307685
+          0.9443420446316805,
+          1.0082677528925933e-14,
+          0.05565795536830946
         ],
         "position": [
           -51.89159002637433,
-          -76.86001411534917,
-          128.6348648071289
+          -76.86001411534919,
+          128.63486480712893
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6915,8 +6930,8 @@
         "status": "regional",
         "point": [
           -51.89159002637433,
-          -76.86001411534917,
-          128.6348648071289
+          -76.86001411534919,
+          128.63486480712893
         ],
         "course": [],
         "connects": "Central sulcus, left",
@@ -6946,16 +6961,16 @@
         "structureId": "brain.central-sulcus.left",
         "triangleIndex": 1070,
         "barycentric": [
-          0.0,
-          0.0625475459258426,
-          0.9374524540741573
+          6.661338147750939e-16,
+          0.06254754592584391,
+          0.9374524540741555
         ],
         "position": [
           -46.75231300385925,
           -78.5568551754019,
           134.95393180847168
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6995,16 +7010,16 @@
         "structureId": "brain.central-sulcus.left",
         "triangleIndex": 1310,
         "barycentric": [
-          0.5668871920924656,
-          0.0,
-          0.4331128079075343
+          0.5668871920924664,
+          1.7389213005921378e-14,
+          0.43311280790751616
         ],
         "position": [
-          -40.204359442937964,
-          -82.65849179964697,
-          141.27299880981445
+          -40.20435944293795,
+          -82.65849179964698,
+          141.27299880981448
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7012,9 +7027,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          -40.204359442937964,
-          -82.65849179964697,
-          141.27299880981445
+          -40.20435944293795,
+          -82.65849179964698,
+          141.27299880981448
         ],
         "course": [],
         "connects": "Central sulcus, left",
@@ -7053,7 +7068,7 @@
           -86.73892732312237,
           147.59206581115723
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7091,18 +7106,18 @@
       "description": "Ordered atlas course station bound to the named surface.",
       "surfaceAnchor": {
         "structureId": "brain.central-sulcus.left",
-        "triangleIndex": 1358,
+        "triangleIndex": 987,
         "barycentric": [
-          0.7509689775197215,
-          0.0,
-          0.24903102248027853
+          0.24903102248027642,
+          2.941595005721519e-15,
+          0.7509689775197207
         ],
         "position": [
           -14.427187654711192,
           -91.35816603940043,
           153.9111328125
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7180,8 +7195,8 @@
           ],
           [
             -51.89159002637433,
-            -76.86001411534917,
-            128.6348648071289
+            -76.86001411534919,
+            128.63486480712893
           ],
           [
             -46.75231300385925,
@@ -7189,9 +7204,9 @@
             134.95393180847168
           ],
           [
-            -40.204359442937964,
-            -82.65849179964697,
-            141.27299880981445
+            -40.20435944293795,
+            -82.65849179964698,
+            141.27299880981448
           ],
           [
             -36.40448134087128,
@@ -7263,7 +7278,7 @@
           -54.85775597939199,
           103.37728118896484
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7303,16 +7318,16 @@
         "structureId": "brain.central-sulcus.right",
         "triangleIndex": 1259,
         "barycentric": [
-          0.7718967557102626,
-          0.0,
-          0.22810324428973736
+          0.7718967557102593,
+          3.379398670202427e-17,
+          0.22810324428974071
         ],
         "position": [
           56.337908664687966,
-          -57.99764974541561,
-          109.694655418396
+          -57.997649745415615,
+          109.69465541839601
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7321,8 +7336,8 @@
         "status": "regional",
         "point": [
           56.337908664687966,
-          -57.99764974541561,
-          109.694655418396
+          -57.997649745415615,
+          109.69465541839601
         ],
         "course": [],
         "connects": "Central sulcus, right",
@@ -7361,7 +7376,7 @@
           -62.45929980687969,
           116.01202964782715
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7401,16 +7416,16 @@
         "structureId": "brain.central-sulcus.right",
         "triangleIndex": 1270,
         "barycentric": [
-          0.0,
-          0.5432741760844563,
-          0.45672582391554367
+          3.552713678800501e-15,
+          0.5432741760844528,
+          0.4567258239155436
         ],
         "position": [
-          55.932369702225515,
+          55.93236970222552,
           -65.42877856076001,
           122.3294038772583
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7418,7 +7433,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          55.932369702225515,
+          55.93236970222552,
           -65.42877856076001,
           122.3294038772583
         ],
@@ -7459,7 +7474,7 @@
           -76.86575572233014,
           128.64677810668945
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7508,7 +7523,7 @@
           -78.54760561951336,
           134.9641523361206
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7557,7 +7572,7 @@
           -82.64485122612157,
           141.28152656555176
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7597,16 +7612,16 @@
         "structureId": "brain.central-sulcus.right",
         "triangleIndex": 1318,
         "barycentric": [
-          0.0,
-          0.6709300650293119,
-          0.32906993497068804
+          5.495603971894525e-15,
+          0.6709300650293116,
+          0.3290699349706829
         ],
         "position": [
           37.666346851885365,
           -86.72926447226153,
           147.5989007949829
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7646,16 +7661,16 @@
         "structureId": "brain.central-sulcus.right",
         "triangleIndex": 987,
         "barycentric": [
-          0.7509405854051543,
-          0.0,
-          0.24905941459484573
+          0.7509405854051657,
+          1.1564359555559891e-14,
+          0.24905941459482273
         ],
         "position": [
-          15.682279612357746,
-          -91.35527706551437,
-          153.91627502441406
+          15.682279612357725,
+          -91.35527706551439,
+          153.9162750244141
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7663,9 +7678,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          15.682279612357746,
-          -91.35527706551437,
-          153.91627502441406
+          15.682279612357725,
+          -91.35527706551439,
+          153.9162750244141
         ],
         "course": [],
         "connects": "Central sulcus, right",
@@ -7718,8 +7733,8 @@
           ],
           [
             56.337908664687966,
-            -57.99764974541561,
-            109.694655418396
+            -57.997649745415615,
+            109.69465541839601
           ],
           [
             57.962868688128275,
@@ -7727,7 +7742,7 @@
             116.01202964782715
           ],
           [
-            55.932369702225515,
+            55.93236970222552,
             -65.42877856076001,
             122.3294038772583
           ],
@@ -7752,9 +7767,9 @@
             147.5989007949829
           ],
           [
-            15.682279612357746,
-            -91.35527706551437,
-            153.91627502441406
+            15.682279612357725,
+            -91.35527706551439,
+            153.9162750244141
           ]
         ],
         "connects": "Central sulcus, right",
@@ -7816,7 +7831,7 @@
           -85.38723754882812,
           95.62525939941406
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7865,7 +7880,7 @@
           -85.60550689697266,
           101.06597900390625
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7914,7 +7929,7 @@
           -91.801513671875,
           106.42816162109375
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7963,7 +7978,7 @@
           -75.60699462890625,
           111.75513458251953
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8012,7 +8027,7 @@
           -89.656494140625,
           116.97618103027344
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8145,7 +8160,7 @@
           -109.93436431884766,
           90.1034164428711
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8194,7 +8209,7 @@
           -129.38177490234375,
           101.99043273925781
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8243,7 +8258,7 @@
           -129.889404296875,
           114.01392364501953
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8292,7 +8307,7 @@
           -125.26734924316406,
           125.92041015625
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8341,7 +8356,7 @@
           -131.27894592285156,
           137.92864990234375
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8474,7 +8489,7 @@
           -85.37925720214844,
           95.6396255493164
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8523,7 +8538,7 @@
           -85.59747314453125,
           101.08043670654297
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8572,7 +8587,7 @@
           -91.79446411132812,
           106.44084167480469
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8621,7 +8636,7 @@
           -75.59978485107422,
           111.76811981201172
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8670,7 +8685,7 @@
           -89.64736938476562,
           116.99260711669922
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8803,7 +8818,7 @@
           -109.93247985839844,
           90.10680389404297
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8852,7 +8867,7 @@
           -129.37966918945312,
           101.99422454833984
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8901,7 +8916,7 @@
           -129.88619995117188,
           114.01969909667969
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8950,7 +8965,7 @@
           -125.26446533203125,
           125.92560577392578
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8999,7 +9014,7 @@
           -131.2750244140625,
           137.9357147216797
         ],
-        "assetSha256": "0c2c84e340cf270e2488bde6553e685a6c0ef320c33b3459fe2ead962e4fad06",
+        "assetSha256": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",

@@ -1,0 +1,31 @@
+{
+  "release": "0.9.20",
+  "channel": "anatomical-review",
+  "appliedToApp": true,
+  "anatomicallyComplete": false,
+  "sourceCandidate": 61,
+  "sourceHashes": {
+    "brain": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada",
+    "arteries": "7413da6ee298e0851f460b58b6ad2e93083f407bf11b778d79f0e19c58b29c3a",
+    "veins": "b00b2a36e88b1d8c04461c6642b885a652a6ebbe90631f7c7cc6b27cca08ea1e"
+  },
+  "deliveredHashes": {
+    "models/venous.glb": "21048ad59af04b113cb03727d437fa39571931f36816aa7634b6cbcdbdb7b455",
+    "models/complete-circulation.glb": "a8170bd1754788528f1f74708758bde38f03b9232600c84dc51234886ff2c2a9",
+    "models/brain-context.glb": "13e322f80d78b7db3514a8cd4bfcb8149487e1e7b446ee9be177df837d62bada"
+  },
+  "checksPassed": [
+    "posterior-fossa surface walls",
+    "containment in closed posterior tissue",
+    "sampled vein minor diameter",
+    "vein-artery crossings",
+    "physical source joins",
+    "bilateral proximal PICA-to-PSA joins"
+  ],
+  "remaining": [
+    "Upper cerebral/pontomesencephalic collecting routes need full parenchymal reconciliation.",
+    "Some posterior arterial and cerebellar venous routes still contact cerebral atlas parts outside the posterior-fossa audit.",
+    "Open atlas surfaces permit triangle checks, not proof of solid containment."
+  ],
+  "plexusGeometryRendered": false
+}

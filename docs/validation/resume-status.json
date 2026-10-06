@@ -1,0 +1,126 @@
+{
+  "productionRelease": "0.9.19",
+  "continuation": "2",
+  "newGeometryApplied": false,
+  "productionModelsRetainedExactly": true,
+  "containmentValidationAdded": true,
+  "closedBrainstemBaselineFailures": [
+    {
+      "vein": "vein.anterior_medullary",
+      "target": "brain.medulla-oblongata.right",
+      "containedWallVertices": 770
+    },
+    {
+      "vein": "vein.anterior_pontine",
+      "target": "brain.medulla-oblongata.right",
+      "containedWallVertices": 105
+    },
+    {
+      "vein": "vein.anterior_spinal",
+      "target": "brain.medulla-oblongata.right",
+      "containedWallVertices": 184
+    }
+  ],
+  "trials": [
+    {
+      "name": "coherent-fossa22",
+      "status": "rejected",
+      "candidateSha256": "71481122486acbf0f10f8e44c0149126d1bcf6f142b7b8a68268d1a454d3a692",
+      "changedLabels": 99,
+      "failureCount": 113,
+      "maximumAdditionalDisplacementMm": 20.051029804161708
+    },
+    {
+      "name": "coherent-veins22",
+      "status": "rejected",
+      "solverSuccess": true,
+      "candidateSha256": "30b00a8b65177c32725a2fe53dd91853836859166b5bc4f041e808a303523db0",
+      "brainSha256": "71481122486acbf0f10f8e44c0149126d1bcf6f142b7b8a68268d1a454d3a692",
+      "failureCount": 5,
+      "failures": [
+        [
+          "vein.posterior_communicating",
+          "brain.hypothalamus",
+          154,
+          238
+        ],
+        [
+          "vein.posterior_communicating",
+          "increased-closed-tissue-containment",
+          "brain.optic-tract.right",
+          420,
+          792
+        ],
+        [
+          "vein.posterior_communicating",
+          "increased-closed-tissue-containment",
+          "brain.optic-tract.left",
+          300,
+          781
+        ],
+        [
+          "vein.anterior_pontomesencephalic",
+          "section-distortion",
+          {
+            "node": "vein.anterior_pontomesencephalic",
+            "minimumSkinSectionAreaRatio": 0.8191550516805852,
+            "medianSkinSectionAreaRatio": 1.1932566043528055,
+            "maximumSkinSectionAreaRatio": 2.0914914502098623,
+            "maximumSectionWarpMm": 0.0528977250556166
+          }
+        ],
+        [
+          "vein.transverse_pontine.right",
+          "section-distortion",
+          {
+            "node": "vein.transverse_pontine.right",
+            "minimumSkinSectionAreaRatio": 0.7967474062441438,
+            "medianSkinSectionAreaRatio": 0.9748054731615705,
+            "maximumSkinSectionAreaRatio": 2.0151086819981088,
+            "maximumSectionWarpMm": 0.17703422232829544
+          }
+        ]
+      ],
+      "closedBrainstemWallContainment": true,
+      "closedTissueChecks": 36
+    },
+    {
+      "name": "bounded-fossa23",
+      "status": "rejected",
+      "candidateSha256": "3d74196ea1c9595bcdb16486799373ee6d64273a2f54569e9b88ff2c242ef24d",
+      "changedLabels": 88,
+      "failureCount": 92,
+      "maximumAdditionalDisplacementMm": 12.000000000000014
+    },
+    {
+      "name": "bounded-fossa24",
+      "status": "rejected",
+      "candidateSha256": "12deb98a8d3e1e11a387c4d0470c83f2f63f884d247cfcdd4a9bfd55f60464f2",
+      "changedLabels": 88,
+      "failureCount": 92,
+      "maximumAdditionalDisplacementMm": 12.000000000000014
+    },
+    {
+      "name": "bounded-veins24",
+      "status": "infeasible",
+      "solverSuccess": false,
+      "brainSha256": "12deb98a8d3e1e11a387c4d0470c83f2f63f884d247cfcdd4a9bfd55f60464f2",
+      "sourceSha256": "3e72ff104fed12cf1ca22a34da14dbba46491eb5b39c11c3c48679620352b59f",
+      "currentCandidateExists": false
+    }
+  ],
+  "checks": {
+    "pythonSyntax": "passed",
+    "productionBuild": "passed",
+    "browserInteractions": "passed",
+    "productionModelHashes": "five of five identical",
+    "visualComparison": "rendered and inspected"
+  },
+  "remaining": [
+    "Anatomical brainstem/cerebellar reconciliation with fixed skull and dura.",
+    "Upper communicating venous route clear of hypothalamus and adjacent optic/temporal surfaces.",
+    "Transverse outlet routes with preserved joins and material section shape.",
+    "Retained posterior arterial relations and perforator tissue entry checks.",
+    "Full fitted geometry export and fresh landmark bindings."
+  ]
+}

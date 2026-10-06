@@ -33,7 +33,16 @@ def accessor(doc,data,i):
 def write_glb(path,doc,data):
     j=json.dumps(doc,separators=(',',':')).encode();j+=b' '*(-len(j)%4)
     b=bytes(data);b+=b'\0'*(-len(b)%4)
-    path.write_bytes(struct.pack('<4sIIII',b'glTF',2,28+len(j)+len(b),len(j),0x4e4f534a)+j+struct.pack('<II',len(b),0x004e4942)+b)
+    payload=struct.pack('<4sIIII',b'glTF',2,28+len(j)+len(b),len(j),0x4e4f534a)+j+struct.pack('<II',len(b),0x004e4942)+b
+    # Large authoring buffers may receive a short write. Stream bounded chunks
+    # and check the resulting GLB rather than accepting a truncated asset.
+    with path.open('wb') as stream:
+        view=memoryview(payload);offset=0
+        while offset<len(view):
+            written=stream.write(view[offset:offset+8*1024*1024])
+            if not written:raise OSError('Incomplete GLB write: '+str(path))
+            offset+=written
+    assert path.stat().st_size==len(payload),'Truncated GLB: '+str(path)
 
 def smoothstep(x):
     x=np.clip(x,0,1);return x*x*(3-2*x)

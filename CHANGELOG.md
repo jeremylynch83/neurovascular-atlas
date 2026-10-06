@@ -1,3 +1,20 @@
+## 0.9.20 anatomical review build
+
+- Resume the lossless posterior-fossa checkpoint, retaining its tissue registration.
+- Bring anterior venous courses closer to the brainstem, retaining round walls and arterial overpasses.
+- Repair right P1/basilar and left SCA/proximal perforator attachments.
+- Apply bilateral proximal-PICA PSA origins and dorsal medulla/cord courses.
+- Refresh surface anchors and course hashes; include the illustrative cervical cord.
+- Omit clival/basilar plexus rendering.
+- Verify local tissue surfaces, vein/artery crossings, 151 source joins, lossless compression and app browser behaviour. Wider anatomical contacts remain recorded for review.
+
+## 0.9.19 review build
+
+- Apply the validated lower brainstem and adjoining cerebellar context adjustment, with modest size changes authorised for this composite atlas.
+- Clear checked clival plexus contacts and refresh brain landmark bindings and course hashes.
+- Retain every accepted v0.9.18 vascular asset exactly. Complete venous reconstruction and posterior arterial fitting remain deferred; failed candidates are excluded.
+- Include exact geometry reports and fix short writes in large authoring model exports.
+
 ## 0.9.17
 
 Expanded cortical-family validation and review-only refinement tooling. Preserve all production geometry after the connected branch candidate fails tissue and skull checks. Include the exact rejected eight-label trial and matched comparison views.
