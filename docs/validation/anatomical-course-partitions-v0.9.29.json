@@ -1,0 +1,83 @@
+{
+  "release": "0.9.29",
+  "partitions": [
+    {
+      "id": "vein.horizontal_fissure.right",
+      "part": 0,
+      "lastSurfacePoint": 112,
+      "surfaceLengthMm": 22.714235536427587,
+      "outletLengthMm": 16.42396365004086,
+      "boundaryPosition": [
+        30.399147141495387,
+        -82.96411741987221,
+        54.81489274645961
+      ],
+      "method": "Source centreline terminal departure from named surface, with radius plus 1 mm authoring support envelope; provisional transition requiring anatomical review"
+    },
+    {
+      "id": "vein.superior_cerebellar_peduncular.right",
+      "part": 0,
+      "lastSurfacePoint": 46,
+      "surfaceLengthMm": 11.095895442939652,
+      "outletLengthMm": 23.363896424657867,
+      "boundaryPosition": [
+        4.35620871038494,
+        -86.43537829948606,
+        61.506651666182556
+      ],
+      "method": "Source centreline terminal departure from named surface, with radius plus 1 mm authoring support envelope; provisional transition requiring anatomical review"
+    },
+    {
+      "id": "vein.tectal.right",
+      "part": 0,
+      "lastSurfacePoint": 24,
+      "surfaceLengthMm": 4.804885124547893,
+      "outletLengthMm": 19.221270688848847,
+      "boundaryPosition": [
+        5.986772721198661,
+        -78.01550585837929,
+        81.34570971539976
+      ],
+      "method": "Source centreline terminal departure from named surface, with radius plus 1 mm authoring support envelope; provisional transition requiring anatomical review"
+    },
+    {
+      "id": "vein.horizontal_fissure.left",
+      "part": 0,
+      "lastSurfacePoint": 111,
+      "surfaceLengthMm": 22.521480317704885,
+      "outletLengthMm": 16.8498563144909,
+      "boundaryPosition": [
+        -29.23500466949328,
+        -83.0261049619075,
+        54.71178841233557
+      ],
+      "method": "Source centreline terminal departure from named surface, with radius plus 1 mm authoring support envelope; provisional transition requiring anatomical review"
+    },
+    {
+      "id": "vein.superior_cerebellar_peduncular.left",
+      "part": 0,
+      "lastSurfacePoint": 46,
+      "surfaceLengthMm": 11.10461271923188,
+      "outletLengthMm": 23.35944200471642,
+      "boundaryPosition": [
+        -3.089279438415042,
+        -86.46307743150082,
+        61.46765718575392
+      ],
+      "method": "Source centreline terminal departure from named surface, with radius plus 1 mm authoring support envelope; provisional transition requiring anatomical review"
+    },
+    {
+      "id": "vein.tectal.left",
+      "part": 0,
+      "lastSurfacePoint": 24,
+      "surfaceLengthMm": 4.793971205100168,
+      "outletLengthMm": 19.19489317207234,
+      "boundaryPosition": [
+        -4.702819144605601,
+        -78.04258964566245,
+        81.30542479479674
+      ],
+      "method": "Source centreline terminal departure from named surface, with radius plus 1 mm authoring support envelope; provisional transition requiring anatomical review"
+    }
+  ]
+}

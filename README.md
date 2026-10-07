@@ -1,4 +1,16 @@
-# Neurovascular Atlas v0.9.27 review build
+# Neurovascular Atlas v0.9.31
+
+Clears the seven remaining audited posterior artery-vein crossing pairs, with all twelve pairs verified on the corrected meshes. Includes local venous and brainstem adjustments, refreshed surface anchors and the retained v0.9.30 npm dependency update. [Read the changes, validation and remaining corrections](docs/ANATOMICAL_CORRECTIONS_v0.9.31.md).
+
+Straight-sinus alignment, fine bony canal and ICA/dural calibration, and pericallosal fitting remain open. This is an anatomical review build. The previous 67 description corrections, two parent corrections and six bounded venous courses remain included.
+
+Run `./inr-anatomy.sh` with the existing installer, or `./docker.sh start`. The complete app, model assets, source catalogue and correction evidence are included.
+
+## Previous releases
+
+Posterior fossa review build: page 3 P01–P31 implemented with 69 new selectable mesh labels. See [posterior fossa notes](docs/POSTERIOR_VEINS_v0.9.28.md) for scope, source registration limits and validation. The page-2 deep veins remain included, excluding transmedullary veins.
+
+# Neurovascular Atlas v0.9.28 review build
 
 Adds the 22 deep venous families on page 2 of the reference catalogue, excluding transmedullary veins. There are 44 side-specific mesh labels with representative tributaries, searchable names, descriptions and drainage relationships. New courses are guided by the registered brain surfaces and physically joined to their receiving veins. Fine anatomy and calibres remain illustrative. See [deep venous additions](docs/DEEP_VEINS_v0.9.27.md).
 

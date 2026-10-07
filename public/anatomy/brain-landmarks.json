@@ -8,11 +8,11 @@
       [
         -0.9689975810000006,
         -0.00016723059068858651,
-        -0.00009279822799189383,
+        -9.279822799189383e-05,
         0.6359182504845362
       ],
       [
-        -0.00009288495756585614,
+        -9.288495756585614e-05,
         0.0005026084331349398,
         0.9689974650733518,
         -59.087590342194126
@@ -31,10 +31,10 @@
       ]
     ],
     "sourceAssetSha256": "90a715af24911abf97d94be205144e1639514fb5629c4cf8e7faa0dcaff99925",
-    "registeredAssetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
-    "method": "Bone-correspondence similarity ICP, 85% trimmed nearest vertices, robust least squares; 7 cranial bone meshes; source Z-Anatomy skull to retained v0.9.13 skull. No independent brain deformation.",
+    "registeredAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+    "method": "Bone-correspondence similarity registration, followed by recorded regional adjustments. See regionalAdjustments and brainAdjustmentPolicy for the subsequent local deformation fields.",
     "status": "atlas-registered",
-    "limitations": "Regional teaching context. Temporal skull residuals are greater than vault residuals. Source cerebellar lobules are simplified; no separate middle/inferior cerebellar peduncle meshes. Existing vessels have not been refitted to the new brain surfaces.",
+    "limitations": "Regional teaching context. Brainstem geometry has local crossing-related adjustments, not an independent patient-derived refit. Fine anatomy, illustrative vessel calibres and the open correction-register findings require review.",
     "regionalAdjustments": [
       {
         "release": "0.9.19",
@@ -54,6 +54,12 @@
         "brainSha256": "742debb2756d57a4df8d89d9a3ce02057241182204fc3a38f1943e72ab8020ed",
         "method": "Ventral pons advances by up to 3 mm with its vessels; preceding reviewed cerebellar arterial fitting retained.",
         "evidence": "docs/validation/pons-advance-v0.9.21.json"
+      },
+      {
+        "release": "0.9.31",
+        "brainSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+        "method": "Common brainstem and venous placement fields, then a 0.6 mm maximum local peduncular recess after vein-wall recovery.",
+        "evidence": "docs/validation/anatomical-mesh-authoring-v0.9.31.json"
       }
     ],
     "brainstemAdjustment": {
@@ -110,7 +116,7 @@
           -66.44904616592535,
           78.46375801521005
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -172,7 +178,7 @@
           -61.07641983734033,
           76.3610645380312
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -235,7 +241,7 @@
           -76.67107795274524,
           81.73977782261176
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -296,7 +302,7 @@
           -76.57923627497652,
           74.1207255313565
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -359,7 +365,7 @@
           -66.76545715332031,
           57.386962890625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -420,7 +426,7 @@
           -64.57233583429867,
           69.9790999825541
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -458,8 +464,8 @@
         "status": "regional",
         "point": [
           -5.130045316623824,
-          -76.85813449955359,
-          45.12453360991763
+          -77.21222522947114,
+          45.6556659009462
         ],
         "course": [],
         "connects": "Pons.l",
@@ -476,10 +482,10 @@
         ],
         "position": [
           -5.130045316623824,
-          -76.85813449955359,
-          45.12453360991763
+          -77.21222522947114,
+          45.6556659009462
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -539,7 +545,7 @@
           -75.33688501636618,
           36.569456136543046
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -597,7 +603,7 @@
           -80.43635724406151,
           63.43762371560521
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -656,7 +662,7 @@
           -77.95003736999143,
           50.80547238279206
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -716,7 +722,7 @@
           -97.40864921905761,
           39.7879781619352
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -775,7 +781,7 @@
           -100.23714495905635,
           39.24414502952864
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -838,7 +844,7 @@
           -113.44192819665794,
           63.15060281053465
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -898,7 +904,7 @@
           -126.2499705041171,
           46.25321187863237
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -958,7 +964,7 @@
           -71.753439007723,
           66.11463195066956
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1021,7 +1027,7 @@
           -80.73371675028089,
           71.73552552124221
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1082,7 +1088,7 @@
           -107.55373680262544,
           64.48477609072148
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1143,7 +1149,7 @@
           -69.13305056536862,
           102.95286700873845
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1206,7 +1212,7 @@
           -81.71355727380951,
           94.12806474587755
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1267,7 +1273,7 @@
           -69.23283759028837,
           113.06174976019018
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1331,7 +1337,7 @@
           -105.87305352969256,
           90.69157231254897
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1390,7 +1396,7 @@
           -58.40780521292183,
           76.08108454638922
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1448,7 +1454,7 @@
           -68.73660373072477,
           75.01972709637107
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1509,7 +1515,7 @@
           -30.82099096708787,
           98.96740191560154
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1568,7 +1574,7 @@
           -68.76971041205663,
           110.7230573633331
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1627,7 +1633,7 @@
           -59.051312323295925,
           104.15808997219861
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1688,7 +1694,7 @@
           -61.442344532931514,
           104.22594143648433
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1752,7 +1758,7 @@
           -66.51809456615452,
           78.46535729572994
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1814,7 +1820,7 @@
           -60.888262791450025,
           76.22555217214716
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1877,7 +1883,7 @@
           -76.67563177072651,
           81.74277080458953
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -1938,7 +1944,7 @@
           -76.55944873763742,
           74.11010058355461
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2001,7 +2007,7 @@
           -66.72068786621094,
           57.39306640625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2041,7 +2047,7 @@
         "status": "regional",
         "point": [
           4.514911363235113,
-          -64.64951046115313,
+          -64.65495083938212,
           69.97496040079932
         ],
         "course": [],
@@ -2059,10 +2065,10 @@
         ],
         "position": [
           4.514911363235113,
-          -64.64951046115313,
+          -64.65495083938212,
           69.97496040079932
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2100,8 +2106,8 @@
         "status": "regional",
         "point": [
           6.416610912820818,
-          -76.85509004990797,
-          45.12592588834548
+          -77.41152030799651,
+          45.96056789706028
         ],
         "course": [],
         "connects": "Pons.r",
@@ -2118,10 +2124,10 @@
         ],
         "position": [
           6.416610912820818,
-          -76.85509004990797,
-          45.12592588834548
+          -77.41152030799651,
+          45.96056789706028
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2181,7 +2187,7 @@
           -75.27548952149608,
           36.57061118949456
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2239,7 +2245,7 @@
           -80.45984739102579,
           63.43612236673083
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2298,7 +2304,7 @@
           -77.9908830028974,
           50.83208605071412
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2358,7 +2364,7 @@
           -97.38376179786788,
           39.79538471718246
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2417,7 +2423,7 @@
           -100.23490324898852,
           39.24789193912766
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2480,7 +2486,7 @@
           -113.44317673711303,
           63.158719201380634
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2540,7 +2546,7 @@
           -126.24569451047051,
           46.26176778442363
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2600,7 +2606,7 @@
           -71.73452991977126,
           66.12299795882109
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2663,7 +2669,7 @@
           -80.73090876109327,
           71.74067931050308
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2724,7 +2730,7 @@
           -107.54528441509927,
           64.50016005925768
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2785,7 +2791,7 @@
           -69.1311844291067,
           102.95614591781764
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2848,7 +2854,7 @@
           -81.71126080065058,
           94.13206885976825
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2909,7 +2915,7 @@
           -69.23115285496786,
           113.0645151272096
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -2973,7 +2979,7 @@
           -105.86871500886642,
           90.69938748384703
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3032,7 +3038,7 @@
           -58.40196807281922,
           76.09170516527712
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3090,7 +3096,7 @@
           -68.73201112632289,
           75.032560944457
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3151,7 +3157,7 @@
           -30.819541418173564,
           98.97001927160731
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3210,7 +3216,7 @@
           -68.76667116200223,
           110.72847106924037
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3269,7 +3275,7 @@
           -59.05058365198291,
           104.1591607146658
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3330,7 +3336,7 @@
           -61.44137628685132,
           104.22751344223346
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3394,7 +3400,7 @@
           -43.3918035805963,
           105.70320087770176
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3456,7 +3462,7 @@
           -46.77914780740973,
           74.23852934966911
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3520,7 +3526,7 @@
           -60.7421826946715,
           58.981571432181234
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3561,8 +3567,8 @@
         "status": "regional",
         "point": [
           -1.1261326913290783,
-          -73.19642518867424,
-          34.78969415692324
+          -74.25106811112263,
+          36.37165720078751
         ],
         "course": [],
         "connects": "Medulla oblongata.l",
@@ -3579,10 +3585,10 @@
         ],
         "position": [
           -1.1261326913290783,
-          -73.19642518867424,
-          34.78969415692324
+          -74.25106811112263,
+          36.37165720078751
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3642,7 +3648,7 @@
           -82.77167920380886,
           64.45471612509624
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3702,7 +3708,7 @@
           -92.78010983214035,
           78.86895999143269
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3763,7 +3769,7 @@
           -113.87748642295176,
           45.59938302775949
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3824,7 +3830,7 @@
           -101.4470493383464,
           39.243599836156235
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3877,7 +3883,7 @@
         "structureId": "brain.fourth-ventricle",
         "triangleIndex": 7098,
         "barycentric": [
-          0.000006964820912835901,
+          6.964820912835901e-06,
           0.6013526263983047,
           0.3986404087807825
         ],
@@ -3886,7 +3892,7 @@
           -91.8914070959656,
           56.886929913590606
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -3944,7 +3950,7 @@
           -76.92832168488084,
           53.94154744928866
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4004,7 +4010,7 @@
           -98.50521974448543,
           102.09423344491634
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4067,7 +4073,7 @@
           -22.28398198888493,
           105.36489153361866
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4125,7 +4131,7 @@
           -63.93228653110649,
           99.1012833607013
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4183,7 +4189,7 @@
           -59.32326679056602,
           117.65664021947481
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "vesselGuide": {
@@ -4529,8 +4535,8 @@
           ],
           [
             -1.1261326913290783,
-            -73.19642518867424,
-            34.78969415692324
+            -74.25106811112263,
+            36.37165720078751
           ]
         ],
         "connects": "brain.landmark.pontomesencephalic.left, brain.landmark.anterior-pons, brain.landmark.anterior-medulla",
@@ -4662,7 +4668,7 @@
           -85.92441560627012,
           78.99498221210354
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4692,7 +4698,7 @@
             -85.92630455175058,
             78.9905677010957
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4708,7 +4714,7 @@
             -85.9505967348089,
             78.93970820004745
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4745,7 +4751,7 @@
           -88.24349683144271,
           79.93779756817445
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4775,7 +4781,7 @@
             -88.26114696547626,
             79.94400935412362
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4791,7 +4797,7 @@
             -88.2050962946986,
             80.00869855405955
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4828,7 +4834,7 @@
           -90.52629836647253,
           80.90164387438531
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4858,7 +4864,7 @@
             -90.56361223089858,
             80.91428541695834
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4874,7 +4880,7 @@
             -90.50733219131453,
             80.92663502668977
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4911,7 +4917,7 @@
           -92.81858053018718,
           81.64022826858643
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -4941,7 +4947,7 @@
             -92.85635370740535,
             81.64904048543599
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -4957,7 +4963,7 @@
             -92.87273496461606,
             81.57664657675423
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -4994,7 +5000,7 @@
           -95.10654442204812,
           82.1441453256271
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5024,7 +5030,7 @@
             -95.13564430136151,
             82.14513994945281
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5040,7 +5046,7 @@
             -95.02575584504902,
             82.23920493367267
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5077,7 +5083,7 @@
           -97.39394013186458,
           82.11379374101392
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5107,7 +5113,7 @@
             -97.4143258739994,
             82.11143903228648
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5123,7 +5129,7 @@
             -97.39345719535295,
             82.12089629436265
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5160,7 +5166,7 @@
           -99.68046474550411,
           81.8195707965826
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5190,7 +5196,7 @@
             -99.68978063048579,
             81.8085827791252
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5206,7 +5212,7 @@
             -99.68377104663973,
             81.8537407578365
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5243,7 +5249,7 @@
           -101.96799463468597,
           81.16390480952994
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5273,7 +5279,7 @@
             -101.9682245917689,
             81.14655885884441
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5289,7 +5295,7 @@
             -101.93575709176486,
             81.02188288332397
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5326,7 +5332,7 @@
           -104.25679284095037,
           80.29277385231282
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5356,7 +5362,7 @@
             -104.25061151274282,
             80.27074255818988
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5372,7 +5378,7 @@
             -104.25371162730116,
             80.28161455777246
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5409,7 +5415,7 @@
           -106.54684721250906,
           79.35193297263396
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5439,7 +5445,7 @@
             -106.54135709995187,
             79.33546415934303
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5455,7 +5461,7 @@
             -106.53719295562966,
             79.33490257447552
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5492,7 +5498,7 @@
           -108.84066077621216,
           78.00826085754332
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5522,7 +5528,7 @@
             -108.83385394705411,
             77.99396169126496
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5538,7 +5544,7 @@
             -108.80865380961748,
             77.9644565906876
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5575,7 +5581,7 @@
           -111.13388517628012,
           76.42940666202611
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5605,7 +5611,7 @@
             -111.12944354744602,
             76.42340305678687
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5621,7 +5627,7 @@
             -111.08008995395807,
             76.36213724150298
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5658,7 +5664,7 @@
           -113.42805957069383,
           74.4788038940553
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5688,7 +5694,7 @@
             -113.42788200275983,
             74.47856839782737
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5704,7 +5710,7 @@
             -113.42826817991578,
             74.47861102335601
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5741,7 +5747,7 @@
           -115.7033978285381,
           72.73062795606273
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5771,7 +5777,7 @@
             -115.70337113121062,
             72.73059176614655
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5787,7 +5793,7 @@
             -115.72615752893924,
             72.7577578277705
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5824,7 +5830,7 @@
           -117.9411287289141,
           71.05759017622375
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5854,7 +5860,7 @@
             -117.93990647407601,
             71.05600094406522
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5870,7 +5876,7 @@
             -117.91300148071683,
             71.02392589477171
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5907,7 +5913,7 @@
           -120.15912795314374,
           69.3109892674943
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -5937,7 +5943,7 @@
             -120.15374250606096,
             69.30440932501547
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -5953,7 +5959,7 @@
             -120.10108818775826,
             69.24332159230248
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -5990,7 +5996,7 @@
           -122.3510572932879,
           67.49835543041459
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6020,7 +6026,7 @@
             -122.34338458650205,
             67.48945855700431
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6036,7 +6042,7 @@
             -122.35109768404224,
             67.49841034907814
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6073,7 +6079,7 @@
           -124.81598318082752,
           65.66420465831136
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6103,7 +6109,7 @@
             -124.81282100690498,
             65.66627708893107
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6119,7 +6125,7 @@
             -124.81606079314201,
             65.66422004173546
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6156,7 +6162,7 @@
           -127.08842131027404,
           64.27605726761709
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6186,7 +6192,7 @@
             -127.07465610673188,
             64.2836884255247
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6202,7 +6208,7 @@
             -127.08835128550406,
             64.27610899702253
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6239,7 +6245,7 @@
           -129.3693946137954,
           63.156854002434244
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6269,7 +6275,7 @@
             -129.3680910738503,
             63.15752445585207
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6285,7 +6291,7 @@
             -129.3694389643893,
             63.156608229907825
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6322,7 +6328,7 @@
           -131.7133030153551,
           62.06111608732075
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6352,7 +6358,7 @@
             -131.72693859225006,
             62.05498093983635
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6368,7 +6374,7 @@
             -131.7133450311283,
             62.06111470591337
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6405,7 +6411,7 @@
           -134.04968365325956,
           61.72880738993208
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6435,7 +6441,7 @@
             -134.04844515510715,
             61.62492920990849
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6451,7 +6457,7 @@
             -134.0497473494389,
             61.72881205876049
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6488,7 +6494,7 @@
           -136.29235949478218,
           61.5545260423765
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6518,7 +6524,7 @@
             -136.28453030346756,
             61.48439313801306
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6534,7 +6540,7 @@
             -136.29228011456317,
             61.55460975834004
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6571,7 +6577,7 @@
           -138.5188801314269,
           61.01258957246106
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6601,7 +6607,7 @@
             -138.50949517998137,
             60.986629593322384
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6617,7 +6623,7 @@
             -138.51865115149604,
             61.01270867404513
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6654,7 +6660,7 @@
           -140.92185888403952,
           59.84605254996477
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6684,7 +6690,7 @@
             -140.92160594667925,
             59.8458830874246
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         },
         {
@@ -6700,7 +6706,7 @@
             -140.50685814016526,
             60.187317572588135
           ],
-          "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+          "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
           "registrationId": "z-anatomy-skull-v0.9.14"
         }
       ]
@@ -6737,7 +6743,7 @@
           -54.86820129469557,
           103.35861220458386
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6786,7 +6792,7 @@
           -58.00889658362144,
           109.67759776922232
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6835,7 +6841,7 @@
           -62.47127477729227,
           115.99669061133288
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6884,7 +6890,7 @@
           -65.44095621070294,
           122.31586940780866
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6933,7 +6939,7 @@
           -76.86010227099156,
           128.63489107834204
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -6982,7 +6988,7 @@
           -78.5567793586565,
           134.9539699496404
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7031,7 +7037,7 @@
           -82.65853908170337,
           141.27298607733218
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7080,7 +7086,7 @@
           -86.73901638637187,
           147.59198887345224
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7129,7 +7135,7 @@
           -91.35821769306048,
           153.91112521267632
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7290,7 +7296,7 @@
           -54.8578735448668,
           103.37729635256213
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7339,7 +7345,7 @@
           -57.997595267600204,
           109.69460201263429
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7388,7 +7394,7 @@
           -62.45936368795114,
           116.01192461246704
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7437,7 +7443,7 @@
           -65.42870556837231,
           122.32941818139207
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7486,7 +7492,7 @@
           -76.86565547044054,
           128.6467671269432
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7535,7 +7541,7 @@
           -78.54759278209241,
           134.96416759490967
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7584,7 +7590,7 @@
           -82.64492033675242,
           141.28147989702444
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7633,7 +7639,7 @@
           -86.72929189374662,
           147.59890640168032
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7682,7 +7688,7 @@
           -91.35527899439131,
           153.91625596527996
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7843,7 +7849,7 @@
           -85.38720703125,
           95.625244140625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7892,7 +7898,7 @@
           -85.60546875,
           101.06591796875
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7941,7 +7947,7 @@
           -91.801513671875,
           106.42822265625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -7990,7 +7996,7 @@
           -75.60693359375,
           111.755126953125
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8039,7 +8045,7 @@
           -89.656494140625,
           116.97607421875
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8172,7 +8178,7 @@
           -109.934326171875,
           90.103515625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8221,7 +8227,7 @@
           -129.3818359375,
           101.990478515625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8270,7 +8276,7 @@
           -129.889404296875,
           114.013916015625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8319,7 +8325,7 @@
           -125.267333984375,
           125.92041015625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8368,7 +8374,7 @@
           -131.279052734375,
           137.9287109375
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8501,7 +8507,7 @@
           -85.379150390625,
           95.6396484375
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8550,7 +8556,7 @@
           -85.597412109375,
           101.080322265625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8599,7 +8605,7 @@
           -91.79443359375,
           106.44091796875
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8648,7 +8654,7 @@
           -75.599853515625,
           111.76806640625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8697,7 +8703,7 @@
           -89.6474609375,
           116.99267578125
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8830,7 +8836,7 @@
           -109.932373046875,
           90.106689453125
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8879,7 +8885,7 @@
           -129.379638671875,
           101.994140625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8928,7 +8934,7 @@
           -129.88623046875,
           114.019775390625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -8977,7 +8983,7 @@
           -125.264404296875,
           125.925537109375
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -9026,7 +9032,7 @@
           -131.27490234375,
           137.935791015625
         ],
-        "assetSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "assetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "registrationId": "z-anatomy-skull-v0.9.14"
       },
       "guideAuthoring": "targets-v0.9.15",
@@ -9142,20 +9148,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -17.378206253051758,
-            -87.85928344726562,
-            61.333675384521484
+            -17.324594497680664,
+            -87.9968490600586,
+            61.14012908935547
           ],
           [
-            -0.5741273164749146,
-            -67.94155883789062,
-            73.84195709228516
+            -0.5518622994422913,
+            -69.59288024902344,
+            73.56678009033203
           ]
         ],
         "centroid": [
-          -8.666292029043447,
-          -78.3966457420004,
-          66.43706021850188
+          -8.686569662651406,
+          -78.1392939371369,
+          66.17007779285912
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9173,20 +9179,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -6.041440963745117,
-            -106.6086196899414,
-            37.709285736083984
+            -5.419674873352051,
+            -105.07228088378906,
+            38.797550201416016
           ],
           [
-            6.317063331604004,
-            -91.31739044189453,
-            53.53300857543945
+            5.816600322723389,
+            -92.1146011352539,
+            53.501861572265625
           ]
         ],
         "centroid": [
-          0.12952689015148858,
-          -99.7848824426851,
-          44.407436363060974
+          0.22987975288314136,
+          -98.67493071024698,
+          44.86942125805066
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9204,20 +9210,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -6.673058032989502,
-            -123.07697296142578,
-            44.20281982421875
+            -5.958327293395996,
+            -119.5417709350586,
+            44.89091873168945
           ],
           [
-            7.995848655700684,
-            -104.63360595703125,
-            56.37377166748047
+            7.278893947601318,
+            -102.53466033935547,
+            56.107666015625
           ]
         ],
         "centroid": [
-          0.46810083640816935,
-          -114.72741490742507,
-          51.21856962353301
+          0.5110865297859971,
+          -112.0363701908014,
+          51.354141708299345
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9235,20 +9241,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -21.960533142089844,
-            -101.18619537353516,
-            29.50518798828125
+            -21.16846466064453,
+            -100.66160583496094,
+            31.071456909179688
           ],
           [
-            -0.8748481869697571,
-            -79.49633026123047,
-            49.325382232666016
+            -0.7637637853622437,
+            -80.74172973632812,
+            49.553985595703125
           ]
         ],
         "centroid": [
-          -10.853690124040487,
-          -91.61783329415282,
-          39.62009434613929
+          -10.037497991633842,
+          -92.22363616264805,
+          40.61180949825518
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9266,20 +9272,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -46.95649719238281,
-            -136.75186157226562,
-            46.608524322509766
+            -44.915828704833984,
+            -131.71360778808594,
+            47.10801696777344
           ],
           [
-            0.5098047256469727,
-            -80.08675384521484,
-            65.34089660644531
+            0.5234877467155457,
+            -80.79285430908203,
+            64.37177276611328
           ]
         ],
         "centroid": [
-          -25.78073722350792,
-          -113.47150423432008,
-          55.68005847208478
+          -22.8311788534774,
+          -110.9440506543323,
+          55.55667883533488
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9297,20 +9303,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -14.92061996459961,
-            -98.22909545898438,
-            49.994781494140625
+            -13.785733222961426,
+            -97.70709991455078,
+            50.18574142456055
           ],
           [
-            -1.6147693395614624,
-            -69.1295394897461,
-            70.58450317382812
+            -1.5005769729614258,
+            -70.48399353027344,
+            70.54814147949219
           ]
         ],
         "centroid": [
-          -7.439175548666734,
-          -85.60299637840329,
-          58.3256963928044
+          -6.763694525913449,
+          -86.26125702220031,
+          58.3476824851418
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9328,20 +9334,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -5.474145412445068,
-            -116.92815399169922,
-            37.12911605834961
+            -4.876428604125977,
+            -114.32939147949219,
+            38.37179183959961
           ],
           [
-            6.750298500061035,
-            -101.71808624267578,
-            53.186622619628906
+            6.154909610748291,
+            -100.5887680053711,
+            53.17253875732422
           ]
         ],
         "centroid": [
-          0.6489984792257962,
-          -109.21723672678314,
-          44.259903692230125
+          0.637593174090205,
+          -107.22614855757965,
+          44.84011037038197
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9359,20 +9365,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -38.73348617553711,
-            -119.52188110351562,
-            52.046348571777344
+            -37.131309509277344,
+            -116.51717376708984,
+            52.12260818481445
           ],
           [
-            2.2438204288482666,
-            -75.83636474609375,
-            74.61028289794922
+            2.088263511657715,
+            -76.05950927734375,
+            72.91443634033203
           ]
         ],
         "centroid": [
-          -17.221239037912568,
-          -98.87641874721841,
-          61.653999848114786
+          -16.0222912730452,
+          -97.93839458796829,
+          61.119087626986826
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9390,20 +9396,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -32.131980895996094,
-            -95.52899169921875,
-            47.526466369628906
+            -32.00522994995117,
+            -95.38397979736328,
+            47.76240158081055
           ],
           [
-            0.15561924874782562,
-            -72.61603546142578,
-            55.9461784362793
+            0.18880529701709747,
+            -72.70161437988281,
+            55.79756546020508
           ]
         ],
         "centroid": [
-          -18.96142502432067,
-          -83.0435293385357,
-          51.115393111280376
+          -17.865978686071774,
+          -83.94226359263297,
+          51.27795039249208
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9421,20 +9427,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -4.3879475593566895,
-            -96.43543243408203,
-            43.243064880371094
+            -4.09785270690918,
+            -96.21977996826172,
+            43.74580764770508
           ],
           [
-            5.827877998352051,
-            -88.1651840209961,
-            54.709590911865234
+            5.499528408050537,
+            -89.00377655029297,
+            54.6288948059082
           ]
         ],
         "centroid": [
-          0.7729625183185618,
-          -92.09857247910965,
-          49.46650908000701
+          0.765683425396078,
+          -92.5639938665896,
+          49.63818996362714
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9452,20 +9458,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -4.588041305541992,
-            -92.60100555419922,
-            57.30611801147461
+            -4.430749416351318,
+            -92.7224349975586,
+            57.11573028564453
           ],
           [
-            5.293376445770264,
-            -76.99956512451172,
-            67.80813598632812
+            5.127074718475342,
+            -75.98217010498047,
+            67.66044616699219
           ]
         ],
         "centroid": [
-          0.3359594829731072,
-          -84.52678913867915,
-          62.37123203065574
+          0.3076008732730484,
+          -84.70377927906553,
+          62.106844357755605
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9483,20 +9489,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -45.79582977294922,
-            -136.1044158935547,
-            33.066925048828125
+            -43.90054702758789,
+            -131.1542205810547,
+            34.62807846069336
           ],
           [
-            0.23366409540176392,
-            -79.68974304199219,
-            60.726776123046875
+            0.2742984890937805,
+            -80.3655014038086,
+            60.11940002441406
           ]
         ],
         "centroid": [
-          -22.984591236222464,
-          -112.74723995854025,
-          47.08903988276748
+          -20.886779395607345,
+          -110.35682978954895,
+          47.6711324591649
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9514,20 +9520,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -37.66570281982422,
-            -117.32594299316406,
-            31.83039093017578
+            -35.72431182861328,
+            -114.7978744506836,
+            33.488487243652344
           ],
           [
-            -3.910170078277588,
-            -81.84798431396484,
-            50.660160064697266
+            -3.465097427368164,
+            -82.66935729980469,
+            50.79771423339844
           ]
         ],
         "centroid": [
-          -22.695923469142187,
-          -102.76589360262562,
-          40.950280538350505
+          -20.39379627425705,
+          -101.9859694417926,
+          41.96359990033236
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9545,20 +9551,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -5.754326343536377,
-            -123.1729736328125,
-            54.82443618774414
+            -5.129263877868652,
+            -119.91516876220703,
+            54.6797981262207
           ],
           [
-            7.086165428161621,
-            -106.46570587158203,
-            60.715824127197266
+            6.457995414733887,
+            -103.97572326660156,
+            60.10930252075195
           ]
         ],
         "centroid": [
-          0.6754539163523534,
-          -116.31038694653472,
-          57.65758363082959
+          0.5911125741853583,
+          -113.4691521621332,
+          57.355539842931236
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9576,20 +9582,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -30.059980392456055,
-            -86.52110290527344,
-            46.158512115478516
+            -30.04897117614746,
+            -87.4690933227539,
+            46.411224365234375
           ],
           [
-            -12.254364967346191,
-            -69.35161590576172,
-            53.3843994140625
+            -11.790678024291992,
+            -69.23625946044922,
+            53.38474655151367
           ]
         ],
         "centroid": [
-          -21.427394005303473,
-          -76.36047363771542,
-          49.44217809826336
+          -21.395702809275463,
+          -76.60383271494403,
+          49.65466025541089
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9607,20 +9613,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -5.202868461608887,
-            -120.34175109863281,
-            57.03572082519531
+            -4.631628513336182,
+            -117.29241943359375,
+            56.724178314208984
           ],
           [
-            6.560870170593262,
-            -101.85183715820312,
-            74.1082534790039
+            5.983969211578369,
+            -100.48363494873047,
+            72.45176696777344
           ]
         ],
         "centroid": [
-          0.9296381726307459,
-          -111.01220775751102,
-          64.71389845598017
+          0.9420942244224139,
+          -108.36114842453081,
+          63.62957975871761
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9638,20 +9644,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -4.373615264892578,
-            -106.06963348388672,
-            57.62875747680664
+            -3.969499349594116,
+            -103.6102294921875,
+            57.34823989868164
           ],
           [
-            5.661736488342285,
-            -87.37606811523438,
-            80.77924346923828
+            5.243190765380859,
+            -86.31616973876953,
+            79.14749145507812
           ]
         ],
         "centroid": [
-          0.7402858824160183,
-          -97.06721035406059,
-          70.24937787355911
+          0.7183410487134402,
+          -95.82464894831377,
+          69.11275818732511
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9669,20 +9675,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -3.3937714099884033,
-            -93.5779037475586,
-            58.28889846801758
+            -3.2427852153778076,
+            -93.55577087402344,
+            58.037288665771484
           ],
           [
-            4.071458339691162,
-            -77.04118347167969,
-            73.63231658935547
+            3.921597957611084,
+            -75.78629302978516,
+            73.3746566772461
           ]
         ],
         "centroid": [
-          0.25353690972254667,
-          -85.01018812905316,
-          65.35400183212515
+          0.30672662473297047,
+          -84.43866898642618,
+          65.07455414145912
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9700,20 +9706,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -35.179508209228516,
-            -110.17462921142578,
-            30.612882614135742
+            -33.90143966674805,
+            -108.35594177246094,
+            32.31203079223633
           ],
           [
-            -1.7560720443725586,
-            -75.81566619873047,
-            49.97931671142578
+            -1.522843837738037,
+            -75.84886932373047,
+            50.08464431762695
           ]
         ],
         "centroid": [
-          -19.759955391483967,
-          -94.22831707585756,
-          40.61900029042597
+          -18.12521300196261,
+          -94.2012649886826,
+          41.6313793191104
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9731,20 +9737,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -27.5477237701416,
-            -104.9059829711914,
-            55.47808837890625
+            -27.2658634185791,
+            -102.5560531616211,
+            55.45557403564453
           ],
           [
-            1.989167332649231,
-            -71.16893768310547,
-            79.79022979736328
+            1.8620400428771973,
+            -70.6734619140625,
+            78.23323822021484
           ]
         ],
         "centroid": [
-          -10.261715084824736,
-          -87.82056991176633,
-          67.5822537997776
+          -10.126391763975715,
+          -86.93199588911158,
+          66.74713669766844
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9762,20 +9768,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            1.8553087711334229,
-            -87.85868835449219,
-            61.33749771118164
+            1.833387017250061,
+            -87.99601745605469,
+            61.144535064697266
           ],
           [
-            18.66086769104004,
-            -67.93871307373047,
-            73.8428726196289
+            18.616331100463867,
+            -69.73895263671875,
+            73.56771850585938
           ]
         ],
         "centroid": [
-          9.949091181517009,
-          -78.39486140466178,
-          66.44027199660171
+          10.028266042533064,
+          -77.94582714457003,
+          66.30912764807903
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9793,20 +9799,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            2.1693613529205322,
-            -101.18472290039062,
-            29.507999420166016
+            2.058678388595581,
+            -100.64511108398438,
+            31.06531524658203
           ],
           [
-            23.2539005279541,
-            -79.49275970458984,
-            49.32769012451172
+            22.460968017578125,
+            -80.76860046386719,
+            49.556156158447266
           ]
         ],
         "centroid": [
-          12.148284806595647,
-          -91.61562812487533,
-          39.624062857285296
+          11.133007885224337,
+          -92.36022242230972,
+          40.80819280071213
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9824,20 +9830,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            0.7817031741142273,
-            -136.74908447265625,
-            46.62083435058594
+            0.7688488960266113,
+            -131.71121215820312,
+            47.119361877441406
           ],
           [
-            48.2487678527832,
-            -80.07794952392578,
-            65.34233093261719
+            46.20458221435547,
+            -80.78339385986328,
+            64.37309265136719
           ]
         ],
         "centroid": [
-          27.073971339767496,
-          -113.46643768567861,
-          55.689176909407955
+          23.58469138872787,
+          -110.91258492279053,
+          55.7153591178476
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9855,20 +9861,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            2.903364658355713,
-            -98.22653198242188,
-            49.998985290527344
+            2.7898523807525635,
+            -97.7048568725586,
+            50.189697265625
           ],
           [
-            16.211627960205078,
-            -69.12834930419922,
-            70.5861587524414
+            15.077535629272461,
+            -70.45836639404297,
+            70.54954528808594
           ]
         ],
         "centroid": [
-          8.726155351948979,
-          -85.60144686729076,
-          58.32848532053313
+          8.196904679724797,
+          -86.41251437779094,
+          58.201693408283184
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9886,20 +9892,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -0.9537060260772705,
-            -119.5213394165039,
-            52.05516052246094
+            -0.7971842885017395,
+            -116.51666259765625,
+            52.130943298339844
           ],
           [
-            40.020668029785156,
-            -75.83077239990234,
-            74.6106948852539
+            38.41986846923828,
+            -76.0332260131836,
+            72.9148178100586
           ]
         ],
         "centroid": [
-          18.509614584499065,
-          -98.87299354767164,
-          61.66016425402956
+          17.292421334741682,
+          -97.93593795489481,
+          61.22100785924461
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9917,20 +9923,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            1.1339783668518066,
-            -95.52887725830078,
-            47.53269958496094
+            1.10149085521698,
+            -95.38387298583984,
+            47.768428802490234
           ],
           [
-            33.41853713989258,
-            -72.60990905761719,
-            55.9467658996582
+            33.29226303100586,
+            -72.69512176513672,
+            55.79824447631836
           ]
         ],
         "centroid": [
-          20.250401666501528,
-          -83.03977039053889,
-          51.122158394370246
+          18.347736098779546,
+          -84.53599619295693,
+          51.37963500083963
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9948,20 +9954,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            1.0612335205078125,
-            -136.1018524169922,
-            33.07319259643555
+            1.021097183227539,
+            -131.13880920410156,
+            34.633853912353516
           ],
           [
-            47.088165283203125,
-            -79.6810073852539,
-            60.72897720336914
+            45.19004440307617,
+            -80.3560791015625,
+            60.12142562866211
           ]
         ],
         "centroid": [
-          24.280658359200242,
-          -112.74270922314602,
-          47.09719391582882
+          21.466123963082946,
+          -110.44043168159966,
+          47.846960293378174
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -9979,20 +9985,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            5.206665992736816,
-            -117.32341003417969,
-            31.83675765991211
+            4.761935234069824,
+            -114.69664764404297,
+            33.494354248046875
           ],
           [
-            38.959861755371094,
-            -81.84133911132812,
-            50.67033004760742
+            37.01894760131836,
+            -82.66234588623047,
+            50.80742645263672
           ]
         ],
         "centroid": [
-          23.992188223724533,
-          -102.76141789319385,
-          40.95833520198589
+          21.331495977837942,
+          -101.98591441015255,
+          42.07256382826733
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10010,20 +10016,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            13.544759750366211,
-            -86.51828002929688,
-            46.164127349853516
+            13.081494331359863,
+            -87.46625518798828,
+            46.416744232177734
           ],
           [
-            31.346511840820312,
-            -69.34600830078125,
-            53.394134521484375
+            31.33563232421875,
+            -69.2289047241211,
+            53.394474029541016
           ]
         ],
         "centroid": [
-          22.715673588692283,
-          -76.35624205503268,
-          49.44979393219646
+          22.690031833229042,
+          -76.41856979421127,
+          49.68354517555548
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10041,20 +10047,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            3.051797389984131,
-            -110.17244720458984,
-            30.61936378479004
+            2.8189847469329834,
+            -108.35371398925781,
+            32.31546401977539
           ],
           [
-            36.47260665893555,
-            -75.81076049804688,
-            49.98902893066406
+            35.19485092163086,
+            -75.80661010742188,
+            50.094058990478516
           ]
         ],
         "centroid": [
-          21.054697888659785,
-          -94.22440826884366,
-          40.62615729713562
+          19.342786242000624,
+          -94.30614567945184,
+          41.62348952637894
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10072,20 +10078,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -0.7040563225746155,
-            -104.90616607666016,
-            55.486446380615234
+            -0.5755149126052856,
+            -102.55621337890625,
+            55.463497161865234
           ],
           [
-            28.831926345825195,
-            -71.16555786132812,
-            79.79056549072266
+            28.553234100341797,
+            -70.71989440917969,
+            78.23357391357422
           ]
         ],
         "centroid": [
-          11.54592597087168,
-          -87.8184794600081,
-          67.58601560644834
+          11.77202969142304,
+          -86.27678720755567,
+          66.75904790664649
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10103,22 +10109,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            0.6042358875274658,
-            -83.44149017333984,
-            44.06305694580078
+            0.6044921875,
+            -84.2890625,
+            44.37092208862305
           ],
           [
-            20.521137237548828,
-            -51.07444763183594,
-            70.9678955078125
+            20.4228515625,
+            -58.68244934082031,
+            71.191650390625
           ]
         ],
         "centroid": [
-          8.829778689579896,
-          -68.65562869779954,
-          58.47824944409322
+          9.645359771216617,
+          -72.44708694630869,
+          57.780863243694405
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10134,22 +10141,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -19.23663902282715,
-            -83.44284057617188,
-            44.06058883666992
+            -19.164306640625,
+            -84.26708984375,
+            44.236080169677734
           ],
           [
-            0.6830394864082336,
-            -51.07566833496094,
-            70.9666748046875
+            0.9108127951622009,
+            -58.08175277709961,
+            70.98512268066406
           ]
         ],
         "centroid": [
-          -7.546221305334833,
-          -68.65719764707836,
-          58.47542426701333
+          -8.204040777442255,
+          -72.63466961297793,
+          57.60709039969873
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10165,22 +10173,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -12.635407447814941,
-            -94.01148223876953,
-            33.77364730834961
+            -12.306396484375,
+            -93.970458984375,
+            34.582763671875
           ],
           [
-            13.926189422607422,
-            -72.01961517333984,
-            69.25333404541016
+            13.60546875,
+            -72.49755859375,
+            69.222900390625
           ]
         ],
         "centroid": [
-          0.644529327078937,
-          -82.81086442698924,
-          50.37665990299135
+          0.7540781375248562,
+          -84.03130802825005,
+          49.90953027197436
         ],
-        "surfaceRole": "csf-boundary"
+        "surfaceRole": "csf-boundary",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10196,22 +10205,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -11.962170600891113,
-            -94.13577270507812,
-            8.742782592773438
+            -11.691650390625,
+            -94.811279296875,
+            10.552978515625
           ],
           [
-            0.6333646774291992,
-            -62.88809585571289,
-            47.56085968017578
+            0.634033203125,
+            -73.23594665527344,
+            49.60928726196289
           ]
         ],
         "centroid": [
-          -3.412517158891399,
-          -79.65739187589239,
-          30.744153300409057
+          -4.027826201588644,
+          -82.70406355724161,
+          33.05936260341167
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10227,22 +10237,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            0.66053706407547,
-            -94.13558197021484,
-            8.742975234985352
+            0.66015625,
+            -94.811279296875,
+            10.55322265625
           ],
           [
-            13.252450942993164,
-            -62.887760162353516,
-            47.563568115234375
+            13.0078125,
+            -73.26142883300781,
+            49.65259552001953
           ]
         ],
         "centroid": [
-          4.707759910600321,
-          -79.65661215662219,
-          30.7455528824354
+          5.216751735083136,
+          -82.51222969810203,
+          33.32419484199169
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10269,9 +10280,9 @@
           ]
         ],
         "centroid": [
-          25.771597843171925,
-          -104.11964748295091,
-          66.52941359411734
+          26.626366753656214,
+          -103.50336607219278,
+          66.0640449915264
         ],
         "surfaceRole": "dural-surface"
       }
@@ -10300,9 +10311,9 @@
           ]
         ],
         "centroid": [
-          0.6007482396898794,
-          -73.90516799211856,
-          118.3021971948038
+          0.6027750906026926,
+          -81.0853082582672,
+          105.65099939602653
         ],
         "surfaceRole": "dural-surface"
       }
@@ -10331,9 +10342,9 @@
           ]
         ],
         "centroid": [
-          -24.48389072109709,
-          -104.12446469639607,
-          66.52074308968149
+          -25.338617527829747,
+          -103.5083472875481,
+          66.0550793555036
         ],
         "surfaceRole": "dural-surface"
       }
@@ -10362,9 +10373,9 @@
           ]
         ],
         "centroid": [
-          16.423692712248393,
-          -66.66090019230103,
-          96.46723821818469
+          16.488359367658482,
+          -66.66998531701728,
+          96.2647411838061
         ],
         "surfaceRole": "csf-boundary"
       }
@@ -10393,9 +10404,9 @@
           ]
         ],
         "centroid": [
-          -15.153618621637566,
-          -66.66392610177627,
-          96.46179102317963
+          -15.218213590707945,
+          -66.67302399023413,
+          96.25927164405071
         ],
         "surfaceRole": "csf-boundary"
       }
@@ -10424,9 +10435,9 @@
           ]
         ],
         "centroid": [
-          12.040053613998662,
-          -68.14450531945735,
-          92.45725466889856
+          12.226647959606542,
+          -68.63167982526964,
+          92.25475213158475
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10455,9 +10466,9 @@
           ]
         ],
         "centroid": [
-          -10.768312318000863,
-          -68.14669148693004,
-          92.45331936035863
+          -10.954743487041766,
+          -68.63390201158099,
+          92.2507527068531
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10486,9 +10497,9 @@
           ]
         ],
         "centroid": [
-          0.6354212637182266,
-          -60.58207863380723,
-          90.81378339893824
+          0.6355073991280388,
+          -59.82218667066572,
+          89.89284139921314
         ],
         "surfaceRole": "csf-boundary"
       }
@@ -10506,22 +10517,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            0.6551315188407898,
-            -79.66260528564453,
-            68.92707061767578
+            0.655029296875,
+            -78.336669921875,
+            68.74609375
           ],
           [
-            14.469356536865234,
-            -52.06059646606445,
-            84.94324493408203
+            14.46923828125,
+            -51.63966369628906,
+            84.943359375
           ]
         ],
         "centroid": [
-          5.836939260068162,
-          -66.10391820264634,
-          77.3127577628741
+          5.830005825374267,
+          -67.7063052849147,
+          77.3853923540697
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10537,22 +10549,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -13.194360733032227,
-            -79.66311645507812,
-            68.92664337158203
+            -13.1943359375,
+            -78.334228515625,
+            68.74560546875
           ],
           [
-            0.6216996312141418,
-            -52.06134796142578,
-            84.94188690185547
+            1.1259031295776367,
+            -51.849273681640625,
+            84.94189453125
           ]
         ],
         "centroid": [
-          -4.560366311092032,
-          -66.10491613706652,
-          77.31096293239874
+          -4.610064749853247,
+          -67.82820137817502,
+          77.23108293201497
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -10579,9 +10592,9 @@
           ]
         ],
         "centroid": [
-          -46.15273276172344,
-          -38.48634288373388,
-          108.58245072866879
+          -46.014494639571,
+          -38.154649155114285,
+          109.87759307123
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10610,9 +10623,9 @@
           ]
         ],
         "centroid": [
-          -44.37206645392556,
-          -24.672837432394214,
-          94.24071651194689
+          -45.25969872725637,
+          -23.856571026852258,
+          93.9418746145148
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10641,9 +10654,9 @@
           ]
         ],
         "centroid": [
-          -48.366462897212806,
-          -25.332854035168445,
-          107.33094472327555
+          -47.90168604512853,
+          -25.819885828363613,
+          107.67327856829786
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10672,9 +10685,9 @@
           ]
         ],
         "centroid": [
-          -25.44437232301463,
-          8.283165162153944,
-          100.95268889881557
+          -25.037955570220948,
+          8.259403633433536,
+          100.94836684718277
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -10703,9 +10716,9 @@
           ]
         ],
         "centroid": [
-          -9.31534998041519,
-          -93.97477734630034,
-          150.75394395153663
+          -9.746973052541836,
+          -93.94019983428227,
+          150.18855038751659
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -10734,9 +10747,9 @@
           ]
         ],
         "centroid": [
-          -13.090071272582987,
-          13.097859338792265,
-          107.02248512852415
+          -13.253286663109694,
+          12.75493718356621,
+          107.00150137800512
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -10765,9 +10778,9 @@
           ]
         ],
         "centroid": [
-          -4.594295207160771,
-          -10.626702111294923,
-          86.94561605028338
+          -5.011483428977954,
+          -8.99263783585775,
+          87.52188938856125
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10796,9 +10809,9 @@
           ]
         ],
         "centroid": [
-          -42.786792643130006,
-          -30.87336050798218,
-          111.88506614279095
+          -42.98246772843178,
+          -31.02376007311272,
+          112.06886368568497
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -10827,9 +10840,9 @@
           ]
         ],
         "centroid": [
-          -38.774009817815426,
-          -23.95519462034838,
-          119.2527287722841
+          -38.35717044211473,
+          -25.149532008113354,
+          119.66089781606458
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -10858,9 +10871,9 @@
           ]
         ],
         "centroid": [
-          -31.443035873710905,
-          -20.697291610836796,
-          129.4256973961664
+          -31.3224087062371,
+          -19.75171204569189,
+          128.41258346731468
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10889,9 +10902,9 @@
           ]
         ],
         "centroid": [
-          -27.026722221374897,
-          -14.45298355267958,
-          87.2056958964358
+          -27.2310031267701,
+          -14.258501389960724,
+          87.59857253422813
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10920,9 +10933,9 @@
           ]
         ],
         "centroid": [
-          -39.75776609319428,
-          -62.997972924246675,
-          138.33043970748776
+          -40.59461908203682,
+          -61.830333073104995,
+          136.50031233766398
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10951,9 +10964,9 @@
           ]
         ],
         "centroid": [
-          -7.413325193883844,
-          -32.24509399098102,
-          138.45203757055438
+          -7.263591044172734,
+          -31.46304020160634,
+          137.26865951016418
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -10982,9 +10995,9 @@
           ]
         ],
         "centroid": [
-          -20.64974703562655,
-          -39.88252575961442,
-          139.95831684126807
+          -20.71336211155887,
+          -38.889914031375135,
+          139.24480966511982
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11013,9 +11026,9 @@
           ]
         ],
         "centroid": [
-          -23.749692232408915,
-          -4.693940978293975,
-          120.20347944117071
+          -23.761599755146094,
+          -4.804979100371518,
+          119.99031987839197
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11044,9 +11057,9 @@
           ]
         ],
         "centroid": [
-          -26.267308553728025,
-          -12.086155373675227,
-          90.92638076544684
+          -26.1785338752886,
+          -11.93619579492093,
+          90.80068147026839
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11075,9 +11088,9 @@
           ]
         ],
         "centroid": [
-          -45.91282611953658,
-          -10.356501909837757,
-          101.23737226464439
+          -45.7984727971694,
+          -10.326164409226061,
+          100.9343360452091
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11106,9 +11119,9 @@
           ]
         ],
         "centroid": [
-          -12.229830136723663,
-          -22.916470713961548,
-          85.97887749152302
+          -12.452801146940752,
+          -24.89013602516868,
+          85.54070739746093
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11137,9 +11150,9 @@
           ]
         ],
         "centroid": [
-          -40.37013360783994,
-          -46.63931266986283,
-          124.21102914163153
+          -40.23238464023756,
+          -46.566724655268445,
+          124.65026668148577
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11168,9 +11181,9 @@
           ]
         ],
         "centroid": [
-          -26.742597275234775,
-          -67.03752421271,
-          141.3501676618545
+          -26.482746254314076,
+          -66.88022821599787,
+          141.65484176315627
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11199,9 +11212,9 @@
           ]
         ],
         "centroid": [
-          -41.34887939139839,
-          -23.257687755491244,
-          100.16742261970559
+          -41.75234779615081,
+          -23.284332896886248,
+          99.65300424982992
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11230,9 +11243,9 @@
           ]
         ],
         "centroid": [
-          47.41332030291483,
-          -38.477373862751,
-          108.59859409039488
+          47.274571931490335,
+          -38.145706751013314,
+          109.89368842750467
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11261,9 +11274,9 @@
           ]
         ],
         "centroid": [
-          49.624964403159396,
-          -25.323460994020156,
-          107.34785061800918
+          49.160162587804116,
+          -25.8105817404319,
+          107.69002487903505
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11292,9 +11305,9 @@
           ]
         ],
         "centroid": [
-          26.698632564166736,
-          8.288162545150792,
-          100.96168601651962
+          26.292220988418116,
+          8.264323969947343,
+          100.95722295587713
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11323,9 +11336,9 @@
           ]
         ],
         "centroid": [
-          10.572028537886409,
-          -93.97287010719107,
-          150.75737583308612
+          11.00383992931887,
+          -93.93821064673305,
+          150.1921300913358
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11354,9 +11367,9 @@
           ]
         ],
         "centroid": [
-          14.341313020993464,
-          13.100488688305036,
-          107.02721755979005
+          14.504601476638298,
+          12.75759795623097,
+          107.00629021869442
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11385,9 +11398,9 @@
           ]
         ],
         "centroid": [
-          5.857011074020303,
-          -10.625699130289092,
-          86.94741945721985
+          6.273687208071351,
+          -8.991556039181887,
+          87.52383649349213
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11416,9 +11429,9 @@
           ]
         ],
         "centroid": [
-          44.044786798294645,
-          -30.86503737754519,
-          111.90004843949586
+          44.24042591904149,
+          -31.01539929707845,
+          112.08391270493016
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11447,9 +11460,9 @@
           ]
         ],
         "centroid": [
-          40.02813010266847,
-          -23.947639655473825,
-          119.26632384967175
+          39.611379313988486,
+          -25.142058215476123,
+          119.67434975021399
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11478,9 +11491,9 @@
           ]
         ],
         "centroid": [
-          32.693025587211984,
-          -20.691143590088892,
-          129.43676296252013
+          32.5725669651884,
+          -19.74558728279368,
+          128.4236074409184
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11509,9 +11522,9 @@
           ]
         ],
         "centroid": [
-          28.290080505573272,
-          -14.447681095619071,
-          87.21523999575192
+          28.494188263302757,
+          -14.253159762000438,
+          87.60818696400476
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11540,9 +11553,9 @@
           ]
         ],
         "centroid": [
-          41.01278837748678,
-          -62.99023022062836,
-          138.34437495846197
+          41.85004918671649,
+          -61.82243002005009,
+          136.51453649329392
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11571,9 +11584,9 @@
           ]
         ],
         "centroid": [
-          8.662412633780836,
-          -32.243552243158156,
-          138.45481086196108
+          8.512936789160355,
+          -31.46152792481554,
+          137.27138147598657
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11602,9 +11615,9 @@
           ]
         ],
         "centroid": [
-          21.899781015344836,
-          -39.87844726322214,
-          139.96565823048803
+          21.96345233180239,
+          -38.88582312673837,
+          139.25217276194365
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11633,9 +11646,9 @@
           ]
         ],
         "centroid": [
-          24.99979316212518,
-          -4.689267105345783,
-          120.21188945145468
+          25.011795478459646,
+          -4.800303861416171,
+          119.99873476197733
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11664,9 +11677,9 @@
           ]
         ],
         "centroid": [
-          27.528929094853236,
-          -12.08099873882979,
-          90.93566276153165
+          27.440168945969862,
+          -11.931056100952953,
+          90.80993253941946
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11695,9 +11708,9 @@
           ]
         ],
         "centroid": [
-          47.170559294686946,
-          -10.347579131693495,
-          101.2534312619094
+          47.0563045576507,
+          -10.317263706057679,
+          100.95035612816905
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11726,9 +11739,9 @@
           ]
         ],
         "centroid": [
-          13.495235032514238,
-          -22.914003346298767,
-          85.98331579132137
+          13.718735772913153,
+          -24.887627324895426,
+          85.5452226673473
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11757,9 +11770,9 @@
           ]
         ],
         "centroid": [
-          41.62689595600934,
-          -46.6314525419333,
-          124.22517608863555
+          41.4889811737763,
+          -46.55889109150528,
+          124.66436625136744
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11788,9 +11801,9 @@
           ]
         ],
         "centroid": [
-          27.997356203236638,
-          -67.03227729270465,
-          141.3596122544638
+          27.73737061440528,
+          -66.8750309577355,
+          141.66419604108052
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11819,9 +11832,9 @@
           ]
         ],
         "centroid": [
-          42.60945161060187,
-          -23.2496400619249,
-          100.1819085972922
+          43.013102885042684,
+          -23.276207527417814,
+          99.6676294562522
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11850,9 +11863,9 @@
           ]
         ],
         "centroid": [
-          -37.32407960251791,
-          -124.51773811630866,
-          120.29674841244214
+          -37.792814617885746,
+          -123.43240889196183,
+          119.94586409818828
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11881,9 +11894,9 @@
           ]
         ],
         "centroid": [
-          -51.54037992424485,
-          -94.28621689086825,
-          121.0942012872248
+          -51.2041605893897,
+          -94.092010831076,
+          120.5786671916013
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11912,9 +11925,9 @@
           ]
         ],
         "centroid": [
-          -42.91099860375519,
-          -82.3273507817659,
-          138.51534121573627
+          -43.022417720213895,
+          -81.44048047313228,
+          137.5955278865194
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -11943,9 +11956,9 @@
           ]
         ],
         "centroid": [
-          -36.00306036326405,
-          -91.06784613510484,
-          130.93772003924562
+          -36.48535808595289,
+          -90.62181826038521,
+          130.30302812592322
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -11974,9 +11987,9 @@
           ]
         ],
         "centroid": [
-          -4.459451192465094,
-          -116.93967102091098,
-          123.24787593385678
+          -4.791613964516772,
+          -116.33055346436296,
+          122.153734289064
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12005,9 +12018,9 @@
           ]
         ],
         "centroid": [
-          -18.02401749273358,
-          -120.1617499920207,
-          137.73386391325525
+          -17.92187056039301,
+          -120.31304811442867,
+          137.33259057445116
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12036,9 +12049,9 @@
           ]
         ],
         "centroid": [
-          -28.19052284966333,
-          -112.23103856839872,
-          126.80138950245822
+          -28.11658709294328,
+          -112.05975457663848,
+          126.87678820173318
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12067,9 +12080,9 @@
           ]
         ],
         "centroid": [
-          38.59713822433731,
-          -124.51045999749572,
-          120.30984768864857
+          39.065785675651945,
+          -123.42504174153324,
+          119.95912470962062
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12098,9 +12111,9 @@
           ]
         ],
         "centroid": [
-          52.80736590083836,
-          -94.27621443126309,
-          121.112204994561
+          52.47128726817943,
+          -94.08207289882438,
+          120.59655453919103
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12129,9 +12142,9 @@
           ]
         ],
         "centroid": [
-          44.16968391711661,
-          -82.31900325302725,
-          138.53036526533285
+          44.28125052798578,
+          -81.43211158171657,
+          137.6105903968679
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12160,9 +12173,9 @@
           ]
         ],
         "centroid": [
-          37.26603327695078,
-          -91.06082379442552,
-          130.9503624962366
+          37.748465084428545,
+          -90.61470242027475,
+          130.31583585338433
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12191,9 +12204,9 @@
           ]
         ],
         "centroid": [
-          5.730040752901332,
-          -116.93869381582181,
-          123.24963410251601
+          6.062464199823104,
+          -116.32951311684825,
+          122.15560695437566
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12222,9 +12235,9 @@
           ]
         ],
         "centroid": [
-          19.290224324834902,
-          -120.1581735509197,
-          137.7403016998991
+          19.188245545176922,
+          -120.30949091871777,
+          137.33899319270753
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12253,9 +12266,9 @@
           ]
         ],
         "centroid": [
-          29.45897881464065,
-          -112.22551175644332,
-          126.81133605760171
+          29.384984294944836,
+          -112.05424258864929,
+          126.88670914195409
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12284,9 +12297,9 @@
           ]
         ],
         "centroid": [
-          -16.523177525582433,
-          -144.25621724778833,
-          72.12745581654798
+          -16.70988223512729,
+          -143.87087128704923,
+          72.34373338735178
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12315,9 +12328,9 @@
           ]
         ],
         "centroid": [
-          -34.706509568782195,
-          -128.05272420020626,
-          69.76886837640846
+          -34.627079196921436,
+          -127.65944304604308,
+          70.2585115581419
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12346,9 +12359,9 @@
           ]
         ],
         "centroid": [
-          -9.3984715367047,
-          -125.16185317523541,
-          77.86634903431674
+          -9.935199715542595,
+          -125.31974421443327,
+          77.75007704690577
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12377,9 +12390,9 @@
           ]
         ],
         "centroid": [
-          -35.22805713757766,
-          -136.1894470504052,
-          91.71608294193939
+          -35.00748916216941,
+          -135.7480985734846,
+          90.70070957637333
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12408,9 +12421,9 @@
           ]
         ],
         "centroid": [
-          -11.896046375111712,
-          -120.70180295538896,
-          87.51978779818184
+          -11.798647076914458,
+          -122.25384387053396,
+          87.31793890283092
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12439,9 +12452,9 @@
           ]
         ],
         "centroid": [
-          -5.979176001144827,
-          -137.84709894883588,
-          96.00678307654857
+          -6.521303866866388,
+          -136.71024179559004,
+          95.47317634984067
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12470,9 +12483,9 @@
           ]
         ],
         "centroid": [
-          -15.563372940751286,
-          -142.7425708186356,
-          104.30958115955437
+          -15.575948937002913,
+          -142.50395605613642,
+          103.8718114564256
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12501,9 +12514,9 @@
           ]
         ],
         "centroid": [
-          -31.0211522781398,
-          -137.27212760227982,
-          84.27849380404564
+          -30.864528264754856,
+          -137.24422313983624,
+          84.24562440529847
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12532,9 +12545,9 @@
           ]
         ],
         "centroid": [
-          -22.85568275136695,
-          -133.05704240793145,
-          96.2273721826429
+          -22.987651446245717,
+          -133.28523608221525,
+          95.38878428141275
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12563,9 +12576,9 @@
           ]
         ],
         "centroid": [
-          17.816649551031837,
-          -144.25292964120698,
-          72.13338122502637
+          18.00320489645502,
+          -143.86754700535275,
+          72.34972212757596
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12594,9 +12607,9 @@
           ]
         ],
         "centroid": [
-          35.99768514883576,
-          -128.0459531611266,
-          69.78106667634226
+          35.91801124266898,
+          -127.65266766792416,
+          70.27068314414247
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12625,9 +12638,9 @@
           ]
         ],
         "centroid": [
-          10.686306257767122,
-          -125.15993078614781,
-          77.86981307266548
+          11.223104307824451,
+          -125.31771783454523,
+          77.75372724952652
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12656,9 +12669,9 @@
           ]
         ],
         "centroid": [
-          36.513225992586335,
-          -136.18257647991805,
-          91.7284606583009
+          36.29292392508411,
+          -135.74126942952475,
+          90.71301107695608
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12687,9 +12700,9 @@
           ]
         ],
         "centroid": [
-          13.179695177540399,
-          -120.69940226561869,
-          87.5241141079198
+          13.082662675691688,
+          -122.25146084573777,
+          87.32223159824956
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12718,9 +12731,9 @@
           ]
         ],
         "centroid": [
-          7.263180385888744,
-          -137.8458294034302,
-          96.00906649767592
+          7.80527474390833,
+          -136.7088690828022,
+          95.4756474063271
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12749,9 +12762,9 @@
           ]
         ],
         "centroid": [
-          16.84545005213244,
-          -142.7394667174274,
-          104.31517225517055
+          16.858130626225684,
+          -142.50084955685216,
+          103.87740654195451
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12780,9 +12793,9 @@
           ]
         ],
         "centroid": [
-          32.30909360344699,
-          -137.26606230387594,
-          84.28942023664146
+          32.15247433002178,
+          -137.2381884843875,
+          84.25649695763221
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12811,9 +12824,9 @@
           ]
         ],
         "centroid": [
-          24.1386926382576,
-          -133.0525417360596,
-          96.23548078965736
+          24.270994169815726,
+          -133.2807101926942,
+          95.39693747257841
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -12842,9 +12855,9 @@
           ]
         ],
         "centroid": [
-          -35.627850013457,
-          -37.951212221126276,
-          63.74625918156993
+          -35.49858187933038,
+          -39.381418882495296,
+          62.88236205943309
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12873,9 +12886,9 @@
           ]
         ],
         "centroid": [
-          -43.85679694059823,
-          -70.8498240103665,
-          98.82948067822743
+          -43.6641732865021,
+          -71.072983140705,
+          98.67813437325614
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12904,9 +12917,9 @@
           ]
         ],
         "centroid": [
-          -55.29837517357682,
-          -92.04010504449873,
-          109.02187159117504
+          -54.90607302529471,
+          -91.95587542397635,
+          108.89909872327532
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12935,9 +12948,9 @@
           ]
         ],
         "centroid": [
-          -55.90148240937791,
-          -64.11353242063696,
-          91.03781888202664
+          -55.137287756767414,
+          -62.79105252404195,
+          90.26411663466669
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12966,9 +12979,9 @@
           ]
         ],
         "centroid": [
-          -34.4710684882059,
-          -96.99266145144372,
-          69.47308826595842
+          -34.112468995439244,
+          -97.5328075977082,
+          69.6167229916187
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -12997,9 +13010,9 @@
           ]
         ],
         "centroid": [
-          -25.498864181568663,
-          -64.97467693396497,
-          68.50364755471672
+          -25.342941012272544,
+          -65.26654325441244,
+          69.94533120561196
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13028,9 +13041,9 @@
           ]
         ],
         "centroid": [
-          -41.63226840841194,
-          -68.04484333765329,
-          66.99196928413788
+          -41.720866455078124,
+          -68.21432971191406,
+          66.44795068359375
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13059,9 +13072,9 @@
           ]
         ],
         "centroid": [
-          -49.733424379255176,
-          -87.46497172467929,
-          69.12012542348067
+          -49.542473342895505,
+          -88.0978871866862,
+          69.50484283447265
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13090,9 +13103,9 @@
           ]
         ],
         "centroid": [
-          -54.029600810051576,
-          -86.23918861116952,
-          81.99145175861275
+          -53.58217631300835,
+          -84.1795269401469,
+          81.45289852775214
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13121,9 +13134,9 @@
           ]
         ],
         "centroid": [
-          -46.55275781755466,
-          -95.59202613096902,
-          94.36663714561521
+          -46.741455870581035,
+          -94.97334966186318,
+          94.19988511248333
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13152,9 +13165,9 @@
           ]
         ],
         "centroid": [
-          -41.550472619045024,
-          -101.68544996534044,
-          75.88951192390836
+          -41.80600698042889,
+          -101.48197279949578,
+          75.73988635004783
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13183,9 +13196,9 @@
           ]
         ],
         "centroid": [
-          36.90376435520096,
-          -37.94425974489643,
-          63.7587735114166
+          36.77506843622584,
+          -39.37449103028235,
+          62.894831789671066
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13214,9 +13227,9 @@
           ]
         ],
         "centroid": [
-          45.12691297438019,
-          -70.84129391496049,
-          98.84483237513327
+          44.93438326410887,
+          -71.06449059879078,
+          98.6934204742688
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13245,9 +13258,9 @@
           ]
         ],
         "centroid": [
-          56.56904973723227,
-          -92.02938190085342,
-          109.04117112904721
+          56.176773289271765,
+          -91.94522748674665,
+          108.91826384408134
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13276,9 +13289,9 @@
           ]
         ],
         "centroid": [
-          57.17299265105688,
-          -64.10269055912482,
-          91.05732640083853
+          56.40881222154128,
+          -62.78036002332836,
+          90.28336154129425
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13307,9 +13320,9 @@
           ]
         ],
         "centroid": [
-          35.756336350703975,
-          -96.98592955682629,
-          69.4852043820647
+          35.39779112795566,
+          -97.52614458773998,
+          69.63040914332613
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13338,9 +13351,9 @@
           ]
         ],
         "centroid": [
-          26.778326104966016,
-          -64.9696646996668,
-          68.51266632969605
+          26.621961017824567,
+          -65.26156227543669,
+          69.9634583911056
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13369,9 +13382,9 @@
           ]
         ],
         "centroid": [
-          42.912846211408706,
-          -68.0367380977041,
-          67.00655542885043
+          43.00166439819336,
+          -68.20620858764649,
+          66.46256820678711
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13400,9 +13413,9 @@
           ]
         ],
         "centroid": [
-          51.01697929921561,
-          -87.45531406127398,
-          69.13750807998404
+          50.826016947428386,
+          -88.08826607259114,
+          69.52215946960449
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13431,9 +13444,9 @@
           ]
         ],
         "centroid": [
-          55.3084826708727,
-          -86.22870730479606,
-          82.01031540774821
+          54.86084920340296,
+          -84.1691319423542,
+          81.47160845659276
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13462,9 +13475,9 @@
           ]
         ],
         "centroid": [
-          47.82917018827162,
-          -95.58298118717076,
-          94.38292183165646
+          48.017807310022555,
+          -94.96426637359183,
+          94.2162340772162
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13493,9 +13506,9 @@
           ]
         ],
         "centroid": [
-          42.83442619874332,
-          -101.67736043138173,
-          75.9040715034799
+          43.089972904750276,
+          -101.47383478904257,
+          75.75453372877472
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13524,9 +13537,9 @@
           ]
         ],
         "centroid": [
-          -52.81082710420953,
-          -61.2486597336554,
-          104.78253104519764
+          -52.367320112002794,
+          -60.180992608429285,
+          104.74053684357673
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13555,9 +13568,9 @@
           ]
         ],
         "centroid": [
-          54.07709190484007,
-          -61.23841404586774,
-          104.80097200258965
+          53.63339490787957,
+          -60.170831721316105,
+          104.75882505601452
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13586,9 +13599,9 @@
           ]
         ],
         "centroid": [
-          -12.57100028731185,
-          -95.0154698565289,
-          131.7833630914709
+          -12.117579323096868,
+          -94.09217586656557,
+          131.55177329404512
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13617,9 +13630,9 @@
           ]
         ],
         "centroid": [
-          -5.786598030687502,
-          -42.64629658562521,
-          127.74259399718106
+          -5.782158239638571,
+          -41.93363157736289,
+          127.95888150189374
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13648,9 +13661,9 @@
           ]
         ],
         "centroid": [
-          -7.00172365776753,
-          -70.63182662989188,
-          128.47656240880883
+          -7.268109051350331,
+          -71.50171236960304,
+          128.70606873367007
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13679,9 +13692,9 @@
           ]
         ],
         "centroid": [
-          -3.5816584194823022,
-          -93.23761297974526,
-          118.19975105535123
+          -3.788435642477035,
+          -93.32274823027532,
+          118.33996718402071
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13710,9 +13723,9 @@
           ]
         ],
         "centroid": [
-          -7.031431243809364,
-          -98.7460836979517,
-          93.81221783062036
+          -7.573746472791909,
+          -97.75940574695862,
+          93.67941548465903
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13741,9 +13754,9 @@
           ]
         ],
         "centroid": [
-          27.08745327527957,
-          -66.05786981583425,
-          77.0214009483766
+          26.384824313223362,
+          -66.86467694491148,
+          77.90874862670898
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13772,9 +13785,9 @@
           ]
         ],
         "centroid": [
-          -25.810785444458133,
-          -66.06294142822729,
-          77.01227399234143
+          -25.10830787755549,
+          -66.86961288750172,
+          77.89911834895611
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13803,9 +13816,9 @@
           ]
         ],
         "centroid": [
-          13.834435786590655,
-          -95.01293886164623,
-          131.78791828343043
+          13.380917814961315,
+          -94.08973173155401,
+          131.55617247532754
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13834,9 +13847,9 @@
           ]
         ],
         "centroid": [
-          7.041388142810427,
-          -42.64506809767008,
-          127.74480720604731
+          7.036737518858265,
+          -41.93240279120368,
+          127.9610929128286
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13865,9 +13878,9 @@
           ]
         ],
         "centroid": [
-          8.2616264952869,
-          -70.63036286630688,
-          128.47919546109637
+          8.528099862945,
+          -71.50019823794334,
+          128.70879364013672
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13896,9 +13909,9 @@
           ]
         ],
         "centroid": [
-          4.849440740324486,
-          -93.23680539331096,
-          118.2012050624514
+          5.056186161179474,
+          -93.32190085148466,
+          118.34149335778278
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -13927,9 +13940,9 @@
           ]
         ],
         "centroid": [
-          8.308684374166736,
-          -98.74461257293103,
-          93.81486269672368
+          8.850855733054916,
+          -97.75783164828431,
+          93.68224913154552
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -13947,22 +13960,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            2.4707088470458984,
-            -70.51557922363281,
-            69.44438934326172
+            2.522216796875,
+            -69.4736328125,
+            69.4443359375
           ],
           [
-            20.676942825317383,
-            -48.924476623535156,
-            85.18095397949219
+            20.677001953125,
+            -48.23197937011719,
+            85.180908203125
           ]
         ],
         "centroid": [
-          12.72072195853234,
-          -58.49211506648188,
-          77.80239922178988
+          12.89180415217991,
+          -61.575098178615676,
+          77.85825111663948
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -13978,22 +13992,23 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -19.40315055847168,
-            -70.51847076416016,
-            69.4405746459961
+            -19.403076171875,
+            -69.458984375,
+            69.440673828125
           ],
           [
-            -1.1947933435440063,
-            -48.926212310791016,
-            85.17778778076172
+            -1.1852967739105225,
+            -48.22309875488281,
+            85.177734375
           ]
         ],
         "centroid": [
-          -11.445794850773106,
-          -58.494435549748744,
-          77.79822998526916
+          -11.44746395720836,
+          -61.43611656144791,
+          77.56690359211835
         ],
-        "surfaceRole": "parenchymal-surface"
+        "surfaceRole": "parenchymal-surface",
+        "regionalAdjustmentRelease": "0.9.31"
       }
     },
     {
@@ -14010,19 +14025,19 @@
         "bounds": [
           [
             -0.7510517239570618,
-            -74.04740142822266,
-            69.2568130493164
+            -73.80485534667969,
+            69.1952133178711
           ],
           [
             2.025294303894043,
-            -67.95978546142578,
+            -67.33892059326172,
             85.82887268066406
           ]
         ],
         "centroid": [
-          0.6387889864117785,
-          -71.48155158680592,
-          77.36097586870946
+          0.6384081985088105,
+          -70.08946049467046,
+          79.16311658494016
         ],
         "surfaceRole": "csf-boundary"
       }
@@ -14040,20 +14055,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            0.8241552114486694,
-            -78.33303833007812,
-            77.07774353027344
+            0.8233754634857178,
+            -77.1072769165039,
+            76.9376220703125
           ],
           [
-            17.31207847595215,
-            -72.06723022460938,
-            83.26897430419922
+            17.23503303527832,
+            -71.92877197265625,
+            83.10110473632812
           ]
         ],
         "centroid": [
-          7.119512563984519,
-          -75.32975045004767,
-          80.52197417225888
+          8.157289179609569,
+          -74.35304620439913,
+          80.32402965234584
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14071,20 +14086,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -16.035245895385742,
-            -78.333984375,
-            77.07630920410156
+            -15.958023071289062,
+            -77.09568786621094,
+            76.9365234375
           ],
           [
-            0.45338666439056396,
-            -72.06822204589844,
-            83.26454162597656
+            0.4542745351791382,
+            -71.94135284423828,
+            83.09651947021484
           ]
         ],
         "centroid": [
-          -5.842223655738482,
-          -75.33099326066437,
-          80.51973830719614
+          -6.879875916963675,
+          -74.34725775329852,
+          80.3216886397595
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14102,20 +14117,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            0.9267097115516663,
-            -78.77381896972656,
-            69.26805114746094
+            0.9246942400932312,
+            -77.32308197021484,
+            69.14751434326172
           ],
           [
-            14.54988956451416,
-            -70.77811431884766,
-            82.88916015625
+            14.544146537780762,
+            -69.09848022460938,
+            82.88557434082031
           ]
         ],
         "centroid": [
-          6.947562065033595,
-          -74.78483972374886,
-          75.34295211705174
+          7.25421728446322,
+          -73.27662031529313,
+          75.71477676650225
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14133,20 +14148,20 @@
         "registrationId": "z-anatomy-skull-v0.9.14",
         "bounds": [
           [
-            -13.27319049835205,
-            -78.7744140625,
-            69.26708221435547
+            -13.267930030822754,
+            -77.32622528076172,
+            69.14676666259766
           ],
           [
-            0.35362565517425537,
-            -70.78047180175781,
-            82.88483428955078
+            0.35581734776496887,
+            -69.16586303710938,
+            82.88130950927734
           ]
         ],
         "centroid": [
-          -5.668589977806885,
-          -74.78604882133412,
-          75.34077614610656
+          -5.975338029248987,
+          -73.27980303360243,
+          75.7122260594772
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14175,9 +14190,9 @@
           ]
         ],
         "centroid": [
-          45.634963181152706,
-          -24.664235921072468,
-          94.2566443293129
+          46.522542371247944,
+          -23.84779846793727,
+          93.95810787803248
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14206,9 +14221,9 @@
           ]
         ],
         "centroid": [
-          0.6332098371665726,
-          -63.588219767363974,
-          105.31672796341296
+          0.6331768483265768,
+          -63.51706505966187,
+          105.4694038772583
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14237,9 +14252,9 @@
           ]
         ],
         "centroid": [
-          0.6357473981908351,
-          -47.55881301112851,
-          81.91079376748075
+          0.6403653226184505,
+          -47.88322766977093,
+          81.26263153175624
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14268,9 +14283,9 @@
           ]
         ],
         "centroid": [
-          0.632001984271204,
-          -49.21051829329804,
-          104.319300589326
+          0.6320685339909559,
+          -50.73349792975383,
+          104.77896901671386
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14299,9 +14314,9 @@
           ]
         ],
         "centroid": [
-          18.3883484185773,
-          -72.90624027315198,
-          90.77529535719287
+          16.925716890849376,
+          -71.2562233328459,
+          91.5862858187396
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14330,9 +14345,9 @@
           ]
         ],
         "centroid": [
-          -17.115011265199126,
-          -72.90964382456745,
-          90.76916883067979
+          -15.652975104583373,
+          -71.2593460659246,
+          91.5806646663977
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14361,9 +14376,9 @@
           ]
         ],
         "centroid": [
-          14.56412168021348,
-          -53.90333800419736,
-          100.58508953377529
+          17.78298226084557,
+          -54.36496828578662,
+          96.08948662675621
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14392,9 +14407,9 @@
           ]
         ],
         "centroid": [
-          -13.297915508118306,
-          -53.90600696333081,
-          100.58028160110239
+          -16.515135588901583,
+          -54.36825584198211,
+          96.08356917469466
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14423,9 +14438,9 @@
           ]
         ],
         "centroid": [
-          12.832252925870035,
-          -67.30574017912548,
-          92.02826949098514
+          13.190118676363374,
+          -66.76119910071671,
+          91.57194091345181
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14454,9 +14469,9 @@
           ]
         ],
         "centroid": [
-          -11.560546419251105,
-          -67.30808090434226,
-          92.02406124337325
+          -11.918358849641324,
+          -66.76360808380437,
+          91.56760407199913
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14485,9 +14500,9 @@
           ]
         ],
         "centroid": [
-          15.211326082071322,
-          -58.943099269696596,
-          79.9920716879903
+          14.769893551015691,
+          -62.47953366253474,
+          79.87676078326082
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14516,9 +14531,9 @@
           ]
         ],
         "centroid": [
-          -13.93704738845739,
-          -58.945892865401575,
-          79.98704166100939
+          -13.494896893129981,
+          -62.48224300880955,
+          79.87123367231186
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14547,9 +14562,9 @@
           ]
         ],
         "centroid": [
-          3.942284543059355,
-          -43.401196371875294,
-          79.44836407939849
+          4.338498988987079,
+          -43.19420616115843,
+          79.60152442114693
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14578,9 +14593,9 @@
           ]
         ],
         "centroid": [
-          -2.6707994890251907,
-          -43.40183011359464,
-          79.44722357125458
+          -3.067106344613681,
+          -43.1949160695076,
+          79.60024682113102
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14609,9 +14624,9 @@
           ]
         ],
         "centroid": [
-          -36.92174421041986,
-          -74.89653920733413,
-          132.82755150858782
+          -38.15349750307458,
+          -73.65939195268372,
+          131.50855608065703
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14640,9 +14655,9 @@
           ]
         ],
         "centroid": [
-          -16.611269516331994,
-          -123.79004537078453,
-          112.40915464002966
+          -16.10169256427913,
+          -123.36694656297999,
+          109.83924118523458
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14671,9 +14686,9 @@
           ]
         ],
         "centroid": [
-          -35.947867619368616,
-          -49.481554414858806,
-          107.2153121679074
+          -35.89975741854927,
+          -49.28639366264058,
+          107.1501609821272
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14702,9 +14717,9 @@
           ]
         ],
         "centroid": [
-          -39.368664169892256,
-          -85.80185234156606,
-          106.99974652678367
+          -39.61901499220162,
+          -85.78591531170301,
+          107.06779722733931
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14733,9 +14748,9 @@
           ]
         ],
         "centroid": [
-          38.18093260279745,
-          -74.8893411299018,
-          132.84050923950312
+          39.412904388026185,
+          -73.65195675900108,
+          131.5219386621195
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14764,9 +14779,9 @@
           ]
         ],
         "centroid": [
-          17.88687985336009,
-          -123.78673910278889,
-          112.41510645491692
+          17.378108201675044,
+          -123.36373749520014,
+          109.84501734057676
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14795,9 +14810,9 @@
           ]
         ],
         "centroid": [
-          37.21101825880175,
-          -49.47454032404478,
-          107.22793400184206
+          37.162893376148254,
+          -49.27939003542475,
+          107.16276645422576
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14826,9 +14841,9 @@
           ]
         ],
         "centroid": [
-          40.63885639617237,
-          -85.79418264658679,
-          107.0135503330243
+          40.889180396214,
+          -85.77819783234399,
+          107.08168729671762
         ],
         "surfaceRole": "sulcal-reference"
       }
@@ -14857,9 +14872,9 @@
           ]
         ],
         "centroid": [
-          21.997715025631447,
-          -52.672270970734495,
-          92.93989200248505
+          22.037107184438995,
+          -51.82964298363888,
+          93.17103165424231
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14888,9 +14903,9 @@
           ]
         ],
         "centroid": [
-          -20.72910773297883,
-          -52.676366740313135,
-          92.93252046145906
+          -20.76874109434359,
+          -51.83374624830304,
+          93.16364634253762
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14919,9 +14934,9 @@
           ]
         ],
         "centroid": [
-          27.016376214121067,
-          -50.844935969785624,
-          96.49484409561828
+          27.068501801383352,
+          -51.29798981717802,
+          96.5598538959047
         ],
         "surfaceRole": "parenchymal-surface"
       }
@@ -14950,9 +14965,9 @@
           ]
         ],
         "centroid": [
-          -25.74934715805252,
-          -50.84999413663928,
-          96.48573957558742
+          -25.801408281772552,
+          -51.30305740779566,
+          96.55073219444765
         ],
         "surfaceRole": "parenchymal-surface"
       }

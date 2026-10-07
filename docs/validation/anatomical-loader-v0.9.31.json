@@ -1,0 +1,23 @@
+{
+  "release": "0.9.31",
+  "passed": true,
+  "checks": [
+    {
+      "file": "brain-context.glb",
+      "labels": 189,
+      "triangles": 2755544,
+      "sha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    },
+    {
+      "file": "venous.glb",
+      "labels": 217,
+      "triangles": 1490492,
+      "sha256": "e67e5934f46de8933fe2487e99de30f73e98f1eb9470b5c83ef3b6b118a9ec68",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    }
+  ],
+  "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+}

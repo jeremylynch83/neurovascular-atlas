@@ -1,0 +1,189 @@
+{
+  "release": "0.9.29",
+  "checkedPairs": 286,
+  "newContacts": [],
+  "baselineContacts": [
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.lateral-ventricle.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.thalamus.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.hippocampus.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.choroid-plexus.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.fornix.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.optic-tract.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.fornix.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.fornix.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.optic-tract.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.optic-tract.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "PCom perforator right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "Tuberothalamic artery right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "Tuberothalamic artery left"
+    },
+    {
+      "one": "vein.anterior_pontomesencephalic",
+      "two": "Basilar"
+    },
+    {
+      "one": "vein.anterior_pontomesencephalic",
+      "two": "SCA right"
+    },
+    {
+      "one": "vein.cerebral_peduncular.right",
+      "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+    },
+    {
+      "one": "vein.cerebral_peduncular.right",
+      "two": "brain.hippocampus.right"
+    },
+    {
+      "one": "vein.cerebral_peduncular.right",
+      "two": "brain.fornix.right"
+    },
+    {
+      "one": "vein.cerebral_peduncular.right",
+      "two": "brain.optic-tract.right"
+    },
+    {
+      "one": "ICA cavernous right",
+      "two": "bone.temporal.right"
+    },
+    {
+      "one": "ICA cavernous right",
+      "two": "bone.sphenoid"
+    },
+    {
+      "one": "ICA cavernous right",
+      "two": "Lateral clival\u2013recurrent ILT right"
+    },
+    {
+      "one": "ICA paraophthalmic right",
+      "two": "brain.orbital-gyri.right"
+    },
+    {
+      "one": "ICA cavernous left",
+      "two": "bone.temporal.left"
+    },
+    {
+      "one": "ICA cavernous left",
+      "two": "bone.sphenoid"
+    },
+    {
+      "one": "ICA cavernous left",
+      "two": "Lateral clival\u2013recurrent ILT left"
+    },
+    {
+      "one": "ICA paraophthalmic left",
+      "two": "brain.orbital-gyri.left"
+    }
+  ],
+  "resolvedAuditContacts": [
+    {
+      "one": "Basilar",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineAllContacts": 95,
+      "candidateHalfContacts": 95
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineAllContacts": 265,
+      "candidateHalfContacts": 0
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.posterior_communicating",
+      "baselineAllContacts": 390,
+      "candidateHalfContacts": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "vein.posterior_communicating",
+      "baselineAllContacts": 56,
+      "candidateHalfContacts": 0
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "vein.posterior_communicating",
+      "baselineAllContacts": 63,
+      "candidateHalfContacts": 0
+    },
+    {
+      "one": "SCA right",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineAllContacts": 303,
+      "candidateHalfContacts": 303
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineAllContacts": 93,
+      "candidateHalfContacts": 0
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.marginal",
+      "baselineAllContacts": 17,
+      "candidateHalfContacts": 17
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.pontomedullary.left",
+      "baselineAllContacts": 378,
+      "candidateHalfContacts": 378
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.anterior_medullary",
+      "baselineAllContacts": 279,
+      "candidateHalfContacts": 279
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.right",
+      "baselineAllContacts": 108,
+      "candidateHalfContacts": 108
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.left",
+      "baselineAllContacts": 210,
+      "candidateHalfContacts": 210
+    }
+  ]
+}

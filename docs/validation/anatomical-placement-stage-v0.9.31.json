@@ -1,0 +1,357 @@
+{
+  "release": "0.9.31",
+  "checks": {
+    "meshQuality": {
+      "passed": true,
+      "labels": [
+        {
+          "node": "brain.base-of-peduncle.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 43,
+          "degenerateTriangles": 43,
+          "minimumJacobianDeterminant": 0.9999918755987295,
+          "passed": true
+        },
+        {
+          "node": "brain.base-of-peduncle.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 64,
+          "degenerateTriangles": 64,
+          "minimumJacobianDeterminant": 0.14905243506679708,
+          "passed": true
+        },
+        {
+          "node": "brain.fourth-ventricle",
+          "finite": true,
+          "baselineDegenerateTriangles": 26,
+          "degenerateTriangles": 26,
+          "minimumJacobianDeterminant": 0.3542377067185001,
+          "passed": true
+        },
+        {
+          "node": "brain.medulla-oblongata.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 70,
+          "degenerateTriangles": 70,
+          "minimumJacobianDeterminant": 0.32940384583875654,
+          "passed": true
+        },
+        {
+          "node": "brain.medulla-oblongata.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 78,
+          "degenerateTriangles": 78,
+          "minimumJacobianDeterminant": 0.32760857324039355,
+          "passed": true
+        },
+        {
+          "node": "brain.midbrain.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 56,
+          "degenerateTriangles": 56,
+          "minimumJacobianDeterminant": 0.8414303259025061,
+          "passed": true
+        },
+        {
+          "node": "brain.midbrain.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 64,
+          "degenerateTriangles": 64,
+          "minimumJacobianDeterminant": 0.2080227508288658,
+          "passed": true
+        },
+        {
+          "node": "brain.pons.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 76,
+          "degenerateTriangles": 76,
+          "minimumJacobianDeterminant": 0.3078522848922846,
+          "passed": true
+        },
+        {
+          "node": "brain.pons.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 80,
+          "degenerateTriangles": 80,
+          "minimumJacobianDeterminant": 0.30742114858605235,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_condylar.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 1.0000000000285354,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_medullary",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.7386708045210649,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_pontine",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.5786094909322949,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_pontomesencephalic",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.5856237015922509,
+          "passed": true
+        },
+        {
+          "node": "vein.basilar_plexus",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.44953931764235333,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_anterior_pontomesencephalic.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.9142735118954562,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_mesencephalic.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.14754057553732164,
+          "passed": true
+        },
+        {
+          "node": "vein.marginal",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.6906818124932125,
+          "passed": true
+        },
+        {
+          "node": "vein.pontomedullary.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.8455826566139508,
+          "passed": true
+        },
+        {
+          "node": "vein.pontomedullary.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.8043617282886937,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_communicating",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.3341329571610694,
+          "passed": true
+        },
+        {
+          "node": "vein.preolivary.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.8170811822618602,
+          "passed": true
+        },
+        {
+          "node": "vein.preolivary.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.9945050348788049,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_medullary.left",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 1.2134557238490422,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_medullary.right",
+          "finite": true,
+          "baselineDegenerateTriangles": 0,
+          "degenerateTriangles": 0,
+          "minimumJacobianDeterminant": 1.0000000000285354,
+          "passed": true
+        }
+      ]
+    },
+    "physicalJunctions": {
+      "passed": true,
+      "assets": [
+        {
+          "file": "venous.glb",
+          "originalDirectJunctionPairs": 323,
+          "lostPairs": [],
+          "passed": true
+        },
+        {
+          "file": "brain-context.glb",
+          "originalDirectJunctionPairs": 17,
+          "lostPairs": [],
+          "passed": true
+        }
+      ]
+    }
+  },
+  "calibreChanges": [
+    {
+      "node": "vein.anterior_condylar.left",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.0006593487829616303
+    },
+    {
+      "node": "vein.anterior_medullary",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.9349175065643319,
+        1.0011995010024306,
+        1.339255157851957
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.339255157851957
+    },
+    {
+      "node": "vein.anterior_pontine",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.7710471387019,
+        1.0,
+        1.0161224747646473
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.22895286129809997
+    },
+    {
+      "node": "vein.anterior_pontomesencephalic",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.5288571493228056,
+        1.0,
+        1.8481174318569151
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.8569807333298203
+    },
+    {
+      "node": "vein.lateral_anterior_pontomesencephalic.left",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.9249926282617299,
+        1.0,
+        1.0366193983676637
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.07722474976924508
+    },
+    {
+      "node": "vein.lateral_mesencephalic.right",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.4714980742444658,
+        1.0,
+        1.0503138530251448
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.5285019257555316
+    },
+    {
+      "node": "vein.pontomedullary.left",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.9020071252941245,
+        1.0,
+        1.0860583761185496
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.1435290983809715
+    },
+    {
+      "node": "vein.pontomedullary.right",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.8288568450476383,
+        1.0,
+        1.1537006224231936
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.21382484126210372
+    },
+    {
+      "node": "vein.posterior_communicating",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.9344450451767917,
+        1.0,
+        1.2089754605715588
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.3099971363444462
+    },
+    {
+      "node": "vein.preolivary.left",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.7930185113909041,
+        1.0,
+        1.1084376891684578
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.21538242480805217
+    },
+    {
+      "node": "vein.preolivary.right",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.8429977725707002,
+        1.0,
+        1.4717754697635899
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.4717754697635898
+    },
+    {
+      "node": "vein.transverse_medullary.left",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        0.9219442070684634,
+        1.1667636273066857,
+        1.4275266351392513
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.42752663513925127
+    },
+    {
+      "node": "vein.transverse_medullary.right",
+      "method": "Transported geodesic section and tangent; cap-adjacent points excluded; illustrative calibre only",
+      "ratioP05MedianP95": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.0
+    }
+  ],
+  "clearance": {
+    "passed": true,
+    "newContacts": []
+  },
+  "allTwelveAuditedCrossingsClear": true,
+  "passed": true
+}

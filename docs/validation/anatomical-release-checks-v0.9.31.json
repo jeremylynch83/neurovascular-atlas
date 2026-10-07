@@ -1,0 +1,87 @@
+{
+  "release": "0.9.31",
+  "baselineRelease": "0.9.30",
+  "passed": true,
+  "structureCount": 1648,
+  "relationshipCount": 1395,
+  "namedMeshParts": 1232,
+  "unchangedIdsParentsDescriptionsAssetBindingsAndRelationships": true,
+  "unchangedPage2AndPage3FamilyMetadata": true,
+  "changedBrainLabels": 9,
+  "changedVenousLabels": 15,
+  "allTwelveAuditPairsClear": true,
+  "additionalClearancePairsChecked": 899,
+  "newIndependentContactPairs": 0,
+  "originalDirectJunctionPairsRetained": {
+    "brain-context.glb": 17,
+    "venous.glb": 323
+  },
+  "boundLandmarkExportMatchesCatalogue": true,
+  "landmarkAnchors": 140,
+  "assets": [
+    {
+      "file": "complete-circulation.glb",
+      "sha256": "6c06449c3fe719b310d570d0abb34a9f5d8c080c00f4e076dc5e82f71b67ec52",
+      "baselineSha256": "6c06449c3fe719b310d570d0abb34a9f5d8c080c00f4e076dc5e82f71b67ec52",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "file": "craniofacial.glb",
+      "sha256": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+      "baselineSha256": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "file": "complete-anastomoses.glb",
+      "sha256": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+      "baselineSha256": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "file": "venous.glb",
+      "sha256": "e67e5934f46de8933fe2487e99de30f73e98f1eb9470b5c83ef3b6b118a9ec68",
+      "baselineSha256": "7ce049d61f718a17ae05a205cfea3cbdaeb9964a93bc34994ebd2b5ab663518d",
+      "unchanged": false,
+      "protected": false
+    },
+    {
+      "file": "brain-context.glb",
+      "sha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+      "baselineSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "unchanged": false,
+      "protected": false
+    }
+  ],
+  "productionBuild": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "includes": [
+      "catalogue, brain and course validation",
+      "TypeScript",
+      "Vite production bundle",
+      "compressed assets"
+    ],
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "warning": "Existing large JavaScript chunk warning"
+  },
+  "courseContractTests": {
+    "command": "python3 -m unittest discover -s tools/brain -p 'test_course_segments.py'",
+    "tests": 8,
+    "passed": true
+  },
+  "notTested": [
+    "browser interaction",
+    "Docker runtime/deployment"
+  ],
+  "openFindings": [
+    "G01 straight sinus and dural reference",
+    "G03 fine canal calibration",
+    "G04 independent ICA/dural-ring calibration",
+    "G05 connected pericallosal refit"
+  ],
+  "wholeModelAnatomicalApproval": false
+}

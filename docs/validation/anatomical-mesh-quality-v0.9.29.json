@@ -1,0 +1,141 @@
+{
+  "release": "0.9.29",
+  "checks": {
+    "meshQuality": {
+      "passed": true,
+      "labels": [
+        {
+          "node": "ICA cavernous right",
+          "finite": true,
+          "degenerateTriangles": 1,
+          "baselineDegenerateTriangles": 1,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_mesencephalic.right",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.19361932661548975,
+          "minimumNormalDot": 0.741124012713673,
+          "passed": true
+        },
+        {
+          "node": "vein.cerebral_peduncular.right",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.779789287975007,
+          "minimumNormalDot": 0.9010029119892028,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_communicating",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.6559630326310453,
+          "minimumNormalDot": 0.28015517144221,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_pontomesencephalic",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "minimumJacobianDeterminant": 0.6734695105232715,
+          "minimumNormalDot": 0.9249313034390599,
+          "passed": true
+        },
+        {
+          "node": "ICA paraophthalmic right",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "ICA cavernous left",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "ICA paraophthalmic left",
+          "finite": true,
+          "degenerateTriangles": 0,
+          "baselineDegenerateTriangles": 0,
+          "passed": true
+        }
+      ]
+    },
+    "physicalJunctions": {
+      "passed": true,
+      "assets": [
+        {
+          "file": "complete-circulation.glb",
+          "originalDirectJunctionPairs": 672,
+          "lostPairs": [],
+          "passed": true
+        },
+        {
+          "file": "venous.glb",
+          "originalDirectJunctionPairs": 323,
+          "lostPairs": [],
+          "passed": true
+        }
+      ]
+    }
+  },
+  "calibreChanges": [
+    {
+      "node": "vein.lateral_mesencephalic.right",
+      "method": "Original geodesic-section coordinates and transported centreline tangent; cap-adjacent points excluded",
+      "ratioP05MedianP95": [
+        0.934888563316942,
+        1.0,
+        1.0127904688402616
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.07393680807800525
+    },
+    {
+      "node": "vein.cerebral_peduncular.right",
+      "method": "Original geodesic-section coordinates and transported centreline tangent; cap-adjacent points excluded",
+      "ratioP05MedianP95": [
+        1.0,
+        1.0,
+        1.0492899452039068
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.04928994520390689
+    },
+    {
+      "node": "vein.posterior_communicating",
+      "method": "Original geodesic-section coordinates and transported centreline tangent; cap-adjacent points excluded",
+      "ratioP05MedianP95": [
+        0.8315726763671107,
+        1.0,
+        1.0331789724777363
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.19982512535927957
+    },
+    {
+      "node": "vein.anterior_pontomesencephalic",
+      "method": "Original geodesic-section coordinates and transported centreline tangent; cap-adjacent points excluded",
+      "ratioP05MedianP95": [
+        0.9390494861764378,
+        1.0,
+        1.0042281619624325
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.06095051382356196
+    }
+  ],
+  "icaUnionGeometryUnchanged": true,
+  "clearance": {
+    "newContacts": [],
+    "passed": true
+  },
+  "passed": true,
+  "analyticGlobalJacobianLowerBound": 0.18510722455110273,
+  "selfIntersectionNote": "The connected venous edit is one global compact scalar displacement field. Its analytic positive Jacobian lower bound preserves injectivity and cannot introduce a new same-network self-intersection. Existing contacts within the original skin are not certified absent."
+}

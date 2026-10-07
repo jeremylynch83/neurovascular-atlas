@@ -1,0 +1,2226 @@
+{
+  "release": "0.9.28",
+  "baseline": "0.9.27",
+  "newFamilies": 31,
+  "newMeshLabels": 69,
+  "checks": {
+    "meshQuality": {
+      "parts": [
+        {
+          "node": "vein.inferior_petrosal.left",
+          "vertices": 1780,
+          "triangles": 3371,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_mesencephalic.right",
+          "vertices": 4947,
+          "triangles": 9768,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.pontomesencephalic_sulcus.right",
+          "vertices": 3513,
+          "triangles": 6563,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_hemispheric_inferior.left",
+          "vertices": 3123,
+          "triangles": 6170,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_medullary.left",
+          "vertices": 989,
+          "triangles": 1834,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_mesencephalic.left",
+          "vertices": 6586,
+          "triangles": 12575,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_medullary.right",
+          "vertices": 541,
+          "triangles": 931,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_medullary.left",
+          "vertices": 4145,
+          "triangles": 7912,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cpa_inferior_petrosal_bridge.left",
+          "vertices": 1347,
+          "triangles": 2347,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_vermian_tonsillar_stem.right",
+          "vertices": 3936,
+          "triangles": 7613,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_pontomesencephalic",
+          "vertices": 3640,
+          "triangles": 6551,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.preolivary.left",
+          "vertices": 2554,
+          "triangles": 4946,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_petrosal_vein.left",
+          "vertices": 6839,
+          "triangles": 12129,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.pontomesencephalic_sulcus.left",
+          "vertices": 3103,
+          "triangles": 6053,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse.right",
+          "vertices": 3023,
+          "triangles": 5748,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_supratonsillar.right",
+          "vertices": 2370,
+          "triangles": 4572,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_cerebellar_peduncular.right",
+          "vertices": 3850,
+          "triangles": 7616,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_hemispheric.right",
+          "vertices": 3593,
+          "triangles": 7086,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.tentorial_channel.right",
+          "vertices": 4250,
+          "triangles": 8301,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.pontotrigeminal.right",
+          "vertices": 4399,
+          "triangles": 8018,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_vermian_tonsillar_stem.left",
+          "vertices": 3196,
+          "triangles": 5983,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.basilar_plexus",
+          "vertices": 10524,
+          "triangles": 20634,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_retrotonsillar.left",
+          "vertices": 2271,
+          "triangles": 4460,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_hemispheric_tributaries.right",
+          "vertices": 2177,
+          "triangles": 4229,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.horizontal_fissure.left",
+          "vertices": 4646,
+          "triangles": 9130,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.middle_cerebellar_peduncular.left",
+          "vertices": 2542,
+          "triangles": 4834,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_retrotonsillar.left",
+          "vertices": 2320,
+          "triangles": 4555,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cervical_radicular.left",
+          "vertices": 1208,
+          "triangles": 2312,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.marginal",
+          "vertices": 5182,
+          "triangles": 10105,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_recess.right",
+          "vertices": 2797,
+          "triangles": 4969,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterolateral_medullary.right",
+          "vertices": 1935,
+          "triangles": 3788,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.pontomedullary.right",
+          "vertices": 3344,
+          "triangles": 6073,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_hemispheric.right",
+          "vertices": 10873,
+          "triangles": 21315,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.dentate_tributaries.right",
+          "vertices": 1351,
+          "triangles": 2616,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_medullary",
+          "vertices": 3132,
+          "triangles": 6054,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.basal.left",
+          "vertices": 9316,
+          "triangles": 17312,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.tectal.right",
+          "vertices": 2878,
+          "triangles": 5598,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_recess.left",
+          "vertices": 2955,
+          "triangles": 4979,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cervical_foraminal.left",
+          "vertices": 2763,
+          "triangles": 5425,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.fourth_choroidal.left",
+          "vertices": 634,
+          "triangles": 1180,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse.left",
+          "vertices": 3041,
+          "triangles": 5832,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cerebral_peduncular.left",
+          "vertices": 4119,
+          "triangles": 7755,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.fourth_choroidal.right",
+          "vertices": 616,
+          "triangles": 1141,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_cerebellar_peduncular.left",
+          "vertices": 3843,
+          "triangles": 7608,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_vermian.right",
+          "vertices": 12071,
+          "triangles": 21585,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_anterior_pontomesencephalic.right",
+          "vertices": 2065,
+          "triangles": 3874,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cerebellopontine_fissure.left",
+          "vertices": 4553,
+          "triangles": 7939,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.retro_olivary.right",
+          "vertices": 2027,
+          "triangles": 3804,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.precentral_cerebellar",
+          "vertices": 6860,
+          "triangles": 12662,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.transverse_pontine.right",
+          "vertices": 6350,
+          "triangles": 10725,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_hemispheric.left",
+          "vertices": 3321,
+          "triangles": 6553,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_pontine",
+          "vertices": 6751,
+          "triangles": 12184,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_hemispheric.left",
+          "vertices": 10427,
+          "triangles": 20661,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_hemispheric.left",
+          "vertices": 1316,
+          "triangles": 2544,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.pontotrigeminal.left",
+          "vertices": 4332,
+          "triangles": 7933,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_cerebellar_peduncular.left",
+          "vertices": 2370,
+          "triangles": 4503,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.medial_supratonsillar.right",
+          "vertices": 1985,
+          "triangles": 3892,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.prepontine_bridge.right",
+          "vertices": 1075,
+          "triangles": 2000,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_hemispheric_lateral.right",
+          "vertices": 3672,
+          "triangles": 7211,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.basal.right",
+          "vertices": 9201,
+          "triangles": 17081,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_mesencephalic.right",
+          "vertices": 6619,
+          "triangles": 12645,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterolateral_medullary.left",
+          "vertices": 1963,
+          "triangles": 3845,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cervical_foraminal.right",
+          "vertices": 1633,
+          "triangles": 3164,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_retrotonsillar.right",
+          "vertices": 2311,
+          "triangles": 4536,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.tonsillar_surface.left",
+          "vertices": 2017,
+          "triangles": 3876,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_petrosal_vein.right",
+          "vertices": 8888,
+          "triangles": 14500,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_vermian",
+          "vertices": 15898,
+          "triangles": 31012,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_hemispheric_inferior.right",
+          "vertices": 2660,
+          "triangles": 5235,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_anterior_pontomesencephalic.left",
+          "vertices": 1937,
+          "triangles": 3799,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_cerebellar_peduncular.right",
+          "vertices": 2087,
+          "triangles": 3917,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lower_brainstem_bridge.right",
+          "vertices": 1643,
+          "triangles": 3109,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.superior_hemispheric_lateral.left",
+          "vertices": 3650,
+          "triangles": 7193,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.middle_cerebellar_peduncular.right",
+          "vertices": 2582,
+          "triangles": 4800,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_hemispheric.right",
+          "vertices": 1330,
+          "triangles": 2574,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.suboccipital_plexus.right",
+          "vertices": 3866,
+          "triangles": 7545,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.tectal.left",
+          "vertices": 2876,
+          "triangles": 5594,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.suboccipital_plexus.left",
+          "vertices": 3914,
+          "triangles": 7654,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cerebellopontine_fissure.right",
+          "vertices": 5200,
+          "triangles": 8639,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.pontomedullary.left",
+          "vertices": 5125,
+          "triangles": 9233,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_supratonsillar.left",
+          "vertices": 2377,
+          "triangles": 4586,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.retro_olivary.left",
+          "vertices": 2258,
+          "triangles": 4392,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_retrotonsillar.right",
+          "vertices": 2257,
+          "triangles": 4427,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.galen",
+          "vertices": 818,
+          "triangles": 1202,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.intercollicular",
+          "vertices": 2144,
+          "triangles": 4104,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.lateral_medullary.right",
+          "vertices": 5020,
+          "triangles": 9312,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_hemispheric_tributaries.left",
+          "vertices": 2087,
+          "triangles": 4095,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_vermian.left",
+          "vertices": 9985,
+          "triangles": 18952,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.horizontal_fissure.right",
+          "vertices": 4631,
+          "triangles": 9096,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_spinal",
+          "vertices": 4024,
+          "triangles": 7866,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.anterior_medullary",
+          "vertices": 5166,
+          "triangles": 9036,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.tentorial_channel.left",
+          "vertices": 4151,
+          "triangles": 8141,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cerebral_peduncular.right",
+          "vertices": 3842,
+          "triangles": 7553,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.medial_supratonsillar.left",
+          "vertices": 1988,
+          "triangles": 3898,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.posterior_communicating",
+          "vertices": 13759,
+          "triangles": 25565,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.cervical_radicular.right",
+          "vertices": 1143,
+          "triangles": 2179,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.preolivary.right",
+          "vertices": 2725,
+          "triangles": 5295,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.tonsillar_surface.right",
+          "vertices": 2085,
+          "triangles": 4019,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        },
+        {
+          "node": "vein.dentate_tributaries.left",
+          "vertices": 1356,
+          "triangles": 2628,
+          "zeroAreaTriangles": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "physicalJunctions": {
+      "pairs": [
+        {
+          "from": "vein.posterior_spinal",
+          "to": "vein.cervical_radicular.left",
+          "sharedVertices": 71,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_spinal",
+          "to": "vein.cervical_radicular.right",
+          "sharedVertices": 75,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_medullary",
+          "to": "vein.posterior_spinal",
+          "sharedVertices": 38,
+          "passed": true
+        },
+        {
+          "from": "vein.tentorial_channel.right",
+          "to": "vein.transverse.right",
+          "sharedVertices": 72,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_hemispheric.right",
+          "to": "vein.superior_vermian",
+          "sharedVertices": 94,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_hemispheric_lateral.right",
+          "to": "vein.tentorial_channel.right",
+          "sharedVertices": 129,
+          "passed": true
+        },
+        {
+          "from": "vein.horizontal_fissure.right",
+          "to": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 66,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_hemispheric.right",
+          "to": "vein.horizontal_fissure.right",
+          "sharedVertices": 84,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_hemispheric_inferior.right",
+          "to": "vein.cerebellopontine_fissure.right",
+          "sharedVertices": 83,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_hemispheric_tributaries.right",
+          "to": "vein.inferior_hemispheric.right",
+          "sharedVertices": 123,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_recess.right",
+          "to": "vein.cerebellopontine_fissure.right",
+          "sharedVertices": 155,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_cerebellar_peduncular.right",
+          "to": "vein.precentral_cerebellar",
+          "sharedVertices": 65,
+          "passed": true
+        },
+        {
+          "from": "vein.middle_cerebellar_peduncular.right",
+          "to": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 58,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_vermian_tonsillar_stem.right",
+          "to": "vein.inferior_vermian.right",
+          "sharedVertices": 69,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_retrotonsillar.right",
+          "to": "vein.inferior_vermian_tonsillar_stem.right",
+          "sharedVertices": 84,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_retrotonsillar.right",
+          "to": "vein.inferior_vermian_tonsillar_stem.right",
+          "sharedVertices": 85,
+          "passed": true
+        },
+        {
+          "from": "vein.tonsillar_surface.right",
+          "to": "vein.lateral_recess.right",
+          "sharedVertices": 103,
+          "passed": true
+        },
+        {
+          "from": "vein.medial_supratonsillar.right",
+          "to": "vein.lateral_recess.right",
+          "sharedVertices": 76,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_supratonsillar.right",
+          "to": "vein.lateral_recess.right",
+          "sharedVertices": 38,
+          "passed": true
+        },
+        {
+          "from": "vein.dentate_tributaries.right",
+          "to": "vein.lateral_supratonsillar.right",
+          "sharedVertices": 84,
+          "passed": true
+        },
+        {
+          "from": "vein.fourth_choroidal.right",
+          "to": "vein.lateral_recess.right",
+          "sharedVertices": 89,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_medullary.right",
+          "to": "vein.middle_cerebellar_peduncular.right",
+          "sharedVertices": 293,
+          "passed": true
+        },
+        {
+          "from": "vein.retro_olivary.right",
+          "to": "vein.lateral_medullary.right",
+          "sharedVertices": 250,
+          "passed": true
+        },
+        {
+          "from": "vein.preolivary.right",
+          "to": "vein.pontomedullary.right",
+          "sharedVertices": 74,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_cerebellar_peduncular.right",
+          "to": "vein.lateral_recess.right",
+          "sharedVertices": 83,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_cerebellar_peduncular.right",
+          "to": "vein.posterior_medullary",
+          "sharedVertices": 96,
+          "passed": true
+        },
+        {
+          "from": "vein.posterolateral_medullary.right",
+          "to": "vein.inferior_cerebellar_peduncular.right",
+          "sharedVertices": 80,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_anterior_pontomesencephalic.right",
+          "to": "vein.transverse_pontine.right",
+          "sharedVertices": 75,
+          "passed": true
+        },
+        {
+          "from": "vein.pontomesencephalic_sulcus.right",
+          "to": "vein.anterior_pontomesencephalic",
+          "sharedVertices": 73,
+          "passed": true
+        },
+        {
+          "from": "vein.pontomesencephalic_sulcus.right",
+          "to": "vein.pontotrigeminal.right",
+          "sharedVertices": 142,
+          "passed": true
+        },
+        {
+          "from": "vein.pontomesencephalic_sulcus.right",
+          "to": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 70,
+          "passed": true
+        },
+        {
+          "from": "vein.transverse_medullary.right",
+          "to": "vein.anterior_medullary",
+          "sharedVertices": 70,
+          "passed": true
+        },
+        {
+          "from": "vein.transverse_medullary.right",
+          "to": "vein.preolivary.right",
+          "sharedVertices": 82,
+          "passed": true
+        },
+        {
+          "from": "vein.cerebral_peduncular.right",
+          "to": "vein.basal.right",
+          "sharedVertices": 61,
+          "passed": true
+        },
+        {
+          "from": "vein.cerebral_peduncular.right",
+          "to": "vein.posterior_communicating",
+          "sharedVertices": 70,
+          "passed": true
+        },
+        {
+          "from": "vein.tectal.right",
+          "to": "vein.precentral_cerebellar",
+          "sharedVertices": 68,
+          "passed": true
+        },
+        {
+          "from": "vein.cervical_foraminal.right",
+          "to": "vein.suboccipital_plexus.right",
+          "sharedVertices": 70,
+          "passed": true
+        },
+        {
+          "from": "vein.cervical_radicular.right",
+          "to": "vein.cervical_foraminal.right",
+          "sharedVertices": 32,
+          "passed": true
+        },
+        {
+          "from": "vein.cervical_radicular.right",
+          "to": "vein.posterior_spinal",
+          "sharedVertices": 75,
+          "passed": true
+        },
+        {
+          "from": "vein.tentorial_channel.left",
+          "to": "vein.transverse.left",
+          "sharedVertices": 60,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_hemispheric.left",
+          "to": "vein.superior_vermian",
+          "sharedVertices": 83,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_hemispheric_lateral.left",
+          "to": "vein.tentorial_channel.left",
+          "sharedVertices": 103,
+          "passed": true
+        },
+        {
+          "from": "vein.horizontal_fissure.left",
+          "to": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 76,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_hemispheric.left",
+          "to": "vein.horizontal_fissure.left",
+          "sharedVertices": 86,
+          "passed": true
+        },
+        {
+          "from": "vein.anterior_hemispheric_inferior.left",
+          "to": "vein.cerebellopontine_fissure.left",
+          "sharedVertices": 74,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_hemispheric_tributaries.left",
+          "to": "vein.inferior_hemispheric.left",
+          "sharedVertices": 77,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_recess.left",
+          "to": "vein.cerebellopontine_fissure.left",
+          "sharedVertices": 123,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_cerebellar_peduncular.left",
+          "to": "vein.precentral_cerebellar",
+          "sharedVertices": 59,
+          "passed": true
+        },
+        {
+          "from": "vein.middle_cerebellar_peduncular.left",
+          "to": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 64,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_vermian_tonsillar_stem.left",
+          "to": "vein.inferior_vermian.left",
+          "sharedVertices": 248,
+          "passed": true
+        },
+        {
+          "from": "vein.superior_retrotonsillar.left",
+          "to": "vein.inferior_vermian_tonsillar_stem.left",
+          "sharedVertices": 83,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_retrotonsillar.left",
+          "to": "vein.inferior_vermian_tonsillar_stem.left",
+          "sharedVertices": 80,
+          "passed": true
+        },
+        {
+          "from": "vein.tonsillar_surface.left",
+          "to": "vein.lateral_recess.left",
+          "sharedVertices": 99,
+          "passed": true
+        },
+        {
+          "from": "vein.medial_supratonsillar.left",
+          "to": "vein.lateral_recess.left",
+          "sharedVertices": 76,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_supratonsillar.left",
+          "to": "vein.lateral_recess.left",
+          "sharedVertices": 29,
+          "passed": true
+        },
+        {
+          "from": "vein.dentate_tributaries.left",
+          "to": "vein.lateral_supratonsillar.left",
+          "sharedVertices": 82,
+          "passed": true
+        },
+        {
+          "from": "vein.fourth_choroidal.left",
+          "to": "vein.lateral_recess.left",
+          "sharedVertices": 86,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_medullary.left",
+          "to": "vein.middle_cerebellar_peduncular.left",
+          "sharedVertices": 186,
+          "passed": true
+        },
+        {
+          "from": "vein.retro_olivary.left",
+          "to": "vein.lateral_medullary.left",
+          "sharedVertices": 122,
+          "passed": true
+        },
+        {
+          "from": "vein.preolivary.left",
+          "to": "vein.pontomedullary.left",
+          "sharedVertices": 80,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_cerebellar_peduncular.left",
+          "to": "vein.lateral_recess.left",
+          "sharedVertices": 82,
+          "passed": true
+        },
+        {
+          "from": "vein.inferior_cerebellar_peduncular.left",
+          "to": "vein.posterior_medullary",
+          "sharedVertices": 78,
+          "passed": true
+        },
+        {
+          "from": "vein.posterolateral_medullary.left",
+          "to": "vein.inferior_cerebellar_peduncular.left",
+          "sharedVertices": 79,
+          "passed": true
+        },
+        {
+          "from": "vein.lateral_anterior_pontomesencephalic.left",
+          "to": "vein.pontomedullary.left",
+          "sharedVertices": 73,
+          "passed": true
+        },
+        {
+          "from": "vein.pontomesencephalic_sulcus.left",
+          "to": "vein.anterior_pontomesencephalic",
+          "sharedVertices": 83,
+          "passed": true
+        },
+        {
+          "from": "vein.pontomesencephalic_sulcus.left",
+          "to": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 70,
+          "passed": true
+        },
+        {
+          "from": "vein.transverse_medullary.left",
+          "to": "vein.anterior_medullary",
+          "sharedVertices": 62,
+          "passed": true
+        },
+        {
+          "from": "vein.transverse_medullary.left",
+          "to": "vein.preolivary.left",
+          "sharedVertices": 82,
+          "passed": true
+        },
+        {
+          "from": "vein.cerebral_peduncular.left",
+          "to": "vein.basal.left",
+          "sharedVertices": 40,
+          "passed": true
+        },
+        {
+          "from": "vein.cerebral_peduncular.left",
+          "to": "vein.posterior_communicating",
+          "sharedVertices": 419,
+          "passed": true
+        },
+        {
+          "from": "vein.tectal.left",
+          "to": "vein.precentral_cerebellar",
+          "sharedVertices": 64,
+          "passed": true
+        },
+        {
+          "from": "vein.cervical_foraminal.left",
+          "to": "vein.suboccipital_plexus.left",
+          "sharedVertices": 66,
+          "passed": true
+        },
+        {
+          "from": "vein.cervical_radicular.left",
+          "to": "vein.cervical_foraminal.left",
+          "sharedVertices": 33,
+          "passed": true
+        },
+        {
+          "from": "vein.cervical_radicular.left",
+          "to": "vein.posterior_spinal",
+          "sharedVertices": 71,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_mesencephalic.right",
+          "to": "vein.galen",
+          "sharedVertices": 60,
+          "passed": true
+        },
+        {
+          "from": "vein.posterior_mesencephalic.right",
+          "to": "vein.lateral_mesencephalic.right",
+          "sharedVertices": 66,
+          "passed": true
+        },
+        {
+          "from": "vein.prepontine_bridge.right",
+          "to": "vein.anterior_pontine",
+          "sharedVertices": 76,
+          "passed": true
+        },
+        {
+          "from": "vein.prepontine_bridge.right",
+          "to": "vein.basilar_plexus",
+          "sharedVertices": 74,
+          "passed": true
+        },
+        {
+          "from": "vein.cpa_inferior_petrosal_bridge.left",
+          "to": "vein.inferior_petrosal.left",
+          "sharedVertices": 60,
+          "passed": true
+        },
+        {
+          "from": "vein.cpa_inferior_petrosal_bridge.left",
+          "to": "vein.lateral_recess.left",
+          "sharedVertices": 115,
+          "passed": true
+        },
+        {
+          "from": "vein.lower_brainstem_bridge.right",
+          "to": "vein.lateral_medullary.right",
+          "sharedVertices": 98,
+          "passed": true
+        },
+        {
+          "from": "vein.lower_brainstem_bridge.right",
+          "to": "vein.marginal",
+          "sharedVertices": 79,
+          "passed": true
+        },
+        {
+          "from": "vein.intercollicular",
+          "to": "vein.tectal.left",
+          "sharedVertices": 95,
+          "passed": true
+        },
+        {
+          "from": "vein.intercollicular",
+          "to": "vein.tectal.right",
+          "sharedVertices": 90,
+          "passed": true
+        },
+        {
+          "from": "vein.pontotrigeminal.right",
+          "to": "vein.lateral_mesencephalic.right",
+          "sharedVertices": 53,
+          "passed": true
+        },
+        {
+          "from": "vein.pontotrigeminal.right",
+          "to": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 509,
+          "passed": true
+        },
+        {
+          "from": "vein.pontotrigeminal.left",
+          "to": "vein.lateral_mesencephalic.left",
+          "sharedVertices": 59,
+          "passed": true
+        },
+        {
+          "from": "vein.pontotrigeminal.left",
+          "to": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 599,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "junctionAdjacency": {
+      "pairs": [
+        {
+          "one": "vein.anterior_hemispheric.left",
+          "two": "vein.horizontal_fissure.left",
+          "sharedVertices": 86,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_hemispheric.right",
+          "two": "vein.horizontal_fissure.right",
+          "sharedVertices": 84,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_hemispheric_inferior.left",
+          "two": "vein.cerebellopontine_fissure.left",
+          "sharedVertices": 74,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_hemispheric_inferior.right",
+          "two": "vein.cerebellopontine_fissure.right",
+          "sharedVertices": 83,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_medullary",
+          "two": "vein.transverse_medullary.left",
+          "sharedVertices": 62,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_medullary",
+          "two": "vein.transverse_medullary.right",
+          "sharedVertices": 70,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_pontine",
+          "two": "vein.prepontine_bridge.right",
+          "sharedVertices": 76,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_pontomesencephalic",
+          "two": "vein.pontomesencephalic_sulcus.left",
+          "sharedVertices": 83,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.anterior_pontomesencephalic",
+          "two": "vein.pontomesencephalic_sulcus.right",
+          "sharedVertices": 72,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.cerebral_peduncular.left",
+          "sharedVertices": 40,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.cerebral_peduncular.right",
+          "sharedVertices": 61,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.basilar_plexus",
+          "two": "vein.prepontine_bridge.right",
+          "sharedVertices": 74,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cerebellopontine_fissure.left",
+          "two": "vein.lateral_recess.left",
+          "sharedVertices": 120,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cerebellopontine_fissure.right",
+          "two": "vein.lateral_recess.right",
+          "sharedVertices": 155,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cerebellopontine_fissure.right",
+          "two": "vein.pontotrigeminal.right",
+          "sharedVertices": 7,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cerebral_peduncular.left",
+          "two": "vein.posterior_communicating",
+          "sharedVertices": 419,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cerebral_peduncular.right",
+          "two": "vein.posterior_communicating",
+          "sharedVertices": 70,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cervical_foraminal.left",
+          "two": "vein.cervical_radicular.left",
+          "sharedVertices": 33,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cervical_foraminal.left",
+          "two": "vein.suboccipital_plexus.left",
+          "sharedVertices": 66,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cervical_foraminal.right",
+          "two": "vein.cervical_radicular.right",
+          "sharedVertices": 33,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cervical_foraminal.right",
+          "two": "vein.suboccipital_plexus.right",
+          "sharedVertices": 70,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cervical_radicular.left",
+          "two": "vein.posterior_spinal",
+          "sharedVertices": 71,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cervical_radicular.right",
+          "two": "vein.posterior_spinal",
+          "sharedVertices": 75,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cpa_inferior_petrosal_bridge.left",
+          "two": "vein.inferior_petrosal.left",
+          "sharedVertices": 60,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cpa_inferior_petrosal_bridge.left",
+          "two": "vein.lateral_recess.left",
+          "sharedVertices": 115,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.cpa_inferior_petrosal_bridge.left",
+          "two": "vein.pontomedullary.left",
+          "sharedVertices": 174,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.dentate_tributaries.left",
+          "two": "vein.lateral_supratonsillar.left",
+          "sharedVertices": 82,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.dentate_tributaries.right",
+          "two": "vein.lateral_supratonsillar.right",
+          "sharedVertices": 84,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.fourth_choroidal.left",
+          "two": "vein.lateral_recess.left",
+          "sharedVertices": 86,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.fourth_choroidal.right",
+          "two": "vein.lateral_recess.right",
+          "sharedVertices": 89,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.posterior_mesencephalic.right",
+          "sharedVertices": 60,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.horizontal_fissure.left",
+          "two": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 76,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.horizontal_fissure.right",
+          "two": "vein.middle_cerebellar_peduncular.right",
+          "sharedVertices": 18,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.horizontal_fissure.right",
+          "two": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 66,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_cerebellar_peduncular.left",
+          "two": "vein.lateral_recess.left",
+          "sharedVertices": 82,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_cerebellar_peduncular.left",
+          "two": "vein.posterior_medullary",
+          "sharedVertices": 78,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_cerebellar_peduncular.left",
+          "two": "vein.posterolateral_medullary.left",
+          "sharedVertices": 79,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_cerebellar_peduncular.right",
+          "two": "vein.lateral_recess.right",
+          "sharedVertices": 83,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_cerebellar_peduncular.right",
+          "two": "vein.posterior_medullary",
+          "sharedVertices": 96,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_cerebellar_peduncular.right",
+          "two": "vein.posterolateral_medullary.right",
+          "sharedVertices": 80,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_hemispheric.left",
+          "two": "vein.inferior_hemispheric_tributaries.left",
+          "sharedVertices": 77,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_hemispheric.right",
+          "two": "vein.inferior_hemispheric_tributaries.right",
+          "sharedVertices": 123,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_hemispheric.right",
+          "two": "vein.inferior_vermian_tonsillar_stem.right",
+          "sharedVertices": 26,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_retrotonsillar.left",
+          "two": "vein.inferior_vermian_tonsillar_stem.left",
+          "sharedVertices": 80,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_retrotonsillar.right",
+          "two": "vein.inferior_vermian_tonsillar_stem.right",
+          "sharedVertices": 85,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_vermian.left",
+          "two": "vein.inferior_vermian_tonsillar_stem.left",
+          "sharedVertices": 248,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_vermian.right",
+          "two": "vein.inferior_vermian_tonsillar_stem.right",
+          "sharedVertices": 68,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_vermian_tonsillar_stem.left",
+          "two": "vein.superior_retrotonsillar.left",
+          "sharedVertices": 83,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.inferior_vermian_tonsillar_stem.right",
+          "two": "vein.superior_retrotonsillar.right",
+          "sharedVertices": 84,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.intercollicular",
+          "two": "vein.tectal.left",
+          "sharedVertices": 95,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.intercollicular",
+          "two": "vein.tectal.right",
+          "sharedVertices": 90,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_anterior_pontomesencephalic.left",
+          "two": "vein.pontomedullary.left",
+          "sharedVertices": 73,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_anterior_pontomesencephalic.right",
+          "two": "vein.pontomesencephalic_sulcus.right",
+          "sharedVertices": 182,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_anterior_pontomesencephalic.right",
+          "two": "vein.transverse_pontine.right",
+          "sharedVertices": 75,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.left",
+          "two": "vein.lateral_recess.left",
+          "sharedVertices": 72,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.left",
+          "two": "vein.middle_cerebellar_peduncular.left",
+          "sharedVertices": 186,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.left",
+          "two": "vein.retro_olivary.left",
+          "sharedVertices": 122,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.right",
+          "two": "vein.lateral_recess.right",
+          "sharedVertices": 92,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.right",
+          "two": "vein.lower_brainstem_bridge.right",
+          "sharedVertices": 98,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.right",
+          "two": "vein.middle_cerebellar_peduncular.right",
+          "sharedVertices": 293,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_medullary.right",
+          "two": "vein.retro_olivary.right",
+          "sharedVertices": 248,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_mesencephalic.left",
+          "two": "vein.pontotrigeminal.left",
+          "sharedVertices": 59,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_mesencephalic.right",
+          "two": "vein.pontotrigeminal.right",
+          "sharedVertices": 53,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_mesencephalic.right",
+          "two": "vein.posterior_mesencephalic.right",
+          "sharedVertices": 66,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.left",
+          "two": "vein.lateral_supratonsillar.left",
+          "sharedVertices": 29,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.left",
+          "two": "vein.medial_supratonsillar.left",
+          "sharedVertices": 76,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.left",
+          "two": "vein.pontomedullary.left",
+          "sharedVertices": 118,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.left",
+          "two": "vein.tonsillar_surface.left",
+          "sharedVertices": 101,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.right",
+          "two": "vein.lateral_supratonsillar.right",
+          "sharedVertices": 38,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.right",
+          "two": "vein.medial_supratonsillar.right",
+          "sharedVertices": 76,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_recess.right",
+          "two": "vein.tonsillar_surface.right",
+          "sharedVertices": 103,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_supratonsillar.left",
+          "two": "vein.tonsillar_surface.left",
+          "sharedVertices": 60,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lateral_supratonsillar.right",
+          "two": "vein.tonsillar_surface.right",
+          "sharedVertices": 48,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.lower_brainstem_bridge.right",
+          "two": "vein.marginal",
+          "sharedVertices": 79,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.middle_cerebellar_peduncular.left",
+          "two": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 64,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.middle_cerebellar_peduncular.right",
+          "two": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 58,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontomedullary.left",
+          "two": "vein.preolivary.left",
+          "sharedVertices": 80,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontomedullary.right",
+          "two": "vein.preolivary.right",
+          "sharedVertices": 74,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontomesencephalic_sulcus.left",
+          "two": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 70,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontomesencephalic_sulcus.right",
+          "two": "vein.pontotrigeminal.right",
+          "sharedVertices": 142,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontomesencephalic_sulcus.right",
+          "two": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 70,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontotrigeminal.left",
+          "two": "vein.superior_petrosal_vein.left",
+          "sharedVertices": 599,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.pontotrigeminal.right",
+          "two": "vein.superior_petrosal_vein.right",
+          "sharedVertices": 509,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.posterior_medullary",
+          "two": "vein.posterior_spinal",
+          "sharedVertices": 38,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.precentral_cerebellar",
+          "two": "vein.superior_cerebellar_peduncular.left",
+          "sharedVertices": 59,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.precentral_cerebellar",
+          "two": "vein.superior_cerebellar_peduncular.right",
+          "sharedVertices": 65,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.precentral_cerebellar",
+          "two": "vein.tectal.left",
+          "sharedVertices": 64,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.precentral_cerebellar",
+          "two": "vein.tectal.right",
+          "sharedVertices": 68,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.preolivary.left",
+          "two": "vein.transverse_medullary.left",
+          "sharedVertices": 82,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.preolivary.right",
+          "two": "vein.transverse_medullary.right",
+          "sharedVertices": 81,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.superior_cerebellar_peduncular.left",
+          "two": "vein.superior_cerebellar_peduncular.right",
+          "sharedVertices": 19,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.superior_hemispheric.left",
+          "two": "vein.superior_hemispheric.right",
+          "sharedVertices": 6,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.superior_hemispheric.left",
+          "two": "vein.superior_vermian",
+          "sharedVertices": 83,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.superior_hemispheric.right",
+          "two": "vein.superior_vermian",
+          "sharedVertices": 94,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.superior_hemispheric_lateral.left",
+          "two": "vein.tentorial_channel.left",
+          "sharedVertices": 103,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.superior_hemispheric_lateral.right",
+          "two": "vein.tentorial_channel.right",
+          "sharedVertices": 129,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.tentorial_channel.left",
+          "two": "vein.transverse.left",
+          "sharedVertices": 60,
+          "authoredDirectJoin": true
+        },
+        {
+          "one": "vein.tentorial_channel.right",
+          "two": "vein.transverse.right",
+          "sharedVertices": 72,
+          "authoredDirectJoin": true
+        }
+      ],
+      "passed": true
+    },
+    "retainedCollars": {
+      "pairs": [
+        {
+          "one": "vein.anterior_medullary",
+          "two": "vein.anterior_spinal",
+          "maximumOriginalCollarGapMm": 0.00028210286372018544,
+          "passed": true
+        },
+        {
+          "one": "vein.anterior_pontine",
+          "two": "vein.transverse_pontine.left",
+          "maximumOriginalCollarGapMm": 8.978898190983621e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.internal_cerebral.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.anterior_cerebral.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.deep_middle_cerebral.left",
+          "maximumOriginalCollarGapMm": 7.295025506641318e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.hippocampal.left",
+          "maximumOriginalCollarGapMm": 8.359293977964708e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.hypothalamic_tributaries.left",
+          "maximumOriginalCollarGapMm": 3.3588862225240397e-06,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.inferior_thalamic.left",
+          "maximumOriginalCollarGapMm": 8.376792143681212e-07,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.inferior_ventricular.left",
+          "maximumOriginalCollarGapMm": 0.00045123584705796866,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.left",
+          "two": "vein.uncal.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.internal_cerebral.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.anterior_cerebral.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.deep_middle_cerebral.right",
+          "maximumOriginalCollarGapMm": 0.0001681951969861942,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.hippocampal.right",
+          "maximumOriginalCollarGapMm": 4.764689414869217e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.hypothalamic_tributaries.right",
+          "maximumOriginalCollarGapMm": 4.879329181734022e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.inferior_thalamic.right",
+          "maximumOriginalCollarGapMm": 3.71108213509293e-07,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.inferior_ventricular.right",
+          "maximumOriginalCollarGapMm": 1.3709768379060537e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basal.right",
+          "two": "vein.uncal.right",
+          "maximumOriginalCollarGapMm": 9.917955297300992e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.basilar_plexus",
+          "two": "vein.cavernous.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basilar_plexus",
+          "two": "vein.inferior_petrosal.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basilar_plexus",
+          "two": "vein.anterior_condylar.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basilar_plexus",
+          "two": "vein.cavernous.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.basilar_plexus",
+          "two": "vein.anterior_condylar.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.cerebellopontine_fissure.left",
+          "two": "vein.transverse_pontine.left",
+          "maximumOriginalCollarGapMm": 0.00021347778018128105,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.straight",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.inferior_sagittal",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.internal_cerebral.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.internal_cerebral.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.posterior_callosal.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.galen",
+          "two": "vein.posterior_callosal.right",
+          "maximumOriginalCollarGapMm": 6.666266648321569e-07,
+          "passed": true
+        },
+        {
+          "one": "vein.inferior_petrosal.left",
+          "two": "vein.internal_jugular.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.inferior_petrosal.left",
+          "two": "vein.cavernous.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.inferior_vermian.left",
+          "two": "vein.confluence",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.inferior_vermian.left",
+          "two": "vein.occipital_sinus",
+          "maximumOriginalCollarGapMm": 0.00014287249413444622,
+          "passed": true
+        },
+        {
+          "one": "vein.inferior_vermian.right",
+          "two": "vein.confluence",
+          "maximumOriginalCollarGapMm": 8.482106210949511e-05,
+          "passed": true
+        },
+        {
+          "one": "vein.inferior_vermian.right",
+          "two": "vein.occipital_sinus",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.marginal",
+          "two": "vein.anterior_condylar.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.marginal",
+          "two": "vein.anterior_condylar.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.suboccipital_plexus.left",
+          "two": "vein.vertebral.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.suboccipital_plexus.left",
+          "two": "vein.deep_cervical.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.suboccipital_plexus.left",
+          "two": "vein.lateral_condylar.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.suboccipital_plexus.right",
+          "two": "vein.vertebral.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.suboccipital_plexus.right",
+          "two": "vein.deep_cervical.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.suboccipital_plexus.right",
+          "two": "vein.lateral_condylar.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.superior_petrosal_vein.left",
+          "two": "vein.superior_petrosal.left",
+          "maximumOriginalCollarGapMm": 0.0002081597046940809,
+          "passed": true
+        },
+        {
+          "one": "vein.superior_petrosal_vein.left",
+          "two": "vein.transverse_pontine.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.superior_petrosal_vein.right",
+          "two": "vein.superior_petrosal.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.left",
+          "two": "vein.sigmoid.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.left",
+          "two": "vein.labbe.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.right",
+          "two": "vein.confluence",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.right",
+          "two": "vein.superior_sagittal",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.right",
+          "two": "vein.straight",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.right",
+          "two": "vein.occipital_sinus",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.right",
+          "two": "vein.sigmoid.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse.right",
+          "two": "vein.labbe.right",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        },
+        {
+          "one": "vein.transverse_pontine.right",
+          "two": "vein.transverse_pontine.left",
+          "maximumOriginalCollarGapMm": 0.0,
+          "passed": true
+        }
+      ],
+      "toleranceMm": 0.025,
+      "passed": true
+    },
+    "newArteryAndBoneClearance": {
+      "passed": true
+    },
+    "otherExistingVeinClearance": {
+      "passed": true
+    },
+    "courseSmoothness": {
+      "maximumRadiusCurvatureProduct": 0.6471885132664065,
+      "passed": true
+    },
+    "brainstemBodyPositions": {
+      "centrelineEntries": [],
+      "endpointExclusionMm": 3,
+      "passed": true,
+      "scope": "Registered left/right pons, medulla and midbrain plus upper cervical cord. Gross brainstem bodies only; this does not certify all tissue or rootlet relations."
+    },
+    "catalogueCoverage": {
+      "entries": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P20",
+        "P21",
+        "P22",
+        "P23",
+        "P24",
+        "P25",
+        "P26",
+        "P27",
+        "P28",
+        "P29",
+        "P30",
+        "P31"
+      ],
+      "families": 31,
+      "newMeshLabels": 69,
+      "passed": true
+    }
+  },
+  "newArteryOrBoneContacts": [],
+  "unexpectedVenousJoins": [],
+  "otherExistingVeinContacts": [],
+  "passed": true,
+  "scope": "Actual triangle skin intersections, labelled shared ostia, finite non-degenerate geometry and catalogue coverage. Intentional intraparenchymal/subependymal/choroidal courses can intersect their target tissue. No clinical accuracy or general solid containment claim."
+}

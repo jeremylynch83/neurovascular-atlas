@@ -1,0 +1,407 @@
+{
+  "release": "0.9.31",
+  "baselineRelease": "0.9.30",
+  "newLabels": [],
+  "baselineAssetHashes": {
+    "complete-circulation.glb": "6c06449c3fe719b310d570d0abb34a9f5d8c080c00f4e076dc5e82f71b67ec52",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-anastomoses.glb": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+    "venous.glb": "7ce049d61f718a17ae05a205cfea3cbdaeb9964a93bc34994ebd2b5ab663518d",
+    "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123"
+  },
+  "changed": [
+    {
+      "node": "brain.base-of-peduncle.left",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 0.0739201274506301,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.base-of-peduncle.right",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 4.443964253674139,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.fourth-ventricle",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 1.6146916776134634,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.medulla-oblongata.left",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 3.605551275463989,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.medulla-oblongata.right",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 3.605551275463989,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.midbrain.left",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 1.2314758043547611,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.midbrain.right",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 3.615883696678702,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.pons.left",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 3.6052867737993877,
+      "topology": "retained"
+    },
+    {
+      "node": "brain.pons.right",
+      "file": "brain-context.glb",
+      "maximumDisplacementMm": 3.605551275463989,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.anterior_condylar.left",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 0.8000030517578125,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.anterior_medullary",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 3.764976061240546,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.anterior_pontine",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 3.862143042305736,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.anterior_pontomesencephalic",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 6.039960833809909,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.basilar_plexus",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 0.8000030517578125,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.lateral_anterior_pontomesencephalic.left",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 0.09677057926153147,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.lateral_mesencephalic.right",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 2.471988649943728,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.marginal",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 0.8000030517578125,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.pontomedullary.left",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 3.644327486656202,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.pontomedullary.right",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 3.7627430371881765,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.posterior_communicating",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 2.9040941033724614,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.preolivary.left",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 3.4368880856120385,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.preolivary.right",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 1.8383437534691094,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.transverse_medullary.left",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 3.0679714085499517,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.transverse_medullary.right",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 0.026377164147548714,
+      "topology": "retained"
+    }
+  ],
+  "fields": {
+    "upper": {
+      "delta": [
+        3,
+        -5,
+        1
+      ],
+      "extent": [
+        4.5,
+        7.0,
+        3.8
+      ],
+      "centre": [
+        1.6,
+        -54.5,
+        73.0
+      ],
+      "plateau": 0.35,
+      "steps": 48,
+      "changed": [
+        {
+          "node": "brain.pons.right",
+          "maximumDisplacementMm": 1.651679961101462
+        },
+        {
+          "node": "brain.pons.left",
+          "maximumDisplacementMm": 0.6353667591829926
+        },
+        {
+          "node": "brain.midbrain.right",
+          "maximumDisplacementMm": 3.3974982857951153
+        },
+        {
+          "node": "brain.midbrain.left",
+          "maximumDisplacementMm": 1.2314746189602943
+        },
+        {
+          "node": "brain.base-of-peduncle.right",
+          "maximumDisplacementMm": 4.087191829259456
+        },
+        {
+          "node": "brain.base-of-peduncle.left",
+          "maximumDisplacementMm": 0.07392082268294219
+        },
+        {
+          "node": "vein.lateral_mesencephalic.right",
+          "maximumDisplacementMm": 3.3336127085301404
+        },
+        {
+          "node": "vein.posterior_communicating",
+          "maximumDisplacementMm": 2.9040952196395216
+        },
+        {
+          "node": "vein.anterior_pontomesencephalic",
+          "maximumDisplacementMm": 5.916079783099481
+        }
+      ],
+      "newContacts": []
+    },
+    "lower": {
+      "baseline": {
+        "delta": [
+          0,
+          -2,
+          3
+        ],
+        "extent": [
+          10,
+          12,
+          12
+        ],
+        "centre": [
+          1,
+          -71,
+          42
+        ],
+        "plateau": 0.35,
+        "changed": [
+          "brain.pons.right",
+          "brain.pons.left",
+          "brain.fourth-ventricle",
+          "brain.medulla-oblongata.left",
+          "brain.medulla-oblongata.right",
+          "vein.anterior_pontine",
+          "vein.anterior_medullary",
+          "vein.pontomedullary.right",
+          "vein.pontomedullary.left",
+          "vein.lateral_anterior_pontomesencephalic.left",
+          "vein.preolivary.left",
+          "vein.preolivary.right",
+          "vein.transverse_medullary.left",
+          "vein.transverse_medullary.right"
+        ],
+        "hits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "newContacts": [
+          [
+            "vein.anterior_pontine",
+            "AICA right"
+          ],
+          [
+            "vein.preolivary.right",
+            "Vertebral V4 right"
+          ]
+        ],
+        "directory": "common-0"
+      },
+      "refinements": [
+        {
+          "centre": [
+            2.9970929622650146,
+            -69.05245971679688,
+            49.975650787353516
+          ],
+          "extent": [
+            6,
+            6,
+            6
+          ],
+          "delta": [
+            0.0,
+            0.0,
+            0.6
+          ],
+          "plateau": 0.25,
+          "mode": "common"
+        },
+        {
+          "centre": [
+            6.547830581665039,
+            -71.93599700927734,
+            39.26197814941406
+          ],
+          "extent": [
+            6,
+            6,
+            6
+          ],
+          "delta": [
+            0.0,
+            1.8,
+            0.0
+          ],
+          "plateau": 0.25,
+          "mode": "veins-only"
+        }
+      ],
+      "newContacts": [],
+      "changed": [
+        "vein.pontomedullary.right",
+        "vein.preolivary.left",
+        "vein.preolivary.right",
+        "vein.lateral_anterior_pontomesencephalic.left",
+        "brain.pons.right",
+        "brain.pons.left",
+        "vein.transverse_medullary.right",
+        "vein.anterior_pontine",
+        "brain.medulla-oblongata.left",
+        "brain.fourth-ventricle",
+        "brain.medulla-oblongata.right",
+        "vein.transverse_medullary.left",
+        "vein.anterior_medullary",
+        "vein.pontomedullary.left",
+        "vein.marginal",
+        "vein.basilar_plexus"
+      ]
+    },
+    "ring": {
+      "centre": [
+        -9.4,
+        -75.3,
+        33.4
+      ],
+      "extent": [
+        5,
+        5,
+        4
+      ],
+      "delta": [
+        0,
+        -0.8,
+        0
+      ],
+      "changed": [
+        "vein.marginal",
+        "vein.anterior_condylar.left",
+        "vein.basilar_plexus",
+        "vein.preolivary.left"
+      ],
+      "newContacts": [],
+      "hits": [
+        0
+      ]
+    },
+    "finalBrainRecess": {
+      "centre": [
+        7.0799560546875,
+        -60.717247009277344,
+        73.63761901855469
+      ],
+      "extent": [
+        6,
+        6,
+        6
+      ],
+      "delta": [
+        0,
+        -0.6,
+        0
+      ],
+      "plateau": 0.3
+    }
+  },
+  "unchangedArterialGeometry": true,
+  "roundWallRecovery": {
+    "magnitude": 0.6,
+    "centre": [
+      7.0799560546875,
+      -60.717247009277344,
+      73.63761901855469
+    ],
+    "newContacts": [],
+    "allAuditContactCounts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "roundNodes": [
+      "vein.lateral_mesencephalic.right",
+      "vein.transverse_medullary.left",
+      "vein.anterior_medullary",
+      "vein.anterior_pontomesencephalic",
+      "vein.preolivary.right"
+    ]
+  },
+  "placementStageValidation": "anatomical-placement-stage-v0.9.31.json"
+}

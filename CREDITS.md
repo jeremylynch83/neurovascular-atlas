@@ -1,3 +1,5 @@
+Anatomical audit and v0.9.29 correction references are listed in [the correction report](docs/ANATOMICAL_CORRECTIONS_v0.9.29.md) and its linked machine-readable register. Article content and illustrations are not redistributed.
+
 # Credits
 
 Neurovascular Atlas, authored by Jeremy Lynch, 2026.

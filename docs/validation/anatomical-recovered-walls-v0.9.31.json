@@ -1,0 +1,47 @@
+{
+  "release": "0.9.31",
+  "passed": true,
+  "checks": [
+    {
+      "node": "vein.anterior_medullary",
+      "placementStageNonAdjacentContactPairs": 88,
+      "candidateNonAdjacentContactPairs": 88,
+      "newNonAdjacentContactPairs": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "node": "vein.anterior_pontomesencephalic",
+      "placementStageNonAdjacentContactPairs": 18,
+      "candidateNonAdjacentContactPairs": 18,
+      "newNonAdjacentContactPairs": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "node": "vein.lateral_mesencephalic.right",
+      "placementStageNonAdjacentContactPairs": 74,
+      "candidateNonAdjacentContactPairs": 74,
+      "newNonAdjacentContactPairs": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "node": "vein.preolivary.right",
+      "placementStageNonAdjacentContactPairs": 0,
+      "candidateNonAdjacentContactPairs": 0,
+      "newNonAdjacentContactPairs": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "node": "vein.transverse_medullary.left",
+      "placementStageNonAdjacentContactPairs": 0,
+      "candidateNonAdjacentContactPairs": 0,
+      "newNonAdjacentContactPairs": 0,
+      "examples": [],
+      "passed": true
+    }
+  ],
+  "method": "VTK all-contact triangle collision, excluding faces sharing any identical-coordinate vertex. Only the five round-wall recovered meshes are tested here; the preceding placement field is separately checked. Existing folds at ostia are retained; their repair is outside this crossing correction."
+}

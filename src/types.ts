@@ -36,11 +36,12 @@ export interface VesselCourse {
   targetStructureIds: string[];
   stationIds: string[];
   stationOrder: 'anatomical-sequence' | 'regional-references-only' | 'not-applicable';
-  radiusPolicy: 'preserve-delivered-profile';
+  radiusPolicy: 'preserve-delivered-profile' | 'preserve-source-profile-with-measured-wall-deformation';
   reviewStatus: 'requires-anatomical-review' | 'requires-anatomical-target' | 'protected-baseline';
   missingTargets: string[];
   attachments: { parentId: string | null; incoming: Relationship[]; outgoing: Relationship[]; status: string };
-  segments: { order: number; mode: VesselCourseMode; targetStructureIds: string[]; stationIds: string[]; stationRole: string;
+  coursePaths?: { source: string; sourceStructureId: string; sourcePart: number; pointCount: number; pointSha256: string; lengthMm: number }[];
+  segments: { pathIndex?: number; pointRange?: [number, number]; arcRangeMm?: [number, number]; summary?: string; order: number; mode: VesselCourseMode; targetStructureIds: string[]; stationIds: string[]; stationRole: string;
     constraints: { wallClearance: 'radius-aware'; allowTissueEntry: boolean; avoidAtlasCutFaces: boolean; preserveJoinedAttachments: boolean }; reviewStatus: string }[];
 }
 export interface Provenance {
@@ -70,6 +71,7 @@ export interface Structure {
   surfaceAnchor?: SurfaceAnchor;
   secondarySurfaceAnchors?: SurfaceAnchor[];
   vesselCourse?: VesselCourse;
+  anatomicalReview?: { status: string; issueIds: string[]; summary: string };
   vesselGuide?: { role: 'course-guide'; vesselNames: string[]; vesselIds: string[]; surfaceStructureIds: string[]; anchorIds?: string[] };
   landmark?: {
     kind?: 'brain-surface' | 'brain-course';

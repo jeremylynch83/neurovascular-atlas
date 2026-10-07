@@ -1,0 +1,259 @@
+{
+  "release": "0.9.31",
+  "auditDate": "2026-10-07",
+  "issues": [
+    {
+      "id": "G01",
+      "title": "Straight sinus position",
+      "priority": "P1",
+      "certainty": "Confirmed registration inconsistency",
+      "action": "Refit the connected sinus complex to a reviewed falcotentorial junction.",
+      "status": "Open",
+      "owner": "",
+      "closureEvidence": "Dural-ridge trial introduced new cortical and vascular contacts and was withheld. See anatomical-rejected-trials-v0.9.31.json."
+    },
+    {
+      "id": "G02",
+      "title": "Posterior artery and vein intersections",
+      "priority": "P1",
+      "certainty": "Confirmed surface intersections",
+      "action": "Resolve the 12 measured crossing regions with separate artery and vein skins and reviewed overpasses.",
+      "status": "Geometry implemented; anatomical review pending",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-clearance-v0.9.31.json: 12/12 audited pairs clear; original joins retained; no new cross-asset or independent intra-venous contact pairs"
+    },
+    {
+      "id": "G03",
+      "title": "Bony canal and vessel calibration",
+      "priority": "P1/P2",
+      "certainty": "Confirmed contacts; anatomical cause unresolved",
+      "action": "Calibrate the canal lumens and vessel routes together and distinguish ostial contact from solid-bone conflict.",
+      "status": "Open",
+      "owner": "",
+      "closureEvidence": "The supplied coarse skull does not resolve continuous canal lumina. Independent canal geometry and joint vessel/skull calibration are required; bone and canal trajectories were retained."
+    },
+    {
+      "id": "G04",
+      "title": "Cavernous ICA and dural boundaries",
+      "priority": "P1",
+      "certainty": "Probable compartment mismatch",
+      "action": "Review shared skull base calibration and NYU segment boundaries using independently reviewed dural rings.",
+      "status": "Provisional boundary corrected; calibration open",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-mesh-authoring-v0.9.29.json"
+    },
+    {
+      "id": "G05",
+      "title": "Pericallosal course against the callosum",
+      "priority": "P1",
+      "certainty": "Probable registered course mismatch",
+      "action": "Review the callosal reference and fit the connected pericallosal route to the correct sulci.",
+      "status": "Open",
+      "owner": "",
+      "closureEvidence": "Connected callosal fitting trials introduced new cingulate, septal and venous contacts and were withheld. See anatomical-rejected-trials-v0.9.31.json."
+    },
+    {
+      "id": "M02",
+      "title": "Page 3 surface courses and outlets",
+      "priority": "P2",
+      "certainty": "Confirmed course metadata mismatch",
+      "action": "Partition the pial or fissural course from cisternal and bridging outlet portions before evaluating placement.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-course-partitions-v0.9.29.json"
+    },
+    {
+      "id": "T01",
+      "title": "Ophthalmic terminology",
+      "priority": "P2",
+      "certainty": "Confirmed terminology errors",
+      "action": "Replace orbital canal with optic canal and posterior choroidal with posterior ciliary; qualify the selected nerve crossing.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    },
+    {
+      "id": "M01",
+      "title": "Vidian contribution parent",
+      "priority": "P2",
+      "certainty": "Confirmed parent label inconsistency",
+      "action": "Reconcile the physical ostium, segment partition and declared parent after ICA boundary review.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    },
+    {
+      "id": "T02",
+      "title": "Posterior ciliary branch order",
+      "priority": "P2",
+      "certainty": "Overstated normal pattern",
+      "action": "Describe origin order and common trunks as variable and label the selected medial and lateral arrangement.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    },
+    {
+      "id": "T03",
+      "title": "MCA segment and cortical link wording",
+      "priority": "P2",
+      "certainty": "Confirmed description and link errors",
+      "action": "Correct the 46 repeated M4 descriptions and the bilateral temporo-occipital links.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    },
+    {
+      "id": "T04",
+      "title": "Internal cerebral vein formation",
+      "priority": "P2",
+      "certainty": "Incomplete and overgeneralised wording",
+      "action": "Include the important septal contribution and avoid a compulsory basal vein before Galen sequence.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    },
+    {
+      "id": "T05",
+      "title": "Vertebral V1 and V4 descriptions",
+      "priority": "P2",
+      "certainty": "Entry overgeneralisation and boundary wording error",
+      "action": "Allow variable entry levels and define V4 from dural penetration.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    },
+    {
+      "id": "T06",
+      "title": "Anterior spinal artery formation",
+      "priority": "P2",
+      "certainty": "Overgeneralised origin description",
+      "action": "Describe variable proximal rami and the actual selected union without a compulsory PICA dominance or fusion level.",
+      "status": "Implemented",
+      "owner": "",
+      "closureEvidence": "docs/validation/anatomical-text-corrections-v0.9.29.json"
+    }
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "citation": "Matsushima T, Rhoton AL Jr, de Oliveira E, Peace D. Microsurgical anatomy of the veins of the posterior fossa. J Neurosurg. 1983;59:63\u2013105. doi:10.3171/jns.1983.59.1.0063.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6602865/",
+      "evidenceUsed": "Primary dissection study; abstract consulted."
+    },
+    {
+      "id": "R02",
+      "citation": "Magden AO. Triple straight sinus report of 2 cases. Anat Anz. 1991;173:17\u201322. PMID:1952091.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1952091/",
+      "evidenceUsed": "Primary cadaveric study; abstract used for location and duplication."
+    },
+    {
+      "id": "R03",
+      "citation": "Ye Y, Ding J, Huang S, Wang Q. Related Structures in the Straight Sinus: An Endoscopic Anatomy and Histological Study. Front Neuroanat. 2020;14:573217. doi:10.3389/fnana.2020.573217.",
+      "url": "https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2020.573217/full",
+      "evidenceUsed": "Primary cadaveric and imaging study; full text consulted."
+    },
+    {
+      "id": "R04",
+      "citation": "Shapiro M et al. Toward an Endovascular Internal Carotid Artery Classification System. AJNR. 2014;35:230\u2013236. doi:10.3174/ajnr.A3666.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23928138/",
+      "evidenceUsed": "Original NYU classification paper; classification text and abstract consulted."
+    },
+    {
+      "id": "R05",
+      "citation": "Microsurgical Anatomy of the Cavernous Sinus. Barrow Quarterly. 1996;12(2).",
+      "url": "https://www.barrowneuro.org/for-physicians-researchers/education/grand-rounds-publications-media/barrow-quarterly/volume-12-no-2-1996/microsurgical-anatomy-of-the-cavernous-sinus/",
+      "evidenceUsed": "Specialist primary dissections; full text consulted."
+    },
+    {
+      "id": "R06",
+      "citation": "Microsurgical Anatomy of the Clinoidal Segment of the Internal Carotid Artery, Carotid Cave, and Paraclinoid Space. Barrow Quarterly. 2002;18(1).",
+      "url": "https://www.barrowneuro.org/for-physicians-researchers/education/grand-rounds-publications-media/barrow-quarterly/volume-18-no-1-2002/microsurgical-anatomy-of-the-clinoidal-segment-of-the-internal-carotid-artery-carotid-cave-and-paraclinoid-space/",
+      "evidenceUsed": "Specialist anatomical dissections; full text consulted."
+    },
+    {
+      "id": "R07",
+      "citation": "Poblete T, Casanova D, Soto M, Campero A, Mura J. Microsurgical Anatomy of the Anterior Circulation of the Brain Adjusted to the Neurosurgeon\u2019s Daily Practice. Brain Sci. 2021;11:519. doi:10.3390/brainsci11040519.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8073207/",
+      "evidenceUsed": "Original dissection-based article; full text consulted."
+    },
+    {
+      "id": "R08",
+      "citation": "Perrini P, Cardia A, Fraser K, Lanzino G. A microsurgical study of the anatomy and course of the ophthalmic artery and its possibly dangerous anastomoses. J Neurosurg. 2007;106:142\u2013150. doi:10.3171/jns.2007.106.1.142.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17236500/",
+      "evidenceUsed": "Primary cadaveric study; abstract consulted."
+    },
+    {
+      "id": "R09",
+      "citation": "Bertl K et al. Radiological assessment of the inferior alveolar artery course in human corpse mandibles. Eur Radiol. 2015;25:1148\u20131153. doi:10.1007/s00330-014-3484-3.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25413966/",
+      "evidenceUsed": "Primary cadaveric CT study; abstract consulted."
+    },
+    {
+      "id": "R10",
+      "citation": "Tong JY et al. Anatomy of the infraorbital artery and its orbital branch. Eye. 2025;39:1380\u20131383. doi:10.1038/s41433-025-03671-y.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12043843/",
+      "evidenceUsed": "Primary anatomical study; source and abstract consulted."
+    },
+    {
+      "id": "R11",
+      "citation": "Meila D et al. Origin and course of the extracranial vertebral artery: CTA findings and embryologic considerations. Clin Neuroradiol. 2012;22:327\u2013333. PMID:22941252.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22941252/",
+      "evidenceUsed": "Primary CTA study; abstract consulted."
+    },
+    {
+      "id": "R12",
+      "citation": "Tsutsumi S, Ono H, Ishii H, Yasumoto Y. Vertebral artery segment at the suboccipital dural penetration site: an anatomical study using magnetic resonance imaging. 2019. PMID:30820640.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30820640/",
+      "evidenceUsed": "Primary MRI anatomy study; abstract consulted."
+    },
+    {
+      "id": "R13",
+      "citation": "Brzegowy K et al. The Internal Cerebral Vein: New Classification of Branching Patterns Based on CTA. AJNR. 2019;40:1719\u20131724. doi:10.3174/ajnr.A6200.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31488502/",
+      "evidenceUsed": "Primary CTA study; abstract and figures consulted."
+    },
+    {
+      "id": "R14",
+      "citation": "Tubbs RS et al. Surgical anatomy and landmarks for the basal vein of Rosenthal. J Neurosurg. 2007;106:900\u2013902. doi:10.3171/jns.2007.106.5.900.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17542537/",
+      "evidenceUsed": "Primary dissection study; abstract consulted."
+    },
+    {
+      "id": "R15",
+      "citation": "Ono M, Rhoton AL Jr, Peace D, Rodriguez RJ. Microsurgical anatomy of the deep venous system of the brain. Neurosurgery. 1984;15:621\u2013657. PMID:6504279.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6504279/",
+      "evidenceUsed": "Primary dissection study; abstract consulted."
+    },
+    {
+      "id": "R16",
+      "citation": "Geibprasert S et al. Dangerous extracranial-intracranial anastomoses and supply to the cranial nerves: vessels the neurointerventionalist needs to know. AJNR. 2009. PMID:19279274.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19279274/",
+      "evidenceUsed": "Specialist anatomical and angiographic reference; abstract consulted."
+    },
+    {
+      "id": "R17",
+      "citation": "San Mill\u00e1n Ru\u00edz D, Fasel JH, R\u00fcfenacht DA, Gailloud P. The sphenoparietal sinus of Breschet: does it exist? An anatomic study. AJNR. 2004;25:112\u2013120. PMID:14729539.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14729539/",
+      "evidenceUsed": "Primary anatomy study; abstract consulted. Supports distinct channels, not a universal ban on variants."
+    },
+    {
+      "id": "R18",
+      "citation": "Hiramatsu M et al. Detailed Anatomy of Bridging Veins Around the Foramen Magnum: a Multicenter Study Using Three-dimensional Angiography. Clin Neuroradiol. 2024;34:67\u201374. doi:10.1007/s00062-023-01327-6.",
+      "url": "https://link.springer.com/article/10.1007/s00062-023-01327-6",
+      "evidenceUsed": "Primary angiographic study; full text consulted."
+    },
+    {
+      "id": "R19",
+      "citation": "Er U, Fraser K, Lanzino G. The anterior spinal artery origin: a microanatomical study. Spinal Cord. 2008;46:45\u201349. doi:10.1038/sj.sc.3102060.",
+      "url": "https://www.nature.com/articles/3102060",
+      "evidenceUsed": "Primary cadaveric study; abstract consulted."
+    },
+    {
+      "id": "R20",
+      "citation": "Lister JR, Rhoton AL Jr, Matsushima T, Peace DA. Microsurgical anatomy of the posterior inferior cerebellar artery. Neurosurgery. 1982;10:170\u2013199. PMID:7070615.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7070615/",
+      "evidenceUsed": "Primary dissection study; abstract consulted."
+    }
+  ],
+  "baselineRelease": "0.9.30"
+}

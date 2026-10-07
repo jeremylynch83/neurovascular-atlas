@@ -1,0 +1,21 @@
+{
+  "release": "0.9.29",
+  "checks": [
+    {
+      "file": "venous.glb",
+      "oldSha256": "9fd4390326636d6d2d6650358610affa9b4fa7c4b49180752003db2a72b067b7",
+      "sha256": "7ce049d61f718a17ae05a205cfea3cbdaeb9964a93bc34994ebd2b5ab663518d",
+      "labels": 217,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    },
+    {
+      "file": "complete-circulation.glb",
+      "oldSha256": "2a3a4f21af11a730d990b65b5d3b300b859b522c02e77171fd84fb078c8c86cc",
+      "sha256": "6c06449c3fe719b310d570d0abb34a9f5d8c080c00f4e076dc5e82f71b67ec52",
+      "labels": 599,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ]
+}

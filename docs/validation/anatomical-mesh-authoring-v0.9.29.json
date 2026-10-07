@@ -1,0 +1,76 @@
+{
+  "release": "0.9.29",
+  "baselineRelease": "0.9.28",
+  "newLabels": [],
+  "baselineAssetHashes": {
+    "complete-circulation.glb": "2a3a4f21af11a730d990b65b5d3b300b859b522c02e77171fd84fb078c8c86cc",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-anastomoses.glb": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+    "venous.glb": "9fd4390326636d6d2d6650358610affa9b4fa7c4b49180752003db2a72b067b7",
+    "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123"
+  },
+  "changed": [
+    {
+      "node": "vein.lateral_mesencephalic.right",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 2.4718414188616595,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.posterior_communicating",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 2.4718414188616595,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.anterior_pontomesencephalic",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 0.5096817809706723,
+      "topology": "retained"
+    },
+    {
+      "node": "vein.cerebral_peduncular.right",
+      "file": "venous.glb",
+      "maximumDisplacementMm": 1.3909052524443115,
+      "topology": "retained"
+    },
+    {
+      "node": "ICA cavernous right",
+      "file": "complete-circulation.glb",
+      "maximumDisplacementMm": 0,
+      "topology": "repartitioned original triangles"
+    },
+    {
+      "node": "ICA paraophthalmic right",
+      "file": "complete-circulation.glb",
+      "maximumDisplacementMm": 0,
+      "topology": "repartitioned original triangles"
+    },
+    {
+      "node": "ICA cavernous left",
+      "file": "complete-circulation.glb",
+      "maximumDisplacementMm": 0,
+      "topology": "repartitioned original triangles"
+    },
+    {
+      "node": "ICA paraophthalmic left",
+      "file": "complete-circulation.glb",
+      "maximumDisplacementMm": 0,
+      "topology": "repartitioned original triangles"
+    }
+  ],
+  "icaPartitions": {
+    "right": {
+      "heightMm": 70.93497990020593,
+      "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+      "movedTriangles": 11205,
+      "uncertainty": "No segmented dural ring; provisional reference boundary"
+    },
+    "left": {
+      "heightMm": 70.8540733848864,
+      "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+      "movedTriangles": 11418,
+      "uncertainty": "No segmented dural ring; provisional reference boundary"
+    }
+  }
+}

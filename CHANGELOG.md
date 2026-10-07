@@ -1,3 +1,33 @@
+## v0.9.31 - posterior crossing corrections
+
+- Clear the seven remaining audited posterior artery-vein crossing pairs and recheck all twelve pairs.
+- Apply local venous and brainstem context adjustments, recover five vein shaft profiles while protecting shared junctions, and refresh bound surface landmarks.
+- Preserve all arterial, skull and potential-anastomosis assets, model labels, relationships and the v0.9.30 npm updates.
+- Include full-resolution clearance, junction, mesh, actual-loader and production-build evidence with matched renders.
+- Keep straight-sinus, fine canal, ICA/dural and pericallosal calibration findings open; exclude trials that introduce new contacts.
+
+## v0.9.30 – npm dependency maintenance
+
+- Update Vite from 8.3.1 to 8.3.3 and its React plugin from 6.1.1 to 6.1.2, refreshing the npm lockfile.
+- Correct the outdated quick-start release notes and retain the v0.9.29 anatomical correction build.
+- Preserve all five model assets and the catalogue content. The seven recorded crossing pairs and the straight-sinus, fine canal and pericallosal calibration remain open.
+
+## v0.9.29 – audit corrections
+
+- Correct 67 anatomical descriptions and two ICA vidian contribution parents, accepting normal variation.
+- Clear five audited posterior artery–vein intersection pairs with a connected four-label venous overpass; seven audited pairs remain open.
+- Repartition cavernous/paraophthalmic ICA labels at the existing estimated proximal ring region, preserving the entire arterial surface and branches.
+- Separate six page-3 pial/fissural tributaries from bounded cisternal outlets; add eight course-contract regression checks.
+- Show unresolved model findings in affected structure panels and include source-backed correction notes, before/after views and rejected-trial evidence.
+- Preserve all atlas structures, page-2/page-3 additions, central arterial fit, brain, skull and potential-anastomosis assets. Fine skull/dural calibration, straight-sinus and pericallosal fits remain open.
+
+## v0.9.28
+
+- Add page-3 posterior fossa catalogue entries P01–P31 as selected courses, local extensions and separately labelled components.
+- Add descriptions, searchable names and drainage links; partition the lower lateral mesencephalic skin as pontotrigeminal.
+- Retain the deep-vein expansion, compact packaging and desktop UI changes. Correct wrapped page-2 index names and recover their catalogue text fields.
+- Include geometry, drainage, clearance, export and loader reports. Fine regional anatomy and vessel calibres require review.
+
 # v0.9.27
 
 - Add catalogue D01-D22 as 22 deep venous families and 44 side-specific labelled meshes, with 70 collector/tributary components. Exclude D23 transmedullary veins.

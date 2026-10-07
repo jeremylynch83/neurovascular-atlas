@@ -1,0 +1,422 @@
+{
+  "release": "0.9.31",
+  "notAppliedToApp": true,
+  "straightSinusDuralTrial": {
+    "changed": [
+      {
+        "node": "brain.tentorium-cerebelli.right",
+        "maximumDisplacementMm": 21.083384710188525
+      },
+      {
+        "node": "brain.tentorium-cerebelli.left",
+        "maximumDisplacementMm": 21.083384710188525
+      },
+      {
+        "node": "brain.falx-cerebri",
+        "maximumDisplacementMm": 21.49029435834268
+      }
+    ],
+    "newContacts": [
+      [
+        "brain.tentorium-cerebelli.right",
+        "brain.precuneus.right"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "brain.lingual-gyrus.left"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "brain.calcarine-sulcus.right"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "brain.cuneus.right"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "brain.cingulate-gyrus-posteroventral-part.right"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "PCA P2-P3 right"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "PCA parieto-occipital right"
+      ],
+      [
+        "brain.tentorium-cerebelli.right",
+        "Wollschlaeger and Wollschlaeger artery right"
+      ],
+      [
+        "brain.tentorium-cerebelli.left",
+        "brain.precuneus.left"
+      ],
+      [
+        "brain.tentorium-cerebelli.left",
+        "brain.calcarine-sulcus.left"
+      ],
+      [
+        "brain.tentorium-cerebelli.left",
+        "brain.cuneus.left"
+      ],
+      [
+        "brain.tentorium-cerebelli.left",
+        "brain.lingual-gyrus.right"
+      ],
+      [
+        "brain.tentorium-cerebelli.left",
+        "brain.cingulate-gyrus-posteroventral-part.left"
+      ],
+      [
+        "brain.falx-cerebri",
+        "Falx cerebelli artery right"
+      ]
+    ],
+    "method": "Medial dural ridge follows the retained connected sinus; lateral skull attachments taper to the baseline",
+    "independentSegmentation": false
+  },
+  "pericallosalTrials": [
+    {
+      "fraction": 0.75,
+      "changed": [
+        "ICA paraophthalmic right",
+        "ICA posterior communicating right",
+        "ICA anterior choroidal right",
+        "ICA terminus right",
+        "Ophthalmic right",
+        "Posterior ethmoidal right",
+        "Superior hypophyseal right",
+        "Inferior hypophyseal right",
+        "ACA A1 right",
+        "ACA A2 right",
+        "Recurrent artery of Heubner right",
+        "ACA orbitofrontal right",
+        "ACA frontopolar right",
+        "Callosomarginal right",
+        "Anterior internal frontal right",
+        "Middle internal frontal right",
+        "Paracentral right",
+        "Precuneal right",
+        "Inferior internal parietal right",
+        "Medial lenticulostriate right",
+        "ICA paraophthalmic left",
+        "ICA posterior communicating left",
+        "ICA anterior choroidal left",
+        "ICA terminus left",
+        "Ophthalmic left",
+        "Posterior ethmoidal left",
+        "Superior hypophyseal left",
+        "Posterior communicating left",
+        "Inferior hypophyseal left",
+        "ACA A1 left",
+        "ACA A2 left",
+        "Recurrent artery of Heubner left",
+        "ACA orbitofrontal left",
+        "ACA frontopolar left",
+        "Callosomarginal left",
+        "Anterior internal frontal left",
+        "Middle internal frontal left",
+        "Paracentral left",
+        "Precuneal left",
+        "Inferior internal parietal left",
+        "Medial lenticulostriate left",
+        "Anterior communicating",
+        "PCA P2-P3 right",
+        "PCA calcarine right",
+        "PCA parieto-occipital right",
+        "PCA splenial right",
+        "Medial posterior choroidal right",
+        "Lateral posterior choroidal right",
+        "Thalamogeniculate right",
+        "PCA P2-P3 left",
+        "PCA calcarine left",
+        "PCA parieto-occipital left",
+        "PCA splenial left",
+        "Medial posterior choroidal left",
+        "Lateral posterior choroidal left",
+        "Thalamogeniculate left",
+        "Deep recurrent ophthalmic left",
+        "Anterior falcine right",
+        "Anterior falcine left",
+        "Terminal ICA perforator 1 right",
+        "Terminal ICA perforator 1 left",
+        "Subcallosal artery",
+        "ACom hypothalamic perforator right",
+        "ACom hypothalamic perforator left",
+        "ACom septal perforator right",
+        "ACom septal perforator left",
+        "ACom chiasmatic perforator right",
+        "ACom chiasmatic perforator left",
+        "Medial lenticulostriate superior representative right",
+        "Medial lenticulostriate superior representative left",
+        "Short callosal branch right",
+        "Short callosal branch left",
+        "Long callosal branch right",
+        "Long callosal branch left",
+        "ACA falcine branch right",
+        "ACA falcine branch left",
+        "Davidoff and Schechter artery right",
+        "Davidoff and Schechter artery left",
+        "Medial posterior choroidal plexal representative right",
+        "Medial posterior choroidal plexal representative left",
+        "ACA A3 right",
+        "ACA A4 right",
+        "ACA A5 right",
+        "ACA A3 left",
+        "ACA A4 left",
+        "ACA A5 left"
+      ],
+      "newContacts": [
+        [
+          "ACA A2 right",
+          "vein.anterior_septal.right"
+        ],
+        [
+          "Callosomarginal right",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+        ],
+        [
+          "Callosomarginal left",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+        ],
+        [
+          "Medial posterior choroidal right",
+          "brain.septum-pellucidum"
+        ],
+        [
+          "PCA parieto-occipital left",
+          "vein.internal_occipital.left"
+        ],
+        [
+          "Medial posterior choroidal left",
+          "vein.internal_cerebral.left"
+        ],
+        [
+          "Anterior falcine right",
+          "vein.anterior_septal.right"
+        ],
+        [
+          "Short callosal branch right",
+          "brain.corpus-callosum"
+        ],
+        [
+          "Short callosal branch left",
+          "brain.corpus-callosum"
+        ],
+        [
+          "ACA falcine branch left",
+          "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left"
+        ],
+        [
+          "Medial posterior choroidal plexal representative right",
+          "vein.superior_choroidal.right"
+        ],
+        [
+          "Medial posterior choroidal plexal representative right",
+          "vein.direct_lateral.right"
+        ],
+        [
+          "Medial posterior choroidal plexal representative left",
+          "vein.superior_choroidal.left"
+        ],
+        [
+          "Medial posterior choroidal plexal representative left",
+          "vein.direct_lateral.left"
+        ],
+        [
+          "ACA A3 right",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+        ],
+        [
+          "ACA A3 right",
+          "vein.anterior_septal.right"
+        ],
+        [
+          "ACA A3 left",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+        ]
+      ],
+      "directory": "aca-0.75"
+    },
+    {
+      "fraction": 1.0,
+      "changed": [
+        "ICA paraophthalmic right",
+        "ICA posterior communicating right",
+        "ICA anterior choroidal right",
+        "ICA terminus right",
+        "Ophthalmic right",
+        "Posterior ethmoidal right",
+        "Superior hypophyseal right",
+        "Inferior hypophyseal right",
+        "ACA A1 right",
+        "ACA A2 right",
+        "Recurrent artery of Heubner right",
+        "ACA orbitofrontal right",
+        "ACA frontopolar right",
+        "Callosomarginal right",
+        "Anterior internal frontal right",
+        "Middle internal frontal right",
+        "Paracentral right",
+        "Precuneal right",
+        "Inferior internal parietal right",
+        "Medial lenticulostriate right",
+        "ICA paraophthalmic left",
+        "ICA posterior communicating left",
+        "ICA anterior choroidal left",
+        "ICA terminus left",
+        "Ophthalmic left",
+        "Posterior ethmoidal left",
+        "Superior hypophyseal left",
+        "Posterior communicating left",
+        "Inferior hypophyseal left",
+        "ACA A1 left",
+        "ACA A2 left",
+        "Recurrent artery of Heubner left",
+        "ACA orbitofrontal left",
+        "ACA frontopolar left",
+        "Callosomarginal left",
+        "Anterior internal frontal left",
+        "Middle internal frontal left",
+        "Paracentral left",
+        "Precuneal left",
+        "Inferior internal parietal left",
+        "Medial lenticulostriate left",
+        "Anterior communicating",
+        "PCA P2-P3 right",
+        "PCA calcarine right",
+        "PCA parieto-occipital right",
+        "PCA splenial right",
+        "Medial posterior choroidal right",
+        "Lateral posterior choroidal right",
+        "Thalamogeniculate right",
+        "PCA P2-P3 left",
+        "PCA calcarine left",
+        "PCA parieto-occipital left",
+        "PCA splenial left",
+        "Medial posterior choroidal left",
+        "Lateral posterior choroidal left",
+        "Thalamogeniculate left",
+        "Deep recurrent ophthalmic left",
+        "Anterior falcine right",
+        "Anterior falcine left",
+        "Terminal ICA perforator 1 right",
+        "Terminal ICA perforator 1 left",
+        "Subcallosal artery",
+        "ACom hypothalamic perforator right",
+        "ACom hypothalamic perforator left",
+        "ACom septal perforator right",
+        "ACom septal perforator left",
+        "ACom chiasmatic perforator right",
+        "ACom chiasmatic perforator left",
+        "Medial lenticulostriate superior representative right",
+        "Medial lenticulostriate superior representative left",
+        "Short callosal branch right",
+        "Short callosal branch left",
+        "Long callosal branch right",
+        "Long callosal branch left",
+        "ACA falcine branch right",
+        "ACA falcine branch left",
+        "Davidoff and Schechter artery right",
+        "Davidoff and Schechter artery left",
+        "Medial posterior choroidal plexal representative right",
+        "Medial posterior choroidal plexal representative left",
+        "ACA A3 right",
+        "ACA A4 right",
+        "ACA A5 right",
+        "ACA A3 left",
+        "ACA A4 left",
+        "ACA A5 left"
+      ],
+      "newContacts": [
+        [
+          "Callosomarginal right",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+        ],
+        [
+          "Callosomarginal right",
+          "vein.anterior_septal.right"
+        ],
+        [
+          "Callosomarginal left",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+        ],
+        [
+          "Callosomarginal left",
+          "vein.deep_medullary.left"
+        ],
+        [
+          "Medial posterior choroidal right",
+          "brain.septum-pellucidum"
+        ],
+        [
+          "PCA parieto-occipital left",
+          "vein.internal_occipital.left"
+        ],
+        [
+          "Medial posterior choroidal left",
+          "vein.internal_cerebral.left"
+        ],
+        [
+          "Short callosal branch right",
+          "brain.corpus-callosum"
+        ],
+        [
+          "Short callosal branch left",
+          "brain.corpus-callosum"
+        ],
+        [
+          "ACA falcine branch right",
+          "vein.inferior_sagittal"
+        ],
+        [
+          "ACA falcine branch left",
+          "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left"
+        ],
+        [
+          "Medial posterior choroidal plexal representative right",
+          "vein.superior_choroidal.right"
+        ],
+        [
+          "Medial posterior choroidal plexal representative right",
+          "vein.direct_lateral.right"
+        ],
+        [
+          "Medial posterior choroidal plexal representative left",
+          "vein.superior_choroidal.left"
+        ],
+        [
+          "Medial posterior choroidal plexal representative left",
+          "vein.direct_lateral.left"
+        ],
+        [
+          "ACA A3 right",
+          "vein.anterior_septal.right"
+        ],
+        [
+          "ACA A3 left",
+          "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+        ],
+        [
+          "ACA A3 left",
+          "vein.deep_medullary.left"
+        ]
+      ],
+      "directory": "aca-1.0"
+    }
+  ],
+  "bonyCanals": {
+    "status": "not reconstructed",
+    "reason": "Coarse skull does not resolve continuous lumina; independent canal tracing is required",
+    "retainedAssets": [
+      "craniofacial.glb",
+      "complete-circulation.glb"
+    ]
+  },
+  "rejectedCollectorWallRecovery": {
+    "node": "vein.posterior_communicating",
+    "reason": "Geodesic resweep of a branched collector introduced new contacts; placement-stage collector wall retained"
+  }
+}

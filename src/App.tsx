@@ -164,7 +164,9 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect}:{open:boole
     {structure.aliases.length>0&&<section><h3>Alternate names</h3><p>{structure.aliases.join(' · ')}</p></section>}
     {structure.landmark&&<div className="geometry-status planned">Landmark · {structure.landmark.status.replaceAll('-',' ')}</div>}
     {structure.description?.trim()&&<Description text={structure.description} byId={byId} onSelect={onSelect} />}
+    {structure.anatomicalReview&&<section className="anatomical-review"><h3>Model review</h3><p>{structure.anatomicalReview.summary}</p></section>}
     {structure.vesselCourse?.scope==='intracranial'&&<section><h3>Anatomical course</h3><p>{structure.vesselCourse.summary}</p>
+      {structure.vesselCourse.coursePaths&&<ol>{structure.vesselCourse.segments.map(segment=><li key={segment.order}><strong>{segment.mode==='pial'?'Surface / fissural course':segment.mode==='cisternal'?'Cisternal outlet':segment.mode.replaceAll('-',' ')}:</strong> {segment.summary}</li>)}</ol>}
       <p>{structure.vesselCourse.targetStructureIds.map((id,i)=><span key={id}>{i>0?', ':''}<a href={`#structure-${id}`} onClick={e=>{e.preventDefault();const target=byId.get(id);if(target)onSelect(target);}}>{byId.get(id)?.name}</a></span>)}</p>
     </section>}
     {structure.vesselGuide&&<section><h3>Vessel course guides</h3><p>{structure.vesselGuide.vesselNames.join(' · ')}</p><p>Regional orientation points; vessel courses require individual fitting.</p></section>}

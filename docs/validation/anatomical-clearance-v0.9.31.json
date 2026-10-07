@@ -1,0 +1,557 @@
+{
+  "release": "0.9.31",
+  "checkedPairs": 899,
+  "newContacts": [],
+  "baselineContacts": [
+    {
+      "one": "vein.transverse_medullary.right",
+      "two": "brain.medulla-oblongata.right"
+    },
+    {
+      "one": "vein.transverse_medullary.right",
+      "two": "vein.anterior_medullary"
+    },
+    {
+      "one": "vein.transverse_medullary.right",
+      "two": "vein.preolivary.right"
+    },
+    {
+      "one": "vein.anterior_condylar.left",
+      "two": "bone.occipital"
+    },
+    {
+      "one": "vein.anterior_condylar.left",
+      "two": "Vertebral V4 left"
+    },
+    {
+      "one": "vein.anterior_condylar.left",
+      "two": "vein.marginal"
+    },
+    {
+      "one": "vein.anterior_condylar.left",
+      "two": "vein.internal_jugular.left"
+    },
+    {
+      "one": "vein.anterior_condylar.left",
+      "two": "vein.lateral_condylar.left"
+    },
+    {
+      "one": "vein.anterior_condylar.left",
+      "two": "vein.basilar_plexus"
+    },
+    {
+      "one": "vein.lateral_anterior_pontomesencephalic.left",
+      "two": "vein.pontomedullary.left"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "Pontine paramedian 1 right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "Pontine paramedian 2 right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "Pontine paramedian 3 right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "Pontine circumferential right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "VA medullary perforator 2 right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "SCA proximal perforator right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "vein.pontomesencephalic_sulcus.right"
+    },
+    {
+      "one": "brain.pons.right",
+      "two": "vein.superior_cerebellar_peduncular.right"
+    },
+    {
+      "one": "brain.medulla-oblongata.right",
+      "two": "VA medullary perforator 1 right"
+    },
+    {
+      "one": "brain.medulla-oblongata.right",
+      "two": "VA medullary perforator 2 right"
+    },
+    {
+      "one": "brain.medulla-oblongata.right",
+      "two": "vein.preolivary.right"
+    },
+    {
+      "one": "brain.midbrain.left",
+      "two": "Thalamoperforator 1 left"
+    },
+    {
+      "one": "brain.midbrain.left",
+      "two": "Thalamoperforator 2 left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.fornix.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.fornix.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.optic-tract.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "brain.optic-tract.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "PCom perforator right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "Tuberothalamic artery right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "Tuberothalamic artery left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.basal.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.lateral_mesencephalic.right"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.basal.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.lateral_mesencephalic.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.anterior_pontomesencephalic"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.cerebral_peduncular.left"
+    },
+    {
+      "one": "vein.posterior_communicating",
+      "two": "vein.cerebral_peduncular.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.lateral-ventricle.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.thalamus.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.hippocampus.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.choroid-plexus.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.fornix.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "brain.optic-tract.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "vein.basal.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "vein.pontotrigeminal.right"
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "vein.posterior_mesencephalic.right"
+    },
+    {
+      "one": "vein.marginal",
+      "two": "PICA left"
+    },
+    {
+      "one": "vein.marginal",
+      "two": "vein.anterior_condylar.right"
+    },
+    {
+      "one": "vein.marginal",
+      "two": "vein.basilar_plexus"
+    },
+    {
+      "one": "vein.marginal",
+      "two": "vein.lower_brainstem_bridge.right"
+    },
+    {
+      "one": "brain.medulla-oblongata.left",
+      "two": "VA medullary perforator 1 left"
+    },
+    {
+      "one": "brain.medulla-oblongata.left",
+      "two": "VA medullary perforator 2 left"
+    },
+    {
+      "one": "brain.medulla-oblongata.left",
+      "two": "vein.preolivary.left"
+    },
+    {
+      "one": "vein.preolivary.right",
+      "two": "vein.pontomedullary.right"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "Pontine paramedian 2 right"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "Pontine paramedian 1 left"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "Pontine paramedian 2 left"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "Pontine paramedian 3 left"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "VA medullary perforator 2 left"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "Pontine median perforator"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "vein.lateral_medullary.left"
+    },
+    {
+      "one": "brain.pons.left",
+      "two": "vein.superior_cerebellar_peduncular.left"
+    },
+    {
+      "one": "vein.anterior_pontomesencephalic",
+      "two": "vein.anterior_pontine"
+    },
+    {
+      "one": "vein.anterior_pontomesencephalic",
+      "two": "vein.pontomesencephalic_sulcus.left"
+    },
+    {
+      "one": "vein.anterior_pontomesencephalic",
+      "two": "vein.pontomesencephalic_sulcus.right"
+    },
+    {
+      "one": "vein.pontomedullary.right",
+      "two": "vein.cerebellopontine_fissure.right"
+    },
+    {
+      "one": "vein.pontomedullary.right",
+      "two": "vein.anterior_medullary"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "PICA choroidal right"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "PICA choroidal left"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "VA medullary perforator 2 right"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "VA medullary perforator 2 left"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "Pontine median perforator"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "vein.lateral_recess.left"
+    },
+    {
+      "one": "brain.fourth-ventricle",
+      "two": "vein.lateral_recess.right"
+    },
+    {
+      "one": "brain.midbrain.right",
+      "two": "Thalamoperforator 1 right"
+    },
+    {
+      "one": "brain.midbrain.right",
+      "two": "Thalamoperforator 2 right"
+    },
+    {
+      "one": "brain.midbrain.right",
+      "two": "SCA proximal perforator right"
+    },
+    {
+      "one": "vein.pontomedullary.left",
+      "two": "vein.cerebellopontine_fissure.left"
+    },
+    {
+      "one": "vein.pontomedullary.left",
+      "two": "vein.anterior_medullary"
+    },
+    {
+      "one": "vein.pontomedullary.left",
+      "two": "vein.cpa_inferior_petrosal_bridge.left"
+    },
+    {
+      "one": "vein.pontomedullary.left",
+      "two": "vein.lateral_recess.left"
+    },
+    {
+      "one": "vein.pontomedullary.left",
+      "two": "vein.preolivary.left"
+    },
+    {
+      "one": "vein.anterior_medullary",
+      "two": "vein.anterior_pontine"
+    },
+    {
+      "one": "vein.anterior_medullary",
+      "two": "vein.anterior_spinal"
+    },
+    {
+      "one": "vein.anterior_medullary",
+      "two": "vein.transverse_medullary.left"
+    },
+    {
+      "one": "vein.transverse_medullary.left",
+      "two": "vein.preolivary.left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "Medial posterior choroidal left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "Thalamoperforator 1 left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "Thalamoperforator 2 left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "Peduncular perforator left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "PCom perforator left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "AChA peduncular branch left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "SCA proximal perforator left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "Tuberothalamic artery left"
+    },
+    {
+      "one": "brain.base-of-peduncle.left",
+      "two": "Anterior thalamoperforating branch left"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "Medial posterior choroidal right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "Thalamoperforator 1 right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "Thalamoperforator 2 right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "Peduncular perforator right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "PCom perforator right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "AChA peduncular branch right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "SCA proximal perforator right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "Tuberothalamic artery right"
+    },
+    {
+      "one": "brain.base-of-peduncle.right",
+      "two": "Anterior thalamoperforating branch right"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "bone.occipital"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "Medial clival"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "Medial clival MHT branch right"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "Medial clival MHT branch left"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "Vertebral V4 right"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "Vertebral V4 left"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.cavernous.right"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.inferior_petrosal.right"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.anterior_condylar.right"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.cavernous.left"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.inferior_petrosal.left"
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.prepontine_bridge.right"
+    },
+    {
+      "one": "vein.anterior_pontine",
+      "two": "vein.transverse_pontine.right"
+    },
+    {
+      "one": "vein.anterior_pontine",
+      "two": "vein.transverse_pontine.left"
+    },
+    {
+      "one": "vein.anterior_pontine",
+      "two": "vein.prepontine_bridge.right"
+    }
+  ],
+  "resolvedAuditContacts": [
+    {
+      "one": "Basilar",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineContacts": 95,
+      "candidateContacts": 0
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineContacts": 0,
+      "candidateContacts": 0
+    },
+    {
+      "one": "PCA P1 right",
+      "two": "vein.posterior_communicating",
+      "baselineContacts": 0,
+      "candidateContacts": 0
+    },
+    {
+      "one": "PCA P2-P3 right",
+      "two": "vein.posterior_communicating",
+      "baselineContacts": 0,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Posterior communicating right",
+      "two": "vein.posterior_communicating",
+      "baselineContacts": 0,
+      "candidateContacts": 0
+    },
+    {
+      "one": "SCA right",
+      "two": "vein.anterior_pontomesencephalic",
+      "baselineContacts": 303,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Thalamoperforator 2 right",
+      "two": "vein.lateral_mesencephalic.right",
+      "baselineContacts": 0,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.marginal",
+      "baselineContacts": 17,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Vertebral V4 left",
+      "two": "vein.pontomedullary.left",
+      "baselineContacts": 378,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.anterior_medullary",
+      "baselineContacts": 279,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.right",
+      "baselineContacts": 108,
+      "candidateContacts": 0
+    },
+    {
+      "one": "Vertebral V4 right",
+      "two": "vein.pontomedullary.left",
+      "baselineContacts": 210,
+      "candidateContacts": 0
+    }
+  ]
+}

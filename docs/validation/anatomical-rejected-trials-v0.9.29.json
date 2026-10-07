@@ -1,0 +1,3478 @@
+{
+  "release": "0.9.29",
+  "reason": "New independent compartment contact pairs; rejected candidates are excluded from production assets",
+  "trials": [
+    {
+      "trial": "first",
+      "appliedToApp": false,
+      "revision": {
+        "release": "0.9.29",
+        "baselineRelease": "0.9.28",
+        "newLabels": [],
+        "baselineAssetHashes": {
+          "complete-circulation.glb": "2a3a4f21af11a730d990b65b5d3b300b859b522c02e77171fd84fb078c8c86cc",
+          "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+          "complete-anastomoses.glb": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+          "venous.glb": "9fd4390326636d6d2d6650358610affa9b4fa7c4b49180752003db2a72b067b7",
+          "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123"
+        },
+        "changed": [
+          {
+            "node": "vein.marginal",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.0680996000513687,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.cavernous.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.0481814266997276,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.inferior_petrosal.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 0.4754051275586306,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.lateral_mesencephalic.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.cerebellopontine_fissure.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 0.39448770436933955,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.cavernous.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.343601980749831,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.inferior_petrosal.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 0.36831983594910866,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.lateral_mesencephalic.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.anterior_condylar.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.0,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.posterior_intercavernous",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.1618232762020284,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.basilar_plexus",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.posterior_communicating",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.anterior_pontomesencephalic",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.anterior_pontine",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.anterior_medullary",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.pontomedullary.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.pontomedullary.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.hypothalamic_tributaries.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.0058291358180327,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.hypothalamic_tributaries.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.cerebral_peduncular.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.cerebral_peduncular.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.lateral_anterior_pontomesencephalic.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.lateral_anterior_pontomesencephalic.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.5384362598159527,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.pontomesencephalic_sulcus.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.052621026151826,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.pontomesencephalic_sulcus.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.8930109343649235,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.pontotrigeminal.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.pontotrigeminal.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.200000000000003,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.preolivary.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.preolivary.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.4000000000000057,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.retro_olivary.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 0.04149886217795995,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.transverse_medullary.left",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 2.2539971951118503,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA cavernous right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA paraophthalmic right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA cavernous left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA paraophthalmic left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA posterior communicating right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.03480608233490278,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA anterior choroidal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.009653898107188112,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA terminus right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.011076154382231675,
+            "topology": "retained"
+          },
+          {
+            "node": "Ophthalmic right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.029661255730735175,
+            "topology": "retained"
+          },
+          {
+            "node": "Posterior ethmoidal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.08773807711605415,
+            "topology": "retained"
+          },
+          {
+            "node": "Superior hypophyseal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.050119773407048096,
+            "topology": "retained"
+          },
+          {
+            "node": "Inferior hypophyseal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.013241750560103543,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A1 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.14072322820655617,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A2 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 12.035573356024729,
+            "topology": "retained"
+          },
+          {
+            "node": "Recurrent artery of Heubner right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.1511768834346313,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA orbitofrontal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.4396770468438078,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA frontopolar right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 15.539305600999667,
+            "topology": "retained"
+          },
+          {
+            "node": "Callosomarginal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 18.435316539714147,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior internal frontal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 12.302762757675136,
+            "topology": "retained"
+          },
+          {
+            "node": "Middle internal frontal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.2634830069128289,
+            "topology": "retained"
+          },
+          {
+            "node": "Paracentral right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 6.462258670579792,
+            "topology": "retained"
+          },
+          {
+            "node": "Precuneal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.4746177262953926,
+            "topology": "retained"
+          },
+          {
+            "node": "Inferior internal parietal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.9499628996011051,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial lenticulostriate right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.22629757288701935,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA posterior communicating left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.07287121162476537,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA anterior choroidal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.018492358529189595,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA terminus left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.014944016598139487,
+            "topology": "retained"
+          },
+          {
+            "node": "Ophthalmic left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.0521966782665269,
+            "topology": "retained"
+          },
+          {
+            "node": "Posterior ethmoidal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.1749860448234056,
+            "topology": "retained"
+          },
+          {
+            "node": "Superior hypophyseal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.12304451986865302,
+            "topology": "retained"
+          },
+          {
+            "node": "Posterior communicating left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.009832598615688965,
+            "topology": "retained"
+          },
+          {
+            "node": "Inferior hypophyseal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.020621999187876494,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A1 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.13086878080172198,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A2 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 12.314606207927191,
+            "topology": "retained"
+          },
+          {
+            "node": "Recurrent artery of Heubner left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.12815420119797422,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA orbitofrontal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.6238113148742888,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA frontopolar left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 14.894784843786441,
+            "topology": "retained"
+          },
+          {
+            "node": "Callosomarginal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 18.201883956996895,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior internal frontal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 13.97232988249278,
+            "topology": "retained"
+          },
+          {
+            "node": "Middle internal frontal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.0239683121774834,
+            "topology": "retained"
+          },
+          {
+            "node": "Paracentral left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 6.323697139779355,
+            "topology": "retained"
+          },
+          {
+            "node": "Precuneal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.6665999153321476,
+            "topology": "retained"
+          },
+          {
+            "node": "Inferior internal parietal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.8447486018531594,
+            "topology": "retained"
+          },
+          {
+            "node": "MCA M1 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.00012042942807419699,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial lenticulostriate left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.20272696737257456,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior communicating",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.03048419374329079,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA P2-P3 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.09233232397802744,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA calcarine right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.08490356317937962,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA parieto-occipital right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.6198571711785845,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA splenial right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.3972462621352637,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial posterior choroidal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.8105057431449314,
+            "topology": "retained"
+          },
+          {
+            "node": "Lateral posterior choroidal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.03683876580291296,
+            "topology": "retained"
+          },
+          {
+            "node": "Thalamogeniculate right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.04597066142977546,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA P2-P3 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.15015090734643044,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA calcarine left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.1941311366187711,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA parieto-occipital left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.9416194939545066,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA splenial left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.0395652622365152,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial posterior choroidal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.723533035910437,
+            "topology": "retained"
+          },
+          {
+            "node": "Lateral posterior choroidal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.01747384962198832,
+            "topology": "retained"
+          },
+          {
+            "node": "Thalamogeniculate left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.03836106455560634,
+            "topology": "retained"
+          },
+          {
+            "node": "Deep recurrent ophthalmic right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.0011838581215665603,
+            "topology": "retained"
+          },
+          {
+            "node": "Deep recurrent ophthalmic left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.010892981114109485,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior falcine right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 16.56129628599833,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior falcine left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 16.93784196055446,
+            "topology": "retained"
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.0094013080325881,
+            "topology": "retained"
+          },
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.008828120061269805,
+            "topology": "retained"
+          },
+          {
+            "node": "Subcallosal artery",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.134138243777069,
+            "topology": "retained"
+          },
+          {
+            "node": "ACom hypothalamic perforator right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.1255812972041496,
+            "topology": "retained"
+          },
+          {
+            "node": "ACom hypothalamic perforator left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.14229725049528644,
+            "topology": "retained"
+          },
+          {
+            "node": "ACom septal perforator right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.12665653536216667,
+            "topology": "retained"
+          },
+          {
+            "node": "ACom septal perforator left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.13136022144528808,
+            "topology": "retained"
+          },
+          {
+            "node": "ACom chiasmatic perforator right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.06905972957561786,
+            "topology": "retained"
+          },
+          {
+            "node": "ACom chiasmatic perforator left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.09194407713319867,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial lenticulostriate superior representative right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.04978190762796614,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial lenticulostriate superior representative left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.04912230018529995,
+            "topology": "retained"
+          },
+          {
+            "node": "Short callosal branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 5.511985868530959,
+            "topology": "retained"
+          },
+          {
+            "node": "Short callosal branch left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 5.123565188579041,
+            "topology": "retained"
+          },
+          {
+            "node": "Long callosal branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.1356660871339397,
+            "topology": "retained"
+          },
+          {
+            "node": "Long callosal branch left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.764493085724957,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA falcine branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0477170491450254,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA falcine branch left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.7104151620777923,
+            "topology": "retained"
+          },
+          {
+            "node": "Davidoff and Schechter artery right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.171630738575749,
+            "topology": "retained"
+          },
+          {
+            "node": "Davidoff and Schechter artery left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.10967302824083383,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial posterior choroidal plexal representative right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.0525526991260468,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial posterior choroidal plexal representative left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.176100193026717,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A3 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 12.449183959402951,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A4 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 8.276142439751414,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A5 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.8020139398472144,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A3 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 13.081114861081106,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A4 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 8.619449482893712,
+            "topology": "retained"
+          },
+          {
+            "node": "ACA A5 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.4046021639459956,
+            "topology": "retained"
+          }
+        ],
+        "icaPartitions": {
+          "right": {
+            "heightMm": 70.93497990020593,
+            "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+            "movedTriangles": 11205,
+            "uncertainty": "No segmented dural ring; provisional reference boundary"
+          },
+          "left": {
+            "heightMm": 70.8540733848864,
+            "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+            "movedTriangles": 11418,
+            "uncertainty": "No segmented dural ring; provisional reference boundary"
+          }
+        }
+      },
+      "clearance": {
+        "release": "0.9.29",
+        "checkedPairs": 2513,
+        "newContacts": [
+          {
+            "one": "vein.marginal",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.midbrain.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.pons.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "PCA P1 left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "Thalamoperforator 2 left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "SCA left"
+          },
+          {
+            "one": "vein.posterior_intercavernous",
+            "two": "Basilar"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Posterior communicating left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Basilar"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA P1 left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA P2-P3 left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA long circumflex right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA long circumflex left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Anterior thalamoperforating branch right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Anterior thalamoperforating branch left"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "brain.midbrain.right"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "PCA P1 right"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "Pontine paramedian 3 right"
+          },
+          {
+            "one": "vein.anterior_pontine",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.anterior_pontine",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "vein.anterior_pontine",
+            "two": "AICA right"
+          },
+          {
+            "one": "vein.anterior_medullary",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.anterior_medullary",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "vein.pontomedullary.right",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "vein.pontomedullary.right",
+            "two": "VA medullary perforator 2 right"
+          },
+          {
+            "one": "vein.pontomedullary.left",
+            "two": "brain.medulla-oblongata.left"
+          },
+          {
+            "one": "vein.pontomedullary.left",
+            "two": "VA medullary perforator 2 left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.left",
+            "two": "PCA P1 left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.left",
+            "two": "PCA P2-P3 left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.left",
+            "two": "PCA long circumflex left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "vein.lateral_anterior_pontomesencephalic.left",
+            "two": "AICA left"
+          },
+          {
+            "one": "vein.lateral_anterior_pontomesencephalic.right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.pontomesencephalic_sulcus.left",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.pontomesencephalic_sulcus.left",
+            "two": "brain.pons.left"
+          },
+          {
+            "one": "vein.pontomesencephalic_sulcus.left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "vein.pontomesencephalic_sulcus.left",
+            "two": "Pontine paramedian 3 left"
+          },
+          {
+            "one": "vein.pontotrigeminal.left",
+            "two": "brain.pons.left"
+          },
+          {
+            "one": "vein.pontotrigeminal.right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.preolivary.right",
+            "two": "Vertebral V4 right"
+          },
+          {
+            "one": "vein.transverse_medullary.left",
+            "two": "brain.medulla-oblongata.left"
+          },
+          {
+            "one": "vein.transverse_medullary.left",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "Callosomarginal right",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+          },
+          {
+            "one": "Callosomarginal right",
+            "two": "vein.anterior_septal.right"
+          },
+          {
+            "one": "Callosomarginal right",
+            "two": "vein.deep_medullary.right"
+          },
+          {
+            "one": "Posterior communicating left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Callosomarginal left",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+          },
+          {
+            "one": "Callosomarginal left",
+            "two": "vein.deep_medullary.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "vein.cerebral_peduncular.left"
+          },
+          {
+            "one": "Anterior falcine left",
+            "two": "vein.anterior_septal.left"
+          },
+          {
+            "one": "Short callosal branch right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Short callosal branch left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "ACA falcine branch left",
+            "two": "brain.cingulate-sulcus-marginal-part.left"
+          },
+          {
+            "one": "ACA falcine branch left",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left"
+          },
+          {
+            "one": "ACA A3 right",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+          },
+          {
+            "one": "ACA A3 right",
+            "two": "vein.anterior_septal.right"
+          },
+          {
+            "one": "ACA A3 left",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+          }
+        ],
+        "baselineContacts": [
+          {
+            "one": "vein.marginal",
+            "two": "PICA left"
+          },
+          {
+            "one": "vein.marginal",
+            "two": "Vertebral V4 left"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "brain.tentorium-cerebelli.right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "bone.temporal.right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Meningohypophyseal trunk right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Tentorial marginal right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Dorsal meningeal right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Inferior hypophyseal right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Inferolateral trunk right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Basal tentorial MHT branch right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "Lateral clival MHT branch right"
+          },
+          {
+            "one": "vein.cavernous.right",
+            "two": "ILT recurrent lacerum ramus right"
+          },
+          {
+            "one": "vein.inferior_petrosal.right",
+            "two": "brain.tentorium-cerebelli.right"
+          },
+          {
+            "one": "vein.inferior_petrosal.right",
+            "two": "bone.temporal.right"
+          },
+          {
+            "one": "vein.inferior_petrosal.right",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.choroid-plexus.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "brain.tentorium-cerebelli.left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "bone.temporal.left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Meningohypophyseal trunk left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Tentorial marginal left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Dorsal meningeal left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Inferior hypophyseal left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Inferolateral trunk left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Basal tentorial MHT branch left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "Lateral clival MHT branch left"
+          },
+          {
+            "one": "vein.cavernous.left",
+            "two": "ILT recurrent lacerum ramus left"
+          },
+          {
+            "one": "vein.inferior_petrosal.left",
+            "two": "brain.tentorium-cerebelli.left"
+          },
+          {
+            "one": "vein.inferior_petrosal.left",
+            "two": "bone.temporal.left"
+          },
+          {
+            "one": "vein.inferior_petrosal.left",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.thalamus.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.choroid-plexus.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.caudate-nucleus.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.left",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "vein.anterior_condylar.left",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "vein.anterior_condylar.left",
+            "two": "Vertebral V4 left"
+          },
+          {
+            "one": "vein.basilar_plexus",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "vein.basilar_plexus",
+            "two": "Medial clival"
+          },
+          {
+            "one": "vein.basilar_plexus",
+            "two": "Medial clival MHT branch right"
+          },
+          {
+            "one": "vein.basilar_plexus",
+            "two": "Medial clival MHT branch left"
+          },
+          {
+            "one": "vein.basilar_plexus",
+            "two": "Vertebral V4 right"
+          },
+          {
+            "one": "vein.basilar_plexus",
+            "two": "Vertebral V4 left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Posterior communicating right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA P1 right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA P2-P3 right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCom perforator right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Tuberothalamic artery right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Tuberothalamic artery left"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "Basilar"
+          },
+          {
+            "one": "vein.anterior_medullary",
+            "two": "Vertebral V4 right"
+          },
+          {
+            "one": "vein.pontomedullary.left",
+            "two": "Vertebral V4 right"
+          },
+          {
+            "one": "vein.pontomedullary.left",
+            "two": "Vertebral V4 left"
+          },
+          {
+            "one": "vein.hypothalamic_tributaries.left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "vein.hypothalamic_tributaries.left",
+            "two": "brain.optic-chiasm.left"
+          },
+          {
+            "one": "vein.hypothalamic_tributaries.right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "vein.hypothalamic_tributaries.right",
+            "two": "brain.optic-chiasm.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.left",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "vein.pontomesencephalic_sulcus.right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "vein.pontotrigeminal.left",
+            "two": "brain.tentorium-cerebelli.left"
+          },
+          {
+            "one": "vein.pontotrigeminal.right",
+            "two": "brain.tentorium-cerebelli.right"
+          },
+          {
+            "one": "vein.preolivary.left",
+            "two": "brain.medulla-oblongata.left"
+          },
+          {
+            "one": "vein.preolivary.right",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "ICA cavernous right",
+            "two": "bone.temporal.right"
+          },
+          {
+            "one": "ICA cavernous right",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "ICA paraophthalmic right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ICA cavernous left",
+            "two": "bone.temporal.left"
+          },
+          {
+            "one": "ICA cavernous left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "ICA paraophthalmic left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "ICA posterior communicating right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ICA posterior communicating right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "ICA anterior choroidal right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ICA anterior choroidal right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "ICA terminus right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ICA terminus right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "Ophthalmic right",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Posterior ethmoidal right",
+            "two": "bone.frontal"
+          },
+          {
+            "one": "Inferior hypophyseal right",
+            "two": "vein.cavernous.right"
+          },
+          {
+            "one": "ACA A1 right",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "ACA A1 right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ACA A1 right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "ACA A2 right",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "Recurrent artery of Heubner right",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "Recurrent artery of Heubner right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "Recurrent artery of Heubner right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "ACA orbitofrontal right",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "ACA orbitofrontal right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ACA orbitofrontal right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "ACA frontopolar right",
+            "two": "brain.superior-frontal-gyrus.right"
+          },
+          {
+            "one": "Callosomarginal right",
+            "two": "brain.superior-frontal-gyrus.right"
+          },
+          {
+            "one": "Anterior internal frontal right",
+            "two": "brain.superior-frontal-gyrus.right"
+          },
+          {
+            "one": "Middle internal frontal right",
+            "two": "brain.superior-frontal-gyrus.right"
+          },
+          {
+            "one": "Middle internal frontal right",
+            "two": "brain.superior-frontal-sulcus.right"
+          },
+          {
+            "one": "Paracentral right",
+            "two": "brain.precentral-gyrus.right"
+          },
+          {
+            "one": "Paracentral right",
+            "two": "brain.superior-frontal-gyrus.right"
+          },
+          {
+            "one": "Paracentral right",
+            "two": "brain.postcentral-gyrus.right"
+          },
+          {
+            "one": "Paracentral right",
+            "two": "brain.postcentral-sulcus.right"
+          },
+          {
+            "one": "Paracentral right",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right"
+          },
+          {
+            "one": "Precuneal right",
+            "two": "brain.precuneus.right"
+          },
+          {
+            "one": "Precuneal right",
+            "two": "brain.superior-parietal-lobule.right"
+          },
+          {
+            "one": "Precuneal right",
+            "two": "brain.cingulate-sulcus-marginal-part.right"
+          },
+          {
+            "one": "Precuneal right",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right"
+          },
+          {
+            "one": "Inferior internal parietal right",
+            "two": "brain.angular-gyrus.right"
+          },
+          {
+            "one": "Inferior internal parietal right",
+            "two": "brain.precuneus.right"
+          },
+          {
+            "one": "Inferior internal parietal right",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right"
+          },
+          {
+            "one": "Inferior internal parietal right",
+            "two": "brain.parieto-occipital-sulcus.right"
+          },
+          {
+            "one": "Medial lenticulostriate right",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "Medial lenticulostriate right",
+            "two": "brain.caudate-nucleus.right"
+          },
+          {
+            "one": "ICA posterior communicating left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "ICA posterior communicating left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "ICA anterior choroidal left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "ICA anterior choroidal left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "ICA terminus left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "ICA terminus left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "Ophthalmic left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Posterior ethmoidal left",
+            "two": "bone.frontal"
+          },
+          {
+            "one": "Posterior communicating left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "Posterior communicating left",
+            "two": "vein.anterior_cerebral.left"
+          },
+          {
+            "one": "Inferior hypophyseal left",
+            "two": "vein.cavernous.left"
+          },
+          {
+            "one": "ACA A1 left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "ACA A1 left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "ACA A1 left",
+            "two": "brain.orbital-sulci-h-shaped-orbital-sulci.left"
+          },
+          {
+            "one": "ACA A1 left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "ACA A2 left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "Recurrent artery of Heubner left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "Recurrent artery of Heubner left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "Recurrent artery of Heubner left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "ACA orbitofrontal left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "ACA orbitofrontal left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "ACA orbitofrontal left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "ACA frontopolar left",
+            "two": "brain.superior-frontal-gyrus.left"
+          },
+          {
+            "one": "Callosomarginal left",
+            "two": "brain.superior-frontal-gyrus.left"
+          },
+          {
+            "one": "Anterior internal frontal left",
+            "two": "brain.superior-frontal-gyrus.left"
+          },
+          {
+            "one": "Middle internal frontal left",
+            "two": "brain.superior-frontal-gyrus.left"
+          },
+          {
+            "one": "Paracentral left",
+            "two": "brain.precentral-gyrus.left"
+          },
+          {
+            "one": "Paracentral left",
+            "two": "brain.superior-frontal-gyrus.left"
+          },
+          {
+            "one": "Paracentral left",
+            "two": "brain.postcentral-gyrus.left"
+          },
+          {
+            "one": "Paracentral left",
+            "two": "brain.postcentral-sulcus.left"
+          },
+          {
+            "one": "Paracentral left",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left"
+          },
+          {
+            "one": "Precuneal left",
+            "two": "brain.precuneus.left"
+          },
+          {
+            "one": "Precuneal left",
+            "two": "brain.superior-parietal-lobule.left"
+          },
+          {
+            "one": "Precuneal left",
+            "two": "brain.cingulate-sulcus-marginal-part.left"
+          },
+          {
+            "one": "Precuneal left",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left"
+          },
+          {
+            "one": "Inferior internal parietal left",
+            "two": "brain.angular-gyrus.left"
+          },
+          {
+            "one": "Inferior internal parietal left",
+            "two": "brain.precuneus.left"
+          },
+          {
+            "one": "Inferior internal parietal left",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left"
+          },
+          {
+            "one": "Inferior internal parietal left",
+            "two": "brain.parieto-occipital-sulcus.left"
+          },
+          {
+            "one": "MCA M1 left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "MCA M1 left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "Medial lenticulostriate left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "Medial lenticulostriate left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "Medial lenticulostriate left",
+            "two": "brain.caudate-nucleus.left"
+          },
+          {
+            "one": "Anterior communicating",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "Anterior communicating",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.calcarine-sulcus.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA calcarine right",
+            "two": "brain.precuneus.right"
+          },
+          {
+            "one": "PCA calcarine right",
+            "two": "brain.calcarine-sulcus.right"
+          },
+          {
+            "one": "PCA calcarine right",
+            "two": "brain.cuneus.right"
+          },
+          {
+            "one": "PCA calcarine right",
+            "two": "brain.superior-occipital-gyri.right"
+          },
+          {
+            "one": "PCA calcarine right",
+            "two": "brain.parieto-occipital-sulcus.right"
+          },
+          {
+            "one": "PCA parieto-occipital right",
+            "two": "brain.angular-gyrus.right"
+          },
+          {
+            "one": "PCA parieto-occipital right",
+            "two": "brain.precuneus.right"
+          },
+          {
+            "one": "PCA parieto-occipital right",
+            "two": "brain.superior-parietal-lobule.right"
+          },
+          {
+            "one": "PCA parieto-occipital right",
+            "two": "brain.calcarine-sulcus.right"
+          },
+          {
+            "one": "PCA parieto-occipital right",
+            "two": "brain.parieto-occipital-sulcus.right"
+          },
+          {
+            "one": "PCA splenial right",
+            "two": "brain.cingulate-gyrus-posteroventral-part.right"
+          },
+          {
+            "one": "PCA splenial right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.superior-colliculus.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.inferior-colliculus.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.choroid-plexus.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.caudate-nucleus.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "Medial posterior choroidal right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "Lateral posterior choroidal right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "Lateral posterior choroidal right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "Lateral posterior choroidal right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Thalamogeniculate right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "Thalamogeniculate right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "Thalamogeniculate right",
+            "two": "brain.choroid-plexus.right"
+          },
+          {
+            "one": "Thalamogeniculate right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.calcarine-sulcus.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.hippocampus.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "PCA calcarine left",
+            "two": "brain.precuneus.left"
+          },
+          {
+            "one": "PCA calcarine left",
+            "two": "brain.calcarine-sulcus.left"
+          },
+          {
+            "one": "PCA calcarine left",
+            "two": "brain.cuneus.left"
+          },
+          {
+            "one": "PCA calcarine left",
+            "two": "brain.superior-occipital-gyri.left"
+          },
+          {
+            "one": "PCA calcarine left",
+            "two": "brain.parieto-occipital-sulcus.left"
+          },
+          {
+            "one": "PCA parieto-occipital left",
+            "two": "brain.angular-gyrus.left"
+          },
+          {
+            "one": "PCA parieto-occipital left",
+            "two": "brain.precuneus.left"
+          },
+          {
+            "one": "PCA parieto-occipital left",
+            "two": "brain.superior-parietal-lobule.left"
+          },
+          {
+            "one": "PCA parieto-occipital left",
+            "two": "brain.calcarine-sulcus.left"
+          },
+          {
+            "one": "PCA parieto-occipital left",
+            "two": "brain.parieto-occipital-sulcus.left"
+          },
+          {
+            "one": "PCA splenial left",
+            "two": "brain.cingulate-gyrus-posteroventral-part.left"
+          },
+          {
+            "one": "PCA splenial left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.thalamus.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.superior-colliculus.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.inferior-colliculus.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.choroid-plexus.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.caudate-nucleus.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "Medial posterior choroidal left",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "Lateral posterior choroidal left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "Lateral posterior choroidal left",
+            "two": "brain.hippocampus.left"
+          },
+          {
+            "one": "Thalamogeniculate left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "Thalamogeniculate left",
+            "two": "brain.hippocampus.left"
+          },
+          {
+            "one": "Thalamogeniculate left",
+            "two": "brain.choroid-plexus.left"
+          },
+          {
+            "one": "Thalamogeniculate left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "Deep recurrent ophthalmic right",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Deep recurrent ophthalmic left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Deep recurrent ophthalmic left",
+            "two": "vein.superior_ophthalmic.left"
+          },
+          {
+            "one": "Anterior falcine right",
+            "two": "brain.superior-frontal-gyrus.right"
+          },
+          {
+            "one": "Anterior falcine left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "Anterior falcine left",
+            "two": "brain.superior-frontal-gyrus.left"
+          },
+          {
+            "one": "Terminal ICA perforator 1 right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "Terminal ICA perforator 1 left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "Subcallosal artery",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Subcallosal artery",
+            "two": "brain.septum-pellucidum"
+          },
+          {
+            "one": "ACom hypothalamic perforator right",
+            "two": "brain.straight-gyrus-gyrus-rectus.right"
+          },
+          {
+            "one": "ACom hypothalamic perforator left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "ACom septal perforator right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "ACom septal perforator right",
+            "two": "brain.septum-pellucidum"
+          },
+          {
+            "one": "ACom septal perforator left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "ACom septal perforator left",
+            "two": "brain.septum-pellucidum"
+          },
+          {
+            "one": "ACom chiasmatic perforator left",
+            "two": "brain.straight-gyrus-gyrus-rectus.left"
+          },
+          {
+            "one": "Short callosal branch right",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+          },
+          {
+            "one": "Short callosal branch left",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+          },
+          {
+            "one": "Long callosal branch right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "Long callosal branch right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Long callosal branch right",
+            "two": "brain.caudate-nucleus.right"
+          },
+          {
+            "one": "Long callosal branch left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "Long callosal branch left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Long callosal branch left",
+            "two": "brain.caudate-nucleus.left"
+          },
+          {
+            "one": "ACA falcine branch right",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right"
+          },
+          {
+            "one": "Davidoff and Schechter artery right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "Davidoff and Schechter artery right",
+            "two": "brain.precuneus.right"
+          },
+          {
+            "one": "Davidoff and Schechter artery right",
+            "two": "brain.calcarine-sulcus.right"
+          },
+          {
+            "one": "Davidoff and Schechter artery right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "Davidoff and Schechter artery right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Davidoff and Schechter artery left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "Davidoff and Schechter artery left",
+            "two": "brain.precuneus.left"
+          },
+          {
+            "one": "Davidoff and Schechter artery left",
+            "two": "brain.calcarine-sulcus.left"
+          },
+          {
+            "one": "Davidoff and Schechter artery left",
+            "two": "brain.hippocampus.left"
+          },
+          {
+            "one": "Davidoff and Schechter artery left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Davidoff and Schechter artery left",
+            "two": "brain.parieto-occipital-sulcus.left"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative right",
+            "two": "brain.choroid-plexus.right"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative left",
+            "two": "brain.choroid-plexus.left"
+          },
+          {
+            "one": "Medial posterior choroidal plexal representative left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "ACA A4 right",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right"
+          },
+          {
+            "one": "ACA A5 right",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right"
+          },
+          {
+            "one": "ACA A5 right",
+            "two": "brain.cingulate-gyrus-posteroventral-part.right"
+          },
+          {
+            "one": "ACA A5 right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "ACA A4 left",
+            "two": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left"
+          },
+          {
+            "one": "ACA A5 left",
+            "two": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left"
+          },
+          {
+            "one": "ACA A5 left",
+            "two": "brain.cingulate-gyrus-posteroventral-part.left"
+          },
+          {
+            "one": "ACA A5 left",
+            "two": "brain.corpus-callosum"
+          }
+        ],
+        "resolvedAuditContacts": [
+          {
+            "one": "Basilar",
+            "two": "vein.anterior_pontomesencephalic",
+            "baselineAllContacts": 95,
+            "candidateHalfContacts": 188
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.lateral_mesencephalic.right",
+            "baselineAllContacts": 265,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 390,
+            "candidateHalfContacts": 272
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 56,
+            "candidateHalfContacts": 137
+          },
+          {
+            "one": "Posterior communicating right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 63,
+            "candidateHalfContacts": 512
+          },
+          {
+            "one": "SCA right",
+            "two": "vein.anterior_pontomesencephalic",
+            "baselineAllContacts": 303,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Thalamoperforator 2 right",
+            "two": "vein.lateral_mesencephalic.right",
+            "baselineAllContacts": 93,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.marginal",
+            "baselineAllContacts": 17,
+            "candidateHalfContacts": 45
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.pontomedullary.left",
+            "baselineAllContacts": 378,
+            "candidateHalfContacts": 144
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.anterior_medullary",
+            "baselineAllContacts": 279,
+            "candidateHalfContacts": 142
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.pontomedullary.right",
+            "baselineAllContacts": 108,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.pontomedullary.left",
+            "baselineAllContacts": 210,
+            "candidateHalfContacts": 40
+          }
+        ]
+      }
+    },
+    {
+      "trial": "second",
+      "appliedToApp": false,
+      "revision": {
+        "release": "0.9.29",
+        "baselineRelease": "0.9.28",
+        "newLabels": [],
+        "baselineAssetHashes": {
+          "complete-circulation.glb": "2a3a4f21af11a730d990b65b5d3b300b859b522c02e77171fd84fb078c8c86cc",
+          "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+          "complete-anastomoses.glb": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+          "venous.glb": "9fd4390326636d6d2d6650358610affa9b4fa7c4b49180752003db2a72b067b7",
+          "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123"
+        },
+        "changed": [
+          {
+            "node": "ICA cavernous right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "Posterior communicating right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior choroidal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.1916154098222194,
+            "topology": "retained"
+          },
+          {
+            "node": "Dorsal meningeal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "Inferior hypophyseal right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.5527011089348193,
+            "topology": "retained"
+          },
+          {
+            "node": "Posterior communicating left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.4309582175307014,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior choroidal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.07019555005309996,
+            "topology": "retained"
+          },
+          {
+            "node": "Dorsal meningeal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "Inferior hypophyseal left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.015630409887542385,
+            "topology": "retained"
+          },
+          {
+            "node": "Basilar",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA P1 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA P2-P3 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Thalamoperforator 1 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Thalamoperforator 2 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Peduncular perforator right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.41888446179874705,
+            "topology": "retained"
+          },
+          {
+            "node": "PCom perforator right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.1592694763648836,
+            "topology": "retained"
+          },
+          {
+            "node": "SCA right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "AICA right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "Pontine paramedian 3 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.9746004687241125,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA P1 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA P2-P3 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.376184078192935,
+            "topology": "retained"
+          },
+          {
+            "node": "Thalamoperforator 1 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Thalamoperforator 2 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "PCom perforator left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.45512164157549506,
+            "topology": "retained"
+          },
+          {
+            "node": "SCA left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "AICA left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.758201915620319,
+            "topology": "retained"
+          },
+          {
+            "node": "Pontine paramedian 3 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.378886309378892,
+            "topology": "retained"
+          },
+          {
+            "node": "Hypoglossal branch",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.2891661102391936,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial clival",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "Hypoglossal branch left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.5329472370235067,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial clival left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.999942801285272,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial clival MHT branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "Medial clival MHT branch left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "AChA optic tract branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.3865288263787008,
+            "topology": "retained"
+          },
+          {
+            "node": "AChA capsular branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.714257302444743,
+            "topology": "retained"
+          },
+          {
+            "node": "AChA peduncular branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0.7902946127110866,
+            "topology": "retained"
+          },
+          {
+            "node": "VA medullary perforator 1 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "VA medullary perforator 1 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "VA medullary perforator 2 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "VA medullary perforator 2 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "SCA proximal perforator right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.199426729723484,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA short circumflex right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA short circumflex left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 2.8717433717622356,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA long circumflex right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "PCA long circumflex left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.103384654616619,
+            "topology": "retained"
+          },
+          {
+            "node": "Tuberothalamic artery right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Tuberothalamic artery left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 1.7653945857369138,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior thalamoperforating branch right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.5,
+            "topology": "retained"
+          },
+          {
+            "node": "Anterior thalamoperforating branch left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.159061610588232,
+            "topology": "retained"
+          },
+          {
+            "node": "Vertebral V4 right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "Vertebral V4 left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 3.0,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA paraophthalmic right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA cavernous left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA paraophthalmic left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          }
+        ],
+        "icaPartitions": {
+          "right": {
+            "heightMm": 70.93497990020593,
+            "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+            "movedTriangles": 11205,
+            "uncertainty": "No segmented dural ring; provisional reference boundary"
+          },
+          "left": {
+            "heightMm": 70.8540733848864,
+            "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+            "movedTriangles": 11418,
+            "uncertainty": "No segmented dural ring; provisional reference boundary"
+          }
+        }
+      },
+      "clearance": {
+        "release": "0.9.29",
+        "checkedPairs": 1205,
+        "newContacts": [
+          {
+            "one": "Posterior communicating left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Basilar",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Basilar",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "brain.hypothalamus"
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.anterior_pontomesencephalic"
+          },
+          {
+            "one": "Thalamoperforator 1 right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "PCom perforator right",
+            "two": "vein.hypothalamic_tributaries.right"
+          },
+          {
+            "one": "AICA right",
+            "two": "vein.anterior_pontine"
+          },
+          {
+            "one": "PCA P1 left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "PCA P1 left",
+            "two": "vein.lateral_mesencephalic.left"
+          },
+          {
+            "one": "PCA P1 left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA P1 left",
+            "two": "vein.cerebral_peduncular.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "vein.cerebral_peduncular.left"
+          },
+          {
+            "one": "Thalamoperforator 2 left",
+            "two": "vein.lateral_mesencephalic.left"
+          },
+          {
+            "one": "SCA left",
+            "two": "vein.lateral_mesencephalic.left"
+          },
+          {
+            "one": "AICA left",
+            "two": "vein.lateral_anterior_pontomesencephalic.left"
+          },
+          {
+            "one": "VA medullary perforator 2 right",
+            "two": "vein.pontomedullary.right"
+          },
+          {
+            "one": "VA medullary perforator 2 left",
+            "two": "vein.pontomedullary.left"
+          },
+          {
+            "one": "PCA long circumflex right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA long circumflex left",
+            "two": "vein.cerebral_peduncular.left"
+          },
+          {
+            "one": "Tuberothalamic artery right",
+            "two": "vein.hypothalamic_tributaries.right"
+          },
+          {
+            "one": "Anterior thalamoperforating branch right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "Anterior thalamoperforating branch right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Anterior thalamoperforating branch left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.marginal"
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.preolivary.right"
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "bone.occipital"
+          }
+        ],
+        "baselineContacts": [
+          {
+            "one": "ICA cavernous right",
+            "two": "bone.temporal.right"
+          },
+          {
+            "one": "ICA cavernous right",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Posterior communicating right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Anterior choroidal right",
+            "two": "brain.olfactory-sulcus.right"
+          },
+          {
+            "one": "Anterior choroidal right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "Anterior choroidal right",
+            "two": "vein.basal.right"
+          },
+          {
+            "one": "Dorsal meningeal right",
+            "two": "vein.cavernous.right"
+          },
+          {
+            "one": "Inferior hypophyseal right",
+            "two": "vein.cavernous.right"
+          },
+          {
+            "one": "Posterior communicating left",
+            "two": "brain.orbital-gyri.left"
+          },
+          {
+            "one": "Posterior communicating left",
+            "two": "vein.anterior_cerebral.left"
+          },
+          {
+            "one": "Anterior choroidal left",
+            "two": "brain.olfactory-sulcus.left"
+          },
+          {
+            "one": "Anterior choroidal left",
+            "two": "brain.hippocampus.left"
+          },
+          {
+            "one": "Anterior choroidal left",
+            "two": "brain.caudate-nucleus.left"
+          },
+          {
+            "one": "Anterior choroidal left",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "Dorsal meningeal left",
+            "two": "vein.cavernous.left"
+          },
+          {
+            "one": "Inferior hypophyseal left",
+            "two": "vein.cavernous.left"
+          },
+          {
+            "one": "Basilar",
+            "two": "vein.anterior_pontomesencephalic"
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.calcarine-sulcus.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Thalamoperforator 1 right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "Thalamoperforator 1 right",
+            "two": "brain.midbrain.right"
+          },
+          {
+            "one": "Thalamoperforator 2 right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "Thalamoperforator 2 right",
+            "two": "brain.midbrain.right"
+          },
+          {
+            "one": "Thalamoperforator 2 right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "Peduncular perforator right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "PCom perforator right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "PCom perforator right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "SCA right",
+            "two": "brain.tentorium-cerebelli.right"
+          },
+          {
+            "one": "Pontine paramedian 3 right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.lateral-ventricle.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.calcarine-sulcus.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.hippocampus.left"
+          },
+          {
+            "one": "PCA P2-P3 left",
+            "two": "brain.corpus-callosum"
+          },
+          {
+            "one": "Thalamoperforator 1 left",
+            "two": "brain.thalamus.left"
+          },
+          {
+            "one": "Thalamoperforator 1 left",
+            "two": "brain.midbrain.left"
+          },
+          {
+            "one": "Thalamoperforator 1 left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "Thalamoperforator 2 left",
+            "two": "brain.thalamus.left"
+          },
+          {
+            "one": "Thalamoperforator 2 left",
+            "two": "brain.midbrain.left"
+          },
+          {
+            "one": "Thalamoperforator 2 left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "PCom perforator left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "PCom perforator left",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "SCA left",
+            "two": "brain.tentorium-cerebelli.left"
+          },
+          {
+            "one": "Pontine paramedian 3 left",
+            "two": "brain.pons.left"
+          },
+          {
+            "one": "Hypoglossal branch",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Medial clival",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Medial clival",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Medial clival",
+            "two": "vein.basilar_plexus"
+          },
+          {
+            "one": "Hypoglossal branch left",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Medial clival left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "Medial clival left",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Medial clival MHT branch right",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Medial clival MHT branch right",
+            "two": "vein.basilar_plexus"
+          },
+          {
+            "one": "Medial clival MHT branch left",
+            "two": "bone.occipital"
+          },
+          {
+            "one": "Medial clival MHT branch left",
+            "two": "vein.basilar_plexus"
+          },
+          {
+            "one": "AChA capsular branch right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "AChA capsular branch right",
+            "two": "brain.globus-pallidus.right"
+          },
+          {
+            "one": "AChA peduncular branch right",
+            "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+          },
+          {
+            "one": "AChA peduncular branch right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "VA medullary perforator 1 right",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "VA medullary perforator 1 left",
+            "two": "brain.medulla-oblongata.left"
+          },
+          {
+            "one": "VA medullary perforator 2 right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "VA medullary perforator 2 right",
+            "two": "brain.fourth-ventricle"
+          },
+          {
+            "one": "VA medullary perforator 2 right",
+            "two": "brain.medulla-oblongata.right"
+          },
+          {
+            "one": "VA medullary perforator 2 left",
+            "two": "brain.pons.left"
+          },
+          {
+            "one": "VA medullary perforator 2 left",
+            "two": "brain.fourth-ventricle"
+          },
+          {
+            "one": "VA medullary perforator 2 left",
+            "two": "brain.medulla-oblongata.left"
+          },
+          {
+            "one": "SCA proximal perforator right",
+            "two": "brain.pons.right"
+          },
+          {
+            "one": "SCA proximal perforator right",
+            "two": "brain.midbrain.right"
+          },
+          {
+            "one": "SCA proximal perforator right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "PCA short circumflex right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "PCA long circumflex right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "PCA long circumflex right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "PCA long circumflex left",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "Tuberothalamic artery right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "Tuberothalamic artery right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "Tuberothalamic artery right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "Tuberothalamic artery right",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Tuberothalamic artery left",
+            "two": "brain.thalamus.left"
+          },
+          {
+            "one": "Tuberothalamic artery left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "Tuberothalamic artery left",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "Tuberothalamic artery left",
+            "two": "vein.posterior_communicating"
+          },
+          {
+            "one": "Anterior thalamoperforating branch right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "Anterior thalamoperforating branch right",
+            "two": "brain.base-of-peduncle.right"
+          },
+          {
+            "one": "Anterior thalamoperforating branch left",
+            "two": "brain.thalamus.left"
+          },
+          {
+            "one": "Anterior thalamoperforating branch left",
+            "two": "brain.base-of-peduncle.left"
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.basilar_plexus"
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.marginal"
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.basilar_plexus"
+          },
+          {
+            "one": "ICA paraophthalmic right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ICA cavernous left",
+            "two": "bone.temporal.left"
+          },
+          {
+            "one": "ICA cavernous left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "ICA paraophthalmic left",
+            "two": "brain.orbital-gyri.left"
+          }
+        ],
+        "resolvedAuditContacts": [
+          {
+            "one": "Basilar",
+            "two": "vein.anterior_pontomesencephalic",
+            "baselineAllContacts": 95,
+            "candidateHalfContacts": 175
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.lateral_mesencephalic.right",
+            "baselineAllContacts": 265,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 390,
+            "candidateHalfContacts": 304
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 56,
+            "candidateHalfContacts": 144
+          },
+          {
+            "one": "Posterior communicating right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 63,
+            "candidateHalfContacts": 528
+          },
+          {
+            "one": "SCA right",
+            "two": "vein.anterior_pontomesencephalic",
+            "baselineAllContacts": 303,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Thalamoperforator 2 right",
+            "two": "vein.lateral_mesencephalic.right",
+            "baselineAllContacts": 93,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.marginal",
+            "baselineAllContacts": 17,
+            "candidateHalfContacts": 85
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.pontomedullary.left",
+            "baselineAllContacts": 378,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.anterior_medullary",
+            "baselineAllContacts": 279,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.pontomedullary.right",
+            "baselineAllContacts": 108,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.pontomedullary.left",
+            "baselineAllContacts": 210,
+            "candidateHalfContacts": 0
+          }
+        ]
+      }
+    },
+    {
+      "trial": "third",
+      "appliedToApp": false,
+      "revision": {
+        "release": "0.9.29",
+        "baselineRelease": "0.9.28",
+        "newLabels": [],
+        "baselineAssetHashes": {
+          "complete-circulation.glb": "2a3a4f21af11a730d990b65b5d3b300b859b522c02e77171fd84fb078c8c86cc",
+          "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+          "complete-anastomoses.glb": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+          "venous.glb": "9fd4390326636d6d2d6650358610affa9b4fa7c4b49180752003db2a72b067b7",
+          "brain-context.glb": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123"
+        },
+        "changed": [
+          {
+            "node": "vein.lateral_mesencephalic.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.905124837953327,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.posterior_communicating",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.905124837953327,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.anterior_pontomesencephalic",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.52113482801712,
+            "topology": "retained"
+          },
+          {
+            "node": "vein.cerebral_peduncular.right",
+            "file": "venous.glb",
+            "maximumDisplacementMm": 3.905124837953327,
+            "topology": "retained"
+          },
+          {
+            "node": "ICA cavernous right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA paraophthalmic right",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA cavernous left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          },
+          {
+            "node": "ICA paraophthalmic left",
+            "file": "complete-circulation.glb",
+            "maximumDisplacementMm": 0,
+            "topology": "repartitioned original triangles"
+          }
+        ],
+        "icaPartitions": {
+          "right": {
+            "heightMm": 70.93497990020593,
+            "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+            "movedTriangles": 11205,
+            "uncertainty": "No segmented dural ring; provisional reference boundary"
+          },
+          "left": {
+            "heightMm": 70.8540733848864,
+            "definition": "NYU cavernous to paraophthalmic at estimated proximal dural ring",
+            "movedTriangles": 11418,
+            "uncertainty": "No segmented dural ring; provisional reference boundary"
+          }
+        }
+      },
+      "clearance": {
+        "release": "0.9.29",
+        "checkedPairs": 277,
+        "newContacts": [
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "PCA P2-P3 right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "PCA short circumflex right"
+          }
+        ],
+        "baselineContacts": [
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.lateral-ventricle.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.thalamus.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.choroid-plexus.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "vein.lateral_mesencephalic.right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.fornix.left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "brain.optic-tract.left"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Posterior communicating right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCA P2-P3 right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "PCom perforator right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Tuberothalamic artery right"
+          },
+          {
+            "one": "vein.posterior_communicating",
+            "two": "Tuberothalamic artery left"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "Basilar"
+          },
+          {
+            "one": "vein.anterior_pontomesencephalic",
+            "two": "SCA right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.medial-occipitotemporal-gyrus-parahippocampal.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.hippocampus.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.fornix.right"
+          },
+          {
+            "one": "vein.cerebral_peduncular.right",
+            "two": "brain.optic-tract.right"
+          },
+          {
+            "one": "ICA cavernous right",
+            "two": "bone.temporal.right"
+          },
+          {
+            "one": "ICA cavernous right",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "ICA paraophthalmic right",
+            "two": "brain.orbital-gyri.right"
+          },
+          {
+            "one": "ICA cavernous left",
+            "two": "bone.temporal.left"
+          },
+          {
+            "one": "ICA cavernous left",
+            "two": "bone.sphenoid"
+          },
+          {
+            "one": "ICA paraophthalmic left",
+            "two": "brain.orbital-gyri.left"
+          }
+        ],
+        "resolvedAuditContacts": [
+          {
+            "one": "Basilar",
+            "two": "vein.anterior_pontomesencephalic",
+            "baselineAllContacts": 95,
+            "candidateHalfContacts": 93
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.lateral_mesencephalic.right",
+            "baselineAllContacts": 265,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "PCA P1 right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 390,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "PCA P2-P3 right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 56,
+            "candidateHalfContacts": 68
+          },
+          {
+            "one": "Posterior communicating right",
+            "two": "vein.posterior_communicating",
+            "baselineAllContacts": 63,
+            "candidateHalfContacts": 214
+          },
+          {
+            "one": "SCA right",
+            "two": "vein.anterior_pontomesencephalic",
+            "baselineAllContacts": 303,
+            "candidateHalfContacts": 344
+          },
+          {
+            "one": "Thalamoperforator 2 right",
+            "two": "vein.lateral_mesencephalic.right",
+            "baselineAllContacts": 93,
+            "candidateHalfContacts": 0
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.marginal",
+            "baselineAllContacts": 17,
+            "candidateHalfContacts": 17
+          },
+          {
+            "one": "Vertebral V4 left",
+            "two": "vein.pontomedullary.left",
+            "baselineAllContacts": 378,
+            "candidateHalfContacts": 378
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.anterior_medullary",
+            "baselineAllContacts": 279,
+            "candidateHalfContacts": 279
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.pontomedullary.right",
+            "baselineAllContacts": 108,
+            "candidateHalfContacts": 108
+          },
+          {
+            "one": "Vertebral V4 right",
+            "two": "vein.pontomedullary.left",
+            "baselineAllContacts": 210,
+            "candidateHalfContacts": 210
+          }
+        ]
+      }
+    }
+  ]
+}

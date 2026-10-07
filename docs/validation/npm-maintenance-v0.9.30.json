@@ -1,0 +1,59 @@
+{
+  "release": "0.9.30",
+  "baseline": "0.9.29",
+  "cleanNpmCiPassed": true,
+  "productionBuildPassed": true,
+  "courseSegmentRegressionTestsPassed": 8,
+  "runtime": {
+    "node": "24.19.0",
+    "npm": "11.9.0"
+  },
+  "structures": 1648,
+  "relationships": 1395,
+  "meshLabels": 1232,
+  "buildDependencies": {
+    "vite": "8.3.3",
+    "@vitejs/plugin-react": "6.1.2"
+  },
+  "wholeModelAnatomicallyApproved": false,
+  "geometryEvidence": {
+    "models": [
+      {
+        "file": "public/anatomy/models/brain-context.glb",
+        "sha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/complete-anastomoses.glb",
+        "sha256": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/complete-circulation.glb",
+        "sha256": "6c06449c3fe719b310d570d0abb34a9f5d8c080c00f4e076dc5e82f71b67ec52",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/craniofacial.glb",
+        "sha256": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/venous.glb",
+        "sha256": "7ce049d61f718a17ae05a205cfea3cbdaeb9964a93bc34994ebd2b5ab663518d",
+        "unchanged": true
+      }
+    ],
+    "changedFiles": [
+      "CHANGELOG.md",
+      "README.md",
+      "README.txt",
+      "anatomy/generated/complete_manifest.json",
+      "package-lock.json",
+      "package.json",
+      "public/anatomy/manifest.json"
+    ],
+    "allModelBytesUnchanged": true,
+    "catalogueUnchangedExceptRelease": true
+  }
+}

@@ -7,7 +7,7 @@
   "families": [
     {
       "id": "vein.deep.direct_lateral",
-      "name": "Direct lateral vein                                            High | New / nomenclature review",
+      "name": "Direct lateral vein",
       "catalogueId": "D01"
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "id": "vein.deep.medial_atrial",
-      "name": "Medial atrial vein                                             High | New",
+      "name": "Medial atrial vein",
       "catalogueId": "D03"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "id": "vein.deep.anterior_caudate",
-      "name": "Anterior caudate veins                                         High | New",
+      "name": "Anterior caudate veins",
       "catalogueId": "D05"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "id": "vein.deep.inferior_ventricular",
-      "name": "Inferior ventricular vein                                      High | New",
+      "name": "Inferior ventricular vein",
       "catalogueId": "D07"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "id": "vein.deep.posterior_callosal",
-      "name": "Posterior callosal vein                                        High | New",
+      "name": "Posterior callosal vein",
       "catalogueId": "D09"
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "id": "vein.deep.superior_thalamic",
-      "name": "Superior thalamic veins                                        High | New",
+      "name": "Superior thalamic veins",
       "catalogueId": "D11"
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "id": "vein.deep.uncal",
-      "name": "Uncal vein                                                     High | New",
+      "name": "Uncal vein",
       "catalogueId": "D13"
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "id": "vein.deep.inferior_striate",
-      "name": "Inferior striate veins                                         High | Representative network",
+      "name": "Inferior striate veins",
       "catalogueId": "D15"
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "id": "vein.deep.posterior_septal",
-      "name": "Posterior septal veins                                         Next | New",
+      "name": "Posterior septal veins",
       "catalogueId": "D17"
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "id": "vein.deep.olfactory",
-      "name": "Olfactory vein                                                 Next | New",
+      "name": "Olfactory vein",
       "catalogueId": "D19"
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "id": "vein.deep.hypothalamic_tributaries",
-      "name": "Hypothalamic venous tributaries                                Detail | Reference first",
+      "name": "Hypothalamic venous tributaries",
       "catalogueId": "D21"
     },
     {
@@ -119,7 +119,7 @@
   "structures": [
     {
       "id": "vein.direct_lateral.right",
-      "name": "Direct lateral vein                                            High | New / nomenclature review right",
+      "name": "Direct lateral vein, right",
       "parent": "vein.deep.direct_lateral",
       "side": "right",
       "aliases": [],
@@ -493,7 +493,20 @@
       "catalogueId": "D01",
       "description": " ",
       "notes": " ",
-      "referenceFields": {},
+      "referenceFields": {
+        "Course": "Passes from the caudate/ventricular lateral network across the ventricular floor towards the ICV, posterior to the foramen of Monro.",
+        "Tributaries": "Caudate and adjacent medullary/subependymal tributaries.",
+        "Outflow": "Internal cerebral vein.",
+        "Parenchymal relations": "Lateral ventricular body, caudate and thalamic floor.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Foramen of Monro; caudate body; ventricular floor; internal cerebral vein Modelling interpretation Add a posterior entry into the ICV and preserve the existing thalamostriate entry. Define which caudate segment feeds each route.",
+        "Variants": "May carry territory otherwise collected through the thalamostriate route.",
+        "Naming": "Neuroangio also uses lateral atrial for this region; Bradac distinguishes the lateral atrial course. Do not make this a universal synonym.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I05. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac pp. 134-135, Fig. 9.3; Neuroangio lateral atrial/direct lateral and cross-sectional sections.",
+        "Alternate names": "Lateral direct vein; Direct atrial vein"
+      },
       "additionalAuthoredConnections": [
         {
           "to": "vein.thalamostriate.right",
@@ -504,7 +517,7 @@
     },
     {
       "id": "vein.medial_atrial.right",
-      "name": "Medial atrial vein                                             High | New right",
+      "name": "Medial atrial vein, right",
       "parent": "vein.deep.medial_atrial",
       "side": "right",
       "aliases": [],
@@ -1398,11 +1411,24 @@
       "catalogueId": "D03",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Converges from medial atrial/occipital ventricular tributaries towards the posterior ICV near the Galenic region.",
+        "Tributaries": "Posterior periventricular medullary tributaries.",
+        "Outflow": "Posterior internal cerebral vein; sometimes a common atrial stem.",
+        "Parenchymal relations": "Medial atrium and occipital horn, close to the posterior fornical region.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Medial atrial wall; posterior ICV; splenium Modelling interpretation Place medial to the lateral atrial system. Include converging tributaries rather than a free straight cisternal tube.",
+        "Variants": "May share a stem with a lateral atrial collector.",
+        "Naming": "Use medial atrial as the specific course label.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I05. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135, Figs. 9.3 and 9.11.",
+        "Alternate names": "Medial vein of lateral ventricle"
+      }
     },
     {
       "id": "vein.lateral_atrial.right",
-      "name": "Lateral atrial veins right",
+      "name": "Lateral atrial veins, right",
       "parent": "vein.deep.lateral_atrial",
       "side": "right",
       "aliases": [
@@ -2425,7 +2451,7 @@
     },
     {
       "id": "vein.inferior_ventricular.right",
-      "name": "Inferior ventricular vein                                      High | New right",
+      "name": "Inferior ventricular vein, right",
       "parent": "vein.deep.inferior_ventricular",
       "side": "right",
       "aliases": [],
@@ -4030,11 +4056,24 @@
       "catalogueId": "D07",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Follows the caudate body/tail and temporal horn roof anteriorly; turns medially near the uncus and exits through the choroidal fissure.",
+        "Tributaries": "Temporal and posterior periventricular medullary tributaries.",
+        "Outflow": "Basal vein, with alternative connections in variants.",
+        "Parenchymal relations": "Temporal horn roof, caudate tail, uncus and choroidal fissure.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Temporal horn roof; caudate tail; uncus; choroidal fissure; basal vein Modelling interpretation Build its C-shaped ventricular course before the short cisternal termination. Keep it distinct from the choroid plexus tributary.",
+        "Variants": "Can become prominent when posterior caudate drainage is rerouted.",
+        "Naming": "Inferior choroidal is not an automatic synonym.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01, I02, I06. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135, Figs. 9.2-9.3; Neuroangio inferior ventricular examples.",
+        "Alternate names": "Inferior ventricular vein of the lateral ventricle"
+      }
     },
     {
       "id": "vein.longitudinal_caudate.right",
-      "name": "Longitudinal caudate venous arcade right",
+      "name": "Longitudinal caudate venous arcade, right",
       "parent": "vein.deep.longitudinal_caudate",
       "side": "right",
       "aliases": [
@@ -5773,7 +5812,7 @@
     },
     {
       "id": "vein.anterior_caudate.right",
-      "name": "Anterior caudate veins                                         High | New right",
+      "name": "Anterior caudate veins, right",
       "parent": "vein.deep.anterior_caudate",
       "side": "right",
       "aliases": [],
@@ -6357,11 +6396,24 @@
       "catalogueId": "D05",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Cross the ventricular surface of the caudate head towards the thalamostriate or adjacent ICV drainage.",
+        "Tributaries": "Anterior caudate and frontal periventricular medullary tributaries.",
+        "Outflow": "Thalamostriate vein or direct ICV drainage.",
+        "Parenchymal relations": "Lateral wall of the frontal horn and caudate head.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Frontal horn; caudate head; thalamostriate junction Modelling interpretation Distinguish a short caudate-head tributary from the longer longitudinal arcade in D04.",
+        "Variants": "Variable number and dominance.",
+        "Naming": "Anterior caudate and anterior longitudinal caudate labels can overlap.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I04. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135; Neuroangio caudate images.",
+        "Alternate names": "Veins of caudate head"
+      }
     },
     {
       "id": "vein.transverse_caudate.right",
-      "name": "Transverse caudate tributaries right",
+      "name": "Transverse caudate tributaries, right",
       "parent": "vein.deep.transverse_caudate",
       "side": "right",
       "aliases": [
@@ -7617,13 +7669,12 @@
         "Naming": "Separate these from the larger transverse medullary veins of the brainstem.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I04. Context and orientation; see source labels",
-        "Sources": "S01, S02. Bradac pp. 134-135; Neuroangio caudate veins section.",
-        "Alternate names": "Inferior ventricular vein of the lateral ventricle"
+        "Sources": "S01, S02. Bradac pp. 134-135; Neuroangio caudate veins section."
       }
     },
     {
       "id": "vein.posterior_callosal.right",
-      "name": "Posterior callosal vein                                        High | New right",
+      "name": "Posterior callosal vein, right",
       "parent": "vein.deep.posterior_callosal",
       "side": "right",
       "aliases": [],
@@ -8381,11 +8432,24 @@
       "catalogueId": "D09",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Curves in the pericallosal cistern around the splenium towards the Galenic complex.",
+        "Tributaries": "Posterior callosal/cingulate and medial occipital tributaries.",
+        "Outflow": "Galen; internal cerebral or basal vein variants.",
+        "Parenchymal relations": "Splenium and posterior pericallosal/quadrigeminal cisterns.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Splenium; posterior corpus callosum; vein of Galen Modelling interpretation Use a splenial surface curve rather than an arbitrary arc around the straight sinus.",
+        "Variants": "May be paired or a common trunk.",
+        "Naming": "These labels describe the posterior callosal/pericallosal group in the reviewed sources.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 132-133; TA A12.3.06.037.",
+        "Alternate names": "Posterior pericallosal vein; Splenial vein; Dorsal vein of corpus callosum"
+      }
     },
     {
       "id": "vein.internal_occipital.right",
-      "name": "Internal occipital vein right",
+      "name": "Internal occipital vein, right",
       "parent": "vein.deep.internal_occipital",
       "side": "right",
       "aliases": [
@@ -9813,7 +9877,7 @@
     },
     {
       "id": "vein.anterior_thalamic.right",
-      "name": "Anterior thalamic veins right",
+      "name": "Anterior thalamic veins, right",
       "parent": "vein.deep.anterior_thalamic",
       "side": "right",
       "aliases": [],
@@ -10188,7 +10252,7 @@
     },
     {
       "id": "vein.superior_thalamic.right",
-      "name": "Superior thalamic veins                                        High | New right",
+      "name": "Superior thalamic veins, right",
       "parent": "vein.deep.superior_thalamic",
       "side": "right",
       "aliases": [],
@@ -10597,11 +10661,23 @@
       "catalogueId": "D11",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Runs alongside the ICV before entering its more posterior portion near the Galenic region.",
+        "Tributaries": "Superior/posterior-superior thalamic tissue.",
+        "Outflow": "Internal cerebral vein.",
+        "Parenchymal relations": "Upper thalamus and floor of the lateral ventricular body.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Superior thalamic surface; ICV; posterior thalamus Modelling interpretation Allow a short parallel segment and a separate entry. Do not replace this with the thalamostriate vein.",
+        "Variants": "Variable number and prominence.",
+        "Naming": "Use a family record until a registered exemplar resolves individual branches.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01, I02. General context; dedicated normal course image still needed",
+        "Sources": "S01. Bradac §9.1.2.4, p. 136."
+      }
     },
     {
       "id": "vein.inferior_thalamic.right",
-      "name": "Inferior thalamic veins right",
+      "name": "Inferior thalamic veins, right",
       "parent": "vein.deep.inferior_thalamic",
       "side": "right",
       "aliases": [
@@ -10973,13 +11049,12 @@
         "Naming": "Additional group identified in Bradac during this catalogue review.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01, I03, I23. Context and orientation; see source labels",
-        "Sources": "S01. Bradac §9.1.2.4, p. 136; Fig. 9.16.",
-        "Alternate names": "Vein of uncus"
+        "Sources": "S01. Bradac §9.1.2.4, p. 136; Fig. 9.16."
       }
     },
     {
       "id": "vein.uncal.right",
-      "name": "Uncal vein                                                     High | New right",
+      "name": "Uncal vein, right",
       "parent": "vein.deep.uncal",
       "side": "right",
       "aliases": [],
@@ -11352,11 +11427,24 @@
       "catalogueId": "D13",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Courses around the uncus and may connect anterior deep Sylvian/basal tributaries with parasellar drainage.",
+        "Tributaries": "Uncus; variable anterior basal/deep middle cerebral territory.",
+        "Outflow": "Basal vein, superficial middle cerebral vein or cavernous/laterocavernous/paracavernous routes.",
+        "Parenchymal relations": "Uncus, anterior medial temporal surface and crural region.",
+        "Bone and dura": "Cisternal/pial segment above the skull base. Dural contact applies only to a selected parasellar terminal route.",
+        "Required landmarks": "Uncus; limen insula; anterior basal vein; parasellar endpoint Modelling interpretation Select one baseline outflow. Put alternative parasellar connections in a variant rather than drawing every route simultaneously.",
+        "Variants": "May form a prominent substitute collector when anterior basal continuity is reduced.",
+        "Naming": "Do not treat a large variant common anterior collector as the mandatory normal calibre.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S03. Bradac pp. 137-138, Figs. 9.4-9.10.",
+        "Alternate names": "Vein of uncus"
+      }
     },
     {
       "id": "vein.hippocampal.right",
-      "name": "Hippocampal veins right",
+      "name": "Hippocampal veins, right",
       "parent": "vein.deep.hippocampal",
       "side": "right",
       "aliases": [
@@ -12864,8 +12952,7 @@
         "Naming": "Transverse, anterior longitudinal and posterior longitudinal are components, not synonyms.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01. Context and orientation; see source labels",
-        "Sources": "S01, S15. Bradac p. 135; Rhoton Fig. 4.17 for posterior connection.",
-        "Alternate names": "Inferior striatal veins"
+        "Sources": "S01, S15. Bradac p. 135; Rhoton Fig. 4.17 for posterior connection."
       },
       "additionalAuthoredConnections": [
         {
@@ -12877,7 +12964,7 @@
     },
     {
       "id": "vein.inferior_striate.right",
-      "name": "Inferior striate veins                                         High | Representative network right",
+      "name": "Inferior striate veins, right",
       "parent": "vein.deep.inferior_striate",
       "side": "right",
       "aliases": [],
@@ -14065,11 +14152,24 @@
       "catalogueId": "D15",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Descends through the anterior perforated substance towards the deep middle cerebral/basal venous junction.",
+        "Tributaries": "Basal ganglia, internal capsule and claustral territory.",
+        "Outflow": "Deep middle cerebral and anterior basal veins.",
+        "Parenchymal relations": "Anterior perforated substance and deep Sylvian region.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Anterior perforated substance; basal ganglia; deep middle cerebral vein Modelling interpretation Use several short converging tributaries above the anterior basal collector. Avoid enlarged candelabra trunks as the default.",
+        "Variants": "Usually fine and inconsistently visible angiographically.",
+        "Naming": "Inferior thalamostriate is a related official label; reconcile its scope before applying it as an alias.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 135-137, Figs. 9.7 and 9.10; TA A12.3.06.022.",
+        "Alternate names": "Inferior striatal veins"
+      }
     },
     {
       "id": "vein.insular.right",
-      "name": "Insular veins right",
+      "name": "Insular veins, right",
       "parent": "vein.deep.insular",
       "side": "right",
       "aliases": [
@@ -16200,13 +16300,12 @@
         "Naming": "The insular tributaries are additional anatomy even though the deep middle cerebral trunk already exists.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01. Context and orientation; see source labels",
-        "Sources": "S01, S12. Bradac pp. 136-137 and Fig. 9.8; TA A12.3.06.021.",
-        "Alternate names": "Posterior vein of septum pellucidum"
+        "Sources": "S01, S12. Bradac pp. 136-137 and Fig. 9.8; TA A12.3.06.021."
       }
     },
     {
       "id": "vein.posterior_septal.right",
-      "name": "Posterior septal veins                                         Next | New right",
+      "name": "Posterior septal veins, right",
       "parent": "vein.deep.posterior_septal",
       "side": "right",
       "aliases": [],
@@ -16640,11 +16739,24 @@
       "catalogueId": "D17",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Crosses the body roof/medial wall and reaches the choroidal fissure margin.",
+        "Tributaries": "Roof and medial wall of the lateral ventricular body.",
+        "Outflow": "Internal cerebral system.",
+        "Parenchymal relations": "Septum pellucidum and ventricular body roof.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Ventricular body roof; septum pellucidum; choroidal fissure; ICV Modelling interpretation Place posterior to the existing anterior septal course; use a dedicated registered exemplar before fixing the entry site.",
+        "Variants": "One or more small collectors.",
+        "Naming": "Distinct from anterior septal anatomy.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02. General ventricular context; dedicated posterior septal image still needed",
+        "Sources": "S12, S15. TA A12.3.06.032; Rhoton Figs. 4.15 and 4.18.",
+        "Alternate names": "Posterior vein of septum pellucidum"
+      }
     },
     {
       "id": "vein.inferior_choroidal.right",
-      "name": "Inferior choroidal vein right",
+      "name": "Inferior choroidal vein, right",
       "parent": "vein.deep.inferior_choroidal",
       "side": "right",
       "aliases": [
@@ -17062,7 +17174,7 @@
     },
     {
       "id": "vein.olfactory.right",
-      "name": "Olfactory vein                                                 Next | New right",
+      "name": "Olfactory vein, right",
       "parent": "vein.deep.olfactory",
       "side": "right",
       "aliases": [],
@@ -17625,11 +17737,24 @@
       "catalogueId": "D19",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Follows the inferior frontal olfactory region towards anterior basal tributaries.",
+        "Tributaries": "Olfactory and adjacent basal frontal territory.",
+        "Outflow": "Anterior basal/deep middle cerebral venous junction.",
+        "Parenchymal relations": "Olfactory sulcus and basal frontal surface.",
+        "Bone and dura": "Above the cribriform plate on the brain surface. Do not route through cribriform foramina as an emissary vein.",
+        "Required landmarks": "Olfactory sulcus; basal frontal surface; anterior basal collector Modelling interpretation Use a short surface course; its direction should be set by frontal parenchyma rather than the orbital roof alone.",
+        "Variants": "Small, variable and often not angiographically distinct.",
+        "Naming": "Separate cerebral collector from extracranial nasal/olfactory emissary routes.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 133 and 137-138, Figs. 9.2 and 9.4; TA A12.3.06.023.",
+        "Alternate names": "Vein of olfactory gyrus"
+      }
     },
     {
       "id": "vein.posterior_orbitofrontal.right",
-      "name": "Posterior orbitofrontal veins right",
+      "name": "Posterior orbitofrontal veins, right",
       "parent": "vein.deep.posterior_orbitofrontal",
       "side": "right",
       "aliases": [
@@ -18258,7 +18383,7 @@
     },
     {
       "id": "vein.hypothalamic_tributaries.right",
-      "name": "Hypothalamic venous tributaries                                Detail | Reference first right",
+      "name": "Hypothalamic venous tributaries, right",
       "parent": "vein.deep.hypothalamic_tributaries",
       "side": "right",
       "aliases": [],
@@ -18849,14 +18974,26 @@
       "catalogueId": "D21",
       "description": " ",
       "notes": " ",
-      "referenceFields": {},
+      "referenceFields": {
+        "Course": "Short channels emerge from inferior hypothalamic territory towards the anterior basal system; exact centreline remains unresolved here.",
+        "Tributaries": "Hypothalamic tissue.",
+        "Outflow": "Basal venous tributaries.",
+        "Parenchymal relations": "Third ventricular floor and basal hypothalamic surface.",
+        "Bone and dura": "Suprasellar neural/cisternal territory above the skull base; do not model as a vein within the pituitary fossa.",
+        "Required landmarks": "Hypothalamus; third ventricular floor; anterior basal vein Modelling interpretation Obtain a human dissection or registered contrast MRI exemplar before choosing individual named channels.",
+        "Variants": "Fine distributed drainage.",
+        "Naming": "Do not import rodent named-vein schemes into the human model.",
+        "Evidence": "Drainage territory supported; individual course needs further imaging",
+        "Images": "I01. Basal-system context only",
+        "Sources": "S03, S15. Neuroangio basal tributaries; Rhoton Fig. 4.21."
+      },
       "commonJunctionNeighbours": [
         "vein.anterior_cerebral.right"
       ]
     },
     {
       "id": "vein.deep_medullary.right",
-      "name": "Deep medullary veins right",
+      "name": "Deep medullary veins, right",
       "parent": "vein.deep.deep_medullary",
       "side": "right",
       "aliases": [
@@ -20720,7 +20857,7 @@
     },
     {
       "id": "vein.direct_lateral.left",
-      "name": "Direct lateral vein                                            High | New / nomenclature review left",
+      "name": "Direct lateral vein, left",
       "parent": "vein.deep.direct_lateral",
       "side": "left",
       "aliases": [],
@@ -21089,7 +21226,20 @@
       "catalogueId": "D01",
       "description": " ",
       "notes": " ",
-      "referenceFields": {},
+      "referenceFields": {
+        "Course": "Passes from the caudate/ventricular lateral network across the ventricular floor towards the ICV, posterior to the foramen of Monro.",
+        "Tributaries": "Caudate and adjacent medullary/subependymal tributaries.",
+        "Outflow": "Internal cerebral vein.",
+        "Parenchymal relations": "Lateral ventricular body, caudate and thalamic floor.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Foramen of Monro; caudate body; ventricular floor; internal cerebral vein Modelling interpretation Add a posterior entry into the ICV and preserve the existing thalamostriate entry. Define which caudate segment feeds each route.",
+        "Variants": "May carry territory otherwise collected through the thalamostriate route.",
+        "Naming": "Neuroangio also uses lateral atrial for this region; Bradac distinguishes the lateral atrial course. Do not make this a universal synonym.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I05. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac pp. 134-135, Fig. 9.3; Neuroangio lateral atrial/direct lateral and cross-sectional sections.",
+        "Alternate names": "Lateral direct vein; Direct atrial vein"
+      },
       "additionalAuthoredConnections": [
         {
           "to": "vein.thalamostriate.left",
@@ -21100,7 +21250,7 @@
     },
     {
       "id": "vein.medial_atrial.left",
-      "name": "Medial atrial vein                                             High | New left",
+      "name": "Medial atrial vein, left",
       "parent": "vein.deep.medial_atrial",
       "side": "left",
       "aliases": [],
@@ -21969,11 +22119,24 @@
       "catalogueId": "D03",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Converges from medial atrial/occipital ventricular tributaries towards the posterior ICV near the Galenic region.",
+        "Tributaries": "Posterior periventricular medullary tributaries.",
+        "Outflow": "Posterior internal cerebral vein; sometimes a common atrial stem.",
+        "Parenchymal relations": "Medial atrium and occipital horn, close to the posterior fornical region.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Medial atrial wall; posterior ICV; splenium Modelling interpretation Place medial to the lateral atrial system. Include converging tributaries rather than a free straight cisternal tube.",
+        "Variants": "May share a stem with a lateral atrial collector.",
+        "Naming": "Use medial atrial as the specific course label.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I05. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135, Figs. 9.3 and 9.11.",
+        "Alternate names": "Medial vein of lateral ventricle"
+      }
     },
     {
       "id": "vein.lateral_atrial.left",
-      "name": "Lateral atrial veins left",
+      "name": "Lateral atrial veins, left",
       "parent": "vein.deep.lateral_atrial",
       "side": "left",
       "aliases": [
@@ -22986,7 +23149,7 @@
     },
     {
       "id": "vein.inferior_ventricular.left",
-      "name": "Inferior ventricular vein                                      High | New left",
+      "name": "Inferior ventricular vein, left",
       "parent": "vein.deep.inferior_ventricular",
       "side": "left",
       "aliases": [],
@@ -24596,11 +24759,24 @@
       "catalogueId": "D07",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Follows the caudate body/tail and temporal horn roof anteriorly; turns medially near the uncus and exits through the choroidal fissure.",
+        "Tributaries": "Temporal and posterior periventricular medullary tributaries.",
+        "Outflow": "Basal vein, with alternative connections in variants.",
+        "Parenchymal relations": "Temporal horn roof, caudate tail, uncus and choroidal fissure.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Temporal horn roof; caudate tail; uncus; choroidal fissure; basal vein Modelling interpretation Build its C-shaped ventricular course before the short cisternal termination. Keep it distinct from the choroid plexus tributary.",
+        "Variants": "Can become prominent when posterior caudate drainage is rerouted.",
+        "Naming": "Inferior choroidal is not an automatic synonym.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01, I02, I06. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135, Figs. 9.2-9.3; Neuroangio inferior ventricular examples.",
+        "Alternate names": "Inferior ventricular vein of the lateral ventricle"
+      }
     },
     {
       "id": "vein.longitudinal_caudate.left",
-      "name": "Longitudinal caudate venous arcade left",
+      "name": "Longitudinal caudate venous arcade, left",
       "parent": "vein.deep.longitudinal_caudate",
       "side": "left",
       "aliases": [
@@ -26339,7 +26515,7 @@
     },
     {
       "id": "vein.anterior_caudate.left",
-      "name": "Anterior caudate veins                                         High | New left",
+      "name": "Anterior caudate veins, left",
       "parent": "vein.deep.anterior_caudate",
       "side": "left",
       "aliases": [],
@@ -26928,11 +27104,24 @@
       "catalogueId": "D05",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Cross the ventricular surface of the caudate head towards the thalamostriate or adjacent ICV drainage.",
+        "Tributaries": "Anterior caudate and frontal periventricular medullary tributaries.",
+        "Outflow": "Thalamostriate vein or direct ICV drainage.",
+        "Parenchymal relations": "Lateral wall of the frontal horn and caudate head.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Frontal horn; caudate head; thalamostriate junction Modelling interpretation Distinguish a short caudate-head tributary from the longer longitudinal arcade in D04.",
+        "Variants": "Variable number and dominance.",
+        "Naming": "Anterior caudate and anterior longitudinal caudate labels can overlap.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I04. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135; Neuroangio caudate images.",
+        "Alternate names": "Veins of caudate head"
+      }
     },
     {
       "id": "vein.transverse_caudate.left",
-      "name": "Transverse caudate tributaries left",
+      "name": "Transverse caudate tributaries, left",
       "parent": "vein.deep.transverse_caudate",
       "side": "left",
       "aliases": [
@@ -28183,13 +28372,12 @@
         "Naming": "Separate these from the larger transverse medullary veins of the brainstem.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I04. Context and orientation; see source labels",
-        "Sources": "S01, S02. Bradac pp. 134-135; Neuroangio caudate veins section.",
-        "Alternate names": "Inferior ventricular vein of the lateral ventricle"
+        "Sources": "S01, S02. Bradac pp. 134-135; Neuroangio caudate veins section."
       }
     },
     {
       "id": "vein.posterior_callosal.left",
-      "name": "Posterior callosal vein                                        High | New left",
+      "name": "Posterior callosal vein, left",
       "parent": "vein.deep.posterior_callosal",
       "side": "left",
       "aliases": [],
@@ -28947,11 +29135,24 @@
       "catalogueId": "D09",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Curves in the pericallosal cistern around the splenium towards the Galenic complex.",
+        "Tributaries": "Posterior callosal/cingulate and medial occipital tributaries.",
+        "Outflow": "Galen; internal cerebral or basal vein variants.",
+        "Parenchymal relations": "Splenium and posterior pericallosal/quadrigeminal cisterns.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Splenium; posterior corpus callosum; vein of Galen Modelling interpretation Use a splenial surface curve rather than an arbitrary arc around the straight sinus.",
+        "Variants": "May be paired or a common trunk.",
+        "Naming": "These labels describe the posterior callosal/pericallosal group in the reviewed sources.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 132-133; TA A12.3.06.037.",
+        "Alternate names": "Posterior pericallosal vein; Splenial vein; Dorsal vein of corpus callosum"
+      }
     },
     {
       "id": "vein.internal_occipital.left",
-      "name": "Internal occipital vein left",
+      "name": "Internal occipital vein, left",
       "parent": "vein.deep.internal_occipital",
       "side": "left",
       "aliases": [
@@ -30364,7 +30565,7 @@
     },
     {
       "id": "vein.anterior_thalamic.left",
-      "name": "Anterior thalamic veins left",
+      "name": "Anterior thalamic veins, left",
       "parent": "vein.deep.anterior_thalamic",
       "side": "left",
       "aliases": [],
@@ -30739,7 +30940,7 @@
     },
     {
       "id": "vein.superior_thalamic.left",
-      "name": "Superior thalamic veins                                        High | New left",
+      "name": "Superior thalamic veins, left",
       "parent": "vein.deep.superior_thalamic",
       "side": "left",
       "aliases": [],
@@ -31148,11 +31349,23 @@
       "catalogueId": "D11",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Runs alongside the ICV before entering its more posterior portion near the Galenic region.",
+        "Tributaries": "Superior/posterior-superior thalamic tissue.",
+        "Outflow": "Internal cerebral vein.",
+        "Parenchymal relations": "Upper thalamus and floor of the lateral ventricular body.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Superior thalamic surface; ICV; posterior thalamus Modelling interpretation Allow a short parallel segment and a separate entry. Do not replace this with the thalamostriate vein.",
+        "Variants": "Variable number and prominence.",
+        "Naming": "Use a family record until a registered exemplar resolves individual branches.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01, I02. General context; dedicated normal course image still needed",
+        "Sources": "S01. Bradac §9.1.2.4, p. 136."
+      }
     },
     {
       "id": "vein.inferior_thalamic.left",
-      "name": "Inferior thalamic veins left",
+      "name": "Inferior thalamic veins, left",
       "parent": "vein.deep.inferior_thalamic",
       "side": "left",
       "aliases": [
@@ -31524,13 +31737,12 @@
         "Naming": "Additional group identified in Bradac during this catalogue review.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01, I03, I23. Context and orientation; see source labels",
-        "Sources": "S01. Bradac §9.1.2.4, p. 136; Fig. 9.16.",
-        "Alternate names": "Vein of uncus"
+        "Sources": "S01. Bradac §9.1.2.4, p. 136; Fig. 9.16."
       }
     },
     {
       "id": "vein.uncal.left",
-      "name": "Uncal vein                                                     High | New left",
+      "name": "Uncal vein, left",
       "parent": "vein.deep.uncal",
       "side": "left",
       "aliases": [],
@@ -31908,11 +32120,24 @@
       "catalogueId": "D13",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Courses around the uncus and may connect anterior deep Sylvian/basal tributaries with parasellar drainage.",
+        "Tributaries": "Uncus; variable anterior basal/deep middle cerebral territory.",
+        "Outflow": "Basal vein, superficial middle cerebral vein or cavernous/laterocavernous/paracavernous routes.",
+        "Parenchymal relations": "Uncus, anterior medial temporal surface and crural region.",
+        "Bone and dura": "Cisternal/pial segment above the skull base. Dural contact applies only to a selected parasellar terminal route.",
+        "Required landmarks": "Uncus; limen insula; anterior basal vein; parasellar endpoint Modelling interpretation Select one baseline outflow. Put alternative parasellar connections in a variant rather than drawing every route simultaneously.",
+        "Variants": "May form a prominent substitute collector when anterior basal continuity is reduced.",
+        "Naming": "Do not treat a large variant common anterior collector as the mandatory normal calibre.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S03. Bradac pp. 137-138, Figs. 9.4-9.10.",
+        "Alternate names": "Vein of uncus"
+      }
     },
     {
       "id": "vein.hippocampal.left",
-      "name": "Hippocampal veins left",
+      "name": "Hippocampal veins, left",
       "parent": "vein.deep.hippocampal",
       "side": "left",
       "aliases": [
@@ -33420,8 +33645,7 @@
         "Naming": "Transverse, anterior longitudinal and posterior longitudinal are components, not synonyms.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01. Context and orientation; see source labels",
-        "Sources": "S01, S15. Bradac p. 135; Rhoton Fig. 4.17 for posterior connection.",
-        "Alternate names": "Inferior striatal veins"
+        "Sources": "S01, S15. Bradac p. 135; Rhoton Fig. 4.17 for posterior connection."
       },
       "additionalAuthoredConnections": [
         {
@@ -33433,7 +33657,7 @@
     },
     {
       "id": "vein.inferior_striate.left",
-      "name": "Inferior striate veins                                         High | Representative network left",
+      "name": "Inferior striate veins, left",
       "parent": "vein.deep.inferior_striate",
       "side": "left",
       "aliases": [],
@@ -34621,11 +34845,24 @@
       "catalogueId": "D15",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Descends through the anterior perforated substance towards the deep middle cerebral/basal venous junction.",
+        "Tributaries": "Basal ganglia, internal capsule and claustral territory.",
+        "Outflow": "Deep middle cerebral and anterior basal veins.",
+        "Parenchymal relations": "Anterior perforated substance and deep Sylvian region.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Anterior perforated substance; basal ganglia; deep middle cerebral vein Modelling interpretation Use several short converging tributaries above the anterior basal collector. Avoid enlarged candelabra trunks as the default.",
+        "Variants": "Usually fine and inconsistently visible angiographically.",
+        "Naming": "Inferior thalamostriate is a related official label; reconcile its scope before applying it as an alias.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 135-137, Figs. 9.7 and 9.10; TA A12.3.06.022.",
+        "Alternate names": "Inferior striatal veins"
+      }
     },
     {
       "id": "vein.insular.left",
-      "name": "Insular veins left",
+      "name": "Insular veins, left",
       "parent": "vein.deep.insular",
       "side": "left",
       "aliases": [
@@ -36781,13 +37018,12 @@
         "Naming": "The insular tributaries are additional anatomy even though the deep middle cerebral trunk already exists.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01. Context and orientation; see source labels",
-        "Sources": "S01, S12. Bradac pp. 136-137 and Fig. 9.8; TA A12.3.06.021.",
-        "Alternate names": "Posterior vein of septum pellucidum"
+        "Sources": "S01, S12. Bradac pp. 136-137 and Fig. 9.8; TA A12.3.06.021."
       }
     },
     {
       "id": "vein.posterior_septal.left",
-      "name": "Posterior septal veins                                         Next | New left",
+      "name": "Posterior septal veins, left",
       "parent": "vein.deep.posterior_septal",
       "side": "left",
       "aliases": [],
@@ -37221,11 +37457,24 @@
       "catalogueId": "D17",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Crosses the body roof/medial wall and reaches the choroidal fissure margin.",
+        "Tributaries": "Roof and medial wall of the lateral ventricular body.",
+        "Outflow": "Internal cerebral system.",
+        "Parenchymal relations": "Septum pellucidum and ventricular body roof.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Ventricular body roof; septum pellucidum; choroidal fissure; ICV Modelling interpretation Place posterior to the existing anterior septal course; use a dedicated registered exemplar before fixing the entry site.",
+        "Variants": "One or more small collectors.",
+        "Naming": "Distinct from anterior septal anatomy.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02. General ventricular context; dedicated posterior septal image still needed",
+        "Sources": "S12, S15. TA A12.3.06.032; Rhoton Figs. 4.15 and 4.18.",
+        "Alternate names": "Posterior vein of septum pellucidum"
+      }
     },
     {
       "id": "vein.inferior_choroidal.left",
-      "name": "Inferior choroidal vein left",
+      "name": "Inferior choroidal vein, left",
       "parent": "vein.deep.inferior_choroidal",
       "side": "left",
       "aliases": [
@@ -37643,7 +37892,7 @@
     },
     {
       "id": "vein.olfactory.left",
-      "name": "Olfactory vein                                                 Next | New left",
+      "name": "Olfactory vein, left",
       "parent": "vein.deep.olfactory",
       "side": "left",
       "aliases": [],
@@ -38206,11 +38455,24 @@
       "catalogueId": "D19",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Follows the inferior frontal olfactory region towards anterior basal tributaries.",
+        "Tributaries": "Olfactory and adjacent basal frontal territory.",
+        "Outflow": "Anterior basal/deep middle cerebral venous junction.",
+        "Parenchymal relations": "Olfactory sulcus and basal frontal surface.",
+        "Bone and dura": "Above the cribriform plate on the brain surface. Do not route through cribriform foramina as an emissary vein.",
+        "Required landmarks": "Olfactory sulcus; basal frontal surface; anterior basal collector Modelling interpretation Use a short surface course; its direction should be set by frontal parenchyma rather than the orbital roof alone.",
+        "Variants": "Small, variable and often not angiographically distinct.",
+        "Naming": "Separate cerebral collector from extracranial nasal/olfactory emissary routes.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 133 and 137-138, Figs. 9.2 and 9.4; TA A12.3.06.023.",
+        "Alternate names": "Vein of olfactory gyrus"
+      }
     },
     {
       "id": "vein.posterior_orbitofrontal.left",
-      "name": "Posterior orbitofrontal veins left",
+      "name": "Posterior orbitofrontal veins, left",
       "parent": "vein.deep.posterior_orbitofrontal",
       "side": "left",
       "aliases": [
@@ -38849,7 +39111,7 @@
     },
     {
       "id": "vein.hypothalamic_tributaries.left",
-      "name": "Hypothalamic venous tributaries                                Detail | Reference first left",
+      "name": "Hypothalamic venous tributaries, left",
       "parent": "vein.deep.hypothalamic_tributaries",
       "side": "left",
       "aliases": [],
@@ -39450,11 +39712,23 @@
       "catalogueId": "D21",
       "description": " ",
       "notes": " ",
-      "referenceFields": {}
+      "referenceFields": {
+        "Course": "Short channels emerge from inferior hypothalamic territory towards the anterior basal system; exact centreline remains unresolved here.",
+        "Tributaries": "Hypothalamic tissue.",
+        "Outflow": "Basal venous tributaries.",
+        "Parenchymal relations": "Third ventricular floor and basal hypothalamic surface.",
+        "Bone and dura": "Suprasellar neural/cisternal territory above the skull base; do not model as a vein within the pituitary fossa.",
+        "Required landmarks": "Hypothalamus; third ventricular floor; anterior basal vein Modelling interpretation Obtain a human dissection or registered contrast MRI exemplar before choosing individual named channels.",
+        "Variants": "Fine distributed drainage.",
+        "Naming": "Do not import rodent named-vein schemes into the human model.",
+        "Evidence": "Drainage territory supported; individual course needs further imaging",
+        "Images": "I01. Basal-system context only",
+        "Sources": "S03, S15. Neuroangio basal tributaries; Rhoton Fig. 4.21."
+      }
     },
     {
       "id": "vein.deep_medullary.left",
-      "name": "Deep medullary veins left",
+      "name": "Deep medullary veins, left",
       "parent": "vein.deep.deep_medullary",
       "side": "left",
       "aliases": [
@@ -41319,8 +41593,21 @@
   ],
   "sourceCatalogue": {
     "D01": {
-      "name": "Direct lateral vein                                            High | New / nomenclature review",
-      "fields": {}
+      "name": "Direct lateral vein",
+      "fields": {
+        "Course": "Passes from the caudate/ventricular lateral network across the ventricular floor towards the ICV, posterior to the foramen of Monro.",
+        "Tributaries": "Caudate and adjacent medullary/subependymal tributaries.",
+        "Outflow": "Internal cerebral vein.",
+        "Parenchymal relations": "Lateral ventricular body, caudate and thalamic floor.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Foramen of Monro; caudate body; ventricular floor; internal cerebral vein Modelling interpretation Add a posterior entry into the ICV and preserve the existing thalamostriate entry. Define which caudate segment feeds each route.",
+        "Variants": "May carry territory otherwise collected through the thalamostriate route.",
+        "Naming": "Neuroangio also uses lateral atrial for this region; Bradac distinguishes the lateral atrial course. Do not make this a universal synonym.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I05. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac pp. 134-135, Fig. 9.3; Neuroangio lateral atrial/direct lateral and cross-sectional sections.",
+        "Alternate names": "Lateral direct vein; Direct atrial vein"
+      }
     },
     "D02": {
       "name": "Lateral atrial veins",
@@ -41340,8 +41627,21 @@
       }
     },
     "D03": {
-      "name": "Medial atrial vein                                             High | New",
-      "fields": {}
+      "name": "Medial atrial vein",
+      "fields": {
+        "Course": "Converges from medial atrial/occipital ventricular tributaries towards the posterior ICV near the Galenic region.",
+        "Tributaries": "Posterior periventricular medullary tributaries.",
+        "Outflow": "Posterior internal cerebral vein; sometimes a common atrial stem.",
+        "Parenchymal relations": "Medial atrium and occipital horn, close to the posterior fornical region.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Medial atrial wall; posterior ICV; splenium Modelling interpretation Place medial to the lateral atrial system. Include converging tributaries rather than a free straight cisternal tube.",
+        "Variants": "May share a stem with a lateral atrial collector.",
+        "Naming": "Use medial atrial as the specific course label.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I05. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135, Figs. 9.3 and 9.11.",
+        "Alternate names": "Medial vein of lateral ventricle"
+      }
     },
     "D04": {
       "name": "Longitudinal caudate venous arcade",
@@ -41361,8 +41661,21 @@
       }
     },
     "D05": {
-      "name": "Anterior caudate veins                                         High | New",
-      "fields": {}
+      "name": "Anterior caudate veins",
+      "fields": {
+        "Course": "Cross the ventricular surface of the caudate head towards the thalamostriate or adjacent ICV drainage.",
+        "Tributaries": "Anterior caudate and frontal periventricular medullary tributaries.",
+        "Outflow": "Thalamostriate vein or direct ICV drainage.",
+        "Parenchymal relations": "Lateral wall of the frontal horn and caudate head.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Frontal horn; caudate head; thalamostriate junction Modelling interpretation Distinguish a short caudate-head tributary from the longer longitudinal arcade in D04.",
+        "Variants": "Variable number and dominance.",
+        "Naming": "Anterior caudate and anterior longitudinal caudate labels can overlap.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02, I04. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135; Neuroangio caudate images.",
+        "Alternate names": "Veins of caudate head"
+      }
     },
     "D06": {
       "name": "Transverse caudate tributaries",
@@ -41377,13 +41690,25 @@
         "Naming": "Separate these from the larger transverse medullary veins of the brainstem.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I04. Context and orientation; see source labels",
-        "Sources": "S01, S02. Bradac pp. 134-135; Neuroangio caudate veins section.",
-        "Alternate names": "Inferior ventricular vein of the lateral ventricle"
+        "Sources": "S01, S02. Bradac pp. 134-135; Neuroangio caudate veins section."
       }
     },
     "D07": {
-      "name": "Inferior ventricular vein                                      High | New",
-      "fields": {}
+      "name": "Inferior ventricular vein",
+      "fields": {
+        "Course": "Follows the caudate body/tail and temporal horn roof anteriorly; turns medially near the uncus and exits through the choroidal fissure.",
+        "Tributaries": "Temporal and posterior periventricular medullary tributaries.",
+        "Outflow": "Basal vein, with alternative connections in variants.",
+        "Parenchymal relations": "Temporal horn roof, caudate tail, uncus and choroidal fissure.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Temporal horn roof; caudate tail; uncus; choroidal fissure; basal vein Modelling interpretation Build its C-shaped ventricular course before the short cisternal termination. Keep it distinct from the choroid plexus tributary.",
+        "Variants": "Can become prominent when posterior caudate drainage is rerouted.",
+        "Naming": "Inferior choroidal is not an automatic synonym.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01, I02, I06. Context and orientation; see source labels",
+        "Sources": "S01, S02. Bradac p. 135, Figs. 9.2-9.3; Neuroangio inferior ventricular examples.",
+        "Alternate names": "Inferior ventricular vein of the lateral ventricle"
+      }
     },
     "D08": {
       "name": "Internal occipital vein",
@@ -41403,8 +41728,21 @@
       }
     },
     "D09": {
-      "name": "Posterior callosal vein                                        High | New",
-      "fields": {}
+      "name": "Posterior callosal vein",
+      "fields": {
+        "Course": "Curves in the pericallosal cistern around the splenium towards the Galenic complex.",
+        "Tributaries": "Posterior callosal/cingulate and medial occipital tributaries.",
+        "Outflow": "Galen; internal cerebral or basal vein variants.",
+        "Parenchymal relations": "Splenium and posterior pericallosal/quadrigeminal cisterns.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Splenium; posterior corpus callosum; vein of Galen Modelling interpretation Use a splenial surface curve rather than an arbitrary arc around the straight sinus.",
+        "Variants": "May be paired or a common trunk.",
+        "Naming": "These labels describe the posterior callosal/pericallosal group in the reviewed sources.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 132-133; TA A12.3.06.037.",
+        "Alternate names": "Posterior pericallosal vein; Splenial vein; Dorsal vein of corpus callosum"
+      }
     },
     "D10": {
       "name": "Anterior thalamic veins",
@@ -41423,8 +41761,20 @@
       }
     },
     "D11": {
-      "name": "Superior thalamic veins                                        High | New",
-      "fields": {}
+      "name": "Superior thalamic veins",
+      "fields": {
+        "Course": "Runs alongside the ICV before entering its more posterior portion near the Galenic region.",
+        "Tributaries": "Superior/posterior-superior thalamic tissue.",
+        "Outflow": "Internal cerebral vein.",
+        "Parenchymal relations": "Upper thalamus and floor of the lateral ventricular body.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Superior thalamic surface; ICV; posterior thalamus Modelling interpretation Allow a short parallel segment and a separate entry. Do not replace this with the thalamostriate vein.",
+        "Variants": "Variable number and prominence.",
+        "Naming": "Use a family record until a registered exemplar resolves individual branches.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01, I02. General context; dedicated normal course image still needed",
+        "Sources": "S01. Bradac §9.1.2.4, p. 136."
+      }
     },
     "D12": {
       "name": "Inferior thalamic veins",
@@ -41439,13 +41789,25 @@
         "Naming": "Additional group identified in Bradac during this catalogue review.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01, I03, I23. Context and orientation; see source labels",
-        "Sources": "S01. Bradac §9.1.2.4, p. 136; Fig. 9.16.",
-        "Alternate names": "Vein of uncus"
+        "Sources": "S01. Bradac §9.1.2.4, p. 136; Fig. 9.16."
       }
     },
     "D13": {
-      "name": "Uncal vein                                                     High | New",
-      "fields": {}
+      "name": "Uncal vein",
+      "fields": {
+        "Course": "Courses around the uncus and may connect anterior deep Sylvian/basal tributaries with parasellar drainage.",
+        "Tributaries": "Uncus; variable anterior basal/deep middle cerebral territory.",
+        "Outflow": "Basal vein, superficial middle cerebral vein or cavernous/laterocavernous/paracavernous routes.",
+        "Parenchymal relations": "Uncus, anterior medial temporal surface and crural region.",
+        "Bone and dura": "Cisternal/pial segment above the skull base. Dural contact applies only to a selected parasellar terminal route.",
+        "Required landmarks": "Uncus; limen insula; anterior basal vein; parasellar endpoint Modelling interpretation Select one baseline outflow. Put alternative parasellar connections in a variant rather than drawing every route simultaneously.",
+        "Variants": "May form a prominent substitute collector when anterior basal continuity is reduced.",
+        "Naming": "Do not treat a large variant common anterior collector as the mandatory normal calibre.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S03. Bradac pp. 137-138, Figs. 9.4-9.10.",
+        "Alternate names": "Vein of uncus"
+      }
     },
     "D14": {
       "name": "Hippocampal veins",
@@ -41460,13 +41822,25 @@
         "Naming": "Transverse, anterior longitudinal and posterior longitudinal are components, not synonyms.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01. Context and orientation; see source labels",
-        "Sources": "S01, S15. Bradac p. 135; Rhoton Fig. 4.17 for posterior connection.",
-        "Alternate names": "Inferior striatal veins"
+        "Sources": "S01, S15. Bradac p. 135; Rhoton Fig. 4.17 for posterior connection."
       }
     },
     "D15": {
-      "name": "Inferior striate veins                                         High | Representative network",
-      "fields": {}
+      "name": "Inferior striate veins",
+      "fields": {
+        "Course": "Descends through the anterior perforated substance towards the deep middle cerebral/basal venous junction.",
+        "Tributaries": "Basal ganglia, internal capsule and claustral territory.",
+        "Outflow": "Deep middle cerebral and anterior basal veins.",
+        "Parenchymal relations": "Anterior perforated substance and deep Sylvian region.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Anterior perforated substance; basal ganglia; deep middle cerebral vein Modelling interpretation Use several short converging tributaries above the anterior basal collector. Avoid enlarged candelabra trunks as the default.",
+        "Variants": "Usually fine and inconsistently visible angiographically.",
+        "Naming": "Inferior thalamostriate is a related official label; reconcile its scope before applying it as an alias.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 135-137, Figs. 9.7 and 9.10; TA A12.3.06.022.",
+        "Alternate names": "Inferior striatal veins"
+      }
     },
     "D16": {
       "name": "Insular veins",
@@ -41481,13 +41855,25 @@
         "Naming": "The insular tributaries are additional anatomy even though the deep middle cerebral trunk already exists.",
         "Evidence": "Course described; metric geometry still needed",
         "Images": "I01. Context and orientation; see source labels",
-        "Sources": "S01, S12. Bradac pp. 136-137 and Fig. 9.8; TA A12.3.06.021.",
-        "Alternate names": "Posterior vein of septum pellucidum"
+        "Sources": "S01, S12. Bradac pp. 136-137 and Fig. 9.8; TA A12.3.06.021."
       }
     },
     "D17": {
-      "name": "Posterior septal veins                                         Next | New",
-      "fields": {}
+      "name": "Posterior septal veins",
+      "fields": {
+        "Course": "Crosses the body roof/medial wall and reaches the choroidal fissure margin.",
+        "Tributaries": "Roof and medial wall of the lateral ventricular body.",
+        "Outflow": "Internal cerebral system.",
+        "Parenchymal relations": "Septum pellucidum and ventricular body roof.",
+        "Bone and dura": "No direct bony attachment. Position is set by ventricular or cisternal anatomy, rather than a skull groove.",
+        "Required landmarks": "Ventricular body roof; septum pellucidum; choroidal fissure; ICV Modelling interpretation Place posterior to the existing anterior septal course; use a dedicated registered exemplar before fixing the entry site.",
+        "Variants": "One or more small collectors.",
+        "Naming": "Distinct from anterior septal anatomy.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I02. General ventricular context; dedicated posterior septal image still needed",
+        "Sources": "S12, S15. TA A12.3.06.032; Rhoton Figs. 4.15 and 4.18.",
+        "Alternate names": "Posterior vein of septum pellucidum"
+      }
     },
     "D18": {
       "name": "Inferior choroidal vein",
@@ -41507,8 +41893,21 @@
       }
     },
     "D19": {
-      "name": "Olfactory vein                                                 Next | New",
-      "fields": {}
+      "name": "Olfactory vein",
+      "fields": {
+        "Course": "Follows the inferior frontal olfactory region towards anterior basal tributaries.",
+        "Tributaries": "Olfactory and adjacent basal frontal territory.",
+        "Outflow": "Anterior basal/deep middle cerebral venous junction.",
+        "Parenchymal relations": "Olfactory sulcus and basal frontal surface.",
+        "Bone and dura": "Above the cribriform plate on the brain surface. Do not route through cribriform foramina as an emissary vein.",
+        "Required landmarks": "Olfactory sulcus; basal frontal surface; anterior basal collector Modelling interpretation Use a short surface course; its direction should be set by frontal parenchyma rather than the orbital roof alone.",
+        "Variants": "Small, variable and often not angiographically distinct.",
+        "Naming": "Separate cerebral collector from extracranial nasal/olfactory emissary routes.",
+        "Evidence": "Course described; metric geometry still needed",
+        "Images": "I01. Context and orientation; see source labels",
+        "Sources": "S01, S12. Bradac pp. 133 and 137-138, Figs. 9.2 and 9.4; TA A12.3.06.023.",
+        "Alternate names": "Vein of olfactory gyrus"
+      }
     },
     "D20": {
       "name": "Posterior orbitofrontal veins",
@@ -41528,8 +41927,20 @@
       }
     },
     "D21": {
-      "name": "Hypothalamic venous tributaries                                Detail | Reference first",
-      "fields": {}
+      "name": "Hypothalamic venous tributaries",
+      "fields": {
+        "Course": "Short channels emerge from inferior hypothalamic territory towards the anterior basal system; exact centreline remains unresolved here.",
+        "Tributaries": "Hypothalamic tissue.",
+        "Outflow": "Basal venous tributaries.",
+        "Parenchymal relations": "Third ventricular floor and basal hypothalamic surface.",
+        "Bone and dura": "Suprasellar neural/cisternal territory above the skull base; do not model as a vein within the pituitary fossa.",
+        "Required landmarks": "Hypothalamus; third ventricular floor; anterior basal vein Modelling interpretation Obtain a human dissection or registered contrast MRI exemplar before choosing individual named channels.",
+        "Variants": "Fine distributed drainage.",
+        "Naming": "Do not import rodent named-vein schemes into the human model.",
+        "Evidence": "Drainage territory supported; individual course needs further imaging",
+        "Images": "I01. Basal-system context only",
+        "Sources": "S03, S15. Neuroangio basal tributaries; Rhoton Fig. 4.21."
+      }
     },
     "D22": {
       "name": "Deep medullary veins",

@@ -1,0 +1,21 @@
+{
+  "release": "0.9.31",
+  "checks": [
+    {
+      "file": "brain-context.glb",
+      "oldSha256": "09d3e4a318bd3ea0a0b7a42fa547e24241bfe51ac51c87d5ea8078aedc6dd123",
+      "sha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+      "labels": 189,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    },
+    {
+      "file": "venous.glb",
+      "oldSha256": "7ce049d61f718a17ae05a205cfea3cbdaeb9964a93bc34994ebd2b5ab663518d",
+      "sha256": "e67e5934f46de8933fe2487e99de30f73e98f1eb9470b5c83ef3b6b118a9ec68",
+      "labels": 217,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ]
+}
