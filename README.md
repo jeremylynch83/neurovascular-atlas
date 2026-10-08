@@ -1,3 +1,7 @@
+# Neurovascular Atlas v0.9.41
+
+Muted orange selection with a constant, softer highlight. A narrow surrounding halo fades smoothly up and down over four seconds. A silhouette mask keeps the animation outside the structure, including translucent selections. The halo reuses the selected geometry and honours clipping, visibility and reduced motion. Anatomy retained from v0.9.40.
+
 # Neurovascular Atlas v0.9.40
 
 Selected structures turn amber-yellow with a steady glow and a subtle one-second heartbeat pulse. The pulse pauses for hidden selections and reduced motion, and idle animation redraws are capped at 30 Hz. Retains the v0.9.39 anatomy and geometry checks.
