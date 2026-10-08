@@ -83,7 +83,7 @@ export class AnatomyEngine {
   private hidden = new Set<string>();
   private visibility = new Map<string, LayerState>();
   private focusDistanceFloor = 0;
-  private layers: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' };
+  private layers: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'on', brain: 'off' };
   private clipPlane = new THREE.Plane(new THREE.Vector3(1, 0, 0), 0);
   private clipEnabled = false;
   private onSelect: (id: string | null) => void;

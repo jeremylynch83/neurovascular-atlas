@@ -5,7 +5,7 @@ import { AnatomyEngine } from './engine';
 import { Description } from './Description';
 import { Loading } from './Loading';
 
-const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' };
+const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'on', brain: 'off' };
 const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: 'on' };
 const STATE_LABEL = { on: 'fully visible', ghost: 'translucent', off: 'absent' };
 
@@ -181,8 +181,8 @@ function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
     <button className="detail-close" aria-label="Close information" onClick={onClose}>×</button>
     <h2 id="about-title">Neurovascular Atlas v{manifest.release}</h2>
     <p>An interactive 3D atlas of neurovascular anatomy. Vascular structures original, skull and brain from existing sources (see below).</p>
-    <p>{counts.artery} unique arteries and {counts.vein} unique veins, sinuses and venous plexuses. Bilateral pairs counted once.</p>
-    <p>Jeremy Lynch, 2026.</p>
+    <p>{counts.artery} unique arteries and {counts.vein} unique veins, sinuses and venous plexuses.</p>
+    <p>Jeremy Lynch, Sean Mcilhone</p>
     <div className="about-credits" role="region" aria-label="Credits" tabIndex={0}>
       <h3>Anatomical references</h3>
       <ul>
