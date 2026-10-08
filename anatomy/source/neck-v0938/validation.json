@@ -1,0 +1,58 @@
+[
+  {
+    "side": "right",
+    "occipitalIJVContacts": 0,
+    "carotidContacts": {
+      "ICA cervical right": 0,
+      "External carotid": 0
+    },
+    "sharedJoinVertices": {
+      "vein.facial.right": {
+        "before": 49,
+        "after": 49
+      },
+      "vein.sigmoid.right": {
+        "before": 31,
+        "after": 31
+      },
+      "vein.inferior_petrosal.right": {
+        "before": 36,
+        "after": 36
+      },
+      "vein.anterior_condylar.right": {
+        "before": 28,
+        "after": 28
+      }
+    },
+    "boundaryEdgesBefore": 188,
+    "boundaryEdgesAfter": 188
+  },
+  {
+    "side": "left",
+    "occipitalIJVContacts": 0,
+    "carotidContacts": {
+      "ICA cervical left": 0,
+      "External carotid left": 0
+    },
+    "sharedJoinVertices": {
+      "vein.facial.left": {
+        "before": 44,
+        "after": 44
+      },
+      "vein.sigmoid.left": {
+        "before": 34,
+        "after": 34
+      },
+      "vein.inferior_petrosal.left": {
+        "before": 45,
+        "after": 45
+      },
+      "vein.anterior_condylar.left": {
+        "before": 37,
+        "after": 37
+      }
+    },
+    "boundaryEdgesBefore": 199,
+    "boundaryEdgesAfter": 199
+  }
+]

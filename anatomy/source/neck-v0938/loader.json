@@ -1,0 +1,31 @@
+{
+  "release": "0.9.38",
+  "passed": true,
+  "checks": [
+    {
+      "file": "complete-circulation.glb",
+      "labels": 599,
+      "triangles": 6622118,
+      "sha256": "e4cf22368fd568b790d057ec8a05ce30ad18bb90fc02a08bbb837f111caecde7",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    },
+    {
+      "file": "venous.glb",
+      "labels": 217,
+      "triangles": 1608735,
+      "sha256": "1ee365c56475caad2cb340bef5ab4f3e91a9a9acbd5f7f40ad56d0859dd4bad6",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    },
+    {
+      "file": "complete-anastomoses.glb",
+      "labels": 167,
+      "triangles": 265600,
+      "sha256": "eaa982cd58e6f3af428cc98fda37db64f6f03b1436d16733ef5e03e564d9d9a0",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    }
+  ],
+  "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+}

@@ -1,3 +1,3 @@
-Neurovascular Atlas v0.9.37
+Neurovascular Atlas v0.9.38
 
-Veins visible on startup. Information modal attribution: Jeremy Lynch, Sean Mcilhone. Removed the bilateral-pairs explanation. Includes uniform vascular colours and the v0.9.35 cavernous sinus rim repair. Use the included installer as before.
+Straightened upper cervical IJVs with preserved native tributary interfaces. Occipital arteries pass over the lateral venous surface. Corrected Sean McIlhone attribution. Includes previous changes. See docs/Neck_v0.9.38.md.

@@ -1,0 +1,51 @@
+{
+  "release": "0.9.38",
+  "changed": [
+    {
+      "node": "Occipital",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Occipital mastoid",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Occipital left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Occipital mastoid left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Occipital SCM branch right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Occipital SCM branch left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "vein.internal_jugular.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.internal_jugular.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "Occipital\u2013vertebral C1 right",
+      "file": "complete-anastomoses.glb"
+    },
+    {
+      "node": "Occipital\u2013vertebral C1 left",
+      "file": "complete-anastomoses.glb"
+    }
+  ],
+  "newLabels": [],
+  "baselineAssetHashes": {
+    "venous.glb": "55d33026b62c85a0d8b3235ecf3a5794d7a886b18948f9e406b4ba74fac196d0",
+    "complete-anastomoses.glb": "942178f7a86e23b1e1fc4f39c82f5681b0dec4e818f1d276c247aef2dd727fb1",
+    "complete-circulation.glb": "1c2fd280cd5bf1f70f37631122088d05c93e23efccb88216141a7aa5b93754dd"
+  }
+}

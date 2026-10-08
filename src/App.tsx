@@ -182,7 +182,7 @@ function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
     <h2 id="about-title">Neurovascular Atlas v{manifest.release}</h2>
     <p>An interactive 3D atlas of neurovascular anatomy. Vascular structures original, skull and brain from existing sources (see below).</p>
     <p>{counts.artery} unique arteries and {counts.vein} unique veins, sinuses and venous plexuses.</p>
-    <p>Jeremy Lynch, Sean Mcilhone</p>
+    <p>Jeremy Lynch, Sean McIlhone</p>
     <div className="about-credits" role="region" aria-label="Credits" tabIndex={0}>
       <h3>Anatomical references</h3>
       <ul>
