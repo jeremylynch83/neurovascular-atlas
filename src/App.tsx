@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
-import { geometrySubtrees, searchStructures } from './catalogue';
+import { geometrySubtrees, searchStructures, uniqueVesselCounts } from './catalogue';
 import { AnatomyEngine } from './engine';
 import { Description } from './Description';
 import { Loading } from './Loading';
@@ -176,12 +176,23 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect}:{open:boole
 }
 
 function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
+  const counts = uniqueVesselCounts(manifest.structures);
   return <div className="modal-scrim" onClick={onClose}><div className="about panel" role="dialog" aria-modal="true" aria-labelledby="about-title" onClick={(e)=>e.stopPropagation()}>
     <button className="detail-close" aria-label="Close information" onClick={onClose}>×</button>
     <h2 id="about-title">Neurovascular Atlas v{manifest.release}</h2>
-    <p>An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.</p>
-    <p>Authored by Jeremy Lynch, 2026.</p>
+    <p>An interactive 3D atlas of neurovascular anatomy. Vascular structures original, skull and brain from existing sources (see below).</p>
+    <p>{counts.artery} unique arteries and {counts.vein} unique veins, sinuses and venous plexuses. Bilateral pairs counted once.</p>
+    <p>Jeremy Lynch, 2026.</p>
     <div className="about-credits" role="region" aria-label="Credits" tabIndex={0}>
+      <h3>Anatomical references</h3>
+      <ul>
+        <li><strong>Jeremy Lynch, Shelley Renowden and Philip White</strong>, editors. <a href="https://academic.oup.com/book/63036" target="_blank" rel="noopener noreferrer"><em>Neurointervention</em></a>. Oxford Specialist Handbooks. Oxford University Press, 2026.</li>
+        <li><strong>Neil M. Borden</strong>. <em>3D Angiographic Atlas of Neurovascular Anatomy and Pathology</em>. 2006.</li>
+        <li><strong>Hiro Kiyosue</strong>, editor. <em>External Carotid Artery: Imaging Anatomy Atlas for Endovascular Treatment</em>. 2020.</li>
+        <li><strong>Gianni Boris Bradač</strong>. <em>Applied Cerebral Angiography: Normal Anatomy and Vascular Pathology</em>. 2017.</li>
+        <li><strong><a href="https://neuroangio.org/" target="_blank" rel="noopener noreferrer">Neuroangio.org</a></strong>, by Maksim Shapiro, MD: angiographic anatomy, arterial relationships, venous drainage and anatomical variants.</li>
+        <li><strong>BodyParts3D</strong>, © The Database Center for Life Science: source geometry for bony anatomical context. CC BY-SA 2.1 Japan.</li><li><strong><a href="https://www.z-anatomy.com/" target="_blank" rel="noopener noreferrer">Z-Anatomy</a></strong>: brain, ventricles, falx and tentorium, registered to this atlas. Adapted surfaces: CC BY-SA 4.0, with original BodyParts3D credit retained. <a href={`${import.meta.env.BASE_URL}anatomy/licenses/Z_Anatomy_Source_Licence.txt`} target="_blank" rel="noopener noreferrer">Source licence and credits</a>.</li>
+      </ul>
       <h3>Software credits</h3>
       <ul>
         <li><strong>React and React DOM</strong>: user interface. MIT licence.</li>
@@ -194,17 +205,6 @@ function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
         <li><strong>Trimesh</strong>: mesh inspection and validation. MIT licence.</li>
         <li><strong>Inter Tight, JetBrains Mono and Source Serif 4</strong>, distributed through Fontsource: interface typography. SIL Open Font Licence 1.1.</li>
       </ul>
-      <h3>Anatomical model credits</h3>
-      <ul><li><strong>BodyParts3D</strong>, © The Database Center for Life Science: source geometry for bony anatomical context. CC BY-SA 2.1 Japan.</li><li><strong><a href="https://www.z-anatomy.com/" target="_blank" rel="noopener noreferrer">Z-Anatomy</a></strong>: brain, ventricles, falx and tentorium, registered to this atlas. Adapted surfaces: CC BY-SA 4.0, with original BodyParts3D credit retained. <a href={`${import.meta.env.BASE_URL}anatomy/licenses/Z_Anatomy_Source_Licence.txt`} target="_blank" rel="noopener noreferrer">Source licence and credits</a>.</li></ul>
-      <h3>Anatomical references</h3>
-      <ul>
-        <li><strong>Jeremy Lynch, Shelley Renowden and Philip White</strong>, editors. <a href="https://academic.oup.com/book/63036" target="_blank" rel="noopener noreferrer"><em>Neurointervention</em></a>. Oxford Specialist Handbooks. Oxford University Press, 2026.</li>
-        <li><strong>Neil M. Borden</strong>. <em>3D Angiographic Atlas of Neurovascular Anatomy and Pathology</em>. 2006.</li>
-        <li><strong>Hiro Kiyosue</strong>, editor. <em>External Carotid Artery: Imaging Anatomy Atlas for Endovascular Treatment</em>. 2020.</li>
-        <li><strong>Gianni Boris Bradač</strong>. <em>Applied Cerebral Angiography: Normal Anatomy and Vascular Pathology</em>. 2017.</li>
-        <li><strong><a href="https://neuroangio.org/" target="_blank" rel="noopener noreferrer">Neuroangio.org</a></strong>, by Maksim Shapiro, MD: angiographic anatomy, arterial relationships, venous drainage and anatomical variants.</li>
-      </ul>
-      <p>Anatomical references inform the atlas’s reconstructions and descriptions. Referenced book figures are not reproduced in the application.</p>
     </div>
     <button className="primary" onClick={onClose}>Close</button>
   </div></div>;

@@ -1,0 +1,88 @@
+{
+  "release": "0.9.35",
+  "checks": {
+    "vein.cavernous.right": {
+      "connectedComponents": 1,
+      "unmatchedBoundaryEdges": 0,
+      "degenerateTriangles": 0,
+      "finite": true
+    },
+    "vein.cavernous.left": {
+      "connectedComponents": 1,
+      "unmatchedBoundaryEdges": 0,
+      "degenerateTriangles": 0,
+      "finite": true
+    },
+    "unchangedFiles": {
+      "arteriesBoneBrain": true,
+      "scope": "Only venous.glb is replaced; compare SHA256 in export report."
+    },
+    "tributaryJoins": [
+      {
+        "side": "right",
+        "vein": "superior_petrosal",
+        "sharedVertices": 37
+      },
+      {
+        "side": "right",
+        "vein": "inferior_petrosal",
+        "sharedVertices": 43
+      },
+      {
+        "side": "right",
+        "vein": "superior_ophthalmic",
+        "sharedVertices": 44
+      },
+      {
+        "side": "right",
+        "vein": "sphenoparietal",
+        "sharedVertices": 58
+      },
+      {
+        "side": "right",
+        "vein": "superficial_middle_cerebral",
+        "sharedVertices": 110
+      },
+      {
+        "side": "right",
+        "vein": "ovale_emissary",
+        "sharedVertices": 54
+      },
+      {
+        "side": "left",
+        "vein": "superior_petrosal",
+        "sharedVertices": 40
+      },
+      {
+        "side": "left",
+        "vein": "inferior_petrosal",
+        "sharedVertices": 46
+      },
+      {
+        "side": "left",
+        "vein": "superior_ophthalmic",
+        "sharedVertices": 41
+      },
+      {
+        "side": "left",
+        "vein": "sphenoparietal",
+        "sharedVertices": 59
+      },
+      {
+        "side": "left",
+        "vein": "superficial_middle_cerebral",
+        "sharedVertices": 117
+      },
+      {
+        "side": "left",
+        "vein": "ovale_emissary",
+        "sharedVertices": 53
+      }
+    ]
+  },
+  "limitations": [
+    "Small arterial branches may meet or cross the sinus boundary at their exit points; a combined capped arterial-network clearance subtraction is no longer used.",
+    "Native petrous/canal anatomy outside the repair is unchanged."
+  ],
+  "passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "release": "0.9.35",
+  "passed": true,
+  "checks": [
+    {
+      "file": "venous.glb",
+      "labels": 217,
+      "triangles": 1588111,
+      "sha256": "55d33026b62c85a0d8b3235ecf3a5794d7a886b18948f9e406b4ba74fac196d0",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    }
+  ],
+  "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+}

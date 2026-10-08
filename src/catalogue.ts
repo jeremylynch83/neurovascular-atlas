@@ -1,5 +1,26 @@
 import type { AnatomyManifest, Structure } from './types';
 
+// Count modelled vessels, folding segment meshes into their whole vessel and
+// pairing bilateral names. Potential connection overlays are not vessels.
+export function uniqueVesselCounts(structures: Structure[]): { artery: number; vein: number } {
+  const byId = new Map(structures.map(s => [s.id, s]));
+  const names = { artery: new Set<string>(), vein: new Set<string>() };
+  for (let vessel of structures) {
+    if ((vessel.system !== 'artery' && vessel.system !== 'vein') || !vessel.asset || vessel.displayGroup === 'anastomoses') continue;
+    const system = vessel.system;
+    const visited = new Set<string>();
+    while (vessel.segmentOf && !visited.has(vessel.id)) {
+      visited.add(vessel.id);
+      const owner = byId.get(vessel.segmentOf);
+      if (!owner) break;
+      vessel = owner;
+    }
+    const name = vessel.name.replace(/\b(left|right|midline)\b/gi, '').replace(/[\s,]+/g, ' ').trim().toLowerCase();
+    names[system].add(name);
+  }
+  return { artery: names.artery.size, vein: names.vein.size };
+}
+
 // Segment ownership can nest: whole ACA -> pericallosal -> A2-A5.
 // Ordinary arterial branches are not members of the parent vessel's surface.
 export function segmentGeometryMembers(structures: Structure[]): Map<string, Set<string>> {

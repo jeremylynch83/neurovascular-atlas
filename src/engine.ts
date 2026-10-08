@@ -9,6 +9,12 @@ import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, t
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
 
+function structureColour(structure: Structure): number | string {
+  return structure.system === 'artery' || structure.system === 'vein'
+    ? COLOURS[structure.system]
+    : structure.color ?? COLOURS[structure.system];
+}
+
 type Entry = { structure: Structure; mesh: THREE.Mesh; baseOpacity: number; opaqueMaterial?: THREE.MeshStandardMaterial; ghostMaterial?: THREE.MeshLambertMaterial; batch?: { mesh: THREE.BatchedMesh; instanceId: number } };
 
 function gltfNameCandidates(name: string): string[] {
@@ -205,7 +211,7 @@ export class AnatomyEngine {
         geometry.computeBoundingBox(); geometry.computeBoundingSphere();
         this.bounds.union(geometry.boundingBox!);
         const skullContext = structure.system === 'bone' && structure.provenance.sourceType === 'legacy-placeholder';
-        const material = new THREE.MeshStandardMaterial({ color: structure.color ?? COLOURS[structure.system], roughness: structure.system === 'bone' ? 0.72 : 0.37, metalness: 0, side: skullContext ? THREE.FrontSide : THREE.DoubleSide });
+        const material = new THREE.MeshStandardMaterial({ color: structureColour(structure), roughness: structure.system === 'bone' ? 0.72 : 0.37, metalness: 0, side: skullContext ? THREE.FrontSide : THREE.DoubleSide });
         const mesh = new THREE.Mesh(geometry, material);
         mesh.name = structure.id;
         this.root.add(mesh);
@@ -260,7 +266,7 @@ export class AnatomyEngine {
         // Copy every position, normal and triangle exactly. The individual
         // mesh stays available for picking, bounds, highlighting and ghosting.
         const instanceId = batch.addInstance(batch.addGeometry(e.mesh.geometry));
-        batch.setColorAt(instanceId, new THREE.Color(e.structure.color ?? COLOURS[e.structure.system]));
+        batch.setColorAt(instanceId, new THREE.Color(structureColour(e.structure)));
         e.batch = { mesh: batch, instanceId };
       }
       batch.computeBoundingBox(); batch.computeBoundingSphere();
@@ -363,8 +369,9 @@ export class AnatomyEngine {
         ? (e.ghostMaterial ??= new THREE.MeshLambertMaterial({ side: opaqueMaterial.side, transparent: true, forceSinglePass: true }))
         : opaqueMaterial;
       e.mesh.material = mat;
-      mat.color.set(selected ? 0xf2b84b : e.structure.color ?? COLOURS[e.structure.system]);
-      mat.emissive.setHex(selected ? 0x4a2b00 : 0x000000);
+      const vascular = e.structure.system === 'artery' || e.structure.system === 'vein';
+      mat.color.set(selected && !vascular ? 0xf2b84b : structureColour(e.structure));
+      mat.emissive.setHex(selected ? (e.structure.system === 'artery' ? 0x4a0805 : e.structure.system === 'vein' ? 0x071b40 : 0x4a2b00) : 0x000000);
       if (mat.transparent !== transparent) { mat.transparent = transparent; mat.needsUpdate = true; }
       mat.opacity = opacity; mat.depthWrite = opacity > 0.4;
       this.updateClipping(mat);

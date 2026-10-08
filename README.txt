@@ -1,3 +1,3 @@
-Neurovascular Atlas v0.9.34
+Neurovascular Atlas v0.9.36
 
-Cavernous sinus surface repair. See docs/ICA_CS_v0.9.34.md. Use the included installer as before.
+All arteries render red and veins blue, including selected vessels. Updated information modal with sources, credits and distinct vessel counts. Includes the v0.9.35 cavernous sinus rim repair. Use the included installer as before.

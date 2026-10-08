@@ -1,0 +1,90 @@
+{
+  "release": "0.9.35",
+  "changed": [
+    "vein.cavernous.right",
+    "vein.cavernous.left",
+    "vein.superior_petrosal.right",
+    "vein.inferior_petrosal.right",
+    "vein.superior_ophthalmic.right",
+    "vein.sphenoparietal.right",
+    "vein.superficial_middle_cerebral.right",
+    "vein.ovale_emissary.right",
+    "vein.superior_petrosal.left",
+    "vein.inferior_petrosal.left",
+    "vein.superior_ophthalmic.left",
+    "vein.sphenoparietal.left",
+    "vein.superficial_middle_cerebral.left",
+    "vein.ovale_emissary.left",
+    "vein.anterior_intercavernous",
+    "vein.posterior_intercavernous",
+    "vein.basilar_plexus"
+  ],
+  "method": "Restore compact outer chamber volume; retain primary ICA channel; union and fair venous wall; repartition and graft native remote collars",
+  "splices": [
+    {
+      "name": "vein.superior_petrosal.right",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.inferior_petrosal.right",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.superior_ophthalmic.right",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.sphenoparietal.right",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.superficial_middle_cerebral.right",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.ovale_emissary.right",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.superior_petrosal.left",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.inferior_petrosal.left",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.superior_ophthalmic.left",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.sphenoparietal.left",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.superficial_middle_cerebral.left",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.ovale_emissary.left",
+      "localRings": 1,
+      "nativeRings": 1
+    },
+    {
+      "name": "vein.basilar_plexus",
+      "localRings": 5,
+      "nativeRings": 5
+    }
+  ]
+}
