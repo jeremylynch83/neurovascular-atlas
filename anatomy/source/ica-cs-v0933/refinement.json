@@ -1,0 +1,166 @@
+{
+  "posteriorHeight": [
+    {
+      "side": "right",
+      "slices": [
+        {
+          "yMm": -54,
+          "roofBeforeMm": 72.479736328125,
+          "roofAfterMm": 68.82527923583984,
+          "meanRoofReductionMm": 3.4584007909742454
+        },
+        {
+          "yMm": -50,
+          "roofBeforeMm": 75.4328384399414,
+          "roofAfterMm": 74.6554946899414,
+          "meanRoofReductionMm": 4.035634289990674
+        },
+        {
+          "yMm": -46,
+          "roofBeforeMm": 77.223876953125,
+          "roofAfterMm": 77.18636322021484,
+          "meanRoofReductionMm": 1.6672117888037838
+        },
+        {
+          "yMm": -42,
+          "roofBeforeMm": 78.09405517578125,
+          "roofAfterMm": 77.46354675292969,
+          "meanRoofReductionMm": 1.6202157454057173
+        },
+        {
+          "yMm": -38,
+          "roofBeforeMm": 78.07725524902344,
+          "roofAfterMm": 77.8934097290039,
+          "meanRoofReductionMm": 0.07685680603713133
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "slices": [
+        {
+          "yMm": -54,
+          "roofBeforeMm": 72.4815673828125,
+          "roofAfterMm": 68.8212890625,
+          "meanRoofReductionMm": 3.5104412699854652
+        },
+        {
+          "yMm": -50,
+          "roofBeforeMm": 75.4328384399414,
+          "roofAfterMm": 75.16104125976562,
+          "meanRoofReductionMm": 3.7044628933743313
+        },
+        {
+          "yMm": -46,
+          "roofBeforeMm": 77.223876953125,
+          "roofAfterMm": 77.10986328125,
+          "meanRoofReductionMm": 1.4747047919731635
+        },
+        {
+          "yMm": -42,
+          "roofBeforeMm": 78.0925521850586,
+          "roofAfterMm": 77.43756103515625,
+          "meanRoofReductionMm": 1.6462744596962617
+        },
+        {
+          "yMm": -38,
+          "roofBeforeMm": 78.07565307617188,
+          "roofAfterMm": 77.89508056640625,
+          "meanRoofReductionMm": 0.09642140249188026
+        }
+      ]
+    }
+  ],
+  "smoothing": [
+    {
+      "group": "arterial",
+      "iterations": 18,
+      "activeVertices": 44358,
+      "meanLaplacianBeforeMm": 0.055570183468783355,
+      "meanLaplacianAfterMm": 0.030431627537793885,
+      "maximumDisplacementMm": 0.05500000000000762
+    },
+    {
+      "group": "venous",
+      "iterations": 18,
+      "activeVertices": 34234,
+      "meanLaplacianBeforeMm": 0.10590738205679681,
+      "meanLaplacianAfterMm": 0.04476141007120164,
+      "maximumDisplacementMm": 4.580701576336861
+    }
+  ],
+  "finalPosteriorHeight": [
+    {
+      "side": "right",
+      "slices": [
+        {
+          "yMm": -54,
+          "meanUpperSurfaceDisplacementMm": 1.713769869039987,
+          "roofBeforeMm": 72.479736328125,
+          "roofAfterMm": 70.65251159667969
+        },
+        {
+          "yMm": -50,
+          "meanUpperSurfaceDisplacementMm": 2.023088691648373,
+          "roofBeforeMm": 75.4328384399414,
+          "roofAfterMm": 74.89491271972656
+        },
+        {
+          "yMm": -46,
+          "meanUpperSurfaceDisplacementMm": 0.8336060367413421,
+          "roofBeforeMm": 77.223876953125,
+          "roofAfterMm": 77.20512390136719
+        },
+        {
+          "yMm": -42,
+          "meanUpperSurfaceDisplacementMm": 0.7968721308259883,
+          "roofBeforeMm": 78.09405517578125,
+          "roofAfterMm": 77.48924255371094
+        },
+        {
+          "yMm": -38,
+          "meanUpperSurfaceDisplacementMm": 0.03506930511776764,
+          "roofBeforeMm": 78.07725524902344,
+          "roofAfterMm": 77.95195770263672
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "slices": [
+        {
+          "yMm": -54,
+          "meanUpperSurfaceDisplacementMm": 1.7381024601483586,
+          "roofBeforeMm": 72.4815673828125,
+          "roofAfterMm": 70.65142822265625
+        },
+        {
+          "yMm": -50,
+          "meanUpperSurfaceDisplacementMm": 1.8608199190502324,
+          "roofBeforeMm": 75.4328384399414,
+          "roofAfterMm": 75.17085266113281
+        },
+        {
+          "yMm": -46,
+          "meanUpperSurfaceDisplacementMm": 0.7373524455281047,
+          "roofBeforeMm": 77.223876953125,
+          "roofAfterMm": 77.1668701171875
+        },
+        {
+          "yMm": -42,
+          "meanUpperSurfaceDisplacementMm": 0.802630400854694,
+          "roofBeforeMm": 78.0925521850586,
+          "roofAfterMm": 77.4753646850586
+        },
+        {
+          "yMm": -38,
+          "meanUpperSurfaceDisplacementMm": 0.044766567721225246,
+          "roofBeforeMm": 78.07565307617188,
+          "roofAfterMm": 77.95238494873047
+        }
+      ]
+    }
+  ],
+  "acceptedVenousDisplacementFraction": 0.5,
+  "initialUndampedMeasurements": true
+}

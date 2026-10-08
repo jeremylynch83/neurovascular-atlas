@@ -12,6 +12,7 @@ const changed=new Map(revision.changed.map(r=>[r.node,r]));
 
 const validation=JSON.parse(fs.readFileSync(path.join(candidate,'validation.json')));assert(validation.passed);assert(validation.checks.meshQuality.passed);assert(validation.checks.physicalJunctions.passed);assert(validation.checks.fullSurfaceConstraints.passed);assert(validation.checks.boneClearance.passed);assert(validation.checks.remoteVenousSplices.passed);
 
+const local=JSON.parse(fs.readFileSync(path.join(candidate,'independent-surface-check.json')));assert(local.every(r=>r.sinusSelfIntersections===0&&Object.values(r.localArterialBranchSinusContacts).every(n=>n===0)),'Local arterial-branch/sinus clearance required');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const fileHashes={},checks=[];
 for(const filename of [...new Set(revision.changed.map(r=>r.file))]){

@@ -1,0 +1,23 @@
+{
+  "release": "0.9.33",
+  "passed": true,
+  "checks": [
+    {
+      "file": "complete-circulation.glb",
+      "labels": 599,
+      "triangles": 6622127,
+      "sha256": "1c2fd280cd5bf1f70f37631122088d05c93e23efccb88216141a7aa5b93754dd",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    },
+    {
+      "file": "venous.glb",
+      "labels": 217,
+      "triangles": 1613168,
+      "sha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    }
+  ],
+  "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+}

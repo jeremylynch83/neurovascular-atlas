@@ -1,7 +1,7 @@
 from model import *
 import hashlib,shutil
 r=APP;m=json.load(open(r/'anatomy/generated/complete_manifest.json'));changed=set(a['node'] for a in json.load(open(OUT/'revision.json'))['changed']);hashes={'models/'+p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (r/'public/anatomy/models').glob('*.glb')};v=json.load(open(OUT/'validation.json'));cal={a['side']:a for a in v['checks']['calibreAndGenu']['sides']};extra={a['side']:a for a in v['checks']['fullSurfaceConstraints']['sides']};bound={a['side']:a for a in json.load(open(OUT/'boundaries.json'))}
-m['release']='0.9.32';m['icaCavernousRefinement']={'version':'0.9.32','baseline':'0.9.31','method':'Joint ICA loop and independent bone-fitted cavernous chamber; fixed ophthalmic arteries; remeshed parent with native ostial collars','reviewStatus':'requires-anatomical-review','evidence':'docs/ICA_CS_v0.9.32.md','validation': 'anatomy/source/ica-cs-v0932/validation.json'}
+m['assetRevisions']={file:sha[:20] for file,sha in hashes.items()};m['assetByteSizes']={file:(r/'public/anatomy'/file).stat().st_size for file in hashes};m['release']='0.9.32';m['icaCavernousRefinement']={'version':'0.9.32','baseline':'0.9.31','method':'Joint ICA loop and independent bone-fitted cavernous chamber; fixed ophthalmic arteries; remeshed parent with native ostial collars','reviewStatus':'requires-anatomical-review','evidence':'docs/ICA_CS_v0.9.32.md','validation': 'anatomy/source/ica-cs-v0932/validation.json'}
 for s in m['structures']:
  if 'vesselCourse' not in s:continue
  c=s['vesselCourse'];c['geometrySha256']=hashes[s['asset']['file']];node=s['asset']['node']

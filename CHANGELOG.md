@@ -1,3 +1,7 @@
+# v0.9.33: smaller posterior sinus and smoother local connections
+
+Reduced posterior venous bulk, constrained fairing of connected arterial/venous surfaces, fixed ophthalmic anatomy and retained native joins. Includes final exported-mesh comparisons and measured local checks. See docs/ICA_CS_v0.9.33.md.
+
 # v0.9.32 — ICA / cavernous sinus fit
 
 Joint bilateral ICA loop and compact bone-fitted CS reconstruction to the approved sketch. Fixed ophthalmic meshes and native ostial collars; retained lower source course and distal wall, physical branch/venous joins, unchanged bone and brain. Reassigned Vidian ICA contributions to their retained lower ICA label. Geometry, export and production build checks pass within the documented local scope. Dura and lower skull-base canals remain unresolved. See docs/ICA_CS_v0.9.32.md.

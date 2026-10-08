@@ -1,0 +1,1282 @@
+{
+  "release": "0.9.33",
+  "passed": true,
+  "checks": {
+    "protectedOphthalmic": {
+      "passed": true,
+      "results": [
+        {
+          "name": "Ophthalmic right",
+          "exact": true
+        },
+        {
+          "name": "Superior hypophyseal right",
+          "exact": true
+        },
+        {
+          "name": "Native ostial parent faces right",
+          "exact": true,
+          "vertices": 257
+        },
+        {
+          "name": "Ophthalmic left",
+          "exact": true
+        },
+        {
+          "name": "Superior hypophyseal left",
+          "exact": true
+        },
+        {
+          "name": "Native ostial parent faces left",
+          "exact": true,
+          "vertices": 252
+        }
+      ]
+    },
+    "physicalJunctions": {
+      "passed": true,
+      "junctions": [
+        {
+          "a": "Ophthalmic right",
+          "b": "ICA paraophthalmic right",
+          "sharedVertices": 112,
+          "expectedAtLeast": 112,
+          "passed": true
+        },
+        {
+          "a": "Superior hypophyseal right",
+          "b": "ICA paraophthalmic right",
+          "sharedVertices": 80,
+          "expectedAtLeast": 80,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk right",
+          "b": "ICA cavernous right",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk right",
+          "b": "ICA cavernous right",
+          "sharedVertices": 72,
+          "expectedAtLeast": 72,
+          "passed": true
+        },
+        {
+          "a": "ICA cavernous right",
+          "b": "ICA paraophthalmic right",
+          "sharedVertices": 293,
+          "expectedAtLeast": 293,
+          "passed": true
+        },
+        {
+          "a": "ICA petrous right",
+          "b": "ICA cavernous right",
+          "sharedVertices": 155,
+          "expectedAtLeast": 155,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_petrosal.right",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 40,
+          "expectedAtLeast": 40,
+          "passed": true
+        },
+        {
+          "a": "vein.inferior_petrosal.right",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 52,
+          "expectedAtLeast": 52,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_ophthalmic.right",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 57,
+          "expectedAtLeast": 57,
+          "passed": true
+        },
+        {
+          "a": "vein.sphenoparietal.right",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 19,
+          "expectedAtLeast": 19,
+          "passed": true
+        },
+        {
+          "a": "vein.superficial_middle_cerebral.right",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "vein.ovale_emissary.right",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 51,
+          "expectedAtLeast": 51,
+          "passed": true
+        },
+        {
+          "a": "vein.anterior_intercavernous",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 95,
+          "expectedAtLeast": 95,
+          "passed": true
+        },
+        {
+          "a": "vein.posterior_intercavernous",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 24,
+          "expectedAtLeast": 24,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.cavernous.right",
+          "sharedVertices": 131,
+          "expectedAtLeast": 131,
+          "passed": true
+        },
+        {
+          "a": "Ophthalmic left",
+          "b": "ICA paraophthalmic left",
+          "sharedVertices": 110,
+          "expectedAtLeast": 110,
+          "passed": true
+        },
+        {
+          "a": "Superior hypophyseal left",
+          "b": "ICA paraophthalmic left",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk left",
+          "b": "ICA cavernous left",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk left",
+          "b": "ICA cavernous left",
+          "sharedVertices": 76,
+          "expectedAtLeast": 76,
+          "passed": true
+        },
+        {
+          "a": "ICA cavernous left",
+          "b": "ICA paraophthalmic left",
+          "sharedVertices": 329,
+          "expectedAtLeast": 329,
+          "passed": true
+        },
+        {
+          "a": "ICA petrous left",
+          "b": "ICA cavernous left",
+          "sharedVertices": 149,
+          "expectedAtLeast": 149,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_petrosal.left",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 39,
+          "expectedAtLeast": 39,
+          "passed": true
+        },
+        {
+          "a": "vein.inferior_petrosal.left",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 50,
+          "expectedAtLeast": 50,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_ophthalmic.left",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 72,
+          "expectedAtLeast": 72,
+          "passed": true
+        },
+        {
+          "a": "vein.sphenoparietal.left",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 24,
+          "expectedAtLeast": 24,
+          "passed": true
+        },
+        {
+          "a": "vein.superficial_middle_cerebral.left",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 94,
+          "expectedAtLeast": 94,
+          "passed": true
+        },
+        {
+          "a": "vein.ovale_emissary.left",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 42,
+          "expectedAtLeast": 42,
+          "passed": true
+        },
+        {
+          "a": "vein.anterior_intercavernous",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 98,
+          "expectedAtLeast": 98,
+          "passed": true
+        },
+        {
+          "a": "vein.posterior_intercavernous",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 18,
+          "expectedAtLeast": 18,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.cavernous.left",
+          "sharedVertices": 135,
+          "expectedAtLeast": 135,
+          "passed": true
+        },
+        {
+          "a": "Maxillary",
+          "b": "Artery of foramen rotundum",
+          "sharedVertices": 101,
+          "expectedAtLeast": 101,
+          "passed": true
+        },
+        {
+          "a": "Maxillary",
+          "b": "Accessory meningeal",
+          "sharedVertices": 104,
+          "expectedAtLeast": 104,
+          "passed": true
+        },
+        {
+          "a": "Middle meningeal",
+          "b": "MMA cavernous",
+          "sharedVertices": 107,
+          "expectedAtLeast": 107,
+          "passed": true
+        },
+        {
+          "a": "Hypoglossal branch",
+          "b": "Medial clival",
+          "sharedVertices": 146,
+          "expectedAtLeast": 146,
+          "passed": true
+        },
+        {
+          "a": "Jugular branch",
+          "b": "Lateral clival",
+          "sharedVertices": 152,
+          "expectedAtLeast": 152,
+          "passed": true
+        },
+        {
+          "a": "ICA paraophthalmic right",
+          "b": "Ophthalmic right",
+          "sharedVertices": 112,
+          "expectedAtLeast": 112,
+          "passed": true
+        },
+        {
+          "a": "ICA paraophthalmic right",
+          "b": "Superior hypophyseal right",
+          "sharedVertices": 80,
+          "expectedAtLeast": 80,
+          "passed": true
+        },
+        {
+          "a": "ICA cavernous right",
+          "b": "Meningohypophyseal trunk right",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk right",
+          "b": "Tentorial marginal right",
+          "sharedVertices": 42,
+          "expectedAtLeast": 42,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk right",
+          "b": "Dorsal meningeal right",
+          "sharedVertices": 38,
+          "expectedAtLeast": 38,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk right",
+          "b": "Inferior hypophyseal right",
+          "sharedVertices": 64,
+          "expectedAtLeast": 64,
+          "passed": true
+        },
+        {
+          "a": "ICA cavernous right",
+          "b": "Inferolateral trunk right",
+          "sharedVertices": 72,
+          "expectedAtLeast": 72,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk right",
+          "b": "ILT anterior branch right",
+          "sharedVertices": 85,
+          "expectedAtLeast": 85,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk right",
+          "b": "ILT posterior branch right",
+          "sharedVertices": 69,
+          "expectedAtLeast": 69,
+          "passed": true
+        },
+        {
+          "a": "ICA petrous right",
+          "b": "Vidian ICA contribution right",
+          "sharedVertices": 70,
+          "expectedAtLeast": 70,
+          "passed": true
+        },
+        {
+          "a": "ICA paraophthalmic left",
+          "b": "Ophthalmic left",
+          "sharedVertices": 110,
+          "expectedAtLeast": 110,
+          "passed": true
+        },
+        {
+          "a": "ICA paraophthalmic left",
+          "b": "Superior hypophyseal left",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "ICA cavernous left",
+          "b": "Meningohypophyseal trunk left",
+          "sharedVertices": 78,
+          "expectedAtLeast": 78,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk left",
+          "b": "Tentorial marginal left",
+          "sharedVertices": 53,
+          "expectedAtLeast": 53,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk left",
+          "b": "Dorsal meningeal left",
+          "sharedVertices": 38,
+          "expectedAtLeast": 38,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk left",
+          "b": "Inferior hypophyseal left",
+          "sharedVertices": 61,
+          "expectedAtLeast": 61,
+          "passed": true
+        },
+        {
+          "a": "ICA cavernous left",
+          "b": "Inferolateral trunk left",
+          "sharedVertices": 76,
+          "expectedAtLeast": 76,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk left",
+          "b": "ILT anterior branch left",
+          "sharedVertices": 82,
+          "expectedAtLeast": 82,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk left",
+          "b": "ILT posterior branch left",
+          "sharedVertices": 69,
+          "expectedAtLeast": 69,
+          "passed": true
+        },
+        {
+          "a": "ICA petrous left",
+          "b": "Vidian ICA contribution left",
+          "sharedVertices": 70,
+          "expectedAtLeast": 70,
+          "passed": true
+        },
+        {
+          "a": "Maxillary left",
+          "b": "Artery of foramen rotundum left",
+          "sharedVertices": 101,
+          "expectedAtLeast": 101,
+          "passed": true
+        },
+        {
+          "a": "Maxillary left",
+          "b": "Accessory meningeal left",
+          "sharedVertices": 104,
+          "expectedAtLeast": 104,
+          "passed": true
+        },
+        {
+          "a": "Middle meningeal left",
+          "b": "MMA cavernous left",
+          "sharedVertices": 107,
+          "expectedAtLeast": 107,
+          "passed": true
+        },
+        {
+          "a": "Hypoglossal branch left",
+          "b": "Medial clival left",
+          "sharedVertices": 146,
+          "expectedAtLeast": 146,
+          "passed": true
+        },
+        {
+          "a": "Jugular branch left",
+          "b": "Lateral clival left",
+          "sharedVertices": 152,
+          "expectedAtLeast": 152,
+          "passed": true
+        },
+        {
+          "a": "ICA petrous right",
+          "b": "Mandibular ICA branch right",
+          "sharedVertices": 63,
+          "expectedAtLeast": 63,
+          "passed": true
+        },
+        {
+          "a": "ICA petrous left",
+          "b": "Mandibular ICA branch left",
+          "sharedVertices": 62,
+          "expectedAtLeast": 62,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk right",
+          "b": "Basal tentorial MHT branch right",
+          "sharedVertices": 156,
+          "expectedAtLeast": 156,
+          "passed": true
+        },
+        {
+          "a": "Meningohypophyseal trunk left",
+          "b": "Basal tentorial MHT branch left",
+          "sharedVertices": 107,
+          "expectedAtLeast": 107,
+          "passed": true
+        },
+        {
+          "a": "Dorsal meningeal right",
+          "b": "Medial clival MHT branch right",
+          "sharedVertices": 90,
+          "expectedAtLeast": 90,
+          "passed": true
+        },
+        {
+          "a": "Dorsal meningeal left",
+          "b": "Medial clival MHT branch left",
+          "sharedVertices": 88,
+          "expectedAtLeast": 88,
+          "passed": true
+        },
+        {
+          "a": "Dorsal meningeal right",
+          "b": "Lateral clival MHT branch right",
+          "sharedVertices": 87,
+          "expectedAtLeast": 87,
+          "passed": true
+        },
+        {
+          "a": "Dorsal meningeal left",
+          "b": "Lateral clival MHT branch left",
+          "sharedVertices": 88,
+          "expectedAtLeast": 88,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk right",
+          "b": "ILT superior ramus right",
+          "sharedVertices": 94,
+          "expectedAtLeast": 94,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk left",
+          "b": "ILT superior ramus left",
+          "sharedVertices": 102,
+          "expectedAtLeast": 102,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk right",
+          "b": "ILT anterolateral ramus right",
+          "sharedVertices": 86,
+          "expectedAtLeast": 86,
+          "passed": true
+        },
+        {
+          "a": "Inferolateral trunk left",
+          "b": "ILT anterolateral ramus left",
+          "sharedVertices": 90,
+          "expectedAtLeast": 90,
+          "passed": true
+        },
+        {
+          "a": "MMA cavernous",
+          "b": "MMA anterior cavernous right",
+          "sharedVertices": 102,
+          "expectedAtLeast": 102,
+          "passed": true
+        },
+        {
+          "a": "MMA cavernous left",
+          "b": "MMA anterior cavernous left",
+          "sharedVertices": 101,
+          "expectedAtLeast": 101,
+          "passed": true
+        },
+        {
+          "a": "MMA cavernous",
+          "b": "MMA posterior cavernous right",
+          "sharedVertices": 98,
+          "expectedAtLeast": 98,
+          "passed": true
+        },
+        {
+          "a": "MMA cavernous left",
+          "b": "MMA posterior cavernous left",
+          "sharedVertices": 98,
+          "expectedAtLeast": 98,
+          "passed": true
+        },
+        {
+          "a": "Accessory meningeal",
+          "b": "Accessory meningeal anterior tubal right",
+          "sharedVertices": 100,
+          "expectedAtLeast": 100,
+          "passed": true
+        },
+        {
+          "a": "Accessory meningeal left",
+          "b": "Accessory meningeal anterior tubal left",
+          "sharedVertices": 102,
+          "expectedAtLeast": 102,
+          "passed": true
+        },
+        {
+          "a": "Accessory meningeal",
+          "b": "Accessory meningeal posterior intracranial right",
+          "sharedVertices": 235,
+          "expectedAtLeast": 235,
+          "passed": true
+        },
+        {
+          "a": "Accessory meningeal left",
+          "b": "Accessory meningeal posterior intracranial left",
+          "sharedVertices": 102,
+          "expectedAtLeast": 102,
+          "passed": true
+        },
+        {
+          "a": "Maxillary",
+          "b": "Artery of superior orbital fissure right",
+          "sharedVertices": 79,
+          "expectedAtLeast": 79,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_petrosal.right",
+          "b": "vein.sigmoid.right",
+          "sharedVertices": 34,
+          "expectedAtLeast": 34,
+          "passed": true
+        },
+        {
+          "a": "vein.inferior_petrosal.right",
+          "b": "vein.internal_jugular.right",
+          "sharedVertices": 36,
+          "expectedAtLeast": 36,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_petrosal_vein.right",
+          "b": "vein.superior_petrosal.right",
+          "sharedVertices": 298,
+          "expectedAtLeast": 298,
+          "passed": true
+        },
+        {
+          "a": "vein.superficial_middle_cerebral.right",
+          "b": "vein.trolard.right",
+          "sharedVertices": 30,
+          "expectedAtLeast": 30,
+          "passed": true
+        },
+        {
+          "a": "vein.superficial_middle_cerebral.right",
+          "b": "vein.labbe.right",
+          "sharedVertices": 38,
+          "expectedAtLeast": 38,
+          "passed": true
+        },
+        {
+          "a": "vein.cavernous.right",
+          "b": "vein.superior_petrosal.right",
+          "sharedVertices": 40,
+          "expectedAtLeast": 40,
+          "passed": true
+        },
+        {
+          "a": "vein.cavernous.right",
+          "b": "vein.inferior_petrosal.right",
+          "sharedVertices": 52,
+          "expectedAtLeast": 52,
+          "passed": true
+        },
+        {
+          "a": "vein.ovale_emissary.right",
+          "b": "vein.pterygoid_plexus.right",
+          "sharedVertices": 20,
+          "expectedAtLeast": 20,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_ophthalmic.right",
+          "b": "vein.angular.right",
+          "sharedVertices": 33,
+          "expectedAtLeast": 33,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_petrosal.left",
+          "b": "vein.sigmoid.left",
+          "sharedVertices": 38,
+          "expectedAtLeast": 38,
+          "passed": true
+        },
+        {
+          "a": "vein.inferior_petrosal.left",
+          "b": "vein.internal_jugular.left",
+          "sharedVertices": 45,
+          "expectedAtLeast": 45,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_petrosal_vein.left",
+          "b": "vein.superior_petrosal.left",
+          "sharedVertices": 266,
+          "expectedAtLeast": 266,
+          "passed": true
+        },
+        {
+          "a": "vein.superficial_middle_cerebral.left",
+          "b": "vein.trolard.left",
+          "sharedVertices": 35,
+          "expectedAtLeast": 35,
+          "passed": true
+        },
+        {
+          "a": "vein.superficial_middle_cerebral.left",
+          "b": "vein.labbe.left",
+          "sharedVertices": 30,
+          "expectedAtLeast": 30,
+          "passed": true
+        },
+        {
+          "a": "vein.cavernous.left",
+          "b": "vein.superior_petrosal.left",
+          "sharedVertices": 39,
+          "expectedAtLeast": 39,
+          "passed": true
+        },
+        {
+          "a": "vein.cavernous.left",
+          "b": "vein.inferior_petrosal.left",
+          "sharedVertices": 50,
+          "expectedAtLeast": 50,
+          "passed": true
+        },
+        {
+          "a": "vein.ovale_emissary.left",
+          "b": "vein.pterygoid_plexus.left",
+          "sharedVertices": 23,
+          "expectedAtLeast": 23,
+          "passed": true
+        },
+        {
+          "a": "vein.superior_ophthalmic.left",
+          "b": "vein.angular.left",
+          "sharedVertices": 22,
+          "expectedAtLeast": 22,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.marginal",
+          "sharedVertices": 118,
+          "expectedAtLeast": 118,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.inferior_petrosal.right",
+          "sharedVertices": 43,
+          "expectedAtLeast": 43,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.anterior_condylar.right",
+          "sharedVertices": 22,
+          "expectedAtLeast": 22,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.inferior_petrosal.left",
+          "sharedVertices": 50,
+          "expectedAtLeast": 50,
+          "passed": true
+        },
+        {
+          "a": "vein.basilar_plexus",
+          "b": "vein.anterior_condylar.left",
+          "sharedVertices": 8,
+          "expectedAtLeast": 8,
+          "passed": true
+        },
+        {
+          "a": "vein.prepontine_bridge.right",
+          "b": "vein.basilar_plexus",
+          "sharedVertices": 74,
+          "expectedAtLeast": 74,
+          "passed": true
+        },
+        {
+          "a": "vein.anterior_pontine",
+          "b": "vein.prepontine_bridge.right",
+          "sharedVertices": 76,
+          "expectedAtLeast": 76,
+          "passed": true
+        },
+        {
+          "a": "vein.cpa_inferior_petrosal_bridge.left",
+          "b": "vein.inferior_petrosal.left",
+          "sharedVertices": 60,
+          "expectedAtLeast": 60,
+          "passed": true
+        }
+      ]
+    },
+    "remoteVenousSplices": {
+      "passed": true,
+      "scope": "Original topology retained; shared label junctions verified"
+    },
+    "meshQuality": {
+      "passed": true,
+      "meshes": [
+        {
+          "name": "ICA cavernous right",
+          "minimumDoubleAreaMm2": 1.8115016526337145e-06,
+          "maximumDisplacementMm": 0.0550037188309983,
+          "passed": true
+        },
+        {
+          "name": "ICA paraophthalmic right",
+          "minimumDoubleAreaMm2": 3.146776244569714e-07,
+          "maximumDisplacementMm": 0.05500332540051686,
+          "passed": true
+        },
+        {
+          "name": "Meningohypophyseal trunk right",
+          "minimumDoubleAreaMm2": 9.54182767026381e-06,
+          "maximumDisplacementMm": 0.05500377505047711,
+          "passed": true
+        },
+        {
+          "name": "Tentorial marginal right",
+          "minimumDoubleAreaMm2": 0.00025630228682286345,
+          "maximumDisplacementMm": 0.05500050417175784,
+          "passed": true
+        },
+        {
+          "name": "Dorsal meningeal right",
+          "minimumDoubleAreaMm2": 1.2516975402832031e-06,
+          "maximumDisplacementMm": 0.055001505829578676,
+          "passed": true
+        },
+        {
+          "name": "Inferior hypophyseal right",
+          "minimumDoubleAreaMm2": 3.610150684209891e-08,
+          "maximumDisplacementMm": 0.055003451332970375,
+          "passed": true
+        },
+        {
+          "name": "Inferolateral trunk right",
+          "minimumDoubleAreaMm2": 5.435033363300132e-06,
+          "maximumDisplacementMm": 0.055001870699384954,
+          "passed": true
+        },
+        {
+          "name": "ICA cavernous left",
+          "minimumDoubleAreaMm2": 4.779164284392043e-06,
+          "maximumDisplacementMm": 0.0550038839590187,
+          "passed": true
+        },
+        {
+          "name": "ICA paraophthalmic left",
+          "minimumDoubleAreaMm2": 3.2567150716083995e-07,
+          "maximumDisplacementMm": 0.055003134641071955,
+          "passed": true
+        },
+        {
+          "name": "Meningohypophyseal trunk left",
+          "minimumDoubleAreaMm2": 2.0555884859654613e-05,
+          "maximumDisplacementMm": 0.055003508346412815,
+          "passed": true
+        },
+        {
+          "name": "Tentorial marginal left",
+          "minimumDoubleAreaMm2": 0.00017841557900551472,
+          "maximumDisplacementMm": 0.055000218956094346,
+          "passed": true
+        },
+        {
+          "name": "Dorsal meningeal left",
+          "minimumDoubleAreaMm2": 9.386548845782055e-07,
+          "maximumDisplacementMm": 0.055001622307733214,
+          "passed": true
+        },
+        {
+          "name": "Inferior hypophyseal left",
+          "minimumDoubleAreaMm2": 2.9947757572906295e-08,
+          "maximumDisplacementMm": 0.055002711996543725,
+          "passed": true
+        },
+        {
+          "name": "Inferolateral trunk left",
+          "minimumDoubleAreaMm2": 2.1718360269936757e-06,
+          "maximumDisplacementMm": 0.05500179031099693,
+          "passed": true
+        },
+        {
+          "name": "Artery of foramen rotundum",
+          "minimumDoubleAreaMm2": 0.0002133983968576228,
+          "maximumDisplacementMm": 0.0003776466002631443,
+          "passed": true
+        },
+        {
+          "name": "MMA cavernous",
+          "minimumDoubleAreaMm2": 4.3800289799866286e-07,
+          "maximumDisplacementMm": 0.00013419725999365916,
+          "passed": true
+        },
+        {
+          "name": "Artery of foramen rotundum left",
+          "minimumDoubleAreaMm2": 0.00023713237306952344,
+          "maximumDisplacementMm": 0.0003997169783040941,
+          "passed": true
+        },
+        {
+          "name": "Basal tentorial MHT branch right",
+          "minimumDoubleAreaMm2": 3.863461927670814e-05,
+          "maximumDisplacementMm": 0.05500377505047711,
+          "passed": true
+        },
+        {
+          "name": "Basal tentorial MHT branch left",
+          "minimumDoubleAreaMm2": 2.6299102764308683e-05,
+          "maximumDisplacementMm": 0.055003508346412815,
+          "passed": true
+        },
+        {
+          "name": "Lateral clival MHT branch right",
+          "minimumDoubleAreaMm2": 0.00030065722676085794,
+          "maximumDisplacementMm": 0.05500107225881161,
+          "passed": true
+        },
+        {
+          "name": "Lateral clival MHT branch left",
+          "minimumDoubleAreaMm2": 0.0002638794402675414,
+          "maximumDisplacementMm": 0.055001622307733214,
+          "passed": true
+        },
+        {
+          "name": "ILT recurrent lacerum ramus right",
+          "minimumDoubleAreaMm2": 5.632502732232233e-07,
+          "maximumDisplacementMm": 0.054999097236233016,
+          "passed": true
+        },
+        {
+          "name": "ILT recurrent lacerum ramus left",
+          "minimumDoubleAreaMm2": 2.4387683694422026e-06,
+          "maximumDisplacementMm": 0.055001927019966944,
+          "passed": true
+        },
+        {
+          "name": "vein.cavernous.right",
+          "minimumDoubleAreaMm2": 5.6646075383843e-09,
+          "maximumDisplacementMm": 2.2903453242537943,
+          "passed": true
+        },
+        {
+          "name": "vein.superior_petrosal.right",
+          "minimumDoubleAreaMm2": 4.6932744228910274e-07,
+          "maximumDisplacementMm": 0.32490981784395717,
+          "passed": true
+        },
+        {
+          "name": "vein.inferior_petrosal.right",
+          "minimumDoubleAreaMm2": 5.7077463735667776e-08,
+          "maximumDisplacementMm": 0.056069608832585785,
+          "passed": true
+        },
+        {
+          "name": "vein.sphenoparietal.right",
+          "minimumDoubleAreaMm2": 8.429369702178807e-08,
+          "maximumDisplacementMm": 0.5879267003106151,
+          "passed": true
+        },
+        {
+          "name": "vein.superficial_middle_cerebral.right",
+          "minimumDoubleAreaMm2": 2.457562461863554e-07,
+          "maximumDisplacementMm": 1.3121967250285973,
+          "passed": true
+        },
+        {
+          "name": "vein.superior_ophthalmic.right",
+          "minimumDoubleAreaMm2": 9.554278448882906e-07,
+          "maximumDisplacementMm": 0.6465750671560501,
+          "passed": true
+        },
+        {
+          "name": "vein.ovale_emissary.right",
+          "minimumDoubleAreaMm2": 5.960464477539063e-08,
+          "maximumDisplacementMm": 0.33484589303030565,
+          "passed": true
+        },
+        {
+          "name": "vein.cavernous.left",
+          "minimumDoubleAreaMm2": 1.79202862723704e-09,
+          "maximumDisplacementMm": 2.2099584238058525,
+          "passed": true
+        },
+        {
+          "name": "vein.superior_petrosal.left",
+          "minimumDoubleAreaMm2": 2.9200193199910854e-07,
+          "maximumDisplacementMm": 0.31157014769037705,
+          "passed": true
+        },
+        {
+          "name": "vein.inferior_petrosal.left",
+          "minimumDoubleAreaMm2": 4.359488604497926e-06,
+          "maximumDisplacementMm": 0.05614681255527015,
+          "passed": true
+        },
+        {
+          "name": "vein.sphenoparietal.left",
+          "minimumDoubleAreaMm2": 1.1920928955078125e-07,
+          "maximumDisplacementMm": 0.6705090490326618,
+          "passed": true
+        },
+        {
+          "name": "vein.superficial_middle_cerebral.left",
+          "minimumDoubleAreaMm2": 1.3328003749250113e-07,
+          "maximumDisplacementMm": 1.2311201212008658,
+          "passed": true
+        },
+        {
+          "name": "vein.superior_ophthalmic.left",
+          "minimumDoubleAreaMm2": 4.680150029162217e-06,
+          "maximumDisplacementMm": 0.4439430262383863,
+          "passed": true
+        },
+        {
+          "name": "vein.ovale_emissary.left",
+          "minimumDoubleAreaMm2": 8.429369702178807e-08,
+          "maximumDisplacementMm": 0.340724209721395,
+          "passed": true
+        },
+        {
+          "name": "vein.anterior_intercavernous",
+          "minimumDoubleAreaMm2": 0.00010191428385248596,
+          "maximumDisplacementMm": 0.9746142092147372,
+          "passed": true
+        },
+        {
+          "name": "vein.posterior_intercavernous",
+          "minimumDoubleAreaMm2": 2.1103928198300048e-07,
+          "maximumDisplacementMm": 1.290374755859375,
+          "passed": true
+        },
+        {
+          "name": "vein.basilar_plexus",
+          "minimumDoubleAreaMm2": 1.27601420808435e-08,
+          "maximumDisplacementMm": 0.2615675232019935,
+          "passed": true
+        }
+      ]
+    },
+    "localBranchClearance": {
+      "passed": true,
+      "results": [
+        {
+          "mesh": "Meningohypophyseal trunk right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Inferolateral trunk right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Inferior hypophyseal right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Dorsal meningeal right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Tentorial marginal right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Basal tentorial MHT branch right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Medial clival MHT branch right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Lateral clival MHT branch right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ILT superior ramus right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ILT anterolateral ramus right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ILT recurrent lacerum ramus right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Ophthalmic right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Superior hypophyseal right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Posterior communicating right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Anterior choroidal right",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Meningohypophyseal trunk left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Inferolateral trunk left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Inferior hypophyseal left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Dorsal meningeal left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Tentorial marginal left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Basal tentorial MHT branch left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Medial clival MHT branch left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Lateral clival MHT branch left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ILT superior ramus left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ILT anterolateral ramus left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ILT recurrent lacerum ramus left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Ophthalmic left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Superior hypophyseal left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Posterior communicating left",
+          "sinusContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "Anterior choroidal left",
+          "sinusContacts": 0,
+          "passed": true
+        }
+      ]
+    },
+    "boneClearance": {
+      "passed": true,
+      "results": [
+        {
+          "mesh": "ICA cavernous right",
+          "boneContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ICA paraophthalmic right",
+          "boneContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "vein.cavernous.right",
+          "boneContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ICA cavernous left",
+          "boneContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "ICA paraophthalmic left",
+          "boneContacts": 0,
+          "passed": true
+        },
+        {
+          "mesh": "vein.cavernous.left",
+          "boneContacts": 0,
+          "passed": true
+        }
+      ]
+    },
+    "fullSurfaceConstraints": {
+      "passed": true,
+      "scope": "Triangle collision tests between existing closed regional walls; sampled gap. Same topology and shared deformation preserve the existing envelope partition. Not an analytical proof of containment.",
+      "sides": [
+        {
+          "side": "right",
+          "arterySinusContacts": 0,
+          "sampledMinimumSurfaceGapMm": 0.26734805512814913,
+          "passed": true
+        },
+        {
+          "side": "left",
+          "arterySinusContacts": 0,
+          "sampledMinimumSurfaceGapMm": 0.25364664093651357,
+          "passed": true
+        }
+      ]
+    },
+    "selfIntersections": {
+      "passed": true,
+      "sides": [
+        {
+          "side": "right",
+          "nonAdjacentIntersections": 0,
+          "pairs": [],
+          "centres": []
+        },
+        {
+          "side": "left",
+          "nonAdjacentIntersections": 0,
+          "pairs": [],
+          "centres": []
+        }
+      ]
+    },
+    "venousSelfIntersections": {
+      "passed": true,
+      "scope": "Changed regional venous network within the documented CS region, welded across named labels",
+      "results": [
+        {
+          "side": "regional-veins",
+          "nonAdjacentIntersections": 0,
+          "pairs": [],
+          "centres": []
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Illustrative atlas refinement; independent anatomical review pending.",
+    "Native lower petrous/canal contacts retained unchanged outside the refinement.",
+    "Dural rings and boundaries are estimates."
+  ]
+}

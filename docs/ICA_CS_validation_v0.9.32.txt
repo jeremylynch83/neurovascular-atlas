@@ -1,0 +1,22 @@
+ICA / cavernous sinus correction, v0.9.32
+8 October 2026
+
+Integrated bilateral modelling revision. Local geometry checks and the production build pass. Independent anatomical review remains pending.
+
+G1. Fixed anatomy: both entire ophthalmic meshes and topology are exact. All 222 original ostial vertices (112 right, 110 left) and all 313 incident parent-wall triangles (160 right, 153 left) are preserved. Source bone and registration are unchanged.
+G2. Close anterior genu: recorded centreline separation falls from 17.430 to 5.864 mm right and 17.766 to 5.618 mm left. Stations and nearest ostial-centroid projection are documented in extra-checks.json. The station identification remains an anatomical estimate.
+G3. Cavernous loop: posterior ascent, forward limb, anterior turn and upward exit are reconstructed; source lower bend and upper native collars remain. Matched lateral, oblique and orthographic AP renders accompany the app.
+G4. Independent compact sinus: the outer body is defined from the registered bone and estimated parasellar boundaries before carving arterial spaces. It does not inherit the artery as its external wall. Anatomical shape acceptance requires review of the supplied renders.
+G5. Local clearance and containment: no detected corrected ICA/bone or sinus/bone contacts. Maximum sampled outer-envelope residuals are 0.009740 mm right and 0.012572 mm left, within the documented 0.04 mm grid tolerance. Vertices, edge midpoints and four interior points per triangle are sampled. Minimum sampled ICA/sinus distances are 0.282167 mm right and 0.283104 mm left.
+G6. Surface and connections: no detected non-adjacent triangle intersections on the corrected ICA walls or either sinus label. All fifteen checked local arterial branch labels per side have zero sinus-solid contacts. The branch-clearance operation changes only venous walls. Every remote venous splice ring is matched; all 91 affected previously shared catalogue joins pass. All changed output meshes have finite coordinates, nonzero triangle areas and unit normals. The measured shaft curvature-radius/tube-radius ratios exceed one (1.071 right, 1.113 left), with source-profile calibre changes measured over the reconstructed shaft.
+
+App verification: anatomy catalogue validation, TypeScript, Vite production build, and actual Three.js GLTFLoader/MeshoptDecoder checks pass. All exported changed vertices and indices match the checked candidate exactly; unchanged mesh positions and indices remain exact. No interface redesign.
+
+Limits: these are sampled and tolerance-limited geometry checks, not an analytical proof or independent anatomical approval. Petrolingual entry and proximal dural exit remain estimates because dura is unsegmented. Native lower canal/bone contacts remain unchanged below the corrected cavernous region (1312 right, 1314 left in the recorded lower-source comparison). Other previously recorded atlas review issues remain open.
+
+Included: app source and production assets, modelling scripts and source inputs, matched comparison renders, and detailed JSON evidence in anatomy/source/ica-cs-v0932.
+
+Final production asset SHA-256:
+complete-circulation.glb  54dcf01401f2f7e7f97c661a7d83c148ed6414c953a3e080eabdefd4c90328e0
+venous.glb  cb7f397d936a0053f3d1fda90bb4f7942048c7be9cc34eaf72fdc1d2de07a936
+complete-anastomoses.glb  942178f7a86e23b1e1fc4f39c82f5681b0dec4e818f1d276c247aef2dd727fb1

@@ -1,5 +1,5 @@
-Neurovascular Atlas v0.9.32
+Neurovascular Atlas v0.9.33
 
-Bilateral ICA / cavernous sinus geometry update. Run ./inr-anatomy.sh or ./docker.sh start. The installer builds the app from the supplied source and assets. For development: npm ci; npm run dev.
+Use the included installer as before.
 
-See README.md and docs/ICA_CS_v0.9.32.md for geometry, validation and review limits. Actual exported-mesh renders are in review-renders.
+See docs/ICA_CS_v0.9.33.md for posterior sinus reduction, constrained smoothing and validation limits. Comparison renders are in review-renders.

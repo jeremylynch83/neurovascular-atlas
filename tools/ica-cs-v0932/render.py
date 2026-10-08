@@ -40,4 +40,10 @@ def main():
  fig.suptitle('Same camera • ICA / cavernous sinus / skull base',fontsize=21);fig.text(.08,.025,'Ophthalmic artery and bone remain fixed. Estimated dural boundary; retained lower canal contacts require review.',fontsize=11,color='#687787');fig.subplots_adjust(left=0,right=1,bottom=.04,top=.87,wspace=0);fig.savefig(RENDERS/'ICA_CS_before_after.png',dpi=145);plt.close(fig)
  for label,kwargs in [('ICA_CS_oblique',{'oblique':True}),('ICA_CS_bilateral_veins',{'bilateral':True,'network':True})]:
   fig=plt.figure(figsize=(14,10),facecolor='white');ax=fig.add_subplot(111,projection='3d');panel(ax,**kwargs);fig.suptitle('Revised app meshes • '+('bilateral venous connections' if 'bilateral' in label else 'oblique bone relationship'),fontsize=20,color='#203446');fig.text(.08,.025,'Fixed ophthalmic arteries and bone • anatomical review remains pending',fontsize=11,color='#687787');fig.subplots_adjust(left=0,right=1,bottom=.04,top=.95);fig.savefig(RENDERS/(label+'.png'),dpi=150);plt.close(fig)
-if __name__=='__main__':main()
+def ap_comparison():
+ fig=plt.figure(figsize=(18,9),facecolor='white')
+ for i,after in enumerate([False,True]):
+  ax=fig.add_subplot(1,2,i+1,projection='3d');panel(ax,after,bilateral=True);ax.view_init(elev=0,azim=90);ax.set_title('Original v0.9.31' if not after else 'Revised v0.9.32',fontsize=18,pad=0,color='#203446')
+ fig.suptitle('Matched orthographic AP view',fontsize=21);fig.text(.08,.025,'Both ophthalmic arteries and source bone are fixed. Small arterial branches are omitted from this regional view.',fontsize=11,color='#687787');fig.subplots_adjust(left=0,right=1,bottom=.04,top=.87,wspace=0);fig.savefig(RENDERS/'ICA_CS_AP.png',dpi=145);plt.close(fig)
+if __name__=='__main__':
+ main();ap_comparison()

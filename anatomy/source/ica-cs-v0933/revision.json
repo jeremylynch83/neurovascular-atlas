@@ -1,0 +1,175 @@
+{
+  "baseVersion": "0.9.32",
+  "release": "0.9.33",
+  "changed": [
+    {
+      "node": "ICA cavernous right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "ICA paraophthalmic right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Meningohypophyseal trunk right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Tentorial marginal right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Dorsal meningeal right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Inferior hypophyseal right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Inferolateral trunk right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "ICA cavernous left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "ICA paraophthalmic left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Meningohypophyseal trunk left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Tentorial marginal left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Dorsal meningeal left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Inferior hypophyseal left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Inferolateral trunk left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Artery of foramen rotundum",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "MMA cavernous",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Artery of foramen rotundum left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Basal tentorial MHT branch right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Basal tentorial MHT branch left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Lateral clival MHT branch right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Lateral clival MHT branch left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "ILT recurrent lacerum ramus right",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "ILT recurrent lacerum ramus left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "vein.cavernous.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.superior_petrosal.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.sphenoparietal.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.superficial_middle_cerebral.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.superior_ophthalmic.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.ovale_emissary.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.cavernous.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.superior_petrosal.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.sphenoparietal.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.superficial_middle_cerebral.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.superior_ophthalmic.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.ovale_emissary.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.anterior_intercavernous",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.posterior_intercavernous",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.basilar_plexus",
+      "file": "venous.glb"
+    }
+  ],
+  "newLabels": [],
+  "baselineAssetHashes": {
+    "brain-context.glb": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-circulation.glb": "54dcf01401f2f7e7f97c661a7d83c148ed6414c953a3e080eabdefd4c90328e0",
+    "venous.glb": "cb7f397d936a0053f3d1fda90bb4f7942048c7be9cc34eaf72fdc1d2de07a936",
+    "complete-anastomoses.glb": "942178f7a86e23b1e1fc4f39c82f5681b0dec4e818f1d276c247aef2dd727fb1"
+  },
+  "method": "16-step bone/artery-constrained posterior sinus roof flow with native collar constraints; 18 bounded Taubin pairs on connected labelled arterial/venous surfaces; native topology and protected OA/SHA walls retained"
+}

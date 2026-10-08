@@ -94,7 +94,7 @@
         {
           "a": "vein.inferior_petrosal.right",
           "b": "vein.cavernous.right",
-          "sharedVertices": 47,
+          "sharedVertices": 52,
           "passed": true
         },
         {
@@ -112,7 +112,7 @@
         {
           "a": "vein.superficial_middle_cerebral.right",
           "b": "vein.cavernous.right",
-          "sharedVertices": 85,
+          "sharedVertices": 78,
           "passed": true
         },
         {
@@ -136,7 +136,7 @@
         {
           "a": "vein.basilar_plexus",
           "b": "vein.cavernous.right",
-          "sharedVertices": 152,
+          "sharedVertices": 131,
           "passed": true
         },
         {
@@ -184,25 +184,25 @@
         {
           "a": "vein.inferior_petrosal.left",
           "b": "vein.cavernous.left",
-          "sharedVertices": 49,
+          "sharedVertices": 50,
           "passed": true
         },
         {
           "a": "vein.superior_ophthalmic.left",
           "b": "vein.cavernous.left",
-          "sharedVertices": 71,
+          "sharedVertices": 72,
           "passed": true
         },
         {
           "a": "vein.sphenoparietal.left",
           "b": "vein.cavernous.left",
-          "sharedVertices": 26,
+          "sharedVertices": 24,
           "passed": true
         },
         {
           "a": "vein.superficial_middle_cerebral.left",
           "b": "vein.cavernous.left",
-          "sharedVertices": 73,
+          "sharedVertices": 94,
           "passed": true
         },
         {
@@ -214,19 +214,19 @@
         {
           "a": "vein.anterior_intercavernous",
           "b": "vein.cavernous.left",
-          "sharedVertices": 87,
+          "sharedVertices": 98,
           "passed": true
         },
         {
           "a": "vein.posterior_intercavernous",
           "b": "vein.cavernous.left",
-          "sharedVertices": 28,
+          "sharedVertices": 18,
           "passed": true
         },
         {
           "a": "vein.basilar_plexus",
           "b": "vein.cavernous.left",
-          "sharedVertices": 133,
+          "sharedVertices": 135,
           "passed": true
         }
       ]
@@ -523,8 +523,8 @@
         },
         {
           "mesh": "vein.cavernous.right",
-          "vertices": 24303,
-          "triangles": 48059,
+          "vertices": 28383,
+          "triangles": 56262,
           "minimumDoubleAreaMm2": 3.075079999686089e-09,
           "passed": true
         },
@@ -537,8 +537,8 @@
         },
         {
           "mesh": "vein.inferior_petrosal.right",
-          "vertices": 2890,
-          "triangles": 5633,
+          "vertices": 2914,
+          "triangles": 5683,
           "minimumDoubleAreaMm2": 5.7077463735667776e-08,
           "passed": true
         },
@@ -551,8 +551,8 @@
         },
         {
           "mesh": "vein.superficial_middle_cerebral.right",
-          "vertices": 5972,
-          "triangles": 11789,
+          "vertices": 5979,
+          "triangles": 11810,
           "minimumDoubleAreaMm2": 2.457562461863554e-07,
           "passed": true
         },
@@ -572,8 +572,8 @@
         },
         {
           "mesh": "vein.cavernous.left",
-          "vertices": 24015,
-          "triangles": 47498,
+          "vertices": 28521,
+          "triangles": 56319,
           "minimumDoubleAreaMm2": 1.79202862723704e-09,
           "passed": true
         },
@@ -586,29 +586,29 @@
         },
         {
           "mesh": "vein.inferior_petrosal.left",
-          "vertices": 2793,
-          "triangles": 5387,
+          "vertices": 2820,
+          "triangles": 5440,
           "minimumDoubleAreaMm2": 4.359488604497926e-06,
           "passed": true
         },
         {
           "mesh": "vein.sphenoparietal.left",
-          "vertices": 3421,
-          "triangles": 6678,
+          "vertices": 3420,
+          "triangles": 6677,
           "minimumDoubleAreaMm2": 1.1920928955078125e-07,
           "passed": true
         },
         {
           "mesh": "vein.superficial_middle_cerebral.left",
-          "vertices": 5998,
-          "triangles": 11857,
+          "vertices": 6123,
+          "triangles": 12092,
           "minimumDoubleAreaMm2": 1.9274697004665376e-08,
           "passed": true
         },
         {
           "mesh": "vein.superior_ophthalmic.left",
-          "vertices": 4086,
-          "triangles": 7953,
+          "vertices": 4087,
+          "triangles": 7954,
           "minimumDoubleAreaMm2": 4.565078642829987e-07,
           "passed": true
         },
@@ -621,22 +621,22 @@
         },
         {
           "mesh": "vein.anterior_intercavernous",
-          "vertices": 915,
-          "triangles": 1605,
+          "vertices": 979,
+          "triangles": 1722,
           "minimumDoubleAreaMm2": 5.0921741701268324e-05,
           "passed": true
         },
         {
           "mesh": "vein.posterior_intercavernous",
-          "vertices": 1725,
-          "triangles": 3398,
+          "vertices": 1706,
+          "triangles": 3370,
           "minimumDoubleAreaMm2": 3.1865938736654633e-07,
           "passed": true
         },
         {
           "mesh": "vein.basilar_plexus",
-          "vertices": 15038,
-          "triangles": 29517,
+          "vertices": 15023,
+          "triangles": 29513,
           "minimumDoubleAreaMm2": 1.27601420808435e-08,
           "passed": true
         },
@@ -853,7 +853,7 @@
           "sourceOstialParentFaces": 160,
           "preservedOstialParentFaces": 160,
           "arterySinusContacts": 0,
-          "sampledMinimumArteryToSinusMm": 0.2821235538114354,
+          "sampledMinimumArteryToSinusMm": 0.2821671128628312,
           "retainedLowerPetrousBoneContacts": 1312,
           "baselineLowerPetrousBoneContacts": 1312,
           "lowerSourceFacesPreserved": true,
@@ -872,7 +872,7 @@
           "sourceOstialParentFaces": 153,
           "preservedOstialParentFaces": 153,
           "arterySinusContacts": 0,
-          "sampledMinimumArteryToSinusMm": 0.2865751527073591,
+          "sampledMinimumArteryToSinusMm": 0.283103544809162,
           "retainedLowerPetrousBoneContacts": 1314,
           "baselineLowerPetrousBoneContacts": 1314,
           "lowerSourceFacesPreserved": true,
@@ -1322,7 +1322,7 @@
           "b": "vein.cavernous.right",
           "type": "drains_to",
           "baselineSharedVertices": 52,
-          "newSharedVertices": 85,
+          "newSharedVertices": 78,
           "passed": true
         },
         {
@@ -1370,7 +1370,7 @@
           "b": "vein.inferior_petrosal.right",
           "type": "communicates_with",
           "baselineSharedVertices": 49,
-          "newSharedVertices": 47,
+          "newSharedVertices": 52,
           "passed": true
         },
         {
@@ -1418,7 +1418,7 @@
           "b": "vein.cavernous.left",
           "type": "drains_to",
           "baselineSharedVertices": 25,
-          "newSharedVertices": 26,
+          "newSharedVertices": 24,
           "passed": true
         },
         {
@@ -1426,7 +1426,7 @@
           "b": "vein.cavernous.left",
           "type": "drains_to",
           "baselineSharedVertices": 64,
-          "newSharedVertices": 73,
+          "newSharedVertices": 94,
           "passed": true
         },
         {
@@ -1442,7 +1442,7 @@
           "b": "vein.cavernous.left",
           "type": "drains_to",
           "baselineSharedVertices": 30,
-          "newSharedVertices": 71,
+          "newSharedVertices": 72,
           "passed": true
         },
         {
@@ -1474,7 +1474,7 @@
           "b": "vein.inferior_petrosal.left",
           "type": "communicates_with",
           "baselineSharedVertices": 27,
-          "newSharedVertices": 49,
+          "newSharedVertices": 50,
           "passed": true
         },
         {
@@ -1522,7 +1522,7 @@
           "b": "vein.cavernous.right",
           "type": "communicates_with",
           "baselineSharedVertices": 54,
-          "newSharedVertices": 152,
+          "newSharedVertices": 131,
           "passed": true
         },
         {
@@ -1530,7 +1530,7 @@
           "b": "vein.cavernous.left",
           "type": "communicates_with",
           "baselineSharedVertices": 52,
-          "newSharedVertices": 87,
+          "newSharedVertices": 98,
           "passed": true
         },
         {
@@ -1538,7 +1538,7 @@
           "b": "vein.cavernous.left",
           "type": "communicates_with",
           "baselineSharedVertices": 31,
-          "newSharedVertices": 28,
+          "newSharedVertices": 18,
           "passed": true
         },
         {
@@ -1546,7 +1546,7 @@
           "b": "vein.cavernous.left",
           "type": "communicates_with",
           "baselineSharedVertices": 28,
-          "newSharedVertices": 133,
+          "newSharedVertices": 135,
           "passed": true
         },
         {
@@ -1562,7 +1562,7 @@
           "b": "vein.inferior_petrosal.right",
           "type": "communicates_with",
           "baselineSharedVertices": 88,
-          "newSharedVertices": 48,
+          "newSharedVertices": 43,
           "passed": true
         },
         {
@@ -1615,24 +1615,55 @@
         }
       ]
     },
-    "nativeBasilarCollar": {
-      "testedFaces": 698,
-      "radiusMm": 1.7,
-      "nonAdjacentTriangleIntersections": 0,
-      "passed": true
-    },
-    "rebuiltParentBoneClearance": {
+    "localArterialBranchSinusClearance": {
       "passed": true,
       "sides": [
         {
           "side": "right",
-          "contacts": 0
+          "sinusSelfIntersections": 0,
+          "sinusSelfPairs": [],
+          "localArterialBranchSinusContacts": {
+            "Meningohypophyseal trunk": 0,
+            "Inferolateral trunk": 0,
+            "Inferior hypophyseal": 0,
+            "Dorsal meningeal": 0,
+            "Tentorial marginal": 0,
+            "Basal tentorial MHT branch": 0,
+            "Medial clival MHT branch": 0,
+            "Lateral clival MHT branch": 0,
+            "ILT superior ramus": 0,
+            "ILT anterolateral ramus": 0,
+            "ILT recurrent lacerum ramus": 0,
+            "Ophthalmic": 0,
+            "Superior hypophyseal": 0,
+            "Posterior communicating": 0,
+            "Anterior choroidal": 0
+          }
         },
         {
           "side": "left",
-          "contacts": 0
+          "sinusSelfIntersections": 0,
+          "sinusSelfPairs": [],
+          "localArterialBranchSinusContacts": {
+            "Meningohypophyseal trunk": 0,
+            "Inferolateral trunk": 0,
+            "Inferior hypophyseal": 0,
+            "Dorsal meningeal": 0,
+            "Tentorial marginal": 0,
+            "Basal tentorial MHT branch": 0,
+            "Medial clival MHT branch": 0,
+            "Lateral clival MHT branch": 0,
+            "ILT superior ramus": 0,
+            "ILT anterolateral ramus": 0,
+            "ILT recurrent lacerum ramus": 0,
+            "Ophthalmic": 0,
+            "Superior hypophyseal": 0,
+            "Posterior communicating": 0,
+            "Anterior choroidal": 0
+          }
         }
-      ]
+      ],
+      "scope": "All final cavernous sinus surface triangles against the local arterial branch network; non-adjacent sinus surface triangles; VTK collision tolerance 1e-7."
     }
   },
   "limitations": [
