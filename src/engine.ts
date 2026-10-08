@@ -8,6 +8,9 @@ import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
+const SELECTION_COLOUR = 0xffc438;
+const SELECTION_EMISSIVE = 0xffac16;
+const SELECTION_GLOW = 0.35;
 
 function structureColour(structure: Structure): number | string {
   return structure.system === 'artery' || structure.system === 'vein'
@@ -79,6 +82,10 @@ export class AnatomyEngine {
   private renderRequested = false;
   private bounds = new THREE.Box3();
   private selected: string | null = null;
+  private selectedMaterials: (THREE.MeshStandardMaterial | THREE.MeshLambertMaterial)[] = [];
+  private selectionStarted = 0;
+  private lastSelectionFrame = 0;
+  private reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   private focusedMembers: Set<string> | null = null;
   private hidden = new Set<string>();
   private visibility = new Map<string, LayerState>();
@@ -119,6 +126,7 @@ export class AnatomyEngine {
     this.renderer.domElement.addEventListener('pointerup', this.pick);
     this.resize = new ResizeObserver(() => this.onResize());
     this.resize.observe(container);
+    this.reducedMotion.addEventListener('change', this.onMotionPreference);
     this.onResize();
   }
 
@@ -304,12 +312,16 @@ export class AnatomyEngine {
   }
 
   setSelected(id: string | null) {
+    if (id !== this.selected) {
+      this.selectionStarted = performance.now();
+      this.lastSelectionFrame = 0;
+    }
     this.selected = id;
     this.clearLandmarkMarker();
     const s = this.manifest.structures.find(s => s.id === id);
     const landmark = s?.landmark;
     if (landmark?.point) {
-      const colour = landmark.status === 'visible' ? 0x75d3cc : 0xf2b84b;
+      const colour = SELECTION_COLOUR;
       const dot = new THREE.Mesh(new THREE.SphereGeometry(0.6, 12, 8), new THREE.MeshBasicMaterial({color: colour, depthTest: false}));
       const anchoredPoint = s?.surfaceAnchor ? this.resolveBrainAnchor(s.id) : null;
       dot.position.copy(anchoredPoint ?? new THREE.Vector3(...landmark.point)); dot.renderOrder = 20;
@@ -349,6 +361,7 @@ export class AnatomyEngine {
   }
 
   private refreshMaterials() {
+    this.selectedMaterials = [];
     const selectedStructure = this.manifest.structures.find(s => s.id === this.selected);
     const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers[selectedStructure?.system ?? 'bone'] : 'off';
     this.landmarkMarker.visible = markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
@@ -369,9 +382,10 @@ export class AnatomyEngine {
         ? (e.ghostMaterial ??= new THREE.MeshLambertMaterial({ side: opaqueMaterial.side, transparent: true, forceSinglePass: true }))
         : opaqueMaterial;
       e.mesh.material = mat;
-      const vascular = e.structure.system === 'artery' || e.structure.system === 'vein';
-      mat.color.set(selected && !vascular ? 0xf2b84b : structureColour(e.structure));
-      mat.emissive.setHex(selected ? (e.structure.system === 'artery' ? 0x4a0805 : e.structure.system === 'vein' ? 0x071b40 : 0x4a2b00) : 0x000000);
+      mat.color.set(selected ? SELECTION_COLOUR : structureColour(e.structure));
+      mat.emissive.setHex(selected ? SELECTION_EMISSIVE : 0x000000);
+      mat.emissiveIntensity = selected ? SELECTION_GLOW : 1;
+      if (selected && e.mesh.visible && opacity > 0) this.selectedMaterials.push(mat);
       if (mat.transparent !== transparent) { mat.transparent = transparent; mat.needsUpdate = true; }
       mat.opacity = opacity; mat.depthWrite = opacity > 0.4;
       this.updateClipping(mat);
@@ -486,6 +500,23 @@ export class AnatomyEngine {
   // and OrbitControls damping. Idle controls still tick without redrawing.
   render() { if (this.disposed) return; this.renderRequested = true; this.requestFrame(); }
   private requestFrame() { if (!this.raf) this.raf = requestAnimationFrame(this.tick); }
+  private onMotionPreference = () => {
+    this.lastSelectionFrame = 0;
+    for (const material of this.selectedMaterials) material.emissiveIntensity = SELECTION_GLOW;
+    this.render();
+  };
+  private updateSelectionGlow(now: number) {
+    if (!this.selectedMaterials.length || this.reducedMotion.matches || document.hidden) return;
+    // Two gentle beats per one-second cycle, with a constant amber base.
+    // Refresh only the selected materials; idle pulse redraws are capped at 30 Hz.
+    if (!this.renderRequested && now - this.lastSelectionFrame < 1000 / 30) return;
+    const phase = ((now - this.selectionStarted) % 1000) / 1000;
+    const beat = Math.exp(-(((phase - 0.10) / 0.055) ** 2))
+      + 0.55 * Math.exp(-(((phase - 0.27) / 0.075) ** 2));
+    for (const material of this.selectedMaterials) material.emissiveIntensity = SELECTION_GLOW + 0.24 * beat;
+    this.lastSelectionFrame = now;
+    this.renderRequested = true;
+  }
   private updateFps(now: number, rendered: boolean) {
     if (!this.onFps) return;
     if (rendered) {
@@ -505,16 +536,18 @@ export class AnatomyEngine {
   private tick = () => {
     if (this.disposed) return;
     if (this.started) this.controls.update();
-    const rendered = this.renderRequested;
     const frameTime = performance.now();
+    const interactionRenderRequested = this.renderRequested;
+    if (this.started) this.updateSelectionGlow(frameTime);
+    const rendered = this.renderRequested;
     if (rendered) {
       this.renderRequested = false;
       this.renderer.render(this.scene, this.camera);
     }
-    if (this.started) this.updateFps(frameTime, rendered);
+    if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);
     this.raf = 0;
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }

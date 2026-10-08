@@ -1,3 +1,7 @@
+# Neurovascular Atlas v0.9.40
+
+Selected structures turn amber-yellow with a steady glow and a subtle one-second heartbeat pulse. The pulse pauses for hidden selections and reduced motion, and idle animation redraws are capped at 30 Hz. Retains the v0.9.39 anatomy and geometry checks.
+
 # Neurovascular Atlas v0.9.39
 
 Finishes bilateral ICA surface and branch-collar smoothing. Both sides retain their native outer attachments and fixed ophthalmic origin centres. No new self-intersections or cavernous sinus wall contacts were detected in the checked region. Existing distal hypophyseal self-intersections remain documented. [Method, checks and renders](docs/ICA_SMOOTH_v0.9.39.md).
