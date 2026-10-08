@@ -1,16 +1,16 @@
 {
   "schemaVersion": "0.3.6",
-  "release": "0.9.33",
+  "release": "0.9.34",
   "title": "Neurovascular Atlas",
   "description": "An interactive 3D atlas of neurovascular anatomy, with selectable structures, anatomical descriptions and vascular relationships.",
   "units": "mm",
   "coordinateSystem": "RAS",
   "assetRevisions": {
     "models/brain-context.glb": "f8cc8f9c209e01f05656",
-    "models/venous.glb": "cb7f397d936a0053f3d1",
+    "models/venous.glb": "0bae0493d42fd098e98a",
     "models/craniofacial.glb": "7e269d3af9d8b1b59953",
     "models/complete-anastomoses.glb": "942178f7a86e23b1e1fc",
-    "models/complete-circulation.glb": "54dcf01401f2f7e7f97c"
+    "models/complete-circulation.glb": "1c2fd280cd5bf1f70f37"
   },
   "structures": [
     {
@@ -84690,7 +84690,7 @@
           "file": "models/venous.glb",
           "node": "vein.confluence"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -84828,7 +84828,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_sagittal"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -84956,7 +84956,7 @@
           "file": "models/venous.glb",
           "node": "vein.straight"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85124,7 +85124,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_sagittal"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85224,7 +85224,7 @@
           "file": "models/venous.glb",
           "node": "vein.occipital_sinus"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85289,7 +85289,7 @@
           "file": "models/venous.glb",
           "node": "vein.marginal"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85420,7 +85420,7 @@
           "file": "models/venous.glb",
           "node": "vein.galen"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85585,7 +85585,7 @@
           "file": "models/venous.glb",
           "node": "vein.internal_jugular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85662,7 +85662,7 @@
           "file": "models/venous.glb",
           "node": "vein.sigmoid.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85762,7 +85762,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85883,7 +85883,7 @@
         "file": "models/venous.glb",
         "node": "vein.cavernous.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.right), [superior petrosal sinus](#structure-vein.superior_petrosal.right), [inferior petrosal sinus](#structure-vein.inferior_petrosal.right), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.",
       "vesselCourse": {
         "vesselId": "vein.cavernous.right",
@@ -85893,7 +85893,7 @@
           "file": "models/venous.glb",
           "node": "vein.cavernous.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -85986,7 +85986,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_petrosal.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the junction of the [transverse](#structure-vein.transverse.right) and [sigmoid sinuses](#structure-vein.sigmoid.right). They may receive blood from supra- or infratentorial structures.",
       "vesselCourse": {
         "vesselId": "vein.superior_petrosal.right",
@@ -85996,7 +85996,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_petrosal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86094,7 +86094,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_petrosal.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.right) to the [jugular vein](#structure-vein.internal_jugular.right) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.",
       "vesselCourse": {
         "vesselId": "vein.inferior_petrosal.right",
@@ -86104,7 +86104,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_petrosal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86194,7 +86194,7 @@
         "file": "models/venous.glb",
         "node": "vein.sphenoparietal.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.right). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.right) enters the cavernous region separately.",
       "vesselCourse": {
         "vesselId": "vein.sphenoparietal.right",
@@ -86204,7 +86204,7 @@
           "file": "models/venous.glb",
           "node": "vein.sphenoparietal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86261,7 +86261,7 @@
         "file": "models/venous.glb",
         "node": "vein.superficial_middle_cerebral.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.right) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.right). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel.",
       "vesselCourse": {
         "vesselId": "vein.superficial_middle_cerebral.right",
@@ -86271,7 +86271,7 @@
           "file": "models/venous.glb",
           "node": "vein.superficial_middle_cerebral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86378,7 +86378,7 @@
           "file": "models/venous.glb",
           "node": "vein.trolard.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86486,7 +86486,7 @@
           "file": "models/venous.glb",
           "node": "vein.labbe.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86590,7 +86590,7 @@
           "file": "models/venous.glb",
           "node": "vein.frontal_cortical.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86688,7 +86688,7 @@
           "file": "models/venous.glb",
           "node": "vein.parietal_cortical.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86794,7 +86794,7 @@
           "file": "models/venous.glb",
           "node": "vein.internal_cerebral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -86979,7 +86979,7 @@
           "file": "models/venous.glb",
           "node": "vein.basal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87161,7 +87161,7 @@
           "file": "models/venous.glb",
           "node": "vein.thalamostriate.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87265,7 +87265,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_septal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87364,7 +87364,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_choroidal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87455,7 +87455,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_cerebral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87560,7 +87560,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_middle_cerebral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87661,7 +87661,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_petrosal_vein.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87826,7 +87826,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_mesencephalic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -87965,7 +87965,7 @@
           "file": "models/venous.glb",
           "node": "vein.cerebellopontine_fissure.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88096,7 +88096,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_vermian.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88245,7 +88245,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_hemispheric.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88361,7 +88361,7 @@
           "file": "models/venous.glb",
           "node": "vein.external_jugular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88429,7 +88429,7 @@
           "file": "models/venous.glb",
           "node": "vein.retromandibular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88502,7 +88502,7 @@
           "file": "models/venous.glb",
           "node": "vein.maxillary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88568,7 +88568,7 @@
           "file": "models/venous.glb",
           "node": "vein.pterygoid_plexus.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88644,7 +88644,7 @@
           "file": "models/venous.glb",
           "node": "vein.superficial_temporal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88704,7 +88704,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_auricular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88767,7 +88767,7 @@
           "file": "models/venous.glb",
           "node": "vein.facial.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88837,7 +88837,7 @@
           "file": "models/venous.glb",
           "node": "vein.angular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88903,7 +88903,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_facial.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -88960,7 +88960,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_ophthalmic.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.right), an important bidirectional confluence of the intracranial and extracranial venous systems.",
       "vesselCourse": {
         "vesselId": "vein.superior_ophthalmic.right",
@@ -88970,7 +88970,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_ophthalmic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89037,7 +89037,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_ophthalmic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89087,7 +89087,7 @@
         "file": "models/venous.glb",
         "node": "vein.ovale_emissary.right"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.right) connects with the [cavernous sinus](#structure-vein.cavernous.right) via emissary veins.",
       "vesselCourse": {
         "vesselId": "vein.ovale_emissary.right",
@@ -89097,7 +89097,7 @@
           "file": "models/venous.glb",
           "node": "vein.ovale_emissary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89164,7 +89164,7 @@
           "file": "models/venous.glb",
           "node": "vein.vertebral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89224,7 +89224,7 @@
           "file": "models/venous.glb",
           "node": "vein.suboccipital_plexus.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89300,7 +89300,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_cervical.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89364,7 +89364,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_condylar.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89440,7 +89440,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_condylar.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89510,7 +89510,7 @@
           "file": "models/venous.glb",
           "node": "vein.internal_jugular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89587,7 +89587,7 @@
           "file": "models/venous.glb",
           "node": "vein.sigmoid.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89687,7 +89687,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89808,7 +89808,7 @@
         "file": "models/venous.glb",
         "node": "vein.cavernous.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The cavernous sinuses are located on each side of the pituitary fossa. They are an important bidirectional confluence of the intracranial and extracranial venous systems. The sinus contains the ICA, its sympathetic plexus, and the abducens nerve (CN VI). Within the lateral wall, from superior to inferior, are CN III, CN IV, CN V1, and CN V2. The cavernous sinuses connect to the ophthalmic veins, [pterygoid plexus](#structure-vein.pterygoid_plexus.left), [superior petrosal sinus](#structure-vein.superior_petrosal.left), [inferior petrosal sinus](#structure-vein.inferior_petrosal.left), [basilar plexus](#structure-vein.basilar_plexus), and contralateral cavernous sinus through the intercavernous sinuses.",
       "vesselCourse": {
         "vesselId": "vein.cavernous.left",
@@ -89818,7 +89818,7 @@
           "file": "models/venous.glb",
           "node": "vein.cavernous.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -89911,7 +89911,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_petrosal.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "These run in the petrosal ridge to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the junction of the [transverse](#structure-vein.transverse.left) and [sigmoid sinuses](#structure-vein.sigmoid.left). They may receive blood from supra- or infratentorial structures.",
       "vesselCourse": {
         "vesselId": "vein.superior_petrosal.left",
@@ -89921,7 +89921,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_petrosal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90019,7 +90019,7 @@
         "file": "models/venous.glb",
         "node": "vein.inferior_petrosal.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "These sinuses run inferiorly and laterally to connect the posterior aspect of the [cavernous sinus](#structure-vein.cavernous.left) to the [jugular vein](#structure-vein.internal_jugular.left) in the pars nervosa. They also receive blood from the internal auditory veins and infratentorial structures.",
       "vesselCourse": {
         "vesselId": "vein.inferior_petrosal.left",
@@ -90029,7 +90029,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_petrosal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90124,7 +90124,7 @@
         "file": "models/venous.glb",
         "node": "vein.sphenoparietal.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p67. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "This dural channel follows the lesser sphenoid wing and drains into the [cavernous sinus](#structure-vein.cavernous.left). It communicates with adjacent meningeal and diploic channels. Its relationship to the superficial Sylvian veins is variable and terminology differs between references. The represented [superficial middle cerebral vein](#structure-vein.superficial_middle_cerebral.left) enters the cavernous region separately.",
       "vesselCourse": {
         "vesselId": "vein.sphenoparietal.left",
@@ -90134,7 +90134,7 @@
           "file": "models/venous.glb",
           "node": "vein.sphenoparietal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90191,7 +90191,7 @@
         "file": "models/venous.glb",
         "node": "vein.superficial_middle_cerebral.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The superficial middle cerebral (Sylvian) vein arises in the Sylvian fissure and drains the adjacent operculum. It empties anteriorly into the [cavernous sinus](#structure-vein.cavernous.left) or [pterygoid venous plexus](#structure-vein.pterygoid_plexus.left). In this selected drainage pattern it enters the cavernous region independently of the dural lesser-sphenoid-wing channel.",
       "vesselCourse": {
         "vesselId": "vein.superficial_middle_cerebral.left",
@@ -90201,7 +90201,7 @@
           "file": "models/venous.glb",
           "node": "vein.superficial_middle_cerebral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90308,7 +90308,7 @@
           "file": "models/venous.glb",
           "node": "vein.trolard.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90416,7 +90416,7 @@
           "file": "models/venous.glb",
           "node": "vein.labbe.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90520,7 +90520,7 @@
           "file": "models/venous.glb",
           "node": "vein.frontal_cortical.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90618,7 +90618,7 @@
           "file": "models/venous.glb",
           "node": "vein.parietal_cortical.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90724,7 +90724,7 @@
           "file": "models/venous.glb",
           "node": "vein.internal_cerebral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -90909,7 +90909,7 @@
           "file": "models/venous.glb",
           "node": "vein.basal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91091,7 +91091,7 @@
           "file": "models/venous.glb",
           "node": "vein.thalamostriate.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91195,7 +91195,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_septal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91294,7 +91294,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_choroidal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91385,7 +91385,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_cerebral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91484,7 +91484,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_middle_cerebral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91585,7 +91585,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_petrosal_vein.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91748,7 +91748,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_mesencephalic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -91872,7 +91872,7 @@
           "file": "models/venous.glb",
           "node": "vein.cerebellopontine_fissure.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92003,7 +92003,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_vermian.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92152,7 +92152,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_hemispheric.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92262,7 +92262,7 @@
           "file": "models/venous.glb",
           "node": "vein.external_jugular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92330,7 +92330,7 @@
           "file": "models/venous.glb",
           "node": "vein.retromandibular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92403,7 +92403,7 @@
           "file": "models/venous.glb",
           "node": "vein.maxillary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92469,7 +92469,7 @@
           "file": "models/venous.glb",
           "node": "vein.pterygoid_plexus.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92545,7 +92545,7 @@
           "file": "models/venous.glb",
           "node": "vein.superficial_temporal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92605,7 +92605,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_auricular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92668,7 +92668,7 @@
           "file": "models/venous.glb",
           "node": "vein.facial.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92738,7 +92738,7 @@
           "file": "models/venous.glb",
           "node": "vein.angular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92804,7 +92804,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_facial.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92861,7 +92861,7 @@
         "file": "models/venous.glb",
         "node": "vein.superior_ophthalmic.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The ophthalmic veins connect superiorly and anteriorly with the [cavernous sinus](#structure-vein.cavernous.left), an important bidirectional confluence of the intracranial and extracranial venous systems.",
       "vesselCourse": {
         "vesselId": "vein.superior_ophthalmic.left",
@@ -92871,7 +92871,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_ophthalmic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92938,7 +92938,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_ophthalmic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -92988,7 +92988,7 @@
         "file": "models/venous.glb",
         "node": "vein.ovale_emissary.left"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p69. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "Emissary veins are inconstant channels and serve as two-way connections linking extracranial veins, diploic veins, and intracranial meningeal veins and sinuses. Emissary veins passing through the skull foramina include those of the foramen ovale. The [pterygoid plexus](#structure-vein.pterygoid_plexus.left) connects with the [cavernous sinus](#structure-vein.cavernous.left) via emissary veins.",
       "vesselCourse": {
         "vesselId": "vein.ovale_emissary.left",
@@ -92998,7 +92998,7 @@
           "file": "models/venous.glb",
           "node": "vein.ovale_emissary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93065,7 +93065,7 @@
           "file": "models/venous.glb",
           "node": "vein.vertebral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93125,7 +93125,7 @@
           "file": "models/venous.glb",
           "node": "vein.suboccipital_plexus.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93201,7 +93201,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_cervical.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93265,7 +93265,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_condylar.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93358,7 +93358,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_condylar.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93414,7 +93414,7 @@
         "file": "models/venous.glb",
         "node": "vein.anterior_intercavernous"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.",
       "vesselCourse": {
         "vesselId": "vein.anterior_intercavernous",
@@ -93424,7 +93424,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_intercavernous"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93480,7 +93480,7 @@
         "file": "models/venous.glb",
         "node": "vein.posterior_intercavernous"
       },
-      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Lynch Neurovascular anatomy, printed p68. Reference teaching reconstruction, not patient-derived anatomy. Selected bilateral reference pattern; small tributaries and variants are not exhaustive. Calibre is illustrative. Geometry update v0.9.7: skull-registered medial correction of the lower cavernous ICA and locally rebuilt broad parasellar venous envelopes. The petrous/lacerum canal lumen remains partly unresolved in the retained skull; nerves and detailed septa are not modelled. See docs/CAVERNOUS_v0.9.7.md. Further reference/closed-mask review v0.9.8: see docs/CAVERNOUS_v0.9.8.md. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The cavernous sinuses connect medially to the contralateral side through the intercavernous sinuses.",
       "vesselCourse": {
         "vesselId": "vein.posterior_intercavernous",
@@ -93490,7 +93490,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_intercavernous"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93544,7 +93544,7 @@
           "ref.venous-authoring-2026"
         ]
       },
-      "notes": "Restored clival/basilar plexus. Its retained channels follow the posterior clivus; anterior brainstem and attached vessels receive a separate local shape adjustment. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained.",
+      "notes": "Restored clival/basilar plexus. Its retained channels follow the posterior clivus; anterior brainstem and attached vessels receive a separate local shape adjustment. Geometry update v0.9.32: local ICA/CS reconstruction with exact ophthalmic meshes and native ostial collars; compact independent bone-fitted sinus and shared tributary joins. See docs/ICA_CS_v0.9.32.md. Geometry update v0.9.33: reduced posterior sinus roof and constrained smoothing of connected local vessel surfaces; native topology and fixed ophthalmic attachments retained. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed. Geometry update v0.9.34: repaired continuous venous wall and native tributary collars. Broad small-branch clearance cuts removed.",
       "description": "The basilar or clival plexus connects with the cavernous sinuses posteriorly and with the [marginal sinus](#structure-vein.marginal) and anterior condylar venous network below. It forms a variable plexiform network along the posterior clivus, with communications to both [inferior petrosal sinuses](#structure-vein.inferior_petrosal.right). The displayed interconnected channels represent one selected reference pattern.",
       "asset": {
         "file": "models/venous.glb",
@@ -93558,7 +93558,7 @@
           "file": "models/venous.glb",
           "node": "vein.basilar_plexus"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93661,7 +93661,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_communicating"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93755,7 +93755,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_communicating"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -93882,7 +93882,7 @@
           "file": "models/venous.glb",
           "node": "vein.precentral_cerebellar"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94045,7 +94045,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_vermian"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94179,7 +94179,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_pontomesencephalic"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94325,7 +94325,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_pontine"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94487,7 +94487,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_medullary"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94653,7 +94653,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_spinal"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94735,7 +94735,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse_pontine.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -94859,7 +94859,7 @@
           "file": "models/venous.glb",
           "node": "vein.pontomedullary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -95003,7 +95003,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse_pontine.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -95121,7 +95121,7 @@
           "file": "models/venous.glb",
           "node": "vein.pontomedullary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -115503,7 +115503,7 @@
           "file": "models/venous.glb",
           "node": "vein.direct_lateral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -115606,7 +115606,7 @@
           "file": "models/venous.glb",
           "node": "vein.medial_atrial.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -115704,7 +115704,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_atrial.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -115803,7 +115803,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_ventricular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -115914,7 +115914,7 @@
           "file": "models/venous.glb",
           "node": "vein.longitudinal_caudate.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116027,7 +116027,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_caudate.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116117,7 +116117,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse_caudate.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116210,7 +116210,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_callosal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116306,7 +116306,7 @@
           "file": "models/venous.glb",
           "node": "vein.internal_occipital.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116396,7 +116396,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_thalamic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116486,7 +116486,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_thalamic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116576,7 +116576,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_thalamic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116667,7 +116667,7 @@
           "file": "models/venous.glb",
           "node": "vein.uncal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116755,7 +116755,7 @@
           "file": "models/venous.glb",
           "node": "vein.hippocampal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116852,7 +116852,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_striate.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -116942,7 +116942,7 @@
           "file": "models/venous.glb",
           "node": "vein.insular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117034,7 +117034,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_septal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117126,7 +117126,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_choroidal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117217,7 +117217,7 @@
           "file": "models/venous.glb",
           "node": "vein.olfactory.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117308,7 +117308,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_orbitofrontal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117398,7 +117398,7 @@
           "file": "models/venous.glb",
           "node": "vein.hypothalamic_tributaries.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117496,7 +117496,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_medullary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117599,7 +117599,7 @@
           "file": "models/venous.glb",
           "node": "vein.direct_lateral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117702,7 +117702,7 @@
           "file": "models/venous.glb",
           "node": "vein.medial_atrial.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117800,7 +117800,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_atrial.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -117899,7 +117899,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_ventricular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118010,7 +118010,7 @@
           "file": "models/venous.glb",
           "node": "vein.longitudinal_caudate.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118123,7 +118123,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_caudate.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118213,7 +118213,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse_caudate.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118306,7 +118306,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_callosal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118402,7 +118402,7 @@
           "file": "models/venous.glb",
           "node": "vein.internal_occipital.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118492,7 +118492,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_thalamic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118582,7 +118582,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_thalamic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118672,7 +118672,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_thalamic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118763,7 +118763,7 @@
           "file": "models/venous.glb",
           "node": "vein.uncal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118851,7 +118851,7 @@
           "file": "models/venous.glb",
           "node": "vein.hippocampal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -118948,7 +118948,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_striate.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119038,7 +119038,7 @@
           "file": "models/venous.glb",
           "node": "vein.insular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119130,7 +119130,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_septal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119222,7 +119222,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_choroidal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119313,7 +119313,7 @@
           "file": "models/venous.glb",
           "node": "vein.olfactory.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119404,7 +119404,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_orbitofrontal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119494,7 +119494,7 @@
           "file": "models/venous.glb",
           "node": "vein.hypothalamic_tributaries.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -119586,7 +119586,7 @@
           "file": "models/venous.glb",
           "node": "vein.deep_medullary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -120476,7 +120476,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_spinal"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -120580,7 +120580,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_medullary"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -120684,7 +120684,7 @@
           "file": "models/venous.glb",
           "node": "vein.tentorial_channel.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -120781,7 +120781,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_hemispheric.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -120881,7 +120881,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_hemispheric_lateral.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -120977,7 +120977,7 @@
           "file": "models/venous.glb",
           "node": "vein.horizontal_fissure.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121128,7 +121128,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_hemispheric.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121221,7 +121221,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_hemispheric_inferior.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121314,7 +121314,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_hemispheric_tributaries.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121408,7 +121408,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_recess.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121536,7 +121536,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_cerebellar_peduncular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121680,7 +121680,7 @@
           "file": "models/venous.glb",
           "node": "vein.middle_cerebellar_peduncular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121785,7 +121785,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_vermian_tonsillar_stem.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121894,7 +121894,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_retrotonsillar.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -121984,7 +121984,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_retrotonsillar.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122074,7 +122074,7 @@
           "file": "models/venous.glb",
           "node": "vein.tonsillar_surface.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122171,7 +122171,7 @@
           "file": "models/venous.glb",
           "node": "vein.medial_supratonsillar.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122269,7 +122269,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_supratonsillar.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122379,7 +122379,7 @@
           "file": "models/venous.glb",
           "node": "vein.dentate_tributaries.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122476,7 +122476,7 @@
           "file": "models/venous.glb",
           "node": "vein.fourth_choroidal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122572,7 +122572,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_medullary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122681,7 +122681,7 @@
           "file": "models/venous.glb",
           "node": "vein.retro_olivary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122772,7 +122772,7 @@
           "file": "models/venous.glb",
           "node": "vein.preolivary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -122892,7 +122892,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_cerebellar_peduncular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123000,7 +123000,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterolateral_medullary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123096,7 +123096,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_anterior_pontomesencephalic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123193,7 +123193,7 @@
           "file": "models/venous.glb",
           "node": "vein.pontomesencephalic_sulcus.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123301,7 +123301,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse_medullary.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123417,7 +123417,7 @@
           "file": "models/venous.glb",
           "node": "vein.cerebral_peduncular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123533,7 +123533,7 @@
           "file": "models/venous.glb",
           "node": "vein.tectal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123675,7 +123675,7 @@
           "file": "models/venous.glb",
           "node": "vein.cervical_foraminal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123776,7 +123776,7 @@
           "file": "models/venous.glb",
           "node": "vein.cervical_radicular.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123877,7 +123877,7 @@
           "file": "models/venous.glb",
           "node": "vein.tentorial_channel.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -123974,7 +123974,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_hemispheric.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124073,7 +124073,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_hemispheric_lateral.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124169,7 +124169,7 @@
           "file": "models/venous.glb",
           "node": "vein.horizontal_fissure.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124314,7 +124314,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_hemispheric.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124407,7 +124407,7 @@
           "file": "models/venous.glb",
           "node": "vein.anterior_hemispheric_inferior.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124500,7 +124500,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_hemispheric_tributaries.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124594,7 +124594,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_recess.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124733,7 +124733,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_cerebellar_peduncular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124876,7 +124876,7 @@
           "file": "models/venous.glb",
           "node": "vein.middle_cerebellar_peduncular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -124975,7 +124975,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_vermian_tonsillar_stem.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125078,7 +125078,7 @@
           "file": "models/venous.glb",
           "node": "vein.superior_retrotonsillar.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125168,7 +125168,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_retrotonsillar.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125258,7 +125258,7 @@
           "file": "models/venous.glb",
           "node": "vein.tonsillar_surface.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125355,7 +125355,7 @@
           "file": "models/venous.glb",
           "node": "vein.medial_supratonsillar.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125453,7 +125453,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_supratonsillar.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125563,7 +125563,7 @@
           "file": "models/venous.glb",
           "node": "vein.dentate_tributaries.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125660,7 +125660,7 @@
           "file": "models/venous.glb",
           "node": "vein.fourth_choroidal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125756,7 +125756,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_medullary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125860,7 +125860,7 @@
           "file": "models/venous.glb",
           "node": "vein.retro_olivary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -125951,7 +125951,7 @@
           "file": "models/venous.glb",
           "node": "vein.preolivary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126071,7 +126071,7 @@
           "file": "models/venous.glb",
           "node": "vein.inferior_cerebellar_peduncular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126179,7 +126179,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterolateral_medullary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126275,7 +126275,7 @@
           "file": "models/venous.glb",
           "node": "vein.lateral_anterior_pontomesencephalic.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126383,7 +126383,7 @@
           "file": "models/venous.glb",
           "node": "vein.pontomesencephalic_sulcus.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126479,7 +126479,7 @@
           "file": "models/venous.glb",
           "node": "vein.transverse_medullary.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126593,7 +126593,7 @@
           "file": "models/venous.glb",
           "node": "vein.cerebral_peduncular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126693,7 +126693,7 @@
           "file": "models/venous.glb",
           "node": "vein.tectal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126834,7 +126834,7 @@
           "file": "models/venous.glb",
           "node": "vein.cervical_foraminal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -126935,7 +126935,7 @@
           "file": "models/venous.glb",
           "node": "vein.cervical_radicular.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127037,7 +127037,7 @@
           "file": "models/venous.glb",
           "node": "vein.posterior_mesencephalic.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127135,7 +127135,7 @@
           "file": "models/venous.glb",
           "node": "vein.prepontine_bridge.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127232,7 +127232,7 @@
           "file": "models/venous.glb",
           "node": "vein.cpa_inferior_petrosal_bridge.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127342,7 +127342,7 @@
           "file": "models/venous.glb",
           "node": "vein.lower_brainstem_bridge.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127445,7 +127445,7 @@
           "file": "models/venous.glb",
           "node": "vein.intercollicular"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127550,7 +127550,7 @@
           "file": "models/venous.glb",
           "node": "vein.pontotrigeminal.right"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -127665,7 +127665,7 @@
           "file": "models/venous.glb",
           "node": "vein.pontotrigeminal.left"
         },
-        "geometrySha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+        "geometrySha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
         "registrationId": "z-anatomy-skull-v0.9.14",
         "brainAssetSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "attachments": {
@@ -135440,10 +135440,10 @@
   "warning": "Reference reconstruction; unresolved canal lumina and estimated routes are identified in the landmark register.",
   "assetByteSizes": {
     "models/brain-context.glb": 21740096,
-    "models/venous.glb": 13192220,
+    "models/venous.glb": 13065424,
     "models/craniofacial.glb": 2531976,
     "models/complete-anastomoses.glb": 1754684,
-    "models/complete-circulation.glb": 41072176
+    "models/complete-circulation.glb": 41100136
   },
   "brainRegistration": {
     "id": "z-anatomy-skull-v0.9.14",
@@ -135919,11 +135919,11 @@
     "report": "docs/ANATOMICAL_CORRECTIONS_v0.9.31.md"
   },
   "icaCavernousRefinement": {
-    "version": "0.9.33",
-    "baseline": "0.9.32",
-    "method": "Reduce independent posterior sinus roof space with bone and artery clearance constraints; fair joined artery/vein meshes while preserving ostia and all labelled connections",
+    "version": "0.9.34",
+    "baseline": "0.9.33",
+    "method": "Repair perforated venous surface; restore compact chamber, retain primary ICA channel, fair connected network and graft native remote collars",
     "reviewStatus": "requires-anatomical-review",
-    "evidence": "docs/ICA_CS_v0.9.33.md",
-    "validation": "anatomy/source/ica-cs-v0933/validation.json"
+    "evidence": "docs/ICA_CS_v0.9.34.md",
+    "validation": "anatomy/source/ica-cs-v0934/validation.json"
   }
 }

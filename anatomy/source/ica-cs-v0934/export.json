@@ -1,0 +1,13 @@
+{
+  "release": "0.9.34",
+  "checks": [
+    {
+      "file": "venous.glb",
+      "oldSha256": "b861080875ebe32adf0ca5694c3cde53a9b119a99c05cc54bab370e6ad09a5db",
+      "sha256": "0bae0493d42fd098e98a077763ccb56251b24b0d4596f5f262c70f26539595b8",
+      "labels": 217,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ]
+}

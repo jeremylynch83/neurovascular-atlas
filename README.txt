@@ -1,5 +1,3 @@
-Neurovascular Atlas v0.9.33
+Neurovascular Atlas v0.9.34
 
-Use the included installer as before.
-
-See docs/ICA_CS_v0.9.33.md for posterior sinus reduction, constrained smoothing and validation limits. Comparison renders are in review-renders.
+Cavernous sinus surface repair. See docs/ICA_CS_v0.9.34.md. Use the included installer as before.
