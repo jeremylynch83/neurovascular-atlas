@@ -1,14 +1,5 @@
-Neurovascular Atlas v0.9.31.
+Neurovascular Atlas v0.9.32
 
-Run ./docker.sh start, then open http://localhost:5173/.
-For installer and publishing instructions, see README.md and the included scripts.
+Bilateral ICA / cavernous sinus geometry update. Run ./inr-anatomy.sh or ./docker.sh start. The installer builds the app from the supplied source and assets. For development: npm ci; npm run dev.
 
-This release clears the seven remaining audited posterior artery-vein crossing
-pairs. All twelve audited pairs are clear in the final geometry checks. Local
-venous and brainstem adjustments preserve the existing joins and model labels.
-The npm dependency maintenance from v0.9.30 is retained.
-All 1,648 structures, 1,395 relationships and 1,232 named mesh parts are retained.
-
-Straight-sinus alignment, fine bony canal and ICA/dural calibration, and
-pericallosal fitting remain open. See docs/ANATOMICAL_CORRECTIONS_v0.9.31.md.
-This remains an anatomical review build.
+See README.md and docs/ICA_CS_v0.9.32.md for geometry, validation and review limits. Actual exported-mesh renders are in review-renders.

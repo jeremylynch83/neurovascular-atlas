@@ -1,0 +1,29 @@
+{
+  "release": "0.9.32",
+  "checks": [
+    {
+      "file": "complete-circulation.glb",
+      "oldSha256": "6c06449c3fe719b310d570d0abb34a9f5d8c080c00f4e076dc5e82f71b67ec52",
+      "sha256": "54dcf01401f2f7e7f97c661a7d83c148ed6414c953a3e080eabdefd4c90328e0",
+      "labels": 599,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    },
+    {
+      "file": "venous.glb",
+      "oldSha256": "e67e5934f46de8933fe2487e99de30f73e98f1eb9470b5c83ef3b6b118a9ec68",
+      "sha256": "41be2a30d13fcfedddcbfb98f0ed292bd7a95796195ffe083cde2b20ede10a44",
+      "labels": 217,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    },
+    {
+      "file": "complete-anastomoses.glb",
+      "oldSha256": "aac725a27940ec2b58f959b4b77675b20dad420f1638f6c80d4892e40711badd",
+      "sha256": "942178f7a86e23b1e1fc4f39c82f5681b0dec4e818f1d276c247aef2dd727fb1",
+      "labels": 167,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ]
+}

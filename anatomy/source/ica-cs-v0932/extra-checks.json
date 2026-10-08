@@ -1,0 +1,40 @@
+[
+  {
+    "side": "right",
+    "containmentMaximumSdfMm": 0.009739747915259223,
+    "containmentSampling": "Vertices, all edge midpoints, centroid, three interior barycentric samples per triangle",
+    "containmentToleranceMm": 0.04,
+    "minimumCurvatureRadiusOverTubeRadius": 1.071334903745694,
+    "curvatureScope": "Reconstructed tube z59\u201377.3 mm, before native collar graft",
+    "nativeGenuToOstiumArcMm": 17.43003364291639,
+    "revisedGenuToOstiumArcMm": 5.864256393123561,
+    "genuStations": "Source anterior genu u0.53; fitted anterior bend u0.67; OA projected on each centreline",
+    "sourceOstialParentFaces": 160,
+    "preservedOstialParentFaces": 160,
+    "arterySinusContacts": 0,
+    "sampledMinimumArteryToSinusMm": 0.2821235538114354,
+    "retainedLowerPetrousBoneContacts": 1312,
+    "baselineLowerPetrousBoneContacts": 1312,
+    "lowerSourceFacesPreserved": true,
+    "passed": true
+  },
+  {
+    "side": "left",
+    "containmentMaximumSdfMm": 0.012572047915882562,
+    "containmentSampling": "Vertices, all edge midpoints, centroid, three interior barycentric samples per triangle",
+    "containmentToleranceMm": 0.04,
+    "minimumCurvatureRadiusOverTubeRadius": 1.112929217268133,
+    "curvatureScope": "Reconstructed tube z59\u201377.3 mm, before native collar graft",
+    "nativeGenuToOstiumArcMm": 17.766266445978534,
+    "revisedGenuToOstiumArcMm": 5.6183787923826785,
+    "genuStations": "Source anterior genu u0.53; fitted anterior bend u0.67; OA projected on each centreline",
+    "sourceOstialParentFaces": 153,
+    "preservedOstialParentFaces": 153,
+    "arterySinusContacts": 0,
+    "sampledMinimumArteryToSinusMm": 0.2865751527073591,
+    "retainedLowerPetrousBoneContacts": 1314,
+    "baselineLowerPetrousBoneContacts": 1314,
+    "lowerSourceFacesPreserved": true,
+    "passed": true
+  }
+]

@@ -1,4 +1,14 @@
-# Neurovascular Atlas v0.9.31
+# Neurovascular Atlas v0.9.32
+
+Rebuilds the bilateral cavernous ICA loops and compact cavernous sinus bodies to the approved ICA/CS/bone sketch. The anterior genu sits close to the fixed ophthalmic origin. Both ophthalmic meshes, all 222 ostial vertices, their 313 native parent-wall triangles, and the entire skull registration are preserved. Existing named vascular structures and physical venous connections remain selectable and joined.
+
+The cavernous ICA and sinus surfaces have no detected bone contacts; the rebuilt ICA walls pass non-adjacent triangle intersection checks. The fitted bend-to-ostium centreline arc is 5.9 mm right / 5.6 mm left. Dural boundaries are estimates. Native lower petrous/canal bone contacts remain in the retained source outside this corrected region. Anatomical review remains pending. [Read the method, evidence and limitations](docs/ICA_CS_v0.9.32.md).
+
+Run `./inr-anatomy.sh` with the existing installer, or `./docker.sh start`. For local development use `npm ci` and `npm run dev`. Open the Veins visibility control to show the cavernous sinuses, then search for **ICA cavernous right** or **Cavernous sinus right**. There is no interface redesign.
+
+The app package includes model assets, source catalogue, authoring scripts, exact export/loader evidence and matched renders.
+
+# Previous v0.9.31 release
 
 Clears the seven remaining audited posterior artery-vein crossing pairs, with all twelve pairs verified on the corrected meshes. Includes local venous and brainstem adjustments, refreshed surface anchors and the retained v0.9.30 npm dependency update. [Read the changes, validation and remaining corrections](docs/ANATOMICAL_CORRECTIONS_v0.9.31.md).
 
