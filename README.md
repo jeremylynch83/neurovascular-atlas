@@ -1,3 +1,7 @@
+# Neurovascular Atlas v0.9.39
+
+Finishes bilateral ICA surface and branch-collar smoothing. Both sides retain their native outer attachments and fixed ophthalmic origin centres. No new self-intersections or cavernous sinus wall contacts were detected in the checked region. Existing distal hypophyseal self-intersections remain documented. [Method, checks and renders](docs/ICA_SMOOTH_v0.9.39.md).
+
 # Neurovascular Atlas v0.9.32
 
 Rebuilds the bilateral cavernous ICA loops and compact cavernous sinus bodies to the approved ICA/CS/bone sketch. The anterior genu sits close to the fixed ophthalmic origin. Both ophthalmic meshes, all 222 ostial vertices, their 313 native parent-wall triangles, and the entire skull registration are preserved. Existing named vascular structures and physical venous connections remain selectable and joined.

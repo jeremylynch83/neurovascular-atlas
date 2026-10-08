@@ -1,0 +1,13 @@
+{
+  "release": "0.9.39",
+  "checks": [
+    {
+      "file": "complete-circulation.glb",
+      "oldSha256": "e4cf22368fd568b790d057ec8a05ce30ad18bb90fc02a08bbb837f111caecde7",
+      "sha256": "7ef2d453465da6835a8558b223f94960c31e50568beb039bff63ea0f3692eaee",
+      "labels": 599,
+      "topologyRepartitionOrConnectedField": true,
+      "exactPositionCodecRoundtrip": true
+    }
+  ]
+}

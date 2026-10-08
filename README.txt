@@ -1,3 +1,3 @@
-Neurovascular Atlas v0.9.38
+Neurovascular Atlas v0.9.39
 
-Straightened upper cervical IJVs with preserved native tributary interfaces. Occipital arteries pass over the lateral venous surface. Corrected Sean McIlhone attribution. Includes previous changes. See docs/Neck_v0.9.38.md.
+Bilateral ICA and branch-junction smoothing. See docs/ICA_SMOOTH_v0.9.39.md for validation and limits. Put the ZIP beside the existing inr-anatomy.sh and run it as before.

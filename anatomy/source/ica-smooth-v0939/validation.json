@@ -1,0 +1,78 @@
+[
+  {
+    "side": "right",
+    "topologyBefore": {
+      "components": 1,
+      "boundaryEdges": 2686,
+      "nonManifoldEdges": 421
+    },
+    "topologyAfter": {
+      "components": 1,
+      "boundaryEdges": 2686,
+      "nonManifoldEdges": 0
+    },
+    "nativeExternalBoundariesExact": true,
+    "originChecks": [
+      {
+        "branch": "Meningohypophyseal trunk",
+        "centroidDisplacementMm": 0.06902694461355935,
+        "sharedVertices": 33
+      },
+      {
+        "branch": "Inferolateral trunk",
+        "centroidDisplacementMm": 0.03530074082786611,
+        "sharedVertices": 29
+      },
+      {
+        "branch": "Ophthalmic",
+        "centroidDisplacementMm": 0.043810843472287544,
+        "sharedVertices": 57
+      },
+      {
+        "branch": "Superior hypophyseal",
+        "centroidDisplacementMm": 0.10461420038495386,
+        "sharedVertices": 19
+      }
+    ],
+    "mainIcaBoneContacts": 19,
+    "mainIcaSinusContacts": 0
+  },
+  {
+    "side": "left",
+    "topologyBefore": {
+      "components": 1,
+      "boundaryEdges": 2627,
+      "nonManifoldEdges": 551
+    },
+    "topologyAfter": {
+      "components": 1,
+      "boundaryEdges": 2627,
+      "nonManifoldEdges": 0
+    },
+    "nativeExternalBoundariesExact": true,
+    "originChecks": [
+      {
+        "branch": "Meningohypophyseal trunk",
+        "centroidDisplacementMm": 0.06767291279082091,
+        "sharedVertices": 42
+      },
+      {
+        "branch": "Inferolateral trunk",
+        "centroidDisplacementMm": 0.03632977020163899,
+        "sharedVertices": 29
+      },
+      {
+        "branch": "Ophthalmic",
+        "centroidDisplacementMm": 0.028083576618167207,
+        "sharedVertices": 52
+      },
+      {
+        "branch": "Superior hypophyseal",
+        "centroidDisplacementMm": 0.0988764580347761,
+        "sharedVertices": 20
+      }
+    ],
+    "mainIcaBoneContacts": 20,
+    "mainIcaSinusContacts": 0
+  }
+]

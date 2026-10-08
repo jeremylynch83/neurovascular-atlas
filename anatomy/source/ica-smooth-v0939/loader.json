@@ -1,0 +1,15 @@
+{
+  "release": "0.9.39",
+  "passed": true,
+  "checks": [
+    {
+      "file": "complete-circulation.glb",
+      "labels": 599,
+      "triangles": 6673822,
+      "sha256": "7ef2d453465da6835a8558b223f94960c31e50568beb039bff63ea0f3692eaee",
+      "exactLoadedPositionsAndIndices": true,
+      "unitLoadedNormals": true
+    }
+  ],
+  "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+}

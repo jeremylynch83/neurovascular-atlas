@@ -1,0 +1,202 @@
+[
+  {
+    "side": "right",
+    "gridSpacingMm": [
+      0.15,
+      0.15,
+      0.149812734082397
+    ],
+    "fieldBlurSigmaMm": [
+      0.27,
+      0.27,
+      0.2696629213483146
+    ],
+    "splices": [
+      {
+        "name": "ICA petrous right",
+        "cut": [
+          0.0,
+          0.0,
+          56.5
+        ],
+        "localVertices": 243,
+        "nativeVertices": 146
+      },
+      {
+        "name": "ICA paraophthalmic right",
+        "nativeSegmentRingExact": true,
+        "gapMm": 0.45
+      },
+      {
+        "name": "Ophthalmic right",
+        "cut": [
+          13.782926881284883,
+          -30.56588313664432,
+          76.08273534201504
+        ],
+        "localVertices": 96,
+        "nativeVertices": 72
+      },
+      {
+        "name": "Superior hypophyseal right",
+        "cut": [
+          8.416748879584237,
+          -33.50774618943323,
+          76.96418327513715
+        ],
+        "localVertices": 20,
+        "nativeVertices": 64
+      },
+      {
+        "name": "Inferolateral trunk right",
+        "cut": [
+          15.15134664204659,
+          -42.60664333628536,
+          67.35892276244832
+        ],
+        "localVertices": 18,
+        "nativeVertices": 64
+      },
+      {
+        "name": "Tentorial marginal right",
+        "cut": [
+          17.723599688773945,
+          -50.61826646648789,
+          65.70965554361682
+        ],
+        "localVertices": 20,
+        "nativeVertices": 66
+      },
+      {
+        "name": "Dorsal meningeal right",
+        "cut": [
+          15.021584339557895,
+          -53.160928350968135,
+          62.743391047044575
+        ],
+        "localVertices": 24,
+        "nativeVertices": 66
+      },
+      {
+        "name": "Inferior hypophyseal right",
+        "cut": [
+          14.258705326560827,
+          -51.695300114038176,
+          67.21669567385025
+        ],
+        "localVertices": 36,
+        "nativeVertices": 68
+      },
+      {
+        "name": "Basal tentorial MHT branch right",
+        "cut": [
+          16.858862562238496,
+          -52.206793382684836,
+          63.60986427823823
+        ],
+        "localVertices": 19,
+        "nativeVertices": 50
+      }
+    ]
+  },
+  {
+    "side": "left",
+    "gridSpacingMm": [
+      0.15,
+      0.15,
+      0.149812734082397
+    ],
+    "fieldBlurSigmaMm": [
+      0.27,
+      0.27,
+      0.2696629213483146
+    ],
+    "splices": [
+      {
+        "name": "ICA petrous left",
+        "cut": [
+          0.0,
+          0.0,
+          56.5
+        ],
+        "localVertices": 243,
+        "nativeVertices": 155
+      },
+      {
+        "name": "ICA paraophthalmic left",
+        "nativeSegmentRingExact": true,
+        "gapMm": 0.45
+      },
+      {
+        "name": "Ophthalmic left",
+        "cut": [
+          -12.461849445566346,
+          -30.485405115815475,
+          75.90510405175318
+        ],
+        "localVertices": 92,
+        "nativeVertices": 70
+      },
+      {
+        "name": "Superior hypophyseal left",
+        "cut": [
+          -7.055784207358195,
+          -33.49059514316131,
+          76.86630764158797
+        ],
+        "localVertices": 17,
+        "nativeVertices": 66
+      },
+      {
+        "name": "Inferolateral trunk left",
+        "cut": [
+          -13.682857420319763,
+          -41.86647234872601,
+          67.93872004778544
+        ],
+        "localVertices": 16,
+        "nativeVertices": 64
+      },
+      {
+        "name": "Tentorial marginal left",
+        "cut": [
+          -17.31027163992694,
+          -49.49953954015498,
+          66.38643542503621
+        ],
+        "localVertices": 21,
+        "nativeVertices": 64
+      },
+      {
+        "name": "Dorsal meningeal left",
+        "cut": [
+          -16.134675444590364,
+          -51.92928501900627,
+          64.21553406654317
+        ],
+        "localVertices": 49,
+        "nativeVertices": 72
+      },
+      {
+        "name": "Inferior hypophyseal left",
+        "cut": [
+          -12.917904406077314,
+          -50.56420994199097,
+          69.26860650928813
+        ],
+        "localVertices": 31,
+        "nativeVertices": 68
+      },
+      {
+        "name": "Basal tentorial MHT branch left",
+        "cut": [
+          -16.64363252205156,
+          -51.368661007702855,
+          64.3315148860099
+        ],
+        "localVertices": 20,
+        "nativeVertices": 48
+      }
+    ]
+  }
+]

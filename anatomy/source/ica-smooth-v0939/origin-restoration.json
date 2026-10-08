@@ -1,0 +1,34 @@
+[
+  {
+    "side": "right",
+    "ophthalmicOstiumCentroidBefore": [
+      13.861094883510045,
+      -33.170057024274556,
+      77.10848781040737
+    ],
+    "ophthalmicOstiumCentroidAfter": [
+      13.861094893070689,
+      -33.1700569286681,
+      77.10848758095189
+    ],
+    "centroidDisplacementMm": 2.4876056190469433e-07,
+    "maximumLocalCorrectionMm": 0.20902666764050826,
+    "nativeExternalBoundaryVerticesExact": true
+  },
+  {
+    "side": "left",
+    "ophthalmicOstiumCentroidBefore": [
+      -12.579969371448863,
+      -33.01723854758523,
+      77.09500621448863
+    ],
+    "ophthalmicOstiumCentroidAfter": [
+      -12.579969369448149,
+      -33.01723861694336,
+      77.09500606243427
+    ],
+    "centroidDisplacementMm": 1.6713791970330024e-07,
+    "maximumLocalCorrectionMm": 0.20761920327186717,
+    "nativeExternalBoundaryVerticesExact": true
+  }
+]
