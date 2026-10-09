@@ -1,0 +1,56 @@
+{
+  "release": "0.9.50",
+  "passed": true,
+  "results": [
+    {
+      "node": "vein.vertebral_periarterial_plexus.right",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 53.633931335024265
+    },
+    {
+      "node": "vein.vertebral_periarterial_plexus.left",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 53.77333647093305
+    },
+    {
+      "node": "vein.central_retinal.right",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 1.2785631808772944
+    },
+    {
+      "node": "vein.central_retinal.left",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 1.2926629295308203
+    },
+    {
+      "node": "vein.inferior_alveolar.right",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 16.605404331138555
+    },
+    {
+      "node": "vein.infraorbital.right",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 9.833190042733028
+    },
+    {
+      "node": "vein.internal_auditory.right",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 1.3461818990780234
+    },
+    {
+      "node": "vein.inferior_alveolar.left",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 16.44590885944274
+    },
+    {
+      "node": "vein.infraorbital.left",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 9.660285556023647
+    },
+    {
+      "node": "vein.internal_auditory.left",
+      "connectedComponents": 1,
+      "signedVolumeMm3": 1.4160203126528093
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+from render import *
+from PIL import ImageDraw,ImageFont
+font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',20)
+cases=[('meningeal-right',['bone.frontal','MMA frontal','MMA frontal anterior division','Middle meningeal'],[29,-21,112],108,-90,0),('acoustic-right',['bone.temporal.right','Labyrinthine right','Common cochlear right','Anterior vestibular right','AICA right'],[30,-73,51],35,-145,15),('temporal-right',['bone.temporal.right','bone.zygomatic.right','Superficial temporal','vein.superficial_temporal.right','vein.retromandibular.right'],[58,-43,62],75,0,0),('facial-right',['bone.mandible','Facial','vein.facial.right','vein.deep_facial.right'],[32,-3,16],68,0,0),('vertebral',['Vertebral V2 right','Vertebral V2 left','vein.vertebral.right','vein.vertebral.left'],[0,-82,-43],100,90,0)]
+for name,names,centre,extent,az,el in cases:
+ before=render(DATA,names,centre,extent,az,el);after=render(OUT,names,centre,extent,az,el);im=Image.new('RGB',(SIZE*2,SIZE+55),'white');im.paste(before,(0,55));im.paste(after,(SIZE,55));d=ImageDraw.Draw(im);d.text((20,16),'v0.9.48',font=font,fill='black');d.text((SIZE+20,16),'v0.9.49',font=font,fill='black');im.save(WORK/(name+'-comparison.png'))

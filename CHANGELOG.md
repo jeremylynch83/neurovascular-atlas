@@ -1,3 +1,27 @@
+# v0.9.51: final audit release checks
+
+- Retain all accepted v0.9.50 geometry, including the completed infraorbital repair, byte for byte.
+- Recheck the ten delivered venous reference additions against the actual composite atlas.
+- Record rejected paired meningeal trials and the remaining reference-data limitations.
+- Include refreshed catalogue, component, contact, self-intersection, loader and production-build evidence.
+
+# v0.9.50: audit continuation and selected venous companions
+
+- Add selectable bilateral alveolar, infraorbital, retinal, selected CPA internal auditory and regional vertebral plexiform venous reference anatomy.
+- Constrain petrosal shaft fitting around preserved arterial routes and native venous collars.
+- Reconcile lateral transverse sinus support using the adjacent parietal bone.
+- Include exact mesh comparisons, geometry checks and an audit register with explicit open canal and variant findings.
+- Retain brain, skull and all arterial model assets byte for byte.
+
+# v0.9.49: vessel relationships and bone-following courses
+
+- Correct left incisive and MMA orbital passage associations and vertebral venous terminology.
+- Fit bilateral vertebral, facial/deep facial and superficial temporal veins, with retained drainage connections.
+- Correct hypoglossal and acoustic reference approaches while recording unsegmented canal limits.
+- Rebuild acoustic and frontal meningeal branches as disjoint selectable patches of closed regional tubular networks.
+- Retain skull, brain, pontine networks, previous ICA/labial corrections and the interface.
+- Include actual-mesh comparisons, baseline/contact checks, topology, self-intersection, attachment, exact-loader and production-build evidence.
+
 # v0.9.33: smaller posterior sinus and smoother local connections
 
 Reduced posterior venous bulk, constrained fairing of connected arterial/venous surfaces, fixed ophthalmic anatomy and retained native joins. Includes final exported-mesh comparisons and measured local checks. See docs/ICA_CS_v0.9.33.md.

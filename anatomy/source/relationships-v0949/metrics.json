@@ -1,0 +1,2489 @@
+{
+  "release": "0.9.49",
+  "calibre": [
+    {
+      "node": "Hypoglossal branch",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "y",
+      "ratioP05MedianP95": [
+        0.9986029728670678,
+        1.0002968323815402,
+        1.0878210656360578
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.08782106563605789
+    },
+    {
+      "node": "Hypoglossal branch left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "y",
+      "ratioP05MedianP95": [
+        0.998875455910227,
+        1.0000929076279683,
+        1.0906701767209472
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.09067017672094722
+    },
+    {
+      "node": "Medial clival",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.6873269482240173,
+        1.0,
+        1.0
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.3126730517759826
+    },
+    {
+      "node": "Medial clival left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.6803912018113174,
+        1.0,
+        1.0
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.31960879818868254
+    },
+    {
+      "node": "Odontoid descending",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.9976520096080691,
+        1.0071584474309654,
+        1.2814676693021319
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.2814676693021318
+    },
+    {
+      "node": "Odontoid descending left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.9987749100358696,
+        1.0036474868374154,
+        1.2680659714901674
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.26806597149016753
+    },
+    {
+      "node": "Transverse facial\u2013facial left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "x",
+      "ratioP05MedianP95": [
+        0.9889973513694856,
+        1.0,
+        1.017020296014863
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.01702029601486303
+    },
+    {
+      "node": "Transverse facial\u2013facial right",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "x",
+      "ratioP05MedianP95": [
+        0.9919838494561941,
+        1.0,
+        1.0224846155681804
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.022484615568180422
+    },
+    {
+      "node": "vein.deep_facial.left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "y",
+      "ratioP05MedianP95": [
+        0.7446136493816323,
+        1.0,
+        1.1109759769632077
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.40291912747365366
+    },
+    {
+      "node": "vein.deep_facial.right",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "y",
+      "ratioP05MedianP95": [
+        0.9151189784701478,
+        1.0,
+        1.111039437412795
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.1370490537425203
+    },
+    {
+      "node": "vein.facial.left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.7264780121948292,
+        1.0,
+        1.0015640699749402
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.27352198780517073
+    },
+    {
+      "node": "vein.facial.right",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.7733941504724603,
+        1.0,
+        1.0062313046993798
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.23757705494671824
+    },
+    {
+      "node": "vein.superficial_temporal.left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.9951844564225708,
+        1.0,
+        1.0058510948336172
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.00633388778877087
+    },
+    {
+      "node": "vein.superficial_temporal.right",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.9948049404861238,
+        1.0,
+        1.0111592247572125
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.011255116251456726
+    },
+    {
+      "node": "vein.vertebral.left",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.9968366244897396,
+        1.0,
+        1.000349840333955
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.003760359039501754
+    },
+    {
+      "node": "vein.vertebral.right",
+      "method": "Median contour radius around a bounding-box midpoint in 32 world-axis sections, using the longest baseline extent. Records deformation, not calibrated normal-plane vessel calibre.",
+      "axis": "z",
+      "ratioP05MedianP95": [
+        0.9983165902606402,
+        1.0,
+        1.0025632540243157
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.0035439325624360748
+    }
+  ],
+  "comparisons": [
+    {
+      "artery": "Vertebral V2 right",
+      "vein": "vein.vertebral.right",
+      "sections": [
+        {
+          "z": -82.0,
+          "beforeDelta": [
+            5.692992684061352,
+            -0.6022924199753703,
+            0.0
+          ],
+          "afterDelta": [
+            5.703764102749339,
+            -0.28002801610294625,
+            0.0
+          ],
+          "beforeSeparationMm": 5.724763913030463,
+          "afterSeparationMm": 5.710633995417193
+        },
+        {
+          "z": -80.0,
+          "beforeDelta": [
+            5.578624998179663,
+            -1.321280781767797,
+            0.0
+          ],
+          "afterDelta": [
+            5.667954625871019,
+            -0.12660561699925665,
+            0.0
+          ],
+          "beforeSeparationMm": 5.7329608209531635,
+          "afterSeparationMm": 5.669368450117565
+        },
+        {
+          "z": -78.0,
+          "beforeDelta": [
+            5.4687722619272705,
+            -1.9803767928006977,
+            0.0
+          ],
+          "afterDelta": [
+            5.601257412240134,
+            0.6224438584500547,
+            0.0
+          ],
+          "beforeSeparationMm": 5.816301427392557,
+          "afterSeparationMm": 5.63573606151825
+        },
+        {
+          "z": -76.0,
+          "beforeDelta": [
+            5.390588297249966,
+            -2.514831413146325,
+            0.0
+          ],
+          "afterDelta": [
+            5.325288757765435,
+            1.681585139342772,
+            0.0
+          ],
+          "beforeSeparationMm": 5.948345923615727,
+          "afterSeparationMm": 5.5844810801399785
+        },
+        {
+          "z": -74.0,
+          "beforeDelta": [
+            5.336324376497142,
+            -2.9280190494787774,
+            0.0
+          ],
+          "afterDelta": [
+            4.901889396738969,
+            2.6246445395345006,
+            0.0
+          ],
+          "beforeSeparationMm": 6.086842646668979,
+          "afterSeparationMm": 5.560330801019864
+        },
+        {
+          "z": -72.0,
+          "beforeDelta": [
+            5.265109934142757,
+            -3.3184928829339952,
+            0.0
+          ],
+          "afterDelta": [
+            4.600984844231988,
+            2.9346928664400878,
+            0.0
+          ],
+          "beforeSeparationMm": 6.223646650693814,
+          "afterSeparationMm": 5.457241405434323
+        },
+        {
+          "z": -70.0,
+          "beforeDelta": [
+            5.2313054076449745,
+            -3.5678482511558087,
+            0.0
+          ],
+          "afterDelta": [
+            4.609754671821648,
+            2.9771210424002277,
+            0.0
+          ],
+          "beforeSeparationMm": 6.33214793031015,
+          "afterSeparationMm": 5.48753932427675
+        },
+        {
+          "z": -68.0,
+          "beforeDelta": [
+            5.189972897290858,
+            -3.7990628298903317,
+            0.0
+          ],
+          "afterDelta": [
+            4.6069693769684505,
+            2.9497365784777543,
+            0.0
+          ],
+          "beforeSeparationMm": 6.431850205039604,
+          "afterSeparationMm": 5.470385061651028
+        },
+        {
+          "z": -66.0,
+          "beforeDelta": [
+            5.146846742937505,
+            -3.9104722403704386,
+            0.0
+          ],
+          "afterDelta": [
+            4.597886036233525,
+            2.9761142276163923,
+            0.0
+          ],
+          "beforeSeparationMm": 6.46388617922641,
+          "afterSeparationMm": 5.477025825939837
+        },
+        {
+          "z": -64.0,
+          "beforeDelta": [
+            5.123326569535074,
+            -3.9907744131904366,
+            0.0
+          ],
+          "afterDelta": [
+            4.596834050238371,
+            2.976682856659764,
+            0.0
+          ],
+          "beforeSeparationMm": 6.494209386451864,
+          "afterSeparationMm": 5.476451781451476
+        },
+        {
+          "z": -62.0,
+          "beforeDelta": [
+            5.119104899462389,
+            -4.013963336219746,
+            0.0
+          ],
+          "afterDelta": [
+            4.604064236789487,
+            2.989222602981499,
+            0.0
+          ],
+          "beforeSeparationMm": 6.505162306677382,
+          "afterSeparationMm": 5.489340512908582
+        },
+        {
+          "z": -60.0,
+          "beforeDelta": [
+            5.115034245205695,
+            -4.015671655281821,
+            0.0
+          ],
+          "afterDelta": [
+            4.609130634419351,
+            2.994072259036713,
+            0.0
+          ],
+          "beforeSeparationMm": 6.503014237464104,
+          "afterSeparationMm": 5.496230881019841
+        },
+        {
+          "z": -58.0,
+          "beforeDelta": [
+            5.093191126974631,
+            -3.9941251362562014,
+            0.0
+          ],
+          "afterDelta": [
+            4.596302395605594,
+            3.0003085826411677,
+            0.0
+          ],
+          "beforeSeparationMm": 6.4725289848687995,
+          "afterSeparationMm": 5.488883976084754
+        },
+        {
+          "z": -56.0,
+          "beforeDelta": [
+            5.112095719544332,
+            -3.9835613826686824,
+            0.0
+          ],
+          "afterDelta": [
+            4.621395962923696,
+            2.9886038246533246,
+            0.0
+          ],
+          "beforeSeparationMm": 6.4809169054442215,
+          "afterSeparationMm": 5.503549170022914
+        },
+        {
+          "z": -54.0,
+          "beforeDelta": [
+            5.088851521673302,
+            -3.9325145748961177,
+            0.0
+          ],
+          "afterDelta": [
+            4.6057154821465325,
+            3.0232631295619683,
+            0.0
+          ],
+          "beforeSeparationMm": 6.431258095536757,
+          "afterSeparationMm": 5.509331633969142
+        },
+        {
+          "z": -52.0,
+          "beforeDelta": [
+            5.0806441998913385,
+            -3.94234150576888,
+            0.0
+          ],
+          "afterDelta": [
+            4.609079568435305,
+            3.016618736860792,
+            0.0
+          ],
+          "beforeSeparationMm": 6.4307854912131495,
+          "afterSeparationMm": 5.508502797652678
+        },
+        {
+          "z": -50.0,
+          "beforeDelta": [
+            5.06095218408716,
+            -3.980565390495201,
+            0.0
+          ],
+          "afterDelta": [
+            4.603593384156461,
+            2.997932844874697,
+            0.0
+          ],
+          "beforeSeparationMm": 6.4387994096434475,
+          "afterSeparationMm": 5.493693965723576
+        },
+        {
+          "z": -48.0,
+          "beforeDelta": [
+            5.045056397953513,
+            -4.001620962286651,
+            0.0
+          ],
+          "afterDelta": [
+            4.603622052315174,
+            3.0038670880999945,
+            0.0
+          ],
+          "beforeSeparationMm": 6.439376086574197,
+          "afterSeparationMm": 5.496958566656011
+        },
+        {
+          "z": -46.0,
+          "beforeDelta": [
+            5.033345896526804,
+            -4.025027257153738,
+            0.0
+          ],
+          "afterDelta": [
+            4.605464620730501,
+            3.010290173303005,
+            0.0
+          ],
+          "beforeSeparationMm": 6.444797540257859,
+          "afterSeparationMm": 5.502013386051053
+        },
+        {
+          "z": -44.0,
+          "beforeDelta": [
+            5.029423574276507,
+            -4.05790084839667,
+            0.0
+          ],
+          "afterDelta": [
+            4.61451482660264,
+            3.014840510515242,
+            0.0
+          ],
+          "beforeSeparationMm": 6.462326267290029,
+          "afterSeparationMm": 5.512078590584445
+        },
+        {
+          "z": -42.0,
+          "beforeDelta": [
+            5.00553663826711,
+            -4.107451262139307,
+            0.0
+          ],
+          "afterDelta": [
+            4.609285924940778,
+            3.016070297412398,
+            0.0
+          ],
+          "beforeSeparationMm": 6.475071652722013,
+          "afterSeparationMm": 5.508375148516164
+        },
+        {
+          "z": -40.0,
+          "beforeDelta": [
+            4.980621808569481,
+            -4.18681186338668,
+            0.0
+          ],
+          "afterDelta": [
+            4.610673561141127,
+            2.9981513309108436,
+            0.0
+          ],
+          "beforeSeparationMm": 6.506611036430053,
+          "afterSeparationMm": 5.4997474569700255
+        },
+        {
+          "z": -38.0,
+          "beforeDelta": [
+            4.932346958260997,
+            -4.238889446498604,
+            0.0
+          ],
+          "afterDelta": [
+            4.593786087534266,
+            3.020190879355269,
+            0.0
+          ],
+          "beforeSeparationMm": 6.503555201295961,
+          "afterSeparationMm": 5.497674377931466
+        },
+        {
+          "z": -36.0,
+          "beforeDelta": [
+            4.916880602865014,
+            -4.342799803971545,
+            0.0
+          ],
+          "afterDelta": [
+            4.6183461624417,
+            3.0039111602250017,
+            0.0
+          ],
+          "beforeSeparationMm": 6.560154342712183,
+          "afterSeparationMm": 5.509319697990333
+        },
+        {
+          "z": -34.0,
+          "beforeDelta": [
+            4.864930208462038,
+            -4.439443927246202,
+            0.0
+          ],
+          "afterDelta": [
+            4.623531720169911,
+            3.004717515116184,
+            0.0
+          ],
+          "beforeSeparationMm": 6.586061669645197,
+          "afterSeparationMm": 5.514106719411886
+        },
+        {
+          "z": -32.0,
+          "beforeDelta": [
+            4.787827006330307,
+            -4.549567640997026,
+            0.0
+          ],
+          "afterDelta": [
+            4.61762620325829,
+            3.0000038564699025,
+            0.0
+          ],
+          "beforeSeparationMm": 6.604684183407491,
+          "afterSeparationMm": 5.506586500896163
+        },
+        {
+          "z": -30.0,
+          "beforeDelta": [
+            4.703593936043397,
+            -4.66886444338266,
+            0.0
+          ],
+          "afterDelta": [
+            4.62001247803958,
+            2.9868154191650547,
+            0.0
+          ],
+          "beforeSeparationMm": 6.6273743749592935,
+          "afterSeparationMm": 5.501416330855496
+        },
+        {
+          "z": -28.0,
+          "beforeDelta": [
+            4.583735274960219,
+            -4.756452745896084,
+            0.0
+          ],
+          "afterDelta": [
+            4.607699128090424,
+            2.991944062846656,
+            0.0
+          ],
+          "beforeSeparationMm": 6.605639393340892,
+          "afterSeparationMm": 5.493871178887307
+        },
+        {
+          "z": -26.0,
+          "beforeDelta": [
+            4.474293535568485,
+            -4.836079365961211,
+            0.0
+          ],
+          "afterDelta": [
+            4.623563156083129,
+            2.9806994884970095,
+            0.0
+          ],
+          "beforeSeparationMm": 6.588396335703076,
+          "afterSeparationMm": 5.50108222979949
+        },
+        {
+          "z": -24.0,
+          "beforeDelta": [
+            4.319376060195687,
+            -4.87852338128782,
+            0.0
+          ],
+          "afterDelta": [
+            4.623561592227723,
+            2.9801489249640554,
+            0.0
+          ],
+          "beforeSeparationMm": 6.515903615858936,
+          "afterSeparationMm": 5.500782618145147
+        },
+        {
+          "z": -22.0,
+          "beforeDelta": [
+            4.144335999767563,
+            -4.898618112300156,
+            0.0
+          ],
+          "afterDelta": [
+            4.956631402194411,
+            2.5126352098487104,
+            0.0
+          ],
+          "beforeSeparationMm": 6.416539588370397,
+          "afterSeparationMm": 5.5571153087722776
+        },
+        {
+          "z": -20.0,
+          "beforeDelta": [
+            3.9727044377515632,
+            -4.9015104476717255,
+            0.0
+          ],
+          "afterDelta": [
+            5.546104657893739,
+            1.0962448269629448,
+            0.0
+          ],
+          "beforeSeparationMm": 6.309293559374619,
+          "afterSeparationMm": 5.653408670612239
+        },
+        {
+          "z": -18.0,
+          "beforeDelta": [
+            3.8469115223763453,
+            -4.843824660678806,
+            0.0
+          ],
+          "afterDelta": [
+            5.749078650726503,
+            -0.9480739778571348,
+            0.0
+          ],
+          "beforeSeparationMm": 6.185577224834561,
+          "afterSeparationMm": 5.826727177389475
+        },
+        {
+          "z": -16.0,
+          "beforeDelta": [
+            3.699844638443537,
+            -4.768832860904567,
+            0.0
+          ],
+          "afterDelta": [
+            5.109834957086008,
+            -2.9779921757460244,
+            0.0
+          ],
+          "beforeSeparationMm": 6.035778094319126,
+          "afterSeparationMm": 5.914292069847642
+        },
+        {
+          "z": -14.0,
+          "beforeDelta": [
+            3.4877969826669535,
+            -4.600368993760952,
+            0.0
+          ],
+          "afterDelta": [
+            3.9894542930444707,
+            -4.175721032522517,
+            0.0
+          ],
+          "beforeSeparationMm": 5.773051417669676,
+          "afterSeparationMm": 5.775152958817791
+        }
+      ],
+      "medianSeparationBeforeMm": 6.444797540257859,
+      "medianSeparationAfterMm": 5.503549170022914
+    },
+    {
+      "artery": "Facial",
+      "vein": "vein.facial.right",
+      "sections": [
+        {
+          "z": 1.0,
+          "beforeDelta": [
+            3.7861992388852457,
+            6.125061430542457,
+            0.0
+          ],
+          "afterDelta": [
+            7.585666426130302,
+            -0.9755854358928788,
+            0.0
+          ],
+          "beforeSeparationMm": 7.2008112184985125,
+          "afterSeparationMm": 7.64814370100659
+        },
+        {
+          "z": 3.0,
+          "beforeDelta": [
+            3.903890419360721,
+            6.432625757930268,
+            0.0
+          ],
+          "afterDelta": [
+            8.679737194464657,
+            -2.5122402930287455,
+            0.0
+          ],
+          "beforeSeparationMm": 7.524562083468005,
+          "afterSeparationMm": 9.035994082273978
+        },
+        {
+          "z": 5.0,
+          "beforeDelta": [
+            3.111960641648743,
+            6.738290835573524,
+            0.0
+          ],
+          "afterDelta": [
+            8.670315581867456,
+            -3.602762597224136,
+            0.0
+          ],
+          "beforeSeparationMm": 7.422187172252193,
+          "afterSeparationMm": 9.389050570804846
+        },
+        {
+          "z": 7.0,
+          "beforeDelta": [
+            1.6258705148800132,
+            7.52221298869887,
+            0.0
+          ],
+          "afterDelta": [
+            7.8440384458886285,
+            -3.9964697448965083,
+            0.0
+          ],
+          "beforeSeparationMm": 7.695917305851602,
+          "afterSeparationMm": 8.80344873117644
+        },
+        {
+          "z": 9.0,
+          "beforeDelta": [
+            2.8431068059615683,
+            4.998090427728606,
+            0.0
+          ],
+          "afterDelta": [
+            9.620031635892289,
+            -7.546385553381551,
+            0.0
+          ],
+          "beforeSeparationMm": 5.750144714166533,
+          "afterSeparationMm": 12.226730699408336
+        },
+        {
+          "z": 11.0,
+          "beforeDelta": [
+            3.344853369069945,
+            4.572873154050061,
+            0.0
+          ],
+          "afterDelta": [
+            10.56952371028352,
+            -8.83396793913686,
+            0.0
+          ],
+          "beforeSeparationMm": 5.665616731090298,
+          "afterSeparationMm": 13.775116007204565
+        },
+        {
+          "z": 13.0,
+          "beforeDelta": [
+            4.7846788718476745,
+            3.165947740257268,
+            0.0
+          ],
+          "afterDelta": [
+            12.346370251495884,
+            -10.895273127894917,
+            0.0
+          ],
+          "beforeSeparationMm": 5.737279581887711,
+          "afterSeparationMm": 16.466324268592903
+        },
+        {
+          "z": 15.0,
+          "beforeDelta": [
+            3.8108699646142625,
+            4.352352534469649,
+            0.0
+          ],
+          "afterDelta": [
+            11.635137034813226,
+            -10.156023678972408,
+            0.0
+          ],
+          "beforeSeparationMm": 5.784954837464462,
+          "afterSeparationMm": 15.444132568284001
+        },
+        {
+          "z": 17.0,
+          "beforeDelta": [
+            3.219300632721609,
+            5.266678244402648,
+            0.0
+          ],
+          "afterDelta": [
+            11.079407526699821,
+            -9.339643655006245,
+            0.0
+          ],
+          "beforeSeparationMm": 6.172665250433228,
+          "afterSeparationMm": 14.490763083605744
+        },
+        {
+          "z": 19.0,
+          "beforeDelta": [
+            3.6961497680495015,
+            5.5089076815962414,
+            0.0
+          ],
+          "afterDelta": [
+            11.217168141187287,
+            -8.705633171844127,
+            0.0
+          ],
+          "beforeSeparationMm": 6.633972185063973,
+          "afterSeparationMm": 14.199046095790374
+        },
+        {
+          "z": 21.0,
+          "beforeDelta": [
+            7.471202277931731,
+            1.89025059357364,
+            0.0
+          ],
+          "afterDelta": [
+            14.612170119577058,
+            -12.542968072088726,
+            0.0
+          ],
+          "beforeSeparationMm": 7.706614742172972,
+          "afterSeparationMm": 19.257247042630414
+        },
+        {
+          "z": 23.0,
+          "beforeDelta": [
+            9.343946389351828,
+            -0.6928404419418897,
+            0.0
+          ],
+          "afterDelta": [
+            15.03083916409426,
+            -12.026995082586165,
+            0.0
+          ],
+          "beforeSeparationMm": 9.36959775044112,
+          "afterSeparationMm": 19.25031783356892
+        },
+        {
+          "z": 25.0,
+          "beforeDelta": [
+            10.051204367448772,
+            -0.644602171924177,
+            0.0
+          ],
+          "afterDelta": [
+            13.457822535964322,
+            -7.595870856246858,
+            0.0
+          ],
+          "beforeSeparationMm": 10.071852917724257,
+          "afterSeparationMm": 15.453486385741229
+        },
+        {
+          "z": 27.0,
+          "beforeDelta": [
+            10.735002311891662,
+            -0.4792518986125529,
+            0.0
+          ],
+          "afterDelta": [
+            12.596249741985531,
+            -3.9702786635342733,
+            0.0
+          ],
+          "beforeSeparationMm": 10.745694813209758,
+          "afterSeparationMm": 13.207142773082529
+        }
+      ],
+      "medianSeparationBeforeMm": 7.311499195375353,
+      "medianSeparationAfterMm": 13.98708105149747
+    },
+    {
+      "artery": "Superficial temporal",
+      "vein": "vein.superficial_temporal.right",
+      "sections": [
+        {
+          "z": 40.0,
+          "beforeDelta": [
+            0.23003807251321007,
+            22.76693506235584,
+            0.0
+          ],
+          "afterDelta": [
+            0.11039325397248945,
+            20.68586435639652,
+            0.0
+          ],
+          "beforeSeparationMm": 22.76809718989124,
+          "afterSeparationMm": 20.686158919474604
+        },
+        {
+          "z": 42.0,
+          "beforeDelta": [
+            1.252130334796405,
+            23.253603504186874,
+            0.0
+          ],
+          "afterDelta": [
+            0.824322688539624,
+            17.845499266365877,
+            0.0
+          ],
+          "beforeSeparationMm": 23.287290660470774,
+          "afterSeparationMm": 17.86452775644255
+        },
+        {
+          "z": 44.0,
+          "beforeDelta": [
+            -0.7924471940379263,
+            21.408131366753196,
+            0.0
+          ],
+          "afterDelta": [
+            -2.3316566107005485,
+            13.24071566161296,
+            0.0
+          ],
+          "beforeSeparationMm": 21.42279302918974,
+          "afterSeparationMm": 13.44444769344975
+        },
+        {
+          "z": 46.0,
+          "beforeDelta": [
+            -3.3642305201591967,
+            20.877512464178388,
+            0.0
+          ],
+          "afterDelta": [
+            -5.647279097997412,
+            11.615600912969747,
+            0.0
+          ],
+          "beforeSeparationMm": 21.14683365624023,
+          "afterSeparationMm": 12.915647323307573
+        },
+        {
+          "z": 48.0,
+          "beforeDelta": [
+            -3.882699890685771,
+            22.261032181489043,
+            0.0
+          ],
+          "afterDelta": [
+            -5.702198909089816,
+            12.072169332851772,
+            0.0
+          ],
+          "beforeSeparationMm": 22.597099641910287,
+          "afterSeparationMm": 13.351117735975212
+        },
+        {
+          "z": 50.0,
+          "beforeDelta": [
+            -4.344208209052788,
+            22.980194742814938,
+            0.0
+          ],
+          "afterDelta": [
+            -5.055219624305764,
+            11.574899994148083,
+            0.0
+          ],
+          "beforeSeparationMm": 23.387207943260368,
+          "afterSeparationMm": 12.630659338470632
+        },
+        {
+          "z": 52.0,
+          "beforeDelta": [
+            -4.764062403378155,
+            21.663490562401215,
+            0.0
+          ],
+          "afterDelta": [
+            -3.364289171575571,
+            9.143510979212003,
+            0.0
+          ],
+          "beforeSeparationMm": 22.1811432061228,
+          "afterSeparationMm": 9.742804250160786
+        },
+        {
+          "z": 54.0,
+          "beforeDelta": [
+            -3.60091073737879,
+            20.131434509473955,
+            0.0
+          ],
+          "afterDelta": [
+            -0.1601296793530551,
+            4.16199235683878,
+            0.0
+          ],
+          "beforeSeparationMm": 20.450946519606585,
+          "afterSeparationMm": 4.165071655157224
+        },
+        {
+          "z": 56.0,
+          "beforeDelta": [
+            -1.1986656018899708,
+            19.397007053187764,
+            0.0
+          ],
+          "afterDelta": [
+            3.8521467664613454,
+            0.07723652030445294,
+            0.0
+          ],
+          "beforeSeparationMm": 19.434008383413087,
+          "afterSeparationMm": 3.852920994573771
+        },
+        {
+          "z": 58.0,
+          "beforeDelta": [
+            0.4398883439406518,
+            19.008191125028134,
+            0.0
+          ],
+          "afterDelta": [
+            4.836431520582657,
+            -2.5184906101558724,
+            0.0
+          ],
+          "beforeSeparationMm": 19.013280400833864,
+          "afterSeparationMm": 5.452876745968936
+        },
+        {
+          "z": 60.0,
+          "beforeDelta": [
+            1.2169026795397855,
+            19.03708462104059,
+            0.0
+          ],
+          "afterDelta": [
+            4.893567382542074,
+            -3.1304899083376654,
+            0.0
+          ],
+          "beforeSeparationMm": 19.075938849769134,
+          "afterSeparationMm": 5.809214128751293
+        },
+        {
+          "z": 62.0,
+          "beforeDelta": [
+            1.1989691175021235,
+            20.294381775736415,
+            0.0
+          ],
+          "afterDelta": [
+            4.665914407028787,
+            -3.0372665319958543,
+            0.0
+          ],
+          "beforeSeparationMm": 20.329767795133964,
+          "afterSeparationMm": 5.56738226100031
+        },
+        {
+          "z": 64.0,
+          "beforeDelta": [
+            0.829354952299667,
+            21.621856459926782,
+            0.0
+          ],
+          "afterDelta": [
+            4.560449542414659,
+            -3.112735395044446,
+            0.0
+          ],
+          "beforeSeparationMm": 21.637756501323828,
+          "afterSeparationMm": 5.52148726961066
+        },
+        {
+          "z": 66.0,
+          "beforeDelta": [
+            0.2500106570804519,
+            22.730035476624863,
+            0.0
+          ],
+          "afterDelta": [
+            4.353626028955105,
+            -2.8488106346049022,
+            0.0
+          ],
+          "beforeSeparationMm": 22.73141038513182,
+          "afterSeparationMm": 5.202862830388034
+        },
+        {
+          "z": 68.0,
+          "beforeDelta": [
+            -0.3876022094590823,
+            23.06553858196152,
+            0.0
+          ],
+          "afterDelta": [
+            4.3845243581524755,
+            -2.5824547798559934,
+            0.0
+          ],
+          "beforeSeparationMm": 23.06879506061669,
+          "afterSeparationMm": 5.088528916812151
+        },
+        {
+          "z": 70.0,
+          "beforeDelta": [
+            -0.7865649734156932,
+            22.759390495973317,
+            0.0
+          ],
+          "afterDelta": [
+            4.613426913052166,
+            -1.951107002619608,
+            0.0
+          ],
+          "beforeSeparationMm": 22.772978290193073,
+          "afterSeparationMm": 5.009044461546065
+        },
+        {
+          "z": 72.0,
+          "beforeDelta": [
+            -0.7506293566321034,
+            22.042094681167395,
+            0.0
+          ],
+          "afterDelta": [
+            4.684692438075757,
+            -1.4160064152932677,
+            0.0
+          ],
+          "beforeSeparationMm": 22.054872077719832,
+          "afterSeparationMm": 4.894018533630198
+        },
+        {
+          "z": 74.0,
+          "beforeDelta": [
+            -0.30867201640760555,
+            20.88766360878045,
+            0.0
+          ],
+          "afterDelta": [
+            4.620435460818356,
+            -1.743297001845903,
+            0.0
+          ],
+          "beforeSeparationMm": 20.889944218386134,
+          "afterSeparationMm": 4.938371015247098
+        },
+        {
+          "z": 76.0,
+          "beforeDelta": [
+            0.44085875839319044,
+            19.208749613738597,
+            0.0
+          ],
+          "afterDelta": [
+            4.40340330638513,
+            -2.2332287299955453,
+            0.0
+          ],
+          "beforeSeparationMm": 19.21380800799661,
+          "afterSeparationMm": 4.937334426505967
+        },
+        {
+          "z": 78.0,
+          "beforeDelta": [
+            1.085196653261562,
+            17.299348652420115,
+            0.0
+          ],
+          "afterDelta": [
+            4.7424491717064825,
+            -1.733214627302317,
+            0.0
+          ],
+          "beforeSeparationMm": 17.333352692835845,
+          "afterSeparationMm": 5.049243219583922
+        },
+        {
+          "z": 80.0,
+          "beforeDelta": [
+            1.2932441068259024,
+            15.55515965826089,
+            0.0
+          ],
+          "afterDelta": [
+            4.598116448424882,
+            0.33022560700349857,
+            0.0
+          ],
+          "beforeSeparationMm": 15.60882674366741,
+          "afterSeparationMm": 4.609959199905817
+        }
+      ],
+      "medianSeparationBeforeMm": 21.42279302918974,
+      "medianSeparationAfterMm": 5.452876745968936
+    },
+    {
+      "vessel": "Hypoglossal branch",
+      "guide": "landmark.hypoglossal.right",
+      "status": "regional",
+      "guideToWallBeforeMm": 7.121894519372415,
+      "guideToWallAfterMm": 4.566793122936518,
+      "notIndependentCanalValidation": true
+    },
+    {
+      "vessel": "Labyrinthine right",
+      "guide": "landmark.internal-acoustic.right",
+      "status": "regional",
+      "guideToWallBeforeMm": 13.39201893222475,
+      "guideToWallAfterMm": 0.8402492802850154,
+      "notIndependentCanalValidation": true
+    },
+    {
+      "vessel": "MMA frontal",
+      "innerTableScreen": [
+        {
+          "z": 85,
+          "minWallGapBeforeMm": 1.3750747826863263,
+          "minWallGapAfterMm": 2.0328453805077134
+        },
+        {
+          "z": 87,
+          "minWallGapBeforeMm": 5.2112857412263365,
+          "minWallGapAfterMm": 3.306543568704497
+        },
+        {
+          "z": 89,
+          "minWallGapBeforeMm": 4.210346495143227,
+          "minWallGapAfterMm": 2.239082978253415
+        },
+        {
+          "z": 91,
+          "minWallGapBeforeMm": 0.656799949426374,
+          "minWallGapAfterMm": 0.4631264170528942
+        },
+        {
+          "z": 93,
+          "minWallGapBeforeMm": 0.2106790256535486,
+          "minWallGapAfterMm": 0.429595452277171
+        },
+        {
+          "z": 103,
+          "minWallGapBeforeMm": 0.7824541566367839,
+          "minWallGapAfterMm": 0.7872987842225112
+        },
+        {
+          "z": 105,
+          "minWallGapBeforeMm": 0.8195499455507513,
+          "minWallGapAfterMm": 0.8083240138204322
+        }
+      ]
+    },
+    {
+      "artery": "Vertebral V2 left",
+      "vein": "vein.vertebral.left",
+      "sections": [
+        {
+          "z": -82.0,
+          "beforeDelta": [
+            -4.383415444196309,
+            -0.05025260857742353,
+            0.0
+          ],
+          "afterDelta": [
+            -4.469544535419182,
+            0.15432911474829325,
+            0.0
+          ],
+          "beforeSeparationMm": 4.383703489184409,
+          "afterSeparationMm": 4.472208160378322
+        },
+        {
+          "z": -80.0,
+          "beforeDelta": [
+            -4.265567870597934,
+            -0.7738526402559955,
+            0.0
+          ],
+          "afterDelta": [
+            -4.634495557180454,
+            0.08989261217192279,
+            0.0
+          ],
+          "beforeSeparationMm": 4.335195170636331,
+          "afterSeparationMm": 4.635367272530674
+        },
+        {
+          "z": -78.0,
+          "beforeDelta": [
+            -4.163115729172873,
+            -1.4035291242611976,
+            0.0
+          ],
+          "afterDelta": [
+            -4.893776674553543,
+            0.6169269577695502,
+            0.0
+          ],
+          "beforeSeparationMm": 4.393338887126281,
+          "afterSeparationMm": 4.932509403095662
+        },
+        {
+          "z": -76.0,
+          "beforeDelta": [
+            -4.0886370778252825,
+            -1.9716759508186215,
+            0.0
+          ],
+          "afterDelta": [
+            -4.982600362402245,
+            1.5638360667990554,
+            0.0
+          ],
+          "beforeSeparationMm": 4.5392135011700185,
+          "afterSeparationMm": 5.222249478455862
+        },
+        {
+          "z": -74.0,
+          "beforeDelta": [
+            -4.028294666457317,
+            -2.3943536585583303,
+            0.0
+          ],
+          "afterDelta": [
+            -4.784169110774936,
+            2.5116640524381353,
+            0.0
+          ],
+          "beforeSeparationMm": 4.686159126839391,
+          "afterSeparationMm": 5.403399891994207
+        },
+        {
+          "z": -72.0,
+          "beforeDelta": [
+            -3.9732083270398633,
+            -2.776419206973685,
+            0.0
+          ],
+          "afterDelta": [
+            -4.608470418340282,
+            2.9018800300581233,
+            0.0
+          ],
+          "beforeSeparationMm": 4.847152568561392,
+          "afterSeparationMm": 5.445999201759728
+        },
+        {
+          "z": -70.0,
+          "beforeDelta": [
+            -3.9157012116847696,
+            -3.037357459773176,
+            0.0
+          ],
+          "afterDelta": [
+            -4.593698830429894,
+            2.9515514879472136,
+            0.0
+          ],
+          "beforeSeparationMm": 4.955628750989054,
+          "afterSeparationMm": 5.46019460557006
+        },
+        {
+          "z": -68.0,
+          "beforeDelta": [
+            -3.8955718769218066,
+            -3.208558905851106,
+            0.0
+          ],
+          "afterDelta": [
+            -4.607260389447731,
+            2.9717339921981676,
+            0.0
+          ],
+          "beforeSeparationMm": 5.046813895972441,
+          "afterSeparationMm": 5.482522340726038
+        },
+        {
+          "z": -66.0,
+          "beforeDelta": [
+            -3.874168332955435,
+            -3.3130614491174697,
+            0.0
+          ],
+          "afterDelta": [
+            -4.613075884220326,
+            2.9907143372723226,
+            0.0
+          ],
+          "beforeSeparationMm": 5.097603009033073,
+          "afterSeparationMm": 5.49771237522857
+        },
+        {
+          "z": -64.0,
+          "beforeDelta": [
+            -3.8403765425263856,
+            -3.394786863725386,
+            0.0
+          ],
+          "afterDelta": [
+            -4.603475177031676,
+            2.983210090518611,
+            0.0
+          ],
+          "beforeSeparationMm": 5.125726274247325,
+          "afterSeparationMm": 5.48557436826071
+        },
+        {
+          "z": -62.0,
+          "beforeDelta": [
+            -3.8271194581025227,
+            -3.4247259991936403,
+            0.0
+          ],
+          "afterDelta": [
+            -4.610148730786975,
+            2.987679231968187,
+            0.0
+          ],
+          "beforeSeparationMm": 5.135717234830966,
+          "afterSeparationMm": 5.493605238193838
+        },
+        {
+          "z": -60.0,
+          "beforeDelta": [
+            -3.810962411070143,
+            -3.4277637483158117,
+            0.0
+          ],
+          "afterDelta": [
+            -4.606587685713574,
+            2.98723913764789,
+            0.0
+          ],
+          "beforeSeparationMm": 5.125719345892596,
+          "afterSeparationMm": 5.4903777439865875
+        },
+        {
+          "z": -58.0,
+          "beforeDelta": [
+            -3.801240958264021,
+            -3.40502429841888,
+            0.0
+          ],
+          "afterDelta": [
+            -4.599036409903743,
+            2.9882126002297866,
+            0.0
+          ],
+          "beforeSeparationMm": 5.103295336898205,
+          "afterSeparationMm": 5.484573861640699
+        },
+        {
+          "z": -56.0,
+          "beforeDelta": [
+            -3.821063280761031,
+            -3.346641657676628,
+            0.0
+          ],
+          "afterDelta": [
+            -4.617557839490313,
+            3.0165934901536104,
+            0.0
+          ],
+          "beforeSeparationMm": 5.079422701496384,
+          "afterSeparationMm": 5.515584890641753
+        },
+        {
+          "z": -54.0,
+          "beforeDelta": [
+            -3.8147076015310226,
+            -3.330897420475708,
+            0.0
+          ],
+          "afterDelta": [
+            -4.619110263879421,
+            3.0135740268381426,
+            0.0
+          ],
+          "beforeSeparationMm": 5.06427405566783,
+          "afterSeparationMm": 5.5152341786282895
+        },
+        {
+          "z": -52.0,
+          "beforeDelta": [
+            -3.78381772436709,
+            -3.3302765381000796,
+            0.0
+          ],
+          "afterDelta": [
+            -4.607318415600496,
+            3.018508072129407,
+            0.0
+          ],
+          "beforeSeparationMm": 5.040636704966387,
+          "afterSeparationMm": 5.508064448083542
+        },
+        {
+          "z": -50.0,
+          "beforeDelta": [
+            -3.7603997081193796,
+            -3.367656465404906,
+            0.0
+          ],
+          "afterDelta": [
+            -4.605694679418683,
+            3.0013178751218845,
+            0.0
+          ],
+          "beforeSeparationMm": 5.047941762125211,
+          "afterSeparationMm": 5.497302289992038
+        },
+        {
+          "z": -48.0,
+          "beforeDelta": [
+            -3.743997786096891,
+            -3.3996880933305533,
+            0.0
+          ],
+          "afterDelta": [
+            -4.607691862705913,
+            2.99594163250012,
+            0.0
+          ],
+          "beforeSeparationMm": 5.057212528086194,
+          "afterSeparationMm": 5.49604317368357
+        },
+        {
+          "z": -46.0,
+          "beforeDelta": [
+            -3.725515873549007,
+            -3.4232031493974517,
+            0.0
+          ],
+          "afterDelta": [
+            -4.6036547685441604,
+            3.0047962912861976,
+            0.0
+          ],
+          "beforeSeparationMm": 5.059425691331996,
+          "afterSeparationMm": 5.497493790816564
+        },
+        {
+          "z": -44.0,
+          "beforeDelta": [
+            -3.709039891977529,
+            -3.453290502804407,
+            0.0
+          ],
+          "afterDelta": [
+            -4.59879514346472,
+            3.016578398801016,
+            0.0
+          ],
+          "beforeSeparationMm": 5.067760078875064,
+          "afterSeparationMm": 5.499878362988367
+        },
+        {
+          "z": -42.0,
+          "beforeDelta": [
+            -3.722100252922001,
+            -3.500421109535779,
+            0.0
+          ],
+          "afterDelta": [
+            -4.624124640742394,
+            3.020067289188333,
+            0.0
+          ],
+          "beforeSeparationMm": 5.109498824433343,
+          "afterSeparationMm": 5.522982448310545
+        },
+        {
+          "z": -40.0,
+          "beforeDelta": [
+            -3.694211426420413,
+            -3.568279562109211,
+            0.0
+          ],
+          "afterDelta": [
+            -4.615317919362845,
+            3.013050035244845,
+            0.0
+          ],
+          "beforeSeparationMm": 5.1361286098053895,
+          "afterSeparationMm": 5.511771948446411
+        },
+        {
+          "z": -38.0,
+          "beforeDelta": [
+            -3.661369345916217,
+            -3.6427825359244537,
+            0.0
+          ],
+          "afterDelta": [
+            -4.614078278091249,
+            3.012960254268819,
+            0.0
+          ],
+          "beforeSeparationMm": 5.164832048697338,
+          "afterSeparationMm": 5.510684880317249
+        },
+        {
+          "z": -36.0,
+          "beforeDelta": [
+            -3.614668621021,
+            -3.734997273734095,
+            0.0
+          ],
+          "afterDelta": [
+            -4.6127831092952505,
+            3.0113466960205955,
+            0.0
+          ],
+          "beforeSeparationMm": 5.197695054021059,
+          "afterSeparationMm": 5.508718266260647
+        },
+        {
+          "z": -34.0,
+          "beforeDelta": [
+            -3.558556908533557,
+            -3.842592879521831,
+            0.0
+          ],
+          "afterDelta": [
+            -4.614278774874482,
+            3.0063390418127653,
+            0.0
+          ],
+          "beforeSeparationMm": 5.237255703994582,
+          "afterSeparationMm": 5.507235517624505
+        },
+        {
+          "z": -32.0,
+          "beforeDelta": [
+            -3.4891117214281593,
+            -3.948854957708008,
+            0.0
+          ],
+          "afterDelta": [
+            -4.615548994237223,
+            3.008284345543345,
+            0.0
+          ],
+          "beforeSeparationMm": 5.269473985287572,
+          "afterSeparationMm": 5.509361779902042
+        },
+        {
+          "z": -30.0,
+          "beforeDelta": [
+            -3.4020429040803357,
+            -4.069366334426874,
+            0.0
+          ],
+          "afterDelta": [
+            -4.61655255902194,
+            2.9918029656310523,
+            0.0
+          ],
+          "beforeSeparationMm": 5.304115221690624,
+          "afterSeparationMm": 5.501221911118546
+        },
+        {
+          "z": -28.0,
+          "beforeDelta": [
+            -3.3007051796416214,
+            -4.159092722393041,
+            0.0
+          ],
+          "afterDelta": [
+            -4.625550331792255,
+            2.9911107944982547,
+            0.0
+          ],
+          "beforeSeparationMm": 5.309680494754443,
+          "afterSeparationMm": 5.5083990103211855
+        },
+        {
+          "z": -26.0,
+          "beforeDelta": [
+            -3.15633214417727,
+            -4.230420045596418,
+            0.0
+          ],
+          "afterDelta": [
+            -4.613599552548187,
+            2.988558229846376,
+            0.0
+          ],
+          "beforeSeparationMm": 5.278151794572668,
+          "afterSeparationMm": 5.496979272696536
+        },
+        {
+          "z": -24.0,
+          "beforeDelta": [
+            -3.0135789369811086,
+            -4.267615312524754,
+            0.0
+          ],
+          "afterDelta": [
+            -4.622374769676345,
+            2.996408343063422,
+            0.0
+          ],
+          "beforeSeparationMm": 5.224384984389257,
+          "afterSeparationMm": 5.508612481353224
+        },
+        {
+          "z": -22.0,
+          "beforeDelta": [
+            -2.852386282474569,
+            -4.2899108043664285,
+            0.0
+          ],
+          "afterDelta": [
+            -4.903357995810076,
+            2.4155250010090157,
+            0.0
+          ],
+          "beforeSeparationMm": 5.151644612535779,
+          "afterSeparationMm": 5.466047993347132
+        },
+        {
+          "z": -20.0,
+          "beforeDelta": [
+            -2.7005335694016885,
+            -4.297198882127617,
+            0.0
+          ],
+          "afterDelta": [
+            -5.2996895691419255,
+            0.8647700461267789,
+            0.0
+          ],
+          "beforeSeparationMm": 5.075312777753138,
+          "afterSeparationMm": 5.369779954704833
+        },
+        {
+          "z": -18.0,
+          "beforeDelta": [
+            -2.5541148489654653,
+            -4.223520377863494,
+            0.0
+          ],
+          "afterDelta": [
+            -5.057937292123594,
+            -1.1621398540843018,
+            0.0
+          ],
+          "beforeSeparationMm": 4.935749896817511,
+          "afterSeparationMm": 5.189730117405493
+        },
+        {
+          "z": -16.0,
+          "beforeDelta": [
+            -2.396690726410725,
+            -4.177833340705348,
+            0.0
+          ],
+          "afterDelta": [
+            -4.039515408822943,
+            -2.941260785438999,
+            0.0
+          ],
+          "beforeSeparationMm": 4.81647359182757,
+          "afterSeparationMm": 4.9968689942882465
+        },
+        {
+          "z": -14.0,
+          "beforeDelta": [
+            -2.1860890151907917,
+            -4.003813296263701,
+            0.0
+          ],
+          "afterDelta": [
+            -2.7241289033018923,
+            -3.7760783069182082,
+            0.0
+          ],
+          "beforeSeparationMm": 4.561743755810474,
+          "afterSeparationMm": 4.656140640249503
+        }
+      ],
+      "medianSeparationBeforeMm": 5.075312777753138,
+      "medianSeparationAfterMm": 5.49604317368357
+    },
+    {
+      "artery": "Facial left",
+      "vein": "vein.facial.left",
+      "sections": [
+        {
+          "z": 1.0,
+          "beforeDelta": [
+            -2.4752081827289203,
+            6.1872680863112315,
+            0.0
+          ],
+          "afterDelta": [
+            -6.2919777539383475,
+            -0.96106192553717,
+            0.0
+          ],
+          "beforeSeparationMm": 6.6640034453572765,
+          "afterSeparationMm": 6.364952794858126
+        },
+        {
+          "z": 3.0,
+          "beforeDelta": [
+            -2.5583956996579005,
+            6.447943455021627,
+            0.0
+          ],
+          "afterDelta": [
+            -7.374180504393117,
+            -2.508402263440611,
+            0.0
+          ],
+          "beforeSeparationMm": 6.936956346639661,
+          "afterSeparationMm": 7.7891347418442765
+        },
+        {
+          "z": 5.0,
+          "beforeDelta": [
+            -1.79426978217478,
+            6.8472484963918845,
+            0.0
+          ],
+          "afterDelta": [
+            -7.3630187539085625,
+            -3.523131724755131,
+            0.0
+          ],
+          "beforeSeparationMm": 7.078433161552524,
+          "afterSeparationMm": 8.162505884860682
+        },
+        {
+          "z": 7.0,
+          "beforeDelta": [
+            -0.3244793691352825,
+            7.59441581542867,
+            0.0
+          ],
+          "afterDelta": [
+            -6.527722060531907,
+            -3.958438999547228,
+            0.0
+          ],
+          "beforeSeparationMm": 7.601344515191213,
+          "afterSeparationMm": 7.634159718835557
+        },
+        {
+          "z": 9.0,
+          "beforeDelta": [
+            -1.533044323688543,
+            5.051487665442027,
+            0.0
+          ],
+          "afterDelta": [
+            -8.302457305358075,
+            -7.523604542787794,
+            0.0
+          ],
+          "beforeSeparationMm": 5.278991620802841,
+          "afterSeparationMm": 11.204259128722024
+        },
+        {
+          "z": 11.0,
+          "beforeDelta": [
+            -2.0129081522521233,
+            4.613380278688519,
+            0.0
+          ],
+          "afterDelta": [
+            -9.247329396407928,
+            -8.811320655001868,
+            0.0
+          ],
+          "beforeSeparationMm": 5.033396152221203,
+          "afterSeparationMm": 12.773115228906876
+        },
+        {
+          "z": 13.0,
+          "beforeDelta": [
+            -3.460257216507756,
+            3.176769875189862,
+            0.0
+          ],
+          "afterDelta": [
+            -11.026124931243316,
+            -10.888706138360202,
+            0.0
+          ],
+          "beforeSeparationMm": 4.697365947454788,
+          "afterSeparationMm": 15.496430310460166
+        },
+        {
+          "z": 15.0,
+          "beforeDelta": [
+            -2.473563604603463,
+            4.401452789399649,
+            0.0
+          ],
+          "afterDelta": [
+            -10.272751706069549,
+            -10.114840762994097,
+            0.0
+          ],
+          "beforeSeparationMm": 5.0488913202140555,
+          "afterSeparationMm": 14.416637308168706
+        },
+        {
+          "z": 17.0,
+          "beforeDelta": [
+            -1.8951213097853632,
+            5.319404571291351,
+            0.0
+          ],
+          "afterDelta": [
+            -9.74776965512201,
+            -9.287999496153258,
+            0.0
+          ],
+          "beforeSeparationMm": 5.646906212420913,
+          "afterSeparationMm": 13.464247022758482
+        },
+        {
+          "z": 19.0,
+          "beforeDelta": [
+            -2.272927955069825,
+            5.596474801033445,
+            0.0
+          ],
+          "afterDelta": [
+            -9.769324807207418,
+            -8.709095507335693,
+            0.0
+          ],
+          "beforeSeparationMm": 6.040424793633328,
+          "afterSeparationMm": 13.087706129976063
+        },
+        {
+          "z": 21.0,
+          "beforeDelta": [
+            -6.174502487538501,
+            1.9358608071953611,
+            0.0
+          ],
+          "afterDelta": [
+            -13.286075087820493,
+            -12.56508015295939,
+            0.0
+          ],
+          "beforeSeparationMm": 6.470860687223471,
+          "afterSeparationMm": 18.286635297109697
+        },
+        {
+          "z": 23.0,
+          "beforeDelta": [
+            -8.040444221272558,
+            -0.503211533667745,
+            0.0
+          ],
+          "afterDelta": [
+            -13.716194347011239,
+            -11.846748298846926,
+            0.0
+          ],
+          "beforeSeparationMm": 8.056175589137288,
+          "afterSeparationMm": 18.124001562050683
+        },
+        {
+          "z": 25.0,
+          "beforeDelta": [
+            -8.73570583197036,
+            -0.6326397195883509,
+            0.0
+          ],
+          "afterDelta": [
+            -12.154784942461813,
+            -7.50373634722985,
+            0.0
+          ],
+          "beforeSeparationMm": 8.758583755238162,
+          "afterSeparationMm": 14.28442705068127
+        },
+        {
+          "z": 27.0,
+          "beforeDelta": [
+            -9.424405181259957,
+            -0.4511501576174979,
+            0.0
+          ],
+          "afterDelta": [
+            -11.287627761400444,
+            -3.9332623803210254,
+            0.0
+          ],
+          "beforeSeparationMm": 9.435197373943897,
+          "afterSeparationMm": 11.953287975799237
+        }
+      ],
+      "medianSeparationBeforeMm": 6.567432066290374,
+      "medianSeparationAfterMm": 12.930410679441469
+    },
+    {
+      "artery": "Superficial temporal left",
+      "vein": "vein.superficial_temporal.left",
+      "sections": [
+        {
+          "z": 40.0,
+          "beforeDelta": [
+            0.07076357790170107,
+            22.669291028026073,
+            0.0
+          ],
+          "afterDelta": [
+            -0.05828101183300305,
+            20.60537264262136,
+            0.0
+          ],
+          "beforeSeparationMm": 22.669401474174407,
+          "afterSeparationMm": 20.605455064560672
+        },
+        {
+          "z": 42.0,
+          "beforeDelta": [
+            -1.0381462504424945,
+            23.342717392427247,
+            0.0
+          ],
+          "afterDelta": [
+            -1.1437855561810863,
+            17.970669984529458,
+            0.0
+          ],
+          "beforeSeparationMm": 23.365791296252592,
+          "afterSeparationMm": 18.007032656476092
+        },
+        {
+          "z": 44.0,
+          "beforeDelta": [
+            1.0991840276754914,
+            21.832562800965228,
+            0.0
+          ],
+          "afterDelta": [
+            1.409374842152772,
+            14.36591752487842,
+            0.0
+          ],
+          "beforeSeparationMm": 21.860215094659694,
+          "afterSeparationMm": 14.43488565168779
+        },
+        {
+          "z": 46.0,
+          "beforeDelta": [
+            4.492808114113657,
+            20.874935538360543,
+            0.0
+          ],
+          "afterDelta": [
+            5.518346154837985,
+            12.559663225101595,
+            0.0
+          ],
+          "beforeSeparationMm": 21.352944960378498,
+          "afterSeparationMm": 13.718501543994686
+        },
+        {
+          "z": 48.0,
+          "beforeDelta": [
+            5.1656454802112535,
+            22.277502610141962,
+            0.0
+          ],
+          "afterDelta": [
+            6.460309010031224,
+            12.357450839500252,
+            0.0
+          ],
+          "beforeSeparationMm": 22.86855954738096,
+          "afterSeparationMm": 13.944252714138399
+        },
+        {
+          "z": 50.0,
+          "beforeDelta": [
+            5.609823886300468,
+            22.99459369637992,
+            0.0
+          ],
+          "afterDelta": [
+            6.5005504016203375,
+            11.802084777076814,
+            0.0
+          ],
+          "beforeSeparationMm": 23.668997936053447,
+          "afterSeparationMm": 13.4739140790386
+        },
+        {
+          "z": 52.0,
+          "beforeDelta": [
+            6.053342568723579,
+            21.66489343285109,
+            0.0
+          ],
+          "afterDelta": [
+            4.396453717438263,
+            9.446456627970235,
+            0.0
+          ],
+          "beforeSeparationMm": 22.49467856429861,
+          "afterSeparationMm": 10.41942167846659
+        },
+        {
+          "z": 54.0,
+          "beforeDelta": [
+            4.848243773592387,
+            20.15922517348048,
+            0.0
+          ],
+          "afterDelta": [
+            0.41617255308272405,
+            4.881836373580732,
+            0.0
+          ],
+          "beforeSeparationMm": 20.73402583395869,
+          "afterSeparationMm": 4.899543445297252
+        },
+        {
+          "z": 56.0,
+          "beforeDelta": [
+            2.422506920432653,
+            19.407740730155247,
+            0.0
+          ],
+          "afterDelta": [
+            -3.87601845298569,
+            1.0740148725872345,
+            0.0
+          ],
+          "beforeSeparationMm": 19.558347067900986,
+          "afterSeparationMm": 4.022067502469862
+        },
+        {
+          "z": 58.0,
+          "beforeDelta": [
+            0.4751826670442938,
+            19.149467717273563,
+            0.0
+          ],
+          "afterDelta": [
+            -4.831490805312782,
+            -1.8104719077942732,
+            0.0
+          ],
+          "beforeSeparationMm": 19.1553624977958,
+          "afterSeparationMm": 5.159565091239202
+        },
+        {
+          "z": 60.0,
+          "beforeDelta": [
+            -0.07813073200200904,
+            19.07899483480302,
+            0.0
+          ],
+          "afterDelta": [
+            -4.890389024241699,
+            -3.095421638790782,
+            0.0
+          ],
+          "beforeSeparationMm": 19.07915481140932,
+          "afterSeparationMm": 5.787705929841105
+        },
+        {
+          "z": 62.0,
+          "beforeDelta": [
+            0.08016449432800954,
+            20.32336241155634,
+            0.0
+          ],
+          "afterDelta": [
+            -4.442785723417707,
+            -3.0374124537172733,
+            0.0
+          ],
+          "beforeSeparationMm": 20.32352051337592,
+          "afterSeparationMm": 5.381841636298953
+        },
+        {
+          "z": 64.0,
+          "beforeDelta": [
+            0.46663221212435246,
+            21.641996916591218,
+            0.0
+          ],
+          "afterDelta": [
+            -4.305061583377942,
+            -3.099767212966036,
+            0.0
+          ],
+          "beforeSeparationMm": 21.647026958895207,
+          "afterSeparationMm": 5.304913949467589
+        },
+        {
+          "z": 66.0,
+          "beforeDelta": [
+            1.0145210504574607,
+            22.741482599468085,
+            0.0
+          ],
+          "afterDelta": [
+            -4.350464513811957,
+            -2.834510301954161,
+            0.0
+          ],
+          "beforeSeparationMm": 22.764100768177315,
+          "afterSeparationMm": 5.192397340133108
+        },
+        {
+          "z": 68.0,
+          "beforeDelta": [
+            1.6791480320144743,
+            23.064857493420547,
+            0.0
+          ],
+          "afterDelta": [
+            -4.354207160067176,
+            -2.621962140187648,
+            0.0
+          ],
+          "beforeSeparationMm": 23.12589867021855,
+          "afterSeparationMm": 5.082696671783361
+        },
+        {
+          "z": 70.0,
+          "beforeDelta": [
+            2.086773731022518,
+            22.765700990662594,
+            0.0
+          ],
+          "afterDelta": [
+            -3.9130389701180945,
+            -2.9312769081113714,
+            0.0
+          ],
+          "beforeSeparationMm": 22.861140964543775,
+          "afterSeparationMm": 4.88919812379186
+        },
+        {
+          "z": 72.0,
+          "beforeDelta": [
+            2.048693822400949,
+            22.0281352258425,
+            0.0
+          ],
+          "afterDelta": [
+            -3.6885471622237276,
+            -3.3554664001430083,
+            0.0
+          ],
+          "beforeSeparationMm": 22.123197958386285,
+          "afterSeparationMm": 4.986435092371844
+        },
+        {
+          "z": 74.0,
+          "beforeDelta": [
+            1.5761297972951525,
+            20.87483726171915,
+            0.0
+          ],
+          "afterDelta": [
+            -3.8971669424975914,
+            -2.7429528837073676,
+            0.0
+          ],
+          "beforeSeparationMm": 20.934254604384172,
+          "afterSeparationMm": 4.765679458370505
+        },
+        {
+          "z": 76.0,
+          "beforeDelta": [
+            0.8494754696582447,
+            19.191262038734507,
+            0.0
+          ],
+          "afterDelta": [
+            -4.359446724789123,
+            -2.3270378313442706,
+            0.0
+          ],
+          "beforeSeparationMm": 19.210053285009995,
+          "afterSeparationMm": 4.941647580997866
+        },
+        {
+          "z": 78.0,
+          "beforeDelta": [
+            0.18591094328023416,
+            17.31346432078874,
+            0.0
+          ],
+          "afterDelta": [
+            -4.742902695779641,
+            -1.751337281711713,
+            0.0
+          ],
+          "beforeSeparationMm": 17.314462442306894,
+          "afterSeparationMm": 5.055918141737181
+        },
+        {
+          "z": 80.0,
+          "beforeDelta": [
+            -0.005002888343028644,
+            15.541321586172351,
+            0.0
+          ],
+          "afterDelta": [
+            -4.375157791587512,
+            0.32899940663398297,
+            0.0
+          ],
+          "beforeSeparationMm": 15.541322391409247,
+          "afterSeparationMm": 4.38751026333323
+        }
+      ],
+      "medianSeparationBeforeMm": 21.647026958895207,
+      "medianSeparationAfterMm": 5.192397340133108
+    },
+    {
+      "vessel": "Hypoglossal branch left",
+      "guide": "landmark.hypoglossal.left",
+      "status": "regional",
+      "guideToWallBeforeMm": 7.317496881496442,
+      "guideToWallAfterMm": 4.006374198995087,
+      "notIndependentCanalValidation": true
+    },
+    {
+      "vessel": "Labyrinthine left",
+      "guide": "landmark.internal-acoustic.left",
+      "status": "regional",
+      "guideToWallBeforeMm": 13.652664254055157,
+      "guideToWallAfterMm": 1.9136767811372672,
+      "notIndependentCanalValidation": true
+    },
+    {
+      "vessel": "MMA frontal left",
+      "innerTableScreen": [
+        {
+          "z": 85,
+          "minWallGapBeforeMm": 1.6029443399438417,
+          "minWallGapAfterMm": 2.0205898388601526
+        },
+        {
+          "z": 87,
+          "minWallGapBeforeMm": 5.392026182567598,
+          "minWallGapAfterMm": 3.2015990854546006
+        },
+        {
+          "z": 89,
+          "minWallGapBeforeMm": 4.5906537380254395,
+          "minWallGapAfterMm": 3.2049508847595902
+        },
+        {
+          "z": 91,
+          "minWallGapBeforeMm": 3.400756275718992,
+          "minWallGapAfterMm": 1.5990378573331234
+        },
+        {
+          "z": 93,
+          "minWallGapBeforeMm": 1.3162520243194753,
+          "minWallGapAfterMm": 0.9691841671526952
+        },
+        {
+          "z": 103,
+          "minWallGapBeforeMm": 3.0715752270568815,
+          "minWallGapAfterMm": 2.0866901255838872
+        },
+        {
+          "z": 105,
+          "minWallGapBeforeMm": 3.7068290238695707,
+          "minWallGapAfterMm": 2.351131499487657
+        }
+      ]
+    }
+  ],
+  "attachments": [
+    {
+      "family": "acoustic",
+      "side": "right",
+      "parent": "AICA right",
+      "sourceSharedVertices": 199,
+      "insideNativeInterfaceVertices": 135,
+      "fractionInside": 0.678391959798995,
+      "interfaceCentreSignedDistanceMm": -0.27239719176201527,
+      "continuousVolumeAttachment": true,
+      "scope": "Volume connection at the native parent location. Whole-atlas surface welding is not claimed."
+    },
+    {
+      "family": "acoustic",
+      "side": "left",
+      "parent": "AICA left",
+      "sourceSharedVertices": 72,
+      "insideNativeInterfaceVertices": 72,
+      "fractionInside": 1.0,
+      "interfaceCentreSignedDistanceMm": -0.2704626733488152,
+      "continuousVolumeAttachment": true,
+      "scope": "Volume connection at the native parent location. Whole-atlas surface welding is not claimed."
+    },
+    {
+      "family": "meningeal",
+      "side": "right",
+      "parent": "Middle meningeal",
+      "sourceSharedVertices": 169,
+      "insideNativeInterfaceVertices": 169,
+      "fractionInside": 1.0,
+      "interfaceCentreSignedDistanceMm": -0.5012059897847936,
+      "continuousVolumeAttachment": true,
+      "scope": "Volume connection at the native parent location. Whole-atlas surface welding is not claimed."
+    },
+    {
+      "family": "meningeal",
+      "side": "left",
+      "parent": "Middle meningeal left",
+      "sourceSharedVertices": 169,
+      "insideNativeInterfaceVertices": 169,
+      "fractionInside": 1.0,
+      "interfaceCentreSignedDistanceMm": -0.5088027338248609,
+      "continuousVolumeAttachment": true,
+      "scope": "Volume connection at the native parent location. Whole-atlas surface welding is not claimed."
+    }
+  ]
+}

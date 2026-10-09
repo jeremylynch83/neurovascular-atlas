@@ -1,0 +1,19 @@
+{
+  "release": "0.9.50",
+  "command": "npm run build",
+  "exitCode": 0,
+  "namedMeshParts": 1242,
+  "assets": 5,
+  "catalogueStructures": 1658,
+  "typeScript": true,
+  "courseContracts": true,
+  "productionBundle": true,
+  "precompression": true,
+  "assetRevisions": {
+    "models/craniofacial.glb": "7e269d3af9d8b1b59953",
+    "models/complete-circulation.glb": "34604ff58d7b4d8bb96b",
+    "models/complete-anastomoses.glb": "0addad2cdab9fe62bd7f",
+    "models/venous.glb": "9460c5d6a7ff5ba59c5e",
+    "models/brain-context.glb": "694d67847c8454b67dc6"
+  }
+}

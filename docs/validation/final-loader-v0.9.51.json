@@ -1,0 +1,47 @@
+{
+  "release": "0.9.51",
+  "passed": true,
+  "checks": [
+    {
+      "file": "brain-context.glb",
+      "sha256": "694d67847c8454b67dc62047724317121da9273f83a232bd82951fd484f34a81",
+      "labels": 189,
+      "triangles": 2755544,
+      "assetByteExact": true,
+      "exactLoadedPositionsAndIndices": true
+    },
+    {
+      "file": "craniofacial.glb",
+      "sha256": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+      "labels": 60,
+      "triangles": 411447,
+      "assetByteExact": true,
+      "exactLoadedPositionsAndIndices": true
+    },
+    {
+      "file": "complete-circulation.glb",
+      "sha256": "34604ff58d7b4d8bb96bde772936451b44db72ab2abed316653e18f1720d4757",
+      "labels": 599,
+      "triangles": 6668713,
+      "assetByteExact": true,
+      "exactLoadedPositionsAndIndices": true
+    },
+    {
+      "file": "venous.glb",
+      "sha256": "9460c5d6a7ff5ba59c5e6bb04d78c4e3f945fbb9510e35219f3f09ff35353fc6",
+      "labels": 227,
+      "triangles": 1826913,
+      "assetByteExact": true,
+      "exactLoadedPositionsAndIndices": true
+    },
+    {
+      "file": "complete-anastomoses.glb",
+      "sha256": "0addad2cdab9fe62bd7f59459b22ecdf5c0db7dde27fb61c79ceafc3224f1097",
+      "labels": 167,
+      "triangles": 265600,
+      "assetByteExact": true,
+      "exactLoadedPositionsAndIndices": true
+    }
+  ],
+  "scope": "Actual Three.js GLTFLoader and MeshoptDecoder for all five models; complete byte, position and face equality to accepted v0.9.50."
+}

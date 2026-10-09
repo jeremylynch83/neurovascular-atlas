@@ -1,3 +1,23 @@
+# Neurovascular Atlas v0.9.50
+
+Continues the relationship audit with constrained petrosal fitting and ten selectable venous reference additions. Retains the exact v0.9.49 skull, brain and arterial assets. The full audit is not closed: fine canal containment, cervical and orbital context, paired meningeal veins, mastoid emissary and posterior condylar routes remain open. See [changes, checks and audit register](docs/AUDIT_CONTINUATION_v0.9.50.md).
+
+# Neurovascular Atlas v0.9.48
+
+Rebuilds the four connected pontine veins as smooth tubes with one watertight exterior wall. Removes folded junction facets and hidden internal caps while retaining selectable vessel names and existing endpoint connections. The transverse crossing remains behind the basilar artery. Arteries, brain, skull and interface behaviour are retained. [Method, checks and comparisons](docs/BRAINSTEM_QUALITY_v0.9.48.md).
+
+# Neurovascular Atlas v0.9.47
+
+Corrects the transverse pontine midline crossing to pass behind the basilar artery, between the artery and pons. Connected venous collars follow the correction. A local pontine groove adjustment provides clearance, and additional venous mesh detail represents the bend. Arteries, skull and the existing interface fixes are preserved. [Method, checks and comparison views](docs/TRANSVERSE_PONTINE_v0.9.47.md).
+
+# Neurovascular Atlas v0.9.46
+
+Corrects median anterior brainstem venous alignment, bringing the channels closer to the midline beside the arteries. Connected collars are retained, and local medullary and pontine branch contacts are cleared. The normal pial relationship behind the basilar artery is retained. Sixteen venous labels change; other assets and v0.9.45 interface behaviour are preserved. [Audit, anatomical rationale and comparisons](docs/ANTERIOR_BRAINSTEM_v0.9.46.md).
+
+# Neurovascular Atlas v0.9.45
+
+Brings both inferior labial arteries closer to the jaw and lower lip, with up to 6.5 mm of posterior displacement. Facial origins and all 122 shared collar vertices on each side remain unchanged. The inferior labial midline connection follows the correction. Distal median jaw/tooth clearance is now 5.2 mm right and 5.9 mm left. No detected bone contacts or self-intersections. All other vascular geometry is retained. [Comparison render](review-renders/Inferior_labial_comparison.png).
+
 # Neurovascular Atlas v0.9.44
 
 Inspection content now starts with the anatomical structure name and contains only alternate names, description and relationships. The Gaussian halo width is halved to a 12 CSS-pixel falloff, and the pulse is 20% faster with a five-second cycle. Selection orange remains 10% brighter. Fixed skull opacity changing on selection: the halo render target previously blended transparent anatomy in linear space, while the normal canvas blended after display encoding. Both paths now use the original display blending, and the composite preserves unaffected pixels exactly. Geometry and visibility settings are unchanged.

@@ -1,0 +1,443 @@
+{
+  "right": {
+    "points": [
+      [
+        31.0,
+        -76.0,
+        44.0
+      ],
+      [
+        31.504867990030544,
+        -76.39732943599503,
+        44.50489725234226
+      ],
+      [
+        31.995161272281184,
+        -76.60269982631671,
+        45.00002926231173
+      ],
+      [
+        32.38759345593395,
+        -76.89243218365277,
+        45.5
+      ],
+      [
+        32.49513200996947,
+        -76.9951612722812,
+        46.0
+      ],
+      [
+        32.49997073768829,
+        -76.99997073768829,
+        46.5
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        47.0
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        47.5
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        48.00000000000001
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        48.50000000000001
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        49.0
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        49.5
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        50.0
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        50.5
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        51.0
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        51.5
+      ],
+      [
+        32.5,
+        -77.00000000000001,
+        52.0
+      ],
+      [
+        32.5,
+        -76.99997073768829,
+        52.50000000000001
+      ],
+      [
+        32.5,
+        -76.99513200996947,
+        53.0
+      ],
+      [
+        32.5,
+        -76.88759345593395,
+        53.5
+      ],
+      [
+        32.49997073768829,
+        -76.49513200996947,
+        54.0
+      ],
+      [
+        32.49513200996947,
+        -75.99997073768829,
+        54.5
+      ],
+      [
+        32.38759345593395,
+        -75.5,
+        55.0
+      ],
+      [
+        31.995132009969463,
+        -75.0,
+        55.5
+      ],
+      [
+        31.500000000000004,
+        -74.5,
+        56.00000000000001
+      ],
+      [
+        31.00486799003054,
+        -74.0,
+        56.49997073768829
+      ],
+      [
+        30.612406544066054,
+        -73.5,
+        56.99513200996947
+      ],
+      [
+        30.50486799003054,
+        -73.0,
+        57.38759345593395
+      ],
+      [
+        30.500029262311728,
+        -72.5,
+        57.49513200996947
+      ],
+      [
+        30.500000000000007,
+        -72.0,
+        57.49997073768829
+      ],
+      [
+        30.500000000000007,
+        -71.50002926231173,
+        57.50000000000001
+      ],
+      [
+        30.500000000000007,
+        -71.00489725234226,
+        57.50000000000001
+      ],
+      [
+        30.5,
+        -70.5,
+        57.5
+      ]
+    ],
+    "obstacles": [
+      "brain.superior-semilunar-lobule.right",
+      "brain.posterior-quadrangular-lobule.right",
+      "brain.peduncle-of-flocculus.right",
+      "brain.inferior-semilunar-lobule.right",
+      "brain.gracile-lobule.right",
+      "brain.flocculus.right",
+      "brain.biventral-lobule.right",
+      "brain.anterior-quadrangular-lobule.right",
+      "brain.tentorium-cerebelli.right",
+      "brain.lateral-occipitotemporal-gyrus.right",
+      "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "brain.inferior-temporal-sulcus.right",
+      "brain.inferior-temporal-gyrus.right",
+      "bone.temporal.right",
+      "bone.parietal.right",
+      "bone.occipital",
+      "ICA cervical right",
+      "AICA right",
+      "PICA right",
+      "Occipital",
+      "Posterior auricular",
+      "MMA petrosquamosal",
+      "Jugular branch",
+      "Lateral clival",
+      "Jugular sigmoid branch",
+      "Jugular ascending IAC branch right",
+      "AICA subarcuate right",
+      "vein.sigmoid.right",
+      "vein.superior_petrosal.right",
+      "vein.inferior_petrosal.right",
+      "vein.superficial_middle_cerebral.right",
+      "vein.superior_petrosal_vein.right",
+      "vein.anterior_hemispheric.right",
+      "vein.anterior_hemispheric_inferior.right",
+      "vein.horizontal_fissure.right",
+      "vein.middle_cerebellar_peduncular.right",
+      "MMA\u2013tentorial marginal right",
+      "Facial nerve arcade right",
+      "Stylomastoid\u2013inferior tympanic right",
+      "Subarcuate\u2013petrosal MMA right",
+      "Subarcuate\u2013stylomastoid right",
+      "Occipital mastoid\u2013APA jugular right",
+      "Subarcuate\u2013APA auditory right"
+    ],
+    "targetReference": [
+      31,
+      -70,
+      57
+    ],
+    "nearestClearEndpoint": [
+      30.5,
+      -70.5,
+      57.5
+    ],
+    "minimumGridClearanceMm": 0.4837647328351664,
+    "status": "CPA approach to surface region, not a segmented IAC lumen"
+  },
+  "left": {
+    "points": [
+      [
+        -30.5,
+        -76.0,
+        44.5
+      ],
+      [
+        -30.500000000000007,
+        -76.00002926231173,
+        45.00489725234226
+      ],
+      [
+        -30.500029262311728,
+        -76.00486799003055,
+        45.50002926231173
+      ],
+      [
+        -30.504838727718827,
+        -76.11237728175433,
+        46.0
+      ],
+      [
+        -30.60753855403552,
+        -76.50000000000001,
+        46.5
+      ],
+      [
+        -30.892461445964493,
+        -76.88762271824568,
+        47.0
+      ],
+      [
+        -30.995161272281184,
+        -76.99513200996947,
+        47.5
+      ],
+      [
+        -30.999970737688283,
+        -76.99997073768829,
+        48.00000000000001
+      ],
+      [
+        -31.00002926231172,
+        -77.00000000000001,
+        48.50000000000001
+      ],
+      [
+        -31.00483872771882,
+        -77.00000000000001,
+        49.0
+      ],
+      [
+        -31.107538554035514,
+        -77.00000000000001,
+        49.5
+      ],
+      [
+        -31.39246144596449,
+        -77.00000000000001,
+        50.0
+      ],
+      [
+        -31.495161272281184,
+        -77.00000000000001,
+        50.5
+      ],
+      [
+        -31.499970737688283,
+        -77.00000000000001,
+        51.0
+      ],
+      [
+        -31.500000000000004,
+        -77.00000000000001,
+        51.5
+      ],
+      [
+        -31.500000000000004,
+        -76.99997073768829,
+        52.0
+      ],
+      [
+        -31.500000000000004,
+        -76.99513200996947,
+        52.50000000000001
+      ],
+      [
+        -31.500000000000004,
+        -76.88759345593395,
+        53.0
+      ],
+      [
+        -31.500000000000004,
+        -76.49513200996947,
+        53.5
+      ],
+      [
+        -31.499970737688283,
+        -75.99997073768829,
+        54.0
+      ],
+      [
+        -31.495132009969463,
+        -75.5,
+        54.5
+      ],
+      [
+        -31.38762271824567,
+        -75.0,
+        55.0
+      ],
+      [
+        -31.0,
+        -74.5,
+        55.5
+      ],
+      [
+        -30.612377281754334,
+        -74.0,
+        56.00000000000001
+      ],
+      [
+        -30.50486799003054,
+        -73.5,
+        56.49997073768829
+      ],
+      [
+        -30.500029262311728,
+        -73.0,
+        56.99516127228119
+      ],
+      [
+        -30.500000000000007,
+        -72.5,
+        57.39243218365277
+      ],
+      [
+        -30.500000000000007,
+        -72.0,
+        57.60267056400498
+      ],
+      [
+        -30.500000000000007,
+        -71.50002926231173,
+        57.89243218365277
+      ],
+      [
+        -30.500000000000007,
+        -71.00489725234226,
+        57.99516127228118
+      ],
+      [
+        -30.5,
+        -70.5,
+        58.0
+      ]
+    ],
+    "obstacles": [
+      "brain.superior-semilunar-lobule.left",
+      "brain.posterior-quadrangular-lobule.left",
+      "brain.peduncle-of-flocculus.left",
+      "brain.inferior-semilunar-lobule.left",
+      "brain.gracile-lobule.left",
+      "brain.flocculus.left",
+      "brain.biventral-lobule.left",
+      "brain.anterior-quadrangular-lobule.left",
+      "brain.tentorium-cerebelli.left",
+      "brain.lateral-occipitotemporal-gyrus.left",
+      "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "brain.inferior-temporal-sulcus.left",
+      "brain.inferior-temporal-gyrus.left",
+      "bone.temporal.left",
+      "bone.parietal.left",
+      "bone.occipital",
+      "ICA cervical left",
+      "AICA left",
+      "PICA left",
+      "Occipital left",
+      "Posterior auricular left",
+      "MMA petrosquamosal left",
+      "Jugular branch left",
+      "Lateral clival left",
+      "Jugular sigmoid branch left",
+      "Jugular ascending IAC branch left",
+      "AICA subarcuate left",
+      "vein.sigmoid.left",
+      "vein.superior_petrosal.left",
+      "vein.inferior_petrosal.left",
+      "vein.superficial_middle_cerebral.left",
+      "vein.superior_petrosal_vein.left",
+      "vein.anterior_hemispheric.left",
+      "vein.anterior_hemispheric_inferior.left",
+      "vein.horizontal_fissure.left",
+      "MMA\u2013tentorial marginal left",
+      "Facial nerve arcade left",
+      "Stylomastoid\u2013inferior tympanic left",
+      "Subarcuate\u2013petrosal MMA left",
+      "Subarcuate\u2013stylomastoid left",
+      "Occipital mastoid\u2013APA jugular left",
+      "Subarcuate\u2013APA auditory left"
+    ],
+    "targetReference": [
+      -31,
+      -70,
+      57
+    ],
+    "nearestClearEndpoint": [
+      -30.5,
+      -70.5,
+      58.0
+    ],
+    "minimumGridClearanceMm": 0.5023532888897346,
+    "status": "CPA approach to surface region, not a segmented IAC lumen"
+  }
+}

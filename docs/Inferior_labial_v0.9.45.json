@@ -1,0 +1,106 @@
+{
+  "release": "0.9.45",
+  "placement": {
+    "release": "0.9.45",
+    "baselineAssetHashes": {
+      "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+      "complete-circulation.glb": "7ef2d453465da6835a8558b223f94960c31e50568beb039bff63ea0f3692eaee",
+      "complete-anastomoses.glb": "eaa982cd58e6f3af428cc98fda37db64f6f03b1436d16733ef5e03e564d9d9a0"
+    },
+    "changed": [
+      {
+        "node": "Inferior labial",
+        "file": "complete-circulation.glb"
+      },
+      {
+        "node": "Inferior labial left",
+        "file": "complete-circulation.glb"
+      },
+      {
+        "node": "Contralateral inferior labial midline",
+        "file": "complete-anastomoses.glb"
+      }
+    ],
+    "checks": [
+      {
+        "node": "Inferior labial",
+        "vertices": 10745,
+        "triangles": 21366,
+        "boneContactsBefore": 0,
+        "boneContactsAfter": 0,
+        "distalMedianClearanceBefore": 10.337320837357655,
+        "distalMedianClearanceAfter": 5.180195759100352,
+        "maxPosteriorShift": 6.5,
+        "fixedCollarVertices": 122,
+        "movedSurfaceParentContacts": 0
+      },
+      {
+        "node": "Inferior labial left",
+        "vertices": 10767,
+        "triangles": 21410,
+        "boneContactsBefore": 0,
+        "boneContactsAfter": 0,
+        "distalMedianClearanceBefore": 10.681462120782786,
+        "distalMedianClearanceAfter": 5.868625824429225,
+        "maxPosteriorShift": 6.5,
+        "fixedCollarVertices": 122,
+        "movedSurfaceParentContacts": 0
+      },
+      {
+        "node": "Contralateral inferior labial midline",
+        "vertices": 162,
+        "triangles": 320,
+        "boneContactsBefore": 0,
+        "boneContactsAfter": 0,
+        "distalMedianClearanceBefore": 10.942630943062198,
+        "distalMedianClearanceAfter": 5.340072648307996,
+        "maxPosteriorShift": 6.5
+      }
+    ],
+    "selfIntersectionProtection": "Strictly monotone posterior coordinate deformation; original topology retained.",
+    "newLabels": []
+  },
+  "selfIntersections": [
+    {
+      "node": "Inferior labial",
+      "before": 0,
+      "after": 0,
+      "newIntersections": 0
+    },
+    {
+      "node": "Inferior labial left",
+      "before": 0,
+      "after": 0,
+      "newIntersections": 0
+    },
+    {
+      "node": "Contralateral inferior labial midline",
+      "before": 0,
+      "after": 0,
+      "newIntersections": 0
+    }
+  ],
+  "loader": {
+    "release": "0.9.45",
+    "passed": true,
+    "checks": [
+      {
+        "file": "complete-circulation.glb",
+        "labels": 599,
+        "triangles": 6673822,
+        "sha256": "8068101bc47988327b46c4e10d5725a4a8ecdb9c6baebed4e6c98d52b962969f",
+        "exactLoadedPositionsAndIndices": true,
+        "unitLoadedNormals": true
+      },
+      {
+        "file": "complete-anastomoses.glb",
+        "labels": 167,
+        "triangles": 265600,
+        "sha256": "98d67d2f86debc1111b206061687d48429a043624d4cbb3b5e3913a288f7a6a9",
+        "exactLoadedPositionsAndIndices": true,
+        "unitLoadedNormals": true
+      }
+    ],
+    "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+  }
+}

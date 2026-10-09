@@ -27,7 +27,7 @@ export type VesselCourseMode = 'dural-attachment' | 'dural-free-edge' | 'bony-gr
 export interface VesselCourse {
   vesselId: string;
   side: Side;
-  scope: 'intracranial' | 'intracranial-and-upper-cervical' | 'protected-baseline' | 'potential-anastomosis';
+  scope: 'intracranial' | 'intracranial-and-upper-cervical' | 'protected-baseline' | 'potential-anastomosis' | 'reference-corridor';
   geometry: AssetRef;
   geometrySha256: string;
   registrationId: string;

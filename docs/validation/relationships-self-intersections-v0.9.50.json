@@ -1,0 +1,105 @@
+{
+  "release": "0.9.50",
+  "results": [
+    {
+      "node": "vein.vertebral_periarterial_plexus.right",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.vertebral_periarterial_plexus.left",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.superior_petrosal.right",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "baseline": 3,
+      "candidate": 3,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.superior_petrosal.left",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "baseline": 3,
+      "candidate": 3,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.central_retinal.right",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.central_retinal.left",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.inferior_alveolar.right",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.infraorbital.right",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.internal_auditory.right",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.inferior_alveolar.left",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.infraorbital.left",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    },
+    {
+      "node": "vein.internal_auditory.left",
+      "baseline": 0,
+      "candidate": 0,
+      "newIntersections": 0,
+      "newPairs": []
+    }
+  ],
+  "passed": true,
+  "scope": "Per-label non-adjacent triangle intersections, excluding coincident-coordinate adjacency, compared by exact original face IDs. Does not certify the whole atlas network."
+}

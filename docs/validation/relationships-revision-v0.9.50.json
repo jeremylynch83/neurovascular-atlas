@@ -1,0 +1,147 @@
+{
+  "release": "0.9.50",
+  "baselineRelease": "0.9.49",
+  "baselineAssetHashes": {
+    "brain-context.glb": "694d67847c8454b67dc62047724317121da9273f83a232bd82951fd484f34a81",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-circulation.glb": "34604ff58d7b4d8bb96bde772936451b44db72ab2abed316653e18f1720d4757",
+    "venous.glb": "b0c6446de97c1abf09ed016d760ea76b2ddf12f538ac9410d2d3e50bc86c6aed",
+    "complete-anastomoses.glb": "0addad2cdab9fe62bd7f59459b22ecdf5c0db7dde27fb61c79ceafc3224f1097"
+  },
+  "newLabels": [
+    "vein.vertebral_periarterial_plexus.right",
+    "vein.vertebral_periarterial_plexus.left",
+    "vein.central_retinal.right",
+    "vein.central_retinal.left",
+    "vein.inferior_alveolar.right",
+    "vein.infraorbital.right",
+    "vein.internal_auditory.right",
+    "vein.inferior_alveolar.left",
+    "vein.infraorbital.left",
+    "vein.internal_auditory.left"
+  ],
+  "changed": [
+    {
+      "node": "vein.vertebral_periarterial_plexus.right",
+      "file": "venous.glb",
+      "vertices": 29818,
+      "triangles": 59648,
+      "topology": "new closed connected plexiform regional surface"
+    },
+    {
+      "node": "vein.vertebral_periarterial_plexus.left",
+      "file": "venous.glb",
+      "vertices": 29908,
+      "triangles": 59828,
+      "topology": "new closed connected plexiform regional surface"
+    },
+    {
+      "node": "vein.superior_petrosal.right",
+      "file": "venous.glb",
+      "vertices": 3163,
+      "triangles": 5906,
+      "maxShiftMm": 0.22305725314461974,
+      "topologyPreserved": true,
+      "acceptedDisplacementScale": 1.0
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "file": "venous.glb",
+      "vertices": 2942,
+      "triangles": 5709,
+      "maxShiftMm": 1.4693805885620932,
+      "topologyPreserved": true,
+      "acceptedDisplacementScale": 1.0
+    },
+    {
+      "node": "vein.superior_petrosal.left",
+      "file": "venous.glb",
+      "vertices": 3066,
+      "triangles": 5700,
+      "maxShiftMm": 0.005469189087662079,
+      "topologyPreserved": true,
+      "acceptedDisplacementScale": 1.0
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "file": "venous.glb",
+      "vertices": 2847,
+      "triangles": 5451,
+      "maxShiftMm": 0.9796187869621611,
+      "topologyPreserved": true,
+      "acceptedDisplacementScale": 1.0
+    },
+    {
+      "node": "vein.central_retinal.right",
+      "file": "venous.glb",
+      "vertices": 2100,
+      "triangles": 4196,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.central_retinal.left",
+      "file": "venous.glb",
+      "vertices": 2120,
+      "triangles": 4236,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.inferior_alveolar.right",
+      "file": "venous.glb",
+      "vertices": 5700,
+      "triangles": 11396,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.infraorbital.right",
+      "file": "venous.glb",
+      "vertices": 4220,
+      "triangles": 8436,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.internal_auditory.right",
+      "file": "venous.glb",
+      "vertices": 780,
+      "triangles": 1556,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.inferior_alveolar.left",
+      "file": "venous.glb",
+      "vertices": 5620,
+      "triangles": 11236,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.infraorbital.left",
+      "file": "venous.glb",
+      "vertices": 4120,
+      "triangles": 8236,
+      "topology": "new closed smooth reference tube"
+    },
+    {
+      "node": "vein.internal_auditory.left",
+      "file": "venous.glb",
+      "vertices": 820,
+      "triangles": 1636,
+      "topology": "new closed smooth reference tube"
+    }
+  ],
+  "groups": [
+    {
+      "reason": "Local petrosal surface fitting with fixed native collars; cavernous outlets and all other existing veins retained.",
+      "nodes": [
+        "vein.superior_petrosal.right",
+        "vein.inferior_petrosal.right",
+        "vein.superior_petrosal.left",
+        "vein.inferior_petrosal.left"
+      ]
+    }
+  ],
+  "method": "Compact coordinate field around petrosal shafts, attenuated to zero at every existing shared neighbouring interface; selected new companion and CPA venous tubes. Selected companion and CPA veins use capped smooth tubes, surface-based drainage stems and illustrative radii. Selected companion and CPA veins use capped smooth tubes, surface-based drainage stems and illustrative radii. Selected companion and CPA veins use capped smooth tubes, surface-based drainage stems and illustrative radii. Selected companion and CPA veins use capped smooth tubes, surface-based drainage stems and illustrative radii. Selected companion and CPA veins use capped smooth tubes, surface-based drainage stems and illustrative radii.",
+  "limitations": [
+    "Medial free cavernous-to-petrosal transitions are retained.",
+    "Small canal containment cannot be assessed from this skull."
+  ]
+}

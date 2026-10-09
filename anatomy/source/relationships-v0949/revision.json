@@ -1,0 +1,639 @@
+{
+  "release": "0.9.49",
+  "baselineRelease": "0.9.48",
+  "baselineAssetHashes": {
+    "brain-context.glb": "694d67847c8454b67dc62047724317121da9273f83a232bd82951fd484f34a81",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-circulation.glb": "8068101bc47988327b46c4e10d5725a4a8ecdb9c6baebed4e6c98d52b962969f",
+    "venous.glb": "77463828b242ffd7442a3ef4766e7fe0d4579165c4229502b80d9f77eda4e90f",
+    "complete-anastomoses.glb": "98d67d2f86debc1111b206061687d48429a043624d4cbb3b5e3913a288f7a6a9"
+  },
+  "newLabels": [],
+  "changed": [
+    {
+      "node": "vein.vertebral.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.facial.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.deep_facial.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "Transverse facial\u2013facial right",
+      "file": "complete-anastomoses.glb"
+    },
+    {
+      "node": "vein.superficial_temporal.right",
+      "file": "venous.glb"
+    },
+    {
+      "node": "Hypoglossal branch",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Medial clival",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Odontoid descending",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Labyrinthine right",
+      "file": "complete-circulation.glb",
+      "vertices": 9209,
+      "triangles": 18367,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "Common cochlear right",
+      "file": "complete-circulation.glb",
+      "vertices": 979,
+      "triangles": 1921,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "Anterior vestibular right",
+      "file": "complete-circulation.glb",
+      "vertices": 857,
+      "triangles": 1680,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "MMA frontal",
+      "file": "complete-circulation.glb",
+      "vertices": 17175,
+      "triangles": 34290,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "vein.vertebral.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.facial.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "vein.deep_facial.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "Transverse facial\u2013facial left",
+      "file": "complete-anastomoses.glb"
+    },
+    {
+      "node": "vein.superficial_temporal.left",
+      "file": "venous.glb"
+    },
+    {
+      "node": "Hypoglossal branch left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Medial clival left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Odontoid descending left",
+      "file": "complete-circulation.glb"
+    },
+    {
+      "node": "Labyrinthine left",
+      "file": "complete-circulation.glb",
+      "vertices": 9668,
+      "triangles": 19271,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "Common cochlear left",
+      "file": "complete-circulation.glb",
+      "vertices": 939,
+      "triangles": 1837,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "Anterior vestibular left",
+      "file": "complete-circulation.glb",
+      "vertices": 800,
+      "triangles": 1572,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "MMA frontal left",
+      "file": "complete-circulation.glb",
+      "vertices": 16647,
+      "triangles": 33237,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "MMA frontal anterior division left",
+      "file": "complete-circulation.glb",
+      "vertices": 9964,
+      "triangles": 19871,
+      "topology": "exterior patch of unified tubular solid"
+    },
+    {
+      "node": "MMA frontal anterior division",
+      "file": "complete-circulation.glb",
+      "vertices": 9297,
+      "triangles": 18534,
+      "topology": "exterior patch of unified tubular solid"
+    }
+  ],
+  "groups": [
+    {
+      "reason": "Vertebral venous channel follows V2 ventrolaterally with curved transitions around its wall. Cervical bone is unavailable.",
+      "nodes": [
+        "vein.vertebral.right"
+      ]
+    },
+    {
+      "reason": "Facial vein lies posterolateral to the tortuous artery in the lower cheek, with smooth fixed-end transitions.",
+      "nodes": [
+        "vein.facial.right",
+        "vein.deep_facial.right"
+      ]
+    },
+    {
+      "reason": "Clear the retained transverse facial arterial connection while transporting the common venous collar.",
+      "nodes": [
+        "vein.facial.right",
+        "vein.deep_facial.right"
+      ]
+    },
+    {
+      "reason": "Bow the illustrative transverse facial-to-facial arterial connection anterior to the corrected facial venous course; retain both endpoints.",
+      "nodes": [
+        "Transverse facial\u2013facial right"
+      ]
+    },
+    {
+      "reason": "Superficial temporal venous trunk follows the preauricular artery; distal scalp variation and retromandibular drainage are preserved.",
+      "nodes": [
+        "vein.superficial_temporal.right"
+      ]
+    },
+    {
+      "reason": "Hypoglossal arterial branch shares the condylar corridor, preserving attached clival, posterior meningeal and odontoid collars.",
+      "nodes": [
+        "Hypoglossal branch",
+        "Medial clival",
+        "Odontoid descending"
+      ]
+    },
+    {
+      "reason": "Labyrinthine branch reaches the internal acoustic region, retaining the AICA origin and cochlear/vestibular branch collars. The canal lumen and nerves are unsegmented.",
+      "nodes": [
+        "Labyrinthine right",
+        "Common cochlear right",
+        "Anterior vestibular right"
+      ]
+    },
+    {
+      "reason": "Frontal MMA local inner-table apposition, allowing a dural layer and preserving proximal and distal courses.",
+      "nodes": [
+        "MMA frontal"
+      ]
+    },
+    {
+      "reason": "Transport frontal division collars, blending back to the existing distal branch.",
+      "nodes": []
+    },
+    {
+      "reason": "Vertebral venous channel follows V2 ventrolaterally with curved transitions around its wall. Cervical bone is unavailable.",
+      "nodes": [
+        "vein.vertebral.left"
+      ]
+    },
+    {
+      "reason": "Facial vein lies posterolateral to the tortuous artery in the lower cheek, with smooth fixed-end transitions.",
+      "nodes": [
+        "vein.facial.left",
+        "vein.deep_facial.left"
+      ]
+    },
+    {
+      "reason": "Clear the retained transverse facial arterial connection while transporting the common venous collar.",
+      "nodes": [
+        "vein.facial.left",
+        "vein.deep_facial.left"
+      ]
+    },
+    {
+      "reason": "Bow the illustrative transverse facial-to-facial arterial connection anterior to the corrected facial venous course; retain both endpoints.",
+      "nodes": [
+        "Transverse facial\u2013facial left"
+      ]
+    },
+    {
+      "reason": "Superficial temporal venous trunk follows the preauricular artery; distal scalp variation and retromandibular drainage are preserved.",
+      "nodes": [
+        "vein.superficial_temporal.left"
+      ]
+    },
+    {
+      "reason": "Hypoglossal arterial branch shares the condylar corridor, preserving attached clival, posterior meningeal and odontoid collars.",
+      "nodes": [
+        "Hypoglossal branch left",
+        "Medial clival left",
+        "Odontoid descending left"
+      ]
+    },
+    {
+      "reason": "Labyrinthine branch reaches the internal acoustic region, retaining the AICA origin and cochlear/vestibular branch collars. The canal lumen and nerves are unsegmented.",
+      "nodes": [
+        "Labyrinthine left",
+        "Common cochlear left",
+        "Anterior vestibular left"
+      ]
+    },
+    {
+      "reason": "Frontal MMA local inner-table apposition, allowing a dural layer and preserving proximal and distal courses.",
+      "nodes": [
+        "MMA frontal left"
+      ]
+    },
+    {
+      "reason": "Transport frontal division collars, blending back to the existing distal branch.",
+      "nodes": [
+        "MMA frontal anterior division left"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "node": "Anterior vestibular left",
+      "boundaryEdges": 26,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 3,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "Anterior vestibular right",
+      "boundaryEdges": 32,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 6,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "Common cochlear left",
+      "boundaryEdges": 39,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 15,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "Common cochlear right",
+      "boundaryEdges": 35,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 20,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "Hypoglossal branch",
+      "boundaryEdges": 498,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Hypoglossal branch left",
+      "boundaryEdges": 498,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Labyrinthine left",
+      "boundaryEdges": 65,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 20,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "Labyrinthine right",
+      "boundaryEdges": 49,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 22,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "MMA frontal",
+      "boundaryEdges": 58,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "MMA frontal anterior division",
+      "boundaryEdges": 58,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "MMA frontal anterior division left",
+      "boundaryEdges": 55,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "MMA frontal left",
+      "boundaryEdges": 55,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "Medial clival",
+      "boundaryEdges": 146,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Medial clival left",
+      "boundaryEdges": 146,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Odontoid descending",
+      "boundaryEdges": 137,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Odontoid descending left",
+      "boundaryEdges": 137,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Transverse facial\u2013facial left",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "Transverse facial\u2013facial right",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.deep_facial.left",
+      "boundaryEdges": 124,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.deep_facial.right",
+      "boundaryEdges": 128,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.facial.left",
+      "boundaryEdges": 92,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.facial.right",
+      "boundaryEdges": 97,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.superficial_temporal.left",
+      "boundaryEdges": 34,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.superficial_temporal.right",
+      "boundaryEdges": 60,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.vertebral.left",
+      "boundaryEdges": 145,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.vertebral.right",
+      "boundaryEdges": 153,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    }
+  ],
+  "method": "Local coordinate shears for retained surfaces; acoustic centreline tubes joined by an implicit union on a 0.06 mm grid, smoothed single exterior and disjoint selectable patches. Frontal MMA and its anterior division reconstructed as 0.14 mm implicit tubular regional networks, preserving original parent attachment locations.",
+  "limitations": [
+    "Reference courses, not patient segmentation.",
+    "No cervical vertebrae, canal lumens or cranial nerves for independent canal containment validation.",
+    "Existing network label interfaces are retained; no whole-atlas watertightness claim."
+  ],
+  "acousticNetworkTopology": [
+    {
+      "side": "right",
+      "vertices": 10986,
+      "triangles": 21968,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "patches": [
+        "Labyrinthine right",
+        "Common cochlear right",
+        "Anterior vestibular right"
+      ]
+    },
+    {
+      "side": "left",
+      "vertices": 11342,
+      "triangles": 22680,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "patches": [
+        "Labyrinthine left",
+        "Common cochlear left",
+        "Anterior vestibular left"
+      ]
+    }
+  ],
+  "acousticRadiusProfiles": [
+    {
+      "node": "Labyrinthine right",
+      "radiusRangeMm": [
+        0.14,
+        0.22
+      ],
+      "rootCollarRadiusMm": 0.3,
+      "policy": "illustrative tube radius; distal branch scale .65; root collar contains the native AICA interface"
+    },
+    {
+      "node": "Common cochlear right",
+      "radiusMm": 0.115,
+      "policy": "illustrative smooth tubular branch"
+    },
+    {
+      "node": "Anterior vestibular right",
+      "radiusMm": 0.115,
+      "policy": "illustrative smooth tubular branch"
+    },
+    {
+      "node": "Labyrinthine left",
+      "radiusRangeMm": [
+        0.14,
+        0.22
+      ],
+      "rootCollarRadiusMm": 0.3,
+      "policy": "illustrative tube radius; distal branch scale .65; root collar contains the native AICA interface"
+    },
+    {
+      "node": "Common cochlear left",
+      "radiusMm": 0.115,
+      "policy": "illustrative smooth tubular branch"
+    },
+    {
+      "node": "Anterior vestibular left",
+      "radiusMm": 0.115,
+      "policy": "illustrative smooth tubular branch"
+    }
+  ],
+  "meningealNetworkTopology": [
+    {
+      "side": "right",
+      "vertices": 26414,
+      "triangles": 52824,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "patches": [
+        "MMA frontal",
+        "MMA frontal anterior division"
+      ]
+    },
+    {
+      "side": "left",
+      "vertices": 26556,
+      "triangles": 53108,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "patches": [
+        "MMA frontal left",
+        "MMA frontal anterior division left"
+      ]
+    }
+  ],
+  "meningealRadiusProfiles": [
+    {
+      "node": "MMA frontal",
+      "method": "Smoothed axial contour centreline with bounded illustrative median contour radius, after the local inner-table placement correction.",
+      "tubeRadiusP05MedianP95": [
+        0.35,
+        0.3501824939870825,
+        0.4999268198129137
+      ]
+    },
+    {
+      "node": "MMA frontal anterior division",
+      "method": "Smoothed axial contour centreline with bounded illustrative median contour radius, after the local inner-table placement correction.",
+      "tubeRadiusP05MedianP95": [
+        0.24000000000000002,
+        0.31055939440935565,
+        0.4163015533734773
+      ]
+    },
+    {
+      "node": "MMA frontal left",
+      "method": "Smoothed axial contour centreline with bounded illustrative median contour radius, after the local inner-table placement correction.",
+      "tubeRadiusP05MedianP95": [
+        0.35,
+        0.3552399442922646,
+        0.49566112064934426
+      ]
+    },
+    {
+      "node": "MMA frontal anterior division left",
+      "method": "Smoothed axial contour centreline with bounded illustrative median contour radius, after the local inner-table placement correction.",
+      "tubeRadiusP05MedianP95": [
+        0.24000000000000002,
+        0.308684821705436,
+        0.4199747586615887
+      ]
+    }
+  ],
+  "checksScope": "Final candidate meshes, after acoustic and frontal meningeal reconstruction."
+}

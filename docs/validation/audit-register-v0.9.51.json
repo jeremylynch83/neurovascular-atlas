@@ -1,0 +1,77 @@
+{
+  "release": "0.9.51",
+  "wholeAuditClosed": false,
+  "items": [
+    {
+      "item": "Incorrect left incisive and orbital MMA passage associations",
+      "status": "resolved in v0.9.49; retained",
+      "evidence": "Previous relationship release and unchanged catalogue associations"
+    },
+    {
+      "item": "Facial/deep facial and superficial temporal pairing",
+      "status": "regional correction retained from v0.9.49; anatomical variants remain",
+      "evidence": "Existing meshes unchanged in v0.9.50"
+    },
+    {
+      "item": "Frontal MMA surface support",
+      "status": "regional tubular rebuild retained from v0.9.49",
+      "evidence": "Arterial asset unchanged"
+    },
+    {
+      "item": "Lateral transverse sinus skull apposition",
+      "status": "screen reconciled; no displacement needed",
+      "evidence": "Corrected local bone set includes adjacent parietal bone, omitted by original screen"
+    },
+    {
+      "item": "Superior and inferior petrosal shaft support",
+      "status": "partially implemented",
+      "evidence": "Constrained shaft fitting; all native shared collar coordinates fixed; medial free outlets retained"
+    },
+    {
+      "item": "Inferior alveolar and infraorbital venous companions",
+      "status": "selected bilateral proximal/reference courses implemented",
+      "evidence": "Separate selectable meshes and represented pterygoid drainage; intrabony containment unresolved"
+    },
+    {
+      "item": "Central retinal venous companion",
+      "status": "selected bilateral ophthalmic drainage reference implemented",
+      "evidence": "Optic nerve, globe and alternative drainage patterns absent"
+    },
+    {
+      "item": "Paired anterior middle meningeal veins",
+      "status": "open; trial rejected",
+      "evidence": "Trial introduced neural/arterial contacts and converging stem crossings; excluded from release"
+    },
+    {
+      "item": "Internal auditory veins",
+      "status": "selected bilateral CPA drainage reference implemented",
+      "evidence": "Other intrabony and aqueduct venous routes omitted"
+    },
+    {
+      "item": "Vertebral venous system",
+      "status": "regional plexiform component implemented; full fit open",
+      "evidence": "Cervical vertebrae and exact foraminal levels absent"
+    },
+    {
+      "item": "Hypoglossal and internal acoustic canal containment",
+      "status": "open; requires detailed canal segmentation",
+      "evidence": "Coarse bone surface overlaps cannot establish lumen containment"
+    },
+    {
+      "item": "Supraorbital, ethmoidal, stylomastoid and Vidian guides",
+      "status": "open; requires independent route/foramen definition",
+      "evidence": "Approximate point references do not define canal centrelines; no forced point fitting"
+    },
+    {
+      "item": "Mastoid emissary and posterior condylar veins",
+      "status": "open; requires variant selection and reliable bony aperture definitions",
+      "evidence": "No separately segmented canal geometry suitable for safe placement"
+    },
+    {
+      "item": "Existing MMA trunk versus brain reference surface",
+      "status": "open; coordinated arterial and tissue-reference review required",
+      "evidence": "Exact triangle contacts confirmed bilaterally in the retained guide. Companion-vein trials are excluded; see final-release-v0.9.51.json"
+    }
+  ],
+  "geometryBaseline": "0.9.50"
+}

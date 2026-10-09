@@ -1,0 +1,440 @@
+{
+  "release": "0.9.48",
+  "baseline": {
+    "triangles": 604704,
+    "uniqueVertices": 307081,
+    "boundaryEdges": 10492,
+    "nonManifoldEdges": 1160,
+    "duplicateTriangles": 670
+  },
+  "revision": {
+    "release": "0.9.48",
+    "baselineRelease": "0.9.47",
+    "baselineAssetHashes": {
+      "brain-context.glb": "694d67847c8454b67dc62047724317121da9273f83a232bd82951fd484f34a81",
+      "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+      "complete-circulation.glb": "8068101bc47988327b46c4e10d5725a4a8ecdb9c6baebed4e6c98d52b962969f",
+      "venous.glb": "47c2b21144abedffe2e7ca8ab82f734a0f26d7e7591a992353bd72242404a5c6",
+      "complete-anastomoses.glb": "98d67d2f86debc1111b206061687d48429a043624d4cbb3b5e3913a288f7a6a9"
+    },
+    "newLabels": [],
+    "changed": [
+      {
+        "node": "vein.anterior_pontine",
+        "file": "venous.glb",
+        "vertices": 16847,
+        "triangles": 33528,
+        "topology": "exterior patch of unified tubular solid"
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "file": "venous.glb",
+        "vertices": 12739,
+        "triangles": 25411,
+        "topology": "exterior patch of unified tubular solid"
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "file": "venous.glb",
+        "vertices": 11632,
+        "triangles": 23182,
+        "topology": "exterior patch of unified tubular solid"
+      },
+      {
+        "node": "vein.prepontine_bridge.right",
+        "file": "venous.glb",
+        "vertices": 1746,
+        "triangles": 3447,
+        "topology": "exterior patch of unified tubular solid"
+      }
+    ],
+    "method": "Native geodesic centreline tubes with smoothed illustrative radius, explicit connected junction, implicit union, 0.12 mm grid, smooth single exterior surface and disjoint selectable patches.",
+    "gridSpacingMm": [
+      0.11974137277612613,
+      0.11944555682097592,
+      0.11979417070758042
+    ],
+    "centrelineClearance": [
+      {
+        "maximumCentrelineAdjustmentMm": 0.9530807804031504,
+        "iterations": 12,
+        "node": "vein.anterior_pontine"
+      },
+      {
+        "maximumCentrelineAdjustmentMm": 0.6101193942044473,
+        "iterations": 12,
+        "node": "vein.transverse_pontine.left"
+      },
+      {
+        "maximumCentrelineAdjustmentMm": 0.6664607698132957,
+        "iterations": 12,
+        "node": "vein.transverse_pontine.right"
+      },
+      {
+        "maximumCentrelineAdjustmentMm": 0.0,
+        "iterations": 0,
+        "node": "vein.prepontine_bridge.right"
+      }
+    ],
+    "radiusProfiles": [
+      {
+        "node": "vein.anterior_pontine",
+        "sourceEstimatedRadiusP05MedianP95": [
+          0.4265904026690902,
+          0.8080330787549099,
+          1.3382492985856185
+        ],
+        "tubeRadiusP05MedianP95": [
+          0.7355568661274798,
+          0.806764716813476,
+          0.82
+        ],
+        "method": "Smoothed and bounded illustrative radius of native geodesic sections, with a local 0.06 mm right tributary collar allowance."
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "sourceEstimatedRadiusP05MedianP95": [
+          0.4830101495073771,
+          0.7117620831096303,
+          1.0832723008874985
+        ],
+        "tubeRadiusP05MedianP95": [
+          0.6698873201513016,
+          0.7095782000503201,
+          0.73
+        ],
+        "method": "Smoothed and bounded illustrative radius of native geodesic sections, with a local 0.06 mm right tributary collar allowance."
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "sourceEstimatedRadiusP05MedianP95": [
+          0.5250511435641243,
+          0.7024232297526699,
+          0.8804442042821417
+        ],
+        "tubeRadiusP05MedianP95": [
+          0.6828748773458679,
+          0.7107006286995605,
+          0.7499966916675128
+        ],
+        "method": "Smoothed and bounded illustrative radius of native geodesic sections, with a local 0.06 mm right tributary collar allowance."
+      },
+      {
+        "node": "vein.prepontine_bridge.right",
+        "sourceEstimatedRadiusP05MedianP95": [
+          0.2526417358932116,
+          0.29833708788509444,
+          0.3693171511007459
+        ],
+        "tubeRadiusP05MedianP95": [
+          0.2932130715191872,
+          0.2995682874516995,
+          0.31
+        ],
+        "method": "Smoothed and bounded illustrative radius of native geodesic sections, with a local 0.06 mm right tributary collar allowance."
+      }
+    ],
+    "wholeAtlasWatertightClaimed": false
+  },
+  "quality": {
+    "release": "0.9.48",
+    "topology": {
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "inconsistentlyOrientedEdges": 0,
+      "connectedComponents": 1,
+      "degenerateTriangles": 0,
+      "duplicateTriangles": 0,
+      "vertices": 42786,
+      "triangles": 85568,
+      "signedVolumeMm3": 152.51052514107354
+    },
+    "selfIntersectionPairs": [],
+    "selfIntersectionCount": 0,
+    "contacts": [
+      {
+        "target": "vein.superior_petrosal_vein.right",
+        "asset": "venous.glb",
+        "contactPoints": 178,
+        "originalAttachmentVertices": 754,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            20.676767349243164,
+            -70.03716278076172,
+            56.54313278198242
+          ],
+          [
+            21.81277847290039,
+            -67.78982543945312,
+            57.90117263793945
+          ]
+        ]
+      },
+      {
+        "target": "vein.cerebellopontine_fissure.right",
+        "asset": "venous.glb",
+        "contactPoints": 353,
+        "originalAttachmentVertices": 405,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            20.06149673461914,
+            -70.07061767578125,
+            56.14084243774414
+          ],
+          [
+            21.611928939819336,
+            -66.50118255615234,
+            57.541011810302734
+          ]
+        ]
+      },
+      {
+        "target": "vein.superior_petrosal_vein.left",
+        "asset": "venous.glb",
+        "contactPoints": 154,
+        "originalAttachmentVertices": 83,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            -20.509750366210938,
+            -69.2742919921875,
+            56.98117446899414
+          ],
+          [
+            -19.187965393066406,
+            -66.46344757080078,
+            58.87478256225586
+          ]
+        ]
+      },
+      {
+        "target": "vein.cerebellopontine_fissure.left",
+        "asset": "venous.glb",
+        "contactPoints": 184,
+        "originalAttachmentVertices": 480,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            -20.746868133544922,
+            -70.55362701416016,
+            56.4219856262207
+          ],
+          [
+            -19.078638076782227,
+            -68.01624298095703,
+            58.481388092041016
+          ]
+        ]
+      },
+      {
+        "target": "vein.basilar_plexus",
+        "asset": "venous.glb",
+        "contactPoints": 48,
+        "originalAttachmentVertices": 74,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            9.31418228149414,
+            -58.29091262817383,
+            53.62221145629883
+          ],
+          [
+            9.649569511413574,
+            -58.08936309814453,
+            54.057395935058594
+          ]
+        ]
+      },
+      {
+        "target": "vein.anterior_pontomesencephalic",
+        "asset": "venous.glb",
+        "contactPoints": 169,
+        "originalAttachmentVertices": 105,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            1.8424588441848755,
+            -60.94462966918945,
+            66.39002990722656
+          ],
+          [
+            2.8050894737243652,
+            -59.59457778930664,
+            67.7067642211914
+          ]
+        ]
+      },
+      {
+        "target": "vein.anterior_medullary",
+        "asset": "venous.glb",
+        "contactPoints": 217,
+        "originalAttachmentVertices": 386,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            1.7325328588485718,
+            -75.57132720947266,
+            47.05351257324219
+          ],
+          [
+            2.868619680404663,
+            -73.6297836303711,
+            48.34797668457031
+          ]
+        ]
+      },
+      {
+        "target": "vein.lateral_anterior_pontomesencephalic.right",
+        "asset": "venous.glb",
+        "contactPoints": 98,
+        "originalAttachmentVertices": 74,
+        "unexpectedContactPoints": 0,
+        "contactBounds": [
+          [
+            10.92917251586914,
+            -62.72431564331055,
+            56.62388229370117
+          ],
+          [
+            11.372015953063965,
+            -62.29081344604492,
+            56.81976318359375
+          ]
+        ]
+      }
+    ],
+    "unexpectedContacts": [],
+    "networkWatertight": true,
+    "scope": "One exterior network wall, assembled across disjoint labelled patches. Original attachments are separately identified within 2.5 mm of exact baseline shared vertices; all other artery, vein, brain and bone contacts are unexpected.",
+    "passed": true
+  },
+  "attachments": {
+    "release": "0.9.48",
+    "checks": [
+      {
+        "node": "vein.superior_petrosal_vein.right",
+        "baselineSharedVertices": 754,
+        "minimumSignedDistanceMm": -0.6599368757025812,
+        "medianSignedDistanceMm": -0.25876813340082705,
+        "verticesInsideRebuiltSolid": 535,
+        "connected": true
+      },
+      {
+        "node": "vein.cerebellopontine_fissure.right",
+        "baselineSharedVertices": 405,
+        "minimumSignedDistanceMm": -0.4943542641558124,
+        "medianSignedDistanceMm": -0.15087274288719912,
+        "verticesInsideRebuiltSolid": 281,
+        "connected": true
+      },
+      {
+        "node": "vein.superior_petrosal_vein.left",
+        "baselineSharedVertices": 83,
+        "minimumSignedDistanceMm": -0.27986540867910714,
+        "medianSignedDistanceMm": -0.0655253419586833,
+        "verticesInsideRebuiltSolid": 54,
+        "connected": true
+      },
+      {
+        "node": "vein.cerebellopontine_fissure.left",
+        "baselineSharedVertices": 480,
+        "minimumSignedDistanceMm": -0.6444316876693221,
+        "medianSignedDistanceMm": -0.13461198151255296,
+        "verticesInsideRebuiltSolid": 321,
+        "connected": true
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "baselineSharedVertices": 74,
+        "minimumSignedDistanceMm": -0.11400622680534404,
+        "medianSignedDistanceMm": 0.12622078588512992,
+        "verticesInsideRebuiltSolid": 17,
+        "connected": true
+      },
+      {
+        "node": "vein.anterior_pontomesencephalic",
+        "baselineSharedVertices": 105,
+        "minimumSignedDistanceMm": -0.6588667539442501,
+        "medianSignedDistanceMm": -0.24847654570400685,
+        "verticesInsideRebuiltSolid": 71,
+        "connected": true
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "baselineSharedVertices": 386,
+        "minimumSignedDistanceMm": -0.7357957817609997,
+        "medianSignedDistanceMm": -0.0657495653938446,
+        "verticesInsideRebuiltSolid": 217,
+        "connected": true
+      },
+      {
+        "node": "vein.lateral_anterior_pontomesencephalic.right",
+        "baselineSharedVertices": 74,
+        "minimumSignedDistanceMm": -0.05477077325809632,
+        "medianSignedDistanceMm": -0.04205042453051373,
+        "verticesInsideRebuiltSolid": 74,
+        "connected": true
+      }
+    ],
+    "passed": true,
+    "method": "Exact baseline shared attachment vertices tested against the signed distance of the rebuilt closed solid. Native endpoint collars must enter the rebuilt solid. Endpoint topology of neighbouring labels is retained; whole-atlas manifoldness is outside scope."
+  },
+  "depth": {
+    "release": "0.9.48",
+    "sampledVertices": 1597,
+    "passed": true,
+    "minimumPosteriorClearanceMm": 0.5072174072265625,
+    "afterPosteriorVertices": 1597,
+    "method": "Anterior-posterior rays through actual basilar triangles at transverse-vein vertex x/z coordinates; smaller arterial crossings are not assigned a universal depth rule."
+  },
+  "export": {
+    "release": "0.9.48",
+    "checks": [
+      {
+        "file": "venous.glb",
+        "oldSha256": "47c2b21144abedffe2e7ca8ab82f734a0f26d7e7591a992353bd72242404a5c6",
+        "sha256": "77463828b242ffd7442a3ef4766e7fe0d4579165c4229502b80d9f77eda4e90f",
+        "labels": 217,
+        "topologyUnchanged": false,
+        "unifiedTubularSurface": true,
+        "exactPositionCodecRoundtrip": true
+      }
+    ]
+  },
+  "loader": {
+    "release": "0.9.48",
+    "passed": true,
+    "checks": [
+      {
+        "file": "venous.glb",
+        "labels": 217,
+        "triangles": 1656509,
+        "sha256": "77463828b242ffd7442a3ef4766e7fe0d4579165c4229502b80d9f77eda4e90f",
+        "exactLoadedPositionsAndIndices": true,
+        "unitLoadedNormals": true
+      }
+    ],
+    "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+  },
+  "patchCoverageExact": true,
+  "unchangedAssetHashes": {
+    "brain-context.glb": "694d67847c8454b67dc62047724317121da9273f83a232bd82951fd484f34a81",
+    "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+    "complete-circulation.glb": "8068101bc47988327b46c4e10d5725a4a8ecdb9c6baebed4e6c98d52b962969f",
+    "complete-anastomoses.glb": "98d67d2f86debc1111b206061687d48429a043624d4cbb3b5e3913a288f7a6a9"
+  },
+  "build": {
+    "passed": true,
+    "command": "npm run build",
+    "checks": [
+      "anatomy manifest and course contracts",
+      "brain bindings",
+      "TypeScript",
+      "Vite",
+      "precompression"
+    ]
+  },
+  "selectablePatchesEachConnected": true
+}

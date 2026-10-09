@@ -1,0 +1,895 @@
+{
+  "release": "0.9.50",
+  "meshChecks": [
+    {
+      "node": "vein.central_retinal.left",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.central_retinal.right",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.inferior_alveolar.left",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.inferior_alveolar.right",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "boundaryEdges": 287,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 1,
+      "candidateDegenerateFaces": 1,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "boundaryEdges": 205,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 2,
+      "candidateDegenerateFaces": 2,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.infraorbital.right",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.internal_auditory.left",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.internal_auditory.right",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.superior_petrosal.left",
+      "boundaryEdges": 460,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.superior_petrosal.right",
+      "boundaryEdges": 438,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": true
+    },
+    {
+      "node": "vein.vertebral_periarterial_plexus.left",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.vertebral_periarterial_plexus.right",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    },
+    {
+      "node": "vein.infraorbital.left",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "baselineDegenerateFaces": 0,
+      "candidateDegenerateFaces": 0,
+      "newDegenerateFaces": 0,
+      "topologyExact": false
+    }
+  ],
+  "contacts": [
+    {
+      "a": "vein.central_retinal.left",
+      "b": "vein.superior_ophthalmic.left",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 40,
+      "newContactFaces": 40,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -23.5789057413737,
+          -16.34065310160319,
+          70.05946858723958
+        ],
+        [
+          -23.537296930948894,
+          -16.220869064331055,
+          70.1897964477539
+        ],
+        [
+          -23.386274973551433,
+          -16.314725875854492,
+          70.22784423828125
+        ],
+        [
+          -23.42788314819336,
+          -16.43450991312663,
+          70.09752146402995
+        ]
+      ]
+    },
+    {
+      "a": "vein.central_retinal.right",
+      "b": "vein.superior_ophthalmic.right",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 40,
+      "newContactFaces": 40,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          24.791385650634766,
+          -16.38331921895345,
+          70.11100006103516
+        ],
+        [
+          24.64728037516276,
+          -16.395769755045574,
+          70.22119649251302
+        ],
+        [
+          24.696616490681965,
+          -16.241146087646484,
+          70.30318705240886
+        ],
+        [
+          24.840722401936848,
+          -16.228695551554363,
+          70.19298807779948
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_alveolar.left",
+      "b": "bone.mandible",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 42,
+      "newContactFaces": 42,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -33.577677408854164,
+          -36.5526377360026,
+          9.702882130940756
+        ],
+        [
+          -33.35268020629883,
+          -36.33707809448242,
+          10.042767842610678
+        ],
+        [
+          -33.011637369791664,
+          -36.442925771077476,
+          9.88193416595459
+        ],
+        [
+          -33.16113789876302,
+          -36.61637751261393,
+          9.550528844197592
+        ],
+        [
+          -33.53778584798177,
+          -36.61499277750651,
+          9.657855033874512
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_alveolar.left",
+      "b": "vein.pterygoid_plexus.left",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 40,
+      "newContactFaces": 40,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -32.55777359008789,
+          -39.41684087117513,
+          32.2151985168457
+        ],
+        [
+          -32.3607063293457,
+          -39.0851796468099,
+          32.147711435953774
+        ],
+        [
+          -32.022705078125,
+          -39.273972829182945,
+          32.20689392089844
+        ],
+        [
+          -32.219774881998696,
+          -39.60563405354818,
+          32.274383544921875
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_alveolar.right",
+      "b": "bone.mandible",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 44,
+      "newContactFaces": 44,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          34.53579457600912,
+          -36.63090260823568,
+          9.687488238016764
+        ],
+        [
+          34.31467310587565,
+          -36.581225077311196,
+          9.435556729634603
+        ],
+        [
+          34.15288543701172,
+          -36.23426818847656,
+          9.740790049235025
+        ],
+        [
+          34.470465342203774,
+          -36.29980214436849,
+          9.936387697855631
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_alveolar.right",
+      "b": "vein.pterygoid_plexus.right",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 40,
+      "newContactFaces": 40,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          33.40736770629883,
+          -39.24848175048828,
+          32.22730255126953
+        ],
+        [
+          33.023938496907554,
+          -39.30523173014323,
+          32.283434549967446
+        ],
+        [
+          32.9550895690918,
+          -38.93074162801107,
+          32.1917470296224
+        ],
+        [
+          33.33852005004883,
+          -38.87399164835612,
+          32.13561248779297
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "brain.tentorium-cerebelli.left",
+      "baselineMovedFacesInContact": 41,
+      "candidateMovedFacesInContact": 33,
+      "newContactFaces": 18,
+      "existingSharedInterface": false,
+      "retopologised": false,
+      "sampleNewContactCentres": [
+        [
+          -11.704138120015463,
+          -57.22289148966471,
+          54.05882771809896
+        ],
+        [
+          -11.732656796773275,
+          -57.38665517171224,
+          54.42325337727865
+        ],
+        [
+          -11.81740697224935,
+          -57.293469746907554,
+          53.85499572753906
+        ],
+        [
+          -11.88430086771647,
+          -58.22277959187826,
+          55.01114145914713
+        ],
+        [
+          -11.943866093953451,
+          -57.93863296508789,
+          54.25875600179037
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "bone.temporal.left",
+      "baselineMovedFacesInContact": 36,
+      "candidateMovedFacesInContact": 36,
+      "newContactFaces": 0,
+      "existingSharedInterface": false,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "vein.cavernous.left",
+      "baselineMovedFacesInContact": 15,
+      "candidateMovedFacesInContact": 15,
+      "newContactFaces": 0,
+      "existingSharedInterface": true,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "vein.basilar_plexus",
+      "baselineMovedFacesInContact": 6,
+      "candidateMovedFacesInContact": 5,
+      "newContactFaces": 3,
+      "existingSharedInterface": true,
+      "retopologised": false,
+      "sampleNewContactCentres": [
+        [
+          -10.894427935282389,
+          -59.38191604614258,
+          53.541605631510414
+        ],
+        [
+          -11.018064498901367,
+          -59.42371114095052,
+          53.498338063557945
+        ],
+        [
+          -10.892366409301758,
+          -59.358184814453125,
+          53.70049158732096
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "brain.tentorium-cerebelli.right",
+      "baselineMovedFacesInContact": 55,
+      "candidateMovedFacesInContact": 16,
+      "newContactFaces": 13,
+      "existingSharedInterface": false,
+      "retopologised": false,
+      "sampleNewContactCentres": [
+        [
+          12.888232549031576,
+          -57.0336545308431,
+          53.71306355794271
+        ],
+        [
+          12.824407895406088,
+          -57.632232666015625,
+          54.445639292399086
+        ],
+        [
+          12.869126955668131,
+          -57.53945795694987,
+          54.29609680175781
+        ],
+        [
+          12.890230814615885,
+          -57.374481201171875,
+          54.29255803426107
+        ],
+        [
+          12.889559427897135,
+          -57.111193339029946,
+          53.9364865620931
+        ]
+      ]
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "bone.temporal.right",
+      "baselineMovedFacesInContact": 39,
+      "candidateMovedFacesInContact": 39,
+      "newContactFaces": 0,
+      "existingSharedInterface": false,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "vein.cavernous.right",
+      "baselineMovedFacesInContact": 19,
+      "candidateMovedFacesInContact": 19,
+      "newContactFaces": 0,
+      "existingSharedInterface": true,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "vein.basilar_plexus",
+      "baselineMovedFacesInContact": 13,
+      "candidateMovedFacesInContact": 13,
+      "newContactFaces": 0,
+      "existingSharedInterface": true,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.infraorbital.right",
+      "b": "bone.maxilla.right",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 87,
+      "newContactFaces": 87,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          24.761566797892254,
+          11.347716649373373,
+          35.611287434895836
+        ],
+        [
+          24.595190684000652,
+          11.458744049072266,
+          35.88749567667643
+        ],
+        [
+          26.28961118062337,
+          -14.547303835550943,
+          44.69094212849935
+        ],
+        [
+          25.081382115681965,
+          11.487346649169922,
+          35.85039774576823
+        ],
+        [
+          24.871626536051433,
+          11.288082758585611,
+          35.653987884521484
+        ]
+      ]
+    },
+    {
+      "a": "vein.infraorbital.right",
+      "b": "vein.pterygoid_plexus.right",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 42,
+      "newContactFaces": 42,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          28.944177627563477,
+          -24.782414118448894,
+          43.8586171468099
+        ],
+        [
+          28.786149342854817,
+          -24.814709345499676,
+          44.16888300577799
+        ],
+        [
+          29.01098124186198,
+          -24.74999237060547,
+          44.341383616129555
+        ],
+        [
+          29.182828267415363,
+          -24.425547917683918,
+          44.08790715535482
+        ],
+        [
+          29.018219629923504,
+          -24.76319122314453,
+          43.84708023071289
+        ]
+      ]
+    },
+    {
+      "a": "vein.internal_auditory.left",
+      "b": "vein.superior_petrosal_vein.left",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 42,
+      "newContactFaces": 42,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -22.15264892578125,
+          -69.81053670247395,
+          59.52363967895508
+        ],
+        [
+          -22.530357996622723,
+          -69.79056549072266,
+          59.55856577555338
+        ],
+        [
+          -22.350224177042644,
+          -69.44656626383464,
+          59.40856424967448
+        ],
+        [
+          -22.16850980122884,
+          -69.61824798583984,
+          59.229146321614586
+        ],
+        [
+          -22.12569300333659,
+          -69.8156000773112,
+          59.461334228515625
+        ]
+      ]
+    },
+    {
+      "a": "vein.internal_auditory.right",
+      "b": "vein.superior_petrosal_vein.right",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 42,
+      "newContactFaces": 42,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          23.179717381795246,
+          -70.08609263102214,
+          59.41679382324219
+        ],
+        [
+          23.2559076944987,
+          -69.87746175130208,
+          59.203810373942055
+        ],
+        [
+          23.430987040201824,
+          -69.7308349609375,
+          59.41006978352865
+        ],
+        [
+          23.613398869832356,
+          -70.04162089029948,
+          59.53588358561198
+        ],
+        [
+          23.20114580790202,
+          -70.08698018391927,
+          59.481407165527344
+        ]
+      ]
+    },
+    {
+      "a": "vein.superior_petrosal.left",
+      "b": "bone.temporal.left",
+      "baselineMovedFacesInContact": 25,
+      "candidateMovedFacesInContact": 25,
+      "newContactFaces": 0,
+      "existingSharedInterface": false,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.superior_petrosal.left",
+      "b": "vein.cavernous.left",
+      "baselineMovedFacesInContact": 16,
+      "candidateMovedFacesInContact": 15,
+      "newContactFaces": 0,
+      "existingSharedInterface": true,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.superior_petrosal.right",
+      "b": "bone.temporal.right",
+      "baselineMovedFacesInContact": 6,
+      "candidateMovedFacesInContact": 6,
+      "newContactFaces": 0,
+      "existingSharedInterface": false,
+      "retopologised": false,
+      "sampleNewContactCentres": []
+    },
+    {
+      "a": "vein.superior_petrosal.right",
+      "b": "vein.cavernous.right",
+      "baselineMovedFacesInContact": 29,
+      "candidateMovedFacesInContact": 30,
+      "newContactFaces": 1,
+      "existingSharedInterface": true,
+      "retopologised": false,
+      "sampleNewContactCentres": [
+        [
+          17.897654851277668,
+          -55.483926137288414,
+          62.790350596110024
+        ]
+      ]
+    },
+    {
+      "a": "vein.vertebral_periarterial_plexus.left",
+      "b": "vein.vertebral.left",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 1237,
+      "newContactFaces": 1237,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -21.831195831298828,
+          -82.2708257039388,
+          -62.24184926350912
+        ],
+        [
+          -21.826438903808594,
+          -82.17059326171875,
+          -55.63249588012695
+        ],
+        [
+          -21.78166898091634,
+          -82.24488576253255,
+          -46.85525385538737
+        ],
+        [
+          -20.962160110473633,
+          -80.14626820882161,
+          -39.34659194946289
+        ],
+        [
+          -23.372979482014973,
+          -82.67673746744792,
+          -17.58103370666504
+        ]
+      ]
+    },
+    {
+      "a": "vein.vertebral_periarterial_plexus.right",
+      "b": "vein.vertebral.right",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 1120,
+      "newContactFaces": 1120,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          21.736744562784832,
+          -81.48094940185547,
+          -62.22675069173177
+        ],
+        [
+          21.44952328999837,
+          -81.37946319580078,
+          -56.12998072306315
+        ],
+        [
+          21.784516016642254,
+          -81.65170288085938,
+          -48.22250493367513
+        ],
+        [
+          21.7191162109375,
+          -81.40023295084636,
+          -39.54242070515951
+        ]
+      ]
+    },
+    {
+      "a": "vein.infraorbital.left",
+      "b": "bone.maxilla.left",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 100,
+      "newContactFaces": 100,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -25.047988255818684,
+          11.56298033396403,
+          35.86182530721029
+        ],
+        [
+          -26.35968271891276,
+          3.406921148300171,
+          41.684042612711586
+        ],
+        [
+          -25.055020014444988,
+          11.884636243184408,
+          36.22933578491211
+        ],
+        [
+          -24.761468251546223,
+          11.874035199483236,
+          36.00516128540039
+        ]
+      ]
+    },
+    {
+      "a": "vein.infraorbital.left",
+      "b": "vein.pterygoid_plexus.left",
+      "baselineMovedFacesInContact": 0,
+      "candidateMovedFacesInContact": 42,
+      "newContactFaces": 42,
+      "existingSharedInterface": false,
+      "retopologised": true,
+      "sampleNewContactCentres": [
+        [
+          -30.10252634684245,
+          -23.60482406616211,
+          43.56451416015625
+        ],
+        [
+          -30.220778783162434,
+          -23.30588658650716,
+          43.79253260294596
+        ],
+        [
+          -30.058989842732746,
+          -23.411028544108074,
+          44.08416748046875
+        ],
+        [
+          -29.77459144592285,
+          -23.491614659627277,
+          43.89734013875326
+        ],
+        [
+          -30.030616760253906,
+          -23.63299814860026,
+          43.56898625691732
+        ]
+      ]
+    }
+  ],
+  "collars": [
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "vein.internal_jugular.left",
+      "sharedVertices": 45,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "vein.cavernous.left",
+      "sharedVertices": 46,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "vein.basilar_plexus",
+      "sharedVertices": 13,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.inferior_petrosal.left",
+      "b": "vein.cpa_inferior_petrosal_bridge.left",
+      "sharedVertices": 60,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "vein.internal_jugular.right",
+      "sharedVertices": 36,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "vein.cavernous.right",
+      "sharedVertices": 43,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.inferior_petrosal.right",
+      "b": "vein.basilar_plexus",
+      "sharedVertices": 35,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.superior_petrosal.left",
+      "b": "vein.sigmoid.left",
+      "sharedVertices": 38,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.superior_petrosal.left",
+      "b": "vein.cavernous.left",
+      "sharedVertices": 40,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.superior_petrosal.left",
+      "b": "vein.superior_petrosal_vein.left",
+      "sharedVertices": 266,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.superior_petrosal.right",
+      "b": "vein.sigmoid.right",
+      "sharedVertices": 34,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.superior_petrosal.right",
+      "b": "vein.cavernous.right",
+      "sharedVertices": 37,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    },
+    {
+      "a": "vein.superior_petrosal.right",
+      "b": "vein.superior_petrosal_vein.right",
+      "sharedVertices": 298,
+      "maxMismatchMm": 0.0,
+      "movedSharedVertices": 0
+    }
+  ],
+  "passedNewDegenerateFaces": true,
+  "passedSharedCollars": true,
+  "notes": [
+    "Native touching labelled interfaces are expected. New contact face IDs are diagnostic, not necessarily new anatomical collision sites.",
+    "Unsegmented hypoglossal and IAC canals cause bone overlap and require separate corridor review."
+  ]
+}

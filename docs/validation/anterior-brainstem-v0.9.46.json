@@ -1,0 +1,876 @@
+{
+  "revision": {
+    "release": "0.9.46",
+    "baselineRelease": "0.9.45",
+    "baselineAssetHashes": {
+      "brain-context.glb": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
+      "craniofacial.glb": "7e269d3af9d8b1b59953109dfed4e7170c2f3a02a8f9bb0552a791919c589c67",
+      "complete-circulation.glb": "8068101bc47988327b46c4e10d5725a4a8ecdb9c6baebed4e6c98d52b962969f",
+      "venous.glb": "1ee365c56475caad2cb340bef5ab4f3e91a9a9acbd5f7f40ad56d0859dd4bad6",
+      "complete-anastomoses.glb": "98d67d2f86debc1111b206061687d48429a043624d4cbb3b5e3913a288f7a6a9"
+    },
+    "newLabels": [],
+    "changed": [
+      {
+        "node": "vein.anterior_medullary",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 2.833712100982666,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.anterior_pontine",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.7893404960632324,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.anterior_pontomesencephalic",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.1804271936416626,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.anterior_spinal",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 2.0566813945770264,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.0107412338256836,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.pontomedullary.left",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 0.5147148370742798,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.pontomedullary.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 0.5078432559967041,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.pontomesencephalic_sulcus.left",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 0.6461801528930664,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.pontomesencephalic_sulcus.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 0.7584583759307861,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.pontotrigeminal.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 0.9848184585571289,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.preolivary.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 2.5711147785186768,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.prepontine_bridge.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.2803707122802734,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.transverse_medullary.left",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.911825180053711,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.transverse_medullary.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 3.3243892192840576,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.363132357597351,
+        "topology": "retained"
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "file": "venous.glb",
+        "maximumDisplacementMm": 1.3308194875717163,
+        "topology": "retained"
+      }
+    ],
+    "checks": [
+      {
+        "node": "vein.anterior_medullary",
+        "medianXBeforeMm": 2.9155735969543457,
+        "medianXAfterMm": 1.7913010120391846,
+        "vertices": 5166,
+        "triangles": 9036,
+        "minimumDoubleTriangleAreaMm2": 3.4924596548080444e-10,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.anterior_pontine",
+        "medianXBeforeMm": 3.01611328125,
+        "medianXAfterMm": 2.135253429412842,
+        "vertices": 6751,
+        "triangles": 12184,
+        "minimumDoubleTriangleAreaMm2": 2.3086694778129413e-09,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.anterior_pontomesencephalic",
+        "medianXBeforeMm": 3.1439995765686035,
+        "medianXAfterMm": 2.332127571105957,
+        "vertices": 3640,
+        "triangles": 6551,
+        "minimumDoubleTriangleAreaMm2": 5.834754901457018e-10,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.anterior_spinal",
+        "medianXBeforeMm": 2.750244140625,
+        "medianXAfterMm": 1.0502440929412842,
+        "vertices": 11394,
+        "triangles": 22689,
+        "minimumDoubleTriangleAreaMm2": 0.0,
+        "existingDegenerateTriangles": 13,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "medianXBeforeMm": 12.353805541992188,
+        "medianXAfterMm": 12.353805541992188,
+        "vertices": 6619,
+        "triangles": 12645,
+        "minimumDoubleTriangleAreaMm2": 5.901528652429988e-07,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.pontomedullary.left",
+        "medianXBeforeMm": -7.7607421875,
+        "medianXAfterMm": -7.7607421875,
+        "vertices": 5125,
+        "triangles": 9233,
+        "minimumDoubleTriangleAreaMm2": 7.036495386358865e-09,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.pontomedullary.right",
+        "medianXBeforeMm": 8.8797607421875,
+        "medianXAfterMm": 8.8797607421875,
+        "vertices": 3344,
+        "triangles": 6073,
+        "minimumDoubleTriangleAreaMm2": 9.17163589519987e-09,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.pontomesencephalic_sulcus.left",
+        "medianXBeforeMm": -10.140473365783691,
+        "medianXAfterMm": -10.140473365783691,
+        "vertices": 3103,
+        "triangles": 6053,
+        "minimumDoubleTriangleAreaMm2": 1.3974274679640075e-06,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.pontomesencephalic_sulcus.right",
+        "medianXBeforeMm": 13.464449882507324,
+        "medianXAfterMm": 13.464449882507324,
+        "vertices": 3513,
+        "triangles": 6563,
+        "minimumDoubleTriangleAreaMm2": 2.3518934710864414e-07,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.pontotrigeminal.right",
+        "medianXBeforeMm": 14.502685546875,
+        "medianXAfterMm": 14.502685546875,
+        "vertices": 4399,
+        "triangles": 8018,
+        "minimumDoubleTriangleAreaMm2": 2.000557636216982e-10,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.preolivary.right",
+        "medianXBeforeMm": 6.218296527862549,
+        "medianXAfterMm": 5.343868732452393,
+        "vertices": 2725,
+        "triangles": 5295,
+        "minimumDoubleTriangleAreaMm2": 9.190430318994913e-07,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.prepontine_bridge.right",
+        "medianXBeforeMm": 7.400137424468994,
+        "medianXAfterMm": 7.308500289916992,
+        "vertices": 1075,
+        "triangles": 2000,
+        "minimumDoubleTriangleAreaMm2": 3.9268402360903565e-06,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.transverse_medullary.left",
+        "medianXBeforeMm": -1.5821430683135986,
+        "medianXAfterMm": -2.879014015197754,
+        "vertices": 989,
+        "triangles": 1834,
+        "minimumDoubleTriangleAreaMm2": 7.270534297276754e-06,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.transverse_medullary.right",
+        "medianXBeforeMm": 4.707125663757324,
+        "medianXAfterMm": 3.0262012481689453,
+        "vertices": 541,
+        "triangles": 931,
+        "minimumDoubleTriangleAreaMm2": 9.855203586539574e-08,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "medianXBeforeMm": -9.4412841796875,
+        "medianXAfterMm": -9.4412841796875,
+        "vertices": 6978,
+        "triangles": 12885,
+        "minimumDoubleTriangleAreaMm2": 0.0,
+        "existingDegenerateTriangles": 5,
+        "newDegenerateTriangles": 0
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "medianXBeforeMm": 16.98193359375,
+        "medianXAfterMm": 16.98193359375,
+        "vertices": 6350,
+        "triangles": 10725,
+        "minimumDoubleTriangleAreaMm2": 2.456645997739315e-10,
+        "existingDegenerateTriangles": 0,
+        "newDegenerateTriangles": 0
+      }
+    ],
+    "sharedInterfaceClosurePassed": true,
+    "roundWallRecovery": [
+      {
+        "node": "vein.preolivary.right",
+        "maximumRoundRecoveryMm": 0.3119787573814392,
+        "sharedCollarVerticesRetained": true
+      }
+    ],
+    "minimumSampledDeformationJacobian": 0.38974442148741517,
+    "deformationJacobianSampleVertices": 71712,
+    "deformation": "Common smooth spatial field; x and y only; compact support. See common.py.",
+    "anatomicalDecision": "Correct the median alignment and individual branch clearances; retain the pial course behind the basilar artery. A blanket anterior-to-all-arteries rule is not anatomically justified."
+  },
+  "contactAudit": {
+    "release": "0.9.46",
+    "scope": "All moved triangles against every intersecting anatomical label, including arteries, brain, bone and other veins. Shared venous interface adjacency and contacts within 0.05 mm of shared collar vertices excluded.",
+    "changedNodes": 16,
+    "checks": [
+      {
+        "node": "vein.preolivary.right",
+        "target": "brain.medulla-oblongata.right",
+        "asset": "brain-context.glb",
+        "contactTrianglePairsBefore": 134,
+        "contactTrianglePairsAfter": 0,
+        "newContactTrianglePairs": 0
+      },
+      {
+        "node": "vein.transverse_medullary.right",
+        "target": "brain.medulla-oblongata.right",
+        "asset": "brain-context.glb",
+        "contactTrianglePairsBefore": 74,
+        "contactTrianglePairsAfter": 0,
+        "newContactTrianglePairs": 0
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "target": "vein.basilar_plexus",
+        "asset": "venous.glb",
+        "contactTrianglePairsBefore": 96,
+        "contactTrianglePairsAfter": 0,
+        "newContactTrianglePairs": 0
+      }
+    ],
+    "newContacts": [],
+    "passed": true
+  },
+  "selfIntersectionAudit": {
+    "release": "0.9.46",
+    "passed": true,
+    "checks": [
+      {
+        "node": "vein.anterior_medullary",
+        "nonAdjacentPairsBefore": 88,
+        "nonAdjacentPairsAfter": 86,
+        "changedRawPairs": [
+          [
+            7816,
+            7819
+          ],
+          [
+            7816,
+            7826
+          ]
+        ],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.002362970230061934,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.anterior_pontine",
+        "nonAdjacentPairsBefore": 397,
+        "nonAdjacentPairsAfter": 397,
+        "changedRawPairs": [
+          [
+            41,
+            42
+          ],
+          [
+            8768,
+            8778
+          ],
+          [
+            8784,
+            8827
+          ],
+          [
+            8827,
+            8887
+          ],
+          [
+            8887,
+            8922
+          ]
+        ],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.07266654695437896,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.anterior_pontomesencephalic",
+        "nonAdjacentPairsBefore": 8,
+        "nonAdjacentPairsAfter": 8,
+        "changedRawPairs": [
+          [
+            1411,
+            1412
+          ]
+        ],
+        "maximumNewPairDistanceFromExistingSiteMm": 2.4547852927362626e-05,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.anterior_spinal",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.pontomedullary.left",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.pontomedullary.right",
+        "nonAdjacentPairsBefore": 131,
+        "nonAdjacentPairsAfter": 131,
+        "changedRawPairs": [
+          [
+            1284,
+            1311
+          ]
+        ],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.00969183723494922,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.pontomesencephalic_sulcus.left",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.pontomesencephalic_sulcus.right",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.pontotrigeminal.right",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.preolivary.right",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.prepontine_bridge.right",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.transverse_medullary.left",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.transverse_medullary.right",
+        "nonAdjacentPairsBefore": 0,
+        "nonAdjacentPairsAfter": 0,
+        "changedRawPairs": [],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.0,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.transverse_pontine.left",
+        "nonAdjacentPairsBefore": 145,
+        "nonAdjacentPairsAfter": 145,
+        "changedRawPairs": [
+          [
+            11394,
+            11655
+          ],
+          [
+            11395,
+            11655
+          ],
+          [
+            11396,
+            11653
+          ],
+          [
+            11396,
+            11654
+          ],
+          [
+            11396,
+            11655
+          ],
+          [
+            11397,
+            11652
+          ],
+          [
+            11397,
+            11653
+          ],
+          [
+            11399,
+            11651
+          ],
+          [
+            11413,
+            11638
+          ],
+          [
+            11415,
+            11636
+          ],
+          [
+            11417,
+            11634
+          ],
+          [
+            11450,
+            11691
+          ],
+          [
+            11452,
+            11693
+          ]
+        ],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.11043195368828737,
+        "pairsOutsideExistingJunctionSites": []
+      },
+      {
+        "node": "vein.transverse_pontine.right",
+        "nonAdjacentPairsBefore": 133,
+        "nonAdjacentPairsAfter": 91,
+        "changedRawPairs": [
+          [
+            2678,
+            10719
+          ],
+          [
+            2711,
+            2742
+          ],
+          [
+            2712,
+            2742
+          ],
+          [
+            2714,
+            2726
+          ],
+          [
+            2714,
+            2740
+          ],
+          [
+            2721,
+            2728
+          ],
+          [
+            2721,
+            2729
+          ],
+          [
+            2721,
+            2748
+          ],
+          [
+            2722,
+            2741
+          ],
+          [
+            2723,
+            2741
+          ],
+          [
+            2726,
+            2727
+          ],
+          [
+            2726,
+            2728
+          ],
+          [
+            2726,
+            2729
+          ],
+          [
+            2726,
+            2731
+          ],
+          [
+            2726,
+            2742
+          ],
+          [
+            2726,
+            2748
+          ],
+          [
+            2727,
+            2740
+          ],
+          [
+            2728,
+            2740
+          ],
+          [
+            2729,
+            2740
+          ],
+          [
+            2731,
+            2740
+          ],
+          [
+            2733,
+            2740
+          ],
+          [
+            2733,
+            2750
+          ],
+          [
+            2736,
+            10721
+          ],
+          [
+            2738,
+            10721
+          ],
+          [
+            2740,
+            2742
+          ],
+          [
+            2740,
+            2748
+          ],
+          [
+            2741,
+            2748
+          ],
+          [
+            2741,
+            2749
+          ],
+          [
+            2742,
+            2751
+          ],
+          [
+            2991,
+            3037
+          ]
+        ],
+        "maximumNewPairDistanceFromExistingSiteMm": 0.08594245397770693,
+        "pairsOutsideExistingJunctionSites": []
+      }
+    ],
+    "strictRawPairIdentityPassed": false,
+    "existingJunctionSiteToleranceMm": 0.15,
+    "scope": "All triangle pairs involving a moved face; exact coincident vertices welded for adjacency; pre-existing zero-area faces excluded. Pair changes within 0.15 mm of existing self-contact sites are reported separately. This is not a watertight mesh certificate."
+  },
+  "calibreChecks": [
+    {
+      "node": "vein.anterior_medullary",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.7571474805423875,
+        1.0001190370839328,
+        1.272715245854802
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.3014679788050407
+    },
+    {
+      "node": "vein.anterior_pontine",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.8865989264494568,
+        0.9993230947907774,
+        1.0589210957365929
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.12093129786771528
+    },
+    {
+      "node": "vein.anterior_pontomesencephalic",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9246382816654871,
+        1.0,
+        1.067784681564899
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.09162004926292922
+    },
+    {
+      "node": "vein.anterior_spinal",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9996979996201752,
+        0.9999999993692489,
+        1.0000061241619367
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.005240517942054344
+    },
+    {
+      "node": "vein.lateral_mesencephalic.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9995465751288264,
+        1.0,
+        1.100233050162173
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.1002330501621732
+    },
+    {
+      "node": "vein.pontomedullary.left",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9914414945774089,
+        1.0,
+        1.0002934821739666
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.008558505422591067
+    },
+    {
+      "node": "vein.pontomedullary.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9996535332637502,
+        1.0,
+        1.0402284111258207
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.04022841112582056
+    },
+    {
+      "node": "vein.pontomesencephalic_sulcus.left",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9282515633911526,
+        1.0,
+        1.0000145545198456
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.07174843660884739
+    },
+    {
+      "node": "vein.pontomesencephalic_sulcus.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9999999714620481,
+        1.0,
+        1.0000082052222259
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.00010252841726062252
+    },
+    {
+      "node": "vein.pontotrigeminal.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        1.0,
+        1.0,
+        1.0781350439607935
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.07813504396079352
+    },
+    {
+      "node": "vein.preolivary.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9005025849250731,
+        1.0023882193406537,
+        1.4903037485800945
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.4903037485800945
+    },
+    {
+      "node": "vein.prepontine_bridge.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9792087848218672,
+        1.0000469492274173,
+        1.0548205577469694
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.054820557746969256
+    },
+    {
+      "node": "vein.transverse_medullary.left",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.8027898212011038,
+        0.9930350729270017,
+        1.0432086790258603
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.19721017879889624
+    },
+    {
+      "node": "vein.transverse_medullary.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.8526582020606301,
+        0.997040945007698,
+        1.088560634317713
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.14734179793936983
+    },
+    {
+      "node": "vein.transverse_pontine.left",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.8310758389425672,
+        1.0,
+        1.0000001242170178
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.16892416105743277
+    },
+    {
+      "node": "vein.transverse_pontine.right",
+      "method": "Section-mean displacement and tangent with original geodesic stations; cap-adjacent points excluded. Illustrative calibre estimate, unreliable at bifurcations.",
+      "ratioP05MedianP95": [
+        0.9971376638966479,
+        1.0,
+        1.0140509808129843
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.01850304102939038
+    }
+  ],
+  "exported": {
+    "release": "0.9.46",
+    "checks": [
+      {
+        "file": "venous.glb",
+        "oldSha256": "1ee365c56475caad2cb340bef5ab4f3e91a9a9acbd5f7f40ad56d0859dd4bad6",
+        "sha256": "9dec16fa4a4a4892e6c5c70881ed240142e25d86e355affcc66bd9d0c84b4fe3",
+        "labels": 217,
+        "topologyUnchanged": true,
+        "exactPositionCodecRoundtrip": true
+      }
+    ]
+  },
+  "loader": {
+    "release": "0.9.46",
+    "passed": true,
+    "checks": [
+      {
+        "file": "venous.glb",
+        "labels": 217,
+        "triangles": 1608735,
+        "sha256": "9dec16fa4a4a4892e6c5c70881ed240142e25d86e355affcc66bd9d0c84b4fe3",
+        "exactLoadedPositionsAndIndices": true,
+        "unitLoadedNormals": true
+      }
+    ],
+    "scope": "Actual Three.js GLTFLoader and MeshoptDecoder; all unchanged positions and indices remain exact."
+  },
+  "unchangedAssetsVerified": [
+    "brain-context.glb",
+    "craniofacial.glb",
+    "complete-circulation.glb",
+    "complete-anastomoses.glb"
+  ],
+  "build": {
+    "passed": true,
+    "command": "npm run build",
+    "checks": [
+      "anatomy validation, 1232 named parts",
+      "TypeScript",
+      "Vite production bundle",
+      "precompression"
+    ]
+  }
+}
