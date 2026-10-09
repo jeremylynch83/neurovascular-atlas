@@ -37,3 +37,4 @@
 @media(min-width:681px){.search-wrap{opacity:.65;transition:opacity .15s}.search-wrap:hover,.search-wrap:focus-within{opacity:1}}
 /* Mobile panels open below their headers; desktop panels open above them. */
 @media(max-width:680px){.panel-title::after{transform:rotate(90deg)}.panel-title[aria-expanded=true]::after{transform:rotate(-90deg)}}
+.detail h2.detail-name{font:600 15px/1.3 var(--ui);margin:0;overflow-wrap:anywhere}

@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 export function selectionHaloFade(elapsed: number): number {
-  return 0.15 + 0.85 * (0.5 - 0.5 * Math.cos(elapsed * Math.PI * 2 / 6000));
+  return 0.15 + 0.85 * (0.5 - 0.5 * Math.cos(elapsed * Math.PI * 2 / 5000));
 }
 
 const quadVertex = `
@@ -12,7 +12,7 @@ const quadVertex = `
   }
 `;
 
-/** Selected silhouette only, with a Gaussian halo extending 24 CSS pixels. */
+/** Selected silhouette only, with a Gaussian halo extending 12 CSS pixels. */
 export class SelectionHalo {
   private sceneTarget = new THREE.WebGLRenderTarget(1, 1);
   private maskTarget = new THREE.WebGLRenderTarget(1, 1, { depthBuffer: false });
@@ -95,8 +95,11 @@ export class SelectionHalo {
         vec4 sceneColour = texture2D(sceneImage, vUv);
         float outside = 1.0 - step(0.001, texture2D(maskImage, vUv).r);
         float halo = texture2D(haloImage, vUv).r * outside * strength;
-        gl_FragColor = vec4(sceneColour.rgb + colour * halo, sceneColour.a);
-        #include <colorspace_fragment>
+        // Scene bytes already use display sRGB, including transparency blending.
+        // Leave every unaffected pixel exactly as it was rendered.
+        gl_FragColor = halo > 0.0
+          ? sRGBTransferOETF(vec4(sRGBTransferEOTF(sceneColour).rgb + colour * halo, sceneColour.a))
+          : sceneColour;
       }
     `,
     depthTest: false, depthWrite: false, toneMapped: false,
@@ -105,6 +108,8 @@ export class SelectionHalo {
   private quadScene = new THREE.Scene();
   private quadCamera = new THREE.Camera();
   private savedColour = new THREE.Color();
+  private encodedClearColour = new THREE.Color();
+  private displayMaterials = new WeakSet<THREE.Material>();
   private horizontalStep = new THREE.Vector2();
   private verticalStep = new THREE.Vector2();
 
@@ -149,13 +154,37 @@ export class SelectionHalo {
     this.sceneTarget.setSize(physicalWidth, physicalHeight);
     this.maskTarget.setSize(physicalWidth, physicalHeight);
     this.maskMaterial.uniforms.resolution.value.set(physicalWidth, physicalHeight);
-    // Blur at half CSS resolution. Each kernel step spans two CSS pixels,
+    // Blur at half CSS resolution. Each kernel step spans one CSS pixel,
     // keeping the falloff independent of camera zoom and device pixel ratio.
     const blurWidth = Math.max(1, Math.ceil(width / 2));
     const blurHeight = Math.max(1, Math.ceil(height / 2));
     for (const target of this.blurTargets) target.setSize(blurWidth, blurHeight);
-    this.horizontalStep.set(2 / width, 0);
-    this.verticalStep.set(0, 2 / height);
+    this.horizontalStep.set(1 / width, 0);
+    this.verticalStep.set(0, 1 / height);
+  }
+
+  private preserveDisplayBlending(scene: THREE.Scene) {
+    scene.traverse(object => {
+      const material = (object as THREE.Mesh).material;
+      if (!material) return;
+      for (const current of Array.isArray(material) ? material : [material]) {
+        if (this.displayMaterials.has(current)) continue;
+        const originalCompile = current.onBeforeCompile;
+        const originalKey = current.customProgramCacheKey;
+        // The normal canvas blends transparent anatomy after sRGB encoding.
+        // Off-screen targets normally blend linear values instead, making faint
+        // skull surfaces appear more opaque. Keep the same encoding in both paths.
+        current.onBeforeCompile = function(shader, renderer) {
+          originalCompile.call(this, shader, renderer);
+          shader.fragmentShader = shader.fragmentShader.replace(
+            '#include <colorspace_fragment>', 'gl_FragColor = sRGBTransferOETF(gl_FragColor);',
+          );
+        };
+        current.customProgramCacheKey = function() { return originalKey.call(this) + '|atlas-display-srgb'; };
+        current.needsUpdate = true;
+        this.displayMaterials.add(current);
+      }
+    });
   }
 
   render(scene: THREE.Scene, camera: THREE.PerspectiveCamera) {
@@ -163,7 +192,10 @@ export class SelectionHalo {
     const renderer = this.renderer;
     renderer.getClearColor(this.savedColour);
     const savedAlpha = renderer.getClearAlpha();
+    this.preserveDisplayBlending(scene);
     renderer.setRenderTarget(this.sceneTarget);
+    // Clear colours must use the same display encoding as the scene materials.
+    renderer.setClearColor(this.encodedClearColour.copy(this.savedColour).convertLinearToSRGB(), savedAlpha);
     renderer.render(scene, camera);
     this.sources.forEach((source, i) => {
       this.masks[i].matrix.copy(source.matrixWorld);

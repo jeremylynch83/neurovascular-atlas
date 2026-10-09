@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.43
+# Neurovascular Atlas v0.9.44
 
-Selection orange is 10% brighter in linear colour space. A Gaussian-blurred silhouette gives a continuous surrounding halo with a 24 CSS-pixel falloff, independent of zoom and device pixel ratio. The halo fades from 15% to 100% over six seconds, without changing the structure brightness. A full-resolution silhouette mask protects the interior, and scene depth limits the glow to visible portions. Reduced motion uses a steady halo. Blur runs at half CSS resolution, and all selected meshes share their existing geometry. Anatomy retained from v0.9.42.
+Inspection content now starts with the anatomical structure name and contains only alternate names, description and relationships. The Gaussian halo width is halved to a 12 CSS-pixel falloff, and the pulse is 20% faster with a five-second cycle. Selection orange remains 10% brighter. Fixed skull opacity changing on selection: the halo render target previously blended transparent anatomy in linear space, while the normal canvas blended after display encoding. Both paths now use the original display blending, and the composite preserves unaffected pixels exactly. Geometry and visibility settings are unchanged.
 
 # Neurovascular Atlas v0.9.39
 
