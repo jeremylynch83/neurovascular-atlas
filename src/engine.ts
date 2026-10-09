@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { SelectionHalo, selectionHaloFade } from './selectionHalo';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -8,7 +9,7 @@ import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
-const SELECTION_COLOUR = 0xe99a42;
+const SELECTION_COLOUR = new THREE.Color(0xe99a42).multiplyScalar(1.1);
 const SELECTION_EMISSIVE = 0xb56828;
 const SELECTION_GLOW = 0.08;
 
@@ -65,7 +66,7 @@ export class AnatomyEngine {
   private manifest: AnatomyManifest;
   private scene = new THREE.Scene();
   private camera = new THREE.PerspectiveCamera(35, 1, 0.01, 1000);
-  private renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, stencil: true });
+  private renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   private controls: OrbitControls;
   private root = new THREE.Group();
   private landmarkMarker = new THREE.Group();
@@ -82,8 +83,7 @@ export class AnatomyEngine {
   private renderRequested = false;
   private bounds = new THREE.Box3();
   private selected: string | null = null;
-  private selectionHalos: THREE.Mesh[] = [];
-  private haloMaterials = this.makeHaloMaterials();
+  private selectionHalo = new SelectionHalo(this.renderer, SELECTION_COLOUR);
   private selectionStarted = 0;
   private lastSelectionFrame = 0;
   private reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -285,7 +285,7 @@ export class AnatomyEngine {
 
   private onResize() {
     const w = Math.max(1, this.container.clientWidth), h = Math.max(1, this.container.clientHeight);
-    for (const material of this.haloMaterials) material.uniforms.viewport.value.set(w, h);
+    this.selectionHalo.resize(w, h);
     this.camera.aspect = w / h; this.camera.updateProjectionMatrix(); this.renderer.setSize(w, h, false); this.render();
   }
 
@@ -363,7 +363,7 @@ export class AnatomyEngine {
   }
 
   private refreshMaterials() {
-    this.clearSelectionHalos();
+    const haloSources: THREE.Mesh[] = [];
     const selectedStructure = this.manifest.structures.find(s => s.id === this.selected);
     const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers[selectedStructure?.system ?? 'bone'] : 'off';
     this.landmarkMarker.visible = markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
@@ -387,13 +387,7 @@ export class AnatomyEngine {
       mat.color.set(selected ? SELECTION_COLOUR : structureColour(e.structure));
       mat.emissive.setHex(selected ? SELECTION_EMISSIVE : 0x000000);
       mat.emissiveIntensity = selected ? SELECTION_GLOW : 1;
-      // Mark the visible silhouette so the halo cannot brighten its interior,
-      // including when the selected structure is translucent.
-      mat.stencilWrite = selected;
-      mat.stencilRef = 1; mat.stencilFunc = THREE.AlwaysStencilFunc;
-      mat.stencilFail = THREE.KeepStencilOp; mat.stencilZFail = THREE.KeepStencilOp;
-      mat.stencilZPass = THREE.ReplaceStencilOp;
-      if (selected && e.mesh.visible && opacity > 0) this.addSelectionHalo(e.mesh);
+      if (selected && e.mesh.visible && opacity > 0) haloSources.push(e.mesh);
       if (mat.transparent !== transparent) { mat.transparent = transparent; mat.needsUpdate = true; }
       mat.opacity = opacity; mat.depthWrite = opacity > 0.4;
       this.updateClipping(mat);
@@ -412,6 +406,9 @@ export class AnatomyEngine {
       batch.visible = visibleBatches.has(batch);
       this.updateClipping(batch.material as THREE.Material);
     }
+    this.selectionHalo.setMeshes(haloSources);
+    if (this.reducedMotion.matches) this.selectionHalo.setFade(0.65);
+    this.selectionHalo.setClip(this.clipEnabled ? [this.clipPlane] : []);
     this.render();
   }
 
@@ -420,72 +417,6 @@ export class AnatomyEngine {
     if ((material.clippingPlanes?.length ?? 0) === planeCount) return;
     material.clippingPlanes = this.clipEnabled ? [this.clipPlane] : [];
     material.needsUpdate = true;
-  }
-
-  private makeHaloMaterials(): THREE.ShaderMaterial[] {
-    // Layered screen-space shells give the halo a visible, soft falloff without a full-scene
-    // bloom pass, geometry copies, or illuminating the structure itself.
-    return [[2.0, 0.12], [4.0, 0.06], [7.0, 0.03], [10.0, 0.015]].map(([width, opacity]) => {
-      const material = new THREE.ShaderMaterial({
-        uniforms: {
-          colour: { value: new THREE.Color(SELECTION_COLOUR) },
-          opacity: { value: opacity * 0.8 },
-          width: { value: width },
-          viewport: { value: new THREE.Vector2(1, 1) },
-        },
-        vertexShader: `
-          uniform float width;
-          uniform vec2 viewport;
-          #include <clipping_planes_pars_vertex>
-          void main() {
-            vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
-            vec4 clipPosition = projectionMatrix * mvPosition;
-            vec3 viewNormal = normalize(normalMatrix * normal);
-            vec2 direction = (projectionMatrix * vec4(viewNormal, 0.0)).xy;
-            direction /= max(length(direction), 0.00001);
-            clipPosition.xy += direction * width * 2.0 / viewport * clipPosition.w;
-            gl_Position = clipPosition;
-            #include <clipping_planes_vertex>
-          }
-        `,
-        fragmentShader: `
-          uniform vec3 colour;
-          uniform float opacity;
-          #include <clipping_planes_pars_fragment>
-          void main() {
-            #include <clipping_planes_fragment>
-            gl_FragColor = vec4(colour, opacity);
-            #include <colorspace_fragment>
-          }
-        `,
-        side: THREE.BackSide, transparent: true, depthWrite: false,
-        blending: THREE.AdditiveBlending,
-        depthTest: true, toneMapped: false, clipping: true,
-        stencilWrite: true, stencilWriteMask: 0,
-        stencilRef: 1, stencilFunc: THREE.NotEqualStencilFunc,
-        stencilFail: THREE.KeepStencilOp, stencilZFail: THREE.KeepStencilOp,
-        stencilZPass: THREE.KeepStencilOp,
-      });
-      material.userData.baseOpacity = opacity;
-      return material;
-    });
-  }
-
-  private clearSelectionHalos() {
-    for (const halo of this.selectionHalos) this.root.remove(halo);
-    this.selectionHalos = [];
-  }
-
-  private addSelectionHalo(source: THREE.Mesh) {
-    source.updateMatrix();
-    for (const material of this.haloMaterials) {
-      this.updateClipping(material);
-      const halo = new THREE.Mesh(source.geometry, material);
-      halo.name = 'Selection halo';
-      halo.matrix.copy(source.matrix); halo.matrixAutoUpdate = false;
-      halo.renderOrder = 1; halo.frustumCulled = false;
-      this.root.add(halo); this.selectionHalos.push(halo);
-    }
   }
 
   focus(id: string) {
@@ -559,7 +490,7 @@ export class AnatomyEngine {
     this.clipPlane.set(n, -(c.dot(n)+offset*span*0.5));
     for (const e of this.entries.values()) this.updateClipping(e.mesh.material as THREE.Material);
     for (const batch of this.vascularBatches) this.updateClipping(batch.material as THREE.Material);
-    for (const material of this.haloMaterials) this.updateClipping(material);
+    this.selectionHalo.setClip(this.clipEnabled ? [this.clipPlane] : []);
     this.render();
   }
   hasGeometry(id: string) { return [...this.segmentMembers.get(id) ?? []].some(key => this.entries.has(key)); }
@@ -577,17 +508,15 @@ export class AnatomyEngine {
   private requestFrame() { if (!this.raf) this.raf = requestAnimationFrame(this.tick); }
   private onMotionPreference = () => {
     this.lastSelectionFrame = 0;
-    for (const material of this.haloMaterials) material.uniforms.opacity.value = material.userData.baseOpacity * 0.8;
+    this.selectionHalo.setFade(this.reducedMotion.matches ? 0.65 : selectionHaloFade(performance.now() - this.selectionStarted));
     this.render();
   };
   private updateSelectionGlow(now: number) {
-    if (!this.selectionHalos.length || this.reducedMotion.matches || document.hidden) return;
-    // A smooth four-second fade affects only the surrounding halo.
+    if (!this.selectionHalo.active || this.reducedMotion.matches || document.hidden) return;
+    // A smooth six-second fade affects only the surrounding halo.
     // Idle animation redraws remain capped at 30 Hz.
     if (!this.renderRequested && now - this.lastSelectionFrame < 1000 / 30) return;
-    const phase = ((now - this.selectionStarted) % 4000) / 4000;
-    const fade = 0.65 + 0.35 * (0.5 - 0.5 * Math.cos(phase * Math.PI * 2));
-    for (const material of this.haloMaterials) material.uniforms.opacity.value = material.userData.baseOpacity * fade;
+    this.selectionHalo.setFade(selectionHaloFade(now - this.selectionStarted));
     this.lastSelectionFrame = now;
     this.renderRequested = true;
   }
@@ -616,12 +545,12 @@ export class AnatomyEngine {
     const rendered = this.renderRequested;
     if (rendered) {
       this.renderRequested = false;
-      this.renderer.render(this.scene, this.camera);
+      this.selectionHalo.render(this.scene, this.camera);
     }
     if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);
     this.raf = 0;
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); this.clearSelectionHalos(); for(const material of this.haloMaterials) material.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }

@@ -1,10 +1,6 @@
-# Neurovascular Atlas v0.9.42
+# Neurovascular Atlas v0.9.43
 
-Muted orange selection with a constant, softer highlight. The surrounding halo now has four soft layers extending ten screen pixels, using a gentle additive glow so it is clearer on pale and busy backgrounds. It fades smoothly up and down over four seconds. A silhouette mask keeps the animation outside the structure, including translucent selections. The halo reuses the selected geometry and honours clipping, visibility and reduced motion. Anatomy retained from v0.9.40.
-
-# Neurovascular Atlas v0.9.40
-
-Selected structures turn amber-yellow with a steady glow and a subtle one-second heartbeat pulse. The pulse pauses for hidden selections and reduced motion, and idle animation redraws are capped at 30 Hz. Retains the v0.9.39 anatomy and geometry checks.
+Selection orange is 10% brighter in linear colour space. A Gaussian-blurred silhouette gives a continuous surrounding halo with a 24 CSS-pixel falloff, independent of zoom and device pixel ratio. The halo fades from 15% to 100% over six seconds, without changing the structure brightness. A full-resolution silhouette mask protects the interior, and scene depth limits the glow to visible portions. Reduced motion uses a steady halo. Blur runs at half CSS resolution, and all selected meshes share their existing geometry. Anatomy retained from v0.9.42.
 
 # Neurovascular Atlas v0.9.39
 
