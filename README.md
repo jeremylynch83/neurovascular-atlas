@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.41
+# Neurovascular Atlas v0.9.42
 
-Muted orange selection with a constant, softer highlight. A narrow surrounding halo fades smoothly up and down over four seconds. A silhouette mask keeps the animation outside the structure, including translucent selections. The halo reuses the selected geometry and honours clipping, visibility and reduced motion. Anatomy retained from v0.9.40.
+Muted orange selection with a constant, softer highlight. The surrounding halo now has four soft layers extending ten screen pixels, using a gentle additive glow so it is clearer on pale and busy backgrounds. It fades smoothly up and down over four seconds. A silhouette mask keeps the animation outside the structure, including translucent selections. The halo reuses the selected geometry and honours clipping, visibility and reduced motion. Anatomy retained from v0.9.40.
 
 # Neurovascular Atlas v0.9.40
 

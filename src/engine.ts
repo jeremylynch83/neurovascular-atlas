@@ -423,9 +423,9 @@ export class AnatomyEngine {
   }
 
   private makeHaloMaterials(): THREE.ShaderMaterial[] {
-    // Two faint screen-space shells soften the silhouette without a full-scene
+    // Layered screen-space shells give the halo a visible, soft falloff without a full-scene
     // bloom pass, geometry copies, or illuminating the structure itself.
-    return [[1.2, 0.12], [2.8, 0.035]].map(([width, opacity]) => {
+    return [[2.0, 0.12], [4.0, 0.06], [7.0, 0.03], [10.0, 0.015]].map(([width, opacity]) => {
       const material = new THREE.ShaderMaterial({
         uniforms: {
           colour: { value: new THREE.Color(SELECTION_COLOUR) },
@@ -459,6 +459,7 @@ export class AnatomyEngine {
           }
         `,
         side: THREE.BackSide, transparent: true, depthWrite: false,
+        blending: THREE.AdditiveBlending,
         depthTest: true, toneMapped: false, clipping: true,
         stencilWrite: true, stencilWriteMask: 0,
         stencilRef: 1, stencilFunc: THREE.NotEqualStencilFunc,
