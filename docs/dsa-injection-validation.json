@@ -1,0 +1,355 @@
+{
+  "release": "0.9.73",
+  "passed": true,
+  "arterialCourses": 597,
+  "selectableCourses": 578,
+  "validatedClosedSections": 2352,
+  "validatedClosedProjectionSurfaces": 828,
+  "sourceGeometryUnchanged": true,
+  "sourceHashes": {
+    "models/complete-circulation.glb": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+    "models/venous.glb": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73"
+  },
+  "graphHash": "3511f63beefb80dd5069295b5b367202d3593e13b19fca6e02aab02d055e9238",
+  "generatorHash": "deb9c32cc1c1f0adb2d935763ba5586b20b6766cdcd416f427e85d305f6e9a33",
+  "injectionBrowser": {
+    "errors": [],
+    "cases": [
+      {
+        "id": "artery.eca.maxillary.right.left",
+        "requested": 7.6799,
+        "actual": 6.875277021560104,
+        "count": 48
+      },
+      {
+        "id": "artery.eca.maxillary.right.left",
+        "requested": 20.6799,
+        "actual": 20.047154244218888,
+        "count": 23
+      },
+      {
+        "id": "artery.eca.maxillary.mma.frontal.right.left",
+        "requested": 33.6159782,
+        "actual": 33.69310675175371,
+        "count": 4
+      }
+    ],
+    "passed": true
+  },
+  "presetModel": {
+    "runs": [
+      {
+        "preset": "ica",
+        "side": "left",
+        "arteries": 117,
+        "veins": 45,
+        "inlets": [
+          "artery.anterior.internal_carotid_left.segment.cervical"
+        ]
+      },
+      {
+        "preset": "ica",
+        "side": "right",
+        "arteries": 117,
+        "veins": 45,
+        "inlets": [
+          "artery.anterior.internal_carotid_right.segment.cervical"
+        ]
+      },
+      {
+        "preset": "ica",
+        "side": "both",
+        "arteries": 232,
+        "veins": 80,
+        "inlets": [
+          "artery.anterior.internal_carotid_left.segment.cervical",
+          "artery.anterior.internal_carotid_right.segment.cervical"
+        ]
+      },
+      {
+        "preset": "eca",
+        "side": "left",
+        "arteries": 113,
+        "veins": 19,
+        "inlets": [
+          "artery.carotid.external.right.left"
+        ]
+      },
+      {
+        "preset": "eca",
+        "side": "right",
+        "arteries": 113,
+        "veins": 19,
+        "inlets": [
+          "artery.carotid.external.right"
+        ]
+      },
+      {
+        "preset": "eca",
+        "side": "both",
+        "arteries": 226,
+        "veins": 38,
+        "inlets": [
+          "artery.carotid.external.right",
+          "artery.carotid.external.right.left"
+        ]
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "left",
+        "arteries": 119,
+        "veins": 109,
+        "inlets": [
+          "artery.posterior.vertebral_left.segment.v1"
+        ]
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "right",
+        "arteries": 119,
+        "veins": 109,
+        "inlets": [
+          "artery.posterior.vertebral_right.segment.v1"
+        ]
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "both",
+        "arteries": 139,
+        "veins": 109,
+        "inlets": [
+          "artery.posterior.vertebral_left.segment.v1",
+          "artery.posterior.vertebral_right.segment.v1"
+        ]
+      },
+      {
+        "preset": "mma",
+        "side": "left",
+        "arteries": 16,
+        "veins": 10,
+        "inlets": [
+          "artery.eca.maxillary.mma.right.left"
+        ]
+      },
+      {
+        "preset": "mma",
+        "side": "right",
+        "arteries": 16,
+        "veins": 10,
+        "inlets": [
+          "artery.eca.maxillary.mma.right"
+        ]
+      },
+      {
+        "preset": "mma",
+        "side": "both",
+        "arteries": 32,
+        "veins": 20,
+        "inlets": [
+          "artery.eca.maxillary.mma.right",
+          "artery.eca.maxillary.mma.right.left"
+        ]
+      },
+      {
+        "preset": "maxillary",
+        "side": "left",
+        "arteries": 48,
+        "veins": 13,
+        "inlets": [
+          "artery.eca.maxillary.right.left"
+        ]
+      },
+      {
+        "preset": "maxillary",
+        "side": "right",
+        "arteries": 48,
+        "veins": 13,
+        "inlets": [
+          "artery.eca.maxillary.right"
+        ]
+      },
+      {
+        "preset": "maxillary",
+        "side": "both",
+        "arteries": 96,
+        "veins": 26,
+        "inlets": [
+          "artery.eca.maxillary.right",
+          "artery.eca.maxillary.right.left"
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "numericalProjection": {
+    "runs": [
+      {
+        "preset": "ica",
+        "side": "left",
+        "arteries": 117,
+        "veins": 45
+      },
+      {
+        "preset": "ica",
+        "side": "right",
+        "arteries": 117,
+        "veins": 45
+      },
+      {
+        "preset": "ica",
+        "side": "both",
+        "arteries": 232,
+        "veins": 80
+      },
+      {
+        "preset": "eca",
+        "side": "left",
+        "arteries": 113,
+        "veins": 19
+      },
+      {
+        "preset": "eca",
+        "side": "right",
+        "arteries": 113,
+        "veins": 19
+      },
+      {
+        "preset": "eca",
+        "side": "both",
+        "arteries": 226,
+        "veins": 38
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "left",
+        "arteries": 119,
+        "veins": 109
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "right",
+        "arteries": 119,
+        "veins": 109
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "both",
+        "arteries": 139,
+        "veins": 109
+      },
+      {
+        "preset": "mma",
+        "side": "left",
+        "arteries": 16,
+        "veins": 10
+      },
+      {
+        "preset": "mma",
+        "side": "right",
+        "arteries": 16,
+        "veins": 10
+      },
+      {
+        "preset": "mma",
+        "side": "both",
+        "arteries": 32,
+        "veins": 20
+      },
+      {
+        "preset": "maxillary",
+        "side": "left",
+        "arteries": 48,
+        "veins": 13
+      },
+      {
+        "preset": "maxillary",
+        "side": "right",
+        "arteries": 48,
+        "veins": 13
+      },
+      {
+        "preset": "maxillary",
+        "side": "both",
+        "arteries": 96,
+        "veins": 26
+      }
+    ],
+    "pixels": {
+      "thin": 71,
+      "thick": 12,
+      "overlap": 29,
+      "background": 176
+    },
+    "half": {
+      "thin": 71,
+      "thick": 12,
+      "overlap": 29
+    },
+    "partial": {
+      "upstream": 176,
+      "downstream": 71
+    },
+    "cameraError": 1.1368683772161603e-13,
+    "placementContainment": true
+  },
+  "generalBrowser": {
+    "errors": [],
+    "orientationViews": true,
+    "focusSelectionRestored": true,
+    "modalPausesPlayback": true,
+    "mobileControls": true,
+    "fullAtlasLoaded": true,
+    "deviceScaleFactor": 0.7
+  },
+  "originalAssets": [
+    {
+      "file": "models/complete-anastomoses.glb",
+      "sha256": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "unchanged": true
+    },
+    {
+      "file": "models/venous.glb",
+      "sha256": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+      "unchanged": true
+    },
+    {
+      "file": "models/brain-context.glb",
+      "sha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+      "unchanged": true
+    },
+    {
+      "file": "models/craniofacial.glb",
+      "sha256": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "unchanged": true
+    },
+    {
+      "file": "models/complete-circulation.glb",
+      "sha256": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+      "unchanged": true
+    }
+  ],
+  "buildPassed": true,
+  "presetsPassed": true,
+  "dockerExecutionTested": false,
+  "unsupportedInjectionCourses": [
+    "artery.anterior.superior_hypophyseal_right",
+    "artery.anterior.meningohypophyseal_trunk_right",
+    "artery.anterior.inferior_hypophyseal_right",
+    "artery.anterior.caroticotympanic_right",
+    "artery.anterior.meningohypophyseal_trunk_left",
+    "artery.anterior.inferior_hypophyseal_left",
+    "artery.anterior.caroticotympanic_left",
+    "artery.anterior.anterior_communicating",
+    "artery.posterior.pica_lateral_hemispheric_right",
+    "artery.posterior.pica_tonsillar_right",
+    "artery.posterior.pica_choroidal_right",
+    "artery.posterior.pontine_circumferential_right",
+    "artery.posterior.sca_lateral_hemispheric_left",
+    "artery.posterior.pica_lateral_hemispheric_left",
+    "artery.posterior.pica_tonsillar_left",
+    "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+    "artery.amendment.aca_falcine_branch.right",
+    "artery.amendment.pontine_long_circumflex.right",
+    "artery.amendment.pontine_long_circumflex.left"
+  ]
+}

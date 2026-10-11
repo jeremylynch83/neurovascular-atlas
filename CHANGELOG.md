@@ -1,3 +1,15 @@
+# v0.9.74
+
+Click or tap opacified DSA arteries and veins to inspect them. Playback pauses on selection. A subtle orange silhouette highlights only opacified sections. Information links preserve the injection and camera. Reuses the existing inspection panel, anatomical IDs, raycaster and camera gesture handling. Anatomy and flow data are unchanged.
+
+# v0.9.73
+
+Select an arterial injection point in 3D. DSA starts at the tip and follows downstream branches, with closed flow sections, restricted tissue blush and regional venous drainage. Geometry-bound courses regenerate automatically during builds. Preset origins and left/right/both remain available. Original anatomy models are unchanged.
+
+# v0.9.72
+
+DSA simulation with a sustained arterial plateau, tissue blush and delayed venous drainage. Five injection presets, left/right/both, 2 frames/s playback and scrubbing. Closed projection proxies reuse the atlas coordinates. Ordinary view state is restored on exit. Removed the working-model review notice.
+
 # v0.9.71
 
 Meshopt compression with 16-bit position quantisation, 12-bit octahedral normals and lossless index sequences. Protects original coordinates around tiny faces to prevent collapse or reversal. Preserves all structures, vertex order and triangle order. Refreshes surface anchors and model metadata.

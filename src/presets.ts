@@ -20,6 +20,11 @@ export function presetVesselIds(manifest: AnatomyManifest, preset: PresetId, sid
   });
 }
 
+export function injectionPreset(id:string): PresetId {
+  for(const preset of ['mma','maxillary','eca','ica','vertebrobasilar'] as PresetId[])if(vesselLists[preset].includes(id))return preset;
+  throw Error('This artery is outside the supported injection territories');
+}
+
 export function presetVisibility(manifest: AnatomyManifest, current: ReadonlyMap<string, LayerState>, ids: readonly string[]): Map<string, LayerState> {
   const next = new Map(current);
   const shown = new Set(ids);

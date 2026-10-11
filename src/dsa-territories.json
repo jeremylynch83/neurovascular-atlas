@@ -1,0 +1,23 @@
+{
+  "ica": {
+    "veins": ["frontal_cortical", "parietal_cortical", "trolard", "labbe", "superficial_middle_cerebral", "thalamostriate", "anterior_septal", "superior_choroidal", "anterior_cerebral", "deep_middle_cerebral", "direct_lateral", "medial_atrial", "lateral_atrial", "inferior_ventricular", "anterior_caudate", "transverse_caudate", "posterior_callosal", "anterior_thalamic", "superior_thalamic", "inferior_thalamic", "uncal", "hippocampal", "inferior_striate", "insular", "posterior_septal", "inferior_choroidal", "olfactory", "posterior_orbitofrontal", "hypothalamic_tributaries", "deep_medullary"],
+    "blush": [[24, -25, 115, 23, 30, 30], [32, -83, 126, 25, 34, 31], [36, -69, 83, 24, 32, 23]]
+  },
+  "vertebrobasilar": {
+    "veins": ["internal_occipital", "superior_hemispheric", "superior_hemispheric_lateral", "horizontal_fissure", "anterior_hemispheric", "anterior_hemispheric_inferior", "inferior_hemispheric_tributaries", "lateral_recess", "superior_cerebellar_peduncular", "middle_cerebellar_peduncular", "inferior_vermian_tonsillar_stem", "superior_retrotonsillar", "inferior_retrotonsillar", "tonsillar_surface", "medial_supratonsillar", "lateral_supratonsillar", "dentate_tributaries", "fourth_choroidal", "lateral_medullary", "retro_olivary", "preolivary", "inferior_cerebellar_peduncular", "posterolateral_medullary", "lateral_anterior_pontomesencephalic", "pontomesencephalic_sulcus", "transverse_medullary", "cerebral_peduncular", "tectal", "pontotrigeminal", "transverse_pontine", "pontomedullary"],
+    "midlineVeins": ["precentral_cerebellar", "superior_vermian", "anterior_pontomesencephalic", "anterior_pontine", "anterior_medullary", "posterior_medullary", "intercollicular"],
+    "blush": [[22, -131, 106, 21, 19, 28], [22, -108, 48, 23, 24, 20]]
+  },
+  "eca": {
+    "veins": ["middle_meningeal.anterior", "middle_meningeal.posterior", "inferior_alveolar", "infraorbital", "angular", "deep_facial", "facial", "superficial_temporal", "posterior_auricular", "suboccipital_plexus"],
+    "blush": [[58, -53, 98, 9, 47, 48], [39, -1, 39, 22, 26, 34], [35, -149, 105, 20, 7, 42]]
+  },
+  "mma": {
+    "veins": ["middle_meningeal.anterior", "middle_meningeal.posterior"],
+    "blush": [[57, -31, 114, 7, 31, 37], [56, -86, 117, 7, 30, 32]]
+  },
+  "maxillary": {
+    "veins": ["middle_meningeal.anterior", "middle_meningeal.posterior", "inferior_alveolar", "infraorbital", "deep_facial"],
+    "blush": [[29, -5, 36, 17, 20, 24], [38, -33, 35, 19, 18, 28], [57, -31, 114, 7, 31, 37], [56, -86, 117, 7, 30, 32]]
+  }
+}

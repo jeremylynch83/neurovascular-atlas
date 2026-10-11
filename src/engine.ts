@@ -8,6 +8,9 @@ import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
 import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
+import { DsaRenderer } from './dsaRenderer';
+import { type InjectionPoint } from './flowGeometry';
+import type { DsaRun } from './dsa';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
 const SELECTION_COLOUR = new THREE.Color(0xe99a42).multiplyScalar(1.1);
@@ -97,15 +100,22 @@ export class AnatomyEngine {
   private layers: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'on', brain: 'off' };
   private clipPlane = new THREE.Plane(new THREE.Vector3(1, 0, 0), 0);
   private clipEnabled = false;
-  private onSelect: (id: string | null) => void;
+  private onSelect: (id: string | null, dsa?: boolean) => void;
   private onFps?: (fps: number | null) => void;
   private fpsStart: number | null = null;
   private fpsFrames = 0;
   private fpsLastFrame = 0;
   private displayedFps: number | null = null;
   private disposed = false;
+  private dsaRenderer: DsaRenderer | null = null;
+  private dsaTime = 2;
+  private dsaArteries = new Set<string>();
+  private dsaView: { camera: THREE.PerspectiveCamera; target: THREE.Vector3; focusFloor: number } | null = null;
+  private injectionVessel: string|null=null;
+  private injectionPick: ((id:string,point:InjectionPoint|null)=>void)|null=null;
+  private movingUntil = 0;
 
-  constructor(container: HTMLElement, manifest: AnatomyManifest, onSelect: (id: string | null) => void, onFps?: (fps: number | null) => void) {
+  constructor(container: HTMLElement, manifest: AnatomyManifest, onSelect: (id: string | null, dsa?: boolean) => void, onFps?: (fps: number | null) => void) {
     this.container = container;
     this.manifest = manifest;
     this.segmentMembers = segmentGeometryMembers(manifest.structures);
@@ -141,7 +151,7 @@ export class AnatomyEngine {
     controls.addEventListener('start', () => {
       this.focusDistanceFloor = 0;
     });
-    controls.addEventListener('change', () => this.render());
+    controls.addEventListener('change', () => { this.movingUntil = performance.now() + 180; this.render(); });
     return controls;
   }
 
@@ -296,6 +306,20 @@ export class AnatomyEngine {
     const rect = this.renderer.domElement.getBoundingClientRect();
     this.pointer.set(((ev.clientX - rect.left) / rect.width) * 2 - 1, -((ev.clientY - rect.top) / rect.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
+    if(this.injectionPick && this.dsaRenderer) {
+      const eligible=[...this.entries].filter(([id])=>this.dsaRenderer!.flow.entries[id]?.selectable&&this.dsaRenderer!.isPlacementVisible(id));
+      const selected=this.injectionVessel?this.entries.get(this.injectionVessel):null;
+      const chosen=selected?this.raycaster.intersectObject(selected.mesh,false)[0]:null;
+      if(chosen && this.injectionVessel) {
+        const tip=this.dsaRenderer.injectionPoint(this.injectionVessel,chosen.point.toArray());
+        this.injectionPick(this.injectionVessel,tip);
+      }else {
+        const hit=this.raycaster.intersectObjects(eligible.map(([,e])=>e.mesh),false)[0];
+        if(hit){const id=this.objectToId.get(hit.object)!;this.selectInjectionVessel(id);this.injectionPick(id,null)}
+      }
+      return;
+    }
+    if (this.dsaView) { this.onSelect(this.dsaRenderer!.pick(this.raycaster,this.dsaTime),true); return; }
     const hit = pickAnatomy(this.raycaster, [...this.entries.values()], this.layers, this.clipEnabled ? this.clipPlane : null, this.visibility);
     this.onSelect(hit ? this.objectToId.get(hit.object) ?? null : null);
   };
@@ -462,7 +486,7 @@ export class AnatomyEngine {
     this.controls.update(); this.render();
   }
   setView(view: AnatomicalView) {
-    const box = new THREE.Box3(); for (const e of this.entries.values()) if (e.mesh.visible) box.expandByObject(e.mesh);
+    const box = new THREE.Box3(); for (const [id,e] of this.entries) if (this.dsaView ? this.dsaArteries.has(id) : e.mesh.visible) box.expandByObject(e.mesh);
     if (box.isEmpty()) return;
     const c=box.getCenter(new THREE.Vector3()), size=box.getSize(new THREE.Vector3()), r=Math.max(size.x,size.y,size.z)*2.2;
     const orientation = anatomicalView(coordinateSystem(this.manifest), view);
@@ -529,6 +553,36 @@ export class AnatomyEngine {
     this.render();
   }
   hasGeometry(id: string) { return [...this.segmentMembers.get(id) ?? []].some(key => this.entries.has(key)); }
+  async prepareDsa() {
+    if(!this.dsaRenderer) {
+      const renderer=await DsaRenderer.create(this.renderer,this.manifest,new Map([...this.entries].map(([id,e])=>[id,e.mesh.geometry])));
+      if(this.disposed){renderer.dispose();throw Error('Atlas closed while loading injection courses')}
+      this.dsaRenderer=renderer;
+    }
+    return this.dsaRenderer.flow;
+  }
+  getDsaFlow() { return this.dsaRenderer?.flow; }
+  beginInjectionPlacement(id: string|null,pick:(id:string,point:InjectionPoint|null)=>void) { this.injectionPick=pick;this.selectInjectionVessel(id); }
+  selectInjectionVessel(id: string|null) { this.injectionVessel=id;this.dsaRenderer?.setPlacementSelected(id);this.render(); }
+  endInjectionPlacement() { this.injectionPick=null;this.injectionVessel=null;this.render(); }
+  async setDsa(run: DsaRun | null) {
+    if (run) {
+      await this.prepareDsa();
+      this.dsaRenderer!.setRun(run);
+      this.dsaArteries = new Set(run.arteries);
+      this.dsaView ??= { camera: this.camera.clone(), target: this.controls.target.clone(), focusFloor: this.focusDistanceFloor };
+    } else if (this.dsaView) {
+      this.endInjectionPlacement();
+      const saved = this.dsaView; this.dsaView = null;
+      this.controls.dispose(); this.camera.copy(saved.camera);
+      this.camera.aspect = this.container.clientWidth / Math.max(1,this.container.clientHeight); this.camera.updateProjectionMatrix();
+      this.controls = this.makeControls(); this.controls.target.copy(saved.target);
+      this.focusDistanceFloor = saved.focusFloor; this.controls.update();
+    }
+    this.render();
+  }
+  setDsaSelected(id: string|null) { this.dsaRenderer?.setSelected(id);this.render(); }
+  setDsaTime(time: number) { this.dsaTime = time; this.render(); }
   resolveBrainAnchor(id: string): THREE.Vector3 | null {
     const anchor = this.manifest.structures.find(s => s.id === id)?.surfaceAnchor;
     const registration = this.manifest.brainRegistration;
@@ -581,16 +635,19 @@ export class AnatomyEngine {
     if (this.started) this.controls.update();
     const frameTime = performance.now();
     const interactionRenderRequested = this.renderRequested;
-    if (this.started) this.updateSelectionGlow(frameTime);
+    if (this.started && !this.dsaView) this.updateSelectionGlow(frameTime);
     const rendered = this.renderRequested;
     if (rendered) {
       this.renderRequested = false;
-      this.selectionHalo.render(this.scene, this.camera);
+      if(this.dsaView && this.injectionPick)this.dsaRenderer!.renderPlacement(this.camera);
+      else if (this.dsaView) this.dsaRenderer!.render(this.camera,this.dsaTime,frameTime < this.movingUntil);
+      else this.selectionHalo.render(this.scene, this.camera);
     }
     if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);
     this.raf = 0;
+    if (this.dsaView && this.movingUntil && frameTime >= this.movingUntil) { this.movingUntil = 0; this.renderRequested = true; }
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.dsaRenderer?.dispose(); this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }

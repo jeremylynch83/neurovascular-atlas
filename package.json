@@ -1,7 +1,7 @@
 {
   "name": "inr-anatomy-atlas",
   "private": true,
-  "version": "0.9.71",
+  "version": "0.9.74",
   "description": "Interactive 3D interventional neuroradiology anatomy atlas.",
   "type": "module",
   "license": "MIT",
@@ -9,12 +9,14 @@
     "dev": "vite",
     "anatomy:validate": "python3 tools/validate_anatomy.py",
     "anatomy:build": "./build-anatomy.sh",
-    "build": "sh ./build-anatomy.sh && tsc -b && vite build && python3 tools/precompress.py",
+    "build": "sh ./build-anatomy.sh && node tools/build-dsa-flow.mjs && tsc -b && vite build && python3 tools/precompress.py",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
     "test": "python3 tools/validate_anatomy.py",
     "presets:build": "python3 tools/build_presets.py",
-    "presets:test": "python3 tests/presets/validate-presets.py"
+    "presets:test": "python3 tests/presets/validate-presets.py",
+    "dsa:test": "node tests/dsa/validate-surfaces.mjs && node tests/dsa/validate-flow.mjs",
+    "dsa:flow": "node tools/build-dsa-flow.mjs"
   },
   "dependencies": {
     "@fontsource-variable/source-serif-4": "^5.3.0",
