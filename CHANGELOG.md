@@ -1,3 +1,7 @@
+# v0.9.71
+
+Meshopt compression with 16-bit position quantisation, 12-bit octahedral normals and lossless index sequences. Protects original coordinates around tiny faces to prevent collapse or reversal. Preserves all structures, vertex order and triangle order. Refreshes surface anchors and model metadata.
+
 # v0.9.70
 
 Installer-compatible package with one losslessly meshopt-compressed model set. No geometry changes. Removes duplicate build output from the download.
