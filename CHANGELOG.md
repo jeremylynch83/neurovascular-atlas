@@ -1,3 +1,26 @@
+# v0.9.70
+
+Installer-compatible package with one losslessly meshopt-compressed model set. No geometry changes. Removes duplicate build output from the download.
+
+# v0.9.69
+
+- Added Anatomical presets to the bottom orientation bar: ICA, ECA,
+  Vertebrobasilar, MMA and Maxillary artery.
+- Added Left / Right / Both, defaulting to Left, with atlas-rendered thumbnails.
+- Presets isolate the arterial territory and branches, keep bone/brain context,
+  clear selection/Focus/section clipping and frame the vessels.
+- Added keyboard dismissal, focus trapping and responsive modal layout.
+- Vessel geometry remains at the v0.9.67 checkpoint; deferred anatomical issues
+  are retained.
+
+# v0.9.68, usable working app
+
+- Integrated the canonical v0.9.67 checkpoint into the full app. Anatomical acceptance remains incomplete.
+- Fixed release-position picking after camera drags and Focus clearing after a drag.
+- Reconciled embedded vessel-course hashes and guide stations with current model metadata.
+- Explicitly retained four unreviewed vein course specifications as deferred.
+- Included the prebuilt app, offline fonts and model assets, local launcher and anatomical issue register.
+
 # v0.9.51: final audit release checks
 
 - Retain all accepted v0.9.50 geometry, including the completed infraorbital repair, byte for byte.

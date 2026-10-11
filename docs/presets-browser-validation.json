@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "Left default, five cards, focus trap, Escape and focus restoration",
+      "passed": true
+    },
+    {
+      "name": "ICA left: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "ECA left: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Vertebrobasilar left: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "MMA left: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Maxillary artery left: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "ICA right: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "ECA right: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Vertebrobasilar right: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "MMA right: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Maxillary artery right: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "ICA both: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "ECA both: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Vertebrobasilar both: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "MMA both: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Maxillary artery both: exact meshes, side isolation, context retained and camera framed",
+      "passed": true
+    },
+    {
+      "name": "Close button",
+      "passed": true
+    },
+    {
+      "name": "Backdrop dismissal",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout and touch application",
+      "passed": true
+    },
+    {
+      "name": "Production app: assets, thumbnails, preset application and three drag-selection regressions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

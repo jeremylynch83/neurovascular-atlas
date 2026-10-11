@@ -18,12 +18,14 @@
     "unreviewed",
     "reviewed",
     "revision-required",
-    "approved"
+    "approved",
+    "awaiting-anatomical-review"
   ],
   "geometryStatuses": [
     "planned",
     "placeholder",
     "master",
-    "web-optimised"
+    "web-optimised",
+    "authoring-checkpoint"
   ]
 }

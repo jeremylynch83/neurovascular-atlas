@@ -1,9 +1,11 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { geometrySubtrees, searchStructures, uniqueVesselCounts } from './catalogue';
 import { AnatomyEngine } from './engine';
 import { Description } from './Description';
 import { Loading } from './Loading';
+import { BookmarkIcon, PresetModal } from './PresetModal';
+import { presetDirection, presetVesselIds, presetVisibility, type PresetId, type PresetSide } from './presets';
 
 const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'on', brain: 'off' };
 const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: 'on' };
@@ -26,6 +28,9 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [clip, setClip] = useState({ enabled: false, axis: 'sagittal' as 'sagittal'|'coronal'|'axial', offset: 0 });
   const [about, setAbout] = useState(false);
+  const [presetsOpen, setPresetsOpen] = useState(false);
+  const [presetSide, setPresetSide] = useState<PresetSide>('left');
+  const closePresets = useCallback(() => setPresetsOpen(false), []);
   const byId = useMemo(() => new Map(manifest.structures.map((s) => [s.id, s])), [manifest]);
   const subtrees = useMemo(() => geometrySubtrees(byId), [byId]);
   const selected = selectedId ? byId.get(selectedId) ?? null : null;
@@ -53,6 +58,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   useEffect(() => { engine.current?.setFocus(focusedId); }, [focusedId, ready]);
   useEffect(() => { engine.current?.setClip(clip.enabled, clip.axis, clip.offset); }, [clip]);
   useEffect(() => { engine.current?.setVisibility(visibility); }, [visibility, ready]);
+  useEffect(() => { engine.current?.setPaused(presetsOpen || about); }, [presetsOpen, about, ready]);
 
   const changeVisibility = (ids: string[], state: LayerState) => setVisibility(old => {
     const next = new Map(old);
@@ -77,10 +83,26 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
   };
 
+  const applyPreset = (preset: PresetId) => {
+    const ids = presetVesselIds(manifest, preset, presetSide);
+    if (!ready || !ids.length) return;
+    const next = presetVisibility(manifest, visibility, ids);
+    setSelectedId(null); setFocusedId(null); setQuery('');
+    setVisibility(next); setClip(old => ({ ...old, enabled: false }));
+    engine.current?.setSelected(null);
+    engine.current?.setFocus(null);
+    engine.current?.setClip(false, clip.axis, clip.offset);
+    engine.current?.setVisibility(next);
+    engine.current?.framePreset(ids, presetDirection(preset, presetSide));
+    setPresetsOpen(false);
+  };
+
   return <div className="atlas-app" onClickCapture={e => {
-    if (focusedId && !(e.target as Element).closest('[data-focus-control], .clip-tools')) setFocusedId(null);
+    // Canvas selection clears focus through the engine callback. A browser
+    // click emitted after dragging must not clear the focused structure.
+    if (focusedId && !(e.target as Element).closest('[data-focus-control], .clip-tools, .atlas-canvas, .presets-scrim')) setFocusedId(null);
   }}>
-    <div className="atlas-stage" ref={stage} />
+    <div className="atlas-stage" ref={stage} inert={presetsOpen || about} />
     <header className="identity">
       <h1>Neurovascular Atlas</h1>
     </header>
@@ -121,6 +143,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
         <button disabled={!ready || !selectedGeometry.length} onClick={() => changeVisibility(selectedGeometry, selectedHidden ? 'on' : 'off')}>{selectedHidden ? 'Show' : 'Hide'}</button>
       </div>
       <div className="views"><button onClick={()=>engine.current?.setView('front')}>AP</button><button onClick={()=>engine.current?.setView('left')}>L</button><button onClick={()=>engine.current?.setView('right')}>R</button><button onClick={()=>engine.current?.setView('superior')}>Sup</button><button onClick={()=>engine.current?.setView('inferior')}>Inf</button></div>
+      <button className="bookmark-button" data-focus-control disabled={!ready} aria-label="Anatomical presets" aria-haspopup="dialog" aria-expanded={presetsOpen} onClick={() => setPresetsOpen(true)}><BookmarkIcon /></button>
       <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>changeClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>changeClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>changeClip({...clip,offset:Number(e.target.value)})}/></div>
     </div>
     </div>
@@ -129,6 +152,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     {!ready && !loadError && <Loading progress={loadProgress} />}
     {loadError && <div className="loading panel load-error"><b>Anatomy failed to load</b><span>{loadError}</span></div>}
     {about && <About manifest={manifest} onClose={()=>setAbout(false)} />}
+    {presetsOpen && <PresetModal side={presetSide} onSideChange={setPresetSide} onApply={applyPreset} onClose={closePresets} />}
   </div>;
 }
 
@@ -173,6 +197,7 @@ function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
   return <div className="modal-scrim" onClick={onClose}><div className="about panel" role="dialog" aria-modal="true" aria-labelledby="about-title" onClick={(e)=>e.stopPropagation()}>
     <button className="detail-close" aria-label="Close information" onClick={onClose}>×</button>
     <h2 id="about-title">Neurovascular Atlas v{manifest.release}</h2>
+    <p>Working model: Batch 2 anatomical review remains incomplete. <a href={`${import.meta.env.BASE_URL}ANATOMICAL_ISSUES.md`} target="_blank" rel="noopener noreferrer">Open anatomical issues</a>.</p>
     <p>An interactive 3D atlas of neurovascular anatomy. Vascular structures original, skull and brain from existing sources (see below).</p>
     <p>{counts.artery} unique arteries and {counts.vein} unique veins, sinuses and venous plexuses.</p>
     <p>Jeremy Lynch, Sean McIlhone</p>

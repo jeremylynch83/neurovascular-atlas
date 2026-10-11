@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { SelectionHalo, selectionHaloFade } from './selectionHalo';
+import { bindSelectionGesture } from './selectionGesture';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -77,9 +78,11 @@ export class AnatomyEngine {
   private loader = new GLTFLoader();
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
+  private disposeSelectionGesture: () => void;
   private resize?: ResizeObserver;
   private raf = 0;
   private started = false;
+  private paused = false;
   private renderRequested = false;
   private bounds = new THREE.Box3();
   private selected: string | null = null;
@@ -124,7 +127,7 @@ export class AnatomyEngine {
     const key = new THREE.DirectionalLight(0xffffff, 2.7); key.position.set(4, 7, 6); this.scene.add(key);
     const fill = new THREE.DirectionalLight(0xdde6ff, 1.1); fill.position.set(-5, 1, -3); this.scene.add(fill);
     this.controls = this.makeControls();
-    this.renderer.domElement.addEventListener('pointerup', this.pick);
+    this.disposeSelectionGesture = bindSelectionGesture(this.renderer.domElement, this.pick);
     this.resize = new ResizeObserver(() => this.onResize());
     this.resize.observe(container);
     this.reducedMotion.addEventListener('change', this.onMotionPreference);
@@ -468,6 +471,38 @@ export class AnatomyEngine {
     this.setCameraUp(orientation.up, true);
     this.controls.update(); this.fitAll(false);
   }
+  /** Frame the preset vessels, independently of the retained skull/brain context. */
+  framePreset(ids: readonly string[], rasDirection: [number, number, number]) {
+    const box = new THREE.Box3();
+    for (const id of ids) {
+      const entry = this.entries.get(id);
+      if (entry) box.expandByObject(entry.mesh);
+    }
+    if (box.isEmpty()) return;
+    const system = coordinateSystem(this.manifest);
+    const direction = new THREE.Vector3(...(system === 'RAS'
+      ? rasDirection : [rasDirection[0], rasDirection[2], rasDirection[1]])).normalize();
+    const up = new THREE.Vector3(...anatomicalView(system, 'front').up);
+    const right = new THREE.Vector3().crossVectors(up, direction).normalize();
+    const screenUp = new THREE.Vector3().crossVectors(direction, right).normalize();
+    const centre = box.getCenter(new THREE.Vector3());
+    const tanVertical = Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
+    const tanHorizontal = tanVertical * this.camera.aspect;
+    let distance = 1;
+    for (const x of [box.min.x, box.max.x]) for (const y of [box.min.y, box.max.y]) for (const z of [box.min.z, box.max.z]) {
+      const corner = new THREE.Vector3(x, y, z).sub(centre);
+      distance = Math.max(distance, corner.dot(direction) + 1.18 * Math.max(
+        Math.abs(corner.dot(right)) / tanHorizontal, Math.abs(corner.dot(screenUp)) / tanVertical));
+    }
+    this.controls.target.copy(centre);
+    this.setCameraUp(anatomicalView(system, 'front').up, true);
+    this.camera.position.copy(centre).addScaledVector(direction, distance);
+    this.camera.near = Math.max(0.01, distance / 200);
+    this.camera.far = Math.max(distance * 20, this.bounds.getSize(new THREE.Vector3()).length() * 4);
+    this.camera.updateProjectionMatrix();
+    this.focusDistanceFloor = 0;
+    this.controls.update(); this.render();
+  }
   fitCraniofacial() {
     const box = new THREE.Box3();
     for (const e of this.entries.values()) {
@@ -505,7 +540,12 @@ export class AnatomyEngine {
   // All changes in one browser frame share one render, including React effects
   // and OrbitControls damping. Idle controls still tick without redrawing.
   render() { if (this.disposed) return; this.renderRequested = true; this.requestFrame(); }
-  private requestFrame() { if (!this.raf) this.raf = requestAnimationFrame(this.tick); }
+  private requestFrame() { if (!this.paused && !this.raf) this.raf = requestAnimationFrame(this.tick); }
+  setPaused(paused: boolean) {
+    this.paused = paused;
+    if (paused) { cancelAnimationFrame(this.raf); this.raf = 0; }
+    else this.render();
+  }
   private onMotionPreference = () => {
     this.lastSelectionFrame = 0;
     this.selectionHalo.setFade(this.reducedMotion.matches ? 0.65 : selectionHaloFade(performance.now() - this.selectionStarted));
@@ -537,7 +577,7 @@ export class AnatomyEngine {
     }
   }
   private tick = () => {
-    if (this.disposed) return;
+    if (this.disposed || this.paused) { this.raf = 0; return; }
     if (this.started) this.controls.update();
     const frameTime = performance.now();
     const interactionRenderRequested = this.renderRequested;
@@ -552,5 +592,5 @@ export class AnatomyEngine {
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.renderer.domElement.removeEventListener('pointerup',this.pick); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }

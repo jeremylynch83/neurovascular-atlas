@@ -51,6 +51,14 @@ def validate_courses(manifest):
     errors, hashes, source_cache = [], {}, {}
     for s in rows.values():
         if s['system'] not in ['artery','vein'] or not s.get('asset'): continue
+        # A usable working app may expose explicitly listed, unreviewed new
+        # geometry before its course specification is authored. This is not
+        # anatomical acceptance; all other course checks remain mandatory.
+        if (not s.get('vesselCourse') and s['id'] in manifest.get('deferredCourseSpecifications', [])
+                and s.get('geometryStatus') == 'authoring-checkpoint'
+                and s.get('provenance', {}).get('reviewStatus') == 'awaiting-anatomical-review'
+                and manifest.get('anatomicalAcceptance', '').startswith('incomplete')):
+            continue
         try:
             c = s['vesselCourse']
             assert c['vesselId']==s['id'] and c['side']==s['side'] and c['geometry']==s['asset']

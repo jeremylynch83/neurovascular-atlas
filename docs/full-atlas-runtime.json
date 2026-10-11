@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "productionAppLoaded": true,
+  "modelAssets": [
+    {
+      "url": "craniofacial.glb?v=d9af7940f33c3bcc29b2",
+      "status": 200
+    },
+    {
+      "url": "complete-circulation.glb?v=66f7a163d4c542e9262e",
+      "status": 200
+    },
+    {
+      "url": "complete-anastomoses.glb?v=49bd8e8c00a9595fbede",
+      "status": 200
+    },
+    {
+      "url": "venous.glb?v=fa8cb6a75f684b421a40",
+      "status": 200
+    },
+    {
+      "url": "brain-context.glb?v=914fd7e58800d9279d04",
+      "status": 200
+    }
+  ],
+  "unresolvedNodes": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "full atlas rotation retains selected vessel and Focus",
+      "passed": true
+    },
+    {
+      "name": "full atlas right-button pan retains selected vessel and Focus",
+      "passed": true
+    },
+    {
+      "name": "full atlas out-and-back drag retains selected vessel and Focus",
+      "passed": true
+    }
+  ],
+  "scope": "Prebuilt production app on Chromium with software WebGL; full scene startup, search selection, Focus and mouse rotate/pan. Anatomical acceptance not assessed."
+}

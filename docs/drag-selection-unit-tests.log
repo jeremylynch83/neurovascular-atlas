@@ -1,0 +1,19 @@
+✔ a click and a slightly jittery tap select (0.920191ms)
+✔ rotation, pan and a drag returning to its origin do not select (0.17589ms)
+✔ release movement is checked even if no move event was received (0.107308ms)
+✔ right and middle mouse gestures cannot select (0.128299ms)
+✔ modifier pan clicks and later modifiers do not select (0.1828ms)
+✔ pinching or two-finger panning stays suppressed until all fingers lift (0.144203ms)
+✔ cancelled gestures and window focus loss never select (0.186776ms)
+✔ a release without a matching press cannot select (0.098966ms)
+✔ production DOM binding ignores drag release, then permits the next click (0.554751ms)
+✔ production DOM binding rejects outside release and capture loss (0.286353ms)
+✔ production DOM binding cancels selection on wheel and window blur (0.174187ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.719573

@@ -1,0 +1,250 @@
+# Neurovascular Atlas v0.9.50
+
+Continues the relationship audit with constrained petrosal fitting and ten selectable venous reference additions. Retains the exact v0.9.49 skull, brain and arterial assets. The full audit is not closed: fine canal containment, cervical and orbital context, paired meningeal veins, mastoid emissary and posterior condylar routes remain open. See [changes, checks and audit register](docs/AUDIT_CONTINUATION_v0.9.50.md).
+
+# Neurovascular Atlas v0.9.48
+
+Rebuilds the four connected pontine veins as smooth tubes with one watertight exterior wall. Removes folded junction facets and hidden internal caps while retaining selectable vessel names and existing endpoint connections. The transverse crossing remains behind the basilar artery. Arteries, brain, skull and interface behaviour are retained. [Method, checks and comparisons](docs/BRAINSTEM_QUALITY_v0.9.48.md).
+
+# Neurovascular Atlas v0.9.47
+
+Corrects the transverse pontine midline crossing to pass behind the basilar artery, between the artery and pons. Connected venous collars follow the correction. A local pontine groove adjustment provides clearance, and additional venous mesh detail represents the bend. Arteries, skull and the existing interface fixes are preserved. [Method, checks and comparison views](docs/TRANSVERSE_PONTINE_v0.9.47.md).
+
+# Neurovascular Atlas v0.9.46
+
+Corrects median anterior brainstem venous alignment, bringing the channels closer to the midline beside the arteries. Connected collars are retained, and local medullary and pontine branch contacts are cleared. The normal pial relationship behind the basilar artery is retained. Sixteen venous labels change; other assets and v0.9.45 interface behaviour are preserved. [Audit, anatomical rationale and comparisons](docs/ANTERIOR_BRAINSTEM_v0.9.46.md).
+
+# Neurovascular Atlas v0.9.45
+
+Brings both inferior labial arteries closer to the jaw and lower lip, with up to 6.5 mm of posterior displacement. Facial origins and all 122 shared collar vertices on each side remain unchanged. The inferior labial midline connection follows the correction. Distal median jaw/tooth clearance is now 5.2 mm right and 5.9 mm left. No detected bone contacts or self-intersections. All other vascular geometry is retained. [Comparison render](review-renders/Inferior_labial_comparison.png).
+
+# Neurovascular Atlas v0.9.44
+
+Inspection content now starts with the anatomical structure name and contains only alternate names, description and relationships. The Gaussian halo width is halved to a 12 CSS-pixel falloff, and the pulse is 20% faster with a five-second cycle. Selection orange remains 10% brighter. Fixed skull opacity changing on selection: the halo render target previously blended transparent anatomy in linear space, while the normal canvas blended after display encoding. Both paths now use the original display blending, and the composite preserves unaffected pixels exactly. Geometry and visibility settings are unchanged.
+
+# Neurovascular Atlas v0.9.39
+
+Finishes bilateral ICA surface and branch-collar smoothing. Both sides retain their native outer attachments and fixed ophthalmic origin centres. No new self-intersections or cavernous sinus wall contacts were detected in the checked region. Existing distal hypophyseal self-intersections remain documented. [Method, checks and renders](docs/ICA_SMOOTH_v0.9.39.md).
+
+# Neurovascular Atlas v0.9.32
+
+Rebuilds the bilateral cavernous ICA loops and compact cavernous sinus bodies to the approved ICA/CS/bone sketch. The anterior genu sits close to the fixed ophthalmic origin. Both ophthalmic meshes, all 222 ostial vertices, their 313 native parent-wall triangles, and the entire skull registration are preserved. Existing named vascular structures and physical venous connections remain selectable and joined.
+
+The cavernous ICA and sinus surfaces have no detected bone contacts; the rebuilt ICA walls pass non-adjacent triangle intersection checks. The fitted bend-to-ostium centreline arc is 5.9 mm right / 5.6 mm left. Dural boundaries are estimates. Native lower petrous/canal bone contacts remain in the retained source outside this corrected region. Anatomical review remains pending. [Read the method, evidence and limitations](docs/ICA_CS_v0.9.32.md).
+
+Run `./inr-anatomy.sh` with the existing installer, or `./docker.sh start`. For local development use `npm ci` and `npm run dev`. Open the Veins visibility control to show the cavernous sinuses, then search for **ICA cavernous right** or **Cavernous sinus right**. There is no interface redesign.
+
+The app package includes model assets, source catalogue, authoring scripts, exact export/loader evidence and matched renders.
+
+# Previous v0.9.31 release
+
+Clears the seven remaining audited posterior artery-vein crossing pairs, with all twelve pairs verified on the corrected meshes. Includes local venous and brainstem adjustments, refreshed surface anchors and the retained v0.9.30 npm dependency update. [Read the changes, validation and remaining corrections](docs/ANATOMICAL_CORRECTIONS_v0.9.31.md).
+
+Straight-sinus alignment, fine bony canal and ICA/dural calibration, and pericallosal fitting remain open. This is an anatomical review build. The previous 67 description corrections, two parent corrections and six bounded venous courses remain included.
+
+Run `./inr-anatomy.sh` with the existing installer, or `./docker.sh start`. The complete app, model assets, source catalogue and correction evidence are included.
+
+## Previous releases
+
+Posterior fossa review build: page 3 P01–P31 implemented with 69 new selectable mesh labels. See [posterior fossa notes](docs/POSTERIOR_VEINS_v0.9.28.md) for scope, source registration limits and validation. The page-2 deep veins remain included, excluding transmedullary veins.
+
+# Neurovascular Atlas v0.9.28 review build
+
+Adds the 22 deep venous families on page 2 of the reference catalogue, excluding transmedullary veins. There are 44 side-specific mesh labels with representative tributaries, searchable names, descriptions and drainage relationships. New courses are guided by the registered brain surfaces and physically joined to their receiving veins. Fine anatomy and calibres remain illustrative. See [deep venous additions](docs/DEEP_VEINS_v0.9.27.md).
+
+This compact release omits modelling buffers, authoring utilities and historical validation artefacts. Arterial, brain and skull assets retain v0.9.26; existing venous courses retain their geometry apart from joined ostia. It retains the installer, build tools, credits and current anatomical review findings.
+
+Keeps full rendering resolution during selection and camera movement. Desktop search fades like the other control bars; panel arrows follow their opening and closing direction. The Brain overview and Deep / posterior fossa buttons are removed.
+
+Rebuilds the basilar, bilateral PCA P1/P2/P3 and intracranial vertebral V4 trunks as circular sweeps with smoother centrelines. Repeated shaft bulges are removed and short branch necks are rebuilt, while retaining all named atlas structures. Mesh topology changes in the rebuilt cohort. Brain, skull and venous assets retain the preceding version.
+
+This is a visual and anatomical review build. The actual mesh render shows the stronger smoothing. Triangle checks record remaining contacts with neighbouring veins; this revision has not passed the complete clearance gate. See [round trunk review](docs/ROUND_TRUNKS_v0.9.24.md).
+
+
+Run `./inr-anatomy.sh` with the existing installer, or `./docker.sh start` for local review. The Docker launcher validates anatomy after installing npm dependencies; no host Node/npm installation is required for Docker startup.
+
+## Bilateral central arterial family fit in v0.9.18
+
+Applies both central arteries, their cortical branches and distal rami, and the adjoining MCA transitions. The complete eight-label family passes tissue, skull, vessel-neighbour, self-intersection, shared-join and wall-envelope checks. The build reproduces byte-for-byte from the supplied seed. Dural and brainstem groups remain deferred; brain, skull, venous and protected ICA/cavernous geometry are retained. See [fitting evidence and limits](docs/FITTING_v0.9.18.md).
+
+## Fitting validation checkpoint in v0.9.17
+
+Adds expanded cortical-family tissue checks, exact exported-buffer verification, dominant-axis branch refinement and a separate rejected eight-label trial for review. No fitting geometry is accepted. Every production geometry asset remains identical to v0.9.15. See [checkpoint findings and next work](docs/FITTING_v0.9.17.md). The first fitting batch remains incomplete.
+
+## Previous anatomical targets and course rules in v0.9.15
+
+Implements sections 1–2 of the vessel fitting plan on v0.9.14. Adds 16 missing sulcal/deep targets, ordered central sulcal and falcotentorial guides, 290 intracranial vessel course specifications and a measured baseline audit. Vessel panels link to their brain targets. The original skull, vascular assets and 172 brain meshes are preserved. See [release details](docs/VESSEL_TARGETS_v0.9.15.md) and [anatomical audit](docs/ANATOMICAL_AUDIT_v0.9.15.md). Vessel fitting itself is the next stage.
+
+## Brain and dural orientation in v0.9.14
+
+Based on v0.9.13. Adds skull-registered cerebral hemispheres, brainstem, cerebellum, falx, tentorium, ventricles and deep structures, with 172 named surfaces and 69 surface-bound vessel course landmarks. Open **Layers and anatomy** and choose **Brain overview** or **Deep / posterior fossa**. Alternate names are searchable and now appear in the inspection panel. See [registration, guide data and limits](docs/BRAIN_v0.9.14.md). Existing skull and vascular assets are unchanged; vessel refitting remains a separate authoring step.
+
+## Cavernous roof and single cavity in v0.9.13
+
+The previous upper ICA sleeve has been removed. One rounded cavity fits the carotid sulcus medially, with an independent roof constrained by the model's clinoid landmarks. The intracavernous ICA region is lowered smoothly by up to 0.9 mm, with the same coordinate adjustment applied to adjoining arterial segments and branches. See `docs/CAVERNOUS_v0.9.13.md` for the geometry checks, matched views and limits of the inferred dural boundary.
+
+## Narrow cavernous spaces and restored connections in v0.9.11
+
+The cavernous spaces have a much narrower curved profile with rounded edges. The SOV and emissary entries are rebuilt, with direct attachment and end-to-end continuity checks for the cavernous tributaries. See `docs/CAVERNOUS_v0.9.11.md` for the model measurements, comparisons and reference limits.
+
+## Cavernous cavity and venous entries in v0.9.10
+
+The cavernous cavities are slimmer, with inward-curving lateral walls and roofs. Rebuilt terminal SMCV and lesser-wing channels blend smoothly into the sinus through a shared surface. All 104 venous structures remain connected. See `docs/CAVERNOUS_v0.9.10.md` for the matched views, contour measurements, junction checks and limits.
+
+## Rendering in v0.9.5
+
+Translucent context uses cached Lambert materials and a single transparent pass. Full-detail opaque shading is restored when structures become opaque. The same model geometry is used throughout, with no new model downloads or preprocessing. During movement the 3D view uses a 0.75 pixel ratio, restoring its original resolution after the controls settle.
+
+## Credits in v0.9.4
+
+The information modal contains a compact, scrollable list of software, model and anatomical reference credits, including the Oxford Specialist Handbook Neurointervention.
+
+## Interface in v0.9.3
+
+The anatomy tree opens directly, with no Layers/Anatomy tabs or mesh labels.
+Right-hand visibility controls cycle through fully visible, translucent and
+absent. Group controls apply to descendants and show a mixed indicator when
+children differ. Structure names select and centre anatomy; arrows expand it.
+The desktop orientation toolbar fades like the side panels until hovered or
+keyboard-focused. Mobile controls remain fully opaque. Automatic camera focus
+uses a wider frame, caps zoom-in at 25% and avoids cumulative zoom on repeated
+selections. Manual navigation resets that limit.
+
+## Venous morphology in v0.9.2
+
+Revises the major sinus courses and their fit against the retained skull, preserves bone-oriented sinus profiles, and gives selected peripheral veins finer taper. See `docs/VENOUS_v0.9.2.md` for sources, checks and modelling limits.
+
+## Interface in v0.9.1
+
+Both panels start collapsed on every device. On desktop, Anatomy sits at the
+bottom-left edge and the selected structure panel at the bottom-right edge,
+either side of the central orientation toolbar. Panels expand upwards and fade
+until hovered or used with the keyboard. On mobile, the atlas title remains on
+one line and the panels retain their compact stacked layout.
+
+Focus and Hide are now on the left of the orientation toolbar. Focus keeps the
+selected structure, its vessel segments and immediate named branches/tributaries
+opaque while dimming other visible structures. Click elsewhere or press Focus
+again to restore the previous opacity. Hidden structures remain hidden.
+Anatomy visibility controls sit on the right of their labels, away from the expand arrows.
+
+## Main venous anatomy in v0.9.0
+
+Add 104 selectable venous structures with 98 note-derived descriptions and linked drainage relationships. Use the **Veins** tree visibility control, or select a vein through search to reveal veins. On supported browsers, veins use a separate multi-draw batch, so they remain independent of artery visibility. The existing artery, connection and bone models are byte-for-byte unchanged. See `docs/VENOUS_v0.9.0.md` for scope, sources and authoring limitations.
+
+## Revised V3/V4 starts and ASA origins in v0.8.12
+
+Set both vertebral V3 and V4 starts from the latest black-line annotation. Move the paired ASA origins to the red-marked V4 level while preserving their welded vertebral collars, central confluence and descending trunk. The vertebral courses and calibre, other branch origins, all other anatomy and GUI are retained. The affected vertebral wall patches are re-triangulated without adding triangles. See `docs/VA_ASA_v0.8.12.md`.
+
+## Labial and submental courses in v0.8.11
+
+Lower the bilateral inferior labial courses below the visible lower teeth, lower the superior labial courses slightly above the visible upper teeth, and raise the hanging submental loops to the inferior mandibular border. Preserve the facial arteries, shared root collars, vessel calibres, topology, IDs and descriptions. Carry four potential labial routes with their endpoints. Retain the corrected ICA/vertebral/ACA sections and GUI. See `docs/LABIAL_SUBMENTAL_v0.8.11.md`.
+
+## ICA boundaries in v0.8.10
+
+Correct the bilateral cervical/petrous and petrous/cavernous boundaries to the supplied annotated diagram, shortening the petrous section. The continuous ICA surfaces, upper ICA sections, vertebral/ACA sections and GUI are unchanged. All branch courses and welded junctions are retained. See `docs/ICA_v0.8.10.md`.
+
+## Vertebral boundaries in v0.8.9
+
+Correct the bilateral V2/V3 and V3/V4 boundaries to the supplied annotated diagram. V3 covers the short outer atlas loop; V2 ends at its lower start and V4 begins on its medial return. Vessel courses and surfaces are retained exactly. V1 and all ACA/ICA boundaries are unchanged. Branches remain attached to the same physical points, with their segment parents updated. See `docs/VERTEBRAL_v0.8.9.md`.
+
+## Interface in v0.8.8
+
+Both panels initially collapse at mobile widths up to 680px. The user’s expanded/collapsed choices persist during selection and resizing. Relationship labels start with capital letters, including Branches to and Has segment. Desktop defaults are retained.
+
+## Interface in v0.8.7
+
+Use the Neurovascular Atlas name and a brief introduction with Jeremy Lynch’s 2026 authorship. Loading shows a percentage based on actual model downloads and scene preparation. FPS is hidden when rendering settles. Panels have compact title bars, equal mobile side margins and scrolling confined to their bodies. Remove Fit, the separate Side row and planned counts/labels; group relationships by type with clickable names. Anatomy assets, descriptions and definitions are unchanged.
+
+## Vertebral and ACA sections in v0.8.6
+
+Select vertebral V1–V4 and ACA A1–A5 sections on either side. Each has its note-derived description and linked structures. Whole-artery and distal pericallosal focus, highlighting and subtree hiding remain available. The existing vessel surfaces and courses are retained exactly; cervical, callosal and coronal-suture boundaries are reference estimates where tissue is not registered. See `docs/VERTEBRAL_ACA_v0.8.6.md`.
+
+## Interface in v0.8.5
+
+A small white FPS readout in the bottom-right corner counts actual rendered frames. It updates at most twice per second and shows `FPS · idle` when drawing stops, without forcing extra renders or rerendering the panels. The selection panel title omits the coloured dot and close button. The mobile logo uses a smaller font and a reserved area beside the responsive search box. Anatomy and rendering optimisations are retained.
+
+## Rendering in v0.8.4
+
+Changes share a single render per browser frame. Selection colours and clipping offsets no longer request unnecessary shader updates; layer changes refresh together and clipping reuses cached model bounds.
+
+On browsers with native `WEBGL_multi_draw`, the 754 opaque vascular parts render in one batch. Their positions, normals, triangles, names and IDs are preserved. Selected vessels render individually to retain the existing highlight, and ghosted vessels keep their existing transparency rendering. The original per-structure meshes still handle picking and focus bounds. Browsers without native multi-draw keep the original rendering path to avoid adding batching overhead without reducing draw calls. Adaptive resolution from v0.8.3 is retained.
+
+## Rendering in v0.8.3
+
+Rotation, panning and zoom use a pixel ratio capped at 1. Full sharpness (device pixel ratio capped at 2) returns 180 ms after camera movement settles, including the damping glide. Anatomy, selection and descriptions are unchanged. Screens with a device pixel ratio of 1 or less keep their native resolution throughout.
+
+## Descriptions and names in v0.8.2
+
+Structures with text in the supplied notes show a **Description** section immediately below **Focus / Hide**. Click a linked structure name to select and focus it. Structures without note text have no Description section. Both panel collapse states continue to be preserved.
+
+The STA temporal branch is named **Posterior deep temporal artery**, and the maxillary temporal branch is named **Middle deep temporal artery**, matching the notes on both sides. Previous names remain searchable aliases. Foramen rotundum artery names are cleaned up, and dental/alveolar terms are searchable synonyms. See `docs/DESCRIPTIONS_v0.8.2.md` and the reviewed catalogue in `docs/STRUCTURE_DESCRIPTIONS.md`.
+
+## Corrections in v0.8.1
+
+The ophthalmic origins are now just beyond the anterior ICA genu on both sides. The selectable paraophthalmic region starts 1 mm of centreline arc before each ophthalmic origin. The proximal ophthalmic curves are refitted while the ICA centreline, PCom/AChA origins and A1/M1 endpoints are retained. These are reference-model positions; the dural boundary remains estimated.
+
+## Corrections in v0.8.0
+
+Named arterial omissions and branch-specific potential routes from the discrepancy audit are implemented. Both panel states persist across selection changes and the inspection title updates while collapsed. See `docs/AMENDMENTS_v0.8.0.md` for the audit-item ledger, ICA changes, selected variants and remaining tissue-registration limits.
+
+## Corrections in v0.7.6
+
+Gentle proximal ophthalmic/PCOM curves are restored, and the terminal ICA–A1–M1 surface is blended into a continuous bifurcation. Each ICA has seven clickable, coloured endovascular regions, with branch hierarchy, focus and visibility controls. See `docs/SEGMENTS_v0.7.6.md`.
+
+## Corrections in v0.7.5
+
+The ICA–M1 junctions are rebuilt as joined surfaces. PCOM and anterior choroidal origins are higher, ophthalmic origins are slightly lower, and proximal ophthalmic/PCOM angulations are smoothed. Both panel titles use a matching smaller font with closer spacing. Passage information and notes are removed from the details panel. See `docs/JUNCTIONS_v0.7.5.md`.
+
+## Panel changes in v0.7.4
+
+Layers/Anatomy and structure details are stacked on the left. Click either title bar to collapse or expand it; the lower panel moves with the upper panel. The 3/4 and Face camera buttons are removed. Details and relationships show structure names without internal IDs, and the reconstruction/provenance/confidence/review fields are removed from the panel. Anatomy assets are unchanged from v0.7.3.
+
+## Corrections in v0.7.3
+
+M1 leaves the terminal ICA laterally with the folded junction corrected. Both A1 surfaces are preserved from v0.7.2. The ophthalmic origins are lower, the cavernous bends are more medial/posterior, and the inferior alveolar/mental routes now follow the mandibular body and visible mental-foramen regions. See `docs/REFINEMENT_v0.7.3.md`.
+
+## ICA correction in v0.7.2
+
+Both upper cervical/petrous entries now approach the carotid entry region anterior and lateral to the jugular fossa. The cavernous courses follow the parasellar corridor and ascend medial to the anterior clinoids. The prior overly medial entry and excessive lateral sweep are corrected. Under **Skull → ICA skull-base landmarks**, 33 entries identify the relevant bone surfaces, canal regions and estimated dural boundaries. Select a row to focus its marker; entries with a recorded course also show that course. The regular anatomy visibility controls and collapsed tree behaviour apply. See `docs/ICA_v0.7.2.md` for the method and remaining canal limitations.
+
+## Included
+
+- One combined anterior, posterior and bilateral ECA circulation.
+- Revised infraorbital, meningeal, petrous ICA, ophthalmic, rotundum and ovale courses, with propagated branch attachments.
+- 64 skull-opening types in a searchable, side-specific register under **Skull → Foramina and passages**. Selecting a located entry shows its regional marker and any saved course. Unresolved entries have no invented marker.
+- Shared, smoothed vascular junctions and independently selectable vessel parts.
+- Complete original skull context, both maxillae, mandible, condyles, alveolar processes and all 32 teeth.
+- Potential ECA–ICA and ECA–vertebral connections on both sides, always enabled in gold with the artery layer.
+- Simplified UI: removed the screenshot-identified banners, strapline, release subtitle, source list, About explanation, layer instructions, connection toggle and presets.
+- Ghosted bone and teeth are click-through. Opaque bone remains selectable.
+
+This is a reference-guided teaching reconstruction, not an individual patient segmentation. Vessel calibre, small canals, cervical vertebral and brain-surface relationships remain approximate. The left ECA uses the right template with independent bone fitting. It is not an independent angiographic reconstruction.
+
+## Anatomy tree
+
+Every row has a visibility checkbox. Unticking hides its geometry and all descendants, including collapsed branches. Ticking restores the subtree. A partial tick means some descendants are hidden. Detail-panel Show/Hide uses the same visibility state; global layer settings still apply. Landmark markers appear only while selected; their checkboxes enable or hide that selected marker. Unlocated entries have disabled checkboxes. The Anatomy tab starts fully collapsed each time it opens, independently of model visibility. Potential connections are nested under their recorded ECA source branches; their receiving arteries remain in the connection graph and detail panel.
+
+## Download and serving
+
+The release contains five anatomy assets. Meshopt compression of the vascular assets preserves the original floating-point positions, normals and index data exactly. The adjusted brain context uses additional material facets to represent the registration field. Model requests carry content hashes; nginx serves gzip and caches unchanged assets. The manifest is revalidated so a new release loads the new hashes.
+
+## Development
+
+`npm ci`, then `npm run dev`. `npm run build` validates the bundled catalogue and creates the production site. The normal installation needs Docker, not the Python modelling libraries. The modelling workflow and release-specific checks are in `docs/`. The one-off foraminal/compartment review is **not** part of `npm run build`, Docker, or the installer. Revisit it only after changing artery or bone geometry. See `docs/FORAMINA_v0.7.0.md` for the remaining canal limitations.
+
+## Venous morphology in v0.9.6
+
+All six skull-base regions are revised using angiographic appearances and local bone landmarks. See [the morphology review](docs/VENOUS_v0.9.6.md) for references, geometric checks and retained skull-mesh limits. The GUI and economical translucent renderer from v0.9.5 are retained.
+
+## Cavernous refinement in v0.9.7
+
+The lower cavernous ICA is moved medially with a smooth transition to the petrous and upper siphon segments. The cavernous sinuses are locally rebuilt as broad parasellar envelopes with flattened sellar cross-connections. Nearby arterial branches use the same coordinate deformation. See [the geometry review and matched renders](docs/CAVERNOUS_v0.9.7.md).
+
+## Cavernous refinement in v0.9.8
+
+Retain the completed v0.9.7 ICA correction and refine the venous exclusions around the displayed carotid, restoring posterosuperior space and preserving the lesser-wing entry. All 104 venous structures remain in one connected, watertight network. See [the follow-up review](docs/CAVERNOUS_v0.9.8.md) for checks and the unresolved low petrous/lacerum skull canal. The companion PDF provides matched views and qualitative angiographic comparisons.
+
+## Cavernous wall correction in v0.9.9
+
+Replace the rounded cavernous envelope with straight to gently concave lateral walls, a flatter roof and a sloping posterior contour. Remove the anterior rounded recess, retaining its lesser-wing connection through a thin flat entry. See [the wall correction review](docs/CAVERNOUS_v0.9.9.md).

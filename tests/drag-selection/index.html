@@ -1,0 +1,32 @@
+<!doctype html><meta charset="utf-8"><title>Atlas drag selection regression</title>
+<style>body{font:18px system-ui;margin:30px}canvas{display:block;touch-action:none;background:#eef0ee;border:1px solid #333;margin:20px 0}button{padding:12px;margin-right:10px}output{display:block}</style>
+<h1>Atlas drag selection regression</h1><p>Click selects. Rotate or pan drags preserve selection and focus.</p>
+<button id="reset">Reset selection</button><button id="tests">Run touch and cancellation regressions</button>
+<canvas id="atlas" class="atlas-canvas" width="650" height="320"></canvas><output id="state"></output><output id="result"></output>
+<script type="module">
+import {bindSelectionGesture} from './selectionGesture.mjs';
+const canvas=document.querySelector('#atlas');let picks=0,selected='Existing vessel',focused=true;
+function show(){document.querySelector('#state').textContent=`Selection: ${selected}. Focus: ${focused?'retained':'cleared'}. Picks: ${picks}.`;}
+function reset(){picks=0;selected='Existing vessel';focused=true;show();}
+bindSelectionGesture(canvas,()=>{picks++;selected='Vessel at click';focused=false;show();});
+canvas.addEventListener('pointerdown',e=>{if(e.isTrusted)canvas.setPointerCapture(e.pointerId);});
+canvas.addEventListener('pointerup',e=>{if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);});
+document.body.addEventListener('click',e=>{if(focused&&!e.target.closest('[data-focus-control], .clip-tools, .atlas-canvas, button')){focused=false;show();}},true);
+document.querySelector('#reset').onclick=reset;
+document.querySelector('#tests').onclick=()=>{
+ const b=canvas.getBoundingClientRect();const tests=[];
+ function ev(type,extra={}){canvas.dispatchEvent(new PointerEvent(type,{pointerId:10,clientX:b.left+20,clientY:b.top+20,button:0,buttons:type==='pointerup'?0:1,isPrimary:true,pointerType:'touch',bubbles:true,...extra}));}
+ function run(name,act,expected){reset();act();tests.push({name,passed:picks===expected,picks});}
+ run('Touch tap',()=>{ev('pointerdown');ev('pointerup');},1);
+ run('Touch drag',()=>{ev('pointerdown');ev('pointermove',{clientX:b.left+180});ev('pointerup',{clientX:b.left+180});},0);
+ run('Out-and-back drag',()=>{ev('pointerdown');ev('pointermove',{clientX:b.left+180});ev('pointerup');},0);
+ run('Two finger pinch',()=>{ev('pointerdown');ev('pointerdown',{pointerId:11,isPrimary:false});ev('pointerup',{pointerId:11,isPrimary:false});ev('pointerup');},0);
+ run('Pointer cancellation',()=>{ev('pointerdown');ev('pointercancel');ev('pointerup');},0);
+ run('Lost capture',()=>{ev('pointerdown');ev('lostpointercapture');ev('pointerup');},0);
+ run('Wheel while pressed',()=>{ev('pointerdown');canvas.dispatchEvent(new WheelEvent('wheel'));ev('pointerup');},0);
+ run('Release without press',()=>ev('pointerup'),0);
+ document.querySelector('#result').textContent=tests.map(t=>`${t.name}: ${t.passed?'PASS':'FAIL'}`).join('. ');
+ reset();
+};
+reset();
+</script>

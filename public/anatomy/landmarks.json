@@ -1635,15 +1635,33 @@
       "name": "Mastoid foramen left",
       "region": "Posterior base",
       "side": "left",
-      "status": "variant-unresolved",
-      "point": null,
-      "course": [],
+      "status": "teaching-reconstructed",
+      "point": [
+        -56.71960632064732,
+        -102.57670708543718,
+        46.43685527047782
+      ],
+      "course": [
+        [
+          -56.71960632064732,
+          -102.57670708543718,
+          46.43685527047782
+        ],
+        [
+          -50.68591753349647,
+          -94.68979783670112,
+          46.430197008079325
+        ]
+      ],
       "connects": "Sigmoid sinus to extracranial vessels",
       "contents": "Mastoid emissary vein; meningeal occipital branch",
       "vessels": [
         "Occipital mastoid"
       ],
-      "note": "Variable structure. Presence has not been established; no default route is imposed."
+      "note": "Batch 1 authored teaching passage retained. Batch 2 ascending mastoid course is included; wider vessel acceptance remains incomplete.",
+      "anchorBone": "bone.temporal.left",
+      "sourceImagingValidated": false,
+      "nominalDiameterMm": 1.7
     },
     {
       "id": "landmark.foramen-magnum.midline",

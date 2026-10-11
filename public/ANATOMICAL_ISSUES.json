@@ -1,0 +1,258 @@
+{
+  "status": "Deferred at user request; not accepted or resolved",
+  "activeRepairSegments": 12,
+  "activeNetworks": 3,
+  "scope": "These are the currently active repair components, not a certified total of all atlas defects.",
+  "acceptedGeometryVersion": "0.9.67",
+  "geometryChanged": false,
+  "segments": [
+    {
+      "vessel": "MMA\u2013tentorial marginal left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [
+        {
+          "bone": "bone.temporal.left",
+          "route": "MMA\u2013tentorial marginal left",
+          "uniqueContactFacets": 79
+        }
+      ],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Tentorial marginal left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "Tentorial marginal left",
+          "missingNativePortVertices": 1,
+          "nativePortVerticesChecked": 16,
+          "neighbour": "Dorsal meningeal left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 16,
+          "sourceSharedVertices": 16
+        },
+        {
+          "branch": "Tentorial marginal left",
+          "missingNativePortVertices": 2,
+          "nativePortVerticesChecked": 13,
+          "neighbour": "Meningohypophyseal trunk left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 12,
+          "sourceSharedVertices": 13
+        }
+      ],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "MMA petrosquamosal left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "MMA petrosquamosal left",
+          "missingNativePortVertices": 124,
+          "nativePortVerticesChecked": 124,
+          "neighbour": "Middle meningeal left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 124,
+          "sourceSharedVertices": 124
+        }
+      ],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Occipital mastoid\u2013MMA petrosquamosal left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Occipital mastoid dural branch left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Occipital mastoid left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "Occipital mastoid left",
+          "missingNativePortVertices": 106,
+          "nativePortVerticesChecked": 106,
+          "neighbour": "Occipital left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 106,
+          "sourceSharedVertices": 106
+        }
+      ],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "MMA\u2013tentorial marginal right",
+      "network": "right-tentorial",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [
+        {
+          "bone": "bone.temporal.right",
+          "route": "MMA\u2013tentorial marginal right",
+          "uniqueContactFacets": 132
+        }
+      ],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json"
+    },
+    {
+      "vessel": "Tentorial marginal right",
+      "network": "right-tentorial",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "Tentorial marginal right",
+          "missingNativePortVertices": 2,
+          "nativePortVerticesChecked": 13,
+          "neighbour": "Dorsal meningeal right",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 12,
+          "sourceSharedVertices": 13
+        },
+        {
+          "branch": "Tentorial marginal right",
+          "missingNativePortVertices": 3,
+          "nativePortVerticesChecked": 10,
+          "neighbour": "Meningohypophyseal trunk right",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 9,
+          "sourceSharedVertices": 10
+        }
+      ],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json"
+    },
+    {
+      "vessel": "MMA petrosquamosal",
+      "network": "right-tentorial",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json"
+    },
+    {
+      "vessel": "Posterior cavernous MMA\u2013posterolateral ILT left",
+      "network": "left-posterior-cavernous",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [
+        {
+          "bone": "bone.sphenoid",
+          "route": "Posterior cavernous MMA\u2013posterolateral ILT left",
+          "uniqueContactFacets": 68
+        }
+      ],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json"
+    },
+    {
+      "vessel": "MMA posterior cavernous left",
+      "network": "left-posterior-cavernous",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "MMA posterior cavernous left",
+          "missingNativePortVertices": 98,
+          "nativePortVerticesChecked": 98,
+          "neighbour": "MMA cavernous left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 98,
+          "sourceSharedVertices": 98
+        }
+      ],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json"
+    },
+    {
+      "vessel": "ILT posterior branch left",
+      "network": "left-posterior-cavernous",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "ILT posterior branch left",
+          "missingNativePortVertices": 64,
+          "nativePortVerticesChecked": 64,
+          "neighbour": "ILT anterior branch left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 63,
+          "sourceSharedVertices": 64
+        },
+        {
+          "branch": "ILT posterior branch left",
+          "missingNativePortVertices": 88,
+          "nativePortVerticesChecked": 88,
+          "neighbour": "ILT posteromedial ramus left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 88,
+          "sourceSharedVertices": 88
+        },
+        {
+          "branch": "ILT posterior branch left",
+          "missingNativePortVertices": 69,
+          "nativePortVerticesChecked": 69,
+          "neighbour": "Inferolateral trunk left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 68,
+          "sourceSharedVertices": 69
+        }
+      ],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json"
+    }
+  ],
+  "otherOpenWork": [
+    "Full anatomical support certification, including the remaining falcine parent review.",
+    "Whole-atlas physical lumen continuity and final decoded-export validation.",
+    "Application integration and browser runtime acceptance."
+  ],
+  "rejectedApproaches": [
+    "Local shifts repeatedly introduced folds and collisions.",
+    "Native-port displacement fields did not pass physical checks.",
+    "Illustrative foramen-ovale reconstruction did not resolve the vascular parent course."
+  ],
+  "deferredCourseSpecifications": [
+    "vein.middle_meningeal.anterior.left",
+    "vein.middle_meningeal.anterior.right",
+    "vein.middle_meningeal.posterior.left",
+    "vein.middle_meningeal.posterior.right"
+  ]
+}

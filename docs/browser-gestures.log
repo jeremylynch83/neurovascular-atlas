@@ -1,0 +1,86 @@
+{
+  "browser": "Chromium",
+  "scope": "Real mouse and touch input against production gesture binding, with camera-style pointer capture. Full atlas rendering and deployment not exercised.",
+  "passed": 13,
+  "failed": 0,
+  "results": [
+    {
+      "name": "normal mouse click still selects",
+      "passed": true,
+      "picks": 1,
+      "selected": "release-vessel"
+    },
+    {
+      "name": "rotate drag retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "drag out and back retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "right mouse pan retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "modifier pan retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "release outside captured canvas retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "wheel while held suppresses selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "touch tap selects",
+      "passed": true,
+      "picks": 1,
+      "selected": "release-vessel"
+    },
+    {
+      "name": "one-finger touch rotation retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "two-finger pinch retains selection",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "cancelled touch does not select",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    },
+    {
+      "name": "next click after cancelled touch still works",
+      "passed": true,
+      "picks": 1,
+      "selected": "release-vessel"
+    },
+    {
+      "name": "disposed binding cannot select",
+      "passed": true,
+      "picks": 0,
+      "selected": "existing-vessel"
+    }
+  ]
+}

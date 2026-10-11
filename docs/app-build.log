@@ -1,0 +1,8 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> inr-anatomy-atlas@0.9.69 build
+> sh ./build-anatomy.sh && tsc -b && vite build && python3 tools/precompress.py
+
+Validated one combined scene, 1250 named parts, 5 assets.
+vite v8.3.3 building client environment for production...
+transforming...

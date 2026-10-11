@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#111317}#stage{width:480px;height:320px}</style></head><body><div id="stage"></div><script type="module">
+import { AnatomyEngine } from '/src/engine.ts';
+import { presetVesselIds, presetVisibility, presetDirection } from '/src/presets.ts';
+const manifest = await (await fetch('/anatomy/manifest.json')).json();
+const engine = new AnatomyEngine(document.querySelector('#stage'), manifest, () => {});
+engine.setTheme(true);
+await engine.load();
+const context = new Map(manifest.structures.filter(s => s.asset).map(s => [s.id, s.system === 'bone' ? 'ghost' : 'off']));
+window.renderPreset = (id, side) => {
+  const ids = presetVesselIds(manifest, id, side);
+  engine.setVisibility(presetVisibility(manifest, context, ids));
+  engine.framePreset(ids, presetDirection(id, side));
+  // Keep bony context faint in small previews, with the arteries legible.
+  for (const entry of engine.entries.values()) {
+    if (entry.structure.system === 'bone') entry.mesh.material.opacity = 0.035;
+    if (entry.structure.system === 'artery') entry.mesh.material.color.setHex(0xeb5146);
+  }
+  for (const batch of engine.vascularBatches) batch.material.color.setHex(0xeb5146);
+  engine.renderer.render(engine.scene, engine.camera);
+  return {ids, camera: engine.camera.position.toArray(), target: engine.controls.target.toArray()};
+};
+window.renderReady = true;
+</script></body></html>
