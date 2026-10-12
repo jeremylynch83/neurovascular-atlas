@@ -1,11 +1,20 @@
-# DSA mode, v0.9.74
+# DSA mode, v0.9.75
 
-The detector/vessel icon beside bookmarks enters DSA mode at 2.0 s. Choose
-ICA, ECA, Vertebrobasilar, MMA or Maxillary artery in the existing bookmark
-modal, with Left/Right/Both. The default is left ICA. The phase slider exists
-only in DSA mode. Play, pause, replay and frame stepping use a 0.5 s interval.
-Leaving DSA restores the previous camera, visibility, selection, Focus and
-section settings. Rotation, pan, zoom and orientation buttons work in DSA.
+The detector/vessel icon beside bookmarks enters DSA without changing rotation,
+pan or zoom. Until an injection is established, the existing arterial placement
+view asks for an artery and then a point. Search selects the artery without
+reframing the camera. Escape or Cancel before the first injection returns to
+the previous 3D view. An established injection persists across mode switches.
+
+Choose ICA, ECA, Vertebrobasilar, MMA or Maxillary artery in the existing
+bookmark modal, with Left/Right/Both (left by default). Explicit bookmarks apply
+their saved projection and use the existing proximal origin: cervical ICA,
+proximal ECA, vertebral V1, MMA trunk or maxillary trunk respectively. Both uses
+two origins. Switching into DSA after a bookmark retains that view and origin.
+The phase slider exists only in DSA mode. Play, pause, replay and frame stepping
+use a 0.5 s interval. Leaving DSA restores the previous camera, visibility,
+selection, Focus and section settings. Rotation, pan, zoom and orientation
+buttons work in DSA.
 
 ## Implementation
 
@@ -36,8 +45,8 @@ section settings. Rotation, pan, zoom and orientation buttons work in DSA.
   are approximations, not patient-specific haemodynamics. Closed sections up to 18 mm long use uniform concentration with a distance-based arrival delay. This does not solve patient-specific advection, pressure or collateral competition.
 - Venous curves are broader, later and weaker. Sinuses and jugular veins may
   remain dark because their columns are thick. No capillary vessels are invented.
-- Static geometry is cached. Movement reduces resolution; stationary images
-  receive modest supersampling. Float32 accumulation is preferred; half-float
+- Static geometry is cached. Movement and stationary images use the same
+  resolution and modest supersampling, capped at 1,500 pixels on the longer side. Float32 accumulation is preferred; half-float
   accumulation is used where float blending is unavailable. Float render targets
   are required. There is no server-side renderer, new runtime dependency or
   cloud service. The default run is 12 s with overlapping phases.
@@ -63,7 +72,7 @@ place the tip on its verified course. The amber marker identifies the tip.
 Playback resets to 0 s and remains paused until Play. Rotate, pan and zoom to
 choose the position; a drag never places a tip. Escape or Cancel retains the
 previous tip. Reset origin restores the selected preset origin at 2 s.
-Bookmarks clear a custom tip. Both retains two preset origins; a custom tip
+Bookmarks replace a custom tip with their proximal preset origin. Both retains two preset origins; a custom tip
 represents one injection and selects its vessel side.
 
 The selected source is cut at the tip, so its upstream part stays unsubtracted.
@@ -119,3 +128,6 @@ inspection hidden temporarily. Exiting DSA restores the ordinary view state.
 
 No model, projection recipe, course or flow graph is rebuilt for this feature.
 The inspection checks are recorded in `dsa-inspection-validation.json`.
+
+DSA entry, cancellation, bookmarked origins, persistent injections, search camera
+preservation and movement resolution are checked in `dsa-entry-validation.json`.

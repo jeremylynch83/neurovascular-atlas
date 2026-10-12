@@ -1,6 +1,118 @@
 {
-  "release": "0.9.74",
+  "release": "0.9.75",
   "numerical": {
+    "bookmarkOrigins": [
+      {
+        "preset": "ica",
+        "side": "left",
+        "inlets": [
+          "artery.anterior.internal_carotid_left.segment.cervical"
+        ]
+      },
+      {
+        "preset": "ica",
+        "side": "right",
+        "inlets": [
+          "artery.anterior.internal_carotid_right.segment.cervical"
+        ]
+      },
+      {
+        "preset": "ica",
+        "side": "both",
+        "inlets": [
+          "artery.anterior.internal_carotid_left.segment.cervical",
+          "artery.anterior.internal_carotid_right.segment.cervical"
+        ]
+      },
+      {
+        "preset": "eca",
+        "side": "left",
+        "inlets": [
+          "artery.carotid.external.right.left"
+        ]
+      },
+      {
+        "preset": "eca",
+        "side": "right",
+        "inlets": [
+          "artery.carotid.external.right"
+        ]
+      },
+      {
+        "preset": "eca",
+        "side": "both",
+        "inlets": [
+          "artery.carotid.external.right",
+          "artery.carotid.external.right.left"
+        ]
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "left",
+        "inlets": [
+          "artery.posterior.vertebral_left.segment.v1"
+        ]
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "right",
+        "inlets": [
+          "artery.posterior.vertebral_right.segment.v1"
+        ]
+      },
+      {
+        "preset": "vertebrobasilar",
+        "side": "both",
+        "inlets": [
+          "artery.posterior.vertebral_left.segment.v1",
+          "artery.posterior.vertebral_right.segment.v1"
+        ]
+      },
+      {
+        "preset": "mma",
+        "side": "left",
+        "inlets": [
+          "artery.eca.maxillary.mma.right.left"
+        ]
+      },
+      {
+        "preset": "mma",
+        "side": "right",
+        "inlets": [
+          "artery.eca.maxillary.mma.right"
+        ]
+      },
+      {
+        "preset": "mma",
+        "side": "both",
+        "inlets": [
+          "artery.eca.maxillary.mma.right",
+          "artery.eca.maxillary.mma.right.left"
+        ]
+      },
+      {
+        "preset": "maxillary",
+        "side": "left",
+        "inlets": [
+          "artery.eca.maxillary.right.left"
+        ]
+      },
+      {
+        "preset": "maxillary",
+        "side": "right",
+        "inlets": [
+          "artery.eca.maxillary.right"
+        ]
+      },
+      {
+        "preset": "maxillary",
+        "side": "both",
+        "inlets": [
+          "artery.eca.maxillary.right",
+          "artery.eca.maxillary.right.left"
+        ]
+      }
+    ],
     "runs": [
       {
         "preset": "ica",
@@ -150,6 +262,11 @@
         "touch": true
       }
     ],
+    "freshEntrySelector": true,
+    "initialCancelRestoresView": true,
+    "searchPreservesView": true,
+    "entryPreservesView": true,
+    "motionResolutionUnchanged": true,
     "passed": true,
     "injectionPreserved": true,
     "linksPreserveCamera": true,
@@ -176,14 +293,15 @@
       {
         "id": "artery.eca.maxillary.mma.frontal.right.left",
         "requested": 33.6159782,
-        "actual": 33.69310675175371,
+        "actual": 33.69310675175468,
         "count": 4
       }
     ],
     "customInjectionInspection": true,
+    "customInjectionRetainedAcrossModes": true,
     "passed": true
   },
-  "inspectionValidation": "dsa-inspection-validation.json",
+  "entryValidation": "dsa-entry-validation.json",
   "priorInjectionGeometryAudit": "dsa-injection-validation.json",
-  "priorAuditNote": "v0.9.73 geometry and flow audit remains applicable: all five GLBs and both DSA data files are byte-identical."
+  "priorAuditNote": "The v0.9.73 geometry and flow audit remains applicable: all five GLBs and both DSA data files are byte-identical."
 }

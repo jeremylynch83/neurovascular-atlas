@@ -179,9 +179,9 @@ export class DsaRenderer {
     return hit?ids.get(hit.object)??null:null;
   }
 
-  render(camera: THREE.PerspectiveCamera, time: number, moving: boolean) {
+  render(camera: THREE.PerspectiveCamera, time: number) {
     const {renderer} = this; renderer.getDrawingBufferSize(this.drawingSize);
-    const maxSide = moving ? 850 : 1500, scale = Math.min(moving ? 1 : 1.5,maxSide/Math.max(this.drawingSize.x,this.drawingSize.y));
+    const scale = Math.min(1.5,1500/Math.max(this.drawingSize.x,this.drawingSize.y));
     const w = Math.max(1,Math.round(this.drawingSize.x*scale)), h = Math.max(1,Math.round(this.drawingSize.y*scale));
     if (this.target.width !== w || this.target.height !== h) this.target.setSize(w,h);
     for (const {mesh,vessel} of this.active) {
@@ -228,7 +228,7 @@ export class DsaRenderer {
         const mesh=new THREE.Mesh(this.geometry.get(key)!,this.contextMaterial);this.placementShapes.set(key,mesh);this.placement.add(mesh);
       }
     }
-    const shown=new Set(this.run?.arteries??[]),queue=id?[id]:[];
+    const shown=new Set(this.run?.arteries.length?this.run.arteries:this.placementShapes.keys()),queue=id?[id]:[];
     for(let i=0;i<queue.length;i++){if(shown.has(queue[i])&&queue[i]!==id)continue;shown.add(queue[i]);queue.push(...(this.flow.edges[queue[i]]??[]).map(e=>e.to));}
     for(const [key,mesh] of this.placementShapes){mesh.visible=shown.has(key);mesh.material=key===id?this.placementMaterial:this.contextMaterial;mesh.renderOrder=key===id?1:0}
   }

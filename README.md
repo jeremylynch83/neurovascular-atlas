@@ -1,14 +1,14 @@
-# Neurovascular Atlas v0.9.74
+# Neurovascular Atlas v0.9.75
 
 Installer-compatible source release with DSA vessel inspection and selectable injection points, the five anatomical bookmarks and one compressed model set.
 
-Place inr-anatomy-atlas-v0.9.74.zip beside your existing inr-anatomy.sh, then run:
+Place inr-anatomy-atlas-v0.9.75.zip beside your existing inr-anatomy.sh, then run:
 
 ```bash
-./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.74.zip
+./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.75.zip
 ```
 
-This imports the source release, rebuilds Docker locally, verifies v0.9.74 and publishes through your configured GitHub Pages workflow.
+This imports the source release, rebuilds Docker locally, verifies v0.9.75 and publishes through your configured GitHub Pages workflow.
 
 The models use meshopt compression, a shared 16-bit position grid and 12-bit octahedral normals. Original coordinates are retained around tiny faces wherever rounding would collapse or reverse them. Vertex and triangle order are preserved. No simplification or anatomical structures removed. Surface anchors, coordinates and asset hashes are refreshed. See docs/compression-validation.json for measured displacement and normal error.
 

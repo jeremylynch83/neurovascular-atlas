@@ -640,7 +640,7 @@ export class AnatomyEngine {
     if (rendered) {
       this.renderRequested = false;
       if(this.dsaView && this.injectionPick)this.dsaRenderer!.renderPlacement(this.camera);
-      else if (this.dsaView) this.dsaRenderer!.render(this.camera,this.dsaTime,frameTime < this.movingUntil);
+      else if (this.dsaView) this.dsaRenderer!.render(this.camera,this.dsaTime);
       else this.selectionHalo.render(this.scene, this.camera);
     }
     if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);

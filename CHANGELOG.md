@@ -1,73 +1,9 @@
-# v0.9.74
+# v0.9.75
 
-Click or tap opacified DSA arteries and veins to inspect them. Playback pauses on selection. A subtle orange silhouette highlights only opacified sections. Information links preserve the injection and camera. Reuses the existing inspection panel, anatomical IDs, raycaster and camera gesture handling. Anatomy and flow data are unchanged.
-
-# v0.9.73
-
-Select an arterial injection point in 3D. DSA starts at the tip and follows downstream branches, with closed flow sections, restricted tissue blush and regional venous drainage. Geometry-bound courses regenerate automatically during builds. Preset origins and left/right/both remain available. Original anatomy models are unchanged.
-
-# v0.9.72
-
-DSA simulation with a sustained arterial plateau, tissue blush and delayed venous drainage. Five injection presets, left/right/both, 2 frames/s playback and scrubbing. Closed projection proxies reuse the atlas coordinates. Ordinary view state is restored on exit. Removed the working-model review notice.
-
-# v0.9.71
-
-Meshopt compression with 16-bit position quantisation, 12-bit octahedral normals and lossless index sequences. Protects original coordinates around tiny faces to prevent collapse or reversal. Preserves all structures, vertex order and triangle order. Refreshes surface anchors and model metadata.
-
-# v0.9.70
-
-Installer-compatible package with one losslessly meshopt-compressed model set. No geometry changes. Removes duplicate build output from the download.
-
-# v0.9.69
-
-- Added Anatomical presets to the bottom orientation bar: ICA, ECA,
-  Vertebrobasilar, MMA and Maxillary artery.
-- Added Left / Right / Both, defaulting to Left, with atlas-rendered thumbnails.
-- Presets isolate the arterial territory and branches, keep bone/brain context,
-  clear selection/Focus/section clipping and frame the vessels.
-- Added keyboard dismissal, focus trapping and responsive modal layout.
-- Vessel geometry remains at the v0.9.67 checkpoint; deferred anatomical issues
-  are retained.
-
-# v0.9.68, usable working app
-
-- Integrated the canonical v0.9.67 checkpoint into the full app. Anatomical acceptance remains incomplete.
-- Fixed release-position picking after camera drags and Focus clearing after a drag.
-- Reconciled embedded vessel-course hashes and guide stations with current model metadata.
-- Explicitly retained four unreviewed vein course specifications as deferred.
-- Included the prebuilt app, offline fonts and model assets, local launcher and anatomical issue register.
-
-# v0.9.51: final audit release checks
-
-- Retain all accepted v0.9.50 geometry, including the completed infraorbital repair, byte for byte.
-- Recheck the ten delivered venous reference additions against the actual composite atlas.
-- Record rejected paired meningeal trials and the remaining reference-data limitations.
-- Include refreshed catalogue, component, contact, self-intersection, loader and production-build evidence.
-
-# v0.9.50: audit continuation and selected venous companions
-
-- Add selectable bilateral alveolar, infraorbital, retinal, selected CPA internal auditory and regional vertebral plexiform venous reference anatomy.
-- Constrain petrosal shaft fitting around preserved arterial routes and native venous collars.
-- Reconcile lateral transverse sinus support using the adjacent parietal bone.
-- Include exact mesh comparisons, geometry checks and an audit register with explicit open canal and variant findings.
-- Retain brain, skull and all arterial model assets byte for byte.
-
-# v0.9.49: vessel relationships and bone-following courses
-
-- Correct left incisive and MMA orbital passage associations and vertebral venous terminology.
-- Fit bilateral vertebral, facial/deep facial and superficial temporal veins, with retained drainage connections.
-- Correct hypoglossal and acoustic reference approaches while recording unsegmented canal limits.
-- Rebuild acoustic and frontal meningeal branches as disjoint selectable patches of closed regional tubular networks.
-- Retain skull, brain, pontine networks, previous ICA/labial corrections and the interface.
-- Include actual-mesh comparisons, baseline/contact checks, topology, self-intersection, attachment, exact-loader and production-build evidence.
-
-# v0.9.33: smaller posterior sinus and smoother local connections
-
-Reduced posterior venous bulk, constrained fairing of connected arterial/venous surfaces, fixed ophthalmic anatomy and retained native joins. Includes final exported-mesh comparisons and measured local checks. See docs/ICA_CS_v0.9.33.md.
-
-# v0.9.32 — ICA / cavernous sinus fit
-
-Joint bilateral ICA loop and compact bone-fitted CS reconstruction to the approved sketch. Fixed ophthalmic meshes and native ostial collars; retained lower source course and distal wall, physical branch/venous joins, unchanged bone and brain. Reassigned Vidian ICA contributions to their retained lower ICA label. Geometry, export and production build checks pass within the documented local scope. Dura and lower skull-base canals remain unresolved. See docs/ICA_CS_v0.9.32.md.
+- Entering DSA preserves the current projection, pan and zoom. The existing artery and point selector opens until an injection or bookmark is established. Cancel returns to the previous 3D view.
+- Custom injections persist across mode switches. Bookmarks retain their proximal injection defaults and selected side; only explicit bookmark or orientation selection reframes the camera.
+- Choosing an injection artery through search no longer moves the camera.
+- DSA rotation, pan and zoom use the same resolution as stationary frames. Ordinary 3D rendering settings are unchanged.
 
 ## v0.9.31 - posterior crossing corrections
 
@@ -466,3 +402,74 @@ Expanded cortical-family validation and review-only refinement tooling. Preserve
 - Click-through ghosted bone, clipping-aware picking and a Face view.
 - Removed historical anatomy assets and model switching.
 - Lossless mesh compression, gzip serving and content-revision caching.
+
+# v0.9.74
+
+Click or tap opacified DSA arteries and veins to inspect them. Playback pauses on selection. A subtle orange silhouette highlights only opacified sections. Information links preserve the injection and camera. Reuses the existing inspection panel, anatomical IDs, raycaster and camera gesture handling. Anatomy and flow data are unchanged.
+
+# v0.9.73
+
+Select an arterial injection point in 3D. DSA starts at the tip and follows downstream branches, with closed flow sections, restricted tissue blush and regional venous drainage. Geometry-bound courses regenerate automatically during builds. Preset origins and left/right/both remain available. Original anatomy models are unchanged.
+
+# v0.9.72
+
+DSA simulation with a sustained arterial plateau, tissue blush and delayed venous drainage. Five injection presets, left/right/both, 2 frames/s playback and scrubbing. Closed projection proxies reuse the atlas coordinates. Ordinary view state is restored on exit. Removed the working-model review notice.
+
+# v0.9.71
+
+Meshopt compression with 16-bit position quantisation, 12-bit octahedral normals and lossless index sequences. Protects original coordinates around tiny faces to prevent collapse or reversal. Preserves all structures, vertex order and triangle order. Refreshes surface anchors and model metadata.
+
+# v0.9.70
+
+Installer-compatible package with one losslessly meshopt-compressed model set. No geometry changes. Removes duplicate build output from the download.
+
+# v0.9.69
+
+- Added Anatomical presets to the bottom orientation bar: ICA, ECA,
+  Vertebrobasilar, MMA and Maxillary artery.
+- Added Left / Right / Both, defaulting to Left, with atlas-rendered thumbnails.
+- Presets isolate the arterial territory and branches, keep bone/brain context,
+  clear selection/Focus/section clipping and frame the vessels.
+- Added keyboard dismissal, focus trapping and responsive modal layout.
+- Vessel geometry remains at the v0.9.67 checkpoint; deferred anatomical issues
+  are retained.
+
+# v0.9.68, usable working app
+
+- Integrated the canonical v0.9.67 checkpoint into the full app. Anatomical acceptance remains incomplete.
+- Fixed release-position picking after camera drags and Focus clearing after a drag.
+- Reconciled embedded vessel-course hashes and guide stations with current model metadata.
+- Explicitly retained four unreviewed vein course specifications as deferred.
+- Included the prebuilt app, offline fonts and model assets, local launcher and anatomical issue register.
+
+# v0.9.51: final audit release checks
+
+- Retain all accepted v0.9.50 geometry, including the completed infraorbital repair, byte for byte.
+- Recheck the ten delivered venous reference additions against the actual composite atlas.
+- Record rejected paired meningeal trials and the remaining reference-data limitations.
+- Include refreshed catalogue, component, contact, self-intersection, loader and production-build evidence.
+
+# v0.9.50: audit continuation and selected venous companions
+
+- Add selectable bilateral alveolar, infraorbital, retinal, selected CPA internal auditory and regional vertebral plexiform venous reference anatomy.
+- Constrain petrosal shaft fitting around preserved arterial routes and native venous collars.
+- Reconcile lateral transverse sinus support using the adjacent parietal bone.
+- Include exact mesh comparisons, geometry checks and an audit register with explicit open canal and variant findings.
+- Retain brain, skull and all arterial model assets byte for byte.
+
+# v0.9.49: vessel relationships and bone-following courses
+
+- Correct left incisive and MMA orbital passage associations and vertebral venous terminology.
+- Fit bilateral vertebral, facial/deep facial and superficial temporal veins, with retained drainage connections.
+- Correct hypoglossal and acoustic reference approaches while recording unsegmented canal limits.
+- Rebuild acoustic and frontal meningeal branches as disjoint selectable patches of closed regional tubular networks.
+- Retain skull, brain, pontine networks, previous ICA/labial corrections and the interface.
+- Include actual-mesh comparisons, baseline/contact checks, topology, self-intersection, attachment, exact-loader and production-build evidence.
+
+# v0.9.33: smaller posterior sinus and smoother local connections
+
+Reduced posterior venous bulk, constrained fairing of connected arterial/venous surfaces, fixed ophthalmic anatomy and retained native joins. Includes final exported-mesh comparisons and measured local checks. See docs/ICA_CS_v0.9.33.md.
+
+# v0.9.32 — ICA / cavernous sinus fit
+
+Joint bilateral ICA loop and compact bone-fitted CS reconstruction to the approved sketch. Fixed ophthalmic meshes and native ostial collars; retained lower source course and distal wall, physical branch/venous joins, unchanged bone and brain. Reassigned Vidian ICA contributions to their retained lower ICA label. Geometry, export and production build checks pass within the documented local scope. Dura and lower skull-base canals remain unresolved. See docs/ICA_CS_v0.9.32.md.

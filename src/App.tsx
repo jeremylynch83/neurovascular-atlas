@@ -42,6 +42,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [dsaTime, setDsaTime] = useState(2);
   const [playing, setPlaying] = useState(false);
   const [injection,setInjection]=useState<InjectionPoint|null>(null);
+  const [injectionReady,setInjectionReady]=useState(false);
   const [placing,setPlacing]=useState(false);
   const [placementVessel,setPlacementVessel]=useState<string|null>(null);
   const runRef=useRef<DsaRun|null>(null);
@@ -94,16 +95,17 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       if (dsa) { await e.setDsa(null); setDsa(false);setPlacing(false);setQuery(''); }
       else {
         const flow=await e.prepareDsa();
-        const run = makeDsaRun(manifest,activePreset.id,activePreset.side,flow,injection);
+        const run = injectionReady?makeDsaRun(manifest,activePreset.id,activePreset.side,flow,injection):{arteries:[],vessels:[],blush:[]};
         await e.setDsa(run); setDsaTime(2); e.setDsaTime(2);
-        runRef.current=run;
-        e.framePreset(run.arteries,presetDirection(activePreset.id,activePreset.side)); setDsa(true);
+        runRef.current=injectionReady?run:null;setDsa(true);
+        if(!injectionReady)startPlacement(null);
       }
     } catch (error) { setDsaError(error instanceof Error ? error.message : String(error)); }
     finally { setDsaBusy(false); }
   };
 
-  const cancelPlacement=()=>{engine.current?.endInjectionPlacement();setPlacing(false);setQuery('');};
+  const cancelPlacement=()=>{engine.current?.endInjectionPlacement();setPlacing(false);setQuery('');if(!runRef.current){void engine.current?.setDsa(null);setDsa(false);}};
+  const startPlacement=(id:string|null)=>{setPlaying(false);setQuery('');setDsaError(null);setPlacementVessel(id);setPlacing(true);engine.current?.beginInjectionPlacement(id,commitInjection);};
   const commitInjection=async (id:string,point:InjectionPoint|null)=>{
     if(!point){setPlacementVessel(id);return;}
     const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
@@ -112,18 +114,17 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       const preset=injectionPreset(id),side=byId.get(id)?.side==='right'?'right':'left';
       const run=makeDsaRun(manifest,preset,side,flow,point);
       if(!run.arteries.length)throw Error('No downstream vessels at this point');
-      await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(point);setActivePreset({id:preset,side});setPresetSide(side);
+      await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(point);setInjectionReady(true);setActivePreset({id:preset,side});setPresetSide(side);
       setDsaTime(0);e.setDsaTime(0);cancelPlacement();
     }catch(error){setDsaError(error instanceof Error?error.message:String(error));}
     finally{setDsaBusy(false);}
   };
   const beginPlacement=()=>{
     const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
-    setPlaying(false);setQuery('');setDsaError(null);
     const first=runRef.current?.inlets?.find(p=>byId.get(p.id)?.side==='left')??runRef.current?.inlets?.[0];
     const candidate=injection?.id??(dsaSelectedId&&flow.entries[dsaSelectedId]?.selectable?dsaSelectedId:null)??(selectedId&&flow.entries[selectedId]?.selectable?selectedId:first?.id??null);
     const id=candidate&&flow.entries[candidate]?.selectable?candidate:null;
-    setPlacementVessel(id);setPlacing(true);e.beginInjectionPlacement(id,commitInjection);
+    startPlacement(id);
   };
   const resetInjection=async ()=>{
     const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
@@ -132,7 +133,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     catch(error){setDsaError(error instanceof Error?error.message:String(error));}finally{setDsaBusy(false);}
   };
   useEffect(()=>{
-    if(!placing)return;const key=(e:KeyboardEvent)=>{if(e.key==='Escape'){engine.current?.endInjectionPlacement();setPlacing(false);setQuery('');}};
+    if(!placing)return;const key=(e:KeyboardEvent)=>{if(e.key==='Escape')cancelPlacement();};
     window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);
   },[placing]);
 
@@ -147,7 +148,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   };
 
   const select = (s: Structure) => {
-    if(placing){setPlacementVessel(s.id);setQuery('');engine.current?.selectInjectionVessel(s.id);engine.current?.focus(s.id);return;}
+    if(placing){setPlacementVessel(s.id);setQuery('');engine.current?.selectInjectionVessel(s.id);return;}
     if(dsa){setDsaSelectedId(s.id);setDsaInspectionOpen(true);setPlaying(false);return;}
     setSelectedId(s.id); setFocusedId(null); setQuery('');
     if (s.system === 'vein' && s.asset) {
@@ -168,14 +169,14 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       try {
         const flow=await engine.current!.prepareDsa(),run = makeDsaRun(manifest,preset,presetSide,flow);
         await engine.current?.setDsa(run); setPlaying(false); setDsaTime(2); engine.current?.setDsaTime(2);
-        runRef.current=run;clearDsaInspection();setInjection(null);cancelPlacement();
+        runRef.current=run;clearDsaInspection();setInjection(null);setInjectionReady(true);cancelPlacement();
         engine.current?.framePreset(run.arteries,presetDirection(preset,presetSide));
         setActivePreset({id: preset, side: presetSide}); setPresetsOpen(false); setDsaError(null);
       } catch (error) { setDsaError(error instanceof Error ? error.message : String(error)); setPresetsOpen(false); }
       return;
     }
     setActivePreset({id: preset, side: presetSide});
-    setInjection(null);
+    setInjection(null);setInjectionReady(true);
     const next = presetVisibility(manifest, visibility, ids);
     setSelectedId(null); setFocusedId(null); setQuery('');
     setVisibility(next); setClip(old => ({ ...old, enabled: false }));

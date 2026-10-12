@@ -64,7 +64,7 @@
 
 .dsa-controls,.dsa-error{pointer-events:auto}
 .injection-actions{display:flex;gap:8px;margin-top:9px}.injection-actions button{padding:5px 9px;border-radius:5px;background:var(--hover);font-size:11px}.injection-controls strong{display:block;font-size:12px}.injection-controls p{margin:7px 0;font-size:12px;color:var(--muted)}.dsa-caption strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dsa-caption>span{flex-shrink:0}
-.injection-controls{top:80px;bottom:auto;left:16px;transform:none;width:min(360px,calc(100vw - 32px))}
+.injection-controls{position:fixed;top:80px;bottom:auto;left:16px;transform:none;width:min(360px,calc(100vw - 32px))}
 
 .panel-stack[hidden]{display:none}
 
