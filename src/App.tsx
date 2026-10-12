@@ -79,10 +79,9 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   useEffect(() => { engine.current?.setDsaTime(dsaTime); }, [dsaTime]);
   useEffect(() => {
     if (!dsa || !playing || placing || presetsOpen || about) return;
-    const timer = window.setInterval(() => { if (!document.hidden) setDsaTime(t => Math.min(DSA_END,t+.5)); },500);
+    const timer = window.setInterval(() => { if (!document.hidden) setDsaTime(t => t>=DSA_END?DSA_START:t+.5); },500);
     return () => clearInterval(timer);
   }, [dsa, playing, placing,presetsOpen, about]);
-  useEffect(() => { if (dsaTime===DSA_END) setPlaying(false); }, [dsaTime]);
 
   const clearDsaInspection=()=>{setDsaSelectedId(null);};
   const toggleDsa = async () => {
@@ -117,19 +116,6 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       setDsaTime(DSA_START);e.setDsaTime(DSA_START);cancelPlacement();
     }catch(error){setDsaError(error instanceof Error?error.message:String(error));}
     finally{setDsaBusy(false);}
-  };
-  const beginPlacement=()=>{
-    const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
-    const first=runRef.current?.inlets?.find(p=>byId.get(p.id)?.side==='left')??runRef.current?.inlets?.[0];
-    const candidate=injection?.id??(dsaSelectedId&&flow.entries[dsaSelectedId]?.selectable?dsaSelectedId:null)??(selectedId&&flow.entries[selectedId]?.selectable?selectedId:first?.id??null);
-    const id=candidate&&flow.entries[candidate]?.selectable?candidate:null;
-    startPlacement(id);
-  };
-  const resetInjection=async ()=>{
-    const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
-    setDsaBusy(true);setPlaying(false);
-    try{const run=makeDsaRun(manifest,activePreset.id,activePreset.side,flow);await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(null);setDsaTime(DSA_START);e.setDsaTime(DSA_START);setDsaError(null);}
-    catch(error){setDsaError(error instanceof Error?error.message:String(error));}finally{setDsaBusy(false);}
   };
   useEffect(()=>{
     if(!placing)return;const key=(e:KeyboardEvent)=>{if(e.key==='Escape')cancelPlacement();};
@@ -237,7 +223,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       <button className="bookmark-button dsa-button" data-focus-control disabled={!ready || dsaBusy} aria-label="DSA mode" title={dsaBusy ? 'Preparing DSA…' : 'DSA mode'} aria-pressed={dsa} onClick={toggleDsa}><DsaIcon /></button>
       {!dsa && <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>changeClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>changeClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>changeClip({...clip,offset:Number(e.target.value)})}/></div>}
     </div>
-    {dsa && (placing?<InjectionControls name={placementVessel?byId.get(placementVessel)?.name??null:null} busy={dsaBusy} onChange={()=>{setPlacementVessel(null);engine.current?.selectInjectionVessel(null);}} onCancel={cancelPlacement}/>:<DsaControls time={dsaTime} playing={playing} territory={injection?byId.get(injection.id)!.name:`${ANATOMICAL_PRESETS.find(p=>p.id===activePreset.id)!.label} · ${activePreset.side}`} onTime={setDsaTime} onPlaying={setPlaying} onPlacement={beginPlacement} onReset={resetInjection} custom={!!injection} busy={dsaBusy}/>)}
+    {dsa && (placing?<InjectionControls name={placementVessel?byId.get(placementVessel)?.name??null:null} busy={dsaBusy} onChange={()=>{setPlacementVessel(null);engine.current?.selectInjectionVessel(null);}} onCancel={cancelPlacement}/>:<DsaControls time={dsaTime} playing={playing} territory={injection?byId.get(injection.id)!.name:`${ANATOMICAL_PRESETS.find(p=>p.id===activePreset.id)!.label} · ${activePreset.side}`} onTime={setDsaTime} onPlaying={setPlaying} onPlacement={()=>startPlacement(null)} busy={dsaBusy}/>)}
     {dsaError && <div className="dsa-error panel" role="alert">{dsaError}<button aria-label="Dismiss DSA error" onClick={()=>setDsaError(null)}>×</button></div>}
     </div>
 

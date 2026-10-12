@@ -1,4 +1,4 @@
-# DSA mode, v0.9.76
+# DSA mode, v0.9.77
 
 The detector/vessel icon beside bookmarks enters DSA without changing rotation,
 pan or zoom. Until an injection is established, the existing arterial placement
@@ -12,9 +12,9 @@ their saved projection and use the existing proximal origin: cervical ICA,
 proximal ECA, vertebral V1, MMA trunk or maxillary trunk respectively. Both uses
 two origins. Switching into DSA after a bookmark retains that view and origin.
 The first playback frame is 0.5 s, showing proximal arterial contrast. Mode entry,
-bookmarks, new tips, reset and replay all start there. The zero-contrast baseline
-remains internal; the phase slider starts at 0.5 s and exists only in DSA mode. Play, pause, replay and frame stepping
-use a 0.5 s interval. Leaving DSA restores the previous camera, visibility,
+bookmarks and new tips all start there. The zero-contrast baseline
+remains internal; the phase slider starts at 0.5 s and exists only in DSA mode. Separate play/pause icons and frame stepping
+use a 0.5 s interval. Playback loops from the last frame to 0.5 s until paused. Leaving DSA restores the previous camera, visibility,
 selection, Focus and section settings. Rotation, pan, zoom and orientation
 buttons work in DSA.
 
@@ -68,12 +68,12 @@ in `dsa-validation.json`.
 
 ## Injection point placement
 
-Pause or choose **Injection point**. A temporary coloured arterial view appears.
-Select a supported artery through search or a click, then click its surface to
+Choose **Choose injection point**. A temporary coloured arterial view appears.
+First select a supported artery through search or a click, then click its surface to
 place the tip on its verified course. The amber marker identifies the tip.
 Playback resets to the first opacified frame at 0.5 s and remains paused until Play. Rotate, pan and zoom to
 choose the position; a drag never places a tip. Escape or Cancel retains the
-previous tip. Reset origin restores the selected preset origin at 0.5 s.
+previous tip. There is no reset-origin control.
 Bookmarks replace a custom tip with their proximal preset origin. Both retains two preset origins; a custom tip
 represents one injection and selects its vessel side.
 
@@ -137,3 +137,6 @@ preservation and movement resolution are checked in `dsa-entry-validation.json`.
 
 The first opacified playback frame, shared inspection layout and collapsed/open
 state are checked in `dsa-frame-panel-validation.json` on desktop and mobile.
+
+The injection chooser, conditional Change artery action, standard playback icons,
+separate play/pause controls and looping are checked in `dsa-controls-validation.json`.

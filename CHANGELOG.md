@@ -1,3 +1,7 @@
+# v0.9.77
+
+Simplified DSA playback to standard previous, play, pause and next icons. Play and pause are separate controls. Playback loops at the end; Replay is removed. One Choose injection point control starts vessel selection followed by point placement. Change artery appears only after a vessel has been selected.
+
 # v0.9.76
 
 DSA starts at the first opacified 0.5 s frame, including new injection placement, mode entry, bookmarks, reset and replay. The blank baseline stays outside the playback range. Inspection uses the normal 3D panel layout and shared open/closed state. Vessel clicks do not expand the panel automatically.

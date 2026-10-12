@@ -1,0 +1,71 @@
+{
+  "release": "0.9.77",
+  "build": {
+    "typescript": "passed",
+    "production": "passed",
+    "flowCache": "unchanged; generator skipped",
+    "docker": "not executed"
+  },
+  "implementation": {
+    "files": [
+      "src/App.tsx",
+      "src/DsaControls.tsx",
+      "src/styles.css"
+    ],
+    "addedLines": 15,
+    "removedLines": 25,
+    "netLines": -10,
+    "unchangedData": [
+      {
+        "file": "public/anatomy/models/craniofacial.glb",
+        "sha256": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/venous.glb",
+        "sha256": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/brain-context.glb",
+        "sha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/complete-circulation.glb",
+        "sha256": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/complete-anastomoses.glb",
+        "sha256": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/dsa-flow.json",
+        "sha256": "6ecf4cf1950636aedb4f8438a4ac230841c793f819cc1220fcb095543deadf4c",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/dsa-surfaces.json",
+        "sha256": "2237e8b188854617f18af7dcc8f273883173d56f8067341f3327bde49f6c3bb9",
+        "unchanged": true
+      }
+    ]
+  },
+  "browser": {
+    "release": "0.9.77",
+    "errors": [],
+    "changeOnlyAfterSelection": true,
+    "chooseAlwaysPromptsVesselFirst": true,
+    "cancelPreservesInjectionAndView": true,
+    "playbackLoops": true,
+    "separatePlayPause": true,
+    "pauseStopsAdvancement": true,
+    "playFromEndRestarts": true,
+    "frameStepping": true,
+    "standardPlaybackIcons": true,
+    "mobileControls": true,
+    "passed": true
+  }
+}

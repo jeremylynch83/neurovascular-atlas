@@ -1,5 +1,5 @@
 {
-  "release": "0.9.76",
+  "release": "0.9.77",
   "numerical": {
     "bookmarkOrigins": [
       {
@@ -337,5 +337,22 @@
     "mobileUsesNormalLayout": true,
     "passed": true
   },
-  "previousBrowserNote": "Previous entry and flow checks were performed on v0.9.75. Their data remain unchanged; current UI checks are recorded separately."
+  "previousBrowserNote": "Previous entry and flow checks were performed on v0.9.75. Their data remain unchanged; current UI checks are recorded separately.",
+  "controlsValidation": "dsa-controls-validation.json",
+  "controlsBrowser": {
+    "release": "0.9.77",
+    "errors": [],
+    "changeOnlyAfterSelection": true,
+    "chooseAlwaysPromptsVesselFirst": true,
+    "cancelPreservesInjectionAndView": true,
+    "playbackLoops": true,
+    "separatePlayPause": true,
+    "pauseStopsAdvancement": true,
+    "playFromEndRestarts": true,
+    "frameStepping": true,
+    "standardPlaybackIcons": true,
+    "mobileControls": true,
+    "passed": true
+  },
+  "previousControlsNote": "Prior validation files retain historical reset/replay checks. Current playback and injection controls are checked separately in v0.9.77."
 }
