@@ -29,6 +29,6 @@ export function InjectionControls({name,onChange,onCancel,busy}:{name:string|nul
   return <div className="dsa-controls injection-controls panel" data-focus-control role="group" aria-label="Injection point placement">
     <strong>{name??'Select an artery'}</strong>
     <p>{busy?'Preparing injection…':name?'Click the injection point on this artery.':'Select an artery in the view or search.'}</p>
-    <div className="injection-actions">{name&&<button disabled={busy} onClick={onChange}>Change artery</button>}<button disabled={busy} onClick={onCancel}>Cancel</button></div>
+    <div className="injection-actions">{name&&<button disabled={busy} onClick={onChange}>Change artery</button>}<button onClick={onCancel}>Cancel</button></div>
   </div>;
 }

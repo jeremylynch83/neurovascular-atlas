@@ -9,8 +9,9 @@ import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
 import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
 import { DsaRenderer } from './dsaRenderer';
-import { type InjectionPoint } from './flowGeometry';
-import type { DsaRun } from './dsa';
+import { pathPoint,type InjectionPoint } from './flowGeometry';
+import { makeDsaRun,type DsaRun } from './dsa';
+import { injectionPreset } from './presets';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
 const SELECTION_COLOUR = new THREE.Color(0xe99a42).multiplyScalar(1.1);
@@ -113,6 +114,7 @@ export class AnatomyEngine {
   private dsaView: { camera: THREE.PerspectiveCamera; target: THREE.Vector3; focusFloor: number } | null = null;
   private injectionVessel: string|null=null;
   private injectionPick: ((id:string,point:InjectionPoint|null)=>void)|null=null;
+  private dsaRevision=0;
   private movingUntil = 0;
 
   constructor(container: HTMLElement, manifest: AnatomyManifest, onSelect: (id: string | null, dsa?: boolean) => void, onFps?: (fps: number | null) => void) {
@@ -563,12 +565,20 @@ export class AnatomyEngine {
   }
   getDsaFlow() { return this.dsaRenderer?.flow; }
   beginInjectionPlacement(id: string|null,pick:(id:string,point:InjectionPoint|null)=>void) { this.injectionPick=pick;this.selectInjectionVessel(id); }
-  selectInjectionVessel(id: string|null) { this.injectionVessel=id;this.dsaRenderer?.setPlacementSelected(id);this.render(); }
-  endInjectionPlacement() { this.injectionPick=null;this.injectionVessel=null;this.render(); }
+  selectInjectionVessel(id: string|null) { this.injectionVessel=id;this.dsaRenderer?.setPlacementSelected(id);this.render();if(id)void this.warmInjection(id).catch(()=>{}); }
+  private async warmInjection(id:string) {
+    const d=this.dsaRenderer;if(!d?.flow.entries[id]?.selectable)return;
+    const side=this.manifest.structures.find(s=>s.id===id)?.side==='right'?'right':'left';
+    const run=makeDsaRun(this.manifest,injectionPreset(id),side,d.flow,{id,distance:0,point:pathPoint(d.flow.entries[id],0)});
+    await d.setRun(run,()=>!this.disposed&&this.injectionVessel===id&&!!this.injectionPick,true);
+  }
+  endInjectionPlacement() { this.dsaRevision++;this.injectionPick=null;this.injectionVessel=null;this.render(); }
   async setDsa(run: DsaRun | null) {
+    const revision=++this.dsaRevision;
     if (run) {
       await this.prepareDsa();
-      this.dsaRenderer!.setRun(run);
+      if(this.disposed||revision!==this.dsaRevision)return false;
+      if(!await this.dsaRenderer!.setRun(run,()=>!this.disposed&&revision===this.dsaRevision))return false;
       this.dsaArteries = new Set(run.arteries);
       this.dsaView ??= { camera: this.camera.clone(), target: this.controls.target.clone(), focusFloor: this.focusDistanceFloor };
     } else if (this.dsaView) {
@@ -580,6 +590,7 @@ export class AnatomyEngine {
       this.focusDistanceFloor = saved.focusFloor; this.controls.update();
     }
     this.render();
+    return true;
   }
   setDsaSelected(id: string|null) { this.dsaRenderer?.setSelected(id);this.render(); }
   setDsaTime(time: number) { this.dsaTime = time; this.render(); }

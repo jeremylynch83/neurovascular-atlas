@@ -1,4 +1,4 @@
-# DSA mode, v0.9.77
+# DSA mode, v0.9.78
 
 The detector/vessel icon beside bookmarks enters DSA without changing rotation,
 pan or zoom. Until an injection is established, the existing arterial placement
@@ -68,7 +68,9 @@ in `dsa-validation.json`.
 
 ## Injection point placement
 
-Choose **Choose injection point**. A temporary coloured arterial view appears.
+Choose **Choose injection point**. A temporary coloured view of the complete arterial tree appears, with no veins.
+All arteries remain visible after selecting a source. Only validated courses can
+be injection sources; other arteries remain visible as context.
 First select a supported artery through search or a click, then click its surface to
 place the tip on its verified course. The amber marker identifies the tip.
 Playback resets to the first opacified frame at 0.5 s and remains paused until Play. Rotate, pan and zoom to
@@ -140,3 +142,19 @@ state are checked in `dsa-frame-panel-validation.json` on desktop and mobile.
 
 The injection chooser, conditional Change artery action, standard playback icons,
 separate play/pause controls and looping are checked in `dsa-controls-validation.json`.
+
+## Injection preparation performance
+
+Closed section splitting and boundary checks run in a module worker, reusing
+`flowGeometry.ts`. Each worker caches decoded surface coordinates. Preparation starts when an artery
+is selected, and shared pending requests avoid duplicate work. Uncut vessels
+up to 18 mm reuse their already closed projection surface. Completed sections
+are cached across runs. Original atlas buffers are never transferred or changed.
+The previous view stays available during preparation; Cancel or Escape prevents
+a pending result from replacing the existing injection.
+
+Worker results match the original splitting functions byte for byte in ICA and
+maxillary checks. Complete arterial placement, branch exclusion, source buffer
+integrity and cancellation are checked in `dsa-preparation-validation.json`.
+Cold preparation can still take several seconds on a slow CPU, but the long
+synchronous main-thread preparation block is removed.

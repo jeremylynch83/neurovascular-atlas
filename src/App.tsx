@@ -45,6 +45,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [placing,setPlacing]=useState(false);
   const [placementVessel,setPlacementVessel]=useState<string|null>(null);
   const runRef=useRef<DsaRun|null>(null);
+  const injectionPending=useRef(false);
   const closePresets = useCallback(() => setPresetsOpen(false), []);
   const byId = useMemo(() => new Map(manifest.structures.map((s) => [s.id, s])), [manifest]);
   const subtrees = useMemo(() => geometrySubtrees(byId), [byId]);
@@ -107,15 +108,16 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const commitInjection=async (id:string,point:InjectionPoint|null)=>{
     if(!point){setPlacementVessel(id);return;}
     const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
+    if(injectionPending.current)return;injectionPending.current=true;
     setDsaBusy(true);setDsaError(null);
     try{
       const preset=injectionPreset(id),side=byId.get(id)?.side==='right'?'right':'left';
       const run=makeDsaRun(manifest,preset,side,flow,point);
       if(!run.arteries.length)throw Error('No downstream vessels at this point');
-      await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(point);setInjectionReady(true);setActivePreset({id:preset,side});setPresetSide(side);
+      if(!await e.setDsa(run))return;clearDsaInspection();runRef.current=run;setInjection(point);setInjectionReady(true);setActivePreset({id:preset,side});setPresetSide(side);
       setDsaTime(DSA_START);e.setDsaTime(DSA_START);cancelPlacement();
     }catch(error){setDsaError(error instanceof Error?error.message:String(error));}
-    finally{setDsaBusy(false);}
+    finally{injectionPending.current=false;setDsaBusy(false);}
   };
   useEffect(()=>{
     if(!placing)return;const key=(e:KeyboardEvent)=>{if(e.key==='Escape')cancelPlacement();};

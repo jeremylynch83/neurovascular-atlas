@@ -1,5 +1,5 @@
 {
-  "release": "0.9.77",
+  "release": "0.9.78",
   "numerical": {
     "bookmarkOrigins": [
       {
@@ -354,5 +354,33 @@
     "mobileControls": true,
     "passed": true
   },
-  "previousControlsNote": "Prior validation files retain historical reset/replay checks. Current playback and injection controls are checked separately in v0.9.77."
+  "previousControlsNote": "Prior validation files retain historical reset/replay checks. Current playback and injection controls are checked separately in v0.9.77.",
+  "preparationValidation": "dsa-preparation-validation.json",
+  "preparationBrowser": {
+    "release": "0.9.78",
+    "errors": [],
+    "workerMatchesReference": [
+      "artery.anterior.internal_carotid_left.segment.cervical",
+      "artery.eca.maxillary.right.left"
+    ],
+    "fullTree": {
+      "arteries": 766,
+      "contextOnlyArteries": 188
+    },
+    "originalBuffersIntact": true,
+    "branchExclusion": true,
+    "partialSourceTip": {
+      "id": "artery.eca.maxillary.right.left",
+      "distance": 20.04715424421881,
+      "point": [
+        -33.14835707766171,
+        -47.4476280075529,
+        29.841589342020473
+      ]
+    },
+    "cancelPreservesInjection": true,
+    "mobileFullTree": true,
+    "freshCancelKeepsNormalView": true,
+    "passed": true
+  }
 }

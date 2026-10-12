@@ -1,0 +1,207 @@
+{
+  "release": "0.9.78",
+  "build": {
+    "typescript": "passed",
+    "production": "passed",
+    "flowCache": "unchanged; generator skipped",
+    "docker": "not executed"
+  },
+  "implementation": {
+    "files": [
+      "src/App.tsx",
+      "src/DsaControls.tsx",
+      "src/dsaRenderer.ts",
+      "src/dsaWorker.ts",
+      "src/engine.ts"
+    ],
+    "addedLines": 89,
+    "removedLines": 32,
+    "netLines": 57,
+    "unchangedData": [
+      {
+        "file": "public/anatomy/models/craniofacial.glb",
+        "sha256": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/venous.glb",
+        "sha256": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/brain-context.glb",
+        "sha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/complete-circulation.glb",
+        "sha256": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/models/complete-anastomoses.glb",
+        "sha256": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/dsa-flow.json",
+        "sha256": "6ecf4cf1950636aedb4f8438a4ac230841c793f819cc1220fcb095543deadf4c",
+        "unchanged": true
+      },
+      {
+        "file": "public/anatomy/dsa-surfaces.json",
+        "sha256": "2237e8b188854617f18af7dcc8f273883173d56f8067341f3327bde49f6c3bb9",
+        "unchanged": true
+      },
+      {
+        "file": "src/flowGeometry.ts",
+        "sha256": "d2f43575df6e14e66827cbb2e05e3cfcfb48415c02d68fda60191fed526c8cc1",
+        "unchanged": true
+      }
+    ]
+  },
+  "browser": {
+    "release": "0.9.78",
+    "errors": [],
+    "workerMatchesReference": [
+      "artery.anterior.internal_carotid_left.segment.cervical",
+      "artery.eca.maxillary.right.left"
+    ],
+    "fullTree": {
+      "arteries": 766,
+      "contextOnlyArteries": 188
+    },
+    "originalBuffersIntact": true,
+    "branchExclusion": true,
+    "partialSourceTip": {
+      "id": "artery.eca.maxillary.right.left",
+      "distance": 20.04715424421881,
+      "point": [
+        -33.14835707766171,
+        -47.4476280075529,
+        29.841589342020473
+      ]
+    },
+    "cancelPreservesInjection": true,
+    "mobileFullTree": true,
+    "freshCancelKeepsNormalView": true,
+    "passed": true
+  },
+  "beforeProfile": {
+    "metrics": {
+      "calls": [
+        {
+          "name": "injectionPoint",
+          "ms": 75.40000000037253,
+          "cachedBefore": 0,
+          "cachedAfter": 0,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "setRun",
+          "ms": 10532.700000000186,
+          "cachedBefore": 0,
+          "cachedAfter": 112,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "injectionPoint",
+          "ms": 11.900000000372529,
+          "cachedBefore": 112,
+          "cachedAfter": 112,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "setRun",
+          "ms": 32.700000000186265,
+          "cachedBefore": 112,
+          "cachedAfter": 112,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "injectionPoint",
+          "ms": 26.300000000745058,
+          "cachedBefore": 112,
+          "cachedAfter": 112,
+          "id": "artery.eca.maxillary.right.left"
+        },
+        {
+          "name": "setRun",
+          "ms": 4067.0999999996275,
+          "cachedBefore": 112,
+          "cachedAfter": 134,
+          "id": "artery.eca.maxillary.right.left"
+        }
+      ],
+      "surfaceMs": 524.3000000016764,
+      "programs": 8
+    }
+  },
+  "afterProfile": {
+    "metrics": {
+      "calls": [
+        {
+          "name": "injectionPoint",
+          "ms": 35.799999999813735,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "setRun",
+          "ms": 10322.799999999814,
+          "cachedBefore": 0,
+          "cachedAfter": 113,
+          "warm": true,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "setRun",
+          "ms": 9810.5,
+          "cachedBefore": 0,
+          "cachedAfter": 113,
+          "warm": false,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical",
+          "maxMainThreadGap": 179.5
+        },
+        {
+          "name": "setRun",
+          "ms": 2,
+          "cachedBefore": 113,
+          "cachedAfter": 113,
+          "warm": true,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "injectionPoint",
+          "ms": 9.599999999627471,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical"
+        },
+        {
+          "name": "setRun",
+          "ms": 24.09999999962747,
+          "cachedBefore": 113,
+          "cachedAfter": 113,
+          "warm": false,
+          "id": "artery.anterior.internal_carotid_left.segment.cervical",
+          "maxMainThreadGap": 48.5
+        },
+        {
+          "name": "injectionPoint",
+          "ms": 10.899999999441206,
+          "id": "artery.eca.maxillary.right.left"
+        },
+        {
+          "name": "setRun",
+          "ms": 4525.799999999814,
+          "cachedBefore": 113,
+          "cachedAfter": 146,
+          "warm": false,
+          "id": "artery.eca.maxillary.right.left",
+          "maxMainThreadGap": 68.20000000018626
+        }
+      ],
+      "surfaceMs": 728.3000000016764,
+      "programs": 8
+    }
+  },
+  "performanceNote": "Measured in software-rendered headless Chromium. New main-thread timer gaps were measured with 3D drawing paused to isolate preparation. Total cold preparation remains several seconds; this change removes its continuous main-thread block, starts it at vessel selection and reuses cached sections."
+}

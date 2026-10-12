@@ -1,3 +1,7 @@
+# v0.9.78
+
+Injection placement shows every atlas artery, including context vessels without a validated injection course, and no veins. Heavy DSA section splitting and closure checks run in a worker using the existing geometry functions. Uncut short vessels reuse closed surfaces. Decoded surface data and unchanged sections are cached. Cancellation preserves the previous injection and cannot commit a stale result.
+
 # v0.9.77
 
 Simplified DSA playback to standard previous, play, pause and next icons. Play and pause are separate controls. Playback loops at the end; Replay is removed. One Choose injection point control starts vessel selection followed by point placement. Change artery appears only after a vessel has been selected.

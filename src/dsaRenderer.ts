@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { dsaBlushConcentration, dsaConcentration, type DsaRun, type DsaVessel } from './dsa';
 import type { AnatomyManifest } from './types';
-import { decodeCoordinates, splitFlowSurface, closedSurfaceError, flowGraphSource, injectionOnPath, pointInsideSurface, pathPoint, type FlowData, type InjectionPoint } from './flowGeometry';
+import { flowGraphSource, injectionOnPath, pointInsideSurface, pathPoint, type FlowData, type FlowSection, type InjectionPoint } from './flowGeometry';
 
 type Surface = { vertexCount: number; extra: number[][]; reverse: boolean; flips: number[]; removed: number[]; caps: number[]; faces: number };
 type Surfaces = { schema: number; assetRevisions: Record<string, string>; sourceHashes: Record<string,string>; entries: Record<string, Surface> };
@@ -24,6 +24,12 @@ export class DsaRenderer {
   private shapes = new Map<string, THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>();
   private flowShapes = new Map<string,{start:number;end:number;mesh:THREE.Mesh<THREE.BufferGeometry,THREE.ShaderMaterial>}[]>();
   private transient: THREE.Mesh<THREE.BufferGeometry,THREE.ShaderMaterial>[]=[];
+  private worker=new Worker(new URL('./dsaWorker.ts',import.meta.url),{type:'module'});
+  private workerSurfaces=new Set<string>();
+  private requests=new Map<number,{resolve:(sections:FlowSection[])=>void;reject:(error:Error)=>void}>();
+  private request=0;
+  private sectionRequests=new Map<string,Promise<FlowSection[]>>();
+  private workerError:Error|null=null;
   private placement = new THREE.Scene();
   private placementShapes = new Map<string,THREE.Mesh>();
   private placementMaterial = new THREE.MeshPhongMaterial({color:0xd74539,shininess:25});
@@ -54,10 +60,12 @@ export class DsaRenderer {
     if(!flowResponse.ok)throw Error('Could not load injection courses');
     const flow: FlowData=await flowResponse.json();
     if(flow.schema!==1||flow.graphSource!==flowGraphSource(manifest)||Object.entries(flow.sourceHashes).some(([file,h])=>metadata.sourceHashes[file]!==h))throw Error('Injection courses do not match the anatomy');
-    return new DsaRenderer(renderer, geometry, metadata,flow);
+    return new DsaRenderer(renderer, geometry, metadata,flow,manifest.structures.filter(s=>s.system==='artery'&&s.asset).map(s=>s.id));
   }
 
-  private constructor(private renderer: THREE.WebGLRenderer, private geometry: Map<string, THREE.BufferGeometry>, private surfaces: Surfaces,readonly flow: FlowData) {
+  private constructor(private renderer: THREE.WebGLRenderer, private geometry: Map<string, THREE.BufferGeometry>, private surfaces: Surfaces,readonly flow: FlowData,private arteries=Object.keys(flow.entries)) {
+    this.worker.onmessage=({data})=>{const pending=this.requests.get(data.request);if(!pending)return;this.requests.delete(data.request);if(data.error)pending.reject(Error(data.error));else pending.resolve(data.sections)};
+    this.worker.onerror=()=>{this.workerError=Error('Could not prepare injection surfaces');for(const pending of this.requests.values())pending.reject(this.workerError);this.requests.clear()};
     if (!renderer.extensions.has('EXT_color_buffer_float')) throw Error('DSA requires floating-point WebGL rendering');
     this.precision = renderer.extensions.has('EXT_float_blend') ? 'float' : 'half-float';
     const filter = this.precision === 'float' && !renderer.extensions.has('OES_texture_float_linear') ? THREE.NearestFilter : THREE.LinearFilter;
@@ -142,30 +150,52 @@ export class DsaRenderer {
     throw Error('No interior injection position on this artery');
   }
 
-  setRun(run: DsaRun) {
-    for(const mesh of this.transient){mesh.geometry.dispose();mesh.material.dispose()}this.transient=[];
-    this.run = run; this.selected=null; this.selectionScene.clear(); this.scene.clear(); this.active = [];
-    this.markers.clear();for(const inlet of run.inlets??[]){const marker=new THREE.Mesh(this.markerGeometry,this.markerMaterial);marker.position.fromArray(inlet.point);this.markers.add(marker)}
+  private split(id:string,inlet:number):Promise<FlowSection[]> {
+    if(this.workerError)return Promise.reject(this.workerError);
+    const key=`${id}@${inlet}`,existing=this.sectionRequests.get(key);if(existing)return existing;
+    const result=new Promise<FlowSection[]>((resolve,reject)=>{
+      let surface;const transfer:Transferable[]=[];
+      if(!this.workerSurfaces.has(id)){
+        const geo=this.surface(id).geometry,p=geo.getAttribute('position'),positions=new Float32Array(p.count*3),indices=new Uint32Array(geo.index!.array);
+        for(let i=0;i<p.count;i++)positions.set([p.getX(i),p.getY(i),p.getZ(i)],i*3);
+        surface={positions,indices,row:this.flow.entries[id]};transfer.push(positions.buffer,indices.buffer);this.workerSurfaces.add(id);
+      }
+      const request=++this.request;this.requests.set(request,{resolve,reject});this.worker.postMessage({request,id,inlet,surface},transfer);
+    }).finally(()=>this.sectionRequests.delete(key));
+    this.sectionRequests.set(key,result);return result;
+  }
+
+  async setRun(run: DsaRun,valid=()=>true,warm=false) {
+    const active:typeof this.active=[],transient:typeof this.transient=[];
+    try{
     for (const vessel of run.vessels) {
+      if(!valid())break;
       const mesh = this.surface(vessel.id);
       const row=this.flow.entries[vessel.id],travel=run.travel?.get(vessel.id);
       if(!vessel.vein && row?.selectable && travel) {
         let sections=travel.start===0?this.flowShapes.get(vessel.id):undefined;
+        if(!sections&&travel.start===0&&row.length<=18)sections=[{start:0,end:row.length,mesh}];
         if(!sections) {
-          const p=mesh.geometry.getAttribute('position'),positions=new Float32Array(p.count*3);
-          for(let i=0;i<p.count;i++)positions.set([p.getX(i),p.getY(i),p.getZ(i)],i*3);
-          sections=splitFlowSurface(positions,new Uint32Array(mesh.geometry.index!.array),decodeCoordinates(row,positions),row.length,travel.start).map(s=>{
-            if(closedSurfaceError(s))throw Error(`Open injection section: ${vessel.id}`);
+          const split=await this.split(vessel.id,travel.start);
+          sections=travel.start===0?this.flowShapes.get(vessel.id):undefined;
+          sections??=split.map(s=>{
             const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(s.positions,3));geo.setIndex(new THREE.BufferAttribute(s.indices,1));geo.computeBoundingBox();geo.computeBoundingSphere();
             const material=mesh!.material.clone();material.uniforms.anchor.value=geo.boundingBox!.getCenter(new THREE.Vector3());
-            const part=new THREE.Mesh(geo,material);if(travel.start>0)this.transient.push(part);
+            const part=new THREE.Mesh(geo,material);if(travel.start>0)transient.push(part);
             return {start:s.start,end:s.end,mesh:part};
           });
-          if(travel.start===0)this.flowShapes.set(vessel.id,sections);
         }
-        for(const section of sections){this.scene.add(section.mesh);this.active.push({mesh:section.mesh,vessel:{...vessel,delay:Math.min(1,(travel.distance+section.start-travel.start)/350)}})}
-      }else {this.scene.add(mesh);this.active.push({mesh,vessel});}
+        if(travel.start===0)this.flowShapes.set(vessel.id,sections);
+        for(const section of sections)active.push({mesh:section.mesh,vessel:{...vessel,delay:Math.min(1,(travel.distance+section.start-travel.start)/350)}});
+      }else active.push({mesh,vessel});
     }
+    if(warm||!valid()){for(const mesh of transient){mesh.geometry.dispose();mesh.material.dispose()}return false}
+    }catch(error){for(const mesh of transient){mesh.geometry.dispose();mesh.material.dispose()}throw error}
+    for(const mesh of this.transient){mesh.geometry.dispose();mesh.material.dispose()}this.transient=transient;
+    this.run=run;this.selected=null;this.selectionScene.clear();this.scene.clear();this.active=active;
+    for(const {mesh} of active)this.scene.add(mesh);
+    this.markers.clear();for(const inlet of run.inlets??[]){const marker=new THREE.Mesh(this.markerGeometry,this.markerMaterial);marker.position.fromArray(inlet.point);this.markers.add(marker)}
+    return true;
   }
 
   setSelected(id: string|null) { this.selected=id; }
@@ -224,13 +254,11 @@ export class DsaRenderer {
     if(!this.placementShapes.size) {
       this.placement.add(new THREE.HemisphereLight(0xffffff,0x777777,2.1));
       const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(-100,100,200);this.placement.add(light);
-      for(const [key,row] of Object.entries(this.flow.entries))if(row.selectable && this.geometry.has(key)) {
+      for(const key of this.arteries)if(this.geometry.has(key)) {
         const mesh=new THREE.Mesh(this.geometry.get(key)!,this.contextMaterial);this.placementShapes.set(key,mesh);this.placement.add(mesh);
       }
     }
-    const shown=new Set(this.run?.arteries.length?this.run.arteries:this.placementShapes.keys()),queue=id?[id]:[];
-    for(let i=0;i<queue.length;i++){if(shown.has(queue[i])&&queue[i]!==id)continue;shown.add(queue[i]);queue.push(...(this.flow.edges[queue[i]]??[]).map(e=>e.to));}
-    for(const [key,mesh] of this.placementShapes){mesh.visible=shown.has(key);mesh.material=key===id?this.placementMaterial:this.contextMaterial;mesh.renderOrder=key===id?1:0}
+    for(const [key,mesh] of this.placementShapes){mesh.visible=true;mesh.material=key===id?this.placementMaterial:this.contextMaterial;mesh.renderOrder=key===id?1:0}
   }
   isPlacementVisible(id: string) { return this.placementShapes.get(id)?.visible===true; }
   renderPlacement(camera: THREE.PerspectiveCamera) {
@@ -240,7 +268,9 @@ export class DsaRenderer {
   }
 
   dispose() {
-    for(const section of [...this.flowShapes.values()].flat()){section.mesh.geometry.dispose();section.mesh.material.dispose()}
+    this.worker.terminate();for(const pending of this.requests.values())pending.reject(Error('Atlas closed'));this.requests.clear();
+    const originals=new Set(this.shapes.values());
+    for(const section of [...this.flowShapes.values()].flat())if(!originals.has(section.mesh)){section.mesh.geometry.dispose();section.mesh.material.dispose()}
     for(const mesh of this.transient){mesh.geometry.dispose();mesh.material.dispose()}
     this.placementMaterial.dispose();this.contextMaterial.dispose();this.markerGeometry.dispose();this.markerMaterial.dispose();
     for (const mesh of this.shapes.values()) { mesh.geometry.dispose(); mesh.material.dispose(); }
