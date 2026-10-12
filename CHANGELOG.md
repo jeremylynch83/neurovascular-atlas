@@ -1,3 +1,7 @@
+# v0.9.76
+
+DSA starts at the first opacified 0.5 s frame, including new injection placement, mode entry, bookmarks, reset and replay. The blank baseline stays outside the playback range. Inspection uses the normal 3D panel layout and shared open/closed state. Vessel clicks do not expand the panel automatically.
+
 # v0.9.75
 
 - Entering DSA preserves the current projection, pan and zoom. The existing artery and point selector opens until an injection or bookmark is established. Cancel returns to the previous 3D view.

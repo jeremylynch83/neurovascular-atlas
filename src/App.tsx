@@ -7,7 +7,7 @@ import { Loading } from './Loading';
 import { BookmarkIcon, PresetModal } from './PresetModal';
 import { ANATOMICAL_PRESETS, injectionPreset, presetDirection, presetVesselIds, presetVisibility, type PresetId, type PresetSide } from './presets';
 import { DsaControls, DsaIcon, InjectionControls } from './DsaControls';
-import { makeDsaRun, DSA_END, type DsaRun } from './dsa';
+import { makeDsaRun, DSA_START, DSA_END, type DsaRun } from './dsa';
 import type { InjectionPoint } from './flowGeometry';
 
 const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'on', brain: 'off' };
@@ -36,10 +36,9 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [activePreset, setActivePreset] = useState<{id: PresetId; side: PresetSide}>({id: 'ica', side: 'left'});
   const [dsa, setDsa] = useState(false);
   const [dsaSelectedId,setDsaSelectedId]=useState<string|null>(null);
-  const [dsaInspectionOpen,setDsaInspectionOpen]=useState(false);
   const [dsaBusy, setDsaBusy] = useState(false);
   const [dsaError, setDsaError] = useState<string | null>(null);
-  const [dsaTime, setDsaTime] = useState(2);
+  const [dsaTime, setDsaTime] = useState(DSA_START);
   const [playing, setPlaying] = useState(false);
   const [injection,setInjection]=useState<InjectionPoint|null>(null);
   const [injectionReady,setInjectionReady]=useState(false);
@@ -60,7 +59,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     if (!stage.current) return;
     let cancelled = false;
     setReady(false); setLoadError(null); setLoadProgress(0);
-    const e = new AnatomyEngine(stage.current, manifest, (id,isDsa) => { if(isDsa){setDsaSelectedId(id);setDsaInspectionOpen(!!id);setPlaying(false);}else{setSelectedId(id);setFocusedId(null);} }, fps => {
+    const e = new AnatomyEngine(stage.current, manifest, (id,isDsa) => { if(isDsa){setDsaSelectedId(id);setPlaying(false);}else{setSelectedId(id);setFocusedId(null);} }, fps => {
       // Update this small readout without rerendering the anatomy panels.
       if (fpsReadout.current) {
         fpsReadout.current.textContent = fps === null ? '' : `${fps} FPS`;
@@ -85,7 +84,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   }, [dsa, playing, placing,presetsOpen, about]);
   useEffect(() => { if (dsaTime===DSA_END) setPlaying(false); }, [dsaTime]);
 
-  const clearDsaInspection=()=>{setDsaSelectedId(null);setDsaInspectionOpen(false);};
+  const clearDsaInspection=()=>{setDsaSelectedId(null);};
   const toggleDsa = async () => {
     clearDsaInspection();
     setDsaBusy(true); setDsaError(null); setPlaying(false);
@@ -96,7 +95,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       else {
         const flow=await e.prepareDsa();
         const run = injectionReady?makeDsaRun(manifest,activePreset.id,activePreset.side,flow,injection):{arteries:[],vessels:[],blush:[]};
-        await e.setDsa(run); setDsaTime(2); e.setDsaTime(2);
+        await e.setDsa(run); setDsaTime(DSA_START); e.setDsaTime(DSA_START);
         runRef.current=injectionReady?run:null;setDsa(true);
         if(!injectionReady)startPlacement(null);
       }
@@ -115,7 +114,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       const run=makeDsaRun(manifest,preset,side,flow,point);
       if(!run.arteries.length)throw Error('No downstream vessels at this point');
       await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(point);setInjectionReady(true);setActivePreset({id:preset,side});setPresetSide(side);
-      setDsaTime(0);e.setDsaTime(0);cancelPlacement();
+      setDsaTime(DSA_START);e.setDsaTime(DSA_START);cancelPlacement();
     }catch(error){setDsaError(error instanceof Error?error.message:String(error));}
     finally{setDsaBusy(false);}
   };
@@ -129,7 +128,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const resetInjection=async ()=>{
     const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
     setDsaBusy(true);setPlaying(false);
-    try{const run=makeDsaRun(manifest,activePreset.id,activePreset.side,flow);await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(null);setDsaTime(2);e.setDsaTime(2);setDsaError(null);}
+    try{const run=makeDsaRun(manifest,activePreset.id,activePreset.side,flow);await e.setDsa(run);clearDsaInspection();runRef.current=run;setInjection(null);setDsaTime(DSA_START);e.setDsaTime(DSA_START);setDsaError(null);}
     catch(error){setDsaError(error instanceof Error?error.message:String(error));}finally{setDsaBusy(false);}
   };
   useEffect(()=>{
@@ -149,7 +148,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
 
   const select = (s: Structure) => {
     if(placing){setPlacementVessel(s.id);setQuery('');engine.current?.selectInjectionVessel(s.id);return;}
-    if(dsa){setDsaSelectedId(s.id);setDsaInspectionOpen(true);setPlaying(false);return;}
+    if(dsa){setDsaSelectedId(s.id);setPlaying(false);return;}
     setSelectedId(s.id); setFocusedId(null); setQuery('');
     if (s.system === 'vein' && s.asset) {
       const veins = manifest.structures.filter(row => row.system === 'vein' && row.asset).map(row => row.id);
@@ -168,7 +167,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     if (dsa) {
       try {
         const flow=await engine.current!.prepareDsa(),run = makeDsaRun(manifest,preset,presetSide,flow);
-        await engine.current?.setDsa(run); setPlaying(false); setDsaTime(2); engine.current?.setDsaTime(2);
+        await engine.current?.setDsa(run); setPlaying(false); setDsaTime(DSA_START); engine.current?.setDsaTime(DSA_START);
         runRef.current=run;clearDsaInspection();setInjection(null);setInjectionReady(true);cancelPlacement();
         engine.current?.framePreset(run.arteries,presetDirection(preset,presetSide));
         setActivePreset({id: preset, side: presetSide}); setPresetsOpen(false); setDsaError(null);
@@ -213,7 +212,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     </div>
 
     <div className="bottom-dock">
-    <div className={`panel-stack${dsa?' dsa-inspection':''}`} hidden={dsa&&(!inspected||placing)}>
+    <div className="panel-stack" hidden={dsa&&(!inspected||placing)}>
     <section className="left-panel panel" hidden={dsa}>
       <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={()=>setControlsOpen(!controlsOpen)}>Layers and anatomy</button>
       <div className="panel-body" id="anatomy-panel-body" hidden={!controlsOpen}>
@@ -221,7 +220,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       </div>
     </section>
 
-    {inspected && <Detail open={dsa?dsaInspectionOpen:inspectionOpen} onOpenChange={dsa?setDsaInspectionOpen:setInspectionOpen} structure={inspected} manifest={manifest} byId={byId} onSelect={select} />}
+    {inspected && <Detail open={inspectionOpen} onOpenChange={setInspectionOpen} structure={inspected} manifest={manifest} byId={byId} onSelect={select} />}
     </div>
 
     <div className="camera-bar panel">

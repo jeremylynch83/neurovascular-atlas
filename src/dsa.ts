@@ -3,7 +3,7 @@ import { presetVesselIds, type PresetId, type PresetSide } from './presets';
 import type { AnatomyManifest } from './types';
 import { downstreamFlow, pathPoint, type FlowData, type InjectionPoint } from './flowGeometry';
 
-export const DSA_END = 12;
+export const DSA_START = .5, DSA_END = 12;
 export type DsaVessel = { id: string; delay: number; vein: boolean };
 export type DsaBlush = { centre: number[]; radius: number[] };
 export type DsaRun = { arteries: string[]; vessels: DsaVessel[]; blush: DsaBlush[]; flow?: FlowData; travel?: Map<string,{start:number;distance:number}>; inlets?: InjectionPoint[] };

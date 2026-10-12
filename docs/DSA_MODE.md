@@ -1,4 +1,4 @@
-# DSA mode, v0.9.75
+# DSA mode, v0.9.76
 
 The detector/vessel icon beside bookmarks enters DSA without changing rotation,
 pan or zoom. Until an injection is established, the existing arterial placement
@@ -11,7 +11,9 @@ bookmark modal, with Left/Right/Both (left by default). Explicit bookmarks apply
 their saved projection and use the existing proximal origin: cervical ICA,
 proximal ECA, vertebral V1, MMA trunk or maxillary trunk respectively. Both uses
 two origins. Switching into DSA after a bookmark retains that view and origin.
-The phase slider exists only in DSA mode. Play, pause, replay and frame stepping
+The first playback frame is 0.5 s, showing proximal arterial contrast. Mode entry,
+bookmarks, new tips, reset and replay all start there. The zero-contrast baseline
+remains internal; the phase slider starts at 0.5 s and exists only in DSA mode. Play, pause, replay and frame stepping
 use a 0.5 s interval. Leaving DSA restores the previous camera, visibility,
 selection, Focus and section settings. Rotation, pan, zoom and orientation
 buttons work in DSA.
@@ -69,9 +71,9 @@ in `dsa-validation.json`.
 Pause or choose **Injection point**. A temporary coloured arterial view appears.
 Select a supported artery through search or a click, then click its surface to
 place the tip on its verified course. The amber marker identifies the tip.
-Playback resets to 0 s and remains paused until Play. Rotate, pan and zoom to
+Playback resets to the first opacified frame at 0.5 s and remains paused until Play. Rotate, pan and zoom to
 choose the position; a drag never places a tip. Escape or Cancel retains the
-previous tip. Reset origin restores the selected preset origin at 2 s.
+previous tip. Reset origin restores the selected preset origin at 0.5 s.
 Bookmarks replace a custom tip with their proximal preset origin. Both retains two preset origins; a custom tip
 represents one injection and selects its vessel side.
 
@@ -107,8 +109,9 @@ listed in the release's existing issue documents.
 
 ## Vessel inspection in DSA
 
-Click or tap an opacified artery or vein to open the existing inspection panel
-and pause playback. It contains the name, alternate names, description and
+Click or tap an opacified artery or vein to update the existing inspection panel
+and pause playback. The panel uses the ordinary 3D layout and shares its open/closed
+state: a vessel click never expands it automatically. It contains the name, alternate names, description and
 relationships. Links navigate information without changing the injection,
 camera, ordinary selection or visibility. Clicking background clears the DSA
 selection. The panel can be collapsed through its existing title control.
@@ -131,3 +134,6 @@ The inspection checks are recorded in `dsa-inspection-validation.json`.
 
 DSA entry, cancellation, bookmarked origins, persistent injections, search camera
 preservation and movement resolution are checked in `dsa-entry-validation.json`.
+
+The first opacified playback frame, shared inspection layout and collapsed/open
+state are checked in `dsa-frame-panel-validation.json` on desktop and mobile.

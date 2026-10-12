@@ -68,5 +68,4 @@
 
 .panel-stack[hidden]{display:none}
 
-.left-panel[hidden]{display:none}.atlas-app .dsa-inspection .detail{position:fixed;right:16px;top:76px;bottom:auto;width:min(300px,calc(100vw - 32px));max-height:calc(100dvh - 280px)}
-@media(max-width:680px){.atlas-app .dsa-inspection .detail{right:12px;top:68px;width:calc(100vw - 24px)}}
+.left-panel[hidden]{display:none}

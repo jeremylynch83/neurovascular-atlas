@@ -1,5 +1,5 @@
 {
-  "release": "0.9.75",
+  "release": "0.9.76",
   "numerical": {
     "bookmarkOrigins": [
       {
@@ -303,5 +303,39 @@
   },
   "entryValidation": "dsa-entry-validation.json",
   "priorInjectionGeometryAudit": "dsa-injection-validation.json",
-  "priorAuditNote": "The v0.9.73 geometry and flow audit remains applicable: all five GLBs and both DSA data files are byte-identical."
+  "priorAuditNote": "The v0.9.73 geometry and flow audit remains applicable: all five GLBs and both DSA data files are byte-identical.",
+  "framePanelValidation": "dsa-frame-panel-validation.json",
+  "framePanelBrowser": {
+    "release": "0.9.76",
+    "errors": [],
+    "entryFrame": {
+      "visible": 56,
+      "proximal": true,
+      "veins": false
+    },
+    "desktopPositionMatchesNormal": true,
+    "panelDoesNotAutoExpand": true,
+    "openPanelStaysOpen": true,
+    "inspectionPausesPlayback": true,
+    "injectionPreserved": true,
+    "bookmarkFrame": {
+      "visible": 245,
+      "proximal": true,
+      "veins": false
+    },
+    "customTipFrame": {
+      "visible": 53,
+      "proximal": true,
+      "veins": false
+    },
+    "resetFrame": {
+      "visible": 119,
+      "proximal": true,
+      "veins": false
+    },
+    "mobileTapKeepsPanelState": true,
+    "mobileUsesNormalLayout": true,
+    "passed": true
+  },
+  "previousBrowserNote": "Previous entry and flow checks were performed on v0.9.75. Their data remain unchanged; current UI checks are recorded separately."
 }
