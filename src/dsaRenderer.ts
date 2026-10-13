@@ -32,8 +32,8 @@ export class DsaRenderer {
   private workerError:Error|null=null;
   private placement = new THREE.Scene();
   private placementShapes = new Map<string,THREE.Mesh>();
-  private placementMaterial = new THREE.MeshPhongMaterial({color:0xd74539,shininess:25});
-  private contextMaterial = new THREE.MeshPhongMaterial({color:0xd74539,transparent:true,opacity:.22,depthWrite:false});
+  private placementMaterial = new THREE.MeshPhongMaterial({color:0xe99a42,shininess:25});
+  private contextMaterial = new THREE.MeshPhongMaterial({color:0xd74539,shininess:25});
   private markers = new THREE.Scene();
   private markerGeometry = new THREE.SphereGeometry(1.1,12,8);
   private markerMaterial = new THREE.MeshBasicMaterial({color:0xffbc55,depthTest:false,depthWrite:false,toneMapped:false});

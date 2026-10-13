@@ -309,15 +309,15 @@ export class AnatomyEngine {
     this.pointer.set(((ev.clientX - rect.left) / rect.width) * 2 - 1, -((ev.clientY - rect.top) / rect.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
     if(this.injectionPick && this.dsaRenderer) {
-      const eligible=[...this.entries].filter(([id])=>this.dsaRenderer!.flow.entries[id]?.selectable&&this.dsaRenderer!.isPlacementVisible(id));
-      const selected=this.injectionVessel?this.entries.get(this.injectionVessel):null;
-      const chosen=selected?this.raycaster.intersectObject(selected.mesh,false)[0]:null;
-      if(chosen && this.injectionVessel) {
-        const tip=this.dsaRenderer.injectionPoint(this.injectionVessel,chosen.point.toArray());
+      const eligible=[...this.entries].filter(([id])=>this.dsaRenderer!.isPlacementVisible(id));
+      const hit=this.raycaster.intersectObjects(eligible.map(([,e])=>e.mesh),false)[0];
+      const id=hit?this.objectToId.get(hit.object)!:null;
+      if(!id||!this.dsaRenderer.flow.entries[id]?.selectable)return;
+      if(id===this.injectionVessel) {
+        const tip=this.dsaRenderer.injectionPoint(id,hit!.point.toArray());
         this.injectionPick(this.injectionVessel,tip);
       }else {
-        const hit=this.raycaster.intersectObjects(eligible.map(([,e])=>e.mesh),false)[0];
-        if(hit){const id=this.objectToId.get(hit.object)!;this.selectInjectionVessel(id);this.injectionPick(id,null)}
+        this.selectInjectionVessel(id);this.injectionPick(id,null);
       }
       return;
     }

@@ -1,4 +1,4 @@
-# DSA mode, v0.9.78
+# DSA mode, v0.9.79
 
 The detector/vessel icon beside bookmarks enters DSA without changing rotation,
 pan or zoom. Until an injection is established, the existing arterial placement
@@ -68,7 +68,7 @@ in `dsa-validation.json`.
 
 ## Injection point placement
 
-Choose **Choose injection point**. A temporary coloured view of the complete arterial tree appears, with no veins.
+Choose **Choose injection point**. A temporary opaque red view of the complete arterial tree appears, with no veins.
 All arteries remain visible after selecting a source. Only validated courses can
 be injection sources; other arteries remain visible as context.
 First select a supported artery through search or a click, then click its surface to
@@ -158,3 +158,12 @@ maxillary checks. Complete arterial placement, branch exclusion, source buffer
 integrity and cancellation are checked in `dsa-preparation-validation.json`.
 Cold preparation can still take several seconds on a slow CPU, but the long
 synchronous main-thread preparation block is removed.
+
+The selected injection artery is opaque orange. Placement picking respects the
+nearest arterial surface, including context vessels that cannot be injected.
+Rotate to separate overlaps. First mode entry lazily loads the projection and
+flow files. An established territory also waits for its initial cached sections
+before the view switches; background workers keep geometry work off the UI thread.
+
+Opaque material settings, selected colour, overlap picking and startup preparation
+timings are checked in `dsa-opaque-placement-validation.json`.

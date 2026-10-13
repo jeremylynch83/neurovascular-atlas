@@ -1,3 +1,7 @@
+# v0.9.79
+
+Injection placement displays opaque red arteries with an opaque orange selected artery. Picking respects the nearest artery, so a tip cannot be placed through an occluding artery. DSA anatomy, injection courses and contrast shading are unchanged.
+
 # v0.9.78
 
 Injection placement shows every atlas artery, including context vessels without a validated injection course, and no veins. Heavy DSA section splitting and closure checks run in a worker using the existing geometry functions. Uncut short vessels reuse closed surfaces. Decoded surface data and unchanged sections are cached. Cancellation preserves the previous injection and cannot commit a stale result.

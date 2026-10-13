@@ -1,5 +1,5 @@
 {
-  "release": "0.9.78",
+  "release": "0.9.79",
   "numerical": {
     "bookmarkOrigins": [
       {
@@ -382,5 +382,6 @@
     "mobileFullTree": true,
     "freshCancelKeepsNormalView": true,
     "passed": true
-  }
+  },
+  "opaquePlacementValidation": "dsa-opaque-placement-validation.json"
 }
