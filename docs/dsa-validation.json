@@ -1,5 +1,5 @@
 {
-  "release": "0.9.79",
+  "release": "0.9.80",
   "numerical": {
     "bookmarkOrigins": [
       {
@@ -383,5 +383,12 @@
     "freshCancelKeepsNormalView": true,
     "passed": true
   },
-  "opaquePlacementValidation": "dsa-opaque-placement-validation.json"
+  "opaquePlacementValidation": "dsa-opaque-placement-validation.json",
+  "splitterOptimisation": {
+    "report": "dsa-splitter-validation.json",
+    "allCourses": 578,
+    "byteIdentical": true,
+    "firstIcaPreparationMs": 1565.7999999998137,
+    "partialInjectionAndRepeatedCut": true
+  }
 }

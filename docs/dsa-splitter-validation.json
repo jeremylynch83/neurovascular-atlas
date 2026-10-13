@@ -1,0 +1,140 @@
+{
+  "release": "0.9.80",
+  "scope": "Triangle filtering and reusable per-vessel vertex data in the existing worker. No persistent cache or additional background preparation.",
+  "allCourses": {
+    "release": "0.9.80",
+    "vessels": 578,
+    "cases": 1219,
+    "sections": 2514,
+    "byteIdentical": true,
+    "closedSections": 2499,
+    "rejectedCases": 0,
+    "closureAndErrorBehaviourIdentical": true,
+    "timings": {
+      "referenceMs": 51198.877268000135,
+      "optimisedMs": 3430.2161000001533,
+      "prepareMs": 1733.6701590000619
+    },
+    "measurements": [
+      {
+        "id": "artery.carotid.external.right.left",
+        "prepareMs": 15.824556999999913,
+        "triangles": 66906
+      },
+      {
+        "id": "artery.anterior.internal_carotid_left.segment.cervical",
+        "prepareMs": 11.904076999999234,
+        "triangles": 55944
+      },
+      {
+        "id": "artery.eca.maxillary.right.left",
+        "prepareMs": 6.786983999998483,
+        "triangles": 35984
+      },
+      {
+        "id": "artery.posterior.pca_p1_left",
+        "prepareMs": 2.0572679999968386,
+        "triangles": 9588
+      }
+    ],
+    "passed": true,
+    "sourceDataRelease": "0.9.79"
+  },
+  "selectedCuts": {
+    "release": "0.9.80",
+    "vessels": 5,
+    "cases": 79,
+    "sections": 210,
+    "byteIdentical": true,
+    "closedSections": 195,
+    "rejectedCases": 0,
+    "closureAndErrorBehaviourIdentical": true,
+    "timings": {
+      "referenceMs": 1928.215791000001,
+      "optimisedMs": 187.44313699999947,
+      "prepareMs": 56.739730999999836
+    },
+    "measurements": [
+      {
+        "id": "artery.carotid.external.right.left",
+        "prepareMs": 18.52069399999999,
+        "triangles": 66906
+      },
+      {
+        "id": "artery.anterior.internal_carotid_left.segment.cervical",
+        "prepareMs": 15.433669000000009,
+        "triangles": 55944
+      },
+      {
+        "id": "artery.eca.maxillary.right.left",
+        "prepareMs": 7.9703529999997045,
+        "triangles": 35984
+      },
+      {
+        "id": "artery.posterior.pca_p1_left",
+        "prepareMs": 2.3902219999999943,
+        "triangles": 9588
+      },
+      {
+        "id": "artery.posterior.pca_p2_p3_left",
+        "prepareMs": 12.424793000000136,
+        "triangles": 40806
+      }
+    ],
+    "passed": true
+  },
+  "browser": {
+    "release": "0.9.80",
+    "errors": [],
+    "firstEntry": [
+      {
+        "file": "/anatomy/dsa-surfaces.json?v=0.9.80",
+        "fetchMs": 9.200000000186265,
+        "bytes": 3735925,
+        "readAndParseMs": 23.200000000186265
+      },
+      {
+        "file": "/anatomy/dsa-flow.json?v=0.9.80",
+        "fetchMs": 2.2999999998137355,
+        "bytes": 10509756,
+        "readAndParseMs": 61.3000000002794
+      },
+      {
+        "stage": "prepareDsa",
+        "cached": false,
+        "ms": 101.70000000018626
+      },
+      {
+        "stage": "prepareDsa",
+        "cached": true,
+        "ms": 0
+      }
+    ],
+    "firstTerritory": {
+      "ms": 1565.7999999998137,
+      "cachedBefore": 0,
+      "cachedAfter": 113,
+      "warm": false
+    },
+    "cachedTerritory": {
+      "ms": 0.40000000037252903,
+      "cachedBefore": 113,
+      "cachedAfter": 113,
+      "warm": false
+    },
+    "placement": {
+      "count": 766,
+      "opaque": true,
+      "noVeins": true
+    },
+    "selectedOrange": true,
+    "nearestOpaqueOverlap": true,
+    "mobileOpaque": true,
+    "partialInjectionAndRepeatedCut": true,
+    "passed": true
+  },
+  "priorIcaPreparationMs": 9762.5,
+  "modelsSurfaceRecipesFlowEntriesAndGraphUnchanged": true,
+  "flowGeneratorFingerprintRefreshed": true,
+  "passed": true
+}

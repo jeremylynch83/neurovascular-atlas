@@ -1,4 +1,4 @@
-# DSA mode, v0.9.79
+# DSA mode, v0.9.80
 
 The detector/vessel icon beside bookmarks enters DSA without changing rotation,
 pan or zoom. Until an injection is established, the existing arterial placement
@@ -167,3 +167,22 @@ before the view switches; background workers keep geometry work off the UI threa
 
 Opaque material settings, selected colour, overlap picking and startup preparation
 timings are checked in `dsa-opaque-placement-validation.json`.
+
+## Splitter optimisation, v0.9.80
+
+The existing worker prepares vertex positions, flow coordinates, position weld
+keys and triangle coordinate ranges once per vessel. Each split assigns source
+triangles only to the sections they intersect, retaining source order and
+inclusive boundary handling. Interior triangles bypass clipping. Interpolation,
+section spacing, cap construction and closure checks are unchanged. This adds
+no persistent cache or background preparation.
+
+`npm run dsa:splitter:test` compares positions and indices byte for byte against
+the v0.9.79 reference across all 578 validated arterial courses. Boundary cases
+and partial ICA, ECA, maxillary and PCA/P2-P3 cuts are included. The browser
+checks real worker commits, repeated partial cuts, opaque arterial placement,
+nearest-vessel overlaps and mobile placement.
+
+In software-rendered Chromium, uncached ICA preparation fell from 9,762.5 ms
+to 1,565.8 ms. These measure section preparation rather than complete button
+click to displayed frame; device timings vary. See `dsa-splitter-validation.json`.

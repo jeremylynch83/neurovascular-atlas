@@ -4,6 +4,8 @@ export type FlowEdge = { to: string; at: number };
 export type FlowData = { schema: number; sourceHashes: Record<string, string>; graphHash: string; graphSource: string; entries: Record<string, FlowEntry>; edges: Record<string, FlowEdge[]>; veinSites: Record<string, Point> };
 export type InjectionPoint = { id: string; distance: number; point: Point };
 export type FlowSection = { start: number; end: number; positions: Float32Array; indices: Uint32Array };
+type FlowVertex = { p: Point; s: number; key: string };
+export type PreparedFlowSurface = { vertices: FlowVertex[]; ranges: Float32Array };
 
 export function flowGraphSource(manifest: AnatomyManifest) {
   const rows=manifest.structures.filter(s=>s.system==='artery'&&s.asset&&s.displayGroup!=='anastomoses');
@@ -59,22 +61,47 @@ export function decodeCoordinates(row: FlowEntry, positions: Float32Array) {
   return s;
 }
 
+/** Reuse positions, weld keys and triangle ranges for subsequent inlet cuts.
+ * Position keys preserve coincident-vertex welding and interpolation ordering. */
+export function prepareFlowSurface(positions: Float32Array, indices: Uint32Array, coordinate: Float32Array): PreparedFlowSurface {
+  const vertices: FlowVertex[]=Array.from({length:positions.length/3},(_,i)=>{
+    const p: Point=[positions[i*3],positions[i*3+1],positions[i*3+2]];
+    return {p,s:coordinate[i],key:p.join(',')};
+  });
+  const ranges=new Float32Array(indices.length/3*2);
+  for(let i=0;i<indices.length;i+=3){
+    const a=coordinate[indices[i]],b=coordinate[indices[i+1]],c=coordinate[indices[i+2]],j=i/3*2;
+    ranges[j]=Math.min(a,b,c);ranges[j+1]=Math.max(a,b,c);
+  }
+  return {vertices,ranges};
+}
+
 /** Clip closed projection surfaces by a piecewise-linear path coordinate.
  * Every newly exposed boundary is capped. These are private DSA proxies;
  * the original atlas geometry and coordinates are never changed. */
-export function splitFlowSurface(positions: Float32Array, indices: Uint32Array, coordinate: Float32Array, length: number, inlet=0, step=18): FlowSection[] {
+export function splitFlowSurface(positions: Float32Array, indices: Uint32Array, coordinate: Float32Array, length: number, inlet=0, step=18, prepared?: PreparedFlowSurface): FlowSection[] {
   if(inlet>=length-.001)return [];
   const count=Math.max(1,Math.ceil((length-inlet)/step)),size=(length-inlet)/count;
+  const {vertices,ranges}=prepared??prepareFlowSurface(positions,indices,coordinate);
+  const bounds=Array.from({length:count+1},(_,i)=>i===count?length:inlet+i*size);
+  const triangles: number[][]=Array.from({length:count},()=>[]);
+  // Find the first intersected section, then visit only overlapping sections.
+  // Keep source triangle order and include triangles exactly on either boundary.
+  for(let i=0;i<indices.length;i+=3){
+    const min=ranges[i/3*2],max=ranges[i/3*2+1];if(max<inlet)continue;
+    let a=0,b=count-1;
+    while(a<b){const mid=(a+b)>>>1;if(bounds[mid+1]<min)a=mid+1;else b=mid}
+    for(let section=a;section<count&&bounds[section]<=max;section++)triangles[section].push(i);
+  }
   const sections: FlowSection[]=[];
   for(let section=0;section<count;section++) {
-    const lo=inlet+section*size,hi=section===count-1?length:inlet+(section+1)*size;
+    const lo=bounds[section],hi=bounds[section+1];
     const p: number[]=[],f: number[]=[],keys=new Map<string,number>(),caps=new Map<string,[number,number]>();
-    type Vertex={p:Point;s:number;key:string};
-    const add=(v: Vertex)=>{
+    const add=(v: FlowVertex)=>{
       const key=v.key;
       let i=keys.get(key);if(i===undefined){i=p.length/3;keys.set(key,i);p.push(...v.p)}return i;
     };
-    const clip=(poly:Vertex[],cut:number,above:boolean)=>{
+    const clip=(poly:FlowVertex[],cut:number,above:boolean)=>{
       const result: typeof poly=[];
       for(let i=0;i<poly.length;i++) {
         const a=poly[i],b=poly[(i+1)%poly.length],inside=above?a.s>=cut:a.s<=cut,next=above?b.s>=cut:b.s<=cut;
@@ -85,12 +112,10 @@ export function splitFlowSurface(positions: Float32Array, indices: Uint32Array, 
         }
       }return result;
     };
-    for(let i=0;i<indices.length;i+=3) {
-      const ids=[indices[i],indices[i+1],indices[i+2]],ss=ids.map(v=>coordinate[v]);
-      if(Math.max(...ss)<lo || (section<count-1&&Math.min(...ss)>hi))continue;
-      let poly=ids.map((v,j)=>({p:Array.from(positions.subarray(v*3,v*3+3)) as Point,s:ss[j],key:Array.from(positions.subarray(v*3,v*3+3)).join(',')}));
-      if(lo>0)poly=clip(poly,lo,true);
-      if(hi<length)poly=clip(poly,hi,false);
+    for(const i of triangles[section]) {
+      let poly=[vertices[indices[i]],vertices[indices[i+1]],vertices[indices[i+2]]];
+      if(lo>0&&ranges[i/3*2]<lo)poly=clip(poly,lo,true);
+      if(hi<length&&ranges[i/3*2+1]>hi)poly=clip(poly,hi,false);
       const verts=poly.map(add);
       for(let j=1;j<verts.length-1;j++)if(new Set([verts[0],verts[j],verts[j+1]]).size===3)f.push(verts[0],verts[j],verts[j+1]);
       for(let j=0;j<poly.length;j++) {

@@ -1,3 +1,7 @@
+# v0.9.80
+
+DSA section splitting filters triangles by their flow-coordinate ranges and reuses prepared vertex data within the existing worker. Section boundaries, interpolation, caps and closure checks are preserved. No persistent cache or additional background preparation is introduced.
+
 # v0.9.79
 
 Injection placement displays opaque red arteries with an opaque orange selected artery. Picking respects the nearest artery, so a tip cannot be placed through an occluding artery. DSA anatomy, injection courses and contrast shading are unchanged.
