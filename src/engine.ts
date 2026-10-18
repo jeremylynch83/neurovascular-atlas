@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { SelectionHalo, selectionHaloFade } from './selectionHalo';
 import { bindSelectionGesture } from './selectionGesture';
+import { RotationCentring } from './rotationCentring';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
@@ -40,6 +41,7 @@ export class AnatomyEngine {
   private camera = new THREE.PerspectiveCamera(35, 1, 0.01, 1000);
   private renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   private controls: OrbitControls;
+  private rotationCentring: RotationCentring;
   private root = new THREE.Group();
   private landmarkMarker = new THREE.Group();
   private entries = new Map<string, Entry>();
@@ -72,6 +74,7 @@ export class AnatomyEngine {
   private selectionStarted = 0;
   private lastSelectionFrame = 0;
   private reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  private mobileView = window.matchMedia('(max-width: 680px)');
   private focusedMembers: Set<string> | null = null;
   private hidden = new Set<string>();
   private visibility = new Map<string, LayerState>();
@@ -119,6 +122,7 @@ export class AnatomyEngine {
     const key = new THREE.DirectionalLight(0xffffff, 2.7); key.position.set(4, 7, 6); this.scene.add(key);
     const fill = new THREE.DirectionalLight(0xdde6ff, 1.1); fill.position.set(-5, 1, -3); this.scene.add(fill);
     this.controls = this.makeControls();
+    this.rotationCentring = new RotationCentring(this.renderer.domElement);
     this.disposeSelectionGesture = bindSelectionGesture(this.renderer.domElement, this.pick);
     this.resize = new ResizeObserver(() => this.onResize());
     this.resize.observe(container);
@@ -141,6 +145,7 @@ export class AnatomyEngine {
   }
 
   private setCameraUp(up: [number, number, number], reset = false) {
+    this.rotationCentring.reset();
     const next = new THREE.Vector3(...up);
     if (this.camera.up.equals(next) && !reset) return;
     // OrbitControls caches its up-vector quaternion at construction. Recreate
@@ -330,6 +335,7 @@ export class AnatomyEngine {
 
   setSelected(id: string | null) {
     if (id !== this.selected) {
+      this.rotationCentring.reset();
       this.selectionStarted = performance.now();
       this.lastSelectionFrame = 0;
     }
@@ -364,6 +370,18 @@ export class AnatomyEngine {
       }
     }
     this.refreshMaterials();
+  }
+  private selectedMidpoint() {
+    if (!this.selected) return null;
+    const structure = this.manifest.structures.find(s => s.id === this.selected);
+    if (structure?.landmark?.point) return this.landmarkMarker.visible
+      ? this.resolveBrainAnchor(structure.id) ?? new THREE.Vector3(...structure.landmark.point) : null;
+    const box = new THREE.Box3();
+    for (const id of this.segmentMembers.get(this.selected) ?? []) {
+      const mesh = this.entries.get(id)?.mesh;
+      if (mesh?.visible) box.expandByObject(mesh);
+    }
+    return box.isEmpty() ? null : box.getCenter(new THREE.Vector3());
   }
   setLayers(layers: Record<SystemId, LayerState>) {
     if ((Object.keys(layers) as SystemId[]).every(system => this.layers[system] === layers[system])) return;
@@ -459,6 +477,7 @@ export class AnatomyEngine {
     if (!box.isEmpty()) this.fitBox(box, animate);
   }
   private fitBox(box: THREE.Box3, _animate: boolean, gentle = false) {
+    this.rotationCentring.reset();
     const centre = box.getCenter(new THREE.Vector3()); const size = box.getSize(new THREE.Vector3());
     const radius = Math.max(size.x, size.y, size.z) * 0.64 || 1;
     const framingScale = 1.22 / Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
@@ -650,6 +669,9 @@ export class AnatomyEngine {
     if (!this.primaryPrepared && this.entries.size) { this.raf = 0; return; }
     if (this.started) this.controls.update();
     const frameTime = performance.now();
+    const centreWhileRotating = this.started && this.mobileView.matches && !this.dsaView && !this.injectionPick;
+    const midpoint = centreWhileRotating && this.rotationCentring.active ? this.selectedMidpoint() : null;
+    if (this.rotationCentring.step(this.camera, this.controls.target, midpoint, centreWhileRotating, frameTime)) this.renderRequested = true;
     const interval = frameTime - this.previousFrameTime;
     // Ignore tab suspension; ordinary slow frames reduce background throughput.
     if (this.previousFrameTime && interval < 250 && !document.hidden) this.frameInterval = this.frameInterval * .8 + interval * .2;
@@ -669,5 +691,5 @@ export class AnatomyEngine {
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.disposed = true; this.loading?.dispose(); for (const finish of this.workWaiters) finish(); this.dsaRenderer?.dispose(); cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.disposed = true; this.loading?.dispose(); for (const finish of this.workWaiters) finish(); this.dsaRenderer?.dispose(); cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.rotationCentring.dispose(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }
