@@ -1,3 +1,15 @@
+## v0.9.126
+
+- Rebuild both V3-V4 junctions with smooth continuous walls and common seam normals.
+- Retain native branch coordinates, distant vessel surfaces and all other anatomy.
+- Refresh four DSA surfaces and injection courses.
+
+## v0.9.125
+
+- Restore the initial anatomy loading progress bar.
+- Hide veins by default, including background arrivals.
+- Retain v0.9.124 anatomy, descriptions and DSA data.
+
 # v0.9.124
 
 Correct bilateral SCA/PCA dural branch routes along the deep tentorial surface and their four descriptions. Retain native parent junction coordinates. Refresh four DSA projection/injection courses. Leave the original eight schematic collateral overlays unchanged and flag them for separate refitting. Preserve the explicit PCA inlet/hippocampal reference mismatch and earlier deferred review requirements.

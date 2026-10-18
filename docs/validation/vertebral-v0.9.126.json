@@ -1,0 +1,177 @@
+{
+  "release": "0.9.126",
+  "baseline": "0.9.125",
+  "implementationChecksPassed": true,
+  "scope": "Four vertebral V3/V4 segment meshes; local collars approximately 8.4 mm long.",
+  "geometry": {
+    "passed": true,
+    "release": "0.9.126",
+    "changedMeshes": [
+      "Vertebral V3 right",
+      "Vertebral V4 right",
+      "Vertebral V3 left",
+      "Vertebral V4 left"
+    ],
+    "unchangedMeshes": 1246,
+    "unchangedOtherAssets": 4,
+    "unchangedDsaFlowEntries": 593,
+    "regeneratedDsaFlowEntries": 4,
+    "descriptionsAndAnatomicalGraphUnchanged": true,
+    "loadingAndDefaultVisibilityRetained": true,
+    "losslessExport": true
+  },
+  "seams": [
+    {
+      "side": "right",
+      "sharedSeamCoordinates": 64,
+      "sharedNormalsExact": true,
+      "branchAttachmentsExact": [
+        {
+          "node": "Posterior meningeal VA right",
+          "coordinates": 80
+        },
+        {
+          "node": "VA muscular C1 right",
+          "coordinates": 79
+        },
+        {
+          "node": "Vertebral V2 right",
+          "coordinates": 66
+        },
+        {
+          "node": "Anterior spinal root right",
+          "coordinates": 231
+        },
+        {
+          "node": "Basilar",
+          "coordinates": 120
+        },
+        {
+          "node": "PICA right",
+          "coordinates": 160
+        },
+        {
+          "node": "VA medullary perforator 1 right",
+          "coordinates": 109
+        },
+        {
+          "node": "VA medullary perforator 2 right",
+          "coordinates": 100
+        },
+        {
+          "node": "Vertebral V4 left",
+          "coordinates": 70
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "sharedSeamCoordinates": 64,
+      "sharedNormalsExact": true,
+      "branchAttachmentsExact": [
+        {
+          "node": "Posterior meningeal VA left",
+          "coordinates": 80
+        },
+        {
+          "node": "VA muscular C1 left",
+          "coordinates": 78
+        },
+        {
+          "node": "Vertebral V2 left",
+          "coordinates": 66
+        },
+        {
+          "node": "Anterior spinal root left",
+          "coordinates": 116
+        },
+        {
+          "node": "Basilar",
+          "coordinates": 224
+        },
+        {
+          "node": "PICA left",
+          "coordinates": 193
+        },
+        {
+          "node": "VA medullary perforator 1 left",
+          "coordinates": 109
+        },
+        {
+          "node": "VA medullary perforator 2 left",
+          "coordinates": 107
+        },
+        {
+          "node": "Vertebral V4 right",
+          "coordinates": 70
+        }
+      ]
+    }
+  ],
+  "selfIntersections": {
+    "passed": true,
+    "results": [
+      {
+        "node": "Vertebral V3 right",
+        "changedFaces": 2759,
+        "nonAdjacentCandidatesChecked": 6529,
+        "crossingPairs": []
+      },
+      {
+        "node": "Vertebral V4 right",
+        "changedFaces": 2800,
+        "nonAdjacentCandidatesChecked": 6767,
+        "crossingPairs": []
+      },
+      {
+        "node": "Vertebral V3 left",
+        "changedFaces": 2782,
+        "nonAdjacentCandidatesChecked": 6409,
+        "crossingPairs": []
+      },
+      {
+        "node": "Vertebral V4 left",
+        "changedFaces": 2801,
+        "nonAdjacentCandidatesChecked": 6958,
+        "crossingPairs": []
+      }
+    ]
+  },
+  "surroundingStructures": [
+    {
+      "node": "Vertebral V3 right",
+      "boundary": 289,
+      "oldBoundary": 788,
+      "bad": 0,
+      "oldBad": 0,
+      "crossings": []
+    },
+    {
+      "node": "Vertebral V4 right",
+      "boundary": 852,
+      "oldBoundary": 1177,
+      "bad": 0,
+      "oldBad": 0,
+      "crossings": []
+    },
+    {
+      "node": "Vertebral V3 left",
+      "boundary": 288,
+      "oldBoundary": 724,
+      "bad": 0,
+      "oldBad": 0,
+      "crossings": []
+    },
+    {
+      "node": "Vertebral V4 left",
+      "boundary": 895,
+      "oldBoundary": 1139,
+      "bad": 0,
+      "oldBad": 3,
+      "crossings": []
+    }
+  ],
+  "productionBuild": "passed",
+  "dsaChecks": "passed",
+  "clinicalAcceptance": "Existing atlas reference and anatomical review limitations remain unchanged."
+}

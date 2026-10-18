@@ -1,3 +1,11 @@
+# Neurovascular Atlas v0.9.126
+
+Rebuilds both V3-V4 junctions as smooth continuous collars, retaining segment selection and native branch coordinates. Initial loading progress and hidden default veins from v0.9.125 are retained.
+
+# Neurovascular Atlas v0.9.125
+
+Restores the initial “Loading anatomy, please wait” progress bar until bone and arteries are ready. Veins and brain remain hidden while loading in the background. Background loading feedback stays inside Layers. All anatomy and DSA files are unchanged from v0.9.124.
+
 # Neurovascular Atlas v0.9.124
 
 Corrects bilateral SCA and PCA dural branch routes along the inferior tentorium and their four descriptions. Parent junction coordinates are retained. Existing PCA inlet/hippocampal reference overlap remains open. The eight original schematic collateral overlays are unchanged and require a separate refit. See docs/TENTORIAL_v0.9.124.md.
@@ -19,10 +27,10 @@ Installer-compatible source release with DSA vessel inspection and selectable in
 
 v0.9.115 removes nine microscopic exact self-contact pairs in the left inferior petrosal wall using three Float32 coordinate corrections, each under 0.000006 mm. Three left-sided pairs remain. Native junctions, all source face indices, stored normals and all other meshes remain exact. Regional petrosal fitting, bone relationships and full receiving lumens remain open.
 
-Place inr-anatomy-atlas-v0.9.124.zip beside your existing inr-anatomy.sh, then run:
+Place inr-anatomy-atlas-v0.9.126.zip beside your existing inr-anatomy.sh, then run:
 
 ```bash
-./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.124.zip
+./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.126.zip
 ```
 
 This imports the source release, rebuilds Docker locally, verifies v0.9.124 and publishes through your configured GitHub Pages workflow.

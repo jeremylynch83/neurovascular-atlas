@@ -1,0 +1,25 @@
+{
+  "release": "0.9.125",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Original progress bar visible and advances during initial bone/artery preparation",
+      "partialPercent": 6
+    },
+    {
+      "name": "Initial bar closes at primary readiness while deferred files remain held",
+      "passed": true
+    },
+    {
+      "name": "All background veins arrive hidden and do not reopen progress bar",
+      "passed": true
+    },
+    {
+      "name": "Veins and brain stay hidden after all arrivals; Layers can enable veins",
+      "veinMeshes": 231
+    }
+  ],
+  "errors": [],
+  "allFiveModelsAndDsaUnchanged": true,
+  "productionBuild": "passed"
+}

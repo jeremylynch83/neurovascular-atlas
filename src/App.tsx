@@ -3,6 +3,7 @@ import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { geometrySubtrees, searchStructures, uniqueVesselCounts } from './catalogue';
 import { AnatomyEngine } from './engine';
 import { Description } from './Description';
+import { Loading } from './Loading';
 import { structureDependencies, type LoadState } from './stagedLoading';
 import { BookmarkIcon, PresetModal } from './PresetModal';
 import { injectionPreset, presetDirection, presetVesselIds, presetVisibility, type PresetId, type PresetSide } from './presets';
@@ -10,7 +11,7 @@ import { DsaControls, DsaIcon, InjectionControls } from './DsaControls';
 import { makeDsaRun, DSA_START, DSA_END, type DsaRun } from './dsa';
 import type { InjectionPoint } from './flowGeometry';
 
-const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'on', brain: 'off' };
+const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' };
 const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: 'on' };
 const STATE_LABEL = { on: 'fully visible', ghost: 'translucent', off: 'absent' };
 
@@ -31,6 +32,8 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [focusedId, setFocusedId] = useState<string | null>(null);
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const initialGeometry = useMemo(() => manifest.structures.filter(s => s.asset && (s.system === 'bone' || s.system === 'artery')).map(s => s.id), [manifest]);
   const [loadStates, setLoadStates] = useState<ReadonlyMap<string, LoadState>>(() => new Map());
   const [vascularReady, setVascularReady] = useState(false);
   const [pendingId, setPendingId] = useState<string | null>(null);
@@ -81,7 +84,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   useEffect(() => {
     if (!stage.current) return;
     let cancelled = false;
-    setReady(false); setVascularReady(false); setPendingId(null);
+    setReady(false); setProgress(0); setVascularReady(false); setPendingId(null);
     const e = new AnatomyEngine(stage.current, manifest, (id,isDsa) => { actionRevision.current++; setPendingId(null); if(isDsa){setDsaSelectedId(id);setPlaying(false);}else{setSelectedId(id);setFocusedId(null);} }, fps => {
       // Update this small readout without rerendering the anatomy panels.
       if (fpsReadout.current) {
@@ -92,6 +95,10 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     let notification: ReturnType<typeof setTimeout> | undefined;
     const publish = () => {
       if (cancelled) return;
+      // Only initial bone/artery preparation contributes to this bar. Deferred
+      // geometry keeps its existing inline feedback inside Layers.
+      const states = e.getLoadStates();
+      setProgress(Math.min(99, initialGeometry.length ? 100 * initialGeometry.filter(id => states.get(id)?.status === 'ready').length / initialGeometry.length : 0));
       setVascularReady(e.vascularGeometryReady());
       if (controlsOpenRef.current) setLoadStates(new Map(e.getLoadStates()));
     };
@@ -100,7 +107,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       if (!notification) notification = setTimeout(() => { notification = undefined; publish(); }, 100);
     }).then(() => { if (cancelled) return; setReady(true); e.start(); publish(); }).catch(err => { if (!cancelled) console.error(err); });
     return () => { cancelled = true; actionRevision.current++; clearTimeout(notification); e.dispose(); engine.current = null; };
-  }, [manifest]);
+  }, [manifest, initialGeometry]);
   useEffect(() => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; engine.current?.setTheme(dark); }, [dark]);
   useEffect(() => { engine.current?.setSelected(selectedId); }, [selectedId]);
   useEffect(() => { engine.current?.setDsaSelected(dsaSelectedId); }, [dsaSelectedId]);
@@ -310,6 +317,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     {dsaError && <div className="dsa-error panel" role="alert">{dsaError}<button aria-label="Dismiss DSA error" onClick={()=>setDsaError(null)}>×</button></div>}
     </div>
 
+    {!ready && <Loading progress={progress} />}
     <div className="fps-readout" ref={fpsReadout} aria-label="Frame rate" aria-live="off" hidden />
     {about && <About manifest={manifest} onClose={()=>setAbout(false)} />}
     {presetsOpen && <PresetModal side={presetSide} onSideChange={setPresetSide} onApply={applyPreset} onClose={closePresets} />}

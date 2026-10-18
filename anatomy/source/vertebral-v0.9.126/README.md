@@ -1,0 +1,1 @@
+Accepted authoring buffers for the bilateral V3-V4 collars. These Float32 positions, Uint32 triangle indices and padded SNORM16 normal streams match the lossless GLB export exactly. The baseline is v0.9.125. The detailed validation report is docs/validation/vertebral-v0.9.126.json.
