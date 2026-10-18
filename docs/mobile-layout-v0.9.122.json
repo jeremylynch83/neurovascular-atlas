@@ -1,0 +1,87 @@
+{
+  "release": "0.9.122",
+  "baseline": "0.9.121",
+  "change": "Responsive mobile header and Layers control",
+  "validation": {
+    "errors": [],
+    "checks": [
+      {
+        "width": 200,
+        "passed": true
+      },
+      {
+        "width": 220,
+        "passed": true
+      },
+      {
+        "width": 240,
+        "passed": true
+      },
+      {
+        "width": 259,
+        "passed": true
+      },
+      {
+        "width": 260,
+        "passed": true
+      },
+      {
+        "width": 280,
+        "passed": true
+      },
+      {
+        "width": 320,
+        "passed": true
+      },
+      {
+        "width": 360,
+        "passed": true
+      },
+      {
+        "width": 380,
+        "passed": true
+      },
+      {
+        "width": 393,
+        "passed": true
+      },
+      {
+        "width": 480,
+        "passed": true
+      },
+      {
+        "width": 680,
+        "passed": true
+      },
+      {
+        "width": 681,
+        "passed": true
+      },
+      {
+        "width": 768,
+        "passed": true
+      },
+      {
+        "width": 980,
+        "passed": true
+      },
+      {
+        "width": 1024,
+        "passed": true
+      },
+      {
+        "width": 1440,
+        "passed": true
+      },
+      {
+        "width": 240,
+        "height": 520,
+        "deepTreeAndSearch": true,
+        "passed": true
+      }
+    ]
+  },
+  "productionBuild": "passed",
+  "allFiveModelsUnchanged": true,
+  "descriptionsGraphAndDsaDataUnchanged": true
+}

@@ -1,0 +1,32 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> inr-anatomy-atlas@0.9.110 repair:test
+> python3 -m unittest discover -s tests/repair -v
+
+test_clip_cleans_float32_collapsed_intersections (test_regional.RegionalAuthoringTests.test_clip_cleans_float32_collapsed_intersections) ... ok
+test_unequal_native_rim_loft_is_oriented (test_regional.RegionalAuthoringTests.test_unequal_native_rim_loft_is_oriented) ... ok
+test_zero_area_native_rim_rejected (test_regional.RegionalAuthoringTests.test_zero_area_native_rim_rejected) ... ok
+test_accepted_reuse_copies_files_and_detects_tampering (test_repair.CacheAndLedgerTests.test_accepted_reuse_copies_files_and_detects_tampering) ... ok
+test_content_invalidation_retains_unchanged_mesh_bvh (test_repair.CacheAndLedgerTests.test_content_invalidation_retains_unchanged_mesh_bvh) ... ok
+test_rejected_trial_is_recorded_and_not_repeated (test_repair.CacheAndLedgerTests.test_rejected_trial_is_recorded_and_not_repeated) ... ok
+test_a5_near_parallel_shared_vertex_regression (test_repair.GeometryTests.test_a5_near_parallel_shared_vertex_regression) ... ok
+test_bvh_matches_bruteforce_after_disk_roundtrip (test_repair.GeometryTests.test_bvh_matches_bruteforce_after_disk_roundtrip) ... ok
+test_enclosed_patch_detects_tissue_without_surface_crossing (test_repair.GeometryTests.test_enclosed_patch_detects_tissue_without_surface_crossing) ... ok
+test_exact_parallel_gap_and_shared_edge_contacts (test_repair.GeometryTests.test_exact_parallel_gap_and_shared_edge_contacts) ... ok
+test_gap_closes_without_moving_source (test_repair.GeometryTests.test_gap_closes_without_moving_source) ... ok
+test_intersecting_obstacle_rejects_patch (test_repair.GeometryTests.test_intersecting_obstacle_rejects_patch) ... ok
+test_near_parallel_true_crossings_are_not_relaxed (test_repair.GeometryTests.test_near_parallel_true_crossings_are_not_relaxed) ... ok
+test_nearest_distance_has_analytic_face_edge_and_vertex_answers (test_repair.GeometryTests.test_nearest_distance_has_analytic_face_edge_and_vertex_answers) ... ok
+test_parallel_disjoint_and_tangent (test_repair.GeometryTests.test_parallel_disjoint_and_tangent) ... ok
+test_shared_edge_allowed_but_coplanar_fold_rejected (test_repair.GeometryTests.test_shared_edge_allowed_but_coplanar_fold_rejected) ... ok
+test_shared_vertex_does_not_hide_overlap (test_repair.GeometryTests.test_shared_vertex_does_not_hide_overlap) ... ok
+test_single_label_opening_is_preserved (test_repair.GeometryTests.test_single_label_opening_is_preserved) ... ok
+test_snap_closes_explicit_rims (test_repair.GeometryTests.test_snap_closes_explicit_rims) ... ok
+test_snap_protects_other_label_attachment (test_repair.GeometryTests.test_snap_protects_other_label_attachment) ... ok
+test_snap_refuses_large_registration_change (test_repair.GeometryTests.test_snap_refuses_large_registration_change) ... ok
+test_transverse_crossing (test_repair.GeometryTests.test_transverse_crossing) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.181s
+
+OK

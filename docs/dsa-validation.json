@@ -1,5 +1,5 @@
 {
-  "release": "0.9.80",
+  "release": "0.9.82",
   "numerical": {
     "bookmarkOrigins": [
       {
@@ -390,5 +390,21 @@
     "byteIdentical": true,
     "firstIcaPreparationMs": 1565.7999999998137,
     "partialInjectionAndRepeatedCut": true
+  },
+  "compactLayout": {
+    "report": "dsa-layout-validation.json",
+    "widths": [
+      1280,
+      390,
+      320
+    ],
+    "passed": true
+  },
+  "selectorReuse": {
+    "report": "dsa-selector-validation.json",
+    "noDsaSetupOnEntry": true,
+    "existingSceneAndBatches": true,
+    "deferredCourseAndSectionPreparation": true,
+    "passed": true
   }
 }

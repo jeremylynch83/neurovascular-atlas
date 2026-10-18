@@ -1,0 +1,560 @@
+{
+  "release": "0.9.114",
+  "baseline": "0.9.113",
+  "batch": 22,
+  "scope": "Repair-validation predicate and implementation-aware exclusion reuse. No model geometry changes.",
+  "acceptedCodeFixes": [
+    "Exact confirmation of potential positive triangle contacts and uncertainty cases.",
+    "Remove tolerance-thickened plane vertices from floating-point cuts.",
+    "Handle degenerate triangles without invalid normal division.",
+    "Invalidate deferred exclusions when validation code changes or implementation hashes were never recorded."
+  ],
+  "acceptedGeometryRepairs": 0,
+  "anatomicalAcceptance": false,
+  "sourceAssets": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+  },
+  "predicateSha256Before": "4f8114ab2bf86af03b682dde533db2231396d9ddad3bdcc41fcf03fe57bf5759",
+  "predicateSha256After": "aeb84ad57db409847d4061a8a4380cdbb50735587fc3cc71a190cd09e9404f41",
+  "petrosalSelfContactReview": [
+    {
+      "node": "vein.inferior_petrosal.left",
+      "trianglePairsChecked": 37856,
+      "previousReportedPairs": 17,
+      "exactReportedPairs": 12,
+      "falsePositiveReportsRemoved": 5,
+      "allKnownExactCrossingsRetained": true,
+      "geometryChanged": false
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "trianglePairsChecked": 38750,
+      "previousReportedPairs": 16,
+      "exactReportedPairs": 10,
+      "falsePositiveReportsRemoved": 6,
+      "allKnownExactCrossingsRetained": true,
+      "geometryChanged": false
+    }
+  ],
+  "falsePositiveReportsRemoved": 12,
+  "genuineFixtureCrossingsRetained": 22,
+  "regressionFixtureCases": 34,
+  "wholePetrosalCandidatePairsChecked": 76606,
+  "scaGapRecheck": {
+    "boundaryTriangulations": 132,
+    "trianglePairsChecked": 687,
+    "passingCandidates": 0,
+    "status": "still-deferred"
+  },
+  "reusableExclusionCases": 14,
+  "legacySurfaceSearchCasesRequiringReview": 11,
+  "runtimeSourceChanged": false,
+  "limitations": [
+    "Twelve erroneous reports are corrected; no anatomical geometry is repaired.",
+    "Twenty-two exact petrosal contact pairs remain. Older non-adjacent-only counts use a different definition.",
+    "The modified predicate is an authoring validation tool, not runtime anatomy or lumen certification.",
+    "Only the recorded cases in the new source-and-implementation guard are reusable.",
+    "The single-pass fixture timings are recorded as diagnostics, not a whole-atlas speed claim."
+  ],
+  "petrosalFalsePositiveReportsRemoved": 11,
+  "a5FalsePositiveReportsRemoved": 1,
+  "leftA5RetainedContactReclassification": {
+    "node": "ACA A5 left",
+    "faces": [
+      1156,
+      1222
+    ],
+    "exactCrossing": false,
+    "predicateCrossing": false,
+    "previousReportedPairs": 1,
+    "currentExactPairs": 0,
+    "geometryChanged": false,
+    "residualCorpusCallosumDepthMm": 0.19455230236053467
+  },
+  "retention": {
+    "modelFilesByteExact": 5,
+    "namedMeshesUnchanged": 1250,
+    "runtimeSourceFilesByteExact": 21,
+    "catalogueStructuresExact": 1666,
+    "relationshipsExact": true,
+    "allDsaSurfaceRecipesAndFlowDataExact": true,
+    "originalUnresolvedILTInterfaceRetained": true,
+    "issueRegisterCopiesExact": true,
+    "priorGeometryRepairsRetained": true
+  },
+  "fixtureVerification": {
+    "passed": true,
+    "fixtureCases": 34,
+    "genuineCrossingsRetained": 22,
+    "falseReportsRejected": 12,
+    "results": [
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          4937,
+          5360
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          4937,
+          5359
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          4937,
+          5310
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          4937,
+          5309
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5157,
+          5361
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5157,
+          5362
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5190,
+          5449
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5191,
+          5296
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5191,
+          5449
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5248,
+          5411
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5268,
+          5429
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5272,
+          5425
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5273,
+          5425
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5273,
+          5426
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5290,
+          5429
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5362,
+          5364
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "faces": [
+          5445,
+          5447
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4553,
+          4555
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4744,
+          4746
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4746,
+          5607
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4757,
+          5644
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4757,
+          5645
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4757,
+          5548
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4759,
+          5645
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4822,
+          5661
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          4822,
+          5660
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5547,
+          5645
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5562,
+          5563
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5562,
+          5695
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5562,
+          5696
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5564,
+          5704
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5564,
+          5705
+        ],
+        "expected": true,
+        "exact": true,
+        "actual": true,
+        "passed": true
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "faces": [
+          5704,
+          5706
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "node": "ACA A5 left",
+        "faces": [
+          1156,
+          1222
+        ],
+        "expected": false,
+        "exact": false,
+        "actual": false,
+        "passed": true
+      }
+    ]
+  },
+  "guardVerification": {
+    "passed": true,
+    "guardCases": [
+      {
+        "case": "current-source-and-implementation",
+        "exitCode": 0,
+        "result": {
+          "status": "baseline-unchanged-reuse-recorded-exclusions",
+          "sourceAssetsChecked": 5,
+          "implementationFilesChecked": 4,
+          "reviewedCases": 14,
+          "changedAssets": [],
+          "appliesOnlyToRecordedSearchScopes": true,
+          "allCasesRemainOpen": true,
+          "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+        }
+      },
+      {
+        "case": "legacy-geometry-only-registry",
+        "exitCode": 2,
+        "result": {
+          "status": "baseline-changed-review-required",
+          "sourceAssetsChecked": 5,
+          "implementationFilesChecked": 0,
+          "reviewedCases": 25,
+          "changedAssets": [
+            {
+              "asset": "review-implementation",
+              "reason": "implementation-hashes-not-recorded"
+            }
+          ],
+          "appliesOnlyToRecordedSearchScopes": true,
+          "allCasesRemainOpen": true,
+          "policy": "Reuse these exclusions only while all five source asset hashes match. Changed source geometry invalidates the shortcut. Other repair methods and other regions are outside this review."
+        }
+      },
+      {
+        "case": "implementation-only-mismatch",
+        "exitCode": 2,
+        "result": {
+          "status": "baseline-changed-review-required",
+          "sourceAssetsChecked": 5,
+          "implementationFilesChecked": 4,
+          "reviewedCases": 14,
+          "changedAssets": [
+            {
+              "asset": "tools/repair/geometry.py",
+              "reason": "implementation-bytes-changed"
+            }
+          ],
+          "appliesOnlyToRecordedSearchScopes": true,
+          "allCasesRemainOpen": true,
+          "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+        }
+      }
+    ],
+    "authoringTrialToolHashBefore": "4e94659103c782cc157a2e8cfc46028e48c376f8670b14f3f77100aed72ec979",
+    "authoringTrialToolHashAfter": "1011db6aa52c74a0b9568ae8a7042d9d15bbae08fcfea86943af5d395d9133d3",
+    "existingAuthoringTrialCacheAutomaticallyInvalidated": true
+  },
+  "diagnosticTimings": [
+    {
+      "version": "before",
+      "fixtureCases": 33,
+      "trueReports": 33,
+      "falsePositiveReports": 11,
+      "missedKnownCrossings": 0,
+      "elapsedSecondsSinglePass": 0.006349397997837514
+    },
+    {
+      "version": "after",
+      "fixtureCases": 33,
+      "trueReports": 22,
+      "falsePositiveReports": 0,
+      "missedKnownCrossings": 0,
+      "elapsedSecondsSinglePass": 0.011612076999881538
+    }
+  ],
+  "verification": {
+    "build": "passed",
+    "repairTests": 30,
+    "clearanceTests": 3,
+    "dsa": "passed",
+    "closedOrientedProxies": 828,
+    "proxyTriangles": 8971510,
+    "selectableArterialCourses": 579,
+    "closedSections": 2353,
+    "fullAtlasRenderPerformed": false
+  }
+}

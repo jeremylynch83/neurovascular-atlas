@@ -1,0 +1,176 @@
+{
+  "release": "0.9.115",
+  "report": "docs/validation/petrosal-wall-v0.9.115.json",
+  "changedMeshes": [
+    "vein.inferior_petrosal.left"
+  ],
+  "changedVertices": 3,
+  "changedFaces": 21,
+  "maximumDisplacementMm": 5.3947966093944364e-06,
+  "exactSelfPairsBefore": 12,
+  "exactSelfPairsAfter": 3,
+  "exactSelfPairsRemoved": 9,
+  "remainingPairTrianglePositionsExact": true,
+  "nativeInterfacesFixed": 3,
+  "nativeSharedCoordinatesFixed": 119,
+  "nativeBoundaryEdgesFixed": 203,
+  "allSourceFaceIndicesExact": true,
+  "allOriginalStoredNormalComponentsExact": true,
+  "newNonNeuralCrossings": 0,
+  "newSampledTissueEntry": 0,
+  "anatomicalAcceptance": false,
+  "scope": "Remove nine microscopic exact left inferior petrosal self-contact pairs by correcting three Float32 positions, with native junctions and source indices fixed. Three left self-contact pairs, the ten right pairs, bone fit and full receiving lumens remain open.",
+  "retention": {
+    "namedMeshesRetained": 1250,
+    "namedMeshesUnchanged": 1249,
+    "otherModelFilesByteExact": 4,
+    "runtimeSourceFilesByteExact": 21,
+    "catalogueStructuresRetained": 1666,
+    "catalogueGraphAndAssetBindingsExact": true,
+    "allSourceFaceIndicesAndStoredNormalComponentsExact": true,
+    "nativeInterfacesFixed": 3,
+    "nativeSharedCoordinatesFixed": 119,
+    "nativeBoundaryEdgesFixed": 203,
+    "otherDsaRecipesExact": 827,
+    "all597FlowCoursesEdgesAndVeinSitesExact": true,
+    "originalUnresolvedILTInterfaceRetained": true,
+    "issueRegisterCopiesExact": true,
+    "priorGeometryRepairsRetained": true
+  },
+  "shape": {
+    "sourceComponents": 1,
+    "candidateComponents": 1,
+    "minimumFaceAreaRatio": 0.9983468164125174,
+    "maximumFaceAreaRatio": 18.782953120955646,
+    "sourceProxyVolumeMm3": 159.46554024221814,
+    "candidateProxyVolumeMm3": 159.4655410101577,
+    "proxyVolumeRelativeChange": 4.8157084756918365e-09,
+    "sourceAndCandidateZeroAreaFaces": 0,
+    "allFaceOrientationsRetained": true,
+    "maximumDisplacementMm": 5.3947966093944364e-06,
+    "maximumAreaRatioFace": 5311,
+    "maximumRatioSourceAreaMm2": 3.070519307314913e-09,
+    "maximumRatioCandidateAreaMm2": 5.767342020628522e-08,
+    "maximumAbsoluteFaceAreaChangeMm2": 5.187883812429739e-06
+  },
+  "selfValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "vein.inferior_petrosal.left",
+        "candidateFacesChecked": 5451,
+        "trianglePairsChecked": 37856,
+        "sourceExactPairs": 12,
+        "candidateExactPairs": 3,
+        "removedExactPairs": 9,
+        "remainingPairs": [
+          [
+            5272,
+            5425
+          ],
+          [
+            5273,
+            5425
+          ],
+          [
+            5273,
+            5426
+          ]
+        ],
+        "remainingContactTrianglesByteExact": true,
+        "newSelfContacts": 0,
+        "passed": true
+      }
+    ]
+  },
+  "crossingValidation": {
+    "passedNoNewNonNeuralCrossings": true,
+    "trianglePairsChecked": 545,
+    "crossings": [],
+    "closedTargetContactsForPairedDepthGate": [],
+    "inheritedSourceCrossings": []
+  },
+  "depthValidation": {
+    "release": "0.9.115",
+    "passed": true,
+    "changes": [
+      {
+        "release": "0.9.115",
+        "passed": true,
+        "node": "vein.inferior_petrosal.left",
+        "changedFaces": 21,
+        "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+        "coreSourceY": [
+          -66,
+          -61
+        ],
+        "targets": [
+          {
+            "target": "brain.pons.left",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 4.419811677465869,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.occipital",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 147,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "bone.temporal.left",
+            "method": "adaptive-open-target-empty-ball-separation",
+            "coarseMinimumClearanceMarginMm": -1.6201157753367883,
+            "absoluteInsideCertified": false,
+            "passed": true,
+            "sourceTriangles": 21,
+            "evaluatedBalls": 545,
+            "certifiedLeafTriangles": 414,
+            "maximumSubdivisionDepth": 5,
+            "unresolvedLeafTriangles": 0,
+            "minimumCertifiedClearanceMarginMm": 0.00018502769610657943,
+            "minimumUnresolvedMarginMm": null,
+            "sourceTriangleAreaMm2": 1.6848157868335416,
+            "certifiedAreaMm2": 1.684815786833542,
+            "areaCoverageChecked": true,
+            "clearanceThresholdMm": 1e-05,
+            "maximumPermittedSubdivisionDepth": 10
+          }
+        ],
+        "issues": [],
+        "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Regional petrosal anatomy and full receiving lumens remain unresolved."
+      }
+    ]
+  },
+  "verification": {
+    "build": "passed",
+    "repairTests": 30,
+    "clearanceTests": 3,
+    "dsa": "passed",
+    "closedOrientedProxies": 828,
+    "proxyTriangles": 8971510,
+    "selectableArterialCourses": 579,
+    "closedSections": 2353,
+    "fullAtlasRenderPerformed": false
+  },
+  "remaining": {
+    "leftExactPetrosalPairs": 3,
+    "rightExactPetrosalPairs": 10,
+    "regionalAnatomicalFit": "open",
+    "fullReceivingLumens": "open",
+    "arterialZeroAreaFaces": 7,
+    "unresolvedOriginalILTInterfaces": 1
+  }
+}

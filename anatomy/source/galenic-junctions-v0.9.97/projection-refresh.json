@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "changes": [
+    {
+      "node": "vein.confluence",
+      "id": "vein.confluence",
+      "vertices": 231,
+      "faces": 458,
+      "capLoops": 2,
+      "volumeMm3": 6.966487137262372,
+      "closedAndOriented": true
+    },
+    {
+      "node": "vein.galen",
+      "id": "vein.galen",
+      "vertices": 853,
+      "faces": 1712,
+      "capLoops": 9,
+      "volumeMm3": 302.6064520669934,
+      "closedAndOriented": true
+    },
+    {
+      "node": "vein.inferior_vermian.left",
+      "id": "vein.inferior_vermian.left",
+      "vertices": 9987,
+      "faces": 19974,
+      "capLoops": 5,
+      "volumeMm3": 104.61516571779066,
+      "closedAndOriented": true
+    }
+  ]
+}

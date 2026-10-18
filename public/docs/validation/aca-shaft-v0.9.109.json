@@ -1,0 +1,567 @@
+{
+  "release": "0.9.109",
+  "baseline": "0.9.108",
+  "batch": 17,
+  "anatomicalAcceptance": false,
+  "scope": "Bounded bilateral A5 inter-junction shaft cortical fits. All native ports and all other meshes remain fixed. Residual transition, proximal, distal and wider ACA/cortical registration remain open.",
+  "changedMeshes": 2,
+  "changes": [
+    {
+      "node": "ACA A5 left",
+      "sourceVertices": 4473,
+      "sourceTriangles": 8424,
+      "changedVertices": 1037,
+      "changedFaces": 2140,
+      "maximumDisplacementMm": 2.2360680103302,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 524,
+      "sourceBadEdges": 0,
+      "candidateBoundaryEdges": 524,
+      "candidateBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A4 left",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA falcine branch left",
+          "sharedCoordinates": 101,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Inferior internal parietal left",
+          "sharedCoordinates": 142,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Long callosal branch left",
+          "sharedCoordinates": 71,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Precuneal left",
+          "sharedCoordinates": 146,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": true
+    },
+    {
+      "node": "ACA A5 right",
+      "sourceVertices": 4311,
+      "sourceTriangles": 8172,
+      "changedVertices": 1032,
+      "changedFaces": 2130,
+      "maximumDisplacementMm": 2.2360680103302,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 456,
+      "sourceBadEdges": 0,
+      "candidateBoundaryEdges": 456,
+      "candidateBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A4 right",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA falcine branch right",
+          "sharedCoordinates": 32,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Inferior internal parietal right",
+          "sharedCoordinates": 140,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Long callosal branch right",
+          "sharedCoordinates": 72,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Precuneal right",
+          "sharedCoordinates": 148,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": true
+    }
+  ],
+  "changedVertices": 2069,
+  "changedFaces": 4270,
+  "addedOrRemovedVertices": 0,
+  "addedOrRemovedTriangles": 0,
+  "nativeInterfacesFixed": 10,
+  "sharedCoordinatesFixed": 980,
+  "allOriginalFaceIndicesExact": true,
+  "reconstruction": {
+    "release": "0.9.109",
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A5 left",
+        "sourceVertices": 4473,
+        "sourceTriangles": 8424,
+        "changedVertices": 1037,
+        "changedFaces": 2140,
+        "maximumDisplacementMm": 2.2360680103302,
+        "sourceNormalOppositeFaces": 0,
+        "analyticalJacobianDeterminant": 1,
+        "indicesByteExact": true,
+        "allSourceCoordinatesWeldPartitionsRetained": true,
+        "allBoundaryVerticesFixed": true,
+        "sourceBoundaryEdges": 524,
+        "sourceBadEdges": 0,
+        "candidateBoundaryEdges": 524,
+        "candidateBadEdges": 0,
+        "newCoordinateWelds": 0,
+        "reviewedArterialMeshesForWelds": 766,
+        "attachments": [
+          {
+            "other": "ACA A4 left",
+            "sharedCoordinates": 64,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "ACA falcine branch left",
+            "sharedCoordinates": 101,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Inferior internal parietal left",
+            "sharedCoordinates": 142,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Long callosal branch left",
+            "sharedCoordinates": 71,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Precuneal left",
+            "sharedCoordinates": 146,
+            "allPositionsFixed": true
+          }
+        ],
+        "replayedBuffersByteExact": true
+      },
+      {
+        "node": "ACA A5 right",
+        "sourceVertices": 4311,
+        "sourceTriangles": 8172,
+        "changedVertices": 1032,
+        "changedFaces": 2130,
+        "maximumDisplacementMm": 2.2360680103302,
+        "sourceNormalOppositeFaces": 0,
+        "analyticalJacobianDeterminant": 1,
+        "indicesByteExact": true,
+        "allSourceCoordinatesWeldPartitionsRetained": true,
+        "allBoundaryVerticesFixed": true,
+        "sourceBoundaryEdges": 456,
+        "sourceBadEdges": 0,
+        "candidateBoundaryEdges": 456,
+        "candidateBadEdges": 0,
+        "newCoordinateWelds": 0,
+        "reviewedArterialMeshesForWelds": 766,
+        "attachments": [
+          {
+            "other": "ACA A4 right",
+            "sharedCoordinates": 64,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "ACA falcine branch right",
+            "sharedCoordinates": 32,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Inferior internal parietal right",
+            "sharedCoordinates": 140,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Long callosal branch right",
+            "sharedCoordinates": 72,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Precuneal right",
+            "sharedCoordinates": 148,
+            "allPositionsFixed": true
+          }
+        ],
+        "replayedBuffersByteExact": true
+      }
+    ],
+    "allFinalArterialCoordinateWeldsChecked": true
+  },
+  "crossingValidation": {
+    "trianglePairsChecked": 71934,
+    "newNonNeuralCrossings": 0,
+    "inheritedNonNeuralCrossings": 0,
+    "knownClosedCorticalContacts": 119
+  },
+  "depthValidation": {
+    "release": "0.9.109",
+    "passed": true,
+    "changes": [
+      {
+        "release": "0.9.109",
+        "passed": true,
+        "node": "ACA A5 left",
+        "changedFaces": 2140,
+        "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+        "coreSourceY": [
+          -76,
+          -73
+        ],
+        "targets": [
+          {
+            "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14980,
+            "insideBefore": 2766,
+            "insideAfter": 1008,
+            "maximumDepthBeforeMm": 0.7313816547393799,
+            "maximumDepthAfterMm": 0.7313816547393799,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 276,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.2441703826189041,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14980,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.corpus-callosum",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14980,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.superior-frontal-gyrus.left",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 8.561365192068989,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.occipital",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14980,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "bone.parietal.left",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 42.432205264700826,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.parietal.right",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 42.734992657566515,
+            "passed": true,
+            "absoluteInsideCertified": false
+          }
+        ],
+        "issues": [],
+        "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Existing residual cortical embedding remains unresolved."
+      },
+      {
+        "release": "0.9.109",
+        "passed": true,
+        "node": "ACA A5 right",
+        "changedFaces": 2130,
+        "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+        "coreSourceY": [
+          -76,
+          -73
+        ],
+        "targets": [
+          {
+            "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14910,
+            "insideBefore": 3595,
+            "insideAfter": 1260,
+            "maximumDepthBeforeMm": 0.9578891396522522,
+            "maximumDepthAfterMm": 0.9578891396522522,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 574,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.4050835967063904,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14910,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.corpus-callosum",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14910,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.falx-cerebri",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14910,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.superior-frontal-gyrus.right",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 8.260565866850786,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.occipital",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 14910,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "bone.parietal.left",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 42.01643434952555,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.parietal.right",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 42.17902289810078,
+            "passed": true,
+            "absoluteInsideCertified": false
+          }
+        ],
+        "issues": [],
+        "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Existing residual cortical embedding remains unresolved."
+      }
+    ]
+  },
+  "shapeMeasures": [
+    {
+      "node": "ACA A5 left",
+      "sourceAreaRatioMin": 0.9395090944252076,
+      "sourceAreaRatioMax": 1.8446228788105676,
+      "proxyVolumeBeforeMm3": 19.9267355547052,
+      "proxyVolumeAfterMm3": 19.9267989567475,
+      "proxyVolumeRelativeChangePercent": 0.0003181757600279056
+    },
+    {
+      "node": "ACA A5 right",
+      "sourceAreaRatioMin": 0.9214706037120617,
+      "sourceAreaRatioMax": 1.877528492720325,
+      "proxyVolumeBeforeMm3": 19.664384477778878,
+      "proxyVolumeAfterMm3": 19.664301831148247,
+      "proxyVolumeRelativeChangePercent": -0.00042028587634579395
+    }
+  ],
+  "exportValidation": {
+    "release": "0.9.109",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 597,
+    "otherAssetsByteExact": 4,
+    "candidateBuffersExact": true,
+    "allSourceFaceIndicesExact": true,
+    "retainedSourceCornerNormalsExact": true
+  },
+  "projectionValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A5 left",
+        "id": "artery.anterior.aca_pericallosal_left.segment.a5",
+        "volumeMm3": 19.9267989567475,
+        "allSourceFaceIndicesRetained": true,
+        "sanitisedFlipsAndRemovalsExact": true,
+        "capVerticesAndConnectivityExact": true,
+        "closedAndOriented": true
+      },
+      {
+        "node": "ACA A5 right",
+        "id": "artery.anterior.aca_pericallosal_right.segment.a5",
+        "volumeMm3": 19.664301831148247,
+        "allSourceFaceIndicesRetained": true,
+        "sanitisedFlipsAndRemovalsExact": true,
+        "capVerticesAndConnectivityExact": true,
+        "closedAndOriented": true
+      }
+    ],
+    "otherRecipesExact": 826
+  },
+  "flowValidation": {
+    "passed": true,
+    "unchangedCoursesReused": 595,
+    "selectedCourseStatusRetained": true,
+    "graphAndVeinSitesUnchanged": true,
+    "directedConnectionsUnchanged": true,
+    "unaffectedEdgeDistancesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.anterior.aca_pericallosal_right.segment.a5",
+      "artery.anterior.aca_pericallosal_left.segment.a5"
+    ]
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1248,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true,
+    "selectedLabelTopology": [
+      {
+        "node": "ACA A5 left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "ACA A5 right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      }
+    ]
+  },
+  "previousBilateralA4FitsAndFalcineRootsRetainedByteExact": true,
+  "metadataValidation": {
+    "issueRegisterCopiesByteExact": true,
+    "originalUnresolvedILTInterfaceRetained": true
+  },
+  "finalUnselectedRecipesExact": 826,
+  "finalUnselectedCoursesExact": 595,
+  "remainingZeroAreaFaces": 7,
+  "remainingPicaVermianCrossing": true,
+  "verification": {
+    "fullBuild": "passed",
+    "repairTests": 22,
+    "dsa": "passed",
+    "closedOrientedProxies": 828,
+    "proxyTriangles": 8971510,
+    "selectableArterialCourses": 579,
+    "closedSections": 2353,
+    "fullAtlasRenderPerformed": false
+  },
+  "evidence": "anatomy/source/aca-shaft-v0.9.109",
+  "limitations": [
+    "No sampled embedding in the predefined plateaus is not proof of continuous clearance.",
+    "Worst sampled residual depth in the changed regions remains 0.731382 mm left and 0.957889 mm right. Proximal and distal native-course embedding remains.",
+    "Bilateral A2, wider ACA/callosal/cortical registration, full receiving lumens, other regional findings and ILT remain open.",
+    "No new independent anatomical imaging or target segmentation was introduced."
+  ]
+}

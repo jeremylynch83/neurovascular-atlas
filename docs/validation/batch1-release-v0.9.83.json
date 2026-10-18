@@ -1,0 +1,37 @@
+{
+  "release": "0.9.83",
+  "checks": [
+    "28 app source, model and DSA data files byte-identical to v0.9.82",
+    "Anatomy IDs, parents, hierarchy, asset bindings and relationship graph unchanged",
+    "G01/G03/G04 warnings preserved",
+    "Falcine description links all resolve, including the retained left MMA legacy ID",
+    "G05 covers all eight A2\u2013A5 segments; anatomical acceptance remains incomplete",
+    "12 current crossing results and exact input asset hashes verified",
+    "Source/public issue registers match; deferred regional segments and unresolved falcine interfaces retained",
+    "Built public manifest includes the v0.9.83 review"
+  ],
+  "passed": true,
+  "scope": "Metadata and model integrity, not anatomical acceptance",
+  "productionBuildPassed": true,
+  "dsaValidation": {
+    "closedOrientedProxyMeshes": 828,
+    "proxyTriangles": 8966428,
+    "selectableArterialCourses": 578,
+    "closedSections": 2352,
+    "passed": true
+  },
+  "browser": {
+    "release": "0.9.83",
+    "errors": [],
+    "checks": [
+      "Updated falcine explanation renders and its pericallosal information link selects the correct structure",
+      "Retained legacy left MMA information link works in the inspection panel",
+      "Fresh DSA entry still opens the ordinary selector without DSA data or worker requests",
+      "Built release, review documents, measurements and images served successfully"
+    ],
+    "passed": true
+  },
+  "publicAssetReadPermissionsFixed": [
+    "public/anatomy/models/venous.glb"
+  ]
+}

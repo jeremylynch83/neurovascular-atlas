@@ -1,0 +1,6149 @@
+{
+  "scope": "All 766 named arterial meshes, exact per-label boundary cancellation; candidate-edge incidence checked separately.",
+  "reviewedMeshes": 766,
+  "largeComponentsExcluded": 110,
+  "perLabel": [
+    {
+      "node": "ACA A1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9348,
+      "triangles": 18143,
+      "boundaryEdges": 557,
+      "badEdges": 1
+    },
+    {
+      "node": "ACA A1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8862,
+      "triangles": 17166,
+      "boundaryEdges": 560,
+      "badEdges": 1
+    },
+    {
+      "node": "ACA A2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3948,
+      "triangles": 7393,
+      "boundaryEdges": 509,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA A2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3945,
+      "triangles": 7389,
+      "boundaryEdges": 507,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA A3 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2332,
+      "triangles": 4397,
+      "boundaryEdges": 269,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA A3 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2320,
+      "triangles": 4372,
+      "boundaryEdges": 270,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA A4 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4382,
+      "triangles": 8445,
+      "boundaryEdges": 323,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA A4 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4348,
+      "triangles": 8376,
+      "boundaryEdges": 324,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA A5 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4473,
+      "triangles": 8426,
+      "boundaryEdges": 526,
+      "badEdges": 2
+    },
+    {
+      "node": "ACA A5 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4311,
+      "triangles": 8172,
+      "boundaryEdges": 456,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA falcine branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4914,
+      "triangles": 9592,
+      "boundaryEdges": 240,
+      "badEdges": 1
+    },
+    {
+      "node": "ACA falcine branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4516,
+      "triangles": 8866,
+      "boundaryEdges": 168,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA falcine\u2013MMA falcine left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 12430,
+      "triangles": 24635,
+      "boundaryEdges": 229,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA falcine\u2013MMA falcine right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 12601,
+      "triangles": 24980,
+      "boundaryEdges": 226,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA frontopolar left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5017,
+      "triangles": 9918,
+      "boundaryEdges": 114,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA frontopolar right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5054,
+      "triangles": 9992,
+      "boundaryEdges": 114,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA orbitofrontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3460,
+      "triangles": 6815,
+      "boundaryEdges": 103,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA orbitofrontal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3484,
+      "triangles": 6867,
+      "boundaryEdges": 99,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA\u2013MCA frontal border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1154,
+      "triangles": 2304,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA\u2013MCA frontal border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1138,
+      "triangles": 2272,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA\u2013MCA parietal border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 866,
+      "triangles": 1728,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "ACA\u2013MCA parietal border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 770,
+      "triangles": 1536,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "AChA capsular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1660,
+      "triangles": 3228,
+      "boundaryEdges": 87,
+      "badEdges": 3
+    },
+    {
+      "node": "AChA capsular branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1609,
+      "triangles": 3128,
+      "boundaryEdges": 88,
+      "badEdges": 2
+    },
+    {
+      "node": "AChA optic tract branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 671,
+      "triangles": 1260,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "AChA optic tract branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 585,
+      "triangles": 1088,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "AChA peduncular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 705,
+      "triangles": 1318,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "AChA peduncular branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 709,
+      "triangles": 1324,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "AChA temporal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1143,
+      "triangles": 2194,
+      "boundaryEdges": 90,
+      "badEdges": 1
+    },
+    {
+      "node": "AChA temporal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1147,
+      "triangles": 2198,
+      "boundaryEdges": 94,
+      "badEdges": 0
+    },
+    {
+      "node": "ACom chiasmatic perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 817,
+      "triangles": 1532,
+      "boundaryEdges": 98,
+      "badEdges": 2
+    },
+    {
+      "node": "ACom chiasmatic perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 772,
+      "triangles": 1463,
+      "boundaryEdges": 79,
+      "badEdges": 0
+    },
+    {
+      "node": "ACom hypothalamic perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 992,
+      "triangles": 1903,
+      "boundaryEdges": 79,
+      "badEdges": 4
+    },
+    {
+      "node": "ACom hypothalamic perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 942,
+      "triangles": 1796,
+      "boundaryEdges": 86,
+      "badEdges": 4
+    },
+    {
+      "node": "ACom septal perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1224,
+      "triangles": 2375,
+      "boundaryEdges": 71,
+      "badEdges": 0
+    },
+    {
+      "node": "ACom septal perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1200,
+      "triangles": 2327,
+      "boundaryEdges": 70,
+      "badEdges": 1
+    },
+    {
+      "node": "AICA caudal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8559,
+      "triangles": 16941,
+      "boundaryEdges": 175,
+      "badEdges": 0
+    },
+    {
+      "node": "AICA caudal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9106,
+      "triangles": 17847,
+      "boundaryEdges": 382,
+      "badEdges": 4
+    },
+    {
+      "node": "AICA fourth ventricular choroidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15498,
+      "triangles": 30795,
+      "boundaryEdges": 199,
+      "badEdges": 1
+    },
+    {
+      "node": "AICA fourth ventricular choroidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15983,
+      "triangles": 31774,
+      "boundaryEdges": 190,
+      "badEdges": 1
+    },
+    {
+      "node": "AICA left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 24451,
+      "triangles": 48336,
+      "boundaryEdges": 566,
+      "badEdges": 0
+    },
+    {
+      "node": "AICA right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 26481,
+      "triangles": 51983,
+      "boundaryEdges": 965,
+      "badEdges": 0
+    },
+    {
+      "node": "AICA rostral branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7221,
+      "triangles": 14062,
+      "boundaryEdges": 382,
+      "badEdges": 2
+    },
+    {
+      "node": "AICA rostral branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7447,
+      "triangles": 14442,
+      "boundaryEdges": 451,
+      "badEdges": 3
+    },
+    {
+      "node": "AICA subarcuate left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4979,
+      "triangles": 9708,
+      "boundaryEdges": 247,
+      "badEdges": 3
+    },
+    {
+      "node": "AICA subarcuate right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4717,
+      "triangles": 9268,
+      "boundaryEdges": 162,
+      "badEdges": 2
+    },
+    {
+      "node": "AICA\u2013SCA pial border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 290,
+      "triangles": 576,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "AICA\u2013SCA pial border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 226,
+      "triangles": 448,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APA musculospinal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2752,
+      "triangles": 5394,
+      "boundaryEdges": 108,
+      "badEdges": 0
+    },
+    {
+      "node": "APA musculospinal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2752,
+      "triangles": 5394,
+      "boundaryEdges": 108,
+      "badEdges": 0
+    },
+    {
+      "node": "APA musculospinal\u2013VA left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 402,
+      "triangles": 800,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APA musculospinal\u2013VA right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 402,
+      "triangles": 800,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APA prevertebral branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2879,
+      "triangles": 5662,
+      "boundaryEdges": 94,
+      "badEdges": 0
+    },
+    {
+      "node": "APA prevertebral branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2879,
+      "triangles": 5662,
+      "boundaryEdges": 94,
+      "badEdges": 0
+    },
+    {
+      "node": "APA prevertebral\u2013odontoid left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 642,
+      "triangles": 1280,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APA prevertebral\u2013odontoid right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 642,
+      "triangles": 1280,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APA tentorial\u2013SCA dural left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1346,
+      "triangles": 2688,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APA tentorial\u2013SCA dural right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1346,
+      "triangles": 2688,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APhA clival\u2013MHT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 242,
+      "triangles": 480,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APhA clival\u2013MHT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 242,
+      "triangles": 480,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APhA odontoid\u2013vertebral left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1250,
+      "triangles": 2496,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "APhA odontoid\u2013vertebral right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1250,
+      "triangles": 2496,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5526,
+      "triangles": 10615,
+      "boundaryEdges": 439,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal anterior tubal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1728,
+      "triangles": 3352,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal anterior tubal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1774,
+      "triangles": 3446,
+      "boundaryEdges": 100,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5612,
+      "triangles": 10918,
+      "boundaryEdges": 308,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal posterior intracranial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 864,
+      "triangles": 1624,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal posterior intracranial right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 769,
+      "triangles": 1297,
+      "boundaryEdges": 235,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal\u2013ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 242,
+      "triangles": 480,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Accessory meningeal\u2013ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 258,
+      "triangles": 512,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2978,
+      "triangles": 5815,
+      "boundaryEdges": 139,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3579,
+      "triangles": 7032,
+      "boundaryEdges": 124,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3583,
+      "triangles": 7034,
+      "boundaryEdges": 130,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1173,
+      "triangles": 2244,
+      "boundaryEdges": 100,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1192,
+      "triangles": 2280,
+      "boundaryEdges": 102,
+      "badEdges": 1
+    },
+    {
+      "node": "Angular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6707,
+      "triangles": 13016,
+      "boundaryEdges": 400,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6799,
+      "triangles": 13194,
+      "boundaryEdges": 406,
+      "badEdges": 1
+    },
+    {
+      "node": "Angular\u2013dorsal nasal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 210,
+      "triangles": 416,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Angular\u2013dorsal nasal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 210,
+      "triangles": 416,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior choroidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7033,
+      "triangles": 13546,
+      "boundaryEdges": 528,
+      "badEdges": 3
+    },
+    {
+      "node": "Anterior choroidal plexal representative left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2414,
+      "triangles": 4736,
+      "boundaryEdges": 90,
+      "badEdges": 1
+    },
+    {
+      "node": "Anterior choroidal plexal representative right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2415,
+      "triangles": 4736,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior choroidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6891,
+      "triangles": 13256,
+      "boundaryEdges": 534,
+      "badEdges": 2
+    },
+    {
+      "node": "Anterior communicating",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 838,
+      "triangles": 1095,
+      "boundaryEdges": 583,
+      "badEdges": 4
+    },
+    {
+      "node": "Anterior deep temporal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10901,
+      "triangles": 21679,
+      "boundaryEdges": 121,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior deep temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10904,
+      "triangles": 21685,
+      "boundaryEdges": 121,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior ethmoidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2546,
+      "triangles": 4894,
+      "boundaryEdges": 198,
+      "badEdges": 2
+    },
+    {
+      "node": "Anterior ethmoidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2546,
+      "triangles": 4894,
+      "boundaryEdges": 198,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior falcine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3547,
+      "triangles": 7002,
+      "boundaryEdges": 90,
+      "badEdges": 2
+    },
+    {
+      "node": "Anterior falcine right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3547,
+      "triangles": 7002,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior falcine\u2013MMA paramedian left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2258,
+      "triangles": 4512,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior falcine\u2013MMA paramedian right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2274,
+      "triangles": 4544,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior internal frontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4289,
+      "triangles": 8480,
+      "boundaryEdges": 96,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior internal frontal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4387,
+      "triangles": 8674,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior parietal cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3500,
+      "triangles": 6880,
+      "boundaryEdges": 118,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior parietal cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3501,
+      "triangles": 6882,
+      "boundaryEdges": 118,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior parietal distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1385,
+      "triangles": 2680,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior parietal distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1433,
+      "triangles": 2776,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior parietal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7643,
+      "triangles": 14928,
+      "boundaryEdges": 360,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior parietal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7833,
+      "triangles": 15308,
+      "boundaryEdges": 360,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior spinal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 19020,
+      "triangles": 37900,
+      "boundaryEdges": 138,
+      "badEdges": 1
+    },
+    {
+      "node": "Anterior spinal root left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7355,
+      "triangles": 14233,
+      "boundaryEdges": 479,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior spinal root right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5847,
+      "triangles": 10996,
+      "boundaryEdges": 700,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior superior alveolar",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5381,
+      "triangles": 10641,
+      "boundaryEdges": 119,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior superior alveolar left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5381,
+      "triangles": 10641,
+      "boundaryEdges": 119,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5384,
+      "triangles": 10636,
+      "boundaryEdges": 130,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5719,
+      "triangles": 11310,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior thalamoperforating branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1225,
+      "triangles": 2376,
+      "boundaryEdges": 72,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior thalamoperforating branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1225,
+      "triangles": 2376,
+      "boundaryEdges": 72,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior tympanic",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4220,
+      "triangles": 8349,
+      "boundaryEdges": 89,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior tympanic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4312,
+      "triangles": 8533,
+      "boundaryEdges": 89,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior vestibular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 800,
+      "triangles": 1572,
+      "boundaryEdges": 26,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior vestibular right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 857,
+      "triangles": 1680,
+      "boundaryEdges": 32,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior\u2013lateral posterior choroidal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 258,
+      "triangles": 512,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Anterior\u2013lateral posterior choroidal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 274,
+      "triangles": 544,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Artery of foramen rotundum",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4538,
+      "triangles": 8973,
+      "boundaryEdges": 101,
+      "badEdges": 0
+    },
+    {
+      "node": "Artery of foramen rotundum left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4538,
+      "triangles": 8973,
+      "boundaryEdges": 101,
+      "badEdges": 0
+    },
+    {
+      "node": "Artery of superior orbital fissure left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3269,
+      "triangles": 6460,
+      "boundaryEdges": 76,
+      "badEdges": 0
+    },
+    {
+      "node": "Artery of superior orbital fissure right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3273,
+      "triangles": 6463,
+      "boundaryEdges": 79,
+      "badEdges": 0
+    },
+    {
+      "node": "Ascending palatine",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7785,
+      "triangles": 15456,
+      "boundaryEdges": 112,
+      "badEdges": 0
+    },
+    {
+      "node": "Ascending palatine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7785,
+      "triangles": 15456,
+      "boundaryEdges": 112,
+      "badEdges": 0
+    },
+    {
+      "node": "Ascending pharyngeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7858,
+      "triangles": 15224,
+      "boundaryEdges": 496,
+      "badEdges": 0
+    },
+    {
+      "node": "Ascending pharyngeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7858,
+      "triangles": 15224,
+      "boundaryEdges": 496,
+      "badEdges": 0
+    },
+    {
+      "node": "Basal tentorial MHT branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3459,
+      "triangles": 6845,
+      "boundaryEdges": 73,
+      "badEdges": 0
+    },
+    {
+      "node": "Basal tentorial MHT branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3325,
+      "triangles": 6584,
+      "boundaryEdges": 64,
+      "badEdges": 0
+    },
+    {
+      "node": "Basal tentorial\u2013SCA dural left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 994,
+      "triangles": 1984,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Basal tentorial\u2013SCA dural right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 962,
+      "triangles": 1920,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Basilar",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12954,
+      "triangles": 23220,
+      "boundaryEdges": 2722,
+      "badEdges": 0
+    },
+    {
+      "node": "Buccal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7624,
+      "triangles": 15110,
+      "boundaryEdges": 136,
+      "badEdges": 0
+    },
+    {
+      "node": "Buccal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7629,
+      "triangles": 15120,
+      "boundaryEdges": 136,
+      "badEdges": 0
+    },
+    {
+      "node": "Calcarine inferior cortical left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3275,
+      "triangles": 6461,
+      "boundaryEdges": 87,
+      "badEdges": 0
+    },
+    {
+      "node": "Calcarine inferior cortical right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3017,
+      "triangles": 5944,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Calcarine superior cortical left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2801,
+      "triangles": 5496,
+      "boundaryEdges": 104,
+      "badEdges": 0
+    },
+    {
+      "node": "Calcarine superior cortical right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2799,
+      "triangles": 5494,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Callosomarginal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9594,
+      "triangles": 18715,
+      "boundaryEdges": 477,
+      "badEdges": 0
+    },
+    {
+      "node": "Callosomarginal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9625,
+      "triangles": 18775,
+      "boundaryEdges": 479,
+      "badEdges": 0
+    },
+    {
+      "node": "Caroticotympanic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 743,
+      "triangles": 1414,
+      "boundaryEdges": 70,
+      "badEdges": 0
+    },
+    {
+      "node": "Caroticotympanic right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 731,
+      "triangles": 1390,
+      "boundaryEdges": 70,
+      "badEdges": 0
+    },
+    {
+      "node": "Central cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3655,
+      "triangles": 7196,
+      "boundaryEdges": 112,
+      "badEdges": 0
+    },
+    {
+      "node": "Central cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3691,
+      "triangles": 7264,
+      "boundaryEdges": 116,
+      "badEdges": 0
+    },
+    {
+      "node": "Central distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1507,
+      "triangles": 2908,
+      "boundaryEdges": 104,
+      "badEdges": 0
+    },
+    {
+      "node": "Central distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1553,
+      "triangles": 3002,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Central left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6908,
+      "triangles": 13453,
+      "boundaryEdges": 365,
+      "badEdges": 0
+    },
+    {
+      "node": "Central retinal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2013,
+      "triangles": 3932,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Central retinal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2015,
+      "triangles": 3936,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Central right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7070,
+      "triangles": 13772,
+      "boundaryEdges": 370,
+      "badEdges": 0
+    },
+    {
+      "node": "Clival\u2013posterior cavernous MMA left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 562,
+      "triangles": 1120,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Clival\u2013posterior cavernous MMA right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 562,
+      "triangles": 1120,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Common carotid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16880,
+      "triangles": 33686,
+      "boundaryEdges": 72,
+      "badEdges": 0
+    },
+    {
+      "node": "Common carotid right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16904,
+      "triangles": 33731,
+      "boundaryEdges": 75,
+      "badEdges": 0
+    },
+    {
+      "node": "Common cochlear left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 939,
+      "triangles": 1837,
+      "boundaryEdges": 39,
+      "badEdges": 0
+    },
+    {
+      "node": "Common cochlear right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 979,
+      "triangles": 1921,
+      "boundaryEdges": 35,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral inferior labial midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral lateral clival midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1874,
+      "triangles": 3744,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral medial clival midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 722,
+      "triangles": 1440,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral palatal midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 690,
+      "triangles": 1376,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral pharyngeal midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 226,
+      "triangles": 448,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral superior hypophyseal midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 306,
+      "triangles": 608,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Contralateral superior labial midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Cricothyroid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2201,
+      "triangles": 4320,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "Cricothyroid right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2201,
+      "triangles": 4320,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "Davidoff and Schechter artery left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5727,
+      "triangles": 11277,
+      "boundaryEdges": 174,
+      "badEdges": 1
+    },
+    {
+      "node": "Davidoff and Schechter artery right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5752,
+      "triangles": 11319,
+      "boundaryEdges": 185,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep auricular",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3347,
+      "triangles": 6594,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep auricular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3347,
+      "triangles": 6594,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep lingual",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4146,
+      "triangles": 7999,
+      "boundaryEdges": 271,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep lingual left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4146,
+      "triangles": 7999,
+      "boundaryEdges": 271,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep recurrent ophthalmic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1435,
+      "triangles": 2802,
+      "boundaryEdges": 66,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep recurrent ophthalmic right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1363,
+      "triangles": 2658,
+      "boundaryEdges": 66,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep recurrent ophthalmic\u2013ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 434,
+      "triangles": 864,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep recurrent ophthalmic\u2013ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 434,
+      "triangles": 864,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep temporal\u2013lacrimal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1890,
+      "triangles": 3776,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Deep temporal\u2013lacrimal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1890,
+      "triangles": 3776,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Descending palatine",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5530,
+      "triangles": 10743,
+      "boundaryEdges": 317,
+      "badEdges": 0
+    },
+    {
+      "node": "Descending palatine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5530,
+      "triangles": 10743,
+      "boundaryEdges": 317,
+      "badEdges": 0
+    },
+    {
+      "node": "Dorsal lingual",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3544,
+      "triangles": 6959,
+      "boundaryEdges": 127,
+      "badEdges": 0
+    },
+    {
+      "node": "Dorsal lingual left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3544,
+      "triangles": 6959,
+      "boundaryEdges": 127,
+      "badEdges": 0
+    },
+    {
+      "node": "Dorsal meningeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3710,
+      "triangles": 7175,
+      "boundaryEdges": 245,
+      "badEdges": 0
+    },
+    {
+      "node": "Dorsal meningeal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3575,
+      "triangles": 6927,
+      "boundaryEdges": 223,
+      "badEdges": 0
+    },
+    {
+      "node": "Dorsal nasal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1250,
+      "triangles": 2423,
+      "boundaryEdges": 75,
+      "badEdges": 0
+    },
+    {
+      "node": "Dorsal nasal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1246,
+      "triangles": 2415,
+      "boundaryEdges": 75,
+      "badEdges": 0
+    },
+    {
+      "node": "ECA Angular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2978,
+      "triangles": 5815,
+      "boundaryEdges": 139,
+      "badEdges": 0
+    },
+    {
+      "node": "ECA Middle temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4815,
+      "triangles": 9358,
+      "boundaryEdges": 270,
+      "badEdges": 0
+    },
+    {
+      "node": "External carotid",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 32945,
+      "triangles": 64391,
+      "boundaryEdges": 1509,
+      "badEdges": 0
+    },
+    {
+      "node": "External carotid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 33448,
+      "triangles": 65282,
+      "boundaryEdges": 1624,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 27996,
+      "triangles": 54683,
+      "boundaryEdges": 1327,
+      "badEdges": 2
+    },
+    {
+      "node": "Facial buccal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1438,
+      "triangles": 2776,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial buccal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1438,
+      "triangles": 2776,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 27994,
+      "triangles": 54679,
+      "boundaryEdges": 1327,
+      "badEdges": 1
+    },
+    {
+      "node": "Facial masseteric branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2069,
+      "triangles": 4060,
+      "boundaryEdges": 76,
+      "badEdges": 1
+    },
+    {
+      "node": "Facial masseteric branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2069,
+      "triangles": 4060,
+      "boundaryEdges": 76,
+      "badEdges": 2
+    },
+    {
+      "node": "Facial nerve arcade left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 578,
+      "triangles": 1152,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial nerve arcade right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 578,
+      "triangles": 1152,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial submandibular gland branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1167,
+      "triangles": 2258,
+      "boundaryEdges": 74,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial submandibular gland branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1167,
+      "triangles": 2258,
+      "boundaryEdges": 74,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial\u2013maxillary buccal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 210,
+      "triangles": 416,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial\u2013maxillary buccal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 210,
+      "triangles": 416,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial\u2013maxillary masseteric left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 194,
+      "triangles": 384,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Facial\u2013maxillary masseteric right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 194,
+      "triangles": 384,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Falx cerebelli artery left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3603,
+      "triangles": 7106,
+      "boundaryEdges": 98,
+      "badEdges": 4
+    },
+    {
+      "node": "Falx cerebelli artery right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3677,
+      "triangles": 7252,
+      "boundaryEdges": 99,
+      "badEdges": 3
+    },
+    {
+      "node": "Falx cerebelli\u2013VA posterior meningeal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 274,
+      "triangles": 544,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Falx cerebelli\u2013VA posterior meningeal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 274,
+      "triangles": 544,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Foramen rotundum\u2013ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Foramen rotundum\u2013ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Greater palatine",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7639,
+      "triangles": 15050,
+      "boundaryEdges": 226,
+      "badEdges": 0
+    },
+    {
+      "node": "Greater palatine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7664,
+      "triangles": 15100,
+      "boundaryEdges": 226,
+      "badEdges": 0
+    },
+    {
+      "node": "Hypoglossal branch",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4219,
+      "triangles": 7944,
+      "boundaryEdges": 498,
+      "badEdges": 0
+    },
+    {
+      "node": "Hypoglossal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4219,
+      "triangles": 7944,
+      "boundaryEdges": 498,
+      "badEdges": 0
+    },
+    {
+      "node": "Hypoglossal posterior meningeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8949,
+      "triangles": 17723,
+      "boundaryEdges": 175,
+      "badEdges": 3
+    },
+    {
+      "node": "Hypoglossal posterior meningeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8953,
+      "triangles": 17733,
+      "boundaryEdges": 173,
+      "badEdges": 4
+    },
+    {
+      "node": "ICA anterior choroidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 997,
+      "triangles": 1674,
+      "boundaryEdges": 328,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA anterior choroidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 843,
+      "triangles": 1433,
+      "boundaryEdges": 255,
+      "badEdges": 1
+    },
+    {
+      "node": "ICA cavernous left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 24925,
+      "triangles": 49425,
+      "boundaryEdges": 427,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA cavernous right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 24577,
+      "triangles": 48724,
+      "boundaryEdges": 436,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA cervical left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 28055,
+      "triangles": 55211,
+      "boundaryEdges": 733,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA cervical right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 28168,
+      "triangles": 55557,
+      "boundaryEdges": 621,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA paraophthalmic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5637,
+      "triangles": 10839,
+      "boundaryEdges": 433,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA paraophthalmic right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5792,
+      "triangles": 11231,
+      "boundaryEdges": 351,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA petrous left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7803,
+      "triangles": 15287,
+      "boundaryEdges": 323,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA petrous right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7767,
+      "triangles": 15181,
+      "boundaryEdges": 357,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA posterior communicating left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2073,
+      "triangles": 3783,
+      "boundaryEdges": 363,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA posterior communicating right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2004,
+      "triangles": 3706,
+      "boundaryEdges": 304,
+      "badEdges": 1
+    },
+    {
+      "node": "ICA terminus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1582,
+      "triangles": 2756,
+      "boundaryEdges": 410,
+      "badEdges": 0
+    },
+    {
+      "node": "ICA terminus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1405,
+      "triangles": 2331,
+      "boundaryEdges": 476,
+      "badEdges": 1
+    },
+    {
+      "node": "ILT anterior branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1713,
+      "triangles": 3280,
+      "boundaryEdges": 144,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT anterior branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1712,
+      "triangles": 3275,
+      "boundaryEdges": 147,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT anterolateral ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1099,
+      "triangles": 2106,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT anterolateral ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1119,
+      "triangles": 2150,
+      "boundaryEdges": 86,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT posterior branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6627,
+      "triangles": 12896,
+      "boundaryEdges": 360,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT posterior branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1730,
+      "triangles": 3235,
+      "boundaryEdges": 225,
+      "badEdges": 2
+    },
+    {
+      "node": "ILT posteromedial ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 831,
+      "triangles": 1570,
+      "boundaryEdges": 88,
+      "badEdges": 2
+    },
+    {
+      "node": "ILT posteromedial ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 834,
+      "triangles": 1572,
+      "boundaryEdges": 94,
+      "badEdges": 2
+    },
+    {
+      "node": "ILT recurrent lacerum ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1430,
+      "triangles": 2744,
+      "boundaryEdges": 114,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT recurrent lacerum ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1410,
+      "triangles": 2721,
+      "boundaryEdges": 95,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT superior ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1279,
+      "triangles": 2454,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "ILT superior ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1271,
+      "triangles": 2446,
+      "boundaryEdges": 94,
+      "badEdges": 0
+    },
+    {
+      "node": "Incisive",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3075,
+      "triangles": 6054,
+      "boundaryEdges": 92,
+      "badEdges": 2
+    },
+    {
+      "node": "Incisive left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3075,
+      "triangles": 6055,
+      "boundaryEdges": 93,
+      "badEdges": 2
+    },
+    {
+      "node": "Inferior alveolar",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16968,
+      "triangles": 33418,
+      "boundaryEdges": 522,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior alveolar left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16976,
+      "triangles": 33433,
+      "boundaryEdges": 523,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior hypophyseal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4793,
+      "triangles": 9532,
+      "boundaryEdges": 52,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior hypophyseal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4348,
+      "triangles": 8654,
+      "boundaryEdges": 40,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior internal parietal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4913,
+      "triangles": 9682,
+      "boundaryEdges": 142,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior internal parietal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4944,
+      "triangles": 9746,
+      "boundaryEdges": 140,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior labial",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10745,
+      "triangles": 21366,
+      "boundaryEdges": 122,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior labial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10767,
+      "triangles": 21410,
+      "boundaryEdges": 122,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior lacrimal\u2013infraorbital muscular left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 866,
+      "triangles": 1728,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior lacrimal\u2013infraorbital muscular right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 866,
+      "triangles": 1728,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior palpebral arcade left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior palpebral arcade right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior pharyngeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3983,
+      "triangles": 7807,
+      "boundaryEdges": 157,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior pharyngeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3983,
+      "triangles": 7807,
+      "boundaryEdges": 157,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior septal subdivision left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2038,
+      "triangles": 3972,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior septal subdivision right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2038,
+      "triangles": 3972,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior tympanic",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5925,
+      "triangles": 11703,
+      "boundaryEdges": 143,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior tympanic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5925,
+      "triangles": 11703,
+      "boundaryEdges": 143,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior tympanic\u2013caroticotympanic left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 194,
+      "triangles": 384,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferior tympanic\u2013caroticotympanic right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 194,
+      "triangles": 384,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferolateral trunk left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1378,
+      "triangles": 2390,
+      "boundaryEdges": 370,
+      "badEdges": 0
+    },
+    {
+      "node": "Inferolateral trunk right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1323,
+      "triangles": 2289,
+      "boundaryEdges": 361,
+      "badEdges": 0
+    },
+    {
+      "node": "Infrahyoid",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6044,
+      "triangles": 11961,
+      "boundaryEdges": 125,
+      "badEdges": 0
+    },
+    {
+      "node": "Infrahyoid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6044,
+      "triangles": 11961,
+      "boundaryEdges": 125,
+      "badEdges": 0
+    },
+    {
+      "node": "Infraorbital",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8925,
+      "triangles": 17483,
+      "boundaryEdges": 369,
+      "badEdges": 0
+    },
+    {
+      "node": "Infraorbital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8931,
+      "triangles": 17495,
+      "boundaryEdges": 369,
+      "badEdges": 1
+    },
+    {
+      "node": "Infraorbital muscular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1458,
+      "triangles": 2822,
+      "boundaryEdges": 89,
+      "badEdges": 3
+    },
+    {
+      "node": "Infraorbital muscular branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1382,
+      "triangles": 2670,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Infraorbital\u2013ophthalmic left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 338,
+      "triangles": 672,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Infraorbital\u2013ophthalmic right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 338,
+      "triangles": 672,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Jugular ascending IAC branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 824,
+      "triangles": 1502,
+      "boundaryEdges": 144,
+      "badEdges": 0
+    },
+    {
+      "node": "Jugular ascending IAC branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 816,
+      "triangles": 1494,
+      "boundaryEdges": 136,
+      "badEdges": 0
+    },
+    {
+      "node": "Jugular branch",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4760,
+      "triangles": 9036,
+      "boundaryEdges": 488,
+      "badEdges": 0
+    },
+    {
+      "node": "Jugular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4768,
+      "triangles": 9044,
+      "boundaryEdges": 496,
+      "badEdges": 0
+    },
+    {
+      "node": "Jugular sigmoid branch",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8171,
+      "triangles": 16270,
+      "boundaryEdges": 70,
+      "badEdges": 0
+    },
+    {
+      "node": "Jugular sigmoid branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8171,
+      "triangles": 16270,
+      "boundaryEdges": 70,
+      "badEdges": 0
+    },
+    {
+      "node": "Labial\u2013septal plexus left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Labial\u2013septal plexus right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Labyrinthine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9668,
+      "triangles": 19271,
+      "boundaryEdges": 65,
+      "badEdges": 0
+    },
+    {
+      "node": "Labyrinthine right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9209,
+      "triangles": 18367,
+      "boundaryEdges": 49,
+      "badEdges": 0
+    },
+    {
+      "node": "Lacrimal inferior branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1359,
+      "triangles": 2626,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "Lacrimal inferior branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1333,
+      "triangles": 2576,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Lacrimal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3749,
+      "triangles": 7032,
+      "boundaryEdges": 472,
+      "badEdges": 1
+    },
+    {
+      "node": "Lacrimal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3779,
+      "triangles": 7090,
+      "boundaryEdges": 474,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4343,
+      "triangles": 8532,
+      "boundaryEdges": 152,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival APA\u2013MHT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival APA\u2013MHT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival MHT branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1721,
+      "triangles": 3352,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival MHT branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1721,
+      "triangles": 3351,
+      "boundaryEdges": 87,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4343,
+      "triangles": 8532,
+      "boundaryEdges": 152,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival\u2013recurrent ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 690,
+      "triangles": 1376,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral clival\u2013recurrent ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 690,
+      "triangles": 1376,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral inferior palpebral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1599,
+      "triangles": 3110,
+      "boundaryEdges": 86,
+      "badEdges": 1
+    },
+    {
+      "node": "Lateral inferior palpebral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1601,
+      "triangles": 3112,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral lenticulostriate 1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3069,
+      "triangles": 5968,
+      "boundaryEdges": 170,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral lenticulostriate 1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2979,
+      "triangles": 5788,
+      "boundaryEdges": 169,
+      "badEdges": 2
+    },
+    {
+      "node": "Lateral lenticulostriate 2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2916,
+      "triangles": 5744,
+      "boundaryEdges": 86,
+      "badEdges": 20
+    },
+    {
+      "node": "Lateral lenticulostriate 2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2951,
+      "triangles": 5814,
+      "boundaryEdges": 86,
+      "badEdges": 16
+    },
+    {
+      "node": "Lateral lenticulostriate 3 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2980,
+      "triangles": 5866,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral lenticulostriate 3 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2995,
+      "triangles": 5896,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral lenticulostriate anterior representative left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1119,
+      "triangles": 2150,
+      "boundaryEdges": 86,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral lenticulostriate anterior representative right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1143,
+      "triangles": 2198,
+      "boundaryEdges": 84,
+      "badEdges": 2
+    },
+    {
+      "node": "Lateral nasal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2476,
+      "triangles": 4794,
+      "boundaryEdges": 156,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral nasal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2476,
+      "triangles": 4794,
+      "boundaryEdges": 156,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral posterior choroidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4931,
+      "triangles": 9646,
+      "boundaryEdges": 216,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral posterior choroidal plexal representative left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2107,
+      "triangles": 4122,
+      "boundaryEdges": 90,
+      "badEdges": 2
+    },
+    {
+      "node": "Lateral posterior choroidal plexal representative right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2131,
+      "triangles": 4170,
+      "boundaryEdges": 90,
+      "badEdges": 1
+    },
+    {
+      "node": "Lateral posterior choroidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5015,
+      "triangles": 9801,
+      "boundaryEdges": 233,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral superior palpebral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1427,
+      "triangles": 2762,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "Lateral superior palpebral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1427,
+      "triangles": 2762,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "Lesser palatine",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2894,
+      "triangles": 5657,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "Lesser palatine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2894,
+      "triangles": 5657,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "Lingual",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12418,
+      "triangles": 24124,
+      "boundaryEdges": 736,
+      "badEdges": 0
+    },
+    {
+      "node": "Lingual left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12418,
+      "triangles": 24124,
+      "boundaryEdges": 736,
+      "badEdges": 0
+    },
+    {
+      "node": "Long callosal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1441,
+      "triangles": 2808,
+      "boundaryEdges": 72,
+      "badEdges": 1
+    },
+    {
+      "node": "Long callosal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1441,
+      "triangles": 2808,
+      "boundaryEdges": 72,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA M1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9489,
+      "triangles": 18016,
+      "boundaryEdges": 972,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA M1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10035,
+      "triangles": 19109,
+      "boundaryEdges": 971,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA inferior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5716,
+      "triangles": 10501,
+      "boundaryEdges": 938,
+      "badEdges": 1
+    },
+    {
+      "node": "MCA inferior division right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5766,
+      "triangles": 10594,
+      "boundaryEdges": 946,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA orbitofrontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4559,
+      "triangles": 9016,
+      "boundaryEdges": 100,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA orbitofrontal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4414,
+      "triangles": 8726,
+      "boundaryEdges": 100,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA superior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5992,
+      "triangles": 11375,
+      "boundaryEdges": 615,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA superior division right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6014,
+      "triangles": 11415,
+      "boundaryEdges": 619,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA\u2013PCA occipital border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 722,
+      "triangles": 1440,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA\u2013PCA occipital border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 578,
+      "triangles": 1152,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA\u2013PCA temporal border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 290,
+      "triangles": 576,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MCA\u2013PCA temporal border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 290,
+      "triangles": 576,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA anterior cavernous left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1271,
+      "triangles": 2437,
+      "boundaryEdges": 101,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA anterior cavernous right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1270,
+      "triangles": 2436,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA cavernous",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2847,
+      "triangles": 5389,
+      "boundaryEdges": 307,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA cavernous left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2935,
+      "triangles": 5481,
+      "boundaryEdges": 389,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA cavernous\u2013ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 514,
+      "triangles": 1024,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA cavernous\u2013ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 514,
+      "triangles": 1024,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA falcine terminal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3238,
+      "triangles": 6334,
+      "boundaryEdges": 140,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA falcine terminal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3337,
+      "triangles": 6532,
+      "boundaryEdges": 140,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA frontal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 17268,
+      "triangles": 34397,
+      "boundaryEdges": 137,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA frontal anterior division",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9297,
+      "triangles": 18534,
+      "boundaryEdges": 58,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA frontal anterior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9964,
+      "triangles": 19871,
+      "boundaryEdges": 55,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA frontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16741,
+      "triangles": 33349,
+      "boundaryEdges": 133,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA frontal posterior division",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13013,
+      "triangles": 25874,
+      "boundaryEdges": 150,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA frontal posterior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13013,
+      "triangles": 25874,
+      "boundaryEdges": 150,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA orbital",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3461,
+      "triangles": 6804,
+      "boundaryEdges": 116,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA orbital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3461,
+      "triangles": 6804,
+      "boundaryEdges": 116,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA paramedian left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3745,
+      "triangles": 7362,
+      "boundaryEdges": 128,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA paramedian right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3662,
+      "triangles": 7193,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA parietal ascending",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16763,
+      "triangles": 33347,
+      "boundaryEdges": 177,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA parietal ascending left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16763,
+      "triangles": 33347,
+      "boundaryEdges": 177,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA petrosal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3371,
+      "triangles": 6533,
+      "boundaryEdges": 209,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA petrosal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3377,
+      "triangles": 6545,
+      "boundaryEdges": 209,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA petrosquamosal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 22996,
+      "triangles": 45803,
+      "boundaryEdges": 189,
+      "badEdges": 3
+    },
+    {
+      "node": "MMA petrosquamosal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 27933,
+      "triangles": 55465,
+      "boundaryEdges": 405,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA posterior cavernous left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7750,
+      "triangles": 15171,
+      "boundaryEdges": 329,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA posterior cavernous right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 843,
+      "triangles": 1586,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA posterior convexity",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 26305,
+      "triangles": 52121,
+      "boundaryEdges": 491,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA posterior convexity left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 26305,
+      "triangles": 52121,
+      "boundaryEdges": 491,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA posterior terminal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11672,
+      "triangles": 23158,
+      "boundaryEdges": 184,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA posterior terminal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11672,
+      "triangles": 23158,
+      "boundaryEdges": 184,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA tentorial\u2013PCA dural left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2434,
+      "triangles": 4864,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA tentorial\u2013PCA dural right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2466,
+      "triangles": 4928,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA\u2013lacrimal (meningolacrimal) left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 754,
+      "triangles": 1504,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA\u2013lacrimal (meningolacrimal) right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 754,
+      "triangles": 1504,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA\u2013ophthalmic (recurrent meningeal) left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 834,
+      "triangles": 1664,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA\u2013ophthalmic (recurrent meningeal) right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 850,
+      "triangles": 1696,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA\u2013tentorial marginal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 13693,
+      "triangles": 27135,
+      "boundaryEdges": 249,
+      "badEdges": 0
+    },
+    {
+      "node": "MMA\u2013tentorial marginal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 8546,
+      "triangles": 16929,
+      "boundaryEdges": 163,
+      "badEdges": 0
+    },
+    {
+      "node": "Mandibular ICA branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1215,
+      "triangles": 2366,
+      "boundaryEdges": 62,
+      "badEdges": 0
+    },
+    {
+      "node": "Mandibular ICA branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1192,
+      "triangles": 2319,
+      "boundaryEdges": 63,
+      "badEdges": 0
+    },
+    {
+      "node": "Mandibular\u2013vidian circle left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 530,
+      "triangles": 1056,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Mandibular\u2013vidian circle right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 530,
+      "triangles": 1056,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Masseteric",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8456,
+      "triangles": 16684,
+      "boundaryEdges": 226,
+      "badEdges": 0
+    },
+    {
+      "node": "Masseteric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8453,
+      "triangles": 16678,
+      "boundaryEdges": 226,
+      "badEdges": 0
+    },
+    {
+      "node": "Maxillary",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 18000,
+      "triangles": 33901,
+      "boundaryEdges": 2128,
+      "badEdges": 1
+    },
+    {
+      "node": "Maxillary left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 17977,
+      "triangles": 33858,
+      "boundaryEdges": 2126,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial clival",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6498,
+      "triangles": 12848,
+      "boundaryEdges": 146,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial clival MHT branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1553,
+      "triangles": 3016,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial clival MHT branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1555,
+      "triangles": 3018,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial clival left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6498,
+      "triangles": 12848,
+      "boundaryEdges": 146,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial inferior palpebral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1913,
+      "triangles": 3736,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial inferior palpebral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1915,
+      "triangles": 3738,
+      "boundaryEdges": 90,
+      "badEdges": 1
+    },
+    {
+      "node": "Medial lenticulostriate left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4017,
+      "triangles": 7850,
+      "boundaryEdges": 184,
+      "badEdges": 1
+    },
+    {
+      "node": "Medial lenticulostriate right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4057,
+      "triangles": 7936,
+      "boundaryEdges": 178,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial lenticulostriate superior representative left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1048,
+      "triangles": 1994,
+      "boundaryEdges": 100,
+      "badEdges": 1
+    },
+    {
+      "node": "Medial lenticulostriate superior representative right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1023,
+      "triangles": 1950,
+      "boundaryEdges": 94,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial posterior choroidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8810,
+      "triangles": 17361,
+      "boundaryEdges": 263,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial posterior choroidal plexal representative left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1939,
+      "triangles": 3786,
+      "boundaryEdges": 90,
+      "badEdges": 1
+    },
+    {
+      "node": "Medial posterior choroidal plexal representative right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1939,
+      "triangles": 3786,
+      "boundaryEdges": 90,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial posterior choroidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8935,
+      "triangles": 17611,
+      "boundaryEdges": 259,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial superior palpebral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1428,
+      "triangles": 2762,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial superior palpebral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1428,
+      "triangles": 2762,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial\u2013lateral posterior choroidal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 546,
+      "triangles": 1088,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Medial\u2013lateral posterior choroidal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 546,
+      "triangles": 1088,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Meningohypophyseal trunk left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 251,
+      "triangles": 377,
+      "boundaryEdges": 123,
+      "badEdges": 0
+    },
+    {
+      "node": "Meningohypophyseal trunk right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 183,
+      "triangles": 278,
+      "boundaryEdges": 84,
+      "badEdges": 0
+    },
+    {
+      "node": "Mental",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3055,
+      "triangles": 5974,
+      "boundaryEdges": 134,
+      "badEdges": 0
+    },
+    {
+      "node": "Mental left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3057,
+      "triangles": 5978,
+      "boundaryEdges": 134,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle internal frontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4007,
+      "triangles": 7902,
+      "boundaryEdges": 110,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle internal frontal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4040,
+      "triangles": 7968,
+      "boundaryEdges": 110,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle meningeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13071,
+      "triangles": 25279,
+      "boundaryEdges": 873,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle meningeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13178,
+      "triangles": 25493,
+      "boundaryEdges": 873,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle pharyngeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3562,
+      "triangles": 6951,
+      "boundaryEdges": 171,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle pharyngeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3562,
+      "triangles": 6951,
+      "boundaryEdges": 171,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4815,
+      "triangles": 9358,
+      "boundaryEdges": 270,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2753,
+      "triangles": 5397,
+      "boundaryEdges": 107,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2784,
+      "triangles": 5458,
+      "boundaryEdges": 108,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1074,
+      "triangles": 2036,
+      "boundaryEdges": 110,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1103,
+      "triangles": 2084,
+      "boundaryEdges": 120,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6348,
+      "triangles": 12363,
+      "boundaryEdges": 335,
+      "badEdges": 0
+    },
+    {
+      "node": "Middle temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6550,
+      "triangles": 12748,
+      "boundaryEdges": 354,
+      "badEdges": 0
+    },
+    {
+      "node": "Mylohyoid",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11425,
+      "triangles": 22680,
+      "boundaryEdges": 168,
+      "badEdges": 0
+    },
+    {
+      "node": "Mylohyoid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11425,
+      "triangles": 22680,
+      "boundaryEdges": 168,
+      "badEdges": 0
+    },
+    {
+      "node": "Neuromeningeal trunk",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4011,
+      "triangles": 7638,
+      "boundaryEdges": 384,
+      "badEdges": 0
+    },
+    {
+      "node": "Neuromeningeal trunk left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4011,
+      "triangles": 7638,
+      "boundaryEdges": 384,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 34784,
+      "triangles": 68773,
+      "boundaryEdges": 801,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital SCM branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3471,
+      "triangles": 6852,
+      "boundaryEdges": 84,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital SCM branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3471,
+      "triangles": 6852,
+      "boundaryEdges": 84,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital descending",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6992,
+      "triangles": 13862,
+      "boundaryEdges": 120,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital descending left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6992,
+      "triangles": 13862,
+      "boundaryEdges": 120,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital descending\u2013vertebral C2 left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 370,
+      "triangles": 736,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital descending\u2013vertebral C2 right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 370,
+      "triangles": 736,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital lateral scalp",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16896,
+      "triangles": 33637,
+      "boundaryEdges": 153,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital lateral scalp left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16896,
+      "triangles": 33637,
+      "boundaryEdges": 153,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 34786,
+      "triangles": 68775,
+      "boundaryEdges": 803,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4746,
+      "triangles": 9279,
+      "boundaryEdges": 211,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid dural branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5806,
+      "triangles": 11394,
+      "boundaryEdges": 214,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid dural branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2803,
+      "triangles": 5498,
+      "boundaryEdges": 106,
+      "badEdges": 1
+    },
+    {
+      "node": "Occipital mastoid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 8295,
+      "triangles": 16411,
+      "boundaryEdges": 179,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013APA jugular left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1186,
+      "triangles": 2368,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013APA jugular right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1186,
+      "triangles": 2368,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013APA sigmoid left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 706,
+      "triangles": 1408,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013APA sigmoid right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 706,
+      "triangles": 1408,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013MMA petrosquamosal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 7474,
+      "triangles": 14667,
+      "boundaryEdges": 287,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013MMA petrosquamosal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 802,
+      "triangles": 1600,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013hypoglossal meningeal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 930,
+      "triangles": 1856,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital mastoid\u2013hypoglossal meningeal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 930,
+      "triangles": 1856,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital medial scalp",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15301,
+      "triangles": 30434,
+      "boundaryEdges": 166,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital medial scalp left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15301,
+      "triangles": 30434,
+      "boundaryEdges": 166,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital tentorial\u2013PCA dural left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1426,
+      "triangles": 2848,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital tentorial\u2013PCA dural right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1426,
+      "triangles": 2848,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital\u2013MMA transosseous potential left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1506,
+      "triangles": 3008,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital\u2013MMA transosseous potential right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1490,
+      "triangles": 2976,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital\u2013posterior auricular scalp left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 3570,
+      "triangles": 7136,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital\u2013posterior auricular scalp right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 3570,
+      "triangles": 7136,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital\u2013vertebral C1 left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1298,
+      "triangles": 2592,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Occipital\u2013vertebral C1 right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1298,
+      "triangles": 2592,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Odontoid descending",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3938,
+      "triangles": 7737,
+      "boundaryEdges": 137,
+      "badEdges": 0
+    },
+    {
+      "node": "Odontoid descending left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3938,
+      "triangles": 7737,
+      "boundaryEdges": 137,
+      "badEdges": 0
+    },
+    {
+      "node": "Odontoid inferior transverse arcade midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 530,
+      "triangles": 1056,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Odontoid transverse arcade midline",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 642,
+      "triangles": 1280,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Ophthalmic inferior muscular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2542,
+      "triangles": 4972,
+      "boundaryEdges": 110,
+      "badEdges": 1
+    },
+    {
+      "node": "Ophthalmic inferior muscular branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2581,
+      "triangles": 5040,
+      "boundaryEdges": 120,
+      "badEdges": 0
+    },
+    {
+      "node": "Ophthalmic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9711,
+      "triangles": 17979,
+      "boundaryEdges": 1469,
+      "badEdges": 0
+    },
+    {
+      "node": "Ophthalmic right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9796,
+      "triangles": 18115,
+      "boundaryEdges": 1503,
+      "badEdges": 0
+    },
+    {
+      "node": "Ophthalmic superior muscular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2240,
+      "triangles": 4399,
+      "boundaryEdges": 79,
+      "badEdges": 0
+    },
+    {
+      "node": "Ophthalmic superior muscular branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2252,
+      "triangles": 4406,
+      "boundaryEdges": 96,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA P1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4791,
+      "triangles": 8731,
+      "boundaryEdges": 857,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA P1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4104,
+      "triangles": 7341,
+      "boundaryEdges": 869,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA P2-P3 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 20391,
+      "triangles": 38377,
+      "boundaryEdges": 2429,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA P2-P3 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 19806,
+      "triangles": 37409,
+      "boundaryEdges": 2223,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA anterior inferior temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6146,
+      "triangles": 12132,
+      "boundaryEdges": 158,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA anterior inferior temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5970,
+      "triangles": 11780,
+      "boundaryEdges": 158,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA calcarine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5665,
+      "triangles": 10938,
+      "boundaryEdges": 392,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA calcarine right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5847,
+      "triangles": 11307,
+      "boundaryEdges": 391,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA collicular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5248,
+      "triangles": 10220,
+      "boundaryEdges": 272,
+      "badEdges": 2
+    },
+    {
+      "node": "PCA collicular right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5266,
+      "triangles": 10246,
+      "boundaryEdges": 282,
+      "badEdges": 3
+    },
+    {
+      "node": "PCA hippocampal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3446,
+      "triangles": 6719,
+      "boundaryEdges": 175,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA hippocampal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3306,
+      "triangles": 6487,
+      "boundaryEdges": 123,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA lateral occipital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3082,
+      "triangles": 6030,
+      "boundaryEdges": 132,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA lateral occipital right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3144,
+      "triangles": 6156,
+      "boundaryEdges": 130,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA long circumflex left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12624,
+      "triangles": 24714,
+      "boundaryEdges": 538,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA long circumflex right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13223,
+      "triangles": 25786,
+      "boundaryEdges": 666,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA middle inferior temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6705,
+      "triangles": 13228,
+      "boundaryEdges": 182,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA middle inferior temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6711,
+      "triangles": 13261,
+      "boundaryEdges": 159,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA parieto-occipital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7326,
+      "triangles": 14179,
+      "boundaryEdges": 473,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA parieto-occipital right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7416,
+      "triangles": 14345,
+      "boundaryEdges": 489,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA posterior inferior temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7035,
+      "triangles": 13747,
+      "boundaryEdges": 325,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA posterior inferior temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7112,
+      "triangles": 13867,
+      "boundaryEdges": 361,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA short circumflex left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6580,
+      "triangles": 12542,
+      "boundaryEdges": 624,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA short circumflex right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6038,
+      "triangles": 11790,
+      "boundaryEdges": 286,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA splenial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4900,
+      "triangles": 9669,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA splenial right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4872,
+      "triangles": 9612,
+      "boundaryEdges": 130,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA\u2013SCA tectal network left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 370,
+      "triangles": 736,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "PCA\u2013SCA tectal network right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 370,
+      "triangles": 736,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "PCom perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2387,
+      "triangles": 4690,
+      "boundaryEdges": 82,
+      "badEdges": 0
+    },
+    {
+      "node": "PCom perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2322,
+      "triangles": 4561,
+      "boundaryEdges": 81,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA choroidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7617,
+      "triangles": 15082,
+      "boundaryEdges": 150,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA choroidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6915,
+      "triangles": 13436,
+      "boundaryEdges": 390,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA hemispheric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5992,
+      "triangles": 10240,
+      "boundaryEdges": 1761,
+      "badEdges": 13
+    },
+    {
+      "node": "PICA hemispheric right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5477,
+      "triangles": 9457,
+      "boundaryEdges": 1498,
+      "badEdges": 16
+    },
+    {
+      "node": "PICA lateral hemispheric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2449,
+      "triangles": 3656,
+      "boundaryEdges": 1244,
+      "badEdges": 12
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2340,
+      "triangles": 3668,
+      "boundaryEdges": 1014,
+      "badEdges": 14
+    },
+    {
+      "node": "PICA left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 24917,
+      "triangles": 47685,
+      "boundaryEdges": 2156,
+      "badEdges": 5
+    },
+    {
+      "node": "PICA medullary perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1460,
+      "triangles": 2510,
+      "boundaryEdges": 397,
+      "badEdges": 21
+    },
+    {
+      "node": "PICA medullary perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 953,
+      "triangles": 1784,
+      "boundaryEdges": 120,
+      "badEdges": 1
+    },
+    {
+      "node": "PICA right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 29182,
+      "triangles": 56276,
+      "boundaryEdges": 2096,
+      "badEdges": 1
+    },
+    {
+      "node": "PICA tonsillar left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 954,
+      "triangles": 1199,
+      "boundaryEdges": 692,
+      "badEdges": 8
+    },
+    {
+      "node": "PICA tonsillar right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1562,
+      "triangles": 2460,
+      "boundaryEdges": 662,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA vermian left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4174,
+      "triangles": 7474,
+      "boundaryEdges": 868,
+      "badEdges": 7
+    },
+    {
+      "node": "PICA vermian right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4555,
+      "triangles": 8168,
+      "boundaryEdges": 940,
+      "badEdges": 3
+    },
+    {
+      "node": "PICA\u2013AICA pial border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 802,
+      "triangles": 1600,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA\u2013AICA pial border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 738,
+      "triangles": 1472,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA\u2013SCA vermian border zone left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "PICA\u2013SCA vermian border zone right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "PSA anterior division",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3181,
+      "triangles": 6233,
+      "boundaryEdges": 127,
+      "badEdges": 0
+    },
+    {
+      "node": "PSA anterior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3181,
+      "triangles": 6233,
+      "boundaryEdges": 127,
+      "badEdges": 0
+    },
+    {
+      "node": "Paracentral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5904,
+      "triangles": 11673,
+      "boundaryEdges": 133,
+      "badEdges": 0
+    },
+    {
+      "node": "Paracentral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5968,
+      "triangles": 11800,
+      "boundaryEdges": 134,
+      "badEdges": 0
+    },
+    {
+      "node": "Parieto-occipital cuneal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2867,
+      "triangles": 5624,
+      "boundaryEdges": 108,
+      "badEdges": 0
+    },
+    {
+      "node": "Parieto-occipital cuneal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2862,
+      "triangles": 5616,
+      "boundaryEdges": 106,
+      "badEdges": 0
+    },
+    {
+      "node": "Peduncular perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1999,
+      "triangles": 3794,
+      "boundaryEdges": 206,
+      "badEdges": 0
+    },
+    {
+      "node": "Peduncular perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2027,
+      "triangles": 3879,
+      "boundaryEdges": 177,
+      "badEdges": 0
+    },
+    {
+      "node": "Pericallosal\u2013splenial left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Pericallosal\u2013splenial right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 322,
+      "triangles": 640,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Pharyngeal carotid\u2013recurrent lacerum left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Pharyngeal carotid\u2013recurrent lacerum right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Pharyngeal trunk",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6249,
+      "triangles": 12020,
+      "boundaryEdges": 480,
+      "badEdges": 0
+    },
+    {
+      "node": "Pharyngeal trunk left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6249,
+      "triangles": 12020,
+      "boundaryEdges": 480,
+      "badEdges": 0
+    },
+    {
+      "node": "Polar temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2858,
+      "triangles": 5635,
+      "boundaryEdges": 79,
+      "badEdges": 1
+    },
+    {
+      "node": "Polar temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2882,
+      "triangles": 5681,
+      "boundaryEdges": 81,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine circumferential left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13511,
+      "triangles": 26610,
+      "boundaryEdges": 414,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine circumferential right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 21879,
+      "triangles": 42322,
+      "boundaryEdges": 1408,
+      "badEdges": 2
+    },
+    {
+      "node": "Pontine long circumflex left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 14389,
+      "triangles": 27871,
+      "boundaryEdges": 913,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine long circumflex right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16556,
+      "triangles": 31797,
+      "boundaryEdges": 1309,
+      "badEdges": 1
+    },
+    {
+      "node": "Pontine median perforator",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2195,
+      "triangles": 4253,
+      "boundaryEdges": 137,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine paramedian 1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2044,
+      "triangles": 3883,
+      "boundaryEdges": 203,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine paramedian 1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2177,
+      "triangles": 4148,
+      "boundaryEdges": 206,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine paramedian 2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2231,
+      "triangles": 4334,
+      "boundaryEdges": 128,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine paramedian 2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2251,
+      "triangles": 4337,
+      "boundaryEdges": 165,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine paramedian 3 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2255,
+      "triangles": 4328,
+      "boundaryEdges": 182,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine paramedian 3 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2355,
+      "triangles": 4534,
+      "boundaryEdges": 176,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine short circumflex left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3458,
+      "triangles": 6689,
+      "boundaryEdges": 227,
+      "badEdges": 0
+    },
+    {
+      "node": "Pontine short circumflex right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4284,
+      "triangles": 8362,
+      "boundaryEdges": 204,
+      "badEdges": 2
+    },
+    {
+      "node": "Posterior auricular",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12846,
+      "triangles": 25211,
+      "boundaryEdges": 485,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior auricular auricular branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2330,
+      "triangles": 4526,
+      "boundaryEdges": 132,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior auricular auricular branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2328,
+      "triangles": 4524,
+      "boundaryEdges": 130,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior auricular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12848,
+      "triangles": 25213,
+      "boundaryEdges": 487,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior auricular parotid branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1279,
+      "triangles": 2458,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior auricular parotid branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1279,
+      "triangles": 2458,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior cavernous MMA\u2013posterolateral ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 9840,
+      "triangles": 19391,
+      "boundaryEdges": 289,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior cavernous MMA\u2013posterolateral ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior choroidal\u2013splenial left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 802,
+      "triangles": 1600,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior choroidal\u2013splenial right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 818,
+      "triangles": 1632,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior ciliary lateral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1682,
+      "triangles": 3264,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior ciliary lateral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1682,
+      "triangles": 3264,
+      "boundaryEdges": 98,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior ciliary medial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1380,
+      "triangles": 2666,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior ciliary medial right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1381,
+      "triangles": 2668,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior communicating left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5333,
+      "triangles": 10025,
+      "boundaryEdges": 649,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior communicating right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5155,
+      "triangles": 9671,
+      "boundaryEdges": 647,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior deep temporal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13330,
+      "triangles": 26422,
+      "boundaryEdges": 236,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior deep temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13375,
+      "triangles": 26512,
+      "boundaryEdges": 236,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior ethmoidal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2512,
+      "triangles": 4938,
+      "boundaryEdges": 84,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior ethmoidal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2482,
+      "triangles": 4876,
+      "boundaryEdges": 86,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior internal frontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3253,
+      "triangles": 6375,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior internal frontal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3254,
+      "triangles": 6377,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior lateral nasal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6134,
+      "triangles": 12144,
+      "boundaryEdges": 122,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior lateral nasal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6134,
+      "triangles": 12144,
+      "boundaryEdges": 122,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior meningeal VA left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7774,
+      "triangles": 15466,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior meningeal VA right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7871,
+      "triangles": 15660,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior parietal cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3083,
+      "triangles": 6046,
+      "boundaryEdges": 118,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior parietal cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3084,
+      "triangles": 6048,
+      "boundaryEdges": 118,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior parietal distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1376,
+      "triangles": 2632,
+      "boundaryEdges": 118,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior parietal distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1549,
+      "triangles": 2845,
+      "boundaryEdges": 253,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior parietal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7112,
+      "triangles": 13797,
+      "boundaryEdges": 429,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior parietal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7379,
+      "triangles": 14202,
+      "boundaryEdges": 558,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior septal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5717,
+      "triangles": 11145,
+      "boundaryEdges": 282,
+      "badEdges": 3
+    },
+    {
+      "node": "Posterior septal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5718,
+      "triangles": 11146,
+      "boundaryEdges": 288,
+      "badEdges": 4
+    },
+    {
+      "node": "Posterior septal\u2013posterior ethmoidal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1810,
+      "triangles": 3616,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior septal\u2013posterior ethmoidal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1810,
+      "triangles": 3616,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior spinal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 25489,
+      "triangles": 50464,
+      "boundaryEdges": 508,
+      "badEdges": 35
+    },
+    {
+      "node": "Posterior spinal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 24839,
+      "triangles": 49175,
+      "boundaryEdges": 498,
+      "badEdges": 28
+    },
+    {
+      "node": "Posterior superior alveolar",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6378,
+      "triangles": 12473,
+      "boundaryEdges": 283,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior superior alveolar left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6405,
+      "triangles": 12527,
+      "boundaryEdges": 283,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior temporal cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4431,
+      "triangles": 8734,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior temporal cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4462,
+      "triangles": 8797,
+      "boundaryEdges": 125,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior temporal distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1095,
+      "triangles": 2082,
+      "boundaryEdges": 106,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior temporal distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1076,
+      "triangles": 2046,
+      "boundaryEdges": 104,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6255,
+      "triangles": 12163,
+      "boundaryEdges": 349,
+      "badEdges": 0
+    },
+    {
+      "node": "Posterior temporal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6353,
+      "triangles": 12361,
+      "boundaryEdges": 347,
+      "badEdges": 0
+    },
+    {
+      "node": "Precentral cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2450,
+      "triangles": 4788,
+      "boundaryEdges": 110,
+      "badEdges": 0
+    },
+    {
+      "node": "Precentral cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2488,
+      "triangles": 4862,
+      "boundaryEdges": 112,
+      "badEdges": 0
+    },
+    {
+      "node": "Precentral distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1440,
+      "triangles": 2778,
+      "boundaryEdges": 100,
+      "badEdges": 0
+    },
+    {
+      "node": "Precentral distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1437,
+      "triangles": 2776,
+      "boundaryEdges": 96,
+      "badEdges": 0
+    },
+    {
+      "node": "Precentral left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6594,
+      "triangles": 12838,
+      "boundaryEdges": 352,
+      "badEdges": 0
+    },
+    {
+      "node": "Precentral right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6711,
+      "triangles": 13074,
+      "boundaryEdges": 350,
+      "badEdges": 0
+    },
+    {
+      "node": "Precuneal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5263,
+      "triangles": 10378,
+      "boundaryEdges": 146,
+      "badEdges": 0
+    },
+    {
+      "node": "Precuneal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5297,
+      "triangles": 10444,
+      "boundaryEdges": 148,
+      "badEdges": 0
+    },
+    {
+      "node": "Prefrontal cortical branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4207,
+      "triangles": 8310,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Prefrontal cortical branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4336,
+      "triangles": 8566,
+      "boundaryEdges": 104,
+      "badEdges": 0
+    },
+    {
+      "node": "Prefrontal distal ramus left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1258,
+      "triangles": 2424,
+      "boundaryEdges": 89,
+      "badEdges": 1
+    },
+    {
+      "node": "Prefrontal distal ramus right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1284,
+      "triangles": 2474,
+      "boundaryEdges": 92,
+      "badEdges": 0
+    },
+    {
+      "node": "Prefrontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5224,
+      "triangles": 10150,
+      "boundaryEdges": 300,
+      "badEdges": 1
+    },
+    {
+      "node": "Prefrontal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5324,
+      "triangles": 10345,
+      "boundaryEdges": 305,
+      "badEdges": 0
+    },
+    {
+      "node": "Pterygoid muscular",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3543,
+      "triangles": 6982,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Pterygoid muscular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3543,
+      "triangles": 6982,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Pterygovaginal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5023,
+      "triangles": 9942,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Pterygovaginal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5023,
+      "triangles": 9942,
+      "boundaryEdges": 102,
+      "badEdges": 0
+    },
+    {
+      "node": "Recurrent artery of Heubner left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4905,
+      "triangles": 9726,
+      "boundaryEdges": 82,
+      "badEdges": 0
+    },
+    {
+      "node": "Recurrent artery of Heubner right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4983,
+      "triangles": 9882,
+      "boundaryEdges": 82,
+      "badEdges": 2
+    },
+    {
+      "node": "SCA caudal hemispheric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4815,
+      "triangles": 9251,
+      "boundaryEdges": 381,
+      "badEdges": 1
+    },
+    {
+      "node": "SCA caudal hemispheric right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4780,
+      "triangles": 9288,
+      "boundaryEdges": 284,
+      "badEdges": 3
+    },
+    {
+      "node": "SCA lateral hemispheric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9160,
+      "triangles": 17743,
+      "boundaryEdges": 579,
+      "badEdges": 2
+    },
+    {
+      "node": "SCA lateral hemispheric right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9561,
+      "triangles": 18678,
+      "boundaryEdges": 430,
+      "badEdges": 3
+    },
+    {
+      "node": "SCA left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 18836,
+      "triangles": 35778,
+      "boundaryEdges": 1930,
+      "badEdges": 0
+    },
+    {
+      "node": "SCA medial hemispheric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6187,
+      "triangles": 12000,
+      "boundaryEdges": 372,
+      "badEdges": 0
+    },
+    {
+      "node": "SCA medial hemispheric right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6639,
+      "triangles": 12631,
+      "boundaryEdges": 641,
+      "badEdges": 1
+    },
+    {
+      "node": "SCA proximal perforator left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1692,
+      "triangles": 2880,
+      "boundaryEdges": 500,
+      "badEdges": 43
+    },
+    {
+      "node": "SCA proximal perforator right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 767,
+      "triangles": 1431,
+      "boundaryEdges": 101,
+      "badEdges": 0
+    },
+    {
+      "node": "SCA right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 18674,
+      "triangles": 35227,
+      "boundaryEdges": 2175,
+      "badEdges": 9
+    },
+    {
+      "node": "SCA rostral hemispheric left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3076,
+      "triangles": 6032,
+      "boundaryEdges": 118,
+      "badEdges": 0
+    },
+    {
+      "node": "SCA rostral hemispheric right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3209,
+      "triangles": 6219,
+      "boundaryEdges": 195,
+      "badEdges": 0
+    },
+    {
+      "node": "SCA tectal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5177,
+      "triangles": 10220,
+      "boundaryEdges": 132,
+      "badEdges": 1
+    },
+    {
+      "node": "SCA tectal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5349,
+      "triangles": 10565,
+      "boundaryEdges": 129,
+      "badEdges": 0
+    },
+    {
+      "node": "SCA vermian left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7178,
+      "triangles": 14040,
+      "boundaryEdges": 312,
+      "badEdges": 1
+    },
+    {
+      "node": "SCA vermian right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7286,
+      "triangles": 14237,
+      "boundaryEdges": 333,
+      "badEdges": 0
+    },
+    {
+      "node": "SOF artery\u2013anteromedial ILT left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 610,
+      "triangles": 1216,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "SOF artery\u2013anteromedial ILT right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 610,
+      "triangles": 1216,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "SOF artery\u2013recurrent meningeal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "SOF artery\u2013recurrent meningeal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA anterior auricular left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1864,
+      "triangles": 3650,
+      "boundaryEdges": 76,
+      "badEdges": 0
+    },
+    {
+      "node": "STA anterior auricular right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1864,
+      "triangles": 3650,
+      "boundaryEdges": 76,
+      "badEdges": 0
+    },
+    {
+      "node": "STA frontal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 21699,
+      "triangles": 43019,
+      "boundaryEdges": 379,
+      "badEdges": 0
+    },
+    {
+      "node": "STA frontal anterior twig",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12169,
+      "triangles": 24179,
+      "boundaryEdges": 157,
+      "badEdges": 0
+    },
+    {
+      "node": "STA frontal anterior twig left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 12169,
+      "triangles": 24179,
+      "boundaryEdges": 157,
+      "badEdges": 0
+    },
+    {
+      "node": "STA frontal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 21699,
+      "triangles": 43019,
+      "boundaryEdges": 379,
+      "badEdges": 0
+    },
+    {
+      "node": "STA parietal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13604,
+      "triangles": 26909,
+      "boundaryEdges": 299,
+      "badEdges": 0
+    },
+    {
+      "node": "STA parietal anterior twig",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10799,
+      "triangles": 21444,
+      "boundaryEdges": 152,
+      "badEdges": 0
+    },
+    {
+      "node": "STA parietal anterior twig left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10799,
+      "triangles": 21444,
+      "boundaryEdges": 152,
+      "badEdges": 0
+    },
+    {
+      "node": "STA parietal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 13604,
+      "triangles": 26909,
+      "boundaryEdges": 299,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013MMA transosseous potential left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1666,
+      "triangles": 3328,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013MMA transosseous potential right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1666,
+      "triangles": 3328,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013occipital scalp left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 3554,
+      "triangles": 7104,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013occipital scalp right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 3554,
+      "triangles": 7104,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013posterior auricular scalp left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 594,
+      "triangles": 1184,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013posterior auricular scalp right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 594,
+      "triangles": 1184,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013supraorbital left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2898,
+      "triangles": 5792,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013supraorbital right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2898,
+      "triangles": 5792,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013supratrochlear scalp left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 946,
+      "triangles": 1888,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "STA\u2013supratrochlear scalp right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 946,
+      "triangles": 1888,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Septal\u2013anterior ethmoidal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2658,
+      "triangles": 5312,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Septal\u2013anterior ethmoidal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 2658,
+      "triangles": 5312,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Septal\u2013palatine network left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 850,
+      "triangles": 1696,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Septal\u2013palatine network right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 850,
+      "triangles": 1696,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Short callosal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 711,
+      "triangles": 1358,
+      "boundaryEdges": 62,
+      "badEdges": 0
+    },
+    {
+      "node": "Short callosal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 711,
+      "triangles": 1358,
+      "boundaryEdges": 62,
+      "badEdges": 0
+    },
+    {
+      "node": "Sphenopalatine",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3204,
+      "triangles": 6070,
+      "boundaryEdges": 331,
+      "badEdges": 2
+    },
+    {
+      "node": "Sphenopalatine left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3183,
+      "triangles": 6027,
+      "boundaryEdges": 337,
+      "badEdges": 3
+    },
+    {
+      "node": "Stylomastoid",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3618,
+      "triangles": 7108,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Stylomastoid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3618,
+      "triangles": 7108,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Stylomastoid\u2013inferior tympanic left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 578,
+      "triangles": 1152,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Stylomastoid\u2013inferior tympanic right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 578,
+      "triangles": 1152,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subarcuate\u2013APA auditory left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subarcuate\u2013APA auditory right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subarcuate\u2013petrosal MMA left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 338,
+      "triangles": 672,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subarcuate\u2013petrosal MMA right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 338,
+      "triangles": 672,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subarcuate\u2013stylomastoid left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 386,
+      "triangles": 768,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subarcuate\u2013stylomastoid right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 386,
+      "triangles": 768,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Subcallosal artery",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1899,
+      "triangles": 3722,
+      "boundaryEdges": 74,
+      "badEdges": 0
+    },
+    {
+      "node": "Sublingual",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4539,
+      "triangles": 8925,
+      "boundaryEdges": 151,
+      "badEdges": 0
+    },
+    {
+      "node": "Sublingual left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4539,
+      "triangles": 8925,
+      "boundaryEdges": 151,
+      "badEdges": 0
+    },
+    {
+      "node": "Submental",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11708,
+      "triangles": 23289,
+      "boundaryEdges": 125,
+      "badEdges": 0
+    },
+    {
+      "node": "Submental left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11708,
+      "triangles": 23289,
+      "boundaryEdges": 125,
+      "badEdges": 0
+    },
+    {
+      "node": "Superficial recurrent meningeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1763,
+      "triangles": 3430,
+      "boundaryEdges": 94,
+      "badEdges": 0
+    },
+    {
+      "node": "Superficial recurrent meningeal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1741,
+      "triangles": 3384,
+      "boundaryEdges": 96,
+      "badEdges": 0
+    },
+    {
+      "node": "Superficial temporal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15181,
+      "triangles": 29476,
+      "boundaryEdges": 894,
+      "badEdges": 0
+    },
+    {
+      "node": "Superficial temporal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15174,
+      "triangles": 29462,
+      "boundaryEdges": 894,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior hypophyseal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1597,
+      "triangles": 3168,
+      "boundaryEdges": 20,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior hypophyseal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1897,
+      "triangles": 3773,
+      "boundaryEdges": 19,
+      "badEdges": 2
+    },
+    {
+      "node": "Superior labial",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6303,
+      "triangles": 12452,
+      "boundaryEdges": 152,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior labial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6303,
+      "triangles": 12452,
+      "boundaryEdges": 152,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior laryngeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3532,
+      "triangles": 6936,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior laryngeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3532,
+      "triangles": 6936,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior palpebral arcade left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior palpebral arcade right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior pharyngeal",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2713,
+      "triangles": 5152,
+      "boundaryEdges": 276,
+      "badEdges": 2
+    },
+    {
+      "node": "Superior pharyngeal carotid branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1419,
+      "triangles": 2738,
+      "boundaryEdges": 98,
+      "badEdges": 1
+    },
+    {
+      "node": "Superior pharyngeal carotid branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1419,
+      "triangles": 2738,
+      "boundaryEdges": 98,
+      "badEdges": 1
+    },
+    {
+      "node": "Superior pharyngeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2713,
+      "triangles": 5152,
+      "boundaryEdges": 276,
+      "badEdges": 4
+    },
+    {
+      "node": "Superior pharyngeal tubal branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1371,
+      "triangles": 2642,
+      "boundaryEdges": 98,
+      "badEdges": 3
+    },
+    {
+      "node": "Superior pharyngeal tubal branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1371,
+      "triangles": 2642,
+      "boundaryEdges": 98,
+      "badEdges": 1
+    },
+    {
+      "node": "Superior septal subdivision left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2093,
+      "triangles": 4084,
+      "boundaryEdges": 99,
+      "badEdges": 1
+    },
+    {
+      "node": "Superior septal subdivision right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2093,
+      "triangles": 4084,
+      "boundaryEdges": 99,
+      "badEdges": 1
+    },
+    {
+      "node": "Superior thyroid",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6932,
+      "triangles": 13329,
+      "boundaryEdges": 541,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior thyroid SCM branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2300,
+      "triangles": 4518,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior thyroid SCM branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2302,
+      "triangles": 4522,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior thyroid left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6933,
+      "triangles": 13331,
+      "boundaryEdges": 541,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior tympanic left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 743,
+      "triangles": 1378,
+      "boundaryEdges": 106,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior tympanic right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 690,
+      "triangles": 1272,
+      "boundaryEdges": 106,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior\u2013anterior tympanic left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 210,
+      "triangles": 416,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior\u2013anterior tympanic right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 210,
+      "triangles": 416,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior\u2013inferior tympanic left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Superior\u2013inferior tympanic right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 162,
+      "triangles": 320,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Supraorbital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5905,
+      "triangles": 11658,
+      "boundaryEdges": 150,
+      "badEdges": 0
+    },
+    {
+      "node": "Supraorbital right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5906,
+      "triangles": 11660,
+      "boundaryEdges": 150,
+      "badEdges": 0
+    },
+    {
+      "node": "Supratrochlear left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6319,
+      "triangles": 12464,
+      "boundaryEdges": 172,
+      "badEdges": 0
+    },
+    {
+      "node": "Supratrochlear right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6319,
+      "triangles": 12466,
+      "boundaryEdges": 170,
+      "badEdges": 0
+    },
+    {
+      "node": "Temporo-occipital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7329,
+      "triangles": 14531,
+      "boundaryEdges": 125,
+      "badEdges": 0
+    },
+    {
+      "node": "Temporo-occipital right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 7426,
+      "triangles": 14724,
+      "boundaryEdges": 126,
+      "badEdges": 0
+    },
+    {
+      "node": "Tentorial marginal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 16176,
+      "triangles": 32211,
+      "boundaryEdges": 143,
+      "badEdges": 0
+    },
+    {
+      "node": "Tentorial marginal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 15267,
+      "triangles": 30411,
+      "boundaryEdges": 123,
+      "badEdges": 0
+    },
+    {
+      "node": "Terminal ICA perforator 1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 868,
+      "triangles": 1623,
+      "boundaryEdges": 111,
+      "badEdges": 1
+    },
+    {
+      "node": "Terminal ICA perforator 1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 920,
+      "triangles": 1694,
+      "boundaryEdges": 143,
+      "badEdges": 2
+    },
+    {
+      "node": "Terminal ICA perforator 2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 861,
+      "triangles": 1609,
+      "boundaryEdges": 111,
+      "badEdges": 0
+    },
+    {
+      "node": "Terminal ICA perforator 2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 862,
+      "triangles": 1611,
+      "boundaryEdges": 111,
+      "badEdges": 0
+    },
+    {
+      "node": "Thalamogeniculate left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3505,
+      "triangles": 6855,
+      "boundaryEdges": 155,
+      "badEdges": 0
+    },
+    {
+      "node": "Thalamogeniculate right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3563,
+      "triangles": 6973,
+      "boundaryEdges": 149,
+      "badEdges": 0
+    },
+    {
+      "node": "Thalamoperforator 1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3114,
+      "triangles": 6052,
+      "boundaryEdges": 176,
+      "badEdges": 0
+    },
+    {
+      "node": "Thalamoperforator 1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3159,
+      "triangles": 6126,
+      "boundaryEdges": 192,
+      "badEdges": 0
+    },
+    {
+      "node": "Thalamoperforator 2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3053,
+      "triangles": 5908,
+      "boundaryEdges": 198,
+      "badEdges": 0
+    },
+    {
+      "node": "Thalamoperforator 2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3157,
+      "triangles": 6126,
+      "boundaryEdges": 188,
+      "badEdges": 0
+    },
+    {
+      "node": "Tonsillar",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4803,
+      "triangles": 9490,
+      "boundaryEdges": 114,
+      "badEdges": 0
+    },
+    {
+      "node": "Tonsillar left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4803,
+      "triangles": 9490,
+      "boundaryEdges": 114,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10311,
+      "triangles": 20148,
+      "boundaryEdges": 478,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial inferior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3330,
+      "triangles": 6450,
+      "boundaryEdges": 210,
+      "badEdges": 1
+    },
+    {
+      "node": "Transverse facial inferior division right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3331,
+      "triangles": 6452,
+      "boundaryEdges": 210,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10312,
+      "triangles": 20150,
+      "boundaryEdges": 478,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial masseteric branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1973,
+      "triangles": 3862,
+      "boundaryEdges": 82,
+      "badEdges": 1
+    },
+    {
+      "node": "Transverse facial masseteric branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1973,
+      "triangles": 3862,
+      "boundaryEdges": 82,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial parotid branch left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1237,
+      "triangles": 2388,
+      "boundaryEdges": 84,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial parotid branch right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1213,
+      "triangles": 2340,
+      "boundaryEdges": 84,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial superior division left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3126,
+      "triangles": 6122,
+      "boundaryEdges": 128,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial superior division right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3126,
+      "triangles": 6122,
+      "boundaryEdges": 128,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial\u2013facial left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1010,
+      "triangles": 2016,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial\u2013facial right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1010,
+      "triangles": 2016,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial\u2013infraorbital left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1362,
+      "triangles": 2720,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Transverse facial\u2013infraorbital right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 1266,
+      "triangles": 2528,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013accessory meningeal circle left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 258,
+      "triangles": 512,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013accessory meningeal circle right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 258,
+      "triangles": 512,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013mandibular ICA circle left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 242,
+      "triangles": 480,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013mandibular ICA circle right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 242,
+      "triangles": 480,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013maxillary vidian circle left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 274,
+      "triangles": 544,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013maxillary vidian circle right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 274,
+      "triangles": 544,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013pterygovaginal circle left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 178,
+      "triangles": 352,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tubal\u2013pterygovaginal circle right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 178,
+      "triangles": 352,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Tuberothalamic artery left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1855,
+      "triangles": 3626,
+      "boundaryEdges": 82,
+      "badEdges": 0
+    },
+    {
+      "node": "Tuberothalamic artery right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1879,
+      "triangles": 3678,
+      "boundaryEdges": 78,
+      "badEdges": 0
+    },
+    {
+      "node": "VA anterior meningeal left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3132,
+      "triangles": 6186,
+      "boundaryEdges": 76,
+      "badEdges": 0
+    },
+    {
+      "node": "VA anterior meningeal right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 3167,
+      "triangles": 6252,
+      "boundaryEdges": 80,
+      "badEdges": 0
+    },
+    {
+      "node": "VA medullary perforator 1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2045,
+      "triangles": 3937,
+      "boundaryEdges": 153,
+      "badEdges": 0
+    },
+    {
+      "node": "VA medullary perforator 1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1951,
+      "triangles": 3789,
+      "boundaryEdges": 113,
+      "badEdges": 0
+    },
+    {
+      "node": "VA medullary perforator 2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1899,
+      "triangles": 3627,
+      "boundaryEdges": 173,
+      "badEdges": 0
+    },
+    {
+      "node": "VA medullary perforator 2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2066,
+      "triangles": 3971,
+      "boundaryEdges": 163,
+      "badEdges": 0
+    },
+    {
+      "node": "VA muscular C1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1651,
+      "triangles": 3222,
+      "boundaryEdges": 78,
+      "badEdges": 0
+    },
+    {
+      "node": "VA muscular C1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1744,
+      "triangles": 3407,
+      "boundaryEdges": 79,
+      "badEdges": 0
+    },
+    {
+      "node": "VA muscular C2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2324,
+      "triangles": 4567,
+      "boundaryEdges": 79,
+      "badEdges": 0
+    },
+    {
+      "node": "VA muscular C2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 2383,
+      "triangles": 4686,
+      "boundaryEdges": 78,
+      "badEdges": 0
+    },
+    {
+      "node": "VA odontoid contribution left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1947,
+      "triangles": 3818,
+      "boundaryEdges": 74,
+      "badEdges": 0
+    },
+    {
+      "node": "VA odontoid contribution right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1960,
+      "triangles": 3847,
+      "boundaryEdges": 71,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V1 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6738,
+      "triangles": 13408,
+      "boundaryEdges": 66,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V1 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 6642,
+      "triangles": 13216,
+      "boundaryEdges": 66,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V2 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 19940,
+      "triangles": 39263,
+      "boundaryEdges": 361,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V2 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 19934,
+      "triangles": 39249,
+      "boundaryEdges": 361,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V3 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 10377,
+      "triangles": 20036,
+      "boundaryEdges": 724,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V3 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 9823,
+      "triangles": 18851,
+      "boundaryEdges": 795,
+      "badEdges": 0
+    },
+    {
+      "node": "Vertebral V4 left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11580,
+      "triangles": 22029,
+      "boundaryEdges": 1139,
+      "badEdges": 3
+    },
+    {
+      "node": "Vertebral V4 right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 11667,
+      "triangles": 22165,
+      "boundaryEdges": 1177,
+      "badEdges": 0
+    },
+    {
+      "node": "Vidian",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4867,
+      "triangles": 9626,
+      "boundaryEdges": 106,
+      "badEdges": 0
+    },
+    {
+      "node": "Vidian ECA\u2013ICA left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 194,
+      "triangles": 384,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Vidian ECA\u2013ICA right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 194,
+      "triangles": 384,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Vidian ICA contribution left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1767,
+      "triangles": 3462,
+      "boundaryEdges": 70,
+      "badEdges": 0
+    },
+    {
+      "node": "Vidian ICA contribution right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 1767,
+      "triangles": 3462,
+      "boundaryEdges": 70,
+      "badEdges": 0
+    },
+    {
+      "node": "Vidian left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4867,
+      "triangles": 9626,
+      "boundaryEdges": 106,
+      "badEdges": 0
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 4931,
+      "triangles": 9724,
+      "boundaryEdges": 136,
+      "badEdges": 1
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5164,
+      "triangles": 9889,
+      "boundaryEdges": 410,
+      "badEdges": 12
+    },
+    {
+      "node": "Zygomatico-orbital left",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5140,
+      "triangles": 10190,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Zygomatico-orbital right",
+      "asset": "models/complete-circulation.glb",
+      "vertices": 5140,
+      "triangles": 10190,
+      "boundaryEdges": 88,
+      "badEdges": 0
+    },
+    {
+      "node": "Zygomatico-orbital\u2013lacrimal left",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    },
+    {
+      "node": "Zygomatico-orbital\u2013lacrimal right",
+      "asset": "models/complete-anastomoses.glb",
+      "vertices": 354,
+      "triangles": 704,
+      "boundaryEdges": 0,
+      "badEdges": 0
+    }
+  ],
+  "network": {
+    "id": "arterial-native-affected-neighbourhood",
+    "nodes": [
+      "ACA A1 right",
+      "ACA A2 right",
+      "Anterior communicating",
+      "Medial posterior choroidal left",
+      "PCA P2-P3 left",
+      "PCA anterior inferior temporal left",
+      "Terminal ICA perforator 1 right",
+      "Vertebral V3 right",
+      "Vertebral V4 right"
+    ]
+  }
+}

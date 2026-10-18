@@ -1,0 +1,36 @@
+{
+  "release": "0.9.110",
+  "scope": "Bounded bilateral anterior A4 shaft cortical fits. All native ports, earlier A4 fit regions, both A5 fits and all other meshes remain fixed. Residual cortical embedding and wider ACA/cortical registration remain open.",
+  "changes": [
+    {
+      "node": "ACA A4 left",
+      "medialDisplacementMm": 2.3,
+      "superiorDisplacementMm": -1.0,
+      "posteriorSupportY": -35,
+      "posteriorPlateauY": -32.5,
+      "anteriorPlateauY": -30,
+      "anteriorSupportY": -27,
+      "maximumDisplacementLimitMm": 2.51,
+      "depthToleranceMm": 0.001,
+      "coreY": [
+        -32.5,
+        -30
+      ]
+    },
+    {
+      "node": "ACA A4 right",
+      "medialDisplacementMm": -1.5,
+      "superiorDisplacementMm": -1.0,
+      "posteriorSupportY": -35,
+      "posteriorPlateauY": -32.5,
+      "anteriorPlateauY": -30,
+      "anteriorSupportY": -27,
+      "maximumDisplacementLimitMm": 1.81,
+      "depthToleranceMm": 0.001,
+      "coreY": [
+        -32.5,
+        -30
+      ]
+    }
+  ]
+}

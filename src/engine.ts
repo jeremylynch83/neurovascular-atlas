@@ -1,17 +1,16 @@
 import * as THREE from 'three';
 import { SelectionHalo, selectionHaloFade } from './selectionHalo';
 import { bindSelectionGesture } from './selectionGesture';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
 import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
-import { DsaRenderer } from './dsaRenderer';
-import { pathPoint,type InjectionPoint } from './flowGeometry';
-import { makeDsaRun,type DsaRun } from './dsa';
-import { injectionPreset } from './presets';
+import { DsaRenderer, loadInjectionFlow } from './dsaRenderer';
+import { injectionOnPath,type FlowData,type InjectionPoint } from './flowGeometry';
+import type { DsaRun } from './dsa';
+import { StagedLoader, type PreparedMesh } from './stagedLoading';
+import { WorkerGeometrySource } from './geometrySource';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
 const SELECTION_COLOUR = new THREE.Color(0xe99a42).multiplyScalar(1.1);
@@ -25,38 +24,6 @@ function structureColour(structure: Structure): number | string {
 }
 
 type Entry = { structure: Structure; mesh: THREE.Mesh; baseOpacity: number; opaqueMaterial?: THREE.MeshStandardMaterial; ghostMaterial?: THREE.MeshLambertMaterial; batch?: { mesh: THREE.BatchedMesh; instanceId: number } };
-
-function gltfNameCandidates(name: string): string[] {
-  // GLTFLoader sanitises node names through PropertyBinding.sanitizeNodeName().
-  // Stable anatomy IDs deliberately contain dots, so look up both the original
-  // GLB name and the Three.js-sanitised runtime name.
-  const safe = THREE.PropertyBinding.sanitizeNodeName(name);
-  return safe === name ? [name] : [name, safe];
-}
-
-/**
- * Convert quantised/interleaved GLTF attributes to writable Float32 arrays
- * before baking node transforms. The legacy BodyParts3D assets use
- * KHR_mesh_quantization; applying transforms directly to their integer-backed
- * position attributes clamps/truncates coordinates and turns the skull into a
- * box-like artefact.
- */
-function toFloatGeometry(src: THREE.BufferGeometry): THREE.BufferGeometry {
-  const geo = new THREE.BufferGeometry();
-  for (const name of ['position', 'normal'] as const) {
-    const a = src.getAttribute(name) as THREE.BufferAttribute | THREE.InterleavedBufferAttribute | undefined;
-    if (!a) continue;
-    const arr = new Float32Array(a.count * 3);
-    for (let i = 0; i < a.count; i++) {
-      arr[i * 3] = a.getX(i);
-      arr[i * 3 + 1] = a.getY(i);
-      arr[i * 3 + 2] = a.getZ(i);
-    }
-    geo.setAttribute(name, new THREE.BufferAttribute(arr, 3));
-  }
-  if (src.index) geo.setIndex(src.index);
-  return geo;
-}
 
 export function pickAnatomy(raycaster: THREE.Raycaster, entries: Entry[], layers: Record<SystemId, LayerState>, clip: THREE.Plane | null, visibility?: ReadonlyMap<string, LayerState>) {
   const selectable = entries
@@ -79,7 +46,17 @@ export class AnatomyEngine {
   private segmentMembers: Map<string, Set<string>>;
   private vascularBatches: THREE.BatchedMesh[] = [];
   private objectToId = new Map<THREE.Object3D, string>();
-  private loader = new GLTFLoader();
+  private loading: StagedLoader | null = null;
+  private interacting = false;
+  private nextBackgroundSlot = 0;
+  private lastRenderDuration = 0;
+  private frameInterval = 16.7;
+  private previousFrameTime = 0;
+  private userChangedView = false;
+  private vertexBudget = 30_000;
+  private primaryPrepared = false;
+  private workWaiters = new Set<() => void>();
+  onInteraction?: () => void;
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
   private disposeSelectionGesture: () => void;
@@ -109,6 +86,9 @@ export class AnatomyEngine {
   private displayedFps: number | null = null;
   private disposed = false;
   private dsaRenderer: DsaRenderer | null = null;
+  private injectionFlow: FlowData | null = null;
+  private flowRequest: Promise<FlowData> | null = null;
+  private dsaRequest: Promise<DsaRenderer> | null = null;
   private dsaTime = 2;
   private dsaArteries = new Set<string>();
   private dsaView: { camera: THREE.PerspectiveCamera; target: THREE.Vector3; focusFloor: number } | null = null;
@@ -126,7 +106,6 @@ export class AnatomyEngine {
     this.camera.position.fromArray(initialView.direction);
     this.onSelect = onSelect;
     this.onFps = onFps;
-    this.loader.setMeshoptDecoder(MeshoptDecoder);
     this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.localClippingEnabled = true;
@@ -147,12 +126,15 @@ export class AnatomyEngine {
   }
 
   private makeControls() {
+    this.interacting = false;
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.08;
     controls.addEventListener('start', () => {
       this.focusDistanceFloor = 0;
+      this.interacting = true; this.userChangedView = true; this.onInteraction?.();
     });
+    controls.addEventListener('end', () => { this.interacting = false; this.movingUntil = performance.now() + 180; });
     controls.addEventListener('change', () => { this.movingUntil = performance.now() + 180; this.render(); });
     return controls;
   }
@@ -170,105 +152,93 @@ export class AnatomyEngine {
     this.controls.target.copy(target);
   }
 
-  async load(onProgress?: (percent: number) => void): Promise<void> {
-    const withAssets = this.manifest.structures.filter((s) => s.asset);
-    const files = [...new Set(withAssets.map((s) => s.asset!.file))];
-    const sizes = files.map(file => this.manifest.assetByteSizes?.[file] ?? 0);
-    const knownSizes = sizes.length > 0 && sizes.every(size => size > 0);
-    const totalBytes = sizes.reduce((sum, size) => sum + size, 0);
-    let completedBytes = 0, lastProgress = -1;
-    const report = (value: number) => {
-      const percent = Math.max(0, Math.min(100, Math.floor(value)));
-      if (!this.disposed && percent > lastProgress) { lastProgress = percent; onProgress?.(percent); }
-    };
-    report(0);
-    for (const [fileIndex, file] of files.entries()) {
-      const revision = this.manifest.assetRevisions?.[file] ?? this.manifest.release;
-      const gltf = await this.loader.loadAsync(`${import.meta.env.BASE_URL}anatomy/${file}?v=${encodeURIComponent(revision)}`, event => {
-        const fraction = knownSizes
-          ? (completedBytes + Math.min(event.loaded, sizes[fileIndex])) / totalBytes
-          : (fileIndex + (event.total > 0 ? Math.min(1, event.loaded / event.total) : 0)) / files.length;
-        report(fraction * 90);
-      });
-      if (this.disposed) {
-        gltf.scene.traverse((o) => { if ((o as THREE.Mesh).isMesh) (o as THREE.Mesh).geometry.dispose(); });
-        return;
-      }
-      gltf.scene.updateMatrixWorld(true);
-      const nodes = new Map<string, THREE.Mesh>();
-      const parser = gltf.parser as unknown as {
-        json?: { nodes?: Array<{ name?: string }> };
-        associations?: Map<THREE.Object3D, { nodes?: number }>;
-      };
-      gltf.scene.traverse((o) => {
-        if (!(o as THREE.Mesh).isMesh) return;
-        const mesh = o as THREE.Mesh;
-        // GLTFLoader sanitises Object3D.name (notably removing dots from our
-        // stable anatomy IDs). Recover the original glTF node name through the
-        // parser association where possible, and also index runtime/sanitised
-        // names as fallbacks. This lets already-built TopBrain GLBs load without
-        // rebuilding the 2 GB source dataset or regenerating the reference case.
-        let cursor: THREE.Object3D | null = o;
-        while (cursor) {
-          const assoc = parser.associations?.get(cursor);
-          if (assoc?.nodes !== undefined) {
-            const original = parser.json?.nodes?.[assoc.nodes]?.name;
-            if (original) nodes.set(original, mesh);
-            break;
-          }
-          cursor = cursor.parent;
-        }
-        if (o.name) nodes.set(o.name, mesh);
-        if (o.parent?.name) nodes.set(o.parent.name, mesh);
-      });
-      const unresolved: string[] = [];
-      for (const structure of withAssets.filter((s) => s.asset!.file === file)) {
-        const src = gltfNameCandidates(structure.asset!.node).map((name) => nodes.get(name)).find(Boolean);
-        if (!src) { unresolved.push(structure.asset!.node); continue; }
-        const geometry = toFloatGeometry(src.geometry);
-        geometry.applyMatrix4(src.matrixWorld);
-        // Trimesh-generated TopBrain GLBs contain positions/indices but may not
-        // carry a NORMAL accessor. MeshStandardMaterial then receives zero/default
-        // normals and the scan-derived surfaces can appear effectively invisible.
-        // Compute normals after baking the node transform so lighting is correct.
-        if (!geometry.getAttribute('normal')) geometry.computeVertexNormals();
-        geometry.computeBoundingBox(); geometry.computeBoundingSphere();
-        this.bounds.union(geometry.boundingBox!);
-        const skullContext = structure.system === 'bone' && structure.provenance.sourceType === 'legacy-placeholder';
-        const material = new THREE.MeshStandardMaterial({ color: structureColour(structure), roughness: structure.system === 'bone' ? 0.72 : 0.37, metalness: 0, side: skullContext ? THREE.FrontSide : THREE.DoubleSide });
-        const mesh = new THREE.Mesh(geometry, material);
-        mesh.name = structure.id;
-        this.root.add(mesh);
-        this.entries.set(structure.id, { structure, mesh, baseOpacity: 1, opaqueMaterial: material });
-        this.objectToId.set(mesh, structure.id);
-      }
-      if (unresolved.length) {
-        console.warn(`Could not resolve ${unresolved.length} GLB node(s) in ${file}:`, unresolved);
-      }
-      completedBytes += sizes[fileIndex];
-      report((knownSizes ? completedBytes / totalBytes : (fileIndex + 1) / files.length) * 90);
-    }
-    if (withAssets.length > 0 && this.entries.size === 0) {
-      throw new Error(`The manifest declares ${withAssets.length} geometry assets, but none could be matched to GLB nodes. Check GLB node naming/manifest integration.`);
-    }
-    report(95);
-    // Let the loading UI paint before the final synchronous scene preparation.
-    if (onProgress) await new Promise<void>(resolve => requestAnimationFrame(() => setTimeout(resolve, 0)));
+  async load(onChange?: () => void): Promise<void> {
+    const source = new WorkerGeometrySource(this.manifest, () => this.vertexBudget);
+    this.loading = new StagedLoader(this.manifest, source,
+      async meshes => {
+        if (this.disposed) return;
+        const start = performance.now(); this.installMeshes(meshes);
+        const duration = performance.now() - start;
+        if (duration > 2) this.vertexBudget = Math.max(8_000, Math.floor(this.vertexBudget * .65));
+        else if (duration < 1) this.vertexBudget = Math.min(50_000, Math.floor(this.vertexBudget * 1.15));
+      },
+      background => this.workSlot(background), () => { if (!this.disposed) onChange?.(); });
+    onChange?.();
+    await this.loading.loadCritical();
     if (this.disposed) return;
-    this.buildVascularBatches();
-    this.refreshMaterials();
-    this.fitAll(false);
-    this.render();
-    if (onProgress) await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
-    report(100);
+    await this.buildInitialVascularBatches();
+    if (this.disposed) return;
+    this.primaryPrepared = true;
+    if (!this.userChangedView) this.fitAll(false);
+    this.refreshMaterials(); this.render();
+    performance.mark('atlas-primary-ready');
+    // Resolve primary readiness before running the deferred asset queue.
+    setTimeout(() => { if (!this.disposed) this.loading?.startBackground(); }, 0);
   }
 
-  private buildVascularBatches() {
+  getLoadStates() { return this.loading?.states ?? new Map(); }
+  ensureGeometry(ids: readonly string[]) { return this.loading?.ensure(ids) ?? Promise.resolve(); }
+  vascularGeometryReady() {
+    return !!this.loading && this.manifest.structures.filter(s => s.asset && ['artery', 'vein'].includes(s.system))
+      .every(s => this.loading!.states.get(s.id)?.status === 'ready');
+  }
+  private async workSlot(background: boolean) {
+    // Every initial packet already yields through the worker message queue.
+    // The first scene draw follows framing, avoiding uploads from inside the skull.
+    if (!background) return;
+    // Resume after a paint, with one bounded packet in flight. During gestures
+    // the worker may finish downloading, but no new scene/GPU work is added.
+    do {
+      await new Promise<void>(resolve => {
+        let timer: ReturnType<typeof setTimeout> | undefined;
+        const finish = () => { cancelAnimationFrame(frame); clearTimeout(timer); this.workWaiters.delete(finish); resolve(); };
+        const frame = requestAnimationFrame(() => { timer = setTimeout(finish, 0); });
+        this.workWaiters.add(finish);
+      });
+    } while (!this.disposed && background && (this.interacting || performance.now() < this.movingUntil || performance.now() < this.nextBackgroundSlot));
+    if (background) this.nextBackgroundSlot = performance.now() + Math.min(150, Math.max(0, Math.max(this.lastRenderDuration, this.frameInterval) - 18) * 4);
+  }
+  private installMeshes(packets: PreparedMesh[]) {
+    const added: Entry[] = [];
+    for (const packet of packets) {
+      if (this.entries.has(packet.id)) continue;
+      const structure = this.manifest.structures.find(s => s.id === packet.id)!;
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute('position', new THREE.BufferAttribute(packet.positions, 3));
+      if (packet.normals) geometry.setAttribute('normal', new THREE.BufferAttribute(packet.normals, 3));
+      if (packet.indices) geometry.setIndex(new THREE.BufferAttribute(packet.indices, 1));
+      geometry.boundingBox = new THREE.Box3(new THREE.Vector3().fromArray(packet.bounds[0]), new THREE.Vector3().fromArray(packet.bounds[1]));
+      geometry.boundingSphere = new THREE.Sphere(new THREE.Vector3().fromArray(packet.sphere.centre), packet.sphere.radius);
+      this.bounds.union(geometry.boundingBox);
+      const skullContext = structure.system === 'bone' && structure.provenance.sourceType === 'legacy-placeholder';
+      const material = new THREE.MeshStandardMaterial({ color: structureColour(structure), roughness: structure.system === 'bone' ? 0.72 : 0.37, metalness: 0, side: skullContext ? THREE.FrontSide : THREE.DoubleSide });
+      const mesh = new THREE.Mesh(geometry, material); mesh.name = structure.id;
+      const entry: Entry = { structure, mesh, baseOpacity: 1, opaqueMaterial: material };
+      this.entries.set(structure.id, entry); this.objectToId.set(mesh, structure.id); added.push(entry);
+      this.root.add(mesh);
+    }
+    // Each packet contains at most 16 meshes / 50k vertices (or one larger
+    // source mesh). Existing batches and their GPU buffers are never rebuilt.
+    if (this.primaryPrepared) this.buildVascularBatches(added);
+    this.refreshMaterials(added);
+  }
+
+  private buildVascularBatches(entries: Entry[]) {
+    for (const _ of this.vascularBatchSteps(entries)) { void _; }
+  }
+  private async buildInitialVascularBatches() {
+    let start = performance.now();
+    for (const _ of this.vascularBatchSteps([...this.entries.values()])) {
+      void _; if (this.disposed) return;
+      if (performance.now() - start > 2) { await new Promise(resolve => setTimeout(resolve, 0)); start = performance.now(); }
+    }
+  }
+  private *vascularBatchSteps(entries: Entry[]) {
     // Without native multi-draw, retain the original path rather than add
     // batching texture work to millions of vertices without reducing draws.
     if (!this.renderer.extensions.has('WEBGL_multi_draw')) return;
     const groups = new Map<string, Entry[]>();
-    for (const e of this.entries.values()) {
+    for (const e of entries) {
       if (!['artery', 'vein'].includes(e.structure.system) || e.baseOpacity !== 1) continue;
       const indexed = !!e.mesh.geometry.index;
       const key = `${e.structure.system}:${indexed}`;
@@ -292,6 +262,7 @@ export class AnatomyEngine {
         const instanceId = batch.addInstance(batch.addGeometry(e.mesh.geometry));
         batch.setColorAt(instanceId, new THREE.Color(structureColour(e.structure)));
         e.batch = { mesh: batch, instanceId };
+        yield;
       }
       batch.computeBoundingBox(); batch.computeBoundingSphere();
       this.vascularBatches.push(batch); this.root.add(batch);
@@ -308,17 +279,13 @@ export class AnatomyEngine {
     const rect = this.renderer.domElement.getBoundingClientRect();
     this.pointer.set(((ev.clientX - rect.left) / rect.width) * 2 - 1, -((ev.clientY - rect.top) / rect.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
-    if(this.injectionPick && this.dsaRenderer) {
-      const eligible=[...this.entries].filter(([id])=>this.dsaRenderer!.isPlacementVisible(id));
-      const hit=this.raycaster.intersectObjects(eligible.map(([,e])=>e.mesh),false)[0];
+    if(this.injectionPick) {
+      const hit=pickAnatomy(this.raycaster,[...this.entries.values()].filter(e=>e.structure.system==='artery'),this.layers,null);
       const id=hit?this.objectToId.get(hit.object)!:null;
-      if(!id||!this.dsaRenderer.flow.entries[id]?.selectable)return;
-      if(id===this.injectionVessel) {
-        const tip=this.dsaRenderer.injectionPoint(id,hit!.point.toArray());
-        this.injectionPick(this.injectionVessel,tip);
-      }else {
-        this.selectInjectionVessel(id);this.injectionPick(id,null);
-      }
+      const row=id?this.injectionFlow?.entries[id]:undefined;
+      if(!id||(this.injectionFlow&&!row?.selectable))return;
+      if(id===this.injectionVessel&&row?.selectable)this.injectionPick(id,{id,...injectionOnPath(row,hit!.point.toArray())});
+      else if(id!==this.injectionVessel)this.injectionPick(id,null);
       return;
     }
     if (this.dsaView) { this.onSelect(this.dsaRenderer!.pick(this.raycaster,this.dsaTime),true); return; }
@@ -391,20 +358,22 @@ export class AnatomyEngine {
     this.refreshMaterials();
   }
 
-  private refreshMaterials() {
+  private refreshMaterials(only?: Entry[]) {
+    const placing=!!this.injectionPick;
     const haloSources: THREE.Mesh[] = [];
     const selectedStructure = this.manifest.structures.find(s => s.id === this.selected);
     const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers[selectedStructure?.system ?? 'bone'] : 'off';
-    this.landmarkMarker.visible = markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
+    this.landmarkMarker.visible = !placing && markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
     const visibleBatches = new Set<THREE.BatchedMesh>();
-    for (const [id, e] of this.entries) {
-      const state = this.visibility?.get(id) ?? this.layers[e.structure.system];
-      e.mesh.visible = state !== 'off' && !this.hidden.has(id);
-      const selected = this.selected !== null && !!this.segmentMembers.get(this.selected)?.has(id);
+    for (const e of only ?? this.entries.values()) {
+      const id = e.structure.id;
+      const state = placing ? (e.structure.system==='artery'?'on':'off') : this.visibility?.get(id) ?? this.layers[e.structure.system];
+      e.mesh.visible = state !== 'off' && (placing || !this.hidden.has(id));
+      const selected = placing ? id===this.injectionVessel : this.selected !== null && !!this.segmentMembers.get(this.selected)?.has(id);
       const skullContext = e.structure.system === 'bone' && e.structure.provenance.sourceType === 'legacy-placeholder';
       const craniofacial = /mandib|maxill|tooth-/.test(e.structure.asset?.node ?? '');
-      const normalOpacity = state === 'ghost' ? (craniofacial ? 0.25 : skullContext ? 0.11 : 0.16) : selected ? 1 : e.baseOpacity;
-      const opacity = this.focusedMembers ? (this.focusedMembers.has(id) ? 1 : Math.min(normalOpacity, 0.12)) : normalOpacity;
+      const normalOpacity = placing ? 1 : state === 'ghost' ? (craniofacial ? 0.25 : skullContext ? 0.11 : 0.16) : selected ? 1 : e.baseOpacity;
+      const opacity = !placing && this.focusedMembers ? (this.focusedMembers.has(id) ? 1 : Math.min(normalOpacity, 0.12)) : normalOpacity;
       const transparent = opacity < 1;
       // Reuse the original geometry; only faint context gets cheaper shading.
       // Cache materials so changing visibility does not repeatedly compile them.
@@ -416,7 +385,7 @@ export class AnatomyEngine {
       mat.color.set(selected ? SELECTION_COLOUR : structureColour(e.structure));
       mat.emissive.setHex(selected ? SELECTION_EMISSIVE : 0x000000);
       mat.emissiveIntensity = selected ? SELECTION_GLOW : 1;
-      if (selected && e.mesh.visible && opacity > 0) haloSources.push(e.mesh);
+      if (!placing && selected && e.mesh.visible && opacity > 0) haloSources.push(e.mesh);
       if (mat.transparent !== transparent) { mat.transparent = transparent; mat.needsUpdate = true; }
       mat.opacity = opacity; mat.depthWrite = opacity > 0.4;
       this.updateClipping(mat);
@@ -431,24 +400,27 @@ export class AnatomyEngine {
         } else if (e.mesh.parent !== this.root) this.root.add(e.mesh);
       }
     }
-    for (const batch of this.vascularBatches) {
+    for (const batch of only ? new Set(only.flatMap(e => e.batch ? [e.batch.mesh] : [])) : this.vascularBatches) {
       batch.visible = visibleBatches.has(batch);
       this.updateClipping(batch.material as THREE.Material);
     }
-    this.selectionHalo.setMeshes(haloSources);
+    const haloChanged = !only || only.some(e => this.selected !== null && this.segmentMembers.get(this.selected)?.has(e.structure.id));
+    if (haloChanged) this.selectionHalo.setMeshes(only ? [...this.entries.values()].filter(e => e.mesh.visible && this.selected !== null && this.segmentMembers.get(this.selected)?.has(e.structure.id) && !placing).map(e => e.mesh) : haloSources);
     if (this.reducedMotion.matches) this.selectionHalo.setFade(0.65);
-    this.selectionHalo.setClip(this.clipEnabled ? [this.clipPlane] : []);
-    this.render();
+    this.selectionHalo.setClip(this.clipEnabled && !placing ? [this.clipPlane] : []);
+    // Hidden background data do not alter the visible scene or need a redraw.
+    if (!only || only.some(e => e.mesh.visible)) this.render();
   }
 
   private updateClipping(material: THREE.Material) {
-    const planeCount = this.clipEnabled ? 1 : 0;
+    const planeCount = this.clipEnabled && !this.injectionPick ? 1 : 0;
     if ((material.clippingPlanes?.length ?? 0) === planeCount) return;
-    material.clippingPlanes = this.clipEnabled ? [this.clipPlane] : [];
+    material.clippingPlanes = planeCount ? [this.clipPlane] : [];
     material.needsUpdate = true;
   }
 
   focus(id: string) {
+    this.userChangedView = true;
     const landmark = this.manifest.structures.find(s => s.id === id)?.landmark;
     if (landmark?.point) {
       const box = new THREE.Box3().setFromCenterAndSize(new THREE.Vector3(...landmark.point), new THREE.Vector3(38,38,38));
@@ -488,6 +460,7 @@ export class AnatomyEngine {
     this.controls.update(); this.render();
   }
   setView(view: AnatomicalView) {
+    this.userChangedView = true;
     const box = new THREE.Box3(); for (const [id,e] of this.entries) if (this.dsaView ? this.dsaArteries.has(id) : e.mesh.visible) box.expandByObject(e.mesh);
     if (box.isEmpty()) return;
     const c=box.getCenter(new THREE.Vector3()), size=box.getSize(new THREE.Vector3()), r=Math.max(size.x,size.y,size.z)*2.2;
@@ -499,6 +472,7 @@ export class AnatomyEngine {
   }
   /** Frame the preset vessels, independently of the retained skull/brain context. */
   framePreset(ids: readonly string[], rasDirection: [number, number, number]) {
+    this.userChangedView = true;
     const box = new THREE.Box3();
     for (const id of ids) {
       const entry = this.entries.get(id);
@@ -555,24 +529,33 @@ export class AnatomyEngine {
     this.render();
   }
   hasGeometry(id: string) { return [...this.segmentMembers.get(id) ?? []].some(key => this.entries.has(key)); }
+  async prepareInjection() {
+    if(!this.flowRequest)this.flowRequest=loadInjectionFlow(this.manifest).catch(error=>{this.flowRequest=null;throw error});
+    return this.injectionFlow=await this.flowRequest;
+  }
   async prepareDsa() {
+    await this.ensureGeometry(this.manifest.structures.filter(s => s.asset && ['artery', 'vein'].includes(s.system)).map(s => s.id));
+    if (this.disposed) throw new Error('Atlas closed');
     if(!this.dsaRenderer) {
-      const renderer=await DsaRenderer.create(this.renderer,this.manifest,new Map([...this.entries].map(([id,e])=>[id,e.mesh.geometry])));
-      if(this.disposed){renderer.dispose();throw Error('Atlas closed while loading injection courses')}
-      this.dsaRenderer=renderer;
+      this.dsaRequest??=(async()=>{
+        const flow=await this.prepareInjection();
+        const renderer=await DsaRenderer.create(this.renderer,this.manifest,new Map([...this.entries].map(([id,e])=>[id,e.mesh.geometry])),flow);
+        if(this.disposed){renderer.dispose();throw Error('Atlas closed while loading injection courses')}
+        return renderer;
+      })().catch(error=>{this.dsaRequest=null;throw error});
+      this.dsaRenderer=await this.dsaRequest;
     }
     return this.dsaRenderer.flow;
   }
-  getDsaFlow() { return this.dsaRenderer?.flow; }
-  beginInjectionPlacement(id: string|null,pick:(id:string,point:InjectionPoint|null)=>void) { this.injectionPick=pick;this.selectInjectionVessel(id); }
-  selectInjectionVessel(id: string|null) { this.injectionVessel=id;this.dsaRenderer?.setPlacementSelected(id);this.render();if(id)void this.warmInjection(id).catch(()=>{}); }
-  private async warmInjection(id:string) {
-    const d=this.dsaRenderer;if(!d?.flow.entries[id]?.selectable)return;
-    const side=this.manifest.structures.find(s=>s.id===id)?.side==='right'?'right':'left';
-    const run=makeDsaRun(this.manifest,injectionPreset(id),side,d.flow,{id,distance:0,point:pathPoint(d.flow.entries[id],0)});
-    await d.setRun(run,()=>!this.disposed&&this.injectionVessel===id&&!!this.injectionPick,true);
+  getDsaFlow() { return this.injectionFlow; }
+  validateInjectionPoint(point: InjectionPoint) { return this.dsaRenderer!.injectionPoint(point.id,point.point); }
+  beginInjectionPlacement(id: string|null,pick:(id:string,point:InjectionPoint|null)=>void) {
+    this.dsaRevision++;
+    this.dsaView??={camera:this.camera.clone(),target:this.controls.target.clone(),focusFloor:this.focusDistanceFloor};
+    this.injectionPick=pick;this.selectInjectionVessel(id);
   }
-  endInjectionPlacement() { this.dsaRevision++;this.injectionPick=null;this.injectionVessel=null;this.render(); }
+  selectInjectionVessel(id: string|null) { this.dsaRevision++;this.injectionVessel=id;this.refreshMaterials(); }
+  endInjectionPlacement() { this.dsaRevision++;this.injectionPick=null;this.injectionVessel=null;this.refreshMaterials(); }
   async setDsa(run: DsaRun | null) {
     const revision=++this.dsaRevision;
     if (run) {
@@ -581,13 +564,15 @@ export class AnatomyEngine {
       if(!await this.dsaRenderer!.setRun(run,()=>!this.disposed&&revision===this.dsaRevision))return false;
       this.dsaArteries = new Set(run.arteries);
       this.dsaView ??= { camera: this.camera.clone(), target: this.controls.target.clone(), focusFloor: this.focusDistanceFloor };
-    } else if (this.dsaView) {
+    } else {
       this.endInjectionPlacement();
+      if(this.dsaView){
       const saved = this.dsaView; this.dsaView = null;
       this.controls.dispose(); this.camera.copy(saved.camera);
       this.camera.aspect = this.container.clientWidth / Math.max(1,this.container.clientHeight); this.camera.updateProjectionMatrix();
       this.controls = this.makeControls(); this.controls.target.copy(saved.target);
       this.focusDistanceFloor = saved.focusFloor; this.controls.update();
+      }
     }
     this.render();
     return true;
@@ -643,16 +628,21 @@ export class AnatomyEngine {
   }
   private tick = () => {
     if (this.disposed || this.paused) { this.raf = 0; return; }
+    if (!this.primaryPrepared && this.entries.size) { this.raf = 0; return; }
     if (this.started) this.controls.update();
     const frameTime = performance.now();
+    const interval = frameTime - this.previousFrameTime;
+    // Ignore tab suspension; ordinary slow frames reduce background throughput.
+    if (this.previousFrameTime && interval < 250 && !document.hidden) this.frameInterval = this.frameInterval * .8 + interval * .2;
+    this.previousFrameTime = frameTime;
     const interactionRenderRequested = this.renderRequested;
-    if (this.started && !this.dsaView) this.updateSelectionGlow(frameTime);
+    if (this.started && !this.dsaView && !this.injectionPick) this.updateSelectionGlow(frameTime);
     const rendered = this.renderRequested;
     if (rendered) {
       this.renderRequested = false;
-      if(this.dsaView && this.injectionPick)this.dsaRenderer!.renderPlacement(this.camera);
-      else if (this.dsaView) this.dsaRenderer!.render(this.camera,this.dsaTime);
+      if (this.dsaView && !this.injectionPick && this.dsaRenderer) this.dsaRenderer.render(this.camera,this.dsaTime);
       else this.selectionHalo.render(this.scene, this.camera);
+      this.lastRenderDuration = performance.now() - frameTime;
     }
     if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);
     this.raf = 0;
@@ -660,5 +650,5 @@ export class AnatomyEngine {
     if (this.started || this.renderRequested) this.requestFrame();
   };
   start() { if (this.disposed) return; this.started = true; this.render(); }
-  dispose() { this.dsaRenderer?.dispose(); this.disposed = true; cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
+  dispose() { this.disposed = true; this.loading?.dispose(); for (const finish of this.workWaiters) finish(); this.dsaRenderer?.dispose(); cancelAnimationFrame(this.raf); this.resize?.disconnect(); this.reducedMotion.removeEventListener('change',this.onMotionPreference); this.disposeSelectionGesture(); this.controls.dispose(); this.clearLandmarkMarker(); this.selectionHalo.dispose(); for(const e of this.entries.values()){e.mesh.geometry.dispose();(e.opaqueMaterial ?? e.mesh.material as THREE.Material).dispose();e.ghostMaterial?.dispose()} for(const batch of this.vascularBatches){batch.dispose();(batch.material as THREE.Material).dispose()} this.renderer.dispose(); this.renderer.domElement.remove(); }
 }

@@ -1,0 +1,71 @@
+{
+  "release": "0.9.117",
+  "passed": true,
+  "tests": [
+    {
+      "name": "Bone and all arterial files become interactive before deferred downloads complete",
+      "passed": true
+    },
+    {
+      "name": "Loading indicators exist only in the expanded anatomy panel",
+      "passed": true
+    },
+    {
+      "name": "Clicking pending anatomy shows inline Please wait and prioritises its geometry",
+      "passed": true
+    },
+    {
+      "name": "Background insertion pauses throughout a held rotation gesture",
+      "passed": true
+    },
+    {
+      "name": "Late arrivals preserve camera, selection and hidden veins; a newer selection cancels stale queued focus",
+      "passed": true
+    },
+    {
+      "name": "Full DSA becomes available after all vascular geometry is ready, while brain remains deferred",
+      "passed": true
+    },
+    {
+      "name": "DSA preparation and a selective MMA run work before brain geometry loads",
+      "passed": true
+    },
+    {
+      "name": "A queued brain selection completes automatically when its requested mesh arrives",
+      "passed": true
+    },
+    {
+      "name": "All 1,250 runtime meshes retain exact baseline positions, normals and triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Anatomy panel remains usable without horizontal overflow at mobile width",
+      "passed": true
+    },
+    {
+      "name": "A failed background file can be retried inline without losing loaded anatomy or DSA",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "timings": {
+    "primaryReadyMs": 20286.900000000373,
+    "dragFrameMs": {
+      "samples": 58,
+      "p50": 16.69999999999709,
+      "p95": 4383.199999999997,
+      "maximum": 19265.8
+    },
+    "dragLongTasks": [],
+    "cameraDriftMm": 1.0516032489249483e-11,
+    "installPacketMs": {
+      "samples": 311,
+      "p50": 0.7000000011175871,
+      "p95": 6.800000000745058,
+      "maximum": 53.30000000074506
+    },
+    "packetVertexMaximum": 73269,
+    "allReadyMs": 102453.59999999963
+  },
+  "scope": "All actual atlas geometry in Chromium with software WebGL, small rendering resolution. Interaction/background-arrival checks use the MMA preset, preserving hidden veins. Controlled delayed asset downloads. Frame times are diagnostics for this environment, not a mobile/GPU guarantee."
+}

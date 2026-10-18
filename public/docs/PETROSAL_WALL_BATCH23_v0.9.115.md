@@ -1,0 +1,19 @@
+# Petrosal wall cleanup batch 23, v0.9.115
+
+Three Float32 position corrections in the left inferior petrosal vein remove nine microscopic exact self-contact pairs: 12 pairs reduce to 3. Maximum displacement is 5.39479660939e-06 mm, approximately 5.4 nanometres. This is numerical wall cleanup. Regional petrosal fitting and anatomical acceptance remain open. Pair counts are not counts of independent anatomical defects.
+
+The selected mesh retains all 2,847 vertices and 5,451 source triangles. Twenty-one faces involve the three moved vertices. Every source index and stored SNORM16 normal component is exact; the incident-normal transport remains below encoding resolution and changes no stored component. All three native interfaces retain their 119 shared coordinates, and all 203 boundary edges remain fixed. All source weld partitions, component count and face orientations are retained. There are no new coordinate welds against any of the 1,250 named meshes.
+
+The complete 5,451-face self scan checks 37,856 candidate pairs. The remaining pairs are 5272/5425, 5273/5425 and 5273/5426, with all their triangle coordinates exactly retained. The changed-region check performs 545 full-scene pair checks and finds no new crossings or inherited crossings in that region. The ten right-sided pairs are unchanged. All retained historical exact-positive regression fixtures continue to test the predicate against their immutable source coordinates.
+
+Closed occipital tissue checks use 147 matched before/after samples, with no new entry or extra depth. Open pons separation is certified by conservative enclosing balls. Open temporal-bone separation uses 545 evaluated balls and 414 certified leaves over all 21 changed faces, with no unresolved leaves. These local checks do not certify full regional bone fit or lumen continuity.
+
+All face areas stay positive; minimum and maximum area ratios are 0.998346816413 and 18.782953121. The maximum ratio is source face 5311, whose microscopic area changes from 3.07051930731e-09 to 5.76734202063e-08 mm2. The maximum absolute face-area change is 5.18788381243e-06 mm2. DSA proxy volume changes from 159.465540242 to 159.46554101 mm3. The selected proxy retains sanitised flips, removals, caps, connectivity and native cap rims. The other 827 recipes are exact. All vein bounds are exact, so all 597 stored flow courses, edges, vein sites, graph and generator remain exact; only the venous source hash is refreshed.
+
+The full build, 30 repair tests, three clearance tests and DSA checks pass. DSA retains 828 closed and oriented proxies, 8,971,510 triangles, 579 selectable arterial courses and 2,353 closed sections. All 21 runtime files, 1,666 catalogue structures, catalogue graph and asset bindings, 1,249 other named meshes, and four other GLBs are retained. No full-atlas render was performed.
+
+The earlier larger SCA/Wollschlaeger local search is rechecked under the corrected predicate: all 4,620 recorded nine-point states retain a wall conflict. No patch is installed. Fifteen bounded exclusions now have matching geometry and validation-code hashes. The interrupted coordinated search for the remaining three petrosal pairs is not an exhausted search and creates no exclusion. AICA and Wollschlaeger screening produces no accepted geometry.
+
+Three left and ten right petrosal pairs, receiving lumens, regional bone fit, ACA/cortical registration, Galenic/dural/canal findings, seven zero-area arterial triangles and the original unresolved ILT interface remain open. No anatomical targets or imaging were invented.
+
+Replay tools: tools/petrosal-wall-v0.9.115. Immutable evidence: anatomy/source/petrosal-wall-v0.9.115. Structured report: docs/validation/petrosal-wall-v0.9.115.json. The v0.9.114 ZIP supplies the original source venous GLB when re-exporting.

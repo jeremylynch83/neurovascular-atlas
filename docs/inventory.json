@@ -1,0 +1,677 @@
+{
+  "reviewedPopulatedDescriptions": 1295,
+  "proposedCorrections": 666,
+  "bySystem": {
+    "artery": 361,
+    "vein": 57,
+    "brain": 193,
+    "bone": 55
+  },
+  "emptyRenderedDescriptions": 166,
+  "missing": [
+    {
+      "id": "bone.frontal",
+      "name": "Frontal bone"
+    },
+    {
+      "id": "bone.occipital",
+      "name": "Occipital bone"
+    },
+    {
+      "id": "bone.sphenoid",
+      "name": "Sphenoid bone"
+    },
+    {
+      "id": "bone.ethmoid",
+      "name": "Ethmoid bone"
+    },
+    {
+      "id": "bone.vomer",
+      "name": "Vomer"
+    },
+    {
+      "id": "bone.hyoid",
+      "name": "Hyoid bone"
+    },
+    {
+      "id": "bone.parietal.right",
+      "name": "Parietal bone, right"
+    },
+    {
+      "id": "bone.parietal.left",
+      "name": "Parietal bone, left"
+    },
+    {
+      "id": "bone.temporal.right",
+      "name": "Temporal bone, right"
+    },
+    {
+      "id": "bone.temporal.left",
+      "name": "Temporal bone, left"
+    },
+    {
+      "id": "bone.zygomatic.right",
+      "name": "Zygomatic bone, right"
+    },
+    {
+      "id": "bone.zygomatic.left",
+      "name": "Zygomatic bone, left"
+    },
+    {
+      "id": "bone.palatine.right",
+      "name": "Palatine bone, right"
+    },
+    {
+      "id": "bone.palatine.left",
+      "name": "Palatine bone, left"
+    },
+    {
+      "id": "bone.nasal.right",
+      "name": "Nasal bone, right"
+    },
+    {
+      "id": "bone.nasal.left",
+      "name": "Nasal bone, left"
+    },
+    {
+      "id": "bone.lacrimal.right",
+      "name": "Lacrimal bone, right"
+    },
+    {
+      "id": "bone.lacrimal.left",
+      "name": "Lacrimal bone, left"
+    },
+    {
+      "id": "bone.inferior_nasal_concha.right",
+      "name": "Inferior nasal concha, right"
+    },
+    {
+      "id": "bone.inferior_nasal_concha.left",
+      "name": "Inferior nasal concha, left"
+    },
+    {
+      "id": "bone.mandible",
+      "name": "Mandible"
+    },
+    {
+      "id": "bone.maxilla.right",
+      "name": "Maxilla, right"
+    },
+    {
+      "id": "bone.maxilla.left",
+      "name": "Maxilla, left"
+    },
+    {
+      "id": "artery.eca.superior_laryngeal.right",
+      "name": "Superior laryngeal artery right"
+    },
+    {
+      "id": "artery.eca.infrahyoid.right",
+      "name": "Infrahyoid artery right"
+    },
+    {
+      "id": "artery.eca.deep_lingual.right",
+      "name": "Deep lingual artery right"
+    },
+    {
+      "id": "artery.eca.dorsal_lingual.right",
+      "name": "Dorsal lingual artery right"
+    },
+    {
+      "id": "artery.eca.sublingual.right",
+      "name": "Sublingual artery right"
+    },
+    {
+      "id": "artery.eca.occipital_lateral_scalp.right",
+      "name": "Occipital lateral scalp artery right"
+    },
+    {
+      "id": "artery.eca.occipital_medial_scalp.right",
+      "name": "Occipital medial scalp artery right"
+    },
+    {
+      "id": "artery.eca.sta_frontal_anterior_twig.right",
+      "name": "STA frontal anterior twig artery right"
+    },
+    {
+      "id": "artery.eca.sta_parietal_anterior_twig.right",
+      "name": "STA parietal anterior twig artery right"
+    },
+    {
+      "id": "artery.eca.psa_anterior_division.right",
+      "name": "PSA anterior division right"
+    },
+    {
+      "id": "artery.eca.anterior_superior_alveolar.right",
+      "name": "Anterior superior alveolar artery right"
+    },
+    {
+      "id": "artery.eca.mma_frontal_anterior_division.right",
+      "name": "MMA frontal anterior division right"
+    },
+    {
+      "id": "artery.eca.mma_frontal_posterior_division.right",
+      "name": "MMA frontal posterior division right"
+    },
+    {
+      "id": "artery.eca.mma_parietal_ascending.right",
+      "name": "MMA parietal ascending artery right"
+    },
+    {
+      "id": "artery.eca.mma_posterior_terminal.right",
+      "name": "MMA posterior terminal artery right"
+    },
+    {
+      "id": "artery.anterior.supraorbital_right",
+      "name": "Supraorbital right"
+    },
+    {
+      "id": "artery.anterior.dorsal_meningeal_right",
+      "name": "Dorsal meningeal right"
+    },
+    {
+      "id": "artery.anterior.precuneal_right",
+      "name": "Precuneal right"
+    },
+    {
+      "id": "artery.anterior.prefrontal_right",
+      "name": "Prefrontal right"
+    },
+    {
+      "id": "artery.anterior.prefrontal_cortical_branch_right",
+      "name": "Prefrontal cortical branch right"
+    },
+    {
+      "id": "artery.anterior.supraorbital_left",
+      "name": "Supraorbital left"
+    },
+    {
+      "id": "artery.anterior.dorsal_meningeal_left",
+      "name": "Dorsal meningeal left"
+    },
+    {
+      "id": "artery.anterior.precuneal_left",
+      "name": "Precuneal left"
+    },
+    {
+      "id": "artery.anterior.prefrontal_left",
+      "name": "Prefrontal left"
+    },
+    {
+      "id": "artery.anterior.prefrontal_cortical_branch_left",
+      "name": "Prefrontal cortical branch left"
+    },
+    {
+      "id": "artery.posterior.calcarine_superior_cortical_right",
+      "name": "Calcarine superior cortical right"
+    },
+    {
+      "id": "artery.posterior.calcarine_inferior_cortical_right",
+      "name": "Calcarine inferior cortical right"
+    },
+    {
+      "id": "artery.posterior.parieto_occipital_cuneal_right",
+      "name": "Parieto-occipital cuneal right"
+    },
+    {
+      "id": "artery.posterior.pca_lateral_occipital_right",
+      "name": "PCA lateral occipital right"
+    },
+    {
+      "id": "artery.posterior.aica_rostral_branch_right",
+      "name": "AICA rostral branch right"
+    },
+    {
+      "id": "artery.posterior.aica_caudal_branch_right",
+      "name": "AICA caudal branch right"
+    },
+    {
+      "id": "artery.posterior.pica_choroidal_right",
+      "name": "PICA choroidal right"
+    },
+    {
+      "id": "artery.posterior.calcarine_superior_cortical_left",
+      "name": "Calcarine superior cortical left"
+    },
+    {
+      "id": "artery.posterior.calcarine_inferior_cortical_left",
+      "name": "Calcarine inferior cortical left"
+    },
+    {
+      "id": "artery.posterior.parieto_occipital_cuneal_left",
+      "name": "Parieto-occipital cuneal left"
+    },
+    {
+      "id": "artery.posterior.pca_lateral_occipital_left",
+      "name": "PCA lateral occipital left"
+    },
+    {
+      "id": "artery.posterior.aica_rostral_branch_left",
+      "name": "AICA rostral branch left"
+    },
+    {
+      "id": "artery.posterior.aica_caudal_branch_left",
+      "name": "AICA caudal branch left"
+    },
+    {
+      "id": "artery.posterior.pica_choroidal_left",
+      "name": "PICA choroidal left"
+    },
+    {
+      "id": "artery.eca.superior_laryngeal.right.left",
+      "name": "Superior laryngeal artery left"
+    },
+    {
+      "id": "artery.eca.infrahyoid.right.left",
+      "name": "Infrahyoid artery left"
+    },
+    {
+      "id": "artery.eca.deep_lingual.right.left",
+      "name": "Deep lingual artery left"
+    },
+    {
+      "id": "artery.eca.dorsal_lingual.right.left",
+      "name": "Dorsal lingual artery left"
+    },
+    {
+      "id": "artery.eca.sublingual.right.left",
+      "name": "Sublingual artery left"
+    },
+    {
+      "id": "artery.eca.occipital_lateral_scalp.right.left",
+      "name": "Occipital lateral scalp artery left"
+    },
+    {
+      "id": "artery.eca.occipital_medial_scalp.right.left",
+      "name": "Occipital medial scalp artery left"
+    },
+    {
+      "id": "artery.eca.sta_frontal_anterior_twig.right.left",
+      "name": "STA frontal anterior twig artery left"
+    },
+    {
+      "id": "artery.eca.sta_parietal_anterior_twig.right.left",
+      "name": "STA parietal anterior twig artery left"
+    },
+    {
+      "id": "artery.eca.psa_anterior_division.right.left",
+      "name": "PSA anterior division left"
+    },
+    {
+      "id": "artery.eca.anterior_superior_alveolar.right.left",
+      "name": "Anterior superior alveolar artery left"
+    },
+    {
+      "id": "artery.eca.mma_frontal_anterior_division.right.left",
+      "name": "MMA frontal anterior division left"
+    },
+    {
+      "id": "artery.eca.mma_frontal_posterior_division.right.left",
+      "name": "MMA frontal posterior division left"
+    },
+    {
+      "id": "artery.eca.mma_parietal_ascending.right.left",
+      "name": "MMA parietal ascending artery left"
+    },
+    {
+      "id": "artery.eca.mma_posterior_terminal.right.left",
+      "name": "MMA posterior terminal artery left"
+    },
+    {
+      "id": "bone.maxillary-alveolar-process-left",
+      "name": "Maxillary alveolar process left"
+    },
+    {
+      "id": "bone.maxillary-alveolar-process-right",
+      "name": "Maxillary alveolar process right"
+    },
+    {
+      "id": "bone.mandibular-condyle-left",
+      "name": "Mandibular condyle left"
+    },
+    {
+      "id": "bone.mandibular-condyle-right",
+      "name": "Mandibular condyle right"
+    },
+    {
+      "id": "bone.mandibular-alveolar-process",
+      "name": "Mandibular alveolar process"
+    },
+    {
+      "id": "bone.tooth-48",
+      "name": "Tooth 48 (FDI)"
+    },
+    {
+      "id": "bone.tooth-47",
+      "name": "Tooth 47 (FDI)"
+    },
+    {
+      "id": "bone.tooth-46",
+      "name": "Tooth 46 (FDI)"
+    },
+    {
+      "id": "bone.tooth-45",
+      "name": "Tooth 45 (FDI)"
+    },
+    {
+      "id": "bone.tooth-44",
+      "name": "Tooth 44 (FDI)"
+    },
+    {
+      "id": "bone.tooth-43",
+      "name": "Tooth 43 (FDI)"
+    },
+    {
+      "id": "bone.tooth-42",
+      "name": "Tooth 42 (FDI)"
+    },
+    {
+      "id": "bone.tooth-41",
+      "name": "Tooth 41 (FDI)"
+    },
+    {
+      "id": "bone.tooth-38",
+      "name": "Tooth 38 (FDI)"
+    },
+    {
+      "id": "bone.tooth-37",
+      "name": "Tooth 37 (FDI)"
+    },
+    {
+      "id": "bone.tooth-36",
+      "name": "Tooth 36 (FDI)"
+    },
+    {
+      "id": "bone.tooth-35",
+      "name": "Tooth 35 (FDI)"
+    },
+    {
+      "id": "bone.tooth-34",
+      "name": "Tooth 34 (FDI)"
+    },
+    {
+      "id": "bone.tooth-33",
+      "name": "Tooth 33 (FDI)"
+    },
+    {
+      "id": "bone.tooth-32",
+      "name": "Tooth 32 (FDI)"
+    },
+    {
+      "id": "bone.tooth-31",
+      "name": "Tooth 31 (FDI)"
+    },
+    {
+      "id": "bone.tooth-28",
+      "name": "Tooth 28 (FDI)"
+    },
+    {
+      "id": "bone.tooth-27",
+      "name": "Tooth 27 (FDI)"
+    },
+    {
+      "id": "bone.tooth-26",
+      "name": "Tooth 26 (FDI)"
+    },
+    {
+      "id": "bone.tooth-25",
+      "name": "Tooth 25 (FDI)"
+    },
+    {
+      "id": "bone.tooth-24",
+      "name": "Tooth 24 (FDI)"
+    },
+    {
+      "id": "bone.tooth-23",
+      "name": "Tooth 23 (FDI)"
+    },
+    {
+      "id": "bone.tooth-22",
+      "name": "Tooth 22 (FDI)"
+    },
+    {
+      "id": "bone.tooth-21",
+      "name": "Tooth 21 (FDI)"
+    },
+    {
+      "id": "bone.tooth-18",
+      "name": "Tooth 18 (FDI)"
+    },
+    {
+      "id": "bone.tooth-17",
+      "name": "Tooth 17 (FDI)"
+    },
+    {
+      "id": "bone.tooth-16",
+      "name": "Tooth 16 (FDI)"
+    },
+    {
+      "id": "bone.tooth-15",
+      "name": "Tooth 15 (FDI)"
+    },
+    {
+      "id": "bone.tooth-14",
+      "name": "Tooth 14 (FDI)"
+    },
+    {
+      "id": "bone.tooth-13",
+      "name": "Tooth 13 (FDI)"
+    },
+    {
+      "id": "bone.tooth-12",
+      "name": "Tooth 12 (FDI)"
+    },
+    {
+      "id": "bone.tooth-11",
+      "name": "Tooth 11 (FDI)"
+    },
+    {
+      "id": "artery.amendment.ophthalmic_superior_muscular_branch.right",
+      "name": "Ophthalmic superior muscular branch right"
+    },
+    {
+      "id": "artery.amendment.ophthalmic_superior_muscular_branch.left",
+      "name": "Ophthalmic superior muscular branch left"
+    },
+    {
+      "id": "artery.amendment.superior_thyroid_scm_branch.right",
+      "name": "Superior thyroid SCM branch right"
+    },
+    {
+      "id": "artery.amendment.superior_thyroid_scm_branch.left",
+      "name": "Superior thyroid SCM branch left"
+    },
+    {
+      "id": "artery.amendment.cricothyroid.right",
+      "name": "Cricothyroid right"
+    },
+    {
+      "id": "artery.amendment.cricothyroid.left",
+      "name": "Cricothyroid left"
+    },
+    {
+      "id": "artery.amendment.posterior_auricular_parotid_branch.right",
+      "name": "Posterior auricular parotid branch right"
+    },
+    {
+      "id": "artery.amendment.posterior_auricular_parotid_branch.left",
+      "name": "Posterior auricular parotid branch left"
+    },
+    {
+      "id": "artery.amendment.posterior_auricular_auricular_branch.right",
+      "name": "Posterior auricular auricular branch right"
+    },
+    {
+      "id": "artery.amendment.posterior_auricular_auricular_branch.left",
+      "name": "Posterior auricular auricular branch left"
+    },
+    {
+      "id": "artery.amendment.inferior_septal_subdivision.right",
+      "name": "Inferior septal subdivision right"
+    },
+    {
+      "id": "artery.amendment.inferior_septal_subdivision.left",
+      "name": "Inferior septal subdivision left"
+    },
+    {
+      "id": "artery.amendment.occipital_scm_branch.right",
+      "name": "Occipital SCM branch right"
+    },
+    {
+      "id": "artery.amendment.occipital_scm_branch.left",
+      "name": "Occipital SCM branch left"
+    },
+    {
+      "id": "artery.amendment.prefrontal_distal_ramus.right",
+      "name": "Prefrontal distal ramus right"
+    },
+    {
+      "id": "artery.amendment.prefrontal_distal_ramus.left",
+      "name": "Prefrontal distal ramus left"
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.right",
+      "name": "Subarcuate\u2013APA auditory right"
+    },
+    {
+      "id": "artery.connection.aca_falcine_mma_falcine.right",
+      "name": "ACA falcine\u2013MMA falcine right"
+    },
+    {
+      "id": "artery.connection.falx_cerebelli_va_posterior_meningeal.right",
+      "name": "Falx cerebelli\u2013VA posterior meningeal right"
+    },
+    {
+      "id": "artery.connection.basal_tentorial_sca_dural.right",
+      "name": "Basal tentorial\u2013SCA dural right"
+    },
+    {
+      "id": "artery.connection.mma_tentorial_pca_dural.right",
+      "name": "MMA tentorial\u2013PCA dural right"
+    },
+    {
+      "id": "artery.connection.apa_tentorial_sca_dural.right",
+      "name": "APA tentorial\u2013SCA dural right"
+    },
+    {
+      "id": "artery.connection.occipital_tentorial_pca_dural.right",
+      "name": "Occipital tentorial\u2013PCA dural right"
+    },
+    {
+      "id": "artery.connection.aca_mca_frontal_border_zone.right",
+      "name": "ACA\u2013MCA frontal border zone right"
+    },
+    {
+      "id": "artery.connection.aca_mca_parietal_border_zone.right",
+      "name": "ACA\u2013MCA parietal border zone right"
+    },
+    {
+      "id": "artery.connection.mca_pca_temporal_border_zone.right",
+      "name": "MCA\u2013PCA temporal border zone right"
+    },
+    {
+      "id": "artery.connection.mca_pca_occipital_border_zone.right",
+      "name": "MCA\u2013PCA occipital border zone right"
+    },
+    {
+      "id": "artery.connection.zygomatico_orbital_lacrimal.right",
+      "name": "Zygomatico-orbital\u2013lacrimal right"
+    },
+    {
+      "id": "artery.connection.occipital_posterior_auricular_scalp.right",
+      "name": "Occipital\u2013posterior auricular scalp right"
+    },
+    {
+      "id": "artery.connection.sta_supratrochlear_scalp.right",
+      "name": "STA\u2013supratrochlear scalp right"
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.left",
+      "name": "Subarcuate\u2013APA auditory left"
+    },
+    {
+      "id": "artery.connection.aca_falcine_mma_falcine.left",
+      "name": "ACA falcine\u2013MMA falcine left"
+    },
+    {
+      "id": "artery.connection.falx_cerebelli_va_posterior_meningeal.left",
+      "name": "Falx cerebelli\u2013VA posterior meningeal left"
+    },
+    {
+      "id": "artery.connection.basal_tentorial_sca_dural.left",
+      "name": "Basal tentorial\u2013SCA dural left"
+    },
+    {
+      "id": "artery.connection.mma_tentorial_pca_dural.left",
+      "name": "MMA tentorial\u2013PCA dural left"
+    },
+    {
+      "id": "artery.connection.apa_tentorial_sca_dural.left",
+      "name": "APA tentorial\u2013SCA dural left"
+    },
+    {
+      "id": "artery.connection.occipital_tentorial_pca_dural.left",
+      "name": "Occipital tentorial\u2013PCA dural left"
+    },
+    {
+      "id": "artery.connection.aca_mca_frontal_border_zone.left",
+      "name": "ACA\u2013MCA frontal border zone left"
+    },
+    {
+      "id": "artery.connection.aca_mca_parietal_border_zone.left",
+      "name": "ACA\u2013MCA parietal border zone left"
+    },
+    {
+      "id": "artery.connection.mca_pca_temporal_border_zone.left",
+      "name": "MCA\u2013PCA temporal border zone left"
+    },
+    {
+      "id": "artery.connection.mca_pca_occipital_border_zone.left",
+      "name": "MCA\u2013PCA occipital border zone left"
+    },
+    {
+      "id": "artery.connection.zygomatico_orbital_lacrimal.left",
+      "name": "Zygomatico-orbital\u2013lacrimal left"
+    },
+    {
+      "id": "artery.connection.occipital_posterior_auricular_scalp.left",
+      "name": "Occipital\u2013posterior auricular scalp left"
+    },
+    {
+      "id": "artery.connection.sta_supratrochlear_scalp.left",
+      "name": "STA\u2013supratrochlear scalp left"
+    },
+    {
+      "id": "artery.connection.contralateral_medial_clival.midline",
+      "name": "Contralateral medial clival midline"
+    },
+    {
+      "id": "artery.connection.contralateral_superior_labial.midline",
+      "name": "Contralateral superior labial midline"
+    },
+    {
+      "id": "artery.connection.contralateral_inferior_labial.midline",
+      "name": "Contralateral inferior labial midline"
+    },
+    {
+      "id": "artery.connection.contralateral_palatal.midline",
+      "name": "Contralateral palatal midline"
+    },
+    {
+      "id": "vein.angular.right",
+      "name": "Angular vein right"
+    },
+    {
+      "id": "vein.angular.left",
+      "name": "Angular vein left"
+    },
+    {
+      "id": "vein.pontomedullary.right",
+      "name": "Vein of the pontomedullary sulcus right"
+    },
+    {
+      "id": "vein.pontomedullary.left",
+      "name": "Vein of the pontomedullary sulcus left"
+    }
+  ]
+}

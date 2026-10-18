@@ -1,0 +1,231 @@
+{
+  "release": "0.9.109",
+  "passed": true,
+  "changes": [
+    {
+      "release": "0.9.109",
+      "passed": true,
+      "node": "ACA A5 left",
+      "changedFaces": 2140,
+      "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+      "coreSourceY": [
+        -76,
+        -73
+      ],
+      "targets": [
+        {
+          "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14980,
+          "insideBefore": 2766,
+          "insideAfter": 1008,
+          "maximumDepthBeforeMm": 0.7313816547393799,
+          "maximumDepthAfterMm": 0.7313816547393799,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 276,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.2441703826189041,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14980,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.corpus-callosum",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14980,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.superior-frontal-gyrus.left",
+          "method": "open-target-empty-ball-separation",
+          "minimumClearanceMarginMm": 8.561365192068989,
+          "passed": true,
+          "absoluteInsideCertified": false
+        },
+        {
+          "target": "bone.occipital",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14980,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "bone.parietal.left",
+          "method": "open-target-empty-ball-separation",
+          "minimumClearanceMarginMm": 42.432205264700826,
+          "passed": true,
+          "absoluteInsideCertified": false
+        },
+        {
+          "target": "bone.parietal.right",
+          "method": "open-target-empty-ball-separation",
+          "minimumClearanceMarginMm": 42.734992657566515,
+          "passed": true,
+          "absoluteInsideCertified": false
+        }
+      ],
+      "issues": [],
+      "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Existing residual cortical embedding remains unresolved."
+    },
+    {
+      "release": "0.9.109",
+      "passed": true,
+      "node": "ACA A5 right",
+      "changedFaces": 2130,
+      "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+      "coreSourceY": [
+        -76,
+        -73
+      ],
+      "targets": [
+        {
+          "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14910,
+          "insideBefore": 3595,
+          "insideAfter": 1260,
+          "maximumDepthBeforeMm": 0.9578891396522522,
+          "maximumDepthAfterMm": 0.9578891396522522,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 574,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.4050835967063904,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14910,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.corpus-callosum",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14910,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.falx-cerebri",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14910,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.superior-frontal-gyrus.right",
+          "method": "open-target-empty-ball-separation",
+          "minimumClearanceMarginMm": 8.260565866850786,
+          "passed": true,
+          "absoluteInsideCertified": false
+        },
+        {
+          "target": "bone.occipital",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 14910,
+          "insideBefore": 0,
+          "insideAfter": 0,
+          "maximumDepthBeforeMm": 0.0,
+          "maximumDepthAfterMm": 0.0,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 0,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.0,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        {
+          "target": "bone.parietal.left",
+          "method": "open-target-empty-ball-separation",
+          "minimumClearanceMarginMm": 42.01643434952555,
+          "passed": true,
+          "absoluteInsideCertified": false
+        },
+        {
+          "target": "bone.parietal.right",
+          "method": "open-target-empty-ball-separation",
+          "minimumClearanceMarginMm": 42.17902289810078,
+          "passed": true,
+          "absoluteInsideCertified": false
+        }
+      ],
+      "issues": [],
+      "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Existing residual cortical embedding remains unresolved."
+    }
+  ]
+}

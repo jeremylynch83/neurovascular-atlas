@@ -1,0 +1,65 @@
+{
+  "release": "0.9.111",
+  "passed": true,
+  "node": "ACA A5 right",
+  "wallTrianglesCheckedPerTarget": 8172,
+  "targets": [
+    {
+      "node": "ACA A5 right",
+      "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "targetClosedAndOriented": true,
+      "method": "positive-signed-distance-enclosing-balls-over-every-source-face",
+      "wholeLabelSamples": 57204,
+      "insideBefore": 569,
+      "insideAfter": 0,
+      "maximumDepthBeforeMm": 0.2547469437122345,
+      "maximumDepthAfterMm": 0.0,
+      "signedAndEnclosedCentreDisagreements": 0,
+      "proof": {
+        "passed": true,
+        "sourceTriangles": 8172,
+        "evaluatedBalls": 8640,
+        "certifiedLeafTriangles": 8523,
+        "maximumSubdivisionDepth": 2,
+        "unresolvedLeafTriangles": 0,
+        "minimumCertifiedClearanceMarginMm": 2.961514598651127e-05,
+        "minimumUnresolvedMarginMm": null,
+        "sourceTriangleAreaMm2": 100.13777459531136,
+        "certifiedAreaMm2": 100.13777459531136,
+        "areaCoverageChecked": true,
+        "clearanceThresholdMm": 1e-05,
+        "maximumPermittedSubdivisionDepth": 10
+      },
+      "passed": true
+    },
+    {
+      "node": "ACA A5 right",
+      "target": "brain.cingulate-gyrus-posteroventral-part.right",
+      "targetClosedAndOriented": true,
+      "method": "positive-signed-distance-enclosing-balls-over-every-source-face",
+      "wholeLabelSamples": 57204,
+      "insideBefore": 2741,
+      "insideAfter": 0,
+      "maximumDepthBeforeMm": 0.932320773601532,
+      "maximumDepthAfterMm": 0.0,
+      "signedAndEnclosedCentreDisagreements": 0,
+      "proof": {
+        "passed": true,
+        "sourceTriangles": 8172,
+        "evaluatedBalls": 8832,
+        "certifiedLeafTriangles": 8667,
+        "maximumSubdivisionDepth": 2,
+        "unresolvedLeafTriangles": 0,
+        "minimumCertifiedClearanceMarginMm": 7.422590780918614e-05,
+        "minimumUnresolvedMarginMm": null,
+        "sourceTriangleAreaMm2": 100.13777459531136,
+        "certifiedAreaMm2": 100.13777459531134,
+        "areaCoverageChecked": true,
+        "clearanceThresholdMm": 1e-05,
+        "maximumPermittedSubdivisionDepth": 10
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Continuous numerical separation from the two named closed surfaces only, across the complete A5 wall. Bound margins are conservative certificates, not measured anatomical clearances. Other ACA/cortical relationships remain open."
+}

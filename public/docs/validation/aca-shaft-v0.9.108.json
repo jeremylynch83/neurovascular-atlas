@@ -1,0 +1,225 @@
+{
+  "release": "0.9.108",
+  "baseline": "0.9.107",
+  "batch": 16,
+  "anatomicalAcceptance": false,
+  "scope": "Bounded left A4 anterior shaft fit only. All native ports and other meshes remain fixed. Residual posterior and transition embedding and wider G05 remain open.",
+  "changedMeshes": 1,
+  "changedNode": "ACA A4 left",
+  "sourceVertices": 4382,
+  "sourceTriangles": 8445,
+  "changedVertices": 896,
+  "changedFaces": 1856,
+  "addedOrRemovedVertices": 0,
+  "addedOrRemovedTriangles": 0,
+  "maximumDisplacementMm": 2.692582368850708,
+  "nativeInterfacesFixed": 4,
+  "sharedCoordinatesFixed": 323,
+  "allOriginalFaceIndicesExact": true,
+  "reconstruction": {
+    "release": "0.9.108",
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A4 left",
+        "sourceVertices": 4382,
+        "sourceTriangles": 8445,
+        "changedVertices": 896,
+        "changedFaces": 1856,
+        "maximumDisplacementMm": 2.692582368850708,
+        "sourceNormalOppositeFaces": 0,
+        "analyticalJacobianDeterminant": 1,
+        "indicesByteExact": true,
+        "allSourceCoordinatesWeldPartitionsRetained": true,
+        "allBoundaryVerticesFixed": true,
+        "sourceBoundaryEdges": 323,
+        "sourceBadEdges": 0,
+        "candidateBoundaryEdges": 323,
+        "candidateBadEdges": 0,
+        "newCoordinateWelds": 0,
+        "reviewedArterialMeshesForWelds": 766,
+        "attachments": [
+          {
+            "other": "ACA A3 left",
+            "sharedCoordinates": 64,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "ACA A5 left",
+            "sharedCoordinates": 64,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Paracentral left",
+            "sharedCoordinates": 133,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Short callosal branch left",
+            "sharedCoordinates": 62,
+            "allPositionsFixed": true
+          }
+        ],
+        "replayedBuffersByteExact": true
+      }
+    ]
+  },
+  "crossingValidation": {
+    "trianglePairsChecked": 35440,
+    "newNonNeuralCrossings": 0,
+    "inheritedNonNeuralCrossings": 0,
+    "knownClosedCorticalContacts": 152
+  },
+  "depthValidation": {
+    "release": "0.9.108",
+    "passed": true,
+    "node": "ACA A4 left",
+    "changedFaces": 1856,
+    "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+    "coreSourceY": [
+      -43,
+      -40.5
+    ],
+    "targets": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "method": "paired-signed-depth-and-closed-volume-parity",
+        "samples": 12992,
+        "insideBefore": 10574,
+        "insideAfter": 5377,
+        "maximumDepthBeforeMm": 2.5222861766815186,
+        "maximumDepthAfterMm": 2.5222861766815186,
+        "newInsideSamples": 0,
+        "maximumExtraDepthMm": 0.0,
+        "signedAndEnclosedDisagreements": 0,
+        "coreInsideBefore": 1986,
+        "coreInsideAfter": 0,
+        "coreMaximumDepthBeforeMm": 1.2268251180648804,
+        "coreMaximumDepthAfterMm": 0.0,
+        "passed": true
+      },
+      {
+        "target": "brain.superior-frontal-gyrus.left",
+        "method": "open-target-empty-ball-separation",
+        "minimumClearanceMarginMm": 6.435883817651864,
+        "passed": true,
+        "absoluteInsideCertified": false
+      },
+      {
+        "target": "bone.frontal",
+        "method": "paired-signed-depth-and-closed-volume-parity",
+        "samples": 12992,
+        "insideBefore": 0,
+        "insideAfter": 0,
+        "maximumDepthBeforeMm": 0.0,
+        "maximumDepthAfterMm": 0.0,
+        "newInsideSamples": 0,
+        "maximumExtraDepthMm": 0.0,
+        "signedAndEnclosedDisagreements": 0,
+        "coreInsideBefore": 0,
+        "coreInsideAfter": 0,
+        "coreMaximumDepthBeforeMm": 0.0,
+        "coreMaximumDepthAfterMm": 0.0,
+        "passed": true
+      },
+      {
+        "target": "bone.parietal.left",
+        "method": "open-target-empty-ball-separation",
+        "minimumClearanceMarginMm": 34.41088532334601,
+        "passed": true,
+        "absoluteInsideCertified": false
+      },
+      {
+        "target": "bone.parietal.right",
+        "method": "open-target-empty-ball-separation",
+        "minimumClearanceMarginMm": 33.352397943744286,
+        "passed": true,
+        "absoluteInsideCertified": false
+      }
+    ],
+    "issues": [],
+    "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Existing residual cortical embedding remains unresolved."
+  },
+  "shapeMeasures": {
+    "sourceAreaRatioMin": 0.989558803130938,
+    "sourceAreaRatioMax": 1.913075314128012,
+    "proxyVolumeBeforeMm3": 65.28274580902068,
+    "proxyVolumeAfterMm3": 65.28308203793794,
+    "proxyVolumeRelativeChangePercent": 0.0005150348887594802
+  },
+  "exportValidation": {
+    "release": "0.9.108",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 598,
+    "otherAssetsByteExact": 4,
+    "candidateBuffersExact": true,
+    "allSourceFaceIndicesExact": true,
+    "retainedSourceCornerNormalsExact": true
+  },
+  "projectionValidation": {
+    "passed": true,
+    "node": "ACA A4 left",
+    "id": "artery.anterior.aca_pericallosal_left.segment.a4",
+    "allSourceFaceIndicesRetained": true,
+    "sanitisedFlipsAndRemovalsExact": true,
+    "capVerticesAndConnectivityExact": true,
+    "closedAndOriented": true,
+    "volumeMm3": 65.28308203793794,
+    "otherRecipesExact": 827
+  },
+  "flowValidation": {
+    "passed": true,
+    "unchangedCoursesReused": 596,
+    "selectedCourseStatusRetained": true,
+    "graphAndVeinSitesUnchanged": true,
+    "directedConnectionsUnchanged": true,
+    "unaffectedEdgeDistancesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.anterior.aca_pericallosal_left.segment.a4"
+    ]
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1249,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true,
+    "selectedLabelTopology": [
+      {
+        "node": "ACA A4 left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      }
+    ]
+  },
+  "previousRightA4FitRetainedByteExact": true,
+  "metadataValidation": {
+    "issueRegisterCopiesByteExact": true,
+    "originalUnresolvedILTInterfaceRetained": true
+  },
+  "remainingZeroAreaFaces": 7,
+  "remainingPicaVermianCrossing": true,
+  "verification": {
+    "fullBuild": "passed",
+    "repairTests": 22,
+    "dsa": "passed",
+    "closedOrientedProxies": 828,
+    "proxyTriangles": 8971510,
+    "selectableArterialCourses": 579,
+    "closedSections": 2353,
+    "fullAtlasRenderPerformed": false
+  },
+  "evidence": "anatomy/source/aca-shaft-v0.9.108",
+  "limitations": [
+    "No sampled embedding in the predefined central plateau is not proof of continuous clearance.",
+    "Worst residual depth across the complete changed region remains 2.522286 mm. Residual embedding remains outside the plateau.",
+    "Bilateral A2, wider ACA/callosal/cortical registration, full receiving lumens, other regional findings and ILT remain open.",
+    "No new independent anatomical imaging or target segmentation was introduced."
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "crossings": [
+      {
+        "face": 1156,
+        "other": "ACA A5 left",
+        "otherFace": 1222
+      },
+      {
+        "face": 1222,
+        "other": "ACA A5 left",
+        "otherFace": 1156
+      }
+    ],
+    "checks": 22486,
+    "x": -0.5,
+    "z": 0.5,
+    "changedFaces": 1613,
+    "flippedFaces": 12,
+    "depth": [
+      {
+        "target": "brain.corpus-callosum",
+        "insideBefore": 1317,
+        "insideAfter": 363,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          -3.6768887042999268,
+          -97.47399139404297,
+          102.03701782226562
+        ],
+        "depthBefore": 0.2547326982021332,
+        "depthAfter": 0.18663810193538666
+      }
+    ],
+    "passed": false
+  }
+]

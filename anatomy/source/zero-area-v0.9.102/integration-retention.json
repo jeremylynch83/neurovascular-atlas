@@ -1,0 +1,45 @@
+{
+  "runtimeSourceFilesByteExact": 21,
+  "namedMeshesRetained": 1250,
+  "unchangedNamedMeshes": 1246,
+  "catalogueStructuresRetained": 1666,
+  "relationshipsAndAssetBindingsUnchanged": true,
+  "selectedLabelTopology": [
+    {
+      "node": "vein.anterior_spinal",
+      "before": {
+        "components": 1
+      },
+      "after": {
+        "components": 1
+      }
+    },
+    {
+      "node": "vein.inferior_ophthalmic.left",
+      "before": {
+        "components": 2
+      },
+      "after": {
+        "components": 2
+      }
+    },
+    {
+      "node": "vein.pterygoid_plexus.left",
+      "before": {
+        "components": 3
+      },
+      "after": {
+        "components": 3
+      }
+    },
+    {
+      "node": "vein.pterygoid_plexus.right",
+      "before": {
+        "components": 1
+      },
+      "after": {
+        "components": 1
+      }
+    }
+  ]
+}

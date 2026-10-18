@@ -1,0 +1,116 @@
+{
+  "release": "0.9.89",
+  "baseline": "0.9.88",
+  "passed": true,
+  "anatomicalAcceptance": false,
+  "scope": "Bilateral local frontal-MMA/paramedian native junctions; G05/G06 and wider issues remain open.",
+  "build": {
+    "passed": true,
+    "existingBundleSizeWarning": true
+  },
+  "courseTests": {
+    "passed": true,
+    "count": 14
+  },
+  "dsa": {
+    "passed": true,
+    "closedProxies": 828,
+    "projectionTriangles": 8961216,
+    "selectableArterialCourses": 578,
+    "closedSections": 2350,
+    "meningealDrainageChecks": true
+  },
+  "nativeInterfaces": [
+    {
+      "side": "left",
+      "matchedCoordinates": 78,
+      "pairedOppositelyOrientedEdges": 78,
+      "combinedSelfIntersections": 0
+    },
+    {
+      "side": "right",
+      "matchedCoordinates": 79,
+      "pairedOppositelyOrientedEdges": 79,
+      "combinedSelfIntersections": 0
+    }
+  ],
+  "geometryEnvelope": {
+    "construction": "The displaced proximal branch is intersected with the original combined parent/branch solid before taking the union.",
+    "maxMeasuredOutwardExportRoundingMm": 5.196931030623158e-06,
+    "toleranceMm": 2e-05,
+    "noNewContactObjects": true,
+    "existingBoneContactsRetained": true,
+    "facetCountsNotAnatomicalDefectCounts": true
+  },
+  "export": {
+    "release": "0.9.89",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 595,
+    "otherAssetsByteExact": 4,
+    "retainedAttachmentCoordinatesAndNormalsExact": true,
+    "interfaces": [
+      {
+        "side": "left",
+        "exactSharedCoordinatesAndNormals": 78
+      },
+      {
+        "side": "right",
+        "exactSharedCoordinatesAndNormals": 79
+      }
+    ],
+    "changes": [
+      {
+        "node": "MMA frontal",
+        "vertices": 17268,
+        "triangles": 34397,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA frontal left",
+        "vertices": 16741,
+        "triangles": 33349,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA paramedian left",
+        "vertices": 3745,
+        "triangles": 7362,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA paramedian right",
+        "vertices": 3662,
+        "triangles": 7193,
+        "exactCandidateRoundtrip": true
+      }
+    ]
+  },
+  "flowRefresh": {
+    "passed": true,
+    "unchangedEntriesReused": 593,
+    "allFourRepairedCoursesSelectable": true,
+    "authoredTerminalGuidesUnchanged": true,
+    "declaredGraphAndVeinSitesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.eca.maxillary.mma.frontal.right",
+      "artery.eca.maxillary.mma.frontal.right.left",
+      "artery.amendment.mma_paramedian.right",
+      "artery.amendment.mma_paramedian.left"
+    ]
+  },
+  "visualCheck": {
+    "passed": true,
+    "file": "docs/validation/upstream-mma-v0.9.89.png",
+    "scope": "One targeted before/after view of both final native openings."
+  },
+  "browser": {
+    "fullPlaybackRerun": false,
+    "reason": "Runtime code unchanged. Actual loader, targeted geometry, full numerical DSA suite and production build checked."
+  },
+  "runtimeSourceFilesByteExact": 21,
+  "catalogueStructureCount": 1666,
+  "namedMeshesRetained": 1250,
+  "modelSha256": "02126a96eb456103cc1c2bf35a24e4001fcc0d7e9aee8e361b0e55dcf9c25b92"
+}

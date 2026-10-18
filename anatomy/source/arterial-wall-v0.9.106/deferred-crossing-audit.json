@@ -1,0 +1,66 @@
+{
+  "release": "0.9.106",
+  "status": "open-trial-excluded",
+  "node": "PICA vermian left",
+  "sourceFaces": [
+    7390,
+    7392
+  ],
+  "sourceFacePositions": [
+    [
+      [
+        -7.283447265625,
+        -129.062744140625,
+        45.089111328125
+      ],
+      [
+        -7.326878070831299,
+        -129.08705139160156,
+        45.08594512939453
+      ],
+      [
+        -7.300537109375,
+        -129.063232421875,
+        45.098876953125
+      ]
+    ],
+    [
+      [
+        -7.29052734375,
+        -129.06298828125,
+        45.09326171875
+      ],
+      [
+        -7.300537109375,
+        -129.063232421875,
+        45.098876953125
+      ],
+      [
+        -7.300048828125,
+        -129.063232421875,
+        45.098388671875
+      ]
+    ]
+  ],
+  "baselineExactPositiveCrossing": true,
+  "trialExactPositiveCrossings": [
+    true,
+    true
+  ],
+  "trialNewTriangles": [
+    [
+      4108,
+      4107,
+      4110
+    ],
+    [
+      4108,
+      4110,
+      4109
+    ]
+  ],
+  "sourcePositionsSha256": "f984ee2d2d32a64e3772ef9444f7e6797dfb0a1050e10d5559723dbd07f97e7a",
+  "sourceIndicesSha256": "a60af9d6fe9e0bb84239d8cf2e0e5b761286f3b258bb06d8a817399dc1314f82",
+  "productionMeshRetained": true,
+  "conclusion": "The exact subdivision preserves an existing wall crossing and fails the strict changed-face gate. It is not installed. Local wall reconstruction remains open."
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "changes": [
+    {
+      "node": "ACA A1 right",
+      "id": "artery.anterior.aca_a1_right",
+      "vertices": 8863,
+      "faces": 17726,
+      "capLoops": 3,
+      "volumeMm3": 87.13873494671077,
+      "closedAndOriented": true
+    },
+    {
+      "node": "ACA A2 right",
+      "id": "artery.anterior.aca_pericallosal_right.segment.a2",
+      "vertices": 3946,
+      "faces": 7898,
+      "capLoops": 5,
+      "volumeMm3": 110.6819162163517,
+      "closedAndOriented": true
+    },
+    {
+      "node": "Medial posterior choroidal left",
+      "id": "artery.posterior.medial_posterior_choroidal_left",
+      "vertices": 8826,
+      "faces": 17656,
+      "capLoops": 5,
+      "volumeMm3": 10.077549700453602,
+      "closedAndOriented": true
+    },
+    {
+      "node": "PCA P2-P3 left",
+      "id": "artery.posterior.pca_p2_p3_left",
+      "vertices": 20395,
+      "faces": 40814,
+      "capLoops": 14,
+      "volumeMm3": 142.05703301500972,
+      "closedAndOriented": true
+    },
+    {
+      "node": "Vertebral V3 right",
+      "id": "artery.posterior.vertebral_right.segment.v3",
+      "vertices": 9824,
+      "faces": 19648,
+      "capLoops": 6,
+      "volumeMm3": 330.70572504378373,
+      "closedAndOriented": true
+    }
+  ]
+}

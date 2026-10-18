@@ -1,0 +1,60 @@
+[
+  {
+    "node": "vein.superior_ophthalmic.right",
+    "boundaryEdges": 152,
+    "badEdges": 0,
+    "sourceBoundaryEdges": 125,
+    "sourceBadEdges": 0
+  },
+  {
+    "node": "vein.superior_ophthalmic.right",
+    "changedFaces": 43,
+    "contacts": []
+  },
+  {
+    "node": "vein.superior_ophthalmic.left",
+    "boundaryEdges": 144,
+    "badEdges": 0,
+    "sourceBoundaryEdges": 112,
+    "sourceBadEdges": 0
+  },
+  {
+    "node": "vein.superior_ophthalmic.left",
+    "changedFaces": 50,
+    "contacts": []
+  },
+  {
+    "node": "vein.inferior_ophthalmic.left",
+    "boundaryEdges": 77,
+    "badEdges": 0,
+    "sourceBoundaryEdges": 45,
+    "sourceBadEdges": 0
+  },
+  {
+    "node": "vein.inferior_ophthalmic.left",
+    "changedFaces": 6726,
+    "contacts": []
+  },
+  {
+    "node": "vein.inferior_ophthalmic.right",
+    "boundaryEdges": 60,
+    "badEdges": 0,
+    "sourceBoundaryEdges": 33,
+    "sourceBadEdges": 0
+  },
+  {
+    "node": "vein.inferior_ophthalmic.right",
+    "changedFaces": 4980,
+    "contacts": []
+  },
+  {
+    "network": "right",
+    "boundaryEdges": 258,
+    "badEdges": 1
+  },
+  {
+    "network": "left",
+    "boundaryEdges": 248,
+    "badEdges": 6
+  }
+]

@@ -1,0 +1,189 @@
+{
+  "release": "0.9.98",
+  "baseline": "0.9.97",
+  "batch": 6,
+  "passedLocalNumericalGates": true,
+  "anatomicalAcceptance": false,
+  "nativeWallGapsClosed": 1,
+  "addedTriangles": 3,
+  "appendedVertices": 1,
+  "newWorldCoordinates": 0,
+  "existingVertexDisplacementMm": 0,
+  "reviewedCoreLabels": 20,
+  "nativeNetworkLabels": 34,
+  "interfaces": [
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.inferior_petrosal.left",
+      "before": {
+        "sharedCoordinates": 13,
+        "oppositePairedNativeEdges": 12
+      },
+      "after": {
+        "sharedCoordinates": 14,
+        "oppositePairedNativeEdges": 14
+      }
+    }
+  ],
+  "nativeValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "vein.basilar_plexus",
+        "sourceVertices": 14677,
+        "sourceTriangles": 28856,
+        "candidateVertices": 14678,
+        "candidateTriangles": 28859,
+        "retainedSourceTriangles": 28856,
+        "changedTriangles": 3,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.anterior_condylar.left",
+            "coordinates": 8,
+            "missing": 0
+          },
+          {
+            "other": "vein.anterior_condylar.right",
+            "coordinates": 22,
+            "missing": 0
+          },
+          {
+            "other": "vein.cavernous.left",
+            "coordinates": 129,
+            "missing": 0
+          },
+          {
+            "other": "vein.cavernous.right",
+            "coordinates": 108,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_petrosal.left",
+            "coordinates": 13,
+            "missing": 0
+          },
+          {
+            "other": "vein.marginal",
+            "coordinates": 118,
+            "missing": 0
+          }
+        ]
+      }
+    ],
+    "crossings": [],
+    "trianglePairsChecked": 53,
+    "clearance": [
+      {
+        "node": "vein.basilar_plexus",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 15,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 15,
+        "minimumOpenTargetClearanceMarginMm": 0.16452387608304486
+      }
+    ],
+    "nativeNetworks": [
+      {
+        "id": "local-venous-native",
+        "boundaryEdgesBefore": 2724,
+        "boundaryEdgesAfter": 2719,
+        "preExistingBadEdges": 952,
+        "candidateBadEdges": 952,
+        "newBadEdges": 0
+      }
+    ],
+    "issues": [],
+    "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+  },
+  "export": {
+    "release": "0.9.98",
+    "passed": true,
+    "venousMeshesChecked": 231,
+    "unchangedVenousMeshes": 230,
+    "otherAssetsByteExact": 4,
+    "allExistingPositionsNormalsAndFacesExact": true,
+    "newVerticesCopyParentCoordinatesAndNormals": true
+  },
+  "projection": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "vein.basilar_plexus",
+        "id": "vein.basilar_plexus",
+        "vertices": 14678,
+        "faces": 29428,
+        "capLoops": 13,
+        "volumeMm3": 292.18317077107855,
+        "closedAndOriented": true
+      }
+    ]
+  },
+  "flow": {
+    "passed": true,
+    "unchangedArterialCoursesReused": 597,
+    "arterialEdgesUnchanged": true,
+    "graphUnchanged": true,
+    "generatorUnchanged": true,
+    "changedVeinSites": []
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1249,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true,
+    "selectedLabelTopology": [
+      {
+        "node": "vein.basilar_plexus",
+        "before": {
+          "components": 3
+        },
+        "after": {
+          "components": 3
+        }
+      }
+    ]
+  },
+  "replay": {
+    "passed": true,
+    "checks": [
+      {
+        "node": "vein.basilar_plexus",
+        "candidateBuffersByteExact": true
+      }
+    ]
+  },
+  "tests": {
+    "build": "passed",
+    "repair": "19 tests passed",
+    "dsa": {
+      "closedProxies": 828,
+      "proxyTriangles": 8971372,
+      "selectableArterialCourses": 579,
+      "closedSections": 2353,
+      "graphAndGenerator": "passed"
+    }
+  },
+  "scope": "One local left inferior petrosal/basilar plexus native wall gap. All source coordinates, normals and faces retained. No vessel displacement.",
+  "excluded": [
+    "Cavernous/sphenoparietal boundary touches existing bad edges and has inconsistent direction.",
+    "Single-label openings, large wall boundaries and components touching existing bad edges."
+  ],
+  "remainingWork": [
+    "Superior petrosal open walls, components, degeneracy and tissue/arterial contacts need regional reconstruction.",
+    "Inferior petrosal open walls, old self intersections and bone contacts remain.",
+    "Basilar plexus retains three components; receiving-lumen continuity remains uncertified.",
+    "Exact fine canal/nerve and cervical targets remain unavailable or unresolved.",
+    "Earlier G01/G03/G04/G05/G06/G07 findings and separate ILT interface remain open."
+  ]
+}

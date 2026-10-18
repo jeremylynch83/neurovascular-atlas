@@ -1,0 +1,114 @@
+{
+  "scope": "Changed regions against all named current source meshes; original schematic collateral geometry retained. Native parent junction coordinates exact.",
+  "results": [
+    {
+      "node": "Davidoff and Schechter artery left",
+      "boundary": 174,
+      "oldBoundary": 174,
+      "bad": 1,
+      "oldBad": 1,
+      "crossings": [
+        {
+          "other": "brain.hippocampus.left",
+          "count": 61,
+          "sourceCount": 66,
+          "positions": [
+            [
+              -23.01464080810547,
+              -73.01883697509766,
+              79.4727554321289
+            ],
+            [
+              -23.21171760559082,
+              -73.30175018310547,
+              79.27889251708984
+            ],
+            [
+              -23.036264419555664,
+              -73.20636749267578,
+              79.59346771240234
+            ],
+            [
+              -22.971357345581055,
+              -73.0316390991211,
+              79.4407958984375
+            ],
+            [
+              -23.006622314453125,
+              -73.06680297851562,
+              79.53460693359375
+            ],
+            [
+              -23.204126358032227,
+              -73.23589324951172,
+              79.23649597167969
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "node": "Davidoff and Schechter artery right",
+      "boundary": 185,
+      "oldBoundary": 185,
+      "bad": 0,
+      "oldBad": 0,
+      "crossings": [
+        {
+          "other": "brain.hippocampus.right",
+          "count": 68,
+          "sourceCount": 180,
+          "positions": [
+            [
+              23.826934814453125,
+              -72.9420394897461,
+              79.58641815185547
+            ],
+            [
+              24.006086349487305,
+              -72.8512191772461,
+              79.22490692138672
+            ],
+            [
+              23.947046279907227,
+              -72.65536499023438,
+              79.34650421142578
+            ],
+            [
+              23.82453727722168,
+              -72.7908706665039,
+              79.60739135742188
+            ],
+            [
+              23.99953269958496,
+              -72.66016387939453,
+              79.33695220947266
+            ],
+            [
+              24.006296157836914,
+              -72.88983917236328,
+              79.23100280761719
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery left",
+      "boundary": 135,
+      "oldBoundary": 135,
+      "bad": 0,
+      "oldBad": 0,
+      "crossings": []
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "boundary": 405,
+      "oldBoundary": 405,
+      "bad": 4,
+      "oldBad": 4,
+      "crossings": []
+    }
+  ],
+  "remainingReferenceMismatch": "PCA inlet region overlaps the registered hippocampal meshes. Original parent junction coordinates and brain geometry are held fixed. This overlap remains open; no full brain clearance or clinical anatomical acceptance is claimed."
+}

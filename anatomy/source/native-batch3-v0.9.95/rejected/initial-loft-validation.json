@@ -1,0 +1,3561 @@
+{
+  "passed": false,
+  "changes": [
+    {
+      "node": "Occipital left",
+      "sourceVertices": 34784,
+      "sourceTriangles": 68773,
+      "candidateVertices": 34785,
+      "candidateTriangles": 68775,
+      "retainedSourceTriangles": 68771,
+      "changedTriangles": 4,
+      "protectedSourceAttachments": [
+        {
+          "other": "External carotid left",
+          "coordinates": 172,
+          "missing": 0
+        },
+        {
+          "other": "Occipital SCM branch left",
+          "coordinates": 84,
+          "missing": 0
+        },
+        {
+          "other": "Occipital descending left",
+          "coordinates": 120,
+          "missing": 0
+        },
+        {
+          "other": "Occipital lateral scalp left",
+          "coordinates": 153,
+          "missing": 0
+        },
+        {
+          "other": "Occipital medial scalp left",
+          "coordinates": 166,
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "node": "Occipital mastoid left",
+      "sourceVertices": 7348,
+      "sourceTriangles": 14623,
+      "candidateVertices": 8295,
+      "candidateTriangles": 16411,
+      "retainedSourceTriangles": 14083,
+      "changedTriangles": 2328,
+      "protectedSourceAttachments": [
+        {
+          "other": "Occipital mastoid dural branch left",
+          "coordinates": 71,
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "node": "ILT posterior branch left",
+      "sourceVertices": 6627,
+      "sourceTriangles": 12896,
+      "candidateVertices": 11489,
+      "candidateTriangles": 22620,
+      "retainedSourceTriangles": 8644,
+      "changedTriangles": 13976,
+      "protectedSourceAttachments": [
+        {
+          "other": "Posterior cavernous MMA\u2013posterolateral ILT left",
+          "coordinates": 141,
+          "missing": 0
+        }
+      ]
+    }
+  ],
+  "crossings": [
+    {
+      "node": "ILT posterior branch left",
+      "face": 704,
+      "other": "ILT posterior branch left",
+      "otherFace": 1119
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 940,
+      "other": "ILT posterior branch left",
+      "otherFace": 941
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 941,
+      "other": "ILT posterior branch left",
+      "otherFace": 940
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 1119,
+      "other": "ILT posterior branch left",
+      "otherFace": 704
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 1586,
+      "other": "ILT posterior branch left",
+      "otherFace": 1635
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 1635,
+      "other": "ILT posterior branch left",
+      "otherFace": 1586
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 2519,
+      "other": "ILT posterior branch left",
+      "otherFace": 2520
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 2520,
+      "other": "ILT posterior branch left",
+      "otherFace": 2519
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 2668,
+      "other": "ILT posterior branch left",
+      "otherFace": 2670
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 2670,
+      "other": "ILT posterior branch left",
+      "otherFace": 2668
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 3046,
+      "other": "ILT posterior branch left",
+      "otherFace": 3047
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 3047,
+      "other": "ILT posterior branch left",
+      "otherFace": 3046
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 3096,
+      "other": "ILT posterior branch left",
+      "otherFace": 3097
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 3097,
+      "other": "ILT posterior branch left",
+      "otherFace": 3096
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 3152,
+      "other": "ILT posterior branch left",
+      "otherFace": 3153
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 3153,
+      "other": "ILT posterior branch left",
+      "otherFace": 3152
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4434,
+      "other": "ILT posterior branch left",
+      "otherFace": 4435
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4435,
+      "other": "ILT posterior branch left",
+      "otherFace": 4434
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4730,
+      "other": "ILT posterior branch left",
+      "otherFace": 4731
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4731,
+      "other": "ILT posterior branch left",
+      "otherFace": 4730
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4737,
+      "other": "ILT posterior branch left",
+      "otherFace": 4755
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4738,
+      "other": "ILT posterior branch left",
+      "otherFace": 4739
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4739,
+      "other": "ILT posterior branch left",
+      "otherFace": 4738
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4743,
+      "other": "ILT posterior branch left",
+      "otherFace": 4744
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4744,
+      "other": "ILT posterior branch left",
+      "otherFace": 4743
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 4755,
+      "other": "ILT posterior branch left",
+      "otherFace": 4737
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 5074,
+      "other": "ILT posterior branch left",
+      "otherFace": 5075
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 5075,
+      "other": "ILT posterior branch left",
+      "otherFace": 5074
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 6110,
+      "other": "ILT posterior branch left",
+      "otherFace": 6111
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 6111,
+      "other": "ILT posterior branch left",
+      "otherFace": 6110
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7054,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7055,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7056,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7057,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7058,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7059,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7060,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7061,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7062,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7063,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7064,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7065,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7066,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7067,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7068,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7069,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7070,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7071,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7072,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7073,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7074,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7075,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7076,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7077,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7078,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7079,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7080,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7081,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7082,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7083,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7084,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7085,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7086,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7087,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7088,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7089,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7090,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7091,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7092,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7093,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7094,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7095,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7096,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7097,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7098,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7099,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7100,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7101,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7102,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7103,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7104,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7105,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7106,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7107,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7108,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7109,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7110,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7111,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7112,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7113,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7114,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7115,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7116,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7117,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7118,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7119,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7120,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7121,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7122,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7123,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7124,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7125,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7126,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7127,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7128,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7129,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7130,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7131,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7132,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7133,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7134,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7135,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7136,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7137,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7138,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7139,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7140,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7141,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7142,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7143,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7144,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7145,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7146,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7147,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7148,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7149,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7150,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7151,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7152,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7153,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7154,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7155,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7156,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7157,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7158,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7159,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7160,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7161,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7162,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7163,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7164,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7165,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7166,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7167,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7168,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7169,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7170,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7171,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7172,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7173,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7174,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7175,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7176,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7177,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7178,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7179,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7180,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7181,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7182,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7183,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7184,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7185,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7186,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7187,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7188,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7189,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7190,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7191,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7192,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7193,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7194,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7195,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7196,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7197,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7198,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7199,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7200,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7201,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7202,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7203,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7204,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7205,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7206,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7207,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7208,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7209,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7210,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7211,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7212,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7213,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7214,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7215,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7216,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7217,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7218,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7219,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7220,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7221,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7222,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7223,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7224,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7225,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7226,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7227,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7228,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7229,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7230,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7231,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7232,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7233,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7234,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7235,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7320,
+      "other": "ILT posterior branch left",
+      "otherFace": 7322
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7322,
+      "other": "ILT posterior branch left",
+      "otherFace": 7320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7441,
+      "other": "ILT posterior branch left",
+      "otherFace": 7530
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7530,
+      "other": "ILT posterior branch left",
+      "otherFace": 7441
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7751,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7752,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7753,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7754,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7755,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7756,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7757,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7758,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7759,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7810,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7811,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7812,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7813,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7830,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7831,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7832,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7833,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7834,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7835,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7836,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7837,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7838,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7839,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7840,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7843,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7844,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7845,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7846,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7847,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7848,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7849,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7850,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7851,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7852,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7853,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7854,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7855,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7856,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7857,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7858,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7859,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7860,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7861,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7861,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7869,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7870,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7870,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7871,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7872,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7873,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7874,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7875,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7876,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7877,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7878,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7879,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7880,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7881,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7882,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7883,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7884,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7885,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7886,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7887,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7888,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7889,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7890,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7891,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7892,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7893,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7894,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7895,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7902,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7903,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7904,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7905,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7906,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7907,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7908,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7909,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7910,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7911,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7912,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7913,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7914,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7915,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7916,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7917,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7918,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7919,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7920,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7921,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7922,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7923,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7924,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7925,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7926,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7927,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7928,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7929,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7930,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7931,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7932,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7933,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7934,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7935,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7936,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7937,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7938,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7939,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7940,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7941,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7942,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7943,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7944,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7945,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7946,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7947,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7948,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7949,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7950,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7951,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7952,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7953,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7954,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7955,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7956,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7957,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7958,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7959,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7960,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 7961,
+      "other": "bone.sphenoid",
+      "otherFace": 10321
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8040,
+      "other": "ILT posterior branch left",
+      "otherFace": 8041
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8041,
+      "other": "ILT posterior branch left",
+      "otherFace": 8040
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8041,
+      "other": "ILT posterior branch left",
+      "otherFace": 8493
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8081,
+      "other": "ILT posterior branch left",
+      "otherFace": 8082
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8082,
+      "other": "ILT posterior branch left",
+      "otherFace": 8081
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8121,
+      "other": "ILT posterior branch left",
+      "otherFace": 8208
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8208,
+      "other": "ILT posterior branch left",
+      "otherFace": 8210
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8208,
+      "other": "ILT posterior branch left",
+      "otherFace": 8121
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8210,
+      "other": "ILT posterior branch left",
+      "otherFace": 8208
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8243,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8340,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8341,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8342,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8343,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8344,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8345,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8346,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8347,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8493,
+      "other": "ILT posterior branch left",
+      "otherFace": 8041
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8493,
+      "other": "ILT posterior branch left",
+      "otherFace": 8494
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8494,
+      "other": "ILT posterior branch left",
+      "otherFace": 8493
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8539,
+      "other": "ILT posterior branch left",
+      "otherFace": 8619
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8569,
+      "other": "ILT posterior branch left",
+      "otherFace": 8573
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8573,
+      "other": "ILT posterior branch left",
+      "otherFace": 8569
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8619,
+      "other": "ILT posterior branch left",
+      "otherFace": 8539
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8912,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8913,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8914,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8915,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8916,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8917,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8918,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 8919,
+      "other": "bone.sphenoid",
+      "otherFace": 10320
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 14068,
+      "other": "ILT posterior branch left",
+      "otherFace": 14069
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 14069,
+      "other": "ILT posterior branch left",
+      "otherFace": 14068
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 14179,
+      "other": "ILT posterior branch left",
+      "otherFace": 14180
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 14180,
+      "other": "ILT posterior branch left",
+      "otherFace": 14179
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 14442,
+      "other": "ILT posterior branch left",
+      "otherFace": 14443
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 14443,
+      "other": "ILT posterior branch left",
+      "otherFace": 14442
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 17405,
+      "other": "ILT posterior branch left",
+      "otherFace": 17412
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 17412,
+      "other": "ILT posterior branch left",
+      "otherFace": 17405
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 17516,
+      "other": "ILT posterior branch left",
+      "otherFace": 17519
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 17519,
+      "other": "ILT posterior branch left",
+      "otherFace": 17516
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 17576,
+      "other": "ILT posterior branch left",
+      "otherFace": 17566
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 18064,
+      "other": "ILT posterior branch left",
+      "otherFace": 18097
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 18097,
+      "other": "ILT posterior branch left",
+      "otherFace": 18064
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 19338,
+      "other": "ILT posterior branch left",
+      "otherFace": 19339
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 19339,
+      "other": "ILT posterior branch left",
+      "otherFace": 19338
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 20677,
+      "other": "ILT posterior branch left",
+      "otherFace": 20678
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 20678,
+      "other": "ILT posterior branch left",
+      "otherFace": 20677
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21055,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 88
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21062,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 89
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21064,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 89
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21084,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 153
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21089,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 91
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21089,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 92
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21090,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 92
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21093,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 88
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21094,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 88
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21097,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 88
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21097,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 89
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21099,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 89
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21099,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 90
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21100,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 90
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21104,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 139
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21105,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 139
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21105,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 140
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21114,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 139
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21115,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 139
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21144,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 139
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21146,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 137
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21147,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 137
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21149,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 138
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21149,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 139
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21149,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 137
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21151,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 92
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21427,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 154
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21427,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 153
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21458,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 90
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21458,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 91
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21458,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 92
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21460,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 90
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21461,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 90
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21463,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21463,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 92
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21463,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 93
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21463,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 94
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21463,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 95
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21467,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21494,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21495,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21496,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21497,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21498,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21499,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21500,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 219
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21500,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 218
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21500,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21501,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 217
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21502,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 219
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21507,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 137
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21508,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 233
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21508,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 137
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21511,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 233
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21515,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 233
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21515,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 232
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21515,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21516,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21517,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21518,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21519,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 233
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21520,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21521,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21522,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21523,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21531,
+      "other": "ILT posterior branch left",
+      "otherFace": 21628
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21566,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21567,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21568,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21569,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21569,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 221
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21570,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 219
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21570,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21575,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21576,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21577,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21578,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21578,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 221
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21579,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21580,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21581,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21582,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 220
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21584,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21585,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21585,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 223
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21586,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21587,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21588,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21589,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21590,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21591,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21592,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21593,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 223
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21593,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 222
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21594,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 221
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21605,
+      "other": "ILT posterior branch left",
+      "otherFace": 21635
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21609,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21609,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 229
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21610,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21611,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21611,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 231
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21615,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21616,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21617,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21618,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21619,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21620,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21622,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21623,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21624,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21625,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21626,
+      "other": "ILT posterior branch left",
+      "otherFace": 21648
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21626,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21627,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21628,
+      "other": "ILT posterior branch left",
+      "otherFace": 21531
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21628,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21628,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 227
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21629,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21630,
+      "other": "ILT posterior branch left",
+      "otherFace": 21829
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21630,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21631,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21632,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21633,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21634,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21635,
+      "other": "ILT posterior branch left",
+      "otherFace": 21605
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21635,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21635,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 227
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21636,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21637,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21638,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21639,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21640,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21641,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21642,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 224
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21642,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 226
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21642,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 225
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21648,
+      "other": "ILT posterior branch left",
+      "otherFace": 21626
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21651,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21652,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 228
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21653,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 230
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21653,
+      "other": "ILT posteromedial ramus left",
+      "otherFace": 229
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21669,
+      "other": "ILT posterior branch left",
+      "otherFace": 21842
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21676,
+      "other": "ILT posterior branch left",
+      "otherFace": 21849
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21804,
+      "other": "ILT posterior branch left",
+      "otherFace": 21964
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21805,
+      "other": "ILT posterior branch left",
+      "otherFace": 22382
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21829,
+      "other": "ILT posterior branch left",
+      "otherFace": 21630
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21842,
+      "other": "ILT posterior branch left",
+      "otherFace": 21669
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21849,
+      "other": "ILT posterior branch left",
+      "otherFace": 21676
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21880,
+      "other": "ILT posterior branch left",
+      "otherFace": 21881
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21881,
+      "other": "ILT posterior branch left",
+      "otherFace": 21880
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 21964,
+      "other": "ILT posterior branch left",
+      "otherFace": 21804
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22098,
+      "other": "ILT posterior branch left",
+      "otherFace": 22497
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22103,
+      "other": "ILT posterior branch left",
+      "otherFace": 22501
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22202,
+      "other": "ILT posterior branch left",
+      "otherFace": 22244
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22236,
+      "other": "ILT posterior branch left",
+      "otherFace": 22238
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22238,
+      "other": "ILT posterior branch left",
+      "otherFace": 22236
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22244,
+      "other": "ILT posterior branch left",
+      "otherFace": 22202
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22374,
+      "other": "ILT posterior branch left",
+      "otherFace": 22449
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22382,
+      "other": "ILT posterior branch left",
+      "otherFace": 21805
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22432,
+      "other": "ILT posterior branch left",
+      "otherFace": 22468
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22449,
+      "other": "ILT posterior branch left",
+      "otherFace": 22374
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22468,
+      "other": "ILT posterior branch left",
+      "otherFace": 22432
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22497,
+      "other": "ILT posterior branch left",
+      "otherFace": 22098
+    },
+    {
+      "node": "ILT posterior branch left",
+      "face": 22501,
+      "other": "ILT posterior branch left",
+      "otherFace": 22103
+    }
+  ],
+  "trianglePairsChecked": 1129251,
+  "clearance": [
+    {
+      "node": "Occipital left",
+      "target": "bone.occipital",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 19,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "Occipital left",
+      "target": "bone.temporal.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 19,
+      "minimumOpenTargetClearanceMarginMm": 8.17788156279679
+    },
+    {
+      "node": "Occipital mastoid left",
+      "target": "bone.occipital",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 7112,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "Occipital mastoid left",
+      "target": "bone.temporal.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 7112,
+      "minimumOpenTargetClearanceMarginMm": 7.118390780711337
+    },
+    {
+      "node": "ILT posterior branch left",
+      "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 42286,
+      "minimumOpenTargetClearanceMarginMm": 4.3089732580309965
+    },
+    {
+      "node": "ILT posterior branch left",
+      "target": "brain.temporal-pole.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 42286,
+      "minimumOpenTargetClearanceMarginMm": 0.36633677498799117
+    },
+    {
+      "node": "ILT posterior branch left",
+      "target": "bone.sphenoid",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 14127,
+      "ambiguousSamples": 0,
+      "sampleCount": 42286,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "ILT posterior branch left",
+      "target": "bone.temporal.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 42286,
+      "minimumOpenTargetClearanceMarginMm": 6.31307886096242
+    }
+  ],
+  "nativeNetworks": [
+    {
+      "id": "occipital-root",
+      "boundaryEdgesBefore": 872,
+      "boundaryEdgesAfter": 766,
+      "preExistingBadEdges": 0,
+      "candidateBadEdges": 0,
+      "newBadEdges": 0
+    },
+    {
+      "id": "ilt-complete",
+      "boundaryEdgesBefore": 800,
+      "boundaryEdgesAfter": 362,
+      "preExistingBadEdges": 2,
+      "candidateBadEdges": 90,
+      "newBadEdges": 88
+    }
+  ],
+  "issues": [
+    {
+      "node": "ILT posterior branch left",
+      "other": "bone.sphenoid",
+      "reason": "tissue-clearance-failed",
+      "count": 14127,
+      "ambiguous": 0
+    },
+    {
+      "reason": "changed-face-crossing",
+      "count": 562
+    },
+    {
+      "network": "ilt-complete",
+      "reason": "native-interface-regression",
+      "newBadEdges": 88,
+      "boundaryEdgesBefore": 800,
+      "boundaryEdgesAfter": 362
+    }
+  ],
+  "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+}

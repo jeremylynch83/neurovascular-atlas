@@ -1,0 +1,476 @@
+{
+  "release": "0.9.84",
+  "date": "2026-10-14",
+  "geometryChanged": false,
+  "units": "mm",
+  "coordinates": "RAS",
+  "assetHashes": {
+    "brain-context.glb": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+    "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "complete-circulation.glb": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+    "venous.glb": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+    "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+  },
+  "method": {
+    "topology": "Exact float32 coordinate welding, edge incidence, graph components and existing non-adjacent VTK triangle test. Label meshes are open at genuine shared interfaces; combined receiver walls are assessed separately.",
+    "contacts": "VTK half contacts on AABB-cropped triangles, 1e-7 tolerance. Counts are diagnostics, not defect counts.",
+    "guides": "100 axial section length-weighted centroids per shaft, tracked from cranial to caudal. Review stations measured from current surfaces, not original authoring centrelines. Receiver spur is represented by an exact shared-rim reference.",
+    "distances": "Sampled guide/wall vertices to surface triangles, not exact continuous minimum or physiological clearance.",
+    "containment": "Bone intersections are recorded. Neither coarse closed bone geometry nor an approximate foramen landmark establishes canal containment."
+  },
+  "channels": [
+    {
+      "id": "vein.middle_meningeal.anterior.left",
+      "side": "left",
+      "channelPosition": "anterior",
+      "topology": {
+        "vertices": 22177,
+        "triangles": 44317,
+        "boundaryEdges": 35,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "duplicateTriangles": 0,
+        "components": 1,
+        "nonAdjacentSelfIntersections": 0
+      },
+      "receiverInterface": {
+        "a": "vein.middle_meningeal.anterior.left",
+        "b": "vein.sphenoparietal.left",
+        "sharedBoundaryEdges": 13,
+        "sharedBoundaryVertices": 14,
+        "rimComponents": 1,
+        "rimCentroidMm": [
+          -43.967002868652344,
+          -26.079721450805664,
+          81.99808502197266
+        ]
+      },
+      "contacts": [
+        {
+          "other": "bone.frontal",
+          "system": "bone",
+          "triangleContacts": 1191
+        },
+        {
+          "other": "bone.parietal.left",
+          "system": "bone",
+          "triangleContacts": 253
+        },
+        {
+          "other": "bone.sphenoid",
+          "system": "bone",
+          "triangleContacts": 710
+        },
+        {
+          "other": "vein.ovale_emissary.left",
+          "system": "vein",
+          "triangleContacts": 20
+        }
+      ],
+      "shaftGuideToMmaSurfaceMm": {
+        "minimum": 0.45358952259684404,
+        "p05": 0.4583401116900608,
+        "median": 0.5091029297213867,
+        "p95": 0.5965191310010466,
+        "maximum": 0.7010418998840846
+      },
+      "shaftGuideToSkullSurfaceMm": {
+        "minimum": 0.006939478081653523,
+        "p05": 0.04926535678225353,
+        "median": 0.48056764236252913,
+        "p95": 2.401329507398284,
+        "maximum": 3.250978549464189
+      },
+      "shaftGuideToOwnWallMm": {
+        "minimum": 0.07850711531334205,
+        "p05": 0.16282978318139746,
+        "median": 0.2102551901529668,
+        "p95": 0.2179739842951055,
+        "maximum": 0.23400760966505824
+      },
+      "guideMultipleSectionComponents": [
+        {
+          "zMm": 81.42908539434876,
+          "components": 2
+        },
+        {
+          "zMm": 80.4103883993746,
+          "components": 2
+        },
+        {
+          "zMm": 79.39169140440045,
+          "components": 2
+        },
+        {
+          "zMm": 51.88687254009824,
+          "components": 2
+        }
+      ],
+      "cranialEndpointMm": [
+        -23.07133587408768,
+        -25.176708201951605,
+        149.6817840576172
+      ],
+      "caudalEndpointMm": [
+        -27.301805986669184,
+        -48.90583869361898,
+        48.8307815551758
+      ]
+    },
+    {
+      "id": "vein.middle_meningeal.posterior.left",
+      "side": "left",
+      "channelPosition": "posterior",
+      "topology": {
+        "vertices": 21582,
+        "triangles": 43129,
+        "boundaryEdges": 33,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "duplicateTriangles": 0,
+        "components": 1,
+        "nonAdjacentSelfIntersections": 0
+      },
+      "receiverInterface": {
+        "a": "vein.middle_meningeal.posterior.left",
+        "b": "vein.sphenoparietal.left",
+        "sharedBoundaryEdges": 11,
+        "sharedBoundaryVertices": 12,
+        "rimComponents": 1,
+        "rimCentroidMm": [
+          -44.194000244140625,
+          -26.108198165893555,
+          82.18479919433594
+        ]
+      },
+      "contacts": [
+        {
+          "other": "bone.frontal",
+          "system": "bone",
+          "triangleContacts": 976
+        },
+        {
+          "other": "bone.parietal.left",
+          "system": "bone",
+          "triangleContacts": 76
+        },
+        {
+          "other": "bone.sphenoid",
+          "system": "bone",
+          "triangleContacts": 434
+        }
+      ],
+      "shaftGuideToMmaSurfaceMm": {
+        "minimum": 0.42055771086183474,
+        "p05": 0.46137377033392235,
+        "median": 0.5204117548997944,
+        "p95": 0.5775608487218239,
+        "maximum": 0.6541121897939881
+      },
+      "shaftGuideToSkullSurfaceMm": {
+        "minimum": 0.015445766306320356,
+        "p05": 0.06682628599929,
+        "median": 0.7485030279994241,
+        "p95": 2.6091899748770095,
+        "maximum": 2.935167127445923
+      },
+      "shaftGuideToOwnWallMm": {
+        "minimum": 0.0879967578771101,
+        "p05": 0.1588866374272651,
+        "median": 0.21115248941594356,
+        "p95": 0.21845639299909989,
+        "maximum": 0.22029672861198674
+      },
+      "guideMultipleSectionComponents": [
+        {
+          "zMm": 147.5697374440203,
+          "components": 2
+        },
+        {
+          "zMm": 81.31751998747238,
+          "components": 2
+        },
+        {
+          "zMm": 80.29825510352548,
+          "components": 2
+        }
+      ],
+      "cranialEndpointMm": [
+        -23.99349088853741,
+        -26.463956899777646,
+        149.6082672119141
+      ],
+      "caudalEndpointMm": [
+        -29.4085464439129,
+        -48.38623754935066,
+        48.70104370117187
+      ]
+    },
+    {
+      "id": "vein.middle_meningeal.anterior.right",
+      "side": "right",
+      "channelPosition": "anterior",
+      "topology": {
+        "vertices": 22373,
+        "triangles": 44712,
+        "boundaryEdges": 32,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "duplicateTriangles": 0,
+        "components": 1,
+        "nonAdjacentSelfIntersections": 0
+      },
+      "receiverInterface": {
+        "a": "vein.middle_meningeal.anterior.right",
+        "b": "vein.sphenoparietal.right",
+        "sharedBoundaryEdges": 11,
+        "sharedBoundaryVertices": 12,
+        "rimComponents": 1,
+        "rimCentroidMm": [
+          44.98350524902344,
+          -25.964406967163086,
+          81.91990661621094
+        ]
+      },
+      "contacts": [
+        {
+          "other": "bone.frontal",
+          "system": "bone",
+          "triangleContacts": 753
+        },
+        {
+          "other": "bone.sphenoid",
+          "system": "bone",
+          "triangleContacts": 537
+        }
+      ],
+      "shaftGuideToMmaSurfaceMm": {
+        "minimum": 0.44280845241226513,
+        "p05": 0.4597230645620906,
+        "median": 0.5087545625307976,
+        "p95": 0.5649671490342686,
+        "maximum": 0.7527885356036343
+      },
+      "shaftGuideToSkullSurfaceMm": {
+        "minimum": 0.007133007021267958,
+        "p05": 0.03988795315006545,
+        "median": 0.7928568124296809,
+        "p95": 1.8957451350536894,
+        "maximum": 2.3272667693623466
+      },
+      "shaftGuideToOwnWallMm": {
+        "minimum": 0.11473298093807505,
+        "p05": 0.15939042322049768,
+        "median": 0.21139693468874263,
+        "p95": 0.21799747927068364,
+        "maximum": 0.22307408881715945
+      },
+      "guideMultipleSectionComponents": [
+        {
+          "zMm": 81.80288353351631,
+          "components": 3
+        },
+        {
+          "zMm": 80.7788571752683,
+          "components": 2
+        },
+        {
+          "zMm": 79.75483081702029,
+          "components": 2
+        }
+      ],
+      "cranialEndpointMm": [
+        22.894232120154346,
+        -24.862283978436256,
+        150.4126495361328
+      ],
+      "caudalEndpointMm": [
+        28.614246250253856,
+        -48.918806872744355,
+        49.03404006958008
+      ]
+    },
+    {
+      "id": "vein.middle_meningeal.posterior.right",
+      "side": "right",
+      "channelPosition": "posterior",
+      "topology": {
+        "vertices": 21762,
+        "triangles": 43490,
+        "boundaryEdges": 32,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "duplicateTriangles": 0,
+        "components": 1,
+        "nonAdjacentSelfIntersections": 0
+      },
+      "receiverInterface": {
+        "a": "vein.middle_meningeal.posterior.right",
+        "b": "vein.sphenoparietal.right",
+        "sharedBoundaryEdges": 11,
+        "sharedBoundaryVertices": 12,
+        "rimComponents": 1,
+        "rimCentroidMm": [
+          45.24190139770508,
+          -26.040803909301758,
+          82.08785247802734
+        ]
+      },
+      "contacts": [
+        {
+          "other": "bone.frontal",
+          "system": "bone",
+          "triangleContacts": 698
+        },
+        {
+          "other": "bone.sphenoid",
+          "system": "bone",
+          "triangleContacts": 370
+        }
+      ],
+      "shaftGuideToMmaSurfaceMm": {
+        "minimum": 0.3470212885470569,
+        "p05": 0.4618609610969641,
+        "median": 0.5137170760559209,
+        "p95": 0.5607784038649761,
+        "maximum": 0.7243853267990665
+      },
+      "shaftGuideToSkullSurfaceMm": {
+        "minimum": 0.00028957882960881364,
+        "p05": 0.06617517761982414,
+        "median": 0.9474571324535344,
+        "p95": 2.274088482184587,
+        "maximum": 2.6364711350078207
+      },
+      "shaftGuideToOwnWallMm": {
+        "minimum": 0.04062945357151548,
+        "p05": 0.1616248858466884,
+        "median": 0.2107273830601405,
+        "p95": 0.21815256864086652,
+        "maximum": 0.221076937280081
+      },
+      "guideMultipleSectionComponents": [
+        {
+          "zMm": 81.72626229488488,
+          "components": 2
+        },
+        {
+          "zMm": 80.70057604240648,
+          "components": 2
+        },
+        {
+          "zMm": 79.67488978992809,
+          "components": 2
+        }
+      ],
+      "cranialEndpointMm": [
+        23.733804220107125,
+        -26.284775105635156,
+        150.44724121093748
+      ],
+      "caudalEndpointMm": [
+        30.727610581038864,
+        -48.41473837714769,
+        48.90430221557617
+      ]
+    }
+  ],
+  "receiverNetworks": [
+    {
+      "side": "left",
+      "labels": [
+        "vein.sphenoparietal.left",
+        "vein.middle_meningeal.anterior.left",
+        "vein.middle_meningeal.posterior.left"
+      ],
+      "topology": {
+        "vertices": 49632,
+        "triangles": 99158,
+        "boundaryEdges": 108,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "duplicateTriangles": 0,
+        "components": 1,
+        "nonAdjacentSelfIntersections": 0
+      },
+      "cavernousInterface": {
+        "a": "vein.sphenoparietal.left",
+        "b": "vein.cavernous.left",
+        "sharedBoundaryEdges": 57,
+        "sharedBoundaryVertices": 59,
+        "rimComponents": 2,
+        "rimCentroidMm": [
+          -13.044990539550781,
+          -39.64647674560547,
+          74.56997680664062
+        ]
+      },
+      "boundaryMatchesCavernousInterface": false
+    },
+    {
+      "side": "right",
+      "labels": [
+        "vein.sphenoparietal.right",
+        "vein.middle_meningeal.anterior.right",
+        "vein.middle_meningeal.posterior.right"
+      ],
+      "topology": {
+        "vertices": 49930,
+        "triangles": 99748,
+        "boundaryEdges": 112,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "duplicateTriangles": 0,
+        "components": 1,
+        "nonAdjacentSelfIntersections": 0
+      },
+      "cavernousInterface": {
+        "a": "vein.sphenoparietal.right",
+        "b": "vein.cavernous.right",
+        "sharedBoundaryEdges": 55,
+        "sharedBoundaryVertices": 58,
+        "rimComponents": 3,
+        "rimCentroidMm": [
+          14.189879417419434,
+          -39.37159729003906,
+          74.57844543457031
+        ]
+      },
+      "boundaryMatchesCavernousInterface": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref.sanmillan2004",
+      "title": "San Millán Ruïz D, Fasel JHD, Rüfenacht DA, Gailloud P. The Sphenoparietal Sinus of Breschet: Does It Exist? An Anatomic Study. AJNR. 2004;25:112–120.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7974157/",
+      "role": "Original corrosion-cast/dissection study, figure 3: paired anterior-branch meningeal channels and a lateral connection to the lesser-wing sinus. Supports regional pattern, not these exact reconstruction coordinates."
+    },
+    {
+      "id": "ref.fishpool2007",
+      "title": "Fishpool SJC, Suren N, Roncaroli F, Ellis H. Middle meningeal artery hemorrhage: an incorrect name. Clinical Anatomy. 2007;20:371–375.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16944530/",
+      "role": "Original cadaveric study of 29 specimens: paired dural venous channels beside MMA and a plexiform arrangement near foramen spinosum. Abstract consulted."
+    },
+    {
+      "id": "ref.sphenoparietal2023",
+      "title": "The Sphenoparietal Sinus Revisited: Anatomical and Histological Study With Application to Interventional Procedures and Skull Base Surgery. 2023. PMID 36751209.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9899132/",
+      "role": "Original cadaveric/histological study supports meningeal tributaries to a lesser-wing sinus and documents variation. Does not settle every disagreement on nomenclature or cerebral venous drainage."
+    }
+  ],
+  "decisions": {
+    "courseSpecificationsComplete": true,
+    "missingCourseExemptionsRemoved": 4,
+    "geometryChanged": false,
+    "labelInterpretation": "Anterior and posterior positions of a companion pair along the frontal MMA route, not frontal-versus-parietal division names.",
+    "drainage": "Represented common receiving region is the lesser-wing sinus on each side; no direct pterygoid or SSS connection inferred from end caps.",
+    "unresolved": [
+      "Dural layer and groove/canal containment against independently segmented targets.",
+      "Cranial/caudal shaft endpoints are capped; complete SSS and pterygoid continuations are absent.",
+      "Receiver network remains open beyond the audited label seams; full lumen continuity unaccepted.",
+      "Left anterior companion contacts foramen-ovale emissary surface; this does not establish an anatomical communication."
+    ],
+    "dsa": "Both frontal companions use declared lesser-wing drainage. Remove unsupported posterior-division association and direct pterygoid shortcut. DSA remains a teaching approximation."
+  }
+}

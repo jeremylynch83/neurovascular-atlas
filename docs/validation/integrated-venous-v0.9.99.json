@@ -1,0 +1,1755 @@
+{
+  "release": "0.9.99",
+  "baseline": "0.9.98",
+  "batch": 7,
+  "passedLocalNumericalGates": true,
+  "anatomicalAcceptance": false,
+  "reviewedVenousMeshes": 231,
+  "nativeWallGapsClosed": 39,
+  "addedTriangles": 76,
+  "changedMeshes": 14,
+  "appendedVertices": 45,
+  "newWorldCoordinates": 0,
+  "existingVertexDisplacementMm": 0,
+  "totalAddedAreaMm2": 0.0734805752090523,
+  "maximumPatchSpanMm": 0.9618004098864092,
+  "junctions": {
+    "vein.retromandibular.left / vein.superficial_temporal.left": {
+      "gaps": 1,
+      "triangles": 2,
+      "closedBoundaryEdges": 4
+    },
+    "vein.basal.left / vein.inferior_ventricular.left": {
+      "gaps": 5,
+      "triangles": 5,
+      "closedBoundaryEdges": 15
+    },
+    "vein.basal.left / vein.inferior_thalamic.left": {
+      "gaps": 1,
+      "triangles": 1,
+      "closedBoundaryEdges": 3
+    },
+    "vein.pontotrigeminal.left / vein.superior_petrosal_vein.left": {
+      "gaps": 1,
+      "triangles": 1,
+      "closedBoundaryEdges": 3
+    },
+    "vein.inferior_hemispheric.left / vein.inferior_vermian.left": {
+      "gaps": 1,
+      "triangles": 4,
+      "closedBoundaryEdges": 6
+    },
+    "vein.anterior_septal.left / vein.deep_medullary.left": {
+      "gaps": 1,
+      "triangles": 4,
+      "closedBoundaryEdges": 6
+    },
+    "vein.inferior_vermian.left / vein.transverse.left": {
+      "gaps": 3,
+      "triangles": 7,
+      "closedBoundaryEdges": 13
+    },
+    "vein.precentral_cerebellar / vein.superior_vermian": {
+      "gaps": 1,
+      "triangles": 2,
+      "closedBoundaryEdges": 4
+    },
+    "vein.anterior_medullary / vein.anterior_spinal": {
+      "gaps": 8,
+      "triangles": 8,
+      "closedBoundaryEdges": 24
+    },
+    "vein.anterior_medullary / vein.pontomedullary.right": {
+      "gaps": 3,
+      "triangles": 6,
+      "closedBoundaryEdges": 12
+    },
+    "vein.anterior_medullary / vein.pontomedullary.left": {
+      "gaps": 2,
+      "triangles": 4,
+      "closedBoundaryEdges": 8
+    },
+    "vein.basilar_plexus / vein.marginal": {
+      "gaps": 4,
+      "triangles": 10,
+      "closedBoundaryEdges": 18
+    },
+    "vein.lateral_mesencephalic.right / vein.posterior_communicating": {
+      "gaps": 2,
+      "triangles": 8,
+      "closedBoundaryEdges": 12
+    },
+    "vein.inferior_hemispheric.right / vein.inferior_vermian.right": {
+      "gaps": 1,
+      "triangles": 4,
+      "closedBoundaryEdges": 6
+    },
+    "vein.anterior_intercavernous / vein.sphenoparietal.right": {
+      "gaps": 2,
+      "triangles": 4,
+      "closedBoundaryEdges": 8
+    },
+    "vein.retromandibular.right / vein.superficial_temporal.right": {
+      "gaps": 2,
+      "triangles": 4,
+      "closedBoundaryEdges": 8
+    },
+    "vein.maxillary.right / vein.superficial_temporal.right": {
+      "gaps": 1,
+      "triangles": 2,
+      "closedBoundaryEdges": 4
+    }
+  },
+  "interfaces": [
+    {
+      "one": "vein.anterior_intercavernous",
+      "two": "vein.sphenoparietal.right",
+      "before": {
+        "sharedCoordinates": 18,
+        "oppositePairedNativeEdges": 15
+      },
+      "after": {
+        "sharedCoordinates": 20,
+        "oppositePairedNativeEdges": 19
+      }
+    },
+    {
+      "one": "vein.anterior_medullary",
+      "two": "vein.anterior_spinal",
+      "before": {
+        "sharedCoordinates": 80,
+        "oppositePairedNativeEdges": 70
+      },
+      "after": {
+        "sharedCoordinates": 88,
+        "oppositePairedNativeEdges": 86
+      }
+    },
+    {
+      "one": "vein.anterior_medullary",
+      "two": "vein.pontomedullary.left",
+      "before": {
+        "sharedCoordinates": 288,
+        "oppositePairedNativeEdges": 276
+      },
+      "after": {
+        "sharedCoordinates": 292,
+        "oppositePairedNativeEdges": 282
+      }
+    },
+    {
+      "one": "vein.anterior_medullary",
+      "two": "vein.pontomedullary.right",
+      "before": {
+        "sharedCoordinates": 352,
+        "oppositePairedNativeEdges": 335
+      },
+      "after": {
+        "sharedCoordinates": 356,
+        "oppositePairedNativeEdges": 342
+      }
+    },
+    {
+      "one": "vein.anterior_septal.left",
+      "two": "vein.deep_medullary.left",
+      "before": {
+        "sharedCoordinates": 34,
+        "oppositePairedNativeEdges": 31
+      },
+      "after": {
+        "sharedCoordinates": 36,
+        "oppositePairedNativeEdges": 34
+      }
+    },
+    {
+      "one": "vein.basal.left",
+      "two": "vein.inferior_thalamic.left",
+      "before": {
+        "sharedCoordinates": 66,
+        "oppositePairedNativeEdges": 65
+      },
+      "after": {
+        "sharedCoordinates": 67,
+        "oppositePairedNativeEdges": 67
+      }
+    },
+    {
+      "one": "vein.basal.left",
+      "two": "vein.inferior_ventricular.left",
+      "before": {
+        "sharedCoordinates": 379,
+        "oppositePairedNativeEdges": 373
+      },
+      "after": {
+        "sharedCoordinates": 384,
+        "oppositePairedNativeEdges": 383
+      }
+    },
+    {
+      "one": "vein.basilar_plexus",
+      "two": "vein.marginal",
+      "before": {
+        "sharedCoordinates": 118,
+        "oppositePairedNativeEdges": 107
+      },
+      "after": {
+        "sharedCoordinates": 119,
+        "oppositePairedNativeEdges": 112
+      }
+    },
+    {
+      "one": "vein.inferior_hemispheric.left",
+      "two": "vein.inferior_vermian.left",
+      "before": {
+        "sharedCoordinates": 111,
+        "oppositePairedNativeEdges": 110
+      },
+      "after": {
+        "sharedCoordinates": 112,
+        "oppositePairedNativeEdges": 112
+      }
+    },
+    {
+      "one": "vein.inferior_hemispheric.right",
+      "two": "vein.inferior_vermian.right",
+      "before": {
+        "sharedCoordinates": 285,
+        "oppositePairedNativeEdges": 283
+      },
+      "after": {
+        "sharedCoordinates": 288,
+        "oppositePairedNativeEdges": 287
+      }
+    },
+    {
+      "one": "vein.inferior_vermian.left",
+      "two": "vein.transverse.left",
+      "before": {
+        "sharedCoordinates": 30,
+        "oppositePairedNativeEdges": 25
+      },
+      "after": {
+        "sharedCoordinates": 34,
+        "oppositePairedNativeEdges": 32
+      }
+    },
+    {
+      "one": "vein.lateral_mesencephalic.right",
+      "two": "vein.posterior_communicating",
+      "before": {
+        "sharedCoordinates": 340,
+        "oppositePairedNativeEdges": 338
+      },
+      "after": {
+        "sharedCoordinates": 344,
+        "oppositePairedNativeEdges": 344
+      }
+    },
+    {
+      "one": "vein.maxillary.right",
+      "two": "vein.superficial_temporal.right",
+      "before": {
+        "sharedCoordinates": 49,
+        "oppositePairedNativeEdges": 46
+      },
+      "after": {
+        "sharedCoordinates": 50,
+        "oppositePairedNativeEdges": 48
+      }
+    },
+    {
+      "one": "vein.pontotrigeminal.left",
+      "two": "vein.superior_petrosal_vein.left",
+      "before": {
+        "sharedCoordinates": 544,
+        "oppositePairedNativeEdges": 257
+      },
+      "after": {
+        "sharedCoordinates": 545,
+        "oppositePairedNativeEdges": 259
+      }
+    },
+    {
+      "one": "vein.precentral_cerebellar",
+      "two": "vein.superior_vermian",
+      "before": {
+        "sharedCoordinates": 554,
+        "oppositePairedNativeEdges": 389
+      },
+      "after": {
+        "sharedCoordinates": 555,
+        "oppositePairedNativeEdges": 391
+      }
+    },
+    {
+      "one": "vein.retromandibular.left",
+      "two": "vein.superficial_temporal.left",
+      "before": {
+        "sharedCoordinates": 9,
+        "oppositePairedNativeEdges": 7
+      },
+      "after": {
+        "sharedCoordinates": 10,
+        "oppositePairedNativeEdges": 9
+      }
+    },
+    {
+      "one": "vein.retromandibular.right",
+      "two": "vein.superficial_temporal.right",
+      "before": {
+        "sharedCoordinates": 9,
+        "oppositePairedNativeEdges": 6
+      },
+      "after": {
+        "sharedCoordinates": 11,
+        "oppositePairedNativeEdges": 10
+      }
+    }
+  ],
+  "nativeValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "vein.anterior_intercavernous",
+        "sourceVertices": 849,
+        "sourceTriangles": 1486,
+        "candidateVertices": 851,
+        "candidateTriangles": 1490,
+        "retainedSourceTriangles": 1486,
+        "changedTriangles": 4,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.cavernous.left",
+            "coordinates": 90,
+            "missing": 0
+          },
+          {
+            "other": "vein.cavernous.right",
+            "coordinates": 87,
+            "missing": 0
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "coordinates": 12,
+            "missing": 0
+          },
+          {
+            "other": "vein.sphenoparietal.right",
+            "coordinates": 18,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "sourceVertices": 5166,
+        "sourceTriangles": 9036,
+        "candidateVertices": 5182,
+        "candidateTriangles": 9054,
+        "retainedSourceTriangles": 9036,
+        "changedTriangles": 18,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.anterior_spinal",
+            "coordinates": 80,
+            "missing": 0
+          },
+          {
+            "other": "vein.pontomedullary.left",
+            "coordinates": 288,
+            "missing": 0
+          },
+          {
+            "other": "vein.pontomedullary.right",
+            "coordinates": 352,
+            "missing": 0
+          },
+          {
+            "other": "vein.transverse_medullary.left",
+            "coordinates": 62,
+            "missing": 0
+          },
+          {
+            "other": "vein.transverse_medullary.right",
+            "coordinates": 70,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "sourceVertices": 814,
+        "sourceTriangles": 1565,
+        "candidateVertices": 816,
+        "candidateTriangles": 1569,
+        "retainedSourceTriangles": 1565,
+        "changedTriangles": 4,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.deep_medullary.left",
+            "coordinates": 34,
+            "missing": 0
+          },
+          {
+            "other": "vein.internal_cerebral.left",
+            "coordinates": 7,
+            "missing": 0
+          },
+          {
+            "other": "vein.thalamostriate.left",
+            "coordinates": 14,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.basal.left",
+        "sourceVertices": 9316,
+        "sourceTriangles": 17312,
+        "candidateVertices": 9322,
+        "candidateTriangles": 17318,
+        "retainedSourceTriangles": 17312,
+        "changedTriangles": 6,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.anterior_cerebral.left",
+            "coordinates": 40,
+            "missing": 0
+          },
+          {
+            "other": "vein.cerebral_peduncular.left",
+            "coordinates": 40,
+            "missing": 0
+          },
+          {
+            "other": "vein.deep_middle_cerebral.left",
+            "coordinates": 43,
+            "missing": 0
+          },
+          {
+            "other": "vein.galen",
+            "coordinates": 35,
+            "missing": 0
+          },
+          {
+            "other": "vein.hippocampal.left",
+            "coordinates": 256,
+            "missing": 0
+          },
+          {
+            "other": "vein.hypothalamic_tributaries.left",
+            "coordinates": 72,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_thalamic.left",
+            "coordinates": 66,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_ventricular.left",
+            "coordinates": 379,
+            "missing": 0
+          },
+          {
+            "other": "vein.internal_cerebral.left",
+            "coordinates": 4,
+            "missing": 0
+          },
+          {
+            "other": "vein.lateral_mesencephalic.left",
+            "coordinates": 183,
+            "missing": 0
+          },
+          {
+            "other": "vein.posterior_communicating",
+            "coordinates": 92,
+            "missing": 0
+          },
+          {
+            "other": "vein.uncal.left",
+            "coordinates": 92,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "sourceVertices": 14678,
+        "sourceTriangles": 28859,
+        "candidateVertices": 14679,
+        "candidateTriangles": 28869,
+        "retainedSourceTriangles": 28859,
+        "changedTriangles": 10,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.anterior_condylar.left",
+            "coordinates": 8,
+            "missing": 0
+          },
+          {
+            "other": "vein.anterior_condylar.right",
+            "coordinates": 22,
+            "missing": 0
+          },
+          {
+            "other": "vein.cavernous.left",
+            "coordinates": 129,
+            "missing": 0
+          },
+          {
+            "other": "vein.cavernous.right",
+            "coordinates": 108,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_petrosal.left",
+            "coordinates": 14,
+            "missing": 0
+          },
+          {
+            "other": "vein.marginal",
+            "coordinates": 118,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "sourceVertices": 10427,
+        "sourceTriangles": 20661,
+        "candidateVertices": 10428,
+        "candidateTriangles": 20665,
+        "retainedSourceTriangles": 20661,
+        "changedTriangles": 4,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.inferior_hemispheric_tributaries.left",
+            "coordinates": 77,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "sourceVertices": 10873,
+        "sourceTriangles": 21315,
+        "candidateVertices": 10876,
+        "candidateTriangles": 21319,
+        "retainedSourceTriangles": 21315,
+        "changedTriangles": 4,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.inferior_hemispheric_tributaries.right",
+            "coordinates": 123,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_vermian.right",
+            "coordinates": 285,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_vermian_tonsillar_stem.right",
+            "coordinates": 26,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "sourceVertices": 9987,
+        "sourceTriangles": 18955,
+        "candidateVertices": 9991,
+        "candidateTriangles": 18962,
+        "retainedSourceTriangles": 18955,
+        "changedTriangles": 7,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.confluence",
+            "coordinates": 26,
+            "missing": 0
+          },
+          {
+            "other": "vein.inferior_vermian_tonsillar_stem.left",
+            "coordinates": 248,
+            "missing": 0
+          },
+          {
+            "other": "vein.occipital_sinus",
+            "coordinates": 167,
+            "missing": 0
+          },
+          {
+            "other": "vein.transverse.left",
+            "coordinates": 30,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "sourceVertices": 6619,
+        "sourceTriangles": 12645,
+        "candidateVertices": 6623,
+        "candidateTriangles": 12653,
+        "retainedSourceTriangles": 12645,
+        "changedTriangles": 8,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.basal.right",
+            "coordinates": 133,
+            "missing": 0
+          },
+          {
+            "other": "vein.posterior_communicating",
+            "coordinates": 340,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.maxillary.right",
+        "sourceVertices": 1028,
+        "sourceTriangles": 1917,
+        "candidateVertices": 1029,
+        "candidateTriangles": 1919,
+        "retainedSourceTriangles": 1917,
+        "changedTriangles": 2,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.deep_facial.right",
+            "coordinates": 30,
+            "missing": 0
+          },
+          {
+            "other": "vein.pterygoid_plexus.right",
+            "coordinates": 43,
+            "missing": 0
+          },
+          {
+            "other": "vein.superficial_temporal.right",
+            "coordinates": 49,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "sourceVertices": 4332,
+        "sourceTriangles": 7933,
+        "candidateVertices": 4333,
+        "candidateTriangles": 7934,
+        "retainedSourceTriangles": 7933,
+        "changedTriangles": 1,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.lateral_mesencephalic.left",
+            "coordinates": 59,
+            "missing": 0
+          },
+          {
+            "other": "vein.superior_petrosal_vein.left",
+            "coordinates": 544,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "sourceVertices": 6860,
+        "sourceTriangles": 12662,
+        "candidateVertices": 6861,
+        "candidateTriangles": 12664,
+        "retainedSourceTriangles": 12662,
+        "changedTriangles": 2,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.galen",
+            "coordinates": 93,
+            "missing": 0
+          },
+          {
+            "other": "vein.superior_cerebellar_peduncular.left",
+            "coordinates": 59,
+            "missing": 0
+          },
+          {
+            "other": "vein.superior_cerebellar_peduncular.right",
+            "coordinates": 65,
+            "missing": 0
+          },
+          {
+            "other": "vein.superior_vermian",
+            "coordinates": 554,
+            "missing": 0
+          },
+          {
+            "other": "vein.tectal.left",
+            "coordinates": 64,
+            "missing": 0
+          },
+          {
+            "other": "vein.tectal.right",
+            "coordinates": 68,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "sourceVertices": 1166,
+        "sourceTriangles": 2251,
+        "candidateVertices": 1167,
+        "candidateTriangles": 2253,
+        "retainedSourceTriangles": 2251,
+        "changedTriangles": 2,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.external_jugular.left",
+            "coordinates": 21,
+            "missing": 0
+          },
+          {
+            "other": "vein.maxillary.left",
+            "coordinates": 29,
+            "missing": 0
+          },
+          {
+            "other": "vein.posterior_auricular.left",
+            "coordinates": 25,
+            "missing": 0
+          },
+          {
+            "other": "vein.superficial_temporal.left",
+            "coordinates": 9,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "sourceVertices": 1175,
+        "sourceTriangles": 2267,
+        "candidateVertices": 1177,
+        "candidateTriangles": 2271,
+        "retainedSourceTriangles": 2267,
+        "changedTriangles": 4,
+        "protectedSourceAttachments": [
+          {
+            "other": "vein.external_jugular.right",
+            "coordinates": 27,
+            "missing": 0
+          },
+          {
+            "other": "vein.posterior_auricular.right",
+            "coordinates": 30,
+            "missing": 0
+          },
+          {
+            "other": "vein.superficial_temporal.right",
+            "coordinates": 9,
+            "missing": 0
+          }
+        ]
+      }
+    ],
+    "crossings": [],
+    "trianglePairsChecked": 841,
+    "clearance": [
+      {
+        "node": "vein.anterior_intercavernous",
+        "target": "brain.lateral-ventricle.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_intercavernous",
+        "target": "bone.frontal",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_intercavernous",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": 37.7666586810678
+      },
+      {
+        "node": "vein.anterior_intercavernous",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_intercavernous",
+        "target": "bone.temporal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": 25.9206424753896
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "target": "brain.fourth-ventricle",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 111,
+        "minimumOpenTargetClearanceMarginMm": 6.559374999312083
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "target": "brain.medulla-oblongata.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 111,
+        "minimumOpenTargetClearanceMarginMm": 2.279105260529052
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "target": "brain.medulla-oblongata.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 111,
+        "minimumOpenTargetClearanceMarginMm": 1.9931216518365653
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "target": "brain.pons.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 111,
+        "minimumOpenTargetClearanceMarginMm": 4.078500625880579
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "target": "brain.pons.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 111,
+        "minimumOpenTargetClearanceMarginMm": 3.7241025210932257
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 111,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "target": "brain.corpus-callosum",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "target": "brain.lateral-ventricle.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "target": "brain.superior-frontal-gyrus.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 12.738080088055568
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "target": "bone.frontal",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 46.99425716454239
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 49.922458371821776
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.caudate-nucleus.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.choroid-plexus.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": 0.565635793582349
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.fornix.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.globus-pallidus.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.hippocampus.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.lateral-occipitotemporal-gyrus.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": 11.981495341171112
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.lateral-ventricle.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": 1.0159267084860164
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.putamen.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "brain.temporal-pole.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": 7.674699960820359
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": 31.614685227617834
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.basal.left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 41,
+        "minimumOpenTargetClearanceMarginMm": 22.51432748309344
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 51,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "target": "brain.inferior-semilunar-lobule.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 0.47344947035034723
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "target": "brain.superior-semilunar-lobule.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 1.3014093960853323
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "target": "brain.inferior-semilunar-lobule.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 1.3670645443552465
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "target": "brain.superior-semilunar-lobule.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 2.2473562936046787
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 36,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 36,
+        "minimumOpenTargetClearanceMarginMm": 41.18702573671727
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 36,
+        "minimumOpenTargetClearanceMarginMm": 43.414752794053896
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "brain.base-of-peduncle.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": 2.5379515549076204
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "brain.choroid-plexus.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": 16.373514180005852
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "brain.fornix.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "brain.lateral-ventricle.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "brain.midbrain.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": 3.8520204305682757
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": 61.238157171813285
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": 50.607646710556125
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 38,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.maxillary.right",
+        "target": "bone.mandible",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 6.228131233016787
+      },
+      {
+        "node": "vein.maxillary.right",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.maxillary.right",
+        "target": "bone.temporal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 10.383507322984514
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 7,
+        "minimumOpenTargetClearanceMarginMm": 6.458187968028674
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 7,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 7,
+        "minimumOpenTargetClearanceMarginMm": 43.823706965694086
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 7,
+        "minimumOpenTargetClearanceMarginMm": 3.99169855472603
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "target": "brain.lateral-ventricle.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "target": "brain.lingual-gyrus.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 57.4922068663864
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 57.631752865790276
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "target": "bone.mandible",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 3.560347342335861
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 14.483560988617008
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "target": "bone.mandible",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": 0.7569829166173231
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "target": "bone.temporal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 22,
+        "minimumOpenTargetClearanceMarginMm": 12.047186555078058
+      }
+    ],
+    "nativeNetworks": [
+      {
+        "id": "integrated-venous-native",
+        "boundaryEdgesBefore": 15601,
+        "boundaryEdgesAfter": 15447,
+        "preExistingBadEdges": 4594,
+        "candidateBadEdges": 4594,
+        "newBadEdges": 0
+      }
+    ],
+    "issues": [],
+    "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open.",
+    "combinedGateReusedForByteExactCandidate": true
+  },
+  "export": {
+    "release": "0.9.99",
+    "passed": true,
+    "venousMeshesChecked": 231,
+    "unchangedVenousMeshes": 217,
+    "otherAssetsByteExact": 4,
+    "allExistingPositionsNormalsAndFacesExact": true,
+    "newVerticesCopyParentCoordinatesAndNormals": true
+  },
+  "projection": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "vein.anterior_intercavernous",
+        "id": "vein.anterior_intercavernous",
+        "vertices": 851,
+        "faces": 1708,
+        "capLoops": 14,
+        "volumeMm3": 11.16205268899383,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "id": "vein.anterior_medullary",
+        "vertices": 5182,
+        "faces": 10334,
+        "capLoops": 20,
+        "volumeMm3": 32.2588817504694,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "id": "vein.anterior_septal.left",
+        "vertices": 816,
+        "faces": 1632,
+        "capLoops": 2,
+        "volumeMm3": 27.540070691251533,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.basal.left",
+        "id": "vein.basal.left",
+        "vertices": 9322,
+        "faces": 18656,
+        "capLoops": 15,
+        "volumeMm3": 312.5063100082318,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "id": "vein.basilar_plexus",
+        "vertices": 14679,
+        "faces": 29430,
+        "capLoops": 13,
+        "volumeMm3": 292.21945374769183,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "id": "vein.inferior_hemispheric.left",
+        "vertices": 10428,
+        "faces": 20854,
+        "capLoops": 2,
+        "volumeMm3": 43.35356875433771,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "id": "vein.inferior_hemispheric.right",
+        "vertices": 10876,
+        "faces": 21754,
+        "capLoops": 3,
+        "volumeMm3": 41.90883363171568,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "id": "vein.inferior_vermian.left",
+        "vertices": 9991,
+        "faces": 19982,
+        "capLoops": 5,
+        "volumeMm3": 104.61515436813511,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "id": "vein.lateral_mesencephalic.right",
+        "vertices": 6623,
+        "faces": 13252,
+        "capLoops": 6,
+        "volumeMm3": 128.82683837300917,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.maxillary.right",
+        "id": "vein.maxillary.right",
+        "vertices": 1029,
+        "faces": 2058,
+        "capLoops": 2,
+        "volumeMm3": 222.8201097288595,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "id": "vein.pontotrigeminal.left",
+        "vertices": 4333,
+        "faces": 8628,
+        "capLoops": 34,
+        "volumeMm3": 46.56788006915581,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "id": "vein.precentral_cerebellar",
+        "vertices": 6861,
+        "faces": 13668,
+        "capLoops": 12,
+        "volumeMm3": 70.11517689899736,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "id": "vein.retromandibular.left",
+        "vertices": 1167,
+        "faces": 2334,
+        "capLoops": 2,
+        "volumeMm3": 537.7023031788817,
+        "closedAndOriented": true
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "id": "vein.retromandibular.right",
+        "vertices": 1177,
+        "faces": 2354,
+        "capLoops": 2,
+        "volumeMm3": 548.3045485401906,
+        "closedAndOriented": true
+      }
+    ]
+  },
+  "flow": {
+    "passed": true,
+    "unchangedArterialCoursesReused": 597,
+    "arterialEdgesUnchanged": true,
+    "graphUnchanged": true,
+    "generatorUnchanged": true,
+    "changedVeinSites": []
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1236,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true,
+    "selectedLabelTopology": [
+      {
+        "node": "vein.anterior_intercavernous",
+        "before": {
+          "components": 4
+        },
+        "after": {
+          "components": 4
+        }
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "before": {
+          "components": 4
+        },
+        "after": {
+          "components": 4
+        }
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.basal.left",
+        "before": {
+          "components": 2
+        },
+        "after": {
+          "components": 2
+        }
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "before": {
+          "components": 3
+        },
+        "after": {
+          "components": 3
+        }
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.maxillary.right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "before": {
+          "components": 10
+        },
+        "after": {
+          "components": 10
+        }
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      }
+    ]
+  },
+  "replay": {
+    "passed": true,
+    "checks": [
+      {
+        "node": "vein.anterior_intercavernous",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.anterior_medullary",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.anterior_septal.left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.basal.left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.basilar_plexus",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.inferior_hemispheric.left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.inferior_hemispheric.right",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.inferior_vermian.left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.lateral_mesencephalic.right",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.maxillary.right",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.pontotrigeminal.left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.precentral_cerebellar",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.retromandibular.left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "vein.retromandibular.right",
+        "candidateBuffersByteExact": true
+      }
+    ]
+  },
+  "tests": {
+    "build": "passed",
+    "repair": "19 tests passed",
+    "dsa": {
+      "closedProxies": 828,
+      "proxyTriangles": 8971462,
+      "selectableArterialCourses": 579,
+      "closedSections": 2353,
+      "graphAndGenerator": "passed"
+    }
+  },
+  "scope": "Integrated scan of all venous labels; installation limited to passing small mixed-label native wall patches. Every original position, normal and face retained.",
+  "excluded": [
+    "Single-label loops and ports; larger boundaries and components touching source bad edges.",
+    "Tissue-embedded candidates at basal/Galen, ventricular/callosal, atrial and cortical interfaces.",
+    "Crossing or topology-regressing basilar/marginal and cerebellopontine/petrosal alternatives.",
+    "Degenerate/non-simple loops and unsuccessful bounded fan alternatives."
+  ],
+  "remainingWork": [
+    "4,594 pre-existing bad native edges across the whole venous network remain unchanged.",
+    "Regional Galenic/cortical/callosal, petrosal, dural and canal registration remains open.",
+    "Disconnected components and full receiving-lumen continuity remain unaccepted.",
+    "Earlier G03/G04/G05/G06/G07 findings and the separate ILT native interface remain open."
+  ]
+}

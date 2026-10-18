@@ -1,0 +1,45 @@
+{
+  "release": "0.9.107",
+  "changes": [
+    {
+      "node": "ACA A4 right",
+      "sourceVertices": 4348,
+      "sourceTriangles": 8376,
+      "changedVertices": 1647,
+      "changedFaces": 3359,
+      "maximumDisplacementMm": 2.5079872608184814,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 324,
+      "sourceBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A3 right",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA A5 right",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Paracentral right",
+          "sharedCoordinates": 134,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Short callosal branch right",
+          "sharedCoordinates": 62,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": false
+    }
+  ]
+}

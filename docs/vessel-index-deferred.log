@@ -1,0 +1,15 @@
+{
+  "status": "baseline-changed-review-required",
+  "sourceAssetsChecked": 5,
+  "implementationFilesChecked": 4,
+  "reviewedCases": 15,
+  "changedAssets": [
+    {
+      "asset": "models/brain-context.glb",
+      "reason": "source-bytes-changed"
+    }
+  ],
+  "appliesOnlyToRecordedSearchScopes": true,
+  "allCasesRemainOpen": true,
+  "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+}

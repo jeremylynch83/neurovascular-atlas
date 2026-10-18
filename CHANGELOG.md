@@ -1,3 +1,273 @@
+# v0.9.124
+
+Correct bilateral SCA/PCA dural branch routes along the deep tentorial surface and their four descriptions. Retain native parent junction coordinates. Refresh four DSA projection/injection courses. Leave the original eight schematic collateral overlays unchanged and flag them for separate refitting. Preserve the explicit PCA inlet/hippocampal reference mismatch and earlier deferred review requirements.
+
+# v0.9.121
+
+Audit all 1,295 populated descriptions. Revise 666 entries: 361 arteries, 57 veins, 193 brain structures and 55 bony landmarks. Replace copied parent/sibling passages with structure-specific course, location, territory or endpoint descriptions. Correct targeted anatomical claims and leaked authoring link labels. Retain intentional contralateral links and normal variation. Include the complete before/after correction list and a build-time description overlay. Preserve all geometry, graph relationships, model labels, segment bounds, DSA recipes and flow data.
+
+# v0.9.120
+
+Add bilateral posterior IOV-to-SOV branches with true shared wall boundaries. Preserve native pterygoid and SOV-to-cavernous collars. Soften the left IOV dip by at most 0.8 mm, maintaining clearance from infraorbital vessels. Refresh the four DSA projection recipes and anatomy metadata. Other 1,246 mesh geometries remain exact. Retain earlier brain and venous deferred review requirements.
+
+# v0.9.119
+
+Losslessly re-encode 625 vessel index buffers whose complete decoded index sequences remain exact. Preserve all geometry, normals, triangle order, DSA payloads and injection courses. Refresh container hashes and course bindings. Retain the v0.9.118 brain comparison candidate unchanged.
+
+# v0.9.118 - experimental brain simplification
+
+Conservatively simplify selected larger cerebral and cerebellar parcels. Retain all other brain parcels and all four other GLBs. Lock landmark triangles, parcel seams, borders and degenerate source regions. Rebind anchor face IDs and asset hashes. This is a separate comparison candidate; v0.9.117 remains the stable baseline.
+
+# v0.9.117
+
+Remove unused Meshopt buffers and accessors from the brain, circulation and venous GLBs without re-encoding any active data. Rebind current asset hashes, DSA metadata, course specifications and brain anchors. All anatomical geometry and progressive loading behaviour are retained.
+
+# v0.9.116
+
+- Show bone and arteries before loading veins and brain in the background.
+- Move model parsing, decompression and geometry preparation to one worker; install bounded packets between frames and pause insertion during navigation. Retain initial arterial batching.
+- Restrict loading feedback and retries to the Anatomy panel. Prioritise requested structures and cancel stale queued focus actions.
+- Preserve camera, selection, visibility, all anatomical meshes, DSA surfaces and flow. Enable DSA after vascular geometry is ready.
+
+# v0.9.115
+
+- Remove nine microscopic exact left inferior petrosal self-contact pairs with three bounded Float32 coordinate corrections. Three left and ten right pairs remain.
+- Preserve every source triangle index and normal component, all three native interfaces, all 203 boundary edges and all other meshes.
+- Refresh only the selected vein DSA volume and native asset hash. Preserve arterial courses, graph and vein sites.
+- Keep regional bone fit, native lumen continuity and other anatomical findings open.
+
+# v0.9.114
+
+- Fix repair-validation false positives caused by tolerance-thickened triangle plane cuts. Potential contacts use exact binary-coordinate confirmation.
+- Correct 11 false reports in the bilateral inferior petrosal cohort while retaining 22 genuine cases. Add production-coordinate and analytic regressions.
+- Make deferred-exclusion reuse depend on source geometry and validation-code hashes. Legacy geometry-only records require review. The SCA gap remains deferred after rechecking.
+- Preserve every model, earlier repair and runtime behaviour unchanged. No additional anatomical repair is claimed.
+
+# v0.9.113
+
+- Save batch 21 as a review checkpoint, with all geometry identical to v0.9.112 and no new repair claimed.
+- Record 132 direct SCA/Wollschlaeger closures, 4,620 local retriangulations and 637 triangulations across 23 other surviving gaps. No candidate passes all gates.
+- Document 13 native rims inside registered olfactory or gyrus rectus tissue.
+- Add a source-hash guard so future batches can reuse these exclusions while the five source assets remain unchanged.
+
+# v0.9.112
+
+- Fit 463 existing distal left A5 vertices outward/superior within a bounded shaft region, preserving all 8,424 source faces and five native interfaces.
+- Reduce sampled corpus-callosum overlap; continuously certify separation for the 1,209-triangle distal wall section. Residual attachment/transition overlap remains.
+- Keep the terminal tip, all previous repairs and all other meshes exact. One existing self-contact pair remains rigidly translated and unresolved.
+- Refresh only the selected DSA recipe/course; preserve wider anatomical issues as open.
+
+# v0.9.111
+
+- Fit the distal right A5 up to 1 mm medially, preserving all source vertices, triangles and five native interfaces.
+- Clear the two recorded posterior dorsal/posteroventral cortical contacts. Enclosing signed-distance balls certify separation of all 8,172 wall triangles from both complete target surfaces.
+- Preserve earlier A4/A5 fit regions and all other meshes. Refresh only the selected DSA recipe/course.
+- Retain other cortical embedding, native wall issues and wider anatomical findings as open.
+
+# v0.9.110
+
+- Improve bilateral anterior A4 shafts using bounded shears up to 2.508 mm. Retain all source vertices, triangles and eight native interfaces.
+- Central plateau sampled depth falls from 2.116 to 0.547 mm left and 1.638 to 0.091 mm right, without new sampled entry or depth regression. Residual embedding remains.
+- Preserve earlier A4 fit regions, both A5 fits and all other meshes. Refresh only the two selected DSA recipes/courses.
+- Exclude PICA seam and ACom port reconstruction trials that create crossings, and excessive right medial displacement that enters the falx. Wider ACA/cortical registration remains open.
+
+# v0.9.109
+
+- Improve bilateral A5 shafts between native junctions using bounded 2.236 mm shears. Retain all source vertices, triangles and ten native interfaces.
+- Central plateau sampled depth falls from 0.244 mm left and 0.405 mm right to zero, without new sampled entry or depth regression. Transition embedding remains.
+- Preserve both A4 fits and all other meshes. Refresh only the two selected DSA recipes/courses.
+- Exclude superior-displacement trials and excessive right medial movement that enters the falx. Wider ACA/cortical registration remains open.
+
+# v0.9.108
+
+- Improve left A4 anterior shaft cortical fit with a bounded 2.693 mm shear; preserve all source vertices, triangles and native interfaces.
+- Central plateau maximum sampled depth falls from 1.227 mm to zero. Across the changed region, inside samples fall from 10,574 to 5,377, with no new sampled entry or extra depth; the worst residual depth remains 2.522 mm.
+- Preserve all other meshes, including the previous right A4 fit. Transform flank normals analytically and refresh only the selected DSA recipe/course.
+- Exclude posterior transition trials with depth regressions. Wider ACA/cortical registration remains open.
+
+# v0.9.107
+
+- Fit the right A4 mid-shaft with a smooth, bounded shear, retaining all source face indices and every native interface.
+- Reduce central-section maximum sampled cortical depth from 1.69 to 0.17 mm; whole changed-region depth falls from 1.72 to 1.34 mm. No new sampled entry, extra depth or vascular crossing.
+- Transform flank normals analytically; retain original fixed and plateau normals. Refresh the selected DSA recipe/course.
+- Exclude wider A2/A4-A5 and branch trials that cause new tissue entry or folding. Residual embedding and wider G05/G06 remain open.
+
+# v0.9.106
+
+- Split the right lacrimal wall exactly at its existing collinear palpebral junction vertex; retain the wall shape and area.
+- Close a small left PICA medullary/posterior spinal wall gap with seven triangles and one existing native coordinate/normal copy.
+- Remove three zero-area triangles, clear three invalid native edges and close seven global boundary edges. No existing vertex moves or new bad edges.
+- Exclude crossing PICA vermian and non-simple ACom trials. Retain seven zero-area faces and record the pre-existing PICA vermian wall crossing.
+- Refresh selected DSA data; wider anatomical findings remain open.
+
+# v0.9.105
+
+- Remove 59 guarded exact-zero-area arterial triangles across 29 labels after exact subset and native-port checks.
+- Clear 74 invalid native coordinate edges without a new global boundary or bad edge. Newly exposed per-label edges pair oppositely with retained positive-area neighbouring artery walls.
+- Retain all positive-area faces, positions and stored normals; refresh selected DSA recipes/courses. Ten guarded triangles and wider anatomy remain open.
+- Synchronise current issue-register copies.
+
+# v0.9.104
+
+- Scan all 766 arterial meshes and remove 384 exact-zero-area facets across 86 labels.
+- Clear 395 invalid native edges; no new local/global boundary or bad edge. Keep all positive-area faces and all position/normal data exact.
+- Retain 69 guarded faces after conservative edge-constraint propagation; no optimiser or anatomical certification is claimed.
+- Refresh selected DSA recipes/courses. All other assets, runtime source, catalogue structures and relationships are retained. Larger anatomy remains open.
+
+# v0.9.103
+
+- Remove the three guarded exact-zero-area faces: two anterior spinal and one left pterygoid.
+- Restore two opposite paired native port edges with the anterior medullary vein; global affected bad edges fall from three to zero without new global boundaries.
+- Merge two tiny coplanar pterygoid triangles into their exact geometric union. All positions and stored normals remain exact.
+- Refresh two DSA recipes; arterial courses and runtime remain unchanged. Larger anatomical findings and remote topology defects remain open.
+
+# v0.9.102
+
+- Remove 21 exact-zero-area source triangles across anterior spinal, left inferior ophthalmic and bilateral pterygoid plexus veins.
+- Clear 23 invalid native edges while preserving all positive-area faces, vertex positions and normals; no new boundary or bad edge.
+- Check affected edges against all 231 venous meshes. Retain three guarded zero-area triangles whose removal would expose boundaries.
+- Refresh four DSA recipes; all arterial courses and app runtime remain unchanged. Wider anatomical issues remain open.
+
+# v0.9.101
+
+- Use exact binary-coordinate arithmetic for nearly parallel triangle pairs, avoiding tolerance-expanded false crossing intervals. Genuine positive crossings and coplanar overlaps remain rejected.
+- Reclassify the recorded right A5 pair 5129/5204 as single shared-vertex contact. Independent exact half-space proof and a 323-pair local audit find no positive crossing.
+- Add real-geometry, symmetry/winding, dyadic transform, genuine shallow-crossing, parallel-gap and thin-overlap regressions. All 22 repair tests pass.
+- Replay the 15 arterial and 39 venous wall repairs under the new predicate. Model assets, DSA data and app runtime remain unchanged. Wider anatomical issues remain open.
+
+# v0.9.100
+
+- Scan all 766 arterial meshes and close 15 bounded mixed-label native wall gaps with 53 triangles across 5 labels.
+- Preserve every original position, normal and face; copy appended coordinates/normals from native neighbouring labels.
+- Require strict changed-face intersections, tissue clearance and no new bad native edges. Retain single-label ports and exclude failing candidates.
+- Refresh selected DSA proxies with source-face lineage and paired-edge orientation propagation. Refresh five affected arterial courses and retain all other courses. Wider anatomical defects remain open.
+
+# v0.9.99
+
+- Scan all 231 venous display meshes and close 39 bounded mixed-label native wall gaps with 76 triangles across 14 labels.
+- Preserve every original position, normal and face; copy appended coordinates/normals from native neighbouring labels.
+- Require strict changed-face intersections, tissue clearance and no new bad native edges. Retain single-label ports and exclude failing candidates.
+- Refresh selected DSA proxies with source-face lineage and paired-edge orientation propagation. All arterial courses remain exact. Wider anatomical defects remain open.
+
+# v0.9.98
+
+- Close one small mixed-label native wall gap at the left inferior petrosal sinus/basilar plexus interface with three triangles.
+- Preserve all source vertex positions, normals and faces; one appended vertex copies an existing native coordinate and normal.
+- Validate against every named surface and local bone targets; update the basilar plexus DSA proxy.
+- Regional petrosal topology, tissue contacts, receiving lumens and earlier findings remain open.
+
+# v0.9.97
+
+- Close 11 small mixed-label native wall gaps around the Galenic and torcular venous junctions with 61 triangles and existing atlas coordinates.
+- Preserve every original vertex position, normal integer and triangle; no vessel course displacement.
+- Validate new faces against all named surfaces and tissue targets. Exclude the basal-vein/Galen gap inside the registered callosum and other crossing/degenerate candidates.
+- Refresh three DSA proxies and retain all arterial courses. Broader G01 registration, existing remote topology defects and full receiving lumens remain open.
+
+# v0.9.96
+
+- Repair the right ACA A5/falcine root with 32 paired native edges after a bounded connected A5/precuneal medial adjustment.
+- Use a 5 mm geodesic branch taper; remove the malformed 0.25 mm parent lip while retaining other native junctions.
+- Clear the local A5/posterior-cingulate embedding and reduce precuneal embedding without new sampled tissue entry or deeper penetration. Wider bilateral G05 and G06 receiving-lumen review remain open.
+- Retain one pre-existing local source self-intersection pair; remove two others. Exclude broad branch shifts and invalid Boolean/narrowed collar trials.
+- Refresh three DSA proxies and courses; retain all other meshes, runtime source and earlier corrections.
+
+# v0.9.95
+
+- Reopen and reconstruct the left occipital mastoid proximal collar, removing internal overlap walls.
+- Align the compound left ILT root to the unchanged anterior branch and trunk openings; maximum displacement 0.5261 mm.
+- Clear three recorded native-interface defects, leaving one posteromedial ILT interface. Exclude wider reconstructions that enter the current sphenoid model.
+- Refresh three DSA proxies and courses; preserve retained corner normals, remote attachments, all other meshes and runtime source. Wider anatomical review remains open.
+
+# v0.9.94
+
+- Use the cached repair pipeline to restore the three remaining small tentorial/MHT wall gaps, retaining all source positions, normals and triangles.
+- Restore all 13 left and 10 right recorded MHT interface coordinates, reducing failed native-interface records from six to four.
+- Classify the remaining occipital mastoid and three left ILT interfaces for collar/coupled regional reconstruction; exclude bounded snap trials.
+- Refresh two DSA projections and injection courses. Retain all 1,250 named meshes, runtime source and earlier corrections. Wider anatomy and receiving lumens remain open.
+
+# v0.9.93
+
+- Batch 1 authoring pipeline: cache decoded geometry and lazy collision BVHs by mesh contents.
+- Detect small native junction gaps, stage wall patches and align explicitly paired compatible rims within bounded displacement limits.
+- Validate changed faces, coplanar/adjacent overlaps, native edges and local tissue clearance; preserve intentional ports and escalate larger changes.
+- Record/reuse accepted and rejected trials with source/configuration identities and candidate checksums.
+- Add 16 regression tests and a reproducible v0.9.92 replay benchmark. Production geometry, runtime source and DSA data are unchanged.
+
+# v0.9.92
+
+- Close four small native wall gaps in the bilateral tentorial marginal labels using seven triangles and four existing parent coordinates.
+- Restore both dorsal meningeal native interfaces; restore two of three missing right meningohypophyseal coordinates. Failed interface records decrease from eight to six.
+- Preserve all source vertex positions, source normals and source triangles, all other meshes and all runtime source.
+- Refresh two DSA projections and selectable injection courses. Retain right ACA, pericallosal, dural/bone and full-network review issues.
+
+# v0.9.91
+
+- Reconstruct the left posterior cavernous MMA proximal route to its existing parent opening, clearing the ovale emissary vein.
+- Limit the parent adjustment to 0.15 mm with no sampled increase in bone penetration; preserve all other native openings and distal branch geometry.
+- Remove overlapping internal junction walls with an exterior Boolean union, yielding 181 paired boundary edges and no self-intersections.
+- Preserve source corner normals at retained attachments, refresh two DSA recipes and courses, and clear one failed native-interface record.
+- Retain wider anatomical, bone/dural and receiving-network issues.
+
+# v0.9.90
+
+- Connect the left MMA petrosquamosal parent rim with a bounded 0.413 mm maximum displacement; keep all indices and the other three attachment rims fixed.
+- Verify 124 paired native boundary edges and identical shared normals; introduce no new intersections or neighbouring contacts in the changed region.
+- Clear one failed native-interface record while retaining wider review of the 12 deferred segments.
+- Quantify the right ACA port/cortex conflict and exclude failed local outlet trials.
+- Refresh one DSA recipe and injection course, preserving all earlier corrections and runtime source.
+
+# v0.9.89
+
+- Open both frontal-MMA to paramedian native junctions using bounded exterior unions, retaining the parent tips and all other labelled attachment coordinates.
+- Retain 78 left and 79 right exact shared boundary coordinates and paired edges, with zero combined self-intersections.
+- Constrain the repaired vessel envelopes to the original combined shapes; refresh the four projection and injection datasets.
+- Preserve earlier ACA/falcine and MMA/falcine repairs; retain right ACA, pericallosal, bone/dural fit and whole receiving-network issues.
+
+# v0.9.88
+
+- Reconstruct both distal MMA paramedian courses and falcine terminal collars as connected regional walls, with exact 50-edge shared rims and shared normals.
+- Clear all four surfaces from the represented superior sagittal sinus; preserve incoming paramedian rims, distal falcine interfaces and all other model buffers.
+- Refresh the four injection courses and projection recipes; preserve injection selection with geometry-bound falcine course guides and author regional dural course classifications.
+- Retain unresolved right ACA/pericallosal and upstream frontal-MMA/paramedian native continuity findings. Exclude failed shifts and disconnected cut remnants.
+
+# v0.9.87
+
+- Connect the left ACA falcine inlet to its existing A5 native rim with an open collar; retain the parent artery, distal falcine surface and distal interface.
+- Correct its generic course description to cisternal then falcine dural, and refresh the affected DSA projection and injection course.
+- Retain G05, the right ACA/bilateral MMA attachment gaps, all 12 deferred segments and wider anatomical review. Exclude trials with folds or new contacts.
+
+# v0.9.86
+
+- Review the straight sinus, Galen, inferior sagittal and torcular region with adjoining dura. G01 remains open; no full regional anatomical acceptance.
+- Deliver a bounded 1.5 mm straight-sinus shaft/medial dural correction. Restrict the falcine change to its inferior edge. Preserve all native venous shared coordinates, indices, IDs and relationships.
+- Reduce four measured sinus/cortical contact counts without new contact objects, folds or increased parenchymal/bone contacts. Retain residual contacts and exclude failed broader Galenic and falx-body trials.
+- Refresh brain anchors, registration metadata and DSA geometry hashes/proxy volume while reusing arterial flow and projection topology. Application runtime source is unchanged.
+- Retain all previous corrections and deferred issues. One full installer-compatible ZIP.
+
+# v0.9.85
+
+- Batch 3 reviews 20 local venous labels and corrects three surfaces: clear the left meningeal/emissary overlap and make bounded inferior petrosal shaft fits bilaterally.
+- Preserve every native boundary/shared coordinate, all triangle indices, all IDs and relationships, 1,247 unchanged meshes and all application runtime source.
+- Refresh DSA proxy volumes, venous sites and geometry hashes while retaining arterial flow data and projection topology.
+- Record rejected larger deformations and retain unresolved petrosal reconstruction, fine canal/cervical targets and native lumen continuity. The 12 deferred arterial segments remain unchanged.
+- One full installer-compatible ZIP, with reports and validation included.
+
+# v0.9.84
+
+Define all four middle meningeal companion courses with source-bound review guides, explicit dural/bone targets, receiver seam references and unresolved passage/end conditions. Remove their missing-specification exemptions. Review current surfaces and retain unresolved containment/continuity findings as G07. Add represented lesser-wing drainage and arterial companion relationships; distinguish the paired channel positions from arterial divisions. DSA uses these declared receivers and no longer assigns the posterior frontal companion to posterior MMA injections or a direct pterygoid shortcut. Model geometry and arterial flow data are unchanged.
+
+# v0.9.83
+
+Recheck all 12 original posterior artery–vein crossings against the delivered meshes. Reconcile G05 with current pericallosal tissue contacts, including A5, rather than closing it from generic repair notes. Document supported falcine origins separately from unresolved native attachments; retain estimated catalogue parents pending coupled geometry repair. Include reproducible current-mesh measurements, source references and issue records. Geometry, flow and DSA code are unchanged. Deliver one full source ZIP with executable launchers and a web-readable venous model.
+
+# v0.9.82
+
+Fresh DSA entry reuses the ordinary arterial batches, geometry, materials, camera and picking. No DSA data, renderer, targets or worker are needed to open the selector. Course data load after choosing an artery; projection surfaces and sections prepare after confirming the point. Selection-time prewarming and the separate placement scene are removed. Temporary visibility, clipping and focus overrides restore on cancellation or exit.
+
+# v0.9.81
+
+Choose injection point shares the DSA playback controls row. The vessel-name caption is removed, retaining time and phase. Narrow screens keep controls on one row by omitting the redundant frame-rate label.
+
 # v0.9.80
 
 DSA section splitting filters triangles by their flow-coordinate ranges and reuses prepared vertex data within the existing worker. Section boundaries, interpolation, caps and closure checks are preserved. No persistent cache or additional background preparation is introduced.
@@ -493,3 +763,5 @@ Reduced posterior venous bulk, constrained fairing of connected arterial/venous 
 # v0.9.32 — ICA / cavernous sinus fit
 
 Joint bilateral ICA loop and compact bone-fitted CS reconstruction to the approved sketch. Fixed ophthalmic meshes and native ostial collars; retained lower source course and distal wall, physical branch/venous joins, unchanged bone and brain. Reassigned Vidian ICA contributions to their retained lower ICA label. Geometry, export and production build checks pass within the documented local scope. Dura and lower skull-base canals remain unresolved. See docs/ICA_CS_v0.9.32.md.
+
+Batch 22 also reclassifies the left A5 pair (source faces 1156 and 1222) as a tolerance artefact: exact checks find no crossing. Its earlier reported inherited contact is superseded by this finding. No wall geometry changes. The residual left A5/corpus-callosum overlap remains 0.195 mm.

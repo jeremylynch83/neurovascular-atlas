@@ -1,0 +1,79 @@
+{
+  "node": "vein.inferior_petrosal.left",
+  "sourceExactCrossingPairs": 12,
+  "candidateExactCrossingPairs": 3,
+  "remainingPairs": [
+    [
+      5272,
+      5425
+    ],
+    [
+      5273,
+      5425
+    ],
+    [
+      5273,
+      5426
+    ]
+  ],
+  "verticesMoved": 3,
+  "changedFaces": 21,
+  "maximumDisplacementMm": 5.394796517066425e-06,
+  "trials": 120,
+  "history": [
+    {
+      "sourceVertexGroup": [
+        2840
+      ],
+      "sourceCoordinate": [
+        -13.564016342163086,
+        -64.62012481689453,
+        49.544090270996094
+      ],
+      "candidateCoordinate": [
+        -13.564016342163086,
+        -64.62012481689453,
+        49.54408645629883
+      ],
+      "maximumDisplacementMm": 3.814697265625e-06,
+      "remainingExactCrossingPairs": 8
+    },
+    {
+      "sourceVertexGroup": [
+        2749
+      ],
+      "sourceCoordinate": [
+        -12.936079978942871,
+        -62.82907485961914,
+        47.56398391723633
+      ],
+      "candidateCoordinate": [
+        -12.936079978942871,
+        -62.829078674316406,
+        47.56398010253906
+      ],
+      "maximumDisplacementMm": 5.394796517066425e-06,
+      "remainingExactCrossingPairs": 5
+    },
+    {
+      "sourceVertexGroup": [
+        2728
+      ],
+      "sourceCoordinate": [
+        -13.500731468200684,
+        -64.60139465332031,
+        49.53805160522461
+      ],
+      "candidateCoordinate": [
+        -13.500733375549316,
+        -64.60139465332031,
+        49.538047790527344
+      ],
+      "maximumDisplacementMm": 5.394796517066425e-06,
+      "remainingExactCrossingPairs": 3
+    }
+  ],
+  "passedSelfGate": false,
+  "sourcePositionSha256": "de009feb1cc1de9c9ed259d3c4760c9118c91f9abb044d0aab99e35ec2f5a277",
+  "candidatePositionSha256": "d71c503e412e2035129658127d5161cc35ccc7152574387e220a4323db86efd5"
+}

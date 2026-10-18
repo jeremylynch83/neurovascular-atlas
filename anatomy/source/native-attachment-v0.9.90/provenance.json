@@ -1,0 +1,22 @@
+{
+  "baselineRelease": "0.9.89",
+  "release": "0.9.90",
+  "node": "MMA petrosquamosal left",
+  "parent": "Middle meningeal left",
+  "baselineAssetHashes": {
+    "brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "complete-circulation.glb": "02126a96eb456103cc1c2bf35a24e4001fcc0d7e9aee8e361b0e55dcf9c25b92",
+    "venous.glb": "cf0fb00820b6dfd73f24f86474ef23c9380904ec10b010d6e24482208e6b7065",
+    "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+  },
+  "candidateBufferHashes": {
+    "MMA petrosquamosal left.positions.bin": "c0e76bd63baa35e720a4480c1cd8133b90a60e9851f2d93575e361eaae149284",
+    "MMA petrosquamosal left.normals.bin": "8582193feb4b71f1aaee2f2f04c64bc4499026ebb102d5720b943d61696ee45c",
+    "MMA petrosquamosal left.indices.bin": "fbd754cf4ae4cedff6bba6db532cfb5934b246df56b99cebb3160fd8ce8e8fc4"
+  },
+  "method": "Smooth centre displacement plus a harmonic rim-shape residual, with all other rims and the surface beyond 1 mm fixed. The source seam maps exactly to the native parent ring.",
+  "indicesExact": true,
+  "rightACAGeometryChanged": false,
+  "anatomicalAcceptance": false
+}

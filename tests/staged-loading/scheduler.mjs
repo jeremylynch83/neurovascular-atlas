@@ -1,0 +1,5 @@
+import{createRequire}from'node:module';import{writeFile}from'node:fs/promises';import assert from'node:assert/strict';
+const require=createRequire(import.meta.url),{chromium}=require(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES?process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES+'/playwright':'playwright');
+const root=new URL('../../',import.meta.url).pathname,{createServer}=await import(root+'node_modules/vite/dist/node/index.js'),server=await createServer({root,server:{host:'127.0.0.1',port:8798}});await server.listen();
+const browser=await chromium.launch({executablePath:process.env.ATLAS_TEST_CHROMIUM,headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{const page=await browser.newPage();await page.goto('http://127.0.0.1:8798/tests/staged-loading/scheduler.html');await page.waitForFunction(()=>window.schedulerReport);const report=await page.evaluate(()=>window.schedulerReport);console.log(report);assert(report.passed);await writeFile(root+'docs/staged-loading-scheduler.json',JSON.stringify(report,null,2)+'\n');}finally{await browser.close();await server.close()}

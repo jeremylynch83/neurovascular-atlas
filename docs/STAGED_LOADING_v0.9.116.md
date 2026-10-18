@@ -1,0 +1,23 @@
+# Progressive anatomy loading, v0.9.116
+
+Bone and the two arterial files become usable before veins and brain load. The initial stage contains 826 named meshes. Roughly 50 MB of the 121 MB of native GLB files are deferred, before HTTP compression. Source anatomy and precision are unchanged from v0.9.115.
+
+Loading feedback appears only in the expanded Layers and anatomy panel. Pending structures and their groups have small spinners. Clicking a pending structure opens the panel, expands its ancestry and shows Please wait. The requested geometry is prioritised; selection/focus completes when it is ready. A newer selection, view change, hide action or navigation gesture cancels stale queued focus. Visibility choices take effect immediately and are retained as geometry arrives. Reduced-motion preferences replace rotating spinners with a static indicator.
+
+Failures show Retry beside the affected structure or group. Retrying does not change selection, visibility or the camera. Successfully loaded anatomy remains usable. The catalogue bootstrap still reports a fatal error if the catalogue itself cannot load, since no anatomy tree can then be built.
+
+One dedicated worker performs GLTF parsing, Meshopt decompression, normalised attribute conversion, transforms, missing-normal calculation and bounds preparation. Only transferable typed arrays and small metadata packets reach the main thread. There is one active file and one prepared packet in flight. Requests within the active file are prioritised; requested later files move ahead of unrequested files at file boundaries.
+
+Packets contain at most 16 meshes, with an adaptive vertex budget of 8,000-50,000. A single larger source mesh is retained intact rather than changing its topology. The largest existing brain mesh has 73,269 vertices. Main-thread installation targets approximately 1-2 ms per packet and reduces the budget after expensive work. Scheduling backs off when render work or recent frame intervals are slow. These are cooperative budgets, not hard execution-time guarantees.
+
+Initial arterial batching is retained and assembled cooperatively before the first framed scene draw. Background packets add their own small batches without rebuilding arterial buffers. Insertion waits until after a paint and pauses during gestures and their settling period. Downloads can continue during interaction. Hidden brain meshes can be prepared during idle time; their GPU data are not uploaded until they are shown. Hidden arrivals do not request redraws of the existing scene. Camera framing is performed once for startup, not again on background arrivals.
+
+The DSA button becomes available after all vascular geometry is ready. The engine also checks this dependency before constructing DSA surfaces. A selective MMA run is verified while the brain download remains deliberately deferred. Catalogue relationships, native asset revisions, DSA surfaces and flow data are preserved.
+
+Verification includes seven queue tests, eleven existing gesture tests, eleven browser scenarios on the full dataset, separate final scheduler/lifecycle checks, anatomy/preset validation, DSA validation and the production build. Every one of the 1,250 loaded runtime position, normal and triangle-index streams matches the previous loader's conversion exactly. Native GLBs and the anatomical issue register are byte-identical. Anatomical issues remain as recorded in v0.9.115.
+
+The browser scenarios cover delayed downloads, pending actions, a changed selection, navigation during background preparation, camera/visibility retention, mobile panel layout, DSA before brain loading, and an aborted background download followed by inline retry. The small scheduler fixture additionally tests frame backoff, gesture-lock reset and closing the viewer while work is waiting.
+
+Timing receipts use headless Chromium and software WebGL, with deliberate download holds. They are not representative device benchmarks: large GPU/compositor delays remain in this environment even while no new background meshes are inserted and no CPU long tasks are recorded during the tested drag. Packet timing outliers also remain. No universal frame-rate or zero-stutter claim is made. Rendering a newly shown large group can still incur GPU work; test normal hardware and mobile devices before asserting a speed improvement.
+
+Run npm run loading:test with Node 22 or newer. The browser runners are tests/staged-loading/browser.mjs and scheduler.mjs; they use Playwright and optionally ATLAS_TEST_CHROMIUM. Regenerate reference hashes with node tests/staged-loading/expected-geometry.mjs. Runtime and final scheduler receipts are in docs/staged-loading-runtime.json and docs/staged-loading-scheduler.json.

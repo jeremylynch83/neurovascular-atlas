@@ -1,0 +1,1 @@
+The accepted authoring buffers are in anatomy/source/tentorial-v0.9.124. After installing the app dependencies, re-export the two model containers from an intact v0.9.123 checkout with: node tools/tentorial-v0.9.124/export.mjs /absolute/source-v0.9.123 /absolute/target-v0.9.124. Other labels retain their original compressed streams. Delivered manifests and DSA data are canonical.

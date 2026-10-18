@@ -1,0 +1,41 @@
+[
+  {
+    "crossings": [],
+    "checks": 13839,
+    "x": -1,
+    "z": 0,
+    "changedFaces": 791,
+    "flippedFaces": 0,
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+        "insideBefore": 569,
+        "insideAfter": 9,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          3.0868353843688965,
+          -98.06214141845703,
+          102.01972198486328
+        ],
+        "depthBefore": 0.2547469437122345,
+        "depthAfter": 0.004594070836901665
+      },
+      {
+        "target": "brain.cingulate-gyrus-posteroventral-part.right",
+        "insideBefore": 2741,
+        "insideAfter": 0,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          3.0868353843688965,
+          -98.06214141845703,
+          102.01972198486328
+        ],
+        "depthBefore": 0.932320773601532,
+        "depthAfter": 0.0
+      }
+    ],
+    "passed": true
+  }
+]

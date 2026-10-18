@@ -1,0 +1,489 @@
+{
+  "release": "0.9.89",
+  "baseline": "0.9.88",
+  "anatomicalAcceptance": false,
+  "nativeValidation": {
+    "changes": [
+      {
+        "node": "MMA frontal left",
+        "vertices": 16741,
+        "triangles": 33349,
+        "retainedOriginalVertices": 16643,
+        "retainedOriginalFaces": 33213,
+        "removedFaces": 24,
+        "newFaces": 136,
+        "maxChangedFaceDistanceFromOriginalInletMm": 0.6354997895849507,
+        "protectedNativeRimVertexCounts": [
+          55
+        ],
+        "otherLabelSharedCoordinates": [
+          {
+            "other": "MMA frontal anterior division left",
+            "retainedSharedCoordinates": 55
+          }
+        ],
+        "selfIntersections": 0
+      },
+      {
+        "node": "MMA paramedian left",
+        "vertices": 3745,
+        "triangles": 7362,
+        "retainedOriginalVertices": 3581,
+        "retainedOriginalFaces": 7078,
+        "removedFaces": 296,
+        "newFaces": 284,
+        "maxChangedFaceDistanceFromOriginalInletMm": 1.7332608070671,
+        "protectedNativeRimVertexCounts": [
+          50
+        ],
+        "otherLabelSharedCoordinates": [
+          {
+            "other": "MMA falcine terminal left",
+            "retainedSharedCoordinates": 50
+          }
+        ],
+        "selfIntersections": 0
+      },
+      {
+        "node": "MMA frontal",
+        "vertices": 17268,
+        "triangles": 34397,
+        "retainedOriginalVertices": 17170,
+        "retainedOriginalFaces": 34263,
+        "removedFaces": 27,
+        "newFaces": 134,
+        "maxChangedFaceDistanceFromOriginalInletMm": 0.5963279131815675,
+        "protectedNativeRimVertexCounts": [
+          58
+        ],
+        "otherLabelSharedCoordinates": [
+          {
+            "other": "MMA frontal anterior division",
+            "retainedSharedCoordinates": 58
+          }
+        ],
+        "selfIntersections": 0
+      },
+      {
+        "node": "MMA paramedian right",
+        "vertices": 3662,
+        "triangles": 7193,
+        "retainedOriginalVertices": 3472,
+        "retainedOriginalFaces": 6858,
+        "removedFaces": 310,
+        "newFaces": 335,
+        "maxChangedFaceDistanceFromOriginalInletMm": 1.7342576027873213,
+        "protectedNativeRimVertexCounts": [
+          50
+        ],
+        "otherLabelSharedCoordinates": [
+          {
+            "other": "MMA falcine terminal right",
+            "retainedSharedCoordinates": 50
+          }
+        ],
+        "selfIntersections": 0
+      }
+    ],
+    "interfaces": [
+      {
+        "side": "left",
+        "matchedCoordinates": 78,
+        "pairedOppositelyOrientedEdges": 78,
+        "combinedSelfIntersections": 0
+      },
+      {
+        "side": "right",
+        "matchedCoordinates": 79,
+        "pairedOppositelyOrientedEdges": 79,
+        "combinedSelfIntersections": 0
+      }
+    ],
+    "contacts": [
+      {
+        "node": "MMA frontal left",
+        "other": "bone.frontal",
+        "before": 1027,
+        "after": 1027
+      },
+      {
+        "node": "MMA frontal left",
+        "other": "bone.parietal.left",
+        "before": 106,
+        "after": 106
+      },
+      {
+        "node": "MMA frontal left",
+        "other": "bone.sphenoid",
+        "before": 338,
+        "after": 338
+      },
+      {
+        "node": "MMA frontal left",
+        "other": "MMA frontal anterior division left",
+        "before": 370,
+        "after": 368
+      },
+      {
+        "node": "MMA frontal left",
+        "other": "MMA frontal posterior division left",
+        "before": 164,
+        "after": 164
+      },
+      {
+        "node": "MMA frontal left",
+        "other": "Middle meningeal left",
+        "before": 125,
+        "after": 125
+      },
+      {
+        "node": "MMA paramedian left",
+        "other": "bone.frontal",
+        "before": 318,
+        "after": 319
+      },
+      {
+        "node": "MMA paramedian left",
+        "other": "MMA falcine terminal left",
+        "before": 380,
+        "after": 380
+      },
+      {
+        "node": "MMA paramedian left",
+        "other": "Anterior falcine\u2013MMA paramedian left",
+        "before": 100,
+        "after": 100
+      },
+      {
+        "node": "MMA frontal",
+        "other": "bone.frontal",
+        "before": 942,
+        "after": 948
+      },
+      {
+        "node": "MMA frontal",
+        "other": "bone.sphenoid",
+        "before": 179,
+        "after": 179
+      },
+      {
+        "node": "MMA frontal",
+        "other": "MMA frontal anterior division",
+        "before": 376,
+        "after": 372
+      },
+      {
+        "node": "MMA frontal",
+        "other": "MMA frontal posterior division",
+        "before": 4,
+        "after": 4
+      },
+      {
+        "node": "MMA frontal",
+        "other": "Middle meningeal",
+        "before": 132,
+        "after": 132
+      },
+      {
+        "node": "MMA paramedian right",
+        "other": "bone.frontal",
+        "before": 327,
+        "after": 332
+      },
+      {
+        "node": "MMA paramedian right",
+        "other": "MMA falcine terminal right",
+        "before": 388,
+        "after": 388
+      },
+      {
+        "node": "MMA paramedian right",
+        "other": "Anterior falcine\u2013MMA paramedian right",
+        "before": 91,
+        "after": 91
+      }
+    ],
+    "topologyAndContactObjectsPassed": true,
+    "facetCountIncreasesRequireEnvelopeCheck": true,
+    "passed": true,
+    "envelopeValidation": [
+      {
+        "node": "MMA frontal left",
+        "changedFaceSamples": 502,
+        "maxOutsideBaselineCombinedVesselMm": 3.1031420630493827e-06,
+        "samplesOutsideByMoreThan20Nanometres": 0,
+        "expandedFaceTissueContacts": []
+      },
+      {
+        "node": "MMA paramedian left",
+        "changedFaceSamples": 964,
+        "maxOutsideBaselineCombinedVesselMm": 4.635756242373816e-06,
+        "samplesOutsideByMoreThan20Nanometres": 0,
+        "expandedFaceTissueContacts": []
+      },
+      {
+        "node": "MMA frontal",
+        "changedFaceSamples": 496,
+        "maxOutsideBaselineCombinedVesselMm": 2.7215074280253262e-06,
+        "samplesOutsideByMoreThan20Nanometres": 0,
+        "expandedFaceTissueContacts": []
+      },
+      {
+        "node": "MMA paramedian right",
+        "changedFaceSamples": 1120,
+        "maxOutsideBaselineCombinedVesselMm": 5.196931030623158e-06,
+        "samplesOutsideByMoreThan20Nanometres": 0,
+        "expandedFaceTissueContacts": []
+      }
+    ],
+    "contactAcceptance": "No new contacted objects. Increased facet counts after local retriangulation are interpreted with the combined-envelope check, not as a new physical penetration."
+  },
+  "envelopeValidation": [
+    {
+      "node": "MMA frontal left",
+      "changedFaceSamples": 502,
+      "maxOutsideBaselineCombinedVesselMm": 3.1031420630493827e-06,
+      "samplesOutsideByMoreThan20Nanometres": 0,
+      "expandedFaceTissueContacts": []
+    },
+    {
+      "node": "MMA paramedian left",
+      "changedFaceSamples": 964,
+      "maxOutsideBaselineCombinedVesselMm": 4.635756242373816e-06,
+      "samplesOutsideByMoreThan20Nanometres": 0,
+      "expandedFaceTissueContacts": []
+    },
+    {
+      "node": "MMA frontal",
+      "changedFaceSamples": 496,
+      "maxOutsideBaselineCombinedVesselMm": 2.7215074280253262e-06,
+      "samplesOutsideByMoreThan20Nanometres": 0,
+      "expandedFaceTissueContacts": []
+    },
+    {
+      "node": "MMA paramedian right",
+      "changedFaceSamples": 1120,
+      "maxOutsideBaselineCombinedVesselMm": 5.196931030623158e-06,
+      "samplesOutsideByMoreThan20Nanometres": 0,
+      "expandedFaceTissueContacts": []
+    }
+  ],
+  "exportValidation": {
+    "release": "0.9.89",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 595,
+    "otherAssetsByteExact": 4,
+    "retainedAttachmentCoordinatesAndNormalsExact": true,
+    "interfaces": [
+      {
+        "side": "left",
+        "exactSharedCoordinatesAndNormals": 78
+      },
+      {
+        "side": "right",
+        "exactSharedCoordinatesAndNormals": 79
+      }
+    ],
+    "changes": [
+      {
+        "node": "MMA frontal",
+        "vertices": 17268,
+        "triangles": 34397,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA frontal left",
+        "vertices": 16741,
+        "triangles": 33349,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA paramedian left",
+        "vertices": 3745,
+        "triangles": 7362,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA paramedian right",
+        "vertices": 3662,
+        "triangles": 7193,
+        "exactCandidateRoundtrip": true
+      }
+    ]
+  },
+  "finalWeld": [
+    {
+      "maxWeldDisplacementMm": 0.0,
+      "removedDegenerateTriangles": {
+        "MMA frontal left": 0,
+        "MMA paramedian left": 0
+      },
+      "toleranceMm": 2e-05,
+      "side": "left",
+      "nonManifoldEdges": 0,
+      "boundaryEdges": 105,
+      "combinedSelfIntersections": 0
+    },
+    {
+      "maxWeldDisplacementMm": 1.9073486328125e-06,
+      "removedDegenerateTriangles": {
+        "MMA frontal": 1,
+        "MMA paramedian right": 1
+      },
+      "toleranceMm": 2e-05,
+      "side": "right",
+      "nonManifoldEdges": 0,
+      "boundaryEdges": 108,
+      "combinedSelfIntersections": 0
+    }
+  ],
+  "projectionRefresh": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "MMA frontal left",
+        "id": "artery.eca.maxillary.mma.frontal.right.left",
+        "vertices": 16741,
+        "faces": 33482,
+        "capLoops": 2,
+        "volumeMm3": 38.772443303675246,
+        "closedAndOriented": true
+      },
+      {
+        "node": "MMA paramedian left",
+        "id": "artery.amendment.mma_paramedian.left",
+        "vertices": 3745,
+        "faces": 7490,
+        "capLoops": 2,
+        "volumeMm3": 2.355468926154574,
+        "closedAndOriented": true
+      },
+      {
+        "node": "MMA frontal",
+        "id": "artery.eca.maxillary.mma.frontal.right",
+        "vertices": 17268,
+        "faces": 34534,
+        "capLoops": 2,
+        "volumeMm3": 41.323629057409875,
+        "closedAndOriented": true
+      },
+      {
+        "node": "MMA paramedian right",
+        "id": "artery.amendment.mma_paramedian.right",
+        "vertices": 3662,
+        "faces": 7322,
+        "capLoops": 2,
+        "volumeMm3": 2.3598406479139595,
+        "closedAndOriented": true
+      }
+    ]
+  },
+  "modelPatch": {
+    "sourceSha256": "ed84bb3b538a49a1a4199b86a1d2cc13bf62bb6777588279d69035f7831fdc7b",
+    "sha256": "02126a96eb456103cc1c2bf35a24e4001fcc0d7e9aee8e361b0e55dcf9c25b92",
+    "changes": [
+      {
+        "node": "MMA frontal left",
+        "vertices": 16741,
+        "triangles": 33349,
+        "positionSha256": "40d3d81c4301f31781e266ea9841cbb5e4ff51c7b45b64c7f8cb099572ea7059",
+        "indexSha256": "e822f60e1cf2adab679ff74aebefb476e4243815e5b4b30b1f90349ce776fe87",
+        "bounds": [
+          [
+            -54.11939239501953,
+            -26.467863082885742,
+            77.14876556396484
+          ],
+          [
+            -22.78743553161621,
+            -12.131709098815918,
+            150.10963439941406
+          ]
+        ],
+        "positionEncoding": "lossless meshopt Float32"
+      },
+      {
+        "node": "MMA paramedian left",
+        "vertices": 3745,
+        "triangles": 7362,
+        "positionSha256": "6a9cbf5ab2b25788bdf09b9616dcf034807e91cbd9911551b883de964fd17719",
+        "indexSha256": "29bc8427b28c420bacb084e3a091cfc59bd2cc0c3807ad19897b8a5b2dcb6ec3",
+        "bounds": [
+          [
+            -25.544857025146484,
+            -50.50194549560547,
+            147.32839965820312
+          ],
+          [
+            0.09219295531511307,
+            -23.462244033813477,
+            159.8416748046875
+          ]
+        ],
+        "positionEncoding": "lossless meshopt Float32"
+      },
+      {
+        "node": "MMA frontal",
+        "vertices": 17268,
+        "triangles": 34397,
+        "positionSha256": "4ea7e293d6a28acdb639df2961eb8fd93ac1504eb42d58230f05e4f311c0f743",
+        "indexSha256": "3ae4a05b3e690d38ad76b144459b03d8860f943ee1f8a7b5e642f1accd25b4e6",
+        "bounds": [
+          [
+            22.474159240722656,
+            -26.17378807067871,
+            77.1098403930664
+          ],
+          [
+            54.51968002319336,
+            -11.582480430603027,
+            150.8923797607422
+          ]
+        ],
+        "positionEncoding": "lossless meshopt Float32"
+      },
+      {
+        "node": "MMA paramedian right",
+        "vertices": 3662,
+        "triangles": 7193,
+        "positionSha256": "fc3ec2e721d2603e7b2f51fb69b9686e0f457ac21e48081d9a1a5c7adf83ebdf",
+        "indexSha256": "79556fe564b9fe43d12edd42af2e2829fad567586030402976dd3df5a2b2fb57",
+        "bounds": [
+          [
+            1.1432453393936157,
+            -50.079132080078125,
+            147.83502197265625
+          ],
+          [
+            25.991533279418945,
+            -22.88779067993164,
+            159.54380798339844
+          ]
+        ],
+        "positionEncoding": "lossless meshopt Float32"
+      }
+    ]
+  },
+  "rejectedVTKTrials": "Ordinary VTK splitting/union left small holes or intersection defects and was excluded. Unbounded inlet displacement was constrained to the original combined vessel envelopes before final acceptance.",
+  "remainingWork": [
+    "Right ACA falcine native parent attachment.",
+    "Bilateral pericallosal/callosal registration (G05).",
+    "Exact bone and dural fit and full distal receiving-lumen continuity.",
+    "Earlier G01/G03/G04/G07/G08 findings and all 12 deferred arterial segments."
+  ],
+  "flowRefresh": {
+    "passed": true,
+    "unchangedEntriesReused": 593,
+    "allFourRepairedCoursesSelectable": true,
+    "authoredTerminalGuidesUnchanged": true,
+    "declaredGraphAndVeinSitesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.eca.maxillary.mma.frontal.right",
+      "artery.eca.maxillary.mma.frontal.right.left",
+      "artery.amendment.mma_paramedian.right",
+      "artery.amendment.mma_paramedian.left"
+    ]
+  }
+}

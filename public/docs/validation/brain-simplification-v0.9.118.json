@@ -1,0 +1,72 @@
+{
+  "release": "0.9.118",
+  "baseline": "0.9.117",
+  "status": "experimental-comparison-candidate",
+  "passed": true,
+  "brain": {
+    "beforeBytes": 29070264,
+    "afterBytes": 26304940,
+    "bytesSaved": 2765324,
+    "beforeGzipBytes": 24017243,
+    "afterGzipBytes": 21915613,
+    "gzipBytesSaved": 2101630,
+    "beforeTriangles": 3347028,
+    "afterTriangles": 2998978,
+    "beforeSha256": "636b8a665707f1247240171ffa30f8140177c29db49dc015fd415ccd8089dfa6",
+    "afterSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
+    "changedMeshes": 29,
+    "unchangedMeshes": 164
+  },
+  "allModels": {
+    "beforeBytes": 109177308,
+    "afterBytes": 106412984,
+    "beforeGzipBytes": 73680647,
+    "afterGzipBytes": 71579017
+  },
+  "geometry": {
+    "passed": true,
+    "release": "0.9.118",
+    "brainMeshes": 193,
+    "unchangedBrainMeshes": 164,
+    "changedBrainMeshes": 29,
+    "retainedVerticesCopiedExactly": 495115,
+    "protectedAnchorTrianglesExact": 181,
+    "otherGlbsByteExact": 4,
+    "dsaRecipesAndFlowUnchanged": true,
+    "catalogueSemanticsAndAnchorPositionsExact": true
+  },
+  "surfaceMeasurements": {
+    "passed": true,
+    "errorBudgetMm": 0.01,
+    "sampledSurfaceLimitMm": 0.02,
+    "samples": 1745631,
+    "changedMeshes": 29,
+    "maximumSampledDistanceMm": 0.01876007404419468,
+    "p99SampledDistanceMm": 0.003157647000389138,
+    "rmsSampledDistanceMm": 0.0007079675694499425,
+    "boundaryEdgesComponentsAndEulerPreserved": true,
+    "newNonManifoldEdges": 0,
+    "newZeroAreaFaces": 0,
+    "method": "Both directions: every vertex, plus centroids and edge midpoints at stride 16 faces. Vertex and 16 nearest-centroid triangle candidates, with full triangle-BVH nearest queries for all distances over 0.008 mm. Conservative distances at sampled points; not a continuous Hausdorff guarantee. Topology is assessed after excluding existing exact zero-area faces.",
+    "seconds": 81.39306666000084,
+    "rejectedMeshes": []
+  },
+  "defectIdentity": {
+    "passed": true,
+    "checkedMeshes": 29,
+    "newNonManifoldEdgeLocations": 0,
+    "newZeroAreaFaceLocations": 0
+  },
+  "verification": {
+    "build": "passed",
+    "brainAnchorAndVesselCourseBindings": "passed",
+    "runtimeMeshes": 1250,
+    "browserScenarios": 11,
+    "selectiveDsaRunWithReducedBrain": "passed",
+    "originalDsaFlowByteExact": true,
+    "dsAPayloadsUnchanged": true,
+    "visualComparisonViews": 4,
+    "authoringGuard": "Correctly rejects old brain-dependent search exclusions; these spatial review scopes need reassessment."
+  },
+  "limits": "0.01 mm is an approximate combined simplifier error budget. Independent sampled surface acceptance is 0.02 mm. Sampling is not a continuous Hausdorff bound. Four visual comparisons do not establish preservation of every anatomical feature. This is an optional trial; no anatomical acceptance or device frame-rate claim."
+}

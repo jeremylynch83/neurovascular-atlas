@@ -1,0 +1,105 @@
+{
+  "release": "0.9.88",
+  "passed": true,
+  "anatomicalAcceptance": false,
+  "status": "bilateral-MMA-falcine-native-connections-repaired-G05-G06-open",
+  "build": {
+    "passed": true,
+    "existingBundleSizeWarning": true
+  },
+  "courseTests": {
+    "passed": true,
+    "count": 14
+  },
+  "dsa": {
+    "passed": true,
+    "closedProxies": 828,
+    "projectionTriangles": 8960874,
+    "selectableArterialCourses": 578,
+    "closedSections": 2350,
+    "meningealDrainageChecks": true
+  },
+  "export": {
+    "release": "0.9.88",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 595,
+    "otherAssetsByteExact": 4,
+    "sharedCoordinatesAndNormalsExact": true,
+    "changes": [
+      {
+        "node": "MMA falcine terminal left",
+        "vertices": 3238,
+        "triangles": 6334,
+        "exactRetainedOriginalVertices": 2738,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA falcine terminal right",
+        "vertices": 3337,
+        "triangles": 6532,
+        "exactRetainedOriginalVertices": 2839,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA paramedian left",
+        "vertices": 3763,
+        "triangles": 7374,
+        "exactRetainedOriginalVertices": 3113,
+        "exactCandidateRoundtrip": true
+      },
+      {
+        "node": "MMA paramedian right",
+        "vertices": 3660,
+        "triangles": 7168,
+        "exactRetainedOriginalVertices": 3010,
+        "exactCandidateRoundtrip": true
+      }
+    ]
+  },
+  "nativeInterfaces": {
+    "sharedCoordinatesPerSide": 50,
+    "pairedOppositelyOrientedEdgesPerSide": 50,
+    "sharedEncodedNormalsExact": true,
+    "combinedSelfIntersectionsPerSide": 0,
+    "noNewDisconnectedParentComponents": true,
+    "incomingParentRimVerticesRetainedPerSide": 102,
+    "upstreamFrontalMMAInterfacesProven": false
+  },
+  "sinusClearance": {
+    "triangleContactsBefore": 329,
+    "triangleContactsAfter": 0,
+    "verticesInsideClosedProxyBefore": 2219,
+    "verticesInsideClosedProxyAfter": 0,
+    "sinusGeometryUnchanged": true,
+    "diagnosticOnly": true
+  },
+  "flowRefresh": {
+    "passed": true,
+    "unchangedEntriesReused": 593,
+    "regeneratedIDs": [
+      "artery.amendment.mma_paramedian.left",
+      "artery.amendment.mma_falcine_terminal.left",
+      "artery.amendment.mma_paramedian.right",
+      "artery.amendment.mma_falcine_terminal.right"
+    ],
+    "declaredGraphUnchanged": true,
+    "veinSitesUnchanged": true,
+    "allFourRepairedInjectionCoursesSelectable": true,
+    "authoredGuidesGeometryBound": true,
+    "generatorAndGuideSourceHashIncluded": true
+  },
+  "visualCheck": {
+    "passed": true,
+    "scope": "Targeted final exported triangle projections, reviewed after excluding disconnected clipped remnants.",
+    "file": "docs/validation/mma-falcine-v0.9.88.png"
+  },
+  "browser": {
+    "fullPlaybackRerun": false,
+    "reason": "Runtime unchanged. Targeted geometry, actual app loader, numerical DSA and production build checks performed."
+  },
+  "runtimeSourceFilesByteExact": 21,
+  "catalogueStructureCount": 1666,
+  "namedMeshCount": 1250,
+  "modelSha256": "ed84bb3b538a49a1a4199b86a1d2cc13bf62bb6777588279d69035f7831fdc7b"
+}

@@ -1,0 +1,8251 @@
+{
+  "boundary": [
+    [
+      20.07402229309082,
+      -68.43790435791016,
+      67.30645751953125
+    ],
+    [
+      20.07831382751465,
+      -68.42976379394531,
+      67.30158233642578
+    ],
+    [
+      20.082637786865234,
+      -68.42111206054688,
+      67.30158233642578
+    ],
+    [
+      20.094776153564453,
+      -68.40148162841797,
+      67.29034423828125
+    ],
+    [
+      20.086963653564453,
+      -68.4254379272461,
+      67.29293060302734
+    ],
+    [
+      20.082637786865234,
+      -68.43408966064453,
+      67.29725646972656
+    ],
+    [
+      20.07831382751465,
+      -68.44274139404297,
+      67.29725646972656
+    ],
+    [
+      20.06938362121582,
+      -68.44351959228516,
+      67.30889129638672
+    ]
+  ],
+  "enumeratedTriangulations": 132,
+  "trianglePairsChecked": 687,
+  "uniqueTrianglesChecked": 56,
+  "nearbyLabels": [
+    "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+    "brain.pons.right",
+    "brain.tentorium-cerebelli.right",
+    "SCA right",
+    "Tentorial marginal right",
+    "Wollschlaeger and Wollschlaeger artery right",
+    "bone.occipital",
+    "bone.parietal.right",
+    "bone.temporal.right",
+    "vein.pontomesencephalic_sulcus.right",
+    "vein.superficial_middle_cerebral.right"
+  ],
+  "passedCandidates": 0,
+  "candidates": [
+    {
+      "triangles": [
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 1,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 3,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 3,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 3,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 3,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 3,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 2,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          5,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23440
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23559
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    },
+    {
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          6,
+          7
+        ]
+      ],
+      "sourceContacts": [
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "SCA right",
+          "face": 23558
+        }
+      ],
+      "badArea": false,
+      "selfCrossings": 0,
+      "passed": false
+    }
+  ]
+}

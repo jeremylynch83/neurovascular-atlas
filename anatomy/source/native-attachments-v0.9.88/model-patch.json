@@ -1,0 +1,86 @@
+{
+  "sourceSha256": "dffa8a54560b05fa3fd11cb3b4428df9b8af30ff2fda1a27e5818c86018d70f2",
+  "sha256": "ed84bb3b538a49a1a4199b86a1d2cc13bf62bb6777588279d69035f7831fdc7b",
+  "changes": [
+    {
+      "node": "MMA paramedian left",
+      "vertices": 3763,
+      "triangles": 7374,
+      "positionSha256": "953be40abba5866bd14a61f4af97404659edf53f6fc1afa65cadc50faa9a0e9b",
+      "indexSha256": "8d891d373b2592f8fcf1b921e4cf6ea1cb3f3265ca7aaee02a98e5db7bbf42b6",
+      "bounds": [
+        [
+          -25.78873062133789,
+          -50.50194549560547,
+          146.99156188964844
+        ],
+        [
+          0.09219295531511307,
+          -23.462244033813477,
+          159.8416748046875
+        ]
+      ],
+      "positionEncoding": "lossless meshopt Float32"
+    },
+    {
+      "node": "MMA falcine terminal left",
+      "vertices": 3238,
+      "triangles": 6334,
+      "positionSha256": "c63600d1c88a42f27a8ef79df80a82b87cd1311459a9dd30f054c436dfeac93c",
+      "indexSha256": "38ab0adfaffb1da56fe1df58a6c5badb0b2448db5cfb5ea6a0595e2d438604ec",
+      "bounds": [
+        [
+          -0.027255674824118614,
+          -57.20774841308594,
+          145.5760040283203
+        ],
+        [
+          0.5050301551818848,
+          -50.334449768066406,
+          159.47264099121094
+        ]
+      ],
+      "positionEncoding": "lossless meshopt Float32"
+    },
+    {
+      "node": "MMA paramedian right",
+      "vertices": 3660,
+      "triangles": 7168,
+      "positionSha256": "7fb2865ff3a0d8be9e91baee2e9fed31c5a3ca5719923b64164bb3d59a376957",
+      "indexSha256": "8f8d50903eee5187b9288999ec4d9c1a6ed3fdca0d355f62cac22938ed758271",
+      "bounds": [
+        [
+          1.1432453393936157,
+          -50.079132080078125,
+          147.54901123046875
+        ],
+        [
+          26.20199203491211,
+          -22.887067794799805,
+          159.54380798339844
+        ]
+      ],
+      "positionEncoding": "lossless meshopt Float32"
+    },
+    {
+      "node": "MMA falcine terminal right",
+      "vertices": 3337,
+      "triangles": 6532,
+      "positionSha256": "9077d202564546cfb42ab41eb0c35f3217c146805b1f61e8ca86c5279c81f266",
+      "indexSha256": "6018a24030bc27977b9567e7fc810dcb3eb3970adde98b03203e2e72b8045def",
+      "bounds": [
+        [
+          0.4790823757648468,
+          -57.22464370727539,
+          145.5514678955078
+        ],
+        [
+          1.2681763172149658,
+          -49.871360778808594,
+          159.4430694580078
+        ]
+      ],
+      "positionEncoding": "lossless meshopt Float32"
+    }
+  ]
+}

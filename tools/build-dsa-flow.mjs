@@ -8,6 +8,7 @@ import {Triangle,Vector3} from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import {projectToPath,pointInsideSurface,splitFlowSurface,decodeCoordinates,closedSurfaceError,flowGraphSource,pathPoint} from '../src/flowGeometry.ts';
+import {authoredCourseSource} from './dsa-course-guides.mjs';
 const root=path.resolve(import.meta.dirname,'..'),base=root+'/public/anatomy/';
 const manifest=JSON.parse(fs.readFileSync(base+'manifest.json'));
 const surfaces=JSON.parse(fs.readFileSync(base+'dsa-surfaces.json'));
@@ -16,7 +17,7 @@ const veins=manifest.structures.filter(s=>s.system==='vein'&&s.asset);
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 const sourceHashes=Object.fromEntries([...new Set([...rows,...veins].map(s=>s.asset.file))].map(file=>[file,hash(fs.readFileSync(base+file))]));
 const graphSource=flowGraphSource(manifest),graphHash=hash(graphSource);
-const generatorHash=hash(fs.readFileSync(import.meta.filename)+fs.readFileSync(root+'/src/flowGeometry.ts'));
+const generatorHash=hash(fs.readFileSync(import.meta.filename)+fs.readFileSync(root+'/src/flowGeometry.ts')+fs.readFileSync(root+'/tools/dsa-course-guides.mjs')+authoredCourseSource(manifest));
 const output=base+'dsa-flow.json';
 const only=process.argv.includes('--only')?new Set(process.argv[process.argv.indexOf('--only')+1].split(',')):null;
 if(!process.argv.includes('--force')&&fs.existsSync(output)) {
@@ -123,6 +124,12 @@ function centreline(id) {
   for(let i=0;i<d.length;i++)if(Number.isFinite(d[i]))bins[Math.min(count,Math.floor(d[i]/maximum*count))].push(i);
   let line=bins.filter(b=>b.length).map(b=>[0,1,2].map(k=>b.reduce((sum,i)=>sum+points[i][k],0)/b.length));
   line=line.map((p,i)=>i===0||i===line.length-1?p:p.map((_,k)=>(line[i-1][k]+2*p[k]+line[i+1][k])/4));
+  const guide=byId.get(id)?.flowCourseGuide;
+  if(guide){
+    const meshHash=hash(Buffer.concat([Buffer.from(p.buffer,p.byteOffset,p.byteLength),Buffer.from(index.buffer,index.byteOffset,index.byteLength)]));
+    if(guide.geometrySha256!==meshHash||!Array.isArray(guide.points)||guide.points.length<2||guide.points.some(p=>p.length!==3||p.some(v=>!Number.isFinite(v))))throw Error('Invalid geometry-bound injection guide '+id);
+    line=guide.points.map(p=>p.slice());
+  }
   const surface=projection(id),inside=p=>pointInsideSurface(surface.p,surface.index,p);
   const triangle=new Triangle(),target=new Vector3(),closest=new Vector3(),normal=new Vector3();
   const repairPoint=point=>{

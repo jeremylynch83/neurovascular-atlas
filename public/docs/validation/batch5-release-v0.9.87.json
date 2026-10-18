@@ -1,0 +1,68 @@
+{
+  "release": "0.9.87",
+  "passed": true,
+  "anatomicalAcceptance": false,
+  "status": "one-left-falcine-attachment-repaired-G05-G06-open",
+  "build": {
+    "passed": true,
+    "existingBundleSizeWarning": true
+  },
+  "courseTests": {
+    "passed": true,
+    "count": 14
+  },
+  "dsa": {
+    "passed": true,
+    "closedProxies": 828,
+    "projectionTriangles": 8967726,
+    "selectableArterialCourses": 578,
+    "closedSections": 2352,
+    "meningealDrainageChecks": true
+  },
+  "export": {
+    "release": "0.9.87",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "otherAssetsByteExact": 4,
+    "changes": [
+      {
+        "node": "ACA falcine branch left",
+        "originalDistalVerticesRetainedExactly": 3964,
+        "originalDistalTrianglesRetainedExactly": 7766,
+        "collarCutZMm": 120.5,
+        "vertices": 4914,
+        "triangles": 9592,
+        "candidateRoundtripExact": true
+      }
+    ]
+  },
+  "nativeInterface": {
+    "baselineIntersections": 0,
+    "afterIntersections": 0,
+    "newPairs": [],
+    "parentRimEdgeChecks": 101,
+    "parentRimUnpairedOrUnbalancedEdges": 0,
+    "exactParentCoordinates": 101,
+    "originalDistalVerticesRetainedExactly": 3964
+  },
+  "flowRefresh": {
+    "passed": true,
+    "unchangedArterialEntriesReused": 596,
+    "changedEntry": "artery.amendment.aca_falcine_branch.left",
+    "graphUnchanged": true,
+    "veinSitesUnchanged": true,
+    "unchangedMeshBuffersVerifiedByActualLoader": true,
+    "unchangedGeneratorHashVerified": true,
+    "regeneratedEntrySelectable": true
+  },
+  "visualCheck": {
+    "passed": true,
+    "scope": "Local before/after exported geometry; sharp straight trial replaced by a rounded collar.",
+    "file": "docs/validation/native-attachment-v0.9.87.png"
+  },
+  "browser": {
+    "fullPlaybackRerun": false,
+    "reason": "No runtime changes; local geometry, actual loader, complete numerical DSA and production build checks performed."
+  },
+  "runtimeSourceFilesByteExact": 21
+}

@@ -1,0 +1,37 @@
+{
+  "baselineRelease": "0.9.87",
+  "release": "0.9.88",
+  "inputAssets": {
+    "brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "complete-circulation.glb": "dffa8a54560b05fa3fd11cb3b4428df9b8af30ff2fda1a27e5818c86018d70f2",
+    "venous.glb": "cf0fb00820b6dfd73f24f86474ef23c9380904ec10b010d6e24482208e6b7065",
+    "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+  },
+  "changedNodes": [
+    "MMA paramedian left",
+    "MMA falcine terminal left",
+    "MMA paramedian right",
+    "MMA falcine terminal right"
+  ],
+  "candidateBufferHashes": {
+    "MMA falcine terminal right.normals.bin": "b511e8fe4174f91dedfe8d04dceae6c76911213066f87ffb6b4eb2074fb4e221",
+    "MMA paramedian left.indices.bin": "8d891d373b2592f8fcf1b921e4cf6ea1cb3f3265ca7aaee02a98e5db7bbf42b6",
+    "MMA paramedian right.positions.bin": "7fb2865ff3a0d8be9e91baee2e9fed31c5a3ca5719923b64164bb3d59a376957",
+    "MMA falcine terminal left.normals.bin": "82e6fb782bbdbdbda5d6853bdf54e9838470c0f5ea5c0c11ed6bdc1686d01ba9",
+    "MMA falcine terminal right.indices.bin": "6018a24030bc27977b9567e7fc810dcb3eb3970adde98b03203e2e72b8045def",
+    "MMA paramedian left.normals.bin": "75707f06e3db0e30bd907ecf365017bb199b0e2c96ec78acd1f970fc2d21ce69",
+    "MMA falcine terminal left.positions.bin": "c63600d1c88a42f27a8ef79df80a82b87cd1311459a9dd30f054c436dfeac93c",
+    "MMA paramedian left.positions.bin": "953be40abba5866bd14a61f4af97404659edf53f6fc1afa65cadc50faa9a0e9b",
+    "MMA paramedian right.normals.bin": "09c7983a3d6bd8598628de50cb3c276ef0fa3c2e1493396b033ca04644ca482b",
+    "MMA paramedian right.indices.bin": "8f8d50903eee5187b9288999ec4d9c1a6ed3fdca0d355f62cac22938ed758271",
+    "MMA falcine terminal left.indices.bin": "38ab0adfaffb1da56fe1df58a6c5badb0b2448db5cfb5ea6a0595e2d438604ec",
+    "MMA falcine terminal right.positions.bin": "9077d202564546cfb42ab41eb0c35f3217c146805b1f61e8ca86c5279c81f266"
+  },
+  "acceptedParameters": {
+    "lateralCutOffsetMm": 3.0,
+    "childCutZMm": 157.5,
+    "inferiorBowMm": 0.4
+  },
+  "anatomicalAcceptance": false
+}

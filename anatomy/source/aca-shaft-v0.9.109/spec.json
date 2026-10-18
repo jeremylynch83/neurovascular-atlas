@@ -1,0 +1,36 @@
+{
+  "release": "0.9.109",
+  "scope": "Bounded bilateral A5 inter-junction shaft cortical fits. All native ports and all other meshes remain fixed. Residual transition, proximal, distal and wider ACA/cortical registration remain open.",
+  "changes": [
+    {
+      "node": "ACA A5 left",
+      "medialDisplacementMm": 1,
+      "superiorDisplacementMm": -2.0,
+      "posteriorSupportY": -80,
+      "posteriorPlateauY": -76,
+      "anteriorPlateauY": -73,
+      "anteriorSupportY": -70,
+      "maximumDisplacementLimitMm": 2.24,
+      "depthToleranceMm": 0.001,
+      "coreY": [
+        -76,
+        -73
+      ]
+    },
+    {
+      "node": "ACA A5 right",
+      "medialDisplacementMm": -1,
+      "superiorDisplacementMm": -2.0,
+      "posteriorSupportY": -80,
+      "posteriorPlateauY": -76,
+      "anteriorPlateauY": -73,
+      "anteriorSupportY": -70,
+      "maximumDisplacementLimitMm": 2.24,
+      "depthToleranceMm": 0.001,
+      "coreY": [
+        -76,
+        -73
+      ]
+    }
+  ]
+}

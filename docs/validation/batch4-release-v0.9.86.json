@@ -1,0 +1,1100 @@
+{
+  "release": "0.9.86",
+  "passed": true,
+  "anatomicalAcceptance": false,
+  "G01Status": "partial-correction-larger-Galenic-and-regional-repair-open",
+  "build": {
+    "passed": true,
+    "note": "Existing bundle size warning retained."
+  },
+  "courseTests": {
+    "passed": true,
+    "count": 14
+  },
+  "dsa": {
+    "passed": true,
+    "closedProxies": 828,
+    "projectionTriangles": 8966428,
+    "selectableArterialCourses": 578,
+    "closedSections": 2352,
+    "selectiveMeningealDrainage": true
+  },
+  "browser": {
+    "release": "0.9.86",
+    "errors": [],
+    "checks": [
+      "Straight sinus, Galen, falx and both tentorial surfaces load in the ordinary inspection panel",
+      "Left ICA bookmark renders a venous frame containing the updated straight-sinus projection and Galenic drainage"
+    ],
+    "passed": true
+  },
+  "integrity": {
+    "release": "0.9.86",
+    "passed": true,
+    "checks": [
+      "All app runtime source and skull/arterial/anastomotic GLBs byte-identical; IDs, hierarchy, assets and relationships unchanged",
+      "All twelve deferred arterial segments and earlier review findings retained; v0.9.85 corrections preserved",
+      "Arterial flow, graph, sections and all projection topology unchanged; only sinus proxy measurements/hashes refreshed",
+      "131 primary surface anchors retain original triangles and barycentric coordinates",
+      "All 1,250 exported position/index buffers independently compared; exactly four position streams change with lossless coordinate round-trips",
+      "Actual source/export bounds confirm that no overlapping object was omitted by the trial contact screen",
+      "997 courses/public data and exact delivered hashes agree; G01 and anatomical acceptance remain explicitly open"
+    ]
+  },
+  "boundsCoverage": {
+    "passed": true,
+    "sourceMeshesMeasured": 1250,
+    "coverage": [
+      {
+        "node": "vein.straight",
+        "actualOverlappingObjectBounds": 44
+      },
+      {
+        "node": "brain.tentorium-cerebelli.left",
+        "actualOverlappingObjectBounds": 286
+      },
+      {
+        "node": "brain.tentorium-cerebelli.right",
+        "actualOverlappingObjectBounds": 288
+      },
+      {
+        "node": "brain.falx-cerebri",
+        "actualOverlappingObjectBounds": 92
+      }
+    ],
+    "overlappingPairsMissedByTrialMetadataScreen": []
+  },
+  "exportQuality": {
+    "release": "0.9.86",
+    "passed": true,
+    "allMeshBuffersCompared": 1250,
+    "changedPositionStreams": [
+      "brain.falx-cerebri",
+      "brain.tentorium-cerebelli.left",
+      "brain.tentorium-cerebelli.right",
+      "vein.straight"
+    ],
+    "allIndexStreamsExact": true,
+    "candidatePositionRoundtripExact": true,
+    "nativeBoundaries": [
+      {
+        "node": "brain.tentorium-cerebelli.left",
+        "nativeBoundaryVerticesChecked": 0,
+        "boundaryCoordinatesExact": true,
+        "minimumTriangleAreaMm2": 0.0013987377302495249
+      },
+      {
+        "node": "brain.tentorium-cerebelli.right",
+        "nativeBoundaryVerticesChecked": 0,
+        "boundaryCoordinatesExact": true,
+        "minimumTriangleAreaMm2": 0.001305989558661208
+      },
+      {
+        "node": "brain.falx-cerebri",
+        "nativeBoundaryVerticesChecked": 0,
+        "boundaryCoordinatesExact": true,
+        "minimumTriangleAreaMm2": 8.403731044381857e-10
+      },
+      {
+        "node": "vein.straight",
+        "nativeBoundaryVerticesChecked": 87,
+        "boundaryCoordinatesExact": true,
+        "minimumTriangleAreaMm2": 0.0023379782769915153
+      }
+    ],
+    "sinusSharedCoordinates": [
+      {
+        "other": "vein.confluence",
+        "sharedVerticesChecked": 25,
+        "coordinatesExact": true
+      },
+      {
+        "other": "vein.galen",
+        "sharedVerticesChecked": 32,
+        "coordinatesExact": true
+      },
+      {
+        "other": "vein.superior_sagittal",
+        "sharedVerticesChecked": 29,
+        "coordinatesExact": true
+      },
+      {
+        "other": "vein.transverse.right",
+        "sharedVerticesChecked": 4,
+        "coordinatesExact": true
+      }
+    ],
+    "calibreCheck": {
+      "method": "Matched world-Y section median radius around each XZ bounding midpoint; geometric deformation diagnostic, not physiological calibre.",
+      "ratioP05MedianP95": [
+        0.9967514618860529,
+        1.0,
+        1.0028277902010776
+      ],
+      "p95AbsoluteFractionalRadiusChange": 0.0038078574199776984
+    },
+    "sections": [
+      {
+        "y": -145.4244354248047,
+        "beforeMidpoint": [
+          0.7035200321907733,
+          -145.4244354248047,
+          68.48462911425334
+        ],
+        "afterMidpoint": [
+          0.7035200321907733,
+          -145.4244354248047,
+          68.48462911425334
+        ],
+        "beforeRadiusMm": 2.5234383658745783,
+        "afterRadiusMm": 2.5234383658745783
+      },
+      {
+        "y": -144.76204567561075,
+        "beforeMidpoint": [
+          0.6170047516676194,
+          -144.76204567561075,
+          68.83432282311387
+        ],
+        "afterMidpoint": [
+          0.6170047516676194,
+          -144.76204567561075,
+          68.83432282311387
+        ],
+        "beforeRadiusMm": 2.2614160335081905,
+        "afterRadiusMm": 2.2614160335081905
+      },
+      {
+        "y": -144.0996559264168,
+        "beforeMidpoint": [
+          0.612516953776059,
+          -144.0996559264168,
+          68.43844228121657
+        ],
+        "afterMidpoint": [
+          0.612516953776059,
+          -144.0996559264168,
+          68.43844228121657
+        ],
+        "beforeRadiusMm": 2.8522445919171684,
+        "afterRadiusMm": 2.8522445919171684
+      },
+      {
+        "y": -143.43726617722285,
+        "beforeMidpoint": [
+          0.6085161275432324,
+          -143.43726617722285,
+          69.11911192244116
+        ],
+        "afterMidpoint": [
+          0.6085161275432324,
+          -143.43726617722285,
+          69.11911192244116
+        ],
+        "beforeRadiusMm": 3.1022863671588405,
+        "afterRadiusMm": 3.1022863671588405
+      },
+      {
+        "y": -142.7748764280289,
+        "beforeMidpoint": [
+          0.6046459553827359,
+          -142.7748764280289,
+          69.86863035316289
+        ],
+        "afterMidpoint": [
+          0.6046459553827359,
+          -142.7748764280289,
+          69.86863035316289
+        ],
+        "beforeRadiusMm": 3.107314396561237,
+        "afterRadiusMm": 3.107314396561237
+      },
+      {
+        "y": -142.11248667883496,
+        "beforeMidpoint": [
+          0.6033391145912228,
+          -142.11248667883496,
+          70.35911841052922
+        ],
+        "afterMidpoint": [
+          0.6033391145912228,
+          -142.11248667883496,
+          70.35911841052922
+        ],
+        "beforeRadiusMm": 3.1558035146455072,
+        "afterRadiusMm": 3.1558035146455072
+      },
+      {
+        "y": -141.450096929641,
+        "beforeMidpoint": [
+          0.6062000701261704,
+          -141.450096929641,
+          70.74999696418902
+        ],
+        "afterMidpoint": [
+          0.6062000701261704,
+          -141.450096929641,
+          70.74999696418902
+        ],
+        "beforeRadiusMm": 3.1597136883402785,
+        "afterRadiusMm": 3.1597136883402785
+      },
+      {
+        "y": -140.78770718044706,
+        "beforeMidpoint": [
+          0.6183993737789009,
+          -140.78770718044706,
+          71.10443545308948
+        ],
+        "afterMidpoint": [
+          0.6183993737789009,
+          -140.78770718044706,
+          71.10443545308948
+        ],
+        "beforeRadiusMm": 3.1617941961392853,
+        "afterRadiusMm": 3.1617941961392853
+      },
+      {
+        "y": -140.1253174312531,
+        "beforeMidpoint": [
+          0.6283709019816939,
+          -140.1253174312531,
+          71.27651284721316
+        ],
+        "afterMidpoint": [
+          0.6283709019816939,
+          -140.1253174312531,
+          71.27651284721316
+        ],
+        "beforeRadiusMm": 2.9548666292806107,
+        "afterRadiusMm": 2.9548666292806107
+      },
+      {
+        "y": -139.46292768205916,
+        "beforeMidpoint": [
+          0.6266551567353341,
+          -139.46292768205916,
+          71.3181015472666
+        ],
+        "afterMidpoint": [
+          0.6266551567353341,
+          -139.46292768205916,
+          71.3181015472666
+        ],
+        "beforeRadiusMm": 2.854436262124472,
+        "afterRadiusMm": 2.854436262124472
+      },
+      {
+        "y": -138.8005379328652,
+        "beforeMidpoint": [
+          0.6237147008541467,
+          -138.8005379328652,
+          71.32323498719427
+        ],
+        "afterMidpoint": [
+          0.6237147008541467,
+          -138.8005379328652,
+          71.32323498719427
+        ],
+        "beforeRadiusMm": 2.7702415995656215,
+        "afterRadiusMm": 2.7702415995656215
+      },
+      {
+        "y": -138.13814818367126,
+        "beforeMidpoint": [
+          0.6213924155691556,
+          -138.13814818367126,
+          71.45023557319385
+        ],
+        "afterMidpoint": [
+          0.6213924155691556,
+          -138.13814818367126,
+          71.45023557319385
+        ],
+        "beforeRadiusMm": 2.672058467814589,
+        "afterRadiusMm": 2.672058467814589
+      },
+      {
+        "y": -137.4757584344773,
+        "beforeMidpoint": [
+          0.6420475694349455,
+          -137.4757584344773,
+          71.34632077078132
+        ],
+        "afterMidpoint": [
+          0.6420475694349455,
+          -137.4757584344773,
+          71.34632077078132
+        ],
+        "beforeRadiusMm": 2.684948005748281,
+        "afterRadiusMm": 2.684948005748281
+      },
+      {
+        "y": -136.81336868528336,
+        "beforeMidpoint": [
+          0.644495148598404,
+          -136.81336868528336,
+          71.2376885607818
+        ],
+        "afterMidpoint": [
+          0.644495148598404,
+          -136.81336868528336,
+          71.2376885607818
+        ],
+        "beforeRadiusMm": 2.704145280175536,
+        "afterRadiusMm": 2.704145280175536
+      },
+      {
+        "y": -136.15097893608942,
+        "beforeMidpoint": [
+          0.6364845563579546,
+          -136.15097893608942,
+          71.23201028672254
+        ],
+        "afterMidpoint": [
+          0.6364845563579546,
+          -136.15097893608942,
+          71.23201028672254
+        ],
+        "beforeRadiusMm": 2.7114740243584063,
+        "afterRadiusMm": 2.7114740243584063
+      },
+      {
+        "y": -135.48858918689547,
+        "beforeMidpoint": [
+          0.6378986365362967,
+          -135.48858918689547,
+          71.32579587407875
+        ],
+        "afterMidpoint": [
+          0.6378986365362967,
+          -135.48858918689547,
+          71.32579587407875
+        ],
+        "beforeRadiusMm": 2.7330250404752507,
+        "afterRadiusMm": 2.7330250404752507
+      },
+      {
+        "y": -134.82619943770152,
+        "beforeMidpoint": [
+          0.63757701963971,
+          -134.82619943770152,
+          71.51586348656556
+        ],
+        "afterMidpoint": [
+          0.63757701963971,
+          -134.82619943770152,
+          71.51586348656556
+        ],
+        "beforeRadiusMm": 2.849448784359412,
+        "afterRadiusMm": 2.849448784359412
+      },
+      {
+        "y": -134.16380968850757,
+        "beforeMidpoint": [
+          0.6332753308819805,
+          -134.16380968850757,
+          71.75446075773756
+        ],
+        "afterMidpoint": [
+          0.6332753308819805,
+          -134.16380968850757,
+          71.75446075773756
+        ],
+        "beforeRadiusMm": 2.816440627125225,
+        "afterRadiusMm": 2.816440627125225
+      },
+      {
+        "y": -133.50141993931362,
+        "beforeMidpoint": [
+          0.6490612189435099,
+          -133.50141993931362,
+          72.07725167454663
+        ],
+        "afterMidpoint": [
+          0.6490612189435099,
+          -133.50141993931362,
+          72.07725167454663
+        ],
+        "beforeRadiusMm": 2.905737612531736,
+        "afterRadiusMm": 2.905737612531736
+      },
+      {
+        "y": -132.83903019011967,
+        "beforeMidpoint": [
+          0.663796622391574,
+          -132.83903019011967,
+          72.48961926427788
+        ],
+        "afterMidpoint": [
+          0.663796622391574,
+          -132.83903019011967,
+          72.48961926427788
+        ],
+        "beforeRadiusMm": 2.8978323156720562,
+        "afterRadiusMm": 2.8978323156720562
+      },
+      {
+        "y": -132.17664044092572,
+        "beforeMidpoint": [
+          0.6894445441051158,
+          -132.17664044092572,
+          73.00793112626002
+        ],
+        "afterMidpoint": [
+          0.6894445441051158,
+          -132.17664044092572,
+          73.00793112626002
+        ],
+        "beforeRadiusMm": 2.756956513019608,
+        "afterRadiusMm": 2.756956513019608
+      },
+      {
+        "y": -131.51425069173177,
+        "beforeMidpoint": [
+          0.6624281810290654,
+          -131.51425069173177,
+          73.97481602321301
+        ],
+        "afterMidpoint": [
+          0.6624281810290654,
+          -131.51425069173177,
+          73.97481602321301
+        ],
+        "beforeRadiusMm": 2.801842969875836,
+        "afterRadiusMm": 2.801842969875836
+      },
+      {
+        "y": -130.85186094253783,
+        "beforeMidpoint": [
+          0.6542639410699982,
+          -130.85186094253783,
+          74.97056476508237
+        ],
+        "afterMidpoint": [
+          0.6542639410699982,
+          -130.85186094253783,
+          74.97056476508237
+        ],
+        "beforeRadiusMm": 2.759901213643819,
+        "afterRadiusMm": 2.759901213643819
+      },
+      {
+        "y": -130.18947119334388,
+        "beforeMidpoint": [
+          0.6660424773059289,
+          -130.18947119334388,
+          76.11843344286561
+        ],
+        "afterMidpoint": [
+          0.6660424773059289,
+          -130.18947119334388,
+          76.11843344286561
+        ],
+        "beforeRadiusMm": 2.721611199630632,
+        "afterRadiusMm": 2.721611199630632
+      },
+      {
+        "y": -129.52708144414993,
+        "beforeMidpoint": [
+          0.6693011947023295,
+          -129.52708144414993,
+          77.52955886409984
+        ],
+        "afterMidpoint": [
+          0.6693011947023295,
+          -129.52708144414993,
+          77.52955886409984
+        ],
+        "beforeRadiusMm": 2.631792440677888,
+        "afterRadiusMm": 2.631792440677888
+      },
+      {
+        "y": -128.86469169495598,
+        "beforeMidpoint": [
+          0.6586084600550173,
+          -128.86469169495598,
+          79.09755580342417
+        ],
+        "afterMidpoint": [
+          0.6586084600550173,
+          -128.86469169495598,
+          79.09755580342417
+        ],
+        "beforeRadiusMm": 2.622358576249487,
+        "afterRadiusMm": 2.613098727151246
+      },
+      {
+        "y": -128.20230194576203,
+        "beforeMidpoint": [
+          0.6647515223455402,
+          -128.20230194576203,
+          80.55982802073262
+        ],
+        "afterMidpoint": [
+          0.6647515223455402,
+          -128.20230194576203,
+          80.5582399727198
+        ],
+        "beforeRadiusMm": 2.6461598215380238,
+        "afterRadiusMm": 2.6450940560317897
+      },
+      {
+        "y": -127.53991219656808,
+        "beforeMidpoint": [
+          0.656398520976414,
+          -127.53991219656808,
+          81.72080536004532
+        ],
+        "afterMidpoint": [
+          0.656398520976414,
+          -127.53991219656808,
+          81.68912723791843
+        ],
+        "beforeRadiusMm": 2.7123578647407154,
+        "afterRadiusMm": 2.7202832682962828
+      },
+      {
+        "y": -126.87752244737413,
+        "beforeMidpoint": [
+          0.6446089429035915,
+          -126.87752244737413,
+          82.56440730481961
+        ],
+        "afterMidpoint": [
+          0.6446089429035915,
+          -126.87752244737413,
+          82.46115289287863
+        ],
+        "beforeRadiusMm": 2.7390490777372953,
+        "afterRadiusMm": 2.727748919540274
+      },
+      {
+        "y": -126.21513269818018,
+        "beforeMidpoint": [
+          0.6457047379166184,
+          -126.21513269818018,
+          83.25131631463088
+        ],
+        "afterMidpoint": [
+          0.6457047379166184,
+          -126.21513269818018,
+          83.05706062198651
+        ],
+        "beforeRadiusMm": 2.717122892070217,
+        "afterRadiusMm": 2.7188464620510633
+      },
+      {
+        "y": -125.55274294898624,
+        "beforeMidpoint": [
+          0.6392585587973313,
+          -125.55274294898624,
+          83.77123932171881
+        ],
+        "afterMidpoint": [
+          0.6392585587973313,
+          -125.55274294898624,
+          83.43548724514343
+        ],
+        "beforeRadiusMm": 2.68633044430109,
+        "afterRadiusMm": 2.6865228414109454
+      },
+      {
+        "y": -124.89035319979229,
+        "beforeMidpoint": [
+          0.6380600266055063,
+          -124.89035319979229,
+          84.1921154385686
+        ],
+        "afterMidpoint": [
+          0.6380600266055063,
+          -124.89035319979229,
+          83.68741176900565
+        ],
+        "beforeRadiusMm": 2.745520903731306,
+        "afterRadiusMm": 2.7462139212539673
+      },
+      {
+        "y": -124.22796345059834,
+        "beforeMidpoint": [
+          0.6280134063718651,
+          -124.22796345059834,
+          84.56158980548176
+        ],
+        "afterMidpoint": [
+          0.6280134063718651,
+          -124.22796345059834,
+          83.87562782362065
+        ],
+        "beforeRadiusMm": 2.745655341245502,
+        "afterRadiusMm": 2.745414952980463
+      },
+      {
+        "y": -123.56557370140439,
+        "beforeMidpoint": [
+          0.6136344790686156,
+          -123.56557370140439,
+          84.84017592321624
+        ],
+        "afterMidpoint": [
+          0.6136344790686156,
+          -123.56557370140439,
+          83.96885168481131
+        ],
+        "beforeRadiusMm": 2.7230446296807442,
+        "afterRadiusMm": 2.723041483375856
+      },
+      {
+        "y": -122.90318395221044,
+        "beforeMidpoint": [
+          0.648259769559945,
+          -122.90318395221044,
+          85.02740607031717
+        ],
+        "afterMidpoint": [
+          0.648259769559945,
+          -122.90318395221044,
+          83.97778867922062
+        ],
+        "beforeRadiusMm": 2.6440612833492305,
+        "afterRadiusMm": 2.6442704515218307
+      },
+      {
+        "y": -122.24079420301649,
+        "beforeMidpoint": [
+          0.6473866550990397,
+          -122.24079420301649,
+          85.27725902762253
+        ],
+        "afterMidpoint": [
+          0.6473866550990397,
+          -122.24079420301649,
+          84.06800398950392
+        ],
+        "beforeRadiusMm": 2.60598292899042,
+        "afterRadiusMm": 2.6028304572334715
+      },
+      {
+        "y": -121.57840445382254,
+        "beforeMidpoint": [
+          0.6405423296175146,
+          -121.57840445382254,
+          85.43460421674362
+        ],
+        "afterMidpoint": [
+          0.6405423296175146,
+          -121.57840445382254,
+          84.09114065188581
+        ],
+        "beforeRadiusMm": 2.7552238186878104,
+        "afterRadiusMm": 2.7574554055798486
+      },
+      {
+        "y": -120.9160147046286,
+        "beforeMidpoint": [
+          0.6421029260725715,
+          -120.9160147046286,
+          85.58025717257505
+        ],
+        "afterMidpoint": [
+          0.6421029260725715,
+          -120.9160147046286,
+          84.1364251097481
+        ],
+        "beforeRadiusMm": 2.775808064515735,
+        "afterRadiusMm": 2.7883768936188553
+      },
+      {
+        "y": -120.25362495543465,
+        "beforeMidpoint": [
+          0.6374827396634398,
+          -120.25362495543465,
+          85.7767724344467
+        ],
+        "afterMidpoint": [
+          0.6374827396634398,
+          -120.25362495543465,
+          84.28849510282993
+        ],
+        "beforeRadiusMm": 2.61404299984246,
+        "afterRadiusMm": 2.61693174894567
+      },
+      {
+        "y": -119.5912352062407,
+        "beforeMidpoint": [
+          0.654816872995634,
+          -119.5912352062407,
+          85.90729185509477
+        ],
+        "afterMidpoint": [
+          0.654816872995634,
+          -119.5912352062407,
+          84.40775329243203
+        ],
+        "beforeRadiusMm": 2.5719833574224773,
+        "afterRadiusMm": 2.5723087347663167
+      },
+      {
+        "y": -118.92884545704675,
+        "beforeMidpoint": [
+          0.6651611154993172,
+          -118.92884545704675,
+          86.05159791662956
+        ],
+        "afterMidpoint": [
+          0.6651611154993172,
+          -118.92884545704675,
+          84.55159791662956
+        ],
+        "beforeRadiusMm": 2.612371735579533,
+        "afterRadiusMm": 2.612371735579533
+      },
+      {
+        "y": -118.26645570785281,
+        "beforeMidpoint": [
+          0.6568614296656294,
+          -118.26645570785281,
+          86.20344336153337
+        ],
+        "afterMidpoint": [
+          0.6568614296656294,
+          -118.26645570785281,
+          84.70344336153337
+        ],
+        "beforeRadiusMm": 2.576852882194553,
+        "afterRadiusMm": 2.576852882194553
+      },
+      {
+        "y": -117.60406595865886,
+        "beforeMidpoint": [
+          0.6485488699198287,
+          -117.60406595865886,
+          86.32315993428068
+        ],
+        "afterMidpoint": [
+          0.6485488699198287,
+          -117.60406595865886,
+          84.82315993428068
+        ],
+        "beforeRadiusMm": 2.5828951222553007,
+        "afterRadiusMm": 2.5828951222553007
+      },
+      {
+        "y": -116.94167620946492,
+        "beforeMidpoint": [
+          0.6512916659355893,
+          -116.94167620946492,
+          86.46369750197135
+        ],
+        "afterMidpoint": [
+          0.6512916659355893,
+          -116.94167620946492,
+          84.96369750197135
+        ],
+        "beforeRadiusMm": 2.6375185800920518,
+        "afterRadiusMm": 2.6375185800920518
+      },
+      {
+        "y": -116.27928646027097,
+        "beforeMidpoint": [
+          0.6362788200427396,
+          -116.27928646027097,
+          86.65027139553688
+        ],
+        "afterMidpoint": [
+          0.6362788200427396,
+          -116.27928646027097,
+          85.15027139553688
+        ],
+        "beforeRadiusMm": 2.6650658055549337,
+        "afterRadiusMm": 2.6650658055549337
+      },
+      {
+        "y": -115.61689671107702,
+        "beforeMidpoint": [
+          0.6202752182490952,
+          -115.61689671107702,
+          86.80952520236275
+        ],
+        "afterMidpoint": [
+          0.6202752182490952,
+          -115.61689671107702,
+          85.30952520236275
+        ],
+        "beforeRadiusMm": 2.6534068386749974,
+        "afterRadiusMm": 2.6534068386749974
+      },
+      {
+        "y": -114.95450696188307,
+        "beforeMidpoint": [
+          0.6423145354862986,
+          -114.95450696188307,
+          87.02225315895507
+        ],
+        "afterMidpoint": [
+          0.6423145354862986,
+          -114.95450696188307,
+          85.52225315895507
+        ],
+        "beforeRadiusMm": 2.595876541629753,
+        "afterRadiusMm": 2.595876541629753
+      },
+      {
+        "y": -114.29211721268912,
+        "beforeMidpoint": [
+          0.658128199981241,
+          -114.29211721268912,
+          87.2264214970687
+        ],
+        "afterMidpoint": [
+          0.658128199981241,
+          -114.29211721268912,
+          85.7264214970687
+        ],
+        "beforeRadiusMm": 2.655178749762178,
+        "afterRadiusMm": 2.655178749762178
+      },
+      {
+        "y": -113.62972746349517,
+        "beforeMidpoint": [
+          0.6581427405781144,
+          -113.62972746349517,
+          87.48036498470088
+        ],
+        "afterMidpoint": [
+          0.6581427405781144,
+          -113.62972746349517,
+          85.98036498470088
+        ],
+        "beforeRadiusMm": 2.7629075491301105,
+        "afterRadiusMm": 2.7629075491301105
+      },
+      {
+        "y": -112.96733771430122,
+        "beforeMidpoint": [
+          0.6908077676618304,
+          -112.96733771430122,
+          87.81123220351267
+        ],
+        "afterMidpoint": [
+          0.6908077676618304,
+          -112.96733771430122,
+          86.31123220351267
+        ],
+        "beforeRadiusMm": 2.7580793490868185,
+        "afterRadiusMm": 2.7580793490868185
+      },
+      {
+        "y": -112.30494796510727,
+        "beforeMidpoint": [
+          0.686537495035989,
+          -112.30494796510727,
+          88.36836788792382
+        ],
+        "afterMidpoint": [
+          0.686537495035989,
+          -112.30494796510727,
+          86.86836788792382
+        ],
+        "beforeRadiusMm": 2.7329931776997944,
+        "afterRadiusMm": 2.7329931776997944
+      },
+      {
+        "y": -111.64255821591333,
+        "beforeMidpoint": [
+          0.7000250064393678,
+          -111.64255821591333,
+          89.06150239849543
+        ],
+        "afterMidpoint": [
+          0.7000250064393678,
+          -111.64255821591333,
+          87.56339747314496
+        ],
+        "beforeRadiusMm": 2.854258843879292,
+        "afterRadiusMm": 2.8557902096991756
+      },
+      {
+        "y": -110.98016846671938,
+        "beforeMidpoint": [
+          0.7355704133041694,
+          -110.98016846671938,
+          90.33489055565329
+        ],
+        "afterMidpoint": [
+          0.7355704133041694,
+          -110.98016846671938,
+          88.84911922251996
+        ],
+        "beforeRadiusMm": 3.078420180372806,
+        "afterRadiusMm": 3.0893202643089195
+      },
+      {
+        "y": -110.31777871752543,
+        "beforeMidpoint": [
+          0.7687968047351181,
+          -110.31777871752543,
+          92.15272581142273
+        ],
+        "afterMidpoint": [
+          0.7687968047351181,
+          -110.31777871752543,
+          90.73482674416626
+        ],
+        "beforeRadiusMm": 3.14577974995714,
+        "afterRadiusMm": 3.1529966606750763
+      },
+      {
+        "y": -109.65538896833148,
+        "beforeMidpoint": [
+          0.7342807205320825,
+          -109.65538896833148,
+          95.34771446533553
+        ],
+        "afterMidpoint": [
+          0.7342807205320825,
+          -109.65538896833148,
+          94.1216533512231
+        ],
+        "beforeRadiusMm": 2.5413759375476532,
+        "afterRadiusMm": 2.5371896041856044
+      },
+      {
+        "y": -108.99299921913753,
+        "beforeMidpoint": [
+          0.6514753026775995,
+          -108.99299921913753,
+          98.0760073500679
+        ],
+        "afterMidpoint": [
+          0.6514753026775995,
+          -108.99299921913753,
+          97.11554948224148
+        ],
+        "beforeRadiusMm": 2.2290046610594407,
+        "afterRadiusMm": 2.2305232343037114
+      },
+      {
+        "y": -108.33060946994358,
+        "beforeMidpoint": [
+          0.6269133753158849,
+          -108.33060946994358,
+          99.549437316136
+        ],
+        "afterMidpoint": [
+          0.6269133753158849,
+          -108.33060946994358,
+          98.87238214689637
+        ],
+        "beforeRadiusMm": 2.1436724552827506,
+        "afterRadiusMm": 2.141871951822526
+      },
+      {
+        "y": -107.66821972074963,
+        "beforeMidpoint": [
+          0.601621400257853,
+          -107.66821972074963,
+          100.28943836097886
+        ],
+        "afterMidpoint": [
+          0.601621400257853,
+          -107.66821972074963,
+          99.89702253335109
+        ],
+        "beforeRadiusMm": 2.235677155955294,
+        "afterRadiusMm": 2.2270586553708385
+      },
+      {
+        "y": -107.00582997155568,
+        "beforeMidpoint": [
+          0.4958431856077581,
+          -107.00582997155568,
+          100.22745946339515
+        ],
+        "afterMidpoint": [
+          0.4958431856077581,
+          -107.00582997155568,
+          100.06769409401079
+        ],
+        "beforeRadiusMm": 2.3553304499482364,
+        "afterRadiusMm": 2.3117122088216173
+      },
+      {
+        "y": -106.34344022236174,
+        "beforeMidpoint": [
+          0.38431633039518176,
+          -106.34344022236174,
+          100.10424089592257
+        ],
+        "afterMidpoint": [
+          0.38431633039518176,
+          -106.34344022236174,
+          100.06047463660926
+        ],
+        "beforeRadiusMm": 2.054002918850067,
+        "afterRadiusMm": 2.0608027669632714
+      },
+      {
+        "y": -105.68105047316779,
+        "beforeMidpoint": [
+          0.25898862272214773,
+          -105.68105047316779,
+          100.1062793646086
+        ],
+        "afterMidpoint": [
+          0.25898862272214773,
+          -105.68105047316779,
+          100.1030311098507
+        ],
+        "beforeRadiusMm": 1.8253283697788718,
+        "afterRadiusMm": 1.826682122819891
+      },
+      {
+        "y": -105.01866072397384,
+        "beforeMidpoint": [
+          0.03446964014536358,
+          -105.01866072397384,
+          99.62307362528611
+        ],
+        "afterMidpoint": [
+          0.03446964014536358,
+          -105.01866072397384,
+          99.62307362528611
+        ],
+        "beforeRadiusMm": 1.4966610913451754,
+        "afterRadiusMm": 1.4966610913451754
+      },
+      {
+        "y": -104.35627097477989,
+        "beforeMidpoint": [
+          -0.23362487992366376,
+          -104.35627097477989,
+          99.21379917922835
+        ],
+        "afterMidpoint": [
+          -0.23362487992366376,
+          -104.35627097477989,
+          99.21379917922835
+        ],
+        "beforeRadiusMm": 1.1226460345629374,
+        "afterRadiusMm": 1.1226460345629374
+      },
+      {
+        "y": -103.69388122558594,
+        "beforeMidpoint": [
+          -0.33208435391835417,
+          -103.69388122558594,
+          98.7124430083724
+        ],
+        "afterMidpoint": [
+          -0.33208435391835417,
+          -103.69388122558594,
+          98.7124430083724
+        ],
+        "beforeRadiusMm": 0.26073153176709996,
+        "afterRadiusMm": 0.26073153176709996
+      }
+    ]
+  },
+  "scope": "Software/data checks, current exported geometry and a limited local anatomical correction. Residual tissue/arterial contacts and native lumen closure remain unresolved."
+}

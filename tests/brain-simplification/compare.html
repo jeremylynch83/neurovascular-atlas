@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#f4f3ef;color:#24333b;font:16px system-ui}.labels{display:grid;grid-template-columns:1fr 1fr;text-align:center;padding:15px}canvas{display:block}#caption{padding:12px;text-align:center}
+</style></head><body><div class="labels"><span>Original brain - v0.9.117</span><span>Gentle simplification trial</span></div><div id="canvas"></div><div id="caption"></div><script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+const [before,after,manifest,trial]=await Promise.all([
+ loader.loadAsync('/brain-comparison/old.glb'),
+ loader.loadAsync('/brain-comparison/new.glb'),
+ fetch('/brain-comparison/manifest.json').then(r=>r.json()),
+ fetch('/brain-comparison/trial.json').then(r=>r.json())]);
+const category=new Map(manifest.structures.filter(s=>s.asset?.file==='models/brain-context.glb').map(s=>[s.asset.node,s.anatomy.category]));
+const detail=trial.meshes.filter(m=>m.changed).sort((a,b)=>b.beforeTriangles-a.beforeTriangles)[0].name;
+const scenes=[before,after].map(gltf=>{
+ const scene=new THREE.Scene();scene.background=new THREE.Color('#f4f3ef');scene.add(gltf.scene);
+ scene.add(new THREE.HemisphereLight(0xffffff,0x606570,2));const light=new THREE.DirectionalLight(0xffffff,2.4);light.position.set(-100,-200,300);scene.add(light);
+ gltf.scene.traverse(o=>{if(o.isMesh){o.userData.nativeName=gltf.parser.json.nodes[gltf.parser.associations.get(o).nodes].name;o.material=new THREE.MeshPhongMaterial({color:0xd5b49f,side:THREE.DoubleSide,shininess:15})}});
+ return scene;
+});
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setPixelRatio(1);renderer.setSize(1000,520);document.querySelector('#canvas').append(renderer.domElement);
+window.renderComparison=(kind='cerebellum',direction=[0,-1,.15])=>{
+ let bounds=new THREE.Box3();
+ for(const [i,scene]of scenes.entries())scene.traverse(o=>{if(o.isMesh){o.visible=kind==='detail'?o.userData.nativeName===detail:category.get(o.userData.nativeName)===kind;if(i===0&&o.visible)bounds.expandByObject(o)}});
+ const centre=bounds.getCenter(new THREE.Vector3()),size=bounds.getSize(new THREE.Vector3());
+ const radius=size.length()/2,aspect=500/520,extent=Math.max(size.x,size.y,size.z)*.65;
+ const camera=new THREE.OrthographicCamera(-extent*aspect,extent*aspect,extent,-extent,.01,10000);
+ camera.position.copy(centre).add(new THREE.Vector3(...direction).normalize().multiplyScalar(radius*3));camera.up.set(0,0,1);if(Math.abs(direction[2])>.9)camera.up.set(0,1,0);camera.lookAt(centre);camera.updateProjectionMatrix();
+ renderer.setScissorTest(true);
+ scenes.forEach((scene,i)=>{renderer.setViewport(i*500,0,500,520);renderer.setScissor(i*500,0,500,520);renderer.render(scene,camera)});
+ document.querySelector('#caption').textContent=kind==='detail'?detail:kind;return renderer.info.render.triangles;
+};
+window.renderComparison();window.comparisonReady=true;
+</script></body></html>

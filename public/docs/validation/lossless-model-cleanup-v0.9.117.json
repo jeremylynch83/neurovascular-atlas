@@ -1,0 +1,128 @@
+{
+  "release": "0.9.117",
+  "baseline": "0.9.116",
+  "files": [
+    {
+      "file": "models/brain-context.glb",
+      "beforeBytes": 29949360,
+      "afterBytes": 29070264,
+      "beforeSha256": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+      "afterSha256": "636b8a665707f1247240171ffa30f8140177c29db49dc015fd415ccd8089dfa6",
+      "removedAccessors": 6,
+      "removedBufferViews": 6,
+      "retainedPayloadsByteExact": true,
+      "beforeGzipBytes": 24842067,
+      "afterGzipBytes": 24017243
+    },
+    {
+      "file": "models/complete-anastomoses.glb",
+      "beforeBytes": 3278012,
+      "afterBytes": 3278012,
+      "beforeSha256": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "afterSha256": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "removedAccessors": 0,
+      "removedBufferViews": 0,
+      "retainedPayloadsByteExact": true,
+      "beforeGzipBytes": 1770231,
+      "afterGzipBytes": 1770231
+    },
+    {
+      "file": "models/complete-circulation.glb",
+      "beforeBytes": 64227992,
+      "afterBytes": 55566816,
+      "beforeSha256": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+      "afterSha256": "66ca003079bbb972b594b48fc44b07bba6dd3557a65b82a6aac4987c4153bef7",
+      "removedAccessors": 226,
+      "removedBufferViews": 226,
+      "retainedPayloadsByteExact": true,
+      "beforeGzipBytes": 35302788,
+      "afterGzipBytes": 31374874
+    },
+    {
+      "file": "models/craniofacial.glb",
+      "beforeBytes": 3667048,
+      "afterBytes": 3667048,
+      "beforeSha256": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "afterSha256": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "removedAccessors": 0,
+      "removedBufferViews": 0,
+      "retainedPayloadsByteExact": true,
+      "beforeGzipBytes": 2693484,
+      "afterGzipBytes": 2693484
+    },
+    {
+      "file": "models/venous.glb",
+      "beforeBytes": 20025420,
+      "afterBytes": 17595168,
+      "beforeSha256": "1bb851b53f505035f0de7e0b88198abfe805a5951a224f2e03381f30c96ed15d",
+      "afterSha256": "2264c35c98c35d4c6279845b7b77ea043e5e34710437626fb2424cc78509a6bb",
+      "removedAccessors": 71,
+      "removedBufferViews": 71,
+      "retainedPayloadsByteExact": true,
+      "beforeGzipBytes": 15757533,
+      "afterGzipBytes": 13824815
+    }
+  ],
+  "passed": true,
+  "totals": {
+    "beforeBytes": 121147832,
+    "afterBytes": 109177308,
+    "beforeGzipBytes": 80366103,
+    "afterGzipBytes": 73680647
+  },
+  "rawBytesSaved": 11970524,
+  "gzipBytesSaved": 6685456,
+  "removedBufferViews": 303,
+  "geometry": {
+    "passed": true,
+    "release": "0.9.117",
+    "meshes": 1250,
+    "triangles": 12957034,
+    "assetChecks": [
+      {
+        "file": "models/craniofacial.glb",
+        "meshes": 60,
+        "allAttributesAndTriangleOrderExact": true
+      },
+      {
+        "file": "models/complete-circulation.glb",
+        "meshes": 599,
+        "allAttributesAndTriangleOrderExact": true
+      },
+      {
+        "file": "models/complete-anastomoses.glb",
+        "meshes": 167,
+        "allAttributesAndTriangleOrderExact": true
+      },
+      {
+        "file": "models/venous.glb",
+        "meshes": 231,
+        "allAttributesAndTriangleOrderExact": true
+      },
+      {
+        "file": "models/brain-context.glb",
+        "meshes": 193,
+        "allAttributesAndTriangleOrderExact": true
+      }
+    ],
+    "allDecodedAttributesAndTriangleOrderExact": true,
+    "anatomicalContractsExactExceptAssetHashes": true,
+    "dsaRecipesAndFlowExactExceptAssetHashes": true,
+    "anatomicalIssueRegisterByteExact": true,
+    "deferredCasesAndReviewImplementationExact": true
+  },
+  "checks": {
+    "build": "passed",
+    "brainAnchorsAndVesselCourseBindings": "passed",
+    "closedDsaProxies": 828,
+    "proxyTriangles": 8971510,
+    "selectableArterialCourses": 579,
+    "closedInjectionSections": 2353,
+    "meningealRouting": "passed",
+    "fullDataBrowserScenarios": 11,
+    "workerRuntimeStreamsExact": 1250,
+    "deferredReviewRegistry": "passed",
+    "runtimeSourceCodeUnchanged": true
+  },
+  "scope": "Lossless container cleanup only. No vertex, normal, triangle, material or anatomical changes. Browser tests use software WebGL; no device frame-rate claim."
+}

@@ -1,0 +1,737 @@
+{
+  "schema": 1,
+  "toolVersion": "1.0.0",
+  "signature": "b058d050ddc89a785810dbb1bc75738a6595ce65f48aac19a30afa45275429e2",
+  "status": "accepted",
+  "stagedOnly": true,
+  "sourceFingerprint": "1dd91b05a95b5c357586fbd34e8e19f5ae915ef6e5e4278977077e441d250dd2",
+  "sourceHashes": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "5a8761de475ca74cf4659105bf7cc9dc4dd07d9fe579679d51455bee7d7a4e2e",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "cf0fb00820b6dfd73f24f86474ef23c9380904ec10b010d6e24482208e6b7065"
+  },
+  "baselineOverrides": {
+    "Tentorial marginal left": "784c88680ffd8b33713868d21e507b55a9cfb814c5e06163623aedeae169150d",
+    "Tentorial marginal right": "0c52ea4a27f53c816c21cd69b952d47b6ccd621cc67a01490785fd144f4e9e62"
+  },
+  "limits": {
+    "maxComponentVertices": 12,
+    "maxComponentSpanMm": 0.5,
+    "maxSpanMm": 0.25,
+    "maxPatchAreaMm2": 0.02,
+    "maxWarpMm": 0.05,
+    "minTriangleAreaMm2": 1e-09,
+    "maxSnapMm": 0.05,
+    "snapSupportMm": 1.0
+  },
+  "proposals": [
+    {
+      "network": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "componentVertices": 112,
+      "componentEdges": 112,
+      "centre": [
+        -23.878566248076304,
+        -66.05273866653442,
+        62.46899815968105
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "componentVertices": 25,
+      "componentEdges": 25,
+      "centre": [
+        -15.420166816711426,
+        -51.894449157714845,
+        64.79138946533203
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "componentVertices": 6,
+      "componentEdges": 6,
+      "centre": [
+        -15.660443305969238,
+        -50.6490421295166,
+        66.60242970784505
+      ],
+      "spanMm": 0.11692422316289008,
+      "boundaryCoordinates": [
+        [
+          -15.669092178344727,
+          -50.633907318115234,
+          66.59233856201172
+        ],
+        [
+          -15.656118392944336,
+          -50.63822937011719,
+          66.59233856201172
+        ],
+        [
+          -15.630170822143555,
+          -50.646881103515625,
+          66.59233856201172
+        ],
+        [
+          -15.660443305969238,
+          -50.70742416381836,
+          66.6485595703125
+        ],
+        [
+          -15.621521949768066,
+          -50.6252555847168,
+          66.57504272460938
+        ],
+        [
+          -15.725313186645508,
+          -50.642555236816406,
+          66.61396026611328
+        ]
+      ],
+      "boundaryLabels": [
+        "Tentorial marginal left",
+        "Dorsal meningeal left"
+      ],
+      "eligible": true,
+      "reason": "small-mixed-label-wall-gap",
+      "triangles": [
+        [
+          4,
+          5,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "areaMm2": 0.0007532824932963067,
+      "warpMm": 0.0008485231929486586
+    },
+    {
+      "network": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "componentVertices": 138,
+      "componentEdges": 142,
+      "centre": [
+        -14.125919784324756,
+        -51.13484219537265,
+        66.5107980258223
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "componentVertices": 88,
+      "componentEdges": 88,
+      "centre": [
+        -14.168510978872126,
+        -53.561960046941586,
+        62.65851224552501
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "componentVertices": 88,
+      "componentEdges": 88,
+      "centre": [
+        -9.41771347956224,
+        -59.557626767592,
+        56.067621837962754
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 90,
+      "componentEdges": 90,
+      "centre": [
+        9.418640157911513,
+        -59.55515454610189,
+        56.05648896959093
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 56,
+      "componentEdges": 56,
+      "centre": [
+        13.848449758120946,
+        -51.86665725708008,
+        65.0452800478254
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 87,
+      "componentEdges": 87,
+      "centre": [
+        14.037490899535431,
+        -53.76355046239392,
+        61.8172010224441
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 11,
+      "componentEdges": 11,
+      "centre": [
+        14.999623211947354,
+        -52.67906327681108,
+        63.94448540427468
+      ],
+      "spanMm": 0.5156290622613758,
+      "eligible": false,
+      "reason": "span-limit"
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 42,
+      "componentEdges": 43,
+      "centre": [
+        15.228032974969773,
+        -52.00676999773298,
+        65.37351408458892
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 3,
+      "componentEdges": 3,
+      "centre": [
+        15.19292132059733,
+        -51.683349609375,
+        65.59190877278645
+      ],
+      "spanMm": 0.16076966132899698,
+      "boundaryCoordinates": [
+        [
+          15.200128555297852,
+          -51.70641326904297,
+          65.66254425048828
+        ],
+        [
+          15.269323348999023,
+          -51.676143646240234,
+          65.56307983398438
+        ],
+        [
+          15.109312057495117,
+          -51.6674919128418,
+          65.55010223388672
+        ]
+      ],
+      "boundaryLabels": [
+        "Tentorial marginal right",
+        "Meningohypophyseal trunk right"
+      ],
+      "eligible": true,
+      "reason": "small-mixed-label-wall-gap",
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "areaMm2": 0.008839208528620444,
+      "warpMm": 1.4855632226462306e-15
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 5,
+      "componentEdges": 6,
+      "centre": [
+        15.371384429931641,
+        -51.75485076904297,
+        65.35289764404297
+      ],
+      "spanMm": 0.2657805261681258,
+      "boundaryCoordinates": [
+        [
+          15.308244705200195,
+          -51.684791564941406,
+          65.43766021728516
+        ],
+        [
+          15.373114585876465,
+          -51.74101257324219,
+          65.3554916381836
+        ],
+        [
+          15.269323348999023,
+          -51.702091217041016,
+          65.32954406738281
+        ]
+      ],
+      "boundaryLabels": [
+        "Tentorial marginal right",
+        "Dorsal meningeal right",
+        "Meningohypophyseal trunk right"
+      ],
+      "eligible": true,
+      "reason": "small-mixed-label-wall-gap",
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "areaMm2": 0.005850692005016212,
+      "warpMm": 3.663759327146326e-15
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 5,
+      "componentEdges": 6,
+      "centre": [
+        15.371384429931641,
+        -51.75485076904297,
+        65.35289764404297
+      ],
+      "spanMm": 0.2657805261681258,
+      "boundaryCoordinates": [
+        [
+          15.502853393554688,
+          -51.7972297668457,
+          65.39009094238281
+        ],
+        [
+          15.403386116027832,
+          -51.84912872314453,
+          65.25170135498047
+        ],
+        [
+          15.373114585876465,
+          -51.74101257324219,
+          65.3554916381836
+        ]
+      ],
+      "boundaryLabels": [
+        "Tentorial marginal right",
+        "Dorsal meningeal right"
+      ],
+      "eligible": true,
+      "reason": "small-mixed-label-wall-gap",
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "areaMm2": 0.010656287007305334,
+      "warpMm": 1.370326513936218e-15
+    },
+    {
+      "network": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "componentVertices": 98,
+      "componentEdges": 98,
+      "centre": [
+        25.219538241016622,
+        -70.966638526138,
+        60.80619555103536
+      ],
+      "spanMm": null,
+      "eligible": false,
+      "reason": "regional-boundary-or-native-port"
+    }
+  ],
+  "operations": {
+    "Tentorial marginal left": {
+      "operation": "patch",
+      "appendedVertices": [
+        {
+          "index": 16173,
+          "coordinate": [
+            -15.621521949768066,
+            -50.6252555847168,
+            66.57504272460938
+          ],
+          "normalSource": "Dorsal meningeal left"
+        }
+      ],
+      "patchCount": 1
+    },
+    "Tentorial marginal right": {
+      "operation": "patch",
+      "appendedVertices": [
+        {
+          "index": 15263,
+          "coordinate": [
+            15.109312057495117,
+            -51.6674919128418,
+            65.55010223388672
+          ],
+          "normalSource": "Meningohypophyseal trunk right"
+        },
+        {
+          "index": 15264,
+          "coordinate": [
+            15.269323348999023,
+            -51.702091217041016,
+            65.32954406738281
+          ],
+          "normalSource": "Dorsal meningeal right"
+        },
+        {
+          "index": 15265,
+          "coordinate": [
+            15.403386116027832,
+            -51.84912872314453,
+            65.25170135498047
+          ],
+          "normalSource": "Dorsal meningeal right"
+        }
+      ],
+      "patchCount": 3
+    }
+  },
+  "validation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "Tentorial marginal left",
+        "sourceVertices": 16173,
+        "sourceTriangles": 32205,
+        "addedVertices": 1,
+        "addedTriangles": 4,
+        "movedVertices": 0,
+        "affectedTriangles": 4,
+        "maximumDisplacementMm": 0.0,
+        "networks": [
+          {
+            "id": "tentorial-left",
+            "before": {
+              "boundaryEdges": 461,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            },
+            "after": {
+              "boundaryEdges": 455,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            }
+          }
+        ]
+      },
+      {
+        "node": "Tentorial marginal right",
+        "sourceVertices": 15263,
+        "sourceTriangles": 30407,
+        "addedVertices": 3,
+        "addedTriangles": 3,
+        "movedVertices": 0,
+        "affectedTriangles": 3,
+        "maximumDisplacementMm": 0.0,
+        "networks": [
+          {
+            "id": "tentorial-right",
+            "before": {
+              "boundaryEdges": 394,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            },
+            "after": {
+              "boundaryEdges": 385,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            }
+          }
+        ]
+      }
+    ],
+    "trianglePairsChecked": 106,
+    "crossings": [],
+    "containment": [
+      {
+        "node": "Tentorial marginal left",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 25
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 1.636140165394465,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.occipital",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 19
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.parietal.left",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 2,
+          "misorientedEdges": 0
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 42.43470922014987,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.sphenoid",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 19
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.temporal.left",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 84,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 13.265533907851312,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 30
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 2.8997092548459675,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.occipital",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 20
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.parietal.right",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 6,
+          "misorientedEdges": 1
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 44.82500621801243,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.sphenoid",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 20
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.temporal.right",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 85,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 12.22486325912666,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      }
+    ],
+    "problems": [],
+    "scope": "All affected faces against the entire scene, including adjacent faces and coplanar overlap. Unchanged remote defects are retained. Tissue/bone ray samples are a local regression gate, not anatomical approval."
+  },
+  "candidateFiles": [
+    "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal left.positions.bin",
+    "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal left.indices.bin",
+    "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal right.positions.bin",
+    "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal right.indices.bin"
+  ],
+  "candidateArtifacts": [
+    {
+      "path": "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal left.positions.bin",
+      "sha256": "2498e67343067c480f257152d5af52375714392a261a336da6d5ccab774b2ee1"
+    },
+    {
+      "path": "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal left.indices.bin",
+      "sha256": "86aec45a4f8b388c1345168762554d1730b7f824c03c7d5711d4194a96b77c8c"
+    },
+    {
+      "path": "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal right.positions.bin",
+      "sha256": "df11db9a4d17090c48fafe48e4542fa61ddb955420ddaaba5908b9e6c0feb8ad"
+    },
+    {
+      "path": "/workspace/scratch/3da1329b983b/repair-benchmark-final/warm-3/candidate/Tentorial marginal right.indices.bin",
+      "sha256": "b9057cac0c8a123324e7d72325468fdde82ae89a4cd03a846be8c44cc245b926"
+    }
+  ],
+  "acceptedCorrections": [
+    {
+      "node": "Tentorial marginal left",
+      "passed": true,
+      "operation": "patch",
+      "appendedVertices": [
+        {
+          "index": 16173,
+          "coordinate": [
+            -15.621521949768066,
+            -50.6252555847168,
+            66.57504272460938
+          ],
+          "normalSource": "Dorsal meningeal left"
+        }
+      ],
+      "patchCount": 1
+    },
+    {
+      "node": "Tentorial marginal right",
+      "passed": true,
+      "operation": "patch",
+      "appendedVertices": [
+        {
+          "index": 15263,
+          "coordinate": [
+            15.109312057495117,
+            -51.6674919128418,
+            65.55010223388672
+          ],
+          "normalSource": "Meningohypophyseal trunk right"
+        },
+        {
+          "index": 15264,
+          "coordinate": [
+            15.269323348999023,
+            -51.702091217041016,
+            65.32954406738281
+          ],
+          "normalSource": "Dorsal meningeal right"
+        },
+        {
+          "index": 15265,
+          "coordinate": [
+            15.403386116027832,
+            -51.84912872314453,
+            65.25170135498047
+          ],
+          "normalSource": "Dorsal meningeal right"
+        }
+      ],
+      "patchCount": 3
+    }
+  ],
+  "reusedRecordedTrial": false,
+  "cache": {
+    "assetCacheHits": 5,
+    "assetDecodes": 0,
+    "bvhCacheHits": 25,
+    "bvhBuilds": 0,
+    "namedMeshes": 1250,
+    "boundaryCacheHits": 2
+  },
+  "timingSeconds": {
+    "prepare": 0.19603586599987466,
+    "scan": 0.028388951999659184,
+    "seamFit": 3.0075003451202065e-05,
+    "validate": 0.8023564089999127,
+    "total": 1.0288080150021415
+  }
+}

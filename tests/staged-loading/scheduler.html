@@ -1,0 +1,21 @@
+<!doctype html><html><body><div id="stage" style="width:160px;height:100px"></div><script type="module">
+import {AnatomyEngine} from '/src/engine.ts';
+window.schedulerResult=(async()=>{
+ const tests=[];const check=(name,ok)=>{if(!ok)throw Error(name);tests.push(name)};
+ const manifest={release:'test',units:'mm',coordinateSystem:'RAS',structures:[],relationships:[],sources:[],roots:[],warning:''};
+ const e=new AnatomyEngine(document.querySelector('#stage'),manifest,()=>{});await e.load();e.start();
+ e.interacting=true;let completed=false;const held=e.workSlot(true).then(()=>completed=true);await new Promise(r=>setTimeout(r,80));check('Held interaction blocks background work',!completed);
+ e.interacting=false;e.movingUntil=performance.now()+60;await held;check('Work resumes after the input settling period',completed);
+ e.frameInterval=60;e.lastRenderDuration=0;e.nextBackgroundSlot=0;await e.workSlot(true);const start=performance.now();await e.workSlot(true);check('Slow measured frames reduce background throughput',performance.now()-start>=40);
+ e.interacting=true;e.setCameraUp([0,0,1],true);check('Recreated controls clear the old gesture lock',!e.interacting);
+ manifest.structures.push({id:'hidden',name:'Hidden fixture',system:'brain',provenance:{sourceType:'atlas-derived'}});
+ e.setVisibility(new Map([['hidden','off']]));e.renderRequested=false;
+ let haloUpdates=0;const halo=e.selectionHalo.setMeshes.bind(e.selectionHalo);e.selectionHalo.setMeshes=sources=>{haloUpdates++;halo(sources)};
+ e.installMeshes([{id:'hidden',positions:new Float32Array([0,0,0,1,0,0,0,1,0]),normals:new Float32Array([0,0,1,0,0,1,0,0,1]),indices:new Uint32Array([0,1,2]),bounds:[[0,0,0],[1,1,0]],sphere:{centre:[.5,.5,0],radius:1}}]);
+ check('Hidden arrivals do not request a scene redraw',!e.renderRequested);
+ check('Unselected arrivals retain the existing selection data',haloUpdates===0);
+ e.setVisibility(new Map([['hidden','on']]));check('Showing prepared anatomy requests a redraw',e.renderRequested);
+ e.interacting=true;const closing=e.workSlot(true);e.dispose();await Promise.race([closing,new Promise((_,reject)=>setTimeout(()=>reject(Error('Dispose did not release scheduled work')),300))]);check('Disposal releases a pending frame wait',true);
+ return {passed:true,tests};
+})().then(result=>{window.schedulerReport=result;return result}).catch(error=>{window.schedulerReport={passed:false,error:String(error)};return window.schedulerReport});
+</script></body></html>

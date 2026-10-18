@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "changes": [
+    {
+      "node": "vein.inferior_petrosal.left",
+      "candidateFacesChecked": 5451,
+      "trianglePairsChecked": 37856,
+      "sourceExactPairs": 12,
+      "candidateExactPairs": 3,
+      "removedExactPairs": 9,
+      "remainingPairs": [
+        [
+          5272,
+          5425
+        ],
+        [
+          5273,
+          5425
+        ],
+        [
+          5273,
+          5426
+        ]
+      ],
+      "remainingContactTrianglesByteExact": true,
+      "newSelfContacts": 0,
+      "passed": true
+    }
+  ]
+}

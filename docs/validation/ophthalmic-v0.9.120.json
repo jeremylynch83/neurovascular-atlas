@@ -1,0 +1,254 @@
+{
+  "release": "0.9.120",
+  "baseline": "0.9.119",
+  "passed": true,
+  "changes": [
+    "vein.inferior_ophthalmic.right",
+    "vein.superior_ophthalmic.right",
+    "vein.inferior_ophthalmic.left",
+    "vein.superior_ophthalmic.left"
+  ],
+  "geometry": {
+    "release": "0.9.120",
+    "passed": true,
+    "totalMeshes": 1250,
+    "unchangedMeshesByteExact": 1246,
+    "changedNodes": [
+      "vein.inferior_ophthalmic.right",
+      "vein.superior_ophthalmic.right",
+      "vein.inferior_ophthalmic.left",
+      "vein.superior_ophthalmic.left"
+    ],
+    "otherFourAssetsByteExact": true,
+    "exportedCoordinatesAndIndicesExact": true,
+    "changedNormalsUnitLength": true,
+    "localCrossings": 0,
+    "selfCrossings": 0,
+    "dsaProxiesClosedAndOriented": true,
+    "limits": "Reference teaching reconstruction; no globe, optic nerve or extraocular muscle fit certification. Existing remote network defects retained."
+  },
+  "nativeAttachments": {
+    "passed": true,
+    "results": [
+      {
+        "node": "vein.inferior_ophthalmic.right",
+        "retainedSourceAttachments": [
+          {
+            "other": "vein.pterygoid_plexus.right",
+            "sharedCoordinates": 33,
+            "lostCoordinates": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.superior_ophthalmic.right",
+        "retainedSourceAttachments": [
+          {
+            "other": "vein.angular.right",
+            "sharedCoordinates": 33,
+            "lostCoordinates": 0
+          },
+          {
+            "other": "vein.cavernous.right",
+            "sharedCoordinates": 44,
+            "lostCoordinates": 0
+          },
+          {
+            "other": "vein.sphenoparietal.right",
+            "sharedCoordinates": 31,
+            "lostCoordinates": 0
+          },
+          {
+            "other": "vein.superficial_middle_cerebral.right",
+            "sharedCoordinates": 14,
+            "lostCoordinates": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.inferior_ophthalmic.left",
+        "retainedSourceAttachments": [
+          {
+            "other": "vein.pterygoid_plexus.left",
+            "sharedCoordinates": 45,
+            "lostCoordinates": 0
+          }
+        ]
+      },
+      {
+        "node": "vein.superior_ophthalmic.left",
+        "retainedSourceAttachments": [
+          {
+            "other": "vein.angular.left",
+            "sharedCoordinates": 22,
+            "lostCoordinates": 0
+          },
+          {
+            "other": "vein.cavernous.left",
+            "sharedCoordinates": 41,
+            "lostCoordinates": 0
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "sharedCoordinates": 40,
+            "lostCoordinates": 0
+          },
+          {
+            "other": "vein.superficial_middle_cerebral.left",
+            "sharedCoordinates": 10,
+            "lostCoordinates": 0
+          }
+        ]
+      }
+    ]
+  },
+  "selfChecks": {
+    "passed": true,
+    "results": [
+      {
+        "node": "vein.inferior_ophthalmic.right",
+        "changedFaces": 4980,
+        "nonAdjacentCandidatesChecked": 12543,
+        "crossingPairs": []
+      },
+      {
+        "node": "vein.inferior_ophthalmic.left",
+        "changedFaces": 6726,
+        "nonAdjacentCandidatesChecked": 17481,
+        "crossingPairs": []
+      }
+    ]
+  },
+  "localGeometry": [
+    {
+      "node": "vein.superior_ophthalmic.right",
+      "boundaryEdges": 152,
+      "badEdges": 0,
+      "sourceBoundaryEdges": 125,
+      "sourceBadEdges": 0
+    },
+    {
+      "node": "vein.superior_ophthalmic.right",
+      "changedFaces": 43,
+      "contacts": []
+    },
+    {
+      "node": "vein.superior_ophthalmic.left",
+      "boundaryEdges": 144,
+      "badEdges": 0,
+      "sourceBoundaryEdges": 112,
+      "sourceBadEdges": 0
+    },
+    {
+      "node": "vein.superior_ophthalmic.left",
+      "changedFaces": 50,
+      "contacts": []
+    },
+    {
+      "node": "vein.inferior_ophthalmic.left",
+      "boundaryEdges": 77,
+      "badEdges": 0,
+      "sourceBoundaryEdges": 45,
+      "sourceBadEdges": 0
+    },
+    {
+      "node": "vein.inferior_ophthalmic.left",
+      "changedFaces": 6726,
+      "contacts": []
+    },
+    {
+      "node": "vein.inferior_ophthalmic.right",
+      "boundaryEdges": 60,
+      "badEdges": 0,
+      "sourceBoundaryEdges": 33,
+      "sourceBadEdges": 0
+    },
+    {
+      "node": "vein.inferior_ophthalmic.right",
+      "changedFaces": 4980,
+      "contacts": []
+    },
+    {
+      "network": "right",
+      "boundaryEdges": 258,
+      "badEdges": 1
+    },
+    {
+      "network": "left",
+      "boundaryEdges": 248,
+      "badEdges": 6
+    }
+  ],
+  "dsaProjections": {
+    "passed": true,
+    "results": [
+      {
+        "node": "vein.inferior_ophthalmic.right",
+        "capLoops": 2,
+        "closedAndOriented": true,
+        "volumeMm3": 144.0580417219584
+      },
+      {
+        "node": "vein.superior_ophthalmic.right",
+        "capLoops": 6,
+        "closedAndOriented": true,
+        "volumeMm3": 157.76200287452957
+      },
+      {
+        "node": "vein.inferior_ophthalmic.left",
+        "capLoops": 5,
+        "closedAndOriented": true,
+        "volumeMm3": 159.68563568248567
+      },
+      {
+        "node": "vein.superior_ophthalmic.left",
+        "capLoops": 7,
+        "closedAndOriented": true,
+        "volumeMm3": 159.84201253288578
+      }
+    ]
+  },
+  "dsaArterialFlow": {
+    "passed": true,
+    "arterialInputsAndGeneratorByteExact": true,
+    "arterialGraphExact": true,
+    "arterialEntriesAndEdgesReusedExact": true,
+    "updatedVenousSites": [
+      "vein.inferior_ophthalmic.right",
+      "vein.superior_ophthalmic.right",
+      "vein.inferior_ophthalmic.left",
+      "vein.superior_ophthalmic.left"
+    ]
+  },
+  "productionBrowser": {
+    "passed": true,
+    "errors": [],
+    "workerUrls": [
+      "http://127.0.0.1:8800/assets/geometryWorker-CxemG-T0.js"
+    ],
+    "tests": [
+      "Production bone/artery loading completes without errors or an overlay",
+      "Bundled geometry worker loads deferred vascular data and enables DSA",
+      "Production canvas retains its WebGL context"
+    ]
+  },
+  "additionalValidation": {
+    "catalogueAndCourseBindings": "passed",
+    "typecheckAndProductionBuild": "passed",
+    "dsaSurfaces": {
+      "closedAndOrientedMeshes": 828,
+      "triangles": 8982390,
+      "passed": true
+    },
+    "dsaFlow": {
+      "selectableCourses": 579,
+      "closedSections": 2353,
+      "passed": true
+    },
+    "selectiveMeningealCompanionChannels": "passed"
+  },
+  "leftDipMaximumDisplacementMm": 0.7999943502995208,
+  "newMidBranchRadiusMm": 0.6,
+  "runtimeSourceUnchanged": true,
+  "anatomicalReview": "Selected teaching reference variant; clinical review required, no orbital soft tissue fit claim. Existing remote defects retained."
+}

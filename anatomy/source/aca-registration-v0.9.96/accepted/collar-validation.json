@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "changes": [
+    {
+      "node": "ACA falcine branch right",
+      "sourceVertices": 4186,
+      "sourceTriangles": 8161,
+      "candidateVertices": 4516,
+      "candidateTriangles": 8866,
+      "retainedSourceTriangles": 7690,
+      "changedTriangles": 1176,
+      "protectedSourceAttachments": [
+        {
+          "other": "ACA falcine\u2013MMA falcine right",
+          "coordinates": 134,
+          "missing": 0
+        }
+      ]
+    }
+  ],
+  "crossings": [],
+  "trianglePairsChecked": 17400,
+  "clearance": [
+    {
+      "node": "ACA falcine branch right",
+      "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "ACA falcine branch right",
+      "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "ACA falcine branch right",
+      "target": "brain.corpus-callosum",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "ACA falcine branch right",
+      "target": "brain.superior-frontal-gyrus.right",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": 10.446218320331052
+    },
+    {
+      "node": "ACA falcine branch right",
+      "target": "bone.occipital",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": null
+    },
+    {
+      "node": "ACA falcine branch right",
+      "target": "bone.parietal.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": 43.39517032658126
+    },
+    {
+      "node": "ACA falcine branch right",
+      "target": "bone.parietal.right",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 3584,
+      "minimumOpenTargetClearanceMarginMm": 43.32006750328934
+    }
+  ],
+  "nativeNetworks": [
+    {
+      "id": "right-aca-falcine",
+      "boundaryEdgesBefore": 521,
+      "boundaryEdgesAfter": 412,
+      "preExistingBadEdges": 0,
+      "candidateBadEdges": 0,
+      "newBadEdges": 0
+    }
+  ],
+  "issues": [],
+  "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+}

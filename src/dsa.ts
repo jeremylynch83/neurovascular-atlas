@@ -37,7 +37,6 @@ export function makeDsaRun(manifest: AnatomyManifest, preset: PresetId, side: Pr
   // Explicit routes absent from the source graph. Do not traverse venous
   // communications as though every valveless connection were downstream.
   for (const s of ['left', 'right']) for (const [a, b] of [
-    ['middle_meningeal.anterior', 'sphenoparietal'], ['middle_meningeal.posterior', 'pterygoid_plexus'],
     ['sphenoparietal', 'cavernous'], ['cavernous', 'inferior_petrosal'],
     ['inferior_petrosal', 'internal_jugular'], ['inferior_alveolar', 'pterygoid_plexus'],
     ['infraorbital', 'pterygoid_plexus'],
@@ -107,12 +106,20 @@ export function makeDsaRun(manifest: AnatomyManifest, preset: PresetId, side: Pr
       seeds=seeds.filter(id=>!(/middle_meningeal/.test(id)&&!has(/\.mma\.|mma_cavernous|mma_orbital/))
         &&!(/inferior_alveolar/.test(id)&&!has(/inferior_alveolar/))&&!(/infraorbital/.test(id)&&!has(/infraorbital/)));
       if(ancestry.some(id=>/\.lingual\./.test(id)))seeds=[`vein.lingual.${side}`,`vein.deep_facial.${side}`];
-      if(/\.frontal\./.test(injection.id)&&ancestry.some(id=>/\.mma\./.test(id)))seeds=[`vein.middle_meningeal.anterior.${side}`];
-      if(/posterior_convexity|petrosquamosal/.test(injection.id))seeds=[`vein.middle_meningeal.posterior.${side}`];
+      // These are the two companions of the FRONTAL MMA route, not two
+      // territories. Their reviewed receiver comes from drains_to metadata.
+      if(/\.frontal\./.test(injection.id)&&ancestry.some(id=>/\.mma\./.test(id)))seeds=['anterior','posterior'].map(p=>`vein.middle_meningeal.${p}.${side}`);
+      if(/posterior_convexity|petrosquamosal/.test(injection.id))seeds=[]; // No corresponding posterior-division venous course is modelled.
     }
     const score=(id:string)=>{const p=flow.veinSites[id];return p&&blush.length?Math.min(...blush.map(f=>p.reduce((sum,v,k)=>sum+((v-f.centre[k])/Math.max(10,f.radius[k]))**2,0))):Infinity;};
     const ranked=seeds.filter(id=>byId.get(id)?.asset).sort((a,b)=>score(a)-score(b));
     const local=ranked.filter(id=>score(id)<4);seeds=local.length?local:ranked.slice(0,1);
+    // A representative site can fall outside the approximate blush field.
+    // Retain the other member of a selected, already eligible companion pair.
+    for(const id of [...seeds]) {
+      const partner=id.replace(/middle_meningeal\.(anterior|posterior)/,(_,p)=>`middle_meningeal.${p==='anterior'?'posterior':'anterior'}`);
+      if(partner!==id&&ranked.includes(partner)&&!seeds.includes(partner))seeds.push(partner);
+    }
   }
   const queue=seeds.map(id=>({id,delay:4.5}));
   const veins = new Map<string, number>();

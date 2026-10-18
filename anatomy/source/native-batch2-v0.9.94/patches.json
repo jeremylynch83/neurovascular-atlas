@@ -1,0 +1,48 @@
+{
+  "release": "0.9.94",
+  "changes": [
+    {
+      "node": "Tentorial marginal left",
+      "operation": "patch",
+      "appendedVertices": [
+        {
+          "index": 16174,
+          "coordinate": [
+            -14.60955810546875,
+            -50.69012451171875,
+            66.82154846191406
+          ],
+          "normalSource": "Meningohypophyseal trunk left"
+        },
+        {
+          "index": 16175,
+          "coordinate": [
+            -14.709024429321289,
+            -50.80689239501953,
+            67.02912902832031
+          ],
+          "normalSource": "Meningohypophyseal trunk left"
+        }
+      ],
+      "patchCount": 2,
+      "newTriangles": 2
+    },
+    {
+      "node": "Tentorial marginal right",
+      "operation": "patch",
+      "appendedVertices": [
+        {
+          "index": 15266,
+          "coordinate": [
+            15.126609802246094,
+            -52.00481414794922,
+            65.83552551269531
+          ],
+          "normalSource": "Meningohypophyseal trunk right"
+        }
+      ],
+      "patchCount": 1,
+      "newTriangles": 1
+    }
+  ]
+}

@@ -3,9 +3,9 @@ import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { geometrySubtrees, searchStructures, uniqueVesselCounts } from './catalogue';
 import { AnatomyEngine } from './engine';
 import { Description } from './Description';
-import { Loading } from './Loading';
+import { structureDependencies, type LoadState } from './stagedLoading';
 import { BookmarkIcon, PresetModal } from './PresetModal';
-import { ANATOMICAL_PRESETS, injectionPreset, presetDirection, presetVesselIds, presetVisibility, type PresetId, type PresetSide } from './presets';
+import { injectionPreset, presetDirection, presetVesselIds, presetVisibility, type PresetId, type PresetSide } from './presets';
 import { DsaControls, DsaIcon, InjectionControls } from './DsaControls';
 import { makeDsaRun, DSA_START, DSA_END, type DsaRun } from './dsa';
 import type { InjectionPoint } from './flowGeometry';
@@ -15,11 +15,15 @@ const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: '
 const STATE_LABEL = { on: 'fully visible', ghost: 'translucent', off: 'absent' };
 
 export function App({ manifest }: { manifest: AnatomyManifest }) {
+  const app = useRef<HTMLDivElement>(null);
+  const header = useRef<HTMLElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const engine = useRef<AnatomyEngine | null>(null);
   const fpsReadout = useRef<HTMLDivElement>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [query, setQuery] = useState('');
+  const [searchOpen, setSearchOpen] = useState(false);
+  const searchInput = useRef<HTMLInputElement>(null);
   const [visibility, setVisibility] = useState<Map<string, LayerState>>(() => new Map(manifest.structures
     .filter(s => s.asset || s.landmark?.point).map(s => [s.id, DEFAULT_VISIBILITY[s.system]])));
   const [controlsOpen, setControlsOpen] = useState(false);
@@ -27,8 +31,11 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [focusedId, setFocusedId] = useState<string | null>(null);
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
-  const [loadProgress, setLoadProgress] = useState(0);
-  const [loadError, setLoadError] = useState<string | null>(null);
+  const [loadStates, setLoadStates] = useState<ReadonlyMap<string, LoadState>>(() => new Map());
+  const [vascularReady, setVascularReady] = useState(false);
+  const [pendingId, setPendingId] = useState<string | null>(null);
+  const actionRevision = useRef(0);
+  const controlsOpenRef = useRef(false);
   const [clip, setClip] = useState({ enabled: false, axis: 'sagittal' as 'sagittal'|'coronal'|'axial', offset: 0 });
   const [about, setAbout] = useState(false);
   const [presetsOpen, setPresetsOpen] = useState(false);
@@ -46,7 +53,22 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [placementVessel,setPlacementVessel]=useState<string|null>(null);
   const runRef=useRef<DsaRun|null>(null);
   const injectionPending=useRef(false);
+  const placementRevision=useRef(0);
   const closePresets = useCallback(() => setPresetsOpen(false), []);
+  const toggleLayers = () => {
+    controlsOpenRef.current = !controlsOpen;
+    setControlsOpen(!controlsOpen);
+    if (!controlsOpen) setLoadStates(new Map(engine.current?.getLoadStates()));
+  };
+  useEffect(() => {
+    const element = header.current;
+    if (!element) return;
+    const measure = () => app.current?.style.setProperty('--mobile-panel-top', `${element.offsetTop + element.offsetHeight + 8}px`);
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    measure();
+    return () => observer.disconnect();
+  }, []);
   const byId = useMemo(() => new Map(manifest.structures.map((s) => [s.id, s])), [manifest]);
   const subtrees = useMemo(() => geometrySubtrees(byId), [byId]);
   const selected = selectedId ? byId.get(selectedId) ?? null : null;
@@ -54,21 +76,30 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const selectedGeometry = selected ? subtrees.get(selected.id) ?? [] : [];
   const selectedHidden = selectedGeometry.length > 0 && selectedGeometry.every(id => visibility.get(id) === 'off');
   const canFocus = !!selected && !!(selected.asset || selected.landmark?.point || (selected.system === 'brain' && selectedGeometry.length) || manifest.structures.some(s => s.segmentOf === selected.id));
-  const results = useMemo(() => searchStructures(manifest.structures, query).filter(s=>!placing||engine.current?.getDsaFlow()?.entries[s.id]?.selectable), [manifest.structures, query,placing]);
+  const results = useMemo(() => searchStructures(manifest.structures, query).filter(s=>!placing||(s.system==='artery'&&s.asset&&(!engine.current?.getDsaFlow()||engine.current.getDsaFlow()!.entries[s.id]?.selectable))), [manifest.structures, query,placing,dsaBusy]);
 
   useEffect(() => {
     if (!stage.current) return;
     let cancelled = false;
-    setReady(false); setLoadError(null); setLoadProgress(0);
-    const e = new AnatomyEngine(stage.current, manifest, (id,isDsa) => { if(isDsa){setDsaSelectedId(id);setPlaying(false);}else{setSelectedId(id);setFocusedId(null);} }, fps => {
+    setReady(false); setVascularReady(false); setPendingId(null);
+    const e = new AnatomyEngine(stage.current, manifest, (id,isDsa) => { actionRevision.current++; setPendingId(null); if(isDsa){setDsaSelectedId(id);setPlaying(false);}else{setSelectedId(id);setFocusedId(null);} }, fps => {
       // Update this small readout without rerendering the anatomy panels.
       if (fpsReadout.current) {
         fpsReadout.current.textContent = fps === null ? '' : `${fps} FPS`;
         fpsReadout.current.hidden = fps === null;
       }
     }); engine.current = e; e.setTheme(dark);
-    e.load(percent => { if (!cancelled) setLoadProgress(percent); }).then(() => { if (cancelled) return; setReady(true); setLoadError(null); e.start(); }).catch((err) => { if (cancelled) return; console.error(err); setLoadError(err instanceof Error ? err.message : String(err)); });
-    return () => { cancelled = true; e.dispose(); engine.current = null; };
+    let notification: ReturnType<typeof setTimeout> | undefined;
+    const publish = () => {
+      if (cancelled) return;
+      setVascularReady(e.vascularGeometryReady());
+      if (controlsOpenRef.current) setLoadStates(new Map(e.getLoadStates()));
+    };
+    e.onInteraction = () => { actionRevision.current++; setPendingId(null); };
+    e.load(() => {
+      if (!notification) notification = setTimeout(() => { notification = undefined; publish(); }, 100);
+    }).then(() => { if (cancelled) return; setReady(true); e.start(); publish(); }).catch(err => { if (!cancelled) console.error(err); });
+    return () => { cancelled = true; actionRevision.current++; clearTimeout(notification); e.dispose(); engine.current = null; };
   }, [manifest]);
   useEffect(() => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; engine.current?.setTheme(dark); }, [dark]);
   useEffect(() => { engine.current?.setSelected(selectedId); }, [selectedId]);
@@ -91,53 +122,86 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     try {
       const e = engine.current;
       if (!e) return;
-      if (dsa) { await e.setDsa(null); setDsa(false);setPlacing(false);setQuery(''); }
+      if (dsa) { cancelPlacement();await e.setDsa(null);setDsa(false); }
+      else if(!injectionReady){runRef.current=null;setDsa(true);startPlacement(null);}
       else {
         const flow=await e.prepareDsa();
-        const run = injectionReady?makeDsaRun(manifest,activePreset.id,activePreset.side,flow,injection):{arteries:[],vessels:[],blush:[]};
+        const run = makeDsaRun(manifest,activePreset.id,activePreset.side,flow,injection);
         await e.setDsa(run); setDsaTime(DSA_START); e.setDsaTime(DSA_START);
-        runRef.current=injectionReady?run:null;setDsa(true);
-        if(!injectionReady)startPlacement(null);
+        runRef.current=run;setDsa(true);
       }
     } catch (error) { setDsaError(error instanceof Error ? error.message : String(error)); }
     finally { setDsaBusy(false); }
   };
 
-  const cancelPlacement=()=>{engine.current?.endInjectionPlacement();setPlacing(false);setQuery('');if(!runRef.current){void engine.current?.setDsa(null);setDsa(false);}};
-  const startPlacement=(id:string|null)=>{setPlaying(false);setQuery('');setDsaError(null);setPlacementVessel(id);setPlacing(true);engine.current?.beginInjectionPlacement(id,commitInjection);};
+  const cancelPlacement=()=>{placementRevision.current++;injectionPending.current=false;setDsaBusy(false);engine.current?.endInjectionPlacement();setPlacing(false);setQuery('');if(!runRef.current){void engine.current?.setDsa(null);setDsa(false);}};
+  const startPlacement=(id:string|null)=>{placementRevision.current++;injectionPending.current=false;setPlaying(false);setQuery('');setDsaError(null);setPlacementVessel(id);setPlacing(true);engine.current?.beginInjectionPlacement(id,commitInjection);};
+  const changeArtery=()=>{placementRevision.current++;injectionPending.current=false;setDsaBusy(false);setPlacementVessel(null);setDsaError(null);engine.current?.selectInjectionVessel(null);};
   const commitInjection=async (id:string,point:InjectionPoint|null)=>{
-    if(!point){setPlacementVessel(id);return;}
-    const e=engine.current,flow=e?.getDsaFlow();if(!e||!flow)return;
+    const e=engine.current;if(!e)return;
+    if(!point){
+      const revision=++placementRevision.current;
+      injectionPending.current=false;
+      setPlacementVessel(id);setQuery('');setDsaError(null);e.selectInjectionVessel(id);setDsaBusy(true);
+      try{
+        const flow=await e.prepareInjection();if(revision!==placementRevision.current)return;
+        if(!flow.entries[id]?.selectable)throw Error('No validated injection course for this artery. Choose another artery.');
+      }catch(error){if(revision===placementRevision.current){e.selectInjectionVessel(null);setPlacementVessel(null);setDsaError(error instanceof Error?error.message:String(error));}}
+      finally{if(revision===placementRevision.current)setDsaBusy(false)}
+      return;
+    }
     if(injectionPending.current)return;injectionPending.current=true;
+    const revision=placementRevision.current;
     setDsaBusy(true);setDsaError(null);
     try{
+      const flow=await e.prepareDsa();if(revision!==placementRevision.current)return;
+      point=e.validateInjectionPoint(point);
       const preset=injectionPreset(id),side=byId.get(id)?.side==='right'?'right':'left';
       const run=makeDsaRun(manifest,preset,side,flow,point);
       if(!run.arteries.length)throw Error('No downstream vessels at this point');
-      if(!await e.setDsa(run))return;clearDsaInspection();runRef.current=run;setInjection(point);setInjectionReady(true);setActivePreset({id:preset,side});setPresetSide(side);
+      if(!await e.setDsa(run)||revision!==placementRevision.current)return;clearDsaInspection();runRef.current=run;setInjection(point);setInjectionReady(true);setActivePreset({id:preset,side});setPresetSide(side);
       setDsaTime(DSA_START);e.setDsaTime(DSA_START);cancelPlacement();
-    }catch(error){setDsaError(error instanceof Error?error.message:String(error));}
-    finally{injectionPending.current=false;setDsaBusy(false);}
+    }catch(error){if(revision===placementRevision.current)setDsaError(error instanceof Error?error.message:String(error));}
+    finally{if(revision===placementRevision.current){injectionPending.current=false;setDsaBusy(false);}}
   };
   useEffect(()=>{
     if(!placing)return;const key=(e:KeyboardEvent)=>{if(e.key==='Escape')cancelPlacement();};
     window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);
   },[placing]);
 
+  const cancelPending = () => { actionRevision.current++; setPendingId(null); };
+  const withGeometry = async (id: string, ids: readonly string[], action: () => void) => {
+    const e = engine.current; if (!e) return;
+    const revision = ++actionRevision.current;
+    const pending = ids.some(key => e.getLoadStates().get(key)?.status !== 'ready');
+    setPendingId(pending ? id : null);
+    if (pending) {
+      // Feedback is confined to the anatomy panel, including requests from search.
+      controlsOpenRef.current = true; setControlsOpen(true);
+      setLoadStates(new Map(e.getLoadStates()));
+    }
+    try {
+      await e.ensureGeometry(ids);
+      if (revision !== actionRevision.current || e !== engine.current) return;
+      setPendingId(null); action();
+    } catch {
+      if (revision === actionRevision.current) { setPendingId(null); setLoadStates(new Map(e.getLoadStates())); }
+    }
+  };
   const changeVisibility = (ids: string[], state: LayerState) => setVisibility(old => {
     const next = new Map(old);
     for (const id of ids) next.set(id, state);
     return next;
   });
   const changeClip = (next: typeof clip) => {
-    setFocusedId(null);
+    cancelPending(); setFocusedId(null);
     setClip(next);
   };
 
   const select = (s: Structure) => {
-    if(placing){setPlacementVessel(s.id);setQuery('');engine.current?.selectInjectionVessel(s.id);return;}
+    if(placing){void commitInjection(s.id,null);return;}
     if(dsa){setDsaSelectedId(s.id);setPlaying(false);return;}
-    setSelectedId(s.id); setFocusedId(null); setQuery('');
+    setSelectedId(s.id); setFocusedId(null); setQuery(''); setSearchOpen(false);
     if (s.system === 'vein' && s.asset) {
       const veins = manifest.structures.filter(row => row.system === 'vein' && row.asset).map(row => row.id);
       if (veins.every(id => visibility.get(id) === 'off')) changeVisibility(veins, 'on');
@@ -146,12 +210,17 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       const ids = s.landmark ? [s.id, ...(s.vesselGuide?.surfaceStructureIds ?? [])] : subtrees.get(s.id) ?? [];
       changeVisibility(ids.filter(id => visibility.get(id) === 'off'), 'on');
     }
-    if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
+    void withGeometry(s.id, structureDependencies(s.id, byId, subtrees), () => {
+      engine.current?.setSelected(s.id);
+      if (engine.current?.hasGeometry(s.id) || s.landmark?.point) engine.current?.focus(s.id);
+    });
   };
 
   const applyPreset = async (preset: PresetId) => {
     const ids = presetVesselIds(manifest, preset, presetSide);
     if (!ready || !ids.length) return;
+    cancelPending();
+    try { await engine.current?.ensureGeometry(ids); } catch { controlsOpenRef.current = true; setControlsOpen(true); setLoadStates(new Map(engine.current?.getLoadStates())); return; }
     if (dsa) {
       try {
         const flow=await engine.current!.prepareDsa(),run = makeDsaRun(manifest,preset,presetSide,flow);
@@ -175,19 +244,21 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     setPresetsOpen(false);
   };
 
-  return <div className="atlas-app" onClickCapture={e => {
+  return <div className="atlas-app" ref={app} onClickCapture={e => {
     // Canvas selection clears focus through the engine callback. A browser
     // click emitted after dragging must not clear the focused structure.
     if (!dsa && focusedId && !(e.target as Element).closest('[data-focus-control], .clip-tools, .atlas-canvas, .presets-scrim')) setFocusedId(null);
   }}>
     <div className="atlas-stage" ref={stage} inert={presetsOpen || about} />
-    <header className="identity">
-      <h1>Neurovascular Atlas</h1>
-    </header>
+    <header className="app-header" ref={header}>
+    <div className="identity">
+      <h1><span>Neurovascular</span>{' '}<span>Atlas</span></h1>
+    </div>
     <div className="top-actions">
-      <div className="search-wrap">
+      <div className="search-wrap" data-open={searchOpen}>
+        <button className="mobile-search-toggle icon-btn" aria-label={searchOpen?'Close search':'Open search'} aria-expanded={searchOpen} aria-controls="anatomy-search-input" disabled={(dsa&&!placing) || dsaBusy} onClick={()=>{setSearchOpen(!searchOpen);if(!searchOpen){setControlsOpen(false);controlsOpenRef.current=false;requestAnimationFrame(()=>searchInput.current?.focus());}else setQuery('');}}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></button>
         <span className="search-icon">⌕</span>
-        <input disabled={(dsa&&!placing) || dsaBusy} value={query} onChange={(e)=>setQuery(e.target.value)} placeholder={placing?'Search an artery…':'Search anatomy or alternate name…'} aria-label="Search anatomy" />
+        <input id="anatomy-search-input" ref={searchInput} disabled={(dsa&&!placing) || dsaBusy} value={query} onChange={(e)=>setQuery(e.target.value)} onKeyDown={e=>{if(e.key==='Escape'){setSearchOpen(false);setQuery('');}}} placeholder={placing?'Search an artery…':'Search anatomy or alternate name…'} aria-label="Search anatomy" />
         {query && (!dsa||placing) && <button className="clear" onClick={()=>setQuery('')} aria-label="Clear search">×</button>}
         {query && (!dsa||placing) && <div className="search-results panel">
           {results.length ? results.map((s)=><button key={s.id} onClick={()=>select(s)}>
@@ -198,13 +269,19 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       <button className="icon-btn" disabled={dsa} onClick={()=>setDark(!dark)} title="Toggle theme">{dark?'☀':'◐'}</button>
       <button className="icon-btn" onClick={()=>setAbout(true)} title={`About v${manifest.release}`}>i</button>
     </div>
+    <button className="mobile-layers panel panel-title" hidden={dsa} aria-label="Layers" title="Layers" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={()=>{setSearchOpen(false);toggleLayers();}}><span className="layers-label">Layers</span><svg className="layers-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="m3 7 9-4 9 4-9 4-9-4Zm0 5 9 4 9-4M3 17l9 4 9-4"/></svg></button>
+    </header>
 
     <div className="bottom-dock">
     <div className="panel-stack" hidden={dsa&&(!inspected||placing)}>
     <section className="left-panel panel" hidden={dsa}>
-      <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={()=>setControlsOpen(!controlsOpen)}>Layers and anatomy</button>
+      <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={toggleLayers}>Layers</button>
       <div className="panel-body" id="anatomy-panel-body" hidden={!controlsOpen}>
-      <StructureTree manifest={manifest} byId={byId} subtrees={subtrees} visibility={visibility} selectedId={selectedId} onSelect={select} onVisibility={changeVisibility} />
+      <StructureTree manifest={manifest} byId={byId} subtrees={subtrees} visibility={visibility} selectedId={selectedId} loadStates={loadStates} pendingId={pendingId} onSelect={select} onRetry={id=>{void withGeometry(id, structureDependencies(id, byId, subtrees), () => {});}} onVisibility={(ids, state, id) => {
+        changeVisibility(ids, state);
+        if (state === 'off') cancelPending();
+        else void withGeometry(id, structureDependencies(id, byId, subtrees), () => {});
+      }} />
       </div>
     </section>
 
@@ -215,39 +292,52 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       {!dsa && <div className="selection-actions">
         <button data-focus-control aria-pressed={focusedId !== null} disabled={!ready || !canFocus} onClick={() => {
           if (!selected) return;
-          setFocusedId(focusedId === selected.id ? null : selected.id);
-          if (focusedId !== selected.id) engine.current?.focus(selected.id);
+          if (focusedId === selected.id) { cancelPending(); setFocusedId(null); }
+          else void withGeometry(selected.id, structureDependencies(selected.id, byId, subtrees), () => { setFocusedId(selected.id); engine.current?.focus(selected.id); });
         }}>Focus</button>
-        <button disabled={!ready || !selectedGeometry.length} onClick={() => changeVisibility(selectedGeometry, selectedHidden ? 'on' : 'off')}>{selectedHidden ? 'Show' : 'Hide'}</button>
+        <button disabled={!ready || !selectedGeometry.length} onClick={() => {
+          changeVisibility(selectedGeometry, selectedHidden ? 'on' : 'off');
+          if (!selectedHidden) cancelPending();
+          else if (selected) void withGeometry(selected.id, structureDependencies(selected.id, byId, subtrees), () => {});
+        }}>{selectedHidden ? 'Show' : 'Hide'}</button>
       </div>}
-      <div className="views"><button onClick={()=>engine.current?.setView('front')}>AP</button><button onClick={()=>engine.current?.setView('left')}>L</button><button onClick={()=>engine.current?.setView('right')}>R</button><button onClick={()=>engine.current?.setView('superior')}>Sup</button><button onClick={()=>engine.current?.setView('inferior')}>Inf</button></div>
+      <div className="views"><button onClick={()=>{cancelPending();engine.current?.setView('front')}}>AP</button><button onClick={()=>{cancelPending();engine.current?.setView('left')}}>L</button><button onClick={()=>{cancelPending();engine.current?.setView('right')}}>R</button><button onClick={()=>{cancelPending();engine.current?.setView('superior')}}>Sup</button><button onClick={()=>{cancelPending();engine.current?.setView('inferior')}}>Inf</button></div>
       <button className="bookmark-button" data-focus-control disabled={!ready} aria-label="Anatomical presets" aria-haspopup="dialog" aria-expanded={presetsOpen} onClick={() => setPresetsOpen(true)}><BookmarkIcon /></button>
-      <button className="bookmark-button dsa-button" data-focus-control disabled={!ready || dsaBusy} aria-label="DSA mode" title={dsaBusy ? 'Preparing DSA…' : 'DSA mode'} aria-pressed={dsa} onClick={toggleDsa}><DsaIcon /></button>
+      <button className="bookmark-button dsa-button" data-focus-control disabled={!ready || !vascularReady || dsaBusy} aria-label="DSA mode" title={dsaBusy ? 'Preparing DSA…' : 'DSA mode'} aria-pressed={dsa} onClick={toggleDsa}><DsaIcon /></button>
       {!dsa && <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>changeClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>changeClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>changeClip({...clip,offset:Number(e.target.value)})}/></div>}
     </div>
-    {dsa && (placing?<InjectionControls name={placementVessel?byId.get(placementVessel)?.name??null:null} busy={dsaBusy} onChange={()=>{setPlacementVessel(null);engine.current?.selectInjectionVessel(null);}} onCancel={cancelPlacement}/>:<DsaControls time={dsaTime} playing={playing} territory={injection?byId.get(injection.id)!.name:`${ANATOMICAL_PRESETS.find(p=>p.id===activePreset.id)!.label} · ${activePreset.side}`} onTime={setDsaTime} onPlaying={setPlaying} onPlacement={()=>startPlacement(null)} busy={dsaBusy}/>)}
+    {dsa && (placing?<InjectionControls name={placementVessel?byId.get(placementVessel)?.name??null:null} busy={dsaBusy} onChange={changeArtery} onCancel={cancelPlacement}/>:<DsaControls time={dsaTime} playing={playing} onTime={setDsaTime} onPlaying={setPlaying} onPlacement={()=>startPlacement(null)} busy={dsaBusy}/>)}
     {dsaError && <div className="dsa-error panel" role="alert">{dsaError}<button aria-label="Dismiss DSA error" onClick={()=>setDsaError(null)}>×</button></div>}
     </div>
 
     <div className="fps-readout" ref={fpsReadout} aria-label="Frame rate" aria-live="off" hidden />
-    {!ready && !loadError && <Loading progress={loadProgress} />}
-    {loadError && <div className="loading panel load-error"><b>Anatomy failed to load</b><span>{loadError}</span></div>}
     {about && <About manifest={manifest} onClose={()=>setAbout(false)} />}
     {presetsOpen && <PresetModal side={presetSide} onSideChange={setPresetSide} onApply={applyPreset} onClose={closePresets} />}
   </div>;
 }
 
-function StructureTree({manifest,byId,subtrees,visibility,selectedId,onSelect,onVisibility}:{manifest:AnatomyManifest;byId:Map<string,Structure>;subtrees:Map<string,string[]>;visibility:ReadonlyMap<string,LayerState>;selectedId:string|null;onSelect:(s:Structure)=>void;onVisibility:(ids:string[],state:LayerState)=>void}) {
+function StructureTree({manifest,byId,subtrees,visibility,selectedId,loadStates,pendingId,onSelect,onRetry,onVisibility}:{manifest:AnatomyManifest;byId:Map<string,Structure>;subtrees:Map<string,string[]>;visibility:ReadonlyMap<string,LayerState>;selectedId:string|null;loadStates:ReadonlyMap<string,LoadState>;pendingId:string|null;onSelect:(s:Structure)=>void;onRetry:(id:string)=>void;onVisibility:(ids:string[],state:LayerState,id:string)=>void}) {
   const [open,setOpen]=useState<Set<string>>(() => new Set());
+  useEffect(() => {
+    if (!pendingId) return;
+    setOpen(old => { const next = new Set(old); let id: string | null | undefined = byId.get(pendingId)?.parent;
+      while (id) { next.add(id); id = byId.get(id)?.parent; } return next; });
+  }, [pendingId, byId]);
   const toggle=(id:string)=>setOpen((old)=>{const n=new Set(old);n.has(id)?n.delete(id):n.add(id);return n});
   const node=(id:string,depth=0):ReactNode=>{const s=byId.get(id);if(!s)return null;const has=s.children.length>0;const ids=subtrees.get(id)??[];
     const states=new Set(ids.map(key=>visibility.get(key)??DEFAULT_VISIBILITY[s.system]));
     const state:LayerState|'mixed'=states.size>1?'mixed':states.values().next().value??'off';
+    const deps = structureDependencies(id, byId, subtrees);
+    const failed = deps.some(key => loadStates.get(key)?.status === 'error');
+    const loading = deps.some(key => loadStates.get(key)?.status !== 'ready');
+    const waiting = pendingId === id || (pendingId !== null && ids.includes(pendingId));
     const next=state==='mixed'?'on':NEXT[state];return <div key={id}>
-    <div className={`tree-row ${selectedId===id?'selected':''} ${ids.length?'has-geometry':'planned'}`} style={{paddingLeft:8+depth*14}}>
+    <div className={`tree-row ${selectedId===id?'selected':''} ${ids.length?'has-geometry':'planned'}`} data-structure-id={id} aria-busy={loading && !failed} style={{paddingLeft:`min(${8+depth*14}px, var(--tree-indent-limit, 100%))`}}>
       <button className="twisty" onClick={()=>has&&toggle(id)} aria-label={`${open.has(id)?'Collapse':'Expand'} ${s.name}`} aria-expanded={has?open.has(id):undefined}>{has?(open.has(id)?'⌄':'›'):''}</button>
       <button className="tree-name" onClick={()=>onSelect(s)}><span>{s.name}</span>{s.landmark&&<small>{s.landmark.point?'landmark':'unlocated'}</small>}</button>
-      <button className={`tree-visibility state ${state}`} data-state={state} disabled={!ids.length} aria-label={`${s.name}: ${state==='mixed'?'mixed visibility':STATE_LABEL[state]}. Set ${STATE_LABEL[next]}`} aria-pressed={state==='mixed'?'mixed':state==='on'} onClick={()=>onVisibility(ids,next)}><span /></button>
+      {failed ? <button className="structure-retry" aria-label={`Retry loading ${s.name}`} onClick={()=>onRetry(id)}>Retry</button>
+        : loading && <span className="structure-loading" role="status" aria-label={`${s.name}: ${waiting?'Please wait':'loading'}`}><span className="structure-spinner" aria-hidden="true" />{waiting&&<small>Please wait…</small>}</span>}
+      <button className={`tree-visibility state ${state}`} data-state={state} disabled={!ids.length} aria-label={`${s.name}: ${state==='mixed'?'mixed visibility':STATE_LABEL[state]}. Set ${STATE_LABEL[next]}`} aria-pressed={state==='mixed'?'mixed':state==='on'} onClick={()=>onVisibility(ids,next,id)}><span /></button>
     </div>{has&&open.has(id)&&s.children.map((c)=>node(c,depth+1))}
   </div>};
   return <div className="tree">{manifest.roots.map((r)=>node(r))}</div>;

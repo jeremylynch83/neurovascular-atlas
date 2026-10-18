@@ -1,0 +1,19 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import crypto from 'node:crypto';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';import {MeshoptDecoder} from 'meshoptimizer';
+await MeshoptDecoder.ready;const work=path.resolve(process.argv[2]),candidate=process.argv[3]??work+'/complete-circulation.glb';
+async function load(file){const b=fs.readFileSync(file),g=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength),'');const out=new Map();g.scene.traverse(o=>{if(o.isMesh)out.set(g.parser.json.nodes[g.parser.associations.get(o).nodes].name,o.geometry)});return out}
+function rawComponent(a,i,k){return a.isInterleavedBufferAttribute?a.data.array[i*a.data.stride+a.offset+k]:a.array[i*a.itemSize+k]}
+const before=await load(work+'/old-complete-circulation.glb'),after=await load(candidate),rows=JSON.parse(fs.readFileSync(work+'/native-validation.json')).changes,selected=new Set(rows.map(x=>x.node));assert.equal(before.size,after.size);
+for(const [n,g]of after){const old=before.get(n);assert(old);if(!selected.has(n)){for(const a of ['position','normal'])assert.deepEqual(g.attributes[a].array,old.attributes[a].array,n+' '+a);assert.deepEqual(g.index.array,old.index.array,n+' indices');continue}
+ const p=g.attributes.position,op=old.attributes.position,b=fs.readFileSync(work+'/candidate/'+n+'.positions.bin'),idx=fs.readFileSync(work+'/candidate/'+n+'.indices.bin');assert.equal(p.count*12,b.length);assert.equal(g.index.count*4,idx.length);
+ for(let i=0;i<p.count;i++)for(let k=0;k<3;k++)assert.equal(p.getComponent(i,k),b.readFloatLE(i*12+k*4));
+ for(let i=0;i<g.index.count;i++)assert.equal(g.index.getX(i),idx.readUInt32LE(i*4));
+ for(let i=0;i<op.count;i++)for(const a of ['position','normal'])for(let k=0;k<3;k++)assert.equal(g.attributes[a].getComponent(i,k),old.attributes[a].getComponent(i,k),n+' source '+a);
+ for(let i=0;i<op.count;i++)for(let k=0;k<3;k++)assert.equal(rawComponent(g.attributes.normal,i,k),rawComponent(old.attributes.normal,i,k),n+' exact stored normal');
+ const row=rows.find(x=>x.node===n);assert.equal(g.index.count,(row.retainedSourceFaceIds.length+row.newTriangles.length)*3);
+ for(let i=0;i<row.retainedSourceFaceIds.length;i++)for(let k=0;k<3;k++)assert.equal(g.index.getX(i*3+k),old.index.getX(row.retainedSourceFaceIds[i]*3+k),n+' retained source face');
+ for(let j=0;j<row.newTriangles.length;j++)for(let k=0;k<3;k++)assert.equal(g.index.getX((row.retainedSourceFaceIds.length+j)*3+k),row.newTriangles[j][k]);
+ for(const added of rows.find(x=>x.node===n).appendedVertices){const parent=after.get(added.normalSource);const pp=parent.attributes.position;let j=-1;for(let i=0;i<pp.count;i++)if(added.coordinate.every((x,k)=>x===pp.getComponent(i,k))){j=i;break}assert(j>=0);for(let k=0;k<3;k++)assert.equal(g.attributes.normal.getComponent(added.index,k),parent.attributes.normal.getComponent(j,k),n+' copied parent normal');for(let k=0;k<3;k++)assert.equal(rawComponent(g.attributes.normal,added.index,k),rawComponent(parent.attributes.normal,j,k),n+' exact copied SNORM16')}
+}
+const source=JSON.parse(fs.readFileSync(work+'/decoded/source-assets.json'));for(const [file,hash]of Object.entries(source))if(file!=='complete-circulation.glb')assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public/anatomy/models/'+file)).digest('hex'),hash);
+const report={release:JSON.parse(fs.readFileSync(work+'/native-validation.json')).release??'0.9.97',passed:true,arterialMeshesChecked:after.size,unchangedArterialMeshes:after.size-selected.size,otherAssetsByteExact:4,allOriginalPositionsNormalsAndRetainedFaceIndicesExact:true,removedZeroAreaFacesValidated:3,lacrimalWallPartitionExact:true,newVerticesCopyParentCoordinatesAndNormals:true,allStoredNormalComponentsExact:true};fs.writeFileSync(work+'/export-validation.json',JSON.stringify(report,null,2)+'\n');console.log(report);

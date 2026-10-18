@@ -1,0 +1,3134 @@
+{
+  "release": "0.9.100",
+  "baseline": "0.9.99",
+  "batch": 8,
+  "passedLocalNumericalGates": true,
+  "anatomicalAcceptance": false,
+  "reviewedArterialMeshes": 766,
+  "nativeWallGapsClosed": 15,
+  "addedTriangles": 53,
+  "changedMeshes": 5,
+  "appendedVertices": 23,
+  "newWorldCoordinates": 0,
+  "existingVertexDisplacementMm": 0,
+  "totalAddedAreaMm2": 0.004119046060913609,
+  "maximumPatchSpanMm": 0.1618521591483428,
+  "junctions": {
+    "PCA P2-P3 left / PCA anterior inferior temporal left": {
+      "gaps": 4,
+      "triangles": 8,
+      "closedBoundaryEdges": 16
+    },
+    "Medial posterior choroidal left / PCA P2-P3 left": {
+      "gaps": 8,
+      "triangles": 32,
+      "closedBoundaryEdges": 48
+    },
+    "ACA A2 right / Anterior communicating": {
+      "gaps": 1,
+      "triangles": 2,
+      "closedBoundaryEdges": 4
+    },
+    "Vertebral V3 right / Vertebral V4 right": {
+      "gaps": 1,
+      "triangles": 9,
+      "closedBoundaryEdges": 11
+    },
+    "ACA A1 right / Terminal ICA perforator 1 right": {
+      "gaps": 1,
+      "triangles": 2,
+      "closedBoundaryEdges": 4
+    }
+  },
+  "interfaces": [
+    {
+      "one": "ACA A1 right",
+      "two": "Terminal ICA perforator 1 right",
+      "before": {
+        "sharedCoordinates": 79,
+        "oppositePairedNativeEdges": 69
+      },
+      "after": {
+        "sharedCoordinates": 80,
+        "oppositePairedNativeEdges": 71
+      }
+    },
+    {
+      "one": "ACA A2 right",
+      "two": "Anterior communicating",
+      "before": {
+        "sharedCoordinates": 42,
+        "oppositePairedNativeEdges": 39
+      },
+      "after": {
+        "sharedCoordinates": 43,
+        "oppositePairedNativeEdges": 41
+      }
+    },
+    {
+      "one": "Medial posterior choroidal left",
+      "two": "PCA P2-P3 left",
+      "before": {
+        "sharedCoordinates": 25,
+        "oppositePairedNativeEdges": 12
+      },
+      "after": {
+        "sharedCoordinates": 41,
+        "oppositePairedNativeEdges": 36
+      }
+    },
+    {
+      "one": "PCA P2-P3 left",
+      "two": "PCA anterior inferior temporal left",
+      "before": {
+        "sharedCoordinates": 27,
+        "oppositePairedNativeEdges": 21
+      },
+      "after": {
+        "sharedCoordinates": 31,
+        "oppositePairedNativeEdges": 29
+      }
+    },
+    {
+      "one": "Vertebral V3 right",
+      "two": "Vertebral V4 right",
+      "before": {
+        "sharedCoordinates": 384,
+        "oppositePairedNativeEdges": 380
+      },
+      "after": {
+        "sharedCoordinates": 385,
+        "oppositePairedNativeEdges": 382
+      }
+    }
+  ],
+  "nativeValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A1 right",
+        "sourceVertices": 8862,
+        "sourceTriangles": 17166,
+        "candidateVertices": 8863,
+        "candidateTriangles": 17168,
+        "retainedSourceTriangles": 17166,
+        "changedTriangles": 2,
+        "protectedSourceAttachments": [
+          {
+            "other": "Anterior communicating",
+            "coordinates": 53,
+            "missing": 0
+          },
+          {
+            "other": "ICA terminus right",
+            "coordinates": 106,
+            "missing": 0
+          },
+          {
+            "other": "MCA M1 right",
+            "coordinates": 123,
+            "missing": 0
+          },
+          {
+            "other": "Medial lenticulostriate right",
+            "coordinates": 84,
+            "missing": 0
+          },
+          {
+            "other": "Terminal ICA perforator 1 right",
+            "coordinates": 79,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "ACA A2 right",
+        "sourceVertices": 3945,
+        "sourceTriangles": 7389,
+        "candidateVertices": 3946,
+        "candidateTriangles": 7391,
+        "retainedSourceTriangles": 7389,
+        "changedTriangles": 2,
+        "protectedSourceAttachments": [
+          {
+            "other": "ACA A3 right",
+            "coordinates": 64,
+            "missing": 0
+          },
+          {
+            "other": "ACA frontopolar right",
+            "coordinates": 114,
+            "missing": 0
+          },
+          {
+            "other": "ACA orbitofrontal right",
+            "coordinates": 99,
+            "missing": 0
+          },
+          {
+            "other": "ACom septal perforator right",
+            "coordinates": 6,
+            "missing": 0
+          },
+          {
+            "other": "Anterior communicating",
+            "coordinates": 42,
+            "missing": 0
+          },
+          {
+            "other": "Recurrent artery of Heubner right",
+            "coordinates": 82,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "sourceVertices": 8810,
+        "sourceTriangles": 17361,
+        "candidateVertices": 8826,
+        "candidateTriangles": 17393,
+        "retainedSourceTriangles": 17361,
+        "changedTriangles": 32,
+        "protectedSourceAttachments": [
+          {
+            "other": "Medial posterior choroidal plexal representative left",
+            "coordinates": 89,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "sourceVertices": 20391,
+        "sourceTriangles": 38377,
+        "candidateVertices": 20395,
+        "candidateTriangles": 38385,
+        "retainedSourceTriangles": 38377,
+        "changedTriangles": 8,
+        "protectedSourceAttachments": [
+          {
+            "other": "Davidoff and Schechter artery left",
+            "coordinates": 136,
+            "missing": 0
+          },
+          {
+            "other": "Lateral posterior choroidal left",
+            "coordinates": 128,
+            "missing": 0
+          },
+          {
+            "other": "PCA P1 left",
+            "coordinates": 142,
+            "missing": 0
+          },
+          {
+            "other": "PCA anterior inferior temporal left",
+            "coordinates": 27,
+            "missing": 0
+          },
+          {
+            "other": "PCA calcarine left",
+            "coordinates": 40,
+            "missing": 0
+          },
+          {
+            "other": "PCA parieto-occipital left",
+            "coordinates": 202,
+            "missing": 0
+          },
+          {
+            "other": "PCA posterior inferior temporal left",
+            "coordinates": 170,
+            "missing": 0
+          },
+          {
+            "other": "PCA short circumflex left",
+            "coordinates": 497,
+            "missing": 0
+          },
+          {
+            "other": "PCA splenial left",
+            "coordinates": 129,
+            "missing": 0
+          },
+          {
+            "other": "Posterior communicating left",
+            "coordinates": 188,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "Vertebral V3 right",
+        "sourceVertices": 9823,
+        "sourceTriangles": 18851,
+        "candidateVertices": 9824,
+        "candidateTriangles": 18860,
+        "retainedSourceTriangles": 18851,
+        "changedTriangles": 9,
+        "protectedSourceAttachments": [
+          {
+            "other": "Posterior meningeal VA right",
+            "coordinates": 80,
+            "missing": 0
+          },
+          {
+            "other": "VA muscular C1 right",
+            "coordinates": 79,
+            "missing": 0
+          },
+          {
+            "other": "Vertebral V2 right",
+            "coordinates": 66,
+            "missing": 0
+          },
+          {
+            "other": "Vertebral V4 right",
+            "coordinates": 384,
+            "missing": 0
+          }
+        ]
+      }
+    ],
+    "crossings": [],
+    "trianglePairsChecked": 620,
+    "clearance": [
+      {
+        "node": "ACA A1 right",
+        "target": "brain.caudate-nucleus.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "brain.lateral-ventricle.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "brain.olfactory-sulcus.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "brain.orbital-gyri.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "bone.frontal",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 36.53295605361477
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A1 right",
+        "target": "bone.temporal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 36.12893021290822
+      },
+      {
+        "node": "ACA A2 right",
+        "target": "brain.lateral-ventricle.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A2 right",
+        "target": "brain.straight-gyrus-gyrus-rectus.right",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A2 right",
+        "target": "bone.frontal",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ACA A2 right",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 48.86913307205106
+      },
+      {
+        "node": "ACA A2 right",
+        "target": "bone.parietal.right",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": 49.483857182256344
+      },
+      {
+        "node": "ACA A2 right",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 11,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.base-of-peduncle.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": 0.8532737974301767
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.choroid-plexus.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": 8.363938788714941
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.fornix.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.hippocampus.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.lateral-ventricle.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": 2.501782162243954
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "brain.optic-tract.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": 41.51044890042274
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 150,
+        "minimumOpenTargetClearanceMarginMm": 20.10796043493851
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "brain.choroid-plexus.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": 7.711254690932745
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "brain.fornix.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "brain.hippocampus.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "brain.lateral-ventricle.left",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": 2.3161460517248895
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "bone.parietal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": 40.51578008074683
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 44,
+        "minimumOpenTargetClearanceMarginMm": 18.04823058852851
+      },
+      {
+        "node": "Vertebral V3 right",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 39,
+        "minimumOpenTargetClearanceMarginMm": null
+      }
+    ],
+    "nativeNetworks": [
+      {
+        "id": "arterial-native-affected-neighbourhood",
+        "boundaryEdgesBefore": 5277,
+        "boundaryEdgesAfter": 5194,
+        "preExistingBadEdges": 8,
+        "candidateBadEdges": 8,
+        "newBadEdges": 0
+      }
+    ],
+    "issues": [],
+    "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+  },
+  "globalEdgeValidation": {
+    "passed": true,
+    "reviewedArterialMeshes": 766,
+    "changedCoordinateEdges": 121,
+    "sourceContributors": [
+      {
+        "node": "ACA A1 right",
+        "edgeIncidences": 2
+      },
+      {
+        "node": "ACA A2 right",
+        "edgeIncidences": 2
+      },
+      {
+        "node": "Anterior communicating",
+        "edgeIncidences": 2
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "edgeIncidences": 24
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "edgeIncidences": 32
+      },
+      {
+        "node": "PCA anterior inferior temporal left",
+        "edgeIncidences": 8
+      },
+      {
+        "node": "Terminal ICA perforator 1 right",
+        "edgeIncidences": 2
+      },
+      {
+        "node": "Vertebral V3 right",
+        "edgeIncidences": 9
+      },
+      {
+        "node": "Vertebral V4 right",
+        "edgeIncidences": 2
+      }
+    ],
+    "edgesChecked": 121,
+    "boundaryEdgesClosed": 83,
+    "issues": [],
+    "edges": [
+      {
+        "edge": [
+          [
+            -21.11380386352539,
+            -65.9863510131836,
+            76.26221466064453
+          ],
+          [
+            -21.109479904174805,
+            -65.99066925048828,
+            76.25357055664062
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -21.11380386352539,
+            -65.9863510131836,
+            76.26221466064453
+          ],
+          [
+            -21.109479904174805,
+            -65.99066925048828,
+            76.25788879394531
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -21.109479904174805,
+            -65.99066925048828,
+            76.25357055664062
+          ],
+          [
+            -21.109479904174805,
+            -65.99066925048828,
+            76.25788879394531
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -21.109479904174805,
+            -65.99066925048828,
+            76.25357055664062
+          ],
+          [
+            -21.08785629272461,
+            -66.00364685058594,
+            76.22761535644531
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -21.109479904174805,
+            -65.99066925048828,
+            76.25788879394531
+          ],
+          [
+            -21.08785629272461,
+            -66.00364685058594,
+            76.22761535644531
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.997039794921875,
+            -66.09446716308594,
+            76.11085510253906
+          ],
+          [
+            -20.997039794921875,
+            -66.09446716308594,
+            76.11518096923828
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.997039794921875,
+            -66.09446716308594,
+            76.11085510253906
+          ],
+          [
+            -20.997039794921875,
+            -66.09014129638672,
+            76.11518096923828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.997039794921875,
+            -66.09446716308594,
+            76.11085510253906
+          ],
+          [
+            -20.97541618347168,
+            -66.12041473388672,
+            76.09355163574219
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.997039794921875,
+            -66.09446716308594,
+            76.11518096923828
+          ],
+          [
+            -20.997039794921875,
+            -66.09014129638672,
+            76.11518096923828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.997039794921875,
+            -66.09446716308594,
+            76.11518096923828
+          ],
+          [
+            -20.97541618347168,
+            -66.12041473388672,
+            76.09355163574219
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.96244239807129,
+            -66.14203643798828,
+            76.08058166503906
+          ],
+          [
+            -20.940818786621094,
+            -66.18095397949219,
+            76.05463409423828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.96244239807129,
+            -66.14203643798828,
+            76.08058166503906
+          ],
+          [
+            -20.940818786621094,
+            -66.18095397949219,
+            76.0589599609375
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.940818786621094,
+            -66.18960571289062,
+            76.05463409423828
+          ],
+          [
+            -20.940818786621094,
+            -66.18095397949219,
+            76.05463409423828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.940818786621094,
+            -66.18960571289062,
+            76.05463409423828
+          ],
+          [
+            -20.940818786621094,
+            -66.18095397949219,
+            76.0589599609375
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.940818786621094,
+            -66.18095397949219,
+            76.05463409423828
+          ],
+          [
+            -20.940818786621094,
+            -66.18095397949219,
+            76.0589599609375
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.936494827270508,
+            -66.19825744628906,
+            76.05030822753906
+          ],
+          [
+            -20.93216896057129,
+            -66.20258331298828,
+            76.04598236083984
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.936494827270508,
+            -66.19825744628906,
+            76.05030822753906
+          ],
+          [
+            -20.93216896057129,
+            -66.20258331298828,
+            76.05030822753906
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.93216896057129,
+            -66.20258331298828,
+            76.04598236083984
+          ],
+          [
+            -20.93216896057129,
+            -66.20258331298828,
+            76.05030822753906
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.93216896057129,
+            -66.20258331298828,
+            76.04598236083984
+          ],
+          [
+            -20.9191951751709,
+            -66.24150085449219,
+            76.03301239013672
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -20.93216896057129,
+            -66.20258331298828,
+            76.05030822753906
+          ],
+          [
+            -20.9191951751709,
+            -66.24150085449219,
+            76.03301239013672
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023508071899414,
+            -64.74857330322266,
+            77.79017639160156
+          ],
+          [
+            -19.023502349853516,
+            -64.74845886230469,
+            77.79020690917969
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023508071899414,
+            -64.74857330322266,
+            77.79017639160156
+          ],
+          [
+            -19.02338409423828,
+            -64.75129699707031,
+            77.79070281982422
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023508071899414,
+            -64.74857330322266,
+            77.79017639160156
+          ],
+          [
+            -19.023378372192383,
+            -64.75118255615234,
+            77.79073333740234
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023508071899414,
+            -64.74857330322266,
+            77.79017639160156
+          ],
+          [
+            -19.020681381225586,
+            -64.7624740600586,
+            77.78448486328125
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023502349853516,
+            -64.74845886230469,
+            77.79020690917969
+          ],
+          [
+            -19.023378372192383,
+            -64.75118255615234,
+            77.79073333740234
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023502349853516,
+            -64.74845886230469,
+            77.79020690917969
+          ],
+          [
+            -19.020681381225586,
+            -64.7278823852539,
+            77.7974624633789
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023502349853516,
+            -64.74845886230469,
+            77.79020690917969
+          ],
+          [
+            -19.020681381225586,
+            -64.72355651855469,
+            77.7974624633789
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.02338409423828,
+            -64.75129699707031,
+            77.79070281982422
+          ],
+          [
+            -19.023378372192383,
+            -64.75118255615234,
+            77.79073333740234
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.02338409423828,
+            -64.75129699707031,
+            77.79070281982422
+          ],
+          [
+            -19.020681381225586,
+            -64.76679992675781,
+            77.78448486328125
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.02338409423828,
+            -64.75129699707031,
+            77.79070281982422
+          ],
+          [
+            -19.020681381225586,
+            -64.7624740600586,
+            77.78448486328125
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.023378372192383,
+            -64.75118255615234,
+            77.79073333740234
+          ],
+          [
+            -19.020681381225586,
+            -64.7278823852539,
+            77.7974624633789
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.7927474975586,
+            77.77584075927734
+          ],
+          [
+            -19.020681381225586,
+            -64.76679992675781,
+            77.78448486328125
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.7927474975586,
+            77.77584075927734
+          ],
+          [
+            -19.020681381225586,
+            -64.7624740600586,
+            77.78448486328125
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.7927474975586,
+            77.77584075927734
+          ],
+          [
+            -19.016357421875,
+            -64.80572509765625,
+            77.77151489257812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.7927474975586,
+            77.77584075927734
+          ],
+          [
+            -19.016357421875,
+            -64.80139923095703,
+            77.77151489257812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.76679992675781,
+            77.78448486328125
+          ],
+          [
+            -19.020681381225586,
+            -64.7624740600586,
+            77.78448486328125
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.7278823852539,
+            77.7974624633789
+          ],
+          [
+            -19.020681381225586,
+            -64.72355651855469,
+            77.7974624633789
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.7278823852539,
+            77.7974624633789
+          ],
+          [
+            -19.020681381225586,
+            -64.70626068115234,
+            77.80178833007812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.020681381225586,
+            -64.72355651855469,
+            77.7974624633789
+          ],
+          [
+            -19.020681381225586,
+            -64.70626068115234,
+            77.80178833007812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81436920166016,
+            77.77151489257812
+          ],
+          [
+            -19.016357421875,
+            -64.81005096435547,
+            77.7671890258789
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81436920166016,
+            77.77151489257812
+          ],
+          [
+            -19.016357421875,
+            -64.80572509765625,
+            77.77151489257812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81436920166016,
+            77.77151489257812
+          ],
+          [
+            -19.012033462524414,
+            -64.83599853515625,
+            77.75853729248047
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81436920166016,
+            77.77151489257812
+          ],
+          [
+            -19.012033462524414,
+            -64.83167266845703,
+            77.75853729248047
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81005096435547,
+            77.7671890258789
+          ],
+          [
+            -19.016357421875,
+            -64.80572509765625,
+            77.77151489257812
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81005096435547,
+            77.7671890258789
+          ],
+          [
+            -19.016357421875,
+            -64.80139923095703,
+            77.77151489257812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.81005096435547,
+            77.7671890258789
+          ],
+          [
+            -19.012033462524414,
+            -64.83167266845703,
+            77.75853729248047
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.016357421875,
+            -64.80572509765625,
+            77.77151489257812
+          ],
+          [
+            -19.016357421875,
+            -64.80139923095703,
+            77.77151489257812
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.012033462524414,
+            -64.83599853515625,
+            77.75853729248047
+          ],
+          [
+            -19.012033462524414,
+            -64.83167266845703,
+            77.75853729248047
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.012033462524414,
+            -64.83599853515625,
+            77.75853729248047
+          ],
+          [
+            -19.007707595825195,
+            -64.84032440185547,
+            77.75421142578125
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -19.012033462524414,
+            -64.83167266845703,
+            77.75853729248047
+          ],
+          [
+            -19.007707595825195,
+            -64.84032440185547,
+            77.75421142578125
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.981760025024414,
+            -64.90951538085938,
+            77.71529388427734
+          ],
+          [
+            -18.981760025024414,
+            -64.90518951416016,
+            77.71529388427734
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.981760025024414,
+            -64.90951538085938,
+            77.71529388427734
+          ],
+          [
+            -18.981760025024414,
+            -64.90518951416016,
+            77.71961975097656
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.981760025024414,
+            -64.90951538085938,
+            77.71529388427734
+          ],
+          [
+            -18.973112106323242,
+            -64.91816711425781,
+            77.7066421508789
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.981760025024414,
+            -64.90518951416016,
+            77.71529388427734
+          ],
+          [
+            -18.981760025024414,
+            -64.90518951416016,
+            77.71961975097656
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.981760025024414,
+            -64.90518951416016,
+            77.71529388427734
+          ],
+          [
+            -18.973112106323242,
+            -64.91816711425781,
+            77.7066421508789
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.973112106323242,
+            -64.9224853515625,
+            77.7066421508789
+          ],
+          [
+            -18.962230682373047,
+            -64.93563842773438,
+            77.69534301757812
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.973112106323242,
+            -64.9224853515625,
+            77.7066421508789
+          ],
+          [
+            -18.96222686767578,
+            -64.93682861328125,
+            77.6955795288086
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.962230682373047,
+            -64.93563842773438,
+            77.69534301757812
+          ],
+          [
+            -18.96222686767578,
+            -64.93682861328125,
+            77.6955795288086
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.962230682373047,
+            -64.93563842773438,
+            77.69534301757812
+          ],
+          [
+            -18.962087631225586,
+            -64.93584442138672,
+            77.69518280029297
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.96222686767578,
+            -64.93682861328125,
+            77.6955795288086
+          ],
+          [
+            -18.962087631225586,
+            -64.93584442138672,
+            77.69518280029297
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.96222686767578,
+            -64.93682861328125,
+            77.6955795288086
+          ],
+          [
+            -18.96208381652832,
+            -64.9370346069336,
+            77.69541931152344
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.962087631225586,
+            -64.93584442138672,
+            77.69518280029297
+          ],
+          [
+            -18.96208381652832,
+            -64.9370346069336,
+            77.69541931152344
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.962087631225586,
+            -64.93584442138672,
+            77.69518280029297
+          ],
+          [
+            -18.961400985717773,
+            -64.93690490722656,
+            77.69419860839844
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.96208381652832,
+            -64.9370346069336,
+            77.69541931152344
+          ],
+          [
+            -18.961400985717773,
+            -64.93690490722656,
+            77.69419860839844
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.96208381652832,
+            -64.9370346069336,
+            77.69541931152344
+          ],
+          [
+            -18.96013641357422,
+            -64.93978881835938,
+            77.69367218017578
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.961400985717773,
+            -64.93690490722656,
+            77.69419860839844
+          ],
+          [
+            -18.96013641357422,
+            -64.93978881835938,
+            77.69367218017578
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.961400985717773,
+            -64.93690490722656,
+            77.69419860839844
+          ],
+          [
+            -18.955812454223633,
+            -64.9441146850586,
+            77.68502044677734
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.96013641357422,
+            -64.93978881835938,
+            77.69367218017578
+          ],
+          [
+            -18.955812454223633,
+            -64.9441146850586,
+            77.68502044677734
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.955812454223633,
+            -64.9441146850586,
+            77.68502044677734
+          ],
+          [
+            -18.940488815307617,
+            -64.96044921875,
+            77.66871643066406
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.955812454223633,
+            -64.9441146850586,
+            77.68502044677734
+          ],
+          [
+            -18.94048500061035,
+            -64.95936584472656,
+            77.66850280761719
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.940488815307617,
+            -64.96044921875,
+            77.66871643066406
+          ],
+          [
+            -18.94048500061035,
+            -64.95936584472656,
+            77.66850280761719
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.940488815307617,
+            -64.96044921875,
+            77.66871643066406
+          ],
+          [
+            -18.93864631652832,
+            -64.96241760253906,
+            77.66645050048828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.940488815307617,
+            -64.96044921875,
+            77.66871643066406
+          ],
+          [
+            -18.938644409179688,
+            -64.96134948730469,
+            77.66624450683594
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.94048500061035,
+            -64.95936584472656,
+            77.66850280761719
+          ],
+          [
+            -18.938644409179688,
+            -64.96134948730469,
+            77.66624450683594
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.93864631652832,
+            -64.96241760253906,
+            77.66645050048828
+          ],
+          [
+            -18.938644409179688,
+            -64.96134948730469,
+            77.66624450683594
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.93864631652832,
+            -64.96241760253906,
+            77.66645050048828
+          ],
+          [
+            -18.91689109802246,
+            -64.97870635986328,
+            77.64177703857422
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.938644409179688,
+            -64.96134948730469,
+            77.66624450683594
+          ],
+          [
+            -18.91689109802246,
+            -64.97870635986328,
+            77.64177703857422
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.912567138671875,
+            -64.9830322265625,
+            77.637451171875
+          ],
+          [
+            -18.88661766052246,
+            -64.99600982666016,
+            77.61582946777344
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.912567138671875,
+            -64.9830322265625,
+            77.637451171875
+          ],
+          [
+            -18.88661766052246,
+            -64.99168395996094,
+            77.61582946777344
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.88661766052246,
+            -64.99600982666016,
+            77.61150360107422
+          ],
+          [
+            -18.88661766052246,
+            -64.99600982666016,
+            77.61582946777344
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.88661766052246,
+            -64.99600982666016,
+            77.61150360107422
+          ],
+          [
+            -18.88661766052246,
+            -64.99168395996094,
+            77.61582946777344
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.88661766052246,
+            -64.99600982666016,
+            77.61582946777344
+          ],
+          [
+            -18.88661766052246,
+            -64.99168395996094,
+            77.61582946777344
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.8649959564209,
+            -65.00033569335938,
+            77.58987426757812
+          ],
+          [
+            -18.856346130371094,
+            -65.00465393066406,
+            77.58123016357422
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.8649959564209,
+            -65.00033569335938,
+            77.58987426757812
+          ],
+          [
+            -18.856346130371094,
+            -65.00033569335938,
+            77.58123016357422
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.856346130371094,
+            -65.00465393066406,
+            77.58123016357422
+          ],
+          [
+            -18.856346130371094,
+            -65.00033569335938,
+            77.58123016357422
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.856346130371094,
+            -65.00465393066406,
+            77.58123016357422
+          ],
+          [
+            -18.852022171020508,
+            -65.00465393066406,
+            77.576904296875
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.856346130371094,
+            -65.00033569335938,
+            77.58123016357422
+          ],
+          [
+            -18.852022171020508,
+            -65.00465393066406,
+            77.576904296875
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.821748733520508,
+            -65.00465393066406,
+            77.546630859375
+          ],
+          [
+            -18.80445098876953,
+            -65.00465393066406,
+            77.52933502197266
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.821748733520508,
+            -65.00465393066406,
+            77.546630859375
+          ],
+          [
+            -18.80445098876953,
+            -65.00033569335938,
+            77.52933502197266
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.80445098876953,
+            -65.00465393066406,
+            77.52933502197266
+          ],
+          [
+            -18.80445098876953,
+            -65.00033569335938,
+            77.52933502197266
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.80445098876953,
+            -65.00465393066406,
+            77.52933502197266
+          ],
+          [
+            -18.79147720336914,
+            -65.00033569335938,
+            77.516357421875
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            -18.80445098876953,
+            -65.00033569335938,
+            77.52933502197266
+          ],
+          [
+            -18.79147720336914,
+            -65.00033569335938,
+            77.516357421875
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            1.1753480434417725,
+            -25.775922775268555,
+            84.5568618774414
+          ],
+          [
+            1.2010042667388916,
+            -25.7412109375,
+            84.55658721923828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            1.1753480434417725,
+            -25.775922775268555,
+            84.5568618774414
+          ],
+          [
+            1.2012958526611328,
+            -25.74132537841797,
+            84.5568618774414
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            1.2010042667388916,
+            -25.7412109375,
+            84.55658721923828
+          ],
+          [
+            1.2012958526611328,
+            -25.74132537841797,
+            84.5568618774414
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            1.2010042667388916,
+            -25.7412109375,
+            84.55658721923828
+          ],
+          [
+            1.205620527267456,
+            -25.719701766967773,
+            84.54821014404297
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            1.2012958526611328,
+            -25.74132537841797,
+            84.5568618774414
+          ],
+          [
+            1.205620527267456,
+            -25.719701766967773,
+            84.54821014404297
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.2186861038208,
+            -96.13787841796875,
+            26.2485408782959
+          ],
+          [
+            9.236461639404297,
+            -96.11605834960938,
+            26.24785041809082
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.2186861038208,
+            -96.13787841796875,
+            26.2485408782959
+          ],
+          [
+            9.238435745239258,
+            -96.12409973144531,
+            26.251554489135742
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.236461639404297,
+            -96.11605834960938,
+            26.24785041809082
+          ],
+          [
+            9.238435745239258,
+            -96.12409973144531,
+            26.251554489135742
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.236461639404297,
+            -96.11605834960938,
+            26.24785041809082
+          ],
+          [
+            9.25376033782959,
+            -96.11173248291016,
+            26.252174377441406
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.236461639404297,
+            -96.11605834960938,
+            26.24785041809082
+          ],
+          [
+            9.25376033782959,
+            -96.09876251220703,
+            26.2435245513916
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.238435745239258,
+            -96.12409973144531,
+            26.251554489135742
+          ],
+          [
+            9.25376033782959,
+            -96.11173248291016,
+            26.252174377441406
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.25376033782959,
+            -96.11173248291016,
+            26.252174377441406
+          ],
+          [
+            9.25376033782959,
+            -96.09876251220703,
+            26.2435245513916
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.25376033782959,
+            -96.11173248291016,
+            26.252174377441406
+          ],
+          [
+            9.271059036254883,
+            -96.09876251220703,
+            26.252174377441406
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.25376033782959,
+            -96.09876251220703,
+            26.2435245513916
+          ],
+          [
+            9.271059036254883,
+            -96.09876251220703,
+            26.252174377441406
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.25376033782959,
+            -96.09876251220703,
+            26.2435245513916
+          ],
+          [
+            9.272270202636719,
+            -96.0804214477539,
+            26.238666534423828
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.271059036254883,
+            -96.09876251220703,
+            26.252174377441406
+          ],
+          [
+            9.272270202636719,
+            -96.0804214477539,
+            26.238666534423828
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.271059036254883,
+            -96.09876251220703,
+            26.252174377441406
+          ],
+          [
+            9.272586822509766,
+            -96.08008575439453,
+            26.23859214782715
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.271059036254883,
+            -96.09876251220703,
+            26.252174377441406
+          ],
+          [
+            9.327279090881348,
+            -96.03388977050781,
+            26.24785041809082
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.271059036254883,
+            -96.09876251220703,
+            26.252174377441406
+          ],
+          [
+            9.348901748657227,
+            -96.04254150390625,
+            26.26082420349121
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.272270202636719,
+            -96.0804214477539,
+            26.238666534423828
+          ],
+          [
+            9.272586822509766,
+            -96.08008575439453,
+            26.23859214782715
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.272586822509766,
+            -96.08008575439453,
+            26.23859214782715
+          ],
+          [
+            9.318629264831543,
+            -96.0295639038086,
+            26.23487663269043
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.272586822509766,
+            -96.08008575439453,
+            26.23859214782715
+          ],
+          [
+            9.327279090881348,
+            -96.03388977050781,
+            26.24785041809082
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.318629264831543,
+            -96.0295639038086,
+            26.23487663269043
+          ],
+          [
+            9.327279090881348,
+            -96.03388977050781,
+            26.24785041809082
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            9.327279090881348,
+            -96.03388977050781,
+            26.24785041809082
+          ],
+          [
+            9.348901748657227,
+            -96.04254150390625,
+            26.26082420349121
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            14.854158401489258,
+            -37.47837448120117,
+            85.3785400390625
+          ],
+          [
+            14.85848331451416,
+            -37.4697265625,
+            85.39583587646484
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            14.854158401489258,
+            -37.47837448120117,
+            85.3785400390625
+          ],
+          [
+            14.85848331451416,
+            -37.4697265625,
+            85.40016174316406
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            14.85848331451416,
+            -37.4697265625,
+            85.39583587646484
+          ],
+          [
+            14.85848331451416,
+            -37.4697265625,
+            85.40016174316406
+          ]
+        ],
+        "sourceIncidences": 0,
+        "sourceBalance": 0,
+        "addedIncidences": 2,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            14.85848331451416,
+            -37.4697265625,
+            85.39583587646484
+          ],
+          [
+            14.884430885314941,
+            -37.439453125,
+            85.49098205566406
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": -1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      },
+      {
+        "edge": [
+          [
+            14.85848331451416,
+            -37.4697265625,
+            85.40016174316406
+          ],
+          [
+            14.884430885314941,
+            -37.439453125,
+            85.49098205566406
+          ]
+        ],
+        "sourceIncidences": 1,
+        "sourceBalance": 1,
+        "addedIncidences": 1,
+        "candidateIncidences": 2,
+        "candidateBalance": 0
+      }
+    ],
+    "scope": "Every appended coordinate edge checked against every named arterial mesh; all must finish with exactly two opposite incidences."
+  },
+  "export": {
+    "release": "0.9.100",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 594,
+    "otherAssetsByteExact": 4,
+    "allExistingPositionsNormalsAndFacesExact": true,
+    "newVerticesCopyParentCoordinatesAndNormals": true
+  },
+  "projection": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A1 right",
+        "id": "artery.anterior.aca_a1_right",
+        "vertices": 8863,
+        "faces": 17726,
+        "capLoops": 3,
+        "volumeMm3": 87.13873494671077,
+        "closedAndOriented": true
+      },
+      {
+        "node": "ACA A2 right",
+        "id": "artery.anterior.aca_pericallosal_right.segment.a2",
+        "vertices": 3946,
+        "faces": 7898,
+        "capLoops": 5,
+        "volumeMm3": 110.6819162163517,
+        "closedAndOriented": true
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "id": "artery.posterior.medial_posterior_choroidal_left",
+        "vertices": 8826,
+        "faces": 17656,
+        "capLoops": 5,
+        "volumeMm3": 10.077549700453602,
+        "closedAndOriented": true
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "id": "artery.posterior.pca_p2_p3_left",
+        "vertices": 20395,
+        "faces": 40814,
+        "capLoops": 14,
+        "volumeMm3": 142.05703301500972,
+        "closedAndOriented": true
+      },
+      {
+        "node": "Vertebral V3 right",
+        "id": "artery.posterior.vertebral_right.segment.v3",
+        "vertices": 9824,
+        "faces": 19648,
+        "capLoops": 6,
+        "volumeMm3": 330.70572504378373,
+        "closedAndOriented": true
+      }
+    ]
+  },
+  "flow": {
+    "passed": true,
+    "unchangedCoursesReused": 592,
+    "selectedCourseStatusRetained": true,
+    "graphAndVeinSitesUnchanged": true,
+    "directedConnectionsUnchanged": true,
+    "unaffectedEdgeDistancesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.anterior.aca_pericallosal_right.segment.a2",
+      "artery.anterior.aca_a1_right",
+      "artery.posterior.vertebral_right.segment.v3",
+      "artery.posterior.pca_p2_p3_left",
+      "artery.posterior.medial_posterior_choroidal_left"
+    ]
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1245,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true,
+    "selectedLabelTopology": [
+      {
+        "node": "ACA A1 right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "ACA A2 right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      },
+      {
+        "node": "Vertebral V3 right",
+        "before": {
+          "components": 3
+        },
+        "after": {
+          "components": 3
+        }
+      }
+    ]
+  },
+  "replay": {
+    "passed": true,
+    "checks": [
+      {
+        "node": "ACA A1 right",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "ACA A2 right",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "Medial posterior choroidal left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "PCA P2-P3 left",
+        "candidateBuffersByteExact": true
+      },
+      {
+        "node": "Vertebral V3 right",
+        "candidateBuffersByteExact": true
+      }
+    ]
+  },
+  "replayGlobalEdgesPassed": true,
+  "tests": {
+    "build": "passed",
+    "repair": "19 tests passed",
+    "dsa": {
+      "closedProxies": 828,
+      "proxyTriangles": 8971508,
+      "selectableArterialCourses": 579,
+      "closedSections": 2353,
+      "graphAndGenerator": "passed"
+    }
+  },
+  "scope": "All-arterial boundary scan; installation restricted to passing small mixed-label native wall gaps. Every original position, normal and face retained.",
+  "excluded": [
+    "Five triangulated proposals fail global edge incidence, including coincident internal edges outside local boundary cancellation.",
+    "Cortical/olfactory, brainstem or other tissue-embedded candidates and changed-face crossings.",
+    "Single-label ports, larger or bad-edge components, and non-simple/degenerate triangulations."
+  ],
+  "remainingWork": [
+    "Wider G05 pericallosal/cortical and G06 receiving-lumen defects remain.",
+    "Regional Galenic, petrosal, dural and canal registration remains open.",
+    "Right V3 retains three source components. Remote bad edges and complete native lumens remain unaccepted.",
+    "Earlier G01/G03/G04/G07/G08 findings and the separate ILT posteromedial native interface remain open."
+  ]
+}

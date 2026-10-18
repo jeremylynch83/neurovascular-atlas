@@ -1,0 +1,687 @@
+{
+  "changes": [
+    {
+      "node": "ACA A1 left",
+      "changedFaces": 7257,
+      "depth": [
+        {
+          "target": "brain.orbital-gyri.left",
+          "insideBefore": 2010,
+          "insideAfter": 1886,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.6944665908813477,
+          "depthAfter": 0.6944665908813477,
+          "passed": true
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 30292,
+          "insideAfter": 32604,
+          "newInside": 14050,
+          "extraDepth": 1.748490810394287,
+          "depthBefore": 1.6620832681655884,
+          "depthAfter": 1.748490810394287,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "ACA A1 right",
+      "changedFaces": 6400,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 29589,
+          "insideAfter": 33353,
+          "newInside": 14737,
+          "extraDepth": 1.75351083278656,
+          "depthBefore": 1.6555591821670532,
+          "depthAfter": 1.75351083278656,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "ACA A2 left",
+      "changedFaces": 7209,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 13661,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.5945138931274414,
+          "depthAfter": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "ACA A2 right",
+      "changedFaces": 7109,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 8862,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.5301520824432373,
+          "depthAfter": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "ACA frontopolar left",
+      "changedFaces": 1328,
+      "depth": []
+    },
+    {
+      "node": "ACA frontopolar right",
+      "changedFaces": 1504,
+      "depth": []
+    },
+    {
+      "node": "ACA orbitofrontal left",
+      "changedFaces": 2081,
+      "depth": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBefore": 1701,
+          "insideAfter": 1620,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.052433967590332,
+          "depthAfter": 1.052433967590332,
+          "passed": true
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 3019,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.171781063079834,
+          "depthAfter": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "ACA orbitofrontal right",
+      "changedFaces": 2063,
+      "depth": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBefore": 17,
+          "insideAfter": 17,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.12464259564876556,
+          "depthAfter": 0.12464259564876556,
+          "passed": true
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 6272,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.4164576530456543,
+          "depthAfter": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "ACom chiasmatic perforator left",
+      "changedFaces": 1530,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 7150,
+          "insideAfter": 3693,
+          "newInside": 16,
+          "extraDepth": 1.4479022026062012,
+          "depthBefore": 1.0128188133239746,
+          "depthAfter": 1.597354769706726,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "ACom chiasmatic perforator right",
+      "changedFaces": 1463,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 0,
+          "insideAfter": 1190,
+          "newInside": 1190,
+          "extraDepth": 0.8439438939094543,
+          "depthBefore": 0.0,
+          "depthAfter": 0.8439438939094543,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "ACom hypothalamic perforator left",
+      "changedFaces": 1899,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 11863,
+          "insideAfter": 3021,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.8236050605773926,
+          "depthAfter": 0.7968793511390686,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "ACom hypothalamic perforator right",
+      "changedFaces": 1792,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 9590,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.6405916213989258,
+          "depthAfter": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "ACom septal perforator left",
+      "changedFaces": 2375,
+      "depth": [
+        {
+          "target": "brain.corpus-callosum",
+          "insideBefore": 3168,
+          "insideAfter": 4597,
+          "newInside": 4597,
+          "extraDepth": 1.7049821615219116,
+          "depthBefore": 1.3174610137939453,
+          "depthAfter": 1.7049821615219116,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "ACom septal perforator right",
+      "changedFaces": 2327,
+      "depth": [
+        {
+          "target": "brain.corpus-callosum",
+          "insideBefore": 3147,
+          "insideAfter": 4375,
+          "newInside": 4375,
+          "extraDepth": 1.6989818811416626,
+          "depthBefore": 1.3040193319320679,
+          "depthAfter": 1.6989818811416626,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Anterior communicating",
+      "changedFaces": 1091,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 2913,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 1.5622895956039429,
+          "depthAfter": 0.0,
+          "passed": true
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 33,
+          "insideAfter": 0,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.08023872971534729,
+          "depthAfter": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "Contralateral superior hypophyseal midline",
+      "changedFaces": 608,
+      "depth": []
+    },
+    {
+      "node": "ICA cavernous left",
+      "changedFaces": 7438,
+      "depth": []
+    },
+    {
+      "node": "ICA cavernous right",
+      "changedFaces": 5047,
+      "depth": []
+    },
+    {
+      "node": "ICA paraophthalmic left",
+      "changedFaces": 518,
+      "depth": []
+    },
+    {
+      "node": "Inferior hypophyseal left",
+      "changedFaces": 5765,
+      "depth": []
+    },
+    {
+      "node": "Inferior hypophyseal right",
+      "changedFaces": 4625,
+      "depth": []
+    },
+    {
+      "node": "Medial lenticulostriate left",
+      "changedFaces": 2076,
+      "depth": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBefore": 8467,
+          "insideAfter": 8695,
+          "newInside": 230,
+          "extraDepth": 0.07528325915336609,
+          "depthBefore": 0.9459740519523621,
+          "depthAfter": 0.9439295530319214,
+          "passed": false
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 5462,
+          "insideAfter": 5217,
+          "newInside": 0,
+          "extraDepth": 0.33624041080474854,
+          "depthBefore": 0.6072569489479065,
+          "depthAfter": 0.6997086405754089,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Medial lenticulostriate right",
+      "changedFaces": 2080,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 8319,
+          "insideAfter": 8073,
+          "newInside": 0,
+          "extraDepth": 0.1312311887741089,
+          "depthBefore": 1.3404028415679932,
+          "depthAfter": 1.3146806955337524,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Posterior ethmoidal left",
+      "changedFaces": 827,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 0,
+          "insideAfter": 544,
+          "newInside": 544,
+          "extraDepth": 0.4456206262111664,
+          "depthBefore": 0.0,
+          "depthAfter": 0.4456206262111664,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Posterior ethmoidal right",
+      "changedFaces": 821,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 0,
+          "insideAfter": 1186,
+          "newInside": 1186,
+          "extraDepth": 1.1233478784561157,
+          "depthBefore": 0.0,
+          "depthAfter": 1.1233478784561157,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Posterior septal\u2013posterior ethmoidal left",
+      "changedFaces": 880,
+      "depth": [
+        {
+          "target": "bone.frontal",
+          "insideBefore": 1256,
+          "insideAfter": 1198,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.8571965098381042,
+          "depthAfter": 0.8571965098381042,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "Posterior septal\u2013posterior ethmoidal right",
+      "changedFaces": 880,
+      "depth": []
+    },
+    {
+      "node": "Recurrent artery of Heubner left",
+      "changedFaces": 2995,
+      "depth": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBefore": 4355,
+          "insideAfter": 4575,
+          "newInside": 315,
+          "extraDepth": 0.18521222472190857,
+          "depthBefore": 0.9619678854942322,
+          "depthAfter": 0.962177038192749,
+          "passed": false
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 7642,
+          "insideAfter": 60,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.7608041763305664,
+          "depthAfter": 0.02756214700639248,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "node": "Recurrent artery of Heubner right",
+      "changedFaces": 2864,
+      "depth": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBefore": 3,
+          "insideAfter": 3,
+          "newInside": 0,
+          "extraDepth": 0.0,
+          "depthBefore": 0.014608742669224739,
+          "depthAfter": 0.014608742669224739,
+          "passed": true
+        },
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 12171,
+          "insideAfter": 5383,
+          "newInside": 2413,
+          "extraDepth": 0.7189503312110901,
+          "depthBefore": 1.4427118301391602,
+          "depthAfter": 0.7189503312110901,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Subcallosal artery",
+      "changedFaces": 3722,
+      "depth": [
+        {
+          "target": "brain.corpus-callosum",
+          "insideBefore": 3095,
+          "insideAfter": 4081,
+          "newInside": 4081,
+          "extraDepth": 1.4258195161819458,
+          "depthBefore": 1.071864366531372,
+          "depthAfter": 1.4258195161819458,
+          "passed": false
+        },
+        {
+          "target": "brain.lateral-ventricle.left",
+          "insideBefore": 0,
+          "insideAfter": 1116,
+          "newInside": 1116,
+          "extraDepth": 0.14553120732307434,
+          "depthBefore": 0.0,
+          "depthAfter": 0.14553120732307434,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Superior hypophyseal left",
+      "changedFaces": 3032,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBefore": 0,
+          "insideAfter": 10056,
+          "newInside": 10056,
+          "extraDepth": 1.29404616355896,
+          "depthBefore": 0.0,
+          "depthAfter": 1.29404616355896,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "node": "Superior hypophyseal right",
+      "changedFaces": 3422,
+      "depth": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.right",
+          "insideBefore": 0,
+          "insideAfter": 7035,
+          "newInside": 7035,
+          "extraDepth": 0.7161124348640442,
+          "depthBefore": 0.0,
+          "depthAfter": 0.7161124348640442,
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "node": "ACA A1 left",
+      "target": "brain.straight-gyrus-gyrus-rectus.left",
+      "insideBefore": 30292,
+      "insideAfter": 32604,
+      "newInside": 14050,
+      "extraDepth": 1.748490810394287,
+      "depthBefore": 1.6620832681655884,
+      "depthAfter": 1.748490810394287,
+      "passed": false
+    },
+    {
+      "node": "ACA A1 right",
+      "target": "brain.straight-gyrus-gyrus-rectus.right",
+      "insideBefore": 29589,
+      "insideAfter": 33353,
+      "newInside": 14737,
+      "extraDepth": 1.75351083278656,
+      "depthBefore": 1.6555591821670532,
+      "depthAfter": 1.75351083278656,
+      "passed": false
+    },
+    {
+      "node": "ACom chiasmatic perforator left",
+      "target": "brain.straight-gyrus-gyrus-rectus.left",
+      "insideBefore": 7150,
+      "insideAfter": 3693,
+      "newInside": 16,
+      "extraDepth": 1.4479022026062012,
+      "depthBefore": 1.0128188133239746,
+      "depthAfter": 1.597354769706726,
+      "passed": false
+    },
+    {
+      "node": "ACom chiasmatic perforator right",
+      "target": "brain.straight-gyrus-gyrus-rectus.right",
+      "insideBefore": 0,
+      "insideAfter": 1190,
+      "newInside": 1190,
+      "extraDepth": 0.8439438939094543,
+      "depthBefore": 0.0,
+      "depthAfter": 0.8439438939094543,
+      "passed": false
+    },
+    {
+      "node": "ACom septal perforator left",
+      "target": "brain.corpus-callosum",
+      "insideBefore": 3168,
+      "insideAfter": 4597,
+      "newInside": 4597,
+      "extraDepth": 1.7049821615219116,
+      "depthBefore": 1.3174610137939453,
+      "depthAfter": 1.7049821615219116,
+      "passed": false
+    },
+    {
+      "node": "ACom septal perforator right",
+      "target": "brain.corpus-callosum",
+      "insideBefore": 3147,
+      "insideAfter": 4375,
+      "newInside": 4375,
+      "extraDepth": 1.6989818811416626,
+      "depthBefore": 1.3040193319320679,
+      "depthAfter": 1.6989818811416626,
+      "passed": false
+    },
+    {
+      "node": "Medial lenticulostriate left",
+      "target": "brain.olfactory-sulcus.left",
+      "insideBefore": 8467,
+      "insideAfter": 8695,
+      "newInside": 230,
+      "extraDepth": 0.07528325915336609,
+      "depthBefore": 0.9459740519523621,
+      "depthAfter": 0.9439295530319214,
+      "passed": false
+    },
+    {
+      "node": "Medial lenticulostriate left",
+      "target": "brain.straight-gyrus-gyrus-rectus.left",
+      "insideBefore": 5462,
+      "insideAfter": 5217,
+      "newInside": 0,
+      "extraDepth": 0.33624041080474854,
+      "depthBefore": 0.6072569489479065,
+      "depthAfter": 0.6997086405754089,
+      "passed": false
+    },
+    {
+      "node": "Medial lenticulostriate right",
+      "target": "brain.straight-gyrus-gyrus-rectus.right",
+      "insideBefore": 8319,
+      "insideAfter": 8073,
+      "newInside": 0,
+      "extraDepth": 0.1312311887741089,
+      "depthBefore": 1.3404028415679932,
+      "depthAfter": 1.3146806955337524,
+      "passed": false
+    },
+    {
+      "node": "Posterior ethmoidal left",
+      "target": "brain.straight-gyrus-gyrus-rectus.left",
+      "insideBefore": 0,
+      "insideAfter": 544,
+      "newInside": 544,
+      "extraDepth": 0.4456206262111664,
+      "depthBefore": 0.0,
+      "depthAfter": 0.4456206262111664,
+      "passed": false
+    },
+    {
+      "node": "Posterior ethmoidal right",
+      "target": "brain.straight-gyrus-gyrus-rectus.right",
+      "insideBefore": 0,
+      "insideAfter": 1186,
+      "newInside": 1186,
+      "extraDepth": 1.1233478784561157,
+      "depthBefore": 0.0,
+      "depthAfter": 1.1233478784561157,
+      "passed": false
+    },
+    {
+      "node": "Recurrent artery of Heubner left",
+      "target": "brain.olfactory-sulcus.left",
+      "insideBefore": 4355,
+      "insideAfter": 4575,
+      "newInside": 315,
+      "extraDepth": 0.18521222472190857,
+      "depthBefore": 0.9619678854942322,
+      "depthAfter": 0.962177038192749,
+      "passed": false
+    },
+    {
+      "node": "Recurrent artery of Heubner right",
+      "target": "brain.straight-gyrus-gyrus-rectus.right",
+      "insideBefore": 12171,
+      "insideAfter": 5383,
+      "newInside": 2413,
+      "extraDepth": 0.7189503312110901,
+      "depthBefore": 1.4427118301391602,
+      "depthAfter": 0.7189503312110901,
+      "passed": false
+    },
+    {
+      "node": "Subcallosal artery",
+      "target": "brain.corpus-callosum",
+      "insideBefore": 3095,
+      "insideAfter": 4081,
+      "newInside": 4081,
+      "extraDepth": 1.4258195161819458,
+      "depthBefore": 1.071864366531372,
+      "depthAfter": 1.4258195161819458,
+      "passed": false
+    },
+    {
+      "node": "Subcallosal artery",
+      "target": "brain.lateral-ventricle.left",
+      "insideBefore": 0,
+      "insideAfter": 1116,
+      "newInside": 1116,
+      "extraDepth": 0.14553120732307434,
+      "depthBefore": 0.0,
+      "depthAfter": 0.14553120732307434,
+      "passed": false
+    },
+    {
+      "node": "Superior hypophyseal left",
+      "target": "brain.straight-gyrus-gyrus-rectus.left",
+      "insideBefore": 0,
+      "insideAfter": 10056,
+      "newInside": 10056,
+      "extraDepth": 1.29404616355896,
+      "depthBefore": 0.0,
+      "depthAfter": 1.29404616355896,
+      "passed": false
+    },
+    {
+      "node": "Superior hypophyseal right",
+      "target": "brain.straight-gyrus-gyrus-rectus.right",
+      "insideBefore": 0,
+      "insideAfter": 7035,
+      "newInside": 7035,
+      "extraDepth": 0.7161124348640442,
+      "depthBefore": 0.0,
+      "depthAfter": 0.7161124348640442,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

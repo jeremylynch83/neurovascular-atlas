@@ -1,0 +1,698 @@
+{
+  "schema": 1,
+  "baselineRelease": "0.9.114",
+  "reviewRelease": "0.9.117",
+  "requiredSourceAssetSha256": {
+    "models/brain-context.glb": "636b8a665707f1247240171ffa30f8140177c29db49dc015fd415ccd8089dfa6",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "66ca003079bbb972b594b48fc44b07bba6dd3557a65b82a6aac4987c4153bef7",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "2264c35c98c35d4c6279845b7b77ea043e5e34710437626fb2424cc78509a6bb"
+  },
+  "requiredImplementationSha256": {
+    "tools/repair/geometry.py": "aeb84ad57db409847d4061a8a4380cdbb50735587fc3cc71a190cd09e9404f41",
+    "tools/repair/regional_validation.py": "f846fc6e4aef5c504c579a115b6ad1d3dedbad5ad00abd1f837fb95e41d20dce",
+    "tools/repair/cache.py": "1dcb42556efc4a75908291b4788735d1dd7e4b70bcc9ef26ef70e660d1f5215b",
+    "tools/arterial-review-v0.9.113/check_deferred.py": "ac33d35cc8fb1afc0931803082db3239f39fec3b6f1198cdf14130627356d4ca"
+  },
+  "cases": [
+    {
+      "id": "sca-wollschlaeger-direct",
+      "status": "deferred",
+      "scope": "Triangulate the original eight-point gap boundary using those boundary vertices only.",
+      "triangulationsTested": 132,
+      "passingCandidates": 0,
+      "reason": "Every tested closure intersects retained source wall.",
+      "nextStep": "Review a wider SCA receiving-wall region before another local closure attempt.",
+      "reviewRelease": "0.9.114",
+      "predicate": "filtered-float64-with-exact-binary-decision"
+    },
+    {
+      "id": "component-36-loop-0",
+      "status": "deferred",
+      "labels": [
+        "MCA M1 left",
+        "Terminal ICA perforator 2 left"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -17.179443359375,
+          -39.68994140625,
+          86.184814453125
+        ],
+        [
+          -17.178955078125,
+          -39.690673828125,
+          86.18359375
+        ],
+        [
+          -17.15676498413086,
+          -39.7271842956543,
+          86.12670135498047
+        ],
+        [
+          -17.178388595581055,
+          -39.692588806152344,
+          86.18292236328125
+        ],
+        [
+          -17.178388595581055,
+          -39.688262939453125,
+          86.18292236328125
+        ],
+        [
+          -17.182714462280273,
+          -39.67961502075195,
+          86.19589233398438
+        ]
+      ],
+      "spanMm": 0.08788403100951085,
+      "triangulationsTested": 14,
+      "sourceSurfaceClearCandidates": 9,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBoundaryVertices": 6
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-41-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 left",
+        "Terminal ICA perforator 1 left"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -15.362043380737305,
+          -37.25349426269531,
+          86.3602294921875
+        ],
+        [
+          -15.340420722961426,
+          -37.2361946105957,
+          86.33860778808594
+        ],
+        [
+          -15.362043380737305,
+          -37.25349426269531,
+          86.36455535888672
+        ],
+        [
+          -15.37069320678711,
+          -37.26214599609375,
+          86.37753295898438
+        ]
+      ],
+      "spanMm": 0.05572312460475523,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 2,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-44-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 left",
+        "Terminal ICA perforator 1 left"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -14.964177131652832,
+          -37.72488021850586,
+          85.80667877197266
+        ],
+        [
+          -14.933905601501465,
+          -37.75082778930664,
+          85.73316192626953
+        ],
+        [
+          -14.964177131652832,
+          -37.72488021850586,
+          85.80235290527344
+        ],
+        [
+          -14.981475830078125,
+          -37.71190643310547,
+          85.83695220947266
+        ]
+      ],
+      "spanMm": 0.12062429897313015,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 2,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-46-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 left",
+        "Terminal ICA perforator 1 left"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -14.847412109375,
+          -37.902191162109375,
+          85.38719177246094
+        ],
+        [
+          -14.838763236999512,
+          -37.91948699951172,
+          85.3482666015625
+        ],
+        [
+          -14.847412109375,
+          -37.902191162109375,
+          85.38286590576172
+        ],
+        [
+          -14.873360633850098,
+          -37.837318420410156,
+          85.52989959716797
+        ]
+      ],
+      "spanMm": 0.20233437758577483,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 2,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-47-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 left",
+        "Terminal ICA perforator 1 left"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -14.802734375,
+          -37.6357421875,
+          85.087890625
+        ],
+        [
+          -14.802490234375,
+          -37.70068359375,
+          84.944580078125
+        ],
+        [
+          -14.80224609375,
+          -37.720703125,
+          84.900634765625
+        ],
+        [
+          -14.804165840148926,
+          -37.72920608520508,
+          84.88552856445312
+        ],
+        [
+          -14.804165840148926,
+          -37.72055435180664,
+          84.89850616455078
+        ],
+        [
+          -14.804165840148926,
+          -37.69893264770508,
+          84.94607543945312
+        ],
+        [
+          -14.804165840148926,
+          -37.634063720703125,
+          85.08879089355469
+        ],
+        [
+          -14.808490753173828,
+          -37.603790283203125,
+          85.15365600585938
+        ]
+      ],
+      "spanMm": 0.2960407963432204,
+      "triangulationsTested": 132,
+      "sourceSurfaceClearCandidates": 57,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBoundaryVertices": 8
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-48-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 left",
+        "Terminal ICA perforator 1 left"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -14.760009765625,
+          -37.750732421875,
+          84.860595703125
+        ],
+        [
+          -14.756103515625,
+          -37.753662109375,
+          84.8583984375
+        ],
+        [
+          -14.760919570922852,
+          -37.75082778930664,
+          84.85958099365234
+        ],
+        [
+          -14.773893356323242,
+          -37.74217987060547,
+          84.86823272705078
+        ]
+      ],
+      "spanMm": 0.023345952330071394,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 2,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.left",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-88-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 left",
+        "ACA A2 left",
+        "Anterior communicating"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -2.2800326347351074,
+          -25.408329010009766,
+          83.48002624511719
+        ],
+        [
+          -2.236786365509033,
+          -25.41265296936035,
+          83.50164794921875
+        ],
+        [
+          -2.2800326347351074,
+          -25.408329010009766,
+          83.4843521118164
+        ],
+        [
+          -2.2843573093414307,
+          -25.382381439208984,
+          83.49300384521484
+        ]
+      ],
+      "spanMm": 0.057044550737477065,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 1,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-91-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A2 left",
+        "Anterior communicating"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          -1.246445655822754,
+          -25.6807804107666,
+          84.67794799804688
+        ],
+        [
+          -1.2248225212097168,
+          -25.65483283996582,
+          84.6520004272461
+        ],
+        [
+          -1.246445655822754,
+          -25.6807804107666,
+          84.67362213134766
+        ],
+        [
+          -1.2507703304290771,
+          -25.698078155517578,
+          84.6822738647461
+        ]
+      ],
+      "spanMm": 0.05882114533500546,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 2,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.straight-gyrus-gyrus-rectus.left",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-125-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 right",
+        "Terminal ICA perforator 1 right"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          15.334192276000977,
+          -37.530269622802734,
+          86.35590362548828
+        ],
+        [
+          15.360139846801758,
+          -37.517295837402344,
+          86.38185119628906
+        ],
+        [
+          15.334192276000977,
+          -37.530269622802734,
+          86.3515853881836
+        ],
+        [
+          15.308244705200195,
+          -37.543243408203125,
+          86.3299560546875
+        ]
+      ],
+      "spanMm": 0.07784271240234375,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 1,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-126-loop-0",
+      "status": "deferred",
+      "labels": [
+        "ACA A1 right",
+        "Terminal ICA perforator 1 right"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          15.334192276000977,
+          -37.21889877319336,
+          86.26509094238281
+        ],
+        [
+          15.368789672851562,
+          -37.22322082519531,
+          86.30400848388672
+        ],
+        [
+          15.334192276000977,
+          -37.21889877319336,
+          86.26941680908203
+        ],
+        [
+          15.325543403625488,
+          -37.21889877319336,
+          86.25643920898438
+        ]
+      ],
+      "spanMm": 0.06443412023312207,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 2,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-133-loop-0",
+      "status": "deferred",
+      "labels": [
+        "MCA M1 right",
+        "Terminal ICA perforator 2 right"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          17.20703125,
+          -40.113037109375,
+          85.6806640625
+        ],
+        [
+          17.207275390625,
+          -40.110595703125,
+          85.685791015625
+        ],
+        [
+          17.206758499145508,
+          -40.107749938964844,
+          85.6942367553711
+        ],
+        [
+          17.206758499145508,
+          -40.11207580566406,
+          85.68558502197266
+        ],
+        [
+          17.206758499145508,
+          -40.11207580566406,
+          85.68126678466797
+        ],
+        [
+          17.206758499145508,
+          -40.1207275390625,
+          85.6639633178711
+        ]
+      ],
+      "spanMm": 0.03293780688450726,
+      "triangulationsTested": 14,
+      "sourceSurfaceClearCandidates": 9,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBoundaryVertices": 6
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-134-loop-0",
+      "status": "deferred",
+      "labels": [
+        "MCA M1 right",
+        "Terminal ICA perforator 2 right"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          17.246826171875,
+          -39.921875,
+          86.03564453125
+        ],
+        [
+          17.246826171875,
+          -39.92138671875,
+          86.0361328125
+        ],
+        [
+          17.25865364074707,
+          -39.89152145385742,
+          86.08345794677734
+        ],
+        [
+          17.246826171875,
+          -39.92138671875,
+          86.0361557006836
+        ],
+        [
+          17.246826171875,
+          -39.921875,
+          86.0356674194336
+        ],
+        [
+          17.22838020324707,
+          -40.012611389160156,
+          85.87155151367188
+        ]
+      ],
+      "spanMm": 0.24593411687110292,
+      "triangulationsTested": 14,
+      "sourceSurfaceClearCandidates": 5,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBoundaryVertices": 6
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "component-135-loop-0",
+      "status": "deferred",
+      "labels": [
+        "MCA M1 right",
+        "Terminal ICA perforator 2 right"
+      ],
+      "scope": "Boundary-only triangulations of the recorded surviving mixed-label loop, with fixed native rim.",
+      "boundaryCoordinates": [
+        [
+          17.48353385925293,
+          -39.48067855834961,
+          86.55916595458984
+        ],
+        [
+          17.50948143005371,
+          -39.45473098754883,
+          86.5807876586914
+        ],
+        [
+          17.48353385925293,
+          -39.48067855834961,
+          86.56349182128906
+        ],
+        [
+          17.45758628845215,
+          -39.51095199584961,
+          86.53754425048828
+        ]
+      ],
+      "spanMm": 0.08788572039429862,
+      "triangulationsTested": 2,
+      "sourceSurfaceClearCandidates": 1,
+      "passingCandidates": 0,
+      "reason": "Native rim lies inside closed registered tissue.",
+      "tissueCornerFailures": [
+        {
+          "target": "brain.olfactory-sulcus.right",
+          "insideBoundaryVertices": 4
+        }
+      ],
+      "nextStep": "Coordinated vessel/cortex registration is required before wall closure.",
+      "reviewRelease": "0.9.114",
+      "evidenceReuse": "Boundary-point tissue membership is unaffected by the intersection predicate; all five model hashes and the enclosed-volume implementation remain unchanged."
+    },
+    {
+      "id": "sca-wollschlaeger-three-face-retriangulation",
+      "status": "deferred",
+      "scope": "Keep all nine source points; retessellate source faces 23440, 23558 and 23559 plus the gap, preserving the seven-edge external boundary.",
+      "statesTested": 4620,
+      "statesDiscovered": 4620,
+      "passingCandidates": 0,
+      "reason": "Every examined state has at least one triangle contacting retained source wall.",
+      "nextStep": "Review the opposing receiving wall and its neighbouring faces; do not repeat the same nine-point search.",
+      "reviewRelease": "0.9.115",
+      "predicate": "corrected-exact-binary-confirmation",
+      "evidence": "local-retriangulation.json"
+    }
+  ],
+  "allCasesRemainOpen": true,
+  "appliesOnlyToRecordedSearchScopes": true,
+  "anatomicalAcceptance": false,
+  "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions.",
+  "scopeRefreshProof": {
+    "changedNamedMesh": "vein.inferior_petrosal.left",
+    "allOtherNamedMeshesUnchanged": 1249,
+    "scaDirectAndLocalDomainsDisjointFromChangedMeshBounds": true,
+    "nativeArterialRimsAndTissueMembershipInputsByteExact": true,
+    "validationCodeHashesRetained": true,
+    "newlyRecheckedLocalScaStates": 4620
+  },
+  "losslessContainerRebind": {
+    "previousRegistry": "anatomy/source/petrosal-wall-v0.9.115/deferred-repairs.json",
+    "geometryChanged": false,
+    "proof": "docs/validation/lossless-model-cleanup-v0.9.117.json",
+    "scope": "Remove unreachable accessors and payloads only; all active vertex and triangle streams and review implementation remain exact."
+  }
+}

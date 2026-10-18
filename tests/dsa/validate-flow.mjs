@@ -6,13 +6,14 @@ import assert from 'node:assert/strict';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import {flowGraphSource,downstreamFlow,decodeCoordinates,splitFlowSurface,closedSurfaceError,pointInsideSurface,pathPoint,injectionOnPath} from '../../src/flowGeometry.ts';
+import {authoredCourseSource} from '../../tools/dsa-course-guides.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base=root+'/public/anatomy/';
 const manifest=JSON.parse(fs.readFileSync(base+'manifest.json'));
 const flow=JSON.parse(fs.readFileSync(base+'dsa-flow.json'));
 const surfaces=JSON.parse(fs.readFileSync(base+'dsa-surfaces.json'));
 const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
 assert.equal(flow.schema,1);assert.equal(flow.graphSource,flowGraphSource(manifest));assert.equal(flow.graphHash,hash(flow.graphSource));
-assert.equal(flow.generatorHash,hash(fs.readFileSync(root+'/tools/build-dsa-flow.mjs')+fs.readFileSync(root+'/src/flowGeometry.ts')));
+assert.equal(flow.generatorHash,hash(fs.readFileSync(root+'/tools/build-dsa-flow.mjs')+fs.readFileSync(root+'/src/flowGeometry.ts')+fs.readFileSync(root+'/tools/dsa-course-guides.mjs')+authoredCourseSource(manifest)));
 const allowed=new Set(Object.keys(flow.entries));let selectable=0,sections=0;
 for(const [id,row] of Object.entries(flow.entries)) {
  assert(row.points.length===row.arc.length&&row.points.length>=2);assert.equal(row.arc[0],0);assert.equal(row.arc.at(-1),row.length);
@@ -22,6 +23,7 @@ for(const [id,row] of Object.entries(flow.entries)) {
  if(row.selectable){selectable++;assert(row.safeRanges.length);assert(row.safeRanges.every(([a,b])=>a>=0&&b<=row.length&&b>a));}
 }
 for(const side of ['left','right']) {
+ for(const stem of ['mma_paramedian','mma_falcine_terminal'])assert(flow.entries[`artery.amendment.${stem}.${side}`]?.selectable,'Repaired MMA injection course must remain selectable');
  const suffix=side==='left'?'.left':'';
  for(const id of [`artery.anterior.internal_carotid_${side}.segment.cervical`,`artery.carotid.external.right${suffix}`,`artery.eca.maxillary.right${suffix}`,`artery.eca.maxillary.mma.right${suffix}`,`artery.posterior.vertebral_${side}.segment.v1`])assert(flow.entries[id]?.selectable,'Required injection course: '+id);
  const max=`artery.eca.maxillary.right${suffix}`,mma=`artery.eca.maxillary.mma.right${suffix}`,branch=flow.edges[max].find(e=>e.to===mma);

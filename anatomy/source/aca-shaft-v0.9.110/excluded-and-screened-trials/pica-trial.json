@@ -1,0 +1,68 @@
+{
+  "passed": false,
+  "changes": [
+    {
+      "node": "PICA vermian left",
+      "sourceVertices": 4174,
+      "sourceTriangles": 7467,
+      "candidateVertices": 4174,
+      "candidateTriangles": 7467,
+      "retainedSourceTriangles": 7463,
+      "changedTriangles": 4,
+      "protectedSourceAttachments": [
+        {
+          "other": "PICA hemispheric left",
+          "coordinates": 53,
+          "missing": 0
+        },
+        {
+          "other": "PICA left",
+          "coordinates": 661,
+          "missing": 0
+        },
+        {
+          "other": "PICA tonsillar left",
+          "coordinates": 162,
+          "missing": 0
+        }
+      ]
+    }
+  ],
+  "crossings": [
+    {
+      "node": "PICA vermian left",
+      "face": 7466,
+      "other": "PICA tonsillar left",
+      "otherFace": 1149
+    }
+  ],
+  "trianglePairsChecked": 62,
+  "clearance": [
+    {
+      "node": "PICA vermian left",
+      "target": "brain.inferior-semilunar-lobule.left",
+      "closedTarget": false,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 19,
+      "minimumOpenTargetClearanceMarginMm": 0.6422096043871729
+    },
+    {
+      "node": "PICA vermian left",
+      "target": "bone.occipital",
+      "closedTarget": true,
+      "badSamplesOrFaceBalls": 0,
+      "ambiguousSamples": 0,
+      "sampleCount": 19,
+      "minimumOpenTargetClearanceMarginMm": null
+    }
+  ],
+  "nativeNetworks": [],
+  "issues": [
+    {
+      "reason": "changed-face-crossing",
+      "count": 1
+    }
+  ],
+  "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+}

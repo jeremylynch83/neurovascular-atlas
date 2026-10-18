@@ -1,0 +1,2348 @@
+{
+  "passed": true,
+  "reviewedArterialMeshes": 766,
+  "changedCoordinateEdges": 121,
+  "sourceContributors": [
+    {
+      "node": "ACA A1 right",
+      "edgeIncidences": 2
+    },
+    {
+      "node": "ACA A2 right",
+      "edgeIncidences": 2
+    },
+    {
+      "node": "Anterior communicating",
+      "edgeIncidences": 2
+    },
+    {
+      "node": "Medial posterior choroidal left",
+      "edgeIncidences": 24
+    },
+    {
+      "node": "PCA P2-P3 left",
+      "edgeIncidences": 32
+    },
+    {
+      "node": "PCA anterior inferior temporal left",
+      "edgeIncidences": 8
+    },
+    {
+      "node": "Terminal ICA perforator 1 right",
+      "edgeIncidences": 2
+    },
+    {
+      "node": "Vertebral V3 right",
+      "edgeIncidences": 9
+    },
+    {
+      "node": "Vertebral V4 right",
+      "edgeIncidences": 2
+    }
+  ],
+  "edgesChecked": 121,
+  "boundaryEdgesClosed": 83,
+  "issues": [],
+  "edges": [
+    {
+      "edge": [
+        [
+          -21.11380386352539,
+          -65.9863510131836,
+          76.26221466064453
+        ],
+        [
+          -21.109479904174805,
+          -65.99066925048828,
+          76.25357055664062
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -21.11380386352539,
+          -65.9863510131836,
+          76.26221466064453
+        ],
+        [
+          -21.109479904174805,
+          -65.99066925048828,
+          76.25788879394531
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -21.109479904174805,
+          -65.99066925048828,
+          76.25357055664062
+        ],
+        [
+          -21.109479904174805,
+          -65.99066925048828,
+          76.25788879394531
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -21.109479904174805,
+          -65.99066925048828,
+          76.25357055664062
+        ],
+        [
+          -21.08785629272461,
+          -66.00364685058594,
+          76.22761535644531
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -21.109479904174805,
+          -65.99066925048828,
+          76.25788879394531
+        ],
+        [
+          -21.08785629272461,
+          -66.00364685058594,
+          76.22761535644531
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.997039794921875,
+          -66.09446716308594,
+          76.11085510253906
+        ],
+        [
+          -20.997039794921875,
+          -66.09446716308594,
+          76.11518096923828
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.997039794921875,
+          -66.09446716308594,
+          76.11085510253906
+        ],
+        [
+          -20.997039794921875,
+          -66.09014129638672,
+          76.11518096923828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.997039794921875,
+          -66.09446716308594,
+          76.11085510253906
+        ],
+        [
+          -20.97541618347168,
+          -66.12041473388672,
+          76.09355163574219
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.997039794921875,
+          -66.09446716308594,
+          76.11518096923828
+        ],
+        [
+          -20.997039794921875,
+          -66.09014129638672,
+          76.11518096923828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.997039794921875,
+          -66.09446716308594,
+          76.11518096923828
+        ],
+        [
+          -20.97541618347168,
+          -66.12041473388672,
+          76.09355163574219
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.96244239807129,
+          -66.14203643798828,
+          76.08058166503906
+        ],
+        [
+          -20.940818786621094,
+          -66.18095397949219,
+          76.05463409423828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.96244239807129,
+          -66.14203643798828,
+          76.08058166503906
+        ],
+        [
+          -20.940818786621094,
+          -66.18095397949219,
+          76.0589599609375
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.940818786621094,
+          -66.18960571289062,
+          76.05463409423828
+        ],
+        [
+          -20.940818786621094,
+          -66.18095397949219,
+          76.05463409423828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.940818786621094,
+          -66.18960571289062,
+          76.05463409423828
+        ],
+        [
+          -20.940818786621094,
+          -66.18095397949219,
+          76.0589599609375
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.940818786621094,
+          -66.18095397949219,
+          76.05463409423828
+        ],
+        [
+          -20.940818786621094,
+          -66.18095397949219,
+          76.0589599609375
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.936494827270508,
+          -66.19825744628906,
+          76.05030822753906
+        ],
+        [
+          -20.93216896057129,
+          -66.20258331298828,
+          76.04598236083984
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.936494827270508,
+          -66.19825744628906,
+          76.05030822753906
+        ],
+        [
+          -20.93216896057129,
+          -66.20258331298828,
+          76.05030822753906
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.93216896057129,
+          -66.20258331298828,
+          76.04598236083984
+        ],
+        [
+          -20.93216896057129,
+          -66.20258331298828,
+          76.05030822753906
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.93216896057129,
+          -66.20258331298828,
+          76.04598236083984
+        ],
+        [
+          -20.9191951751709,
+          -66.24150085449219,
+          76.03301239013672
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.93216896057129,
+          -66.20258331298828,
+          76.05030822753906
+        ],
+        [
+          -20.9191951751709,
+          -66.24150085449219,
+          76.03301239013672
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023508071899414,
+          -64.74857330322266,
+          77.79017639160156
+        ],
+        [
+          -19.023502349853516,
+          -64.74845886230469,
+          77.79020690917969
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023508071899414,
+          -64.74857330322266,
+          77.79017639160156
+        ],
+        [
+          -19.02338409423828,
+          -64.75129699707031,
+          77.79070281982422
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023508071899414,
+          -64.74857330322266,
+          77.79017639160156
+        ],
+        [
+          -19.023378372192383,
+          -64.75118255615234,
+          77.79073333740234
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023508071899414,
+          -64.74857330322266,
+          77.79017639160156
+        ],
+        [
+          -19.020681381225586,
+          -64.7624740600586,
+          77.78448486328125
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023502349853516,
+          -64.74845886230469,
+          77.79020690917969
+        ],
+        [
+          -19.023378372192383,
+          -64.75118255615234,
+          77.79073333740234
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023502349853516,
+          -64.74845886230469,
+          77.79020690917969
+        ],
+        [
+          -19.020681381225586,
+          -64.7278823852539,
+          77.7974624633789
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023502349853516,
+          -64.74845886230469,
+          77.79020690917969
+        ],
+        [
+          -19.020681381225586,
+          -64.72355651855469,
+          77.7974624633789
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.02338409423828,
+          -64.75129699707031,
+          77.79070281982422
+        ],
+        [
+          -19.023378372192383,
+          -64.75118255615234,
+          77.79073333740234
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.02338409423828,
+          -64.75129699707031,
+          77.79070281982422
+        ],
+        [
+          -19.020681381225586,
+          -64.76679992675781,
+          77.78448486328125
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.02338409423828,
+          -64.75129699707031,
+          77.79070281982422
+        ],
+        [
+          -19.020681381225586,
+          -64.7624740600586,
+          77.78448486328125
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.023378372192383,
+          -64.75118255615234,
+          77.79073333740234
+        ],
+        [
+          -19.020681381225586,
+          -64.7278823852539,
+          77.7974624633789
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.7927474975586,
+          77.77584075927734
+        ],
+        [
+          -19.020681381225586,
+          -64.76679992675781,
+          77.78448486328125
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.7927474975586,
+          77.77584075927734
+        ],
+        [
+          -19.020681381225586,
+          -64.7624740600586,
+          77.78448486328125
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.7927474975586,
+          77.77584075927734
+        ],
+        [
+          -19.016357421875,
+          -64.80572509765625,
+          77.77151489257812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.7927474975586,
+          77.77584075927734
+        ],
+        [
+          -19.016357421875,
+          -64.80139923095703,
+          77.77151489257812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.76679992675781,
+          77.78448486328125
+        ],
+        [
+          -19.020681381225586,
+          -64.7624740600586,
+          77.78448486328125
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.7278823852539,
+          77.7974624633789
+        ],
+        [
+          -19.020681381225586,
+          -64.72355651855469,
+          77.7974624633789
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.7278823852539,
+          77.7974624633789
+        ],
+        [
+          -19.020681381225586,
+          -64.70626068115234,
+          77.80178833007812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.020681381225586,
+          -64.72355651855469,
+          77.7974624633789
+        ],
+        [
+          -19.020681381225586,
+          -64.70626068115234,
+          77.80178833007812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81436920166016,
+          77.77151489257812
+        ],
+        [
+          -19.016357421875,
+          -64.81005096435547,
+          77.7671890258789
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81436920166016,
+          77.77151489257812
+        ],
+        [
+          -19.016357421875,
+          -64.80572509765625,
+          77.77151489257812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81436920166016,
+          77.77151489257812
+        ],
+        [
+          -19.012033462524414,
+          -64.83599853515625,
+          77.75853729248047
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81436920166016,
+          77.77151489257812
+        ],
+        [
+          -19.012033462524414,
+          -64.83167266845703,
+          77.75853729248047
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81005096435547,
+          77.7671890258789
+        ],
+        [
+          -19.016357421875,
+          -64.80572509765625,
+          77.77151489257812
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81005096435547,
+          77.7671890258789
+        ],
+        [
+          -19.016357421875,
+          -64.80139923095703,
+          77.77151489257812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.81005096435547,
+          77.7671890258789
+        ],
+        [
+          -19.012033462524414,
+          -64.83167266845703,
+          77.75853729248047
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.016357421875,
+          -64.80572509765625,
+          77.77151489257812
+        ],
+        [
+          -19.016357421875,
+          -64.80139923095703,
+          77.77151489257812
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.012033462524414,
+          -64.83599853515625,
+          77.75853729248047
+        ],
+        [
+          -19.012033462524414,
+          -64.83167266845703,
+          77.75853729248047
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.012033462524414,
+          -64.83599853515625,
+          77.75853729248047
+        ],
+        [
+          -19.007707595825195,
+          -64.84032440185547,
+          77.75421142578125
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -19.012033462524414,
+          -64.83167266845703,
+          77.75853729248047
+        ],
+        [
+          -19.007707595825195,
+          -64.84032440185547,
+          77.75421142578125
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.981760025024414,
+          -64.90951538085938,
+          77.71529388427734
+        ],
+        [
+          -18.981760025024414,
+          -64.90518951416016,
+          77.71529388427734
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.981760025024414,
+          -64.90951538085938,
+          77.71529388427734
+        ],
+        [
+          -18.981760025024414,
+          -64.90518951416016,
+          77.71961975097656
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.981760025024414,
+          -64.90951538085938,
+          77.71529388427734
+        ],
+        [
+          -18.973112106323242,
+          -64.91816711425781,
+          77.7066421508789
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.981760025024414,
+          -64.90518951416016,
+          77.71529388427734
+        ],
+        [
+          -18.981760025024414,
+          -64.90518951416016,
+          77.71961975097656
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.981760025024414,
+          -64.90518951416016,
+          77.71529388427734
+        ],
+        [
+          -18.973112106323242,
+          -64.91816711425781,
+          77.7066421508789
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.973112106323242,
+          -64.9224853515625,
+          77.7066421508789
+        ],
+        [
+          -18.962230682373047,
+          -64.93563842773438,
+          77.69534301757812
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.973112106323242,
+          -64.9224853515625,
+          77.7066421508789
+        ],
+        [
+          -18.96222686767578,
+          -64.93682861328125,
+          77.6955795288086
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.962230682373047,
+          -64.93563842773438,
+          77.69534301757812
+        ],
+        [
+          -18.96222686767578,
+          -64.93682861328125,
+          77.6955795288086
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.962230682373047,
+          -64.93563842773438,
+          77.69534301757812
+        ],
+        [
+          -18.962087631225586,
+          -64.93584442138672,
+          77.69518280029297
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.96222686767578,
+          -64.93682861328125,
+          77.6955795288086
+        ],
+        [
+          -18.962087631225586,
+          -64.93584442138672,
+          77.69518280029297
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.96222686767578,
+          -64.93682861328125,
+          77.6955795288086
+        ],
+        [
+          -18.96208381652832,
+          -64.9370346069336,
+          77.69541931152344
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.962087631225586,
+          -64.93584442138672,
+          77.69518280029297
+        ],
+        [
+          -18.96208381652832,
+          -64.9370346069336,
+          77.69541931152344
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.962087631225586,
+          -64.93584442138672,
+          77.69518280029297
+        ],
+        [
+          -18.961400985717773,
+          -64.93690490722656,
+          77.69419860839844
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.96208381652832,
+          -64.9370346069336,
+          77.69541931152344
+        ],
+        [
+          -18.961400985717773,
+          -64.93690490722656,
+          77.69419860839844
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.96208381652832,
+          -64.9370346069336,
+          77.69541931152344
+        ],
+        [
+          -18.96013641357422,
+          -64.93978881835938,
+          77.69367218017578
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.961400985717773,
+          -64.93690490722656,
+          77.69419860839844
+        ],
+        [
+          -18.96013641357422,
+          -64.93978881835938,
+          77.69367218017578
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.961400985717773,
+          -64.93690490722656,
+          77.69419860839844
+        ],
+        [
+          -18.955812454223633,
+          -64.9441146850586,
+          77.68502044677734
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.96013641357422,
+          -64.93978881835938,
+          77.69367218017578
+        ],
+        [
+          -18.955812454223633,
+          -64.9441146850586,
+          77.68502044677734
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.955812454223633,
+          -64.9441146850586,
+          77.68502044677734
+        ],
+        [
+          -18.940488815307617,
+          -64.96044921875,
+          77.66871643066406
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.955812454223633,
+          -64.9441146850586,
+          77.68502044677734
+        ],
+        [
+          -18.94048500061035,
+          -64.95936584472656,
+          77.66850280761719
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.940488815307617,
+          -64.96044921875,
+          77.66871643066406
+        ],
+        [
+          -18.94048500061035,
+          -64.95936584472656,
+          77.66850280761719
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.940488815307617,
+          -64.96044921875,
+          77.66871643066406
+        ],
+        [
+          -18.93864631652832,
+          -64.96241760253906,
+          77.66645050048828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.940488815307617,
+          -64.96044921875,
+          77.66871643066406
+        ],
+        [
+          -18.938644409179688,
+          -64.96134948730469,
+          77.66624450683594
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.94048500061035,
+          -64.95936584472656,
+          77.66850280761719
+        ],
+        [
+          -18.938644409179688,
+          -64.96134948730469,
+          77.66624450683594
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.93864631652832,
+          -64.96241760253906,
+          77.66645050048828
+        ],
+        [
+          -18.938644409179688,
+          -64.96134948730469,
+          77.66624450683594
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.93864631652832,
+          -64.96241760253906,
+          77.66645050048828
+        ],
+        [
+          -18.91689109802246,
+          -64.97870635986328,
+          77.64177703857422
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.938644409179688,
+          -64.96134948730469,
+          77.66624450683594
+        ],
+        [
+          -18.91689109802246,
+          -64.97870635986328,
+          77.64177703857422
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.912567138671875,
+          -64.9830322265625,
+          77.637451171875
+        ],
+        [
+          -18.88661766052246,
+          -64.99600982666016,
+          77.61582946777344
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.912567138671875,
+          -64.9830322265625,
+          77.637451171875
+        ],
+        [
+          -18.88661766052246,
+          -64.99168395996094,
+          77.61582946777344
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.88661766052246,
+          -64.99600982666016,
+          77.61150360107422
+        ],
+        [
+          -18.88661766052246,
+          -64.99600982666016,
+          77.61582946777344
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.88661766052246,
+          -64.99600982666016,
+          77.61150360107422
+        ],
+        [
+          -18.88661766052246,
+          -64.99168395996094,
+          77.61582946777344
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.88661766052246,
+          -64.99600982666016,
+          77.61582946777344
+        ],
+        [
+          -18.88661766052246,
+          -64.99168395996094,
+          77.61582946777344
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.8649959564209,
+          -65.00033569335938,
+          77.58987426757812
+        ],
+        [
+          -18.856346130371094,
+          -65.00465393066406,
+          77.58123016357422
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.8649959564209,
+          -65.00033569335938,
+          77.58987426757812
+        ],
+        [
+          -18.856346130371094,
+          -65.00033569335938,
+          77.58123016357422
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.856346130371094,
+          -65.00465393066406,
+          77.58123016357422
+        ],
+        [
+          -18.856346130371094,
+          -65.00033569335938,
+          77.58123016357422
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.856346130371094,
+          -65.00465393066406,
+          77.58123016357422
+        ],
+        [
+          -18.852022171020508,
+          -65.00465393066406,
+          77.576904296875
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.856346130371094,
+          -65.00033569335938,
+          77.58123016357422
+        ],
+        [
+          -18.852022171020508,
+          -65.00465393066406,
+          77.576904296875
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.821748733520508,
+          -65.00465393066406,
+          77.546630859375
+        ],
+        [
+          -18.80445098876953,
+          -65.00465393066406,
+          77.52933502197266
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.821748733520508,
+          -65.00465393066406,
+          77.546630859375
+        ],
+        [
+          -18.80445098876953,
+          -65.00033569335938,
+          77.52933502197266
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.80445098876953,
+          -65.00465393066406,
+          77.52933502197266
+        ],
+        [
+          -18.80445098876953,
+          -65.00033569335938,
+          77.52933502197266
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.80445098876953,
+          -65.00465393066406,
+          77.52933502197266
+        ],
+        [
+          -18.79147720336914,
+          -65.00033569335938,
+          77.516357421875
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -18.80445098876953,
+          -65.00033569335938,
+          77.52933502197266
+        ],
+        [
+          -18.79147720336914,
+          -65.00033569335938,
+          77.516357421875
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.1753480434417725,
+          -25.775922775268555,
+          84.5568618774414
+        ],
+        [
+          1.2010042667388916,
+          -25.7412109375,
+          84.55658721923828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.1753480434417725,
+          -25.775922775268555,
+          84.5568618774414
+        ],
+        [
+          1.2012958526611328,
+          -25.74132537841797,
+          84.5568618774414
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.2010042667388916,
+          -25.7412109375,
+          84.55658721923828
+        ],
+        [
+          1.2012958526611328,
+          -25.74132537841797,
+          84.5568618774414
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.2010042667388916,
+          -25.7412109375,
+          84.55658721923828
+        ],
+        [
+          1.205620527267456,
+          -25.719701766967773,
+          84.54821014404297
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.2012958526611328,
+          -25.74132537841797,
+          84.5568618774414
+        ],
+        [
+          1.205620527267456,
+          -25.719701766967773,
+          84.54821014404297
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.2186861038208,
+          -96.13787841796875,
+          26.2485408782959
+        ],
+        [
+          9.236461639404297,
+          -96.11605834960938,
+          26.24785041809082
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.2186861038208,
+          -96.13787841796875,
+          26.2485408782959
+        ],
+        [
+          9.238435745239258,
+          -96.12409973144531,
+          26.251554489135742
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.236461639404297,
+          -96.11605834960938,
+          26.24785041809082
+        ],
+        [
+          9.238435745239258,
+          -96.12409973144531,
+          26.251554489135742
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.236461639404297,
+          -96.11605834960938,
+          26.24785041809082
+        ],
+        [
+          9.25376033782959,
+          -96.11173248291016,
+          26.252174377441406
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.236461639404297,
+          -96.11605834960938,
+          26.24785041809082
+        ],
+        [
+          9.25376033782959,
+          -96.09876251220703,
+          26.2435245513916
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.238435745239258,
+          -96.12409973144531,
+          26.251554489135742
+        ],
+        [
+          9.25376033782959,
+          -96.11173248291016,
+          26.252174377441406
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.25376033782959,
+          -96.11173248291016,
+          26.252174377441406
+        ],
+        [
+          9.25376033782959,
+          -96.09876251220703,
+          26.2435245513916
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.25376033782959,
+          -96.11173248291016,
+          26.252174377441406
+        ],
+        [
+          9.271059036254883,
+          -96.09876251220703,
+          26.252174377441406
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.25376033782959,
+          -96.09876251220703,
+          26.2435245513916
+        ],
+        [
+          9.271059036254883,
+          -96.09876251220703,
+          26.252174377441406
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.25376033782959,
+          -96.09876251220703,
+          26.2435245513916
+        ],
+        [
+          9.272270202636719,
+          -96.0804214477539,
+          26.238666534423828
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.271059036254883,
+          -96.09876251220703,
+          26.252174377441406
+        ],
+        [
+          9.272270202636719,
+          -96.0804214477539,
+          26.238666534423828
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.271059036254883,
+          -96.09876251220703,
+          26.252174377441406
+        ],
+        [
+          9.272586822509766,
+          -96.08008575439453,
+          26.23859214782715
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.271059036254883,
+          -96.09876251220703,
+          26.252174377441406
+        ],
+        [
+          9.327279090881348,
+          -96.03388977050781,
+          26.24785041809082
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.271059036254883,
+          -96.09876251220703,
+          26.252174377441406
+        ],
+        [
+          9.348901748657227,
+          -96.04254150390625,
+          26.26082420349121
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.272270202636719,
+          -96.0804214477539,
+          26.238666534423828
+        ],
+        [
+          9.272586822509766,
+          -96.08008575439453,
+          26.23859214782715
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.272586822509766,
+          -96.08008575439453,
+          26.23859214782715
+        ],
+        [
+          9.318629264831543,
+          -96.0295639038086,
+          26.23487663269043
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.272586822509766,
+          -96.08008575439453,
+          26.23859214782715
+        ],
+        [
+          9.327279090881348,
+          -96.03388977050781,
+          26.24785041809082
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.318629264831543,
+          -96.0295639038086,
+          26.23487663269043
+        ],
+        [
+          9.327279090881348,
+          -96.03388977050781,
+          26.24785041809082
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          9.327279090881348,
+          -96.03388977050781,
+          26.24785041809082
+        ],
+        [
+          9.348901748657227,
+          -96.04254150390625,
+          26.26082420349121
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.854158401489258,
+          -37.47837448120117,
+          85.3785400390625
+        ],
+        [
+          14.85848331451416,
+          -37.4697265625,
+          85.39583587646484
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.854158401489258,
+          -37.47837448120117,
+          85.3785400390625
+        ],
+        [
+          14.85848331451416,
+          -37.4697265625,
+          85.40016174316406
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.85848331451416,
+          -37.4697265625,
+          85.39583587646484
+        ],
+        [
+          14.85848331451416,
+          -37.4697265625,
+          85.40016174316406
+        ]
+      ],
+      "sourceIncidences": 0,
+      "sourceBalance": 0,
+      "addedIncidences": 2,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.85848331451416,
+          -37.4697265625,
+          85.39583587646484
+        ],
+        [
+          14.884430885314941,
+          -37.439453125,
+          85.49098205566406
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": -1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.85848331451416,
+          -37.4697265625,
+          85.40016174316406
+        ],
+        [
+          14.884430885314941,
+          -37.439453125,
+          85.49098205566406
+        ]
+      ],
+      "sourceIncidences": 1,
+      "sourceBalance": 1,
+      "addedIncidences": 1,
+      "candidateIncidences": 2,
+      "candidateBalance": 0
+    }
+  ],
+  "scope": "Every appended coordinate edge checked against every named arterial mesh; all must finish with exactly two opposite incidences."
+}

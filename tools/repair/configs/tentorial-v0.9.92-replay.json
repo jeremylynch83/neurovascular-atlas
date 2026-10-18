@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "description": "Replay only: pre-v0.9.92 tentorial buffers with unchanged current neighbours. No production geometry is installed.",
+  "baselineOverrides": {
+    "Tentorial marginal left": {
+      "positions": "anatomy/source/tentorial-attachment-v0.9.92/baseline/Tentorial marginal left.positions.bin",
+      "indices": "anatomy/source/tentorial-attachment-v0.9.92/baseline/Tentorial marginal left.indices.bin",
+      "positionSha256": "076e040a7c31a47629f19fd28bf3296ceece12ce449bffc44f8f17357d3a71fe",
+      "indicesSha256": "04dbc9d3c0cf96ff3d3e2cc1c689a4767d5067e626ca9231935440d00248f8f0"
+    },
+    "Tentorial marginal right": {
+      "positions": "anatomy/source/tentorial-attachment-v0.9.92/baseline/Tentorial marginal right.positions.bin",
+      "indices": "anatomy/source/tentorial-attachment-v0.9.92/baseline/Tentorial marginal right.indices.bin",
+      "positionSha256": "b3f60d791d35ed1aa224b5f708f76128fcc1d6a11434d97e51afa14a7616b4cb",
+      "indicesSha256": "13011a4a795364e8a2eb3dbddeeeba0d4933f5d6e53d7cd5383afd8f7e350780"
+    }
+  },
+  "networks": [
+    {
+      "id": "tentorial-left",
+      "target": "Tentorial marginal left",
+      "nodes": [
+        "Tentorial marginal left",
+        "Dorsal meningeal left",
+        "Meningohypophyseal trunk left"
+      ]
+    },
+    {
+      "id": "tentorial-right",
+      "target": "Tentorial marginal right",
+      "nodes": [
+        "Tentorial marginal right",
+        "Dorsal meningeal right",
+        "Meningohypophyseal trunk right"
+      ]
+    }
+  ]
+}

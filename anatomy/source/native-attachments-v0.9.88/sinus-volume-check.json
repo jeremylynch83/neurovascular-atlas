@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "method": "VTK point inclusion in closed, oriented DSA sinus proxy; a geometric diagnostic, not anatomical certification.",
+  "results": [
+    {
+      "node": "MMA paramedian left",
+      "baselineVerticesInsideSinusProxy": 582,
+      "candidateVerticesInsideSinusProxy": 0,
+      "candidateVerticesChecked": 3763
+    },
+    {
+      "node": "MMA falcine terminal left",
+      "baselineVerticesInsideSinusProxy": 423,
+      "candidateVerticesInsideSinusProxy": 0,
+      "candidateVerticesChecked": 3238
+    },
+    {
+      "node": "MMA paramedian right",
+      "baselineVerticesInsideSinusProxy": 789,
+      "candidateVerticesInsideSinusProxy": 0,
+      "candidateVerticesChecked": 3660
+    },
+    {
+      "node": "MMA falcine terminal right",
+      "baselineVerticesInsideSinusProxy": 425,
+      "candidateVerticesInsideSinusProxy": 0,
+      "candidateVerticesChecked": 3337
+    }
+  ]
+}

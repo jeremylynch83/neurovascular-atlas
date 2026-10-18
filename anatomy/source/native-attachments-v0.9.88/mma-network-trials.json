@@ -1,0 +1,541 @@
+{
+  "accepted": [
+    {
+      "side": "left",
+      "cutX": -2.365,
+      "childCutZ": 157.5,
+      "inferiorBowMm": 0.4,
+      "parentPortCoordsBefore": [
+        0.07880350658836376,
+        -44.44911902291434,
+        160.76317451113746
+      ],
+      "sharedParentIndices": [
+        3713,
+        3714,
+        3715,
+        3716,
+        3717,
+        3718,
+        3719,
+        3720,
+        3721,
+        3722,
+        3723,
+        3724,
+        3725,
+        3726,
+        3727,
+        3728,
+        3729,
+        3730,
+        3731,
+        3732,
+        3733,
+        3734,
+        3735,
+        3736,
+        3737,
+        3738,
+        3739,
+        3740,
+        3741,
+        3742,
+        3743,
+        3744,
+        3745,
+        3746,
+        3747,
+        3748,
+        3749,
+        3750,
+        3751,
+        3752,
+        3753,
+        3754,
+        3755,
+        3756,
+        3757,
+        3758,
+        3759,
+        3760,
+        3761,
+        3762
+      ],
+      "sharedChildIndices": [
+        2788,
+        2789,
+        2790,
+        2791,
+        2792,
+        2793,
+        2794,
+        2795,
+        2796,
+        2797,
+        2798,
+        2799,
+        2800,
+        2801,
+        2802,
+        2803,
+        2804,
+        2805,
+        2806,
+        2807,
+        2808,
+        2809,
+        2810,
+        2811,
+        2812,
+        2813,
+        2814,
+        2815,
+        2816,
+        2817,
+        2818,
+        2819,
+        2820,
+        2821,
+        2822,
+        2823,
+        2824,
+        2825,
+        2826,
+        2827,
+        2828,
+        2829,
+        2830,
+        2831,
+        2832,
+        2833,
+        2834,
+        2835,
+        2836,
+        2837
+      ],
+      "originalParentVertexCount": 4632,
+      "originalChildVertexCount": 4029,
+      "newParentVertices": 3763,
+      "newChildVertices": 3288,
+      "sharedRimEdgesChecked": 50,
+      "sharedRimUnpairedEdges": 0,
+      "sharedCoordinatesExact": true,
+      "combinedSelfIntersections": 0
+    },
+    {
+      "side": "right",
+      "cutX": 3.635,
+      "childCutZ": 157.5,
+      "inferiorBowMm": 0.4,
+      "parentPortCoordsBefore": [
+        25.998692437714222,
+        -23.08478665819355,
+        147.80372844022864
+      ],
+      "sharedParentIndices": [
+        3610,
+        3611,
+        3612,
+        3613,
+        3614,
+        3615,
+        3616,
+        3617,
+        3618,
+        3619,
+        3620,
+        3621,
+        3622,
+        3623,
+        3624,
+        3625,
+        3626,
+        3627,
+        3628,
+        3629,
+        3630,
+        3631,
+        3632,
+        3633,
+        3634,
+        3635,
+        3636,
+        3637,
+        3638,
+        3639,
+        3640,
+        3641,
+        3642,
+        3643,
+        3644,
+        3645,
+        3646,
+        3647,
+        3648,
+        3649,
+        3650,
+        3651,
+        3652,
+        3653,
+        3654,
+        3655,
+        3656,
+        3657,
+        3658,
+        3659
+      ],
+      "sharedChildIndices": [
+        2887,
+        2888,
+        2889,
+        2890,
+        2891,
+        2892,
+        2893,
+        2894,
+        2895,
+        2896,
+        2897,
+        2898,
+        2899,
+        2900,
+        2901,
+        2902,
+        2903,
+        2904,
+        2905,
+        2906,
+        2907,
+        2908,
+        2909,
+        2910,
+        2911,
+        2912,
+        2913,
+        2914,
+        2915,
+        2916,
+        2917,
+        2918,
+        2919,
+        2920,
+        2921,
+        2922,
+        2923,
+        2924,
+        2925,
+        2926,
+        2927,
+        2928,
+        2929,
+        2930,
+        2931,
+        2932,
+        2933,
+        2934,
+        2935,
+        2936
+      ],
+      "originalParentVertexCount": 4629,
+      "originalChildVertexCount": 4136,
+      "newParentVertices": 3660,
+      "newChildVertices": 3385,
+      "sharedRimEdgesChecked": 50,
+      "sharedRimUnpairedEdges": 0,
+      "sharedCoordinatesExact": true,
+      "combinedSelfIntersections": 0
+    }
+  ],
+  "trials": [
+    {
+      "lateralCutOffsetMm": 2.2,
+      "inferiorBowMm": 0.4,
+      "networks": [
+        {
+          "node": "MMA paramedian left",
+          "selfIntersections": 0,
+          "sinusContacts": 284
+        },
+        {
+          "node": "MMA falcine terminal left",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        }
+      ],
+      "combined": [
+        {
+          "side": "left",
+          "selfIntersections": 0
+        }
+      ],
+      "passed": false
+    },
+    {
+      "lateralCutOffsetMm": 2.2,
+      "inferiorBowMm": 0.8,
+      "networks": [
+        {
+          "node": "MMA paramedian left",
+          "selfIntersections": 0,
+          "sinusContacts": 126
+        },
+        {
+          "node": "MMA falcine terminal left",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        }
+      ],
+      "combined": [
+        {
+          "side": "left",
+          "selfIntersections": 0
+        }
+      ],
+      "passed": false
+    },
+    {
+      "lateralCutOffsetMm": 2.2,
+      "inferiorBowMm": 1.2,
+      "networks": [
+        {
+          "node": "MMA paramedian left",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        },
+        {
+          "node": "MMA falcine terminal left",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        },
+        {
+          "node": "MMA paramedian right",
+          "selfIntersections": 0,
+          "sinusContacts": 152
+        },
+        {
+          "node": "MMA falcine terminal right",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        }
+      ],
+      "combined": [
+        {
+          "side": "left",
+          "selfIntersections": 0
+        },
+        {
+          "side": "right",
+          "selfIntersections": 0
+        }
+      ],
+      "passed": false
+    },
+    {
+      "lateralCutOffsetMm": 3.0,
+      "inferiorBowMm": 0.4,
+      "networks": [
+        {
+          "node": "MMA paramedian left",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        },
+        {
+          "node": "MMA falcine terminal left",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        },
+        {
+          "node": "MMA paramedian right",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        },
+        {
+          "node": "MMA falcine terminal right",
+          "selfIntersections": 0,
+          "sinusContacts": 0
+        }
+      ],
+      "combined": [
+        {
+          "side": "left",
+          "selfIntersections": 0
+        },
+        {
+          "side": "right",
+          "selfIntersections": 0
+        }
+      ],
+      "contacts": [
+        {
+          "node": "MMA falcine terminal left",
+          "other": "brain.falx-cerebri",
+          "before": 572,
+          "after": 404
+        },
+        {
+          "node": "MMA falcine terminal right",
+          "other": "brain.falx-cerebri",
+          "before": 361,
+          "after": 241
+        },
+        {
+          "node": "MMA paramedian left",
+          "other": "bone.frontal",
+          "before": 324,
+          "after": 318
+        },
+        {
+          "node": "MMA paramedian right",
+          "other": "bone.frontal",
+          "before": 327,
+          "after": 327
+        },
+        {
+          "node": "MMA paramedian right",
+          "other": "MMA frontal",
+          "before": 84,
+          "after": 84
+        },
+        {
+          "node": "MMA paramedian left",
+          "other": "MMA frontal left",
+          "before": 129,
+          "after": 129
+        },
+        {
+          "node": "MMA paramedian left",
+          "other": "vein.superior_sagittal",
+          "before": 108,
+          "after": 0
+        },
+        {
+          "node": "MMA falcine terminal left",
+          "other": "vein.superior_sagittal",
+          "before": 57,
+          "after": 0
+        },
+        {
+          "node": "MMA paramedian right",
+          "other": "vein.superior_sagittal",
+          "before": 108,
+          "after": 0
+        },
+        {
+          "node": "MMA falcine terminal right",
+          "other": "vein.superior_sagittal",
+          "before": 56,
+          "after": 0
+        },
+        {
+          "node": "MMA falcine terminal left",
+          "other": "ACA falcine\u2013MMA falcine left",
+          "before": 533,
+          "after": 533
+        },
+        {
+          "node": "MMA falcine terminal right",
+          "other": "ACA falcine\u2013MMA falcine right",
+          "before": 588,
+          "after": 588
+        },
+        {
+          "node": "MMA paramedian left",
+          "other": "Anterior falcine\u2013MMA paramedian left",
+          "before": 100,
+          "after": 100
+        },
+        {
+          "node": "MMA paramedian right",
+          "other": "Anterior falcine\u2013MMA paramedian right",
+          "before": 91,
+          "after": 91
+        }
+      ],
+      "newContactObjects": [],
+      "increasedContactObjects": [],
+      "passed": true
+    }
+  ],
+  "crossNetworkContacts": [
+    {
+      "a": "MMA paramedian left",
+      "b": "MMA paramedian right",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "a": "MMA paramedian left",
+      "b": "MMA falcine terminal right",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "a": "MMA falcine terminal left",
+      "b": "MMA paramedian right",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "a": "MMA falcine terminal left",
+      "b": "MMA falcine terminal right",
+      "before": 0,
+      "after": 0
+    }
+  ],
+  "retention": [
+    {
+      "node": "MMA paramedian left",
+      "originalNativeOrDistalVerticesRetainedExactly": 102,
+      "originalVerticesRetainedExactly": 3113,
+      "baselineComponentVertexCounts": [
+        4631
+      ],
+      "candidateComponentVertexCounts": [
+        3763
+      ],
+      "noNewDisconnectedComponents": true
+    },
+    {
+      "node": "MMA falcine terminal left",
+      "originalNativeOrDistalVerticesRetainedExactly": 2738,
+      "originalVerticesRetainedExactly": 2738,
+      "baselineComponentVertexCounts": [
+        4014,
+        15
+      ],
+      "candidateComponentVertexCounts": [
+        3223,
+        15
+      ],
+      "noNewDisconnectedComponents": true
+    },
+    {
+      "node": "MMA paramedian right",
+      "originalNativeOrDistalVerticesRetainedExactly": 102,
+      "originalVerticesRetainedExactly": 3010,
+      "baselineComponentVertexCounts": [
+        4628
+      ],
+      "candidateComponentVertexCounts": [
+        3660
+      ],
+      "noNewDisconnectedComponents": true
+    },
+    {
+      "node": "MMA falcine terminal right",
+      "originalNativeOrDistalVerticesRetainedExactly": 2839,
+      "originalVerticesRetainedExactly": 2839,
+      "baselineComponentVertexCounts": [
+        4123,
+        13
+      ],
+      "candidateComponentVertexCounts": [
+        3324,
+        13
+      ],
+      "noNewDisconnectedComponents": true
+    }
+  ],
+  "sharedNormalsMethod": "Area-weighted normals on the combined exterior wall, welded by exact coordinates at the new ring."
+}

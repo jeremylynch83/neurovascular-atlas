@@ -1,0 +1,63 @@
+{
+  "release": "0.9.85",
+  "passed": true,
+  "anatomicalAcceptance": false,
+  "build": {
+    "passed": true,
+    "note": "Existing bundle size warning retained."
+  },
+  "courseTests": {
+    "passed": true,
+    "count": 14
+  },
+  "dsa": {
+    "passed": true,
+    "closedProxies": 828,
+    "projectionTriangles": 8966428,
+    "selectableArterialCourses": 578,
+    "closedSections": 2352,
+    "selectiveMeningealDrainage": true
+  },
+  "browser": {
+    "release": "0.9.85",
+    "errors": [],
+    "checks": [
+      "All three changed surfaces and both superior petrosal descriptions load in the ordinary inspection panel",
+      "Left and right MMA bookmarks render a venous frame with both companions and declared lesser-wing drainage"
+    ],
+    "passed": true
+  },
+  "integrity": {
+    "release": "0.9.85",
+    "passed": true,
+    "checks": [
+      "All app runtime source and four GLBs byte-identical; catalogue IDs, hierarchy, assets and relationships unchanged",
+      "Arterial flow courses/edges, proxy topology and all unchanged venous sites preserved; deferred arterial segments and prior findings retained",
+      "All 1,250 exported position/index buffers independently compared: exactly three changed position streams, all indices exact, candidate coordinates lossless",
+      "Independent final 20-label audit confirms all three contact/topology results and zero left meningeal/emissary contact",
+      "All 997 courses exported consistently; issue/public reports and delivered hashes agree; anatomical acceptance remains incomplete"
+    ]
+  },
+  "normalStreams": {
+    "passed": true,
+    "changedNormalStreams": [
+      {
+        "name": "vein.inferior_petrosal.left",
+        "boundaryVertices": 278,
+        "unaffectedNormalMaximumVectorError": 0
+      },
+      {
+        "name": "vein.inferior_petrosal.right",
+        "boundaryVertices": 200,
+        "unaffectedNormalMaximumVectorError": 0
+      },
+      {
+        "name": "vein.middle_meningeal.anterior.left",
+        "boundaryVertices": 35,
+        "unaffectedNormalMaximumVectorError": 0
+      }
+    ],
+    "otherNormalStreamsExact": true
+  },
+  "scope": "Exported geometry, software/data regression and limited regional anatomical review. Unresolved regional reconstruction and fine target/continuity issues remain listed."
+}

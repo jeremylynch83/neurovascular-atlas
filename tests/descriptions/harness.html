@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><div id="root"></div><script type="module">
+import React from 'react';import{createRoot}from'react-dom/client';import{Description}from'/src/Description.tsx';
+const manifest=await fetch('/anatomy/manifest.json').then(r=>r.json()),audit=await fetch('/description-corrections.json').then(r=>r.json()),byId=new Map(manifest.structures.map(s=>[s.id,s]));
+window.lastDescriptionTarget=null;window.descriptionIds=[...byId.keys()];
+createRoot(document.getElementById('root')).render(React.createElement('main',null,audit.entries.map(r=>React.createElement('article',{'data-id':r.id,key:r.id},React.createElement('h2',null,r.name),React.createElement(Description,{text:byId.get(r.id).description,byId,onSelect:s=>window.lastDescriptionTarget=s.id})))));
+window.auditCount=audit.entries.length;
+</script>

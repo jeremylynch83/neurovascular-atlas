@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "errors": [],
+  "workerUrls": [
+    "http://127.0.0.1:8800/assets/geometryWorker-CxemG-T0.js"
+  ],
+  "tests": [
+    "Production bone/artery loading completes without errors or an overlay",
+    "Bundled geometry worker loads deferred vascular data and enables DSA",
+    "Production canvas retains its WebGL context"
+  ]
+}

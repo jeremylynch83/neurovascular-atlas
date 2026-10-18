@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "description": "Rejected bounded seam probes; these four records require collar/regional reconstruction.",
+  "seams": [
+    {
+      "target": "Occipital mastoid left",
+      "parent": "Occipital left"
+    },
+    {
+      "target": "ILT posterior branch left",
+      "parent": "ILT anterior branch left"
+    },
+    {
+      "target": "ILT posterior branch left",
+      "parent": "ILT posteromedial ramus left"
+    },
+    {
+      "target": "ILT posterior branch left",
+      "parent": "Inferolateral trunk left"
+    }
+  ]
+}

@@ -31,7 +31,7 @@
       ]
     ],
     "sourceAssetSha256": "90a715af24911abf97d94be205144e1639514fb5629c4cf8e7faa0dcaff99925",
-    "registeredAssetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+    "registeredAssetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
     "method": "Bone-correspondence similarity registration, followed by recorded regional adjustments. See regionalAdjustments and brainAdjustmentPolicy for the subsequent local deformation fields.",
     "status": "working-checkpoint",
     "limitations": "Regional teaching context. Brainstem geometry has local crossing-related adjustments, not an independent patient-derived refit. Fine anatomy, illustrative vessel calibres and the open correction-register findings require review.",
@@ -60,6 +60,19 @@
         "brainSha256": "f8cc8f9c209e01f05656c0d2fa6ebd1e8f3219811f21488185cf581cdad4b808",
         "method": "Common brainstem and venous placement fields, then a 0.6 mm maximum local peduncular recess after vein-wall recovery.",
         "evidence": "docs/validation/anatomical-mesh-authoring-v0.9.31.json"
+      },
+      {
+        "release": "0.9.47",
+        "brainSha256": "694d67847c8454b67dc62047724317121da9273f83a232bd82951fd484f34a81",
+        "method": "Local pontine groove recess, maximum 3.5 mm; arteries fixed.",
+        "evidence": "docs/validation/transverse-pontine-v0.9.47.json"
+      },
+      {
+        "release": "0.9.86",
+        "brainSha256": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+        "method": "Maximum 1.5 mm local medial tentorial / inferior falcine correction with straight-sinus shaft; falx body, neural tissue, skull and all native venous ports fixed.",
+        "evidence": "docs/validation/falcotentorial-v0.9.86.json",
+        "anatomicalAcceptance": false
       }
     ],
     "brainstemAdjustment": {
@@ -116,7 +129,7 @@
           -66.44861904374676,
           78.46416664573202
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -180,7 +193,7 @@
           -61.0758265514465,
           76.36026157302771
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -245,7 +258,7 @@
           -76.67182444703043,
           81.73907747147811
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -308,7 +321,7 @@
           -76.5787901501353,
           74.12177227758093
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -373,7 +386,7 @@
           -66.76477813720703,
           57.385196685791016
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -436,7 +449,7 @@
           -64.57278842401833,
           69.98041647413109
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -497,7 +510,7 @@
           -77.21251212722764,
           45.6554374647843
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -559,7 +572,7 @@
           -75.33861590752109,
           36.56882090079474
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -619,7 +632,7 @@
           -80.43636600133787,
           61.703395828256966
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -669,7 +682,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.flocculus.left",
-        "triangleIndex": 20570,
+        "triangleIndex": 13188,
         "barycentric": [
           0.4241668075630478,
           0.16163908497499055,
@@ -680,7 +693,7 @@
           -77.95037318034994,
           50.69802022248858
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -731,7 +744,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.left",
-        "triangleIndex": 471,
+        "triangleIndex": 357,
         "barycentric": [
           0.439741572925681,
           0.25069742136381373,
@@ -742,7 +755,7 @@
           -97.40746896938082,
           39.788807702451095
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -792,7 +805,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.left",
-        "triangleIndex": 13178,
+        "triangleIndex": 8679,
         "barycentric": [
           0.32737097175554863,
           0.11395751367704175,
@@ -803,7 +816,7 @@
           -100.23658715899711,
           39.24292020864813
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -868,7 +881,7 @@
           -113.44213863271884,
           62.57773827010062
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -919,7 +932,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.inferior-semilunar-lobule.left",
-        "triangleIndex": 75132,
+        "triangleIndex": 51989,
         "barycentric": [
           0.5131927708650079,
           0.44414265503489236,
@@ -930,7 +943,7 @@
           -126.24980168888115,
           46.25248378260302
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -981,7 +994,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.wing-of-central-lobule.left",
-        "triangleIndex": 17287,
+        "triangleIndex": 11248,
         "barycentric": [
           0.6014606972003028,
           0.3532995756446514,
@@ -992,7 +1005,7 @@
           -71.75399885084059,
           64.29098748059847
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1057,7 +1070,7 @@
           -81.22788177930788,
           73.97734706081258
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1120,7 +1133,7 @@
           -107.55360335060271,
           64.92893700230738
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1183,7 +1196,7 @@
           -69.2012527304703,
           103.24123458411806
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1248,7 +1261,7 @@
           -82.36340153089812,
           96.43289043145002
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1311,7 +1324,7 @@
           -69.2977964487834,
           113.17711840719458
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1377,7 +1390,7 @@
           -106.04339453358119,
           92.57543233040109
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1438,7 +1451,7 @@
           -58.40942766083037,
           76.41386302402323
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1498,7 +1511,7 @@
           -68.75395794948942,
           76.38647936764166
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1561,7 +1574,7 @@
           -30.820676367204694,
           98.96755861244733
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1622,7 +1635,7 @@
           -68.79684231650496,
           110.8783143572727
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1683,7 +1696,7 @@
           -59.051060368772816,
           104.19536508014788
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1746,7 +1759,7 @@
           -61.44262969587793,
           104.28173809582077
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1812,7 +1825,7 @@
           -66.51840499646099,
           78.46566649775203
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1876,7 +1889,7 @@
           -60.88865675682714,
           76.22585753990828
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -1941,7 +1954,7 @@
           -76.67442296964562,
           81.74298973405789
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2004,7 +2017,7 @@
           -76.55857173315508,
           74.1108127076526
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2069,7 +2082,7 @@
           -66.7215347290039,
           57.39384841918945
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2132,7 +2145,7 @@
           -64.65438948963775,
           69.97584379402011
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2193,7 +2206,7 @@
           -77.41101261954506,
           45.958978294951805
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2255,7 +2268,7 @@
           -75.27721046805507,
           36.572221003476436
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2315,7 +2328,7 @@
           -80.458216975087,
           61.700367791870335
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2365,7 +2378,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.flocculus.right",
-        "triangleIndex": 17950,
+        "triangleIndex": 11682,
         "barycentric": [
           0.29891678036828045,
           0.6153301299393764,
@@ -2376,7 +2389,7 @@
           -77.99035396816825,
           50.72322988153
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2427,7 +2440,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.right",
-        "triangleIndex": 555,
+        "triangleIndex": 330,
         "barycentric": [
           0.33228943315343107,
           0.3751179265207448,
@@ -2438,7 +2451,7 @@
           -97.38288406179811,
           39.79508225515062
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2488,7 +2501,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.tonsil-of-cerebellum.right",
-        "triangleIndex": 13245,
+        "triangleIndex": 7671,
         "barycentric": [
           0.22624047666437308,
           0.209689334286435,
@@ -2499,7 +2512,7 @@
           -100.2348184896882,
           39.24695638404239
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2553,7 +2566,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.superior-semilunar-lobule.right",
-        "triangleIndex": 26263,
+        "triangleIndex": 16389,
         "barycentric": [
           0.033103556035187665,
           0.4609716741531099,
@@ -2564,7 +2577,7 @@
           -113.44420622032311,
           62.587511625136464
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2626,7 +2639,7 @@
           -126.24553044045854,
           46.261464137334734
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2677,7 +2690,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.wing-of-central-lobule.right",
-        "triangleIndex": 16903,
+        "triangleIndex": 10971,
         "barycentric": [
           0.6998245066410895,
           0.13528959708701382,
@@ -2688,7 +2701,7 @@
           -71.73396526557674,
           64.29898158161984
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2753,7 +2766,7 @@
           -81.20245236497513,
           73.9705408726464
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2816,7 +2829,7 @@
           -107.54495399872474,
           64.94404734080942
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2879,7 +2892,7 @@
           -69.19425620948226,
           103.241627201206
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -2944,7 +2957,7 @@
           -82.0455241504942,
           96.25828740771655
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3007,7 +3020,7 @@
           -69.29421048522394,
           113.17829376023796
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3073,7 +3086,7 @@
           -105.91797581588939,
           92.57684446789254
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3134,7 +3147,7 @@
           -58.400802020591804,
           76.42680455207278
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3194,7 +3207,7 @@
           -68.75721392531983,
           76.29300678681804
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3257,7 +3270,7 @@
           -30.820642163421862,
           98.97096698097698
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3318,7 +3331,7 @@
           -68.79043154897619,
           110.88259243198915
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3379,7 +3392,7 @@
           -59.05016055581893,
           104.19621521183883
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3442,7 +3455,7 @@
           -61.44021915885811,
           104.28415227877494
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3508,7 +3521,7 @@
           -43.39113860491371,
           105.71183741293972
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3572,7 +3585,7 @@
           -46.77847817177306,
           74.24818717362187
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3638,7 +3651,7 @@
           -63.89846789855555,
           58.980095319678036
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3702,7 +3715,7 @@
           -74.25169818131201,
           36.3723621032662
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3753,7 +3766,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.lingula-of-cerebellum",
-        "triangleIndex": 7584,
+        "triangleIndex": 4849,
         "barycentric": [
           0.3175849591752262,
           0.03148809564514254,
@@ -3764,7 +3777,7 @@
           -82.77258611123273,
           62.63430577316083
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3815,7 +3828,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.culmen",
-        "triangleIndex": 31447,
+        "triangleIndex": 20307,
         "barycentric": [
           0.11214455781074417,
           0.10396515698219284,
@@ -3826,7 +3839,7 @@
           -92.78081893973386,
           77.16365529705318
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3878,7 +3891,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.pyramis-of-vermis",
-        "triangleIndex": 11213,
+        "triangleIndex": 7122,
         "barycentric": [
           0.1380524506250409,
           0.6476647471763135,
@@ -3889,7 +3902,7 @@
           -113.87805963084162,
           45.60057838825153
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -3941,7 +3954,7 @@
       },
       "surfaceAnchor": {
         "structureId": "brain.uvula-of-vermis",
-        "triangleIndex": 4830,
+        "triangleIndex": 3224,
         "barycentric": [
           0.2758377162623361,
           0.07216084193946087,
@@ -3952,7 +3965,7 @@
           -101.44877287411836,
           39.243909936830036
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4016,7 +4029,7 @@
           -91.89007685775009,
           56.88701706040337
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4076,7 +4089,7 @@
           -76.92790018962847,
           53.94062467991865
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4138,7 +4151,7 @@
           -96.00593371131627,
           101.55185917092264
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4203,7 +4216,7 @@
           -22.28505649432117,
           105.3653793299838
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4263,7 +4276,7 @@
           -63.93283028528473,
           99.17223834507547
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4323,7 +4336,7 @@
           -59.32439822971229,
           117.61225165540222
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4399,102 +4412,102 @@
         ],
         "course": [
           [
-            -0.031224161386489865,
+            -0.031224161386489868,
             -106.00049444074295,
-            96.03984187740906
+            96.03947183432207
           ],
           [
             -0.02286984577444735,
             -106.3200260516091,
-            96.43731056650293
+            96.41956928381427
           ],
           [
             0.023168781517569775,
             -106.5811178687305,
-            96.66838613315083
+            96.61229308633273
           ],
           [
             0.05094384402036667,
             -106.66383361816406,
-            96.7523193359375
+            96.68001556396484
           ],
           [
             0.05094384402036667,
             -106.66383361816406,
-            96.7523193359375
+            96.68001556396484
           ],
           [
             0.12945658456857873,
             -106.8897237280939,
-            96.81918848714302
+            96.69352933636608
           ],
           [
             0.29195539334343035,
             -107.50690805508553,
-            96.17211322094063
+            95.84547990253557
           ],
           [
             0.47417144811902934,
             -107.92242783832472,
-            94.73821113383468
+            94.24349247812025
           ],
           [
             0.5184964172533069,
             -108.01760883862703,
-            92.48449496414253
+            91.94887463001227
           ],
           [
-            0.5666469295300395,
+            0.5666469295300396,
             -108.2861122353136,
-            89.39842942623893
+            88.7442239468891
           ],
           [
             0.613284862584945,
-            -110.92646472601979,
-            85.35765997358043
+            -110.92646472601977,
+            83.8790303625221
           ],
           [
             0.6037640886344305,
-            -114.18990051308457,
-            83.16201770881155
+            -114.18990051308455,
+            81.66201770881156
           ],
           [
             0.6288420315869394,
             -118.55651057162659,
-            82.13316277303304
+            80.63316277303305
           ],
           [
             0.645938861104245,
             -122.57608504385846,
-            81.8187727053235
+            80.6890822141205
           ],
           [
             0.618151646656215,
             -125.23903357055848,
-            80.57436167062905
+            80.16131711240548
           ],
           [
             0.5726436331685372,
             -127.09645940904059,
-            78.6960888356515
+            78.64032025022044
           ],
           [
             0.5006792672179948,
-            -128.26598354021414,
+            -128.2659835402141,
             76.20290679551601
           ],
           [
-            0.4171225701777059,
+            0.4171225701777058,
             -129.16963273182523,
             73.27840248775603
           ],
           [
-            0.1482023273518058,
+            0.14820232735180583,
             -130.40494772338133,
             70.8842517568982
           ],
           [
-            0.24564203238023063,
+            0.2456420323802306,
             -132.332937649643,
             69.11727162761406
           ],
@@ -4510,7 +4523,7 @@
           ],
           [
             0.47991408611342634,
-            -138.7608667702613,
+            -138.76086677026132,
             67.87546081144626
           ],
           [
@@ -4800,11 +4813,11 @@
           0.6062785937353268
         ],
         "position": [
-          -0.031224161386489865,
+          -0.031224161386489868,
           -106.00049444074295,
-          96.03984187740906
+          96.03947183432207
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4814,9 +4827,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          -0.031224161386489865,
+          -0.031224161386489868,
           -106.00049444074295,
-          96.03984187740906
+          96.03947183432207
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -4833,10 +4846,10 @@
           ],
           "position": [
             1.3184983593004715,
-            -105.95396158460073,
-            95.945664781316
+            -105.95396158460075,
+            95.9456169799245
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -4854,7 +4867,7 @@
             -85.95009039171555,
             78.93489120454767
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -4891,9 +4904,9 @@
         "position": [
           -0.02286984577444735,
           -106.3200260516091,
-          96.43731056650293
+          96.41956928381427
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4905,7 +4918,7 @@
         "point": [
           -0.02286984577444735,
           -106.3200260516091,
-          96.43731056650293
+          96.41956928381427
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -4923,9 +4936,9 @@
           "position": [
             1.308821508286743,
             -106.24415228028258,
-            96.36173070140137
+            96.35120168935984
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -4943,7 +4956,7 @@
             -88.21953998692122,
             79.99740539334701
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -4980,9 +4993,9 @@
         "position": [
           0.023168781517569775,
           -106.5811178687305,
-          96.66838613315083
+          96.61229308633273
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -4994,7 +5007,7 @@
         "point": [
           0.023168781517569775,
           -106.5811178687305,
-          96.66838613315083
+          96.61229308633273
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5012,9 +5025,9 @@
           "position": [
             1.2552816710609178,
             -106.50023739016991,
-            96.59304897464256
+            96.55093371757681
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5030,9 +5043,9 @@
           "position": [
             0.48063448156948174,
             -90.50567221482976,
-            80.926872214026
+            80.92687221402599
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5069,9 +5082,9 @@
         "position": [
           0.05094384402036667,
           -106.66383361816406,
-          96.7523193359375
+          96.68001556396484
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5083,7 +5096,7 @@
         "point": [
           0.05094384402036667,
           -106.66383361816406,
-          96.7523193359375
+          96.68001556396484
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5101,9 +5114,9 @@
           "position": [
             1.2315683364868164,
             -106.56436920166016,
-            96.66150665283203
+            96.60848999023438
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5117,11 +5130,11 @@
             0.016784598173102662
           ],
           "position": [
-            0.48512890898983485,
-            -92.87360356761548,
+            0.4851289089898348,
+            -92.87360356761546,
             81.57226245139417
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5158,9 +5171,9 @@
         "position": [
           0.05094384402036667,
           -106.66383361816406,
-          96.7523193359375
+          96.68001556396484
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5172,7 +5185,7 @@
         "point": [
           0.05094384402036667,
           -106.66383361816406,
-          96.7523193359375
+          96.68001556396484
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5188,11 +5201,11 @@
             3.991132611988536e-14
           ],
           "position": [
-            1.2003475382115238,
+            1.200347538211524,
             -106.66507870754525,
-            96.69272593240878
+            96.62000243794229
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5208,9 +5221,9 @@
           "position": [
             0.46818266371869083,
             -95.03064230156114,
-            82.2401378764977
+            82.24013787649768
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5247,9 +5260,9 @@
         "position": [
           0.12945658456857873,
           -106.8897237280939,
-          96.81918848714302
+          96.69352933636608
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5261,7 +5274,7 @@
         "point": [
           0.12945658456857873,
           -106.8897237280939,
-          96.81918848714302
+          96.69352933636608
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5279,9 +5292,9 @@
           "position": [
             1.1364264488220215,
             -106.8627700805664,
-            96.75231933593751
+            96.63374328613283
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5299,7 +5312,7 @@
             -97.39461032370507,
             82.12265644807509
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5336,9 +5349,9 @@
         "position": [
           0.29195539334343035,
           -107.50690805508553,
-          96.17211322094063
+          95.84547990253557
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5350,7 +5363,7 @@
         "point": [
           0.29195539334343035,
           -107.50690805508553,
-          96.17211322094063
+          95.84547990253557
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5366,11 +5379,11 @@
             3.1045545561679363e-14
           ],
           "position": [
-            0.9885010242408382,
+            0.9885010242408381,
             -107.47346519229866,
-            96.11563379231183
+            95.80159107926836
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5388,7 +5401,7 @@
             -99.6832866067844,
             81.85316767870471
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5425,9 +5438,9 @@
         "position": [
           0.47417144811902934,
           -107.92242783832472,
-          94.73821113383468
+          94.24349247812025
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5439,7 +5452,7 @@
         "point": [
           0.47417144811902934,
           -107.92242783832472,
-          94.73821113383468
+          94.24349247812025
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5457,9 +5470,9 @@
           "position": [
             0.8049707373431683,
             -107.924416547703,
-            94.68676800079882
+            94.19120159912572
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5473,11 +5486,11 @@
             0.7494681953525782
           ],
           "position": [
-            0.49661974740298814,
+            0.4966197474029881,
             -101.93443390260992,
             81.02423246260332
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5514,9 +5527,9 @@
         "position": [
           0.5184964172533069,
           -108.01760883862703,
-          92.48449496414253
+          91.94887463001227
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5528,7 +5541,7 @@
         "point": [
           0.5184964172533069,
           -108.01760883862703,
-          92.48449496414253
+          91.94887463001227
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5544,11 +5557,11 @@
             -1.452630354826184e-16
           ],
           "position": [
-            0.7508745785154612,
+            0.7508745785154614,
             -108.01128952604812,
-            92.43385161408617
+            91.90097075058681
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5566,7 +5579,7 @@
             -103.50260298136317,
             80.27627833826543
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5601,11 +5614,11 @@
           7.198509475887171e-14
         ],
         "position": [
-          0.5666469295300395,
+          0.5666469295300396,
           -108.2861122353136,
-          89.39842942623893
+          88.7442239468891
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5615,9 +5628,9 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.5666469295300395,
+          0.5666469295300396,
           -108.2861122353136,
-          89.39842942623893
+          88.7442239468891
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5635,9 +5648,9 @@
           "position": [
             0.715553835977151,
             -108.2921324907467,
-            89.36019517874315
+            88.7032990149229
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5655,7 +5668,7 @@
             -103.50685119628908,
             79.35111442919454
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5691,10 +5704,10 @@
         ],
         "position": [
           0.613284862584945,
-          -110.92646472601979,
-          85.35765997358043
+          -110.92646472601977,
+          83.8790303625221
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5705,8 +5718,8 @@
         "status": "regional",
         "point": [
           0.613284862584945,
-          -110.92646472601979,
-          85.35765997358043
+          -110.92646472601977,
+          83.8790303625221
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5724,9 +5737,9 @@
           "position": [
             0.6734416816545052,
             -110.93732516624918,
-            85.34966619472603
+            83.8704736579327
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5744,7 +5757,7 @@
             -103.50685119628906,
             79.28945922851562
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5780,10 +5793,10 @@
         ],
         "position": [
           0.6037640886344305,
-          -114.18990051308457,
-          83.16201770881155
+          -114.18990051308455,
+          81.66201770881156
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5794,8 +5807,8 @@
         "status": "regional",
         "point": [
           0.6037640886344305,
-          -114.18990051308457,
-          83.16201770881155
+          -114.18990051308455,
+          81.66201770881156
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5811,11 +5824,11 @@
             0.19729927244076423
           ],
           "position": [
-            0.7098818866553839,
-            -114.18995721371884,
-            83.15916114708031
+            0.709881886655384,
+            -114.18995721371886,
+            81.65916114708031
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5833,7 +5846,7 @@
             -103.50685119628906,
             79.28945922851562
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5870,9 +5883,9 @@
         "position": [
           0.6288420315869394,
           -118.55651057162659,
-          82.13316277303304
+          80.63316277303305
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5884,7 +5897,7 @@
         "point": [
           0.6288420315869394,
           -118.55651057162659,
-          82.13316277303304
+          80.63316277303305
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5902,9 +5915,9 @@
           "position": [
             0.6832170283596122,
             -118.5547936055161,
-            82.13089824796872
+            80.63089824796873
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5922,7 +5935,7 @@
             -103.50685119628906,
             79.28945922851562
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -5959,9 +5972,9 @@
         "position": [
           0.645938861104245,
           -122.57608504385846,
-          81.8187727053235
+          80.6890822141205
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -5973,7 +5986,7 @@
         "point": [
           0.645938861104245,
           -122.57608504385846,
-          81.8187727053235
+          80.6890822141205
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -5990,10 +6003,10 @@
           ],
           "position": [
             0.6408835363952528,
-            -122.57590027291222,
-            81.81847290223845
+            -122.57590027291221,
+            80.6887389430808
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6011,7 +6024,7 @@
             -103.50685119628906,
             79.28945922851562
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6048,9 +6061,9 @@
         "position": [
           0.618151646656215,
           -125.23903357055848,
-          80.57436167062905
+          80.16131711240548
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6062,7 +6075,7 @@
         "point": [
           0.618151646656215,
           -125.23903357055848,
-          80.57436167062905
+          80.16131711240548
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -6078,11 +6091,11 @@
             -2.4969706761705103e-14
           ],
           "position": [
-            0.643418371677399,
-            -125.23840451384042,
-            80.5738517308787
+            0.6434183716773989,
+            -125.23840451384041,
+            80.16063764508836
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6100,7 +6113,7 @@
             -130.3238983154297,
             78.98673248291016
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6137,9 +6150,9 @@
         "position": [
           0.5726436331685372,
           -127.09645940904059,
-          78.6960888356515
+          78.64032025022044
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6151,7 +6164,7 @@
         "point": [
           0.5726436331685372,
           -127.09645940904059,
-          78.6960888356515
+          78.64032025022044
         ],
         "course": [],
         "connects": "Tentorium cerebelli, left",
@@ -6169,9 +6182,9 @@
           "position": [
             0.6580510547466981,
             -127.0909216761179,
-            78.6886972197653
+            78.63247374356901
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6189,7 +6202,7 @@
             -131.52182006835935,
             77.18769073486328
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6225,10 +6238,10 @@
         ],
         "position": [
           0.5006792672179948,
-          -128.26598354021414,
+          -128.2659835402141,
           76.20290679551601
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6239,7 +6252,7 @@
         "status": "regional",
         "point": [
           0.5006792672179948,
-          -128.26598354021414,
+          -128.2659835402141,
           76.20290679551601
         ],
         "course": [],
@@ -6256,11 +6269,11 @@
             0.07439299324014696
           ],
           "position": [
-            0.6928213811974926,
-            -128.24709497013268,
+            0.6928213811974927,
+            -128.2470949701327,
             76.18665411366526
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6278,7 +6291,7 @@
             -131.7787880250573,
             76.93072174078279
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6313,11 +6326,11 @@
           0.07215683841659463
         ],
         "position": [
-          0.4171225701777059,
+          0.4171225701777058,
           -129.16963273182523,
           73.27840248775603
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6327,7 +6340,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.4171225701777059,
+          0.4171225701777058,
           -129.16963273182523,
           73.27840248775603
         ],
@@ -6349,7 +6362,7 @@
             -129.15516883013728,
             73.26911929351174
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6364,10 +6377,10 @@
           ],
           "position": [
             0.6217952370643616,
-            -133.41168212890622,
+            -133.41168212890625,
             75.29782104492188
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6402,11 +6415,11 @@
           0.23807281595386504
         ],
         "position": [
-          0.1482023273518058,
+          0.14820232735180583,
           -130.40494772338133,
           70.8842517568982
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6416,7 +6429,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.1482023273518058,
+          0.14820232735180583,
           -130.40494772338133,
           70.8842517568982
         ],
@@ -6438,7 +6451,7 @@
             -130.37271495109832,
             70.85227870939198
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6453,10 +6466,10 @@
           ],
           "position": [
             0.6217952370643616,
-            -133.41168212890622,
+            -133.41168212890625,
             75.29782104492188
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6491,11 +6504,11 @@
           0.22143260774257253
         ],
         "position": [
-          0.24564203238023063,
+          0.2456420323802306,
           -132.332937649643,
           69.11727162761406
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6505,7 +6518,7 @@
         "kind": "brain-surface",
         "status": "regional",
         "point": [
-          0.24564203238023063,
+          0.2456420323802306,
           -132.332937649643,
           69.11727162761406
         ],
@@ -6527,7 +6540,7 @@
             -132.32577700013718,
             69.10136911507611
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6545,7 +6558,7 @@
             -135.2150573730469,
             74.39830017089844
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6584,7 +6597,7 @@
           -134.50049919412353,
           68.04508482086953
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6614,9 +6627,9 @@
           "position": [
             0.8699096960055757,
             -134.5007345326782,
-            68.02957929704242
+            68.02957929704243
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6634,7 +6647,7 @@
             -136.1145782470703,
             74.09989929199219
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6673,7 +6686,7 @@
           -136.7873269216221,
           67.99629653194071
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6701,11 +6714,11 @@
             0.21031046159912942
           ],
           "position": [
-            0.5868328404869309,
+            0.586832840486931,
             -136.7661107569211,
             67.86179522334521
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6723,7 +6736,7 @@
             -136.1145782470703,
             74.09989929199219
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6759,10 +6772,10 @@
         ],
         "position": [
           0.47991408611342634,
-          -138.7608667702613,
+          -138.76086677026132,
           67.87546081144626
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6773,7 +6786,7 @@
         "status": "regional",
         "point": [
           0.47991408611342634,
-          -138.7608667702613,
+          -138.76086677026132,
           67.87546081144626
         ],
         "course": [],
@@ -6794,7 +6807,7 @@
             -138.74657554591943,
             67.78967927456496
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6809,10 +6822,10 @@
           ],
           "position": [
             0.6217952370643614,
-            -136.12927793220368,
-            74.10011136782137
+            -136.1292779322037,
+            74.10011136782136
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6851,7 +6864,7 @@
           -140.77518074687993,
           67.09860825942889
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6880,10 +6893,10 @@
           ],
           "position": [
             0.5728500461355326,
-            -140.7639466350698,
+            -140.76394663506983,
             67.07101626691573
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6901,7 +6914,7 @@
             -144.2146148681641,
             71.69540405273439
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6940,7 +6953,7 @@
           -142.9029825827912,
           65.28114718769355
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -6972,7 +6985,7 @@
             -142.9012314414565,
             65.28102857337147
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -6990,7 +7003,7 @@
             -144.2146148681641,
             71.69540405273439
           ],
-          "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+          "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
           "registrationId": "z-anatomy-batch2-working-v0.9.67",
           "bindingStatus": "working-surface-binding",
           "anatomicalAttachmentVerified": false
@@ -7029,7 +7042,7 @@
           -54.86742490604798,
           103.36942319610554
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7080,7 +7093,7 @@
           -58.01034475156646,
           109.68744570292905
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7131,7 +7144,7 @@
           -62.47250310044006,
           116.00413058034479
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7182,7 +7195,7 @@
           -65.44037904970378,
           122.32176162856518
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7233,7 +7246,7 @@
           -76.85925192673174,
           128.64199329381498
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7284,7 +7297,7 @@
           -78.55561972551143,
           134.958874608865
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7335,7 +7348,7 @@
           -82.65828495647087,
           141.27458337979627
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7386,7 +7399,7 @@
           -86.73958285813087,
           147.59336553403844
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7437,7 +7450,7 @@
           -91.35818744904167,
           153.91185305095405
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7600,7 +7613,7 @@
           -54.85867753192181,
           103.38662992972361
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7651,7 +7664,7 @@
           -57.997799794775936,
           109.7035099149049
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7702,7 +7715,7 @@
           -62.458547826938734,
           116.01695392016562
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7753,7 +7766,7 @@
           -65.43009433304898,
           122.33595393910704
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7804,7 +7817,7 @@
           -76.86641554937289,
           128.65307200841642
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7855,7 +7868,7 @@
           -78.54680377901622,
           134.97005566103695
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7906,7 +7919,7 @@
           -82.64570501528985,
           141.28443690673652
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -7957,7 +7970,7 @@
           -86.72978592383052,
           147.60039771761416
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8008,7 +8021,7 @@
           -91.35385261904513,
           153.91719349097124
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8171,7 +8184,7 @@
           -85.38664245605469,
           97.51345825195312
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8222,7 +8235,7 @@
           -85.6072006225586,
           102.20135498046875
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8273,7 +8286,7 @@
           -91.8000717163086,
           106.87628173828125
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8324,7 +8337,7 @@
           -75.60865020751953,
           111.93177795410156
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8375,7 +8388,7 @@
           -89.65505981445312,
           117.02619171142578
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8510,7 +8523,7 @@
           -109.21537017822266,
           93.13693237304688
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8561,7 +8574,7 @@
           -129.24273681640625,
           102.64247131347656
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8612,7 +8625,7 @@
           -129.93467712402344,
           113.82164001464844
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8663,7 +8676,7 @@
           -125.23380279541016,
           125.96088409423828
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8714,7 +8727,7 @@
           -131.57803344726562,
           137.60711669921875
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8849,7 +8862,7 @@
           -85.37799835205078,
           97.52210235595703
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8900,7 +8913,7 @@
           -85.59855651855469,
           102.21000671386719
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -8951,7 +8964,7 @@
           -91.7957534790039,
           106.88493347167969
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9002,7 +9015,7 @@
           -75.60000610351562,
           111.94475555419922
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9053,7 +9066,7 @@
           -89.64640808105469,
           117.03916931152344
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9188,7 +9201,7 @@
           -109.20671844482422,
           93.0201644897461
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9239,7 +9252,7 @@
           -129.23841857910156,
           102.64247131347656
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9290,7 +9303,7 @@
           -129.93467712402344,
           113.84326934814453
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9341,7 +9354,7 @@
           -125.22947692871094,
           125.95655822753906
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -9392,7 +9405,7 @@
           -131.57371520996094,
           137.663330078125
         ],
-        "assetSha256": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+        "assetSha256": "690a5c681367797e479706b50ce957b0e87f84708c89a7a14d0ee03854d81c8e",
         "registrationId": "z-anatomy-batch2-working-v0.9.67",
         "bindingStatus": "working-surface-binding",
         "anatomicalAttachmentVerified": false
@@ -10710,16 +10723,16 @@
           [
             59.1124382019043,
             -38.75846481323242,
-            96.7523193359375
+            96.63694763183594
           ]
         ],
         "centroid": [
           27.344144972615705,
           -104.59900518919393,
-          68.58933739103142
+          68.53312623355147
         ],
         "surfaceRole": "dural-surface",
-        "positionSha256": "ce361b6276097e57be5e82962addd7389761e22ae637532b64374ea2e89b5011",
+        "positionSha256": "1c7b7ee48469d277ece4b074fb8e761cba730a379a26486bd0ab0849360d252c",
         "indicesSha256": "f12c15f511f670b371cb0faa5858d78c70d363224e29782d306582444a2fbb6b"
       }
     },
@@ -10749,10 +10762,10 @@
         "centroid": [
           0.5843105157361261,
           -70.13785553438882,
-          117.13428691860537
+          117.1094993431371
         ],
         "surfaceRole": "dural-surface",
-        "positionSha256": "ed07fe98b6854c6a772b9a0a1851a6100ac11ec83eed5e6be8115da14c946910",
+        "positionSha256": "af247beadbefee6188be7ef973c1dddf8e8a954de4fb1166854100b78ffa414a",
         "indicesSha256": "2232fc24edb8bd7e3be075a2fd2d0f7a867248f7144c323fd339221e354c495a"
       }
     },
@@ -10776,16 +10789,16 @@
           [
             1.1926466226577759,
             -38.8146858215332,
-            96.82583618164062
+            96.69526672363281
           ]
         ],
         "centroid": [
           -26.059197570758826,
           -104.64144200934382,
-          68.61055971850948
+          68.5521414439451
         ],
         "surfaceRole": "dural-surface",
-        "positionSha256": "7d252f22a8feee35845b718922e90aaa135978a98b86395954aaab003944ae26",
+        "positionSha256": "374d48eb1e7e3f2775bb3103d17349f57b7216dea6c66c60e8a45f5ea30bb319",
         "indicesSha256": "558c613419e5deb234064c6373dbe72b186ecc7ca1f6f4d4cde2de018a3f2c87"
       }
     },

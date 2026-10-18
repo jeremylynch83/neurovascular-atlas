@@ -1,0 +1,1551 @@
+{
+  "passedStrictGeometry": false,
+  "changes": [
+    {
+      "node": "ACA A5 right",
+      "sourceVertices": 4418,
+      "sourceTriangles": 8340,
+      "vertices": 4418,
+      "triangles": 8340,
+      "changedTriangles": 4992,
+      "retainedSourceTriangles": 3348,
+      "minimumChangedAreaMm2": 1.61748480518379e-06,
+      "maximumDisplacementMm": 1.9000000953674316,
+      "sourceNormalOppositeFaces": 0,
+      "attachments": [
+        {
+          "other": "ACA A4 right",
+          "sourceCoordinatesRetainedOrMappedIdentically": 64
+        },
+        {
+          "other": "Inferior internal parietal right",
+          "sourceCoordinatesRetainedOrMappedIdentically": 140
+        },
+        {
+          "other": "Long callosal branch right",
+          "sourceCoordinatesRetainedOrMappedIdentically": 72
+        },
+        {
+          "other": "Precuneal right",
+          "sourceCoordinatesRetainedOrMappedIdentically": 148
+        }
+      ]
+    },
+    {
+      "node": "Precuneal right",
+      "sourceVertices": 5297,
+      "sourceTriangles": 10444,
+      "vertices": 5297,
+      "triangles": 10444,
+      "changedTriangles": 1274,
+      "retainedSourceTriangles": 9170,
+      "minimumChangedAreaMm2": 0.00017471307458458423,
+      "maximumDisplacementMm": 1.9000000953674316,
+      "sourceNormalOppositeFaces": 0,
+      "attachments": [
+        {
+          "other": "ACA A5 right",
+          "sourceCoordinatesRetainedOrMappedIdentically": 148
+        }
+      ]
+    },
+    {
+      "node": "ACA falcine branch right",
+      "sourceVertices": 4186,
+      "sourceTriangles": 8161,
+      "vertices": 5298,
+      "triangles": 10384,
+      "changedTriangles": 2694,
+      "retainedSourceTriangles": 7690,
+      "minimumChangedAreaMm2": 3.8414014378201945e-08,
+      "attachments": [
+        {
+          "other": "ACA falcine\u2013MMA falcine right",
+          "sourceCoordinatesRetainedOrMappedIdentically": 134
+        }
+      ]
+    }
+  ],
+  "trianglePairsChecked": 152788,
+  "crossings": [
+    {
+      "node": "ACA A5 right",
+      "face": 5091,
+      "other": "ACA falcine branch right",
+      "otherFace": 10301
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5091,
+      "other": "ACA falcine branch right",
+      "otherFace": 10302
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5091,
+      "other": "ACA falcine branch right",
+      "otherFace": 10303
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5111,
+      "other": "ACA falcine branch right",
+      "otherFace": 10331
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5112,
+      "other": "ACA falcine branch right",
+      "otherFace": 10333
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5112,
+      "other": "ACA falcine branch right",
+      "otherFace": 10331
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5112,
+      "other": "ACA falcine branch right",
+      "otherFace": 10332
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5213,
+      "other": "ACA A5 right",
+      "otherFace": 5304
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5214,
+      "other": "ACA A5 right",
+      "otherFace": 5305
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5286,
+      "other": "ACA A5 right",
+      "otherFace": 5368
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5304,
+      "other": "ACA A5 right",
+      "otherFace": 5213
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5305,
+      "other": "ACA A5 right",
+      "otherFace": 5214
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5368,
+      "other": "ACA A5 right",
+      "otherFace": 5286
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10301,
+      "other": "ACA A5 right",
+      "otherFace": 5091
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10302,
+      "other": "ACA A5 right",
+      "otherFace": 5091
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10303,
+      "other": "ACA A5 right",
+      "otherFace": 5091
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10331,
+      "other": "ACA A5 right",
+      "otherFace": 5112
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10331,
+      "other": "ACA A5 right",
+      "otherFace": 5111
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10332,
+      "other": "ACA A5 right",
+      "otherFace": 5112
+    },
+    {
+      "node": "ACA falcine branch right",
+      "face": 10333,
+      "other": "ACA A5 right",
+      "otherFace": 5112
+    }
+  ],
+  "existingCorticalContactsForDepthRegression": [
+    {
+      "node": "ACA A5 right",
+      "face": 5476,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8835
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5476,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8827
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5476,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8828
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5477,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8835
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5477,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8827
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5478,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8836
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5478,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8835
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5478,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8827
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5478,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8830
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5558,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8834
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5558,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9027
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5559,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8834
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5560,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8843
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5560,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8834
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5560,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9033
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5654,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9027
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5654,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9032
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5654,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9025
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5655,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9027
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5655,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9033
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5655,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9032
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5656,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9033
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 5657,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9033
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6697,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6698,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6699,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6700,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6701,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6702,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6703,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6704,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6705,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6706,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6707,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6708,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6709,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6710,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6760,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6761,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6775,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6776,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6820,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6821,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6822,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6823,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6824,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6841,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6842,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6843,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6843,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6844,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6882,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6882,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6883,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6884,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6885,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 587
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6908,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6909,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6944,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6945,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6946,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6947,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6973,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 6974,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7006,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7007,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7008,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7009,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7039,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7040,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7068,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7069,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7070,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7071,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7105,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7106,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7132,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7133,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7157,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7158,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7159,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7160,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7183,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7184,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7233,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7234,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7254,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7255,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7256,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7257,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7299,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7300,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7316,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7317,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7318,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7318,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7319,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7365,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7366,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 588
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7366,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7380,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7381,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7421,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7422,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7423,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7424,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7435,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7436,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7493,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7494,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7504,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7505,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7559,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7560,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7566,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7567,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7568,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7569,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7625,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7626,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7627,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7628,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7629,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7630,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "ACA A5 right",
+      "face": 7631,
+      "other": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+      "otherFace": 589
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7377,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9203
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7378,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9203
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7379,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9203
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7380,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9203
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7381,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9203
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7381,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8993
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7382,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8993
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7383,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8994
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7383,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8993
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7384,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8994
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7385,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8994
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7386,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8994
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7387,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8798
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7387,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8994
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7388,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8798
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7389,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8798
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7435,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7436,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7437,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7438,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7439,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7440,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7441,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7442,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9203
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7442,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7454,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8798
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7455,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8798
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7456,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7456,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8798
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7457,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7495,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7496,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7497,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7497,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8995
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7498,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8995
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7499,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8995
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7500,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9204
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7500,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8995
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7522,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7523,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7524,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7525,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7557,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7558,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7559,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7560,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7590,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7591,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8621
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7591,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8800
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7592,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8303
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7592,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8467
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7592,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8464
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7592,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8621
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7592,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8301
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7593,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8467
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7616,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9210
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7617,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9210
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7618,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9210
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7618,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9209
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7619,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9209
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7619,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9208
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7620,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9208
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7620,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9002
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7621,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9002
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7622,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8999
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7622,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9002
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7658,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8467
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7659,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8467
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7679,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9210
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7680,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8807
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7680,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 9210
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7724,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8467
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7725,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8467
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7725,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8627
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7726,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8627
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7727,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8629
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7727,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8627
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7739,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7739,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8807
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7740,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8807
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7741,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8807
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7742,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8807
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7743,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8807
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7792,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8629
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7793,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8470
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7793,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8629
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7794,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8470
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7795,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8470
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7796,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8470
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7797,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8470
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7797,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8629
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7798,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8629
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7799,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7799,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8629
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7800,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7801,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7802,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7803,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    },
+    {
+      "node": "Precuneal right",
+      "face": 7804,
+      "other": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+      "otherFace": 8630
+    }
+  ],
+  "nativeNetwork": {
+    "before": {
+      "boundaryEdges": 567,
+      "nonManifoldEdges": 0,
+      "misorientedEdges": 0
+    },
+    "after": {
+      "boundaryEdges": 412,
+      "nonManifoldEdges": 0,
+      "misorientedEdges": 0
+    }
+  },
+  "scope": "Existing cortical embedding of two translated vessels is handled separately using paired depth regression. Every other changed-face crossing, including every new collar face and self-intersection, is rejected."
+}

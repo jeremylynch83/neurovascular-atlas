@@ -1,0 +1,106 @@
+{
+  "release": "0.9.105",
+  "sourceAssets": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "50db848481d76b90bd373dc70f6eadf643a2da868b3cbfe3d59e043c703619bb",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+  },
+  "rows": [
+    {
+      "node": "ACom septal perforator right",
+      "zeroAreaFaceIds": [
+        28
+      ],
+      "boundaryBefore": 70,
+      "boundaryAfter": 70,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "AICA subarcuate left",
+      "zeroAreaFaceIds": [
+        9368
+      ],
+      "boundaryBefore": 245,
+      "boundaryAfter": 245,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Anterior communicating",
+      "zeroAreaFaceIds": [
+        1090
+      ],
+      "boundaryBefore": 584,
+      "boundaryAfter": 584,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Lacrimal right",
+      "zeroAreaFaceIds": [
+        6806
+      ],
+      "boundaryBefore": 474,
+      "boundaryAfter": 473,
+      "newBoundaryEdges": 1,
+      "badBefore": 0,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA medullary perforator left",
+      "zeroAreaFaceIds": [
+        1736,
+        1737
+      ],
+      "boundaryBefore": 384,
+      "boundaryAfter": 385,
+      "newBoundaryEdges": 1,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA vermian left",
+      "zeroAreaFaceIds": [
+        7393
+      ],
+      "boundaryBefore": 863,
+      "boundaryAfter": 862,
+      "newBoundaryEdges": 1,
+      "badBefore": 0,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "zeroAreaFaceIds": [
+        9646,
+        9655,
+        9656
+      ],
+      "boundaryBefore": 405,
+      "boundaryAfter": 407,
+      "newBoundaryEdges": 3,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    }
+  ]
+}

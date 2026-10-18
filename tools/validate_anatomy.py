@@ -38,6 +38,20 @@ def glb_nodes(p:Path)->set[str]:
 def validate_eca(build=False, filename="eca_manifest.json", output="eca-manifest.json"):
     """Validate the separate reference reconstruction, including its exact hierarchy."""
     manifest=read_json(ROOT/'anatomy/generated'/filename)
+    # Keep the reviewed description overlay authoritative if source geometry
+    # catalogues are regenerated. It cannot change any anatomical graph data.
+    for overlay_name in ['description-corrections-v0.9.121.json','description-corrections-v0.9.124.json']:
+        description_overlay=ROOT/'anatomy/metadata'/overlay_name
+        if filename=='complete_manifest.json' and description_overlay.is_file():
+            overlay=read_json(description_overlay)
+            targets={s['id']:s for s in manifest['structures']}
+            seen=set()
+            for correction in overlay['entries']:
+                sid=correction['id']
+                if sid in seen or sid not in targets:
+                    raise ValueError('Invalid description override ID: '+sid)
+                seen.add(sid)
+                targets[sid]['description']=correction['after']
     rows=manifest['structures']; byid={s['id']:s for s in rows}; errors=[]; assets={}
     schema=read_json(ROOT/'anatomy/metadata/provenance.json')
     sources={s['id'] for s in manifest['sources']}

@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "scope": "Authoring replay of four known small native wall gaps, including source preparation, detection/patching, local validation and staging. Excludes export, DSA, release build, human review, archive transfer and regional reconstruction. OS page cache is uncontrolled; empty cache means an empty authoring cache.",
+  "repeats": 3,
+  "legacySeconds": [
+    6.478900670001167,
+    6.660405999999057,
+    7.211202621001576
+  ],
+  "legacyMedianSeconds": 6.660405999999057,
+  "pipelineEmptyCacheSeconds": 6.193000305000169,
+  "pipelineWarmSeconds": [
+    1.1632922520002467,
+    0.9609158870007377,
+    1.1846731509976962
+  ],
+  "pipelineWarmMedianSeconds": 1.1632922520002467,
+  "warmSpeedupVsLegacy": 5.725479550428266,
+  "warmSpeedupVsEmptyAuthoringCache": 5.3236839619205645,
+  "warmTimeReductionVsLegacyPercent": 82.53421410045556,
+  "knownGapsRepaired": 4,
+  "trianglesAdded": 7,
+  "replayComparison": [
+    {
+      "node": "Tentorial marginal left",
+      "addedTriangles": 4,
+      "patchTrianglesMatchV092Exactly": true,
+      "sourceCoordinatesAndFacesExact": true
+    },
+    {
+      "node": "Tentorial marginal right",
+      "addedTriangles": 3,
+      "patchTrianglesMatchV092Exactly": true,
+      "sourceCoordinatesAndFacesExact": true
+    }
+  ],
+  "warmRunsRepeatedAllLocalChecks": true,
+  "emptyCacheStats": {
+    "assetCacheHits": 0,
+    "assetDecodes": 5,
+    "bvhCacheHits": 0,
+    "bvhBuilds": 25,
+    "namedMeshes": 1250,
+    "boundaryCacheHits": 0
+  },
+  "warmCacheStats": {
+    "assetCacheHits": 5,
+    "assetDecodes": 0,
+    "bvhCacheHits": 25,
+    "bvhBuilds": 0,
+    "namedMeshes": 1250,
+    "boundaryCacheHits": 2
+  },
+  "sourceHashes": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "5a8761de475ca74cf4659105bf7cc9dc4dd07d9fe579679d51455bee7d7a4e2e",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "cf0fb00820b6dfd73f24f86474ef23c9380904ec10b010d6e24482208e6b7065"
+  },
+  "validation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "Tentorial marginal left",
+        "sourceVertices": 16173,
+        "sourceTriangles": 32205,
+        "addedVertices": 1,
+        "addedTriangles": 4,
+        "movedVertices": 0,
+        "affectedTriangles": 4,
+        "maximumDisplacementMm": 0.0,
+        "networks": [
+          {
+            "id": "tentorial-left",
+            "before": {
+              "boundaryEdges": 461,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            },
+            "after": {
+              "boundaryEdges": 455,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            }
+          }
+        ]
+      },
+      {
+        "node": "Tentorial marginal right",
+        "sourceVertices": 15263,
+        "sourceTriangles": 30407,
+        "addedVertices": 3,
+        "addedTriangles": 3,
+        "movedVertices": 0,
+        "affectedTriangles": 3,
+        "maximumDisplacementMm": 0.0,
+        "networks": [
+          {
+            "id": "tentorial-right",
+            "before": {
+              "boundaryEdges": 394,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            },
+            "after": {
+              "boundaryEdges": 385,
+              "nonManifoldEdges": 0,
+              "misorientedEdges": 0
+            }
+          }
+        ]
+      }
+    ],
+    "trianglePairsChecked": 106,
+    "crossings": [],
+    "containment": [
+      {
+        "node": "Tentorial marginal left",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 25
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 1.636140165394465,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.occipital",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 19
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.parietal.left",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 2,
+          "misorientedEdges": 0
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 42.43470922014987,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.sphenoid",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 19
+      },
+      {
+        "node": "Tentorial marginal left",
+        "target": "bone.temporal.left",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 84,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 13.265533907851312,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 30
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 2.8997092548459675,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.occipital",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 20
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.parietal.right",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 6,
+          "misorientedEdges": 1
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 44.82500621801243,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.sphenoid",
+        "targetTopology": {
+          "closedOrientedManifold": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "three-ray-parity",
+        "insideSamples": 0,
+        "ambiguousSamples": 0,
+        "samples": 20
+      },
+      {
+        "node": "Tentorial marginal right",
+        "target": "bone.temporal.right",
+        "targetTopology": {
+          "closedOrientedManifold": false,
+          "boundaryEdges": 85,
+          "nonManifoldEdges": 0,
+          "misorientedEdges": 0
+        },
+        "method": "source-anchor-empty-ball",
+        "minimumClearanceMarginMm": 12.22486325912666,
+        "passed": true,
+        "absoluteVolumeMembershipCertified": false
+      }
+    ],
+    "problems": [],
+    "scope": "All affected faces against the entire scene, including adjacent faces and coplanar overlap. Unchanged remote defects are retained. Tissue/bone ray samples are a local regression gate, not anatomical approval."
+  }
+}

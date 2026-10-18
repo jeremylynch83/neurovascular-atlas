@@ -1,0 +1,551 @@
+{
+  "release": "0.9.83",
+  "units": "mm",
+  "coordinateSystem": "RAS",
+  "method": {
+    "contacts": "VTK triangle/triangle half-contact count; tolerance 1e-7; count is not number of defects",
+    "distance": "All vertices of first surface to triangles of second surface; minimum is a sampled upper bound, not exact continuous clearance",
+    "sharedPositions": "Delivered positions within 1e-5 mm; proximity/shared coordinates alone do not prove an open lumen"
+  },
+  "assetHashes": {
+    "brain-context.glb": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+    "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "complete-circulation.glb": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+    "venous.glb": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+    "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+  },
+  "posteriorCrossings": [
+    {
+      "a": "Basilar",
+      "b": "vein.anterior_pontomesencephalic",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.11921,
+      "medianVertexToSurfaceMm": 7.64913
+    },
+    {
+      "a": "PCA P1 right",
+      "b": "vein.lateral_mesencephalic.right",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.0291,
+      "medianVertexToSurfaceMm": 2.14663
+    },
+    {
+      "a": "PCA P1 right",
+      "b": "vein.posterior_communicating",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.09386,
+      "medianVertexToSurfaceMm": 2.24218
+    },
+    {
+      "a": "PCA P2-P3 right",
+      "b": "vein.posterior_communicating",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.99766,
+      "medianVertexToSurfaceMm": 15.79066
+    },
+    {
+      "a": "Posterior communicating right",
+      "b": "vein.posterior_communicating",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.01454,
+      "medianVertexToSurfaceMm": 1.24505
+    },
+    {
+      "a": "SCA right",
+      "b": "vein.anterior_pontomesencephalic",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 1.60254,
+      "medianVertexToSurfaceMm": 21.46657
+    },
+    {
+      "a": "Thalamoperforator 2 right",
+      "b": "vein.lateral_mesencephalic.right",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.90903,
+      "medianVertexToSurfaceMm": 3.63083
+    },
+    {
+      "a": "Vertebral V4 left",
+      "b": "vein.marginal",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.18541,
+      "medianVertexToSurfaceMm": 5.52185
+    },
+    {
+      "a": "Vertebral V4 left",
+      "b": "vein.pontomedullary.left",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.1703,
+      "medianVertexToSurfaceMm": 10.98798
+    },
+    {
+      "a": "Vertebral V4 right",
+      "b": "vein.anterior_medullary",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.1097,
+      "medianVertexToSurfaceMm": 8.86668
+    },
+    {
+      "a": "Vertebral V4 right",
+      "b": "vein.pontomedullary.right",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 2.43919,
+      "medianVertexToSurfaceMm": 14.40076
+    },
+    {
+      "a": "Vertebral V4 right",
+      "b": "vein.pontomedullary.left",
+      "surfaceContacts": 0,
+      "minimumVertexToSurfaceMm": 0.64078,
+      "medianVertexToSurfaceMm": 19.06143
+    }
+  ],
+  "basilarVenousDepthSamples": [
+    {
+      "zMm": 70.0,
+      "basilarMeanY": -56.02737741920355,
+      "veinMeanY": -58.65611631500909,
+      "veinMinusArteryY": -2.62873889580554
+    },
+    {
+      "zMm": 75.0,
+      "basilarMeanY": -56.54312270656318,
+      "veinMeanY": -59.01099304451065,
+      "veinMinusArteryY": -2.467870337947467
+    }
+  ],
+  "pericallosal": [
+    {
+      "vessel": "ACA A2 left",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 3.72737,
+        "medianVertexToSurfaceMm": 8.21046
+      },
+      "contacts": [
+        {
+          "structure": "brain.straight-gyrus-gyrus-rectus.left",
+          "surfaceContacts": 166
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A3 left",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 9.36278,
+        "medianVertexToSurfaceMm": 13.59922
+      },
+      "contacts": [
+        {
+          "structure": "brain.superior-frontal-gyrus.left",
+          "surfaceContacts": 155
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A4 left",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 4.45465,
+        "medianVertexToSurfaceMm": 6.22939
+      },
+      "contacts": [
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+          "surfaceContacts": 318
+        },
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+          "surfaceContacts": 72
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A5 left",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 0.00072,
+        "medianVertexToSurfaceMm": 3.72944
+      },
+      "contacts": [
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+          "surfaceContacts": 134
+        },
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.left",
+          "surfaceContacts": 129
+        },
+        {
+          "structure": "brain.cingulate-gyrus-posteroventral-part.left",
+          "surfaceContacts": 84
+        },
+        {
+          "structure": "brain.corpus-callosum",
+          "surfaceContacts": 105
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A2 right",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 3.48524,
+        "medianVertexToSurfaceMm": 8.16709
+      },
+      "contacts": [
+        {
+          "structure": "brain.straight-gyrus-gyrus-rectus.right",
+          "surfaceContacts": 189
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A3 right",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 8.89604,
+        "medianVertexToSurfaceMm": 12.88698
+      },
+      "contacts": [
+        {
+          "structure": "brain.superior-frontal-gyrus.right",
+          "surfaceContacts": 127
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A4 right",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 4.69397,
+        "medianVertexToSurfaceMm": 6.25076
+      },
+      "contacts": [
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right",
+          "surfaceContacts": 483
+        },
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+          "surfaceContacts": 145
+        }
+      ]
+    },
+    {
+      "vessel": "ACA A5 right",
+      "callosalDistance": {
+        "minimumVertexToSurfaceMm": 0.93635,
+        "medianVertexToSurfaceMm": 3.91367
+      },
+      "contacts": [
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+          "surfaceContacts": 104
+        },
+        {
+          "structure": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+          "surfaceContacts": 275
+        },
+        {
+          "structure": "brain.cingulate-gyrus-posteroventral-part.right",
+          "surfaceContacts": 78
+        }
+      ]
+    }
+  ],
+  "pericallosalSeams": [
+    {
+      "a": "ACA A2 left",
+      "parent": "ACA A3 left",
+      "sharedPositionVertices1e5Mm": 63,
+      "boundaryVertices": 509,
+      "sharedBoundaryVertices1e5Mm": 63,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 15.97461
+    },
+    {
+      "a": "ACA A3 left",
+      "parent": "ACA A4 left",
+      "sharedPositionVertices1e5Mm": 64,
+      "boundaryVertices": 269,
+      "sharedBoundaryVertices1e5Mm": 64,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 11.11926
+    },
+    {
+      "a": "ACA A4 left",
+      "parent": "ACA A5 left",
+      "sharedPositionVertices1e5Mm": 64,
+      "boundaryVertices": 323,
+      "sharedBoundaryVertices1e5Mm": 64,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 20.45524
+    },
+    {
+      "a": "ACA A2 right",
+      "parent": "ACA A3 right",
+      "sharedPositionVertices1e5Mm": 64,
+      "boundaryVertices": 507,
+      "sharedBoundaryVertices1e5Mm": 64,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 15.60364
+    },
+    {
+      "a": "ACA A3 right",
+      "parent": "ACA A4 right",
+      "sharedPositionVertices1e5Mm": 64,
+      "boundaryVertices": 270,
+      "sharedBoundaryVertices1e5Mm": 64,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 11.0925
+    },
+    {
+      "a": "ACA A4 right",
+      "parent": "ACA A5 right",
+      "sharedPositionVertices1e5Mm": 64,
+      "boundaryVertices": 324,
+      "sharedBoundaryVertices1e5Mm": 64,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 20.19733
+    }
+  ],
+  "falcineAttachments": [
+    {
+      "a": "Anterior falcine left",
+      "parent": "Anterior ethmoidal left",
+      "sharedPositionVertices1e5Mm": 90,
+      "boundaryVertices": 90,
+      "sharedBoundaryVertices1e5Mm": 90,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 19.04605
+    },
+    {
+      "a": "MMA falcine terminal left",
+      "parent": "MMA paramedian left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 173,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 0.13529,
+      "medianVertexToSurfaceMm": 14.5211
+    },
+    {
+      "a": "ACA falcine branch left",
+      "parent": "ACA A5 left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 238,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 3.57395,
+      "medianVertexToSurfaceMm": 15.74191
+    },
+    {
+      "a": "ACA falcine–MMA falcine left",
+      "parent": "ACA falcine branch left",
+      "sharedPositionVertices1e5Mm": 137,
+      "boundaryVertices": 227,
+      "sharedBoundaryVertices1e5Mm": 137,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 14.99747
+    },
+    {
+      "a": "ACA falcine–MMA falcine left",
+      "parent": "MMA falcine terminal left",
+      "sharedPositionVertices1e5Mm": 90,
+      "boundaryVertices": 227,
+      "sharedBoundaryVertices1e5Mm": 90,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 22.36902
+    },
+    {
+      "a": "Anterior falcine–MMA paramedian left",
+      "parent": "Anterior falcine left",
+      "sharedPositionVertices1e5Mm": 1,
+      "boundaryVertices": 0,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 24.83811
+    },
+    {
+      "a": "Anterior falcine–MMA paramedian left",
+      "parent": "MMA paramedian left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 0,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 0.00161,
+      "medianVertexToSurfaceMm": 20.50772
+    },
+    {
+      "a": "Anterior falcine right",
+      "parent": "Anterior ethmoidal right",
+      "sharedPositionVertices1e5Mm": 90,
+      "boundaryVertices": 90,
+      "sharedBoundaryVertices1e5Mm": 90,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 19.04884
+    },
+    {
+      "a": "MMA falcine terminal right",
+      "parent": "MMA paramedian right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 171,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 0.00791,
+      "medianVertexToSurfaceMm": 15.16066
+    },
+    {
+      "a": "ACA falcine branch right",
+      "parent": "ACA A5 right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 211,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 2.2941,
+      "medianVertexToSurfaceMm": 14.97987
+    },
+    {
+      "a": "ACA falcine–MMA falcine right",
+      "parent": "ACA falcine branch right",
+      "sharedPositionVertices1e5Mm": 134,
+      "boundaryVertices": 224,
+      "sharedBoundaryVertices1e5Mm": 134,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 15.38131
+    },
+    {
+      "a": "ACA falcine–MMA falcine right",
+      "parent": "MMA falcine terminal right",
+      "sharedPositionVertices1e5Mm": 90,
+      "boundaryVertices": 224,
+      "sharedBoundaryVertices1e5Mm": 90,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 21.9752
+    },
+    {
+      "a": "Anterior falcine–MMA paramedian right",
+      "parent": "Anterior falcine right",
+      "sharedPositionVertices1e5Mm": 1,
+      "boundaryVertices": 0,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 0.0,
+      "medianVertexToSurfaceMm": 24.80909
+    },
+    {
+      "a": "Anterior falcine–MMA paramedian right",
+      "parent": "MMA paramedian right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 0,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 0.00048,
+      "medianVertexToSurfaceMm": 19.81885
+    }
+  ],
+  "falcineParentCandidates": [
+    {
+      "a": "ACA falcine branch left",
+      "parent": "ACA A2 left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 238,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 64.41989,
+      "medianVertexToSurfaceMm": 80.26728
+    },
+    {
+      "a": "ACA falcine branch left",
+      "parent": "ACA A3 left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 238,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 57.44547,
+      "medianVertexToSurfaceMm": 68.6771
+    },
+    {
+      "a": "ACA falcine branch left",
+      "parent": "ACA A4 left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 238,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 17.28612,
+      "medianVertexToSurfaceMm": 28.07935
+    },
+    {
+      "a": "ACA falcine branch left",
+      "parent": "ACA A5 left",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 238,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 3.57395,
+      "medianVertexToSurfaceMm": 15.74191
+    },
+    {
+      "a": "ACA falcine branch right",
+      "parent": "ACA A2 right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 211,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 64.36913,
+      "medianVertexToSurfaceMm": 80.09696
+    },
+    {
+      "a": "ACA falcine branch right",
+      "parent": "ACA A3 right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 211,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 54.96297,
+      "medianVertexToSurfaceMm": 67.22492
+    },
+    {
+      "a": "ACA falcine branch right",
+      "parent": "ACA A4 right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 211,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 14.61279,
+      "medianVertexToSurfaceMm": 26.81123
+    },
+    {
+      "a": "ACA falcine branch right",
+      "parent": "ACA A5 right",
+      "sharedPositionVertices1e5Mm": 0,
+      "boundaryVertices": 211,
+      "sharedBoundaryVertices1e5Mm": 0,
+      "minimumVertexToSurfaceMm": 2.2941,
+      "medianVertexToSurfaceMm": 14.97987
+    }
+  ],
+  "date": "2026-10-14",
+  "geometryChanged": false,
+  "anatomicalAcceptance": false,
+  "sources": [
+    {
+      "id": "ref.gabrielsen1969",
+      "title": "Gabrielsen TO, Amundsen P. The Pontomesencephalic Veins: A Roentgenographic Study. Radiology 1969;92:889–896.",
+      "url": "https://pubs.rsna.org/doi/10.1148/92.4.889",
+      "accessed": "2026-10-14",
+      "evidence": "Publisher anatomy section and study methods: longitudinal venous channels near brainstem, including a median channel between basilar artery and brain parenchyma. Full article behind access control; only accessible sections used."
+    },
+    {
+      "id": "ref.pollock1968",
+      "title": "Pollock JA, Newton TH. The Anterior Falx Artery: Normal and Pathologic Anatomy. Radiology 1968;91:1089–1095.",
+      "url": "https://pubs.rsna.org/doi/10.1148/91.6.1089",
+      "accessed": "2026-10-14",
+      "evidence": "Publisher anatomy section: anterior falx artery from anterior ethmoidal branch of ophthalmic artery; original cadaver injection and angiographic study. Only accessible sections used."
+    },
+    {
+      "id": "ref.bhogal2015",
+      "title": "Bhogal P et al. Normal pio-dural arterial connections. Interv Neuroradiol 2015;21:750–758.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4757356/",
+      "accessed": "2026-10-14",
+      "evidence": "Original cadaver dissection (figure 3) and angiographic example (figure 2) support a pericallosal dural branch to falx. Does not establish a universal A5 origin or certify this reconstruction."
+    }
+  ],
+  "decisions": {
+    "G02": {
+      "status": "geometric-recheck-passed-anatomical-review-limited",
+      "pairsChecked": 12,
+      "pairsWithSurfaceContacts": 0,
+      "conclusion": "All 12 original crossing corrections remain free of triangle intersections in the delivered geometry. Sampled APMV sections at Z=70 and 75 mm are posterior to the basilar artery, consistent with cited anatomical relationship. This is not whole-course or whole-atlas anatomical certification. Tiny sampled clearances should not be interpreted as physiological measurements."
+    },
+    "G05": {
+      "status": "correction-required",
+      "conclusion": "Historical G05 is not resolved by the later generic callosal-repair note. Both A2–A5 chains retain matching seam coordinates but all eight segments contact registered brain surfaces. Left A5 also intersects the corpus-callosum surface. A3 remains separated from the registered callosal surface. Retain the issue, extend review to A5, and require coordinated vessel/brain registration and junction review. Do not repeat the previously rejected local displacement trial."
+    },
+    "G06": {
+      "status": "physical-parent-interfaces-unresolved",
+      "conclusion": "Anterior ethmoidal origin of anterior falcine arteries is supported and both delivered parent rims share 90 coordinates. A pericallosal dural branch is supported by original dissection; exact A5 origin is an illustrative model assignment. ACA falcine branches have no coordinate matches to A2–A5 and sampled nearest wall distances to A5 are 3.57395 mm left and 2.29410 mm right. MMA falcine terminal parent assignments are retained as provisional; neither shares coordinates with its paramedian parent. ACA-to-MMA connection rims match their endpoints, but upstream gaps prevent acceptance of network continuity. Anterior-falcine-to-MMA connections are closed components, so close proximity does not demonstrate a patent join. Preserve catalogue parent IDs and potential-anastomosis semantics pending a coupled geometry repair."
+    }
+  }
+}

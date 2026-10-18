@@ -1,0 +1,85 @@
+{
+  "release": "0.9.105",
+  "baseline": "0.9.104",
+  "batch": 13,
+  "anatomicalAcceptance": false,
+  "reviewedArterialMeshes": 766,
+  "sourceZeroAreaFaces": 69,
+  "changedMeshes": 29,
+  "removedExactZeroAreaFaces": 59,
+  "remainingZeroAreaFaces": 10,
+  "remainingAffectedLabels": 7,
+  "verticesMoved": 0,
+  "positiveAreaFacesRemoved": 0,
+  "storedNormalsChanged": false,
+  "connectedComponentCountsUnchanged": true,
+  "affectedGlobalEdges": 100,
+  "affectedGlobalBadEdgesBefore": 85,
+  "affectedGlobalBadEdgesAfter": 11,
+  "nativeBadEdgesCleared": 74,
+  "affectedGlobalBoundaryEdgesBefore": 9,
+  "affectedGlobalBoundaryEdgesAfter": 2,
+  "newGlobalBoundaryEdges": 0,
+  "newBadEdges": 0,
+  "exposedPerLabelPortEdges": 36,
+  "pairedNativeCoordinateEdges": 36,
+  "allNewPerLabelEdgesHaveOppositeRetainedPositiveAreaNeighbourWalls": true,
+  "selectionMethod": "Exact component subset enumeration; newly exposed per-label edges must pair with positive-area retained neighbouring artery walls; no new global boundary or bad edge.",
+  "independentComponentGroups": 35,
+  "largestComponentFaces": 6,
+  "strictNoNewPerLabelBoundaryDeletions": 9,
+  "sourceReplayByteExact": true,
+  "exportValidation": {
+    "release": "0.9.105",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 570,
+    "allPositionsAndNormalsByteExact": true,
+    "allRetainedFaceIndicesExact": true,
+    "deletedFacesAreValidatedExactZeroArea": true,
+    "otherAssetsByteExact": 4
+  },
+  "projectionValidation": {
+    "passed": true,
+    "refreshedRecipes": 29,
+    "allClosedOrientedAndPositiveVolume": true
+  },
+  "flowValidation": {
+    "passed": true,
+    "unchangedCoursesReused": 568,
+    "selectedCourseStatusRetained": true,
+    "graphAndVeinSitesUnchanged": true,
+    "directedConnectionsUnchanged": true,
+    "unaffectedEdgeDistancesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": []
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1221,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true
+  },
+  "metadataValidation": {
+    "passed": true,
+    "issueRegisterCopiesByteExact": true,
+    "recordedFailedNativeInterfacesRetained": 1
+  },
+  "verification": {
+    "fullBuild": "passed",
+    "repairTests": 22,
+    "dsa": "passed",
+    "closedOrientedProxies": 828,
+    "proxyTriangles": 8971504,
+    "selectableArterialCourses": 579,
+    "closedSections": 2353,
+    "fullAtlasRenderPerformed": false
+  },
+  "evidence": "anatomy/source/arterial-port-v0.9.105",
+  "limitations": [
+    "Exact subset result is limited to deletion-only native-edge and port constraints; explicit wall reconstruction may resolve more.",
+    "Paired coordinate edges do not certify complete receiving lumens or regional anatomical registration.",
+    "Ten zero-area source faces and wider G01/G03/G04/G05/G06/G07/G08 findings, including the separate ILT interface, remain open."
+  ]
+}

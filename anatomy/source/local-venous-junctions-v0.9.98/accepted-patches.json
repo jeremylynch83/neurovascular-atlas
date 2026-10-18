@@ -1,0 +1,85 @@
+{
+  "release": "0.9.98",
+  "acceptedProposals": [
+    {
+      "id": "component-4-loop-0",
+      "target": "vein.basilar_plexus",
+      "boundaryLabels": [
+        "vein.basilar_plexus",
+        "vein.inferior_petrosal.left"
+      ],
+      "boundaryCoordinates": [
+        [
+          -15.798831939697266,
+          -70.72614288330078,
+          42.95822525024414
+        ],
+        [
+          -15.69936466217041,
+          -70.50558471679688,
+          43.24365234375
+        ],
+        [
+          -15.223655700683594,
+          -71.08941650390625,
+          42.824161529541016
+        ],
+        [
+          -15.759909629821777,
+          -70.76939392089844,
+          42.95390319824219
+        ],
+        [
+          -15.893973350524902,
+          -70.71317291259766,
+          42.927955627441406
+        ]
+      ],
+      "centre": [
+        -15.67514705657959,
+        -70.7607421875,
+        42.98157958984375
+      ],
+      "spanMm": 0.8620505291941468,
+      "triangles": [
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "areaMm2": 0.1306998249966433,
+      "minimumTriangleAreaMm2": 0.0020870516652563217
+    }
+  ],
+  "changes": [
+    {
+      "node": "vein.basilar_plexus",
+      "appendedVertices": [
+        {
+          "index": 14677,
+          "coordinate": [
+            -15.223655700683594,
+            -71.08941650390625,
+            42.824161529541016
+          ],
+          "normalSource": "vein.inferior_petrosal.left"
+        }
+      ],
+      "newTriangles": 3,
+      "proposals": [
+        "component-4-loop-0"
+      ]
+    }
+  ]
+}

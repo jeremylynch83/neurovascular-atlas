@@ -1,0 +1,1326 @@
+{
+  "passed": false,
+  "boundaryLabels": [
+    "SCA right",
+    "Wollschlaeger and Wollschlaeger artery right"
+  ],
+  "points": [
+    [
+      20.07402229309082,
+      -68.43790435791016,
+      67.30645751953125
+    ],
+    [
+      20.07831382751465,
+      -68.42976379394531,
+      67.30158233642578
+    ],
+    [
+      20.082637786865234,
+      -68.42111206054688,
+      67.30158233642578
+    ],
+    [
+      20.094776153564453,
+      -68.40148162841797,
+      67.29034423828125
+    ],
+    [
+      20.086963653564453,
+      -68.4254379272461,
+      67.29293060302734
+    ],
+    [
+      20.082637786865234,
+      -68.43408966064453,
+      67.29725646972656
+    ],
+    [
+      20.07831382751465,
+      -68.44274139404297,
+      67.29725646972656
+    ],
+    [
+      20.06938362121582,
+      -68.44351959228516,
+      67.30889129638672
+    ],
+    [
+      20.179014205932617,
+      -67.97189331054688,
+      67.33287811279297
+    ]
+  ],
+  "removedPositiveSourceFaces": [
+    23440,
+    23558,
+    23559
+  ],
+  "triangles": null,
+  "statesTested": 4620,
+  "statesDiscovered": 4620,
+  "bestSourceConflictTriangleCount": 1,
+  "sourceClearStatesSelfChecked": 0,
+  "uniqueTrianglesScreened": 84,
+  "trianglePairsChecked": 1665,
+  "triangleScreen": [
+    {
+      "triangle": [
+        0,
+        1,
+        2
+      ],
+      "areaMm2": 2.3596313900652523e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        3
+      ],
+      "areaMm2": 2.8888387842571615e-05,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        4
+      ],
+      "areaMm2": 3.5875850067274626e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        5
+      ],
+      "areaMm2": 3.894575476085611e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        6
+      ],
+      "areaMm2": 5.732665378487285e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        7
+      ],
+      "areaMm2": 9.899376096115839e-06,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        8
+      ],
+      "areaMm2": 0.001404229049109918,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        3
+      ],
+      "areaMm2": 5.3086586520886295e-05,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        4
+      ],
+      "areaMm2": 0.00010321921027170638,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        5
+      ],
+      "areaMm2": 8.99465246256939e-05,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        6
+      ],
+      "areaMm2": 0.00010960891016242761,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        7
+      ],
+      "areaMm2": 1.6247867288606982e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        8
+      ],
+      "areaMm2": 0.0018022157244485175,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        3,
+        4
+      ],
+      "areaMm2": 0.00018410672168815448,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        3,
+        5
+      ],
+      "areaMm2": 0.00018211192148817555,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        3,
+        6
+      ],
+      "areaMm2": 0.0002506766065898086,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        3,
+        7
+      ],
+      "areaMm2": 2.888778244541264e-05,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        3,
+        8
+      ],
+      "areaMm2": 0.005267187736130044,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        4,
+        5
+      ],
+      "areaMm2": 4.288568489717558e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        4,
+        6
+      ],
+      "areaMm2": 0.00011141245217919847,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        4,
+        7
+      ],
+      "areaMm2": 2.8625604457318726e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        4,
+        8
+      ],
+      "areaMm2": 0.004165314728165974,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        5,
+        6
+      ],
+      "areaMm2": 5.312473976559136e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        5,
+        7
+      ],
+      "areaMm2": 2.8324452877342322e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        5,
+        8
+      ],
+      "areaMm2": 0.0029046664971802963,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        6,
+        7
+      ],
+      "areaMm2": 4.2512126912880814e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        0,
+        6,
+        8
+      ],
+      "areaMm2": 0.002487946726000378,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        0,
+        7,
+        8
+      ],
+      "areaMm2": 0.0010319123192463228,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        3
+      ],
+      "areaMm2": 5.527264025829421e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        4
+      ],
+      "areaMm2": 5.0381262894180415e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        5
+      ],
+      "areaMm2": 3.4998021806714975e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        6
+      ],
+      "areaMm2": 3.4998021806714975e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        7
+      ],
+      "areaMm2": 3.644751702532673e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        8
+      ],
+      "areaMm2": 0.000574581411433171,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        3,
+        4
+      ],
+      "areaMm2": 0.00013282087459864556,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        3,
+        5
+      ],
+      "areaMm2": 0.00012959832670376506,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        3,
+        6
+      ],
+      "areaMm2": 0.0001750993450474375,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        3,
+        7
+      ],
+      "areaMm2": 3.081147363697089e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        3,
+        8
+      ],
+      "areaMm2": 0.003907488700974417,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        4,
+        5
+      ],
+      "areaMm2": 3.969069422423957e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        4,
+        6
+      ],
+      "areaMm2": 8.826087779027567e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        4,
+        7
+      ],
+      "areaMm2": 5.977386373957903e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        4,
+        8
+      ],
+      "areaMm2": 0.00276189342575711,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        5,
+        6
+      ],
+      "areaMm2": 3.4998021806714975e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        5,
+        7
+      ],
+      "areaMm2": 6.704195344176701e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        5,
+        8
+      ],
+      "areaMm2": 0.0015464009016696002,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        6,
+        7
+      ],
+      "areaMm2": 9.842509832275325e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        1,
+        6,
+        8
+      ],
+      "areaMm2": 0.001046040273704375,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        1,
+        7,
+        8
+      ],
+      "areaMm2": 0.0023773499441577988,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        3,
+        4
+      ],
+      "areaMm2": 0.00013208791164168767,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        2,
+        3,
+        5
+      ],
+      "areaMm2": 0.00014214700742131532,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        3,
+        6
+      ],
+      "areaMm2": 0.0001932383268835642,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        2,
+        3,
+        7
+      ],
+      "areaMm2": 6.225937807118244e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        2,
+        3,
+        8
+      ],
+      "areaMm2": 0.003423682471734613,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        4,
+        5
+      ],
+      "areaMm2": 5.535416344032019e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        2,
+        4,
+        6
+      ],
+      "areaMm2": 0.00010502273066854583,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        2,
+        4,
+        7
+      ],
+      "areaMm2": 0.00014277467729820168,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        4,
+        8
+      ],
+      "areaMm2": 0.0022683042444678553,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        5,
+        6
+      ],
+      "areaMm2": 3.4998021806714975e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        2,
+        5,
+        7
+      ],
+      "areaMm2": 0.00013196143266623603,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        5,
+        8
+      ],
+      "areaMm2": 0.0010125313629630078,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        6,
+        7
+      ],
+      "areaMm2": 0.00016504956794843588,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        6,
+        8
+      ],
+      "areaMm2": 0.0006525243683724932,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        2,
+        7,
+        8
+      ],
+      "areaMm2": 0.0028074666719438515,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        4,
+        5
+      ],
+      "areaMm2": 4.585956887259175e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        3,
+        4,
+        6
+      ],
+      "areaMm2": 4.6867308973264966e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        3,
+        4,
+        7
+      ],
+      "areaMm2": 0.0002220571787730436,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        4,
+        8
+      ],
+      "areaMm2": 0.0012874663237209894,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        5,
+        6
+      ],
+      "areaMm2": 3.796079129257549e-05,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        5,
+        7
+      ],
+      "areaMm2": 0.00022479913708460132,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23569
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        5,
+        8
+      ],
+      "areaMm2": 0.0025629123088023492,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        6,
+        7
+      ],
+      "areaMm2": 0.00030358192931034225,
+      "contacts": [
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        6,
+        8
+      ],
+      "areaMm2": 0.0030371946389678795,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        3,
+        7,
+        8
+      ],
+      "areaMm2": 0.006253589482273543,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        4,
+        5,
+        6
+      ],
+      "areaMm2": 2.092006420074089e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        4,
+        5,
+        7
+      ],
+      "areaMm2": 4.767449990682284e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        4,
+        5,
+        8
+      ],
+      "areaMm2": 0.0013237808386017647,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        4,
+        6,
+        7
+      ],
+      "areaMm2": 0.00012735221008557522,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        4,
+        6,
+        8
+      ],
+      "areaMm2": 0.0018043614168841047,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        4,
+        7,
+        8
+      ],
+      "areaMm2": 0.0051937050779320626,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        5,
+        6,
+        7
+      ],
+      "areaMm2": 6.731347371185084e-05,
+      "contacts": [],
+      "passed": true
+    },
+    {
+      "triangle": [
+        5,
+        6,
+        8
+      ],
+      "areaMm2": 0.0006072930495033451,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        5,
+        7,
+        8
+      ],
+      "areaMm2": 0.003949753977851357,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9798
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9799
+        }
+      ],
+      "passed": false
+    },
+    {
+      "triangle": [
+        6,
+        7,
+        8
+      ],
+      "areaMm2": 0.0035200179877194226,
+      "contacts": [
+        {
+          "node": "SCA right",
+          "face": 23556
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9796
+        },
+        {
+          "node": "Wollschlaeger and Wollschlaeger artery right",
+          "face": 9797
+        }
+      ],
+      "passed": false
+    }
+  ]
+}

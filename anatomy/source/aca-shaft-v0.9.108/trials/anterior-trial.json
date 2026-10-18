@@ -1,0 +1,127 @@
+[
+  {
+    "start": -47,
+    "plateau": -43,
+    "x": 2.5,
+    "z": -1,
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "insideBefore": 20958,
+        "insideAfter": 16271,
+        "newInside": 0,
+        "extraDepth": 0.008480072021484375,
+        "worstSource": [
+          -4.223954677581787,
+          -46.60767364501953,
+          123.50665664672852
+        ],
+        "worstBefore": -1.8239279985427856,
+        "worstAfter": -1.83240807056427,
+        "coreDepthBefore": 1.9587329626083374,
+        "coreDepthAfter": 1.9587329626083374
+      }
+    ],
+    "passed": false
+  },
+  {
+    "start": -46,
+    "plateau": -42,
+    "x": 2.5,
+    "z": -1,
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "insideBefore": 20958,
+        "insideAfter": 16858,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          -3.4822802543640137,
+          -53.501136779785156,
+          123.37042999267578
+        ],
+        "worstBefore": -0.03755289688706398,
+        "worstAfter": -0.03755289688706398,
+        "coreDepthBefore": 1.9587329626083374,
+        "coreDepthAfter": 1.9587329626083374
+      }
+    ],
+    "passed": true
+  },
+  {
+    "start": -45,
+    "plateau": -42,
+    "x": 2.5,
+    "z": -1,
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "insideBefore": 20958,
+        "insideAfter": 17178,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          -3.4822802543640137,
+          -53.501136779785156,
+          123.37042999267578
+        ],
+        "worstBefore": -0.03755289688706398,
+        "worstAfter": -0.03755289688706398,
+        "coreDepthBefore": 1.9587329626083374,
+        "coreDepthAfter": 1.9587329626083374
+      }
+    ],
+    "passed": true
+  },
+  {
+    "start": -46,
+    "plateau": -42,
+    "x": 2.5,
+    "z": 0,
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "insideBefore": 20958,
+        "insideAfter": 16945,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          -3.4822802543640137,
+          -53.501136779785156,
+          123.37042999267578
+        ],
+        "worstBefore": -0.03755289688706398,
+        "worstAfter": -0.03755289688706398,
+        "coreDepthBefore": 1.9587329626083374,
+        "coreDepthAfter": 1.9587329626083374
+      }
+    ],
+    "passed": true
+  },
+  {
+    "start": -45,
+    "plateau": -42,
+    "x": 2.5,
+    "z": 0,
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "insideBefore": 20958,
+        "insideAfter": 17457,
+        "newInside": 0,
+        "extraDepth": 0.0,
+        "worstSource": [
+          -3.4822802543640137,
+          -53.501136779785156,
+          123.37042999267578
+        ],
+        "worstBefore": -0.03755289688706398,
+        "worstAfter": -0.03755289688706398,
+        "coreDepthBefore": 1.9587329626083374,
+        "coreDepthAfter": 1.9587329626083374
+      }
+    ],
+    "passed": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "supportMm": 6.0,
+    "maximumDisplacementMm": 7.364516258239746,
+    "movedVertices": 3342,
+    "affectedTriangles": 6689,
+    "reversedOrOverturnedFaces": 1842,
+    "minimumChangedTriangleAreaMm2": 0.0,
+    "installed": false,
+    "reason": "excluded: face-orientation regression during wide outlet relocation"
+  },
+  {
+    "supportMm": 10.0,
+    "maximumDisplacementMm": 7.364516258239746,
+    "movedVertices": 3529,
+    "affectedTriangles": 7063,
+    "reversedOrOverturnedFaces": 1550,
+    "minimumChangedTriangleAreaMm2": 5.208792959193071e-11,
+    "installed": false,
+    "reason": "excluded: face-orientation regression during wide outlet relocation"
+  },
+  {
+    "supportMm": 14.0,
+    "maximumDisplacementMm": 7.364516258239746,
+    "movedVertices": 3810,
+    "affectedTriangles": 7722,
+    "reversedOrOverturnedFaces": 1529,
+    "minimumChangedTriangleAreaMm2": 0.0,
+    "installed": false,
+    "reason": "excluded: face-orientation regression during wide outlet relocation"
+  }
+]

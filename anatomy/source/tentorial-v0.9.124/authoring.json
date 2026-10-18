@@ -1,0 +1,50 @@
+[
+  {
+    "node": "Wollschlaeger and Wollschlaeger artery right",
+    "vertices": 5164,
+    "triangles": 9882,
+    "retainedSourceVertexNormals": 496,
+    "positionSha256": "0f427213733a8238da2e02e3ea93b618fce2010696537ad35043fdb2bd3b94ce",
+    "indicesSha256": "82f4b3b79211579849820f7c679378694c6026314d7859df224ae1f2687ec1a5",
+    "parent": "artery.posterior.sca_right",
+    "method": "Cross-section-preserving source-surface deformation along a medial infratentorial course.",
+    "parentSharedCoordinatesExact": 225,
+    "radiusPolicy": "preserve-delivered-profile"
+  },
+  {
+    "node": "Davidoff and Schechter artery right",
+    "vertices": 13053,
+    "triangles": 25923,
+    "retainedSourceVertexNormals": 1098,
+    "positionSha256": "098f9fd61bfeeaec318276b6069f003d7b87d30d03409a6d7ba737b47769b3ca",
+    "indicesSha256": "39e012ae7d5b77b89dacab8e4d278f6537152414c729bd76ac2b03244d2b09d1",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "method": "Source-calibre tube reconstruction from a retained flat native inlet collar through an exactly checked cisternal clearance path and along the deep tentorium.",
+    "parentSharedCoordinatesExact": 140,
+    "radiusPolicy": "reconstruct-tube-with-smoothed-source-radius"
+  },
+  {
+    "node": "Wollschlaeger and Wollschlaeger artery left",
+    "vertices": 4931,
+    "triangles": 9723,
+    "retainedSourceVertexNormals": 216,
+    "positionSha256": "7b900d9d3d332e65d36a2d920c969e3bc9f4a66e45e5c85671fa78ca9b92ca3e",
+    "indicesSha256": "abcf0979018c73f19bf70b3bf2ac884289a3433307d97f9e76eae2f585a0a389",
+    "parent": "artery.posterior.sca_left",
+    "method": "Cross-section-preserving source-surface deformation along a medial infratentorial course.",
+    "parentSharedCoordinatesExact": 80,
+    "radiusPolicy": "preserve-delivered-profile"
+  },
+  {
+    "node": "Davidoff and Schechter artery left",
+    "vertices": 13381,
+    "triangles": 26589,
+    "retainedSourceVertexNormals": 1140,
+    "positionSha256": "fbed08b860fcaf2857548d46fc74efe670304837ab7ad59dc9db8a0f9249f2dd",
+    "indicesSha256": "bc1139c9d42a30437e4ba95ee3bce290869938407d031a70f80a15e515505b46",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "method": "Source-calibre tube reconstruction from a retained flat native inlet collar through an exactly checked cisternal clearance path and along the deep tentorium.",
+    "parentSharedCoordinatesExact": 136,
+    "radiusPolicy": "reconstruct-tube-with-smoothed-source-radius"
+  }
+]

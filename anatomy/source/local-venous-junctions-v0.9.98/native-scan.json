@@ -1,0 +1,249 @@
+{
+  "network": {
+    "id": "local-venous-native",
+    "target": "vein.superior_petrosal.left",
+    "nodes": [
+      "vein.basilar_plexus",
+      "vein.cavernous.left",
+      "vein.cavernous.right",
+      "vein.central_retinal.left",
+      "vein.central_retinal.right",
+      "vein.cpa_inferior_petrosal_bridge.left",
+      "vein.deep_cervical.left",
+      "vein.deep_cervical.right",
+      "vein.inferior_alveolar.left",
+      "vein.inferior_alveolar.right",
+      "vein.inferior_petrosal.left",
+      "vein.inferior_petrosal.right",
+      "vein.infraorbital.left",
+      "vein.infraorbital.right",
+      "vein.internal_auditory.left",
+      "vein.internal_auditory.right",
+      "vein.internal_jugular.left",
+      "vein.internal_jugular.right",
+      "vein.middle_meningeal.anterior.left",
+      "vein.middle_meningeal.anterior.right",
+      "vein.middle_meningeal.posterior.left",
+      "vein.middle_meningeal.posterior.right",
+      "vein.sigmoid.left",
+      "vein.sigmoid.right",
+      "vein.sphenoparietal.left",
+      "vein.sphenoparietal.right",
+      "vein.suboccipital_plexus.left",
+      "vein.suboccipital_plexus.right",
+      "vein.superior_petrosal.left",
+      "vein.superior_petrosal.right",
+      "vein.vertebral.left",
+      "vein.vertebral.right",
+      "vein.vertebral_periarterial_plexus.left",
+      "vein.vertebral_periarterial_plexus.right"
+    ]
+  },
+  "sharedSourceCoordinates": [
+    {
+      "one": "vein.superior_petrosal.left",
+      "two": "vein.cavernous.left",
+      "sharedCoordinates": 40,
+      "centre": [
+        -16.763980865478516,
+        -54.13459014892578,
+        63.28745651245117
+      ]
+    },
+    {
+      "one": "vein.superior_petrosal.left",
+      "two": "vein.sigmoid.left",
+      "sharedCoordinates": 38,
+      "centre": [
+        -52.532596588134766,
+        -90.63037109375,
+        63.894229888916016
+      ]
+    },
+    {
+      "one": "vein.inferior_petrosal.left",
+      "two": "vein.basilar_plexus",
+      "sharedCoordinates": 13,
+      "centre": [
+        -16.4887752532959,
+        -70.37318420410156,
+        43.01844024658203
+      ]
+    },
+    {
+      "one": "vein.inferior_petrosal.left",
+      "two": "vein.cpa_inferior_petrosal_bridge.left",
+      "sharedCoordinates": 60,
+      "centre": [
+        -19.06028938293457,
+        -73.01594543457031,
+        42.137351989746094
+      ]
+    },
+    {
+      "one": "vein.inferior_petrosal.left",
+      "two": "vein.internal_jugular.left",
+      "sharedCoordinates": 45,
+      "centre": [
+        -26.64952850341797,
+        -70.8814468383789,
+        33.386085510253906
+      ]
+    },
+    {
+      "one": "vein.vertebral.left",
+      "two": "vein.deep_cervical.left",
+      "sharedCoordinates": 104,
+      "centre": [
+        -27.508060455322266,
+        -73.81275939941406,
+        -98.54910278320312
+      ]
+    },
+    {
+      "one": "vein.vertebral.left",
+      "two": "vein.suboccipital_plexus.left",
+      "sharedCoordinates": 41,
+      "centre": [
+        -19.77907371520996,
+        -87.65664672851562,
+        1.267616629600525
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.anterior.left",
+      "two": "vein.middle_meningeal.posterior.left",
+      "sharedCoordinates": 23,
+      "centre": [
+        -44.06203842163086,
+        -25.922382354736328,
+        81.78509521484375
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.anterior.left",
+      "two": "vein.sphenoparietal.left",
+      "sharedCoordinates": 14,
+      "centre": [
+        -43.96699905395508,
+        -26.079721450805664,
+        81.9980697631836
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.posterior.left",
+      "two": "vein.middle_meningeal.anterior.left",
+      "sharedCoordinates": 23,
+      "centre": [
+        -44.06203842163086,
+        -25.922382354736328,
+        81.78509521484375
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.posterior.left",
+      "two": "vein.sphenoparietal.left",
+      "sharedCoordinates": 12,
+      "centre": [
+        -44.194000244140625,
+        -26.108198165893555,
+        82.18479919433594
+      ]
+    },
+    {
+      "one": "vein.superior_petrosal.right",
+      "two": "vein.cavernous.right",
+      "sharedCoordinates": 37,
+      "centre": [
+        18.05356788635254,
+        -54.239830017089844,
+        63.428810119628906
+      ]
+    },
+    {
+      "one": "vein.superior_petrosal.right",
+      "two": "vein.sigmoid.right",
+      "sharedCoordinates": 34,
+      "centre": [
+        53.8460578918457,
+        -90.40971374511719,
+        64.05950164794922
+      ]
+    },
+    {
+      "one": "vein.inferior_petrosal.right",
+      "two": "vein.internal_jugular.right",
+      "sharedCoordinates": 36,
+      "centre": [
+        27.96331787109375,
+        -71.02945709228516,
+        33.605125427246094
+      ]
+    },
+    {
+      "one": "vein.vertebral.right",
+      "two": "vein.deep_cervical.right",
+      "sharedCoordinates": 118,
+      "centre": [
+        28.730329513549805,
+        -74.27095794677734,
+        -98.16619110107422
+      ]
+    },
+    {
+      "one": "vein.vertebral.right",
+      "two": "vein.suboccipital_plexus.right",
+      "sharedCoordinates": 35,
+      "centre": [
+        22.2576847076416,
+        -88.31132507324219,
+        0.9272544980049133
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.anterior.right",
+      "two": "vein.middle_meningeal.posterior.right",
+      "sharedCoordinates": 22,
+      "centre": [
+        45.082550048828125,
+        -25.854158401489258,
+        81.78260803222656
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.anterior.right",
+      "two": "vein.sphenoparietal.right",
+      "sharedCoordinates": 12,
+      "centre": [
+        44.98350524902344,
+        -25.96440315246582,
+        81.91990661621094
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.posterior.right",
+      "two": "vein.middle_meningeal.anterior.right",
+      "sharedCoordinates": 22,
+      "centre": [
+        45.082550048828125,
+        -25.854158401489258,
+        81.78260803222656
+      ]
+    },
+    {
+      "one": "vein.middle_meningeal.posterior.right",
+      "two": "vein.sphenoparietal.right",
+      "sharedCoordinates": 12,
+      "centre": [
+        45.24190139770508,
+        -26.040803909301758,
+        82.08785247802734
+      ]
+    }
+  ],
+  "scan": [
+    {
+      "error": "Network has non-manifold or inconsistent source edges"
+    }
+  ]
+}

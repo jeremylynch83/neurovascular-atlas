@@ -1,0 +1,15 @@
+# Exact-zero-area source cleanup, v0.9.102
+
+This removes 21 selected exact-zero-area triangles across four venous meshes. All vertex positions, normals and positive-area source faces remain exact. It clears 23 invalid native edges without new boundaries. See `docs/ZERO_AREA_BATCH10_v0.9.102.md` for scope and deferred faces.
+
+Run from the app root with absolute paths:
+
+- `python3 tools/zero-area-v0.9.102/scan.py NEW_WORK CACHE` scans all 231 venous meshes, confirms candidate zero areas using exact binary-coordinate rational arithmetic, and records per-label native topology before/after a full-zero-area deletion trial. NEW_WORK must be fresh. It never edits a model. A failed trial is a reason to retain those faces or review safe subsets.
+- Copy `anatomy/source/zero-area-v0.9.102` as WORK to preserve the packaged evidence. `python3 tools/zero-area-v0.9.102/cleanup.py WORK CACHE` uses decoded baseline overrides and explicit selected face IDs, requires exact zero area for every deletion, retains all other indices in source order, and writes to replayed/. Existing accepted buffers must match byte for byte. It independently recounts all affected edges against every named venous source mesh and requires no new boundary or bad edge. It never installs a GLB.
+- `node tools/zero-area-v0.9.102/export.mjs WORK SOURCE_GLB OUTPUT_GLB` requires passing cleanup-validation.json and appends only a compressed index accessor for each selected mesh. Original position and normal accessors are reused verbatim. Historical SOURCE_GLB is v0.9.101 venous.glb, not duplicated here.
+- `node tools/zero-area-v0.9.102/verify-export.mjs WORK [OUTPUT_GLB]` needs historical `WORK/old-venous.glb`. GLTFLoader checks all 231 venous meshes, all positions/normals, exact retained source-face indices, the 227 unedited meshes and four other GLBs.
+- `python3 tools/zero-area-v0.9.102/projections.py WORK APP` refreshes the four proxy recipes using exact source-face lineage and checks closed/oriented/positive-volume results. Preserve v0.9.101 flow as `WORK/old-dsa-flow.json`, run `node tools/build-dsa-flow.mjs --only __no_arterial_changes__` and `node tools/zero-area-v0.9.102/verify-flow.mjs WORK`. All 597 arterial entries, edges, graph and generator must remain exact; only the four selected vein sites could change, and none changes here.
+
+NumPy and VTK are authoring dependencies through the existing scene infrastructure. The recorded selection evaluates safe per-label subsets, retains up to 32 leading options per label plus no-op, and checks 3,432 combinations against global incidence. It is a bounded explicit selection, not an exhaustive whole-atlas optimiser. The accepted deletion list and independent replay checks are the install authority.
+
+Two anterior-spinal and one left-pterygoid exact-zero-area faces remain because removing them would expose new boundaries. Positive-area near-degenerate faces are never deleted by this tool. Regional registration, disconnected components and full receiving lumens remain unresolved.

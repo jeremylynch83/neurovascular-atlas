@@ -1,0 +1,35 @@
+{
+  "release": "0.9.84",
+  "passed": true,
+  "scope": "Software/data checks and limited regional geometry review, not anatomical acceptance",
+  "checks": [
+    "All five model files, arterial flow, projection recipes and app source apart from DSA routing are byte-identical to v0.9.83",
+    "Only the four course records, their two receivers and root child lists change; all earlier anatomy findings and relationships are retained",
+    "All vascular meshes have authored contracts; four new contracts retain unresolved anatomical targets and all description links resolve",
+    "Four current-mesh topology/contact records verified against the exact delivered GLB hashes",
+    "Public release and issue records agree; 12 earlier regional segments and incomplete anatomical acceptance retained"
+  ],
+  "browser": {
+    "release": "0.9.84",
+    "errors": [],
+    "checks": [
+      "All four updated descriptions, companion/drainage relationships and receiver information links work",
+      "Left and right MMA bookmarks render a venous frame with both companions and declared lesser-wing drainage"
+    ],
+    "passed": true
+  },
+  "productionBuildPassed": true,
+  "courseTests": {
+    "passed": true,
+    "tests": 14
+  },
+  "dsaValidation": {
+    "passed": true,
+    "closedOrientedProxyMeshes": 828,
+    "proxyTriangles": 8966428,
+    "selectableArterialCourses": 578,
+    "closedSections": 2352,
+    "bilateralCompanionDrainageAndSelectiveInjectionTestsPassed": true
+  },
+  "anatomicalAcceptance": false
+}

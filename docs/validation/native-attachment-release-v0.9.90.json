@@ -1,0 +1,83 @@
+{
+  "release": "0.9.90",
+  "baseline": "0.9.89",
+  "passed": true,
+  "anatomicalAcceptance": false,
+  "scope": "One left MMA petrosquamosal native parent opening; right ACA trials excluded. Wider anatomical issues remain open.",
+  "build": {
+    "passed": true,
+    "existingBundleSizeWarning": true
+  },
+  "courseTests": {
+    "passed": true,
+    "count": 14
+  },
+  "dsa": {
+    "passed": true,
+    "closedProxies": 828,
+    "projectionTriangles": 8961216,
+    "selectableArterialCourses": 578,
+    "closedSections": 2350,
+    "meningealDrainageChecks": true
+  },
+  "nativeInterface": {
+    "sharedCoordinates": 124,
+    "pairedOppositeEdges": 124,
+    "sharedEncodedNormalsExact": true,
+    "otherNativeRimCoordinatesAndNormalsExact": 281,
+    "movedVertices": 294,
+    "maxDisplacementMm": 0.4124775688146869,
+    "affectedFaces": 505,
+    "newSelfOrParentIntersections": 0,
+    "newOrIncreasedNeighbourContacts": 0,
+    "allIndicesExact": true
+  },
+  "issueProgress": {
+    "failedNativeInterfaceRecordsBefore": 10,
+    "failedNativeInterfaceRecordsAfter": 9,
+    "segmentsStillUnderWiderReview": 12
+  },
+  "export": {
+    "release": "0.9.90",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 598,
+    "otherAssetsByteExact": 4,
+    "allArterialIndexBuffersExact": true,
+    "changedNode": "MMA petrosquamosal left",
+    "vertices": 27933,
+    "triangles": 55465,
+    "unmovedVerticesExact": 27639,
+    "maxDisplacementMm": 0.4124775688146869,
+    "sharedCoordinatesAndEncodedNormalsExact": 124,
+    "otherRimCoordinatesAndNormalsExact": 281,
+    "unchangedNormalVertices": 27598
+  },
+  "flowRefresh": {
+    "passed": true,
+    "changedID": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+    "changedCourseSelectable": true,
+    "unchangedEntriesReused": 596,
+    "authoredFalcineGuidesUnchanged": true,
+    "graphAndVeinSitesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.eca.maxillary.mma.right.left"
+    ]
+  },
+  "rightACAGeometryChanged": false,
+  "rightACAFeasibilityReport": "docs/validation/right-aca-feasibility-v0.9.90.json",
+  "visualCheck": {
+    "passed": true,
+    "file": "docs/validation/petrosquamosal-v0.9.90.png",
+    "scope": "One local before/after review of the final native opening."
+  },
+  "browser": {
+    "fullPlaybackRerun": false,
+    "reason": "Runtime unchanged. Actual loader, targeted geometry and full numerical DSA suite checked."
+  },
+  "runtimeSourceFilesByteExact": 21,
+  "catalogueStructureCount": 1666,
+  "namedMeshesRetained": 1250,
+  "modelSha256": "61984203322f10565db44a91eef2374d2cef0c4026630aca9e271a41031f1cfd"
+}

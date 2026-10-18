@@ -12,6 +12,14 @@ const vertex = `varying vec3 viewPoint; varying float depth;
     gl_Position=projectionMatrix*p; }`;
 const screenVertex = `varying vec2 uvScreen; void main(){uvScreen=uv;gl_Position=vec4(position.xy,0.,1.);}`;
 
+export async function loadInjectionFlow(manifest: AnatomyManifest): Promise<FlowData> {
+  const response=await fetch(`${import.meta.env.BASE_URL}anatomy/dsa-flow.json?v=${manifest.release}`,{cache:'no-cache'});
+  if(!response.ok)throw Error('Could not load injection courses');
+  const flow: FlowData=await response.json();
+  if(flow.schema!==1||flow.graphSource!==flowGraphSource(manifest)||Object.entries(flow.sourceHashes).some(([file,h])=>!manifest.assetRevisions?.[file]||!h.startsWith(manifest.assetRevisions[file])))throw Error('Injection courses do not match the anatomy');
+  return flow;
+}
+
 /** Closed-surface ray-length integral, with no depth occlusion. The per-mesh
  * depth origin reduces floating-point cancellation, especially on half floats.
  * Ordinary atlas meshes/materials are never replaced or reparented. */
@@ -30,10 +38,6 @@ export class DsaRenderer {
   private request=0;
   private sectionRequests=new Map<string,Promise<FlowSection[]>>();
   private workerError:Error|null=null;
-  private placement = new THREE.Scene();
-  private placementShapes = new Map<string,THREE.Mesh>();
-  private placementMaterial = new THREE.MeshPhongMaterial({color:0xe99a42,shininess:25});
-  private contextMaterial = new THREE.MeshPhongMaterial({color:0xd74539,shininess:25});
   private markers = new THREE.Scene();
   private markerGeometry = new THREE.SphereGeometry(1.1,12,8);
   private markerMaterial = new THREE.MeshBasicMaterial({color:0xffbc55,depthTest:false,depthWrite:false,toneMapped:false});
@@ -50,20 +54,17 @@ export class DsaRenderer {
   private drawingSize = new THREE.Vector2();
   readonly precision: 'float' | 'half-float';
 
-  static async create(renderer: THREE.WebGLRenderer, manifest: AnatomyManifest, geometry: Map<string, THREE.BufferGeometry>) {
+  static async create(renderer: THREE.WebGLRenderer, manifest: AnatomyManifest, geometry: Map<string, THREE.BufferGeometry>, flow: FlowData) {
     const base = `${import.meta.env.BASE_URL}anatomy/dsa-surfaces`;
     const response = await fetch(`${base}.json?v=${manifest.release}`,{cache:'no-cache'});
     if (!response.ok) throw Error('Could not load DSA surfaces');
     const metadata: Surfaces = await response.json();
     if (metadata.schema !== 1 || Object.keys(metadata.sourceHashes).some(file => manifest.assetRevisions?.[file] !== metadata.assetRevisions[file])) throw Error('DSA surfaces do not match the anatomy');
-    const flowResponse=await fetch(`${import.meta.env.BASE_URL}anatomy/dsa-flow.json?v=${manifest.release}`,{cache:'no-cache'});
-    if(!flowResponse.ok)throw Error('Could not load injection courses');
-    const flow: FlowData=await flowResponse.json();
     if(flow.schema!==1||flow.graphSource!==flowGraphSource(manifest)||Object.entries(flow.sourceHashes).some(([file,h])=>metadata.sourceHashes[file]!==h))throw Error('Injection courses do not match the anatomy');
-    return new DsaRenderer(renderer, geometry, metadata,flow,manifest.structures.filter(s=>s.system==='artery'&&s.asset).map(s=>s.id));
+    return new DsaRenderer(renderer, geometry, metadata,flow);
   }
 
-  private constructor(private renderer: THREE.WebGLRenderer, private geometry: Map<string, THREE.BufferGeometry>, private surfaces: Surfaces,readonly flow: FlowData,private arteries=Object.keys(flow.entries)) {
+  private constructor(private renderer: THREE.WebGLRenderer, private geometry: Map<string, THREE.BufferGeometry>, private surfaces: Surfaces,readonly flow: FlowData) {
     this.worker.onmessage=({data})=>{const pending=this.requests.get(data.request);if(!pending)return;this.requests.delete(data.request);if(data.error)pending.reject(Error(data.error));else pending.resolve(data.sections)};
     this.worker.onerror=()=>{this.workerError=Error('Could not prepare injection surfaces');for(const pending of this.requests.values())pending.reject(this.workerError);this.requests.clear()};
     if (!renderer.extensions.has('EXT_color_buffer_float')) throw Error('DSA requires floating-point WebGL rendering');
@@ -250,29 +251,12 @@ export class DsaRenderer {
     } finally { renderer.setRenderTarget(savedTarget); renderer.setClearColor(savedClear,savedAlpha); renderer.autoClear = autoClear; }
   }
 
-  setPlacementSelected(id: string|null) {
-    if(!this.placementShapes.size) {
-      this.placement.add(new THREE.HemisphereLight(0xffffff,0x777777,2.1));
-      const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(-100,100,200);this.placement.add(light);
-      for(const key of this.arteries)if(this.geometry.has(key)) {
-        const mesh=new THREE.Mesh(this.geometry.get(key)!,this.contextMaterial);this.placementShapes.set(key,mesh);this.placement.add(mesh);
-      }
-    }
-    for(const [key,mesh] of this.placementShapes){mesh.visible=true;mesh.material=key===id?this.placementMaterial:this.contextMaterial;mesh.renderOrder=key===id?1:0}
-  }
-  isPlacementVisible(id: string) { return this.placementShapes.get(id)?.visible===true; }
-  renderPlacement(camera: THREE.PerspectiveCamera) {
-    const colour=this.renderer.getClearColor(new THREE.Color()),alpha=this.renderer.getClearAlpha(),clear=this.renderer.autoClear;
-    try{this.renderer.setClearColor(0xb0b0b0,1);this.renderer.autoClear=true;this.renderer.render(this.placement,camera);this.renderer.autoClear=false;this.renderer.render(this.markers,camera)}
-    finally{this.renderer.setClearColor(colour,alpha);this.renderer.autoClear=clear}
-  }
-
   dispose() {
     this.worker.terminate();for(const pending of this.requests.values())pending.reject(Error('Atlas closed'));this.requests.clear();
     const originals=new Set(this.shapes.values());
     for(const section of [...this.flowShapes.values()].flat())if(!originals.has(section.mesh)){section.mesh.geometry.dispose();section.mesh.material.dispose()}
     for(const mesh of this.transient){mesh.geometry.dispose();mesh.material.dispose()}
-    this.placementMaterial.dispose();this.contextMaterial.dispose();this.markerGeometry.dispose();this.markerMaterial.dispose();
+    this.markerGeometry.dispose();this.markerMaterial.dispose();
     for (const mesh of this.shapes.values()) { mesh.geometry.dispose(); mesh.material.dispose(); }
     this.selectionScene.clear();this.selectionTarget.dispose();this.selectionMaterial.dispose();
     this.shapes.clear(); this.target.dispose(); this.field.dispose(); this.display.dispose(); this.plane.dispose();

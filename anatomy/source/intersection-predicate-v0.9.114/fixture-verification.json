@@ -1,0 +1,382 @@
+{
+  "passed": true,
+  "fixtureCases": 34,
+  "genuineCrossingsRetained": 22,
+  "falseReportsRejected": 12,
+  "results": [
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        4937,
+        5360
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        4937,
+        5359
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        4937,
+        5310
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        4937,
+        5309
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5157,
+        5361
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5157,
+        5362
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5190,
+        5449
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5191,
+        5296
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5191,
+        5449
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5248,
+        5411
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5268,
+        5429
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5272,
+        5425
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5273,
+        5425
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5273,
+        5426
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5290,
+        5429
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5362,
+        5364
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "faces": [
+        5445,
+        5447
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4553,
+        4555
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4744,
+        4746
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4746,
+        5607
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4757,
+        5644
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4757,
+        5645
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4757,
+        5548
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4759,
+        5645
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4822,
+        5661
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        4822,
+        5660
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5547,
+        5645
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5562,
+        5563
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5562,
+        5695
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5562,
+        5696
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5564,
+        5704
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5564,
+        5705
+      ],
+      "expected": true,
+      "exact": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "faces": [
+        5704,
+        5706
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "node": "ACA A5 left",
+      "faces": [
+        1156,
+        1222
+      ],
+      "expected": false,
+      "exact": false,
+      "actual": false,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,1665 @@
+{
+  "release": "0.9.104",
+  "sourceAssets": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "407256884ea6fdb851a79534b55bf607e05ce2bb23f0e97e0b09f3cc868d88c9",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+  },
+  "rows": [
+    {
+      "node": "ACA A1 left",
+      "zeroAreaFaceIds": [
+        174
+      ],
+      "boundaryBefore": 557,
+      "boundaryAfter": 556,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ACA A1 right",
+      "zeroAreaFaceIds": [
+        61
+      ],
+      "boundaryBefore": 560,
+      "boundaryAfter": 559,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ACA A5 left",
+      "zeroAreaFaceIds": [
+        4751,
+        7538
+      ],
+      "boundaryBefore": 526,
+      "boundaryAfter": 524,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "AChA capsular branch left",
+      "zeroAreaFaceIds": [
+        882,
+        883,
+        884
+      ],
+      "boundaryBefore": 87,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 2,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "AChA capsular branch right",
+      "zeroAreaFaceIds": [
+        68,
+        119
+      ],
+      "boundaryBefore": 88,
+      "boundaryAfter": 86,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "AChA temporal branch left",
+      "zeroAreaFaceIds": [
+        2183
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ACom chiasmatic perforator left",
+      "zeroAreaFaceIds": [
+        1480,
+        1481
+      ],
+      "boundaryBefore": 98,
+      "boundaryAfter": 98,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ACom hypothalamic perforator left",
+      "zeroAreaFaceIds": [
+        1836,
+        1841,
+        1850,
+        1855
+      ],
+      "boundaryBefore": 79,
+      "boundaryAfter": 75,
+      "newBoundaryEdges": 0,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ACom hypothalamic perforator right",
+      "zeroAreaFaceIds": [
+        1628,
+        1721,
+        1726,
+        1736
+      ],
+      "boundaryBefore": 86,
+      "boundaryAfter": 82,
+      "newBoundaryEdges": 0,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ACom septal perforator right",
+      "zeroAreaFaceIds": [
+        28
+      ],
+      "boundaryBefore": 70,
+      "boundaryAfter": 70,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "AICA caudal branch right",
+      "zeroAreaFaceIds": [
+        17306,
+        17385,
+        17689,
+        17840
+      ],
+      "boundaryBefore": 382,
+      "boundaryAfter": 379,
+      "newBoundaryEdges": 1,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "AICA fourth ventricular choroidal left",
+      "zeroAreaFaceIds": [
+        870
+      ],
+      "boundaryBefore": 199,
+      "boundaryAfter": 198,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "AICA fourth ventricular choroidal right",
+      "zeroAreaFaceIds": [
+        123
+      ],
+      "boundaryBefore": 190,
+      "boundaryAfter": 189,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "AICA rostral branch left",
+      "zeroAreaFaceIds": [
+        12233,
+        13014
+      ],
+      "boundaryBefore": 382,
+      "boundaryAfter": 380,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "AICA rostral branch right",
+      "zeroAreaFaceIds": [
+        12674,
+        13058,
+        13171
+      ],
+      "boundaryBefore": 451,
+      "boundaryAfter": 449,
+      "newBoundaryEdges": 1,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "AICA subarcuate left",
+      "zeroAreaFaceIds": [
+        9365,
+        9369,
+        9685
+      ],
+      "boundaryBefore": 247,
+      "boundaryAfter": 245,
+      "newBoundaryEdges": 1,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "AICA subarcuate right",
+      "zeroAreaFaceIds": [
+        78,
+        90
+      ],
+      "boundaryBefore": 162,
+      "boundaryAfter": 160,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Angular distal ramus right",
+      "zeroAreaFaceIds": [
+        2120
+      ],
+      "boundaryBefore": 102,
+      "boundaryAfter": 101,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Angular right",
+      "zeroAreaFaceIds": [
+        3696
+      ],
+      "boundaryBefore": 406,
+      "boundaryAfter": 405,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Anterior choroidal left",
+      "zeroAreaFaceIds": [
+        330,
+        4250,
+        6159
+      ],
+      "boundaryBefore": 528,
+      "boundaryAfter": 525,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Anterior choroidal plexal representative left",
+      "zeroAreaFaceIds": [
+        4035
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Anterior choroidal right",
+      "zeroAreaFaceIds": [
+        6055,
+        6087
+      ],
+      "boundaryBefore": 534,
+      "boundaryAfter": 532,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Anterior communicating",
+      "zeroAreaFaceIds": [
+        340,
+        341,
+        342,
+        343,
+        1094
+      ],
+      "boundaryBefore": 583,
+      "boundaryAfter": 584,
+      "newBoundaryEdges": 2,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Anterior ethmoidal left",
+      "zeroAreaFaceIds": [
+        4325,
+        4404
+      ],
+      "boundaryBefore": 198,
+      "boundaryAfter": 196,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Anterior falcine left",
+      "zeroAreaFaceIds": [
+        6889,
+        6924
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 88,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Anterior spinal",
+      "zeroAreaFaceIds": [
+        37819
+      ],
+      "boundaryBefore": 138,
+      "boundaryAfter": 137,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Facial",
+      "zeroAreaFaceIds": [
+        20144,
+        20171
+      ],
+      "boundaryBefore": 1327,
+      "boundaryAfter": 1325,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Facial left",
+      "zeroAreaFaceIds": [
+        7557
+      ],
+      "boundaryBefore": 1327,
+      "boundaryAfter": 1326,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Facial masseteric branch left",
+      "zeroAreaFaceIds": [
+        4003
+      ],
+      "boundaryBefore": 76,
+      "boundaryAfter": 75,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Facial masseteric branch right",
+      "zeroAreaFaceIds": [
+        22,
+        53
+      ],
+      "boundaryBefore": 76,
+      "boundaryAfter": 74,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Falx cerebelli artery left",
+      "zeroAreaFaceIds": [
+        6994,
+        7058,
+        7063,
+        7071
+      ],
+      "boundaryBefore": 98,
+      "boundaryAfter": 94,
+      "newBoundaryEdges": 0,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Falx cerebelli artery right",
+      "zeroAreaFaceIds": [
+        7192,
+        7238,
+        7242
+      ],
+      "boundaryBefore": 99,
+      "boundaryAfter": 97,
+      "newBoundaryEdges": 1,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Hypoglossal posterior meningeal",
+      "zeroAreaFaceIds": [
+        7189,
+        8069,
+        8074
+      ],
+      "boundaryBefore": 175,
+      "boundaryAfter": 172,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Hypoglossal posterior meningeal left",
+      "zeroAreaFaceIds": [
+        7969,
+        8034,
+        8080,
+        8088
+      ],
+      "boundaryBefore": 173,
+      "boundaryAfter": 169,
+      "newBoundaryEdges": 0,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ICA terminus right",
+      "zeroAreaFaceIds": [
+        1378
+      ],
+      "boundaryBefore": 476,
+      "boundaryAfter": 476,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "ILT posterior branch right",
+      "zeroAreaFaceIds": [
+        1480,
+        1505
+      ],
+      "boundaryBefore": 225,
+      "boundaryAfter": 223,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ILT posteromedial ramus left",
+      "zeroAreaFaceIds": [
+        103,
+        104
+      ],
+      "boundaryBefore": 88,
+      "boundaryAfter": 88,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "ILT posteromedial ramus right",
+      "zeroAreaFaceIds": [
+        1474,
+        1487
+      ],
+      "boundaryBefore": 94,
+      "boundaryAfter": 92,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Incisive",
+      "zeroAreaFaceIds": [
+        6042,
+        6043
+      ],
+      "boundaryBefore": 92,
+      "boundaryAfter": 92,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Infraorbital left",
+      "zeroAreaFaceIds": [
+        5588
+      ],
+      "boundaryBefore": 369,
+      "boundaryAfter": 368,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Infraorbital muscular branch left",
+      "zeroAreaFaceIds": [
+        233,
+        234,
+        235
+      ],
+      "boundaryBefore": 89,
+      "boundaryAfter": 91,
+      "newBoundaryEdges": 2,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Lacrimal left",
+      "zeroAreaFaceIds": [
+        6432
+      ],
+      "boundaryBefore": 472,
+      "boundaryAfter": 471,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Lacrimal right",
+      "zeroAreaFaceIds": [
+        6806
+      ],
+      "boundaryBefore": 474,
+      "boundaryAfter": 473,
+      "newBoundaryEdges": 1,
+      "badBefore": 0,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Lateral inferior palpebral left",
+      "zeroAreaFaceIds": [
+        327
+      ],
+      "boundaryBefore": 86,
+      "boundaryAfter": 85,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Lateral lenticulostriate 1 right",
+      "zeroAreaFaceIds": [
+        2427,
+        2497
+      ],
+      "boundaryBefore": 169,
+      "boundaryAfter": 168,
+      "newBoundaryEdges": 1,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Lateral lenticulostriate 2 left",
+      "zeroAreaFaceIds": [
+        5196,
+        5198,
+        5199,
+        5200,
+        5201,
+        5202,
+        5203,
+        5205,
+        5206,
+        5208,
+        5209,
+        5213,
+        5214,
+        5380,
+        5381,
+        5386,
+        5388,
+        5390,
+        5391,
+        5392,
+        5393,
+        5394,
+        5395,
+        5396,
+        5397,
+        5398,
+        5399,
+        5400,
+        5401,
+        5402,
+        5513,
+        5514,
+        5516,
+        5627,
+        5628,
+        5659,
+        5660,
+        5663,
+        5664,
+        5665,
+        5666,
+        5689,
+        5690,
+        5691,
+        5692,
+        5693,
+        5694,
+        5711
+      ],
+      "boundaryBefore": 86,
+      "boundaryAfter": 86,
+      "newBoundaryEdges": 0,
+      "badBefore": 20,
+      "badAfter": 1,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Lateral lenticulostriate 2 right",
+      "zeroAreaFaceIds": [
+        551,
+        553,
+        554,
+        557,
+        1627,
+        1631,
+        1641,
+        1660,
+        1661,
+        1663,
+        1664,
+        1666,
+        1667,
+        1669,
+        1670,
+        1673,
+        2240,
+        2267,
+        2268,
+        2269,
+        2270,
+        2273,
+        2275,
+        2277,
+        2278,
+        2279
+      ],
+      "boundaryBefore": 86,
+      "boundaryAfter": 86,
+      "newBoundaryEdges": 0,
+      "badBefore": 16,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Lateral lenticulostriate anterior representative right",
+      "zeroAreaFaceIds": [
+        23,
+        61
+      ],
+      "boundaryBefore": 84,
+      "boundaryAfter": 84,
+      "newBoundaryEdges": 2,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Lateral posterior choroidal plexal representative left",
+      "zeroAreaFaceIds": [
+        30,
+        73
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 88,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Lateral posterior choroidal plexal representative right",
+      "zeroAreaFaceIds": [
+        21
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Long callosal branch left",
+      "zeroAreaFaceIds": [
+        2494
+      ],
+      "boundaryBefore": 72,
+      "boundaryAfter": 71,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "MCA inferior division left",
+      "zeroAreaFaceIds": [
+        8790
+      ],
+      "boundaryBefore": 938,
+      "boundaryAfter": 938,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Maxillary",
+      "zeroAreaFaceIds": [
+        31991
+      ],
+      "boundaryBefore": 2128,
+      "boundaryAfter": 2128,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Medial inferior palpebral right",
+      "zeroAreaFaceIds": [
+        3526
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Medial lenticulostriate left",
+      "zeroAreaFaceIds": [
+        1723
+      ],
+      "boundaryBefore": 184,
+      "boundaryAfter": 183,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Medial lenticulostriate superior representative left",
+      "zeroAreaFaceIds": [
+        274
+      ],
+      "boundaryBefore": 100,
+      "boundaryAfter": 99,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Medial posterior choroidal plexal representative left",
+      "zeroAreaFaceIds": [
+        3749
+      ],
+      "boundaryBefore": 90,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Occipital mastoid dural branch right",
+      "zeroAreaFaceIds": [
+        5449
+      ],
+      "boundaryBefore": 106,
+      "boundaryAfter": 105,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Ophthalmic inferior muscular branch left",
+      "zeroAreaFaceIds": [
+        4277
+      ],
+      "boundaryBefore": 110,
+      "boundaryAfter": 109,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "PCA collicular left",
+      "zeroAreaFaceIds": [
+        3988,
+        4018
+      ],
+      "boundaryBefore": 272,
+      "boundaryAfter": 270,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "PCA collicular right",
+      "zeroAreaFaceIds": [
+        10127,
+        10133,
+        10148
+      ],
+      "boundaryBefore": 282,
+      "boundaryAfter": 279,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "PICA hemispheric left",
+      "zeroAreaFaceIds": [
+        74,
+        187,
+        225,
+        922,
+        1267,
+        2160,
+        2574,
+        2575,
+        7590,
+        7591,
+        9735,
+        9989,
+        10106
+      ],
+      "boundaryBefore": 1761,
+      "boundaryAfter": 1753,
+      "newBoundaryEdges": 1,
+      "badBefore": 13,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA hemispheric right",
+      "zeroAreaFaceIds": [
+        551,
+        568,
+        6240,
+        6280,
+        6305,
+        6455,
+        7817,
+        7861,
+        8113,
+        8521,
+        8731,
+        8833,
+        8834,
+        9039,
+        9054
+      ],
+      "boundaryBefore": 1498,
+      "boundaryAfter": 1488,
+      "newBoundaryEdges": 3,
+      "badBefore": 16,
+      "badAfter": 1,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA lateral hemispheric left",
+      "zeroAreaFaceIds": [
+        23,
+        66,
+        167,
+        296,
+        529,
+        941,
+        2974,
+        3300,
+        3374,
+        3483,
+        3487
+      ],
+      "boundaryBefore": 1244,
+      "boundaryAfter": 1239,
+      "newBoundaryEdges": 4,
+      "badBefore": 12,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "zeroAreaFaceIds": [
+        595,
+        641,
+        668,
+        1130,
+        1164,
+        1248,
+        1257,
+        1346,
+        1485,
+        1727,
+        3228,
+        3630,
+        3631,
+        3633,
+        3634
+      ],
+      "boundaryBefore": 1014,
+      "boundaryAfter": 1007,
+      "newBoundaryEdges": 4,
+      "badBefore": 14,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA medullary perforator left",
+      "zeroAreaFaceIds": [
+        1069,
+        1070,
+        1596,
+        1719,
+        1721,
+        1724,
+        1742,
+        1743,
+        1744,
+        1751,
+        1752,
+        1777,
+        1781,
+        1789,
+        1820,
+        1829,
+        1833,
+        1836,
+        2005
+      ],
+      "boundaryBefore": 397,
+      "boundaryAfter": 385,
+      "newBoundaryEdges": 1,
+      "badBefore": 21,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA medullary perforator right",
+      "zeroAreaFaceIds": [
+        84
+      ],
+      "boundaryBefore": 120,
+      "boundaryAfter": 119,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "PICA tonsillar left",
+      "zeroAreaFaceIds": [
+        257,
+        258,
+        797,
+        811,
+        868,
+        1088,
+        1096,
+        1191
+      ],
+      "boundaryBefore": 692,
+      "boundaryAfter": 689,
+      "newBoundaryEdges": 3,
+      "badBefore": 8,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA vermian left",
+      "zeroAreaFaceIds": [
+        82,
+        355,
+        635,
+        883,
+        1043,
+        1104,
+        7313,
+        7400
+      ],
+      "boundaryBefore": 868,
+      "boundaryAfter": 862,
+      "newBoundaryEdges": 3,
+      "badBefore": 7,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "PICA vermian right",
+      "zeroAreaFaceIds": [
+        2995,
+        8070,
+        8087
+      ],
+      "boundaryBefore": 940,
+      "boundaryAfter": 937,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Polar temporal left",
+      "zeroAreaFaceIds": [
+        159
+      ],
+      "boundaryBefore": 79,
+      "boundaryAfter": 78,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Posterior septal",
+      "zeroAreaFaceIds": [
+        1529,
+        11131,
+        11132,
+        11133,
+        11134,
+        11135,
+        11136,
+        11137,
+        11138,
+        11139
+      ],
+      "boundaryBefore": 282,
+      "boundaryAfter": 281,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Posterior septal left",
+      "zeroAreaFaceIds": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        3769
+      ],
+      "boundaryBefore": 288,
+      "boundaryAfter": 286,
+      "newBoundaryEdges": 0,
+      "badBefore": 4,
+      "badAfter": 1,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Posterior spinal left",
+      "zeroAreaFaceIds": [
+        49384,
+        49386,
+        49389,
+        49407,
+        49414,
+        49434,
+        49437,
+        49446,
+        49469,
+        49471,
+        49472,
+        49476,
+        49884,
+        49885,
+        49898,
+        49899,
+        49935,
+        49946,
+        50160,
+        50161,
+        50162,
+        50164,
+        50170,
+        50171,
+        50172,
+        50190,
+        50196,
+        50200,
+        50201,
+        50202,
+        50206,
+        50207,
+        50422,
+        50457
+      ],
+      "boundaryBefore": 508,
+      "boundaryAfter": 494,
+      "newBoundaryEdges": 0,
+      "badBefore": 35,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Posterior spinal right",
+      "zeroAreaFaceIds": [
+        48736,
+        48796,
+        48808,
+        48817,
+        48823,
+        48833,
+        48843,
+        48853,
+        48865,
+        48876,
+        48886,
+        48931,
+        48933,
+        48934,
+        48987,
+        48994,
+        49017,
+        49038,
+        49046,
+        49063,
+        49069,
+        49074,
+        49093,
+        49123,
+        49127,
+        49148,
+        49172
+      ],
+      "boundaryBefore": 498,
+      "boundaryAfter": 474,
+      "newBoundaryEdges": 1,
+      "badBefore": 28,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Prefrontal distal ramus left",
+      "zeroAreaFaceIds": [
+        580
+      ],
+      "boundaryBefore": 89,
+      "boundaryAfter": 89,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Prefrontal left",
+      "zeroAreaFaceIds": [
+        7232
+      ],
+      "boundaryBefore": 300,
+      "boundaryAfter": 299,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA caudal hemispheric left",
+      "zeroAreaFaceIds": [
+        7683
+      ],
+      "boundaryBefore": 381,
+      "boundaryAfter": 380,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA caudal hemispheric right",
+      "zeroAreaFaceIds": [
+        9,
+        266,
+        275
+      ],
+      "boundaryBefore": 284,
+      "boundaryAfter": 281,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA lateral hemispheric left",
+      "zeroAreaFaceIds": [
+        7157,
+        17586
+      ],
+      "boundaryBefore": 579,
+      "boundaryAfter": 577,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA lateral hemispheric right",
+      "zeroAreaFaceIds": [
+        8033,
+        8046,
+        18524
+      ],
+      "boundaryBefore": 430,
+      "boundaryAfter": 427,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA proximal perforator left",
+      "zeroAreaFaceIds": [
+        946,
+        948,
+        957,
+        958,
+        978,
+        980,
+        984,
+        998,
+        1011,
+        1023,
+        1035,
+        1047,
+        1055,
+        1072,
+        1073,
+        1568,
+        1569,
+        1613,
+        2077,
+        2078,
+        2197,
+        2198,
+        2352,
+        2362,
+        2383,
+        2386,
+        2390,
+        2393,
+        2396,
+        2408,
+        2447,
+        2514,
+        2566,
+        2615,
+        2637,
+        2655,
+        2656,
+        2862,
+        2876
+      ],
+      "boundaryBefore": 500,
+      "boundaryAfter": 473,
+      "newBoundaryEdges": 0,
+      "badBefore": 43,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA tectal branch left",
+      "zeroAreaFaceIds": [
+        1125
+      ],
+      "boundaryBefore": 132,
+      "boundaryAfter": 131,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "SCA vermian left",
+      "zeroAreaFaceIds": [
+        13817
+      ],
+      "boundaryBefore": 312,
+      "boundaryAfter": 311,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Sphenopalatine",
+      "zeroAreaFaceIds": [
+        3905,
+        3906,
+        3907,
+        3908,
+        3909,
+        3910,
+        3911,
+        3912,
+        3913
+      ],
+      "boundaryBefore": 331,
+      "boundaryAfter": 331,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Sphenopalatine left",
+      "zeroAreaFaceIds": [
+        5993,
+        5994,
+        6023,
+        6025,
+        6026
+      ],
+      "boundaryBefore": 337,
+      "boundaryAfter": 336,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 1,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior pharyngeal",
+      "zeroAreaFaceIds": [
+        3885,
+        4589
+      ],
+      "boundaryBefore": 276,
+      "boundaryAfter": 274,
+      "newBoundaryEdges": 0,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior pharyngeal carotid branch left",
+      "zeroAreaFaceIds": [
+        2696
+      ],
+      "boundaryBefore": 98,
+      "boundaryAfter": 97,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior pharyngeal carotid branch right",
+      "zeroAreaFaceIds": [
+        2647
+      ],
+      "boundaryBefore": 98,
+      "boundaryAfter": 97,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior pharyngeal left",
+      "zeroAreaFaceIds": [
+        453,
+        1222,
+        1236,
+        1249
+      ],
+      "boundaryBefore": 276,
+      "boundaryAfter": 272,
+      "newBoundaryEdges": 0,
+      "badBefore": 4,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior pharyngeal tubal branch left",
+      "zeroAreaFaceIds": [
+        2532,
+        2546,
+        2641
+      ],
+      "boundaryBefore": 98,
+      "boundaryAfter": 95,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior pharyngeal tubal branch right",
+      "zeroAreaFaceIds": [
+        1508
+      ],
+      "boundaryBefore": 98,
+      "boundaryAfter": 97,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Superior septal subdivision left",
+      "zeroAreaFaceIds": [
+        63
+      ],
+      "boundaryBefore": 99,
+      "boundaryAfter": 99,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Superior septal subdivision right",
+      "zeroAreaFaceIds": [
+        85
+      ],
+      "boundaryBefore": 99,
+      "boundaryAfter": 99,
+      "newBoundaryEdges": 1,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Terminal ICA perforator 1 left",
+      "zeroAreaFaceIds": [
+        67
+      ],
+      "boundaryBefore": 111,
+      "boundaryAfter": 110,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Terminal ICA perforator 1 right",
+      "zeroAreaFaceIds": [
+        79,
+        1680
+      ],
+      "boundaryBefore": 143,
+      "boundaryAfter": 142,
+      "newBoundaryEdges": 1,
+      "badBefore": 2,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "Transverse facial inferior division left",
+      "zeroAreaFaceIds": [
+        3562
+      ],
+      "boundaryBefore": 210,
+      "boundaryAfter": 209,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Transverse facial masseteric branch left",
+      "zeroAreaFaceIds": [
+        3844
+      ],
+      "boundaryBefore": 82,
+      "boundaryAfter": 81,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery left",
+      "zeroAreaFaceIds": [
+        9533
+      ],
+      "boundaryBefore": 136,
+      "boundaryAfter": 135,
+      "newBoundaryEdges": 0,
+      "badBefore": 1,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "zeroAreaFaceIds": [
+        9448,
+        9525,
+        9554,
+        9619,
+        9650,
+        9659,
+        9660,
+        9665,
+        9807,
+        9810
+      ],
+      "boundaryBefore": 410,
+      "boundaryAfter": 407,
+      "newBoundaryEdges": 3,
+      "badBefore": 12,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    }
+  ]
+}

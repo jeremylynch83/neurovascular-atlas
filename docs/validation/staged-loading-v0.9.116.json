@@ -1,0 +1,60 @@
+{
+  "release": "0.9.116",
+  "change": "Progressive loading with worker geometry preparation and inline panel feedback",
+  "primary": {
+    "files": [
+      "models/craniofacial.glb",
+      "models/complete-circulation.glb",
+      "models/complete-anastomoses.glb"
+    ],
+    "namedMeshes": 826,
+    "nativeBytes": 71173052
+  },
+  "deferred": {
+    "files": [
+      "models/venous.glb",
+      "models/brain-context.glb"
+    ],
+    "nativeBytes": 49974780
+  },
+  "retention": {
+    "nativeModelsByteExact": 5,
+    "sourceAssetSha256": {
+      "public/anatomy/models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+      "public/anatomy/models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "public/anatomy/models/complete-circulation.glb": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+      "public/anatomy/models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "public/anatomy/models/venous.glb": "1bb851b53f505035f0de7e0b88198abfe805a5951a224f2e03381f30c96ed15d"
+    },
+    "catalogueStructuresExact": 1666,
+    "relationshipsAndAssetBindingsExact": true,
+    "dsaSurfacesAndFlowByteExact": true,
+    "anatomicalIssueRegisterByteExact": true,
+    "runtimeGeometryStreamsExact": 1250,
+    "runtimeCoordinatesNormalsAndTriangleIndicesExact": true,
+    "changedExistingRuntimeFiles": [
+      "src/App.tsx",
+      "src/engine.ts",
+      "src/main.tsx",
+      "src/styles.css"
+    ]
+  },
+  "verification": {
+    "build": "passed",
+    "queueTests": 7,
+    "gestureTests": 11,
+    "fullDataBrowserScenarios": 11,
+    "finalSchedulerChecks": 8,
+    "productionChecks": 3,
+    "anatomyValidation": "passed",
+    "presetValidation": "passed",
+    "dsaValidation": {
+      "passed": true,
+      "closedOrientedProxies": 828,
+      "proxyTriangles": 8971510,
+      "selectableArterialCourses": 579,
+      "closedSections": 2353
+    }
+  },
+  "timingScope": "Full-data functional receipts use software WebGL and deliberate download holds. Final frame scheduling/lifecycle is checked separately. Device-specific speed and frame-rate improvements are not established by these tests."
+}

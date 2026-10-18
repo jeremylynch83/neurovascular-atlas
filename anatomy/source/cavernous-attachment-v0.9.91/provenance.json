@@ -1,0 +1,22 @@
+{
+  "release": "0.9.91",
+  "baseline": "0.9.90",
+  "anatomicalAcceptance": false,
+  "nodes": [
+    "MMA cavernous left",
+    "MMA posterior cavernous left"
+  ],
+  "method": "Constrained parent rim adjustment and parallel-transported oblique Hermite collar, followed by exterior Boolean union and exact retained source corner normals.",
+  "parentMaxDisplacementMm": 0.15,
+  "matchedNativeBoundaryCoordinates": 181,
+  "syntheticExteriorJunctionTriangles": 49,
+  "maxFloat32WeldDisplacementMm": 4.264961199760036e-06,
+  "candidateBufferHashes": {
+    "MMA posterior cavernous left.positions.bin": "0869b1b7363cddd0d680f17c4d12f29ddec4d3d5a7e28509a52c89034fc1f33b",
+    "MMA posterior cavernous left.indices.bin": "ac1a030e390d45c46d51ca235fd3df75376999224944f4e42d9fb413991ded11",
+    "MMA cavernous left.indices.bin": "be4f052b8760b19ee5782e22319dc941ae4b24d27c356f02461ef0e82305a83f",
+    "MMA posterior cavernous left.normals.bin": "973706bcee18f59bf6a0dd9de5cf721f67a854edb6d44d26b6c604e353aebb00",
+    "MMA cavernous left.normals.bin": "16a3fbfa3269ab42a4293a66d5d83dccf922d9d6ca386ed03c0c2347599798fb",
+    "MMA cavernous left.positions.bin": "af75a3824a7ca61d487bbc18f0125b6e129d16a38a0a4fba7d21bff68aaf384c"
+  }
+}

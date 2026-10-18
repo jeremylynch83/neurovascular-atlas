@@ -1,0 +1,417 @@
+{
+  "release": "0.9.111",
+  "baseline": "0.9.110",
+  "batch": 19,
+  "anatomicalAcceptance": false,
+  "scope": "Distal right A5 medial fit beyond the last native branch junction. Five native interfaces and earlier A4/A5 fit regions remain fixed. Continuous separation is independently checked over the full A5 wall against two named posterior cortical bodies; other ACA/cortical findings remain open.",
+  "changedMeshes": 1,
+  "changes": [
+    {
+      "node": "ACA A5 right",
+      "sourceVertices": 4311,
+      "sourceTriangles": 8172,
+      "changedVertices": 408,
+      "changedFaces": 851,
+      "maximumDisplacementMm": 1.0,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 456,
+      "sourceBadEdges": 0,
+      "candidateBoundaryEdges": 456,
+      "candidateBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A4 right",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA falcine branch right",
+          "sharedCoordinates": 32,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Inferior internal parietal right",
+          "sharedCoordinates": 140,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Long callosal branch right",
+          "sharedCoordinates": 72,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Precuneal right",
+          "sharedCoordinates": 148,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": true
+    }
+  ],
+  "changedVertices": 408,
+  "changedFaces": 851,
+  "maximumDisplacementMm": 1,
+  "addedOrRemovedVertices": 0,
+  "addedOrRemovedTriangles": 0,
+  "nativeInterfacesFixed": 5,
+  "sharedCoordinatesFixed": 456,
+  "allOriginalFaceIndicesExact": true,
+  "reconstruction": {
+    "release": "0.9.111",
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A5 right",
+        "sourceVertices": 4311,
+        "sourceTriangles": 8172,
+        "changedVertices": 408,
+        "changedFaces": 851,
+        "maximumDisplacementMm": 1.0,
+        "sourceNormalOppositeFaces": 0,
+        "analyticalJacobianDeterminant": 1,
+        "indicesByteExact": true,
+        "allSourceCoordinatesWeldPartitionsRetained": true,
+        "allBoundaryVerticesFixed": true,
+        "sourceBoundaryEdges": 456,
+        "sourceBadEdges": 0,
+        "candidateBoundaryEdges": 456,
+        "candidateBadEdges": 0,
+        "newCoordinateWelds": 0,
+        "reviewedArterialMeshesForWelds": 766,
+        "attachments": [
+          {
+            "other": "ACA A4 right",
+            "sharedCoordinates": 64,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "ACA falcine branch right",
+            "sharedCoordinates": 32,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Inferior internal parietal right",
+            "sharedCoordinates": 140,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Long callosal branch right",
+            "sharedCoordinates": 72,
+            "allPositionsFixed": true
+          },
+          {
+            "other": "Precuneal right",
+            "sharedCoordinates": 148,
+            "allPositionsFixed": true
+          }
+        ],
+        "replayedBuffersByteExact": true
+      }
+    ],
+    "allFinalArterialCoordinateWeldsChecked": true
+  },
+  "crossingValidation": {
+    "trianglePairsChecked": 15093,
+    "newNonNeuralCrossings": 0,
+    "inheritedNonNeuralCrossings": 0,
+    "knownClosedCorticalContacts": 0
+  },
+  "depthValidation": {
+    "release": "0.9.111",
+    "passed": true,
+    "changes": [
+      {
+        "release": "0.9.111",
+        "passed": true,
+        "node": "ACA A5 right",
+        "changedFaces": 851,
+        "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+        "coreSourceY": [
+          -100,
+          -97.7
+        ],
+        "targets": [
+          {
+            "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 5957,
+            "insideBefore": 569,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.2547469437122345,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.cingulate-gyrus-posteroventral-part.right",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 5957,
+            "insideBefore": 2741,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.932320773601532,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 1556,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.932320773601532,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.corpus-callosum",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 5957,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.lateral-ventricle.right",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 5957,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "brain.precuneus.right",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 4.899449721602663,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.occipital",
+            "method": "paired-signed-depth-and-closed-volume-parity",
+            "samples": 5957,
+            "insideBefore": 0,
+            "insideAfter": 0,
+            "maximumDepthBeforeMm": 0.0,
+            "maximumDepthAfterMm": 0.0,
+            "newInsideSamples": 0,
+            "maximumExtraDepthMm": 0.0,
+            "signedAndEnclosedDisagreements": 0,
+            "coreInsideBefore": 0,
+            "coreInsideAfter": 0,
+            "coreMaximumDepthBeforeMm": 0.0,
+            "coreMaximumDepthAfterMm": 0.0,
+            "passed": true
+          },
+          {
+            "target": "bone.parietal.left",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 48.571300246693845,
+            "passed": true,
+            "absoluteInsideCertified": false
+          },
+          {
+            "target": "bone.parietal.right",
+            "method": "open-target-empty-ball-separation",
+            "minimumClearanceMarginMm": 48.46999572248191,
+            "passed": true,
+            "absoluteInsideCertified": false
+          }
+        ],
+        "issues": [],
+        "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Existing residual cortical embedding remains unresolved."
+      }
+    ]
+  },
+  "fullNamedTargetClearance": {
+    "release": "0.9.111",
+    "passed": true,
+    "node": "ACA A5 right",
+    "wallTrianglesCheckedPerTarget": 8172,
+    "targets": [
+      {
+        "node": "ACA A5 right",
+        "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+        "targetClosedAndOriented": true,
+        "method": "positive-signed-distance-enclosing-balls-over-every-source-face",
+        "wholeLabelSamples": 57204,
+        "insideBefore": 569,
+        "insideAfter": 0,
+        "maximumDepthBeforeMm": 0.2547469437122345,
+        "maximumDepthAfterMm": 0.0,
+        "signedAndEnclosedCentreDisagreements": 0,
+        "proof": {
+          "passed": true,
+          "sourceTriangles": 8172,
+          "evaluatedBalls": 8640,
+          "certifiedLeafTriangles": 8523,
+          "maximumSubdivisionDepth": 2,
+          "unresolvedLeafTriangles": 0,
+          "minimumCertifiedClearanceMarginMm": 2.961514598651127e-05,
+          "minimumUnresolvedMarginMm": null,
+          "sourceTriangleAreaMm2": 100.13777459531136,
+          "certifiedAreaMm2": 100.13777459531136,
+          "areaCoverageChecked": true,
+          "clearanceThresholdMm": 1e-05,
+          "maximumPermittedSubdivisionDepth": 10
+        },
+        "passed": true
+      },
+      {
+        "node": "ACA A5 right",
+        "target": "brain.cingulate-gyrus-posteroventral-part.right",
+        "targetClosedAndOriented": true,
+        "method": "positive-signed-distance-enclosing-balls-over-every-source-face",
+        "wholeLabelSamples": 57204,
+        "insideBefore": 2741,
+        "insideAfter": 0,
+        "maximumDepthBeforeMm": 0.932320773601532,
+        "maximumDepthAfterMm": 0.0,
+        "signedAndEnclosedCentreDisagreements": 0,
+        "proof": {
+          "passed": true,
+          "sourceTriangles": 8172,
+          "evaluatedBalls": 8832,
+          "certifiedLeafTriangles": 8667,
+          "maximumSubdivisionDepth": 2,
+          "unresolvedLeafTriangles": 0,
+          "minimumCertifiedClearanceMarginMm": 7.422590780918614e-05,
+          "minimumUnresolvedMarginMm": null,
+          "sourceTriangleAreaMm2": 100.13777459531136,
+          "certifiedAreaMm2": 100.13777459531134,
+          "areaCoverageChecked": true,
+          "clearanceThresholdMm": 1e-05,
+          "maximumPermittedSubdivisionDepth": 10
+        },
+        "passed": true
+      }
+    ],
+    "scope": "Continuous numerical separation from the two named closed surfaces only, across the complete A5 wall. Bound margins are conservative certificates, not measured anatomical clearances. Other ACA/cortical relationships remain open."
+  },
+  "shapeMeasures": [
+    {
+      "node": "ACA A5 right",
+      "sourceAreaRatioMin": 0.5273762269224606,
+      "sourceAreaRatioMax": 2.289545718423741,
+      "proxyVolumeBeforeMm3": 19.664301831148247,
+      "proxyVolumeAfterMm3": 19.664403498684738,
+      "proxyVolumeRelativeChangePercent": 0.0005170157443945556
+    }
+  ],
+  "exportValidation": {
+    "release": "0.9.111",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 598,
+    "otherAssetsByteExact": 4,
+    "candidateBuffersExact": true,
+    "allSourceFaceIndicesExact": true,
+    "retainedSourceCornerNormalsExact": true
+  },
+  "projectionValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "ACA A5 right",
+        "id": "artery.anterior.aca_pericallosal_right.segment.a5",
+        "volumeMm3": 19.664403498684738,
+        "allSourceFaceIndicesRetained": true,
+        "sanitisedFlipsAndRemovalsExact": true,
+        "capVerticesAndConnectivityExact": true,
+        "closedAndOriented": true
+      }
+    ],
+    "otherRecipesExact": 827
+  },
+  "flowValidation": {
+    "passed": true,
+    "unchangedCoursesReused": 596,
+    "selectedCourseStatusRetained": true,
+    "graphAndVeinSitesUnchanged": true,
+    "directedConnectionsUnchanged": true,
+    "unaffectedEdgeDistancesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.anterior.aca_pericallosal_right.segment.a5"
+    ]
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1249,
+    "catalogueStructuresRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true,
+    "selectedLabelTopology": [
+      {
+        "node": "ACA A5 right",
+        "before": {
+          "components": 1
+        },
+        "after": {
+          "components": 1
+        }
+      }
+    ]
+  },
+  "priorA5FitRegionsRetained": {
+    "node": "ACA A5 right",
+    "sourceYAtOrAbove": -96.7,
+    "verticesChecked": 3903,
+    "positionsAndStoredNormalsExact": true,
+    "allPreviousA5FitRegionsIncluded": true
+  },
+  "allA4FitsLeftA5FalcineRootsAndOtherMeshesRetainedByteExact": true,
+  "metadataValidation": {
+    "issueRegisterCopiesByteExact": true,
+    "originalUnresolvedILTInterfaceRetained": true
+  },
+  "finalUnselectedRecipesExact": 827,
+  "finalUnselectedCoursesExact": 596,
+  "remainingZeroAreaFaces": 7,
+  "remainingPicaVermianCrossing": true,
+  "verification": {
+    "fullBuild": "passed",
+    "repairTests": 22,
+    "clearanceTests": 3,
+    "dsa": "passed",
+    "closedOrientedProxies": 828,
+    "proxyTriangles": 8971510,
+    "selectableArterialCourses": 579,
+    "closedSections": 2353,
+    "fullAtlasRenderPerformed": false
+  },
+  "evidence": "anatomy/source/aca-tail-v0.9.111",
+  "limitations": [
+    "Continuous clearance is established only for the two named cortical surfaces. Right middle-posterior cingulate and other ACA/cortical findings remain open.",
+    "Enclosing-ball certificate margins are conservative lower bounds, not measured anatomical distances.",
+    "Native seam retention does not certify full receiving-lumen continuity or whole-network anatomy.",
+    "PICA/ACom/native-wall, ILT and other regional findings remain open.",
+    "No new independent anatomical imaging or target segmentation was introduced."
+  ]
+}

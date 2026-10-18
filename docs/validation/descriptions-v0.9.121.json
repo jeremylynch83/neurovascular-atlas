@@ -1,0 +1,44 @@
+{
+  "release": "0.9.121",
+  "baseline": "0.9.120",
+  "passed": true,
+  "inventory": {
+    "reviewedPopulatedDescriptions": 1295,
+    "proposedCorrections": 666,
+    "bySystem": {
+      "artery": 361,
+      "vein": 57,
+      "brain": 193,
+      "bone": 55
+    },
+    "emptyRenderedDescriptions": 166
+  },
+  "validation": {
+    "passed": true,
+    "release": "0.9.121",
+    "baseline": "0.9.120",
+    "reviewedPopulatedDescriptions": 1295,
+    "revisedDescriptions": 666,
+    "validInternalDescriptionLinks": true,
+    "noAuthoringStatusDebris": true,
+    "allFiveModelAssetsByteExact": true,
+    "allDsaRecipesAndFlowByteExact": true,
+    "allStructureFieldsExceptDescriptionExact": true,
+    "allOtherManifestFieldsExceptReleaseAndAuditReferenceExact": true,
+    "runtimeSourceByteExact": true,
+    "issueRegisterAndExpectedGeometryExact": true,
+    "intentionalContralateralPharyngealLinksRetained": true
+  },
+  "browser": {
+    "passed": true,
+    "errors": [],
+    "checks": [
+      "MCA divisions show their own M2/M3 courses and distinct territories",
+      "Targeted retinal and palpebral corrections render through the real Description component",
+      "All revised descriptions render; every internal link resolves and selection links work",
+      "Audit report contains all 666 exact before/after entries and its filters work"
+    ]
+  },
+  "productionBuild": "passed",
+  "scope": "Existing descriptions only. No geometry, names, graph relationships, segment boundaries or DSA changes. Empty descriptions are inventoried but not filled. Usual anatomy is distinguished from selected model arrangements."
+}

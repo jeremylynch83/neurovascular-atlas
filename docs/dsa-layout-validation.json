@@ -1,0 +1,39 @@
+{
+  "release": "0.9.81",
+  "errors": [],
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 99.390625,
+      "noName": true,
+      "timePhase": "0.5 s \u00b7 Arterial filling",
+      "placementInRow": true,
+      "singleRow": true,
+      "noOverflow": true,
+      "buttonCount": 5
+    },
+    {
+      "width": 390,
+      "height": 98,
+      "noName": true,
+      "timePhase": "0.5 s \u00b7 Arterial filling",
+      "placementInRow": true,
+      "singleRow": true,
+      "noOverflow": true,
+      "buttonCount": 5
+    },
+    {
+      "width": 320,
+      "height": 98,
+      "noName": true,
+      "timePhase": "0.5 s \u00b7 Arterial filling",
+      "placementInRow": true,
+      "singleRow": true,
+      "noOverflow": true,
+      "buttonCount": 5
+    }
+  ],
+  "placementButtonWorks": true,
+  "passed": true,
+  "geometryPreparationAndDsaBehaviourCodeUnchanged": true
+}

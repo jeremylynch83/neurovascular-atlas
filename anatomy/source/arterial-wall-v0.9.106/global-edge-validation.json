@@ -1,0 +1,865 @@
+{
+  "passed": true,
+  "reviewedArterialMeshes": 766,
+  "sourceAndCandidateIndependentlyRecounted": true,
+  "affectedEdges": 22,
+  "badEdgesBefore": 3,
+  "badEdgesAfter": 0,
+  "boundaryEdgesBefore": 7,
+  "boundaryEdgesAfter": 0,
+  "newBadEdges": 0,
+  "newGlobalBoundaryEdges": 0,
+  "pairedPatchBoundaryEdges": 9,
+  "newPerLabelEdgesOppositePaired": 3,
+  "pairedLacrimalSubdivisionEdges": 2,
+  "patchBoundary": [
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ]
+      ],
+      "sourceWall": {
+        "node": "Posterior spinal left",
+        "face": 49403,
+        "direction": -1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2496,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "Posterior spinal left",
+          "face": 49403,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ],
+        [
+          -11.802871704101562,
+          -87.7219467163086,
+          33.495933532714844
+        ]
+      ],
+      "sourceWall": {
+        "node": "Posterior spinal left",
+        "face": 49404,
+        "direction": -1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2493,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "Posterior spinal left",
+          "face": 49404,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.802978515625,
+          -87.724365234375,
+          33.501220703125
+        ],
+        [
+          -11.802871704101562,
+          -87.7219467163086,
+          33.495933532714844
+        ]
+      ],
+      "sourceWall": {
+        "node": "PICA medullary perforator left",
+        "face": 1748,
+        "direction": 1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 1746,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2493,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.802978515625,
+          -87.724609375,
+          33.501220703125
+        ],
+        [
+          -11.802978515625,
+          -87.724365234375,
+          33.501220703125
+        ]
+      ],
+      "sourceWall": {
+        "node": "PICA medullary perforator left",
+        "face": 1744,
+        "direction": 1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 1742,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2494,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.501953125
+        ],
+        [
+          -11.802978515625,
+          -87.724609375,
+          33.501220703125
+        ]
+      ],
+      "sourceWall": {
+        "node": "PICA medullary perforator left",
+        "face": 1743,
+        "direction": 1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 1741,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2497,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.501953125
+        ],
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.502197265625
+        ]
+      ],
+      "sourceWall": {
+        "node": "PICA medullary perforator left",
+        "face": 1740,
+        "direction": -1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2491,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "PICA medullary perforator left",
+          "face": 1738,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ],
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.502197265625
+        ]
+      ],
+      "sourceWall": {
+        "node": "PICA medullary perforator left",
+        "face": 1734,
+        "direction": 1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2491,
+          "direction": -1,
+          "positiveArea": true
+        },
+        {
+          "node": "PICA medullary perforator left",
+          "face": 1734,
+          "direction": 1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ]
+      ],
+      "sourceWall": {
+        "node": "PICA medullary perforator left",
+        "face": 1735,
+        "direction": 1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2492,
+          "direction": -1,
+          "positiveArea": true
+        },
+        {
+          "node": "PICA medullary perforator left",
+          "face": 1735,
+          "direction": 1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ]
+      ],
+      "sourceWall": {
+        "node": "Posterior spinal left",
+        "face": 49403,
+        "direction": -1,
+        "positiveArea": true
+      },
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2492,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "Posterior spinal left",
+          "face": 49403,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    }
+  ],
+  "newPerLabelPortProofs": [
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ]
+      ],
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2492,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "Posterior spinal left",
+          "face": 49403,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ]
+      ],
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2496,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "Posterior spinal left",
+          "face": 49403,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ],
+        [
+          -11.802871704101562,
+          -87.7219467163086,
+          33.495933532714844
+        ]
+      ],
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "PICA medullary perforator left",
+          "face": 2493,
+          "direction": 1,
+          "positiveArea": true
+        },
+        {
+          "node": "Posterior spinal left",
+          "face": 49404,
+          "direction": -1,
+          "positiveArea": true
+        }
+      ]
+    }
+  ],
+  "lacrimalSubdivision": [
+    {
+      "edge": [
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63963317871094,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "Lacrimal right",
+          "face": 7088,
+          "direction": -1,
+          "positiveArea": true
+        },
+        {
+          "node": "Lateral superior palpebral right",
+          "face": 2676,
+          "direction": 1,
+          "positiveArea": true
+        }
+      ]
+    },
+    {
+      "edge": [
+        [
+          38.630985260009766,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "oppositePairedCandidateIncidences": [
+        {
+          "node": "Lacrimal right",
+          "face": 7089,
+          "direction": -1,
+          "positiveArea": true
+        },
+        {
+          "node": "Lateral superior palpebral right",
+          "face": 2678,
+          "direction": 1,
+          "positiveArea": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": -2,
+      "candidateCount": 0,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ]
+      ],
+      "sourceCount": 3,
+      "sourceBalance": -1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ]
+      ],
+      "sourceCount": 3,
+      "sourceBalance": 1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": -1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.501953125
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.802978515625,
+          -87.724609375,
+          33.501220703125
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ],
+        [
+          -11.802978515625,
+          -87.724609375,
+          33.501220703125
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ],
+        [
+          -11.802978515625,
+          -87.724365234375,
+          33.501220703125
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72412109375,
+          33.50146484375
+        ],
+        [
+          -11.802871704101562,
+          -87.7219467163086,
+          33.495933532714844
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": -1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ],
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.501953125
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ],
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.502197265625
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": 1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.501953125
+        ],
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.502197265625
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": -1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.80322265625,
+          -87.7255859375,
+          33.501953125
+        ],
+        [
+          -11.802978515625,
+          -87.724609375,
+          33.501220703125
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": 1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.802978515625,
+          -87.724609375,
+          33.501220703125
+        ],
+        [
+          -11.802978515625,
+          -87.724365234375,
+          33.501220703125
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": 1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.802978515625,
+          -87.724365234375,
+          33.501220703125
+        ],
+        [
+          -11.802871704101562,
+          -87.7219467163086,
+          33.495933532714844
+        ]
+      ],
+      "sourceCount": 1,
+      "sourceBalance": 1,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.630985260009766,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.630985260009766,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63963317871094,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 0,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.630985260009766,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.6612548828125,
+          15.199963569641113,
+          62.81693649291992
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63963317871094,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.6612548828125,
+          15.199963569641113,
+          62.81693649291992
+        ]
+      ],
+      "sourceCount": 0,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.63963317871094,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.6612548828125,
+          15.199963569641113,
+          62.81693649291992
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    }
+  ]
+}

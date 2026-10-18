@@ -5,6 +5,18 @@ from pathlib import Path
 APP = Path(__file__).resolve().parents[2]
 MODES = {'dural-attachment','dural-free-edge','bony-groove','cisternal','pial','opercular','insular','sulcal','surface-vein','bridging','deep-venous','subependymal','penetrating','choroidal'}
 
+def validate_targets(c, rows):
+    """Bone is a reference only for an explicitly dural or bony course."""
+    for k in c['targetStructureIds']:
+        assert k in rows and rows[k].get('asset') and rows[k]['system'] in {'brain','bone'}
+    for segment in c['segments']:
+        for k in segment['targetStructureIds']:
+            assert k in rows
+            if rows[k]['system'] == 'bone':
+                assert segment['mode'] in {'bony-groove','dural-attachment'}
+    for k in c.get('referenceStructureIds', []):
+        assert k in rows and (rows[k].get('asset') or rows[k].get('landmark'))
+
 def validate_segments(c, rows, source_cache=None):
     """Bound segments may use distinct targets, with complete source-path coverage."""
     source_cache = {} if source_cache is None else source_cache
@@ -66,7 +78,7 @@ def validate_courses(manifest):
             file=s['asset']['file']
             if file not in hashes:hashes[file]=hashlib.sha256((APP/'public/anatomy'/file).read_bytes()).hexdigest()
             assert c['geometrySha256']==hashes[file]
-            assert all(k in rows and rows[k]['system']=='brain' and rows[k].get('asset') for k in c['targetStructureIds'])
+            validate_targets(c, rows)
             assert all(k in rows and rows[k].get('surfaceAnchor') for k in c['stationIds'])
             assert c['radiusPolicy'] in ['preserve-delivered-profile','preserve-source-profile-with-measured-wall-deformation','reconstruct-tube-with-smoothed-source-radius']
             if c['radiusPolicy']=='preserve-source-profile-with-measured-wall-deformation':

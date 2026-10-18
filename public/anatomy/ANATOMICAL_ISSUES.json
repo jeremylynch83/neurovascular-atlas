@@ -1,0 +1,3185 @@
+{
+  "status": "Active repair continuation; wider anatomical acceptance incomplete",
+  "activeRepairSegments": 12,
+  "activeNetworks": 3,
+  "scope": "These are the currently active repair components, not a certified total of all atlas defects.",
+  "geometryChanged": true,
+  "segments": [
+    {
+      "vessel": "MMA\u2013tentorial marginal left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [
+        {
+          "bone": "bone.temporal.left",
+          "route": "MMA\u2013tentorial marginal left",
+          "uniqueContactFacets": 79
+        }
+      ],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Tentorial marginal left",
+      "network": "left-tentorial-mastoid",
+      "status": "recorded-native-attachments-restored-regional-review-deferred",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json",
+      "resolvedNativeInterfaces": [
+        {
+          "release": "0.9.92",
+          "neighbour": "Dorsal meningeal left",
+          "matchedNativePortCoordinates": 16,
+          "baselineFinding": {
+            "branch": "Tentorial marginal left",
+            "missingNativePortVertices": 1,
+            "nativePortVerticesChecked": 16,
+            "neighbour": "Dorsal meningeal left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 16,
+            "sourceSharedVertices": 16
+          },
+          "scope": "Small native wall gap repaired; whole network acceptance remains open."
+        },
+        {
+          "release": "0.9.94",
+          "neighbour": "Meningohypophyseal trunk left",
+          "matchedNativePortCoordinates": 13,
+          "baselineFinding": {
+            "branch": "Tentorial marginal left",
+            "missingNativePortVertices": 2,
+            "nativePortVerticesChecked": 13,
+            "neighbour": "Meningohypophyseal trunk left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 12,
+            "sourceSharedVertices": 13
+          },
+          "scope": "Missing native coordinates restored; whole regional receiving-lumen acceptance remains open."
+        }
+      ],
+      "nativeRepairReport": "docs/validation/native-batch2-v0.9.94.json"
+    },
+    {
+      "vessel": "MMA petrosquamosal left",
+      "network": "left-tentorial-mastoid",
+      "status": "local-native-parent-interface-repaired-network-review-deferred",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and wider component/receiving-lumen review remain unresolved. Other native rims are retained.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json",
+      "resolvedNativeInterfaces": [
+        {
+          "release": "0.9.90",
+          "neighbour": "Middle meningeal left",
+          "matchedNativePortCoordinates": 124,
+          "pairedOppositeBoundaryEdges": 124,
+          "baselineFinding": {
+            "branch": "MMA petrosquamosal left",
+            "missingNativePortVertices": 124,
+            "nativePortVerticesChecked": 124,
+            "neighbour": "Middle meningeal left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 124,
+            "sourceSharedVertices": 124
+          },
+          "scope": "Local native opening only; network acceptance remains false."
+        }
+      ],
+      "nativeRepairReport": "docs/validation/petrosquamosal-v0.9.90.json"
+    },
+    {
+      "vessel": "Occipital mastoid\u2013MMA petrosquamosal left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Occipital mastoid dural branch left",
+      "network": "left-tentorial-mastoid",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json"
+    },
+    {
+      "vessel": "Occipital mastoid left",
+      "network": "left-tentorial-mastoid",
+      "status": "local-native-attachments-repaired-regional-review-open",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json",
+      "resolvedNativeInterfaces": [
+        {
+          "release": "0.9.95",
+          "neighbour": "Occipital left",
+          "matchedNativePortCoordinates": 108,
+          "pairedOppositeBoundaryEdges": 108,
+          "baselineFinding": {
+            "branch": "Occipital mastoid left",
+            "missingNativePortVertices": 106,
+            "nativePortVerticesChecked": 106,
+            "neighbour": "Occipital left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 106,
+            "sourceSharedVertices": 106,
+            "batch2Disposition": "requires-collar-or-coupled-regional-reconstruction",
+            "batch2Report": "docs/validation/native-batch2-v0.9.94.json"
+          },
+          "scope": "Native interface repaired locally; whole-network anatomical acceptance remains open."
+        }
+      ],
+      "nativeRepairReport": "docs/validation/native-batch3-v0.9.95.json"
+    },
+    {
+      "vessel": "MMA\u2013tentorial marginal right",
+      "network": "right-tentorial",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [
+        {
+          "bone": "bone.temporal.right",
+          "route": "MMA\u2013tentorial marginal right",
+          "uniqueContactFacets": 132
+        }
+      ],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json"
+    },
+    {
+      "vessel": "Tentorial marginal right",
+      "network": "right-tentorial",
+      "status": "recorded-native-attachments-restored-regional-review-deferred",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json",
+      "resolvedNativeInterfaces": [
+        {
+          "release": "0.9.92",
+          "neighbour": "Dorsal meningeal right",
+          "matchedNativePortCoordinates": 13,
+          "baselineFinding": {
+            "branch": "Tentorial marginal right",
+            "missingNativePortVertices": 2,
+            "nativePortVerticesChecked": 13,
+            "neighbour": "Dorsal meningeal right",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 12,
+            "sourceSharedVertices": 13
+          },
+          "scope": "Small native wall gap repaired; whole network acceptance remains open."
+        },
+        {
+          "release": "0.9.94",
+          "neighbour": "Meningohypophyseal trunk right",
+          "matchedNativePortCoordinates": 10,
+          "baselineFinding": {
+            "branch": "Tentorial marginal right",
+            "missingNativePortVertices": 1,
+            "nativePortVerticesChecked": 10,
+            "neighbour": "Meningohypophyseal trunk right",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 9,
+            "sourceSharedVertices": 10,
+            "baselineMissingNativePortVertices": 3,
+            "note": "Two source coordinates restored by v0.9.92 wall patches; one remains missing."
+          },
+          "scope": "Missing native coordinates restored; whole regional receiving-lumen acceptance remains open."
+        }
+      ],
+      "nativeRepairReport": "docs/validation/native-batch2-v0.9.94.json"
+    },
+    {
+      "vessel": "MMA petrosquamosal",
+      "network": "right-tentorial",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json"
+    },
+    {
+      "vessel": "Posterior cavernous MMA\u2013posterolateral ILT left",
+      "network": "left-posterior-cavernous",
+      "status": "deferred-unresolved",
+      "communicationBoneContacts": [
+        {
+          "bone": "bone.sphenoid",
+          "route": "Posterior cavernous MMA\u2013posterolateral ILT left",
+          "uniqueContactFacets": 68
+        }
+      ],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support and component-wide native/receiving junction reconstruction.",
+      "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json"
+    },
+    {
+      "vessel": "MMA posterior cavernous left",
+      "network": "left-posterior-cavernous",
+      "status": "local-native-parent-interface-repaired-network-review-deferred",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [],
+      "remainingReview": "Independent compartment support, wider bone/dural fit and whole receiving-lumen review remain unresolved.",
+      "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json",
+      "resolvedNativeInterfaces": [
+        {
+          "release": "0.9.91",
+          "neighbour": "MMA cavernous left",
+          "matchedNativePortCoordinates": 181,
+          "pairedOppositeBoundaryEdges": 181,
+          "baselineFinding": {
+            "branch": "MMA posterior cavernous left",
+            "missingNativePortVertices": 98,
+            "nativePortVerticesChecked": 98,
+            "neighbour": "MMA cavernous left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 98,
+            "sourceSharedVertices": 98
+          },
+          "scope": "Local native opening only; wider compartment and network acceptance remains false."
+        }
+      ],
+      "nativeRepairReport": "docs/validation/cavernous-v0.9.91.json"
+    },
+    {
+      "vessel": "ILT posterior branch left",
+      "network": "left-posterior-cavernous",
+      "status": "root-repaired-posteromedial-interface-and-regional-review-open",
+      "communicationBoneContacts": [],
+      "failedNativeInterfaces": [
+        {
+          "branch": "ILT posterior branch left",
+          "missingNativePortVertices": 88,
+          "nativePortVerticesChecked": 88,
+          "neighbour": "ILT posteromedial ramus left",
+          "neighbourSourceTopologyExact": true,
+          "passed": false,
+          "sourceSharedEdges": 88,
+          "sourceSharedVertices": 88,
+          "batch2Disposition": "requires-collar-or-coupled-regional-reconstruction",
+          "batch2Report": "docs/validation/native-batch2-v0.9.94.json",
+          "batch3Disposition": "requires-wider-distal-course-and-bone-registration",
+          "batch3Report": "docs/validation/native-batch3-v0.9.95.json"
+        }
+      ],
+      "remainingReview": "Posteromedial interface remains displaced. Protected distal attachment lies inside current sphenoid model; wider course/bone registration and independent canal targets required. Other regional receiving lumens remain open.",
+      "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json",
+      "resolvedNativeInterfaces": [
+        {
+          "release": "0.9.95",
+          "neighbour": "ILT anterior branch left",
+          "matchedNativePortCoordinates": 64,
+          "pairedOppositeBoundaryEdges": 63,
+          "baselineFinding": {
+            "branch": "ILT posterior branch left",
+            "missingNativePortVertices": 64,
+            "nativePortVerticesChecked": 64,
+            "neighbour": "ILT anterior branch left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 63,
+            "sourceSharedVertices": 64,
+            "batch2Disposition": "requires-collar-or-coupled-regional-reconstruction",
+            "batch2Report": "docs/validation/native-batch2-v0.9.94.json"
+          },
+          "scope": "Native interface repaired locally; whole-network anatomical acceptance remains open."
+        },
+        {
+          "release": "0.9.95",
+          "neighbour": "Inferolateral trunk left",
+          "matchedNativePortCoordinates": 69,
+          "pairedOppositeBoundaryEdges": 68,
+          "baselineFinding": {
+            "branch": "ILT posterior branch left",
+            "missingNativePortVertices": 69,
+            "nativePortVerticesChecked": 69,
+            "neighbour": "Inferolateral trunk left",
+            "neighbourSourceTopologyExact": true,
+            "passed": false,
+            "sourceSharedEdges": 68,
+            "sourceSharedVertices": 69,
+            "batch2Disposition": "requires-collar-or-coupled-regional-reconstruction",
+            "batch2Report": "docs/validation/native-batch2-v0.9.94.json"
+          },
+          "scope": "Native interface repaired locally; whole-network anatomical acceptance remains open."
+        }
+      ],
+      "nativeRepairReport": "docs/validation/native-batch3-v0.9.95.json"
+    }
+  ],
+  "otherOpenWork": [
+    "Pericallosal/callosal registration and pial clearance, bilateral A2\u2013A5 (G05).",
+    "Full ACA/MMA receiving-lumen and falcine continuity (G06); the local bilateral ACA and MMA native interfaces are repaired. Broader bilateral A2-A5 registration remains open under G05.",
+    "Full anatomical support certification and whole-atlas physical lumen continuity.",
+    "Middle meningeal courses now specified; exact dural/canal containment and complete drainage endpoints remain open (G07).",
+    "Dural/deep venous alignment, G01.",
+    "Coarse or provisional bony canals, G03.",
+    "Provisional ICA tissue boundaries, G04.",
+    "Local venous regional reconstruction and missing fine containment/continuity targets, G08."
+  ],
+  "rejectedApproaches": [
+    "Local shifts repeatedly introduced folds and collisions.",
+    "Native-port displacement fields did not pass physical checks.",
+    "Illustrative foramen-ovale reconstruction did not resolve the vascular parent course.",
+    "v0.9.86 broad Galenic shifts introduced new tributary/choroidal artery collisions; 2 mm shaft and broad falx-body fields failed quality/regression gates. Only the limited 1.5 mm shaft/inferior-edge field is retained."
+  ],
+  "deferredCourseSpecifications": [],
+  "reviewVersion": "0.9.115",
+  "geometryCheckpointVersion": "0.9.67",
+  "batch1Review": {
+    "release": "0.9.83",
+    "report": "docs/validation/batch1-v0.9.83.json",
+    "geometryChanged": false,
+    "posteriorCrossingPairsPassed": 12,
+    "pericallosalStatus": "correction-required",
+    "falcineStatus": "origin-support-reviewed-physical-interfaces-unresolved",
+    "wholeAtlasAcceptance": false
+  },
+  "reviewFindings": {
+    "G02": {
+      "status": "geometric-recheck-passed-anatomical-review-limited",
+      "pairsChecked": 12,
+      "pairsWithSurfaceContacts": 0,
+      "conclusion": "All 12 original crossing corrections remain free of triangle intersections in the delivered geometry. Sampled APMV sections at Z=70 and 75 mm are posterior to the basilar artery, consistent with cited anatomical relationship. This is not whole-course or whole-atlas anatomical certification. Tiny sampled clearances should not be interpreted as physiological measurements."
+    },
+    "G05": {
+      "status": "bilateral-distal-A5-local-improvements-regional-registration-open",
+      "conclusion": "Historical G05 is not resolved by the later generic callosal-repair note. Both A2\u2013A5 chains retain matching seam coordinates but all eight segments contact registered brain surfaces. Left A5 also intersects the corpus-callosum surface. A3 remains separated from the registered callosal surface. Retain the issue, extend review to A5, and require coordinated vessel/brain registration and junction review. Do not repeat the previously rejected local displacement trial.",
+      "localRightA5Correction": {
+        "release": "0.9.96",
+        "report": "docs/validation/aca-registration-v0.9.96.json",
+        "status": "right-ACA-local-native-root-repaired-G05-and-wider-G06-open",
+        "changedMeshes": [
+          "ACA A5 right",
+          "Precuneal right",
+          "ACA falcine branch right"
+        ],
+        "maximumVesselDisplacementMm": 2.1,
+        "parentLipSetbackGeodesicMm": 0.25,
+        "newNativeInterface": {
+          "parent": "ACA A5 right",
+          "branch": "ACA falcine branch right",
+          "matchedNativePortCoordinates": 32,
+          "pairedOppositeBoundaryEdges": 32
+        },
+        "anatomicalAcceptance": false
+      },
+      "rightA5IntersectionReclassification": {
+        "release": "0.9.101",
+        "report": "docs/validation/intersection-v0.9.101.json",
+        "geometryChanged": false,
+        "recordedRightA5Pair": [
+          5129,
+          5204
+        ],
+        "classification": "single-shared-vertex-false-positive-cleared",
+        "exactPositiveCrossingsInLocalAudit": 0,
+        "localTrianglePairsChecked": 323,
+        "anatomicalAcceptance": false,
+        "scope": "Corrects the single recorded residual right A5 self-crossing flag. Regional cortical registration and full receiving lumens remain open."
+      },
+      "rightA4ShaftFitBatch15": {
+        "release": "0.9.107",
+        "report": "docs/validation/aca-shaft-v0.9.107.json",
+        "changedMeshes": [
+          "ACA A4 right"
+        ],
+        "changedVertices": 1647,
+        "changedFaces": 3359,
+        "maximumDisplacementMm": 2.5079872608184814,
+        "fixedNativeInterfaces": 4,
+        "fixedSharedCoordinates": 324,
+        "allSourceFaceIndicesExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "maximumExtraDepthMm": 0,
+        "coreMaximumDepthBeforeMm": 1.690409779548645,
+        "coreMaximumDepthAfterMm": 0.16871675848960876,
+        "maximumDepthBeforeMm": 1.7159568071365356,
+        "maximumDepthAfterMm": 1.339721441268921,
+        "anatomicalAcceptance": false,
+        "scope": "Right A4 mid-shaft registration improvement only. Residual right A4 embedding, A2 and distal ACA/callosal registration and wider G05/G06 remain open."
+      },
+      "leftA4AnteriorShaftFitBatch16": {
+        "release": "0.9.108",
+        "report": "docs/validation/aca-shaft-v0.9.108.json",
+        "changedMeshes": [
+          "ACA A4 left"
+        ],
+        "changedVertices": 896,
+        "changedFaces": 1856,
+        "maximumDisplacementMm": 2.692582368850708,
+        "fixedNativeInterfaces": 4,
+        "fixedSharedCoordinates": 323,
+        "allSourceFaceIndicesExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "maximumExtraDepthMm": 0,
+        "coreMaximumDepthBeforeMm": 1.2268251180648804,
+        "coreMaximumDepthAfterMm": 0.0,
+        "maximumDepthBeforeMm": 2.5222861766815186,
+        "maximumDepthAfterMm": 2.5222861766815186,
+        "anatomicalAcceptance": false,
+        "scope": "Left A4 anterior shaft improvement only. Central plateau has no sampled embedding; residual posterior and transition embedding and wider G05/G06 remain open."
+      },
+      "bilateralA5ShaftFitBatch17": {
+        "release": "0.9.109",
+        "report": "docs/validation/aca-shaft-v0.9.109.json",
+        "changedMeshes": [
+          "ACA A5 left",
+          "ACA A5 right"
+        ],
+        "changedVertices": 2069,
+        "changedFaces": 4270,
+        "maximumDisplacementMm": 2.2360680103302,
+        "fixedNativeInterfaces": 10,
+        "fixedSharedCoordinates": 980,
+        "allSourceFaceIndicesExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "maximumExtraDepthMm": 0,
+        "depth": [
+          {
+            "node": "ACA A5 left",
+            "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+            "coreMaximumDepthBeforeMm": 0.2441703826189041,
+            "coreMaximumDepthAfterMm": 0.0,
+            "maximumDepthBeforeMm": 0.7313816547393799,
+            "maximumDepthAfterMm": 0.7313816547393799,
+            "insideBefore": 2766,
+            "insideAfter": 1008
+          },
+          {
+            "node": "ACA A5 right",
+            "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+            "coreMaximumDepthBeforeMm": 0.4050835967063904,
+            "coreMaximumDepthAfterMm": 0.0,
+            "maximumDepthBeforeMm": 0.9578891396522522,
+            "maximumDepthAfterMm": 0.9578891396522522,
+            "insideBefore": 3595,
+            "insideAfter": 1260
+          }
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Bilateral A5 inter-junction shaft improvements only. Both central plateaus have no sampled embedding. Residual transitions, proximal/distal cortical fit and wider G05/G06 remain open."
+      },
+      "bilateralAnteriorA4ShaftFitBatch18": {
+        "release": "0.9.110",
+        "report": "docs/validation/aca-shaft-v0.9.110.json",
+        "changedMeshes": [
+          "ACA A4 left",
+          "ACA A4 right"
+        ],
+        "changedVertices": 1623,
+        "changedFaces": 3377,
+        "maximumDisplacementMm": 2.5079872608184814,
+        "fixedNativeInterfaces": 8,
+        "fixedSharedCoordinates": 647,
+        "allSourceFaceIndicesExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "maximumExtraDepthMm": 0,
+        "depth": [
+          {
+            "node": "ACA A4 left",
+            "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+            "coreMaximumDepthBeforeMm": 2.115694522857666,
+            "coreMaximumDepthAfterMm": 0.5465468168258667,
+            "maximumDepthBeforeMm": 2.37664794921875,
+            "maximumDepthAfterMm": 2.37664794921875,
+            "insideBefore": 7669,
+            "insideAfter": 3387
+          },
+          {
+            "node": "ACA A4 right",
+            "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right",
+            "coreMaximumDepthBeforeMm": 1.63838529586792,
+            "coreMaximumDepthAfterMm": 0.09117311984300613,
+            "maximumDepthBeforeMm": 1.63838529586792,
+            "maximumDepthAfterMm": 1.13248872756958,
+            "insideBefore": 5553,
+            "insideAfter": 1221
+          }
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Bilateral anterior A4 shaft improvements only. Central sampled depths improve but residual embedding remains. All native ports, earlier A4 regions and both A5 fits remain fixed. Wider G05/G06 remain open."
+      },
+      "rightA5DistalFitBatch19": {
+        "release": "0.9.111",
+        "report": "docs/validation/aca-tail-v0.9.111.json",
+        "changedMeshes": [
+          "ACA A5 right"
+        ],
+        "changedVertices": 408,
+        "changedFaces": 851,
+        "maximumDisplacementMm": 1.0,
+        "fixedNativeInterfaces": 5,
+        "fixedSharedCoordinates": 456,
+        "allSourceFaceIndicesExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "maximumExtraDepthMm": 0,
+        "clearedNamedCorticalContactPairs": [
+          {
+            "node": "ACA A5 right",
+            "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+            "maximumDepthBeforeMm": 0.2547469437122345,
+            "maximumDepthAfterMm": 0.0,
+            "continuousWholeWallSeparationCertified": true,
+            "wallTrianglesChecked": 8172
+          },
+          {
+            "node": "ACA A5 right",
+            "target": "brain.cingulate-gyrus-posteroventral-part.right",
+            "maximumDepthBeforeMm": 0.932320773601532,
+            "maximumDepthAfterMm": 0.0,
+            "continuousWholeWallSeparationCertified": true,
+            "wallTrianglesChecked": 8172
+          }
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Distal right A5 fit, with continuous whole-wall separation from the two named posterior cortical surfaces. Other ACA/cortical embedding and wider G05/G06 remain open."
+      },
+      "leftA5DistalFitBatch20": {
+        "release": "0.9.112",
+        "report": "docs/validation/aca-tail-v0.9.112.json",
+        "changedMeshes": [
+          "ACA A5 left"
+        ],
+        "changedVertices": 463,
+        "changedFaces": 998,
+        "maximumDisplacementMm": 0.7071069478988647,
+        "fixedNativeInterfaces": 5,
+        "fixedSharedCoordinates": 524,
+        "allSourceFaceIndicesExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "maximumExtraDepthMm": 0,
+        "corpusCallosumDepth": {
+          "target": "brain.corpus-callosum",
+          "method": "paired-signed-depth-and-closed-volume-parity",
+          "samples": 6986,
+          "insideBefore": 1317,
+          "insideAfter": 584,
+          "maximumDepthBeforeMm": 0.2547326982021332,
+          "maximumDepthAfterMm": 0.19455230236053467,
+          "newInsideSamples": 0,
+          "maximumExtraDepthMm": 0.0,
+          "signedAndEnclosedDisagreements": 0,
+          "coreInsideBefore": 309,
+          "coreInsideAfter": 0,
+          "coreMaximumDepthBeforeMm": 0.12340733408927917,
+          "coreMaximumDepthAfterMm": 0.0,
+          "passed": true
+        },
+        "distalWallClearance": {
+          "sourceYMaximumMm": -95.1,
+          "trianglesChecked": 1209,
+          "continuousSeparationCertified": true
+        },
+        "inheritedSelfContactPairs": 1,
+        "inheritedSelfContactRigidTranslationExact": true,
+        "anatomicalAcceptance": false,
+        "scope": "Bounded distal left A5 shaft fit reduces corpus-callosum overlap with native interfaces, prior fit regions and terminal tip fixed. Residual transition/attachment overlap and one rigidly retained native self-contact pair remain open.",
+        "inheritedSelfContactReclassifiedBatch22": {
+          "node": "ACA A5 left",
+          "faces": [
+            1156,
+            1222
+          ],
+          "exactCrossing": false,
+          "predicateCrossing": false,
+          "previousReportedPairs": 1,
+          "currentExactPairs": 0,
+          "geometryChanged": false,
+          "residualCorpusCallosumDepthMm": 0.19455230236053467
+        },
+        "currentExactInheritedSelfContactPairs": 0
+      },
+      "fixedNativeRimReviewBatch21": {
+        "report": "anatomy/source/arterial-review-v0.9.113/deferred-repairs.json",
+        "rimTissueFailures": 13,
+        "status": "coordinated-vessel-cortex-registration-required",
+        "anatomicalAcceptance": false,
+        "implementationAwareGuard": "anatomy/source/intersection-predicate-v0.9.114/deferred-repairs.json"
+      }
+    },
+    "G06": {
+      "status": "bilateral-ACA-and-MMA-local-native-interfaces-repaired-wider-network-open",
+      "conclusion": "Right ACA A5/falcine native root is repaired in v0.9.96 with 32 paired edges after bounded connected right A5/precuneal medial fitting and local parent-lip reconstruction. Left ACA and bilateral MMA native repairs remain fixed. Full receiving lumens, whole falcine continuity, precise dural fit and G05 pericallosal registration remain open.",
+      "rightACARootCauseReview": {
+        "release": "0.9.90",
+        "report": "docs/validation/right-aca-feasibility-v0.9.90.json",
+        "status": "source-port-inside-registered-cortex-local-outlet-trials-excluded",
+        "furtherWork": "Wider pericallosal/cortical registration before connector fitting."
+      },
+      "rightACARootRepair": {
+        "release": "0.9.96",
+        "report": "docs/validation/aca-registration-v0.9.96.json",
+        "status": "right-ACA-local-native-root-repaired-G05-and-wider-G06-open",
+        "changedMeshes": [
+          "ACA A5 right",
+          "Precuneal right",
+          "ACA falcine branch right"
+        ],
+        "maximumVesselDisplacementMm": 2.1,
+        "parentLipSetbackGeodesicMm": 0.25,
+        "newNativeInterface": {
+          "parent": "ACA A5 right",
+          "branch": "ACA falcine branch right",
+          "matchedNativePortCoordinates": 32,
+          "pairedOppositeBoundaryEdges": 32
+        },
+        "anatomicalAcceptance": false
+      },
+      "arterialNativeWallReviewBatch8": {
+        "release": "0.9.100",
+        "report": "docs/validation/arterial-junctions-v0.9.100.json",
+        "nativeWallGapsClosed": 15,
+        "addedTriangles": 53,
+        "existingVertexDisplacementMm": 0,
+        "changedMeshes": [
+          "ACA A1 right",
+          "ACA A2 right",
+          "Medial posterior choroidal left",
+          "PCA P2-P3 left",
+          "Vertebral V3 right"
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Small mixed-label arterial wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
+      },
+      "rightA5IntersectionReclassification": {
+        "release": "0.9.101",
+        "report": "docs/validation/intersection-v0.9.101.json",
+        "geometryChanged": false,
+        "recordedRightA5Pair": [
+          5129,
+          5204
+        ],
+        "classification": "single-shared-vertex-false-positive-cleared",
+        "exactPositiveCrossingsInLocalAudit": 0,
+        "localTrianglePairsChecked": 323,
+        "anatomicalAcceptance": false,
+        "scope": "Corrects the single recorded residual right A5 self-crossing flag. Regional cortical registration and full receiving lumens remain open."
+      }
+    },
+    "G07": {
+      "status": "course-specifications-complete-regional-anatomy-incomplete",
+      "structures": [
+        "vein.middle_meningeal.anterior.left",
+        "vein.middle_meningeal.posterior.left",
+        "vein.middle_meningeal.anterior.right",
+        "vein.middle_meningeal.posterior.right"
+      ],
+      "report": "docs/validation/meningeal-v0.9.84.json",
+      "remainingWork": [
+        "Dural layer and groove/canal containment against independently segmented targets.",
+        "Cranial/caudal shaft endpoints are capped; complete SSS and pterygoid continuations are absent.",
+        "Receiver network remains open beyond the audited label seams; full lumen continuity unaccepted."
+      ],
+      "resolvedLocalContact": "Left anterior middle meningeal / ovale emissary contact cleared in v0.9.85; maximum 0.08 mm displacement.",
+      "localFitReport": "docs/validation/local-veins-v0.9.85.json"
+    },
+    "G08": {
+      "status": "local-inferior-petrosal-self-contact-cleanup-regional-fit-open",
+      "report": "docs/validation/local-venous-junctions-v0.9.98.json",
+      "remainingWork": [
+        "Superior petrosal geometry retained: open walls, multiple components, degenerate faces and existing arterial contacts require a coupled regional repair.",
+        "Inferior petrosal open walls, existing bone contacts and exact self-contact pairs remain (3 left, 10 right after batch 23). Local fitting is not exact groove or lumen acceptance.",
+        "Ten companion additions retain closed individual surfaces, but separate receiving-volume overlaps do not certify a continuous merged lumen.",
+        "Cervical vertebrae and exact transverse foramina, canal/nerve/globe targets are absent or unsegmented; no invented targets or new branches.",
+        "G07 dural/canal containment, capped endpoints and full receiver closure remain. The left meningeal/emissary contact is cleared.",
+        "Twelve deferred arterial segments in three networks and G01/G03/G04/G05/G06 remain."
+      ],
+      "earlierShaftReviewReport": "docs/validation/local-veins-v0.9.85.json",
+      "nativeJunctionWallRepairBatch6": {
+        "release": "0.9.98",
+        "report": "docs/validation/local-venous-junctions-v0.9.98.json",
+        "nativeWallGapsClosed": 1,
+        "addedTriangles": 3,
+        "existingVertexDisplacementMm": 0,
+        "changedMeshes": [
+          "vein.basilar_plexus"
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Local mixed-label venous wall gaps only. Regional petrosal reconstruction, canal fit and complete receiving lumens remain open."
+      },
+      "integratedNativeWallReview": {
+        "release": "0.9.99",
+        "report": "docs/validation/integrated-venous-v0.9.99.json",
+        "nativeWallGapsClosed": 39,
+        "addedTriangles": 76,
+        "existingVertexDisplacementMm": 0,
+        "changedMeshes": [
+          "vein.anterior_intercavernous",
+          "vein.anterior_medullary",
+          "vein.anterior_septal.left",
+          "vein.basal.left",
+          "vein.basilar_plexus",
+          "vein.inferior_hemispheric.left",
+          "vein.inferior_hemispheric.right",
+          "vein.inferior_vermian.left",
+          "vein.lateral_mesencephalic.right",
+          "vein.maxillary.right",
+          "vein.pontotrigeminal.left",
+          "vein.precentral_cerebellar",
+          "vein.retromandibular.left",
+          "vein.retromandibular.right"
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Small mixed-label venous wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
+      },
+      "sourceTopologyCleanupBatch10": {
+        "release": "0.9.102",
+        "report": "docs/validation/zero-area-v0.9.102.json",
+        "removedExactZeroAreaFaces": 21,
+        "nativeBadEdgesCleared": 23,
+        "changedMeshes": [
+          "vein.anterior_spinal",
+          "vein.inferior_ophthalmic.left",
+          "vein.pterygoid_plexus.left",
+          "vein.pterygoid_plexus.right"
+        ],
+        "verticesMoved": 0,
+        "positiveAreaFacesRemoved": 0,
+        "newBoundaryEdges": 0,
+        "newBadEdges": 0,
+        "anatomicalAcceptance": false,
+        "scope": "Exact-zero-area topology cleanup only; positive-area surfaces and all vertex/normal data retained. Larger anatomy and three guarded degenerate faces remain open."
+      },
+      "sourceTopologyRepairBatch11": {
+        "release": "0.9.103",
+        "report": "docs/validation/native-port-v0.9.103.json",
+        "removedExactZeroAreaFaces": 3,
+        "nativeBadEdgesCleared": 3,
+        "changedMeshes": [
+          "vein.anterior_spinal",
+          "vein.pterygoid_plexus.left"
+        ],
+        "verticesMoved": 0,
+        "storedNormalsChanged": false,
+        "pterygoidWallUnionExact": true,
+        "restoredPairedPortEdges": 2,
+        "newGlobalBoundaryEdges": 0,
+        "newBadEdges": 0,
+        "anatomicalAcceptance": false,
+        "scope": "Resolve the three guarded exact-zero-area faces. Anterior spinal port edges pair with the anterior medullary vein; tiny pterygoid triangles merge without changing wall shape. Larger anatomy remains open."
+      },
+      "petrosalExactPredicateBatch22": {
+        "release": "0.9.114",
+        "baseline": "0.9.113",
+        "batch": 22,
+        "scope": "Repair-validation predicate and implementation-aware exclusion reuse. No model geometry changes.",
+        "acceptedCodeFixes": [
+          "Exact confirmation of potential positive triangle contacts and uncertainty cases.",
+          "Remove tolerance-thickened plane vertices from floating-point cuts.",
+          "Handle degenerate triangles without invalid normal division.",
+          "Invalidate deferred exclusions when validation code changes or implementation hashes were never recorded."
+        ],
+        "acceptedGeometryRepairs": 0,
+        "anatomicalAcceptance": false,
+        "sourceAssets": {
+          "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+          "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+          "models/complete-circulation.glb": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+          "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+          "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+        },
+        "predicateSha256Before": "4f8114ab2bf86af03b682dde533db2231396d9ddad3bdcc41fcf03fe57bf5759",
+        "predicateSha256After": "aeb84ad57db409847d4061a8a4380cdbb50735587fc3cc71a190cd09e9404f41",
+        "petrosalSelfContactReview": [
+          {
+            "node": "vein.inferior_petrosal.left",
+            "trianglePairsChecked": 37856,
+            "previousReportedPairs": 17,
+            "exactReportedPairs": 12,
+            "falsePositiveReportsRemoved": 5,
+            "allKnownExactCrossingsRetained": true,
+            "geometryChanged": false
+          },
+          {
+            "node": "vein.inferior_petrosal.right",
+            "trianglePairsChecked": 38750,
+            "previousReportedPairs": 16,
+            "exactReportedPairs": 10,
+            "falsePositiveReportsRemoved": 6,
+            "allKnownExactCrossingsRetained": true,
+            "geometryChanged": false
+          }
+        ],
+        "falsePositiveReportsRemoved": 12,
+        "genuineFixtureCrossingsRetained": 22,
+        "regressionFixtureCases": 34,
+        "wholePetrosalCandidatePairsChecked": 76606,
+        "scaGapRecheck": {
+          "boundaryTriangulations": 132,
+          "trianglePairsChecked": 687,
+          "passingCandidates": 0,
+          "status": "still-deferred"
+        },
+        "reusableExclusionCases": 14,
+        "legacySurfaceSearchCasesRequiringReview": 11,
+        "runtimeSourceChanged": false,
+        "limitations": [
+          "Twelve erroneous reports are corrected; no anatomical geometry is repaired.",
+          "Twenty-two exact petrosal contact pairs remain. Older non-adjacent-only counts use a different definition.",
+          "The modified predicate is an authoring validation tool, not runtime anatomy or lumen certification.",
+          "Only the recorded cases in the new source-and-implementation guard are reusable.",
+          "The single-pass fixture timings are recorded as diagnostics, not a whole-atlas speed claim."
+        ],
+        "petrosalFalsePositiveReportsRemoved": 11,
+        "a5FalsePositiveReportsRemoved": 1,
+        "leftA5RetainedContactReclassification": {
+          "node": "ACA A5 left",
+          "faces": [
+            1156,
+            1222
+          ],
+          "exactCrossing": false,
+          "predicateCrossing": false,
+          "previousReportedPairs": 1,
+          "currentExactPairs": 0,
+          "geometryChanged": false,
+          "residualCorpusCallosumDepthMm": 0.19455230236053467
+        },
+        "retention": {
+          "modelFilesByteExact": 5,
+          "namedMeshesUnchanged": 1250,
+          "runtimeSourceFilesByteExact": 21,
+          "catalogueStructuresExact": 1666,
+          "relationshipsExact": true,
+          "allDsaSurfaceRecipesAndFlowDataExact": true,
+          "originalUnresolvedILTInterfaceRetained": true,
+          "issueRegisterCopiesExact": true,
+          "priorGeometryRepairsRetained": true
+        },
+        "fixtureVerification": {
+          "passed": true,
+          "fixtureCases": 34,
+          "genuineCrossingsRetained": 22,
+          "falseReportsRejected": 12,
+          "results": [
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                4937,
+                5360
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                4937,
+                5359
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                4937,
+                5310
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                4937,
+                5309
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5157,
+                5361
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5157,
+                5362
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5190,
+                5449
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5191,
+                5296
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5191,
+                5449
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5248,
+                5411
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5268,
+                5429
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5272,
+                5425
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5273,
+                5425
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5273,
+                5426
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5290,
+                5429
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5362,
+                5364
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.left",
+              "faces": [
+                5445,
+                5447
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4553,
+                4555
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4744,
+                4746
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4746,
+                5607
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4757,
+                5644
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4757,
+                5645
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4757,
+                5548
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4759,
+                5645
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4822,
+                5661
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                4822,
+                5660
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5547,
+                5645
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5562,
+                5563
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5562,
+                5695
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5562,
+                5696
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5564,
+                5704
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5564,
+                5705
+              ],
+              "expected": true,
+              "exact": true,
+              "actual": true,
+              "passed": true
+            },
+            {
+              "node": "vein.inferior_petrosal.right",
+              "faces": [
+                5704,
+                5706
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            },
+            {
+              "node": "ACA A5 left",
+              "faces": [
+                1156,
+                1222
+              ],
+              "expected": false,
+              "exact": false,
+              "actual": false,
+              "passed": true
+            }
+          ]
+        },
+        "guardVerification": {
+          "passed": true,
+          "guardCases": [
+            {
+              "case": "current-source-and-implementation",
+              "exitCode": 0,
+              "result": {
+                "status": "baseline-unchanged-reuse-recorded-exclusions",
+                "sourceAssetsChecked": 5,
+                "implementationFilesChecked": 4,
+                "reviewedCases": 14,
+                "changedAssets": [],
+                "appliesOnlyToRecordedSearchScopes": true,
+                "allCasesRemainOpen": true,
+                "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+              }
+            },
+            {
+              "case": "legacy-geometry-only-registry",
+              "exitCode": 2,
+              "result": {
+                "status": "baseline-changed-review-required",
+                "sourceAssetsChecked": 5,
+                "implementationFilesChecked": 0,
+                "reviewedCases": 25,
+                "changedAssets": [
+                  {
+                    "asset": "review-implementation",
+                    "reason": "implementation-hashes-not-recorded"
+                  }
+                ],
+                "appliesOnlyToRecordedSearchScopes": true,
+                "allCasesRemainOpen": true,
+                "policy": "Reuse these exclusions only while all five source asset hashes match. Changed source geometry invalidates the shortcut. Other repair methods and other regions are outside this review."
+              }
+            },
+            {
+              "case": "implementation-only-mismatch",
+              "exitCode": 2,
+              "result": {
+                "status": "baseline-changed-review-required",
+                "sourceAssetsChecked": 5,
+                "implementationFilesChecked": 4,
+                "reviewedCases": 14,
+                "changedAssets": [
+                  {
+                    "asset": "tools/repair/geometry.py",
+                    "reason": "implementation-bytes-changed"
+                  }
+                ],
+                "appliesOnlyToRecordedSearchScopes": true,
+                "allCasesRemainOpen": true,
+                "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+              }
+            }
+          ],
+          "authoringTrialToolHashBefore": "4e94659103c782cc157a2e8cfc46028e48c376f8670b14f3f77100aed72ec979",
+          "authoringTrialToolHashAfter": "1011db6aa52c74a0b9568ae8a7042d9d15bbae08fcfea86943af5d395d9133d3",
+          "existingAuthoringTrialCacheAutomaticallyInvalidated": true
+        },
+        "diagnosticTimings": [
+          {
+            "version": "before",
+            "fixtureCases": 33,
+            "trueReports": 33,
+            "falsePositiveReports": 11,
+            "missedKnownCrossings": 0,
+            "elapsedSecondsSinglePass": 0.006349397997837514
+          },
+          {
+            "version": "after",
+            "fixtureCases": 33,
+            "trueReports": 22,
+            "falsePositiveReports": 0,
+            "missedKnownCrossings": 0,
+            "elapsedSecondsSinglePass": 0.011612076999881538
+          }
+        ],
+        "verification": {
+          "build": "passed",
+          "repairTests": 30,
+          "clearanceTests": 3,
+          "dsa": "passed",
+          "closedOrientedProxies": 828,
+          "proxyTriangles": 8971510,
+          "selectableArterialCourses": 579,
+          "closedSections": 2353,
+          "fullAtlasRenderPerformed": false
+        }
+      },
+      "petrosalWallBatch23": {
+        "release": "0.9.115",
+        "report": "docs/validation/petrosal-wall-v0.9.115.json",
+        "changedMeshes": [
+          "vein.inferior_petrosal.left"
+        ],
+        "changedVertices": 3,
+        "changedFaces": 21,
+        "maximumDisplacementMm": 5.3947966093944364e-06,
+        "exactSelfPairsBefore": 12,
+        "exactSelfPairsAfter": 3,
+        "exactSelfPairsRemoved": 9,
+        "remainingPairTrianglePositionsExact": true,
+        "nativeInterfacesFixed": 3,
+        "nativeSharedCoordinatesFixed": 119,
+        "nativeBoundaryEdgesFixed": 203,
+        "allSourceFaceIndicesExact": true,
+        "allOriginalStoredNormalComponentsExact": true,
+        "newNonNeuralCrossings": 0,
+        "newSampledTissueEntry": 0,
+        "anatomicalAcceptance": false,
+        "scope": "Remove nine microscopic exact left inferior petrosal self-contact pairs by correcting three Float32 positions, with native junctions and source indices fixed. Three left self-contact pairs, the ten right pairs, bone fit and full receiving lumens remain open.",
+        "retention": {
+          "namedMeshesRetained": 1250,
+          "namedMeshesUnchanged": 1249,
+          "otherModelFilesByteExact": 4,
+          "runtimeSourceFilesByteExact": 21,
+          "catalogueStructuresRetained": 1666,
+          "catalogueGraphAndAssetBindingsExact": true,
+          "allSourceFaceIndicesAndStoredNormalComponentsExact": true,
+          "nativeInterfacesFixed": 3,
+          "nativeSharedCoordinatesFixed": 119,
+          "nativeBoundaryEdgesFixed": 203,
+          "otherDsaRecipesExact": 827,
+          "all597FlowCoursesEdgesAndVeinSitesExact": true,
+          "originalUnresolvedILTInterfaceRetained": true,
+          "issueRegisterCopiesExact": true,
+          "priorGeometryRepairsRetained": true
+        },
+        "shape": {
+          "sourceComponents": 1,
+          "candidateComponents": 1,
+          "minimumFaceAreaRatio": 0.9983468164125174,
+          "maximumFaceAreaRatio": 18.782953120955646,
+          "sourceProxyVolumeMm3": 159.46554024221814,
+          "candidateProxyVolumeMm3": 159.4655410101577,
+          "proxyVolumeRelativeChange": 4.8157084756918365e-09,
+          "sourceAndCandidateZeroAreaFaces": 0,
+          "allFaceOrientationsRetained": true,
+          "maximumDisplacementMm": 5.3947966093944364e-06,
+          "maximumAreaRatioFace": 5311,
+          "maximumRatioSourceAreaMm2": 3.070519307314913e-09,
+          "maximumRatioCandidateAreaMm2": 5.767342020628522e-08,
+          "maximumAbsoluteFaceAreaChangeMm2": 5.187883812429739e-06
+        },
+        "selfValidation": {
+          "passed": true,
+          "changes": [
+            {
+              "node": "vein.inferior_petrosal.left",
+              "candidateFacesChecked": 5451,
+              "trianglePairsChecked": 37856,
+              "sourceExactPairs": 12,
+              "candidateExactPairs": 3,
+              "removedExactPairs": 9,
+              "remainingPairs": [
+                [
+                  5272,
+                  5425
+                ],
+                [
+                  5273,
+                  5425
+                ],
+                [
+                  5273,
+                  5426
+                ]
+              ],
+              "remainingContactTrianglesByteExact": true,
+              "newSelfContacts": 0,
+              "passed": true
+            }
+          ]
+        },
+        "crossingValidation": {
+          "passedNoNewNonNeuralCrossings": true,
+          "trianglePairsChecked": 545,
+          "crossings": [],
+          "closedTargetContactsForPairedDepthGate": [],
+          "inheritedSourceCrossings": []
+        },
+        "depthValidation": {
+          "release": "0.9.115",
+          "passed": true,
+          "changes": [
+            {
+              "release": "0.9.115",
+              "passed": true,
+              "node": "vein.inferior_petrosal.left",
+              "changedFaces": 21,
+              "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+              "coreSourceY": [
+                -66,
+                -61
+              ],
+              "targets": [
+                {
+                  "target": "brain.pons.left",
+                  "method": "open-target-empty-ball-separation",
+                  "minimumClearanceMarginMm": 4.419811677465869,
+                  "passed": true,
+                  "absoluteInsideCertified": false
+                },
+                {
+                  "target": "bone.occipital",
+                  "method": "paired-signed-depth-and-closed-volume-parity",
+                  "samples": 147,
+                  "insideBefore": 0,
+                  "insideAfter": 0,
+                  "maximumDepthBeforeMm": 0.0,
+                  "maximumDepthAfterMm": 0.0,
+                  "newInsideSamples": 0,
+                  "maximumExtraDepthMm": 0.0,
+                  "signedAndEnclosedDisagreements": 0,
+                  "coreInsideBefore": 0,
+                  "coreInsideAfter": 0,
+                  "coreMaximumDepthBeforeMm": 0.0,
+                  "coreMaximumDepthAfterMm": 0.0,
+                  "passed": true
+                },
+                {
+                  "target": "bone.temporal.left",
+                  "method": "adaptive-open-target-empty-ball-separation",
+                  "coarseMinimumClearanceMarginMm": -1.6201157753367883,
+                  "absoluteInsideCertified": false,
+                  "passed": true,
+                  "sourceTriangles": 21,
+                  "evaluatedBalls": 545,
+                  "certifiedLeafTriangles": 414,
+                  "maximumSubdivisionDepth": 5,
+                  "unresolvedLeafTriangles": 0,
+                  "minimumCertifiedClearanceMarginMm": 0.00018502769610657943,
+                  "minimumUnresolvedMarginMm": null,
+                  "sourceTriangleAreaMm2": 1.6848157868335416,
+                  "certifiedAreaMm2": 1.684815786833542,
+                  "areaCoverageChecked": true,
+                  "clearanceThresholdMm": 1e-05,
+                  "maximumPermittedSubdivisionDepth": 10
+                }
+              ],
+              "issues": [],
+              "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Regional petrosal anatomy and full receiving lumens remain unresolved."
+            }
+          ]
+        },
+        "verification": {
+          "build": "passed",
+          "repairTests": 30,
+          "clearanceTests": 3,
+          "dsa": "passed",
+          "closedOrientedProxies": 828,
+          "proxyTriangles": 8971510,
+          "selectableArterialCourses": 579,
+          "closedSections": 2353,
+          "fullAtlasRenderPerformed": false
+        },
+        "remaining": {
+          "leftExactPetrosalPairs": 3,
+          "rightExactPetrosalPairs": 10,
+          "regionalAnatomicalFit": "open",
+          "fullReceivingLumens": "open",
+          "arterialZeroAreaFaces": 7,
+          "unresolvedOriginalILTInterfaces": 1
+        }
+      }
+    },
+    "G01": {
+      "status": "native-wall-gaps-repaired-Galenic-and-falcotentorial-refit-open",
+      "report": "docs/validation/galenic-junctions-v0.9.97.json",
+      "sinusParenchymalContacts": [
+        {
+          "other": "brain.precuneus.left",
+          "system": "brain",
+          "before": 60,
+          "after": 40
+        },
+        {
+          "other": "brain.precuneus.right",
+          "system": "brain",
+          "before": 96,
+          "after": 85
+        },
+        {
+          "other": "brain.lingual-gyrus.left",
+          "system": "brain",
+          "before": 392,
+          "after": 137
+        },
+        {
+          "other": "brain.lingual-gyrus.right",
+          "system": "brain",
+          "before": 340,
+          "after": 257
+        }
+      ],
+      "maximumDisplacementMm": 1.5,
+      "nativeVenousCoordinatesFixed": true,
+      "remainingWork": [
+        "All four audited sinus/parenchymal contact pairs still intersect. Lower triangle-contact counts are not closed anatomical defects.",
+        "Galen still intersects the registered corpus callosum and medial cortex. Its tributaries cannot be moved as a group without new choroidal-artery and tissue collisions.",
+        "Posterior straight-sinus/dural-artery contacts remain unchanged; a coordinated arterial/sinus repair is still required.",
+        "Direct seam matches do not establish closure of the full Galen/ISS/straight/torcular complex. Open native boundaries and the two-component torcular label remain.",
+        "The native sinus cross-section and dural leaves are illustrative. Exact intradural containment and independent anatomical approval remain incomplete.",
+        "Earlier G03/G04/G05/G06/G07/G08 findings and 12 deferred arterial segments remain."
+      ],
+      "earlierShaftReviewReport": "docs/validation/falcotentorial-v0.9.86.json",
+      "nativeJunctionWallRepairs": {
+        "release": "0.9.97",
+        "report": "docs/validation/galenic-junctions-v0.9.97.json",
+        "nativeWallGapsClosed": 11,
+        "addedTriangles": 61,
+        "existingVertexDisplacementMm": 0,
+        "changedMeshes": [
+          "vein.confluence",
+          "vein.galen",
+          "vein.inferior_vermian.left"
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Local mixed-label venous wall gaps only. Galenic/cortical registration, dural fit and complete receiving lumens remain open."
+      },
+      "integratedNativeWallReview": {
+        "release": "0.9.99",
+        "report": "docs/validation/integrated-venous-v0.9.99.json",
+        "nativeWallGapsClosed": 39,
+        "addedTriangles": 76,
+        "existingVertexDisplacementMm": 0,
+        "changedMeshes": [
+          "vein.anterior_intercavernous",
+          "vein.anterior_medullary",
+          "vein.anterior_septal.left",
+          "vein.basal.left",
+          "vein.basilar_plexus",
+          "vein.inferior_hemispheric.left",
+          "vein.inferior_hemispheric.right",
+          "vein.inferior_vermian.left",
+          "vein.lateral_mesencephalic.right",
+          "vein.maxillary.right",
+          "vein.pontotrigeminal.left",
+          "vein.precentral_cerebellar",
+          "vein.retromandibular.left",
+          "vein.retromandibular.right"
+        ],
+        "anatomicalAcceptance": false,
+        "scope": "Small mixed-label venous wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
+      }
+    }
+  },
+  "batch2Review": {
+    "release": "0.9.84",
+    "scope": "Four middle meningeal companion course specifications and limited regional review",
+    "courseSpecificationsCompleted": [
+      "vein.middle_meningeal.anterior.left",
+      "vein.middle_meningeal.posterior.left",
+      "vein.middle_meningeal.anterior.right",
+      "vein.middle_meningeal.posterior.right"
+    ],
+    "remainingDeferredCourseSpecifications": 0,
+    "geometryChanged": false,
+    "report": "docs/validation/meningeal-v0.9.84.json",
+    "anatomicalAcceptance": false
+  },
+  "geometryChangesSinceCheckpoint": [
+    "vein.middle_meningeal.anterior.left",
+    "vein.inferior_petrosal.left",
+    "vein.inferior_petrosal.right",
+    "brain.falx-cerebri",
+    "brain.tentorium-cerebelli.left",
+    "brain.tentorium-cerebelli.right",
+    "vein.straight",
+    "ACA falcine branch left",
+    "MMA paramedian left",
+    "MMA falcine terminal left",
+    "MMA paramedian right",
+    "MMA falcine terminal right",
+    "MMA frontal left",
+    "MMA frontal",
+    "MMA petrosquamosal left",
+    "MMA cavernous left",
+    "MMA posterior cavernous left",
+    "Tentorial marginal left",
+    "Tentorial marginal right",
+    "Occipital left",
+    "Occipital mastoid left",
+    "ILT posterior branch left",
+    "ACA A5 right",
+    "Precuneal right",
+    "ACA falcine branch right",
+    "vein.confluence",
+    "vein.galen",
+    "vein.inferior_vermian.left",
+    "vein.basilar_plexus",
+    "vein.anterior_intercavernous",
+    "vein.anterior_medullary",
+    "vein.anterior_septal.left",
+    "vein.basal.left",
+    "vein.inferior_hemispheric.left",
+    "vein.inferior_hemispheric.right",
+    "vein.lateral_mesencephalic.right",
+    "vein.maxillary.right",
+    "vein.pontotrigeminal.left",
+    "vein.precentral_cerebellar",
+    "vein.retromandibular.left",
+    "vein.retromandibular.right",
+    "ACA A1 right",
+    "ACA A2 right",
+    "Medial posterior choroidal left",
+    "PCA P2-P3 left",
+    "Vertebral V3 right",
+    "vein.anterior_spinal",
+    "vein.inferior_ophthalmic.left",
+    "vein.pterygoid_plexus.left",
+    "vein.pterygoid_plexus.right",
+    "ACA A1 left",
+    "ACA A5 left",
+    "AChA capsular branch left",
+    "AChA capsular branch right",
+    "AChA temporal branch left",
+    "ACom hypothalamic perforator left",
+    "ACom hypothalamic perforator right",
+    "AICA caudal branch right",
+    "AICA fourth ventricular choroidal left",
+    "AICA fourth ventricular choroidal right",
+    "AICA rostral branch left",
+    "AICA rostral branch right",
+    "AICA subarcuate left",
+    "AICA subarcuate right",
+    "Angular distal ramus right",
+    "Angular right",
+    "Anterior choroidal left",
+    "Anterior choroidal plexal representative left",
+    "Anterior choroidal right",
+    "Anterior ethmoidal left",
+    "Anterior falcine left",
+    "Anterior spinal",
+    "Facial",
+    "Facial left",
+    "Facial masseteric branch left",
+    "Facial masseteric branch right",
+    "Falx cerebelli artery left",
+    "Falx cerebelli artery right",
+    "Hypoglossal posterior meningeal",
+    "Hypoglossal posterior meningeal left",
+    "ILT posterior branch right",
+    "ILT posteromedial ramus left",
+    "ILT posteromedial ramus right",
+    "Incisive",
+    "Infraorbital left",
+    "Infraorbital muscular branch left",
+    "Lacrimal left",
+    "Lateral inferior palpebral left",
+    "Lateral lenticulostriate 2 left",
+    "Lateral lenticulostriate 2 right",
+    "Lateral posterior choroidal plexal representative left",
+    "Lateral posterior choroidal plexal representative right",
+    "Long callosal branch left",
+    "Medial inferior palpebral right",
+    "Medial lenticulostriate left",
+    "Medial lenticulostriate superior representative left",
+    "Medial posterior choroidal plexal representative left",
+    "Occipital mastoid dural branch right",
+    "Ophthalmic inferior muscular branch left",
+    "PCA collicular left",
+    "PCA collicular right",
+    "PICA hemispheric left",
+    "PICA hemispheric right",
+    "PICA lateral hemispheric left",
+    "PICA lateral hemispheric right",
+    "PICA medullary perforator left",
+    "PICA medullary perforator right",
+    "PICA tonsillar left",
+    "PICA vermian left",
+    "PICA vermian right",
+    "Posterior septal",
+    "Posterior septal left",
+    "Posterior spinal left",
+    "Posterior spinal right",
+    "SCA caudal hemispheric left",
+    "SCA caudal hemispheric right",
+    "SCA lateral hemispheric left",
+    "SCA lateral hemispheric right",
+    "SCA proximal perforator left",
+    "SCA tectal branch left",
+    "SCA vermian left",
+    "Sphenopalatine",
+    "Sphenopalatine left",
+    "Superior pharyngeal",
+    "Superior pharyngeal carotid branch left",
+    "Superior pharyngeal carotid branch right",
+    "Superior pharyngeal left",
+    "Superior pharyngeal tubal branch left",
+    "Superior pharyngeal tubal branch right",
+    "Terminal ICA perforator 1 left",
+    "Terminal ICA perforator 1 right",
+    "Transverse facial inferior division left",
+    "Transverse facial masseteric branch left",
+    "Wollschlaeger and Wollschlaeger artery left",
+    "Wollschlaeger and Wollschlaeger artery right",
+    "ACom chiasmatic perforator left",
+    "Anterior communicating",
+    "ICA terminus right",
+    "Lateral lenticulostriate 1 right",
+    "Lateral lenticulostriate anterior representative right",
+    "MCA inferior division left",
+    "Maxillary",
+    "Polar temporal left",
+    "Prefrontal distal ramus left",
+    "Prefrontal left",
+    "Superior septal subdivision left",
+    "Superior septal subdivision right",
+    "Lacrimal right",
+    "ACA A4 right",
+    "ACA A4 left"
+  ],
+  "batch3Review": {
+    "release": "0.9.85",
+    "reviewedStructures": 20,
+    "correctedStructures": 3,
+    "report": "docs/validation/local-veins-v0.9.85.json",
+    "anatomicalAcceptance": false
+  },
+  "batch4Review": {
+    "release": "0.9.86",
+    "reviewedStructures": 7,
+    "correctedStructures": 4,
+    "status": "partial-correction-full-G01-refit-open",
+    "report": "docs/validation/falcotentorial-v0.9.86.json",
+    "anatomicalAcceptance": false
+  },
+  "batch5Review": {
+    "release": "0.9.87",
+    "correctedStructures": [
+      "artery.amendment.aca_falcine_branch.left"
+    ],
+    "status": "one-local-parent-attachment-repaired-G05-G06-open",
+    "geometryScope": "One falcine proximal collar reconstructed; A5, original falcine vertices at Z >= 120.5 mm and all distal interface coordinates remain exact.",
+    "report": "docs/validation/native-attachments-v0.9.87.json"
+  },
+  "batch5Continuation": {
+    "release": "0.9.88",
+    "correctedStructures": [
+      "artery.amendment.mma_paramedian.left",
+      "artery.amendment.mma_falcine_terminal.left",
+      "artery.amendment.mma_paramedian.right",
+      "artery.amendment.mma_falcine_terminal.right"
+    ],
+    "status": "bilateral-MMA-falcine-interfaces-repaired-G05-G06-open",
+    "report": "docs/validation/mma-falcine-v0.9.88.json"
+  },
+  "batch5UpstreamContinuation": {
+    "release": "0.9.89",
+    "correctedStructures": [
+      "artery.eca.maxillary.mma.frontal.right.left",
+      "artery.amendment.mma_paramedian.left",
+      "artery.eca.maxillary.mma.frontal.right",
+      "artery.amendment.mma_paramedian.right"
+    ],
+    "status": "bilateral-upstream-MMA-openings-repaired-G05-G06-open",
+    "report": "docs/validation/upstream-mma-v0.9.89.json",
+    "anatomicalAcceptance": false
+  },
+  "petrosquamosalAttachmentReview": {
+    "release": "0.9.90",
+    "correctedStructure": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+    "failedNativeInterfaceRecordsBefore": 10,
+    "failedNativeInterfaceRecordsAfter": 9,
+    "deferredSegmentsRetained": 12,
+    "anatomicalAcceptance": false,
+    "report": "docs/validation/petrosquamosal-v0.9.90.json"
+  },
+  "cavernousAttachmentReview": {
+    "release": "0.9.91",
+    "correctedStructures": [
+      "artery.eca.mma_cavernous.right.left",
+      "artery.amendment.mma_posterior_cavernous.left"
+    ],
+    "failedNativeInterfaceRecordsBefore": 9,
+    "failedNativeInterfaceRecordsAfter": 8,
+    "deferredSegmentsRetained": 12,
+    "anatomicalAcceptance": false,
+    "report": "docs/validation/cavernous-v0.9.91.json"
+  },
+  "tentorialAttachmentReview": {
+    "release": "0.9.92",
+    "correctedStructures": [
+      "artery.anterior.tentorial_marginal_left",
+      "artery.anterior.tentorial_marginal_right"
+    ],
+    "failedNativeInterfaceRecordsBefore": 8,
+    "failedNativeInterfaceRecordsAfter": 6,
+    "deferredSegmentsRetained": 12,
+    "sourceVertexDisplacementMm": 0,
+    "newTriangles": 7,
+    "anatomicalAcceptance": false,
+    "report": "docs/validation/tentorial-v0.9.92.json"
+  },
+  "nativeAttachmentBatch2": {
+    "release": "0.9.94",
+    "failedNativeInterfaceRecordsBefore": 6,
+    "failedNativeInterfaceRecordsAfter": 4,
+    "addedTriangles": 3,
+    "sourceVertexDisplacementMm": 0,
+    "remainingRecordsClassified": 4,
+    "anatomicalAcceptance": false,
+    "report": "docs/validation/native-batch2-v0.9.94.json"
+  },
+  "nativeAttachmentBatch3": {
+    "release": "0.9.95",
+    "failedNativeInterfaceRecordsBefore": 4,
+    "failedNativeInterfaceRecordsAfter": 1,
+    "correctedMeshes": [
+      "Occipital left",
+      "Occipital mastoid left",
+      "ILT posterior branch left"
+    ],
+    "anatomicalAcceptance": false,
+    "report": "docs/validation/native-batch3-v0.9.95.json"
+  },
+  "acaRegistrationBatch4": {
+    "release": "0.9.96",
+    "report": "docs/validation/aca-registration-v0.9.96.json",
+    "status": "right-ACA-local-native-root-repaired-G05-and-wider-G06-open",
+    "changedMeshes": [
+      "ACA A5 right",
+      "Precuneal right",
+      "ACA falcine branch right"
+    ],
+    "maximumVesselDisplacementMm": 2.1,
+    "parentLipSetbackGeodesicMm": 0.25,
+    "newNativeInterface": {
+      "parent": "ACA A5 right",
+      "branch": "ACA falcine branch right",
+      "matchedNativePortCoordinates": 32,
+      "pairedOppositeBoundaryEdges": 32
+    },
+    "anatomicalAcceptance": false
+  },
+  "galenicJunctionBatch5": {
+    "release": "0.9.97",
+    "report": "docs/validation/galenic-junctions-v0.9.97.json",
+    "nativeWallGapsClosed": 11,
+    "addedTriangles": 61,
+    "existingVertexDisplacementMm": 0,
+    "changedMeshes": [
+      "vein.confluence",
+      "vein.galen",
+      "vein.inferior_vermian.left"
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Local mixed-label venous wall gaps only. Galenic/cortical registration, dural fit and complete receiving lumens remain open."
+  },
+  "localVenousJunctionBatch6": {
+    "release": "0.9.98",
+    "report": "docs/validation/local-venous-junctions-v0.9.98.json",
+    "nativeWallGapsClosed": 1,
+    "addedTriangles": 3,
+    "existingVertexDisplacementMm": 0,
+    "changedMeshes": [
+      "vein.basilar_plexus"
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Local mixed-label venous wall gaps only. Regional petrosal reconstruction, canal fit and complete receiving lumens remain open."
+  },
+  "integratedVenousBatch7": {
+    "release": "0.9.99",
+    "report": "docs/validation/integrated-venous-v0.9.99.json",
+    "nativeWallGapsClosed": 39,
+    "addedTriangles": 76,
+    "existingVertexDisplacementMm": 0,
+    "changedMeshes": [
+      "vein.anterior_intercavernous",
+      "vein.anterior_medullary",
+      "vein.anterior_septal.left",
+      "vein.basal.left",
+      "vein.basilar_plexus",
+      "vein.inferior_hemispheric.left",
+      "vein.inferior_hemispheric.right",
+      "vein.inferior_vermian.left",
+      "vein.lateral_mesencephalic.right",
+      "vein.maxillary.right",
+      "vein.pontotrigeminal.left",
+      "vein.precentral_cerebellar",
+      "vein.retromandibular.left",
+      "vein.retromandibular.right"
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Small mixed-label venous wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
+  },
+  "arterialJunctionBatch8": {
+    "release": "0.9.100",
+    "report": "docs/validation/arterial-junctions-v0.9.100.json",
+    "nativeWallGapsClosed": 15,
+    "addedTriangles": 53,
+    "existingVertexDisplacementMm": 0,
+    "changedMeshes": [
+      "ACA A1 right",
+      "ACA A2 right",
+      "Medial posterior choroidal left",
+      "PCA P2-P3 left",
+      "Vertebral V3 right"
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Small mixed-label arterial wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
+  },
+  "intersectionBatch9": {
+    "release": "0.9.101",
+    "report": "docs/validation/intersection-v0.9.101.json",
+    "geometryChanged": false,
+    "recordedRightA5Pair": [
+      5129,
+      5204
+    ],
+    "classification": "single-shared-vertex-false-positive-cleared",
+    "exactPositiveCrossingsInLocalAudit": 0,
+    "localTrianglePairsChecked": 323,
+    "anatomicalAcceptance": false,
+    "scope": "Corrects the single recorded residual right A5 self-crossing flag. Regional cortical registration and full receiving lumens remain open."
+  },
+  "zeroAreaBatch10": {
+    "release": "0.9.102",
+    "report": "docs/validation/zero-area-v0.9.102.json",
+    "removedExactZeroAreaFaces": 21,
+    "nativeBadEdgesCleared": 23,
+    "changedMeshes": [
+      "vein.anterior_spinal",
+      "vein.inferior_ophthalmic.left",
+      "vein.pterygoid_plexus.left",
+      "vein.pterygoid_plexus.right"
+    ],
+    "verticesMoved": 0,
+    "positiveAreaFacesRemoved": 0,
+    "newBoundaryEdges": 0,
+    "newBadEdges": 0,
+    "anatomicalAcceptance": false,
+    "scope": "Exact-zero-area topology cleanup only; positive-area surfaces and all vertex/normal data retained. Larger anatomy and three guarded degenerate faces remain open."
+  },
+  "nativePortBatch11": {
+    "release": "0.9.103",
+    "report": "docs/validation/native-port-v0.9.103.json",
+    "removedExactZeroAreaFaces": 3,
+    "nativeBadEdgesCleared": 3,
+    "changedMeshes": [
+      "vein.anterior_spinal",
+      "vein.pterygoid_plexus.left"
+    ],
+    "verticesMoved": 0,
+    "storedNormalsChanged": false,
+    "pterygoidWallUnionExact": true,
+    "restoredPairedPortEdges": 2,
+    "newGlobalBoundaryEdges": 0,
+    "newBadEdges": 0,
+    "anatomicalAcceptance": false,
+    "scope": "Resolve the three guarded exact-zero-area faces. Anterior spinal port edges pair with the anterior medullary vein; tiny pterygoid triangles merge without changing wall shape. Larger anatomy remains open."
+  },
+  "arterialZeroAreaBatch12": {
+    "release": "0.9.104",
+    "report": "docs/validation/arterial-zero-area-v0.9.104.json",
+    "reviewedArterialMeshes": 766,
+    "removedExactZeroAreaFaces": 384,
+    "nativeBadEdgesCleared": 395,
+    "changedMeshes": [
+      "ACA A1 left",
+      "ACA A1 right",
+      "ACA A5 left",
+      "AChA capsular branch left",
+      "AChA capsular branch right",
+      "AChA temporal branch left",
+      "ACom hypothalamic perforator left",
+      "ACom hypothalamic perforator right",
+      "AICA caudal branch right",
+      "AICA fourth ventricular choroidal left",
+      "AICA fourth ventricular choroidal right",
+      "AICA rostral branch left",
+      "AICA rostral branch right",
+      "AICA subarcuate left",
+      "AICA subarcuate right",
+      "Angular distal ramus right",
+      "Angular right",
+      "Anterior choroidal left",
+      "Anterior choroidal plexal representative left",
+      "Anterior choroidal right",
+      "Anterior ethmoidal left",
+      "Anterior falcine left",
+      "Anterior spinal",
+      "Facial",
+      "Facial left",
+      "Facial masseteric branch left",
+      "Facial masseteric branch right",
+      "Falx cerebelli artery left",
+      "Falx cerebelli artery right",
+      "Hypoglossal posterior meningeal",
+      "Hypoglossal posterior meningeal left",
+      "ILT posterior branch right",
+      "ILT posteromedial ramus left",
+      "ILT posteromedial ramus right",
+      "Incisive",
+      "Infraorbital left",
+      "Infraorbital muscular branch left",
+      "Lacrimal left",
+      "Lateral inferior palpebral left",
+      "Lateral lenticulostriate 2 left",
+      "Lateral lenticulostriate 2 right",
+      "Lateral posterior choroidal plexal representative left",
+      "Lateral posterior choroidal plexal representative right",
+      "Long callosal branch left",
+      "Medial inferior palpebral right",
+      "Medial lenticulostriate left",
+      "Medial lenticulostriate superior representative left",
+      "Medial posterior choroidal plexal representative left",
+      "Occipital mastoid dural branch right",
+      "Ophthalmic inferior muscular branch left",
+      "PCA collicular left",
+      "PCA collicular right",
+      "PICA hemispheric left",
+      "PICA hemispheric right",
+      "PICA lateral hemispheric left",
+      "PICA lateral hemispheric right",
+      "PICA medullary perforator left",
+      "PICA medullary perforator right",
+      "PICA tonsillar left",
+      "PICA vermian left",
+      "PICA vermian right",
+      "Posterior septal",
+      "Posterior septal left",
+      "Posterior spinal left",
+      "Posterior spinal right",
+      "SCA caudal hemispheric left",
+      "SCA caudal hemispheric right",
+      "SCA lateral hemispheric left",
+      "SCA lateral hemispheric right",
+      "SCA proximal perforator left",
+      "SCA tectal branch left",
+      "SCA vermian left",
+      "Sphenopalatine",
+      "Sphenopalatine left",
+      "Superior pharyngeal",
+      "Superior pharyngeal carotid branch left",
+      "Superior pharyngeal carotid branch right",
+      "Superior pharyngeal left",
+      "Superior pharyngeal tubal branch left",
+      "Superior pharyngeal tubal branch right",
+      "Terminal ICA perforator 1 left",
+      "Terminal ICA perforator 1 right",
+      "Transverse facial inferior division left",
+      "Transverse facial masseteric branch left",
+      "Wollschlaeger and Wollschlaeger artery left",
+      "Wollschlaeger and Wollschlaeger artery right"
+    ],
+    "verticesMoved": 0,
+    "positiveAreaFacesRemoved": 0,
+    "newBoundaryEdges": 0,
+    "newBadEdges": 0,
+    "remainingGuardedZeroAreaFaces": 69,
+    "anatomicalAcceptance": false,
+    "scope": "Exact-zero-area arterial source cleanup only; all positive-area faces, vertex positions and stored normals retained. Regional anatomical defects remain open."
+  },
+  "arterialPortBatch13": {
+    "release": "0.9.105",
+    "report": "docs/validation/arterial-port-v0.9.105.json",
+    "reviewedArterialMeshes": 766,
+    "removedExactZeroAreaFaces": 59,
+    "nativeBadEdgesCleared": 74,
+    "changedMeshes": [
+      "AChA capsular branch left",
+      "ACom chiasmatic perforator left",
+      "AICA caudal branch right",
+      "AICA rostral branch right",
+      "Anterior communicating",
+      "Falx cerebelli artery right",
+      "Hypoglossal posterior meningeal",
+      "ICA terminus right",
+      "Infraorbital muscular branch left",
+      "Lateral lenticulostriate 1 right",
+      "Lateral lenticulostriate anterior representative right",
+      "MCA inferior division left",
+      "Maxillary",
+      "PICA hemispheric left",
+      "PICA hemispheric right",
+      "PICA lateral hemispheric left",
+      "PICA lateral hemispheric right",
+      "PICA medullary perforator left",
+      "PICA tonsillar left",
+      "PICA vermian left",
+      "Polar temporal left",
+      "Posterior septal",
+      "Posterior septal left",
+      "Posterior spinal right",
+      "Prefrontal distal ramus left",
+      "Prefrontal left",
+      "Superior septal subdivision left",
+      "Superior septal subdivision right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "verticesMoved": 0,
+    "positiveAreaFacesRemoved": 0,
+    "newGlobalBoundaryEdges": 0,
+    "newBadEdges": 0,
+    "remainingGuardedZeroAreaFaces": 10,
+    "pairedNativeCoordinateEdges": 36,
+    "exposedPerLabelPortEdges": 36,
+    "anatomicalAcceptance": false,
+    "scope": "Exact-zero-area deletion only. All positive-area source faces, all vertex/normal data and exact source attachments are retained. New per-label port edges require two opposite retained positive-area wall incidences from different artery labels. No new crossings or tissue entry can be introduced without new/moved surface area."
+  },
+  "arterialWallBatch14": {
+    "release": "0.9.106",
+    "report": "docs/validation/arterial-wall-v0.9.106.json",
+    "changedMeshes": [
+      "Lacrimal right",
+      "PICA medullary perforator left"
+    ],
+    "removedExactZeroAreaFaces": 3,
+    "sourcePositiveAreaFacesRetriangulated": 1,
+    "nativeWallGapsClosed": 1,
+    "addedGapTriangles": 7,
+    "newPositiveAreaFaces": 9,
+    "appendedExistingWorldCoordinates": 1,
+    "existingVertexDisplacementMm": 0,
+    "globalBadEdgesCleared": 3,
+    "globalBoundaryEdgesClosed": 7,
+    "remainingGuardedZeroAreaFaces": 7,
+    "newGlobalBoundaryEdges": 0,
+    "newBadEdges": 0,
+    "anatomicalAcceptance": false,
+    "scope": "Exact right lacrimal wall subdivision and bounded left PICA medullary/posterior spinal native wall patch. Wider registration and receiving-lumen acceptance remain open."
+  },
+  "additionalOpenGeometryFindings": [
+    {
+      "id": "pica-vermian-left-native-wall-crossing",
+      "status": "open-trial-excluded",
+      "releaseIdentified": "0.9.106",
+      "node": "PICA vermian left",
+      "sourceFaces": [
+        7390,
+        7392
+      ],
+      "exactBinaryCoordinateCrossing": true,
+      "scope": "Pre-existing positive wall crossing independently confirmed during a rejected exact subdivision trial; production mesh retained. Local reconstruction required before that zero-area face is repaired.",
+      "report": "docs/validation/arterial-wall-v0.9.106.json"
+    },
+    {
+      "id": "arterial-review-batch21",
+      "release": "0.9.113",
+      "baseline": "0.9.112",
+      "batch": 21,
+      "acceptedGeometryRepairs": 0,
+      "allSourceAssetsByteExact": true,
+      "sourceAssets": {
+        "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+        "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+        "models/complete-circulation.glb": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+        "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+        "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+      },
+      "reviewedCases": 25,
+      "survivingOtherLoopsReviewed": 23,
+      "otherLoopTriangulationsTested": 637,
+      "otherLoopTrianglePairsChecked": 5608,
+      "rimTissueFailures": 13,
+      "scaDirectTriangulationsTested": 132,
+      "scaLocalStatesTested": 4620,
+      "newDefectsClaimedResolved": 0,
+      "anatomicalAcceptance": false,
+      "registry": "anatomy/source/arterial-review-v0.9.113/deferred-repairs.json",
+      "scope": "Bounded native arterial wall closure searches and a reusable source-hash guard. None of these attempts is installed. This does not establish that larger reconstruction methods cannot succeed."
+    }
+  ],
+  "acaShaftBatch15": {
+    "release": "0.9.107",
+    "report": "docs/validation/aca-shaft-v0.9.107.json",
+    "changedMeshes": [
+      "ACA A4 right"
+    ],
+    "changedVertices": 1647,
+    "changedFaces": 3359,
+    "maximumDisplacementMm": 2.5079872608184814,
+    "fixedNativeInterfaces": 4,
+    "fixedSharedCoordinates": 324,
+    "allSourceFaceIndicesExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "maximumExtraDepthMm": 0,
+    "coreMaximumDepthBeforeMm": 1.690409779548645,
+    "coreMaximumDepthAfterMm": 0.16871675848960876,
+    "maximumDepthBeforeMm": 1.7159568071365356,
+    "maximumDepthAfterMm": 1.339721441268921,
+    "anatomicalAcceptance": false,
+    "scope": "Right A4 mid-shaft registration improvement only. Residual right A4 embedding, A2 and distal ACA/callosal registration and wider G05/G06 remain open."
+  },
+  "acaShaftBatch16": {
+    "release": "0.9.108",
+    "report": "docs/validation/aca-shaft-v0.9.108.json",
+    "changedMeshes": [
+      "ACA A4 left"
+    ],
+    "changedVertices": 896,
+    "changedFaces": 1856,
+    "maximumDisplacementMm": 2.692582368850708,
+    "fixedNativeInterfaces": 4,
+    "fixedSharedCoordinates": 323,
+    "allSourceFaceIndicesExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "maximumExtraDepthMm": 0,
+    "coreMaximumDepthBeforeMm": 1.2268251180648804,
+    "coreMaximumDepthAfterMm": 0.0,
+    "maximumDepthBeforeMm": 2.5222861766815186,
+    "maximumDepthAfterMm": 2.5222861766815186,
+    "anatomicalAcceptance": false,
+    "scope": "Left A4 anterior shaft improvement only. Central plateau has no sampled embedding; residual posterior and transition embedding and wider G05/G06 remain open."
+  },
+  "acaShaftBatch17": {
+    "release": "0.9.109",
+    "report": "docs/validation/aca-shaft-v0.9.109.json",
+    "changedMeshes": [
+      "ACA A5 left",
+      "ACA A5 right"
+    ],
+    "changedVertices": 2069,
+    "changedFaces": 4270,
+    "maximumDisplacementMm": 2.2360680103302,
+    "fixedNativeInterfaces": 10,
+    "fixedSharedCoordinates": 980,
+    "allSourceFaceIndicesExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "maximumExtraDepthMm": 0,
+    "depth": [
+      {
+        "node": "ACA A5 left",
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+        "coreMaximumDepthBeforeMm": 0.2441703826189041,
+        "coreMaximumDepthAfterMm": 0.0,
+        "maximumDepthBeforeMm": 0.7313816547393799,
+        "maximumDepthAfterMm": 0.7313816547393799,
+        "insideBefore": 2766,
+        "insideAfter": 1008
+      },
+      {
+        "node": "ACA A5 right",
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+        "coreMaximumDepthBeforeMm": 0.4050835967063904,
+        "coreMaximumDepthAfterMm": 0.0,
+        "maximumDepthBeforeMm": 0.9578891396522522,
+        "maximumDepthAfterMm": 0.9578891396522522,
+        "insideBefore": 3595,
+        "insideAfter": 1260
+      }
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Bilateral A5 inter-junction shaft improvements only. Both central plateaus have no sampled embedding. Residual transitions, proximal/distal cortical fit and wider G05/G06 remain open."
+  },
+  "acaShaftBatch18": {
+    "release": "0.9.110",
+    "report": "docs/validation/aca-shaft-v0.9.110.json",
+    "changedMeshes": [
+      "ACA A4 left",
+      "ACA A4 right"
+    ],
+    "changedVertices": 1623,
+    "changedFaces": 3377,
+    "maximumDisplacementMm": 2.5079872608184814,
+    "fixedNativeInterfaces": 8,
+    "fixedSharedCoordinates": 647,
+    "allSourceFaceIndicesExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "maximumExtraDepthMm": 0,
+    "depth": [
+      {
+        "node": "ACA A4 left",
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "coreMaximumDepthBeforeMm": 2.115694522857666,
+        "coreMaximumDepthAfterMm": 0.5465468168258667,
+        "maximumDepthBeforeMm": 2.37664794921875,
+        "maximumDepthAfterMm": 2.37664794921875,
+        "insideBefore": 7669,
+        "insideAfter": 3387
+      },
+      {
+        "node": "ACA A4 right",
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right",
+        "coreMaximumDepthBeforeMm": 1.63838529586792,
+        "coreMaximumDepthAfterMm": 0.09117311984300613,
+        "maximumDepthBeforeMm": 1.63838529586792,
+        "maximumDepthAfterMm": 1.13248872756958,
+        "insideBefore": 5553,
+        "insideAfter": 1221
+      }
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Bilateral anterior A4 shaft improvements only. Central sampled depths improve but residual embedding remains. All native ports, earlier A4 regions and both A5 fits remain fixed. Wider G05/G06 remain open."
+  },
+  "acaTailBatch19": {
+    "release": "0.9.111",
+    "report": "docs/validation/aca-tail-v0.9.111.json",
+    "changedMeshes": [
+      "ACA A5 right"
+    ],
+    "changedVertices": 408,
+    "changedFaces": 851,
+    "maximumDisplacementMm": 1.0,
+    "fixedNativeInterfaces": 5,
+    "fixedSharedCoordinates": 456,
+    "allSourceFaceIndicesExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "maximumExtraDepthMm": 0,
+    "clearedNamedCorticalContactPairs": [
+      {
+        "node": "ACA A5 right",
+        "target": "brain.cingulate-gyrus-and-sulcus-posterior-dorsal-part.right",
+        "maximumDepthBeforeMm": 0.2547469437122345,
+        "maximumDepthAfterMm": 0.0,
+        "continuousWholeWallSeparationCertified": true,
+        "wallTrianglesChecked": 8172
+      },
+      {
+        "node": "ACA A5 right",
+        "target": "brain.cingulate-gyrus-posteroventral-part.right",
+        "maximumDepthBeforeMm": 0.932320773601532,
+        "maximumDepthAfterMm": 0.0,
+        "continuousWholeWallSeparationCertified": true,
+        "wallTrianglesChecked": 8172
+      }
+    ],
+    "anatomicalAcceptance": false,
+    "scope": "Distal right A5 fit, with continuous whole-wall separation from the two named posterior cortical surfaces. Other ACA/cortical embedding and wider G05/G06 remain open."
+  },
+  "acaTailBatch20": {
+    "release": "0.9.112",
+    "report": "docs/validation/aca-tail-v0.9.112.json",
+    "changedMeshes": [
+      "ACA A5 left"
+    ],
+    "changedVertices": 463,
+    "changedFaces": 998,
+    "maximumDisplacementMm": 0.7071069478988647,
+    "fixedNativeInterfaces": 5,
+    "fixedSharedCoordinates": 524,
+    "allSourceFaceIndicesExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "maximumExtraDepthMm": 0,
+    "corpusCallosumDepth": {
+      "target": "brain.corpus-callosum",
+      "method": "paired-signed-depth-and-closed-volume-parity",
+      "samples": 6986,
+      "insideBefore": 1317,
+      "insideAfter": 584,
+      "maximumDepthBeforeMm": 0.2547326982021332,
+      "maximumDepthAfterMm": 0.19455230236053467,
+      "newInsideSamples": 0,
+      "maximumExtraDepthMm": 0.0,
+      "signedAndEnclosedDisagreements": 0,
+      "coreInsideBefore": 309,
+      "coreInsideAfter": 0,
+      "coreMaximumDepthBeforeMm": 0.12340733408927917,
+      "coreMaximumDepthAfterMm": 0.0,
+      "passed": true
+    },
+    "distalWallClearance": {
+      "sourceYMaximumMm": -95.1,
+      "trianglesChecked": 1209,
+      "continuousSeparationCertified": true
+    },
+    "inheritedSelfContactPairs": 1,
+    "inheritedSelfContactRigidTranslationExact": true,
+    "anatomicalAcceptance": false,
+    "scope": "Bounded distal left A5 shaft fit reduces corpus-callosum overlap with native interfaces, prior fit regions and terminal tip fixed. Residual transition/attachment overlap and one rigidly retained native self-contact pair remain open."
+  },
+  "arterialReviewBatch21": {
+    "release": "0.9.113",
+    "baseline": "0.9.112",
+    "batch": 21,
+    "acceptedGeometryRepairs": 0,
+    "allSourceAssetsByteExact": true,
+    "sourceAssets": {
+      "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+      "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "models/complete-circulation.glb": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+      "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+    },
+    "reviewedCases": 25,
+    "survivingOtherLoopsReviewed": 23,
+    "otherLoopTriangulationsTested": 637,
+    "otherLoopTrianglePairsChecked": 5608,
+    "rimTissueFailures": 13,
+    "scaDirectTriangulationsTested": 132,
+    "scaLocalStatesTested": 4620,
+    "newDefectsClaimedResolved": 0,
+    "anatomicalAcceptance": false,
+    "registry": "anatomy/source/arterial-review-v0.9.113/deferred-repairs.json",
+    "scope": "Bounded native arterial wall closure searches and a reusable source-hash guard. None of these attempts is installed. This does not establish that larger reconstruction methods cannot succeed."
+  },
+  "intersectionPredicateBatch22": {
+    "release": "0.9.114",
+    "baseline": "0.9.113",
+    "batch": 22,
+    "scope": "Repair-validation predicate and implementation-aware exclusion reuse. No model geometry changes.",
+    "acceptedCodeFixes": [
+      "Exact confirmation of potential positive triangle contacts and uncertainty cases.",
+      "Remove tolerance-thickened plane vertices from floating-point cuts.",
+      "Handle degenerate triangles without invalid normal division.",
+      "Invalidate deferred exclusions when validation code changes or implementation hashes were never recorded."
+    ],
+    "acceptedGeometryRepairs": 0,
+    "anatomicalAcceptance": false,
+    "sourceAssets": {
+      "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+      "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "models/complete-circulation.glb": "64de872fa1910d023a1df9595ec5418da22bec5122f195935ecbbe2a7e5be398",
+      "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "models/venous.glb": "16d16dc9cf7078da4150c640ba8e83bfbba6182ba2b206bdd317d92ee2dfadef"
+    },
+    "predicateSha256Before": "4f8114ab2bf86af03b682dde533db2231396d9ddad3bdcc41fcf03fe57bf5759",
+    "predicateSha256After": "aeb84ad57db409847d4061a8a4380cdbb50735587fc3cc71a190cd09e9404f41",
+    "petrosalSelfContactReview": [
+      {
+        "node": "vein.inferior_petrosal.left",
+        "trianglePairsChecked": 37856,
+        "previousReportedPairs": 17,
+        "exactReportedPairs": 12,
+        "falsePositiveReportsRemoved": 5,
+        "allKnownExactCrossingsRetained": true,
+        "geometryChanged": false
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "trianglePairsChecked": 38750,
+        "previousReportedPairs": 16,
+        "exactReportedPairs": 10,
+        "falsePositiveReportsRemoved": 6,
+        "allKnownExactCrossingsRetained": true,
+        "geometryChanged": false
+      }
+    ],
+    "falsePositiveReportsRemoved": 12,
+    "genuineFixtureCrossingsRetained": 22,
+    "regressionFixtureCases": 34,
+    "wholePetrosalCandidatePairsChecked": 76606,
+    "scaGapRecheck": {
+      "boundaryTriangulations": 132,
+      "trianglePairsChecked": 687,
+      "passingCandidates": 0,
+      "status": "still-deferred"
+    },
+    "reusableExclusionCases": 14,
+    "legacySurfaceSearchCasesRequiringReview": 11,
+    "runtimeSourceChanged": false,
+    "limitations": [
+      "Twelve erroneous reports are corrected; no anatomical geometry is repaired.",
+      "Twenty-two exact petrosal contact pairs remain. Older non-adjacent-only counts use a different definition.",
+      "The modified predicate is an authoring validation tool, not runtime anatomy or lumen certification.",
+      "Only the recorded cases in the new source-and-implementation guard are reusable.",
+      "The single-pass fixture timings are recorded as diagnostics, not a whole-atlas speed claim."
+    ],
+    "petrosalFalsePositiveReportsRemoved": 11,
+    "a5FalsePositiveReportsRemoved": 1,
+    "leftA5RetainedContactReclassification": {
+      "node": "ACA A5 left",
+      "faces": [
+        1156,
+        1222
+      ],
+      "exactCrossing": false,
+      "predicateCrossing": false,
+      "previousReportedPairs": 1,
+      "currentExactPairs": 0,
+      "geometryChanged": false,
+      "residualCorpusCallosumDepthMm": 0.19455230236053467
+    },
+    "retention": {
+      "modelFilesByteExact": 5,
+      "namedMeshesUnchanged": 1250,
+      "runtimeSourceFilesByteExact": 21,
+      "catalogueStructuresExact": 1666,
+      "relationshipsExact": true,
+      "allDsaSurfaceRecipesAndFlowDataExact": true,
+      "originalUnresolvedILTInterfaceRetained": true,
+      "issueRegisterCopiesExact": true,
+      "priorGeometryRepairsRetained": true
+    },
+    "fixtureVerification": {
+      "passed": true,
+      "fixtureCases": 34,
+      "genuineCrossingsRetained": 22,
+      "falseReportsRejected": 12,
+      "results": [
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            4937,
+            5360
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            4937,
+            5359
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            4937,
+            5310
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            4937,
+            5309
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5157,
+            5361
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5157,
+            5362
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5190,
+            5449
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5191,
+            5296
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5191,
+            5449
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5248,
+            5411
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5268,
+            5429
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5272,
+            5425
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5273,
+            5425
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5273,
+            5426
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5290,
+            5429
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5362,
+            5364
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.left",
+          "faces": [
+            5445,
+            5447
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4553,
+            4555
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4744,
+            4746
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4746,
+            5607
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4757,
+            5644
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4757,
+            5645
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4757,
+            5548
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4759,
+            5645
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4822,
+            5661
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            4822,
+            5660
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5547,
+            5645
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5562,
+            5563
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5562,
+            5695
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5562,
+            5696
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5564,
+            5704
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5564,
+            5705
+          ],
+          "expected": true,
+          "exact": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "node": "vein.inferior_petrosal.right",
+          "faces": [
+            5704,
+            5706
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        },
+        {
+          "node": "ACA A5 left",
+          "faces": [
+            1156,
+            1222
+          ],
+          "expected": false,
+          "exact": false,
+          "actual": false,
+          "passed": true
+        }
+      ]
+    },
+    "guardVerification": {
+      "passed": true,
+      "guardCases": [
+        {
+          "case": "current-source-and-implementation",
+          "exitCode": 0,
+          "result": {
+            "status": "baseline-unchanged-reuse-recorded-exclusions",
+            "sourceAssetsChecked": 5,
+            "implementationFilesChecked": 4,
+            "reviewedCases": 14,
+            "changedAssets": [],
+            "appliesOnlyToRecordedSearchScopes": true,
+            "allCasesRemainOpen": true,
+            "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+          }
+        },
+        {
+          "case": "legacy-geometry-only-registry",
+          "exitCode": 2,
+          "result": {
+            "status": "baseline-changed-review-required",
+            "sourceAssetsChecked": 5,
+            "implementationFilesChecked": 0,
+            "reviewedCases": 25,
+            "changedAssets": [
+              {
+                "asset": "review-implementation",
+                "reason": "implementation-hashes-not-recorded"
+              }
+            ],
+            "appliesOnlyToRecordedSearchScopes": true,
+            "allCasesRemainOpen": true,
+            "policy": "Reuse these exclusions only while all five source asset hashes match. Changed source geometry invalidates the shortcut. Other repair methods and other regions are outside this review."
+          }
+        },
+        {
+          "case": "implementation-only-mismatch",
+          "exitCode": 2,
+          "result": {
+            "status": "baseline-changed-review-required",
+            "sourceAssetsChecked": 5,
+            "implementationFilesChecked": 4,
+            "reviewedCases": 14,
+            "changedAssets": [
+              {
+                "asset": "tools/repair/geometry.py",
+                "reason": "implementation-bytes-changed"
+              }
+            ],
+            "appliesOnlyToRecordedSearchScopes": true,
+            "allCasesRemainOpen": true,
+            "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+          }
+        }
+      ],
+      "authoringTrialToolHashBefore": "4e94659103c782cc157a2e8cfc46028e48c376f8670b14f3f77100aed72ec979",
+      "authoringTrialToolHashAfter": "1011db6aa52c74a0b9568ae8a7042d9d15bbae08fcfea86943af5d395d9133d3",
+      "existingAuthoringTrialCacheAutomaticallyInvalidated": true
+    },
+    "diagnosticTimings": [
+      {
+        "version": "before",
+        "fixtureCases": 33,
+        "trueReports": 33,
+        "falsePositiveReports": 11,
+        "missedKnownCrossings": 0,
+        "elapsedSecondsSinglePass": 0.006349397997837514
+      },
+      {
+        "version": "after",
+        "fixtureCases": 33,
+        "trueReports": 22,
+        "falsePositiveReports": 0,
+        "missedKnownCrossings": 0,
+        "elapsedSecondsSinglePass": 0.011612076999881538
+      }
+    ],
+    "verification": {
+      "build": "passed",
+      "repairTests": 30,
+      "clearanceTests": 3,
+      "dsa": "passed",
+      "closedOrientedProxies": 828,
+      "proxyTriangles": 8971510,
+      "selectableArterialCourses": 579,
+      "closedSections": 2353,
+      "fullAtlasRenderPerformed": false
+    }
+  },
+  "petrosalWallBatch23": {
+    "release": "0.9.115",
+    "report": "docs/validation/petrosal-wall-v0.9.115.json",
+    "changedMeshes": [
+      "vein.inferior_petrosal.left"
+    ],
+    "changedVertices": 3,
+    "changedFaces": 21,
+    "maximumDisplacementMm": 5.3947966093944364e-06,
+    "exactSelfPairsBefore": 12,
+    "exactSelfPairsAfter": 3,
+    "exactSelfPairsRemoved": 9,
+    "remainingPairTrianglePositionsExact": true,
+    "nativeInterfacesFixed": 3,
+    "nativeSharedCoordinatesFixed": 119,
+    "nativeBoundaryEdgesFixed": 203,
+    "allSourceFaceIndicesExact": true,
+    "allOriginalStoredNormalComponentsExact": true,
+    "newNonNeuralCrossings": 0,
+    "newSampledTissueEntry": 0,
+    "anatomicalAcceptance": false,
+    "scope": "Remove nine microscopic exact left inferior petrosal self-contact pairs by correcting three Float32 positions, with native junctions and source indices fixed. Three left self-contact pairs, the ten right pairs, bone fit and full receiving lumens remain open.",
+    "retention": {
+      "namedMeshesRetained": 1250,
+      "namedMeshesUnchanged": 1249,
+      "otherModelFilesByteExact": 4,
+      "runtimeSourceFilesByteExact": 21,
+      "catalogueStructuresRetained": 1666,
+      "catalogueGraphAndAssetBindingsExact": true,
+      "allSourceFaceIndicesAndStoredNormalComponentsExact": true,
+      "nativeInterfacesFixed": 3,
+      "nativeSharedCoordinatesFixed": 119,
+      "nativeBoundaryEdgesFixed": 203,
+      "otherDsaRecipesExact": 827,
+      "all597FlowCoursesEdgesAndVeinSitesExact": true,
+      "originalUnresolvedILTInterfaceRetained": true,
+      "issueRegisterCopiesExact": true,
+      "priorGeometryRepairsRetained": true
+    },
+    "shape": {
+      "sourceComponents": 1,
+      "candidateComponents": 1,
+      "minimumFaceAreaRatio": 0.9983468164125174,
+      "maximumFaceAreaRatio": 18.782953120955646,
+      "sourceProxyVolumeMm3": 159.46554024221814,
+      "candidateProxyVolumeMm3": 159.4655410101577,
+      "proxyVolumeRelativeChange": 4.8157084756918365e-09,
+      "sourceAndCandidateZeroAreaFaces": 0,
+      "allFaceOrientationsRetained": true,
+      "maximumDisplacementMm": 5.3947966093944364e-06,
+      "maximumAreaRatioFace": 5311,
+      "maximumRatioSourceAreaMm2": 3.070519307314913e-09,
+      "maximumRatioCandidateAreaMm2": 5.767342020628522e-08,
+      "maximumAbsoluteFaceAreaChangeMm2": 5.187883812429739e-06
+    },
+    "selfValidation": {
+      "passed": true,
+      "changes": [
+        {
+          "node": "vein.inferior_petrosal.left",
+          "candidateFacesChecked": 5451,
+          "trianglePairsChecked": 37856,
+          "sourceExactPairs": 12,
+          "candidateExactPairs": 3,
+          "removedExactPairs": 9,
+          "remainingPairs": [
+            [
+              5272,
+              5425
+            ],
+            [
+              5273,
+              5425
+            ],
+            [
+              5273,
+              5426
+            ]
+          ],
+          "remainingContactTrianglesByteExact": true,
+          "newSelfContacts": 0,
+          "passed": true
+        }
+      ]
+    },
+    "crossingValidation": {
+      "passedNoNewNonNeuralCrossings": true,
+      "trianglePairsChecked": 545,
+      "crossings": [],
+      "closedTargetContactsForPairedDepthGate": [],
+      "inheritedSourceCrossings": []
+    },
+    "depthValidation": {
+      "release": "0.9.115",
+      "passed": true,
+      "changes": [
+        {
+          "release": "0.9.115",
+          "passed": true,
+          "node": "vein.inferior_petrosal.left",
+          "changedFaces": 21,
+          "sampleDefinition": "All source/candidate changed-face corners, three edge midpoints and centroid, with matching original barycentric samples.",
+          "coreSourceY": [
+            -66,
+            -61
+          ],
+          "targets": [
+            {
+              "target": "brain.pons.left",
+              "method": "open-target-empty-ball-separation",
+              "minimumClearanceMarginMm": 4.419811677465869,
+              "passed": true,
+              "absoluteInsideCertified": false
+            },
+            {
+              "target": "bone.occipital",
+              "method": "paired-signed-depth-and-closed-volume-parity",
+              "samples": 147,
+              "insideBefore": 0,
+              "insideAfter": 0,
+              "maximumDepthBeforeMm": 0.0,
+              "maximumDepthAfterMm": 0.0,
+              "newInsideSamples": 0,
+              "maximumExtraDepthMm": 0.0,
+              "signedAndEnclosedDisagreements": 0,
+              "coreInsideBefore": 0,
+              "coreInsideAfter": 0,
+              "coreMaximumDepthBeforeMm": 0.0,
+              "coreMaximumDepthAfterMm": 0.0,
+              "passed": true
+            },
+            {
+              "target": "bone.temporal.left",
+              "method": "adaptive-open-target-empty-ball-separation",
+              "coarseMinimumClearanceMarginMm": -1.6201157753367883,
+              "absoluteInsideCertified": false,
+              "passed": true,
+              "sourceTriangles": 21,
+              "evaluatedBalls": 545,
+              "certifiedLeafTriangles": 414,
+              "maximumSubdivisionDepth": 5,
+              "unresolvedLeafTriangles": 0,
+              "minimumCertifiedClearanceMarginMm": 0.00018502769610657943,
+              "minimumUnresolvedMarginMm": null,
+              "sourceTriangleAreaMm2": 1.6848157868335416,
+              "certifiedAreaMm2": 1.684815786833542,
+              "areaCoverageChecked": true,
+              "clearanceThresholdMm": 1e-05,
+              "maximumPermittedSubdivisionDepth": 10
+            }
+          ],
+          "issues": [],
+          "scope": "No new sampled entry, no extra depth over 0.001 mm, and signed-distance/parity agreement. Open targets require conservative empty-ball separation. Regional petrosal anatomy and full receiving lumens remain unresolved."
+        }
+      ]
+    },
+    "verification": {
+      "build": "passed",
+      "repairTests": 30,
+      "clearanceTests": 3,
+      "dsa": "passed",
+      "closedOrientedProxies": 828,
+      "proxyTriangles": 8971510,
+      "selectableArterialCourses": 579,
+      "closedSections": 2353,
+      "fullAtlasRenderPerformed": false
+    },
+    "remaining": {
+      "leftExactPetrosalPairs": 3,
+      "rightExactPetrosalPairs": 10,
+      "regionalAnatomicalFit": "open",
+      "fullReceivingLumens": "open",
+      "arterialZeroAreaFaces": 7,
+      "unresolvedOriginalILTInterfaces": 1
+    }
+  },
+  "currentDeferredReviewRegistry": "anatomy/source/petrosal-wall-v0.9.115/deferred-repairs.json"
+}

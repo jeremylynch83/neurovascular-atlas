@@ -1,0 +1,2621 @@
+{
+  "release": "0.9.105",
+  "selected": [
+    {
+      "node": "ACom chiasmatic perforator left",
+      "faceIds": [
+        1480,
+        1481
+      ]
+    },
+    {
+      "node": "Anterior communicating",
+      "faceIds": [
+        341,
+        342
+      ]
+    },
+    {
+      "node": "PICA hemispheric right",
+      "faceIds": [
+        8824,
+        8825
+      ]
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "faceIds": [
+        3623,
+        3624
+      ]
+    },
+    {
+      "node": "PICA medullary perforator left",
+      "faceIds": [
+        1738
+      ]
+    }
+  ],
+  "sourceZeroAreaFaces": 69,
+  "removedZeroAreaFaces": 9,
+  "remainingZeroAreaFaces": 60,
+  "globalAffectedEdges": 100,
+  "globalBadEdgesBefore": 85,
+  "globalBadEdgesAfter": 82,
+  "globalBoundaryEdgesBefore": 9,
+  "globalBoundaryEdgesAfter": 8,
+  "newBoundaryEdges": 0,
+  "newBadEdges": 0,
+  "selectionMethod": "Exact independent-component subset enumeration under per-label/global no-new-boundary/no-new-bad-edge constraints.",
+  "componentSearch": [
+    {
+      "faces": [
+        [
+          "AChA capsular branch left",
+          882
+        ],
+        [
+          "AChA capsular branch left",
+          883
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "ACom chiasmatic perforator left",
+          1480
+        ],
+        [
+          "ACom chiasmatic perforator left",
+          1481
+        ],
+        [
+          "Anterior communicating",
+          340
+        ],
+        [
+          "Anterior communicating",
+          341
+        ],
+        [
+          "Anterior communicating",
+          342
+        ],
+        [
+          "Anterior communicating",
+          343
+        ]
+      ],
+      "subsetsEnumerated": 64,
+      "selected": [
+        [
+          "ACom chiasmatic perforator left",
+          1480
+        ],
+        [
+          "ACom chiasmatic perforator left",
+          1481
+        ],
+        [
+          "Anterior communicating",
+          341
+        ],
+        [
+          "Anterior communicating",
+          342
+        ]
+      ]
+    },
+    {
+      "faces": [
+        [
+          "ACom septal perforator right",
+          28
+        ],
+        [
+          "Anterior communicating",
+          1094
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "AICA caudal branch right",
+          17687
+        ],
+        [
+          "AICA rostral branch right",
+          13170
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "AICA caudal branch right",
+          17838
+        ],
+        [
+          "AICA rostral branch right",
+          13057
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "AICA subarcuate left",
+          9368
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Falx cerebelli artery right",
+          7237
+        ],
+        [
+          "Hypoglossal posterior meningeal",
+          8072
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "ICA terminus right",
+          1378
+        ],
+        [
+          "Terminal ICA perforator 1 right",
+          1679
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Infraorbital muscular branch left",
+          233
+        ],
+        [
+          "Infraorbital muscular branch left",
+          234
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Lacrimal right",
+          6806
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Lateral lenticulostriate 1 right",
+          2427
+        ],
+        [
+          "Lateral lenticulostriate anterior representative right",
+          23
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Lateral lenticulostriate 1 right",
+          2497
+        ],
+        [
+          "Lateral lenticulostriate anterior representative right",
+          61
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "MCA inferior division left",
+          8790
+        ],
+        [
+          "Polar temporal left",
+          159
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Maxillary",
+          31991
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric left",
+          9978
+        ],
+        [
+          "PICA lateral hemispheric left",
+          937
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric left",
+          10095
+        ],
+        [
+          "PICA lateral hemispheric left",
+          165
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric right",
+          7854
+        ],
+        [
+          "PICA lateral hemispheric right",
+          1721
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric right",
+          8106
+        ],
+        [
+          "PICA lateral hemispheric right",
+          1341
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric right",
+          8824
+        ],
+        [
+          "PICA hemispheric right",
+          8825
+        ],
+        [
+          "PICA lateral hemispheric right",
+          3623
+        ],
+        [
+          "PICA lateral hemispheric right",
+          3624
+        ],
+        [
+          "PICA lateral hemispheric right",
+          3626
+        ],
+        [
+          "PICA lateral hemispheric right",
+          3627
+        ]
+      ],
+      "subsetsEnumerated": 64,
+      "selected": [
+        [
+          "PICA hemispheric right",
+          8824
+        ],
+        [
+          "PICA hemispheric right",
+          8825
+        ],
+        [
+          "PICA lateral hemispheric right",
+          3623
+        ],
+        [
+          "PICA lateral hemispheric right",
+          3624
+        ]
+      ]
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric right",
+          9030
+        ],
+        [
+          "PICA lateral hemispheric right",
+          1243
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA hemispheric right",
+          9045
+        ],
+        [
+          "PICA lateral hemispheric right",
+          1252
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA lateral hemispheric left",
+          3476
+        ],
+        [
+          "PICA lateral hemispheric left",
+          3480
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA medullary perforator left",
+          1736
+        ],
+        [
+          "PICA medullary perforator left",
+          1737
+        ],
+        [
+          "PICA medullary perforator left",
+          1738
+        ]
+      ],
+      "subsetsEnumerated": 8,
+      "selected": [
+        [
+          "PICA medullary perforator left",
+          1738
+        ]
+      ]
+    },
+    {
+      "faces": [
+        [
+          "PICA tonsillar left",
+          795
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA tonsillar left",
+          809
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA tonsillar left",
+          1186
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA vermian left",
+          633
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA vermian left",
+          7308
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "PICA vermian left",
+          7395
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Posterior septal",
+          1529
+        ],
+        [
+          "Superior septal subdivision right",
+          85
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Posterior septal left",
+          3764
+        ],
+        [
+          "Superior septal subdivision left",
+          63
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Posterior spinal right",
+          48920
+        ],
+        [
+          "Posterior spinal right",
+          48922
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Prefrontal distal ramus left",
+          580
+        ],
+        [
+          "Prefrontal left",
+          7232
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Wollschlaeger and Wollschlaeger artery right",
+          9646
+        ]
+      ],
+      "subsetsEnumerated": 2,
+      "selected": []
+    },
+    {
+      "faces": [
+        [
+          "Wollschlaeger and Wollschlaeger artery right",
+          9655
+        ],
+        [
+          "Wollschlaeger and Wollschlaeger artery right",
+          9656
+        ]
+      ],
+      "subsetsEnumerated": 4,
+      "selected": []
+    }
+  ],
+  "retainedFaces": [
+    {
+      "node": "AChA capsular branch left",
+      "face": 882
+    },
+    {
+      "node": "AChA capsular branch left",
+      "face": 883
+    },
+    {
+      "node": "ACom septal perforator right",
+      "face": 28
+    },
+    {
+      "node": "AICA caudal branch right",
+      "face": 17687
+    },
+    {
+      "node": "AICA caudal branch right",
+      "face": 17838
+    },
+    {
+      "node": "AICA rostral branch right",
+      "face": 13057
+    },
+    {
+      "node": "AICA rostral branch right",
+      "face": 13170
+    },
+    {
+      "node": "AICA subarcuate left",
+      "face": 9368
+    },
+    {
+      "node": "Anterior communicating",
+      "face": 340
+    },
+    {
+      "node": "Anterior communicating",
+      "face": 343
+    },
+    {
+      "node": "Anterior communicating",
+      "face": 1094
+    },
+    {
+      "node": "Falx cerebelli artery right",
+      "face": 7237
+    },
+    {
+      "node": "Hypoglossal posterior meningeal",
+      "face": 8072
+    },
+    {
+      "node": "ICA terminus right",
+      "face": 1378
+    },
+    {
+      "node": "Infraorbital muscular branch left",
+      "face": 233
+    },
+    {
+      "node": "Infraorbital muscular branch left",
+      "face": 234
+    },
+    {
+      "node": "Lacrimal right",
+      "face": 6806
+    },
+    {
+      "node": "Lateral lenticulostriate 1 right",
+      "face": 2427
+    },
+    {
+      "node": "Lateral lenticulostriate 1 right",
+      "face": 2497
+    },
+    {
+      "node": "Lateral lenticulostriate anterior representative right",
+      "face": 23
+    },
+    {
+      "node": "Lateral lenticulostriate anterior representative right",
+      "face": 61
+    },
+    {
+      "node": "MCA inferior division left",
+      "face": 8790
+    },
+    {
+      "node": "Maxillary",
+      "face": 31991
+    },
+    {
+      "node": "PICA hemispheric left",
+      "face": 9978
+    },
+    {
+      "node": "PICA hemispheric left",
+      "face": 10095
+    },
+    {
+      "node": "PICA hemispheric right",
+      "face": 7854
+    },
+    {
+      "node": "PICA hemispheric right",
+      "face": 8106
+    },
+    {
+      "node": "PICA hemispheric right",
+      "face": 9030
+    },
+    {
+      "node": "PICA hemispheric right",
+      "face": 9045
+    },
+    {
+      "node": "PICA lateral hemispheric left",
+      "face": 165
+    },
+    {
+      "node": "PICA lateral hemispheric left",
+      "face": 937
+    },
+    {
+      "node": "PICA lateral hemispheric left",
+      "face": 3476
+    },
+    {
+      "node": "PICA lateral hemispheric left",
+      "face": 3480
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "face": 1243
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "face": 1252
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "face": 1341
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "face": 1721
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "face": 3626
+    },
+    {
+      "node": "PICA lateral hemispheric right",
+      "face": 3627
+    },
+    {
+      "node": "PICA medullary perforator left",
+      "face": 1736
+    },
+    {
+      "node": "PICA medullary perforator left",
+      "face": 1737
+    },
+    {
+      "node": "PICA tonsillar left",
+      "face": 795
+    },
+    {
+      "node": "PICA tonsillar left",
+      "face": 809
+    },
+    {
+      "node": "PICA tonsillar left",
+      "face": 1186
+    },
+    {
+      "node": "PICA vermian left",
+      "face": 633
+    },
+    {
+      "node": "PICA vermian left",
+      "face": 7308
+    },
+    {
+      "node": "PICA vermian left",
+      "face": 7395
+    },
+    {
+      "node": "Polar temporal left",
+      "face": 159
+    },
+    {
+      "node": "Posterior septal",
+      "face": 1529
+    },
+    {
+      "node": "Posterior septal left",
+      "face": 3764
+    },
+    {
+      "node": "Posterior spinal right",
+      "face": 48920
+    },
+    {
+      "node": "Posterior spinal right",
+      "face": 48922
+    },
+    {
+      "node": "Prefrontal distal ramus left",
+      "face": 580
+    },
+    {
+      "node": "Prefrontal left",
+      "face": 7232
+    },
+    {
+      "node": "Superior septal subdivision left",
+      "face": 63
+    },
+    {
+      "node": "Superior septal subdivision right",
+      "face": 85
+    },
+    {
+      "node": "Terminal ICA perforator 1 right",
+      "face": 1679
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "face": 9646
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "face": 9655
+    },
+    {
+      "node": "Wollschlaeger and Wollschlaeger artery right",
+      "face": 9656
+    }
+  ],
+  "edges": [
+    {
+      "edge": [
+        [
+          -43.415931701660156,
+          -17.606693267822266,
+          123.60395812988281
+        ],
+        [
+          -43.38998031616211,
+          -17.619667053222656,
+          123.61693572998047
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -43.38998031616211,
+          -17.619667053222656,
+          123.61693572998047
+        ],
+        [
+          -43.38998031616211,
+          -17.619667053222656,
+          123.61693572998047
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -43.38998031616211,
+          -17.619667053222656,
+          123.61693572998047
+        ],
+        [
+          -43.29484176635742,
+          -17.48560333251953,
+          123.70774841308594
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -41.011436462402344,
+          -39.58447265625,
+          85.884521484375
+        ],
+        [
+          -40.96818923950195,
+          -39.55852508544922,
+          85.88884735107422
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -40.96818923950195,
+          -39.55852508544922,
+          85.88884735107422
+        ],
+        [
+          -40.96818923950195,
+          -39.55852508544922,
+          85.88884735107422
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -40.96818923950195,
+          -39.55852508544922,
+          85.88884735107422
+        ],
+        [
+          -40.93791580200195,
+          -39.407161712646484,
+          85.80235290527344
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -30.052818298339844,
+          -76.87144470214844,
+          44.177772521972656
+        ],
+        [
+          -30.039844512939453,
+          -76.86280059814453,
+          44.169124603271484
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": -1,
+      "afterCount": 3,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -30.039844512939453,
+          -76.86280059814453,
+          44.169124603271484
+        ],
+        [
+          -30.039844512939453,
+          -76.86280059814453,
+          44.169124603271484
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -26.177947998046875,
+          -8.710925102233887,
+          44.05236053466797
+        ],
+        [
+          -26.173583984375,
+          -8.698486328125,
+          44.065673828125
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -26.173583984375,
+          -8.698486328125,
+          44.065673828125
+        ],
+        [
+          -26.173583984375,
+          -8.698486328125,
+          44.065673828125
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -26.173583984375,
+          -8.698486328125,
+          44.065673828125
+        ],
+        [
+          -26.17333984375,
+          -8.6982421875,
+          44.06591796875
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -22.82568359375,
+          -127.25390625,
+          45.33642578125
+        ],
+        [
+          -22.8251953125,
+          -127.2529296875,
+          45.336181640625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -22.8251953125,
+          -127.2529296875,
+          45.336181640625
+        ],
+        [
+          -22.8251953125,
+          -127.2529296875,
+          45.336181640625
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -22.8251953125,
+          -127.2529296875,
+          45.336181640625
+        ],
+        [
+          -22.813385009765625,
+          -127.23178100585938,
+          45.32379913330078
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -22.56255531311035,
+          -127.49990844726562,
+          45.22865676879883
+        ],
+        [
+          -22.558231353759766,
+          -127.49990844726562,
+          45.22865676879883
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -22.558231353759766,
+          -127.49990844726562,
+          45.22865676879883
+        ],
+        [
+          -22.558231353759766,
+          -127.49990844726562,
+          45.22865676879883
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -22.558231353759766,
+          -127.49990844726562,
+          45.22865676879883
+        ],
+        [
+          -22.54958152770996,
+          -127.4869384765625,
+          45.22865676879883
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.200927734375,
+          -128.898681640625,
+          45.20458984375
+        ],
+        [
+          -20.19698143005371,
+          -128.89675903320312,
+          45.20270919799805
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -20.19698143005371,
+          -128.89675903320312,
+          45.20270919799805
+        ],
+        [
+          -20.19698143005371,
+          -128.89675903320312,
+          45.20270919799805
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -20.19698143005371,
+          -128.89675903320312,
+          45.20270919799805
+        ],
+        [
+          -20.192657470703125,
+          -128.89244079589844,
+          45.207035064697266
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -16.45751953125,
+          -54.22636413574219,
+          74.54359436035156
+        ],
+        [
+          -16.45751953125,
+          -54.22636413574219,
+          74.54359436035156
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -16.45751953125,
+          -54.22636413574219,
+          74.54359436035156
+        ],
+        [
+          -16.45751953125,
+          -54.22613525390625,
+          74.54358673095703
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -16.45751953125,
+          -54.22636413574219,
+          74.54359436035156
+        ],
+        [
+          -16.456174850463867,
+          -54.231998443603516,
+          74.541015625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ]
+      ],
+      "beforeCount": 5,
+      "beforeBalance": -1,
+      "afterCount": 3,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.72509765625,
+          33.502197265625
+        ],
+        [
+          -11.803466796875,
+          -87.725341796875,
+          33.502197265625
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": 1,
+      "afterCount": 3,
+      "afterBalance": 1
+    },
+    {
+      "edge": [
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ],
+        [
+          -11.8037109375,
+          -87.724853515625,
+          33.502197265625
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 0,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.5736665725708,
+          -130.4147186279297,
+          44.78322219848633
+        ],
+        [
+          -11.5736665725708,
+          -130.4147186279297,
+          44.78322219848633
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -11.5736665725708,
+          -130.4147186279297,
+          44.78322219848633
+        ],
+        [
+          -11.56201171875,
+          -130.419921875,
+          44.794189453125
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -11.5009765625,
+          -130.42431640625,
+          44.849365234375
+        ],
+        [
+          -11.5009765625,
+          -130.42431640625,
+          44.849365234375
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -11.5009765625,
+          -130.42431640625,
+          44.849365234375
+        ],
+        [
+          -11.491497993469238,
+          -130.42335510253906,
+          44.85673904418945
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -7.940975666046143,
+          -129.4762725830078,
+          44.82646942138672
+        ],
+        [
+          -7.929931640625,
+          -129.471435546875,
+          44.83447265625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -7.929931640625,
+          -129.471435546875,
+          44.83447265625
+        ],
+        [
+          -7.929931640625,
+          -129.471435546875,
+          44.83447265625
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -7.300537109375,
+          -129.063232421875,
+          45.098876953125
+        ],
+        [
+          -7.30029296875,
+          -129.063232421875,
+          45.0986328125
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -7.300537109375,
+          -129.063232421875,
+          45.098876953125
+        ],
+        [
+          -7.300048828125,
+          -129.063232421875,
+          45.098388671875
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -7.30029296875,
+          -129.063232421875,
+          45.0986328125
+        ],
+        [
+          -7.300048828125,
+          -129.063232421875,
+          45.098388671875
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -7.210205078125,
+          -128.7529296875,
+          45.281005859375
+        ],
+        [
+          -7.209716796875,
+          -128.752685546875,
+          45.281005859375
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -7.209716796875,
+          -128.752685546875,
+          45.281005859375
+        ],
+        [
+          -7.209716796875,
+          -128.752685546875,
+          45.281005859375
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -7.197138786315918,
+          -128.5291748046875,
+          45.24595642089844
+        ],
+        [
+          -7.197138786315918,
+          -128.5291748046875,
+          45.24595642089844
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          -7.197138786315918,
+          -128.5291748046875,
+          45.24595642089844
+        ],
+        [
+          -7.175537109375,
+          -128.48291015625,
+          45.23876953125
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -2.0119054317474365,
+          -1.9601751565933228,
+          35.62797546386719
+        ],
+        [
+          -1.9946069717407227,
+          -1.9688245058059692,
+          35.62364959716797
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -1.9946069717407227,
+          -1.9688245058059692,
+          35.62364959716797
+        ],
+        [
+          -1.9946069717407227,
+          -1.9688245058059692,
+          35.62364959716797
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          -1.9946069717407227,
+          -1.9688245058059692,
+          35.62364959716797
+        ],
+        [
+          -1.9643346071243286,
+          -1.8520593643188477,
+          35.5847282409668
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          0.7348727583885193,
+          -26.697301864624023,
+          83.73236083984375
+        ],
+        [
+          1.0066874027252197,
+          -26.472187042236328,
+          83.890869140625
+        ]
+      ],
+      "beforeCount": 6,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.0023908615112305,
+          -26.470611572265625,
+          83.89362335205078
+        ],
+        [
+          1.0066874027252197,
+          -26.472187042236328,
+          83.890869140625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.0066874027252197,
+          -26.472187042236328,
+          83.890869140625
+        ],
+        [
+          1.0066874027252197,
+          -26.472187042236328,
+          83.890869140625
+        ]
+      ],
+      "beforeCount": 10,
+      "beforeBalance": -10,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          1.0066874027252197,
+          -26.472187042236328,
+          83.890869140625
+        ],
+        [
+          1.2488667964935303,
+          -26.48516273498535,
+          83.8692398071289
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.2219003438949585,
+          -26.222026824951172,
+          84.49555969238281
+        ],
+        [
+          1.2219003438949585,
+          -26.222026824951172,
+          84.49555969238281
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          1.2219003438949585,
+          -26.222026824951172,
+          84.49555969238281
+        ],
+        [
+          1.22291898727417,
+          -26.221359252929688,
+          84.4963150024414
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": -1,
+      "afterCount": 3,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          1.2219003438949585,
+          -26.222026824951172,
+          84.49555969238281
+        ],
+        [
+          1.23589289188385,
+          -26.195411682128906,
+          84.50928497314453
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": 1,
+      "afterCount": 3,
+      "afterBalance": 1
+    },
+    {
+      "edge": [
+        [
+          1.966755747795105,
+          -1.8520593643188477,
+          35.5847282409668
+        ],
+        [
+          1.997028112411499,
+          -1.9688245058059692,
+          35.62364959716797
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          1.997028112411499,
+          -1.9688245058059692,
+          35.62364959716797
+        ],
+        [
+          1.997028112411499,
+          -1.9688245058059692,
+          35.62364959716797
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          1.997028112411499,
+          -1.9688245058059692,
+          35.62364959716797
+        ],
+        [
+          2.01171875,
+          -1.960693359375,
+          35.629638671875
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          13.077392578125,
+          -89.284423828125,
+          32.669921875
+        ],
+        [
+          13.077392578125,
+          -89.284423828125,
+          32.670166015625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          13.077392578125,
+          -89.284423828125,
+          32.670166015625
+        ],
+        [
+          13.077392578125,
+          -89.284423828125,
+          32.670166015625
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          13.077392578125,
+          -89.284423828125,
+          32.670166015625
+        ],
+        [
+          13.085384368896484,
+          -89.29611206054688,
+          32.68290328979492
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.828125,
+          -38.14453125,
+          84.76513671875
+        ],
+        [
+          14.828125,
+          -38.143798828125,
+          84.7646484375
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          14.828125,
+          -38.143798828125,
+          84.7646484375
+        ],
+        [
+          14.828125,
+          -38.143798828125,
+          84.7646484375
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          14.828125,
+          -38.143798828125,
+          84.7646484375
+        ],
+        [
+          14.832534790039062,
+          -38.1486930847168,
+          84.75579071044922
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          15.727733612060547,
+          -102.7889633178711,
+          48.485107421875
+        ],
+        [
+          15.736383438110352,
+          -102.79328918457031,
+          48.485107421875
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          15.736383438110352,
+          -102.79328918457031,
+          48.485107421875
+        ],
+        [
+          15.736383438110352,
+          -102.79328918457031,
+          48.485107421875
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          15.736383438110352,
+          -102.79328918457031,
+          48.485107421875
+        ],
+        [
+          15.75800609588623,
+          -102.57705688476562,
+          48.43321228027344
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          18.73727798461914,
+          -67.91593170166016,
+          66.79305267333984
+        ],
+        [
+          18.73727798461914,
+          -67.91593170166016,
+          66.79305267333984
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          18.73727798461914,
+          -67.91593170166016,
+          66.79305267333984
+        ],
+        [
+          18.740976333618164,
+          -67.9449691772461,
+          66.78871154785156
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": 1,
+      "afterCount": 3,
+      "afterBalance": 1
+    },
+    {
+      "edge": [
+        [
+          18.73727798461914,
+          -67.91593170166016,
+          66.79305267333984
+        ],
+        [
+          18.746326446533203,
+          -67.94540405273438,
+          66.78694915771484
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": 1,
+      "afterCount": 3,
+      "afterBalance": 1
+    },
+    {
+      "edge": [
+        [
+          18.73767852783203,
+          -67.85026550292969,
+          66.8085708618164
+        ],
+        [
+          18.73767852783203,
+          -67.85026550292969,
+          66.8085708618164
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          18.73767852783203,
+          -67.85026550292969,
+          66.8085708618164
+        ],
+        [
+          18.73767852783203,
+          -67.83296966552734,
+          66.81289672851562
+        ]
+      ],
+      "beforeCount": 3,
+      "beforeBalance": 1,
+      "afterCount": 3,
+      "afterBalance": 1
+    },
+    {
+      "edge": [
+        [
+          22.0460205078125,
+          -40.36722946166992,
+          92.68284606933594
+        ],
+        [
+          22.067644119262695,
+          -40.33263397216797,
+          92.6136474609375
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          22.058349609375,
+          -40.3310546875,
+          92.6085205078125
+        ],
+        [
+          22.067644119262695,
+          -40.33263397216797,
+          92.6136474609375
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          22.067644119262695,
+          -40.33263397216797,
+          92.6136474609375
+        ],
+        [
+          22.067644119262695,
+          -40.33263397216797,
+          92.6136474609375
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          22.206031799316406,
+          -40.30236053466797,
+          92.50553131103516
+        ],
+        [
+          22.210357666015625,
+          -40.31100845336914,
+          92.50985717773438
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          22.210357666015625,
+          -40.31100845336914,
+          92.50985717773438
+        ],
+        [
+          22.210357666015625,
+          -40.31100845336914,
+          92.50985717773438
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          22.210357666015625,
+          -40.31100845336914,
+          92.50985717773438
+        ],
+        [
+          22.2109375,
+          -40.326171875,
+          92.52285766601562
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          23.089599609375,
+          -127.9873046875,
+          45.352294921875
+        ],
+        [
+          23.207275390625,
+          -127.93896484375,
+          45.336181640625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          23.207275390625,
+          -127.93896484375,
+          45.336181640625
+        ],
+        [
+          23.207275390625,
+          -127.93896484375,
+          45.336181640625
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          23.207275390625,
+          -127.93896484375,
+          45.336181640625
+        ],
+        [
+          23.209346771240234,
+          -127.91940307617188,
+          45.33245086669922
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          23.2734375,
+          -127.903564453125,
+          45.3251953125
+        ],
+        [
+          23.2734375,
+          -127.903564453125,
+          45.3251953125
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          23.2734375,
+          -127.903564453125,
+          45.3251953125
+        ],
+        [
+          23.274215698242188,
+          -127.90642547607422,
+          45.32379913330078
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          23.2734375,
+          -127.903564453125,
+          45.3251953125
+        ],
+        [
+          23.282865524291992,
+          -127.89777374267578,
+          45.32379913330078
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          23.317462921142578,
+          -127.932373046875,
+          45.34109878540039
+        ],
+        [
+          23.334760665893555,
+          -127.92372131347656,
+          45.33677291870117
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          23.334760665893555,
+          -127.92372131347656,
+          45.33677291870117
+        ],
+        [
+          23.334760665893555,
+          -127.92372131347656,
+          45.33677291870117
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          23.334760665893555,
+          -127.92372131347656,
+          45.33677291870117
+        ],
+        [
+          23.403955459594727,
+          -127.89777374267578,
+          45.33677291870117
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          24.195362091064453,
+          -127.43936157226562,
+          45.32379913330078
+        ],
+        [
+          24.225830078125,
+          -127.457275390625,
+          45.311767578125
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          24.225830078125,
+          -127.457275390625,
+          45.311767578125
+        ],
+        [
+          24.225830078125,
+          -127.457275390625,
+          45.311767578125
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          24.225830078125,
+          -127.457275390625,
+          45.311767578125
+        ],
+        [
+          24.23828125,
+          -127.46337890625,
+          45.306884765625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          24.307804107666016,
+          -127.24475860595703,
+          45.45354080200195
+        ],
+        [
+          24.307804107666016,
+          -127.24475860595703,
+          45.45354080200195
+        ]
+      ],
+      "beforeCount": 8,
+      "beforeBalance": -8,
+      "afterCount": 4,
+      "afterBalance": -4
+    },
+    {
+      "edge": [
+        [
+          24.307804107666016,
+          -127.24475860595703,
+          45.45354080200195
+        ],
+        [
+          24.320777893066406,
+          -127.25340270996094,
+          45.4708366394043
+        ]
+      ],
+      "beforeCount": 6,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          24.307804107666016,
+          -127.24475860595703,
+          45.45354080200195
+        ],
+        [
+          24.320777893066406,
+          -127.23178100585938,
+          45.449214935302734
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          24.307804107666016,
+          -127.24475860595703,
+          45.45354080200195
+        ],
+        [
+          24.376996994018555,
+          -127.21881103515625,
+          45.418941497802734
+        ]
+      ],
+      "beforeCount": 6,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          25.263545989990234,
+          -24.314197540283203,
+          44.35508346557617
+        ],
+        [
+          25.263545989990234,
+          -24.314197540283203,
+          44.35508346557617
+        ]
+      ],
+      "beforeCount": 1,
+      "beforeBalance": -1,
+      "afterCount": 1,
+      "afterBalance": -1
+    },
+    {
+      "edge": [
+        [
+          25.263545989990234,
+          -24.314197540283203,
+          44.35508346557617
+        ],
+        [
+          25.277587890625,
+          -24.296142578125,
+          44.360595703125
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.630985260009766,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.630985260009766,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63963317871094,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          38.63530731201172,
+          15.256183624267578,
+          62.825584411621094
+        ],
+        [
+          38.63963317871094,
+          15.256183624267578,
+          62.825584411621094
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": 0,
+      "afterCount": 2,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          44.992515563964844,
+          -100.11201477050781,
+          47.98777389526367
+        ],
+        [
+          45.00116729736328,
+          -100.09039306640625,
+          48.022369384765625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          45.00116729736328,
+          -100.09904479980469,
+          48.022369384765625
+        ],
+        [
+          45.00116729736328,
+          -100.09039306640625,
+          48.022369384765625
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          45.00116729736328,
+          -100.09039306640625,
+          48.022369384765625
+        ],
+        [
+          45.00116729736328,
+          -100.09039306640625,
+          48.022369384765625
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          45.690185546875,
+          -100.057861328125,
+          47.99609375
+        ],
+        [
+          45.690185546875,
+          -100.057861328125,
+          47.99609375
+        ]
+      ],
+      "beforeCount": 2,
+      "beforeBalance": -2,
+      "afterCount": 2,
+      "afterBalance": -2
+    },
+    {
+      "edge": [
+        [
+          45.690185546875,
+          -100.057861328125,
+          47.99609375
+        ],
+        [
+          45.6904296875,
+          -100.05810546875,
+          47.994873046875
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    },
+    {
+      "edge": [
+        [
+          45.690185546875,
+          -100.057861328125,
+          47.99609375
+        ],
+        [
+          45.69743347167969,
+          -100.05579376220703,
+          47.996421813964844
+        ]
+      ],
+      "beforeCount": 4,
+      "beforeBalance": 0,
+      "afterCount": 4,
+      "afterBalance": 0
+    }
+  ]
+}

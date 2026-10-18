@@ -1,0 +1,107 @@
+{
+  "release": "0.9.82",
+  "browser": {
+    "release": "0.9.82",
+    "errors": [],
+    "checks": [
+      "Fresh selector: same scene, batches, geometry and camera; 766 opaque arteries, no veins, no DSA requests/renderer/worker.",
+      "Cancel restores hidden, focused, clipped and selected ordinary view.",
+      "Cancelling course loading cannot initialise DSA or reopen the selector.",
+      "Source selection loads courses only, highlights source and leaves the camera unchanged.",
+      "Nearest-artery overlap selection and drag rejection reuse ordinary picking.",
+      "Cancel during initial DSA setup cannot commit an injection or resurrect DSA.",
+      "Actual point click validates the tip and commits a DSA run starting at 0.5 s.",
+      "Cancel during section preparation preserves the established injection.",
+      "Mobile opaque arterial selector and touch drag rejection."
+    ],
+    "timings": [
+      {
+        "frame": {
+          "cpuMs": 22.299999997019768,
+          "gpuWaitMs": 6693.80000000447,
+          "completedMs": 6745.4000000059605,
+          "calls": 1,
+          "triangles": 7176719
+        },
+        "done": true
+      }
+    ],
+    "passed": true,
+    "environment": "Software-rendered Chromium, 1280 x 900, DPR 0.5; restoration test begins with focus, selection, hidden geometry and section clipping enabled."
+  },
+  "bookmarksAndInspection": {
+    "release": "0.9.82",
+    "errors": [],
+    "checks": [
+      "Explicit ECA bookmark retains proximal origin and projection.",
+      "Established injection re-enters DSA directly.",
+      "Selective PCA/P3 source uses deferred validation and excludes upstream P1.",
+      "Opacified inspection keeps injection and collapsed panel state; play/pause controls work."
+    ],
+    "passed": true
+  },
+  "sameModelsFlowRecipesSplitterWorkerAndContrastModel": true,
+  "numericalChecks": {
+    "closedProxies": 828,
+    "selectableCourses": 578,
+    "closedSections": 2352,
+    "passed": true
+  },
+  "passed": true,
+  "entryVsOrdinaryVisibility": {
+    "release": "0.9.82",
+    "environment": "Software-rendered Chromium, 1280 x 900, DPR 1",
+    "measurements": [
+      {
+        "label": "Ordinary arteries-only visibility change",
+        "setupMs": 4.200000002980232,
+        "frame": {
+          "cpuMs": 17.899999998509884,
+          "graphicsWaitMs": 7526.4000000059605,
+          "completedMs": 7549.70000000298,
+          "calls": 1,
+          "triangles": 7176719
+        },
+        "done": true
+      },
+      {
+        "label": "DSA selector",
+        "setupMs": 7.200000002980232,
+        "frame": {
+          "cpuMs": 1.8000000044703484,
+          "graphicsWaitMs": 6417.39999999851,
+          "completedMs": 6443.39999999851,
+          "calls": 1,
+          "triangles": 7176719
+        },
+        "done": true
+      },
+      {
+        "label": "Ordinary arteries-only visibility change",
+        "setupMs": 1.6000000014901161,
+        "frame": {
+          "cpuMs": 0.8999999985098839,
+          "graphicsWaitMs": 5677.5,
+          "completedMs": 5688,
+          "calls": 1,
+          "triangles": 7176719
+        },
+        "done": true
+      },
+      {
+        "label": "DSA selector",
+        "setupMs": 1.5999999940395355,
+        "frame": {
+          "cpuMs": 1,
+          "graphicsWaitMs": 6630.5,
+          "completedMs": 6640.79999999702,
+          "calls": 1,
+          "triangles": 7176719
+        },
+        "done": true
+      }
+    ],
+    "errors": [],
+    "passed": true
+  }
+}

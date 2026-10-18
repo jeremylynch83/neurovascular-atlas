@@ -1,0 +1,9173 @@
+[
+  {
+    "id": "component-31-loop-0",
+    "labels": [
+      "MCA M1 left",
+      "Terminal ICA perforator 2 left"
+    ],
+    "boundary": [
+      [
+        -17.489763259887695,
+        -39.77043151855469,
+        86.00560760498047
+      ],
+      [
+        -17.485437393188477,
+        -39.77043151855469,
+        86.00128936767578
+      ],
+      [
+        -17.48111343383789,
+        -39.78340530395508,
+        85.97966003417969
+      ],
+      [
+        -17.459489822387695,
+        -39.81800079345703,
+        85.91912078857422
+      ],
+      [
+        -17.47900390625,
+        -39.78466796875,
+        85.97802734375
+      ],
+      [
+        -17.486083984375,
+        -39.772216796875,
+        85.999267578125
+      ],
+      [
+        -17.48779296875,
+        -39.76904296875,
+        86.004638671875
+      ],
+      [
+        -17.511384963989258,
+        -39.72285842895508,
+        86.07048034667969
+      ]
+    ],
+    "spanMm": 0.1861582420274523,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 1122,
+    "triangulationsEnumerated": 132,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 5.453788278555362e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 150
+          },
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 148
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00018959497758048758,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 148
+          },
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 147
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 5.674229750621436e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 148
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 7.940462700795678e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 150
+          },
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 148
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          6
+        ],
+        "areaMm2": 4.760968013489514e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 148
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          7
+        ],
+        "areaMm2": 0.00017293154668541753,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 149
+          },
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 148
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 5.989511776052452e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 2.2661422722667355e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 3.156107637385202e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          6
+        ],
+        "areaMm2": 3.741884224791337e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          7
+        ],
+        "areaMm2": 0.0002070132738826485,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 7.447311160062505e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 0.00011428480890407657,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          6
+        ],
+        "areaMm2": 0.00012840266412184571,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          7
+        ],
+        "areaMm2": 0.0005559001976990507,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 3.1182310211541324e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          6
+        ],
+        "areaMm2": 4.0280861704789934e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          7
+        ],
+        "areaMm2": 0.00022523012575722544,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          6
+        ],
+        "areaMm2": 8.140183277963928e-06,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          7
+        ],
+        "areaMm2": 0.00012595477081823762,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          6,
+          7
+        ],
+        "areaMm2": 0.0001063951120185675,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.00012342722837144917,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 2.2388863806682273e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 1.524285603441958e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          6
+        ],
+        "areaMm2": 2.298359828772185e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          7
+        ],
+        "areaMm2": 0.00016051079433074188,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 5.837957090418151e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 7.007665385413948e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          6
+        ],
+        "areaMm2": 6.928025562361317e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          7
+        ],
+        "areaMm2": 0.0003517391037381034,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 1.8555787464632097e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          6
+        ],
+        "areaMm2": 2.2063882960680877e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          7
+        ],
+        "areaMm2": 0.00010477259362461017,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          6
+        ],
+        "areaMm2": 4.585391954639675e-06,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          7
+        ],
+        "areaMm2": 6.351604662044552e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          6,
+          7
+        ],
+        "areaMm2": 6.239166614266197e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 5.2495835125477254e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 7.078956226670027e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          6
+        ],
+        "areaMm2": 7.87010092157628e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          7
+        ],
+        "areaMm2": 0.0002999591958692516,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 1.9024383042353525e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          6
+        ],
+        "areaMm2": 2.3925265954643893e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          7
+        ],
+        "areaMm2": 8.436763601942093e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          6
+        ],
+        "areaMm2": 3.941912765204636e-06,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          7
+        ],
+        "areaMm2": 0.00011277787109390397,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          6,
+          7
+        ],
+        "areaMm2": 0.00012896778636979148,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 1.3261168972919126e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          6
+        ],
+        "areaMm2": 1.7745328899382542e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          7
+        ],
+        "areaMm2": 0.00029134795096544865,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          6
+        ],
+        "areaMm2": 6.000494169600057e-06,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          7
+        ],
+        "areaMm2": 0.000362447673413737,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          6,
+          7
+        ],
+        "areaMm2": 0.0003788628503444059,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          6
+        ],
+        "areaMm2": 1.0835921146093513e-06,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          },
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 150
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          7
+        ],
+        "areaMm2": 8.431426760624258e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          6,
+          7
+        ],
+        "areaMm2": 0.00010476967903198232,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16885
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16946
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16884
+          },
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          5,
+          6,
+          7
+        ],
+        "areaMm2": 2.0892425177073158e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 16947
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-33-loop-0",
+    "labels": [
+      "MCA M1 left",
+      "Terminal ICA perforator 2 left"
+    ],
+    "boundary": [
+      [
+        -17.459489822387695,
+        -39.34229278564453,
+        86.55484008789062
+      ],
+      [
+        -17.446516036987305,
+        -39.3509407043457,
+        86.55484008789062
+      ],
+      [
+        -17.459489822387695,
+        -39.34229278564453,
+        86.55916595458984
+      ],
+      [
+        -17.46381378173828,
+        -39.34229278564453,
+        86.55916595458984
+      ]
+    ],
+    "spanMm": 0.019816952188250976,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 41,
+    "triangulationsEnumerated": 2,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 3.372411979657192e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 3.856008327867302e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 9.35243588173762e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 45
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 2.0905306104591677e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 45
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-36-loop-0",
+    "labels": [
+      "MCA M1 left",
+      "Terminal ICA perforator 2 left"
+    ],
+    "boundary": [
+      [
+        -17.179443359375,
+        -39.68994140625,
+        86.184814453125
+      ],
+      [
+        -17.178955078125,
+        -39.690673828125,
+        86.18359375
+      ],
+      [
+        -17.15676498413086,
+        -39.7271842956543,
+        86.12670135498047
+      ],
+      [
+        -17.178388595581055,
+        -39.692588806152344,
+        86.18292236328125
+      ],
+      [
+        -17.178388595581055,
+        -39.688262939453125,
+        86.18292236328125
+      ],
+      [
+        -17.182714462280273,
+        -39.67961502075195,
+        86.19589233398438
+      ]
+    ],
+    "spanMm": 0.08788403100951085,
+    "passedCandidates": 9,
+    "trianglePairsChecked": 263,
+    "triangulationsEnumerated": 14,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 8.510635381685057e-05
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 0.00024253072153547842
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 6.923920518652014e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ],
+        "areaMm2": 8.072727560757631e-05
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ],
+        "areaMm2": 8.09165689405842e-05
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 0.00024248146236635198
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 6.91899460173937e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 7.104970551401834e-05
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 7.123899884702623e-05
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 1.6855587228189146e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 9.759727922904788e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 1.9015992654476913e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 2.701131365880854e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 4.393569554681055e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 9.29344938657934e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 72
+          },
+          {
+            "node": "Terminal ICA perforator 2 left",
+            "face": 71
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 0.00011349916855079823,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 17002
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 4.685400238950663e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 5.722924328601252e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 2.0932344338446105e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 4.44559881443311e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 8.936094611342214e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 0.00010911781541562118,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 17002
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 1.9000142691688022e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 8.37684396428513e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 2.0182071407139388e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 0.00013028657264903604,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 0.00015597216959454917,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 17002
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 2.2811040366499804e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 left",
+            "face": 17002
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 2.957239034235349e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-41-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "Terminal ICA perforator 1 left"
+    ],
+    "boundary": [
+      [
+        -15.362043380737305,
+        -37.25349426269531,
+        86.3602294921875
+      ],
+      [
+        -15.340420722961426,
+        -37.2361946105957,
+        86.33860778808594
+      ],
+      [
+        -15.362043380737305,
+        -37.25349426269531,
+        86.36455535888672
+      ],
+      [
+        -15.37069320678711,
+        -37.26214599609375,
+        86.37753295898438
+      ]
+    ],
+    "spanMm": 0.05572312460475523,
+    "passedCandidates": 2,
+    "trianglePairsChecked": 34,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "areaMm2": 0.00014445538835153234
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 8.635623035181892e-05
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 5.989479542154187e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00011070553090952098,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 2.646143493027704e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 3.374985744201136e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-43-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "Terminal ICA perforator 1 left"
+    ],
+    "boundary": [
+      [
+        -15.202032089233398,
+        -37.2361946105957,
+        86.15697479248047
+      ],
+      [
+        -15.202032089233398,
+        -37.2361946105957,
+        86.15264892578125
+      ],
+      [
+        -15.154460906982422,
+        -37.25349426269531,
+        86.08345794677734
+      ],
+      [
+        -15.20068359375,
+        -37.23583984375,
+        86.15499877929688
+      ],
+      [
+        -15.200927734375,
+        -37.23583984375,
+        86.15548706054688
+      ],
+      [
+        -15.219330787658691,
+        -37.23187255859375,
+        86.17859649658203
+      ]
+    ],
+    "spanMm": 0.11716203807611054,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 268,
+    "triangulationsEnumerated": 14,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 0.00010948578350118662,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 3.015954105730768e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 2.5088713846716224e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 3.856608425461436e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 3.631386009625791e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 3.197001186501071e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 0.0001333005221158978,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 1.3085496456190751e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 1.0382977366470105e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 8.962583102446397e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.00010480617624883996,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 0.00010793277653858675,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 9.031137400011179e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 6.236339996044981e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 3.829301285607773e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 3.928637021376175e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 5.452858282410291e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 0.00015659206229320214,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 0.000156574342696202,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 1.9920122451863494e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 49
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-44-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "Terminal ICA perforator 1 left"
+    ],
+    "boundary": [
+      [
+        -14.964177131652832,
+        -37.72488021850586,
+        85.80667877197266
+      ],
+      [
+        -14.933905601501465,
+        -37.75082778930664,
+        85.73316192626953
+      ],
+      [
+        -14.964177131652832,
+        -37.72488021850586,
+        85.80235290527344
+      ],
+      [
+        -14.981475830078125,
+        -37.71190643310547,
+        85.83695220947266
+      ]
+    ],
+    "spanMm": 0.12062429897313015,
+    "passedCandidates": 2,
+    "trianglePairsChecked": 58,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "areaMm2": 0.0002784313172263269
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 0.00013300643786866658
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 8.623683261581795e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00019856893983790885,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 4.676960525284864e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 7.986237738841808e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-46-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "Terminal ICA perforator 1 left"
+    ],
+    "boundary": [
+      [
+        -14.847412109375,
+        -37.902191162109375,
+        85.38719177246094
+      ],
+      [
+        -14.838763236999512,
+        -37.91948699951172,
+        85.3482666015625
+      ],
+      [
+        -14.847412109375,
+        -37.902191162109375,
+        85.38286590576172
+      ],
+      [
+        -14.873360633850098,
+        -37.837318420410156,
+        85.52989959716797
+      ]
+    ],
+    "spanMm": 0.20233437758577483,
+    "passedCandidates": 2,
+    "trianglePairsChecked": 60,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "areaMm2": 0.0003742804911087851
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 0.0001929501562220069
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 4.182628729691926e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00012856645108437007,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 0.00015112386892508764,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.00024571404002441506,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-47-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "Terminal ICA perforator 1 left"
+    ],
+    "boundary": [
+      [
+        -14.802734375,
+        -37.6357421875,
+        85.087890625
+      ],
+      [
+        -14.802490234375,
+        -37.70068359375,
+        84.944580078125
+      ],
+      [
+        -14.80224609375,
+        -37.720703125,
+        84.900634765625
+      ],
+      [
+        -14.804165840148926,
+        -37.72920608520508,
+        84.88552856445312
+      ],
+      [
+        -14.804165840148926,
+        -37.72055435180664,
+        84.89850616455078
+      ],
+      [
+        -14.804165840148926,
+        -37.69893264770508,
+        84.94607543945312
+      ],
+      [
+        -14.804165840148926,
+        -37.634063720703125,
+        85.08879089355469
+      ],
+      [
+        -14.808490753173828,
+        -37.603790283203125,
+        85.15365600585938
+      ]
+    ],
+    "spanMm": 0.2960407963432204,
+    "passedCandidates": 57,
+    "trianglePairsChecked": 599,
+    "triangulationsEnumerated": 132,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            3,
+            4,
+            7
+          ],
+          [
+            2,
+            3,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0017729001571934536
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            3,
+            5,
+            7
+          ],
+          [
+            2,
+            3,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0016760544333414753
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            2,
+            4,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0013771039645765152
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            2,
+            5,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.001219780471710968
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            2,
+            5,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.001158095926956381
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            2,
+            6,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012800793545467144
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            2,
+            6,
+            7
+          ],
+          [
+            1,
+            2,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012183948097921275
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            3,
+            4,
+            7
+          ],
+          [
+            1,
+            3,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.001744081104181721
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            3,
+            5,
+            7
+          ],
+          [
+            1,
+            3,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0016472353803297427
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            1,
+            4,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0013757438246604593
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            1,
+            4,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.001436696858201972
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012137529047525038
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.001152068359997917
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012206073681937579
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0011520679512462655
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012130209847877782
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0010903657671966932
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0010286812224421062
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.001089390973026758
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0010277064282721712
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0010962454364680122
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.00102770601952052
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "areaMm2": 0.0010886590530620327
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            3,
+            4,
+            7
+          ],
+          [
+            0,
+            3,
+            7
+          ]
+        ],
+        "areaMm2": 0.0017665177843725825
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            3,
+            5,
+            7
+          ],
+          [
+            0,
+            3,
+            7
+          ]
+        ],
+        "areaMm2": 0.0016696720605206045
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            5,
+            6
+          ],
+          [
+            3,
+            6,
+            7
+          ],
+          [
+            0,
+            3,
+            7
+          ]
+        ],
+        "areaMm2": 0.0017079035778668563
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            0,
+            4,
+            7
+          ]
+        ],
+        "areaMm2": 0.0013760252853117225
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            0,
+            4,
+            7
+          ]
+        ],
+        "areaMm2": 0.0014369783188532353
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            7
+          ],
+          [
+            0,
+            4,
+            7
+          ]
+        ],
+        "areaMm2": 0.0016673064620116938
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012124651205394808
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0011507805757848938
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012193195839807348
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0011507801670332424
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012117332005747554
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0014296334332915793
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0011514898285654243
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0012124428621069373
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            5,
+            7
+          ]
+        ],
+        "areaMm2": 0.0014427710052653958
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            5,
+            6
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0007588208539821246
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005437121106911563
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.00048202756593656936
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            5,
+            6
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.000738023748493057
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005427373165212213
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.00048105277176663437
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005495917799624753
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.000481052363014983
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005420053965564958
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            5,
+            6
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0007787542898911968
+      },
+      {
+        "triangles": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005426983504243291
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0004810138056697421
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.000549552813865583
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.00048101339691809076
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005419664304596036
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0007598666631764275
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.00048172305845027265
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.0005426760919917855
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            6,
+            7
+          ]
+        ],
+        "areaMm2": 0.000773004235150244
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 1.5313319514319774e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 left",
+            "face": 76
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00018844762074158837,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 0.00015569865902028296,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 0.00015239447984826437,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          6
+        ],
+        "areaMm2": 0.00014466503242084036,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          7
+        ],
+        "areaMm2": 0.0004699042413722036,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 0.00025392569624290383,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 0.0002236707437401773,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 0.0002142769763286643,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          6
+        ],
+        "areaMm2": 0.00018892054331221282,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          7
+        ],
+        "areaMm2": 0.0006071341981253955,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 0.0002691543592366726,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 0.0002385952164027009,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          6
+        ],
+        "areaMm2": 0.00020524136727845553,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          7
+        ],
+        "areaMm2": 0.0007119948270561453,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 4.805785671590989e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          6
+        ],
+        "areaMm2": 0.00019225984570222512,
+        "contacts": [
+          {
+            "node": "ACA A1 left",
+            "face": 185
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 184
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 183
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          7
+        ],
+        "areaMm2": 0.0006913542740678428,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          6
+        ],
+        "areaMm2": 0.00014419680688918058,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          7
+        ],
+        "areaMm2": 0.000533308864957055,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          6,
+          7
+        ],
+        "areaMm2": 6.300177031978741e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 6.014582124710514e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 5.26672166944767e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 4.657019271767568e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          6
+        ],
+        "areaMm2": 2.925524979591458e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          7
+        ],
+        "areaMm2": 0.00012223914009566687,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 7.157517779951946e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 6.43345079851805e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          6
+        ],
+        "areaMm2": 0.0002082934142010638,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          7
+        ],
+        "areaMm2": 0.0004081015262346684,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 5.06523743557466e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          6
+        ],
+        "areaMm2": 0.0002026217453240437,
+        "contacts": [
+          {
+            "node": "ACA A1 left",
+            "face": 185
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 184
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 183
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          7
+        ],
+        "areaMm2": 0.0003768672310646589,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          6
+        ],
+        "areaMm2": 0.00015196522041349686,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          7
+        ],
+        "areaMm2": 0.00021708688764613884,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          6,
+          7
+        ],
+        "areaMm2": 0.00028441621787396107,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 1.810074881063509e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 7.105567307335594e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          6
+        ],
+        "areaMm2": 0.000259981091141322,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          7
+        ],
+        "areaMm2": 0.00037482726039783924,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 5.674980708419896e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          6
+        ],
+        "areaMm2": 0.00022700862466076577,
+        "contacts": [
+          {
+            "node": "ACA A1 left",
+            "face": 185
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 184
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 183
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          7
+        ],
+        "areaMm2": 0.00030865544757952473,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          6
+        ],
+        "areaMm2": 0.00017025495750519297,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          7
+        ],
+        "areaMm2": 0.0001474455072266119,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          6,
+          7
+        ],
+        "areaMm2": 0.00038114591492422996,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 6.547942757606506e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          6
+        ],
+        "areaMm2": 0.00026192596124019474,
+        "contacts": [
+          {
+            "node": "ACA A1 left",
+            "face": 185
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 184
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 183
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          7
+        ],
+        "areaMm2": 0.00034772512860925883,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          6
+        ],
+        "areaMm2": 0.0001964382827281952,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          7
+        ],
+        "areaMm2": 0.00029994788153263574,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          6,
+          7
+        ],
+        "areaMm2": 0.0004853975985177572,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          6
+        ],
+        "areaMm2": 8.250935934484005e-09,
+        "contacts": [
+          {
+            "node": "ACA A1 left",
+            "face": 184
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 183
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          7
+        ],
+        "areaMm2": 0.00011454790435142022,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          4,
+          6,
+          7
+        ],
+        "areaMm2": 0.00045820303251239004,
+        "contacts": [
+          {
+            "node": "ACA A1 left",
+            "face": 185
+          },
+          {
+            "node": "ACA A1 left",
+            "face": 183
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          5,
+          6,
+          7
+        ],
+        "areaMm2": 0.0003436564823670647,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-48-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "Terminal ICA perforator 1 left"
+    ],
+    "boundary": [
+      [
+        -14.760009765625,
+        -37.750732421875,
+        84.860595703125
+      ],
+      [
+        -14.756103515625,
+        -37.753662109375,
+        84.8583984375
+      ],
+      [
+        -14.760919570922852,
+        -37.75082778930664,
+        84.85958099365234
+      ],
+      [
+        -14.773893356323242,
+        -37.74217987060547,
+        84.86823272705078
+      ]
+    ],
+    "spanMm": 0.023345952330071394,
+    "passedCandidates": 2,
+    "trianglePairsChecked": 46,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "areaMm2": 1.9239670576183137e-05
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 1.5750833336572664e-05
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 3.6200707117573678e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 4.064515476837045e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 1.2130762624815295e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 1.517515509934609e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-86-loop-0",
+    "labels": [
+      "Medial posterior choroidal left",
+      "Medial posterior choroidal plexal representative left"
+    ],
+    "boundary": [
+      [
+        -3.8291015625,
+        -70.408447265625,
+        101.17784881591797
+      ],
+      [
+        -3.8291015625,
+        -70.409423828125,
+        101.17788696289062
+      ],
+      [
+        -3.8291015625,
+        -70.411376953125,
+        101.17796325683594
+      ]
+    ],
+    "spanMm": 0.002931921822177696,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 0,
+    "triangulationsEnumerated": 1,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 0.0,
+        "contacts": [],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-88-loop-0",
+    "labels": [
+      "ACA A1 left",
+      "ACA A2 left",
+      "Anterior communicating"
+    ],
+    "boundary": [
+      [
+        -2.2800326347351074,
+        -25.408329010009766,
+        83.48002624511719
+      ],
+      [
+        -2.236786365509033,
+        -25.41265296936035,
+        83.50164794921875
+      ],
+      [
+        -2.2800326347351074,
+        -25.408329010009766,
+        83.4843521118164
+      ],
+      [
+        -2.2843573093414307,
+        -25.382381439208984,
+        83.49300384521484
+      ]
+    ],
+    "spanMm": 0.057044550737477065,
+    "passedCandidates": 1,
+    "trianglePairsChecked": 38,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 0.0001509022244114491
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 9.400518485614107e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.0007118853717932999,
+        "contacts": [
+          {
+            "node": "ACA A2 left",
+            "face": 145
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 5.689703955530802e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.0006433342566495657,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-91-loop-0",
+    "labels": [
+      "ACA A2 left",
+      "Anterior communicating"
+    ],
+    "boundary": [
+      [
+        -1.246445655822754,
+        -25.6807804107666,
+        84.67794799804688
+      ],
+      [
+        -1.2248225212097168,
+        -25.65483283996582,
+        84.6520004272461
+      ],
+      [
+        -1.246445655822754,
+        -25.6807804107666,
+        84.67362213134766
+      ],
+      [
+        -1.2507703304290771,
+        -25.698078155517578,
+        84.6822738647461
+      ]
+    ],
+    "spanMm": 0.05882114533500546,
+    "passedCandidates": 2,
+    "trianglePairsChecked": 36,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "areaMm2": 0.0003712613424955895
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 0.00011162127822185808
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 7.305581971472726e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00021341785725648916,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 3.8565458507130816e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.00015784348523910038,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-97-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "ACA A2 right"
+    ],
+    "boundary": [
+      [
+        1.4694230556488037,
+        -26.351099014282227,
+        84.47469329833984
+      ],
+      [
+        1.5169939994812012,
+        -26.351099014282227,
+        84.50928497314453
+      ],
+      [
+        1.4694230556488037,
+        -26.351099014282227,
+        84.47036743164062
+      ],
+      [
+        1.4434752464294434,
+        -26.355422973632812,
+        84.45307159423828
+      ]
+    ],
+    "spanMm": 0.09264797700332426,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 42,
+    "triangulationsEnumerated": 2,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 0.00010289278088748688,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00014303841861829835,
+        "contacts": [
+          {
+            "node": "brain.straight-gyrus-gyrus-rectus.right",
+            "face": 59
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 5.689729390684215e-05,
+        "contacts": [
+          {
+            "node": "brain.straight-gyrus-gyrus-rectus.right",
+            "face": 59
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.00016249143930596854,
+        "contacts": [
+          {
+            "node": "brain.straight-gyrus-gyrus-rectus.right",
+            "face": 59
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 16164
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 16163
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-118-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        14.809326171875,
+        -38.028076171875,
+        85.004150390625
+      ],
+      [
+        14.81201171875,
+        -38.062255859375,
+        84.932861328125
+      ],
+      [
+        14.815237045288086,
+        -38.079498291015625,
+        84.89418029785156
+      ],
+      [
+        14.810912132263184,
+        -38.06220245361328,
+        84.93310546875
+      ],
+      [
+        14.810912132263184,
+        -38.02760314941406,
+        85.0022964477539
+      ],
+      [
+        14.806587219238281,
+        -37.99732971191406,
+        85.06716918945312
+      ]
+    ],
+    "spanMm": 0.19170720252457588,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 339,
+    "triangulationsEnumerated": 14,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 8.457032035000061e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 4.319937280198322e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 7.775903546303476e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 2.3648983821524665e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 0.00014546638551749945,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1683
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 0.00011783809736055794,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 8.144358368696206e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 7.816204305627125e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 5.4994082126925095e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 6.899619105659366e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 2.2914308401054197e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1683
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 0.0001245228852391694,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 0.00015936074385534984,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 4.259808222056237e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1683
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 8.147350330270854e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1683
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 0.00014775540150664514,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 13
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 0.00018334376940933714,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1683
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 0.0002521213072538635,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1683
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 0.00011453253922537404,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 0.000183310029580914,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 1684
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-119-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        14.845458984375,
+        -37.850341796875,
+        85.40411376953125
+      ],
+      [
+        14.8544921875,
+        -37.830322265625,
+        85.45099639892578
+      ],
+      [
+        14.85791015625,
+        -37.822265625,
+        85.47004699707031
+      ],
+      [
+        14.875781059265137,
+        -37.798397064208984,
+        85.52557373046875
+      ],
+      [
+        14.85848331451416,
+        -37.824344635009766,
+        85.4693603515625
+      ],
+      [
+        14.854158401489258,
+        -37.828670501708984,
+        85.45205688476562
+      ],
+      [
+        14.845508575439453,
+        -37.85029220581055,
+        85.40448760986328
+      ],
+      [
+        14.823885917663574,
+        -37.902191162109375,
+        85.28340148925781
+      ]
+    ],
+    "spanMm": 0.2685399688946333,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 977,
+    "triangulationsEnumerated": 132,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 6.570329810035831e-06,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.00017624121776471538,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 4.6794214500210386e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 3.2644160465666614e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          6
+        ],
+        "areaMm2": 2.6467142988734015e-06,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          7
+        ],
+        "areaMm2": 4.409408046094992e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 0.0002641709068717745,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 6.668167066069515e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 4.487881764330301e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          6
+        ],
+        "areaMm2": 3.699266178115412e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          7
+        ],
+        "areaMm2": 4.73292263019854e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 0.00023628371952544742,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 0.00023447741723520453,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          6
+        ],
+        "areaMm2": 7.225219081074027e-06,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          7
+        ],
+        "areaMm2": 0.0005670594536134357,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 9.282029648674273e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          6
+        ],
+        "areaMm2": 3.358306638030088e-06,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          7
+        ],
+        "areaMm2": 0.00015822445505047784,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          6
+        ],
+        "areaMm2": 2.9130575046291326e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          7
+        ],
+        "areaMm2": 6.60804967856422e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          6,
+          7
+        ],
+        "areaMm2": 6.820157603772221e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 8.161916122454208e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 1.9199548582706026e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 1.3177738690106461e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          6
+        ],
+        "areaMm2": 7.0385398707785135e-06,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          7
+        ],
+        "areaMm2": 1.0753730375932806e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 8.431901833455935e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 5.552551191321112e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          6
+        ],
+        "areaMm2": 0.0001743917176349775,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          7
+        ],
+        "areaMm2": 0.0006996362360371486,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 1.3755188509495826e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          6
+        ],
+        "areaMm2": 4.7362231416459093e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          7
+        ],
+        "areaMm2": 0.0001755819253268583,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          6
+        ],
+        "areaMm2": 3.23504871507105e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          7
+        ],
+        "areaMm2": 0.00011577546865300808,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          6,
+          7
+        ],
+        "areaMm2": 4.458910371628798e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 22
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 23
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 5.9874468949361286e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 6.868330599503615e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          6
+        ],
+        "areaMm2": 0.000262351788919349,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          7
+        ],
+        "areaMm2": 0.0007860857338277615,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 1.8620635962775475e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          6
+        ],
+        "areaMm2": 6.628964723531148e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          7
+        ],
+        "areaMm2": 0.00018812594563914943,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          6
+        ],
+        "areaMm2": 4.552641469689283e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          7
+        ],
+        "areaMm2": 0.00013532883804952782,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          6,
+          7
+        ],
+        "areaMm2": 4.6272594033605224e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 22
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 23
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 39
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 0.00010829844861674324,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          6
+        ],
+        "areaMm2": 0.00023310845793742484,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          7
+        ],
+        "areaMm2": 0.0007107695469571551,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          6
+        ],
+        "areaMm2": 0.00023389354532676068,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          7
+        ],
+        "areaMm2": 0.0008004281390080924,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          6,
+          7
+        ],
+        "areaMm2": 0.0005697790678941987,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 22
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 23
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          6
+        ],
+        "areaMm2": 9.304810635054738e-05,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          7
+        ],
+        "areaMm2": 0.00030481198698196013,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 25
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          6,
+          7
+        ],
+        "areaMm2": 0.00015128668871125175,
+        "contacts": [
+          {
+            "node": "brain.olfactory-sulcus.right",
+            "face": 36
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 22
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 23
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 24
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          5,
+          6,
+          7
+        ],
+        "areaMm2": 7.580851084622459e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-124-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        15.260673522949219,
+        -37.560543060302734,
+        86.26941680908203
+      ],
+      [
+        15.269323348999023,
+        -37.560543060302734,
+        86.27806091308594
+      ],
+      [
+        15.260673522949219,
+        -37.560543060302734,
+        86.26509094238281
+      ],
+      [
+        15.243374824523926,
+        -37.56919479370117,
+        86.24346923828125
+      ]
+    ],
+    "spanMm": 0.044099460076350516,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 62,
+    "triangulationsEnumerated": 2,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 1.870899723144248e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 62
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 6.481702170736556e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 62
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 4.18345898546283e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 62
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 6.997565625011048e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-125-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        15.334192276000977,
+        -37.530269622802734,
+        86.35590362548828
+      ],
+      [
+        15.360139846801758,
+        -37.517295837402344,
+        86.38185119628906
+      ],
+      [
+        15.334192276000977,
+        -37.530269622802734,
+        86.3515853881836
+      ],
+      [
+        15.308244705200195,
+        -37.543243408203125,
+        86.3299560546875
+      ]
+    ],
+    "spanMm": 0.07784271240234375,
+    "passedCandidates": 1,
+    "trianglePairsChecked": 38,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 0.0001252732132088818
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 6.26366066044409e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.0,
+        "contacts": [],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 6.26366066044409e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.0001252732132088818,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 52
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 53
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-126-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        15.334192276000977,
+        -37.21889877319336,
+        86.26509094238281
+      ],
+      [
+        15.368789672851562,
+        -37.22322082519531,
+        86.30400848388672
+      ],
+      [
+        15.334192276000977,
+        -37.21889877319336,
+        86.26941680908203
+      ],
+      [
+        15.325543403625488,
+        -37.21889877319336,
+        86.25643920898438
+      ]
+    ],
+    "spanMm": 0.06443412023312207,
+    "passedCandidates": 2,
+    "trianglePairsChecked": 56,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "areaMm2": 0.00011448181143375237
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 9.412045249098195e-05
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 7.541351799352309e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 3.2343060108638964e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 1.870693449745886e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 8.21387513251134e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-128-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        15.458740234375,
+        -37.27392578125,
+        86.419189453125
+      ],
+      [
+        15.45947265625,
+        -37.276123046875,
+        86.420654296875
+      ],
+      [
+        15.472580909729004,
+        -37.309715270996094,
+        86.44239807128906
+      ],
+      [
+        15.45947265625,
+        -37.276123046875,
+        86.42096710205078
+      ],
+      [
+        15.458740234375,
+        -37.27392578125,
+        86.41950225830078
+      ],
+      [
+        15.446632385253906,
+        -37.25349426269531,
+        86.39915466308594
+      ]
+    ],
+    "spanMm": 0.07552562512030837,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 299,
+    "triangulationsEnumerated": 14,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 2.7571088865830984e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 3.622473703703942e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 3.622473703703942e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 9.266406565669327e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 7.662850040760729e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 94
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 93
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 92
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 6.001564650603017e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 94
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 0.00014287525108851816,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 3.622473703703942e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 7.773589052966037e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 3.714510296308833e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 95
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 5.639747699465444e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 5.017612323247663e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 94
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 0.00013335930591343163,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 3.622473703703942e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 4.069276847139249e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 1.2089367563606842e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 95
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 96
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 2.9325322759459623e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 94
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 93
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 92
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 0.0001411141364705735,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 0.0001504242346635395,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 95
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 96
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 94
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 93
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 92
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 9.512614076550958e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 95
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 96
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-129-loop-0",
+    "labels": [
+      "ACA A1 right",
+      "Terminal ICA perforator 1 right"
+    ],
+    "boundary": [
+      [
+        15.4639310836792,
+        -37.39620590209961,
+        86.4596939086914
+      ],
+      [
+        15.468255996704102,
+        -37.37458419799805,
+        86.4596939086914
+      ],
+      [
+        15.472580909729004,
+        -37.361610412597656,
+        86.4596939086914
+      ],
+      [
+        15.472580909729004,
+        -37.352962493896484,
+        86.4596939086914
+      ],
+      [
+        15.4716796875,
+        -37.359619140625,
+        86.45849609375
+      ],
+      [
+        15.468994140625,
+        -37.373046875,
+        86.45947265625
+      ],
+      [
+        15.463623046875,
+        -37.398193359375,
+        86.461181640625
+      ],
+      [
+        15.459607124328613,
+        -37.40053176879883,
+        86.4596939086914
+      ]
+    ],
+    "spanMm": 0.04930674418728274,
+    "passedCandidates": 0,
+    "trianglePairsChecked": 649,
+    "triangulationsEnumerated": 132,
+    "candidates": [],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 1.87007481144974e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 0.0,
+        "contacts": [],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 1.4001242756801338e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 5.255907867397766e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          6
+        ],
+        "areaMm2": 1.643077075746733e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          7
+        ],
+        "areaMm2": 3.7391186197055504e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 3.74014962289948e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 66
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 87
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 86
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 3.227742526009477e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 1.3185304786468008e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          6
+        ],
+        "areaMm2": 2.672704473428191e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          7
+        ],
+        "areaMm2": 5.6085747928591445e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 2.8002485513602677e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 1.0511815734795531e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          6
+        ],
+        "areaMm2": 3.286154151493466e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          7
+        ],
+        "areaMm2": 7.478237239411101e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 1.0468947020072673e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          6
+        ],
+        "areaMm2": 2.6696680586414262e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          7
+        ],
+        "areaMm2": 6.244765170849993e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          6
+        ],
+        "areaMm2": 1.7473502830691015e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          5,
+          7
+        ],
+        "areaMm2": 3.9124142553525625e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          6,
+          7
+        ],
+        "areaMm2": 5.820763390665262e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 1.87007481144974e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 87
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 86
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 1.3044164825721759e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 2.1051684070950926e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          6
+        ],
+        "areaMm2": 2.3334552398669322e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          7
+        ],
+        "areaMm2": 6.186382961459458e-09,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 1.4001242756801338e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 5.255907867397766e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          6
+        ],
+        "areaMm2": 1.643077075746733e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          7
+        ],
+        "areaMm2": 3.7391186197055504e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 2.984103090087919e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          6
+        ],
+        "areaMm2": 6.492293809626041e-06,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          7
+        ],
+        "areaMm2": 2.608266278918837e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          6
+        ],
+        "areaMm2": 5.3575485936348795e-06,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          5,
+          7
+        ],
+        "areaMm2": 4.210822614891706e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          6,
+          7
+        ],
+        "areaMm2": 4.665887564726799e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 6.481559019100126e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 1.5538522740117163e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 87
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 86
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          6
+        ],
+        "areaMm2": 3.926399215424846e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 66
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 87
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 86
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          7
+        ],
+        "areaMm2": 5.6098120694514364e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 66
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 87
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 86
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 1.1414617258914039e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          6
+        ],
+        "areaMm2": 3.315247500945063e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          7
+        ],
+        "areaMm2": 3.9131642067828025e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          6
+        ],
+        "areaMm2": 1.943968558346442e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          5,
+          7
+        ],
+        "areaMm2": 6.311690376627932e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          6,
+          7
+        ],
+        "areaMm2": 6.998786065556318e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 1.1834295860419772e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          6
+        ],
+        "areaMm2": 3.3941407566138356e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 66
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          7
+        ],
+        "areaMm2": 3.667297702799858e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          6
+        ],
+        "areaMm2": 2.211998569141945e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "ACA A1 right",
+            "face": 66
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          5,
+          7
+        ],
+        "areaMm2": 4.5304784477633364e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 84
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          6,
+          7
+        ],
+        "areaMm2": 8.832377029973993e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          6
+        ],
+        "areaMm2": 2.453764761982523e-06,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          },
+          {
+            "node": "Terminal ICA perforator 1 right",
+            "face": 85
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          4,
+          5,
+          7
+        ],
+        "areaMm2": 2.9033136802665897e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          4,
+          6,
+          7
+        ],
+        "areaMm2": 7.597293746405324e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          5,
+          6,
+          7
+        ],
+        "areaMm2": 4.938236273594472e-05,
+        "contacts": [
+          {
+            "node": "ACA A1 right",
+            "face": 65
+          }
+        ],
+        "passed": false
+      }
+    ]
+  },
+  {
+    "id": "component-133-loop-0",
+    "labels": [
+      "MCA M1 right",
+      "Terminal ICA perforator 2 right"
+    ],
+    "boundary": [
+      [
+        17.20703125,
+        -40.113037109375,
+        85.6806640625
+      ],
+      [
+        17.207275390625,
+        -40.110595703125,
+        85.685791015625
+      ],
+      [
+        17.206758499145508,
+        -40.107749938964844,
+        85.6942367553711
+      ],
+      [
+        17.206758499145508,
+        -40.11207580566406,
+        85.68558502197266
+      ],
+      [
+        17.206758499145508,
+        -40.11207580566406,
+        85.68126678466797
+      ],
+      [
+        17.206758499145508,
+        -40.1207275390625,
+        85.6639633178711
+      ]
+    ],
+    "spanMm": 0.03293780688450726,
+    "passedCandidates": 9,
+    "trianglePairsChecked": 249,
+    "triangulationsEnumerated": 14,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 2.2907901754315563e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 1.987477623707734e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ],
+        "areaMm2": 4.0289429880133863e-05
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ],
+        "areaMm2": 4.059575555540224e-05
+      },
+      {
+        "triangles": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 2.1114522368479474e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 1.8081396851241256e-05
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 2.4850195898986554e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 1.8708159801169602e-05
+      },
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 1.9014485476437982e-05
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 3.94922001512644e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 3.8004701478534553e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 1.946217590433746e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 1.6165885640831402e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 6.61803888667781e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 5.271186217793163e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 9.20978273862139e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 2.1574963864026743e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 1.1348377697926204e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 6.289730188231057e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 6.460463078682414e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 3.5385151119787787e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 1.4491094909634858e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 141
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 140
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 3.384985993894038e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 1.6264686993567057e-05,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 141
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 140
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 8.41273860041775e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 9.340059477835894e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 9.340059477835894e-06,
+        "contacts": [
+          {
+            "node": "MCA M1 right",
+            "face": 6
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 1.8680118955671787e-05,
+        "contacts": [
+          {
+            "node": "MCA M1 right",
+            "face": 6
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 1.8680118955671787e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-134-loop-0",
+    "labels": [
+      "MCA M1 right",
+      "Terminal ICA perforator 2 right"
+    ],
+    "boundary": [
+      [
+        17.246826171875,
+        -39.921875,
+        86.03564453125
+      ],
+      [
+        17.246826171875,
+        -39.92138671875,
+        86.0361328125
+      ],
+      [
+        17.25865364074707,
+        -39.89152145385742,
+        86.08345794677734
+      ],
+      [
+        17.246826171875,
+        -39.92138671875,
+        86.0361557006836
+      ],
+      [
+        17.246826171875,
+        -39.921875,
+        86.0356674194336
+      ],
+      [
+        17.22838020324707,
+        -40.012611389160156,
+        85.87155151367188
+      ]
+    ],
+    "spanMm": 0.24593411687110292,
+    "passedCandidates": 5,
+    "trianglePairsChecked": 277,
+    "triangulationsEnumerated": 14,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 3.945406614401873e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ]
+        ],
+        "areaMm2": 3.932949074612528e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ],
+        "areaMm2": 3.74733974574117e-05
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 1.4384185461926388e-06
+      },
+      {
+        "triangles": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "areaMm2": 1.4384185461926388e-06
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 5.9030814111808744e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 5.587935447692871e-09,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          4
+        ],
+        "areaMm2": 5.587935447692871e-09,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          5
+        ],
+        "areaMm2": 1.900804096355411e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 5.727618581255158e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 131
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 130
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          4
+        ],
+        "areaMm2": 3.728081808441945e-07,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 131
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          5
+        ],
+        "areaMm2": 0.0006703102175534203,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          4
+        ],
+        "areaMm2": 5.587935447692871e-09,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          3,
+          5
+        ],
+        "areaMm2": 1.8086896376811745e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          4,
+          5
+        ],
+        "areaMm2": 1.059635525995155e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 3.6760714930209803e-07,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          4
+        ],
+        "areaMm2": 6.092093865129141e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 131
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          5
+        ],
+        "areaMm2": 0.0006687997604797676,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          4
+        ],
+        "areaMm2": 5.587935447692871e-09,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          3,
+          5
+        ],
+        "areaMm2": 1.065112035312356e-06,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          4,
+          5
+        ],
+        "areaMm2": 1.994825469782138e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          4
+        ],
+        "areaMm2": 5.8990475838015135e-06,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 131
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 130
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          3,
+          5
+        ],
+        "areaMm2": 0.0006696983403268208,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 131
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 130
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          2,
+          4,
+          5
+        ],
+        "areaMm2": 0.00067124873501745,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 132
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 131
+          }
+        ],
+        "passed": false
+      },
+      {
+        "triangle": [
+          3,
+          4,
+          5
+        ],
+        "areaMm2": 1.9013305995850165e-05,
+        "contacts": [],
+        "passed": true
+      }
+    ]
+  },
+  {
+    "id": "component-135-loop-0",
+    "labels": [
+      "MCA M1 right",
+      "Terminal ICA perforator 2 right"
+    ],
+    "boundary": [
+      [
+        17.48353385925293,
+        -39.48067855834961,
+        86.55916595458984
+      ],
+      [
+        17.50948143005371,
+        -39.45473098754883,
+        86.5807876586914
+      ],
+      [
+        17.48353385925293,
+        -39.48067855834961,
+        86.56349182128906
+      ],
+      [
+        17.45758628845215,
+        -39.51095199584961,
+        86.53754425048828
+      ]
+    ],
+    "spanMm": 0.08788572039429862,
+    "passedCandidates": 1,
+    "trianglePairsChecked": 55,
+    "triangulationsEnumerated": 2,
+    "candidates": [
+      {
+        "triangles": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "areaMm2": 0.0001656096834951099
+      }
+    ],
+    "triangleScreen": [
+      {
+        "triangle": [
+          0,
+          1,
+          2
+        ],
+        "areaMm2": 7.936971857656952e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          1,
+          3
+        ],
+        "areaMm2": 7.30538389496281e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          0,
+          2,
+          3
+        ],
+        "areaMm2": 8.623996491854036e-05,
+        "contacts": [],
+        "passed": true
+      },
+      {
+        "triangle": [
+          1,
+          2,
+          3
+        ],
+        "areaMm2": 0.0001461140164590912,
+        "contacts": [
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 116
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 114
+          },
+          {
+            "node": "Terminal ICA perforator 2 right",
+            "face": 115
+          }
+        ],
+        "passed": false
+      }
+    ]
+  }
+]

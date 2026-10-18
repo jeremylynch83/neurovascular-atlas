@@ -1,0 +1,9 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> inr-anatomy-atlas@0.9.102 dsa:test
+> node tests/dsa/validate-surfaces.mjs && node tests/dsa/validate-flow.mjs && node tests/dsa/validate-meningeal.mjs
+
+Invalid: []
+Closed and oriented DSA proxies: 828 meshes, 8971506 triangles. Source hashes match.
+Validated 579 selectable arterial courses, 2353 closed sections and directed injection routes. Geometry and generator hashes match.
+Both companion channels, declared lesser-wing drainage and downstream timing pass bilaterally. Selective frontal injections retain the pair; posterior-division injections do not reuse frontal channels.

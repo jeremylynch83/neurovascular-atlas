@@ -16,8 +16,9 @@ try {
  page.on('console',message=>{if(message.type()==='error')errors.push(message.text());if(message.type()==='warning'&&message.text().includes('resolve'))warnings.push(message.text());});
  page.on('response',response=>{if(response.url().includes('.glb')){loaded.push({url:response.url().split('/').pop(),status:response.status()});}else if(response.status()>=400)errors.push(response.url()+' '+response.status());});
  await page.goto('http://127.0.0.1:8788',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>!document.querySelector('.loading'),{},{timeout:180000});
+ await page.waitForFunction(()=>document.querySelector('[aria-label="Anatomical presets"]')?.disabled===false,{},{timeout:180000});
  assert.equal(await page.locator('.load-error').count(),0);
+ if(loaded.length<5)await page.waitForEvent('response',{predicate:r=>r.url().includes('brain-context.glb'),timeout:180000});
  assert.equal(loaded.length,5);assert(loaded.every(x=>x.status===200));
  assert.deepEqual(errors,[]);assert.deepEqual(warnings,[]);
  await page.getByRole('textbox',{name:'Search anatomy'}).fill('External carotid artery right');

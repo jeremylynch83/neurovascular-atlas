@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "guardCases": [
+    {
+      "case": "current-source-and-implementation",
+      "exitCode": 0,
+      "result": {
+        "status": "baseline-unchanged-reuse-recorded-exclusions",
+        "sourceAssetsChecked": 5,
+        "implementationFilesChecked": 4,
+        "reviewedCases": 14,
+        "changedAssets": [],
+        "appliesOnlyToRecordedSearchScopes": true,
+        "allCasesRemainOpen": true,
+        "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+      }
+    },
+    {
+      "case": "legacy-geometry-only-registry",
+      "exitCode": 2,
+      "result": {
+        "status": "baseline-changed-review-required",
+        "sourceAssetsChecked": 5,
+        "implementationFilesChecked": 0,
+        "reviewedCases": 25,
+        "changedAssets": [
+          {
+            "asset": "review-implementation",
+            "reason": "implementation-hashes-not-recorded"
+          }
+        ],
+        "appliesOnlyToRecordedSearchScopes": true,
+        "allCasesRemainOpen": true,
+        "policy": "Reuse these exclusions only while all five source asset hashes match. Changed source geometry invalidates the shortcut. Other repair methods and other regions are outside this review."
+      }
+    },
+    {
+      "case": "implementation-only-mismatch",
+      "exitCode": 2,
+      "result": {
+        "status": "baseline-changed-review-required",
+        "sourceAssetsChecked": 5,
+        "implementationFilesChecked": 4,
+        "reviewedCases": 14,
+        "changedAssets": [
+          {
+            "asset": "tools/repair/geometry.py",
+            "reason": "implementation-bytes-changed"
+          }
+        ],
+        "appliesOnlyToRecordedSearchScopes": true,
+        "allCasesRemainOpen": true,
+        "policy": "Reuse only these recorded search exclusions while all source assets and required validation code match. Legacy geometry-only exclusions and other search scopes require review. A different repair method remains outside these exclusions."
+      }
+    }
+  ],
+  "authoringTrialToolHashBefore": "4e94659103c782cc157a2e8cfc46028e48c376f8670b14f3f77100aed72ec979",
+  "authoringTrialToolHashAfter": "1011db6aa52c74a0b9568ae8a7042d9d15bbae08fcfea86943af5d395d9133d3",
+  "existingAuthoringTrialCacheAutomaticallyInvalidated": true
+}

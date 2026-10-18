@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><div id="root"></div><script type="module">
+import {AnatomyEngine} from '/src/engine.ts';
+window.atlasPackets=[];
+const visibility=AnatomyEngine.prototype.setVisibility;
+AnatomyEngine.prototype.setVisibility=function(states){visibility.call(this,states);window.atlasTestEngine=this;};
+const install=AnatomyEngine.prototype.installMeshes;
+AnatomyEngine.prototype.installMeshes=function(packets){const start=performance.now();install.call(this,packets);window.atlasPackets.push({at:start,ms:performance.now()-start,ids:packets.map(x=>x.id),vertices:packets.reduce((a,x)=>a+x.positions.length/3,0)});};
+await import('/src/main.tsx');
+</script></body></html>

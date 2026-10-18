@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests": [
+    "Held interaction blocks background work",
+    "Work resumes after the input settling period",
+    "Slow measured frames reduce background throughput",
+    "Recreated controls clear the old gesture lock",
+    "Hidden arrivals do not request a scene redraw",
+    "Unselected arrivals retain the existing selection data",
+    "Showing prepared anatomy requests a redraw",
+    "Disposal releases a pending frame wait"
+  ]
+}

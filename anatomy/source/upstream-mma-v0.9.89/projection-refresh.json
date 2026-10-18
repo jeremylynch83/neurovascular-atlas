@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "changes": [
+    {
+      "node": "MMA frontal left",
+      "id": "artery.eca.maxillary.mma.frontal.right.left",
+      "vertices": 16741,
+      "faces": 33482,
+      "capLoops": 2,
+      "volumeMm3": 38.772443303675246,
+      "closedAndOriented": true
+    },
+    {
+      "node": "MMA paramedian left",
+      "id": "artery.amendment.mma_paramedian.left",
+      "vertices": 3745,
+      "faces": 7490,
+      "capLoops": 2,
+      "volumeMm3": 2.355468926154574,
+      "closedAndOriented": true
+    },
+    {
+      "node": "MMA frontal",
+      "id": "artery.eca.maxillary.mma.frontal.right",
+      "vertices": 17268,
+      "faces": 34534,
+      "capLoops": 2,
+      "volumeMm3": 41.323629057409875,
+      "closedAndOriented": true
+    },
+    {
+      "node": "MMA paramedian right",
+      "id": "artery.amendment.mma_paramedian.right",
+      "vertices": 3662,
+      "faces": 7322,
+      "capLoops": 2,
+      "volumeMm3": 2.3598406479139595,
+      "closedAndOriented": true
+    }
+  ]
+}

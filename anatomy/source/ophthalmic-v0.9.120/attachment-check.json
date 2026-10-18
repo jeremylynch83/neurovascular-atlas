@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "node": "vein.inferior_ophthalmic.right",
+      "retainedSourceAttachments": [
+        {
+          "other": "vein.pterygoid_plexus.right",
+          "sharedCoordinates": 33,
+          "lostCoordinates": 0
+        }
+      ]
+    },
+    {
+      "node": "vein.superior_ophthalmic.right",
+      "retainedSourceAttachments": [
+        {
+          "other": "vein.angular.right",
+          "sharedCoordinates": 33,
+          "lostCoordinates": 0
+        },
+        {
+          "other": "vein.cavernous.right",
+          "sharedCoordinates": 44,
+          "lostCoordinates": 0
+        },
+        {
+          "other": "vein.sphenoparietal.right",
+          "sharedCoordinates": 31,
+          "lostCoordinates": 0
+        },
+        {
+          "other": "vein.superficial_middle_cerebral.right",
+          "sharedCoordinates": 14,
+          "lostCoordinates": 0
+        }
+      ]
+    },
+    {
+      "node": "vein.inferior_ophthalmic.left",
+      "retainedSourceAttachments": [
+        {
+          "other": "vein.pterygoid_plexus.left",
+          "sharedCoordinates": 45,
+          "lostCoordinates": 0
+        }
+      ]
+    },
+    {
+      "node": "vein.superior_ophthalmic.left",
+      "retainedSourceAttachments": [
+        {
+          "other": "vein.angular.left",
+          "sharedCoordinates": 22,
+          "lostCoordinates": 0
+        },
+        {
+          "other": "vein.cavernous.left",
+          "sharedCoordinates": 41,
+          "lostCoordinates": 0
+        },
+        {
+          "other": "vein.sphenoparietal.left",
+          "sharedCoordinates": 40,
+          "lostCoordinates": 0
+        },
+        {
+          "other": "vein.superficial_middle_cerebral.left",
+          "sharedCoordinates": 10,
+          "lostCoordinates": 0
+        }
+      ]
+    }
+  ]
+}

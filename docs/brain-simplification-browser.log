@@ -1,0 +1,45 @@
+1:29:41 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+1:29:42 PM [vite] (client) [optimizer] scanning dependencies...
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource-variable/source-serif-4/files/source-serif-4-latin-opsz-normal.woff2" is outside of Vite serving allow list.
+
+- /workspace/scratch/3da1329b983b/brain-work/inr-anatomy-atlas-v0.9.118
+- /workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/vite/dist/client
+
+Refer to docs https://vite.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-400-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-400-normal.woff" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff" is outside of Vite serving allow list.
+1:29:49 PM [vite] (client) dependencies optimized: three/examples/jsm/libs/meshopt_decoder.module.js, three/examples/jsm/loaders/GLTFLoader.js
+1:29:49 PM [vite] (client) optimized dependencies changed. reloading
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource-variable/source-serif-4/files/source-serif-4-latin-opsz-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-400-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-400-normal.woff" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff" is outside of Vite serving allow list.
+PASS Bone and all arterial files become interactive before deferred downloads complete
+PASS Loading indicators exist only in the expanded anatomy panel
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-500-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-500-normal.woff" is outside of Vite serving allow list.
+PASS Clicking pending anatomy shows inline Please wait and prioritises its geometry
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff" is outside of Vite serving allow list.
+PASS Background insertion pauses throughout a held rotation gesture
+PASS Late arrivals preserve camera, selection and hidden veins; a newer selection cancels stale queued focus
+PASS Full DSA becomes available after all vascular geometry is ready, while brain remains deferred
+PASS DSA preparation and a selective MMA run work before brain geometry loads
+PASS A queued brain selection completes automatically when its requested mesh arrives
+PASS All 1,250 runtime meshes match this release reference positions, normals and triangle indices
+PASS Anatomy panel remains usable without horizontal overflow at mobile width
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource-variable/source-serif-4/files/source-serif-4-latin-opsz-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-400-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-400-normal.woff" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-500-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/inter-tight/files/inter-tight-latin-500-normal.woff" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2" is outside of Vite serving allow list.
+The request id "/workspace/scratch/3da1329b983b/loading-review/inr-anatomy-atlas-v0.9.115/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff" is outside of Vite serving allow list.
+PASS A failed background file can be retried inline without losing loaded anatomy or DSA
+{"passed":true,"tests":[{"name":"Bone and all arterial files become interactive before deferred downloads complete","passed":true},{"name":"Loading indicators exist only in the expanded anatomy panel","passed":true},{"name":"Clicking pending anatomy shows inline Please wait and prioritises its geometry","passed":true},{"name":"Background insertion pauses throughout a held rotation gesture","passed":true},{"name":"Late arrivals preserve camera, selection and hidden veins; a newer selection cancels stale queued focus","passed":true},{"name":"Full DSA becomes available after all vascular geometry is ready, while brain remains deferred","passed":true},{"name":"DSA preparation and a selective MMA run work before brain geometry loads","passed":true},{"name":"A queued brain selection completes automatically when its requested mesh arrives","passed":true},{"name":"All 1,250 runtime meshes match this release reference positions, normals and triangle indices","passed":true},{"name":"Anatomy panel remains usable without horizontal overflow at mobile width","passed":true},{"name":"A failed background file can be retried inline without losing loaded anatomy or DSA","passed":true}],"errors":[],"timings":{"primaryReadyMs":17689.199999999255,"dragFrameMs":{"samples":62,"p50":16.700000000000728,"p95":3200,"maximum":11016.199999999997},"dragLongTasks":[],"cameraDriftMm":9.265477274311706e-12,"installPacketMs":{"samples":270,"p50":0.6000000014901161,"p95":7,"maximum":72.59999999962747},"packetVertexMaximum":73269,"allReadyMs":82600.79999999888},"scope":"All actual atlas geometry in Chromium with software WebGL, small rendering resolution. Interaction/background-arrival checks use the MMA preset, preserving hidden veins. Controlled delayed asset downloads. Frame times are diagnostics for this environment, not a mobile/GPU guarantee."}

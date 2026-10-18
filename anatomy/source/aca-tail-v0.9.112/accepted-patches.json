@@ -1,0 +1,52 @@
+{
+  "release": "0.9.112",
+  "changes": [
+    {
+      "node": "ACA A5 left",
+      "sourceVertices": 4473,
+      "sourceTriangles": 8424,
+      "changedVertices": 463,
+      "changedFaces": 998,
+      "maximumDisplacementMm": 0.7071069478988647,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 524,
+      "sourceBadEdges": 0,
+      "candidateBoundaryEdges": 524,
+      "candidateBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A4 left",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA falcine branch left",
+          "sharedCoordinates": 101,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Inferior internal parietal left",
+          "sharedCoordinates": 142,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Long callosal branch left",
+          "sharedCoordinates": 71,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Precuneal left",
+          "sharedCoordinates": 146,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": false
+    }
+  ]
+}

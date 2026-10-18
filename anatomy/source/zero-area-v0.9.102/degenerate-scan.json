@@ -1,0 +1,84 @@
+{
+  "release": "0.9.102",
+  "sourceAssets": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "407256884ea6fdb851a79534b55bf607e05ce2bb23f0e97e0b09f3cc868d88c9",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "28655768de590fcf8daed32145419ba9518149cb02fcd5d448e1991df37b2509"
+  },
+  "rows": [
+    {
+      "node": "vein.anterior_spinal",
+      "zeroAreaFaceIds": [
+        22443,
+        22453,
+        22461,
+        22466,
+        22493,
+        22494,
+        22502,
+        22642,
+        22649,
+        22654,
+        22661,
+        22666,
+        22676
+      ],
+      "boundaryBefore": 97,
+      "boundaryAfter": 88,
+      "newBoundaryEdges": 2,
+      "badBefore": 14,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "vein.inferior_ophthalmic.left",
+      "zeroAreaFaceIds": [
+        828,
+        829
+      ],
+      "boundaryBefore": 45,
+      "boundaryAfter": 45,
+      "newBoundaryEdges": 0,
+      "badBefore": 3,
+      "badAfter": 0,
+      "newBadEdges": 0,
+      "eligible": true
+    },
+    {
+      "node": "vein.pterygoid_plexus.left",
+      "zeroAreaFaceIds": [
+        5747,
+        5748,
+        5749,
+        5750,
+        5755
+      ],
+      "boundaryBefore": 181,
+      "boundaryAfter": 184,
+      "newBoundaryEdges": 3,
+      "badBefore": 9,
+      "badAfter": 6,
+      "newBadEdges": 0,
+      "eligible": false
+    },
+    {
+      "node": "vein.pterygoid_plexus.right",
+      "zeroAreaFaceIds": [
+        4929,
+        4930,
+        5062,
+        5063
+      ],
+      "boundaryBefore": 166,
+      "boundaryAfter": 166,
+      "newBoundaryEdges": 0,
+      "badBefore": 7,
+      "badAfter": 1,
+      "newBadEdges": 0,
+      "eligible": true
+    }
+  ]
+}

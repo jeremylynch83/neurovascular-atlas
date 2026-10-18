@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "reviewedVenousMeshes": 231,
+  "affectedEdges": 9,
+  "badEdgesBefore": 3,
+  "badEdgesAfter": 0,
+  "newBadEdges": 0,
+  "newBoundaryEdges": 0,
+  "restoredOppositePairedPortEdges": 2,
+  "pairedPortNeighbours": [
+    "vein.anterior_medullary",
+    "vein.anterior_spinal"
+  ],
+  "edges": [
+    {
+      "edge": [
+        [
+          -25.778076171875,
+          -27.408447265625,
+          44.0693359375
+        ],
+        [
+          -25.778076171875,
+          -27.408203125,
+          44.0693359375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -25.778076171875,
+          -27.408447265625,
+          44.0693359375
+        ],
+        [
+          -25.77783203125,
+          -27.408447265625,
+          44.0693359375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 0,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -25.778076171875,
+          -27.408447265625,
+          44.0693359375
+        ],
+        [
+          -25.777587890625,
+          -27.408447265625,
+          44.0693359375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -25.778076171875,
+          -27.408203125,
+          44.0693359375
+        ],
+        [
+          -25.77783203125,
+          -27.408447265625,
+          44.0693359375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 0,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -25.778076171875,
+          -27.408203125,
+          44.0693359375
+        ],
+        [
+          -25.777587890625,
+          -27.408447265625,
+          44.0693359375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          -25.77783203125,
+          -27.408447265625,
+          44.0693359375
+        ],
+        [
+          -25.777587890625,
+          -27.408447265625,
+          44.0693359375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": 0,
+      "candidateCount": 0,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          2.0161352157592773,
+          -74.58062744140625,
+          26.63818359375
+        ],
+        [
+          2.0185842514038086,
+          -74.57860565185547,
+          26.64990234375
+        ]
+      ],
+      "sourceCount": 4,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          2.0185842514038086,
+          -74.57860565185547,
+          26.64990234375
+        ],
+        [
+          2.0185842514038086,
+          -74.57860565185547,
+          26.64990234375
+        ]
+      ],
+      "sourceCount": 2,
+      "sourceBalance": -2,
+      "candidateCount": 0,
+      "candidateBalance": 0
+    },
+    {
+      "edge": [
+        [
+          2.0185842514038086,
+          -74.57860565185547,
+          26.64990234375
+        ],
+        [
+          2.01861572265625,
+          -74.57862091064453,
+          26.650634765625
+        ]
+      ],
+      "sourceCount": 4,
+      "sourceBalance": 0,
+      "candidateCount": 2,
+      "candidateBalance": 0
+    }
+  ]
+}

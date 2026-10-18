@@ -1,0 +1,121 @@
+{
+  "release": "0.9.119",
+  "baseline": "0.9.118",
+  "passed": true,
+  "change": "Lossless vessel index-buffer encoding; no vessel simplification.",
+  "files": [
+    {
+      "input": "complete-anastomoses.glb",
+      "output": "complete-anastomoses.glb",
+      "beforeBytes": 3278012,
+      "afterBytes": 2784864,
+      "beforeSha256": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+      "afterSha256": "6e7185d018a5272f35dbb706f9dbc66b7dd8e5623e3c7b61ad58579d9e4766b8",
+      "changedIndexBuffers": 161,
+      "rotationCandidatesRejected": 6,
+      "otherIndexBuffersRetained": 0,
+      "allDecodedBufferViewsExact": 501,
+      "allSceneAndAccessorMetadataExact": true,
+      "beforeGzipBytes": 1770231,
+      "afterGzipBytes": 1760833
+    },
+    {
+      "input": "complete-circulation.glb",
+      "output": "complete-circulation.glb",
+      "beforeBytes": 55566816,
+      "afterBytes": 47308232,
+      "beforeSha256": "66ca003079bbb972b594b48fc44b07bba6dd3557a65b82a6aac4987c4153bef7",
+      "afterSha256": "233ba0f42bf23292cb8641667119af87b6d3aae4b3e0f8a19c3107ea10fee494",
+      "changedIndexBuffers": 417,
+      "rotationCandidatesRejected": 182,
+      "otherIndexBuffersRetained": 0,
+      "allDecodedBufferViewsExact": 1797,
+      "allSceneAndAccessorMetadataExact": true,
+      "beforeGzipBytes": 31374874,
+      "afterGzipBytes": 30908231
+    },
+    {
+      "input": "venous.glb",
+      "output": "venous.glb",
+      "beforeBytes": 17595168,
+      "afterBytes": 17093288,
+      "beforeSha256": "2264c35c98c35d4c6279845b7b77ea043e5e34710437626fb2424cc78509a6bb",
+      "afterSha256": "c3ce4ec8ae3544485af5aaf064da361cd33b2b8074fc08aba018e876ffa747c8",
+      "changedIndexBuffers": 47,
+      "rotationCandidatesRejected": 184,
+      "otherIndexBuffersRetained": 0,
+      "allDecodedBufferViewsExact": 693,
+      "allSceneAndAccessorMetadataExact": true,
+      "beforeGzipBytes": 13824815,
+      "afterGzipBytes": 13719981
+    }
+  ],
+  "vesselTotals": {
+    "beforeBytes": 76439996,
+    "afterBytes": 67186384,
+    "beforeGzipBytes": 46969920,
+    "afterGzipBytes": 46389045
+  },
+  "rawBytesSaved": 9253612,
+  "gzipBytesSaved": 580875,
+  "allModels": {
+    "beforeBytes": 106411984,
+    "afterBytes": 97158372,
+    "beforeGzipBytes": 71579017,
+    "afterGzipBytes": 70998142
+  },
+  "changedIndexBuffers": 625,
+  "rotatingIndexStreamsRejected": 372,
+  "allDecodedVesselBufferViewsExact": 2991,
+  "geometry": {
+    "passed": true,
+    "release": "0.9.119",
+    "baseline": "0.9.118",
+    "meshes": 1250,
+    "triangles": 12608984,
+    "assets": [
+      {
+        "file": "models/craniofacial.glb",
+        "meshes": 60,
+        "allAttributesAndIndicesExact": true
+      },
+      {
+        "file": "models/complete-circulation.glb",
+        "meshes": 599,
+        "allAttributesAndIndicesExact": true
+      },
+      {
+        "file": "models/complete-anastomoses.glb",
+        "meshes": 167,
+        "allAttributesAndIndicesExact": true
+      },
+      {
+        "file": "models/venous.glb",
+        "meshes": 231,
+        "allAttributesAndIndicesExact": true
+      },
+      {
+        "file": "models/brain-context.glb",
+        "meshes": 193,
+        "allAttributesAndIndicesExact": true
+      }
+    ],
+    "allDecodedCoordinatesNormalsAndTriangleIndicesExact": true,
+    "allNativeJunctionsAndSmallBranchesExact": true,
+    "dsaRecipesAndFlowExactExceptContainerHashes": true,
+    "brainAndBoneAssetsByteExact": true,
+    "allBrainAnchorBindingsExact": true,
+    "anatomicalIssueRegisterExact": true,
+    "previousBrainSpatialReviewRequirementRetained": true
+  },
+  "verification": {
+    "build": "passed",
+    "brainAndVesselCourseBindings": "passed",
+    "fullDataBrowserScenarios": 11,
+    "allRuntimeMeshStreamsExact": 1250,
+    "selectiveDsaWithReencodedFiles": "passed",
+    "runtimeCodeUnchanged": true,
+    "priorBrainSpatialReviewRequirementRetained": true
+  },
+  "limits": "Raw model storage falls 12.11%; gzip vessel representations fall 1.24%. Hosting determines actual transfer encoding. Decoded mesh memory and triangle counts are unchanged. Brain simplification from v0.9.118 remains an experimental comparison candidate."
+}

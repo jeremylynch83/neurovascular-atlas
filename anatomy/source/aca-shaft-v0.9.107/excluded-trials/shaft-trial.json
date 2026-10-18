@@ -1,0 +1,109 @@
+[
+  {
+    "node": "ACA A4 left",
+    "changedFaces": 4032,
+    "movedVertices": 1984,
+    "maxDisplacementMm": 2.692582368850708,
+    "sourceNormalOppositeFaces": 0,
+    "attachments": [
+      {
+        "other": "ACA A3 left",
+        "coordinates": 64,
+        "allFixed": true
+      },
+      {
+        "other": "ACA A5 left",
+        "coordinates": 64,
+        "allFixed": true
+      },
+      {
+        "other": "Paracentral left",
+        "coordinates": 133,
+        "allFixed": true
+      },
+      {
+        "other": "Short callosal branch left",
+        "coordinates": 62,
+        "allFixed": true
+      }
+    ],
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.left",
+        "insideBefore": 22674,
+        "insideAfter": 7663,
+        "depthBefore": 2.5222861766815186,
+        "depthAfter": 2.5222861766815186,
+        "newInside": 0,
+        "extraDepth": 0.0
+      },
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.left",
+        "insideBefore": 2706,
+        "insideAfter": 2523,
+        "depthBefore": 1.6376407146453857,
+        "depthAfter": 1.6376407146453857,
+        "newInside": 186,
+        "extraDepth": 0.4045487344264984
+      }
+    ]
+  },
+  {
+    "node": "ACA A4 right",
+    "changedFaces": 4063,
+    "movedVertices": 1999,
+    "maxDisplacementMm": 2.692582368850708,
+    "sourceNormalOppositeFaces": 0,
+    "attachments": [
+      {
+        "other": "ACA A3 right",
+        "coordinates": 64,
+        "allFixed": true
+      },
+      {
+        "other": "ACA A5 right",
+        "coordinates": 64,
+        "allFixed": true
+      },
+      {
+        "other": "Paracentral right",
+        "coordinates": 134,
+        "allFixed": true
+      },
+      {
+        "other": "Short callosal branch right",
+        "coordinates": 62,
+        "allFixed": true
+      }
+    ],
+    "depth": [
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-anterior-part.right",
+        "insideBefore": 15586,
+        "insideAfter": 2189,
+        "depthBefore": 1.7159568071365356,
+        "depthAfter": 1.339721441268921,
+        "newInside": 0,
+        "extraDepth": 0.0
+      },
+      {
+        "target": "brain.cingulate-gyrus-and-sulcus-middle-posterior-part.right",
+        "insideBefore": 2962,
+        "insideAfter": 2223,
+        "depthBefore": 1.2589926719665527,
+        "depthAfter": 1.213535189628601,
+        "newInside": 0,
+        "extraDepth": 0.11366498470306396
+      },
+      {
+        "target": "brain.falx-cerebri",
+        "insideBefore": 0,
+        "insideAfter": 15,
+        "depthBefore": 0.0,
+        "depthAfter": 0.002376954536885023,
+        "newInside": 15,
+        "extraDepth": 0.002376954536885023
+      }
+    ]
+  }
+]

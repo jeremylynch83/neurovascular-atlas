@@ -1,0 +1,14 @@
+{
+  "status": "excluded-fixed-distal-attachment-inside-current-bone-model",
+  "distalAttachmentCoordinates": 141,
+  "sphenoidSignedDistanceMm": {
+    "minimum": -1.382149739082016,
+    "maximum": -0.7723281593189456,
+    "mean": -1.0742940793405045
+  },
+  "coordinatesInsideSphenoid": 141,
+  "reconstructionInstalled": false,
+  "reason": "A loft to the protected distal port crosses the current sphenoid volume. Do not interpret passage through the solid bone mesh as a verified canal. Wider course and independent canal/bone registration are required.",
+  "previousTrialFullReport": "regional-validation-ilt-rebuild.json",
+  "correctedOrientationTrial": "ilt-rebuild/construction.json"
+}

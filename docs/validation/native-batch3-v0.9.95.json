@@ -1,0 +1,269 @@
+{
+  "release": "0.9.95",
+  "baseline": "0.9.94",
+  "passedLocalNumericalGates": true,
+  "anatomicalAcceptance": false,
+  "failedNativeInterfaceRecordsBefore": 4,
+  "failedNativeInterfaceRecordsAfter": 1,
+  "interfaces": [
+    {
+      "branch": "Occipital mastoid left",
+      "neighbour": "Occipital left",
+      "matchedNativePortCoordinates": 108,
+      "pairedOppositeBoundaryEdges": 108
+    },
+    {
+      "branch": "ILT posterior branch left",
+      "neighbour": "ILT anterior branch left",
+      "matchedNativePortCoordinates": 64,
+      "pairedOppositeBoundaryEdges": 63
+    },
+    {
+      "branch": "ILT posterior branch left",
+      "neighbour": "Inferolateral trunk left",
+      "matchedNativePortCoordinates": 69,
+      "pairedOppositeBoundaryEdges": 68
+    }
+  ],
+  "regionalValidation": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "Occipital left",
+        "sourceVertices": 34784,
+        "sourceTriangles": 68773,
+        "candidateVertices": 34785,
+        "candidateTriangles": 68775,
+        "retainedSourceTriangles": 68771,
+        "changedTriangles": 4,
+        "protectedSourceAttachments": [
+          {
+            "other": "External carotid left",
+            "coordinates": 172,
+            "missing": 0
+          },
+          {
+            "other": "Occipital SCM branch left",
+            "coordinates": 84,
+            "missing": 0
+          },
+          {
+            "other": "Occipital descending left",
+            "coordinates": 120,
+            "missing": 0
+          },
+          {
+            "other": "Occipital lateral scalp left",
+            "coordinates": 153,
+            "missing": 0
+          },
+          {
+            "other": "Occipital medial scalp left",
+            "coordinates": 166,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "Occipital mastoid left",
+        "sourceVertices": 7348,
+        "sourceTriangles": 14623,
+        "candidateVertices": 8295,
+        "candidateTriangles": 16411,
+        "retainedSourceTriangles": 14083,
+        "changedTriangles": 2328,
+        "protectedSourceAttachments": [
+          {
+            "other": "Occipital mastoid dural branch left",
+            "coordinates": 71,
+            "missing": 0
+          }
+        ]
+      },
+      {
+        "node": "ILT posterior branch left",
+        "sourceVertices": 6627,
+        "sourceTriangles": 12896,
+        "candidateVertices": 6627,
+        "candidateTriangles": 12896,
+        "retainedSourceTriangles": 12504,
+        "changedTriangles": 392,
+        "protectedSourceAttachments": [
+          {
+            "other": "Posterior cavernous MMA\u2013posterolateral ILT left",
+            "coordinates": 141,
+            "missing": 0
+          }
+        ]
+      }
+    ],
+    "crossings": [],
+    "trianglePairsChecked": 72643,
+    "clearance": [
+      {
+        "node": "Occipital left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Occipital left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 19,
+        "minimumOpenTargetClearanceMarginMm": 8.17788156279679
+      },
+      {
+        "node": "Occipital mastoid left",
+        "target": "bone.occipital",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 7112,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "Occipital mastoid left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 7112,
+        "minimumOpenTargetClearanceMarginMm": 7.118390780711337
+      },
+      {
+        "node": "ILT posterior branch left",
+        "target": "brain.temporal-pole.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 1340,
+        "minimumOpenTargetClearanceMarginMm": 1.359488047243702
+      },
+      {
+        "node": "ILT posterior branch left",
+        "target": "bone.sphenoid",
+        "closedTarget": true,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 1340,
+        "minimumOpenTargetClearanceMarginMm": null
+      },
+      {
+        "node": "ILT posterior branch left",
+        "target": "bone.temporal.left",
+        "closedTarget": false,
+        "badSamplesOrFaceBalls": 0,
+        "ambiguousSamples": 0,
+        "sampleCount": 1340,
+        "minimumOpenTargetClearanceMarginMm": 6.3957538395740885
+      }
+    ],
+    "nativeNetworks": [
+      {
+        "id": "occipital-root",
+        "boundaryEdgesBefore": 872,
+        "boundaryEdgesAfter": 766,
+        "preExistingBadEdges": 0,
+        "candidateBadEdges": 0,
+        "newBadEdges": 0
+      },
+      {
+        "id": "ilt-complete",
+        "boundaryEdgesBefore": 800,
+        "boundaryEdgesAfter": 538,
+        "preExistingBadEdges": 2,
+        "candidateBadEdges": 2,
+        "newBadEdges": 0
+      }
+    ],
+    "issues": [],
+    "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+  },
+  "iltRootMaximumDisplacementMm": 0.526026725769043,
+  "posteromedialExcluded": {
+    "status": "excluded-fixed-distal-attachment-inside-current-bone-model",
+    "distalAttachmentCoordinates": 141,
+    "sphenoidSignedDistanceMm": {
+      "minimum": -1.382149739082016,
+      "maximum": -0.7723281593189456,
+      "mean": -1.0742940793405045
+    },
+    "coordinatesInsideSphenoid": 141,
+    "reconstructionInstalled": false,
+    "reason": "A loft to the protected distal port crosses the current sphenoid volume. Do not interpret passage through the solid bone mesh as a verified canal. Wider course and independent canal/bone registration are required.",
+    "previousTrialFullReport": "regional-validation-ilt-rebuild.json",
+    "correctedOrientationTrial": "ilt-rebuild/construction.json"
+  },
+  "export": {
+    "release": "0.9.95",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 596,
+    "otherAssetsByteExact": 4,
+    "candidateBuffersExact": true,
+    "retainedSourceCornerNormalsExact": true
+  },
+  "projection": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "Occipital left",
+        "id": "artery.eca.occipital.right.left",
+        "vertices": 34786,
+        "faces": 69578,
+        "capLoops": 6,
+        "volumeMm3": 294.38161186654435,
+        "closedAndOriented": true
+      },
+      {
+        "node": "Occipital mastoid left",
+        "id": "artery.eca.occipital_mastoid.right.left",
+        "vertices": 8295,
+        "faces": 16590,
+        "capLoops": 2,
+        "volumeMm3": 11.841722192278775,
+        "closedAndOriented": true
+      },
+      {
+        "node": "ILT posterior branch left",
+        "id": "artery.anterior.ilt_posterior_branch_left",
+        "vertices": 6627,
+        "faces": 13256,
+        "capLoops": 3,
+        "volumeMm3": 2.063477962753573,
+        "closedAndOriented": true
+      }
+    ]
+  },
+  "flow": {
+    "passed": true,
+    "unchangedCoursesReused": 594,
+    "repairedCoursesSelectable": true,
+    "graphAndVeinSitesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": [
+      "artery.eca.occipital.right.left",
+      "artery.anterior.ilt_posterior_branch_left",
+      "artery.eca.occipital_mastoid.right.left"
+    ]
+  },
+  "retention": {
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1247,
+    "catalogueStructureIdsRetained": 1666,
+    "relationshipsAndAssetBindingsUnchanged": true
+  },
+  "tests": {
+    "build": "passed",
+    "dsa": "passed: 828 closed proxies, 578 selectable courses, 2350 closed sections",
+    "repair": "19 tests passed"
+  },
+  "remainingReview": "The ILT posteromedial interface, wider anatomy for all 12 deferred segments, independent dural/canal targets, receiving lumens, right ACA and G05/G01/G03/G04/G07/G08 remain open."
+}

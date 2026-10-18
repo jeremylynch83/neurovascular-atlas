@@ -1,0 +1,136 @@
+{
+  "changes": [
+    {
+      "node": "MMA cavernous left",
+      "vertices": 2935,
+      "triangles": 5481,
+      "retainedOriginalCoordinates": 2198,
+      "protectedRemoteRimVertexCounts": [
+        107,
+        103
+      ],
+      "otherLabelAttachments": [
+        {
+          "other": "MMA anterior cavernous left",
+          "coordinatesRetained": 101
+        },
+        {
+          "other": "Middle meningeal left",
+          "coordinatesRetained": 107
+        }
+      ],
+      "selfIntersections": 0
+    },
+    {
+      "node": "MMA posterior cavernous left",
+      "vertices": 7751,
+      "triangles": 15171,
+      "retainedOriginalCoordinates": 3405,
+      "protectedRemoteRimVertexCounts": [
+        148
+      ],
+      "otherLabelAttachments": [
+        {
+          "other": "Posterior cavernous MMA\u2013posterolateral ILT left",
+          "coordinatesRetained": 148
+        }
+      ],
+      "selfIntersections": 0
+    }
+  ],
+  "contacts": [
+    {
+      "node": "MMA cavernous left",
+      "other": "bone.sphenoid",
+      "before": 217,
+      "after": 223
+    },
+    {
+      "node": "MMA cavernous left",
+      "other": "MMA anterior cavernous left",
+      "before": 404,
+      "after": 404
+    },
+    {
+      "node": "MMA cavernous left",
+      "other": "Middle meningeal left",
+      "before": 416,
+      "after": 420
+    },
+    {
+      "node": "MMA posterior cavernous left",
+      "other": "Accessory meningeal left",
+      "before": 60,
+      "after": 0
+    },
+    {
+      "node": "MMA posterior cavernous left",
+      "other": "Posterior cavernous MMA\u2013posterolateral ILT left",
+      "before": 1007,
+      "after": 997
+    }
+  ],
+  "envelopes": [
+    {
+      "node": "MMA cavernous left",
+      "changedTriangleSamples": 4387,
+      "maxOutsideScreenedUnionMm": 1.5677444581733181e-06
+    },
+    {
+      "node": "MMA posterior cavernous left",
+      "changedTriangleSamples": 25804,
+      "maxOutsideScreenedUnionMm": 1.5677444581733181e-06
+    }
+  ],
+  "passed": true,
+  "interface": {
+    "matchedCoordinates": 181,
+    "pairedOppositeBoundaryEdges": 181,
+    "combinedSelfIntersections": 0
+  },
+  "parentBoneDepthScreen": {
+    "support": 2.0,
+    "axialDisplacementMm": 0.15,
+    "maxTotalDisplacementMm": 0.14999960751929584,
+    "newSelfIntersections": 0,
+    "reversedFaces": 0,
+    "minimumPortBoneClearanceMm": 0.031909558219163456,
+    "newBoneInsideSamples": 0,
+    "maxBonePenetrationIncreaseMm": 0.0,
+    "boneContactsBefore": 217,
+    "boneContactsAfter": 223,
+    "maxLocalSampledDepthBeforeMm": 0.47084330032496435,
+    "maxLocalSampledDepthAfterMm": 0.47084330032496435
+  },
+  "union": {
+    "changes": [
+      {
+        "node": "MMA cavernous left",
+        "exteriorJunctionCapTriangles": 49,
+        "vertices": 2935,
+        "triangles": 5482,
+        "selfIntersections": 0,
+        "finalVertices": 2935,
+        "finalTriangles": 5481,
+        "finalSelfIntersections": 0,
+        "removedDegenerateTriangles": 1
+      },
+      {
+        "node": "MMA posterior cavernous left",
+        "exteriorJunctionCapTriangles": 0,
+        "vertices": 7751,
+        "triangles": 15172,
+        "selfIntersections": 0,
+        "finalVertices": 7751,
+        "finalTriangles": 15171,
+        "finalSelfIntersections": 0,
+        "removedDegenerateTriangles": 1
+      }
+    ],
+    "maxWeldDisplacementMm": 4.264961199760036e-06,
+    "sharedCoordinates": 181,
+    "nonManifoldEdges": 0,
+    "boundaryEdges": 356,
+    "combinedSelfIntersections": 0
+  }
+}

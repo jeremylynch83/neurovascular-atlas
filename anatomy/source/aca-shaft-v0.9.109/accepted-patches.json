@@ -1,0 +1,99 @@
+{
+  "release": "0.9.109",
+  "changes": [
+    {
+      "node": "ACA A5 left",
+      "sourceVertices": 4473,
+      "sourceTriangles": 8424,
+      "changedVertices": 1037,
+      "changedFaces": 2140,
+      "maximumDisplacementMm": 2.2360680103302,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 524,
+      "sourceBadEdges": 0,
+      "candidateBoundaryEdges": 524,
+      "candidateBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A4 left",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA falcine branch left",
+          "sharedCoordinates": 101,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Inferior internal parietal left",
+          "sharedCoordinates": 142,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Long callosal branch left",
+          "sharedCoordinates": 71,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Precuneal left",
+          "sharedCoordinates": 146,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": false
+    },
+    {
+      "node": "ACA A5 right",
+      "sourceVertices": 4311,
+      "sourceTriangles": 8172,
+      "changedVertices": 1032,
+      "changedFaces": 2130,
+      "maximumDisplacementMm": 2.2360680103302,
+      "sourceNormalOppositeFaces": 0,
+      "analyticalJacobianDeterminant": 1,
+      "indicesByteExact": true,
+      "allSourceCoordinatesWeldPartitionsRetained": true,
+      "allBoundaryVerticesFixed": true,
+      "sourceBoundaryEdges": 456,
+      "sourceBadEdges": 0,
+      "candidateBoundaryEdges": 456,
+      "candidateBadEdges": 0,
+      "newCoordinateWelds": 0,
+      "reviewedArterialMeshesForWelds": 766,
+      "attachments": [
+        {
+          "other": "ACA A4 right",
+          "sharedCoordinates": 64,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "ACA falcine branch right",
+          "sharedCoordinates": 32,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Inferior internal parietal right",
+          "sharedCoordinates": 140,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Long callosal branch right",
+          "sharedCoordinates": 72,
+          "allPositionsFixed": true
+        },
+        {
+          "other": "Precuneal right",
+          "sharedCoordinates": 148,
+          "allPositionsFixed": true
+        }
+      ],
+      "replayedBuffersByteExact": false
+    }
+  ]
+}

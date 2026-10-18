@@ -1,0 +1,186 @@
+{
+  "release": "0.9.94",
+  "scope": "Four remaining records require bounded collar reconstruction or coupled regional reconstruction, rather than the small seam operation. No excluded geometry installed.",
+  "sourceHashes": {
+    "models/brain-context.glb": "e773a26cbce6a44aa19904fa7c73744b760274ce6d448e4a615eb12203a7db1b",
+    "models/complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6",
+    "models/complete-circulation.glb": "5a8761de475ca74cf4659105bf7cc9dc4dd07d9fe579679d51455bee7d7a4e2e",
+    "models/craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "models/venous.glb": "cf0fb00820b6dfd73f24f86474ef23c9380904ec10b010d6e24482208e6b7065"
+  },
+  "records": [
+    {
+      "node": "Occipital mastoid left",
+      "parent": "Occipital left",
+      "candidateStatus": "excluded-from-local-batch",
+      "simpleSnapOutcome": "registration-or-rim-reconstruction-required",
+      "nativeChildBoundaryLoops": [
+        {
+          "vertices": 71,
+          "centre": [
+            -50.290848745426665,
+            -94.3246899457045,
+            46.62796713600696
+          ]
+        }
+      ],
+      "selectedParentPortVertices": 106,
+      "parentPortCentre": [
+        -39.11108520795714,
+        -102.48521999143205,
+        26.93256961174731
+      ],
+      "sourcePortToChildVertexDistanceMm": {
+        "min": 0.13074412581870712,
+        "median": 0.5206099362283252,
+        "max": 0.8242033398240641
+      },
+      "parentPortCentreToChildSurfaceMm": 0.4737597547046586,
+      "exactSharedCoordinates": 0,
+      "reason": "Only the distal child boundary is open. A proximal cap must be reopened and a collar reconstructed; no compatible bounded native rim is available."
+    },
+    {
+      "node": "ILT posterior branch left",
+      "parent": "ILT anterior branch left",
+      "candidateStatus": "excluded-from-local-batch",
+      "simpleSnapOutcome": "registration-or-rim-reconstruction-required",
+      "nativeChildBoundaryLoops": [
+        {
+          "vertices": 131,
+          "centre": [
+            -32.70896713606274,
+            -35.26680528480588,
+            56.99872166873845
+          ]
+        },
+        {
+          "vertices": 141,
+          "centre": [
+            -23.86863067302298,
+            -44.0110077553607,
+            50.789039611816406
+          ]
+        },
+        {
+          "vertices": 88,
+          "centre": [
+            -23.493897394700483,
+            -40.856727383353494,
+            52.93764491514726
+          ]
+        }
+      ],
+      "selectedParentPortVertices": 144,
+      "parentPortCentre": [
+        -32.757003943125405,
+        -34.71808942159017,
+        57.18944885995653
+      ],
+      "sourcePortToChildVertexDistanceMm": {
+        "min": 0.0061176993550532905,
+        "median": 0.25810057957009014,
+        "max": 0.7522129449170543
+      },
+      "parentPortCentreToChildSurfaceMm": 0.29645922869848396,
+      "exactSharedCoordinates": 0,
+      "reason": "Coupled collector reconstruction is required: source boundaries are mismatched and the regional four-label network retains a non-manifold and a misoriented edge."
+    },
+    {
+      "node": "ILT posterior branch left",
+      "parent": "ILT posteromedial ramus left",
+      "candidateStatus": "excluded-from-local-batch",
+      "simpleSnapOutcome": "registration-or-rim-reconstruction-required",
+      "nativeChildBoundaryLoops": [
+        {
+          "vertices": 131,
+          "centre": [
+            -32.70896713606274,
+            -35.26680528480588,
+            56.99872166873845
+          ]
+        },
+        {
+          "vertices": 141,
+          "centre": [
+            -23.86863067302298,
+            -44.0110077553607,
+            50.789039611816406
+          ]
+        },
+        {
+          "vertices": 88,
+          "centre": [
+            -23.493897394700483,
+            -40.856727383353494,
+            52.93764491514726
+          ]
+        }
+      ],
+      "selectedParentPortVertices": 88,
+      "parentPortCentre": [
+        -30.7040903785012,
+        -41.50471197475087,
+        54.105683543465354
+      ],
+      "sourcePortToChildVertexDistanceMm": {
+        "min": 1.6325253876543888,
+        "median": 1.751623855256776,
+        "max": 1.8469919422425412
+      },
+      "parentPortCentreToChildSurfaceMm": 1.7413848802393976,
+      "exactSharedCoordinates": 0,
+      "reason": "Coupled collector reconstruction is required: source boundaries are mismatched and the regional four-label network retains a non-manifold and a misoriented edge."
+    },
+    {
+      "node": "ILT posterior branch left",
+      "parent": "Inferolateral trunk left",
+      "candidateStatus": "excluded-from-local-batch",
+      "simpleSnapOutcome": "registration-or-rim-reconstruction-required",
+      "nativeChildBoundaryLoops": [
+        {
+          "vertices": 131,
+          "centre": [
+            -32.70896713606274,
+            -35.26680528480588,
+            56.99872166873845
+          ]
+        },
+        {
+          "vertices": 141,
+          "centre": [
+            -23.86863067302298,
+            -44.0110077553607,
+            50.789039611816406
+          ]
+        },
+        {
+          "vertices": 88,
+          "centre": [
+            -23.493897394700483,
+            -40.856727383353494,
+            52.93764491514726
+          ]
+        }
+      ],
+      "selectedParentPortVertices": 149,
+      "parentPortCentre": [
+        -32.600432248723585,
+        -34.8026476354407,
+        57.21624768660372
+      ],
+      "sourcePortToChildVertexDistanceMm": {
+        "min": 0.10698550040380767,
+        "median": 0.3068678969520783,
+        "max": 0.7522129449170543
+      },
+      "parentPortCentreToChildSurfaceMm": 0.3979370776079866,
+      "exactSharedCoordinates": 0,
+      "reason": "Coupled collector reconstruction is required: source boundaries are mismatched and the regional four-label network retains a non-manifold and a misoriented edge."
+    }
+  ],
+  "iltRegionalSourceTopology": {
+    "nonManifoldEdges": 1,
+    "misorientedEdges": 1,
+    "boundaryEdges": 800
+  }
+}

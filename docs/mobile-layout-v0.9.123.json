@@ -1,0 +1,99 @@
+{
+  "release": "0.9.123",
+  "baseline": "0.9.122",
+  "change": "Single-row mobile header with centred scalable logo",
+  "validation": {
+    "errors": [],
+    "checks": [
+      {
+        "width": 180,
+        "passed": true
+      },
+      {
+        "width": 200,
+        "passed": true
+      },
+      {
+        "width": 220,
+        "passed": true
+      },
+      {
+        "width": 240,
+        "passed": true
+      },
+      {
+        "width": 259,
+        "passed": true
+      },
+      {
+        "width": 260,
+        "passed": true
+      },
+      {
+        "width": 280,
+        "passed": true
+      },
+      {
+        "width": 320,
+        "passed": true
+      },
+      {
+        "width": 360,
+        "passed": true
+      },
+      {
+        "width": 380,
+        "passed": true
+      },
+      {
+        "width": 393,
+        "passed": true
+      },
+      {
+        "width": 480,
+        "passed": true
+      },
+      {
+        "width": 559,
+        "passed": true
+      },
+      {
+        "width": 560,
+        "passed": true
+      },
+      {
+        "width": 680,
+        "passed": true
+      },
+      {
+        "width": 681,
+        "passed": true
+      },
+      {
+        "width": 768,
+        "passed": true
+      },
+      {
+        "width": 980,
+        "passed": true
+      },
+      {
+        "width": 1024,
+        "passed": true
+      },
+      {
+        "width": 1440,
+        "passed": true
+      },
+      {
+        "width": 240,
+        "height": 520,
+        "deepTreeAndSearch": true,
+        "passed": true
+      }
+    ]
+  },
+  "productionBuild": "passed",
+  "allFiveModelsUnchanged": true,
+  "descriptionsGraphAndDsaDataUnchanged": true
+}

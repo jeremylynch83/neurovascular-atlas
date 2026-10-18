@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "release": "0.9.117",
+  "meshes": 1250,
+  "triangles": 12957034,
+  "assetChecks": [
+    {
+      "file": "models/craniofacial.glb",
+      "meshes": 60,
+      "allAttributesAndTriangleOrderExact": true
+    },
+    {
+      "file": "models/complete-circulation.glb",
+      "meshes": 599,
+      "allAttributesAndTriangleOrderExact": true
+    },
+    {
+      "file": "models/complete-anastomoses.glb",
+      "meshes": 167,
+      "allAttributesAndTriangleOrderExact": true
+    },
+    {
+      "file": "models/venous.glb",
+      "meshes": 231,
+      "allAttributesAndTriangleOrderExact": true
+    },
+    {
+      "file": "models/brain-context.glb",
+      "meshes": 193,
+      "allAttributesAndTriangleOrderExact": true
+    }
+  ],
+  "allDecodedAttributesAndTriangleOrderExact": true,
+  "anatomicalContractsExactExceptAssetHashes": true,
+  "dsaRecipesAndFlowExactExceptAssetHashes": true,
+  "anatomicalIssueRegisterByteExact": true,
+  "deferredCasesAndReviewImplementationExact": true
+}

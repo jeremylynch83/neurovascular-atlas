@@ -1,0 +1,46 @@
+{
+  "sourceSha256": "61984203322f10565db44a91eef2374d2cef0c4026630aca9e271a41031f1cfd",
+  "sha256": "fd52886a04838f2b248165f214c30c2cda743c6111f9f19994ef1d4467dd2ae9",
+  "changes": [
+    {
+      "node": "MMA cavernous left",
+      "vertices": 2935,
+      "triangles": 5481,
+      "positionSha256": "af75a3824a7ca61d487bbc18f0125b6e129d16a38a0a4fba7d21bff68aaf384c",
+      "indexSha256": "be4f052b8760b19ee5782e22319dc941ae4b24d27c356f02461ef0e82305a83f",
+      "bounds": [
+        [
+          -27.890501022338867,
+          -48.59267807006836,
+          49.11650085449219
+        ],
+        [
+          -15.57395076751709,
+          -41.17161178588867,
+          61.627662658691406
+        ]
+      ],
+      "positionEncoding": "lossless meshopt Float32"
+    },
+    {
+      "node": "MMA posterior cavernous left",
+      "vertices": 7750,
+      "triangles": 15171,
+      "positionSha256": "0869b1b7363cddd0d680f17c4d12f29ddec4d3d5a7e28509a52c89034fc1f33b",
+      "indexSha256": "ac1a030e390d45c46d51ca235fd3df75376999224944f4e42d9fb413991ded11",
+      "bounds": [
+        [
+          -25.369211196899414,
+          -47.59926986694336,
+          51.40985107421875
+        ],
+        [
+          -17.097925186157227,
+          -45.83174133300781,
+          58.81232833862305
+        ]
+      ],
+      "positionEncoding": "lossless meshopt Float32"
+    }
+  ]
+}

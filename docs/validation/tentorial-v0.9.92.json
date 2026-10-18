@@ -1,0 +1,480 @@
+{
+  "release": "0.9.92",
+  "baseline": "0.9.91",
+  "scope": "Seven added wall triangles close four small native gaps in the bilateral tentorial marginal labels. No source coordinate, normal or triangle is changed.",
+  "anatomicalAcceptance": false,
+  "failedNativeInterfaceRecordsBefore": 8,
+  "failedNativeInterfaceRecordsAfter": 6,
+  "deferredSegmentsRetained": 12,
+  "patches": {
+    "release": "0.9.92",
+    "changes": [
+      {
+        "node": "Tentorial marginal left",
+        "passed": true,
+        "sourceVerticesUnmoved": 16173,
+        "sourceTrianglesRetained": 32205,
+        "appendedVertices": [
+          {
+            "index": 16173,
+            "coordinate": [
+              -15.621521949768066,
+              -50.6252555847168,
+              66.57504272460938
+            ],
+            "normalSource": "Dorsal meningeal left"
+          }
+        ],
+        "newTriangles": 4,
+        "patches": [
+          {
+            "boundaryCoordinates": [
+              [
+                -15.669092178344727,
+                -50.633907318115234,
+                66.59233856201172
+              ],
+              [
+                -15.656118392944336,
+                -50.63822937011719,
+                66.59233856201172
+              ],
+              [
+                -15.630170822143555,
+                -50.646881103515625,
+                66.59233856201172
+              ],
+              [
+                -15.660443305969238,
+                -50.70742416381836,
+                66.6485595703125
+              ],
+              [
+                -15.621521949768066,
+                -50.6252555847168,
+                66.57504272460938
+              ],
+              [
+                -15.725313186645508,
+                -50.642555236816406,
+                66.61396026611328
+              ]
+            ],
+            "triangles": [
+              [
+                16173,
+                14288,
+                14292
+              ],
+              [
+                16173,
+                14292,
+                14291
+              ],
+              [
+                16173,
+                14291,
+                14295
+              ],
+              [
+                14295,
+                14328,
+                16173
+              ]
+            ],
+            "areaMm2": 0.0007532824932963067,
+            "maximumSpanMm": 0.11692422316289008
+          }
+        ],
+        "closedBoundaryEdges": 6,
+        "maximumDisplacementMm": 0.0,
+        "combinedNonManifoldEdges": 0,
+        "combinedMisorientedEdges": 0
+      },
+      {
+        "node": "Tentorial marginal right",
+        "passed": true,
+        "sourceVerticesUnmoved": 15263,
+        "sourceTrianglesRetained": 30407,
+        "appendedVertices": [
+          {
+            "index": 15263,
+            "coordinate": [
+              15.109312057495117,
+              -51.6674919128418,
+              65.55010223388672
+            ],
+            "normalSource": "Meningohypophyseal trunk right"
+          },
+          {
+            "index": 15264,
+            "coordinate": [
+              15.269323348999023,
+              -51.702091217041016,
+              65.32954406738281
+            ],
+            "normalSource": "Dorsal meningeal right"
+          },
+          {
+            "index": 15265,
+            "coordinate": [
+              15.403386116027832,
+              -51.84912872314453,
+              65.25170135498047
+            ],
+            "normalSource": "Dorsal meningeal right"
+          }
+        ],
+        "newTriangles": 3,
+        "patches": [
+          {
+            "boundaryCoordinates": [
+              [
+                15.200128555297852,
+                -51.70641326904297,
+                65.66254425048828
+              ],
+              [
+                15.269323348999023,
+                -51.676143646240234,
+                65.56307983398438
+              ],
+              [
+                15.109312057495117,
+                -51.6674919128418,
+                65.55010223388672
+              ]
+            ],
+            "triangles": [
+              [
+                13366,
+                13363,
+                15263
+              ]
+            ],
+            "areaMm2": 0.008839208528620444,
+            "maximumSpanMm": 0.16076966132899698
+          },
+          {
+            "boundaryCoordinates": [
+              [
+                15.308244705200195,
+                -51.684791564941406,
+                65.43766021728516
+              ],
+              [
+                15.373114585876465,
+                -51.74101257324219,
+                65.3554916381836
+              ],
+              [
+                15.269323348999023,
+                -51.702091217041016,
+                65.32954406738281
+              ]
+            ],
+            "triangles": [
+              [
+                13362,
+                13358,
+                15264
+              ]
+            ],
+            "areaMm2": 0.005850692005016212,
+            "maximumSpanMm": 0.11883004075098054
+          },
+          {
+            "boundaryCoordinates": [
+              [
+                15.502853393554688,
+                -51.7972297668457,
+                65.39009094238281
+              ],
+              [
+                15.403386116027832,
+                -51.84912872314453,
+                65.25170135498047
+              ],
+              [
+                15.373114585876465,
+                -51.74101257324219,
+                65.3554916381836
+              ]
+            ],
+            "triangles": [
+              [
+                13360,
+                15265,
+                13358
+              ]
+            ],
+            "areaMm2": 0.010656287007305334,
+            "maximumSpanMm": 0.17815419968359741
+          }
+        ],
+        "closedBoundaryEdges": 9,
+        "maximumDisplacementMm": 0.0,
+        "combinedNonManifoldEdges": 0,
+        "combinedMisorientedEdges": 0
+      }
+    ]
+  },
+  "nativeValidation": {
+    "release": "0.9.92",
+    "passed": true,
+    "method": "Only seven faces are added. Every source face and coordinate is unchanged; test all new disjoint triangle pairs against all named meshes.",
+    "changes": [
+      {
+        "node": "Tentorial marginal left",
+        "passed": true,
+        "sourcePositionsAndFacesExact": true,
+        "newDisjointSelfIntersections": 0,
+        "newCrossingObjects": [],
+        "fullSceneNamedMeshesScreened": 1250,
+        "nearbyChecks": [
+          {
+            "other": "Dorsal meningeal left",
+            "disjointTrianglePairsChecked": 0,
+            "crossings": 0
+          },
+          {
+            "other": "Tentorial marginal left",
+            "disjointTrianglePairsChecked": 26,
+            "crossings": 0
+          }
+        ],
+        "interfaces": [
+          {
+            "parent": "Dorsal meningeal left",
+            "sharedSourceCoordinatesBefore": 15,
+            "sharedSourceCoordinatesAfter": 16,
+            "restoredCoordinates": [
+              [
+                -15.621521949768066,
+                -50.6252555847168,
+                66.57504272460938
+              ]
+            ]
+          },
+          {
+            "parent": "Meningohypophyseal trunk left",
+            "sharedSourceCoordinatesBefore": 11,
+            "sharedSourceCoordinatesAfter": 11,
+            "restoredCoordinates": []
+          }
+        ],
+        "patchSampleCount": 28
+      },
+      {
+        "node": "Tentorial marginal right",
+        "passed": true,
+        "sourcePositionsAndFacesExact": true,
+        "newDisjointSelfIntersections": 0,
+        "newCrossingObjects": [],
+        "fullSceneNamedMeshesScreened": 1250,
+        "nearbyChecks": [
+          {
+            "other": "Dorsal meningeal right",
+            "disjointTrianglePairsChecked": 0,
+            "crossings": 0
+          },
+          {
+            "other": "Meningohypophyseal trunk right",
+            "disjointTrianglePairsChecked": 1,
+            "crossings": 0
+          },
+          {
+            "other": "Tentorial marginal right",
+            "disjointTrianglePairsChecked": 0,
+            "crossings": 0
+          }
+        ],
+        "interfaces": [
+          {
+            "parent": "Dorsal meningeal right",
+            "sharedSourceCoordinatesBefore": 11,
+            "sharedSourceCoordinatesAfter": 13,
+            "restoredCoordinates": [
+              [
+                15.269323348999023,
+                -51.702091217041016,
+                65.32954406738281
+              ],
+              [
+                15.403386116027832,
+                -51.84912872314453,
+                65.25170135498047
+              ]
+            ]
+          },
+          {
+            "parent": "Meningohypophyseal trunk right",
+            "sharedSourceCoordinatesBefore": 7,
+            "sharedSourceCoordinatesAfter": 9,
+            "restoredCoordinates": [
+              [
+                15.109312057495117,
+                -51.6674919128418,
+                65.55010223388672
+              ],
+              [
+                15.269323348999023,
+                -51.702091217041016,
+                65.32954406738281
+              ]
+            ]
+          }
+        ],
+        "patchSampleCount": 21
+      }
+    ]
+  },
+  "exportValidation": {
+    "release": "0.9.92",
+    "passed": true,
+    "arterialMeshesChecked": 599,
+    "unchangedArterialMeshes": 597,
+    "otherAssetsByteExact": 4,
+    "allExistingPositionsNormalsAndFacesExact": true,
+    "newVerticesCopyParentCoordinatesAndNormals": true
+  },
+  "tissueSampling": [
+    {
+      "node": "Tentorial marginal left",
+      "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.left",
+      "patchMinimumSignedDistanceMm": 1.640829241280267,
+      "boundaryMinimumSignedDistanceMm": 1.640829241280267,
+      "patchInsideSamples": 0,
+      "sampleCount": 28
+    },
+    {
+      "node": "Tentorial marginal left",
+      "target": "brain.petroclinoid-fold.anterior.left",
+      "patchMinimumSignedDistanceMm": 3.444782276947276,
+      "boundaryMinimumSignedDistanceMm": 3.444782276947276,
+      "patchInsideSamples": 0,
+      "sampleCount": 28
+    },
+    {
+      "node": "Tentorial marginal left",
+      "target": "bone.occipital",
+      "patchMinimumSignedDistanceMm": 15.039209306917892,
+      "boundaryMinimumSignedDistanceMm": 15.039209306917892,
+      "patchInsideSamples": 0,
+      "sampleCount": 28
+    },
+    {
+      "node": "Tentorial marginal left",
+      "target": "bone.parietal.left",
+      "patchMinimumSignedDistanceMm": 42.45910393222098,
+      "boundaryMinimumSignedDistanceMm": 42.45910393222098,
+      "patchInsideSamples": 0,
+      "sampleCount": 28
+    },
+    {
+      "node": "Tentorial marginal left",
+      "target": "bone.sphenoid",
+      "patchMinimumSignedDistanceMm": 7.550585623410122,
+      "boundaryMinimumSignedDistanceMm": 7.550585623410122,
+      "patchInsideSamples": 0,
+      "sampleCount": 28
+    },
+    {
+      "node": "Tentorial marginal left",
+      "target": "bone.temporal.left",
+      "patchMinimumSignedDistanceMm": 13.369139079422954,
+      "boundaryMinimumSignedDistanceMm": 13.369139079422954,
+      "patchInsideSamples": 0,
+      "sampleCount": 28
+    },
+    {
+      "node": "Tentorial marginal right",
+      "target": "brain.medial-occipitotemporal-gyrus-parahippocampal.right",
+      "patchMinimumSignedDistanceMm": 3.077863454529565,
+      "boundaryMinimumSignedDistanceMm": 3.077863454529565,
+      "patchInsideSamples": 0,
+      "sampleCount": 21
+    },
+    {
+      "node": "Tentorial marginal right",
+      "target": "bone.occipital",
+      "patchMinimumSignedDistanceMm": 12.97490785056102,
+      "boundaryMinimumSignedDistanceMm": 12.97490785056102,
+      "patchInsideSamples": 0,
+      "sampleCount": 21
+    },
+    {
+      "node": "Tentorial marginal right",
+      "target": "bone.parietal.right",
+      "patchMinimumSignedDistanceMm": 45.00316041769603,
+      "boundaryMinimumSignedDistanceMm": 45.00316041769603,
+      "patchInsideSamples": 0,
+      "sampleCount": 21
+    },
+    {
+      "node": "Tentorial marginal right",
+      "target": "bone.sphenoid",
+      "patchMinimumSignedDistanceMm": 5.616201031286879,
+      "boundaryMinimumSignedDistanceMm": 5.616201031286879,
+      "patchInsideSamples": 0,
+      "sampleCount": 21
+    },
+    {
+      "node": "Tentorial marginal right",
+      "target": "bone.temporal.right",
+      "patchMinimumSignedDistanceMm": 12.309502619913037,
+      "boundaryMinimumSignedDistanceMm": 12.309502619913037,
+      "patchInsideSamples": 0,
+      "sampleCount": 21
+    }
+  ],
+  "projectionRefresh": {
+    "passed": true,
+    "changes": [
+      {
+        "node": "Tentorial marginal left",
+        "id": "artery.anterior.tentorial_marginal_left",
+        "vertices": 16174,
+        "faces": 32350,
+        "capLoops": 3,
+        "volumeMm3": 8.517739150725573,
+        "closedAndOriented": true
+      },
+      {
+        "node": "Tentorial marginal right",
+        "id": "artery.anterior.tentorial_marginal_right",
+        "vertices": 15266,
+        "faces": 30532,
+        "capLoops": 2,
+        "volumeMm3": 8.35245114429193,
+        "closedAndOriented": true
+      }
+    ]
+  },
+  "flowRefresh": {
+    "passed": true,
+    "unchangedEntriesReused": 595,
+    "bothChangedCoursesSelectable": true,
+    "graphAndVeinSitesUnchanged": true,
+    "generatorUnchanged": true,
+    "changedEdgeSources": []
+  },
+  "integrationRetention": {
+    "baseline": "0.9.91",
+    "release": "0.9.92",
+    "runtimeSourceFilesByteExact": 21,
+    "namedMeshesRetained": 1250,
+    "unchangedNamedMeshes": 1248,
+    "catalogueStructureIdsRetained": true,
+    "structuralRelationshipsRetained": true
+  },
+  "releaseChecks": {
+    "productionBuildPassed": true,
+    "courseUnitTestsPassed": 14,
+    "closedDSAProxies": 828,
+    "projectionTriangles": 8968924,
+    "selectableCourses": 578,
+    "closedInjectionSections": 2350,
+    "meningealDrainagePassed": true
+  }
+}

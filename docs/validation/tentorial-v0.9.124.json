@@ -1,0 +1,271 @@
+{
+  "release": "0.9.124",
+  "baseline": "0.9.123",
+  "implementationChecksPassed": true,
+  "clinicalAnatomicalAcceptance": false,
+  "geometry": {
+    "passed": true,
+    "changedMeshCount": 4,
+    "unchangedMeshCount": 1246,
+    "changedMeshes": [
+      "Davidoff and Schechter artery left",
+      "Davidoff and Schechter artery right",
+      "Wollschlaeger and Wollschlaeger artery left",
+      "Wollschlaeger and Wollschlaeger artery right"
+    ],
+    "parentInterfaces": [
+      {
+        "node": "Wollschlaeger and Wollschlaeger artery right",
+        "exactParentSharedCoordinates": 225
+      },
+      {
+        "node": "Davidoff and Schechter artery right",
+        "exactParentSharedCoordinates": 140
+      },
+      {
+        "node": "Wollschlaeger and Wollschlaeger artery left",
+        "exactParentSharedCoordinates": 80
+      },
+      {
+        "node": "Davidoff and Schechter artery left",
+        "exactParentSharedCoordinates": 136
+      }
+    ],
+    "namesAndAnatomicalGraphExact": true,
+    "descriptionsChanged": 4,
+    "reusedFlowEntries": 593,
+    "regeneratedFlowEntries": {
+      "artery.amendment.wollschlaeger_and_wollschlaeger_artery.right": {
+        "selectable": true,
+        "lengthMm": 47.708936
+      },
+      "artery.amendment.davidoff_and_schechter_artery.left": {
+        "selectable": true,
+        "lengthMm": 60.307647
+      },
+      "artery.amendment.davidoff_and_schechter_artery.right": {
+        "selectable": true,
+        "lengthMm": 59.974256
+      },
+      "artery.amendment.wollschlaeger_and_wollschlaeger_artery.left": {
+        "selectable": true,
+        "lengthMm": 46.860474
+      }
+    },
+    "unchangedAssets": [
+      "brain-context.glb",
+      "craniofacial.glb",
+      "venous.glb",
+      "complete-anastomoses.glb"
+    ]
+  },
+  "newSelfIntersectionCheck": {
+    "passed": true,
+    "results": [
+      {
+        "node": "Davidoff and Schechter artery left",
+        "changedFaces": 24504,
+        "nonAdjacentCandidatesChecked": 60132,
+        "crossingPairs": []
+      },
+      {
+        "node": "Davidoff and Schechter artery right",
+        "changedFaces": 23933,
+        "nonAdjacentCandidatesChecked": 57928,
+        "crossingPairs": []
+      },
+      {
+        "node": "Wollschlaeger and Wollschlaeger artery left",
+        "changedFaces": 9453,
+        "nonAdjacentCandidatesChecked": 22662,
+        "crossingPairs": []
+      },
+      {
+        "node": "Wollschlaeger and Wollschlaeger artery right",
+        "changedFaces": 9359,
+        "nonAdjacentCandidatesChecked": 21819,
+        "crossingPairs": []
+      }
+    ]
+  },
+  "spatialCheck": {
+    "scope": "Changed regions against all named current source meshes; original schematic collateral geometry retained. Native parent junction coordinates exact.",
+    "results": [
+      {
+        "node": "Davidoff and Schechter artery left",
+        "boundary": 174,
+        "oldBoundary": 174,
+        "bad": 1,
+        "oldBad": 1,
+        "crossings": [
+          {
+            "other": "brain.hippocampus.left",
+            "count": 61,
+            "sourceCount": 66,
+            "positions": [
+              [
+                -23.01464080810547,
+                -73.01883697509766,
+                79.4727554321289
+              ],
+              [
+                -23.21171760559082,
+                -73.30175018310547,
+                79.27889251708984
+              ],
+              [
+                -23.036264419555664,
+                -73.20636749267578,
+                79.59346771240234
+              ],
+              [
+                -22.971357345581055,
+                -73.0316390991211,
+                79.4407958984375
+              ],
+              [
+                -23.006622314453125,
+                -73.06680297851562,
+                79.53460693359375
+              ],
+              [
+                -23.204126358032227,
+                -73.23589324951172,
+                79.23649597167969
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Davidoff and Schechter artery right",
+        "boundary": 185,
+        "oldBoundary": 185,
+        "bad": 0,
+        "oldBad": 0,
+        "crossings": [
+          {
+            "other": "brain.hippocampus.right",
+            "count": 68,
+            "sourceCount": 180,
+            "positions": [
+              [
+                23.826934814453125,
+                -72.9420394897461,
+                79.58641815185547
+              ],
+              [
+                24.006086349487305,
+                -72.8512191772461,
+                79.22490692138672
+              ],
+              [
+                23.947046279907227,
+                -72.65536499023438,
+                79.34650421142578
+              ],
+              [
+                23.82453727722168,
+                -72.7908706665039,
+                79.60739135742188
+              ],
+              [
+                23.99953269958496,
+                -72.66016387939453,
+                79.33695220947266
+              ],
+              [
+                24.006296157836914,
+                -72.88983917236328,
+                79.23100280761719
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Wollschlaeger and Wollschlaeger artery left",
+        "boundary": 135,
+        "oldBoundary": 135,
+        "bad": 0,
+        "oldBad": 0,
+        "crossings": []
+      },
+      {
+        "node": "Wollschlaeger and Wollschlaeger artery right",
+        "boundary": 405,
+        "oldBoundary": 405,
+        "bad": 4,
+        "oldBad": 4,
+        "crossings": []
+      }
+    ],
+    "remainingReferenceMismatch": "PCA inlet region overlaps the registered hippocampal meshes. Original parent junction coordinates and brain geometry are held fixed. This overlap remains open; no full brain clearance or clinical anatomical acceptance is claimed."
+  },
+  "dsa": {
+    "closedOrientedProxies": 828,
+    "selectableArterialCourses": 579,
+    "closedFlowSections": 2355,
+    "fourCorrectedBranchesRemainSelectable": true,
+    "meningealCompanionAndTimingChecks": "passed",
+    "flowRetention": {
+      "passed": true,
+      "regenerated": 4,
+      "reused": 593,
+      "unchangedGeometryAndGraphProof": "proof.json",
+      "reboundGuidePointsUnchanged": true,
+      "generatorHash": "4a8bf29f90a9edfd714d72df7b1b40c95908bd5fa4250240f9230dd3a0a9a24e"
+    }
+  },
+  "descriptions": {
+    "release": "0.9.124",
+    "references": [
+      "https://doi.org/10.3174/ajnr.A3519",
+      "https://pubmed.ncbi.nlm.nih.gov/23705581/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7015213/"
+    ],
+    "entries": [
+      {
+        "id": "artery.amendment.wollschlaeger_and_wollschlaeger_artery.right",
+        "before": "The artery of Wollschlaeger and Wollschlaeger: this dural branch arises from the lateral pontomesencephalic segment of the [SCA](#structure-artery.posterior.sca_right). It runs through the ambient cistern to supply the medial tentorium.",
+        "after": "The artery of Wollschlaeger and Wollschlaeger is a variable medial dural-tentorial branch of the [superior cerebellar artery](#structure-artery.posterior.sca_right). It passes through the ambient cistern beneath the tentorium and enters the tentorial dura near the posterior part of the incisura. Its medial tentorial course supplies the inferior tentorial surface towards the straight sinus region. It may enlarge as a feeder of a tentorial dural arteriovenous fistula.",
+        "reason": "Correct infratentorial course and dural territory; distinguish PCA origin from falcotentorial destination."
+      },
+      {
+        "id": "artery.amendment.wollschlaeger_and_wollschlaeger_artery.left",
+        "before": "The artery of Wollschlaeger and Wollschlaeger: this dural branch arises from the lateral pontomesencephalic segment of the [SCA](#structure-artery.posterior.sca_left). It runs through the ambient cistern to supply the medial tentorium.",
+        "after": "The artery of Wollschlaeger and Wollschlaeger is a variable medial dural-tentorial branch of the [superior cerebellar artery](#structure-artery.posterior.sca_left). It passes through the ambient cistern beneath the tentorium and enters the tentorial dura near the posterior part of the incisura. Its medial tentorial course supplies the inferior tentorial surface towards the straight sinus region. It may enlarge as a feeder of a tentorial dural arteriovenous fistula.",
+        "reason": "Correct infratentorial course and dural territory; distinguish PCA origin from falcotentorial destination."
+      },
+      {
+        "id": "artery.amendment.davidoff_and_schechter_artery.right",
+        "before": "Meningeal branch of Davidoff and Schechter: this eponymous branch is named after the mentors of those who first described it. It is a dural artery arising from the PCA near the falcotentorial junction to supply the falx cerebri. Often too small to be seen angiographically, it is more frequently seen in dural arteriovenous fistulas.",
+        "after": "The artery of Davidoff and Schechter is a variable dural branch of the [posterior cerebral artery](#structure-artery.posterior.pca_p2_p3_right), usually arising near the P1-P2 junction or from proximal P2. It passes posterolaterally through the ambient cistern, approaches the deep surface near the free tentorial edge and supplies the inferior posteromedial tentorium towards the falcotentorial junction. It may continue superiorly into the falx and can enlarge as a feeder of a dural arteriovenous fistula.",
+        "reason": "Correct infratentorial course and dural territory; distinguish PCA origin from falcotentorial destination."
+      },
+      {
+        "id": "artery.amendment.davidoff_and_schechter_artery.left",
+        "before": "Meningeal branch of Davidoff and Schechter: this eponymous branch is named after the mentors of those who first described it. It is a dural artery arising from the PCA near the falcotentorial junction to supply the falx cerebri. Often too small to be seen angiographically, it is more frequently seen in dural arteriovenous fistulas.",
+        "after": "The artery of Davidoff and Schechter is a variable dural branch of the [posterior cerebral artery](#structure-artery.posterior.pca_p2_p3_left), usually arising near the P1-P2 junction or from proximal P2. It passes posterolaterally through the ambient cistern, approaches the deep surface near the free tentorial edge and supplies the inferior posteromedial tentorium towards the falcotentorial junction. It may continue superiorly into the falx and can enlarge as a feeder of a dural arteriovenous fistula.",
+        "reason": "Correct infratentorial course and dural territory; distinguish PCA origin from falcotentorial destination."
+      }
+    ]
+  },
+  "deferredSchematicOverlays": [
+    "artery.connection.basal_tentorial_sca_dural.right",
+    "artery.connection.mma_tentorial_pca_dural.right",
+    "artery.connection.apa_tentorial_sca_dural.right",
+    "artery.connection.occipital_tentorial_pca_dural.right",
+    "artery.connection.basal_tentorial_sca_dural.left",
+    "artery.connection.mma_tentorial_pca_dural.left",
+    "artery.connection.apa_tentorial_sca_dural.left",
+    "artery.connection.occipital_tentorial_pca_dural.left"
+  ],
+  "visualReview": "Actual accepted geometry inspected in superior and inferior oblique views. Internal review screenshots are not included as deliverables.",
+  "productionBuild": "passed",
+  "references": [
+    "https://doi.org/10.3174/ajnr.A3519",
+    "https://pubmed.ncbi.nlm.nih.gov/23705581/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7015213/"
+  ]
+}

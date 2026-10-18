@@ -1,0 +1,19 @@
+{
+  "release": "0.9.120",
+  "passed": true,
+  "totalMeshes": 1250,
+  "unchangedMeshesByteExact": 1246,
+  "changedNodes": [
+    "vein.inferior_ophthalmic.right",
+    "vein.superior_ophthalmic.right",
+    "vein.inferior_ophthalmic.left",
+    "vein.superior_ophthalmic.left"
+  ],
+  "otherFourAssetsByteExact": true,
+  "exportedCoordinatesAndIndicesExact": true,
+  "changedNormalsUnitLength": true,
+  "localCrossings": 0,
+  "selfCrossings": 0,
+  "dsaProxiesClosedAndOriented": true,
+  "limits": "Reference teaching reconstruction; no globe, optic nerve or extraocular muscle fit certification. Existing remote network defects retained."
+}

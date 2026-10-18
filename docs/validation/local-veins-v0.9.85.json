@@ -1,0 +1,5109 @@
+{
+  "release": "0.9.85",
+  "scope": "Batch 3 local venous fitting and regional review, not full anatomical acceptance",
+  "anatomicalAcceptance": false,
+  "assetHashes": {
+    "complete-circulation.glb": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+    "venous.glb": "89f79f357f03f3ecca91282c46bbfbcb729aa3baaef59f45645ed345d82be65d",
+    "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+    "brain-context.glb": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+    "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+  },
+  "reviewedStructures": 20,
+  "correctedStructures": 3,
+  "before": {
+    "release": "0.9.85",
+    "units": "mm",
+    "assetHashes": {
+      "brain-context.glb": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+      "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "complete-circulation.glb": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+      "venous.glb": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+      "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+    },
+    "structures": [
+      {
+        "id": "vein.superior_petrosal.left",
+        "topology": {
+          "boundaryEdges": 396,
+          "nonManifoldEdges": 1,
+          "degenerateFaces": 1,
+          "components": 2,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.temporal.left",
+            "system": "bone",
+            "triangleContacts": 126,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival left",
+            "system": "artery",
+            "triangleContacts": 117,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival MHT branch left",
+            "system": "artery",
+            "triangleContacts": 125,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sigmoid.left",
+            "system": "vein",
+            "triangleContacts": 235,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.cavernous.left",
+            "system": "vein",
+            "triangleContacts": 251,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.superior_petrosal_vein.left",
+            "system": "vein",
+            "triangleContacts": 404,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.tentorium-cerebelli.left",
+            "system": "brain",
+            "triangleContacts": 958,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.anterior.left",
+            "system": "brain",
+            "triangleContacts": 35,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.posterior.left",
+            "system": "brain",
+            "triangleContacts": 33,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.left",
+        "topology": {
+          "boundaryEdges": 203,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 1,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 3
+        },
+        "contacts": [
+          {
+            "other": "bone.occipital",
+            "system": "bone",
+            "triangleContacts": 46,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.temporal.left",
+            "system": "bone",
+            "triangleContacts": 55,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.internal_jugular.left",
+            "system": "vein",
+            "triangleContacts": 258,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.basilar_plexus",
+            "system": "vein",
+            "triangleContacts": 548,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.cpa_inferior_petrosal_bridge.left",
+            "system": "vein",
+            "triangleContacts": 234,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral.left",
+        "topology": {
+          "boundaryEdges": 145,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.suboccipital_plexus.left",
+            "system": "vein",
+            "triangleContacts": 270,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.deep_cervical.left",
+            "system": "vein",
+            "triangleContacts": 744,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.vertebral_periarterial_plexus.left",
+            "system": "vein",
+            "triangleContacts": 1541,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral_periarterial_plexus.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.vertebral.left",
+            "system": "vein",
+            "triangleContacts": 1541,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_alveolar.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.mandible",
+            "system": "bone",
+            "triangleContacts": 50,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.left",
+            "system": "vein",
+            "triangleContacts": 49,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.infraorbital.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.maxilla.left",
+            "system": "bone",
+            "triangleContacts": 100,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.left",
+            "system": "vein",
+            "triangleContacts": 58,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.central_retinal.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_ophthalmic.left",
+            "system": "vein",
+            "triangleContacts": 47,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.internal_auditory.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_petrosal_vein.left",
+            "system": "vein",
+            "triangleContacts": 60,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.left",
+        "topology": {
+          "boundaryEdges": 35,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 1191,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 710,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.parietal.left",
+            "system": "bone",
+            "triangleContacts": 253,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "system": "vein",
+            "triangleContacts": 82,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.ovale_emissary.left",
+            "system": "vein",
+            "triangleContacts": 20,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.middle_meningeal.posterior.left",
+            "system": "vein",
+            "triangleContacts": 143,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.posterior.left",
+        "topology": {
+          "boundaryEdges": 33,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 976,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 434,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.parietal.left",
+            "system": "bone",
+            "triangleContacts": 76,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "system": "vein",
+            "triangleContacts": 71,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.anterior.left",
+            "system": "vein",
+            "triangleContacts": 143,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.superior_petrosal.right",
+        "topology": {
+          "boundaryEdges": 382,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 2,
+          "components": 3,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.temporal.right",
+            "system": "bone",
+            "triangleContacts": 96,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival",
+            "system": "artery",
+            "triangleContacts": 90,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival MHT branch right",
+            "system": "artery",
+            "triangleContacts": 154,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Clival–posterior cavernous MMA right",
+            "system": "artery",
+            "triangleContacts": 6,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival–recurrent ILT right",
+            "system": "artery",
+            "triangleContacts": 12,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sigmoid.right",
+            "system": "vein",
+            "triangleContacts": 267,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.cavernous.right",
+            "system": "vein",
+            "triangleContacts": 245,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.superior_petrosal_vein.right",
+            "system": "vein",
+            "triangleContacts": 283,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.tentorium-cerebelli.right",
+            "system": "brain",
+            "triangleContacts": 906,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.anterior.right",
+            "system": "brain",
+            "triangleContacts": 40,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.posterior.right",
+            "system": "brain",
+            "triangleContacts": 43,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.right",
+        "topology": {
+          "boundaryEdges": 141,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 4,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 1
+        },
+        "contacts": [
+          {
+            "other": "bone.occipital",
+            "system": "bone",
+            "triangleContacts": 202,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.temporal.right",
+            "system": "bone",
+            "triangleContacts": 245,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.internal_jugular.right",
+            "system": "vein",
+            "triangleContacts": 225,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.basilar_plexus",
+            "system": "vein",
+            "triangleContacts": 77,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.tentorium-cerebelli.right",
+            "system": "brain",
+            "triangleContacts": 27,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral.right",
+        "topology": {
+          "boundaryEdges": 153,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.suboccipital_plexus.right",
+            "system": "vein",
+            "triangleContacts": 222,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.deep_cervical.right",
+            "system": "vein",
+            "triangleContacts": 785,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.vertebral_periarterial_plexus.right",
+            "system": "vein",
+            "triangleContacts": 1413,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral_periarterial_plexus.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.vertebral.right",
+            "system": "vein",
+            "triangleContacts": 1413,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_alveolar.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.mandible",
+            "system": "bone",
+            "triangleContacts": 54,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.right",
+            "system": "vein",
+            "triangleContacts": 51,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.infraorbital.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.maxilla.right",
+            "system": "bone",
+            "triangleContacts": 96,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.right",
+            "system": "vein",
+            "triangleContacts": 49,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.central_retinal.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_ophthalmic.right",
+            "system": "vein",
+            "triangleContacts": 45,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.internal_auditory.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_petrosal_vein.right",
+            "system": "vein",
+            "triangleContacts": 60,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.right",
+        "topology": {
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 753,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 537,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.right",
+            "system": "vein",
+            "triangleContacts": 73,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.posterior.right",
+            "system": "vein",
+            "triangleContacts": 152,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.posterior.right",
+        "topology": {
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 698,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 370,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.right",
+            "system": "vein",
+            "triangleContacts": 87,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.anterior.right",
+            "system": "vein",
+            "triangleContacts": 152,
+            "declaredReceiver": false
+          }
+        ]
+      }
+    ],
+    "petrosalSections": [
+      {
+        "id": "vein.superior_petrosal.left",
+        "axis": 0,
+        "sections": [
+          {
+            "coordinate": -16.5,
+            "centre": [
+              -16.5,
+              -55.03987528520544,
+              62.60662584743324
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.587209701538086,
+              -57.72630310058594,
+              55.9537467956543
+            ],
+            "minimumWallGapMm": 7.513457541589259,
+            "centreGapMm": 7.810797515370632
+          },
+          {
+            "coordinate": -17.0,
+            "centre": [
+              -17.0,
+              -54.17745884117295,
+              63.008734170865054
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.587209701538086,
+              -57.72630310058594,
+              55.9537467956543
+            ],
+            "minimumWallGapMm": 6.8269991551350975,
+            "centreGapMm": 8.31028257532104
+          },
+          {
+            "coordinate": -17.5,
+            "centre": [
+              -17.5,
+              -54.59722871660645,
+              62.23822654017227
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.587209701538086,
+              -57.72630310058594,
+              55.9537467956543
+            ],
+            "minimumWallGapMm": 5.5992166128664165,
+            "centreGapMm": 7.324086052056461
+          },
+          {
+            "coordinate": -18.0,
+            "centre": [
+              -18.0,
+              -54.95572523267609,
+              61.42143710272541
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.712606555735928,
+              -57.79096062174218,
+              56.027547859932966
+            ],
+            "minimumWallGapMm": 4.3523318867267315,
+            "centreGapMm": 6.329741076037354
+          },
+          {
+            "coordinate": -18.5,
+            "centre": [
+              -18.5,
+              -55.19576208197377,
+              60.426047581604664
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.736140183368665,
+              -57.80309510498963,
+              56.04139834108533
+            ],
+            "minimumWallGapMm": 3.176643656909745,
+            "centreGapMm": 5.248940560554528
+          },
+          {
+            "coordinate": -19.0,
+            "centre": [
+              -19.0,
+              -55.52874279507698,
+              59.47721086984953
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.806392594594513,
+              -57.83931887467005,
+              56.082744695025205
+            ],
+            "minimumWallGapMm": 2.2663931497393994,
+            "centreGapMm": 4.184666229011702
+          },
+          {
+            "coordinate": -19.5,
+            "centre": [
+              -19.5,
+              -55.84975465906494,
+              58.550199876065335
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.880784504365252,
+              -57.877677065636036,
+              56.12652730942908
+            ],
+            "minimumWallGapMm": 1.447266929011016,
+            "centreGapMm": 3.183026050176618
+          },
+          {
+            "coordinate": -20.0,
+            "centre": [
+              -20.0,
+              -56.251072456071974,
+              57.87874899903899
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -20.10367408716167,
+              -57.94996333045248,
+              56.21418659407903
+            ],
+            "minimumWallGapMm": 0.7785461073308226,
+            "centreGapMm": 2.3807029464862395
+          },
+          {
+            "coordinate": -20.5,
+            "centre": [
+              -20.5,
+              -56.71844757264956,
+              57.34134920553841
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -20.5541776534038,
+              -57.931783868100155,
+              56.22369096787396
+            ],
+            "minimumWallGapMm": 0.22455223854887688,
+            "centreGapMm": 1.6505393422167562
+          },
+          {
+            "coordinate": -21.0,
+            "centre": [
+              -21.0,
+              -57.28480584296045,
+              56.973792132589736
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -21.027460036230227,
+              -58.00600260629176,
+              56.32645443304645
+            ],
+            "minimumWallGapMm": 0.0018213501089414633,
+            "centreGapMm": 0.969497252332007
+          },
+          {
+            "coordinate": -21.5,
+            "centre": [
+              -21.5,
+              -57.96668988774988,
+              56.94075129722347
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -21.518954711104275,
+              -58.27729774168115,
+              56.636419709988466
+            ],
+            "minimumWallGapMm": 0.06682036241772335,
+            "centreGapMm": 0.4352634087375313
+          },
+          {
+            "coordinate": -22.0,
+            "centre": [
+              -22.0,
+              -58.70917589520843,
+              57.1840982406178
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -21.904104252591804,
+              -58.88274708637172,
+              56.928380163591456
+            ],
+            "minimumWallGapMm": 0.021371879507799302,
+            "centreGapMm": 0.3235964889965147
+          },
+          {
+            "coordinate": -22.5,
+            "centre": [
+              -22.5,
+              -59.36358025175978,
+              57.43134893430836
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -22.343903463985168,
+              -59.50486144053417,
+              57.01509787939688
+            ],
+            "minimumWallGapMm": 0.011925144469816325,
+            "centreGapMm": 0.46646698015213567
+          },
+          {
+            "coordinate": -23.0,
+            "centre": [
+              -23.0,
+              -60.17237987800563,
+              57.75275826446584
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -22.907911551851758,
+              -60.238362545289405,
+              57.052551716601315
+            ],
+            "minimumWallGapMm": 0.004506988227164055,
+            "centreGapMm": 0.7093117821780408
+          },
+          {
+            "coordinate": -23.5,
+            "centre": [
+              -23.5,
+              -60.84465814070251,
+              57.88249828897946
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -23.29062631157625,
+              -60.99446444566227,
+              57.09499347435776
+            ],
+            "minimumWallGapMm": 0.18079308499114388,
+            "centreGapMm": 0.8285186198645306
+          },
+          {
+            "coordinate": -24.0,
+            "centre": [
+              -24.0,
+              -61.20046979618723,
+              57.97297060755274
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -23.910792079102457,
+              -61.30820611604789,
+              57.07010206286477
+            ],
+            "minimumWallGapMm": 0.225902369485773,
+            "centreGapMm": 0.9136393034206403
+          },
+          {
+            "coordinate": -24.5,
+            "centre": [
+              -24.5,
+              -61.601395765471295,
+              58.1050999895185
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -24.59188081528508,
+              -61.89952246781476,
+              57.15517789046119
+            ],
+            "minimumWallGapMm": 0.24777770039267735,
+            "centreGapMm": 0.9998367912539968
+          },
+          {
+            "coordinate": -25.0,
+            "centre": [
+              -25.0,
+              -62.09887274294218,
+              58.287614942494955
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -25.089962030792737,
+              -62.390773543921625,
+              57.35753045357368
+            ],
+            "minimumWallGapMm": 0.22176108086897467,
+            "centreGapMm": 0.9789567922685579
+          },
+          {
+            "coordinate": -25.5,
+            "centre": [
+              -25.5,
+              -62.529180568327206,
+              58.484898161955215
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -25.578323118183537,
+              -62.83399060256023,
+              57.543867686019304
+            ],
+            "minimumWallGapMm": 0.25385230311729595,
+            "centreGapMm": 0.9922610666811909
+          },
+          {
+            "coordinate": -26.0,
+            "centre": [
+              -26.0,
+              -62.97328188166324,
+              58.668719671830914
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -26.02286953777363,
+              -63.41049969266878,
+              57.80089468509356
+            ],
+            "minimumWallGapMm": 0.31080441975714385,
+            "centreGapMm": 0.9720095872079363
+          },
+          {
+            "coordinate": -26.5,
+            "centre": [
+              -26.5,
+              -63.43271366440263,
+              58.85199110884648
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -26.453554552015895,
+              -63.890845280878935,
+              58.05050308353404
+            ],
+            "minimumWallGapMm": 0.2833036644466833,
+            "centreGapMm": 0.92435102227069
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.left",
+        "axis": 2,
+        "sections": [
+          {
+            "coordinate": 49.0,
+            "centre": [
+              -12.945950375208449,
+              -63.2931923050864,
+              49.0
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -13.902255048113343,
+              -62.90747478133345,
+              48.566665615198346
+            ],
+            "minimumWallGapMm": 0.0028185416263019633,
+            "centreGapMm": 1.1185147851509487
+          },
+          {
+            "coordinate": 49.5,
+            "centre": [
+              -12.321704798595224,
+              -62.13008268637249,
+              49.5
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -13.557013780187976,
+              -61.631831098829394,
+              48.940239211680925
+            ],
+            "minimumWallGapMm": 0.027573504666420355,
+            "centreGapMm": 1.4448443046337305
+          },
+          {
+            "coordinate": 50.0,
+            "centre": [
+              -11.744110133839877,
+              -60.31522820133236,
+              50.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -11.353110313415527,
+              -59.66583718703251,
+              49.25463774353312
+            ],
+            "minimumWallGapMm": 0.11397440784305744,
+            "centreGapMm": 1.0630872223814318
+          },
+          {
+            "coordinate": 50.5,
+            "centre": [
+              -11.303294985105666,
+              -59.707264516286415,
+              50.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -11.247136732015464,
+              -59.07664773844674,
+              49.77618655918232
+            ],
+            "minimumWallGapMm": 0.011424243363803425,
+            "centreGapMm": 0.9616325530010761
+          },
+          {
+            "coordinate": 51.0,
+            "centre": [
+              -10.954873035580459,
+              -59.31705691893979,
+              51.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -10.830373327804205,
+              -58.565122711637514,
+              50.4901611763585
+            ],
+            "minimumWallGapMm": 0.008073443477436403,
+            "centreGapMm": 0.9169737485009191
+          },
+          {
+            "coordinate": 51.5,
+            "centre": [
+              -10.512085073226704,
+              -58.977556497769214,
+              51.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -10.428930972385709,
+              -58.27190620837447,
+              51.020640540318894
+            ],
+            "minimumWallGapMm": 0.0010556204450064657,
+            "centreGapMm": 0.8571128437932348
+          },
+          {
+            "coordinate": 52.0,
+            "centre": [
+              -10.036609517678933,
+              -58.64013086441996,
+              52.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -10.157881080686726,
+              -57.90260356209368,
+              51.493405856698764
+            ],
+            "minimumWallGapMm": 0.01626804943262748,
+            "centreGapMm": 0.902934626480867
+          },
+          {
+            "coordinate": 52.5,
+            "centre": [
+              -9.52427663328934,
+              -58.25571066316215,
+              52.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -9.634689052292675,
+              -57.49196259318613,
+              51.99120379525428
+            ],
+            "minimumWallGapMm": 0.0033838549824408747,
+            "centreGapMm": 0.9243243990212038
+          },
+          {
+            "coordinate": 53.0,
+            "centre": [
+              -9.04527329792851,
+              -58.184856242315576,
+              53.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -9.18840345007406,
+              -57.19479209515441,
+              52.34043580555794
+            ],
+            "minimumWallGapMm": 0.23576690277643758,
+            "centreGapMm": 1.1982229268951485
+          },
+          {
+            "coordinate": 53.5,
+            "centre": [
+              -8.753867614601283,
+              -58.18422253659794,
+              53.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -8.86677322630449,
+              -57.000244298076446,
+              52.562673181644314
+            ],
+            "minimumWallGapMm": 0.5718859474566659,
+            "centreGapMm": 1.5143096482738716
+          },
+          {
+            "coordinate": 54.0,
+            "centre": [
+              -8.557742847034177,
+              -58.11744873022574,
+              54.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -8.170181274414062,
+              -56.333770751953125,
+              53.79142761230469
+            ],
+            "minimumWallGapMm": 0.654816246710107,
+            "centreGapMm": 1.837175425389579
+          },
+          {
+            "coordinate": 54.5,
+            "centre": [
+              -8.324413339523792,
+              -58.088965977118605,
+              54.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.952292075953506,
+              -56.30924742844813,
+              54.17387210128389
+            ],
+            "minimumWallGapMm": 0.7031795562283599,
+            "centreGapMm": 1.8472227135902881
+          },
+          {
+            "coordinate": 55.0,
+            "centre": [
+              -8.100949084203139,
+              -58.09661454459437,
+              55.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -8.067836545029484,
+              -56.235195580714596,
+              54.44614225508905
+            ],
+            "minimumWallGapMm": 0.8661089111598538,
+            "centreGapMm": 1.942353057747126
+          },
+          {
+            "coordinate": 55.5,
+            "centre": [
+              -8.06159823805325,
+              -58.10190322544828,
+              55.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -8.120777261129172,
+              -56.16519086283067,
+              54.65336567681499
+            ],
+            "minimumWallGapMm": 1.1963599647648853,
+            "centreGapMm": 2.114508597637534
+          },
+          {
+            "coordinate": 56.0,
+            "centre": [
+              -7.941802444846329,
+              -58.04981717411448,
+              56.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.823035359975927,
+              -56.05523108907025,
+              54.88095890165506
+            ],
+            "minimumWallGapMm": 1.4684010575842044,
+            "centreGapMm": 2.2901380418843176
+          },
+          {
+            "coordinate": 56.5,
+            "centre": [
+              -7.824865176756299,
+              -57.93519456857828,
+              56.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.698919447421284,
+              -55.820049623524795,
+              55.313320648219154
+            ],
+            "minimumWallGapMm": 1.5823346450340936,
+            "centreGapMm": 2.4285609626414684
+          },
+          {
+            "coordinate": 57.0,
+            "centre": [
+              -7.722459014074969,
+              -57.80764945918782,
+              57.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.735041481183695,
+              -55.58662129958868,
+              55.725551064788206
+            ],
+            "minimumWallGapMm": 1.7526196298090593,
+            "centreGapMm": 2.560731241788832
+          },
+          {
+            "coordinate": 57.5,
+            "centre": [
+              -7.640422524705079,
+              -57.695396317431815,
+              57.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.513427347052417,
+              -55.33432854330815,
+              56.95457129594792
+            ],
+            "minimumWallGapMm": 1.7652825348319636,
+            "centreGapMm": 2.6724991366998694
+          },
+          {
+            "coordinate": 58.0,
+            "centre": [
+              -7.587257386602149,
+              -57.56640800584887,
+              58.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.474740107104574,
+              -55.23567159378323,
+              57.461578123825014
+            ],
+            "minimumWallGapMm": 1.7294047467909324,
+            "centreGapMm": 2.638166984186765
+          },
+          {
+            "coordinate": 58.5,
+            "centre": [
+              -7.5128244870552345,
+              -57.47491312195231,
+              58.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.4409572752103905,
+              -55.13827905017952,
+              57.952977793082695
+            ],
+            "minimumWallGapMm": 1.7267519579389243,
+            "centreGapMm": 2.6283058041366147
+          },
+          {
+            "coordinate": 59.0,
+            "centre": [
+              -7.326760809733139,
+              -57.323709937880125,
+              59.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.517388814264248,
+              -54.99576613347063,
+              58.411964783029525
+            ],
+            "minimumWallGapMm": 1.6780600336624052,
+            "centreGapMm": 2.5338095429481973
+          },
+          {
+            "coordinate": 59.5,
+            "centre": [
+              -7.266507850923835,
+              -57.066505026600844,
+              59.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.601799300562251,
+              -54.838375810679054,
+              58.91886697949801
+            ],
+            "minimumWallGapMm": 1.5025348146143758,
+            "centreGapMm": 2.3966878910875757
+          },
+          {
+            "coordinate": 60.0,
+            "centre": [
+              -7.413360646134935,
+              -56.921047507823765,
+              60.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.686178792421494,
+              -54.68104327957823,
+              59.425583048036486
+            ],
+            "minimumWallGapMm": 1.3411395047352621,
+            "centreGapMm": 2.4241219494140616
+          },
+          {
+            "coordinate": 60.5,
+            "centre": [
+              -7.53611112617075,
+              -56.80857031711275,
+              60.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.768446822329882,
+              -54.527647743661085,
+              59.91961935665902
+            ],
+            "minimumWallGapMm": 1.4858470140464222,
+            "centreGapMm": 2.475632840434493
+          },
+          {
+            "coordinate": 61.0,
+            "centre": [
+              -7.635792040132476,
+              -56.67911472573362,
+              61.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.850926698450287,
+              -54.373857202986194,
+              60.414927845017665
+            ],
+            "minimumWallGapMm": 1.6273702382654773,
+            "centreGapMm": 2.504503000056731
+          },
+          {
+            "coordinate": 61.5,
+            "centre": [
+              -7.495948700112665,
+              -56.49422010912069,
+              61.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.924687385559082,
+              -54.236324310302734,
+              60.85787582397461
+            ],
+            "minimumWallGapMm": 1.6761243184720678,
+            "centreGapMm": 2.415937992842852
+          },
+          {
+            "coordinate": 62.0,
+            "centre": [
+              -7.561227860251115,
+              -56.55415812357022,
+              62.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.924687385559082,
+              -54.16667555770925,
+              61.029154563391465
+            ],
+            "minimumWallGapMm": 2.1592427163973773,
+            "centreGapMm": 2.6547688486937733
+          },
+          {
+            "coordinate": 62.5,
+            "centre": [
+              -7.54455338789225,
+              -56.48278006535287,
+              62.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.924687385559082,
+              -53.98207728982545,
+              61.483114719809656
+            ],
+            "minimumWallGapMm": 2.5687564723943033,
+            "centreGapMm": 2.7698021419312338
+          }
+        ]
+      },
+      {
+        "id": "vein.superior_petrosal.right",
+        "axis": 0,
+        "sections": [
+          {
+            "coordinate": 18.0,
+            "centre": [
+              18.0,
+              -54.801855518480394,
+              63.158981332934765
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.088261797030366,
+              -58.21999740482396,
+              56.25251166729054
+            ],
+            "minimumWallGapMm": 7.43895563392678,
+            "centreGapMm": 8.301829805810126
+          },
+          {
+            "coordinate": 18.5,
+            "centre": [
+              18.5,
+              -54.55653008807353,
+              62.756636595494626
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.334312302010943,
+              -58.01378447391019,
+              56.250122279381735
+            ],
+            "minimumWallGapMm": 6.324667584895438,
+            "centreGapMm": 7.894343713032732
+          },
+          {
+            "coordinate": 19.0,
+            "centre": [
+              19.0,
+              -54.897643762960506,
+              61.90911170512584
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.34812858034631,
+              -58.01708042147615,
+              56.257892119633475
+            ],
+            "minimumWallGapMm": 5.024486957251018,
+            "centreGapMm": 6.868833649156377
+          },
+          {
+            "coordinate": 19.5,
+            "centre": [
+              19.5,
+              -55.15727098636346,
+              61.07351686730877
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.332881553959435,
+              -58.00223049611832,
+              56.243359791041506
+            ],
+            "minimumWallGapMm": 3.924092810609328,
+            "centreGapMm": 5.897767949352034
+          },
+          {
+            "coordinate": 20.0,
+            "centre": [
+              20.0,
+              -55.42652459933844,
+              59.981379864787385
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.235332075293304,
+              -57.90722164389159,
+              56.15038290217272
+            ],
+            "minimumWallGapMm": 2.78237502125502,
+            "centreGapMm": 4.728259816324178
+          },
+          {
+            "coordinate": 20.5,
+            "centre": [
+              20.5,
+              -55.719691210432075,
+              59.060850952872066
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.203183991135386,
+              -57.8759108401959,
+              56.11974174561335
+            ],
+            "minimumWallGapMm": 1.9463747223693224,
+            "centreGapMm": 3.714010525858799
+          },
+          {
+            "coordinate": 21.0,
+            "centre": [
+              21.0,
+              -56.08132173369539,
+              58.21304763447155
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.366397068905577,
+              -57.83249270621604,
+              56.12139485850572
+            ],
+            "minimumWallGapMm": 1.1410293268902505,
+            "centreGapMm": 2.7524276416115074
+          },
+          {
+            "coordinate": 21.5,
+            "centre": [
+              21.5,
+              -56.46649045075872,
+              57.59777186571346
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.596978788430086,
+              -57.9135894689065,
+              56.22302567784603
+            ],
+            "minimumWallGapMm": 0.448054241391208,
+            "centreGapMm": 1.998356208183534
+          },
+          {
+            "coordinate": 22.0,
+            "centre": [
+              22.0,
+              -56.954158262974104,
+              57.130013494624976
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              22.063047324947743,
+              -57.89493844290486,
+              56.23627094504019
+            ],
+            "minimumWallGapMm": 0.003335642751030813,
+            "centreGapMm": 1.2991605201328755
+          },
+          {
+            "coordinate": 22.5,
+            "centre": [
+              22.5,
+              -57.58545740390513,
+              56.905317015988416
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              22.4933764313132,
+              -58.07319492828808,
+              56.45426578873053
+            ],
+            "minimumWallGapMm": 0.04035769720644436,
+            "centreGapMm": 0.6643635856699268
+          },
+          {
+            "coordinate": 23.0,
+            "centre": [
+              23.0,
+              -58.225592395806856,
+              57.02552216555037
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              22.874594877021604,
+              -58.48610710923634,
+              56.76969950985954
+            ],
+            "minimumWallGapMm": 0.010030667398026112,
+            "centreGapMm": 0.38605646212333006
+          },
+          {
+            "coordinate": 23.5,
+            "centre": [
+              23.5,
+              -58.82103846050334,
+              57.26841470748043
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              23.32782470535454,
+              -59.00627541094298,
+              56.954936146797706
+            ],
+            "minimumWallGapMm": 0.0034246544864561155,
+            "centreGapMm": 0.4027727248736478
+          },
+          {
+            "coordinate": 24.0,
+            "centre": [
+              24.0,
+              -59.78144816901312,
+              57.57532585737572
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              23.85562035740933,
+              -59.897922779991966,
+              57.07515498609868
+            ],
+            "minimumWallGapMm": 0.010040450135683927,
+            "centreGapMm": 0.5334629477961075
+          },
+          {
+            "coordinate": 24.5,
+            "centre": [
+              24.5,
+              -60.489985053254486,
+              57.829392486163115
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              24.500301492729644,
+              -60.57819317358812,
+              57.05425496227936
+            ],
+            "minimumWallGapMm": 0.10513930000284534,
+            "centreGapMm": 0.7801403363006558
+          },
+          {
+            "coordinate": 25.0,
+            "centre": [
+              25.0,
+              -60.94985062037321,
+              57.996082713414
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              24.940799912639253,
+              -61.08142139560403,
+              57.10018051513071
+            ],
+            "minimumWallGapMm": 0.23332577459069628,
+            "centreGapMm": 0.9074449118966874
+          },
+          {
+            "coordinate": 25.5,
+            "centre": [
+              25.5,
+              -61.345548524341055,
+              58.123704326008294
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              25.434194870383415,
+              -61.49179884767351,
+              57.12784498001507
+            ],
+            "minimumWallGapMm": 0.32446895876496473,
+            "centreGapMm": 1.0086898974217773
+          },
+          {
+            "coordinate": 26.0,
+            "centre": [
+              26.0,
+              -61.84814564784091,
+              58.31675883647055
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              25.93621453222975,
+              -62.26855841290335,
+              57.35146396375074
+            ],
+            "minimumWallGapMm": 0.33148185437102984,
+            "centreGapMm": 1.0548031428779838
+          },
+          {
+            "coordinate": 26.5,
+            "centre": [
+              26.5,
+              -62.32824745002998,
+              58.5369296526072
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              26.577120079956593,
+              -62.72141189732685,
+              57.53436861317147
+            ],
+            "minimumWallGapMm": 0.33509958999170086,
+            "centreGapMm": 1.0796547722050842
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.right",
+        "axis": 2,
+        "sections": [
+          {
+            "coordinate": 49.0,
+            "centre": [
+              14.24464052896213,
+              -62.222011619532815,
+              49.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.61999805009217,
+              -60.66816508506485,
+              48.22068898460485
+            ],
+            "minimumWallGapMm": 0.0029877865864349554,
+            "centreGapMm": 2.379333498176129
+          },
+          {
+            "coordinate": 49.5,
+            "centre": [
+              12.875917496119694,
+              -58.205333852996205,
+              49.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.980262787492594,
+              -58.20323028860281,
+              49.49719892962924
+            ],
+            "minimumWallGapMm": 0.010243342330681264,
+            "centreGapMm": 0.10440407468137623
+          },
+          {
+            "coordinate": 50.0,
+            "centre": [
+              12.312711438714736,
+              -57.811497220907725,
+              50.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.97552662401387,
+              -57.74784431038149,
+              49.99688299019391
+            ],
+            "minimumWallGapMm": 0.004595676336132982,
+            "centreGapMm": 0.6658718935589024
+          },
+          {
+            "coordinate": 50.5,
+            "centre": [
+              12.22680101389463,
+              -57.76610985821293,
+              50.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.59585700264318,
+              -58.15910135537816,
+              50.80204446106747
+            ],
+            "minimumWallGapMm": 0.0011933386696017965,
+            "centreGapMm": 0.6179607561462777
+          },
+          {
+            "coordinate": 51.0,
+            "centre": [
+              12.220864319811119,
+              -57.77689729023339,
+              51.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.441988241170636,
+              -58.01236243255176,
+              51.18097323358074
+            ],
+            "minimumWallGapMm": 0.0003856596343903085,
+            "centreGapMm": 0.37025792782476274
+          },
+          {
+            "coordinate": 51.5,
+            "centre": [
+              12.208149145214168,
+              -57.84383726157987,
+              51.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.199944675361289,
+              -57.91189327524674,
+              51.54643431530208
+            ],
+            "minimumWallGapMm": 0.0005992829156244694,
+            "centreGapMm": 0.08279541025542873
+          },
+          {
+            "coordinate": 52.0,
+            "centre": [
+              12.204224675430847,
+              -57.841759231636615,
+              52.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.186166028795029,
+              -57.694326657942284,
+              51.84402345317132
+            ],
+            "minimumWallGapMm": 0.02363744941283101,
+            "centreGapMm": 0.21538607583836997
+          },
+          {
+            "coordinate": 52.5,
+            "centre": [
+              12.230457515870427,
+              -57.815028705769166,
+              52.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.046809884129212,
+              -57.48529218269968,
+              52.057741955899324
+            ],
+            "minimumWallGapMm": 0.060787565594451046,
+            "centreGapMm": 0.5814162062256824
+          },
+          {
+            "coordinate": 53.0,
+            "centre": [
+              12.199224855037595,
+              -57.72993888035411,
+              53.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.881569205325818,
+              -57.237430858283524,
+              52.31115733667287
+            ],
+            "minimumWallGapMm": 0.39296266130482227,
+            "centreGapMm": 0.9044188622631151
+          },
+          {
+            "coordinate": 53.5,
+            "centre": [
+              12.181364839539757,
+              -57.57316645075934,
+              53.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.69952171032757,
+              -56.96435927843001,
+              52.59034788223303
+            ],
+            "minimumWallGapMm": 0.7678192428682713,
+            "centreGapMm": 1.1959456298705864
+          },
+          {
+            "coordinate": 54.0,
+            "centre": [
+              12.15888017132905,
+              -57.42579002827157,
+              54.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.519164578528146,
+              -56.69382324650718,
+              52.86694606351112
+            ],
+            "minimumWallGapMm": 1.0039295675292739,
+            "centreGapMm": 1.4929241883873658
+          },
+          {
+            "coordinate": 54.5,
+            "centre": [
+              12.12584893736078,
+              -57.31471766709403,
+              54.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.346645678722009,
+              -56.435044577099475,
+              53.13152342425304
+            ],
+            "minimumWallGapMm": 1.3042868274708819,
+            "centreGapMm": 1.8038044799539594
+          },
+          {
+            "coordinate": 55.0,
+            "centre": [
+              12.086775236749858,
+              -57.21353635406537,
+              55.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.19551944732666,
+              -56.20835494995117,
+              53.3632926940918
+            ],
+            "minimumWallGapMm": 1.6891215223830724,
+            "centreGapMm": 2.1174365026065467
+          },
+          {
+            "coordinate": 55.5,
+            "centre": [
+              12.197949299390146,
+              -57.0015581823926,
+              55.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.805170840547737,
+              -55.74135897118038,
+              54.88123239380051
+            ],
+            "minimumWallGapMm": 1.853481400754692,
+            "centreGapMm": 2.774232174047803
+          },
+          {
+            "coordinate": 56.0,
+            "centre": [
+              12.205415686458341,
+              -56.96156389763348,
+              56.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.77490107821336,
+              -55.587582745420036,
+              55.31147067875126
+            ],
+            "minimumWallGapMm": 1.9040274509119568,
+            "centreGapMm": 2.8756387279610234
+          },
+          {
+            "coordinate": 56.5,
+            "centre": [
+              12.19317549128346,
+              -57.02311691056833,
+              56.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.80022877042762,
+              -55.37989570649848,
+              55.6365094885894
+            ],
+            "minimumWallGapMm": 1.764863648644569,
+            "centreGapMm": 3.028528652275828
+          },
+          {
+            "coordinate": 57.0,
+            "centre": [
+              12.175687208015754,
+              -56.95889044409053,
+              57.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.829961749937487,
+              -55.13608531822936,
+              56.01808283491217
+            ],
+            "minimumWallGapMm": 1.810423488028521,
+            "centreGapMm": 3.1287709680697873
+          },
+          {
+            "coordinate": 57.5,
+            "centre": [
+              12.083066902945678,
+              -56.79589976100765,
+              57.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.862848982522333,
+              -54.86641005938262,
+              56.44013577395687
+            ],
+            "minimumWallGapMm": 1.940151759197301,
+            "centreGapMm": 3.126597239890675
+          },
+          {
+            "coordinate": 58.0,
+            "centre": [
+              12.068553295430538,
+              -56.731604125336844,
+              58.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.892597167434623,
+              -54.622474986836,
+              56.821904256333276
+            ],
+            "minimumWallGapMm": 2.22192454089029,
+            "centreGapMm": 3.2513259410711077
+          },
+          {
+            "coordinate": 58.5,
+            "centre": [
+              11.946477268952277,
+              -56.71890710397024,
+              58.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.920067154196863,
+              -54.3972211357705,
+              57.174435854077515
+            ],
+            "minimumWallGapMm": 2.4888133690356637,
+            "centreGapMm": 3.3546510985605957
+          },
+          {
+            "coordinate": 59.0,
+            "centre": [
+              11.813405590836272,
+              -56.68737374574363,
+              59.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.94815303200954,
+              -54.16691697899686,
+              57.534871389232656
+            ],
+            "minimumWallGapMm": 2.738319929113153,
+            "centreGapMm": 3.460992815268228
+          }
+        ]
+      }
+    ],
+    "scope": "20 local venous labels; contacts/topology do not establish full anatomical acceptance. Canal/nerve/cervical targets absent from this scene are not inferred."
+  },
+  "after": {
+    "release": "0.9.85",
+    "units": "mm",
+    "assetHashes": {
+      "brain-context.glb": "f492e4595b2642ed0aaa47f0a41e3851050d7b35c70982d3a87992ea0f5789a4",
+      "craniofacial.glb": "58ca0b3b861f40929079c1c0cc67ad7faf8db2311c5f590139df820c0fa16aaa",
+      "complete-circulation.glb": "b65a1818b8dbd0de5237c9f33577e18a6c1dfd0c230998ff617d1953990fcba9",
+      "venous.glb": "89f79f357f03f3ecca91282c46bbfbcb729aa3baaef59f45645ed345d82be65d",
+      "complete-anastomoses.glb": "0658a87a23f9668d3fd2ffcb88770477c0f3872dd9666f2e79658ece4cb151c6"
+    },
+    "structures": [
+      {
+        "id": "vein.superior_petrosal.left",
+        "topology": {
+          "boundaryEdges": 396,
+          "nonManifoldEdges": 1,
+          "degenerateFaces": 1,
+          "components": 2,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.temporal.left",
+            "system": "bone",
+            "triangleContacts": 126,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival left",
+            "system": "artery",
+            "triangleContacts": 117,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival MHT branch left",
+            "system": "artery",
+            "triangleContacts": 125,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sigmoid.left",
+            "system": "vein",
+            "triangleContacts": 235,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.cavernous.left",
+            "system": "vein",
+            "triangleContacts": 251,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.superior_petrosal_vein.left",
+            "system": "vein",
+            "triangleContacts": 404,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.tentorium-cerebelli.left",
+            "system": "brain",
+            "triangleContacts": 958,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.anterior.left",
+            "system": "brain",
+            "triangleContacts": 35,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.posterior.left",
+            "system": "brain",
+            "triangleContacts": 33,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.left",
+        "topology": {
+          "boundaryEdges": 203,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 1,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 3
+        },
+        "contacts": [
+          {
+            "other": "bone.occipital",
+            "system": "bone",
+            "triangleContacts": 45,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.temporal.left",
+            "system": "bone",
+            "triangleContacts": 55,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.internal_jugular.left",
+            "system": "vein",
+            "triangleContacts": 258,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.basilar_plexus",
+            "system": "vein",
+            "triangleContacts": 564,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.cpa_inferior_petrosal_bridge.left",
+            "system": "vein",
+            "triangleContacts": 234,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral.left",
+        "topology": {
+          "boundaryEdges": 145,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.suboccipital_plexus.left",
+            "system": "vein",
+            "triangleContacts": 270,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.deep_cervical.left",
+            "system": "vein",
+            "triangleContacts": 744,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.vertebral_periarterial_plexus.left",
+            "system": "vein",
+            "triangleContacts": 1541,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral_periarterial_plexus.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.vertebral.left",
+            "system": "vein",
+            "triangleContacts": 1541,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_alveolar.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.mandible",
+            "system": "bone",
+            "triangleContacts": 50,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.left",
+            "system": "vein",
+            "triangleContacts": 49,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.infraorbital.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.maxilla.left",
+            "system": "bone",
+            "triangleContacts": 100,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.left",
+            "system": "vein",
+            "triangleContacts": 58,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.central_retinal.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_ophthalmic.left",
+            "system": "vein",
+            "triangleContacts": 47,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.internal_auditory.left",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_petrosal_vein.left",
+            "system": "vein",
+            "triangleContacts": 60,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.left",
+        "topology": {
+          "boundaryEdges": 35,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 1191,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 689,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.parietal.left",
+            "system": "bone",
+            "triangleContacts": 253,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "system": "vein",
+            "triangleContacts": 82,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.posterior.left",
+            "system": "vein",
+            "triangleContacts": 143,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.posterior.left",
+        "topology": {
+          "boundaryEdges": 33,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 976,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 434,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.parietal.left",
+            "system": "bone",
+            "triangleContacts": 76,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "system": "vein",
+            "triangleContacts": 71,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.anterior.left",
+            "system": "vein",
+            "triangleContacts": 143,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.superior_petrosal.right",
+        "topology": {
+          "boundaryEdges": 382,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 2,
+          "components": 3,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.temporal.right",
+            "system": "bone",
+            "triangleContacts": 96,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival",
+            "system": "artery",
+            "triangleContacts": 90,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival MHT branch right",
+            "system": "artery",
+            "triangleContacts": 154,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Clival–posterior cavernous MMA right",
+            "system": "artery",
+            "triangleContacts": 6,
+            "declaredReceiver": false
+          },
+          {
+            "other": "Lateral clival–recurrent ILT right",
+            "system": "artery",
+            "triangleContacts": 12,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sigmoid.right",
+            "system": "vein",
+            "triangleContacts": 267,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.cavernous.right",
+            "system": "vein",
+            "triangleContacts": 245,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.superior_petrosal_vein.right",
+            "system": "vein",
+            "triangleContacts": 283,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.tentorium-cerebelli.right",
+            "system": "brain",
+            "triangleContacts": 906,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.anterior.right",
+            "system": "brain",
+            "triangleContacts": 40,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.petroclinoid-fold.posterior.right",
+            "system": "brain",
+            "triangleContacts": 43,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.right",
+        "topology": {
+          "boundaryEdges": 141,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 4,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 1
+        },
+        "contacts": [
+          {
+            "other": "bone.occipital",
+            "system": "bone",
+            "triangleContacts": 201,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.temporal.right",
+            "system": "bone",
+            "triangleContacts": 245,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.internal_jugular.right",
+            "system": "vein",
+            "triangleContacts": 225,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.basilar_plexus",
+            "system": "vein",
+            "triangleContacts": 79,
+            "declaredReceiver": false
+          },
+          {
+            "other": "brain.tentorium-cerebelli.right",
+            "system": "brain",
+            "triangleContacts": 27,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral.right",
+        "topology": {
+          "boundaryEdges": 153,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.suboccipital_plexus.right",
+            "system": "vein",
+            "triangleContacts": 222,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.deep_cervical.right",
+            "system": "vein",
+            "triangleContacts": 785,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.vertebral_periarterial_plexus.right",
+            "system": "vein",
+            "triangleContacts": 1413,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.vertebral_periarterial_plexus.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.vertebral.right",
+            "system": "vein",
+            "triangleContacts": 1413,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_alveolar.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.mandible",
+            "system": "bone",
+            "triangleContacts": 54,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.right",
+            "system": "vein",
+            "triangleContacts": 51,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.infraorbital.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.maxilla.right",
+            "system": "bone",
+            "triangleContacts": 96,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.pterygoid_plexus.right",
+            "system": "vein",
+            "triangleContacts": 49,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.central_retinal.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_ophthalmic.right",
+            "system": "vein",
+            "triangleContacts": 45,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.internal_auditory.right",
+        "topology": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "vein.superior_petrosal_vein.right",
+            "system": "vein",
+            "triangleContacts": 60,
+            "declaredReceiver": true
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.right",
+        "topology": {
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 753,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 537,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.right",
+            "system": "vein",
+            "triangleContacts": 73,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.posterior.right",
+            "system": "vein",
+            "triangleContacts": 152,
+            "declaredReceiver": false
+          }
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.posterior.right",
+        "topology": {
+          "boundaryEdges": 32,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "components": 1,
+          "nonAdjacentSelfIntersections": 0
+        },
+        "contacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "triangleContacts": 698,
+            "declaredReceiver": false
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "triangleContacts": 370,
+            "declaredReceiver": false
+          },
+          {
+            "other": "vein.sphenoparietal.right",
+            "system": "vein",
+            "triangleContacts": 87,
+            "declaredReceiver": true
+          },
+          {
+            "other": "vein.middle_meningeal.anterior.right",
+            "system": "vein",
+            "triangleContacts": 152,
+            "declaredReceiver": false
+          }
+        ]
+      }
+    ],
+    "petrosalSections": [
+      {
+        "id": "vein.superior_petrosal.left",
+        "axis": 0,
+        "sections": [
+          {
+            "coordinate": -16.5,
+            "centre": [
+              -16.5,
+              -55.03987528520544,
+              62.60662584743324
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.587209701538086,
+              -57.72630310058594,
+              55.9537467956543
+            ],
+            "minimumWallGapMm": 7.513457541589259,
+            "centreGapMm": 7.810797515370632
+          },
+          {
+            "coordinate": -17.0,
+            "centre": [
+              -17.0,
+              -54.17745884117295,
+              63.008734170865054
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.587209701538086,
+              -57.72630310058594,
+              55.9537467956543
+            ],
+            "minimumWallGapMm": 6.8269991551350975,
+            "centreGapMm": 8.31028257532104
+          },
+          {
+            "coordinate": -17.5,
+            "centre": [
+              -17.5,
+              -54.59722871660645,
+              62.23822654017227
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.587209701538086,
+              -57.72630310058594,
+              55.9537467956543
+            ],
+            "minimumWallGapMm": 5.5992166128664165,
+            "centreGapMm": 7.324086052056461
+          },
+          {
+            "coordinate": -18.0,
+            "centre": [
+              -18.0,
+              -54.95572523267609,
+              61.42143710272541
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.712606555735928,
+              -57.79096062174218,
+              56.027547859932966
+            ],
+            "minimumWallGapMm": 4.3523318867267315,
+            "centreGapMm": 6.329741076037354
+          },
+          {
+            "coordinate": -18.5,
+            "centre": [
+              -18.5,
+              -55.19576208197377,
+              60.426047581604664
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.736140183368665,
+              -57.80309510498963,
+              56.04139834108533
+            ],
+            "minimumWallGapMm": 3.176643656909745,
+            "centreGapMm": 5.248940560554528
+          },
+          {
+            "coordinate": -19.0,
+            "centre": [
+              -19.0,
+              -55.52874279507698,
+              59.47721086984953
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.806392594594513,
+              -57.83931887467005,
+              56.082744695025205
+            ],
+            "minimumWallGapMm": 2.2663931497393994,
+            "centreGapMm": 4.184666229011702
+          },
+          {
+            "coordinate": -19.5,
+            "centre": [
+              -19.5,
+              -55.84975465906494,
+              58.550199876065335
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -19.880784504365252,
+              -57.877677065636036,
+              56.12652730942908
+            ],
+            "minimumWallGapMm": 1.447266929011016,
+            "centreGapMm": 3.183026050176618
+          },
+          {
+            "coordinate": -20.0,
+            "centre": [
+              -20.0,
+              -56.251072456071974,
+              57.87874899903899
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -20.10367408716167,
+              -57.94996333045248,
+              56.21418659407903
+            ],
+            "minimumWallGapMm": 0.7785461073308226,
+            "centreGapMm": 2.3807029464862395
+          },
+          {
+            "coordinate": -20.5,
+            "centre": [
+              -20.5,
+              -56.71844757264956,
+              57.34134920553841
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -20.5541776534038,
+              -57.931783868100155,
+              56.22369096787396
+            ],
+            "minimumWallGapMm": 0.22455223854887688,
+            "centreGapMm": 1.6505393422167562
+          },
+          {
+            "coordinate": -21.0,
+            "centre": [
+              -21.0,
+              -57.28480584296045,
+              56.973792132589736
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -21.027460036230227,
+              -58.00600260629176,
+              56.32645443304645
+            ],
+            "minimumWallGapMm": 0.0018213501089414633,
+            "centreGapMm": 0.969497252332007
+          },
+          {
+            "coordinate": -21.5,
+            "centre": [
+              -21.5,
+              -57.96668988774988,
+              56.94075129722347
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -21.518954711104275,
+              -58.27729774168115,
+              56.636419709988466
+            ],
+            "minimumWallGapMm": 0.06682036241772335,
+            "centreGapMm": 0.4352634087375313
+          },
+          {
+            "coordinate": -22.0,
+            "centre": [
+              -22.0,
+              -58.70917589520843,
+              57.1840982406178
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -21.904104252591804,
+              -58.88274708637172,
+              56.928380163591456
+            ],
+            "minimumWallGapMm": 0.021371879507799302,
+            "centreGapMm": 0.3235964889965147
+          },
+          {
+            "coordinate": -22.5,
+            "centre": [
+              -22.5,
+              -59.36358025175978,
+              57.43134893430836
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -22.343903463985168,
+              -59.50486144053417,
+              57.01509787939688
+            ],
+            "minimumWallGapMm": 0.011925144469816325,
+            "centreGapMm": 0.46646698015213567
+          },
+          {
+            "coordinate": -23.0,
+            "centre": [
+              -23.0,
+              -60.17237987800563,
+              57.75275826446584
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -22.907911551851758,
+              -60.238362545289405,
+              57.052551716601315
+            ],
+            "minimumWallGapMm": 0.004506988227164055,
+            "centreGapMm": 0.7093117821780408
+          },
+          {
+            "coordinate": -23.5,
+            "centre": [
+              -23.5,
+              -60.84465814070251,
+              57.88249828897946
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -23.29062631157625,
+              -60.99446444566227,
+              57.09499347435776
+            ],
+            "minimumWallGapMm": 0.18079308499114388,
+            "centreGapMm": 0.8285186198645306
+          },
+          {
+            "coordinate": -24.0,
+            "centre": [
+              -24.0,
+              -61.20046979618723,
+              57.97297060755274
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -23.910792079102457,
+              -61.30820611604789,
+              57.07010206286477
+            ],
+            "minimumWallGapMm": 0.225902369485773,
+            "centreGapMm": 0.9136393034206403
+          },
+          {
+            "coordinate": -24.5,
+            "centre": [
+              -24.5,
+              -61.601395765471295,
+              58.1050999895185
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -24.59188081528508,
+              -61.89952246781476,
+              57.15517789046119
+            ],
+            "minimumWallGapMm": 0.24777770039267735,
+            "centreGapMm": 0.9998367912539968
+          },
+          {
+            "coordinate": -25.0,
+            "centre": [
+              -25.0,
+              -62.09887274294218,
+              58.287614942494955
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -25.089962030792737,
+              -62.390773543921625,
+              57.35753045357368
+            ],
+            "minimumWallGapMm": 0.22176108086897467,
+            "centreGapMm": 0.9789567922685579
+          },
+          {
+            "coordinate": -25.5,
+            "centre": [
+              -25.5,
+              -62.529180568327206,
+              58.484898161955215
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -25.578323118183537,
+              -62.83399060256023,
+              57.543867686019304
+            ],
+            "minimumWallGapMm": 0.25385230311729595,
+            "centreGapMm": 0.9922610666811909
+          },
+          {
+            "coordinate": -26.0,
+            "centre": [
+              -26.0,
+              -62.97328188166324,
+              58.668719671830914
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -26.02286953777363,
+              -63.41049969266878,
+              57.80089468509356
+            ],
+            "minimumWallGapMm": 0.31080441975714385,
+            "centreGapMm": 0.9720095872079363
+          },
+          {
+            "coordinate": -26.5,
+            "centre": [
+              -26.5,
+              -63.43271366440263,
+              58.85199110884648
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -26.453554552015895,
+              -63.890845280878935,
+              58.05050308353404
+            ],
+            "minimumWallGapMm": 0.2833036644466833,
+            "centreGapMm": 0.92435102227069
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.left",
+        "axis": 2,
+        "sections": [
+          {
+            "coordinate": 49.0,
+            "centre": [
+              -12.945950375208449,
+              -63.2931923050864,
+              49.0
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -13.902255048113343,
+              -62.90747478133345,
+              48.566665615198346
+            ],
+            "minimumWallGapMm": 0.0028185416263019633,
+            "centreGapMm": 1.1185147851509487
+          },
+          {
+            "coordinate": 49.5,
+            "centre": [
+              -12.321704798595224,
+              -62.13008268637249,
+              49.5
+            ],
+            "bone": "bone.temporal.left",
+            "closest": [
+              -13.557013780187976,
+              -61.631831098829394,
+              48.940239211680925
+            ],
+            "minimumWallGapMm": 0.027573504666420355,
+            "centreGapMm": 1.4448443046337305
+          },
+          {
+            "coordinate": 50.0,
+            "centre": [
+              -11.744110133839877,
+              -60.31522820133236,
+              50.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -11.353110313415527,
+              -59.66583718703251,
+              49.25463774353312
+            ],
+            "minimumWallGapMm": 0.11397440784305744,
+            "centreGapMm": 1.0630872223814318
+          },
+          {
+            "coordinate": 50.5,
+            "centre": [
+              -11.30329279721647,
+              -59.70725763196668,
+              50.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -11.247134815234297,
+              -59.07664389847511,
+              49.77619005344406
+            ],
+            "minimumWallGapMm": 0.011424243363803425,
+            "centreGapMm": 0.9616279106503673
+          },
+          {
+            "coordinate": 51.0,
+            "centre": [
+              -10.954788615618346,
+              -59.315977724113374,
+              51.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -10.830410616942116,
+              -58.564778596734435,
+              50.49065958736276
+            ],
+            "minimumWallGapMm": 0.008073443477436403,
+            "centreGapMm": 0.9160773283271786
+          },
+          {
+            "coordinate": 51.5,
+            "centre": [
+              -10.511855791460814,
+              -58.97502412968909,
+              51.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -10.428962448961471,
+              -58.27110476374253,
+              51.02181486204915
+            ],
+            "minimumWallGapMm": 0.0010556204450064657,
+            "centreGapMm": 0.8550057345669663
+          },
+          {
+            "coordinate": 52.0,
+            "centre": [
+              -10.036339190806103,
+              -58.637600502955635,
+              52.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -10.15733803810924,
+              -57.901731753326864,
+              51.49454508650119
+            ],
+            "minimumWallGapMm": 0.01626804943262748,
+            "centreGapMm": 0.9009041055012392
+          },
+          {
+            "coordinate": 52.5,
+            "centre": [
+              -9.523989314160433,
+              -58.25374547095673,
+              52.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -9.634211867466442,
+              -57.49131074563157,
+              51.992078723519434
+            ],
+            "minimumWallGapMm": 0.0033838549824408747,
+            "centreGapMm": 0.9227349265854151
+          },
+          {
+            "coordinate": 53.0,
+            "centre": [
+              -9.044998616019107,
+              -58.184741902398144,
+              53.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -9.188121402138481,
+              -57.19472870773242,
+              52.34046974925917
+            ],
+            "minimumWallGapMm": 0.23576690277643758,
+            "centreGapMm": 1.1981612617511301
+          },
+          {
+            "coordinate": 53.5,
+            "centre": [
+              -8.75296313696547,
+              -58.181518356373516,
+              53.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              -8.865254888777093,
+              -56.99962819367548,
+              52.56326851868704
+            ],
+            "minimumWallGapMm": 0.5685659265549053,
+            "centreGapMm": 1.5122630929471548
+          },
+          {
+            "coordinate": 54.0,
+            "centre": [
+              -8.55600419950043,
+              -58.11163949533277,
+              54.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -8.170181274414062,
+              -56.333770751953125,
+              53.79142761230469
+            ],
+            "minimumWallGapMm": 0.6461553952836295,
+            "centreGapMm": 1.8311687631448479
+          },
+          {
+            "coordinate": 54.5,
+            "centre": [
+              -8.322002493658648,
+              -58.07190109265363,
+              54.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.95329114504748,
+              -56.308490907670596,
+              54.17686055829854
+            ],
+            "minimumWallGapMm": 0.6868878968247494,
+            "centreGapMm": 1.8302957787963412
+          },
+          {
+            "coordinate": 55.0,
+            "centre": [
+              -8.098321544101776,
+              -58.05268312305512,
+              55.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -8.072761657958422,
+              -56.232655265687306,
+              54.454385360133934
+            ],
+            "minimumWallGapMm": 0.822230055388685,
+            "centreGapMm": 1.900223682783347
+          },
+          {
+            "coordinate": 55.5,
+            "centre": [
+              -8.058202311853602,
+              -58.03100245656982,
+              55.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -8.10374849768554,
+              -56.15925660842017,
+              54.66575024239165
+            ],
+            "minimumWallGapMm": 1.1268420441683349,
+            "centreGapMm": 2.049751114935391
+          },
+          {
+            "coordinate": 56.0,
+            "centre": [
+              -7.93362542951536,
+              -57.929831440367806,
+              56.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.820299786064886,
+              -56.026629456824544,
+              54.93222897020799
+            ],
+            "minimumWallGapMm": 1.3534500246810608,
+            "centreGapMm": 2.1852129103795734
+          },
+          {
+            "coordinate": 56.5,
+            "centre": [
+              -7.803917668390001,
+              -57.75442656986097,
+              56.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.68619310633867,
+              -55.777348715405424,
+              55.39078170636375
+            ],
+            "minimumWallGapMm": 1.4185059600538128,
+            "centreGapMm": 2.270035492679803
+          },
+          {
+            "coordinate": 57.0,
+            "centre": [
+              -7.673349270430858,
+              -57.559727190546326,
+              57.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -7.703705258893771,
+              -55.52630940817814,
+              55.829514816012804
+            ],
+            "minimumWallGapMm": 1.5387069616651206,
+            "centreGapMm": 2.346432383347161
+          },
+          {
+            "coordinate": 57.5,
+            "centre": [
+              -7.556051249863569,
+              -57.430235841953696,
+              57.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.542847943075921,
+              -55.3075633374675,
+              57.00964282942763
+            ],
+            "minimumWallGapMm": 1.5351876006635767,
+            "centreGapMm": 2.4026588723576365
+          },
+          {
+            "coordinate": 58.0,
+            "centre": [
+              -7.499883107281626,
+              -57.33605369985557,
+              58.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.4887243669776895,
+              -55.21766458551377,
+              57.51063233255033
+            ],
+            "minimumWallGapMm": 1.5651084235808663,
+            "centreGapMm": 2.397810491219018
+          },
+          {
+            "coordinate": 58.5,
+            "centre": [
+              -7.44072969020829,
+              -57.29609970349597,
+              58.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.4474033310969165,
+              -55.12625984662783,
+              57.99168767417381
+            ],
+            "minimumWallGapMm": 1.6239360862754393,
+            "centreGapMm": 2.4399351796197015
+          },
+          {
+            "coordinate": 59.0,
+            "centre": [
+              -7.27314443157408,
+              -57.20440690098018,
+              59.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.521553529382773,
+              -54.98800067818673,
+              58.43697474723933
+            ],
+            "minimumWallGapMm": 1.6474162656147198,
+            "centreGapMm": 2.4071441302797996
+          },
+          {
+            "coordinate": 59.5,
+            "centre": [
+              -7.239663076454402,
+              -57.00027594386622,
+              59.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.60418328822901,
+              -54.833930668791375,
+              58.93318331195424
+            ],
+            "minimumWallGapMm": 1.5025348146143758,
+            "centreGapMm": 2.327695764039894
+          },
+          {
+            "coordinate": 60.0,
+            "centre": [
+              -7.406811860148703,
+              -56.89121991432853,
+              60.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.687389159003009,
+              -54.67878645112817,
+              59.432851546366614
+            ],
+            "minimumWallGapMm": 1.3411395047352621,
+            "centreGapMm": 2.3945956277566487
+          },
+          {
+            "coordinate": 60.5,
+            "centre": [
+              -7.5346862349564745,
+              -56.80097687001833,
+              60.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.768760931525958,
+              -54.52706206112411,
+              59.92150564648395
+            ],
+            "minimumWallGapMm": 1.4858470140464222,
+            "centreGapMm": 2.4681948556776288
+          },
+          {
+            "coordinate": 61.0,
+            "centre": [
+              -7.635778707929795,
+              -56.678936775060734,
+              61.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.850934554351766,
+              -54.373842555009105,
+              60.41497502130925
+            ],
+            "minimumWallGapMm": 1.6273702382654773,
+            "centreGapMm": 2.5043350283884043
+          },
+          {
+            "coordinate": 61.5,
+            "centre": [
+              -7.495948700112665,
+              -56.49422010912069,
+              61.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.924687385559082,
+              -54.236324310302734,
+              60.85787582397461
+            ],
+            "minimumWallGapMm": 1.6761243184720678,
+            "centreGapMm": 2.415937992842852
+          },
+          {
+            "coordinate": 62.0,
+            "centre": [
+              -7.561227860251115,
+              -56.55415812357022,
+              62.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.924687385559082,
+              -54.16667555770925,
+              61.029154563391465
+            ],
+            "minimumWallGapMm": 2.1592427163973773,
+            "centreGapMm": 2.6547688486937733
+          },
+          {
+            "coordinate": 62.5,
+            "centre": [
+              -7.54455338789225,
+              -56.48278006535287,
+              62.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              -6.924687385559082,
+              -53.98207728982545,
+              61.483114719809656
+            ],
+            "minimumWallGapMm": 2.5687564723943033,
+            "centreGapMm": 2.7698021419312338
+          }
+        ]
+      },
+      {
+        "id": "vein.superior_petrosal.right",
+        "axis": 0,
+        "sections": [
+          {
+            "coordinate": 18.0,
+            "centre": [
+              18.0,
+              -54.801855518480394,
+              63.158981332934765
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.088261797030366,
+              -58.21999740482396,
+              56.25251166729054
+            ],
+            "minimumWallGapMm": 7.43895563392678,
+            "centreGapMm": 8.301829805810126
+          },
+          {
+            "coordinate": 18.5,
+            "centre": [
+              18.5,
+              -54.55653008807353,
+              62.756636595494626
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.334312302010943,
+              -58.01378447391019,
+              56.250122279381735
+            ],
+            "minimumWallGapMm": 6.324667584895438,
+            "centreGapMm": 7.894343713032732
+          },
+          {
+            "coordinate": 19.0,
+            "centre": [
+              19.0,
+              -54.897643762960506,
+              61.90911170512584
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.34812858034631,
+              -58.01708042147615,
+              56.257892119633475
+            ],
+            "minimumWallGapMm": 5.024486957251018,
+            "centreGapMm": 6.868833649156377
+          },
+          {
+            "coordinate": 19.5,
+            "centre": [
+              19.5,
+              -55.15727098636346,
+              61.07351686730877
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.332881553959435,
+              -58.00223049611832,
+              56.243359791041506
+            ],
+            "minimumWallGapMm": 3.924092810609328,
+            "centreGapMm": 5.897767949352034
+          },
+          {
+            "coordinate": 20.0,
+            "centre": [
+              20.0,
+              -55.42652459933844,
+              59.981379864787385
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.235332075293304,
+              -57.90722164389159,
+              56.15038290217272
+            ],
+            "minimumWallGapMm": 2.78237502125502,
+            "centreGapMm": 4.728259816324178
+          },
+          {
+            "coordinate": 20.5,
+            "centre": [
+              20.5,
+              -55.719691210432075,
+              59.060850952872066
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.203183991135386,
+              -57.8759108401959,
+              56.11974174561335
+            ],
+            "minimumWallGapMm": 1.9463747223693224,
+            "centreGapMm": 3.714010525858799
+          },
+          {
+            "coordinate": 21.0,
+            "centre": [
+              21.0,
+              -56.08132173369539,
+              58.21304763447155
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.366397068905577,
+              -57.83249270621604,
+              56.12139485850572
+            ],
+            "minimumWallGapMm": 1.1410293268902505,
+            "centreGapMm": 2.7524276416115074
+          },
+          {
+            "coordinate": 21.5,
+            "centre": [
+              21.5,
+              -56.46649045075872,
+              57.59777186571346
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              21.596978788430086,
+              -57.9135894689065,
+              56.22302567784603
+            ],
+            "minimumWallGapMm": 0.448054241391208,
+            "centreGapMm": 1.998356208183534
+          },
+          {
+            "coordinate": 22.0,
+            "centre": [
+              22.0,
+              -56.954158262974104,
+              57.130013494624976
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              22.063047324947743,
+              -57.89493844290486,
+              56.23627094504019
+            ],
+            "minimumWallGapMm": 0.003335642751030813,
+            "centreGapMm": 1.2991605201328755
+          },
+          {
+            "coordinate": 22.5,
+            "centre": [
+              22.5,
+              -57.58545740390513,
+              56.905317015988416
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              22.4933764313132,
+              -58.07319492828808,
+              56.45426578873053
+            ],
+            "minimumWallGapMm": 0.04035769720644436,
+            "centreGapMm": 0.6643635856699268
+          },
+          {
+            "coordinate": 23.0,
+            "centre": [
+              23.0,
+              -58.225592395806856,
+              57.02552216555037
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              22.874594877021604,
+              -58.48610710923634,
+              56.76969950985954
+            ],
+            "minimumWallGapMm": 0.010030667398026112,
+            "centreGapMm": 0.38605646212333006
+          },
+          {
+            "coordinate": 23.5,
+            "centre": [
+              23.5,
+              -58.82103846050334,
+              57.26841470748043
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              23.32782470535454,
+              -59.00627541094298,
+              56.954936146797706
+            ],
+            "minimumWallGapMm": 0.0034246544864561155,
+            "centreGapMm": 0.4027727248736478
+          },
+          {
+            "coordinate": 24.0,
+            "centre": [
+              24.0,
+              -59.78144816901312,
+              57.57532585737572
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              23.85562035740933,
+              -59.897922779991966,
+              57.07515498609868
+            ],
+            "minimumWallGapMm": 0.010040450135683927,
+            "centreGapMm": 0.5334629477961075
+          },
+          {
+            "coordinate": 24.5,
+            "centre": [
+              24.5,
+              -60.489985053254486,
+              57.829392486163115
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              24.500301492729644,
+              -60.57819317358812,
+              57.05425496227936
+            ],
+            "minimumWallGapMm": 0.10513930000284534,
+            "centreGapMm": 0.7801403363006558
+          },
+          {
+            "coordinate": 25.0,
+            "centre": [
+              25.0,
+              -60.94985062037321,
+              57.996082713414
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              24.940799912639253,
+              -61.08142139560403,
+              57.10018051513071
+            ],
+            "minimumWallGapMm": 0.23332577459069628,
+            "centreGapMm": 0.9074449118966874
+          },
+          {
+            "coordinate": 25.5,
+            "centre": [
+              25.5,
+              -61.345548524341055,
+              58.123704326008294
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              25.434194870383415,
+              -61.49179884767351,
+              57.12784498001507
+            ],
+            "minimumWallGapMm": 0.32446895876496473,
+            "centreGapMm": 1.0086898974217773
+          },
+          {
+            "coordinate": 26.0,
+            "centre": [
+              26.0,
+              -61.84814564784091,
+              58.31675883647055
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              25.93621453222975,
+              -62.26855841290335,
+              57.35146396375074
+            ],
+            "minimumWallGapMm": 0.33148185437102984,
+            "centreGapMm": 1.0548031428779838
+          },
+          {
+            "coordinate": 26.5,
+            "centre": [
+              26.5,
+              -62.32824745002998,
+              58.5369296526072
+            ],
+            "bone": "bone.temporal.right",
+            "closest": [
+              26.577120079956593,
+              -62.72141189732685,
+              57.53436861317147
+            ],
+            "minimumWallGapMm": 0.33509958999170086,
+            "centreGapMm": 1.0796547722050842
+          }
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.right",
+        "axis": 2,
+        "sections": [
+          {
+            "coordinate": 49.0,
+            "centre": [
+              14.24464052896213,
+              -62.222011619532815,
+              49.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.61999805009217,
+              -60.66816508506485,
+              48.22068898460485
+            ],
+            "minimumWallGapMm": 0.0029877865864349554,
+            "centreGapMm": 2.379333498176129
+          },
+          {
+            "coordinate": 49.5,
+            "centre": [
+              12.875917496119694,
+              -58.205333852996205,
+              49.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.980262787492594,
+              -58.20323028860281,
+              49.49719892962924
+            ],
+            "minimumWallGapMm": 0.010243342330681264,
+            "centreGapMm": 0.10440407468137623
+          },
+          {
+            "coordinate": 50.0,
+            "centre": [
+              12.312711438714736,
+              -57.811497220907725,
+              50.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.97552662401387,
+              -57.74784431038149,
+              49.99688299019391
+            ],
+            "minimumWallGapMm": 0.004595676336132982,
+            "centreGapMm": 0.6658718935589024
+          },
+          {
+            "coordinate": 50.5,
+            "centre": [
+              12.22680101389463,
+              -57.76610985821293,
+              50.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.59585700264318,
+              -58.15910135537816,
+              50.80204446106747
+            ],
+            "minimumWallGapMm": 0.0011933386696017965,
+            "centreGapMm": 0.6179607561462777
+          },
+          {
+            "coordinate": 51.0,
+            "centre": [
+              12.220864319811119,
+              -57.77678502462542,
+              51.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.442030879516874,
+              -58.012295570644135,
+              51.181008129847704
+            ],
+            "minimumWallGapMm": 0.0003856596343903085,
+            "centreGapMm": 0.3703293230208443
+          },
+          {
+            "coordinate": 51.5,
+            "centre": [
+              12.208149145214168,
+              -57.84035470283253,
+              51.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.199661012187997,
+              -57.9107637003173,
+              51.54803974569116
+            ],
+            "minimumWallGapMm": 0.0005992829156244694,
+            "centreGapMm": 0.08565799726325514
+          },
+          {
+            "coordinate": 52.0,
+            "centre": [
+              12.202649144450477,
+              -57.83417379488128,
+              52.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.183853684292393,
+              -57.69085813690327,
+              51.84756969654709
+            ],
+            "minimumWallGapMm": 0.02363744941283101,
+            "centreGapMm": 0.21006581005715694
+          },
+          {
+            "coordinate": 52.5,
+            "centre": [
+              12.225435225882967,
+              -57.80533156997949,
+              52.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              12.043316829360801,
+              -57.48005259407401,
+              52.063098952799905
+            ],
+            "minimumWallGapMm": 0.060787565594451046,
+            "centreGapMm": 0.5743309564723635
+          },
+          {
+            "coordinate": 53.0,
+            "centre": [
+              12.191066143872089,
+              -57.718230876862805,
+              53.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.876977837101641,
+              -57.23054379743889,
+              52.31819872221563
+            ],
+            "minimumWallGapMm": 0.39296266130482227,
+            "centreGapMm": 0.8951777110023225
+          },
+          {
+            "coordinate": 53.5,
+            "centre": [
+              12.16785538438053,
+              -57.55398898525243,
+              53.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.691975144043584,
+              -56.953039415019326,
+              52.60192140022048
+            ],
+            "minimumWallGapMm": 0.7678192428682713,
+            "centreGapMm": 1.180740259535704
+          },
+          {
+            "coordinate": 54.0,
+            "centre": [
+              12.135397706551279,
+              -57.40149040268484,
+              54.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.508466221371123,
+              -56.677775690946284,
+              52.883353211389185
+            ],
+            "minimumWallGapMm": 1.0039295675292739,
+            "centreGapMm": 1.470954153470416
+          },
+          {
+            "coordinate": 54.5,
+            "centre": [
+              12.094977547484447,
+              -57.28273671718841,
+              54.5
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.332571562147574,
+              -56.41393337615678,
+              53.15310768326595
+            ],
+            "minimumWallGapMm": 1.3042868274708819,
+            "centreGapMm": 1.7748805719660228
+          },
+          {
+            "coordinate": 55.0,
+            "centre": [
+              12.064984573028621,
+              -57.17936074229817,
+              55.0
+            ],
+            "bone": "bone.occipital",
+            "closest": [
+              11.19551944732666,
+              -56.20835494995117,
+              53.3632926940918
+            ],
+            "minimumWallGapMm": 1.6891215223830724,
+            "centreGapMm": 2.0922792975118405
+          },
+          {
+            "coordinate": 55.5,
+            "centre": [
+              12.188913894448927,
+              -56.96298931748811,
+              55.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.81796793870642,
+              -55.714288581232324,
+              54.8868782343632
+            ],
+            "minimumWallGapMm": 1.853481400754692,
+            "centreGapMm": 2.748919160920355
+          },
+          {
+            "coordinate": 56.0,
+            "centre": [
+              12.178093870792367,
+              -56.91848166562404,
+              56.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.776300408939157,
+              -55.576108235525716,
+              55.32942876154205
+            ],
+            "minimumWallGapMm": 1.9040274509119568,
+            "centreGapMm": 2.8320035390305933
+          },
+          {
+            "coordinate": 56.5,
+            "centre": [
+              12.19287640884468,
+              -56.988673235037005,
+              56.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.801440007872111,
+              -55.36996356123434,
+              55.65205370691211
+            ],
+            "minimumWallGapMm": 1.764863648644569,
+            "centreGapMm": 3.009684698422818
+          },
+          {
+            "coordinate": 57.0,
+            "centre": [
+              12.175687208015754,
+              -56.93293199397945,
+              57.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.830875565792777,
+              -55.12859202955943,
+              56.02981014174699
+            ],
+            "minimumWallGapMm": 1.810423488028521,
+            "centreGapMm": 3.1136879589587423
+          },
+          {
+            "coordinate": 57.5,
+            "centre": [
+              12.083066902945678,
+              -56.78251891097341,
+              57.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.863320028862397,
+              -54.86254748008661,
+              56.44618087038562
+            ],
+            "minimumWallGapMm": 1.940151759197301,
+            "centreGapMm": 3.1183491206670886
+          },
+          {
+            "coordinate": 58.0,
+            "centre": [
+              12.068553295430538,
+              -56.726655188533385,
+              58.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.892771384959108,
+              -54.62104640339135,
+              56.82414004853782
+            ],
+            "minimumWallGapMm": 2.22192454089029,
+            "centreGapMm": 3.248116670234411
+          },
+          {
+            "coordinate": 58.5,
+            "centre": [
+              11.946477268952277,
+              -56.71885700205071,
+              58.5
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.92006891793577,
+              -54.39720667311405,
+              57.174458488733315
+            ],
+            "minimumWallGapMm": 2.4888133690356637,
+            "centreGapMm": 3.3546164241254646
+          },
+          {
+            "coordinate": 59.0,
+            "centre": [
+              11.813405590836272,
+              -56.68737374574363,
+              59.0
+            ],
+            "bone": "bone.sphenoid",
+            "closest": [
+              9.94815303200954,
+              -54.16691697899686,
+              57.534871389232656
+            ],
+            "minimumWallGapMm": 2.738319929113153,
+            "centreGapMm": 3.460992815268228
+          }
+        ]
+      }
+    ],
+    "scope": "20 local venous labels; contacts/topology do not establish full anatomical acceptance. Canal/nerve/cervical targets absent from this scene are not inferred."
+  },
+  "acceptedCorrections": [
+    {
+      "node": "vein.middle_meningeal.anterior.left",
+      "maxShiftMm": 0.07999992370605469,
+      "movedVertices": 3490,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 35,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.frontal",
+          "system": "bone",
+          "contacts": 1191
+        },
+        {
+          "other": "bone.sphenoid",
+          "system": "bone",
+          "contacts": 710
+        },
+        {
+          "other": "bone.parietal.left",
+          "system": "bone",
+          "contacts": 253
+        },
+        {
+          "other": "vein.sphenoparietal.left",
+          "system": "vein",
+          "contacts": 82
+        },
+        {
+          "other": "vein.ovale_emissary.left",
+          "system": "vein",
+          "contacts": 20
+        },
+        {
+          "other": "vein.middle_meningeal.posterior.left",
+          "system": "vein",
+          "contacts": 143
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.frontal",
+          "system": "bone",
+          "contacts": 1191
+        },
+        {
+          "other": "bone.sphenoid",
+          "system": "bone",
+          "contacts": 689
+        },
+        {
+          "other": "bone.parietal.left",
+          "system": "bone",
+          "contacts": 253
+        },
+        {
+          "other": "vein.sphenoparietal.left",
+          "system": "vein",
+          "contacts": 82
+        },
+        {
+          "other": "vein.middle_meningeal.posterior.left",
+          "system": "vein",
+          "contacts": 143
+        }
+      ],
+      "baselineSelfIntersections": 0,
+      "candidateSelfIntersections": 0,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.9901592692933003,
+        1.0,
+        1.0090008117669929
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "p95AbsoluteFractionalChange": 0.0
+      },
+      "passed": true,
+      "field": {
+        "method": "constant XY displacement in each axial section, with smooth axial taper",
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "amplitudeMm": 0.08,
+        "zWindowMm": [
+          48.7,
+          50.2,
+          53.5,
+          56.0
+        ]
+      }
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "maxShiftMm": 0.36019946311286555,
+      "movedVertices": 929,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 118,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 46
+        },
+        {
+          "other": "bone.temporal.left",
+          "system": "bone",
+          "contacts": 55
+        },
+        {
+          "other": "vein.internal_jugular.left",
+          "system": "vein",
+          "contacts": 258
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 548
+        },
+        {
+          "other": "vein.cpa_inferior_petrosal_bridge.left",
+          "system": "vein",
+          "contacts": 234
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 45
+        },
+        {
+          "other": "bone.temporal.left",
+          "system": "bone",
+          "contacts": 55
+        },
+        {
+          "other": "vein.internal_jugular.left",
+          "system": "vein",
+          "contacts": 258
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 564
+        },
+        {
+          "other": "vein.cpa_inferior_petrosal_bridge.left",
+          "system": "vein",
+          "contacts": 234
+        }
+      ],
+      "baselineSelfIntersections": 3,
+      "candidateSelfIntersections": 3,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.9172249044777906,
+        1.0,
+        1.0576535038834842
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          0.953896530511535,
+          1.0,
+          1.005424386661856
+        ],
+        "p95AbsoluteFractionalChange": 0.04610346948846494
+      },
+      "passed": true,
+      "scale": 0.5
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "maxShiftMm": 0.16159141266377117,
+      "movedVertices": 455,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 36,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 202
+        },
+        {
+          "other": "bone.temporal.right",
+          "system": "bone",
+          "contacts": 245
+        },
+        {
+          "other": "vein.internal_jugular.right",
+          "system": "vein",
+          "contacts": 225
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 77
+        },
+        {
+          "other": "brain.tentorium-cerebelli.right",
+          "system": "brain",
+          "contacts": 27
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 201
+        },
+        {
+          "other": "bone.temporal.right",
+          "system": "bone",
+          "contacts": 245
+        },
+        {
+          "other": "vein.internal_jugular.right",
+          "system": "vein",
+          "contacts": 225
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 79
+        },
+        {
+          "other": "brain.tentorium-cerebelli.right",
+          "system": "brain",
+          "contacts": 27
+        }
+      ],
+      "baselineSelfIntersections": 1,
+      "candidateSelfIntersections": 1,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.9448906419651882,
+        1.0,
+        1.0236879680559956
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          0.9610771078228472,
+          1.0,
+          1.0
+        ],
+        "p95AbsoluteFractionalChange": 0.03892289217715279
+      },
+      "passed": true,
+      "scale": 0.5
+    }
+  ],
+  "trialResults": [
+    {
+      "node": "vein.middle_meningeal.anterior.left",
+      "amplitudeMm": 0.08,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "targetContactPairs": 49
+    },
+    {
+      "node": "vein.middle_meningeal.anterior.left",
+      "amplitudeMm": 0.08,
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "targetContactPairs": 0,
+      "assessment": {
+        "node": "vein.middle_meningeal.anterior.left",
+        "maxShiftMm": 0.07999992370605469,
+        "movedVertices": 3490,
+        "nativeBoundaryCoordinatesExact": true,
+        "nativeSharedVerticesChecked": 35,
+        "nativeSharedCoordinatesExact": true,
+        "newContactObjects": [],
+        "increasedBoneNeuralOrArterialContactObjects": [],
+        "baselineContacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "contacts": 1191
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "contacts": 710
+          },
+          {
+            "other": "bone.parietal.left",
+            "system": "bone",
+            "contacts": 253
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "system": "vein",
+            "contacts": 82
+          },
+          {
+            "other": "vein.ovale_emissary.left",
+            "system": "vein",
+            "contacts": 20
+          },
+          {
+            "other": "vein.middle_meningeal.posterior.left",
+            "system": "vein",
+            "contacts": 143
+          }
+        ],
+        "candidateContacts": [
+          {
+            "other": "bone.frontal",
+            "system": "bone",
+            "contacts": 1191
+          },
+          {
+            "other": "bone.sphenoid",
+            "system": "bone",
+            "contacts": 689
+          },
+          {
+            "other": "bone.parietal.left",
+            "system": "bone",
+            "contacts": 253
+          },
+          {
+            "other": "vein.sphenoparietal.left",
+            "system": "vein",
+            "contacts": 82
+          },
+          {
+            "other": "vein.middle_meningeal.posterior.left",
+            "system": "vein",
+            "contacts": 143
+          }
+        ],
+        "baselineSelfIntersections": 0,
+        "candidateSelfIntersections": 0,
+        "newSelfIntersectionPairs": [],
+        "reversedFaces": [],
+        "edgeLengthRatioP01MedianP99": [
+          0.9901592692933003,
+          1.0,
+          1.0090008117669929
+        ],
+        "calibreCheck": {
+          "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+          "radiusRatioP05MedianP95": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "p95AbsoluteFractionalChange": 0.0
+        },
+        "passed": true,
+        "field": {
+          "method": "constant XY displacement in each axial section, with smooth axial taper",
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "amplitudeMm": 0.08,
+          "zWindowMm": [
+            48.7,
+            50.2,
+            53.5,
+            56.0
+          ]
+        }
+      }
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "maxShiftMm": 0.7203952897372085,
+      "movedVertices": 929,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 118,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 46
+        },
+        {
+          "other": "bone.temporal.left",
+          "system": "bone",
+          "contacts": 55
+        },
+        {
+          "other": "vein.internal_jugular.left",
+          "system": "vein",
+          "contacts": 258
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 548
+        },
+        {
+          "other": "vein.cpa_inferior_petrosal_bridge.left",
+          "system": "vein",
+          "contacts": 234
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 46
+        },
+        {
+          "other": "bone.temporal.left",
+          "system": "bone",
+          "contacts": 55
+        },
+        {
+          "other": "vein.internal_jugular.left",
+          "system": "vein",
+          "contacts": 258
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 576
+        },
+        {
+          "other": "vein.cpa_inferior_petrosal_bridge.left",
+          "system": "vein",
+          "contacts": 234
+        }
+      ],
+      "baselineSelfIntersections": 3,
+      "candidateSelfIntersections": 3,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.8451926143036778,
+        1.0,
+        1.1260159187247696
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          0.914013666430553,
+          1.0,
+          1.0161013278429363
+        ],
+        "p95AbsoluteFractionalChange": 0.08598633356944699
+      },
+      "passed": false,
+      "scale": 1.0
+    },
+    {
+      "node": "vein.inferior_petrosal.left",
+      "maxShiftMm": 0.36019946311286555,
+      "movedVertices": 929,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 118,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 46
+        },
+        {
+          "other": "bone.temporal.left",
+          "system": "bone",
+          "contacts": 55
+        },
+        {
+          "other": "vein.internal_jugular.left",
+          "system": "vein",
+          "contacts": 258
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 548
+        },
+        {
+          "other": "vein.cpa_inferior_petrosal_bridge.left",
+          "system": "vein",
+          "contacts": 234
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 45
+        },
+        {
+          "other": "bone.temporal.left",
+          "system": "bone",
+          "contacts": 55
+        },
+        {
+          "other": "vein.internal_jugular.left",
+          "system": "vein",
+          "contacts": 258
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 564
+        },
+        {
+          "other": "vein.cpa_inferior_petrosal_bridge.left",
+          "system": "vein",
+          "contacts": 234
+        }
+      ],
+      "baselineSelfIntersections": 3,
+      "candidateSelfIntersections": 3,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.9172249044777906,
+        1.0,
+        1.0576535038834842
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          0.953896530511535,
+          1.0,
+          1.005424386661856
+        ],
+        "p95AbsoluteFractionalChange": 0.04610346948846494
+      },
+      "passed": true,
+      "scale": 0.5
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "maxShiftMm": 0.3231806054270514,
+      "movedVertices": 455,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 36,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 202
+        },
+        {
+          "other": "bone.temporal.right",
+          "system": "bone",
+          "contacts": 245
+        },
+        {
+          "other": "vein.internal_jugular.right",
+          "system": "vein",
+          "contacts": 225
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 77
+        },
+        {
+          "other": "brain.tentorium-cerebelli.right",
+          "system": "brain",
+          "contacts": 27
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 201
+        },
+        {
+          "other": "bone.temporal.right",
+          "system": "bone",
+          "contacts": 245
+        },
+        {
+          "other": "vein.internal_jugular.right",
+          "system": "vein",
+          "contacts": 225
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 82
+        },
+        {
+          "other": "brain.tentorium-cerebelli.right",
+          "system": "brain",
+          "contacts": 27
+        }
+      ],
+      "baselineSelfIntersections": 1,
+      "candidateSelfIntersections": 1,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.8972804285063539,
+        1.0,
+        1.0519939471410762
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          0.9320795788532711,
+          1.0,
+          1.0
+        ],
+        "p95AbsoluteFractionalChange": 0.07786033830563012
+      },
+      "passed": false,
+      "scale": 1.0
+    },
+    {
+      "node": "vein.inferior_petrosal.right",
+      "maxShiftMm": 0.16159141266377117,
+      "movedVertices": 455,
+      "nativeBoundaryCoordinatesExact": true,
+      "nativeSharedVerticesChecked": 36,
+      "nativeSharedCoordinatesExact": true,
+      "newContactObjects": [],
+      "increasedBoneNeuralOrArterialContactObjects": [],
+      "baselineContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 202
+        },
+        {
+          "other": "bone.temporal.right",
+          "system": "bone",
+          "contacts": 245
+        },
+        {
+          "other": "vein.internal_jugular.right",
+          "system": "vein",
+          "contacts": 225
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 77
+        },
+        {
+          "other": "brain.tentorium-cerebelli.right",
+          "system": "brain",
+          "contacts": 27
+        }
+      ],
+      "candidateContacts": [
+        {
+          "other": "bone.occipital",
+          "system": "bone",
+          "contacts": 201
+        },
+        {
+          "other": "bone.temporal.right",
+          "system": "bone",
+          "contacts": 245
+        },
+        {
+          "other": "vein.internal_jugular.right",
+          "system": "vein",
+          "contacts": 225
+        },
+        {
+          "other": "vein.basilar_plexus",
+          "system": "vein",
+          "contacts": 79
+        },
+        {
+          "other": "brain.tentorium-cerebelli.right",
+          "system": "brain",
+          "contacts": 27
+        }
+      ],
+      "baselineSelfIntersections": 1,
+      "candidateSelfIntersections": 1,
+      "newSelfIntersectionPairs": [],
+      "reversedFaces": [],
+      "edgeLengthRatioP01MedianP99": [
+        0.9448906419651882,
+        1.0,
+        1.0236879680559956
+      ],
+      "calibreCheck": {
+        "method": "Matched world-Z section median radius around the XY bounding midpoint; geometric deformation diagnostic, not physiological calibre",
+        "radiusRatioP05MedianP95": [
+          0.9610771078228472,
+          1.0,
+          1.0
+        ],
+        "p95AbsoluteFractionalChange": 0.03892289217715279
+      },
+      "passed": true,
+      "scale": 0.5
+    }
+  ],
+  "modelPatch": {
+    "sourceSha256": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+    "sha256": "89f79f357f03f3ecca91282c46bbfbcb729aa3baaef59f45645ed345d82be65d",
+    "bytes": 17620592,
+    "changed": [
+      {
+        "node": "vein.middle_meningeal.anterior.left",
+        "vertices": 22177,
+        "positionSha256": "dd8ee7ca3fdc24a913a4d39306ed7ee1e54959acdb3c8bb21b637a6996d660ee",
+        "positionEncoding": "Lossless meshopt Float32; no additional coordinate quantisation",
+        "normalBits": 12,
+        "nativeSeamNormalsRetained": true,
+        "normalUpdatesLimitedToMovedFaces": true,
+        "bounds": [
+          [
+            -53.808021545410156,
+            -49.15920639038086,
+            48.48078155517578
+          ],
+          [
+            -22.696619033813477,
+            -11.418145179748535,
+            150.0317840576172
+          ]
+        ]
+      },
+      {
+        "node": "vein.inferior_petrosal.left",
+        "vertices": 2847,
+        "positionSha256": "de009feb1cc1de9c9ed259d3c4760c9118c91f9abb044d0aab99e35ec2f5a277",
+        "positionEncoding": "Lossless meshopt Float32; no additional coordinate quantisation",
+        "normalBits": 12,
+        "nativeSeamNormalsRetained": true,
+        "normalUpdatesLimitedToMovedFaces": true,
+        "bounds": [
+          [
+            -28.067811965942383,
+            -74.79129791259766,
+            31.294694900512695
+          ],
+          [
+            -6.303360939025879,
+            -55.70669937133789,
+            62.674224853515625
+          ]
+        ]
+      },
+      {
+        "node": "vein.inferior_petrosal.right",
+        "vertices": 2942,
+        "positionSha256": "271ea8719530cc064d7fc1851c7e4a48039fcd98521f263684f7731f972d6ea7",
+        "positionEncoding": "Lossless meshopt Float32; no additional coordinate quantisation",
+        "normalBits": 12,
+        "nativeSeamNormalsRetained": true,
+        "normalUpdatesLimitedToMovedFaces": true,
+        "bounds": [
+          [
+            10.888470649719238,
+            -74.68318176269531,
+            31.614717483520508
+          ],
+          [
+            29.69196891784668,
+            -55.840763092041016,
+            59.473995208740234
+          ]
+        ]
+      }
+    ],
+    "otherStreamsRetained": true,
+    "indicesRetained": true
+  },
+  "boneFitMetrics": [
+    {
+      "id": "vein.inferior_petrosal.left",
+      "movedVertices": 929,
+      "nearestBoneDistanceBeforeMedianMm": 2.0331596006427795,
+      "nearestBoneDistanceAfterMedianMm": 1.933569600943278,
+      "verticesCloserToBone": 929,
+      "verticesFartherFromBone": 0,
+      "meanDistanceChangeMm": -0.08406669476416595
+    },
+    {
+      "id": "vein.inferior_petrosal.right",
+      "movedVertices": 455,
+      "nearestBoneDistanceBeforeMedianMm": 2.0842138740341736,
+      "nearestBoneDistanceAfterMedianMm": 2.0554698985001183,
+      "verticesCloserToBone": 433,
+      "verticesFartherFromBone": 19,
+      "meanDistanceChangeMm": -0.031335805532308636
+    }
+  ],
+  "dsaRefresh": {
+    "oldHash": "ee5f0a948f5a03d6f2f7367781c98349845fac6930a93519f67465717e4d7d73",
+    "newHash": "89f79f357f03f3ecca91282c46bbfbcb729aa3baaef59f45645ed345d82be65d",
+    "changes": [
+      {
+        "id": "vein.inferior_petrosal.left",
+        "fixedBoundaryEndpointChecks": 574,
+        "projectionFaces": 5654,
+        "volumeMm3": 159.46554024221814,
+        "veinSite": [
+          -17.18558645248413,
+          -65.24899864196777,
+          46.98445987701416
+        ]
+      },
+      {
+        "id": "vein.inferior_petrosal.right",
+        "fixedBoundaryEndpointChecks": 410,
+        "projectionFaces": 5850,
+        "volumeMm3": 141.10586015147825,
+        "veinSite": [
+          20.29021978378296,
+          -65.26197242736816,
+          45.54435634613037
+        ]
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.left",
+        "fixedBoundaryEndpointChecks": 70,
+        "projectionFaces": 44352,
+        "volumeMm3": 22.086163320624433,
+        "veinSite": [
+          -38.252320289611816,
+          -30.288675785064697,
+          99.25628280639648
+        ]
+      }
+    ],
+    "arterialCoursesUnchanged": true,
+    "graphUnchanged": true,
+    "projectionTopologyUnchanged": true
+  },
+  "limitations": [
+    "Superior petrosal geometry retained: open walls, multiple components, degenerate faces and existing arterial contacts require a coupled regional repair.",
+    "Inferior petrosal open walls, existing bone contacts and left/right 3/1 self-intersections remain. Local fitting is not exact groove or lumen acceptance.",
+    "Ten companion additions retain closed individual surfaces, but separate receiving-volume overlaps do not certify a continuous merged lumen.",
+    "Cervical vertebrae and exact transverse foramina, canal/nerve/globe targets are absent or unsegmented; no invented targets or new branches.",
+    "G07 dural/canal containment, capped endpoints and full receiver closure remain. The left meningeal/emissary contact is cleared.",
+    "Twelve deferred arterial segments in three networks and G01/G03/G04/G05/G06 remain."
+  ],
+  "normalStreamVerification": {
+    "passed": true,
+    "changedNormalStreams": [
+      {
+        "name": "vein.inferior_petrosal.left",
+        "boundaryVertices": 278,
+        "unaffectedNormalMaximumVectorError": 0
+      },
+      {
+        "name": "vein.inferior_petrosal.right",
+        "boundaryVertices": 200,
+        "unaffectedNormalMaximumVectorError": 0
+      },
+      {
+        "name": "vein.middle_meningeal.anterior.left",
+        "boundaryVertices": 35,
+        "unaffectedNormalMaximumVectorError": 0
+      }
+    ],
+    "otherNormalStreamsExact": true
+  }
+}

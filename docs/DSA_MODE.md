@@ -1,8 +1,9 @@
-# DSA mode, v0.9.80
+# DSA mode, v0.9.82
 
 The detector/vessel icon beside bookmarks enters DSA without changing rotation,
-pan or zoom. Until an injection is established, the existing arterial placement
-view asks for an artery and then a point. Search selects the artery without
+pan or zoom. Until an injection is established, the ordinary 3D scene immediately
+shows all arteries opaque and asks for an artery and then a point. Opening this
+selector needs no DSA data requests, renderer, targets, worker or section work. Search selects the artery without
 reframing the camera. Escape or Cancel before the first injection returns to
 the previous 3D view. An established injection persists across mode switches.
 
@@ -146,8 +147,9 @@ separate play/pause controls and looping are checked in `dsa-controls-validation
 ## Injection preparation performance
 
 Closed section splitting and boundary checks run in a module worker, reusing
-`flowGeometry.ts`. Each worker caches decoded surface coordinates. Preparation starts when an artery
-is selected, and shared pending requests avoid duplicate work. Uncut vessels
+`flowGeometry.ts`. Each worker caches decoded surface coordinates. Preparation starts
+only after the injection point is confirmed, or an explicit bookmark supplies its
+proximal origin. Selecting an artery only loads and validates course data. Uncut vessels
 up to 18 mm reuse their already closed projection surface. Completed sections
 are cached across runs. Original atlas buffers are never transferred or changed.
 The previous view stays available during preparation; Cancel or Escape prevents
@@ -161,9 +163,13 @@ synchronous main-thread preparation block is removed.
 
 The selected injection artery is opaque orange. Placement picking respects the
 nearest arterial surface, including context vessels that cannot be injected.
-Rotate to separate overlaps. First mode entry lazily loads the projection and
-flow files. An established territory also waits for its initial cached sections
-before the view switches; background workers keep geometry work off the UI thread.
+Rotate to separate overlaps. The selector uses the ordinary scene, arterial
+batches, opaque materials and pick proxies. Visibility, focus, selection and
+clipping are temporarily overridden without changing their saved values. Course
+data load when an artery is chosen; projection recipes, renderer and worker are
+created when a point is confirmed. An established injection or explicit bookmark
+can enter DSA directly and waits for any uncached sections. Worker splitting
+keeps geometry preparation off the UI thread.
 
 Opaque material settings, selected colour, overlap picking and startup preparation
 timings are checked in `dsa-opaque-placement-validation.json`.
@@ -186,3 +192,31 @@ nearest-vessel overlaps and mobile placement.
 In software-rendered Chromium, uncached ICA preparation fell from 9,762.5 ms
 to 1,565.8 ms. These measure section preparation rather than complete button
 click to displayed frame; device timings vary. See `dsa-splitter-validation.json`.
+
+## Compact controls, v0.9.81
+
+The vessel-name caption is removed. Time and contrast phase stay above the
+slider, and Choose injection point shares the playback buttons row. At widths
+up to 420 pixels the redundant 2 frames/s label is hidden so the controls fit.
+Desktop, 390-pixel and 320-pixel placement-button and layout checks passed; see
+`dsa-layout-validation.json`.
+
+## Selector reuse, v0.9.82
+
+The separate arterial placement scene, its meshes and materials, empty DSA run
+and selection-time section prewarming have been removed. Normal 3D picking
+chooses the nearest arterial surface, with context-only arteries still blocking
+clicks through them. Source selection validates the course; the confirmed point
+receives the existing closed-surface containment check before its DSA run is
+built. Cancelled or replaced selections cannot commit stale asynchronous work.
+
+The existing projection, ordinary view state, bookmark origins, DSA inspection,
+contrast shading and anatomical geometry are retained. See
+`dsa-selector-validation.json` for browser interaction and entry checks.
+
+The matched software-rendered comparison at 1280 x 900 and DPR 1 measured
+selector setup at 7.2 ms initially and 1.6 ms on repeat, versus 4.2 ms and
+1.6 ms for ordinary arteries-only visibility changes. Both submitted one draw
+call for 7,176,719 triangles. Full image completion still took approximately
+6-8 seconds in this software-rendered environment. This is a graphics cost,
+not DSA preparation; device timings vary.

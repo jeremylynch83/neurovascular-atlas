@@ -22,7 +22,7 @@ try {
  page.on('pageerror',error=>report.errors.push(error.message));
  page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
  await page.goto('http://127.0.0.1:8790/tests/presets/app.html',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>!document.querySelector('.loading'),{},{timeout:180000});
+ await page.waitForFunction(()=>document.querySelector('[aria-label="Anatomical presets"]')?.disabled===false,{},{timeout:180000});
  assert.equal(await page.locator('.load-error').count(),0);
  const bookmark=page.getByRole('button',{name:'Anatomical presets',exact:true});
  await page.getByRole('textbox',{name:'Search anatomy'}).fill('External carotid artery right');
@@ -71,7 +71,7 @@ try {
  await page.addInitScript(()=>Object.defineProperty(window,'devicePixelRatio',{get:()=>0.35}));
  page.on('pageerror',error=>report.errors.push(error.message));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
  const assets=[];page.on('response',r=>{if(r.url().includes('.glb'))assets.push(r.status())});
- await page.goto('http://127.0.0.1:8791',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>!document.querySelector('.loading'),{},{timeout:180000});
+ await page.goto('http://127.0.0.1:8791',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('[aria-label="Anatomical presets"]')?.disabled===false,{},{timeout:180000});
  assert.equal(assets.length,5);assert(assets.every(s=>s===200));
  await page.getByRole('button',{name:'Anatomical presets',exact:true}).click();
  await page.waitForFunction(()=>[...document.querySelectorAll('.preset-card img')].every(img=>img.complete&&img.naturalWidth>0));

@@ -1,0 +1,92 @@
+{
+  "acceptedProposalIds": [
+    "component-4-loop-0"
+  ],
+  "trials": [
+    {
+      "proposalId": "component-4-loop-0",
+      "target": "vein.basilar_plexus",
+      "passed": true,
+      "report": {
+        "passed": true,
+        "changes": [
+          {
+            "node": "vein.basilar_plexus",
+            "sourceVertices": 14677,
+            "sourceTriangles": 28856,
+            "candidateVertices": 14678,
+            "candidateTriangles": 28859,
+            "retainedSourceTriangles": 28856,
+            "changedTriangles": 3,
+            "protectedSourceAttachments": [
+              {
+                "other": "vein.anterior_condylar.left",
+                "coordinates": 8,
+                "missing": 0
+              },
+              {
+                "other": "vein.anterior_condylar.right",
+                "coordinates": 22,
+                "missing": 0
+              },
+              {
+                "other": "vein.cavernous.left",
+                "coordinates": 129,
+                "missing": 0
+              },
+              {
+                "other": "vein.cavernous.right",
+                "coordinates": 108,
+                "missing": 0
+              },
+              {
+                "other": "vein.inferior_petrosal.left",
+                "coordinates": 13,
+                "missing": 0
+              },
+              {
+                "other": "vein.marginal",
+                "coordinates": 118,
+                "missing": 0
+              }
+            ]
+          }
+        ],
+        "crossings": [],
+        "trianglePairsChecked": 53,
+        "clearance": [
+          {
+            "node": "vein.basilar_plexus",
+            "target": "bone.occipital",
+            "closedTarget": true,
+            "badSamplesOrFaceBalls": 0,
+            "ambiguousSamples": 0,
+            "sampleCount": 15,
+            "minimumOpenTargetClearanceMarginMm": null
+          },
+          {
+            "node": "vein.basilar_plexus",
+            "target": "bone.temporal.left",
+            "closedTarget": false,
+            "badSamplesOrFaceBalls": 0,
+            "ambiguousSamples": 0,
+            "sampleCount": 15,
+            "minimumOpenTargetClearanceMarginMm": 0.16452387608304486
+          }
+        ],
+        "nativeNetworks": [
+          {
+            "id": "component-4-loop-0",
+            "boundaryEdgesBefore": 749,
+            "boundaryEdgesAfter": 744,
+            "preExistingBadEdges": 603,
+            "candidateBadEdges": 603,
+            "newBadEdges": 0
+          }
+        ],
+        "issues": [],
+        "scope": "All changed faces against all named surfaces; exact source attachments; no new bad native edges. Unchanged remote defects and regional anatomical acceptance remain open."
+      }
+    }
+  ]
+}
