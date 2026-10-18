@@ -2,10 +2,12 @@ import { Vector3, type Camera } from 'three';
 
 /** Blend the orbit target during an intentional one-finger/left-button drag. */
 export class RotationCentring {
-  private pointers = new Set<number>();
-  private start: { id: number; x: number; y: number } | null = null;
+  private pointers = new Map<number, { x: number; y: number }>();
+  private start: { id: number; x: number; y: number; pan: boolean } | null = null;
+  private multiStart: { x: number; y: number } | null = null;
   private rotating = false;
   private blocked = false;
+  private cancelled = false;
   private progress = 0;
   private lastFrame: number | null = null;
   private delta = new Vector3();
@@ -21,33 +23,57 @@ export class RotationCentring {
   }
 
   reset() { this.progress = 0; this.lastFrame = null; }
-  get active() { return this.rotating && !this.blocked; }
+  arm() { this.cancelled = false; this.reset(); }
+  private cancel() { this.cancelled = true; this.reset(); }
+  get active() { return this.rotating && !this.blocked && !this.cancelled; }
+
+  private centroid() {
+    let x = 0, y = 0;
+    for (const p of this.pointers.values()) { x += p.x; y += p.y; }
+    return { x: x / this.pointers.size, y: y / this.pointers.size };
+  }
+  private checkPan() {
+    // Sample the centroid once per frame, after both touch moves. A symmetric
+    // pinch changes the distance between fingers without being treated as pan.
+    if (this.pointers.size > 1 && this.multiStart) {
+      const p = this.centroid();
+      if (Math.hypot(p.x - this.multiStart.x, p.y - this.multiStart.y) > 5) this.cancel();
+    }
+  }
 
   private down = (event: PointerEvent) => {
     if (!this.pointers.size) {
       this.blocked = event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey;
-      this.start = { id: event.pointerId, x: event.clientX, y: event.clientY };
+      this.start = { id: event.pointerId, x: event.clientX, y: event.clientY,
+        pan: event.button === 2 || (event.button === 0 && (event.ctrlKey || event.metaKey || event.shiftKey)) };
+      this.multiStart = null;
       this.rotating = false; this.lastFrame = null;
       if (this.progress === 1) this.reset();
     }
-    this.pointers.add(event.pointerId);
-    if (this.pointers.size > 1) this.interrupt();
+    this.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (this.pointers.size > 1) { this.multiStart = this.centroid(); this.interrupt(); }
   };
   private move = (event: PointerEvent) => {
+    if (!this.pointers.has(event.pointerId)) return;
+    this.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (this.start?.id === event.pointerId && this.start.pan &&
+        Math.hypot(event.clientX - this.start.x, event.clientY - this.start.y) > 5) this.cancel();
     if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) this.interrupt();
     if (this.blocked || this.pointers.size !== 1 || this.start?.id !== event.pointerId) return;
     if (Math.hypot(event.clientX - this.start.x, event.clientY - this.start.y) > 5) this.rotating = true;
   };
   private up = (event: PointerEvent) => {
+    this.checkPan();
     this.pointers.delete(event.pointerId);
     this.rotating = false; this.lastFrame = null;
-    if (!this.pointers.size) { this.start = null; this.blocked = false; }
+    if (!this.pointers.size) { this.start = null; this.multiStart = null; this.blocked = false; }
   };
   private interrupt = () => { this.blocked = true; this.rotating = false; this.reset(); };
-  private blur = () => { this.pointers.clear(); this.start = null; this.interrupt(); };
+  private blur = () => { this.pointers.clear(); this.start = null; this.multiStart = null; this.interrupt(); };
 
   step(camera: Camera, target: Vector3, centre: Vector3 | null, enabled: boolean, now: number) {
-    if (!enabled || !this.active || !centre || this.progress === 1) { this.lastFrame = null; return false; }
+    if (enabled) this.checkPan();
+    if (!enabled || this.cancelled || !this.active || !centre || this.progress === 1) { this.lastFrame = null; return false; }
     if (this.lastFrame === null) { this.lastFrame = now; return false; }
     const dt = Math.max(0, Math.min(50, now - this.lastFrame)); this.lastFrame = now;
     const next = Math.min(1, this.progress + dt / 400);

@@ -70,6 +70,7 @@ export class AnatomyEngine {
   private renderRequested = false;
   private bounds = new THREE.Box3();
   private selected: string | null = null;
+  private tappedPivot: { id: string; point: THREE.Vector3 } | null = null;
   private selectionHalo = new SelectionHalo(this.renderer, SELECTION_COLOUR);
   private selectionStarted = 0;
   private lastSelectionFrame = 0;
@@ -314,7 +315,9 @@ export class AnatomyEngine {
     }
     if (this.dsaView) { this.onSelect(this.dsaRenderer!.pick(this.raycaster,this.dsaTime),true); return; }
     const hit = pickAnatomy(this.raycaster, [...this.entries.values()], this.layers, this.clipEnabled ? this.clipPlane : null, this.visibility);
-    this.onSelect(hit ? this.objectToId.get(hit.object) ?? null : null);
+    const id = hit ? this.objectToId.get(hit.object) ?? null : null;
+    this.setSelected(id, hit?.point);
+    this.onSelect(id);
   };
 
   setTheme(dark: boolean) {
@@ -333,11 +336,18 @@ export class AnatomyEngine {
     this.landmarkMarker.clear();
   }
 
-  setSelected(id: string | null) {
+  setSelected(id: string | null, tappedPoint?: THREE.Vector3) {
     if (id !== this.selected) {
-      this.rotationCentring.reset();
+      this.rotationCentring.arm();
+      this.tappedPivot = null;
       this.selectionStarted = performance.now();
       this.lastSelectionFrame = 0;
+    }
+    if (id && tappedPoint) {
+      this.tappedPivot = { id, point: tappedPoint.clone() };
+      // A fresh point on the same vessel changes the pivot, while preserving
+      // cancellation if the user has already deliberately panned this selection.
+      this.rotationCentring.reset();
     }
     this.selected = id;
     this.clearLandmarkMarker();
@@ -382,6 +392,11 @@ export class AnatomyEngine {
       if (mesh?.visible) box.expandByObject(mesh);
     }
     return box.isEmpty() ? null : box.getCenter(new THREE.Vector3());
+  }
+  private selectedRotationPivot() {
+    if (this.tappedPivot?.id === this.selected) return this.entries.get(this.tappedPivot.id)?.mesh.visible
+      ? this.tappedPivot.point : null;
+    return this.selectedMidpoint();
   }
   setLayers(layers: Record<SystemId, LayerState>) {
     if ((Object.keys(layers) as SystemId[]).every(system => this.layers[system] === layers[system])) return;
@@ -457,6 +472,7 @@ export class AnatomyEngine {
   }
 
   focus(id: string) {
+    if (this.tappedPivot?.id === id) this.tappedPivot = null;
     this.userChangedView = true;
     const landmark = this.manifest.structures.find(s => s.id === id)?.landmark;
     if (landmark?.point) {
@@ -670,8 +686,8 @@ export class AnatomyEngine {
     if (this.started) this.controls.update();
     const frameTime = performance.now();
     const centreWhileRotating = this.started && this.mobileView.matches && !this.dsaView && !this.injectionPick;
-    const midpoint = centreWhileRotating && this.rotationCentring.active ? this.selectedMidpoint() : null;
-    if (this.rotationCentring.step(this.camera, this.controls.target, midpoint, centreWhileRotating, frameTime)) this.renderRequested = true;
+    const pivot = centreWhileRotating && this.rotationCentring.active ? this.selectedRotationPivot() : null;
+    if (this.rotationCentring.step(this.camera, this.controls.target, pivot, centreWhileRotating, frameTime)) this.renderRequested = true;
     const interval = frameTime - this.previousFrameTime;
     // Ignore tab suspension; ordinary slow frames reduce background throughput.
     if (this.previousFrameTime && interval < 250 && !document.hidden) this.frameInterval = this.frameInterval * .8 + interval * .2;
