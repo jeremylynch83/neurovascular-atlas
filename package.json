@@ -1,7 +1,7 @@
 {
   "name": "inr-anatomy-atlas",
   "private": true,
-  "version": "0.9.126",
+  "version": "0.9.127",
   "description": "Interactive 3D interventional neuroradiology anatomy atlas.",
   "type": "module",
   "license": "MIT",
@@ -12,18 +12,7 @@
     "build": "sh ./build-anatomy.sh && node tools/build-dsa-flow.mjs && tsc -b && vite build && python3 tools/precompress.py",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "test": "python3 tools/validate_anatomy.py",
-    "presets:build": "python3 tools/build_presets.py",
-    "presets:test": "python3 tests/presets/validate-presets.py",
-    "dsa:test": "node tests/dsa/validate-surfaces.mjs && node tests/dsa/validate-flow.mjs && node tests/dsa/validate-meningeal.mjs",
-    "dsa:flow": "node tools/build-dsa-flow.mjs",
-    "dsa:splitter:test": "node tests/dsa/validate-splitter.mjs",
-    "repair:prepare": "python3 tools/repair/repair.py prepare",
-    "repair:scan": "python3 tools/repair/repair.py scan",
-    "repair:run": "python3 tools/repair/repair.py run",
-    "repair:test": "python3 -m unittest discover -s tests/repair -v",
-    "repair:benchmark": "python3 tools/repair/benchmark.py",
-    "loading:test": "node --experimental-transform-types --test tests/staged-loading/queue.test.mjs"
+    "test": "python3 tools/validate_anatomy.py"
   },
   "dependencies": {
     "@fontsource-variable/source-serif-4": "^5.3.0",

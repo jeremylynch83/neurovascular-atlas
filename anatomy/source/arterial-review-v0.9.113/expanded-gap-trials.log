@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/3da1329b983b/batch21-work/expanded-gap-trials.py", line 16, in <module>
-    assert q[-1]==q[0];q=np.array(q[:-1],dtype='<f4');assert len(set(map(tuple,q)))==len(q);print('expanded boundary',len(q),'removed',removed,flush=True)
-                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

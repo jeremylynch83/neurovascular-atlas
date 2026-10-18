@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/3da1329b983b/atlas/inr-anatomy-atlas-v0.9.91/tools/arterial-subdivision-v0.9.106/reconstruct.py", line 33, in <module>
-    validation=validate_regional(scene,candidates,[]);(W/'regional-validation.json').write_text(json.dumps(validation,indent=2)+'\n');assert validation['passed'],validation['issues']
-                                                                                                                                             ~~~~~~~~~~^^^^^^^^^^
-AssertionError: [{'reason': 'changed-face-crossing', 'count': 2}]

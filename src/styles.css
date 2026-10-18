@@ -139,3 +139,7 @@
   .atlas-app{--mobile-bottom-room:180px}.camera-bar .views{flex-wrap:wrap}
 }
 @media(max-width:199px){.presets-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Animate each real progress update without changing loading readiness. */
+.loading-fill{transition:width 400ms ease-out}
+@media(prefers-reduced-motion:reduce){.loading-fill{transition:none}}
