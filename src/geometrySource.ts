@@ -6,12 +6,13 @@ export class WorkerGeometrySource implements GeometrySource {
   private failure: Error | null = null;
   private closed = false;
   private sequence = 0;
-  private pending = new Map<number, { resolve: (data: unknown) => void; reject: (error: Error) => void }>();
-  constructor(private manifest: AnatomyManifest, private budget: () => number = () => 50_000) {}
+  private pending = new Map<number, { resolve: (data: unknown) => void; reject: (error: Error) => void; progress?: (loaded: number, total: number) => void }>();
+  constructor(private manifest: AnatomyManifest, private budget: () => number = () => 50_000, private downloaded: (file: string, fraction: number) => void = () => {}) {}
   private createWorker() {
     this.worker = new Worker(new URL('./geometryWorker.ts', import.meta.url), { type: 'module' });
     this.worker.onmessage = ({ data }) => {
       const request = this.pending.get(data.request); if (!request) return;
+      if (data.progress) { request.progress?.(data.progress.loaded, data.progress.total); return; }
       this.pending.delete(data.request);
       if (data.error) request.reject(new Error(data.error)); else request.resolve(data.result);
     };
@@ -21,11 +22,11 @@ export class WorkerGeometrySource implements GeometrySource {
       this.pending.clear();
     };
   }
-  private call<T>(action: string, payload: object = {}): Promise<T> {
+  private call<T>(action: string, payload: object = {}, progress?: (loaded: number, total: number) => void): Promise<T> {
     if (this.closed || this.failure || !this.worker) return Promise.reject(this.failure ?? new Error('Geometry worker unavailable'));
     const request = ++this.sequence;
     return new Promise((resolve, reject) => {
-      this.pending.set(request, { resolve: data => resolve(data as T), reject });
+      this.pending.set(request, { resolve: data => resolve(data as T), reject, progress });
       this.worker.postMessage({ request, action, ...payload });
     });
   }
@@ -34,7 +35,11 @@ export class WorkerGeometrySource implements GeometrySource {
     if (!this.worker && !this.closed) this.createWorker();
     const revision = this.manifest.assetRevisions?.[file] ?? this.manifest.release;
     const url = new URL(`${import.meta.env.BASE_URL}anatomy/${file}?v=${encodeURIComponent(revision)}`, window.location.href).href;
-    return this.call<void>('load', { url });
+    return this.call<void>('load', { url }, (loaded, total) => {
+      // Fetch streams report decoded bytes even when the HTTP response is gzip.
+      const size = this.manifest.assetByteSizes?.[file] ?? total;
+      if (size > 0) this.downloaded(file, Math.min(.99, loaded / size));
+    }).then(() => this.downloaded(file, 1));
   }
   prepare(structures: Structure[]) { return this.call<PreparedMesh[]>('prepare', { vertexBudget: this.budget(), structures: structures.map(s => ({ id: s.id, node: s.asset!.node })) }); }
   release() { return this.call<void>('release'); }

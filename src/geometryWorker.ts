@@ -24,7 +24,13 @@ context.onmessage = async ({ data }) => {
     const transfer: Transferable[] = [];
     if (data.action === 'load') {
       release();
-      const gltf = await loader.loadAsync(data.url);
+      let lastProgress = 0;
+      const gltf = await loader.loadAsync(data.url, event => {
+        const now = performance.now();
+        if (now - lastProgress < 100 && event.loaded !== event.total) return;
+        lastProgress = now;
+        context.postMessage({ request: data.request, progress: { loaded: event.loaded, total: event.total } });
+      });
       scene = gltf.scene; scene.updateMatrixWorld(true);
       const parser = gltf.parser as unknown as { json: { nodes: { name?: string }[] }; associations: Map<THREE.Object3D, { nodes?: number }> };
       scene.traverse(object => {

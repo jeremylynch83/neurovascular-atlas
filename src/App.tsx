@@ -98,7 +98,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       // Only initial bone/artery preparation contributes to this bar. Deferred
       // geometry keeps its existing inline feedback inside Layers.
       const states = e.getLoadStates();
-      setProgress(Math.min(99, initialGeometry.length ? 100 * initialGeometry.filter(id => states.get(id)?.status === 'ready').length / initialGeometry.length : 0));
+      setProgress(Math.min(99, initialGeometry.length ? 75 * e.initialDownloadProgress() + 24 * initialGeometry.filter(id => states.get(id)?.status === 'ready').length / initialGeometry.length : 0));
       setVascularReady(e.vascularGeometryReady());
       if (controlsOpenRef.current) setLoadStates(new Map(e.getLoadStates()));
     };

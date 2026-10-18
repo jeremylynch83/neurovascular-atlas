@@ -47,6 +47,7 @@ export class AnatomyEngine {
   private vascularBatches: THREE.BatchedMesh[] = [];
   private objectToId = new Map<THREE.Object3D, string>();
   private loading: StagedLoader | null = null;
+  private downloads = new Map<string, number>();
   private interacting = false;
   private nextBackgroundSlot = 0;
   private lastRenderDuration = 0;
@@ -101,7 +102,7 @@ export class AnatomyEngine {
     this.container = container;
     this.manifest = manifest;
     this.segmentMembers = segmentGeometryMembers(manifest.structures);
-    const initialView = anatomicalView(coordinateSystem(manifest), 'three-quarter');
+    const initialView = anatomicalView(coordinateSystem(manifest), 'front');
     this.camera.up.fromArray(initialView.up);
     this.camera.position.fromArray(initialView.direction);
     this.onSelect = onSelect;
@@ -153,7 +154,10 @@ export class AnatomyEngine {
   }
 
   async load(onChange?: () => void): Promise<void> {
-    const source = new WorkerGeometrySource(this.manifest, () => this.vertexBudget);
+    const source = new WorkerGeometrySource(this.manifest, () => this.vertexBudget, (file, fraction) => {
+      if (this.disposed) return;
+      this.downloads.set(file, fraction); onChange?.();
+    });
     this.loading = new StagedLoader(this.manifest, source,
       async meshes => {
         if (this.disposed) return;
@@ -169,13 +173,28 @@ export class AnatomyEngine {
     await this.buildInitialVascularBatches();
     if (this.disposed) return;
     this.primaryPrepared = true;
-    if (!this.userChangedView) this.fitAll(false);
+    if (!this.userChangedView) {
+      const skull = [...this.entries].filter(([, e]) => e.structure.system === 'bone' && e.structure.id !== 'bone.hyoid').map(([id]) => id);
+      if (skull.length) {
+        this.framePreset(skull, [0, 1, 0]);
+        this.userChangedView = false;
+      } else this.fitAll(false);
+    }
     this.refreshMaterials(); this.render();
     performance.mark('atlas-primary-ready');
     // Resolve primary readiness before running the deferred asset queue.
     setTimeout(() => { if (!this.disposed) this.loading?.startBackground(); }, 0);
   }
 
+  initialDownloadProgress() {
+    const files = new Set(this.manifest.structures.filter(s => s.asset && (s.system === 'bone' || s.system === 'artery')).map(s => s.asset!.file));
+    let loaded = 0, total = 0;
+    for (const file of files) {
+      const bytes = this.manifest.assetByteSizes?.[file] ?? 1;
+      total += bytes; loaded += bytes * (this.downloads.get(file) ?? 0);
+    }
+    return total ? loaded / total : 0;
+  }
   getLoadStates() { return this.loading?.states ?? new Map(); }
   ensureGeometry(ids: readonly string[]) { return this.loading?.ensure(ids) ?? Promise.resolve(); }
   vascularGeometryReady() {
