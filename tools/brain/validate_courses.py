@@ -80,7 +80,7 @@ def validate_courses(manifest):
             assert c['geometrySha256']==hashes[file]
             validate_targets(c, rows)
             assert all(k in rows and rows[k].get('surfaceAnchor') for k in c['stationIds'])
-            assert c['radiusPolicy'] in ['preserve-delivered-profile','preserve-source-profile-with-measured-wall-deformation','reconstruct-tube-with-smoothed-source-radius']
+            assert c['radiusPolicy'] in ['preserve-delivered-profile','preserve-source-profile-with-measured-wall-deformation','reconstruct-tube-with-smoothed-source-radius','reconstruct-illustrative-tube']
             if c['radiusPolicy']=='preserve-source-profile-with-measured-wall-deformation':
                 check=c['fitting']['calibreCheck']
                 assert check['method'] and len(check['ratioP05MedianP95'])==3 and check['p95AbsoluteFractionalRadiusChange']>=0
@@ -91,6 +91,14 @@ def validate_courses(manifest):
                 assert len(profile['tubeRadiusP05MedianP95'])==3 and all(r>0 for r in profile['tubeRadiusP05MedianP95'])
                 assert profile['tubeRadiusP05MedianP95']==sorted(profile['tubeRadiusP05MedianP95'])
                 assert c['meshQuality']['networkId'] and c['meshQuality']['watertightScope']=='combined exterior network wall'
+                assert c['reviewStatus']=='requires-anatomical-review'
+            if c['radiusPolicy']=='reconstruct-illustrative-tube':
+                profile=c['fitting']['radiusProfile']
+                assert profile['method'] and profile['node']==s['id'] and profile['measuredPatientProfile'] is False
+                radii=profile['tubeRadiusP05MedianP95']
+                assert len(radii)==3 and all(r>0 for r in radii) and radii==sorted(radii)
+                assert c['meshQuality']['watertightScope']=='individual branch exterior'
+                assert c['meshQuality']['parentJoinType']=='overlapping exteriors'
                 assert c['reviewStatus']=='requires-anatomical-review'
             assert c['scope'] in ['intracranial','intracranial-and-upper-cervical','protected-baseline','potential-anastomosis','reference-corridor']
             assert c['reviewStatus'] in ['requires-anatomical-review','requires-anatomical-target','protected-baseline']

@@ -1,0 +1,48 @@
+{
+  "release": "0.9.142",
+  "target": "bone.temporal.left",
+  "baselineRelease": "0.9.141",
+  "baselineVertices": 62409,
+  "baselineTriangles": 124592,
+  "vertices": 74496,
+  "triangles": 148424,
+  "newSurfaceTriangles": 7943,
+  "windingConsistent": true,
+  "nonManifoldEdges": 0,
+  "nativeVertexPositionsPreserved": true,
+  "restoredSourceNormals": 62319,
+  "patchSelfContacts": {
+    "materialPatchContacts": 0,
+    "maximumPatchPenetrationBoundMm": 0.0,
+    "examples": []
+  },
+  "patchSourceContacts": {
+    "materialPatchSourceContacts": 0,
+    "maximumPenetrationBoundMm": 0.0
+  },
+  "patchVascularContacts": [],
+  "wholeModelAnatomicalAcceptance": false,
+  "scope": "Local surface reconstruction. Native auditory and skull-base passages retained. Wider source findings remain in the existing residual issue register.",
+  "newSurfaceFaceStart": 140481,
+  "newSurfaceFaceCount": 7943,
+  "otherCraniofacialMeshesArrayExact": 59,
+  "unchangedAssetsAndDsa": [
+    "public/anatomy/models/brain-context.glb",
+    "public/anatomy/models/complete-anastomoses.glb",
+    "public/anatomy/models/complete-circulation.glb",
+    "public/anatomy/models/venous.glb",
+    "public/anatomy/dsa-flow.json",
+    "public/anatomy/dsa-surfaces.json"
+  ],
+  "savedSurfaceValidation": {
+    "release": "0.9.142",
+    "newSurfaceTriangles": 7943,
+    "overlappingVascularMeshesTested": 27,
+    "newSurfaceSelfContacts": 0,
+    "newSurfaceSourceContacts": 0,
+    "newSurfaceVascularContacts": 0,
+    "nonManifoldEdges": 0
+  },
+  "productionBuild": "passed",
+  "regionalRegressionChecks": "passed"
+}

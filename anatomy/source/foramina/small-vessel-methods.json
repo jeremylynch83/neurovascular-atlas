@@ -1,0 +1,73 @@
+{
+  "release": "0.9.140",
+  "baseline": "0.9.139",
+  "supratrochlearFields": {
+    "artery.anterior.supratrochlear_right": {
+      "centre": [
+        11.4897,
+        20.689854,
+        70.480067
+      ],
+      "delta": [
+        -1.4528767072873385,
+        -1.031524373265755,
+        0.6159169126777966
+      ]
+    },
+    "artery.anterior.supratrochlear_left": {
+      "centre": [
+        -11.469579,
+        20.772357,
+        70.571422
+      ],
+      "delta": [
+        1.858470690385343,
+        -1.4597777000234566,
+        0.8636333723795179
+      ]
+    }
+  },
+  "supratrochlearWeight": {
+    "distanceGaussianDenominator": 72,
+    "zBandMm": [
+      67.5,
+      69.5,
+      78,
+      90
+    ]
+  },
+  "leftPosteriorSuperiorAlveolarField": {
+    "xDisplacementMm": 2,
+    "negativeXBandMm": [
+      24,
+      28,
+      39,
+      44
+    ],
+    "yBandMm": [
+      -23,
+      -18,
+      -2,
+      6
+    ],
+    "zBandMm": [
+      18,
+      22,
+      37,
+      43
+    ],
+    "appliedTogether": [
+      "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+      "artery.eca.psa_anterior_division.right.left"
+    ]
+  },
+  "incisiveDistalRepair": {
+    "retainedRootCutXmm": {
+      "right": 8.0,
+      "left": -7.05
+    },
+    "nominalRadiusMm": 0.24,
+    "maximumStationSpacingMm": 0.07,
+    "method": "Keep the complete proximal native interface; clip beyond the transverse plane; transport the clipped ring around a smoothed source course with a short taper and a closed distal end. Reclose native root ports only in the derived DSA surface."
+  }
+}

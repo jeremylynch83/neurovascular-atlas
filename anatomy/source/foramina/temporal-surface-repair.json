@@ -1,0 +1,44 @@
+{
+  "release": "0.9.142",
+  "structure": "bone.temporal.left",
+  "coordinates": "RAS mm",
+  "baseline": "0.9.141",
+  "selectedOriginalBoundaryVertexCounts": [
+    69,
+    207
+  ],
+  "retainedEarBoundaryVertexCount": 16,
+  "refinementBounds": [
+    [
+      -52,
+      -59,
+      44
+    ],
+    [
+      -29,
+      -41,
+      58
+    ]
+  ],
+  "refinementMaximumEdgeMm": 0.7,
+  "fairing": "Inverse-edge-length Laplace solve in z only for newly introduced cap-interior vertices. Original source vertices and rim fixed.",
+  "preservedTympanicFissureBounds": [
+    [
+      -42,
+      -57.3,
+      45
+    ],
+    [
+      -37.8,
+      -54.9,
+      47.5
+    ]
+  ],
+  "newSurfaceVesselClearanceMm": 0.25,
+  "technique": "Triangulate selected ragged native boundaries, refine locally, fair cap interior, trim new cap only around native tympanic routes and folded fissure lip. Do not merge coincident native source vertices.",
+  "clinicalStatus": "Reference-guided teaching reconstruction. Native source remains legacy context geometry; no patient-specific or global anatomical acceptance implied.",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/21477146/",
+    "https://pubmed.ncbi.nlm.nih.gov/6841714/"
+  ]
+}

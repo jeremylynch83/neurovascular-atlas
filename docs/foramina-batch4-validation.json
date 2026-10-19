@@ -1,0 +1,19 @@
+{
+  "release": "0.9.137",
+  "batch": 4,
+  "productionBuild": "passed",
+  "regionalVesselBoneChecks": 20,
+  "materialSelfContacts": 0,
+  "materialSelfContactToleranceMm": 0.001,
+  "retainedStrutCohorts": 4,
+  "boundedCanalSections": 6,
+  "radialRaysPerSection": 16,
+  "clearPassageCentrelines": 10,
+  "safeInjectionRoutes": 14,
+  "closedDsaSplitSections": 76,
+  "exactUnchangedMeshes": 1054,
+  "nativeParentInterfaces": 8,
+  "orbitalPotentialLinkEndpoints": 12,
+  "priorBatchDsaRegressions": "batches 1, 2 and 3 passed",
+  "remainingBatches": 4
+}

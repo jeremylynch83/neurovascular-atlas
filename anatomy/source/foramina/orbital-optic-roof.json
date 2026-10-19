@@ -1,0 +1,62 @@
+{
+  "method": "Reference-guided thin bony roof reconstruction around the native optic canal extent; separate cranial and orbital apertures remain open.",
+  "netAddedVolumeMm3": 72.58472798169532,
+  "canals": [
+    {
+      "side": "right",
+      "course": [
+        [
+          12.356788635253906,
+          -26.55816650390625,
+          74.57174682617188
+        ],
+        [
+          13.0,
+          -24.7,
+          74.0
+        ],
+        [
+          15.8,
+          -20.5,
+          73.3
+        ],
+        [
+          15.886353492736816,
+          -20.37047004699707,
+          73.25682067871094
+        ]
+      ],
+      "outerRadiusMm": 2.95,
+      "innerRadiusMm": 2.45,
+      "ophthalmicRecessRadiusMm": 1.2
+    },
+    {
+      "side": "left",
+      "course": [
+        [
+          -11.014538764953613,
+          -26.697555541992188,
+          74.56463623046875
+        ],
+        [
+          -11.706,
+          -24.7,
+          73.95
+        ],
+        [
+          -14.506,
+          -20.5,
+          73.25
+        ],
+        [
+          -15.030241012573242,
+          -19.713638305664062,
+          72.98787689208984
+        ]
+      ],
+      "outerRadiusMm": 2.95,
+      "innerRadiusMm": 2.45,
+      "ophthalmicRecessRadiusMm": 1.2
+    }
+  ]
+}

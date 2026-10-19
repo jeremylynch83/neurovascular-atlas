@@ -1,0 +1,67 @@
+{
+  "unchangedMeshes": 1054,
+  "changedMeshes": [
+    "artery.amendment.artery_of_superior_orbital_fissure.left",
+    "artery.amendment.artery_of_superior_orbital_fissure.right",
+    "artery.amendment.deep_recurrent_ophthalmic.left",
+    "artery.amendment.deep_recurrent_ophthalmic.right",
+    "artery.anterior.anterior_ethmoidal_left",
+    "artery.anterior.anterior_ethmoidal_right",
+    "artery.anterior.posterior_ethmoidal_left",
+    "artery.anterior.posterior_ethmoidal_right",
+    "bone.frontal",
+    "bone.maxilla.right",
+    "bone.sphenoid"
+  ],
+  "allOtherPositionIndexNormalArraysExact": true,
+  "nativeParentInterfaces": [
+    {
+      "id": "artery.anterior.anterior_ethmoidal_right",
+      "parent": "artery.anterior.ophthalmic_right",
+      "sharedVertices": 108,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+      "parent": "artery.eca.maxillary.right",
+      "sharedVertices": 80,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+      "parent": "artery.anterior.ophthalmic_left",
+      "sharedVertices": 66,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+      "parent": "artery.eca.maxillary.right.left",
+      "sharedVertices": 76,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_right",
+      "parent": "artery.anterior.ophthalmic_right",
+      "sharedVertices": 86,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_left",
+      "parent": "artery.anterior.ophthalmic_left",
+      "sharedVertices": 84,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+      "parent": "artery.anterior.ophthalmic_right",
+      "sharedVertices": 66,
+      "maximumGapMm": 0.0
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_left",
+      "parent": "artery.anterior.ophthalmic_left",
+      "sharedVertices": 108,
+      "maximumGapMm": 0.0
+    }
+  ]
+}

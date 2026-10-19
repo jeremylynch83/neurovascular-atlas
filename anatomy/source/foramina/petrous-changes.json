@@ -1,0 +1,114 @@
+{
+  "artery.eca.maxillary.anterior_tympanic.right": {
+    "maxDisplacementMm": 2.14599413399877,
+    "verticesMoved": 25291
+  },
+  "artery.eca.maxillary.mma.petrosal.right": {
+    "maxDisplacementMm": 0.7229117261119297,
+    "verticesMoved": 1339
+  },
+  "artery.eca.apa.inferior_tympanic.right": {
+    "maxDisplacementMm": 7.160600657725861,
+    "verticesMoved": 16847
+  },
+  "artery.anterior.caroticotympanic_right": {
+    "maxDisplacementMm": 7.748211197242109,
+    "verticesMoved": 5745,
+    "rebuiltCleanTube": true,
+    "radiusMm": 0.18
+  },
+  "artery.anterior.caroticotympanic_left": {
+    "maxDisplacementMm": 7.0577169112860005,
+    "verticesMoved": 5843,
+    "rebuiltCleanTube": true,
+    "radiusMm": 0.18
+  },
+  "artery.eca.maxillary.anterior_tympanic.right.left": {
+    "maxDisplacementMm": 1.5959579945805527,
+    "verticesMoved": 27217
+  },
+  "artery.eca.maxillary.mma.petrosal.right.left": {
+    "maxDisplacementMm": 0.5479463808168358,
+    "verticesMoved": 1292
+  },
+  "artery.eca.apa.inferior_tympanic.right.left": {
+    "maxDisplacementMm": 6.3753612139250775,
+    "verticesMoved": 17162
+  },
+  "artery.amendment.superior_tympanic.right": {
+    "maxDisplacementMm": 2.8141052323521247,
+    "verticesMoved": 1684
+  },
+  "artery.amendment.superior_tympanic.left": {
+    "maxDisplacementMm": 1.7743961420989554,
+    "verticesMoved": 1778
+  },
+  "artery.anterior.internal_carotid_right.segment.cervical": {
+    "guideOnly": true,
+    "geometryUnchanged": true,
+    "method": "Centreline fitted to the actual shared cervical-petrous interface and the preserved ICA lumen."
+  },
+  "artery.anterior.internal_carotid_left.segment.cervical": {
+    "guideOnly": true,
+    "geometryUnchanged": true,
+    "method": "Centreline fitted to the actual shared cervical-petrous interface and the preserved ICA lumen."
+  },
+  "artery.connection.inferior_tympanic_caroticotympanic.right": {
+    "maxDisplacementMm": 7.813964513557163,
+    "verticesMoved": 1602
+  },
+  "artery.connection.inferior_tympanic_caroticotympanic.left": {
+    "maxDisplacementMm": 7.113827910724294,
+    "verticesMoved": 1602
+  },
+  "artery.connection.facial_nerve_arcade.right": {
+    "maxDisplacementMm": 0.25379629732216724,
+    "verticesMoved": 131
+  },
+  "artery.connection.superior_anterior_tympanic.right": {
+    "maxDisplacementMm": 3.0842020475775263,
+    "verticesMoved": 5243
+  },
+  "artery.connection.superior_inferior_tympanic.right": {
+    "maxDisplacementMm": 7.09332335402731,
+    "verticesMoved": 3362
+  },
+  "artery.connection.stylomastoid_inferior_tympanic.right": {
+    "maxDisplacementMm": 6.945999320200997,
+    "verticesMoved": 4250
+  },
+  "artery.connection.subarcuate_petrosal_mma.right": {
+    "maxDisplacementMm": 0.38431031702923024,
+    "verticesMoved": 327
+  },
+  "artery.connection.facial_nerve_arcade.left": {
+    "maxDisplacementMm": 0.19221474454086146,
+    "verticesMoved": 127
+  },
+  "artery.connection.superior_anterior_tympanic.left": {
+    "maxDisplacementMm": 1.9185191498682603,
+    "verticesMoved": 5223
+  },
+  "artery.connection.superior_inferior_tympanic.left": {
+    "maxDisplacementMm": 6.295886381291258,
+    "verticesMoved": 3359
+  },
+  "artery.connection.stylomastoid_inferior_tympanic.left": {
+    "maxDisplacementMm": 6.192305295531438,
+    "verticesMoved": 4253
+  },
+  "artery.connection.subarcuate_petrosal_mma.left": {
+    "maxDisplacementMm": 0.28614168285775854,
+    "verticesMoved": 348
+  },
+  "artery.anterior.internal_carotid_right.segment.petrous": {
+    "guideOnly": true,
+    "geometryUnchanged": true,
+    "method": "Centreline fitted to the actual shared cervical-petrous interface and the preserved ICA lumen."
+  },
+  "artery.anterior.internal_carotid_left.segment.petrous": {
+    "guideOnly": true,
+    "geometryUnchanged": true,
+    "method": "Centreline fitted to the actual shared cervical-petrous interface and the preserved ICA lumen."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "release": "0.9.142",
+  "passages": [
+    {
+      "id": "landmark.carotid-canal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.caroticotympanic.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.tympanic-canaliculus.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.carotid-canal.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.caroticotympanic.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.tympanic-canaliculus.left",
+      "clear": true
+    }
+  ],
+  "flows": [
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right",
+      "selectable": true,
+      "lengthMm": 25.843443
+    },
+    {
+      "id": "artery.eca.maxillary.mma.petrosal.right",
+      "selectable": true,
+      "lengthMm": 15.033298
+    },
+    {
+      "id": "artery.eca.apa.inferior_tympanic.right",
+      "selectable": true,
+      "lengthMm": 36.928004
+    },
+    {
+      "id": "artery.anterior.caroticotympanic_right",
+      "selectable": true,
+      "lengthMm": 10.727238
+    },
+    {
+      "id": "artery.anterior.caroticotympanic_left",
+      "selectable": true,
+      "lengthMm": 10.752235
+    },
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+      "selectable": true,
+      "lengthMm": 24.31573
+    },
+    {
+      "id": "artery.eca.maxillary.mma.petrosal.right.left",
+      "selectable": true,
+      "lengthMm": 15.73308
+    },
+    {
+      "id": "artery.eca.apa.inferior_tympanic.right.left",
+      "selectable": true,
+      "lengthMm": 36.762295
+    },
+    {
+      "id": "artery.amendment.superior_tympanic.right",
+      "selectable": true,
+      "lengthMm": 6.617252
+    },
+    {
+      "id": "artery.amendment.superior_tympanic.left",
+      "selectable": true,
+      "lengthMm": 6.774115
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.cervical",
+      "selectable": true,
+      "lengthMm": 85.22748
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.cervical",
+      "selectable": true,
+      "lengthMm": 86.750239
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.petrous",
+      "selectable": true,
+      "lengthMm": 30.696675
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.petrous",
+      "selectable": true,
+      "lengthMm": 30.541382
+    }
+  ],
+  "closedSplitSections": 72
+}

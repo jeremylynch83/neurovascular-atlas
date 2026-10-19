@@ -1,0 +1,118 @@
+{
+  "release": "0.9.142",
+  "passages": [
+    {
+      "id": "landmark.optic-canal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.superior-orbital-fissure.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.inferior-orbital-fissure.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.anterior-ethmoidal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.posterior-ethmoidal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.optic-canal.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.superior-orbital-fissure.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.inferior-orbital-fissure.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.anterior-ethmoidal.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.posterior-ethmoidal.left",
+      "clear": true
+    }
+  ],
+  "flows": [
+    {
+      "id": "artery.anterior.anterior_ethmoidal_right",
+      "selectable": true,
+      "lengthMm": 28.746657
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_right",
+      "selectable": true,
+      "lengthMm": 24.886134
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+      "selectable": true,
+      "lengthMm": 44.979826
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_left",
+      "selectable": true,
+      "lengthMm": 28.705161
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_left",
+      "selectable": true,
+      "lengthMm": 24.390771
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+      "selectable": true,
+      "lengthMm": 44.789937
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+      "selectable": true,
+      "lengthMm": 16.61668
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+      "selectable": true,
+      "lengthMm": 17.93469
+    },
+    {
+      "id": "artery.anterior.ophthalmic_right",
+      "selectable": true,
+      "lengthMm": 68.753394
+    },
+    {
+      "id": "artery.amendment.superficial_recurrent_meningeal.right",
+      "selectable": true,
+      "lengthMm": 19.248736
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right",
+      "selectable": true,
+      "lengthMm": 50.827056
+    },
+    {
+      "id": "artery.anterior.ophthalmic_left",
+      "selectable": true,
+      "lengthMm": 68.69532
+    },
+    {
+      "id": "artery.amendment.superficial_recurrent_meningeal.left",
+      "selectable": true,
+      "lengthMm": 19.440445
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right.left",
+      "selectable": true,
+      "lengthMm": 50.928927
+    }
+  ],
+  "closedSplitSections": 76
+}

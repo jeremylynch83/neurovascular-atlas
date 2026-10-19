@@ -1,0 +1,56 @@
+{
+  "artery.anterior.anterior_ethmoidal_right": {
+    "oldVertices": 2546,
+    "newVertices": 21235,
+    "maxDisplacementMm": 9.219544436613084,
+    "method": "Compact transverse shear"
+  },
+  "artery.anterior.posterior_ethmoidal_right": {
+    "oldVertices": 2482,
+    "newVertices": 21320,
+    "maxDisplacementMm": 3.6400548804204087,
+    "method": "Compact transverse shear"
+  },
+  "artery.amendment.artery_of_superior_orbital_fissure.right": {
+    "oldVertices": 3273,
+    "newVertices": 28954,
+    "maxDisplacementMm": 7.073041380325136,
+    "method": "Clean loft retaining exact native maxillary mouth and projected cross-section; staged collar flattening",
+    "recipe": "orbital-sof-rebuilt.json",
+    "shaftRadiusMm": 0.18,
+    "distalRadiusMm": 0.12
+  },
+  "artery.anterior.anterior_ethmoidal_left": {
+    "oldVertices": 2546,
+    "newVertices": 21246,
+    "maxDisplacementMm": 9.219543883964958,
+    "method": "Compact transverse shear"
+  },
+  "artery.anterior.posterior_ethmoidal_left": {
+    "oldVertices": 2512,
+    "newVertices": 21548,
+    "maxDisplacementMm": 3.6400547749887697,
+    "method": "Compact transverse shear"
+  },
+  "artery.amendment.artery_of_superior_orbital_fissure.left": {
+    "oldVertices": 3269,
+    "newVertices": 28874,
+    "maxDisplacementMm": 7.073041380346801,
+    "method": "Clean loft retaining exact native maxillary mouth and projected cross-section; staged collar flattening",
+    "recipe": "orbital-sof-rebuilt.json",
+    "shaftRadiusMm": 0.18,
+    "distalRadiusMm": 0.12
+  },
+  "artery.amendment.deep_recurrent_ophthalmic.right": {
+    "oldVertices": 1363,
+    "newVertices": 9115,
+    "maxDisplacementMm": 3.99999973773798,
+    "method": "Monotone anterior orbital detour with fixed inlet and terminal rim"
+  },
+  "artery.amendment.deep_recurrent_ophthalmic.left": {
+    "oldVertices": 1435,
+    "newVertices": 10381,
+    "maxDisplacementMm": 3.999999980602478,
+    "method": "Monotone anterior orbital detour with fixed inlet and terminal rim"
+  }
+}

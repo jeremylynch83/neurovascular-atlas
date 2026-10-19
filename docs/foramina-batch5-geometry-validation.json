@@ -1,0 +1,141 @@
+{
+  "vessels": [
+    {
+      "id": "artery.eca.maxillary.descending_palatine.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.greater_palatine.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.lesser_palatine.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.sphenopalatine.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.posterior_septal.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.posterior_lateral_nasal.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.pterygovaginal.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.pterygoid_canal.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.descending_palatine.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.greater_palatine.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.lesser_palatine.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.sphenopalatine.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.posterior_septal.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.posterior_lateral_nasal.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.pterygovaginal.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.pterygoid_canal.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.amendment.superior_septal_subdivision.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.amendment.superior_septal_subdivision.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.amendment.inferior_septal_subdivision.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.amendment.inferior_septal_subdivision.left",
+      "contacts": []
+    }
+  ],
+  "boneTopology": {
+    "bone.sphenoid": {
+      "triangles": 154882,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.palatine.right": {
+      "triangles": 15028,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.palatine.left": {
+      "triangles": 11754,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxilla.right": {
+      "triangles": 38145,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxilla.left": {
+      "triangles": 47548,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxillary-alveolar-process-left": {
+      "triangles": 12893,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxillary-alveolar-process-right": {
+      "triangles": 11591,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.inferior_nasal_concha.right": {
+      "triangles": 1616,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.inferior_nasal_concha.left": {
+      "triangles": 1484,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    }
+  },
+  "failures": []
+}

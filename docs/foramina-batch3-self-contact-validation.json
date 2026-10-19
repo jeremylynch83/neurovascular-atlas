@@ -1,0 +1,215 @@
+{
+  "release": "0.9.136",
+  "scope": "Regional non-adjacent triangle contacts",
+  "materialPenetrationBoundThresholdMm": 0.001,
+  "vessels": [
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right",
+      "triangles": 145055,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right",
+      "triangles": 10370,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.medial_clival.right",
+      "triangles": 8683,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.descending_odontoid.right",
+      "triangles": 6137,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.jugular.right",
+      "triangles": 9046,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.lateral_clival.right",
+      "triangles": 8532,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.sigmoid_sinus_branch.right",
+      "triangles": 7648,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.posterior.labyrinthine_right",
+      "triangles": 18367,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.posterior.labyrinthine_left",
+      "triangles": 19271,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+      "triangles": 130745,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right.left",
+      "triangles": 10360,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.medial_clival.right.left",
+      "triangles": 8695,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.descending_odontoid.right.left",
+      "triangles": 6137,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.jugular.right.left",
+      "triangles": 9054,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.lateral_clival.right.left",
+      "triangles": 8532,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.sigmoid_sinus_branch.right.left",
+      "triangles": 7092,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.jugular_ascending_iac_branch.right",
+      "triangles": 3028,
+      "nonAdjacentContacts": 2,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0006473525083201841
+    },
+    {
+      "id": "artery.amendment.jugular_ascending_iac_branch.left",
+      "triangles": 3034,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.common_cochlear.right",
+      "triangles": 1921,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.common_cochlear.left",
+      "triangles": 1837,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.anterior_vestibular.right",
+      "triangles": 1680,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.anterior_vestibular.left",
+      "triangles": 1572,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.mma_tentorial_marginal.right",
+      "triangles": 16929,
+      "nonAdjacentContacts": 3,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0003292778791563819
+    },
+    {
+      "id": "artery.connection.occipital_mastoid_apa_jugular.right",
+      "triangles": 1373,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.right",
+      "triangles": 908,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.occipital_mastoid_apa_jugular.left",
+      "triangles": 1353,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.left",
+      "triangles": 880,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "vein.anterior_condylar.right",
+      "triangles": 1471,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "vein.anterior_condylar.left",
+      "triangles": 1449,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    }
+  ],
+  "sourceHashes": {
+    "models/complete-circulation.glb": "231a066c4fe1f239f9062dc712740586e20b2a49961df594a1b0b0cf75fa6f2a",
+    "models/complete-anastomoses.glb": "49229f87502f9073ecb599e0555d51da24e6ca8bb5f3de3ffd89dbe9b9b5379e",
+    "models/venous.glb": "75683219dbd9baec0577b7a7b86f0004cec1b7b1d754d66f4b50e4e3d1bced48"
+  }
+}

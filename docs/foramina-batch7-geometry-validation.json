@@ -1,0 +1,115 @@
+{
+  "vessels": [
+    {
+      "id": "artery.amendment.infraorbital_muscular_branch.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.amendment.infraorbital_muscular_branch.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_left",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_right",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_left",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_right",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supraorbital_left",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supraorbital_right",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supratrochlear_left",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supratrochlear_right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.anterior_superior_alveolar.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.anterior_superior_alveolar.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.incisive.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.incisive.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.posterior_superior_alveolar.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.psa_anterior_division.right.left",
+      "contacts": []
+    },
+    {
+      "id": "vein.infraorbital.left",
+      "contacts": []
+    },
+    {
+      "id": "vein.infraorbital.right",
+      "contacts": []
+    }
+  ],
+  "boneTopology": {
+    "bone.ethmoid": {
+      "triangles": 16842,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.frontal": {
+      "triangles": 32016,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxilla.left": {
+      "triangles": 47548,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxillary-alveolar-process-left": {
+      "triangles": 12893,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "command": "python3 tools/foramina/validate-petrous-geometry.py",
+    "exitCode": 0,
+    "seconds": 41.07
+  },
+  {
+    "command": "python3 tools/foramina/validate-posterior-geometry.py",
+    "exitCode": 0,
+    "seconds": 8.84
+  },
+  {
+    "command": "node tools/foramina/validate-batch1.mjs",
+    "exitCode": 0,
+    "seconds": 2.2
+  },
+  {
+    "command": "node tools/foramina/validate-batch2.mjs",
+    "exitCode": 0,
+    "seconds": 8.95
+  },
+  {
+    "command": "node tools/foramina/validate-batch3.mjs",
+    "exitCode": 0,
+    "seconds": 7.12
+  },
+  {
+    "command": "node tools/foramina/validate-batch4.mjs",
+    "exitCode": 0,
+    "seconds": 11.92
+  },
+  {
+    "command": "node tools/foramina/validate-batch5.mjs",
+    "exitCode": 0,
+    "seconds": 33.19
+  },
+  {
+    "command": "node tools/foramina/validate-batch6.mjs",
+    "exitCode": 0,
+    "seconds": 34.78
+  },
+  {
+    "command": "node tools/foramina/validate-batch7.mjs",
+    "exitCode": 0,
+    "seconds": 2.34
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "seconds": 15.05
+  },
+  {
+    "command": "python3 tools/foramina/validate-temporal-surface.py",
+    "exitCode": 0
+  }
+]

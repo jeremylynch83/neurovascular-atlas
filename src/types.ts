@@ -36,7 +36,7 @@ export interface VesselCourse {
   targetStructureIds: string[];
   stationIds: string[];
   stationOrder: 'anatomical-sequence' | 'regional-references-only' | 'not-applicable';
-  radiusPolicy: 'preserve-delivered-profile' | 'preserve-source-profile-with-measured-wall-deformation';
+  radiusPolicy: 'preserve-delivered-profile' | 'preserve-source-profile-with-measured-wall-deformation' | 'reconstruct-tube-with-smoothed-source-radius' | 'reconstruct-illustrative-tube';
   reviewStatus: 'requires-anatomical-review' | 'requires-anatomical-target' | 'protected-baseline';
   missingTargets: string[];
   attachments: { parentId: string | null; incoming: Relationship[]; outgoing: Relationship[]; status: string };

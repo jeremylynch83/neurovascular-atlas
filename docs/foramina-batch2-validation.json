@@ -1,0 +1,200 @@
+{
+  "release": "0.9.135",
+  "batch": 2,
+  "status": "Passed within the stated reconstructed-passage windows; anatomical acceptance remains incomplete.",
+  "productionBuild": "passed",
+  "catalogueIdsHierarchyAssetsAndRelationshipsUnchanged": true,
+  "correctedNamedPassageGuides": [
+    {
+      "id": "landmark.carotid-canal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.caroticotympanic.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.tympanic-canaliculus.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.carotid-canal.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.caroticotympanic.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.tympanic-canaliculus.left",
+      "clear": true
+    }
+  ],
+  "dsa": {
+    "validatedInjectionSources": 14,
+    "closedSplitSections": 72,
+    "fullSafeRanges": true,
+    "priorUnchangedCoursesRetained": 591
+  },
+  "regionalGeometry": {
+    "zeroBoneContactTests": 14,
+    "zeroSelfContactTests": 22,
+    "checkedCaroticotympanicOverlaps": 4,
+    "anteriorTympanicWindowMinimumZMm": 43,
+    "geometryReport": "foramina-batch2-geometry-validation.json"
+  },
+  "attachments": {
+    "relatedPairsCompared": 28,
+    "priorCoincidentInterfacesPreserved": 14,
+    "maximumSeparationMm": 0
+  },
+  "baselineIntegrity": {
+    "release": "0.9.135",
+    "unchangedMeshArrays": [
+      {
+        "file": "models/craniofacial.glb",
+        "unchangedNodes": 57,
+        "changedNodes": [
+          "bone.sphenoid",
+          "bone.temporal.left",
+          "bone.temporal.right"
+        ],
+        "mandibularNodesUnchanged": [
+          "bone.mandible"
+        ],
+        "mainICANodesUnchanged": []
+      },
+      {
+        "file": "models/complete-circulation.glb",
+        "unchangedNodes": 597,
+        "changedNodes": [
+          "Anterior tympanic",
+          "Anterior tympanic left",
+          "Caroticotympanic left",
+          "Caroticotympanic right",
+          "Inferior tympanic",
+          "Inferior tympanic left",
+          "MMA petrosal",
+          "MMA petrosal left",
+          "Superior tympanic left",
+          "Superior tympanic right"
+        ],
+        "mandibularNodesUnchanged": [],
+        "mainICANodesUnchanged": [
+          "ICA anterior choroidal left",
+          "ICA anterior choroidal right",
+          "ICA cavernous left",
+          "ICA cavernous right",
+          "ICA cervical left",
+          "ICA cervical right",
+          "ICA paraophthalmic left",
+          "ICA paraophthalmic right",
+          "ICA petrous left",
+          "ICA petrous right",
+          "ICA posterior communicating left",
+          "ICA posterior communicating right",
+          "ICA terminus left",
+          "ICA terminus right"
+        ]
+      },
+      {
+        "file": "models/complete-anastomoses.glb",
+        "unchangedNodes": 155,
+        "changedNodes": [
+          "Facial nerve arcade left",
+          "Facial nerve arcade right",
+          "Inferior tympanic\u2013caroticotympanic left",
+          "Inferior tympanic\u2013caroticotympanic right",
+          "Stylomastoid\u2013inferior tympanic left",
+          "Stylomastoid\u2013inferior tympanic right",
+          "Subarcuate\u2013petrosal MMA left",
+          "Subarcuate\u2013petrosal MMA right",
+          "Superior\u2013anterior tympanic left",
+          "Superior\u2013anterior tympanic right",
+          "Superior\u2013inferior tympanic left",
+          "Superior\u2013inferior tympanic right"
+        ],
+        "mandibularNodesUnchanged": [],
+        "mainICANodesUnchanged": []
+      }
+    ],
+    "changedMeshCount": 25,
+    "fileHashes": {
+      "models/brain-context.glb": {
+        "before": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894",
+        "after": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894",
+        "unchanged": true
+      },
+      "models/complete-anastomoses.glb": {
+        "before": "bff76ba4191f1161a6fb3b09aa1bcdcef19dc25b4f886854e725f37bfd5c3139",
+        "after": "b5f86f7295c1000355e7edd0fa4383b904340384b5189234e9b5f3381896b21a",
+        "unchanged": false
+      },
+      "models/complete-circulation.glb": {
+        "before": "d140e2ed2094de385b0b31b0a60748ff8214aba65ce6d1d7324b34d5af256fa9",
+        "after": "cc62543872ffb418a342dec8292761da03de22c88de4776628b63a493140dbc6",
+        "unchanged": false
+      },
+      "models/craniofacial.glb": {
+        "before": "e0975f5216667ed0e342f5ed442f4206a064b10b459bcd28d7264acf2cd2fe92",
+        "after": "79c0d890a80c501962c00e1419847324bd9f9003f24751ddc309d5f2ade60b5d",
+        "unchanged": false
+      },
+      "models/venous.glb": {
+        "before": "5c6911ed2ec85681e8ba03e2eb0a520253cd3d31ac47bce91c41520d9b45368e",
+        "after": "5c6911ed2ec85681e8ba03e2eb0a520253cd3d31ac47bce91c41520d9b45368e",
+        "unchanged": true
+      }
+    }
+  },
+  "batch1Regression": {
+    "passageGuides": 6,
+    "injectionSources": 6,
+    "closedSplitSections": 36
+  },
+  "deferredIssues": [
+    {
+      "id": "B2-AT-01",
+      "description": "Pre-existing proximal right anterior tympanic approach crosses the greater sphenoid wing below z=43 mm. The defect is outside the corrected fissure window.",
+      "followUpBatch": 3,
+      "evidence": {
+        "baseline": {
+          "contactPairs": 250,
+          "boundsMm": [
+            [
+              34.60907745361328,
+              -51.870750427246094,
+              40.83915710449219
+            ],
+            [
+              34.968021392822266,
+              -49.6132926940918,
+              42.0284309387207
+            ]
+          ],
+          "maxFieldDisplacementAtContactMm": 0.0
+        },
+        "current": {
+          "contactPairs": 614,
+          "boundsMm": [
+            [
+              34.60907745361328,
+              -51.95075607299805,
+              40.83915710449219
+            ],
+            [
+              34.972347259521484,
+              -49.6132926940918,
+              42.11492156982422
+            ]
+          ],
+          "maxFieldDisplacementAtContactMm": 0.0
+        },
+        "issueId": "B2-AT-01",
+        "followUpBatch": 3
+      },
+      "note": "Pair counts differ after subdivision and are not comparable as a severity measure. The applied branch field has zero displacement at every recorded contact point."
+    }
+  ],
+  "remainingBatches": 6
+}

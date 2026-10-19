@@ -1,0 +1,50 @@
+[
+  {
+    "id": "artery.eca.incisive.right",
+    "peer": "artery.eca.maxillary.inferior_alveolar.right",
+    "sharedSourceVertices": 92,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.eca.incisive.right.left",
+    "peer": "artery.eca.maxillary.inferior_alveolar.right.left",
+    "sharedSourceVertices": 93,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.anterior.supratrochlear_right",
+    "peer": "artery.anterior.ophthalmic_right",
+    "sharedSourceVertices": 170,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.anterior.supratrochlear_left",
+    "peer": "artery.anterior.ophthalmic_left",
+    "sharedSourceVertices": 172,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "peer": "artery.eca.maxillary.right.left",
+    "sharedSourceVertices": 98,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "peer": "artery.eca.maxillary.buccal.right.left",
+    "sharedSourceVertices": 60,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "peer": "artery.eca.psa_anterior_division.right.left",
+    "sharedSourceVertices": 127,
+    "maximumAttachmentErrorMm": 0.0
+  },
+  {
+    "id": "artery.eca.psa_anterior_division.right.left",
+    "peer": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "sharedSourceVertices": 127,
+    "maximumAttachmentErrorMm": 0.0
+  }
+]

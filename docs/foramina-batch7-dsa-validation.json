@@ -1,0 +1,85 @@
+{
+  "release": "0.9.142",
+  "passages": [],
+  "flows": [
+    {
+      "id": "artery.eca.incisive.right",
+      "selectable": true,
+      "lengthMm": 6.121441,
+      "fullSafe": true,
+      "safeRanges": [
+        [
+          0,
+          6.121441
+        ]
+      ],
+      "outsideGuidePoints": 0
+    },
+    {
+      "id": "artery.eca.incisive.right.left",
+      "selectable": true,
+      "lengthMm": 6.122618,
+      "fullSafe": true,
+      "safeRanges": [
+        [
+          0,
+          6.122618
+        ]
+      ],
+      "outsideGuidePoints": 0
+    },
+    {
+      "id": "artery.anterior.supratrochlear_right",
+      "selectable": true,
+      "lengthMm": 58.234318,
+      "fullSafe": true,
+      "safeRanges": [
+        [
+          0,
+          58.234318
+        ]
+      ],
+      "outsideGuidePoints": 0
+    },
+    {
+      "id": "artery.anterior.supratrochlear_left",
+      "selectable": true,
+      "lengthMm": 58.556693,
+      "fullSafe": true,
+      "safeRanges": [
+        [
+          0,
+          58.556693
+        ]
+      ],
+      "outsideGuidePoints": 0
+    },
+    {
+      "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+      "selectable": true,
+      "lengthMm": 35.673148,
+      "fullSafe": true,
+      "safeRanges": [
+        [
+          0,
+          35.673148
+        ]
+      ],
+      "outsideGuidePoints": 0
+    },
+    {
+      "id": "artery.eca.psa_anterior_division.right.left",
+      "selectable": true,
+      "lengthMm": 16.330012,
+      "fullSafe": true,
+      "safeRanges": [
+        [
+          0,
+          16.330012
+        ]
+      ],
+      "outsideGuidePoints": 0
+    }
+  ],
+  "closedSplitSections": 30
+}

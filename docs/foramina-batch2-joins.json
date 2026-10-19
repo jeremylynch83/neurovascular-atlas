@@ -1,0 +1,170 @@
+[
+  {
+    "from": "artery.eca.apa.inferior_tympanic.right",
+    "to": "artery.anterior.caroticotympanic_right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.eca.apa.inferior_tympanic.right.left",
+    "to": "artery.anterior.caroticotympanic_left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.eca.maxillary.mma.petrosal.right",
+    "to": "artery.eca.occipital.stylomastoid.right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.amendment.superior_tympanic.right",
+    "to": "artery.eca.maxillary.anterior_tympanic.right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.amendment.superior_tympanic.right",
+    "to": "artery.eca.apa.inferior_tympanic.right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.eca.occipital.stylomastoid.right",
+    "to": "artery.eca.apa.inferior_tympanic.right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.amendment.aica_subarcuate.right",
+    "to": "artery.eca.maxillary.mma.petrosal.right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.eca.maxillary.mma.petrosal.right.left",
+    "to": "artery.eca.occipital.stylomastoid.right.left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.amendment.superior_tympanic.left",
+    "to": "artery.eca.maxillary.anterior_tympanic.right.left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.amendment.superior_tympanic.left",
+    "to": "artery.eca.apa.inferior_tympanic.right.left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.eca.occipital.stylomastoid.right.left",
+    "to": "artery.eca.apa.inferior_tympanic.right.left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.amendment.aica_subarcuate.left",
+    "to": "artery.eca.maxillary.mma.petrosal.right.left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.eca.maxillary.right",
+    "to": "artery.eca.maxillary.anterior_tympanic.right",
+    "originalCoincidentVertices": 89,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.maxillary.mma.right",
+    "to": "artery.eca.maxillary.mma.petrosal.right",
+    "originalCoincidentVertices": 103,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.apa.right",
+    "to": "artery.eca.apa.inferior_tympanic.right",
+    "originalCoincidentVertices": 6,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.anterior.internal_carotid_right.segment.petrous",
+    "to": "artery.anterior.caroticotympanic_right",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.anterior.internal_carotid_right.segment.petrous",
+    "to": "artery.anterior.vidian_ica_contribution_right",
+    "originalCoincidentVertices": 70,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.anterior.internal_carotid_left.segment.petrous",
+    "to": "artery.anterior.caroticotympanic_left",
+    "originalCoincidentVertices": 0,
+    "largestSeparationAfterMm": null
+  },
+  {
+    "from": "artery.anterior.internal_carotid_left.segment.petrous",
+    "to": "artery.anterior.vidian_ica_contribution_left",
+    "originalCoincidentVertices": 70,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.maxillary.right.left",
+    "to": "artery.eca.maxillary.anterior_tympanic.right.left",
+    "originalCoincidentVertices": 89,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.maxillary.mma.right.left",
+    "to": "artery.eca.maxillary.mma.petrosal.right.left",
+    "originalCoincidentVertices": 103,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.apa.right.left",
+    "to": "artery.eca.apa.inferior_tympanic.right.left",
+    "originalCoincidentVertices": 6,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.anterior.internal_carotid_right.segment.petrous",
+    "to": "artery.amendment.mandibular_ica_branch.right",
+    "originalCoincidentVertices": 63,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.anterior.internal_carotid_left.segment.petrous",
+    "to": "artery.amendment.mandibular_ica_branch.left",
+    "originalCoincidentVertices": 62,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.maxillary.mma.petrosal.right",
+    "to": "artery.amendment.superior_tympanic.right",
+    "originalCoincidentVertices": 106,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.eca.maxillary.mma.petrosal.right.left",
+    "to": "artery.amendment.superior_tympanic.left",
+    "originalCoincidentVertices": 106,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.anterior.internal_carotid_right.segment.cervical",
+    "to": "artery.anterior.internal_carotid_right.segment.petrous",
+    "originalCoincidentVertices": 67,
+    "largestSeparationAfterMm": 0.0
+  },
+  {
+    "from": "artery.anterior.internal_carotid_left.segment.cervical",
+    "to": "artery.anterior.internal_carotid_left.segment.petrous",
+    "originalCoincidentVertices": 68,
+    "largestSeparationAfterMm": 0.0
+  }
+]

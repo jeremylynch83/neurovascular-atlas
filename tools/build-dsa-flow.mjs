@@ -53,7 +53,7 @@ function projection(id) {
   for(let i=0;i<index.length/3;i++)if(!removed.has(i)){const a=index[i*3],b=index[i*3+1],c=index[i*3+2];f.push(...(row.reverse!==flips.has(i)?[a,c,b]:[a,b,c]));}
   f.push(...row.caps);return {p,index:new Uint32Array(f)};
 }
-const orders=['cervical','petrous','cavernous','paraophthalmic','posterior-communicating','anterior-choroidal','terminus','v1','v2','v3','v4','a1','a2','a3','a4','a5'];
+const orders=['cervical','petrous','cavernous','paraophthalmic','posterior-communicating','anterior-choroidal','terminus','v1','v2','v3','v4','a1','a2','a3','a4','a5','p1','p2','p3','p4','p5'];
 const groups=new Map();
 for(const s of rows)if(s.segmentOf)groups.set(s.segmentOf,[...(groups.get(s.segmentOf)??[]),s.id]);
 for(const ids of groups.values())ids.sort((a,b)=>orders.indexOf(a.split('.segment.')[1])-orders.indexOf(b.split('.segment.')[1]));

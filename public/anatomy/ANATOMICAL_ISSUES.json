@@ -30,7 +30,7 @@
       "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json",
       "resolvedNativeInterfaces": [
         {
-          "release": "0.9.92",
+          "release": "0.9.131",
           "neighbour": "Dorsal meningeal left",
           "matchedNativePortCoordinates": 16,
           "baselineFinding": {
@@ -46,7 +46,7 @@
           "scope": "Small native wall gap repaired; whole network acceptance remains open."
         },
         {
-          "release": "0.9.94",
+          "release": "0.9.131",
           "neighbour": "Meningohypophyseal trunk left",
           "matchedNativePortCoordinates": 13,
           "baselineFinding": {
@@ -74,7 +74,7 @@
       "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json",
       "resolvedNativeInterfaces": [
         {
-          "release": "0.9.90",
+          "release": "0.9.131",
           "neighbour": "Middle meningeal left",
           "matchedNativePortCoordinates": 124,
           "pairedOppositeBoundaryEdges": 124,
@@ -121,7 +121,7 @@
       "acceptanceReport": "evidence/continuation3/left-inspection-current-gates.json",
       "resolvedNativeInterfaces": [
         {
-          "release": "0.9.95",
+          "release": "0.9.131",
           "neighbour": "Occipital left",
           "matchedNativePortCoordinates": 108,
           "pairedOppositeBoundaryEdges": 108,
@@ -167,7 +167,7 @@
       "acceptanceReport": "evidence/continuation3/right-profile-fitted-current-gates.json",
       "resolvedNativeInterfaces": [
         {
-          "release": "0.9.92",
+          "release": "0.9.131",
           "neighbour": "Dorsal meningeal right",
           "matchedNativePortCoordinates": 13,
           "baselineFinding": {
@@ -183,7 +183,7 @@
           "scope": "Small native wall gap repaired; whole network acceptance remains open."
         },
         {
-          "release": "0.9.94",
+          "release": "0.9.131",
           "neighbour": "Meningohypophyseal trunk right",
           "matchedNativePortCoordinates": 10,
           "baselineFinding": {
@@ -237,7 +237,7 @@
       "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json",
       "resolvedNativeInterfaces": [
         {
-          "release": "0.9.91",
+          "release": "0.9.131",
           "neighbour": "MMA cavernous left",
           "matchedNativePortCoordinates": 181,
           "pairedOppositeBoundaryEdges": 181,
@@ -281,7 +281,7 @@
       "acceptanceReport": "evidence/continuation3/left-cavernous-current-gates.json",
       "resolvedNativeInterfaces": [
         {
-          "release": "0.9.95",
+          "release": "0.9.131",
           "neighbour": "ILT anterior branch left",
           "matchedNativePortCoordinates": 64,
           "pairedOppositeBoundaryEdges": 63,
@@ -300,7 +300,7 @@
           "scope": "Native interface repaired locally; whole-network anatomical acceptance remains open."
         },
         {
-          "release": "0.9.95",
+          "release": "0.9.131",
           "neighbour": "Inferolateral trunk left",
           "matchedNativePortCoordinates": 69,
           "pairedOppositeBoundaryEdges": 68,
@@ -342,7 +342,7 @@
   "reviewVersion": "0.9.115",
   "geometryCheckpointVersion": "0.9.67",
   "batch1Review": {
-    "release": "0.9.83",
+    "release": "0.9.131",
     "report": "docs/validation/batch1-v0.9.83.json",
     "geometryChanged": false,
     "posteriorCrossingPairsPassed": 12,
@@ -361,7 +361,7 @@
       "status": "bilateral-distal-A5-local-improvements-regional-registration-open",
       "conclusion": "Historical G05 is not resolved by the later generic callosal-repair note. Both A2\u2013A5 chains retain matching seam coordinates but all eight segments contact registered brain surfaces. Left A5 also intersects the corpus-callosum surface. A3 remains separated from the registered callosal surface. Retain the issue, extend review to A5, and require coordinated vessel/brain registration and junction review. Do not repeat the previously rejected local displacement trial.",
       "localRightA5Correction": {
-        "release": "0.9.96",
+        "release": "0.9.131",
         "report": "docs/validation/aca-registration-v0.9.96.json",
         "status": "right-ACA-local-native-root-repaired-G05-and-wider-G06-open",
         "changedMeshes": [
@@ -380,7 +380,7 @@
         "anatomicalAcceptance": false
       },
       "rightA5IntersectionReclassification": {
-        "release": "0.9.101",
+        "release": "0.9.131",
         "report": "docs/validation/intersection-v0.9.101.json",
         "geometryChanged": false,
         "recordedRightA5Pair": [
@@ -394,7 +394,7 @@
         "scope": "Corrects the single recorded residual right A5 self-crossing flag. Regional cortical registration and full receiving lumens remain open."
       },
       "rightA4ShaftFitBatch15": {
-        "release": "0.9.107",
+        "release": "0.9.131",
         "report": "docs/validation/aca-shaft-v0.9.107.json",
         "changedMeshes": [
           "ACA A4 right"
@@ -416,7 +416,7 @@
         "scope": "Right A4 mid-shaft registration improvement only. Residual right A4 embedding, A2 and distal ACA/callosal registration and wider G05/G06 remain open."
       },
       "leftA4AnteriorShaftFitBatch16": {
-        "release": "0.9.108",
+        "release": "0.9.131",
         "report": "docs/validation/aca-shaft-v0.9.108.json",
         "changedMeshes": [
           "ACA A4 left"
@@ -438,7 +438,7 @@
         "scope": "Left A4 anterior shaft improvement only. Central plateau has no sampled embedding; residual posterior and transition embedding and wider G05/G06 remain open."
       },
       "bilateralA5ShaftFitBatch17": {
-        "release": "0.9.109",
+        "release": "0.9.131",
         "report": "docs/validation/aca-shaft-v0.9.109.json",
         "changedMeshes": [
           "ACA A5 left",
@@ -479,7 +479,7 @@
         "scope": "Bilateral A5 inter-junction shaft improvements only. Both central plateaus have no sampled embedding. Residual transitions, proximal/distal cortical fit and wider G05/G06 remain open."
       },
       "bilateralAnteriorA4ShaftFitBatch18": {
-        "release": "0.9.110",
+        "release": "0.9.131",
         "report": "docs/validation/aca-shaft-v0.9.110.json",
         "changedMeshes": [
           "ACA A4 left",
@@ -520,7 +520,7 @@
         "scope": "Bilateral anterior A4 shaft improvements only. Central sampled depths improve but residual embedding remains. All native ports, earlier A4 regions and both A5 fits remain fixed. Wider G05/G06 remain open."
       },
       "rightA5DistalFitBatch19": {
-        "release": "0.9.111",
+        "release": "0.9.131",
         "report": "docs/validation/aca-tail-v0.9.111.json",
         "changedMeshes": [
           "ACA A5 right"
@@ -556,7 +556,7 @@
         "scope": "Distal right A5 fit, with continuous whole-wall separation from the two named posterior cortical surfaces. Other ACA/cortical embedding and wider G05/G06 remain open."
       },
       "leftA5DistalFitBatch20": {
-        "release": "0.9.112",
+        "release": "0.9.131",
         "report": "docs/validation/aca-tail-v0.9.112.json",
         "changedMeshes": [
           "ACA A5 left"
@@ -623,13 +623,13 @@
       "status": "bilateral-ACA-and-MMA-local-native-interfaces-repaired-wider-network-open",
       "conclusion": "Right ACA A5/falcine native root is repaired in v0.9.96 with 32 paired edges after bounded connected right A5/precuneal medial fitting and local parent-lip reconstruction. Left ACA and bilateral MMA native repairs remain fixed. Full receiving lumens, whole falcine continuity, precise dural fit and G05 pericallosal registration remain open.",
       "rightACARootCauseReview": {
-        "release": "0.9.90",
+        "release": "0.9.131",
         "report": "docs/validation/right-aca-feasibility-v0.9.90.json",
         "status": "source-port-inside-registered-cortex-local-outlet-trials-excluded",
         "furtherWork": "Wider pericallosal/cortical registration before connector fitting."
       },
       "rightACARootRepair": {
-        "release": "0.9.96",
+        "release": "0.9.131",
         "report": "docs/validation/aca-registration-v0.9.96.json",
         "status": "right-ACA-local-native-root-repaired-G05-and-wider-G06-open",
         "changedMeshes": [
@@ -648,7 +648,7 @@
         "anatomicalAcceptance": false
       },
       "arterialNativeWallReviewBatch8": {
-        "release": "0.9.100",
+        "release": "0.9.131",
         "report": "docs/validation/arterial-junctions-v0.9.100.json",
         "nativeWallGapsClosed": 15,
         "addedTriangles": 53,
@@ -664,7 +664,7 @@
         "scope": "Small mixed-label arterial wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
       },
       "rightA5IntersectionReclassification": {
-        "release": "0.9.101",
+        "release": "0.9.131",
         "report": "docs/validation/intersection-v0.9.101.json",
         "geometryChanged": false,
         "recordedRightA5Pair": [
@@ -708,7 +708,7 @@
       ],
       "earlierShaftReviewReport": "docs/validation/local-veins-v0.9.85.json",
       "nativeJunctionWallRepairBatch6": {
-        "release": "0.9.98",
+        "release": "0.9.131",
         "report": "docs/validation/local-venous-junctions-v0.9.98.json",
         "nativeWallGapsClosed": 1,
         "addedTriangles": 3,
@@ -720,7 +720,7 @@
         "scope": "Local mixed-label venous wall gaps only. Regional petrosal reconstruction, canal fit and complete receiving lumens remain open."
       },
       "integratedNativeWallReview": {
-        "release": "0.9.99",
+        "release": "0.9.131",
         "report": "docs/validation/integrated-venous-v0.9.99.json",
         "nativeWallGapsClosed": 39,
         "addedTriangles": 76,
@@ -745,7 +745,7 @@
         "scope": "Small mixed-label venous wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
       },
       "sourceTopologyCleanupBatch10": {
-        "release": "0.9.102",
+        "release": "0.9.131",
         "report": "docs/validation/zero-area-v0.9.102.json",
         "removedExactZeroAreaFaces": 21,
         "nativeBadEdgesCleared": 23,
@@ -763,7 +763,7 @@
         "scope": "Exact-zero-area topology cleanup only; positive-area surfaces and all vertex/normal data retained. Larger anatomy and three guarded degenerate faces remain open."
       },
       "sourceTopologyRepairBatch11": {
-        "release": "0.9.103",
+        "release": "0.9.131",
         "report": "docs/validation/native-port-v0.9.103.json",
         "removedExactZeroAreaFaces": 3,
         "nativeBadEdgesCleared": 3,
@@ -781,7 +781,7 @@
         "scope": "Resolve the three guarded exact-zero-area faces. Anterior spinal port edges pair with the anterior medullary vein; tiny pterygoid triangles merge without changing wall shape. Larger anatomy remains open."
       },
       "petrosalExactPredicateBatch22": {
-        "release": "0.9.114",
+        "release": "0.9.131",
         "baseline": "0.9.113",
         "batch": 22,
         "scope": "Repair-validation predicate and implementation-aware exclusion reuse. No model geometry changes.",
@@ -1341,7 +1341,7 @@
         }
       },
       "petrosalWallBatch23": {
-        "release": "0.9.115",
+        "release": "0.9.131",
         "report": "docs/validation/petrosal-wall-v0.9.115.json",
         "changedMeshes": [
           "vein.inferior_petrosal.left"
@@ -1433,11 +1433,11 @@
           "inheritedSourceCrossings": []
         },
         "depthValidation": {
-          "release": "0.9.115",
+          "release": "0.9.131",
           "passed": true,
           "changes": [
             {
-              "release": "0.9.115",
+              "release": "0.9.131",
               "passed": true,
               "node": "vein.inferior_petrosal.left",
               "changedFaces": 21,
@@ -1558,7 +1558,7 @@
       ],
       "earlierShaftReviewReport": "docs/validation/falcotentorial-v0.9.86.json",
       "nativeJunctionWallRepairs": {
-        "release": "0.9.97",
+        "release": "0.9.131",
         "report": "docs/validation/galenic-junctions-v0.9.97.json",
         "nativeWallGapsClosed": 11,
         "addedTriangles": 61,
@@ -1572,7 +1572,7 @@
         "scope": "Local mixed-label venous wall gaps only. Galenic/cortical registration, dural fit and complete receiving lumens remain open."
       },
       "integratedNativeWallReview": {
-        "release": "0.9.99",
+        "release": "0.9.131",
         "report": "docs/validation/integrated-venous-v0.9.99.json",
         "nativeWallGapsClosed": 39,
         "addedTriangles": 76,
@@ -1599,7 +1599,7 @@
     }
   },
   "batch2Review": {
-    "release": "0.9.84",
+    "release": "0.9.131",
     "scope": "Four middle meningeal companion course specifications and limited regional review",
     "courseSpecificationsCompleted": [
       "vein.middle_meningeal.anterior.left",
@@ -1765,14 +1765,14 @@
     "ACA A4 left"
   ],
   "batch3Review": {
-    "release": "0.9.85",
+    "release": "0.9.131",
     "reviewedStructures": 20,
     "correctedStructures": 3,
     "report": "docs/validation/local-veins-v0.9.85.json",
     "anatomicalAcceptance": false
   },
   "batch4Review": {
-    "release": "0.9.86",
+    "release": "0.9.131",
     "reviewedStructures": 7,
     "correctedStructures": 4,
     "status": "partial-correction-full-G01-refit-open",
@@ -1780,7 +1780,7 @@
     "anatomicalAcceptance": false
   },
   "batch5Review": {
-    "release": "0.9.87",
+    "release": "0.9.131",
     "correctedStructures": [
       "artery.amendment.aca_falcine_branch.left"
     ],
@@ -1789,7 +1789,7 @@
     "report": "docs/validation/native-attachments-v0.9.87.json"
   },
   "batch5Continuation": {
-    "release": "0.9.88",
+    "release": "0.9.131",
     "correctedStructures": [
       "artery.amendment.mma_paramedian.left",
       "artery.amendment.mma_falcine_terminal.left",
@@ -1800,7 +1800,7 @@
     "report": "docs/validation/mma-falcine-v0.9.88.json"
   },
   "batch5UpstreamContinuation": {
-    "release": "0.9.89",
+    "release": "0.9.131",
     "correctedStructures": [
       "artery.eca.maxillary.mma.frontal.right.left",
       "artery.amendment.mma_paramedian.left",
@@ -1812,7 +1812,7 @@
     "anatomicalAcceptance": false
   },
   "petrosquamosalAttachmentReview": {
-    "release": "0.9.90",
+    "release": "0.9.131",
     "correctedStructure": "artery.eca.maxillary.mma.petrosquamosal.right.left",
     "failedNativeInterfaceRecordsBefore": 10,
     "failedNativeInterfaceRecordsAfter": 9,
@@ -1821,7 +1821,7 @@
     "report": "docs/validation/petrosquamosal-v0.9.90.json"
   },
   "cavernousAttachmentReview": {
-    "release": "0.9.91",
+    "release": "0.9.131",
     "correctedStructures": [
       "artery.eca.mma_cavernous.right.left",
       "artery.amendment.mma_posterior_cavernous.left"
@@ -1833,7 +1833,7 @@
     "report": "docs/validation/cavernous-v0.9.91.json"
   },
   "tentorialAttachmentReview": {
-    "release": "0.9.92",
+    "release": "0.9.131",
     "correctedStructures": [
       "artery.anterior.tentorial_marginal_left",
       "artery.anterior.tentorial_marginal_right"
@@ -1847,7 +1847,7 @@
     "report": "docs/validation/tentorial-v0.9.92.json"
   },
   "nativeAttachmentBatch2": {
-    "release": "0.9.94",
+    "release": "0.9.131",
     "failedNativeInterfaceRecordsBefore": 6,
     "failedNativeInterfaceRecordsAfter": 4,
     "addedTriangles": 3,
@@ -1857,7 +1857,7 @@
     "report": "docs/validation/native-batch2-v0.9.94.json"
   },
   "nativeAttachmentBatch3": {
-    "release": "0.9.95",
+    "release": "0.9.131",
     "failedNativeInterfaceRecordsBefore": 4,
     "failedNativeInterfaceRecordsAfter": 1,
     "correctedMeshes": [
@@ -1869,7 +1869,7 @@
     "report": "docs/validation/native-batch3-v0.9.95.json"
   },
   "acaRegistrationBatch4": {
-    "release": "0.9.96",
+    "release": "0.9.131",
     "report": "docs/validation/aca-registration-v0.9.96.json",
     "status": "right-ACA-local-native-root-repaired-G05-and-wider-G06-open",
     "changedMeshes": [
@@ -1888,7 +1888,7 @@
     "anatomicalAcceptance": false
   },
   "galenicJunctionBatch5": {
-    "release": "0.9.97",
+    "release": "0.9.131",
     "report": "docs/validation/galenic-junctions-v0.9.97.json",
     "nativeWallGapsClosed": 11,
     "addedTriangles": 61,
@@ -1902,7 +1902,7 @@
     "scope": "Local mixed-label venous wall gaps only. Galenic/cortical registration, dural fit and complete receiving lumens remain open."
   },
   "localVenousJunctionBatch6": {
-    "release": "0.9.98",
+    "release": "0.9.131",
     "report": "docs/validation/local-venous-junctions-v0.9.98.json",
     "nativeWallGapsClosed": 1,
     "addedTriangles": 3,
@@ -1914,7 +1914,7 @@
     "scope": "Local mixed-label venous wall gaps only. Regional petrosal reconstruction, canal fit and complete receiving lumens remain open."
   },
   "integratedVenousBatch7": {
-    "release": "0.9.99",
+    "release": "0.9.131",
     "report": "docs/validation/integrated-venous-v0.9.99.json",
     "nativeWallGapsClosed": 39,
     "addedTriangles": 76,
@@ -1939,7 +1939,7 @@
     "scope": "Small mixed-label venous wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
   },
   "arterialJunctionBatch8": {
-    "release": "0.9.100",
+    "release": "0.9.131",
     "report": "docs/validation/arterial-junctions-v0.9.100.json",
     "nativeWallGapsClosed": 15,
     "addedTriangles": 53,
@@ -1955,7 +1955,7 @@
     "scope": "Small mixed-label arterial wall gaps only. Regional registration, remote topology defects and receiving-lumen acceptance remain open."
   },
   "intersectionBatch9": {
-    "release": "0.9.101",
+    "release": "0.9.131",
     "report": "docs/validation/intersection-v0.9.101.json",
     "geometryChanged": false,
     "recordedRightA5Pair": [
@@ -1969,7 +1969,7 @@
     "scope": "Corrects the single recorded residual right A5 self-crossing flag. Regional cortical registration and full receiving lumens remain open."
   },
   "zeroAreaBatch10": {
-    "release": "0.9.102",
+    "release": "0.9.131",
     "report": "docs/validation/zero-area-v0.9.102.json",
     "removedExactZeroAreaFaces": 21,
     "nativeBadEdgesCleared": 23,
@@ -1987,7 +1987,7 @@
     "scope": "Exact-zero-area topology cleanup only; positive-area surfaces and all vertex/normal data retained. Larger anatomy and three guarded degenerate faces remain open."
   },
   "nativePortBatch11": {
-    "release": "0.9.103",
+    "release": "0.9.131",
     "report": "docs/validation/native-port-v0.9.103.json",
     "removedExactZeroAreaFaces": 3,
     "nativeBadEdgesCleared": 3,
@@ -2005,7 +2005,7 @@
     "scope": "Resolve the three guarded exact-zero-area faces. Anterior spinal port edges pair with the anterior medullary vein; tiny pterygoid triangles merge without changing wall shape. Larger anatomy remains open."
   },
   "arterialZeroAreaBatch12": {
-    "release": "0.9.104",
+    "release": "0.9.131",
     "report": "docs/validation/arterial-zero-area-v0.9.104.json",
     "reviewedArterialMeshes": 766,
     "removedExactZeroAreaFaces": 384,
@@ -2107,7 +2107,7 @@
     "scope": "Exact-zero-area arterial source cleanup only; all positive-area faces, vertex positions and stored normals retained. Regional anatomical defects remain open."
   },
   "arterialPortBatch13": {
-    "release": "0.9.105",
+    "release": "0.9.131",
     "report": "docs/validation/arterial-port-v0.9.105.json",
     "reviewedArterialMeshes": 766,
     "removedExactZeroAreaFaces": 59,
@@ -2154,7 +2154,7 @@
     "scope": "Exact-zero-area deletion only. All positive-area source faces, all vertex/normal data and exact source attachments are retained. New per-label port edges require two opposite retained positive-area wall incidences from different artery labels. No new crossings or tissue entry can be introduced without new/moved surface area."
   },
   "arterialWallBatch14": {
-    "release": "0.9.106",
+    "release": "0.9.131",
     "report": "docs/validation/arterial-wall-v0.9.106.json",
     "changedMeshes": [
       "Lacrimal right",
@@ -2191,7 +2191,7 @@
     },
     {
       "id": "arterial-review-batch21",
-      "release": "0.9.113",
+      "release": "0.9.131",
       "baseline": "0.9.112",
       "batch": 21,
       "acceptedGeometryRepairs": 0,
@@ -2217,7 +2217,7 @@
     }
   ],
   "acaShaftBatch15": {
-    "release": "0.9.107",
+    "release": "0.9.131",
     "report": "docs/validation/aca-shaft-v0.9.107.json",
     "changedMeshes": [
       "ACA A4 right"
@@ -2239,7 +2239,7 @@
     "scope": "Right A4 mid-shaft registration improvement only. Residual right A4 embedding, A2 and distal ACA/callosal registration and wider G05/G06 remain open."
   },
   "acaShaftBatch16": {
-    "release": "0.9.108",
+    "release": "0.9.131",
     "report": "docs/validation/aca-shaft-v0.9.108.json",
     "changedMeshes": [
       "ACA A4 left"
@@ -2261,7 +2261,7 @@
     "scope": "Left A4 anterior shaft improvement only. Central plateau has no sampled embedding; residual posterior and transition embedding and wider G05/G06 remain open."
   },
   "acaShaftBatch17": {
-    "release": "0.9.109",
+    "release": "0.9.131",
     "report": "docs/validation/aca-shaft-v0.9.109.json",
     "changedMeshes": [
       "ACA A5 left",
@@ -2302,7 +2302,7 @@
     "scope": "Bilateral A5 inter-junction shaft improvements only. Both central plateaus have no sampled embedding. Residual transitions, proximal/distal cortical fit and wider G05/G06 remain open."
   },
   "acaShaftBatch18": {
-    "release": "0.9.110",
+    "release": "0.9.131",
     "report": "docs/validation/aca-shaft-v0.9.110.json",
     "changedMeshes": [
       "ACA A4 left",
@@ -2343,7 +2343,7 @@
     "scope": "Bilateral anterior A4 shaft improvements only. Central sampled depths improve but residual embedding remains. All native ports, earlier A4 regions and both A5 fits remain fixed. Wider G05/G06 remain open."
   },
   "acaTailBatch19": {
-    "release": "0.9.111",
+    "release": "0.9.131",
     "report": "docs/validation/aca-tail-v0.9.111.json",
     "changedMeshes": [
       "ACA A5 right"
@@ -2379,7 +2379,7 @@
     "scope": "Distal right A5 fit, with continuous whole-wall separation from the two named posterior cortical surfaces. Other ACA/cortical embedding and wider G05/G06 remain open."
   },
   "acaTailBatch20": {
-    "release": "0.9.112",
+    "release": "0.9.131",
     "report": "docs/validation/aca-tail-v0.9.112.json",
     "changedMeshes": [
       "ACA A5 left"
@@ -2421,7 +2421,7 @@
     "scope": "Bounded distal left A5 shaft fit reduces corpus-callosum overlap with native interfaces, prior fit regions and terminal tip fixed. Residual transition/attachment overlap and one rigidly retained native self-contact pair remain open."
   },
   "arterialReviewBatch21": {
-    "release": "0.9.113",
+    "release": "0.9.131",
     "baseline": "0.9.112",
     "batch": 21,
     "acceptedGeometryRepairs": 0,
@@ -2446,7 +2446,7 @@
     "scope": "Bounded native arterial wall closure searches and a reusable source-hash guard. None of these attempts is installed. This does not establish that larger reconstruction methods cannot succeed."
   },
   "intersectionPredicateBatch22": {
-    "release": "0.9.114",
+    "release": "0.9.131",
     "baseline": "0.9.113",
     "batch": 22,
     "scope": "Repair-validation predicate and implementation-aware exclusion reuse. No model geometry changes.",
@@ -3006,7 +3006,7 @@
     }
   },
   "petrosalWallBatch23": {
-    "release": "0.9.115",
+    "release": "0.9.131",
     "report": "docs/validation/petrosal-wall-v0.9.115.json",
     "changedMeshes": [
       "vein.inferior_petrosal.left"
@@ -3098,11 +3098,11 @@
       "inheritedSourceCrossings": []
     },
     "depthValidation": {
-      "release": "0.9.115",
+      "release": "0.9.131",
       "passed": true,
       "changes": [
         {
-          "release": "0.9.115",
+          "release": "0.9.131",
           "passed": true,
           "node": "vein.inferior_petrosal.left",
           "changedFaces": 21,
@@ -3181,5 +3181,16 @@
       "unresolvedOriginalILTInterfaces": 1
     }
   },
-  "currentDeferredReviewRegistry": "anatomy/source/petrosal-wall-v0.9.115/deferred-repairs.json"
+  "currentDeferredReviewRegistry": "anatomy/source/petrosal-wall-v0.9.115/deferred-repairs.json",
+  "sphenoidForaminaBatch1": {
+    "release": "0.9.134",
+    "status": "regional-geometry-repaired; whole-atlas-review-incomplete",
+    "families": [
+      "rotundum",
+      "ovale",
+      "foramen-spinosum"
+    ],
+    "report": "docs/foramina-batch1-validation.json",
+    "remainingBatches": 7
+  }
 }

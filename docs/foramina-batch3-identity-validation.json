@@ -1,0 +1,287 @@
+{
+  "release": "0.9.136",
+  "sourceHashes": {
+    "models/craniofacial.glb": "6e59df15bd5c69ba32a8c8d63cad841ce836e1b302ab8a9a3b4773b8f66c1a4f",
+    "models/complete-circulation.glb": "231a066c4fe1f239f9062dc712740586e20b2a49961df594a1b0b0cf75fa6f2a",
+    "models/complete-anastomoses.glb": "49229f87502f9073ecb599e0555d51da24e6ca8bb5f3de3ffd89dbe9b9b5379e",
+    "models/venous.glb": "75683219dbd9baec0577b7a7b86f0004cec1b7b1d754d66f4b50e4e3d1bced48",
+    "models/brain-context.glb": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894"
+  },
+  "unchanged": {
+    "protected": [
+      "artery.eca.maxillary.right",
+      "artery.eca.maxillary.accessory_meningeal.right",
+      "artery.eca.maxillary.mma.right",
+      "artery.posterior.aica_right",
+      "artery.posterior.aica_rostral_branch_right",
+      "artery.posterior.aica_caudal_branch_right",
+      "artery.posterior.pica_vermian_right",
+      "artery.posterior.pica_hemispheric_right",
+      "artery.posterior.pica_lateral_hemispheric_right",
+      "artery.posterior.pica_tonsillar_right",
+      "artery.posterior.pica_choroidal_right",
+      "artery.posterior.pica_medullary_perforator_right",
+      "artery.posterior.aica_left",
+      "artery.posterior.aica_rostral_branch_left",
+      "artery.posterior.aica_caudal_branch_left",
+      "artery.posterior.pica_vermian_left",
+      "artery.posterior.pica_hemispheric_left",
+      "artery.posterior.pica_lateral_hemispheric_left",
+      "artery.posterior.pica_tonsillar_left",
+      "artery.posterior.pica_choroidal_left",
+      "artery.posterior.pica_medullary_perforator_left",
+      "artery.eca.maxillary.right.left",
+      "artery.eca.maxillary.accessory_meningeal.right.left",
+      "artery.eca.maxillary.mma.right.left",
+      "artery.amendment.apa_prevertebral_branch.right",
+      "artery.amendment.apa_prevertebral_branch.left",
+      "artery.amendment.aica_subarcuate.right",
+      "artery.amendment.aica_subarcuate.left",
+      "artery.amendment.aica_fourth_ventricular_choroidal.right",
+      "artery.amendment.aica_fourth_ventricular_choroidal.left",
+      "artery.anterior.internal_carotid_right.segment.cervical",
+      "artery.anterior.internal_carotid_right.segment.petrous",
+      "artery.anterior.internal_carotid_right.segment.cavernous",
+      "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+      "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+      "artery.anterior.internal_carotid_right.segment.terminus",
+      "artery.anterior.internal_carotid_left.segment.cervical",
+      "artery.anterior.internal_carotid_left.segment.petrous",
+      "artery.anterior.internal_carotid_left.segment.cavernous",
+      "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+      "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+      "artery.anterior.internal_carotid_left.segment.terminus",
+      "artery.posterior.vertebral_right.segment.v1",
+      "artery.posterior.vertebral_right.segment.v2",
+      "artery.posterior.vertebral_right.segment.v3",
+      "artery.posterior.vertebral_right.segment.v4",
+      "artery.posterior.vertebral_left.segment.v1",
+      "artery.posterior.vertebral_left.segment.v2",
+      "artery.posterior.vertebral_left.segment.v3",
+      "artery.posterior.vertebral_left.segment.v4",
+      "artery.posterior.pica_right.segment.p1",
+      "artery.posterior.pica_right.segment.p2",
+      "artery.posterior.pica_right.segment.p3",
+      "artery.posterior.pica_right.segment.p4",
+      "artery.posterior.pica_right.segment.p5",
+      "artery.posterior.pica_left.segment.p1",
+      "artery.posterior.pica_left.segment.p2",
+      "artery.posterior.pica_left.segment.p3",
+      "artery.posterior.pica_left.segment.p4",
+      "artery.posterior.pica_left.segment.p5"
+    ],
+    "bones": [
+      "bone.frontal",
+      "bone.sphenoid",
+      "bone.ethmoid",
+      "bone.vomer",
+      "bone.hyoid",
+      "bone.parietal.right",
+      "bone.parietal.left",
+      "bone.zygomatic.right",
+      "bone.zygomatic.left",
+      "bone.palatine.right",
+      "bone.palatine.left",
+      "bone.nasal.right",
+      "bone.nasal.left",
+      "bone.lacrimal.right",
+      "bone.lacrimal.left",
+      "bone.inferior_nasal_concha.right",
+      "bone.inferior_nasal_concha.left",
+      "bone.mandible",
+      "bone.maxilla.right",
+      "bone.maxilla.left",
+      "bone.maxillary-alveolar-process-left",
+      "bone.maxillary-alveolar-process-right",
+      "bone.mandibular-condyle-left",
+      "bone.mandibular-condyle-right",
+      "bone.mandibular-alveolar-process",
+      "bone.tooth-48",
+      "bone.tooth-47",
+      "bone.tooth-46",
+      "bone.tooth-45",
+      "bone.tooth-44",
+      "bone.tooth-43",
+      "bone.tooth-42",
+      "bone.tooth-41",
+      "bone.tooth-38",
+      "bone.tooth-37",
+      "bone.tooth-36",
+      "bone.tooth-35",
+      "bone.tooth-34",
+      "bone.tooth-33",
+      "bone.tooth-32",
+      "bone.tooth-31",
+      "bone.tooth-28",
+      "bone.tooth-27",
+      "bone.tooth-26",
+      "bone.tooth-25",
+      "bone.tooth-24",
+      "bone.tooth-23",
+      "bone.tooth-22",
+      "bone.tooth-21",
+      "bone.tooth-18",
+      "bone.tooth-17",
+      "bone.tooth-16",
+      "bone.tooth-15",
+      "bone.tooth-14",
+      "bone.tooth-13",
+      "bone.tooth-12",
+      "bone.tooth-11"
+    ],
+    "joins": [
+      {
+        "id": "artery.eca.medial_clival.right.left",
+        "parent": "artery.eca.apa.hypoglossal.right.left",
+        "originalCoincidentVertices": 146,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.lateral_clival.right",
+        "parent": "artery.eca.apa.jugular.right",
+        "originalCoincidentVertices": 152,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.amendment.jugular_ascending_iac_branch.right",
+        "parent": "artery.eca.apa.jugular.right",
+        "originalCoincidentVertices": 136,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.amendment.anterior_vestibular.left",
+        "parent": "artery.posterior.labyrinthine_left",
+        "originalCoincidentVertices": 26,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.hypoglossal.right.left",
+        "parent": "artery.eca.apa.neuromeningeal_trunk.right.left",
+        "originalCoincidentVertices": 74,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.amendment.jugular_ascending_iac_branch.left",
+        "parent": "artery.eca.apa.jugular.right.left",
+        "originalCoincidentVertices": 144,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.jugular.right",
+        "parent": "artery.eca.apa.neuromeningeal_trunk.right",
+        "originalCoincidentVertices": 64,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.medial_clival.right",
+        "parent": "artery.eca.apa.hypoglossal.right",
+        "originalCoincidentVertices": 146,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.hypoglossal.right",
+        "parent": "artery.eca.apa.neuromeningeal_trunk.right",
+        "originalCoincidentVertices": 74,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.descending_odontoid.right.left",
+        "parent": "artery.eca.apa.hypoglossal.right.left",
+        "originalCoincidentVertices": 137,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.sigmoid_sinus_branch.right",
+        "parent": "artery.eca.apa.jugular.right",
+        "originalCoincidentVertices": 70,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.sigmoid_sinus_branch.right.left",
+        "parent": "artery.eca.apa.jugular.right.left",
+        "originalCoincidentVertices": 70,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.amendment.common_cochlear.left",
+        "parent": "artery.posterior.labyrinthine_left",
+        "originalCoincidentVertices": 39,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.maxillary.anterior_tympanic.right",
+        "parent": "artery.eca.maxillary.right",
+        "originalCoincidentVertices": 89,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+        "parent": "artery.eca.maxillary.right.left",
+        "originalCoincidentVertices": 89,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.lateral_clival.right.left",
+        "parent": "artery.eca.apa.jugular.right.left",
+        "originalCoincidentVertices": 152,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.descending_odontoid.right",
+        "parent": "artery.eca.apa.hypoglossal.right",
+        "originalCoincidentVertices": 137,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.eca.apa.jugular.right.left",
+        "parent": "artery.eca.apa.neuromeningeal_trunk.right.left",
+        "originalCoincidentVertices": 64,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.amendment.common_cochlear.right",
+        "parent": "artery.posterior.labyrinthine_right",
+        "originalCoincidentVertices": 27,
+        "maxGapMm": 0.0
+      },
+      {
+        "id": "artery.amendment.anterior_vestibular.right",
+        "parent": "artery.posterior.labyrinthine_right",
+        "originalCoincidentVertices": 24,
+        "maxGapMm": 0.0
+      }
+    ]
+  },
+  "potentialLinkOverlaps": [
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.right",
+      "endpoint": "artery.amendment.aica_subarcuate.right",
+      "surfaceContacts": 146,
+      "joinType": "overlap, not a welded ostium"
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.right",
+      "endpoint": "artery.amendment.jugular_ascending_iac_branch.right",
+      "surfaceContacts": 212,
+      "joinType": "overlap, not a welded ostium"
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.left",
+      "endpoint": "artery.amendment.aica_subarcuate.left",
+      "surfaceContacts": 123,
+      "joinType": "overlap, not a welded ostium"
+    },
+    {
+      "id": "artery.connection.subarcuate_apa_auditory.left",
+      "endpoint": "artery.amendment.jugular_ascending_iac_branch.left",
+      "surfaceContacts": 206,
+      "joinType": "overlap, not a welded ostium"
+    }
+  ],
+  "remainingBatches": 5,
+  "resolvedIssueIds": [
+    "B2-AT-01"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "release": "0.9.138",
+  "batch": 5,
+  "productionBuild": "passed",
+  "changedBoneMeshes": 9,
+  "changedArterialMeshes": 35,
+  "newNasalIncisiveApertureMarkers": 2,
+  "regionalArterialBoneChecks": 20,
+  "surroundingBoneContacts": 0,
+  "safeInjectionRoutes": 26,
+  "closedDsaSplitSections": 131,
+  "clearPassageCentrelines": 14,
+  "clearIncisiveMarkerCourses": 3,
+  "potentialLinkEndpointChecks": 18,
+  "detachedPotentialLinkEndpoints": 0,
+  "introducedMaterialSurfaceContactPairs": 0,
+  "surfaceContactToleranceMm": 0.002,
+  "sourceSurfaceFoldsRetainedIn": [
+    "artery.eca.maxillary.right",
+    "artery.eca.maxillary.descending_palatine.right",
+    "artery.eca.maxillary.right.left",
+    "artery.eca.maxillary.descending_palatine.right.left"
+  ],
+  "exactUnchangedMeshes": 790,
+  "nativeUnchangedBranchInterfaces": "passed",
+  "priorBatchDsaRegressions": "batches 1, 2, 3 and 4 passed",
+  "remainingBatches": 3,
+  "limits": "Teaching reconstruction. Existing small maxillary and descending-palatine source folds remain documented; this is not whole-model or clinical validation."
+}

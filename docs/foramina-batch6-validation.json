@@ -1,0 +1,54 @@
+{
+  "release": "0.9.139",
+  "batch": 6,
+  "productionBuild": "passed",
+  "changedBoneMeshes": 10,
+  "changedArterialMeshes": 12,
+  "newLandmarks": 6,
+  "regionalVesselBoneChecks": 22,
+  "surroundingBoneContacts": 0,
+  "fullySafeChangedDsaCourses": 11,
+  "changedDsaCoursesWithRetainedSourceLimitations": [
+    {
+      "id": "artery.eca.incisive.right",
+      "selectable": true,
+      "lengthMm": 7.705716,
+      "fullSafe": false,
+      "safeRanges": [
+        [
+          0,
+          2.612168
+        ],
+        [
+          2.687425,
+          7.705716
+        ]
+      ],
+      "outsideGuidePoints": 1
+    }
+  ],
+  "closedDsaSplitSections": 88,
+  "clearPassageCentrelines": 28,
+  "fullyFittedCheckedPassages": 27,
+  "sampledEnclosedCoreSections": 24,
+  "raysPerSection": 16,
+  "potentialLinkEndpointChecks": 8,
+  "detachedPotentialLinkEndpoints": 0,
+  "introducedMaterialSurfaceContactPairs": 0,
+  "surfaceContactToleranceMm": 0.002,
+  "sourceSurfaceFoldsRetainedIn": [
+    "artery.eca.incisive.right",
+    "artery.eca.incisive.right.left"
+  ],
+  "exactUnchangedMeshes": 818,
+  "nativeUnchangedBranchInterfaces": "passed",
+  "priorBatchDsaRegressions": "batches 1 through 5 passed",
+  "remainingPartialMarkers": [
+    "landmark.supraorbital.left",
+    "landmark.supratrochlear.right",
+    "landmark.supratrochlear.left",
+    "landmark.superior-alveolar.left"
+  ],
+  "remainingBatches": 2,
+  "limits": "Reference-guided teaching reconstruction. Existing incisive source folds and the short right incisive DSA unsafe interval remain documented. Four partial markers remain for batch 7. Whole-model validation remains batch 8."
+}

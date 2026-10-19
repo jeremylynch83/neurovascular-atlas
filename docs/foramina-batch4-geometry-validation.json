@@ -1,0 +1,274 @@
+{
+  "vessels": [
+    {
+      "id": "artery.anterior.ophthalmic_right",
+      "region": "apex",
+      "triangles": 7369,
+      "contacts": 0
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_right",
+      "region": "ethmoid",
+      "triangles": 42272,
+      "contacts": 0
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_right",
+      "region": "ethmoid",
+      "triangles": 42552,
+      "contacts": 0
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+      "region": "sof",
+      "triangles": 59821,
+      "contacts": 0
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+      "region": "sof",
+      "triangles": 18162,
+      "contacts": 0
+    },
+    {
+      "id": "artery.amendment.superficial_recurrent_meningeal.right",
+      "region": "sof",
+      "triangles": 1711,
+      "contacts": 0
+    },
+    {
+      "id": "vein.superior_ophthalmic.right",
+      "region": "apex",
+      "triangles": 3687,
+      "contacts": 0
+    },
+    {
+      "id": "vein.inferior_ophthalmic.right",
+      "region": "iof",
+      "triangles": 3132,
+      "contacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right",
+      "region": "iof",
+      "triangles": 3622,
+      "contacts": 0
+    },
+    {
+      "id": "vein.infraorbital.right",
+      "region": "iof",
+      "triangles": 1778,
+      "contacts": 0
+    },
+    {
+      "id": "artery.anterior.ophthalmic_left",
+      "region": "apex",
+      "triangles": 7200,
+      "contacts": 0
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_left",
+      "region": "ethmoid",
+      "triangles": 42280,
+      "contacts": 0
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_left",
+      "region": "ethmoid",
+      "triangles": 43010,
+      "contacts": 0
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+      "region": "sof",
+      "triangles": 55556,
+      "contacts": 0
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+      "region": "sof",
+      "triangles": 20694,
+      "contacts": 0
+    },
+    {
+      "id": "artery.amendment.superficial_recurrent_meningeal.left",
+      "region": "sof",
+      "triangles": 1725,
+      "contacts": 0
+    },
+    {
+      "id": "vein.superior_ophthalmic.left",
+      "region": "apex",
+      "triangles": 3742,
+      "contacts": 0
+    },
+    {
+      "id": "vein.inferior_ophthalmic.left",
+      "region": "iof",
+      "triangles": 4075,
+      "contacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right.left",
+      "region": "iof",
+      "triangles": 3687,
+      "contacts": 0
+    },
+    {
+      "id": "vein.infraorbital.left",
+      "region": "iof",
+      "triangles": 1578,
+      "contacts": 0
+    }
+  ],
+  "struts": [
+    {
+      "id": "optic-strut.right",
+      "controls": 27,
+      "signedDistancesMm": [
+        -1.5622376917275698,
+        -1.8606323905148607,
+        -2.1598415578837655,
+        -1.1061334531170635,
+        -1.4127964633625731,
+        -1.738567405919079,
+        -0.7854269387067848,
+        -1.149870652866149,
+        -1.5143143670255135,
+        -1.7919681375656695,
+        -2.0790331321448376,
+        -2.3799226297560283,
+        -1.3616808011977257,
+        -1.6683373840876763,
+        -1.975017347608723,
+        -0.978151916263231,
+        -1.3274269620776398,
+        -1.6918037175017475,
+        -2.0537773451927475,
+        -2.3313244598212974,
+        -2.630515674433271,
+        -1.5194648153258705,
+        -1.8747159536623628,
+        -2.229967091998842,
+        -1.0691694805378413,
+        -1.4241154726409138,
+        -1.779061464743988
+      ]
+    },
+    {
+      "id": "maxillary-strut.right",
+      "controls": 27,
+      "signedDistancesMm": [
+        -0.7729600053316186,
+        -1.1465506792028595,
+        -0.6687790716900589,
+        -0.5196668084451606,
+        -1.0193437499914537,
+        -0.8857189190617021,
+        -0.5128177837859896,
+        -1.0113329119213523,
+        -0.9604561132406154,
+        -0.708367207987962,
+        -1.0468376924343414,
+        -0.5754460657743868,
+        -0.6098713386479527,
+        -1.096594209932303,
+        -0.8635203555284696,
+        -0.544545570082162,
+        -1.031268441366512,
+        -1.0221791016715331,
+        -0.777643202631454,
+        -0.9393948352334115,
+        -0.5451511500686149,
+        -0.7112039801378843,
+        -1.2062228654557545,
+        -0.9067205679206973,
+        -0.6447647576443081,
+        -1.139783642962185,
+        -1.1151406765416145
+      ]
+    },
+    {
+      "id": "optic-strut.left",
+      "controls": 27,
+      "signedDistancesMm": [
+        -1.5550374929460626,
+        -1.83714532343114,
+        -2.137102889284897,
+        -1.0923940590771086,
+        -1.3928957742580081,
+        -1.7145739827751634,
+        -0.721840727275608,
+        -1.0641864037740076,
+        -1.407418764779596,
+        -1.793300416567629,
+        -1.1237716129639301,
+        -2.3764924611044274,
+        -1.3301336069376204,
+        -0.573813483618475,
+        -1.948381040159121,
+        -0.9202600672875759,
+        -0.17118987844784808,
+        -1.6005261182395527,
+        -2.0074043031101856,
+        -2.3115745823677485,
+        -2.6134138973429373,
+        -1.5235307648278877,
+        -1.8763020862751891,
+        -2.189363945501124,
+        -1.0544720276383106,
+        -1.4072433490855996,
+        -1.758810685288935
+      ]
+    },
+    {
+      "id": "maxillary-strut.left",
+      "controls": 22,
+      "signedDistancesMm": [
+        -0.22651985481451792,
+        -1.1583655984654815,
+        -0.8819301218356379,
+        -0.9515563050919782,
+        -0.7085217070333617,
+        -0.9515563050919782,
+        -0.7416382150784643,
+        -0.6800189634937367,
+        -1.0941095940335723,
+        -0.6245950136218235,
+        -0.5354052309793265,
+        -0.9999931914089248,
+        -0.8668460003998488,
+        -0.494358432193626,
+        -0.9888076713130795,
+        -1.0406206955543806,
+        -1.000539387944796,
+        -0.7337102629741862,
+        -1.1845859816941384,
+        -0.5134990455078398,
+        -1.1168334201675993,
+        -0.5131932534982663
+      ]
+    }
+  ],
+  "failures": [],
+  "boneTopology": {
+    "bone.sphenoid": {
+      "triangles": 154882,
+      "nonManifoldEdges": 0,
+      "watertight": true,
+      "windingConsistent": true
+    },
+    "bone.frontal": {
+      "triangles": 32016,
+      "nonManifoldEdges": 0,
+      "watertight": true,
+      "windingConsistent": true
+    },
+    "bone.maxilla.right": {
+      "triangles": 38145,
+      "nonManifoldEdges": 0,
+      "watertight": false,
+      "windingConsistent": true
+    }
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "release": "0.9.142",
+  "sourceHashes": {
+    "models/craniofacial.glb": "283889567fb16223d0cdf2a9a7aac7754be2acdee16898345ea44b59a97e69f5",
+    "models/complete-circulation.glb": "b585e5f4a5ec67dc89d5d5de8c03e53bde08933d6089c6a9e014d992b902bbe2",
+    "models/complete-anastomoses.glb": "3e8365026dd53750301763ad709c9deeac90ad4c69f1d6147f0187157d0e60ac"
+  },
+  "boneContacts": [
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right",
+      "testedTriangles": 48689,
+      "windowMm": [
+        [
+          18,
+          -69,
+          43
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.eca.maxillary.mma.petrosal.right",
+      "testedTriangles": 6533,
+      "windowMm": [
+        [
+          18,
+          -69,
+          28
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.eca.apa.inferior_tympanic.right",
+      "testedTriangles": 49557,
+      "windowMm": [
+        [
+          18,
+          -69,
+          28
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.anterior.caroticotympanic_right",
+      "testedTriangles": 3968,
+      "windowMm": [
+        [
+          18,
+          -69,
+          28
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.amendment.superior_tympanic.right",
+      "testedTriangles": 3538,
+      "windowMm": [
+        [
+          18,
+          -69,
+          28
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.cervical",
+      "testedTriangles": 9649,
+      "windowMm": [
+        [
+          18,
+          -69,
+          28
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.petrous",
+      "testedTriangles": 9260,
+      "windowMm": [
+        [
+          18,
+          -69,
+          28
+        ],
+        [
+          46,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.anterior.caroticotympanic_left",
+      "testedTriangles": 3968,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          28
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+      "testedTriangles": 31642,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          43
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.eca.maxillary.mma.petrosal.right.left",
+      "testedTriangles": 6545,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          28
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.eca.apa.inferior_tympanic.right.left",
+      "testedTriangles": 48963,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          28
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.amendment.superior_tympanic.left",
+      "testedTriangles": 3830,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          28
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.cervical",
+      "testedTriangles": 9410,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          28
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.petrous",
+      "testedTriangles": 8379,
+      "windowMm": [
+        [
+          -46,
+          -69,
+          28
+        ],
+        [
+          -18,
+          -43,
+          57
+        ]
+      ],
+      "boneContacts": 0,
+      "method": "FCL double-precision BVH triangle collision"
+    }
+  ],
+  "selfIntersections": [
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right",
+      "testedTriangles": 105527,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.maxillary.mma.petrosal.right",
+      "testedTriangles": 6533,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.inferior_tympanic.right",
+      "testedTriangles": 45975,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.anterior.caroticotympanic_right",
+      "testedTriangles": 3968,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.anterior.caroticotympanic_left",
+      "testedTriangles": 3968,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+      "testedTriangles": 92023,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.maxillary.mma.petrosal.right.left",
+      "testedTriangles": 6545,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.inferior_tympanic.right.left",
+      "testedTriangles": 45406,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.superior_tympanic.right",
+      "testedTriangles": 3538,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.amendment.superior_tympanic.left",
+      "testedTriangles": 3830,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.inferior_tympanic_caroticotympanic.right",
+      "testedTriangles": 3200,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.inferior_tympanic_caroticotympanic.left",
+      "testedTriangles": 3200,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.facial_nerve_arcade.right",
+      "testedTriangles": 3230,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.superior_anterior_tympanic.right",
+      "testedTriangles": 10482,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.superior_inferior_tympanic.right",
+      "testedTriangles": 6720,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.stylomastoid_inferior_tympanic.right",
+      "testedTriangles": 25590,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.subarcuate_petrosal_mma.right",
+      "testedTriangles": 2144,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.facial_nerve_arcade.left",
+      "testedTriangles": 3148,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.superior_anterior_tympanic.left",
+      "testedTriangles": 10442,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.superior_inferior_tympanic.left",
+      "testedTriangles": 6714,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.stylomastoid_inferior_tympanic.left",
+      "testedTriangles": 23482,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.subarcuate_petrosal_mma.left",
+      "testedTriangles": 2222,
+      "nonAdjacentContacts": 0,
+      "materialContacts": 0,
+      "maxPenetrationBoundMm": 0.0
+    }
+  ],
+  "deferredIssueIds": [
+    "B2-AT-01"
+  ],
+  "scope": "Temporal, sphenoid and occipital passage windows. Jaw surfaces and complete neural/auditory canals are excluded.",
+  "overlapChecks": [
+    {
+      "from": "artery.anterior.caroticotympanic_right",
+      "to": "artery.anterior.internal_carotid_right.segment.petrous",
+      "surfaceContactPairs": 139,
+      "joinType": "overlapping exteriors; not a welded ostium"
+    },
+    {
+      "from": "artery.anterior.caroticotympanic_right",
+      "to": "artery.connection.inferior_tympanic_caroticotympanic.right",
+      "surfaceContactPairs": 103,
+      "joinType": "overlapping exteriors; not a welded ostium"
+    },
+    {
+      "from": "artery.anterior.caroticotympanic_left",
+      "to": "artery.anterior.internal_carotid_left.segment.petrous",
+      "surfaceContactPairs": 139,
+      "joinType": "overlapping exteriors; not a welded ostium"
+    },
+    {
+      "from": "artery.anterior.caroticotympanic_left",
+      "to": "artery.connection.inferior_tympanic_caroticotympanic.left",
+      "surfaceContactPairs": 144,
+      "joinType": "overlapping exteriors; not a welded ostium"
+    }
+  ]
+}

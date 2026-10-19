@@ -1,0 +1,155 @@
+{
+  "vessels": [
+    {
+      "id": "artery.amendment.infraorbital_muscular_branch.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.amendment.infraorbital_muscular_branch.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supraorbital_left",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supraorbital_right",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supratrochlear_left",
+      "contacts": []
+    },
+    {
+      "id": "artery.anterior.supratrochlear_right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.anterior_superior_alveolar.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.anterior_superior_alveolar.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.incisive.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.incisive.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.inferior_alveolar.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.inferior_alveolar.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.infraorbital.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.posterior_superior_alveolar.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.mental.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.mental.right.left",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.mylohyoid.right",
+      "contacts": []
+    },
+    {
+      "id": "artery.eca.mylohyoid.right.left",
+      "contacts": []
+    },
+    {
+      "id": "vein.infraorbital.left",
+      "contacts": []
+    },
+    {
+      "id": "vein.infraorbital.right",
+      "contacts": []
+    }
+  ],
+  "boneTopology": {
+    "bone.mandible": {
+      "triangles": 67896,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.mandibular-alveolar-process": {
+      "triangles": 14850,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxilla.right": {
+      "triangles": 38145,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxilla.left": {
+      "triangles": 47548,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxillary-alveolar-process-right": {
+      "triangles": 11591,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.maxillary-alveolar-process-left": {
+      "triangles": 12893,
+      "watertight": false,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.lacrimal.left": {
+      "triangles": 1708,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.zygomatic.right": {
+      "triangles": 11306,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.zygomatic.left": {
+      "triangles": 11474,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    },
+    "bone.frontal": {
+      "triangles": 32016,
+      "watertight": true,
+      "nonManifoldEdges": 0,
+      "windingConsistent": true
+    }
+  },
+  "failures": []
+}

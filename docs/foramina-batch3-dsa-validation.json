@@ -1,0 +1,166 @@
+{
+  "release": "0.9.142",
+  "passages": [
+    {
+      "id": "landmark.internal-acoustic.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.facial-canal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.stylomastoid.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.jugular-foramen.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.hypoglossal.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.petrotympanic.right",
+      "clear": true
+    },
+    {
+      "id": "landmark.internal-acoustic.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.facial-canal.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.stylomastoid.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.jugular-foramen.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.hypoglossal.left",
+      "clear": true
+    },
+    {
+      "id": "landmark.petrotympanic.left",
+      "clear": true
+    }
+  ],
+  "flows": [
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right",
+      "selectable": true,
+      "lengthMm": 25.843443
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right",
+      "selectable": true,
+      "lengthMm": 21.342292
+    },
+    {
+      "id": "artery.eca.medial_clival.right",
+      "selectable": true,
+      "lengthMm": 40.062296
+    },
+    {
+      "id": "artery.eca.apa.descending_odontoid.right",
+      "selectable": true,
+      "lengthMm": 19.5646
+    },
+    {
+      "id": "artery.eca.apa.jugular.right",
+      "selectable": true,
+      "lengthMm": 25.179626
+    },
+    {
+      "id": "artery.eca.lateral_clival.right",
+      "selectable": true,
+      "lengthMm": 26.03757
+    },
+    {
+      "id": "artery.eca.apa.sigmoid_sinus_branch.right",
+      "selectable": true,
+      "lengthMm": 48.89428
+    },
+    {
+      "id": "artery.posterior.labyrinthine_right",
+      "selectable": true,
+      "lengthMm": 17.423166
+    },
+    {
+      "id": "artery.posterior.labyrinthine_left",
+      "selectable": true,
+      "lengthMm": 17.506891
+    },
+    {
+      "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+      "selectable": true,
+      "lengthMm": 24.31573
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right.left",
+      "selectable": true,
+      "lengthMm": 21.373576
+    },
+    {
+      "id": "artery.eca.medial_clival.right.left",
+      "selectable": true,
+      "lengthMm": 40.162627
+    },
+    {
+      "id": "artery.eca.apa.descending_odontoid.right.left",
+      "selectable": true,
+      "lengthMm": 19.596545
+    },
+    {
+      "id": "artery.eca.apa.jugular.right.left",
+      "selectable": true,
+      "lengthMm": 25.2196
+    },
+    {
+      "id": "artery.eca.lateral_clival.right.left",
+      "selectable": true,
+      "lengthMm": 25.580737
+    },
+    {
+      "id": "artery.eca.apa.sigmoid_sinus_branch.right.left",
+      "selectable": true,
+      "lengthMm": 48.275185
+    },
+    {
+      "id": "artery.amendment.jugular_ascending_iac_branch.right",
+      "selectable": true,
+      "lengthMm": 8.032146
+    },
+    {
+      "id": "artery.amendment.jugular_ascending_iac_branch.left",
+      "selectable": true,
+      "lengthMm": 8.03894
+    },
+    {
+      "id": "artery.amendment.common_cochlear.right",
+      "selectable": true,
+      "lengthMm": 2.029463
+    },
+    {
+      "id": "artery.amendment.common_cochlear.left",
+      "selectable": true,
+      "lengthMm": 2.014886
+    },
+    {
+      "id": "artery.amendment.anterior_vestibular.right",
+      "selectable": true,
+      "lengthMm": 2.570374
+    },
+    {
+      "id": "artery.amendment.anterior_vestibular.left",
+      "selectable": true,
+      "lengthMm": 2.528686
+    }
+  ],
+  "closedSplitSections": 96
+}

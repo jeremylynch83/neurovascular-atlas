@@ -1,0 +1,744 @@
+[
+  {
+    "id": "artery.amendment.anterior_vestibular.left",
+    "triangles": 1572,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.anterior_vestibular.right",
+    "triangles": 1680,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+    "triangles": 55556,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+    "triangles": 59821,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0012169589346792617,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.common_cochlear.left",
+    "triangles": 1837,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.common_cochlear.right",
+    "triangles": 1921,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+    "triangles": 20694,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+    "triangles": 18162,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.inferior_septal_subdivision.left",
+    "triangles": 3972,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.inferior_septal_subdivision.right",
+    "triangles": 3972,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.jugular_ascending_iac_branch.left",
+    "triangles": 3034,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.jugular_ascending_iac_branch.right",
+    "triangles": 3028,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0006473525083201841,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.superior_septal_subdivision.left",
+    "triangles": 4083,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.superior_septal_subdivision.right",
+    "triangles": 4083,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.superior_tympanic.left",
+    "triangles": 3830,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.amendment.superior_tympanic.right",
+    "triangles": 3538,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.anterior_ethmoidal_left",
+    "triangles": 42280,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.anterior_ethmoidal_right",
+    "triangles": 42272,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.caroticotympanic_left",
+    "triangles": 3968,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.caroticotympanic_right",
+    "triangles": 3968,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.cervical",
+    "triangles": 55211,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.petrous",
+    "triangles": 15287,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.cervical",
+    "triangles": 55557,
+    "materialSelfContacts": 8,
+    "maximumPenetrationBoundMm": 0.03174743106360808,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.petrous",
+    "triangles": 15181,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.posterior_ethmoidal_left",
+    "triangles": 43010,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.posterior_ethmoidal_right",
+    "triangles": 42552,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.supraorbital_left",
+    "triangles": 34530,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.supraorbital_right",
+    "triangles": 34530,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.supratrochlear_left",
+    "triangles": 36896,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.anterior.supratrochlear_right",
+    "triangles": 36900,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.contralateral_palatal.midline",
+    "triangles": 38642,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.facial_nerve_arcade.left",
+    "triangles": 3148,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.facial_nerve_arcade.right",
+    "triangles": 3230,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.inferior_tympanic_caroticotympanic.left",
+    "triangles": 3200,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.inferior_tympanic_caroticotympanic.right",
+    "triangles": 3200,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.labial_septal_plexus.left",
+    "triangles": 23250,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.labial_septal_plexus.right",
+    "triangles": 23238,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.mma_tentorial_marginal.right",
+    "triangles": 16929,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0003292778791563819,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.occipital_mastoid_apa_jugular.left",
+    "triangles": 2368,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.occipital_mastoid_apa_jugular.right",
+    "triangles": 2368,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.posterior_septal_posterior_ethmoidal.left",
+    "triangles": 23904,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.posterior_septal_posterior_ethmoidal.right",
+    "triangles": 23904,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.septal_anterior_ethmoidal.left",
+    "triangles": 66844,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.septal_anterior_ethmoidal.right",
+    "triangles": 66866,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.septal_palatine_network.left",
+    "triangles": 45304,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.septal_palatine_network.right",
+    "triangles": 45320,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.stylomastoid_inferior_tympanic.left",
+    "triangles": 23482,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.stylomastoid_inferior_tympanic.right",
+    "triangles": 25590,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.subarcuate_apa_auditory.left",
+    "triangles": 880,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.subarcuate_apa_auditory.right",
+    "triangles": 908,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.subarcuate_petrosal_mma.left",
+    "triangles": 2222,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.subarcuate_petrosal_mma.right",
+    "triangles": 2144,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.superior_anterior_tympanic.left",
+    "triangles": 10442,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.superior_anterior_tympanic.right",
+    "triangles": 10482,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.superior_inferior_tympanic.left",
+    "triangles": 6714,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.connection.superior_inferior_tympanic.right",
+    "triangles": 6720,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.descending_odontoid.right",
+    "triangles": 7737,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.descending_odontoid.right.left",
+    "triangles": 7737,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.hypoglossal.right",
+    "triangles": 10370,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.hypoglossal.right.left",
+    "triangles": 10360,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.inferior_tympanic.right",
+    "triangles": 52543,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.inferior_tympanic.right.left",
+    "triangles": 51949,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.jugular.right",
+    "triangles": 9046,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.jugular.right.left",
+    "triangles": 9054,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.sigmoid_sinus_branch.right",
+    "triangles": 16270,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.apa.sigmoid_sinus_branch.right.left",
+    "triangles": 16270,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.greater_palatine.right",
+    "triangles": 15050,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.greater_palatine.right.left",
+    "triangles": 15100,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.incisive.right",
+    "triangles": 19684,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0004725412583177161,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.incisive.right.left",
+    "triangles": 23491,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.000445598069339948,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.lateral_clival.right",
+    "triangles": 8532,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.lateral_clival.right.left",
+    "triangles": 8532,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.lesser_palatine.right",
+    "triangles": 5657,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.lesser_palatine.right.left",
+    "triangles": 5657,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.anterior_tympanic.right",
+    "triangles": 145055,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+    "triangles": 130745,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.descending_palatine.right",
+    "triangles": 10743,
+    "materialSelfContacts": 4,
+    "maximumPenetrationBoundMm": 0.010479172930579546,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.descending_palatine.right.left",
+    "triangles": 10743,
+    "materialSelfContacts": 9,
+    "maximumPenetrationBoundMm": 0.012521481399230538,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.foramen_rotundum.right",
+    "triangles": 8973,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+    "triangles": 8973,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.inferior_alveolar.right",
+    "triangles": 64720,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0011446422629603561,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.inferior_alveolar.right.left",
+    "triangles": 64791,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.mma.petrosal.right",
+    "triangles": 6533,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.mma.petrosal.right.left",
+    "triangles": 6545,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "triangles": 36091,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.pterygoid_canal.right",
+    "triangles": 9626,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.pterygoid_canal.right.left",
+    "triangles": 9626,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.right",
+    "triangles": 34188,
+    "materialSelfContacts": 579,
+    "maximumPenetrationBoundMm": 0.11015160501409359,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.right.left",
+    "triangles": 34042,
+    "materialSelfContacts": 572,
+    "maximumPenetrationBoundMm": 0.11287681058429436,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.sphenopalatine.right",
+    "triangles": 6061,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.maxillary.sphenopalatine.right.left",
+    "triangles": 6026,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.medial_clival.right",
+    "triangles": 15280,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.medial_clival.right.left",
+    "triangles": 15290,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.mental.right",
+    "triangles": 17362,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.mental.right.left",
+    "triangles": 17490,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.mylohyoid.right",
+    "triangles": 36956,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.mylohyoid.right.left",
+    "triangles": 36916,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.00041534223744237996,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.posterior_lateral_nasal.right",
+    "triangles": 12144,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.posterior_lateral_nasal.right.left",
+    "triangles": 12144,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.posterior_septal.right",
+    "triangles": 11135,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.posterior_septal.right.left",
+    "triangles": 11140,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 1.4720065781222234e-05,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.psa_anterior_division.right.left",
+    "triangles": 18185,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.pterygovaginal.right",
+    "triangles": 9942,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.eca.pterygovaginal.right.left",
+    "triangles": 9942,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.posterior.labyrinthine_left",
+    "triangles": 19271,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  },
+  {
+    "id": "artery.posterior.labyrinthine_right",
+    "triangles": 18367,
+    "materialSelfContacts": 0,
+    "maximumPenetrationBoundMm": 0.0,
+    "toleranceMm": 0.002
+  }
+]

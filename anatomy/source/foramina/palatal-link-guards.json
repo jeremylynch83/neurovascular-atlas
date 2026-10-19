@@ -1,0 +1,38 @@
+[
+  {
+    "link": "artery.connection.septal_anterior_ethmoidal.right",
+    "protectedTarget": "artery.anterior.anterior_ethmoidal_right",
+    "exactCoreRadiusMm": 0.45,
+    "blendOuterRadiusMm": 7
+  },
+  {
+    "link": "artery.connection.septal_anterior_ethmoidal.left",
+    "protectedTarget": "artery.anterior.anterior_ethmoidal_left",
+    "exactCoreRadiusMm": 0.45,
+    "blendOuterRadiusMm": 7
+  },
+  {
+    "link": "artery.connection.posterior_septal_posterior_ethmoidal.right",
+    "protectedTarget": "artery.anterior.posterior_ethmoidal_right",
+    "exactCoreRadiusMm": 0.45,
+    "blendOuterRadiusMm": 7
+  },
+  {
+    "link": "artery.connection.labial_septal_plexus.right",
+    "protectedTarget": "artery.eca.superior_labial.right",
+    "exactCoreRadiusMm": 0.45,
+    "blendOuterRadiusMm": 7
+  },
+  {
+    "link": "artery.connection.posterior_septal_posterior_ethmoidal.left",
+    "protectedTarget": "artery.anterior.posterior_ethmoidal_left",
+    "exactCoreRadiusMm": 0.45,
+    "blendOuterRadiusMm": 7
+  },
+  {
+    "link": "artery.connection.labial_septal_plexus.left",
+    "protectedTarget": "artery.eca.superior_labial.right.left",
+    "exactCoreRadiusMm": 0.45,
+    "blendOuterRadiusMm": 7
+  }
+]

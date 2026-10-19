@@ -1,0 +1,254 @@
+{
+  "release": "0.9.142",
+  "passages": [
+    {
+      "id": "landmark.pterygoid-canal.right",
+      "clearCentreline": true,
+      "point": [
+        15.931150436401367,
+        -27.746488571166992,
+        47.70711135864258
+      ]
+    },
+    {
+      "id": "landmark.palatovaginal.right",
+      "clearCentreline": true,
+      "point": [
+        15.371556282043457,
+        -25.466617584228516,
+        42.152278900146484
+      ]
+    },
+    {
+      "id": "landmark.greater-palatine-canal.right",
+      "clearCentreline": true,
+      "point": [
+        20.96599006652832,
+        -19.37595558166504,
+        36.53729248046875
+      ]
+    },
+    {
+      "id": "landmark.greater-palatine-foramen.right",
+      "clearCentreline": true,
+      "point": [
+        16.170726776123047,
+        -14.73681354522705,
+        16.379587173461914
+      ]
+    },
+    {
+      "id": "landmark.lesser-palatine.right",
+      "clearCentreline": true,
+      "point": [
+        16.439815521240234,
+        -19.954849243164062,
+        15.791986465454102
+      ]
+    },
+    {
+      "id": "landmark.sphenopalatine-foramen.right",
+      "clearCentreline": true,
+      "point": [
+        11.525858879089355,
+        -15.90523624420166,
+        42.485496520996094
+      ]
+    },
+    {
+      "id": "landmark.pterygoid-canal.left",
+      "clearCentreline": true,
+      "point": [
+        -16.110187530517578,
+        -27.375099182128906,
+        47.743934631347656
+      ]
+    },
+    {
+      "id": "landmark.palatovaginal.left",
+      "clearCentreline": true,
+      "point": [
+        -15.01235580444336,
+        -25.971773147583008,
+        42.097782135009766
+      ]
+    },
+    {
+      "id": "landmark.greater-palatine-canal.left",
+      "clearCentreline": true,
+      "point": [
+        -21.361005783081055,
+        -19.842546463012695,
+        36.95206832885742
+      ]
+    },
+    {
+      "id": "landmark.greater-palatine-foramen.left",
+      "clearCentreline": true,
+      "point": [
+        -16.49411392211914,
+        -16.977022171020508,
+        16.420373916625977
+      ]
+    },
+    {
+      "id": "landmark.lesser-palatine.left",
+      "clearCentreline": true,
+      "point": [
+        -15.938057899475098,
+        -21.3538875579834,
+        14.085585594177246
+      ]
+    },
+    {
+      "id": "landmark.sphenopalatine-foramen.left",
+      "clearCentreline": true,
+      "point": [
+        -12.55610466003418,
+        -17.491201400756836,
+        42.85162353515625
+      ]
+    },
+    {
+      "id": "incisive-canal.right",
+      "clearCentreline": true
+    },
+    {
+      "id": "incisive-canal.left",
+      "clearCentreline": true
+    }
+  ],
+  "flows": [
+    {
+      "id": "artery.eca.maxillary.right",
+      "selectable": true,
+      "lengthMm": 63.120939
+    },
+    {
+      "id": "artery.eca.maxillary.descending_palatine.right",
+      "selectable": true,
+      "lengthMm": 30.621126
+    },
+    {
+      "id": "artery.eca.greater_palatine.right",
+      "selectable": true,
+      "lengthMm": 39.87486
+    },
+    {
+      "id": "artery.eca.lesser_palatine.right",
+      "selectable": true,
+      "lengthMm": 12.43505
+    },
+    {
+      "id": "artery.eca.maxillary.sphenopalatine.right",
+      "selectable": true,
+      "lengthMm": 18.972749
+    },
+    {
+      "id": "artery.eca.posterior_septal.right",
+      "selectable": true,
+      "lengthMm": 28.73227
+    },
+    {
+      "id": "artery.eca.posterior_lateral_nasal.right",
+      "selectable": true,
+      "lengthMm": 37.91078
+    },
+    {
+      "id": "artery.eca.pterygovaginal.right",
+      "selectable": true,
+      "lengthMm": 28.468312
+    },
+    {
+      "id": "artery.eca.maxillary.pterygoid_canal.right",
+      "selectable": true,
+      "lengthMm": 22.735598
+    },
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right",
+      "selectable": true,
+      "lengthMm": 32.976353
+    },
+    {
+      "id": "artery.eca.maxillary.right.left",
+      "selectable": true,
+      "lengthMm": 63.34252
+    },
+    {
+      "id": "artery.eca.maxillary.descending_palatine.right.left",
+      "selectable": true,
+      "lengthMm": 30.685775
+    },
+    {
+      "id": "artery.eca.greater_palatine.right.left",
+      "selectable": true,
+      "lengthMm": 41.343393
+    },
+    {
+      "id": "artery.eca.lesser_palatine.right.left",
+      "selectable": true,
+      "lengthMm": 12.4217
+    },
+    {
+      "id": "artery.eca.maxillary.sphenopalatine.right.left",
+      "selectable": true,
+      "lengthMm": 24.359229
+    },
+    {
+      "id": "artery.eca.posterior_septal.right.left",
+      "selectable": true,
+      "lengthMm": 27.622225
+    },
+    {
+      "id": "artery.eca.posterior_lateral_nasal.right.left",
+      "selectable": true,
+      "lengthMm": 39.440241
+    },
+    {
+      "id": "artery.eca.pterygovaginal.right.left",
+      "selectable": true,
+      "lengthMm": 28.525567
+    },
+    {
+      "id": "artery.eca.maxillary.pterygoid_canal.right.left",
+      "selectable": true,
+      "lengthMm": 22.802143
+    },
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+      "selectable": true,
+      "lengthMm": 33.807744
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+      "selectable": true,
+      "lengthMm": 44.979826
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+      "selectable": true,
+      "lengthMm": 44.789937
+    },
+    {
+      "id": "artery.amendment.superior_septal_subdivision.right",
+      "selectable": true,
+      "lengthMm": 22.437877
+    },
+    {
+      "id": "artery.amendment.superior_septal_subdivision.left",
+      "selectable": true,
+      "lengthMm": 22.617265
+    },
+    {
+      "id": "artery.amendment.inferior_septal_subdivision.right",
+      "selectable": true,
+      "lengthMm": 22.293229
+    },
+    {
+      "id": "artery.amendment.inferior_septal_subdivision.left",
+      "selectable": true,
+      "lengthMm": 21.953214
+    }
+  ],
+  "closedSplitSections": 131
+}

@@ -1,0 +1,978 @@
+{
+  "version": "0.9.134",
+  "batch": 1,
+  "scope": "Bilateral rotundum, ovale and spinosum passages and associated local arteries/veins",
+  "bone": {
+    "unchangedOtherBoneMeshes": 59,
+    "sphenoidWatertight": true,
+    "newPassages": 2,
+    "eulerCharacteristicChange": -4,
+    "removedVolumeMm3": 47.869102257856866,
+    "originalFacesRetriangulated": 81,
+    "maximumRetriangulatedFaceCentroidDistanceFromNewCanalAxisMm": 3.418,
+    "nativeRotundumAndOvaleFormsRetained": true
+  },
+  "clearanceRegions": [
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right",
+      "testedTriangles": 4532,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.accessory_meningeal.right",
+      "testedTriangles": 6239,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.mma.right",
+      "testedTriangles": 7916,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+      "testedTriangles": 4503,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.accessory_meningeal.right.left",
+      "testedTriangles": 6104,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.eca.maxillary.mma.right.left",
+      "testedTriangles": 8007,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.amendment.accessory_meningeal_anterior_tubal.right",
+      "testedTriangles": 44,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.amendment.accessory_meningeal_anterior_tubal.left",
+      "testedTriangles": 45,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "vein.ovale_emissary.right",
+      "testedTriangles": 12276,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "vein.ovale_emissary.left",
+      "testedTriangles": 11070,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "vein.middle_meningeal.anterior.left",
+      "testedTriangles": 10971,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "vein.middle_meningeal.anterior.right",
+      "testedTriangles": 10161,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "vein.middle_meningeal.posterior.left",
+      "testedTriangles": 9141,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "vein.middle_meningeal.posterior.right",
+      "testedTriangles": 7450,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.connection.foramen_rotundum_ilt.right",
+      "testedTriangles": 320,
+      "boneTriangleContacts": 0
+    },
+    {
+      "id": "artery.connection.foramen_rotundum_ilt.left",
+      "testedTriangles": 320,
+      "boneTriangleContacts": 0
+    }
+  ],
+  "sharedInterfaces": [
+    {
+      "from": "artery.eca.maxillary.foramen_rotundum.right",
+      "to": "artery.amendment.ilt_anterolateral_ramus.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+      "to": "artery.amendment.ilt_posteromedial_ramus.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosquamosal.right",
+      "to": "artery.anterior.tentorial_marginal_right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.foramen_rotundum.right.left",
+      "to": "artery.amendment.ilt_anterolateral_ramus.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.accessory_meningeal_posterior_intracranial.left",
+      "to": "artery.amendment.ilt_posteromedial_ramus.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+      "to": "artery.anterior.tentorial_marginal_left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.mma_posterior_cavernous.right",
+      "to": "artery.anterior.ilt_posterior_branch_right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosal.right",
+      "to": "artery.eca.occipital.stylomastoid.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.aica_subarcuate.right",
+      "to": "artery.eca.maxillary.mma.petrosal.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.superior_pharyngeal_tubal_branch.right",
+      "to": "artery.amendment.accessory_meningeal_anterior_tubal.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.lateral_clival_mht_branch.right",
+      "to": "artery.amendment.mma_posterior_cavernous.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.occipital_mastoid_dural_branch.right",
+      "to": "artery.eca.maxillary.mma.petrosquamosal.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosquamosal.right",
+      "to": "artery.amendment.davidoff_and_schechter_artery.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.mma_posterior_cavernous.left",
+      "to": "artery.anterior.ilt_posterior_branch_left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosal.right.left",
+      "to": "artery.eca.occipital.stylomastoid.right.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.aica_subarcuate.left",
+      "to": "artery.eca.maxillary.mma.petrosal.right.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.superior_pharyngeal_tubal_branch.left",
+      "to": "artery.amendment.accessory_meningeal_anterior_tubal.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.lateral_clival_mht_branch.left",
+      "to": "artery.amendment.mma_posterior_cavernous.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.amendment.occipital_mastoid_dural_branch.left",
+      "to": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+      "to": "artery.amendment.davidoff_and_schechter_artery.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.carotid.external.right",
+      "to": "artery.eca.maxillary.right",
+      "originalCoincidentVertices": 152,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.deep_auricular.right",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.anterior_tympanic.right",
+      "originalCoincidentVertices": 89,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.inferior_alveolar.right",
+      "originalCoincidentVertices": 128,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.posterior_deep_temporal.right",
+      "originalCoincidentVertices": 108,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.anterior_deep_temporal.right",
+      "originalCoincidentVertices": 121,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.masseteric.right",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.buccal.right",
+      "originalCoincidentVertices": 78,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.pterygoid_muscular.right",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.posterior_superior_alveolar.right",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.infraorbital.right",
+      "originalCoincidentVertices": 158,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.descending_palatine.right",
+      "originalCoincidentVertices": 136,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.sphenopalatine.right",
+      "originalCoincidentVertices": 129,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.pterygovaginal.right",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.pterygoid_canal.right",
+      "originalCoincidentVertices": 106,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.foramen_rotundum.right",
+      "originalCoincidentVertices": 101,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.accessory_meningeal.right",
+      "originalCoincidentVertices": 104,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.eca.maxillary.mma.right",
+      "originalCoincidentVertices": 124,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right",
+      "to": "artery.eca.maxillary.mma.frontal.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right",
+      "to": "artery.eca.maxillary.mma.posterior_convexity.right",
+      "originalCoincidentVertices": 130,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right",
+      "to": "artery.eca.maxillary.mma.petrosquamosal.right",
+      "originalCoincidentVertices": 124,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right",
+      "to": "artery.eca.maxillary.mma.petrosal.right",
+      "originalCoincidentVertices": 103,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right",
+      "to": "artery.eca.mma_cavernous.right",
+      "originalCoincidentVertices": 107,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right",
+      "to": "artery.eca.mma_orbital.right",
+      "originalCoincidentVertices": 116,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.anterior.inferolateral_trunk_right",
+      "to": "artery.anterior.ilt_posterior_branch_right",
+      "originalCoincidentVertices": 69,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.anterior.inferolateral_trunk_left",
+      "to": "artery.anterior.ilt_posterior_branch_left",
+      "originalCoincidentVertices": 69,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.carotid.external.right.left",
+      "to": "artery.eca.maxillary.right.left",
+      "originalCoincidentVertices": 153,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.deep_auricular.right.left",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.anterior_tympanic.right.left",
+      "originalCoincidentVertices": 89,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.inferior_alveolar.right.left",
+      "originalCoincidentVertices": 128,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.posterior_deep_temporal.right.left",
+      "originalCoincidentVertices": 108,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.anterior_deep_temporal.right.left",
+      "originalCoincidentVertices": 121,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.masseteric.right.left",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.buccal.right.left",
+      "originalCoincidentVertices": 78,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.pterygoid_muscular.right.left",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.infraorbital.right.left",
+      "originalCoincidentVertices": 158,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.descending_palatine.right.left",
+      "originalCoincidentVertices": 136,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.sphenopalatine.right.left",
+      "originalCoincidentVertices": 129,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.pterygovaginal.right.left",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.pterygoid_canal.right.left",
+      "originalCoincidentVertices": 106,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.foramen_rotundum.right.left",
+      "originalCoincidentVertices": 101,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.accessory_meningeal.right.left",
+      "originalCoincidentVertices": 104,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.eca.maxillary.mma.right.left",
+      "originalCoincidentVertices": 124,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right.left",
+      "to": "artery.eca.maxillary.mma.frontal.right.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right.left",
+      "to": "artery.eca.maxillary.mma.posterior_convexity.right.left",
+      "originalCoincidentVertices": 130,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right.left",
+      "to": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+      "originalCoincidentVertices": 124,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right.left",
+      "to": "artery.eca.maxillary.mma.petrosal.right.left",
+      "originalCoincidentVertices": 103,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right.left",
+      "to": "artery.eca.mma_cavernous.right.left",
+      "originalCoincidentVertices": 107,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.right.left",
+      "to": "artery.eca.mma_orbital.right.left",
+      "originalCoincidentVertices": 116,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.anterior.inferolateral_trunk_right",
+      "to": "artery.amendment.ilt_anterolateral_ramus.right",
+      "originalCoincidentVertices": 86,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.anterior.inferolateral_trunk_left",
+      "to": "artery.amendment.ilt_anterolateral_ramus.left",
+      "originalCoincidentVertices": 90,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.anterior.ilt_posterior_branch_right",
+      "to": "artery.amendment.ilt_posteromedial_ramus.right",
+      "originalCoincidentVertices": 94,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.anterior.ilt_posterior_branch_left",
+      "to": "artery.amendment.ilt_posteromedial_ramus.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosal.right",
+      "to": "artery.amendment.superior_tympanic.right",
+      "originalCoincidentVertices": 106,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.mma.petrosal.right.left",
+      "to": "artery.amendment.superior_tympanic.left",
+      "originalCoincidentVertices": 106,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.mma_cavernous.right",
+      "to": "artery.amendment.mma_anterior_cavernous.right",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.mma_cavernous.right.left",
+      "to": "artery.amendment.mma_anterior_cavernous.left",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.mma_cavernous.right",
+      "to": "artery.amendment.mma_posterior_cavernous.right",
+      "originalCoincidentVertices": 98,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.mma_cavernous.right.left",
+      "to": "artery.amendment.mma_posterior_cavernous.left",
+      "originalCoincidentVertices": 181,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.accessory_meningeal.right",
+      "to": "artery.amendment.accessory_meningeal_anterior_tubal.right",
+      "originalCoincidentVertices": 100,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.accessory_meningeal.right.left",
+      "to": "artery.amendment.accessory_meningeal_anterior_tubal.left",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.accessory_meningeal.right",
+      "to": "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+      "originalCoincidentVertices": 236,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.accessory_meningeal.right.left",
+      "to": "artery.amendment.accessory_meningeal_posterior_intracranial.left",
+      "originalCoincidentVertices": 102,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right",
+      "to": "artery.amendment.artery_of_superior_orbital_fissure.right",
+      "originalCoincidentVertices": 80,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "artery.eca.maxillary.right.left",
+      "to": "artery.amendment.artery_of_superior_orbital_fissure.left",
+      "originalCoincidentVertices": 76,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "vein.middle_meningeal.anterior.left",
+      "to": "vein.sphenoparietal.left",
+      "originalCoincidentVertices": 14,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "vein.middle_meningeal.posterior.left",
+      "to": "vein.sphenoparietal.left",
+      "originalCoincidentVertices": 12,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "vein.middle_meningeal.anterior.right",
+      "to": "vein.sphenoparietal.right",
+      "originalCoincidentVertices": 12,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "vein.middle_meningeal.posterior.right",
+      "to": "vein.sphenoparietal.right",
+      "originalCoincidentVertices": 12,
+      "largestSeparationAfterMm": 0.0
+    },
+    {
+      "from": "vein.middle_meningeal.anterior.right",
+      "to": "vein.ovale_emissary.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "vein.middle_meningeal.posterior.right",
+      "to": "vein.ovale_emissary.right",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "vein.middle_meningeal.anterior.left",
+      "to": "vein.ovale_emissary.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    },
+    {
+      "from": "vein.middle_meningeal.posterior.left",
+      "to": "vein.ovale_emissary.left",
+      "originalCoincidentVertices": 0,
+      "largestSeparationAfterMm": null
+    }
+  ],
+  "modifiedVascularParts": {
+    "artery.eca.maxillary.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.024158910569471094,
+      "movedVertices": 638
+    },
+    "artery.eca.maxillary.foramen_rotundum.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 3.166398164940585,
+      "movedVertices": 3844
+    },
+    "artery.eca.maxillary.accessory_meningeal.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.6046175444587959,
+      "movedVertices": 2211
+    },
+    "artery.eca.maxillary.mma.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.7525256608981717,
+      "movedVertices": 7984
+    },
+    "artery.eca.maxillary.mma.petrosquamosal.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.02415232939299805,
+      "movedVertices": 583
+    },
+    "artery.eca.maxillary.mma.petrosal.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.33114956982175026,
+      "movedVertices": 716
+    },
+    "artery.eca.mma_cavernous.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.5197302665398646,
+      "movedVertices": 666
+    },
+    "artery.anterior.ilt_posterior_branch_right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.6163451636166422,
+      "movedVertices": 1303
+    },
+    "artery.anterior.ilt_posterior_branch_left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.5320139576511533,
+      "movedVertices": 646
+    },
+    "artery.eca.maxillary.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.044375352176332095,
+      "movedVertices": 1181
+    },
+    "artery.eca.maxillary.foramen_rotundum.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 3.200296586937413,
+      "movedVertices": 3873
+    },
+    "artery.eca.maxillary.accessory_meningeal.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.23345715284753268,
+      "movedVertices": 2527
+    },
+    "artery.eca.maxillary.mma.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 1.1645105569871372,
+      "movedVertices": 7624
+    },
+    "artery.eca.maxillary.mma.petrosquamosal.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.004941010838640567,
+      "movedVertices": 503
+    },
+    "artery.eca.maxillary.mma.petrosal.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.2770889497326215,
+      "movedVertices": 697
+    },
+    "artery.eca.mma_cavernous.right.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.3950131762358307,
+      "movedVertices": 769
+    },
+    "artery.amendment.ilt_anterolateral_ramus.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 3.147493665128023,
+      "movedVertices": 409
+    },
+    "artery.amendment.ilt_anterolateral_ramus.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 2.978744390921137,
+      "movedVertices": 313
+    },
+    "artery.amendment.ilt_posteromedial_ramus.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.30886937488518273,
+      "movedVertices": 329
+    },
+    "artery.amendment.ilt_posteromedial_ramus.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.30953621446196733,
+      "movedVertices": 446
+    },
+    "artery.amendment.mma_posterior_cavernous.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.014870170440661145,
+      "movedVertices": 73
+    },
+    "artery.amendment.mma_posterior_cavernous.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.004396398465517447,
+      "movedVertices": 186
+    },
+    "artery.amendment.accessory_meningeal_anterior_tubal.right": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.22832796789612347,
+      "movedVertices": 160
+    },
+    "artery.amendment.accessory_meningeal_anterior_tubal.left": {
+      "file": "models/complete-circulation.glb",
+      "maxDisplacementMm": 0.11202816994450805,
+      "movedVertices": 157
+    },
+    "vein.ovale_emissary.left": {
+      "file": "models/venous.glb",
+      "maxDisplacementMm": 4.36347531336678,
+      "movedVertices": 2300,
+      "sectionConformingTopology": true
+    },
+    "vein.middle_meningeal.anterior.left": {
+      "file": "models/venous.glb",
+      "maxDisplacementMm": 2.700000762939453,
+      "movedVertices": 4208,
+      "sectionConformingTopology": true
+    },
+    "vein.middle_meningeal.anterior.right": {
+      "file": "models/venous.glb",
+      "maxDisplacementMm": 2.700000762939453,
+      "movedVertices": 4674,
+      "sectionConformingTopology": true
+    },
+    "vein.middle_meningeal.posterior.left": {
+      "file": "models/venous.glb",
+      "maxDisplacementMm": 2.7667569816982294,
+      "movedVertices": 4171,
+      "sectionConformingTopology": true
+    },
+    "vein.middle_meningeal.posterior.right": {
+      "file": "models/venous.glb",
+      "maxDisplacementMm": 2.700000762939453,
+      "movedVertices": 4300,
+      "sectionConformingTopology": true
+    },
+    "vein.ovale_emissary.right": {
+      "file": "models/venous.glb",
+      "maxDisplacementMm": 1.0770335281250316,
+      "movedVertices": 2278,
+      "sectionConformingTopology": true
+    },
+    "artery.connection.foramen_rotundum_ilt.right": {
+      "file": "models/complete-anastomoses.glb",
+      "maxDisplacementMm": 3.1662418254575115,
+      "movedVertices": 162
+    },
+    "artery.connection.foramen_rotundum_ilt.left": {
+      "file": "models/complete-anastomoses.glb",
+      "maxDisplacementMm": 3.2007767013711454,
+      "movedVertices": 162
+    },
+    "artery.connection.posterior_cavernous_mma_posterolateral_ilt.right": {
+      "file": "models/complete-anastomoses.glb",
+      "maxDisplacementMm": 0.05352368064803296,
+      "movedVertices": 40
+    }
+  },
+  "limitations": [
+    "Regional geometric checks do not certify the whole atlas.",
+    "Spinosum lumens are teaching reconstructions, not patient segmentations.",
+    "Vessel calibres remain illustrative. The four existing caudal MMV end caps remain caps; no new drainage port is inferred.",
+    "Other skull apertures, wider venous drainage and remaining vessel routes remain in the audit backlog."
+  ],
+  "arteryVeinChecks": {
+    "testedPairs": 12,
+    "surfaceContacts": 0,
+    "scope": "MMA and accessory meningeal artery versus ipsilateral ovale emissary and both middle meningeal veins, z43-56 mm"
+  },
+  "surfaceIntegrity": {
+    "method": "VTK triangle intersections plus exact affine-section topology check",
+    "comparisons": [
+      {
+        "id": "vein.ovale_emissary.right",
+        "beforePairs": 2,
+        "afterPairs": 3,
+        "newPairs": [
+          [
+            10053,
+            10055
+          ]
+        ]
+      },
+      {
+        "id": "vein.ovale_emissary.left",
+        "beforePairs": 4,
+        "afterPairs": 4,
+        "newPairs": []
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.left",
+        "beforePairs": 0,
+        "afterPairs": 0,
+        "newPairs": []
+      },
+      {
+        "id": "vein.middle_meningeal.anterior.right",
+        "beforePairs": 0,
+        "afterPairs": 0,
+        "newPairs": []
+      },
+      {
+        "id": "vein.middle_meningeal.posterior.left",
+        "beforePairs": 0,
+        "afterPairs": 0,
+        "newPairs": []
+      },
+      {
+        "id": "vein.middle_meningeal.posterior.right",
+        "beforePairs": 0,
+        "afterPairs": 0,
+        "newPairs": []
+      },
+      {
+        "id": "artery.eca.maxillary.foramen_rotundum.right",
+        "beforePairs": 0,
+        "afterPairs": 0,
+        "newPairs": []
+      },
+      {
+        "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+        "beforePairs": 0,
+        "afterPairs": 0,
+        "newPairs": []
+      }
+    ],
+    "minimumVenousAxialJacobian": 0.5504629629629624,
+    "additionalMaterialIntersectionPairs": 0,
+    "numericalContactToleranceMm": 0.001,
+    "oneAdditionalRightOvaleContactPenetrationBoundMm": 2.584199680944615e-06,
+    "sourceDefects": "Two right and four left ovale source triangle contacts persist; these are pre-existing native surface defects, separate from this passage correction."
+  },
+  "dsa": {
+    "release": "0.9.134",
+    "passages": [
+      {
+        "id": "landmark.rotundum.right",
+        "clear": true,
+        "additionalDiskRays": 0
+      },
+      {
+        "id": "landmark.ovale.right",
+        "clear": true,
+        "additionalDiskRays": 0
+      },
+      {
+        "id": "landmark.foramen-spinosum.right",
+        "clear": true,
+        "additionalDiskRays": 24
+      },
+      {
+        "id": "landmark.rotundum.left",
+        "clear": true,
+        "additionalDiskRays": 0
+      },
+      {
+        "id": "landmark.ovale.left",
+        "clear": true,
+        "additionalDiskRays": 0
+      },
+      {
+        "id": "landmark.foramen-spinosum.left",
+        "clear": true,
+        "additionalDiskRays": 24
+      }
+    ],
+    "flows": [
+      {
+        "id": "artery.eca.maxillary.foramen_rotundum.right",
+        "lengthMm": 32.842138,
+        "selectable": true
+      },
+      {
+        "id": "artery.eca.maxillary.accessory_meningeal.right",
+        "lengthMm": 33.623874,
+        "selectable": true
+      },
+      {
+        "id": "artery.eca.maxillary.mma.right",
+        "lengthMm": 70.250186,
+        "selectable": true
+      },
+      {
+        "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+        "lengthMm": 33.642431,
+        "selectable": true
+      },
+      {
+        "id": "artery.eca.maxillary.accessory_meningeal.right.left",
+        "lengthMm": 33.537951,
+        "selectable": true
+      },
+      {
+        "id": "artery.eca.maxillary.mma.right.left",
+        "lengthMm": 70.622837,
+        "selectable": true
+      }
+    ],
+    "closedSplitSections": 36
+  }
+}

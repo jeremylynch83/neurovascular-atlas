@@ -1,0 +1,68 @@
+{
+  "release": "0.9.142",
+  "passages": [
+    {
+      "id": "landmark.rotundum.right",
+      "clear": true,
+      "additionalDiskRays": 0
+    },
+    {
+      "id": "landmark.ovale.right",
+      "clear": true,
+      "additionalDiskRays": 0
+    },
+    {
+      "id": "landmark.foramen-spinosum.right",
+      "clear": true,
+      "additionalDiskRays": 24
+    },
+    {
+      "id": "landmark.rotundum.left",
+      "clear": true,
+      "additionalDiskRays": 0
+    },
+    {
+      "id": "landmark.ovale.left",
+      "clear": true,
+      "additionalDiskRays": 0
+    },
+    {
+      "id": "landmark.foramen-spinosum.left",
+      "clear": true,
+      "additionalDiskRays": 24
+    }
+  ],
+  "flows": [
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right",
+      "lengthMm": 32.976353,
+      "selectable": true
+    },
+    {
+      "id": "artery.eca.maxillary.accessory_meningeal.right",
+      "lengthMm": 33.623874,
+      "selectable": true
+    },
+    {
+      "id": "artery.eca.maxillary.mma.right",
+      "lengthMm": 70.250186,
+      "selectable": true
+    },
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+      "lengthMm": 33.807744,
+      "selectable": true
+    },
+    {
+      "id": "artery.eca.maxillary.accessory_meningeal.right.left",
+      "lengthMm": 33.537951,
+      "selectable": true
+    },
+    {
+      "id": "artery.eca.maxillary.mma.right.left",
+      "lengthMm": 70.622837,
+      "selectable": true
+    }
+  ],
+  "closedSplitSections": 36
+}

@@ -161,3 +161,8 @@ Batch 22 also reclassifies the left A5 pair (source faces 1156 and 1222) as a to
 ## Petrosal wall cleanup batch 23, v0.9.115
 
 Three Float32 coordinate corrections, maximum 0.000005395 mm, remove nine microscopic exact left inferior petrosal self-contact pairs. Twelve pairs fall to three; their remaining source triangles are unchanged. The three native interfaces (119 shared coordinates), all 203 boundary edges, every source face index and stored normal component remain fixed. No new named-surface contact or sampled tissue entry is introduced. This is numerical wall cleanup, not regional anatomical acceptance. Bone fit, the ten right-sided pairs, full receiving lumens and other findings remain open. See [batch 23](docs/PETROSAL_WALL_BATCH23_v0.9.115.md).
+
+
+## Sphenoid foramina batch 1, v0.9.134
+
+Bilateral rotundum, ovale and spinosum passages, markers and local artery/vein routes repaired. Regional collision checks and retained shared interfaces are documented in `docs/foramina-batch1.md`. Wider anatomical acceptance remains incomplete; seven planned batches remain.
