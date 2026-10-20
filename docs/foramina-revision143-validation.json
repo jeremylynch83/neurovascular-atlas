@@ -1,0 +1,1042 @@
+{
+  "release": "0.9.143",
+  "productionBuild": "passed",
+  "regionalRegressionChecks": "passed",
+  "savedGeometry": {
+    "release": "0.9.143",
+    "temporal": {
+      "right": {
+        "self": {
+          "candidateTrianglePairs": 0,
+          "materialCrossings": 0,
+          "maximumPlaneCrossingBoundMm": 0,
+          "examples": []
+        },
+        "sourceJoin": {
+          "candidateTrianglePairs": 0,
+          "materialCrossings": 0,
+          "maximumPlaneCrossingBoundMm": 0,
+          "examples": []
+        }
+      },
+      "left": {
+        "self": {
+          "candidateTrianglePairs": 1,
+          "materialCrossings": 0,
+          "maximumPlaneCrossingBoundMm": 0,
+          "examples": []
+        },
+        "sourceJoin": {
+          "candidateTrianglePairs": 1,
+          "materialCrossings": 0,
+          "maximumPlaneCrossingBoundMm": 0,
+          "examples": []
+        }
+      }
+    },
+    "boneTopology": {
+      "bone.ethmoid": {
+        "vertices": 3887,
+        "triangles": 7774,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 0
+      },
+      "bone.sphenoid": {
+        "vertices": 74285,
+        "triangles": 148650,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 0
+      },
+      "bone.occipital": {
+        "vertices": 13523,
+        "triangles": 27058,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 0
+      },
+      "bone.temporal.right": {
+        "vertices": 57067,
+        "triangles": 114182,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 24
+      },
+      "bone.temporal.left": {
+        "vertices": 62976,
+        "triangles": 126000,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 16
+      },
+      "bone.maxilla.right": {
+        "vertices": 20872,
+        "triangles": 40606,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 1002
+      },
+      "bone.maxilla.left": {
+        "vertices": 33667,
+        "triangles": 64136,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 2896
+      },
+      "maxillary-alveolar-process-left": {
+        "vertices": 14027,
+        "triangles": 24787,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 2993
+      },
+      "maxillary-alveolar-process-right": {
+        "vertices": 10866,
+        "triangles": 20412,
+        "windingConsistent": true,
+        "nonManifoldEdges": 0,
+        "openBoundaryEdges": 1186
+      }
+    },
+    "ethmoidOriginalRestored": true
+  },
+  "temporalFrontFaceViews": [
+    {
+      "side": "left",
+      "view": [
+        1,
+        0,
+        0.15
+      ],
+      "residualDarkPixels": 0,
+      "previousDarkPixels": 882,
+      "maximumResidualInscribedGapRadiusMm": 0.0,
+      "passesLargeDefectCheck": true
+    },
+    {
+      "side": "left",
+      "view": [
+        1,
+        0.6,
+        0.3
+      ],
+      "residualDarkPixels": 0,
+      "previousDarkPixels": 57,
+      "maximumResidualInscribedGapRadiusMm": 0.0,
+      "passesLargeDefectCheck": true
+    },
+    {
+      "side": "left",
+      "view": [
+        1,
+        -0.6,
+        0.3
+      ],
+      "residualDarkPixels": 0,
+      "previousDarkPixels": 0,
+      "maximumResidualInscribedGapRadiusMm": 0.0,
+      "passesLargeDefectCheck": true
+    },
+    {
+      "side": "right",
+      "view": [
+        -1,
+        0,
+        0.15
+      ],
+      "residualDarkPixels": 0,
+      "previousDarkPixels": 8329,
+      "maximumResidualInscribedGapRadiusMm": 0.0,
+      "passesLargeDefectCheck": true
+    },
+    {
+      "side": "right",
+      "view": [
+        -1,
+        0.6,
+        0.3
+      ],
+      "residualDarkPixels": 0,
+      "previousDarkPixels": 9578,
+      "maximumResidualInscribedGapRadiusMm": 0.0,
+      "passesLargeDefectCheck": true
+    },
+    {
+      "side": "right",
+      "view": [
+        -1,
+        -0.6,
+        0.3
+      ],
+      "residualDarkPixels": 0,
+      "previousDarkPixels": 1613,
+      "maximumResidualInscribedGapRadiusMm": 0.0,
+      "passesLargeDefectCheck": true
+    }
+  ],
+  "temporalNewSurfaceVesselContacts": {
+    "left": [],
+    "right": []
+  },
+  "neighbourBoneContacts": [
+    {
+      "side": "left",
+      "neighbour": "bone.sphenoid",
+      "newSurfaceContacts": 11,
+      "baselineRegionalContacts": 303,
+      "bounds": [
+        [
+          -33.807674407958984,
+          -53.06867218017578,
+          45.0355339050293
+        ],
+        [
+          -33.80210494995117,
+          -52.9963493347168,
+          45.05134963989258
+        ]
+      ]
+    },
+    {
+      "side": "right",
+      "neighbour": "bone.sphenoid",
+      "newSurfaceContacts": 40,
+      "baselineRegionalContacts": 156,
+      "bounds": [
+        [
+          34.27608108520508,
+          -53.03407669067383,
+          43.76783752441406
+        ],
+        [
+          36.35190200805664,
+          -47.24339294433594,
+          45.475162506103516
+        ]
+      ]
+    }
+  ],
+  "neighbourBoneInterpretation": "Both repaired surfaces clear mandibular condyles. Small native sphenoid interface contacts remain and already existed at baseline. These are distinct from the closed jagged defect.",
+  "unchangedMeshes": {
+    "unchangedMeshArraysExact": {
+      "models/craniofacial.glb": 51,
+      "models/complete-circulation.glb": 599,
+      "models/complete-anastomoses.glb": 165,
+      "models/venous.glb": 231
+    },
+    "explicitProtectedVessels": [
+      "artery.anterior.ophthalmic_right",
+      "artery.anterior.anterior_ethmoidal_right",
+      "artery.anterior.posterior_ethmoidal_right",
+      "artery.anterior.ophthalmic_left",
+      "artery.anterior.anterior_ethmoidal_left",
+      "artery.anterior.posterior_ethmoidal_left",
+      "artery.posterior.pica_vermian_right",
+      "artery.posterior.pica_hemispheric_right",
+      "artery.posterior.pica_lateral_hemispheric_right",
+      "artery.posterior.pica_tonsillar_right",
+      "artery.posterior.pica_choroidal_right",
+      "artery.posterior.pica_medullary_perforator_right",
+      "artery.posterior.pica_vermian_left",
+      "artery.posterior.pica_hemispheric_left",
+      "artery.posterior.pica_lateral_hemispheric_left",
+      "artery.posterior.pica_tonsillar_left",
+      "artery.posterior.pica_choroidal_left",
+      "artery.posterior.pica_medullary_perforator_left",
+      "artery.connection.mma_ophthalmic__recurrent_meningeal.right",
+      "artery.connection.infraorbital_ophthalmic.right",
+      "artery.connection.septal_anterior_ethmoidal.right",
+      "artery.connection.mma_ophthalmic__recurrent_meningeal.left",
+      "artery.connection.infraorbital_ophthalmic.left",
+      "artery.connection.septal_anterior_ethmoidal.left",
+      "artery.amendment.ophthalmic_inferior_muscular_branch.right",
+      "artery.amendment.ophthalmic_inferior_muscular_branch.left",
+      "artery.amendment.ophthalmic_superior_muscular_branch.right",
+      "artery.amendment.ophthalmic_superior_muscular_branch.left",
+      "artery.amendment.deep_recurrent_ophthalmic.right",
+      "artery.amendment.deep_recurrent_ophthalmic.left",
+      "artery.connection.deep_recurrent_ophthalmic_ilt.right",
+      "artery.connection.pica_aica_pial_border_zone.right",
+      "artery.connection.pica_sca_vermian_border_zone.right",
+      "artery.connection.posterior_septal_posterior_ethmoidal.right",
+      "artery.connection.deep_recurrent_ophthalmic_ilt.left",
+      "artery.connection.pica_aica_pial_border_zone.left",
+      "artery.connection.pica_sca_vermian_border_zone.left",
+      "artery.connection.posterior_septal_posterior_ethmoidal.left",
+      "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "vein.superior_ophthalmic.right",
+      "vein.inferior_ophthalmic.right",
+      "vein.superior_ophthalmic.left",
+      "vein.inferior_ophthalmic.left",
+      "artery.posterior.pica_right.segment.p1",
+      "artery.posterior.pica_right.segment.p2",
+      "artery.posterior.pica_right.segment.p3",
+      "artery.posterior.pica_right.segment.p4",
+      "artery.posterior.pica_right.segment.p5",
+      "artery.posterior.pica_left.segment.p1",
+      "artery.posterior.pica_left.segment.p2",
+      "artery.posterior.pica_left.segment.p3",
+      "artery.posterior.pica_left.segment.p4",
+      "artery.posterior.pica_left.segment.p5"
+    ],
+    "entireAssetsByteExact": [
+      "models/venous.glb",
+      "models/brain-context.glb"
+    ],
+    "changedBones": [
+      "bone.ethmoid",
+      "bone.maxilla.left",
+      "bone.maxilla.right",
+      "bone.occipital",
+      "bone.sphenoid",
+      "bone.temporal.left",
+      "bone.temporal.right",
+      "bone.maxillary-alveolar-process-left",
+      "bone.maxillary-alveolar-process-right"
+    ],
+    "changedVessels": [
+      "artery.eca.greater_palatine.right",
+      "artery.eca.apa.hypoglossal.right",
+      "artery.eca.medial_clival.right",
+      "artery.eca.apa.descending_odontoid.right",
+      "artery.eca.greater_palatine.right.left",
+      "artery.eca.apa.hypoglossal.right.left",
+      "artery.eca.medial_clival.right.left",
+      "artery.eca.apa.descending_odontoid.right.left",
+      "artery.connection.septal_palatine_network.right",
+      "artery.connection.septal_palatine_network.left"
+    ]
+  },
+  "vascularSurfaceChecks": [
+    {
+      "id": "artery.eca.greater_palatine.right",
+      "testedTriangles": 1808,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right",
+      "testedTriangles": 9021,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.medial_clival.right",
+      "testedTriangles": 1195,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.descending_odontoid.right",
+      "testedTriangles": 1057,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.greater_palatine.right.left",
+      "testedTriangles": 1837,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right.left",
+      "testedTriangles": 9011,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.00023164594849522675
+    },
+    {
+      "id": "artery.eca.medial_clival.right.left",
+      "testedTriangles": 1193,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.descending_odontoid.right.left",
+      "testedTriangles": 1377,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.septal_palatine_network.right",
+      "testedTriangles": 19427,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.connection.septal_palatine_network.left",
+      "testedTriangles": 19415,
+      "materialSelfContacts": 0,
+      "baselineMaterialSelfContactsInSameFaces": 0,
+      "maxCrossingBoundMm": 0.0
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right",
+      "anteriorCondylarVeinSurfaceContacts": 0
+    },
+    {
+      "id": "artery.eca.apa.hypoglossal.right.left",
+      "anteriorCondylarVeinSurfaceContacts": 0
+    }
+  ],
+  "regionalVesselBoneContacts": {
+    "newContactPairs": 0,
+    "preExistingPairsRemaining": 35,
+    "findings": [
+      {
+        "region": "facial",
+        "id": "artery.eca.lateral_clival.right",
+        "contacts": 86,
+        "baselineContacts": 86,
+        "bounds": [
+          [
+            27.833253860473633,
+            -71.81419372558594,
+            45.111026763916016
+          ],
+          [
+            28.150054931640625,
+            -71.27562713623047,
+            45.88600158691406
+          ]
+        ]
+      },
+      {
+        "region": "facial",
+        "id": "artery.eca.lateral_clival.right.left",
+        "contacts": 84,
+        "baselineContacts": 84,
+        "bounds": [
+          [
+            -28.2900333404541,
+            -71.29136657714844,
+            45.772483825683594
+          ],
+          [
+            -27.814254760742188,
+            -70.84125518798828,
+            46.07196044921875
+          ]
+        ]
+      },
+      {
+        "region": "facial",
+        "id": "vein.superior_petrosal.right",
+        "contacts": 31,
+        "baselineContacts": 31,
+        "bounds": [
+          [
+            22.616872787475586,
+            -60.52433776855469,
+            56.78839874267578
+          ],
+          [
+            24.21698570251465,
+            -59.6896858215332,
+            57.06949996948242
+          ]
+        ]
+      },
+      {
+        "region": "facial",
+        "id": "vein.inferior_petrosal.right",
+        "contacts": 142,
+        "baselineContacts": 142,
+        "bounds": [
+          [
+            13.491899490356445,
+            -64.68463134765625,
+            47.023380279541016
+          ],
+          [
+            15.775304794311523,
+            -59.698333740234375,
+            48.98243713378906
+          ]
+        ]
+      },
+      {
+        "region": "facial",
+        "id": "vein.superior_petrosal.left",
+        "contacts": 25,
+        "baselineContacts": 25,
+        "bounds": [
+          [
+            -23.007991790771484,
+            -60.39027404785156,
+            56.909488677978516
+          ],
+          [
+            -21.247867584228516,
+            -59.417232513427734,
+            57.05220031738281
+          ]
+        ]
+      },
+      {
+        "region": "facial",
+        "id": "vein.inferior_petrosal.left",
+        "contacts": 55,
+        "baselineContacts": 55,
+        "bounds": [
+          [
+            -13.61489200592041,
+            -62.43582534790039,
+            48.16508483886719
+          ],
+          [
+            -13.026742935180664,
+            -60.36432647705078,
+            49.18569564819336
+          ]
+        ]
+      },
+      {
+        "region": "facial",
+        "id": "vein.basilar_plexus",
+        "contacts": 32,
+        "baselineContacts": 32,
+        "bounds": [
+          [
+            16.06072998046875,
+            -69.26009368896484,
+            44.986480712890625
+          ],
+          [
+            16.934307098388672,
+            -68.3000259399414,
+            45.57463073730469
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "artery.eca.mma_orbital.right",
+        "contacts": 4,
+        "baselineContacts": 4,
+        "bounds": [
+          [
+            37.36386489868164,
+            -17.589393615722656,
+            62.54448318481445
+          ],
+          [
+            37.46765899658203,
+            -17.394786834716797,
+            62.570430755615234
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "artery.eca.mma_orbital.right.left",
+        "contacts": 88,
+        "baselineContacts": 88,
+        "bounds": [
+          [
+            -38.47719955444336,
+            -20.032812118530273,
+            62.955322265625
+          ],
+          [
+            -37.96257019042969,
+            -19.604673385620117,
+            63.30994415283203
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "artery.amendment.ilt_anterolateral_ramus.right",
+        "contacts": 100,
+        "baselineContacts": 100,
+        "bounds": [
+          [
+            18.155855178833008,
+            -34.7415657043457,
+            60.44271469116211
+          ],
+          [
+            18.669355392456055,
+            -33.88222122192383,
+            61.203556060791016
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "artery.amendment.ilt_anterolateral_ramus.left",
+        "contacts": 102,
+        "baselineContacts": 102,
+        "bounds": [
+          [
+            -17.49913215637207,
+            -35.030635833740234,
+            60.550357818603516
+          ],
+          [
+            -16.495098114013672,
+            -33.9149169921875,
+            61.277366638183594
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "artery.connection.mma_lacrimal__meningolacrimal.right",
+        "contacts": 34,
+        "baselineContacts": 34,
+        "bounds": [
+          [
+            35.4221076965332,
+            -13.961028099060059,
+            62.5098876953125
+          ],
+          [
+            35.60374069213867,
+            -13.857236862182617,
+            62.67854690551758
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "artery.connection.mma_lacrimal__meningolacrimal.left",
+        "contacts": 78,
+        "baselineContacts": 70,
+        "bounds": [
+          [
+            -35.558074951171875,
+            -14.25510311126709,
+            62.38447189331055
+          ],
+          [
+            -34.68449783325195,
+            -11.279756546020508,
+            63.898094177246094
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "vein.sphenoparietal.right",
+        "contacts": 279,
+        "baselineContacts": 282,
+        "bounds": [
+          [
+            16.895383834838867,
+            -37.858943939208984,
+            69.55488586425781
+          ],
+          [
+            35.52157211303711,
+            -25.602937698364258,
+            79.58786010742188
+          ]
+        ]
+      },
+      {
+        "region": "orbital-apex",
+        "id": "vein.sphenoparietal.left",
+        "contacts": 361,
+        "baselineContacts": 313,
+        "bounds": [
+          [
+            -34.221763610839844,
+            -38.15734100341797,
+            69.62822723388672
+          ],
+          [
+            -15.245278358459473,
+            -26.02242660522461,
+            79.17269134521484
+          ]
+        ]
+      },
+      {
+        "region": "ethmoid",
+        "id": "artery.connection.septal_anterior_ethmoidal.right",
+        "contacts": 161,
+        "baselineContacts": 297,
+        "bounds": [
+          [
+            4.276109218597412,
+            -2.358041286468506,
+            43.52519607543945
+          ],
+          [
+            7.14448356628418,
+            0.18484216928482056,
+            62.52942657470703
+          ]
+        ]
+      },
+      {
+        "region": "ethmoid",
+        "id": "artery.connection.septal_anterior_ethmoidal.left",
+        "contacts": 608,
+        "baselineContacts": 705,
+        "bounds": [
+          [
+            -4.925324440002441,
+            -1.7796218395233154,
+            43.64825439453125
+          ],
+          [
+            -0.41333723068237305,
+            0.5259475111961365,
+            64.09569549560547
+          ]
+        ]
+      },
+      {
+        "region": "ethmoid",
+        "id": "artery.connection.posterior_septal_posterior_ethmoidal.right",
+        "contacts": 344,
+        "baselineContacts": 344,
+        "bounds": [
+          [
+            1.8672891855239868,
+            -7.2967705726623535,
+            45.328125
+          ],
+          [
+            3.346313238143921,
+            0.12862195074558258,
+            62.94667434692383
+          ]
+        ]
+      },
+      {
+        "region": "ethmoid",
+        "id": "artery.connection.posterior_septal_posterior_ethmoidal.left",
+        "contacts": 260,
+        "baselineContacts": 328,
+        "bounds": [
+          [
+            -2.9979214668273926,
+            -7.4308342933654785,
+            45.348907470703125
+          ],
+          [
+            -0.2669697403907776,
+            1.443310022354126,
+            63.85917282104492
+          ]
+        ]
+      },
+      {
+        "region": "hypoglossal",
+        "id": "artery.eca.medial_clival.right",
+        "contacts": 493,
+        "baselineContacts": 224,
+        "bounds": [
+          [
+            12.416175842285156,
+            -70.22309875488281,
+            33.24390411376953
+          ],
+          [
+            18.00981903076172,
+            -68.85459899902344,
+            38.714561462402344
+          ]
+        ]
+      },
+      {
+        "region": "hypoglossal",
+        "id": "artery.eca.apa.descending_odontoid.right",
+        "contacts": 90,
+        "baselineContacts": 102,
+        "bounds": [
+          [
+            19.00693702697754,
+            -68.3404541015625,
+            31.843421936035156
+          ],
+          [
+            19.47516632080078,
+            -67.65522003173828,
+            32.1568603515625
+          ]
+        ]
+      },
+      {
+        "region": "hypoglossal",
+        "id": "artery.eca.medial_clival.right.left",
+        "contacts": 220,
+        "baselineContacts": 233,
+        "bounds": [
+          [
+            -16.674833297729492,
+            -70.22306060791016,
+            33.26346969604492
+          ],
+          [
+            -12.062287330627441,
+            -68.74224090576172,
+            39.363765716552734
+          ]
+        ]
+      },
+      {
+        "region": "hypoglossal",
+        "id": "artery.eca.apa.descending_odontoid.right.left",
+        "contacts": 93,
+        "baselineContacts": 88,
+        "bounds": [
+          [
+            -18.08695411682129,
+            -68.3404541015625,
+            31.845958526279258
+          ],
+          [
+            -17.75018882751465,
+            -67.7243423461914,
+            31.934703826904297
+          ]
+        ]
+      },
+      {
+        "region": "hypoglossal",
+        "id": "vein.basilar_plexus",
+        "contacts": 68,
+        "baselineContacts": 68,
+        "bounds": [
+          [
+            7.229832649230957,
+            -68.97899627685547,
+            36.903743743896484
+          ],
+          [
+            10.053816795349121,
+            -67.0675048828125,
+            38.672515869140625
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.eca.mma_cavernous.right",
+        "contacts": 188,
+        "baselineContacts": 184,
+        "bounds": [
+          [
+            27.241788864135742,
+            -48.718116760253906,
+            49.543033599853516
+          ],
+          [
+            28.777482986450195,
+            -46.76759338378906,
+            50.572265625
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.anterior.vidian_ica_contribution_right",
+        "contacts": 89,
+        "baselineContacts": 89,
+        "bounds": [
+          [
+            15.71043586730957,
+            -48.00372314453125,
+            51.08853530883789
+          ],
+          [
+            16.378463745117188,
+            -47.732078552246094,
+            51.6861457824707
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.anterior.ilt_posterior_branch_left",
+        "contacts": 78,
+        "baselineContacts": 78,
+        "bounds": [
+          [
+            -25.282752990722656,
+            -46.28334426879883,
+            50.27550506591797
+          ],
+          [
+            -24.906505584716797,
+            -45.907081604003906,
+            50.50038528442383
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.anterior.vidian_ica_contribution_left",
+        "contacts": 86,
+        "baselineContacts": 86,
+        "bounds": [
+          [
+            -14.873360633850098,
+            -47.96509552001953,
+            51.30476760864258
+          ],
+          [
+            -14.357645034790039,
+            -47.697479248046875,
+            51.81277084350586
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.eca.mma_cavernous.right.left",
+        "contacts": 234,
+        "baselineContacts": 226,
+        "bounds": [
+          [
+            -27.544275283813477,
+            -48.50898361206055,
+            49.64688491821289
+          ],
+          [
+            -24.920522689819336,
+            -45.85818862915039,
+            51.303321838378906
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.amendment.mandibular_ica_branch.right",
+        "contacts": 120,
+        "baselineContacts": 120,
+        "bounds": [
+          [
+            24.28618049621582,
+            -49.59103012084961,
+            43.5463752746582
+          ],
+          [
+            25.11651039123535,
+            -47.60666275024414,
+            44.688079833984375
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.amendment.mandibular_ica_branch.left",
+        "contacts": 114,
+        "baselineContacts": 114,
+        "bounds": [
+          [
+            -25.15300941467285,
+            -49.81597137451172,
+            43.53772735595703
+          ],
+          [
+            -24.435121536254883,
+            -47.37745666503906,
+            44.773929595947266
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.connection.lateral_clival_recurrent_ilt.right",
+        "contacts": 4,
+        "baselineContacts": 4,
+        "bounds": [
+          [
+            12.887245178222656,
+            -48.34471893310547,
+            55.13412857055664
+          ],
+          [
+            13.408164978027344,
+            -47.879703521728516,
+            55.33934783935547
+          ]
+        ]
+      },
+      {
+        "region": "spinosum",
+        "id": "artery.connection.lateral_clival_recurrent_ilt.left",
+        "contacts": 43,
+        "baselineContacts": 43,
+        "bounds": [
+          [
+            -13.082972526550293,
+            -47.95236587524414,
+            54.349308013916016
+          ],
+          [
+            -12.421294212341309,
+            -47.61963653564453,
+            54.93313217163086
+          ]
+        ]
+      },
+      {
+        "region": "incisive",
+        "id": "artery.connection.septal_palatine_network.right",
+        "contacts": 933,
+        "baselineContacts": 169,
+        "bounds": [
+          [
+            0.8956537842750549,
+            15.121039390563965,
+            13.657429695129395
+          ],
+          [
+            1.8744936558263303,
+            16.125707626342773,
+            18.044830322265625
+          ]
+        ]
+      },
+      {
+        "region": "incisive",
+        "id": "artery.connection.septal_palatine_network.left",
+        "contacts": 500,
+        "baselineContacts": 174,
+        "bounds": [
+          [
+            -1.7275065733833526,
+            15.331865310668945,
+            13.614519119262695
+          ],
+          [
+            -0.9546054162262627,
+            16.194311141967773,
+            18.024023056030273
+          ]
+        ]
+      }
+    ],
+    "scope": "Regional comparison, not whole-model anatomical acceptance"
+  },
+  "dsaFlow": {
+    "entries": 605,
+    "exactUnchangedEntries": 597,
+    "changedOrdinaryCourses": 8,
+    "sourceHashValidation": "passed"
+  },
+  "sizeMeasurementMethod": "72 radial rays in transverse planes at 30%, 50%, 70% of the smooth/registered axis; only complete, locally enclosed samples treated as diameters. Actual saved GLB includes both maxillary alveolar processes.",
+  "wholeModelAnatomicalAcceptance": false,
+  "limitations": [
+    "Individual olfactory microforamina unresolved after source ethmoid rollback.",
+    "Native segmentation gaps and broader legacy vessel/bone findings remain.",
+    "Clinical measurements vary by population and section plane; not every retained nominal clearance is an independently certified aperture size."
+  ]
+}

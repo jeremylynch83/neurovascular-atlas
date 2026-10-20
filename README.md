@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.142
+# Neurovascular Atlas v0.9.143
 
-This release reconstructs the ragged opening at the left temporal squamous/tympanic junction. The new surface retains the small tympanic passages and leaves vascular geometry unchanged. See [the repair and validation notes](docs/temporal-surface-repair.md). Wider findings from the eight-batch review remain recorded in [the residual issue register](docs/skull-foramina-residual-issues.md).
+This release restores the original ethmoid bone, retains the ethmoidal arteries, reconstructs the jagged temporal defects on both sides, and revises the optic, hypoglossal and facial canals. The artificial wide incisive opening is also reduced. See [the size audit, limitations and validation notes](docs/foramina-revision143.md) and [bilateral temporal comparisons](docs/temporal-bilateral-revision143.png). Earlier issue registers remain historical records, not acceptance certificates for this release.
 
 Earlier repairs retained in this package:
 
@@ -11,7 +11,7 @@ On mobile, tapping a model leaves the camera still. The exact point tapped becom
 Place the ZIP beside your existing inr-anatomy.sh and run:
 
 ```bash
-./inr-anatomy.sh local ./inr-anatomy-atlas-v0.9.142.zip
+./inr-anatomy.sh local ./inr-anatomy-atlas-v0.9.143.zip
 ```
 
 Open http://localhost:5173. Use `update` instead of `local` to also publish through your configured GitHub Pages workflow. Do not extract the ZIP before using the installer.

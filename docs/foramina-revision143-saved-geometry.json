@@ -1,0 +1,99 @@
+{
+  "release": "0.9.143",
+  "temporal": {
+    "right": {
+      "self": {
+        "candidateTrianglePairs": 0,
+        "materialCrossings": 0,
+        "maximumPlaneCrossingBoundMm": 0,
+        "examples": []
+      },
+      "sourceJoin": {
+        "candidateTrianglePairs": 0,
+        "materialCrossings": 0,
+        "maximumPlaneCrossingBoundMm": 0,
+        "examples": []
+      }
+    },
+    "left": {
+      "self": {
+        "candidateTrianglePairs": 1,
+        "materialCrossings": 0,
+        "maximumPlaneCrossingBoundMm": 0,
+        "examples": []
+      },
+      "sourceJoin": {
+        "candidateTrianglePairs": 1,
+        "materialCrossings": 0,
+        "maximumPlaneCrossingBoundMm": 0,
+        "examples": []
+      }
+    }
+  },
+  "boneTopology": {
+    "bone.ethmoid": {
+      "vertices": 3887,
+      "triangles": 7774,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 0
+    },
+    "bone.sphenoid": {
+      "vertices": 74285,
+      "triangles": 148650,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 0
+    },
+    "bone.occipital": {
+      "vertices": 13523,
+      "triangles": 27058,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 0
+    },
+    "bone.temporal.right": {
+      "vertices": 57067,
+      "triangles": 114182,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 24
+    },
+    "bone.temporal.left": {
+      "vertices": 62976,
+      "triangles": 126000,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 16
+    },
+    "bone.maxilla.right": {
+      "vertices": 20872,
+      "triangles": 40606,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 1002
+    },
+    "bone.maxilla.left": {
+      "vertices": 33667,
+      "triangles": 64136,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 2896
+    },
+    "maxillary-alveolar-process-left": {
+      "vertices": 14027,
+      "triangles": 24787,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 2993
+    },
+    "maxillary-alveolar-process-right": {
+      "vertices": 10866,
+      "triangles": 20412,
+      "windingConsistent": true,
+      "nonManifoldEdges": 0,
+      "openBoundaryEdges": 1186
+    }
+  },
+  "ethmoidOriginalRestored": true
+}

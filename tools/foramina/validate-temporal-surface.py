@@ -1,3 +1,9 @@
+from pathlib import Path
+import json,runpy
+_app143=Path(__file__).resolve().parents[2]
+if json.load(open(_app143/'public/anatomy/manifest.json')).get('foraminaRevision143'):
+ runpy.run_path(str(Path(__file__).with_name('validate-foramina-revision143.py')),run_name='__main__')
+ raise SystemExit(0)
 """Optional local reconstruction QA: NumPy, VTK and python-fcl required."""
 from pathlib import Path
 import json,numpy as np,fcl,vtk
