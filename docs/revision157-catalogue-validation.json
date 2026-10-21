@@ -1,0 +1,26 @@
+{
+  "release": "0.9.157",
+  "structures": 1730,
+  "checks": [
+    "Startup URL, caching, explicit full-manifest access, HTTP failure and release-mismatch handling",
+    "Same geometry groups, subtrees and vessel counts",
+    "Same descriptions, aliases, landmarks, anchors, focus and dependencies for every structure; representative search results match",
+    "Same relationships, flow validation graph and all 15 preset/side DSA runs",
+    "Vertebrobasilar presets include all PICA segments and branches for the selected side; opposite PICA excluded from unilateral bookmarks and DSA"
+  ],
+  "measurements": {
+    "comparison": "Full compact catalogue versus startup catalogue, same release and geometry",
+    "full": {
+      "bytes": 6916270,
+      "gzipBytes": 1443238,
+      "nodeParseMedianMs": 26.018976999999722
+    },
+    "viewer": {
+      "bytes": 2287707,
+      "gzipBytes": 348334,
+      "nodeParseMedianMs": 7.255008999999518
+    },
+    "parseSamples": 25,
+    "limitation": "Controlled Node parsing benchmark; not a mobile browser loading time or Core Web Vitals result"
+  }
+}

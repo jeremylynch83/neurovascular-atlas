@@ -66,6 +66,25 @@ try {
     assert.deepEqual(makeDsaRun(full,p.id,side,flow),makeDsaRun(viewer,p.id,side,flow),p.id+' '+side+' DSA');
   }
   report.checks.push('Same relationships, flow validation graph and all 15 preset/side DSA runs');
+  for (const side of ['left','right','both']) {
+    const ids=presets.presetVesselIds(viewer,'vertebrobasilar',side);
+    const visible=presets.presetVisibility(viewer,new Map(),ids);
+    const run=makeDsaRun(viewer,'vertebrobasilar',side,flow);
+    for (const vesselSide of ['left','right']) {
+      const expected=side==='both'||side===vesselSide;
+      const pica=viewer.structures.filter(s=>s.asset&&s.system==='artery'&&s.displayGroup!=='anastomoses'&&s.id.startsWith('artery.posterior.pica_')&&s.side===vesselSide);
+      assert(pica.length>=11,'PICA segments and branches must be present in catalogue');
+      for (const row of pica) {
+        assert.equal(ids.includes(row.id),expected,side+' bookmark '+row.id);
+        assert.equal(visible.get(row.id),expected?'on':'off',side+' visibility '+row.id);
+        assert.equal(run.arteries.includes(row.id),expected,side+' DSA '+row.id);
+        assert.equal(presets.injectionPreset(row.id),'vertebrobasilar');
+      }
+      for(let i=1;i<=5;i++)assert(pica.some(s=>s.id===`artery.posterior.pica_${vesselSide}.segment.p${i}`));
+    }
+  }
+  report.checks.push('Vertebrobasilar presets include all PICA segments and branches for the selected side; opposite PICA excluded from unilateral bookmarks and DSA');
+
   function parseMedian(text) {
     for(let i=0;i<5;i++) JSON.parse(text);
     const times=[];

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "artery.posterior.vertebral_right.segment.v4",
+    "minimumSampledJacobianDeterminant": 0.6737956385669739,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.6106411529483438,
+      1.0000000000331966,
+      1.2812144658740854
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.42979151022967277
+  },
+  {
+    "id": "artery.posterior.vertebral_left.segment.v4",
+    "minimumSampledJacobianDeterminant": 0.7117521303021181,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.6221497309177889,
+      1.0000000000331966,
+      1.275729239649162
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.4143898248033355
+  },
+  {
+    "id": "artery.posterior.anterior_spinal_root_right",
+    "minimumSampledJacobianDeterminant": 0.5228694763034755,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.7004885097313708,
+      1.0000000000331966,
+      1.1521918593679503
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3234568849335284
+  },
+  {
+    "id": "artery.posterior.anterior_spinal_root_left",
+    "minimumSampledJacobianDeterminant": 0.5779043102244388,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.554152740028543,
+      0.9999999999976694,
+      1.1244672560442477
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.445847259971457
+  },
+  {
+    "id": "artery.posterior.pica_right.segment.p1",
+    "minimumSampledJacobianDeterminant": 0.925515241175775,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.7894217451910207,
+      1.0000000000331966,
+      1.5207630435430104
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.5207630435430104
+  },
+  {
+    "id": "artery.posterior.pica_left.segment.p1",
+    "minimumSampledJacobianDeterminant": 0.6748871189544424,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.6429091406104398,
+      0.999865152231971,
+      1.4490027238837144
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.44900272388371437
+  },
+  {
+    "id": "artery.posterior.pica_left.segment.p2",
+    "minimumSampledJacobianDeterminant": 0.9058455593144213,
+    "method": "Sampled finite-difference deformation-Jacobian singular-value bounds from revision157 to158; includes axial stretch and is not a direct lumen radius measurement.",
+    "ratioP05MedianP95": [
+      0.962089841421938,
+      0.9999999999976694,
+      1.037907287995838
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.0502302366721572
+  }
+]

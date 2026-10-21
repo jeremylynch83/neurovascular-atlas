@@ -1,0 +1,210 @@
+{
+  "release": "0.9.158",
+  "flows": [
+    {
+      "id": "artery.posterior.anterior_spinal_root_right",
+      "selectable": true,
+      "lengthMm": 14.57229,
+      "safeRanges": [
+        [
+          0,
+          14.57229
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.posterior.anterior_spinal_root_left",
+      "selectable": true,
+      "lengthMm": 17.605892,
+      "safeRanges": [
+        [
+          0,
+          17.605892
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.posterior.vertebral_right.segment.v4",
+      "selectable": true,
+      "lengthMm": 41.073817,
+      "safeRanges": [
+        [
+          0,
+          41.073817
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 2,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 2
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.posterior.vertebral_left.segment.v4",
+      "selectable": true,
+      "lengthMm": 39.051432,
+      "safeRanges": [
+        [
+          0,
+          39.051432
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 2,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 2
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.posterior.pica_right.segment.p1",
+      "selectable": true,
+      "lengthMm": 13.00084,
+      "safeRanges": [
+        [
+          0,
+          13.00084
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.posterior.pica_left.segment.p1",
+      "selectable": true,
+      "lengthMm": 12.228402,
+      "safeRanges": [
+        [
+          0,
+          12.228402
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.posterior.pica_left.segment.p2",
+      "selectable": true,
+      "lengthMm": 15.332149,
+      "safeRanges": [
+        [
+          0,
+          15.332149
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "closedSplitSections": 25
+}

@@ -51,6 +51,19 @@ try {
  const stopped=new StagedLoader(manifest,source,async()=>{},async()=>{},()=>{});
  const pending=stopped.ensure([last]);stopped.dispose();await assert.rejects(pending,/closed/);
  report.checks.push('Actual loader: skull-only readiness; selection does not reorder; bounded packets; complete background loading; failure/retry; initial skull failure; disposal and pending waiters');
+ const {presetVesselIds,presetVisibility}=await server.ssrLoadModule('/src/presets.ts');
+ for(const side of ['left','right','both']) {
+  const ids=presetVesselIds(manifest,'vertebrobasilar',side),visibility=presetVisibility(manifest,new Map(),ids);
+  const installedPreset=new Set();const requests=[];
+  const presetLoader=new StagedLoader(manifest,{async load(file){requests.push(file)},async prepare(rows){return rows.map(s=>({id:s.id}))},async release(){},dispose(){}},async packets=>{for(const p of packets)installedPreset.add(p.id)},async()=>{},()=>{});
+  await presetLoader.loadCritical();let completed=false;const pending=presetLoader.ensure(ids).then(()=>completed=true);
+  assert(!completed,'Bookmark must wait for deferred arterial geometry');presetLoader.startBackground();await pending;
+  const expectedPica=manifest.structures.filter(s=>s.asset&&s.id.startsWith('artery.posterior.pica_')&&(side==='both'||s.side===side));
+  assert(expectedPica.length>=11);
+  for(const s of expectedPica){assert(ids.includes(s.id));assert(installedPreset.has(s.id));assert.equal(visibility.get(s.id),'on');assert.equal(presetLoader.states.get(s.id).status,'ready')}
+  await presetLoader.ensure(ids);assert(ids.every(id=>installedPreset.has(id)));presetLoader.dispose();
+ }
+ report.checks.push('Vertebrobasilar bookmarks wait for all selected PICA segments and branches before display, and work again once geometry is loaded');
  const {AnatomyEngine,pickAnatomy}=await server.ssrLoadModule('/src/engine.ts');
  const engine=Object.create(AnatomyEngine.prototype);
  Object.assign(engine,{manifest,entries:new Map(),objectToId:new Map(),root:new THREE.Group(),bounds:new THREE.Box3(),primaryPrepared:true,vascularBatches:[],renderer:{extensions:{has:()=>false}},camera:new THREE.PerspectiveCamera(),controls:{target:new THREE.Vector3(2,3,4)},landmarkMarker:new THREE.Group(),selected:null,hidden:new Set(),visibility:new Map(),layers:{artery:'on',bone:'ghost',vein:'off',brain:'off'},focusedMembers:null,injectionPick:null,selectionHalo:{setMeshes(){},setFade(){},setClip(){}},reducedMotion:{matches:false},clipEnabled:true,clipPlane:new THREE.Plane(new THREE.Vector3(1,0,0),0),segmentMembers:new Map(),render(){}});
@@ -127,5 +140,5 @@ try {
  report.checks.push(`Decoded positions, normals, all other attributes, triangles and world transforms exactly match for all ${compared} packed arterial meshes`);
  const sourceArteryBytes=[...originals.keys()].reduce((n,f)=>n+fs.statSync(base+f).size,0);
  report.measurements={singleControlledNodeRun:true,previousInitial:{bytes:oldInitialBytes,decodeMs:oldInitialMs},initialSkull:{bytes:critical.reduce((n,a)=>n+manifest.assetByteSizes[a.file],0),decodeMs:initialMs},previousAll:{decodeMs:oldMs},arteries:{sourceBytes:sourceArteryBytes,packBytes,packDecodeMs:packMs},structureCount:all.length,packCount:manifest.loadingPacks.length};
- fs.writeFileSync(root+'/docs/revision153-loading-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+ fs.writeFileSync(root+'/docs/revision'+manifest.release.split('.').at(-1)+'-loading-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
 }finally{await server.close()}

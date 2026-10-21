@@ -1,0 +1,786 @@
+{
+  "changed": [
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.6146877437228377
+    },
+    {
+      "id": "artery.eca.maxillary.accessory_meningeal.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.09057222093734417
+    },
+    {
+      "id": "artery.eca.mma_cavernous.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.091533095090752
+    },
+    {
+      "id": "artery.eca.medial_clival.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.023993206571104223
+    },
+    {
+      "id": "artery.anterior.ophthalmic_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 4.234021652192572
+    },
+    {
+      "id": "artery.anterior.lacrimal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.06133298266422215
+    },
+    {
+      "id": "artery.anterior.central_retinal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.1650806225686601
+    },
+    {
+      "id": "artery.anterior.posterior_ciliary_medial_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.05932760886107047
+    },
+    {
+      "id": "artery.anterior.posterior_ciliary_lateral_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.05644554588219001
+    },
+    {
+      "id": "artery.anterior.supraorbital_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.06583135162777486
+    },
+    {
+      "id": "artery.anterior.supratrochlear_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.0685780898411403
+    },
+    {
+      "id": "artery.anterior.dorsal_nasal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.7424909144391756
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.11461241211363989
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.30588201779975127
+    },
+    {
+      "id": "artery.anterior.superior_hypophyseal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.5743663078889534
+    },
+    {
+      "id": "artery.anterior.posterior_communicating_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.281974824619122
+    },
+    {
+      "id": "artery.anterior.anterior_choroidal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.8198595297914495
+    },
+    {
+      "id": "artery.anterior.meningohypophyseal_trunk_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.1922825187078733
+    },
+    {
+      "id": "artery.anterior.tentorial_marginal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.31237714987367105
+    },
+    {
+      "id": "artery.anterior.dorsal_meningeal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.17429368305127604
+    },
+    {
+      "id": "artery.anterior.inferior_hypophyseal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.2463184184404996
+    },
+    {
+      "id": "artery.anterior.inferolateral_trunk_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.156245531809933
+    },
+    {
+      "id": "artery.anterior.ilt_anterior_branch_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.1036258431446943
+    },
+    {
+      "id": "artery.anterior.aca_a1_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.763430076049299
+    },
+    {
+      "id": "artery.anterior.recurrent_artery_of_heubner_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.3115271307941767
+    },
+    {
+      "id": "artery.anterior.aca_orbitofrontal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.030554792759327064
+    },
+    {
+      "id": "artery.anterior.mca_m1_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.4720209501755033
+    },
+    {
+      "id": "artery.anterior.anterior_temporal_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.0264028567380568
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_1_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.4158972307934279
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_2_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.23871587454203957
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_3_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.07983306462954347
+    },
+    {
+      "id": "artery.anterior.medial_lenticulostriate_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.221245545728416
+    },
+    {
+      "id": "artery.anterior.ophthalmic_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 4.53996116732866
+    },
+    {
+      "id": "artery.anterior.lacrimal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.09578842729408159
+    },
+    {
+      "id": "artery.anterior.central_retinal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.2081354415381196
+    },
+    {
+      "id": "artery.anterior.posterior_ciliary_medial_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.07291907868465596
+    },
+    {
+      "id": "artery.anterior.posterior_ciliary_lateral_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.09228148122066444
+    },
+    {
+      "id": "artery.anterior.supraorbital_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.052674513865025835
+    },
+    {
+      "id": "artery.anterior.supratrochlear_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.040633276063230896
+    },
+    {
+      "id": "artery.anterior.dorsal_nasal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.21996708953358587
+    },
+    {
+      "id": "artery.anterior.anterior_ethmoidal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.10212488949719548
+    },
+    {
+      "id": "artery.anterior.posterior_ethmoidal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.4218890066431858
+    },
+    {
+      "id": "artery.anterior.superior_hypophyseal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.599253538317734
+    },
+    {
+      "id": "artery.anterior.posterior_communicating_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.3352979386049926
+    },
+    {
+      "id": "artery.anterior.anterior_choroidal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.867149970700548
+    },
+    {
+      "id": "artery.anterior.meningohypophyseal_trunk_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.4067002445227513
+    },
+    {
+      "id": "artery.anterior.tentorial_marginal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.47701258997102763
+    },
+    {
+      "id": "artery.anterior.dorsal_meningeal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.3785066015283086
+    },
+    {
+      "id": "artery.anterior.inferior_hypophyseal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.3084224100724056
+    },
+    {
+      "id": "artery.anterior.inferolateral_trunk_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.398064807019231
+    },
+    {
+      "id": "artery.anterior.ilt_anterior_branch_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.026359283230832968
+    },
+    {
+      "id": "artery.anterior.aca_a1_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.820052935656787
+    },
+    {
+      "id": "artery.anterior.recurrent_artery_of_heubner_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.342883911822557
+    },
+    {
+      "id": "artery.anterior.aca_orbitofrontal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.023724618410248758
+    },
+    {
+      "id": "artery.anterior.mca_m1_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.501886429713548
+    },
+    {
+      "id": "artery.anterior.anterior_temporal_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.8238874438688434
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_1_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.3762826206329288
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_2_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.19477705668574816
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_3_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.05359997022899307
+    },
+    {
+      "id": "artery.anterior.medial_lenticulostriate_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.2312617929019694
+    },
+    {
+      "id": "artery.anterior.anterior_communicating",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.3463292775408293
+    },
+    {
+      "id": "artery.posterior.pca_p1_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.5884605634007485
+    },
+    {
+      "id": "artery.posterior.pca_p2_p3_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.45545987437168645
+    },
+    {
+      "id": "artery.posterior.thalamoperforator_2_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.1253006419925664
+    },
+    {
+      "id": "artery.posterior.pcom_perforator_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.3575528866592634
+    },
+    {
+      "id": "artery.posterior.sca_right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.06035404253117096
+    },
+    {
+      "id": "artery.posterior.pca_p1_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.1373379554626501
+    },
+    {
+      "id": "artery.posterior.pca_p2_p3_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.15404359071458798
+    },
+    {
+      "id": "artery.posterior.pcom_perforator_left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.5509690441318704
+    },
+    {
+      "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.650077158561706
+    },
+    {
+      "id": "artery.eca.maxillary.accessory_meningeal.right.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.08220435200612368
+    },
+    {
+      "id": "artery.eca.mma_cavernous.right.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.971458317701244
+    },
+    {
+      "id": "artery.eca.medial_clival.right.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.030808367213129927
+    },
+    {
+      "id": "artery.amendment.basal_tentorial_mht_branch.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.20135280408132553
+    },
+    {
+      "id": "artery.amendment.basal_tentorial_mht_branch.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.4010135828360712
+    },
+    {
+      "id": "artery.amendment.ilt_superior_ramus.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.6572703326617995
+    },
+    {
+      "id": "artery.amendment.ilt_superior_ramus.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.4598687440364704
+    },
+    {
+      "id": "artery.amendment.ilt_anterolateral_ramus.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.3082103262487306
+    },
+    {
+      "id": "artery.amendment.ilt_anterolateral_ramus.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.26176761796987
+    },
+    {
+      "id": "artery.amendment.ilt_recurrent_lacerum_ramus.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.8407964699648158
+    },
+    {
+      "id": "artery.amendment.ilt_recurrent_lacerum_ramus.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.1360190220595876
+    },
+    {
+      "id": "artery.amendment.ophthalmic_inferior_muscular_branch.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.9662634378580017
+    },
+    {
+      "id": "artery.amendment.ophthalmic_inferior_muscular_branch.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.9258431481374619
+    },
+    {
+      "id": "artery.amendment.ophthalmic_superior_muscular_branch.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.11369294317195502
+    },
+    {
+      "id": "artery.amendment.ophthalmic_superior_muscular_branch.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.19500342717545827
+    },
+    {
+      "id": "artery.amendment.superficial_recurrent_meningeal.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.8439227778102736
+    },
+    {
+      "id": "artery.amendment.superficial_recurrent_meningeal.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.520593782990054
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.7974977807362156
+    },
+    {
+      "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 4.614660913674672
+    },
+    {
+      "id": "artery.amendment.medial_superior_palpebral.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.6890446688069223
+    },
+    {
+      "id": "artery.amendment.medial_superior_palpebral.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.156401043974126
+    },
+    {
+      "id": "artery.amendment.medial_inferior_palpebral.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.345184080410625
+    },
+    {
+      "id": "artery.amendment.medial_inferior_palpebral.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.09133959487560818
+    },
+    {
+      "id": "artery.amendment.mma_anterior_cavernous.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.0548887846090524
+    },
+    {
+      "id": "artery.amendment.mma_anterior_cavernous.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.787397099797985
+    },
+    {
+      "id": "artery.amendment.mma_posterior_cavernous.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.00019068916919873108
+    },
+    {
+      "id": "artery.amendment.mma_posterior_cavernous.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.007590741961658174
+    },
+    {
+      "id": "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.20915998858926813
+    },
+    {
+      "id": "artery.amendment.accessory_meningeal_posterior_intracranial.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.08098563319938173
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.8259618657595316
+    },
+    {
+      "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.80358286618653
+    },
+    {
+      "id": "artery.amendment.acha_optic_tract_branch.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.2179966956534103
+    },
+    {
+      "id": "artery.amendment.acha_optic_tract_branch.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.2542622536936974
+    },
+    {
+      "id": "artery.amendment.acha_capsular_branch.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.2954196800587815
+    },
+    {
+      "id": "artery.amendment.acha_capsular_branch.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.2748913558883726
+    },
+    {
+      "id": "artery.amendment.terminal_ica_perforator_1.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.638179839517234
+    },
+    {
+      "id": "artery.amendment.terminal_ica_perforator_1.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.438109838789976
+    },
+    {
+      "id": "artery.amendment.terminal_ica_perforator_2.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.1517480566184142
+    },
+    {
+      "id": "artery.amendment.terminal_ica_perforator_2.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.1171143863548902
+    },
+    {
+      "id": "artery.amendment.subcallosal_artery.midline",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.9368241627944147
+    },
+    {
+      "id": "artery.amendment.acom_hypothalamic_perforator.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.2864702768866054
+    },
+    {
+      "id": "artery.amendment.acom_hypothalamic_perforator.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.4030779538360654
+    },
+    {
+      "id": "artery.amendment.acom_septal_perforator.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.8966268765894445
+    },
+    {
+      "id": "artery.amendment.acom_septal_perforator.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.8856068290115044
+    },
+    {
+      "id": "artery.amendment.acom_chiasmatic_perforator.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.371409490705837
+    },
+    {
+      "id": "artery.amendment.acom_chiasmatic_perforator.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.5511368632030855
+    },
+    {
+      "id": "artery.amendment.pca_short_circumflex.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.3017310522305536
+    },
+    {
+      "id": "artery.amendment.pca_short_circumflex.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.004328155363188205
+    },
+    {
+      "id": "artery.amendment.pca_long_circumflex.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.2919604270775628
+    },
+    {
+      "id": "artery.amendment.pca_long_circumflex.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.016002454472354627
+    },
+    {
+      "id": "artery.amendment.tuberothalamic_artery.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.0018221337219817
+    },
+    {
+      "id": "artery.amendment.tuberothalamic_artery.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.0740234056886697
+    },
+    {
+      "id": "artery.amendment.anterior_thalamoperforating_branch.right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.8228454874718728
+    },
+    {
+      "id": "artery.amendment.anterior_thalamoperforating_branch.left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.8600687667605921
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.cavernous",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.235161333344823
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.224884163879736
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.2819750451966283
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.2012353928430883
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.terminus",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.0388179683077623
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.cavernous",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.289195273808505
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.2831160404002295
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.3352979386049926
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.296646817293088
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.terminus",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 3.145051866497062
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_right.segment.a2",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.2923528324203957
+    },
+    {
+      "id": "artery.anterior.aca_pericallosal_left.segment.a2",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.3618077453698534
+    },
+    {
+      "id": "artery.connection.mma_ophthalmic__recurrent_meningeal.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 1.9332601430716274
+    },
+    {
+      "id": "artery.connection.foramen_rotundum_ilt.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 1.338808431567734
+    },
+    {
+      "id": "artery.connection.accessory_meningeal_ilt.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 0.22044360621254888
+    },
+    {
+      "id": "artery.connection.mma_cavernous_ilt.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.7337081722889858
+    },
+    {
+      "id": "artery.connection.mma_ophthalmic__recurrent_meningeal.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 1.8039110901119293
+    },
+    {
+      "id": "artery.connection.foramen_rotundum_ilt.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 1.3222609304410202
+    },
+    {
+      "id": "artery.connection.accessory_meningeal_ilt.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 0.08720494019985192
+    },
+    {
+      "id": "artery.connection.mma_cavernous_ilt.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.6043457548764746
+    },
+    {
+      "id": "artery.connection.deep_recurrent_ophthalmic_ilt.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 1.8330627974688298
+    },
+    {
+      "id": "artery.connection.sof_artery_anteromedial_ilt.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.7627126451784854
+    },
+    {
+      "id": "artery.connection.sof_artery_recurrent_meningeal.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.351770873990866
+    },
+    {
+      "id": "artery.connection.posterior_cavernous_mma_posterolateral_ilt.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 0.009535170444332114
+    },
+    {
+      "id": "artery.connection.posterior_septal_posterior_ethmoidal.right",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 0.2668438521487911
+    },
+    {
+      "id": "artery.connection.deep_recurrent_ophthalmic_ilt.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 1.5611320737415737
+    },
+    {
+      "id": "artery.connection.sof_artery_anteromedial_ilt.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.686792459925597
+    },
+    {
+      "id": "artery.connection.sof_artery_recurrent_meningeal.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.0153367377407494
+    },
+    {
+      "id": "artery.connection.posterior_septal_posterior_ethmoidal.left",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 0.36553717145574954
+    },
+    {
+      "id": "artery.connection.contralateral_superior_hypophyseal.midline",
+      "file": "models/complete-anastomoses.glb",
+      "maximumDisplacementMm": 2.5323898980569277
+    }
+  ],
+  "connectorCuffs": [
+    {
+      "id": "artery.connection.mma_ophthalmic__recurrent_meningeal.right",
+      "sharedVertices": 1,
+      "maximumCuffCorrectionMm": 0.08596416256445281
+    },
+    {
+      "id": "artery.connection.sof_artery_recurrent_meningeal.right",
+      "sharedVertices": 1,
+      "maximumCuffCorrectionMm": 0.08596416256445281
+    }
+  ]
+}

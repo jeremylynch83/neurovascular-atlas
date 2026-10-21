@@ -1,23 +1,27 @@
 {
   "name": "inr-anatomy-atlas",
   "private": true,
-  "version": "0.9.155",
+  "version": "0.9.159",
   "description": "Interactive 3D interventional neuroradiology anatomy atlas.",
   "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "anatomy:validate": "python3 tools/validate_anatomy.py",
+    "anatomy:validate": "python3 tools/source-storage.py restore && python3 tools/validate_anatomy.py",
     "anatomy:build": "./build-anatomy.sh",
     "build": "sh ./build-anatomy.sh && node tools/build-dsa-flow.mjs && tsc -b && vite build && node tools/optimise-web.mjs && python3 tools/precompress.py",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "test": "python3 tools/validate_anatomy.py",
+    "test": "python3 tools/source-storage.py restore && python3 tools/validate_anatomy.py",
     "web:audit": "python3 tools/audit-hosting.py",
     "web:validate": "node tools/validate-viewer-catalogue.mjs",
     "web:startup": "node tools/validate-startup.mjs",
     "web:loading": "node tools/validate-loading.mjs",
-    "web:scheduling": "node tools/validate-scheduling.mjs"
+    "web:scheduling": "node tools/validate-scheduling.mjs",
+    "anatomy:restore": "python3 tools/source-storage.py restore",
+    "anatomy:store": "python3 tools/source-storage.py pack",
+    "predev": "npm run anatomy:restore",
+    "web:source-storage": "python3 tools/validate-source-storage.py"
   },
   "dependencies": {
     "@fontsource-variable/source-serif-4": "^5.3.0",

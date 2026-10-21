@@ -1,0 +1,1850 @@
+[
+  {
+    "id": "artery.eca.maxillary.foramen_rotundum.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8516442652607593,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8381225540315035,
+      0.9999999999976694,
+      1.1335906319863827
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.16187744596849651
+  },
+  {
+    "id": "artery.eca.maxillary.accessory_meningeal.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9622572040978257,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.eca.mma_cavernous.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8697699501774838,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8734674310974702,
+      1.0000000000331966,
+      1.0617377452453647
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.12653256890252976
+  },
+  {
+    "id": "artery.eca.medial_clival.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9581826646543808,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.anterior.ophthalmic_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.5554016034157307,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9670417654608418,
+      1.000000000000028,
+      1.3778865740754629
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.4202278736608983
+  },
+  {
+    "id": "artery.anterior.lacrimal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9621977561406102,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9949410843261166,
+      1.0000000000331966,
+      1.004222333258765
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.016251168920380334
+  },
+  {
+    "id": "artery.anterior.central_retinal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7635773789578341,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9660860808329313,
+      0.9999999999518712,
+      1.0397722152385465
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.07785199420017774
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_medial_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9961898281446359,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9944052700865068,
+      0.9999999999976694,
+      1.045756479039619
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.04575647903961902
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_lateral_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.974456407607196,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9852104230064131,
+      1.000000000014437,
+      1.0112493820633477
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.01807373404824639
+  },
+  {
+    "id": "artery.anterior.supraorbital_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9937420318544542,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999941214203257,
+      0.9999999999976694,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.006477884479914573
+  },
+  {
+    "id": "artery.anterior.supratrochlear_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9560205377343379,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9973642510796481,
+      0.9999999999976694,
+      1.0000047573760444
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.00881540409746117
+  },
+  {
+    "id": "artery.anterior.dorsal_nasal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9659368521779044,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8579126152658004,
+      0.9999999999976694,
+      1.1650107009904942
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.17144612514785104
+  },
+  {
+    "id": "artery.anterior.anterior_ethmoidal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.879717174409388,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9698760618084219,
+      0.9999999999998899,
+      1.0194808824582569
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.03386208749869466
+  },
+  {
+    "id": "artery.anterior.posterior_ethmoidal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9446945127041548,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9624201218776157,
+      0.9999999999976694,
+      1.0913015310268668
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.09130153102686679
+  },
+  {
+    "id": "artery.anterior.superior_hypophyseal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7408095727664452,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7515320949319375,
+      0.9956147503358926,
+      1.0048698972869192
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24846790506806254
+  },
+  {
+    "id": "artery.anterior.posterior_communicating_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7630733540146102,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7553780509269256,
+      1.0000000000331966,
+      1.0230733613013352
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24462194907307447
+  },
+  {
+    "id": "artery.anterior.anterior_choroidal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8062030654546235,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7864009585721013,
+      1.0000000000331966,
+      1.0705513046642707
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.22247806006663176
+  },
+  {
+    "id": "artery.anterior.meningohypophyseal_trunk_right",
+    "samples": 183,
+    "minimumJacobianDeterminant": 0.8999308512645036,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8873618055119382,
+      1.0000000000310956,
+      1.0188120183925098
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.11263819448806177
+  },
+  {
+    "id": "artery.anterior.tentorial_marginal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8902818978997792,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000359774
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.0251331310332446
+  },
+  {
+    "id": "artery.anterior.dorsal_meningeal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9112093949157049,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.anterior.inferior_hypophyseal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.6822332678502325,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7412904408430242,
+      0.9557976251052853,
+      1.0149943011926612
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2587095591569758
+  },
+  {
+    "id": "artery.anterior.inferolateral_trunk_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7937795072464191,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7840829484300768,
+      1.0000000000331966,
+      1.1161240478592949
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.21591705156992322
+  },
+  {
+    "id": "artery.anterior.ilt_anterior_branch_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9825470784085859,
+      1.0000000000331966,
+      1.0778415494966898
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.07784154949668967
+  },
+  {
+    "id": "artery.anterior.aca_a1_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8319683046602633,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.774954961065918,
+      0.9999999999785723,
+      1.3626196422603027
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3626196422603027
+  },
+  {
+    "id": "artery.anterior.recurrent_artery_of_heubner_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8191025195460084,
+      0.9999999999976694,
+      1.3514367487192733
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3514367487192732
+  },
+  {
+    "id": "artery.anterior.aca_orbitofrontal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9934795920961323,
+      0.9999999999976694,
+      1.0122241725804513
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.01656619925781359
+  },
+  {
+    "id": "artery.anterior.mca_m1_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000995897,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8334848949870375,
+      1.0000000000201306,
+      1.3399040507013162
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3399040507013162
+  },
+  {
+    "id": "artery.anterior.anterior_temporal_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9330925476495766,
+      1.0000000000331966,
+      1.2192048334640306
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.21920483346403055
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_1_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9574873724299842,
+      1.0000000000331966,
+      1.0705399402454174
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.10886547951628442
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_2_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.977700754288061,
+      1.0000000000331966,
+      1.0370680755089494
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.06536751018040651
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_3_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.994500231304732,
+      1.0000000000331966,
+      1.0093476881807555
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.023835000973863603
+  },
+  {
+    "id": "artery.anterior.medial_lenticulostriate_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9647468439731147,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8052382438981205,
+      1.0000000000331966,
+      1.3235679523423902
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3235679523423901
+  },
+  {
+    "id": "artery.anterior.ophthalmic_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.4638430295227074,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9538149814110742,
+      0.9999999999980157,
+      1.2891553898546617
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.4048663310404371
+  },
+  {
+    "id": "artery.anterior.lacrimal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9114527180841527,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9913796512852048,
+      1.0000000000331966,
+      1.0065113817101732
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.03381561973912362
+  },
+  {
+    "id": "artery.anterior.central_retinal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.6715505860055105,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9493646853773621,
+      0.9999999999941838,
+      1.0731861105523395
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.10428266229067307
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_medial_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.849944757051963,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9277385924407453,
+      0.9999999999976694,
+      1.0117656834776296
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.07226140755925459
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_lateral_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.88967953169907,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9654175872991179,
+      1.0000000000062017,
+      1.0200096780527463
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.036814580497058304
+  },
+  {
+    "id": "artery.anterior.supraorbital_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9547477587542972,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999947496178684,
+      0.9999999999976694,
+      1.0001513690255384
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.00458312896723772
+  },
+  {
+    "id": "artery.anterior.supratrochlear_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9780271597542733,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999972245230865,
+      0.9999999999976694,
+      1.0017128394640322
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.0044817551428277735
+  },
+  {
+    "id": "artery.anterior.dorsal_nasal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9996818908548417,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9562887453509673,
+      0.9999999999976694,
+      1.0473656180073918
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.052118060312853584
+  },
+  {
+    "id": "artery.anterior.anterior_ethmoidal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.876403345448694,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9749871700605707,
+      0.9999999999998899,
+      1.0159014918861429
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.027906504261707817
+  },
+  {
+    "id": "artery.anterior.posterior_ethmoidal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9453710088951884,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.959847139295748,
+      0.9999999999976694,
+      1.1299931474980216
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.12999314749802152
+  },
+  {
+    "id": "artery.anterior.superior_hypophyseal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7385045756481563,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7475602314252743,
+      0.995730817595222,
+      1.003758113143991
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2524397685747257
+  },
+  {
+    "id": "artery.anterior.posterior_communicating_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7604751897556764,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7562809541207391,
+      1.0000000000324376,
+      1.0247539593197503
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2437190458792608
+  },
+  {
+    "id": "artery.anterior.anterior_choroidal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8066034398972238,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7841351745989591,
+      1.0000000000331966,
+      1.0802016003621053
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2238435025208829
+  },
+  {
+    "id": "artery.anterior.meningohypophyseal_trunk_left",
+    "samples": 251,
+    "minimumJacobianDeterminant": 0.8650011673242097,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8472609802118825,
+      1.0000000000301292,
+      1.0301656676875943
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1527390197881176
+  },
+  {
+    "id": "artery.anterior.tentorial_marginal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8729295303940579,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.00000000006439
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.03825281265514638
+  },
+  {
+    "id": "artery.anterior.dorsal_meningeal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8815303211618508,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000354425
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.013277650975668416
+  },
+  {
+    "id": "artery.anterior.inferior_hypophyseal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.6832263241658364,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7376574266754551,
+      0.9645716645848689,
+      1.0171495821468077
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2623425733245449
+  },
+  {
+    "id": "artery.anterior.inferolateral_trunk_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7943666074391855,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7908797356860686,
+      1.0000000000331966,
+      1.1057005401687314
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.20912026431393138
+  },
+  {
+    "id": "artery.anterior.ilt_anterior_branch_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9919361343288481,
+      1.0000000000331966,
+      1.0363627229023264
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.036362722902326484
+  },
+  {
+    "id": "artery.anterior.aca_a1_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.842984122091657,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7782380828881699,
+      0.9999999999976086,
+      1.3700919036299326
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3700919036299327
+  },
+  {
+    "id": "artery.anterior.recurrent_artery_of_heubner_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8187773274109771,
+      0.9999999999976694,
+      1.3661571004127677
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.36615710041276767
+  },
+  {
+    "id": "artery.anterior.aca_orbitofrontal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.993214368489003,
+      0.9999999999976694,
+      1.0131576943418188
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.01599847298609578
+  },
+  {
+    "id": "artery.anterior.mca_m1_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000995897,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8394946701188941,
+      1.0000000000229239,
+      1.3306896018447765
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.33068960184477647
+  },
+  {
+    "id": "artery.anterior.anterior_temporal_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9478171151069877,
+      1.0000000000331966,
+      1.1862866144651671
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.18628661446516723
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_1_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9633569749031685,
+      1.0000000000331966,
+      1.0617633136997284
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.0954780994120443
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_2_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9795785290176806,
+      1.0000000000331966,
+      1.0354063066747616
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.05435433093536696
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_3_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9971439498605518,
+      1.0000000000331966,
+      1.0051208336905009
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.015247394760271314
+  },
+  {
+    "id": "artery.anterior.medial_lenticulostriate_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8075613762533462,
+      1.0000000000331966,
+      1.3458179719359884
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.34581797193598846
+  },
+  {
+    "id": "artery.anterior.anterior_communicating",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9700034255042345,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8453724213990998,
+      0.9167753348919894,
+      1.2643001634047322
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.26430016340473217
+  },
+  {
+    "id": "artery.posterior.pca_p1_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8104640438685862,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8251123043751365,
+      1.0000000000331966,
+      1.0130982067424004
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.17488769562486348
+  },
+  {
+    "id": "artery.posterior.pca_p2_p3_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8427554304357677,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.00000000005097
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.01501117816264216
+  },
+  {
+    "id": "artery.posterior.thalamoperforator_2_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9001460116789555,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9494509272144883,
+      1.0000000000331966,
+      1.0037333642658954
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.05054907278551166
+  },
+  {
+    "id": "artery.posterior.pcom_perforator_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7682936696913019,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7545626376883052,
+      1.0000000000187967,
+      1.115392919674724
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24543736231169483
+  },
+  {
+    "id": "artery.posterior.sca_right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9287551543639136,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.529668779478349e-11
+  },
+  {
+    "id": "artery.posterior.pca_p1_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9046297139063109,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9455960709253656,
+      1.0000000000331966,
+      1.0054702886484528
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.05440392907463447
+  },
+  {
+    "id": "artery.posterior.pca_p2_p3_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9066627022503111,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 6.973934763010433e-11
+  },
+  {
+    "id": "artery.posterior.pcom_perforator_left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7754270850244874,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7573718055008295,
+      1.0000000000173181,
+      1.1234634322450086
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24262819449917047
+  },
+  {
+    "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8489863969814374,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8325689979302201,
+      0.9999999999976694,
+      1.1339253815429973
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.16743100206977987
+  },
+  {
+    "id": "artery.eca.maxillary.accessory_meningeal.right.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9655465920785294,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.eca.mma_cavernous.right.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8884522827452132,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8942470054798305,
+      1.0000000000331966,
+      1.0562557707252231
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.10575299452016945
+  },
+  {
+    "id": "artery.eca.medial_clival.right.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9513326479643676,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.amendment.basal_tentorial_mht_branch.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8992078865112956,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9716653168681486,
+      1.0000000000331966,
+      1.006414763308512
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.02833468313185137
+  },
+  {
+    "id": "artery.amendment.basal_tentorial_mht_branch.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8684545134255378,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9247341883154844,
+      1.0000000000331966,
+      1.0183384343179025
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.07526581168451561
+  },
+  {
+    "id": "artery.amendment.ilt_superior_ramus.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8980152429953097,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8324018454599924,
+      1.000000000026215,
+      1.1261317365314216
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1675981545400076
+  },
+  {
+    "id": "artery.amendment.ilt_superior_ramus.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9043268861493591,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8382925551605818,
+      1.0000000000281228,
+      1.1393092247953758
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.16170744483941824
+  },
+  {
+    "id": "artery.amendment.ilt_anterolateral_ramus.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9324091216086519,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8565291814386976,
+      1.0000000000180764,
+      1.1383668415031327
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.14347081856130234
+  },
+  {
+    "id": "artery.amendment.ilt_anterolateral_ramus.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9380699326429469,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8562446039164529,
+      1.0000000000196991,
+      1.1369764976036605
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.14375539608354715
+  },
+  {
+    "id": "artery.amendment.ilt_recurrent_lacerum_ramus.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7907074971350405,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7708235670260057,
+      1.0000000000331966,
+      1.039970979007676
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2291764329739943
+  },
+  {
+    "id": "artery.amendment.ilt_recurrent_lacerum_ramus.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7876350540021917,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7651383688442446,
+      1.0000000000331966,
+      1.0447052748775953
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.23486163115575548
+  },
+  {
+    "id": "artery.amendment.ophthalmic_inferior_muscular_branch.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": -0.162458888681907,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8657412791319099,
+      0.9999999999976694,
+      1.0303902030370407
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.13425872086809
+  },
+  {
+    "id": "artery.amendment.ophthalmic_inferior_muscular_branch.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": -0.20233112454284036,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8269350028857171,
+      0.9999999999976694,
+      1.0508592629543227
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1741049192702104
+  },
+  {
+    "id": "artery.amendment.ophthalmic_superior_muscular_branch.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.938448856749131,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9814649656730065,
+      0.9999999999976694,
+      1.0427951578608272
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.048038803685430134
+  },
+  {
+    "id": "artery.amendment.ophthalmic_superior_muscular_branch.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8695537501308879,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9356191251997565,
+      0.9999994502402811,
+      1.0541001129207508
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.09423120753212869
+  },
+  {
+    "id": "artery.amendment.superficial_recurrent_meningeal.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9578706171506179,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9671456924034812,
+      0.9999999999976694,
+      1.2217638287719907
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.22741108222345774
+  },
+  {
+    "id": "artery.amendment.superficial_recurrent_meningeal.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9277362348645581,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9685093732390405,
+      0.9999999999976694,
+      1.247773013182957
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24777301318295689
+  },
+  {
+    "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": -0.15262099112810304,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.05174384931194874,
+      1.0000000000403948,
+      3.3269841016733013
+    ],
+    "p95AbsoluteFractionalRadiusChange": 2.3269841016733013
+  },
+  {
+    "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.05993602703446684,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.09244080683025162,
+      1.0000000000204254,
+      3.627324551956911
+    ],
+    "p95AbsoluteFractionalRadiusChange": 2.627324551956911
+  },
+  {
+    "id": "artery.amendment.medial_superior_palpebral.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9897865990502129,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8909583216346696,
+      0.9999999999976694,
+      1.20734660354405
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.20734660354405007
+  },
+  {
+    "id": "artery.amendment.medial_superior_palpebral.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9720824249018132,
+      0.9999999999976694,
+      1.036591604089677
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.03814788861775574
+  },
+  {
+    "id": "artery.amendment.medial_inferior_palpebral.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.647721967346343,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9255096236455639,
+      0.9999999999976694,
+      1.0343068327551261
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.09339442066308991
+  },
+  {
+    "id": "artery.amendment.medial_inferior_palpebral.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9792177691091251,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9876698232508514,
+      0.9999999999976694,
+      1.0167169478593299
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.024317718204672677
+  },
+  {
+    "id": "artery.amendment.mma_anterior_cavernous.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.935213803870583,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8494424355729727,
+      1.0000000000215525,
+      1.1471646625407372
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.15291385821852052
+  },
+  {
+    "id": "artery.amendment.mma_anterior_cavernous.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.958544744602489,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8655537889142851,
+      1.0000000000224873,
+      1.1595505126941945
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1595505126941946
+  },
+  {
+    "id": "artery.amendment.mma_posterior_cavernous.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.998472731228196,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.amendment.mma_posterior_cavernous.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.985502475176745,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9566742685271625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9253675297593322,
+      1.0000000000331966,
+      1.0392338903776082
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.07463247024066781
+  },
+  {
+    "id": "artery.amendment.accessory_meningeal_posterior_intracranial.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9780398785021605,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9604676527572785,
+      1.0000000000331966,
+      1.0225427205453945
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.03953234724272141
+  },
+  {
+    "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9991350751509993,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9520209138397512,
+      0.9999999999976694,
+      1.2102330935638144
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.21023309356381434
+  },
+  {
+    "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9433608425929062,
+      0.9999999999976694,
+      1.1937736036039213
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.19377360360392132
+  },
+  {
+    "id": "artery.amendment.acha_optic_tract_branch.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.831866048677226,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7941651127858611,
+      1.0000000000203804,
+      1.111072492448831
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.20583488721413892
+  },
+  {
+    "id": "artery.amendment.acha_optic_tract_branch.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8333620402718748,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7941840471476914,
+      1.0000000000226494,
+      1.1098612680200002
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.20581595285230855
+  },
+  {
+    "id": "artery.amendment.acha_capsular_branch.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8903103756406082,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8784137012224597,
+      1.0000000000331966,
+      1.0318285065811306
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.12158629877754035
+  },
+  {
+    "id": "artery.amendment.acha_capsular_branch.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8971169843201868,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8865755808502002,
+      1.0000000000331966,
+      1.0317044441122762
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.11342441914979982
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_1.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8299223098318302,
+      1.0000000000331966,
+      1.320189590230283
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.32018959023028293
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_1.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8374737433394142,
+      1.0000000000331966,
+      1.3112642933955032
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3112642933955032
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_2.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8537070029829565,
+      1.0000000000331966,
+      1.262738506131017
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.262738506131017
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_2.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8565390087929515,
+      1.0000000000331966,
+      1.2633235138558294
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.26332351385582947
+  },
+  {
+    "id": "artery.amendment.subcallosal_artery.midline",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000307558,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9164768550494743,
+      1.0000000000166125,
+      1.145640061864221
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.14564006186422118
+  },
+  {
+    "id": "artery.amendment.acom_hypothalamic_perforator.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9314380548350105,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8399112300433458,
+      0.8948038989016881,
+      1.267923899453259
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.26792389945325884
+  },
+  {
+    "id": "artery.amendment.acom_hypothalamic_perforator.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9280578982526291,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.813299810000468,
+      0.9084675272978975,
+      1.279709085081668
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.27970908508166786
+  },
+  {
+    "id": "artery.amendment.acom_septal_perforator.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000307558,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9122818310795091,
+      0.9999999999998899,
+      1.2072975694007053
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2072975694007054
+  },
+  {
+    "id": "artery.amendment.acom_septal_perforator.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000307558,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9167420026418669,
+      0.9999999999998899,
+      1.1992493229329915
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.19924932293299136
+  },
+  {
+    "id": "artery.amendment.acom_chiasmatic_perforator.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7735925746639353,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7699793186970941,
+      0.9513199933162756,
+      1.2589308669295949
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2589308669295949
+  },
+  {
+    "id": "artery.amendment.acom_chiasmatic_perforator.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7599774366125157,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7529577021704645,
+      0.9489149615911228,
+      1.2609880908449655
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2609880908449656
+  },
+  {
+    "id": "artery.amendment.pca_short_circumflex.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8593439136302204,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000364218
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.00567381445637889
+  },
+  {
+    "id": "artery.amendment.pca_short_circumflex.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9830462010857304,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 6.658559259520277e-11
+  },
+  {
+    "id": "artery.amendment.pca_long_circumflex.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8632161847850055,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.000000000066745
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.010807856169195244
+  },
+  {
+    "id": "artery.amendment.pca_long_circumflex.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9660421894646898,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000331966,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.0001980865826609002
+  },
+  {
+    "id": "artery.amendment.tuberothalamic_artery.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7604721706194298,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7500291500823397,
+      1.0000000000198352,
+      1.1216638302380855
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24997084991766028
+  },
+  {
+    "id": "artery.amendment.tuberothalamic_artery.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7624864900136148,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7511478231940799,
+      1.00000000002687,
+      1.1338094221977162
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24885217680592012
+  },
+  {
+    "id": "artery.amendment.anterior_thalamoperforating_branch.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7956330038071958,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.786198685114003,
+      1.000000000017553,
+      1.0445181431917379
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.213801314885997
+  },
+  {
+    "id": "artery.amendment.anterior_thalamoperforating_branch.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8007487691157358,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7870064580047947,
+      1.0000000000181188,
+      1.052180133272273
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.2129935419952053
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.cavernous",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.6947008033875515,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7614848887565041,
+      1.0000000000215918,
+      1.0287816965592824
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.23851511124349592
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8528031557898653,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9592576076942536,
+      1.0000000000331966,
+      1.000194659620384
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.04359734309800628
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.974541388887541,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.857767798700806,
+      1.0000000000129416,
+      1.2566382122970008
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.25663821229700085
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0003812130129492,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7978811548495571,
+      1.0000000000129414,
+      1.347018738221175
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3470187382211749
+  },
+  {
+    "id": "artery.anterior.internal_carotid_right.segment.terminus",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0591977682349079,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.802454744980413,
+      1.0000000000129414,
+      1.3644245333276177
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.36442453332761765
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.cavernous",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.681440091416299,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7554722797775523,
+      1.0000000000196196,
+      1.0276773813642641
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24452772022244768
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.8525216505798708,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9549407432339275,
+      1.0000000000331966,
+      1.0002928812435963
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.05059843612653363
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9777950684009558,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8598064580851501,
+      1.0000000000144613,
+      1.250189172458892
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.25018917245889216
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0005372439039344,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7992453190025304,
+      1.0000000000136646,
+      1.3593996961273744
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.35939969612737455
+  },
+  {
+    "id": "artery.anterior.internal_carotid_left.segment.terminus",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0468484853820144,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8051518441666294,
+      1.0000000000136644,
+      1.3712945868706194
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.3712945868706195
+  },
+  {
+    "id": "artery.anterior.aca_pericallosal_right.segment.a2",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9728624427317255,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9191336123860662,
+      1.0000000000021103,
+      1.148002854258986
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1650388357076692
+  },
+  {
+    "id": "artery.anterior.aca_pericallosal_left.segment.a2",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9778800411778235,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9084504840864942,
+      1.0000000000021103,
+      1.1730822129285343
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.18390021383058777
+  },
+  {
+    "id": "artery.connection.mma_ophthalmic__recurrent_meningeal.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9704199202986787,
+      1.0000000000153353,
+      1.2392808319397903
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.23928083193979036
+  },
+  {
+    "id": "artery.connection.foramen_rotundum_ilt.right",
+    "samples": 162,
+    "minimumJacobianDeterminant": 0.9114606518420473,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8326541427045413,
+      1.0000000000178813,
+      1.104958050040877
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.16734585729545876
+  },
+  {
+    "id": "artery.connection.accessory_meningeal_ilt.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9569404244599475,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9310792123871767,
+      1.0000000000331966,
+      1.040344386159099
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.06892078761282326
+  },
+  {
+    "id": "artery.connection.mma_cavernous_ilt.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9486483407455708,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8605718510508442,
+      1.000000000025718,
+      1.1479624807891555
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1515656000536558
+  },
+  {
+    "id": "artery.connection.mma_ophthalmic__recurrent_meningeal.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9741323606747075,
+      1.0000000000331966,
+      1.2602118314850224
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.26021183148502236
+  },
+  {
+    "id": "artery.connection.foramen_rotundum_ilt.left",
+    "samples": 162,
+    "minimumJacobianDeterminant": 0.917207255293879,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.8358806146350544,
+      1.0000000000179283,
+      1.1107570278197885
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.16411938536494566
+  },
+  {
+    "id": "artery.connection.accessory_meningeal_ilt.left",
+    "samples": 242,
+    "minimumJacobianDeterminant": 0.9772578840530616,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9635896476510611,
+      1.0000000000331966,
+      1.0234725629407375
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.0377870393720072
+  },
+  {
+    "id": "artery.connection.mma_cavernous_ilt.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9543330669880694,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.858187045581859,
+      1.000000000024805,
+      1.1692940792092124
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.16929407920921238
+  },
+  {
+    "id": "artery.connection.deep_recurrent_ophthalmic_ilt.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000640625,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9029666038484048,
+      1.0000000000115015,
+      1.1735559274642824
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1735559274642823
+  },
+  {
+    "id": "artery.connection.sof_artery_anteromedial_ilt.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9980415143573551,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9044301423376531,
+      1.0000000000077285,
+      1.1851050817509912
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.18510508175099108
+  },
+  {
+    "id": "artery.connection.sof_artery_recurrent_meningeal.right",
+    "samples": 162,
+    "minimumJacobianDeterminant": 1.1663887531668873,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9619857826256367,
+      0.9999999999986791,
+      1.2341850637829712
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.23418506378297127
+  },
+  {
+    "id": "artery.connection.posterior_cavernous_mma_posterolateral_ilt.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.9903379144257463,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9874083629066609,
+      1.0000000000331966,
+      1.0066520024942704
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.012591637093339098
+  },
+  {
+    "id": "artery.connection.posterior_septal_posterior_ethmoidal.right",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000307558,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999976694,
+      1.0000000000021103,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.connection.deep_recurrent_ophthalmic_ilt.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9096834025427565,
+      1.0000000000098144,
+      1.1742510862677729
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1742510862677729
+  },
+  {
+    "id": "artery.connection.sof_artery_anteromedial_ilt.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000285354,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9037681375444638,
+      1.0000000000109686,
+      1.1882732403773562
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.1882732403773562
+  },
+  {
+    "id": "artery.connection.sof_artery_recurrent_meningeal.left",
+    "samples": 162,
+    "minimumJacobianDeterminant": 1.012553237679684,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9290703556164983,
+      0.9856180208649563,
+      1.1415879778035507
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.14158797780355065
+  },
+  {
+    "id": "artery.connection.posterior_septal_posterior_ethmoidal.left",
+    "samples": 256,
+    "minimumJacobianDeterminant": 1.0000000000329763,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.9999999999998899,
+      1.0000000000000286,
+      1.0000000000331966
+    ],
+    "p95AbsoluteFractionalRadiusChange": 3.319655661471188e-11
+  },
+  {
+    "id": "artery.connection.contralateral_superior_hypophyseal.midline",
+    "samples": 256,
+    "minimumJacobianDeterminant": 0.7395546752236588,
+    "method": "Sampled finite-difference singular-value bounds for the native pre-fitting wall to revision156 mapping. Includes axial stretch; not a direct lumen radius measurement. Connector cuff corrections are audited separately.",
+    "ratioP05MedianP95": [
+      0.7562668462156407,
+      0.9826087356275538,
+      1.003651392106553
+    ],
+    "p95AbsoluteFractionalRadiusChange": 0.24373315378435934
+  }
+]

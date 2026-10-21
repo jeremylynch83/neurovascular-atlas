@@ -1,0 +1,35 @@
+{
+  "release": "0.9.158",
+  "checks": [
+    "Every geometry structure assigned exactly once; skull first, then complete bilateral ICA/vertebral segments and Circle of Willis; fixed skull, arterial, venous, brain order",
+    "Actual loader: skull-only readiness; selection does not reorder; bounded packets; complete background loading; failure/retry; initial skull failure; disposal and pending waiters",
+    "Vertebrobasilar bookmarks wait for all selected PICA segments and branches before display, and work again once geometry is loaded",
+    "Actual BatchedMesh append path: multiple packets share fixed buffers; hidden arrival does not hide previous vessels; selection unbatches and restores correctly; camera remains unchanged",
+    "Actual engine installation/material/picking methods: arrival leaves camera and target unchanged; existing layer defaults, preselected visibility, clipping, hiding, duplicate protection and ghost-bone picking preserved (CPU scene fixture, no GPU)",
+    "Decoded positions, normals, all other attributes, triangles and world transforms exactly match for all 774 packed arterial meshes"
+  ],
+  "measurements": {
+    "singleControlledNodeRun": true,
+    "previousInitial": {
+      "bytes": 153094120,
+      "decodeMs": 1899.4887200000003
+    },
+    "initialSkull": {
+      "bytes": 17505832,
+      "decodeMs": 143.92892799999981
+    },
+    "previousAll": {
+      "decodeMs": 2816.005026
+    },
+    "arteries": {
+      "sourceBytes": 135588288,
+      "packBytes": 80605196,
+      "packDecodeMs": 595.8207149999998
+    },
+    "structureCount": 1258,
+    "packCount": 13
+  },
+  "limitations": [
+    "Node decoding excludes network, worker transfer, GPU upload and browser rendering. Browser timings must be measured on a WebGL-capable device."
+  ]
+}

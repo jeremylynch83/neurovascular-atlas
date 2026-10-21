@@ -1,0 +1,170 @@
+{
+  "skullMeshes": [
+    "occipital",
+    "temporal.left",
+    "temporal.right"
+  ],
+  "meshes": [
+    {
+      "id": "artery.posterior.vertebral_right.segment.v4",
+      "beforeSelf": {
+        "contacts": 14,
+        "material": 1,
+        "maxMm": 0.002100115879252789
+      },
+      "afterSelf": {
+        "contacts": 14,
+        "material": 1,
+        "maxMm": 0.0019277118168871754
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    },
+    {
+      "id": "artery.posterior.vertebral_left.segment.v4",
+      "beforeSelf": {
+        "contacts": 156,
+        "material": 138,
+        "maxMm": 0.05413854594850344
+      },
+      "afterSelf": {
+        "contacts": 176,
+        "material": 136,
+        "maxMm": 0.04677013897475388
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    },
+    {
+      "id": "artery.posterior.anterior_spinal_root_right",
+      "beforeSelf": {
+        "contacts": 5,
+        "material": 5,
+        "maxMm": 0.001797273202010452
+      },
+      "afterSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    },
+    {
+      "id": "artery.posterior.anterior_spinal_root_left",
+      "beforeSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    },
+    {
+      "id": "artery.posterior.pica_right.segment.p1",
+      "beforeSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    },
+    {
+      "id": "artery.posterior.pica_left.segment.p1",
+      "beforeSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    },
+    {
+      "id": "artery.posterior.pica_left.segment.p2",
+      "beforeSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSelf": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "beforeSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      },
+      "afterSkull": {
+        "contacts": 0,
+        "material": 0,
+        "maxMm": 0.0
+      }
+    }
+  ]
+}

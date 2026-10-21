@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # INR Anatomy Atlas: GitHub checkout, local Docker app and GitHub Pages.
 set -euo pipefail
-INSTALLER_VERSION="0.7.2"
+INSTALLER_VERSION="0.7.3"
 
 SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
@@ -252,7 +252,10 @@ from pathlib import Path
 p=Path(sys.argv[1]); text=p.read_text() if p.exists() else ''
 marker='# INR generated files'
 if marker not in text:
-    p.write_text(text.rstrip()+'\n\n'+marker+'\nnode_modules/\ndist/\n*.tsbuildinfo\n*.zip\n.venv/\nanatomy-source/\ndocs/review/\n')
+    text=text.rstrip()+'\n\n'+marker+'\nnode_modules/\ndist/\n*.tsbuildinfo\n*.zip\n.venv/\nanatomy-source/\ndocs/review/\n'
+raw='/public/anatomy/models/complete-circulation.glb'
+if raw not in text.splitlines(): text=text.rstrip()+'\n'+raw+'\n'
+p.write_text(text)
 PY
   chmod +x "$CHECKOUT/inr-anatomy.sh" "$CHECKOUT/docker.sh" "$CHECKOUT/anatomy.sh" "$CHECKOUT/build-anatomy.sh"
 }
@@ -287,7 +290,8 @@ start_local() {
 }
 
 publish() {
-  # Stage the app, never release ZIPs, authoring data, dependencies or build output.
+  python3 "$CHECKOUT/tools/source-storage.py" pack
+  # Stage the app and compact authoring storage, never release ZIPs, dependencies or build output.
   local imported
   imported="$(git -C "$CHECKOUT" rev-parse --absolute-git-dir)/inr-imported-paths"
   if [[ -f "$imported" ]]; then
@@ -307,24 +311,28 @@ for s in m['structures']:
     if not s.get('asset'): continue
     p=PurePosixPath(s['asset']['file'])
     if p.is_absolute() or '..' in p.parts: raise SystemExit('Error: unsafe manifest asset path.')
-    paths.add('public/anatomy/'+str(p))
+    if str(p)!='models/complete-circulation.glb': paths.add('public/anatomy/'+str(p))
 Path(sys.argv[2]).write_bytes(b''.join(p.encode()+b'\0' for p in sorted(paths)))
 PY
   git -C "$CHECKOUT" add -f --pathspec-from-file="$TEMP_DIR/assets" --pathspec-file-nul
+  # This raw authoring file is reconstructed exactly during builds. Older
+  # releases tracked it and their import lists may still force-add it above.
+  git -C "$CHECKOUT" rm --cached --ignore-unmatch -- public/anatomy/models/complete-circulation.glb
+  if ! git -C "$CHECKOUT" var GIT_AUTHOR_IDENT >/dev/null 2>&1; then
+    local account login account_id name
+    account="$(gh api user)"
+    login="$(python3 -c 'import json,sys; print(json.loads(sys.argv[1])["login"])' "$account")"
+    account_id="$(python3 -c 'import json,sys; print(json.loads(sys.argv[1])["id"])' "$account")"
+    name="$(python3 -c 'import json,sys; d=json.loads(sys.argv[1]); print(d.get("name") or d["login"])' "$account")"
+    git -C "$CHECKOUT" config user.name "$name"
+    git -C "$CHECKOUT" config user.email "$account_id+$login@users.noreply.github.com"
+  fi
+  python3 "$CHECKOUT/tools/prepare-github.py" "$CHECKOUT"
   if ! git -C "$CHECKOUT" diff --cached --quiet; then
-    if ! git -C "$CHECKOUT" var GIT_AUTHOR_IDENT >/dev/null 2>&1; then
-      local account login account_id name
-      account="$(gh api user)"
-      login="$(python3 -c 'import json,sys; print(json.loads(sys.argv[1])["login"])' "$account")"
-      account_id="$(python3 -c 'import json,sys; print(json.loads(sys.argv[1])["id"])' "$account")"
-      name="$(python3 -c 'import json,sys; d=json.loads(sys.argv[1]); print(d.get("name") or d["login"])' "$account")"
-      git -C "$CHECKOUT" config user.name "$name"
-      git -C "$CHECKOUT" config user.email "$account_id+$login@users.noreply.github.com"
-    fi
     git -C "$CHECKOUT" commit -m "Update INR Anatomy Atlas to v$(version "$CHECKOUT") and publish Pages"
   fi
   if ! git -C "$CHECKOUT" push -u origin main; then
-    die 'GitHub push failed. Local app is running. Check repository access; OAuth tokens need the workflow scope. Run gh auth refresh -h github.com -s workflow if needed, then ./inr-anatomy.sh publish.'
+    die 'GitHub push failed. Local app is running. Read the GitHub error above for the cause, then retry ./inr-anatomy.sh publish.'
   fi
   rm -f -- "$imported"
   # Configure Pages after main exists, including newly created empty repositories.

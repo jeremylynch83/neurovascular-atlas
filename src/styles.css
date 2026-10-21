@@ -104,6 +104,8 @@
   .left-panel>.panel-title{display:none}
   .left-panel:not(:has(>.panel-body:not([hidden]))){display:none}
   .detail>.panel-title{order:0;min-height:44px}
+  .detail h2.detail-name{display:none}
+  .detail-body>.detail-name+section{border-top:0;margin-top:0;padding-top:0}
   .panel-title[aria-expanded=true]{border-top:0;border-bottom:1px solid var(--line)}
   .panel-body,.detail-body{max-height:none;min-height:0;overscroll-behavior:contain}
   .tree-row{min-height:44px;--tree-indent-limit:20%}.structure-loading small{white-space:normal;max-width:48px}.twisty{min-height:44px}.tree-visibility{width:32px;height:32px;flex-basis:32px;margin-left:5px}

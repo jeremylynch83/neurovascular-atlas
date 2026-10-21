@@ -1,0 +1,3644 @@
+[
+  {
+    "id": "artery.eca.superior_thyroid.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_laryngeal.right",
+    "parent": "artery.eca.superior_thyroid.right",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.infrahyoid.right",
+    "parent": "artery.eca.superior_thyroid.right",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lingual.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 139,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.deep_lingual.right",
+    "parent": "artery.eca.lingual.right",
+    "shared": 271,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.dorsal_lingual.right",
+    "parent": "artery.eca.lingual.right",
+    "shared": 127,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.sublingual.right",
+    "parent": "artery.eca.lingual.right",
+    "shared": 151,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.facial.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 159,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.angular.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 139,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.ascending_palatine.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.tonsillar.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 114,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.submental.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.inferior_labial.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 122,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_labial.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lateral_nasal.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 156,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 172,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_lateral_scalp.right",
+    "parent": "artery.eca.occipital.right",
+    "shared": 153,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_medial_scalp.right",
+    "parent": "artery.eca.occipital.right",
+    "shared": 166,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_descending.right",
+    "parent": "artery.eca.occipital.right",
+    "shared": 120,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_mastoid.right",
+    "parent": "artery.eca.occipital.right",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_auricular.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 131,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital.stylomastoid.right",
+    "parent": "artery.eca.posterior_auricular.right",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.frontal.right",
+    "parent": "artery.eca.superficial_temporal.right",
+    "shared": 133,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.sta_frontal_anterior_twig.right",
+    "parent": "artery.eca.superficial_temporal.frontal.right",
+    "shared": 157,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.parietal.right",
+    "parent": "artery.eca.superficial_temporal.right",
+    "shared": 58,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.sta_parietal_anterior_twig.right",
+    "parent": "artery.eca.superficial_temporal.parietal.right",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.transverse_facial.right",
+    "parent": "artery.eca.superficial_temporal.right",
+    "shared": 138,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.middle_temporal.right",
+    "parent": "artery.eca.superficial_temporal.right",
+    "shared": 270,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.deep_auricular.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.anterior_tympanic.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 89,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.inferior_alveolar.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mental.right",
+    "parent": "artery.eca.maxillary.inferior_alveolar.right",
+    "shared": 134,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.incisive.right",
+    "parent": "artery.eca.maxillary.inferior_alveolar.right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mylohyoid.right",
+    "parent": "artery.eca.maxillary.inferior_alveolar.right",
+    "shared": 168,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_deep_temporal.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.anterior_deep_temporal.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 121,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.masseteric.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.buccal.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 78,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.pterygoid_muscular.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.posterior_superior_alveolar.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.psa_anterior_division.right",
+    "parent": "artery.eca.maxillary.posterior_superior_alveolar.right",
+    "shared": 127,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.infraorbital.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 158,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.anterior_superior_alveolar.right",
+    "parent": "artery.eca.maxillary.infraorbital.right",
+    "shared": 119,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.descending_palatine.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 136,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.greater_palatine.right",
+    "parent": "artery.eca.maxillary.descending_palatine.right",
+    "shared": 140,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lesser_palatine.right",
+    "parent": "artery.eca.maxillary.descending_palatine.right",
+    "shared": 43,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.sphenopalatine.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 129,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_septal.right",
+    "parent": "artery.eca.maxillary.sphenopalatine.right",
+    "shared": 89,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_lateral_nasal.right",
+    "parent": "artery.eca.maxillary.sphenopalatine.right",
+    "shared": 122,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.pterygovaginal.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.pterygoid_canal.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.foramen_rotundum.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 101,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.accessory_meningeal.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 124,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_frontal_anterior_division.right",
+    "parent": "artery.eca.maxillary.mma.frontal.right",
+    "shared": 58,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.posterior_convexity.right",
+    "parent": "artery.eca.maxillary.mma.right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_parietal_ascending.right",
+    "parent": "artery.eca.maxillary.mma.posterior_convexity.right",
+    "shared": 177,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_posterior_terminal.right",
+    "parent": "artery.eca.maxillary.mma.posterior_convexity.right",
+    "shared": 184,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.petrosquamosal.right",
+    "parent": "artery.eca.maxillary.mma.right",
+    "shared": 124,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.petrosal.right",
+    "parent": "artery.eca.maxillary.mma.right",
+    "shared": 103,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_cavernous.right",
+    "parent": "artery.eca.maxillary.mma.right",
+    "shared": 107,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_orbital.right",
+    "parent": "artery.eca.maxillary.mma.right",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.right",
+    "parent": "artery.carotid.external.right",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.pharyngeal_trunk.right",
+    "parent": "artery.eca.apa.right",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.inferior_pharyngeal.right",
+    "parent": "artery.eca.apa.pharyngeal_trunk.right",
+    "shared": 111,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.middle_pharyngeal.right",
+    "parent": "artery.eca.apa.pharyngeal_trunk.right",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_pharyngeal.right",
+    "parent": "artery.eca.apa.pharyngeal_trunk.right",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.neuromeningeal_trunk.right",
+    "parent": "artery.eca.apa.right",
+    "shared": 58,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.hypoglossal.right",
+    "parent": "artery.eca.apa.neuromeningeal_trunk.right",
+    "shared": 74,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.medial_clival.right",
+    "parent": "artery.eca.apa.hypoglossal.right",
+    "shared": 146,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.descending_odontoid.right",
+    "parent": "artery.eca.apa.hypoglossal.right",
+    "shared": 137,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.posterior_meningeal.right",
+    "parent": "artery.eca.apa.hypoglossal.right",
+    "shared": 75,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.jugular.right",
+    "parent": "artery.eca.apa.neuromeningeal_trunk.right",
+    "shared": 64,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lateral_clival.right",
+    "parent": "artery.eca.apa.jugular.right",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.sigmoid_sinus_branch.right",
+    "parent": "artery.eca.apa.jugular.right",
+    "shared": 70,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.inferior_tympanic.right",
+    "parent": "artery.eca.apa.right",
+    "shared": 6,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lacrimal_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.central_retinal_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_medial_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_lateral_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.supraorbital_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 150,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.supratrochlear_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 170,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.dorsal_nasal_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 75,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_ethmoidal_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_ethmoidal_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.superior_hypophyseal_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+    "shared": 19,
+    "maximumGapMm": 9.5367431640625e-07
+  },
+  {
+    "id": "artery.anterior.posterior_communicating_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+    "shared": 112,
+    "maximumGapMm": 3.814697265625e-06
+  },
+  {
+    "id": "artery.anterior.anterior_choroidal_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.anterior-choroidal",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.meningohypophyseal_trunk_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.cavernous",
+    "shared": 33,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.tentorial_marginal_right",
+    "parent": "artery.anterior.meningohypophyseal_trunk_right",
+    "shared": 10,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.dorsal_meningeal_right",
+    "parent": "artery.anterior.meningohypophyseal_trunk_right",
+    "shared": 4,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.inferior_hypophyseal_right",
+    "parent": "artery.anterior.meningohypophyseal_trunk_right",
+    "shared": 16,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.inferolateral_trunk_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.cavernous",
+    "shared": 29,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.ilt_anterior_branch_right",
+    "parent": "artery.anterior.inferolateral_trunk_right",
+    "shared": 85,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.ilt_posterior_branch_right",
+    "parent": "artery.anterior.inferolateral_trunk_right",
+    "shared": 69,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.vidian_ica_contribution_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.petrous",
+    "shared": 70,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.recurrent_artery_of_heubner_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a2",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.aca_orbitofrontal_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a2",
+    "shared": 99,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.aca_frontopolar_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a2",
+    "shared": 114,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.callosomarginal_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a3",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_internal_frontal_right",
+    "parent": "artery.anterior.callosomarginal_right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.middle_internal_frontal_right",
+    "parent": "artery.anterior.callosomarginal_right",
+    "shared": 110,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_internal_frontal_right",
+    "parent": "artery.anterior.callosomarginal_right",
+    "shared": 129,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.paracentral_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a4",
+    "shared": 134,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.precuneal_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
+    "shared": 148,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.inferior_internal_parietal_right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
+    "shared": 140,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_m1_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.terminus",
+    "shared": 153,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_superior_division_right",
+    "parent": "artery.anterior.mca_m1_right",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_inferior_division_right",
+    "parent": "artery.anterior.mca_m1_right",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_temporal_right",
+    "parent": "artery.anterior.mca_m1_right",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_orbitofrontal_right",
+    "parent": "artery.anterior.mca_superior_division_right",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.prefrontal_right",
+    "parent": "artery.anterior.mca_superior_division_right",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.precentral_right",
+    "parent": "artery.anterior.mca_superior_division_right",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.central_right",
+    "parent": "artery.anterior.mca_superior_division_right",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_parietal_right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 154,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_parietal_right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 121,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.angular_right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.temporo_occipital_right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.middle_temporal_right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_temporal_right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.prefrontal_cortical_branch_right",
+    "parent": "artery.anterior.prefrontal_right",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.precentral_cortical_branch_right",
+    "parent": "artery.anterior.precentral_right",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.central_cortical_branch_right",
+    "parent": "artery.anterior.central_right",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_parietal_cortical_branch_right",
+    "parent": "artery.anterior.anterior_parietal_right",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_parietal_cortical_branch_right",
+    "parent": "artery.anterior.posterior_parietal_right",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.angular_cortical_branch_right",
+    "parent": "artery.anterior.angular_right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.middle_temporal_cortical_branch_right",
+    "parent": "artery.anterior.middle_temporal_right",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_temporal_cortical_branch_right",
+    "parent": "artery.anterior.posterior_temporal_right",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_1_right",
+    "parent": "artery.anterior.mca_m1_right",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_2_right",
+    "parent": "artery.anterior.mca_m1_right",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_3_right",
+    "parent": "artery.anterior.mca_m1_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.medial_lenticulostriate_right",
+    "parent": "artery.anterior.aca_a1_right",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lacrimal_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.central_retinal_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_medial_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_ciliary_lateral_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.supraorbital_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 150,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.supratrochlear_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 172,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.dorsal_nasal_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 75,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_ethmoidal_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_ethmoidal_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.superior_hypophyseal_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+    "shared": 20,
+    "maximumGapMm": 4.76837158203125e-07
+  },
+  {
+    "id": "artery.anterior.posterior_communicating_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+    "shared": 115,
+    "maximumGapMm": 3.814697265625e-06
+  },
+  {
+    "id": "artery.anterior.anterior_choroidal_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.anterior-choroidal",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.meningohypophyseal_trunk_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.cavernous",
+    "shared": 42,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.tentorial_marginal_left",
+    "parent": "artery.anterior.meningohypophyseal_trunk_left",
+    "shared": 13,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.dorsal_meningeal_left",
+    "parent": "artery.anterior.meningohypophyseal_trunk_left",
+    "shared": 5,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.inferior_hypophyseal_left",
+    "parent": "artery.anterior.meningohypophyseal_trunk_left",
+    "shared": 35,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.inferolateral_trunk_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.cavernous",
+    "shared": 29,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.ilt_anterior_branch_left",
+    "parent": "artery.anterior.inferolateral_trunk_left",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.ilt_posterior_branch_left",
+    "parent": "artery.anterior.inferolateral_trunk_left",
+    "shared": 69,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.vidian_ica_contribution_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.petrous",
+    "shared": 70,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.recurrent_artery_of_heubner_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a2",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.aca_orbitofrontal_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a2",
+    "shared": 103,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.aca_frontopolar_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a2",
+    "shared": 114,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.callosomarginal_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a3",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_internal_frontal_left",
+    "parent": "artery.anterior.callosomarginal_left",
+    "shared": 96,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.middle_internal_frontal_left",
+    "parent": "artery.anterior.callosomarginal_left",
+    "shared": 110,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_internal_frontal_left",
+    "parent": "artery.anterior.callosomarginal_left",
+    "shared": 129,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.paracentral_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a4",
+    "shared": 133,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.precuneal_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
+    "shared": 146,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.inferior_internal_parietal_left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_m1_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.terminus",
+    "shared": 150,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_superior_division_left",
+    "parent": "artery.anterior.mca_m1_left",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_inferior_division_left",
+    "parent": "artery.anterior.mca_m1_left",
+    "shared": 115,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_temporal_left",
+    "parent": "artery.anterior.mca_m1_left",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.mca_orbitofrontal_left",
+    "parent": "artery.anterior.mca_superior_division_left",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.prefrontal_left",
+    "parent": "artery.anterior.mca_superior_division_left",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.precentral_left",
+    "parent": "artery.anterior.mca_superior_division_left",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.central_left",
+    "parent": "artery.anterior.mca_superior_division_left",
+    "shared": 149,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_parietal_left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 154,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_parietal_left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.angular_left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.temporo_occipital_left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.middle_temporal_left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_temporal_left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 117,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.prefrontal_cortical_branch_left",
+    "parent": "artery.anterior.prefrontal_left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.precentral_cortical_branch_left",
+    "parent": "artery.anterior.precentral_left",
+    "shared": 110,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.central_cortical_branch_left",
+    "parent": "artery.anterior.central_left",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_parietal_cortical_branch_left",
+    "parent": "artery.anterior.anterior_parietal_left",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_parietal_cortical_branch_left",
+    "parent": "artery.anterior.posterior_parietal_left",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.angular_cortical_branch_left",
+    "parent": "artery.anterior.angular_left",
+    "shared": 124,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.middle_temporal_cortical_branch_left",
+    "parent": "artery.anterior.middle_temporal_left",
+    "shared": 107,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.posterior_temporal_cortical_branch_left",
+    "parent": "artery.anterior.posterior_temporal_left",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_1_left",
+    "parent": "artery.anterior.mca_m1_left",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_2_left",
+    "parent": "artery.anterior.mca_m1_left",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.lateral_lenticulostriate_3_left",
+    "parent": "artery.anterior.mca_m1_left",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.medial_lenticulostriate_left",
+    "parent": "artery.anterior.aca_a1_left",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.anterior.anterior_communicating",
+    "parent": "artery.anterior.aca_a1_right",
+    "shared": 53,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.basilar",
+    "parent": "artery.posterior.vertebral_right.segment.v4",
+    "shared": 120,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_p1_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 196,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_p2_p3_right",
+    "parent": "artery.posterior.pca_p1_right",
+    "shared": 160,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_calcarine_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 28,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_parieto_occipital_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 184,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_posterior_inferior_temporal_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 174,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.calcarine_superior_cortical_right",
+    "parent": "artery.posterior.pca_calcarine_right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.calcarine_inferior_cortical_right",
+    "parent": "artery.posterior.pca_calcarine_right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.parieto_occipital_cuneal_right",
+    "parent": "artery.posterior.pca_parieto_occipital_right",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_lateral_occipital_right",
+    "parent": "artery.posterior.pca_posterior_inferior_temporal_right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_splenial_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.medial_posterior_choroidal_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 132,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.lateral_posterior_choroidal_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.thalamoperforator_1_right",
+    "parent": "artery.posterior.pca_p1_right",
+    "shared": 107,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.thalamoperforator_2_right",
+    "parent": "artery.posterior.pca_p1_right",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.peduncular_perforator_right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pcom_perforator_right",
+    "parent": "artery.anterior.posterior_communicating_right",
+    "shared": 81,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 185,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_vermian_right",
+    "parent": "artery.posterior.sca_right",
+    "shared": 42,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_medial_hemispheric_right",
+    "parent": "artery.posterior.sca_right",
+    "shared": 155,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_lateral_hemispheric_right",
+    "parent": "artery.posterior.sca_right",
+    "shared": 146,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_rostral_hemispheric_right",
+    "parent": "artery.posterior.sca_medial_hemispheric_right",
+    "shared": 195,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_caudal_hemispheric_right",
+    "parent": "artery.posterior.sca_lateral_hemispheric_right",
+    "shared": 284,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.aica_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 148,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.aica_rostral_branch_right",
+    "parent": "artery.posterior.aica_right",
+    "shared": 127,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.aica_caudal_branch_right",
+    "parent": "artery.posterior.aica_right",
+    "shared": 245,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_vermian_right",
+    "parent": "artery.posterior.pica_right.segment.p5",
+    "shared": 8,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_hemispheric_right",
+    "parent": "artery.posterior.pica_right.segment.p5",
+    "shared": 30,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_lateral_hemispheric_right",
+    "parent": "artery.posterior.pica_hemispheric_right",
+    "shared": 35,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_tonsillar_right",
+    "parent": "artery.posterior.pica_right.segment.p3",
+    "shared": 34,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_choroidal_right",
+    "parent": "artery.posterior.pica_right.segment.p4",
+    "shared": 20,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_medullary_perforator_right",
+    "parent": "artery.posterior.pica_right.segment.p2",
+    "shared": 58,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.anterior_spinal_root_right",
+    "parent": "artery.posterior.vertebral_right.segment.v4",
+    "shared": 231,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.va_muscular_c1_right",
+    "parent": "artery.posterior.vertebral_right.segment.v3",
+    "shared": 79,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.va_muscular_c2_right",
+    "parent": "artery.posterior.vertebral_right.segment.v2",
+    "shared": 78,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.va_odontoid_contribution_right",
+    "parent": "artery.posterior.vertebral_right.segment.v2",
+    "shared": 71,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.posterior_meningeal_va_right",
+    "parent": "artery.posterior.vertebral_right.segment.v3",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_paramedian_1_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 105,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_paramedian_2_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_paramedian_3_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_circumferential_right",
+    "parent": "artery.posterior.basilar",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_p1_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_p2_p3_left",
+    "parent": "artery.posterior.pca_p1_left",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_calcarine_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 40,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_parieto_occipital_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 202,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_anterior_inferior_temporal_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 31,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_posterior_inferior_temporal_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 170,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.calcarine_superior_cortical_left",
+    "parent": "artery.posterior.pca_calcarine_left",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.calcarine_inferior_cortical_left",
+    "parent": "artery.posterior.pca_calcarine_left",
+    "shared": 87,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.parieto_occipital_cuneal_left",
+    "parent": "artery.posterior.pca_parieto_occipital_left",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_lateral_occipital_left",
+    "parent": "artery.posterior.pca_posterior_inferior_temporal_left",
+    "shared": 132,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pca_splenial_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 129,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.medial_posterior_choroidal_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 41,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.lateral_posterior_choroidal_left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.thalamoperforator_1_left",
+    "parent": "artery.posterior.pca_p1_left",
+    "shared": 114,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.thalamoperforator_2_left",
+    "parent": "artery.posterior.pca_p1_left",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pcom_perforator_left",
+    "parent": "artery.anterior.posterior_communicating_left",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 186,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_vermian_left",
+    "parent": "artery.posterior.sca_left",
+    "shared": 312,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_medial_hemispheric_left",
+    "parent": "artery.posterior.sca_left",
+    "shared": 253,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_lateral_hemispheric_left",
+    "parent": "artery.posterior.sca_left",
+    "shared": 144,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_rostral_hemispheric_left",
+    "parent": "artery.posterior.sca_medial_hemispheric_left",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.sca_caudal_hemispheric_left",
+    "parent": "artery.posterior.sca_lateral_hemispheric_left",
+    "shared": 381,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.aica_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 146,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.aica_rostral_branch_left",
+    "parent": "artery.posterior.aica_left",
+    "shared": 101,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.aica_caudal_branch_left",
+    "parent": "artery.posterior.aica_left",
+    "shared": 93,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_vermian_left",
+    "parent": "artery.posterior.pica_left.segment.p5",
+    "shared": 6,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_hemispheric_left",
+    "parent": "artery.posterior.pica_left.segment.p5",
+    "shared": 31,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_lateral_hemispheric_left",
+    "parent": "artery.posterior.pica_hemispheric_left",
+    "shared": 26,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_tonsillar_left",
+    "parent": "artery.posterior.pica_left.segment.p3",
+    "shared": 32,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_choroidal_left",
+    "parent": "artery.posterior.pica_left.segment.p4",
+    "shared": 21,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pica_medullary_perforator_left",
+    "parent": "artery.posterior.pica_left.segment.p2",
+    "shared": 23,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.anterior_spinal_root_left",
+    "parent": "artery.posterior.vertebral_left.segment.v4",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.va_muscular_c1_left",
+    "parent": "artery.posterior.vertebral_left.segment.v3",
+    "shared": 78,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.va_muscular_c2_left",
+    "parent": "artery.posterior.vertebral_left.segment.v2",
+    "shared": 79,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.va_odontoid_contribution_left",
+    "parent": "artery.posterior.vertebral_left.segment.v2",
+    "shared": 74,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.posterior_meningeal_va_left",
+    "parent": "artery.posterior.vertebral_left.segment.v3",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_paramedian_1_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_paramedian_2_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 103,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_paramedian_3_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.pontine_circumferential_left",
+    "parent": "artery.posterior.basilar",
+    "shared": 103,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.posterior.anterior_spinal",
+    "parent": "artery.posterior.anterior_spinal_root_right",
+    "shared": 77,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_thyroid.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_laryngeal.right.left",
+    "parent": "artery.eca.superior_thyroid.right.left",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.infrahyoid.right.left",
+    "parent": "artery.eca.superior_thyroid.right.left",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lingual.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 139,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.deep_lingual.right.left",
+    "parent": "artery.eca.lingual.right.left",
+    "shared": 271,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.dorsal_lingual.right.left",
+    "parent": "artery.eca.lingual.right.left",
+    "shared": 127,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.sublingual.right.left",
+    "parent": "artery.eca.lingual.right.left",
+    "shared": 151,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.facial.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 159,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.angular.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 139,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.ascending_palatine.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.tonsillar.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 114,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.submental.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.inferior_labial.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 122,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_labial.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lateral_nasal.right.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 156,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 172,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_lateral_scalp.right.left",
+    "parent": "artery.eca.occipital.right.left",
+    "shared": 153,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_medial_scalp.right.left",
+    "parent": "artery.eca.occipital.right.left",
+    "shared": 166,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_descending.right.left",
+    "parent": "artery.eca.occipital.right.left",
+    "shared": 120,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital_mastoid.right.left",
+    "parent": "artery.eca.occipital.right.left",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_auricular.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 131,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.occipital.stylomastoid.right.left",
+    "parent": "artery.eca.posterior_auricular.right.left",
+    "shared": 126,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 112,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.frontal.right.left",
+    "parent": "artery.eca.superficial_temporal.right.left",
+    "shared": 133,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.sta_frontal_anterior_twig.right.left",
+    "parent": "artery.eca.superficial_temporal.frontal.right.left",
+    "shared": 157,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.parietal.right.left",
+    "parent": "artery.eca.superficial_temporal.right.left",
+    "shared": 58,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.sta_parietal_anterior_twig.right.left",
+    "parent": "artery.eca.superficial_temporal.parietal.right.left",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superficial_temporal.transverse_facial.right.left",
+    "parent": "artery.eca.superficial_temporal.right.left",
+    "shared": 138,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.middle_temporal.right.left",
+    "parent": "artery.eca.superficial_temporal.right.left",
+    "shared": 270,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 153,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.deep_auricular.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.anterior_tympanic.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 89,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.inferior_alveolar.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mental.right.left",
+    "parent": "artery.eca.maxillary.inferior_alveolar.right.left",
+    "shared": 134,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.incisive.right.left",
+    "parent": "artery.eca.maxillary.inferior_alveolar.right.left",
+    "shared": 93,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mylohyoid.right.left",
+    "parent": "artery.eca.maxillary.inferior_alveolar.right.left",
+    "shared": 168,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_deep_temporal.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.anterior_deep_temporal.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 121,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.masseteric.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.buccal.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 78,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.pterygoid_muscular.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.psa_anterior_division.right.left",
+    "parent": "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "shared": 127,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.infraorbital.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 158,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.anterior_superior_alveolar.right.left",
+    "parent": "artery.eca.maxillary.infraorbital.right.left",
+    "shared": 119,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.descending_palatine.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 136,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.greater_palatine.right.left",
+    "parent": "artery.eca.maxillary.descending_palatine.right.left",
+    "shared": 140,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lesser_palatine.right.left",
+    "parent": "artery.eca.maxillary.descending_palatine.right.left",
+    "shared": 43,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.sphenopalatine.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 129,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_septal.right.left",
+    "parent": "artery.eca.maxillary.sphenopalatine.right.left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.posterior_lateral_nasal.right.left",
+    "parent": "artery.eca.maxillary.sphenopalatine.right.left",
+    "shared": 122,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.pterygovaginal.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.pterygoid_canal.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.foramen_rotundum.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 101,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.accessory_meningeal.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.right.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 124,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_frontal_anterior_division.right.left",
+    "parent": "artery.eca.maxillary.mma.frontal.right.left",
+    "shared": 55,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.posterior_convexity.right.left",
+    "parent": "artery.eca.maxillary.mma.right.left",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_parietal_ascending.right.left",
+    "parent": "artery.eca.maxillary.mma.posterior_convexity.right.left",
+    "shared": 177,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_posterior_terminal.right.left",
+    "parent": "artery.eca.maxillary.mma.posterior_convexity.right.left",
+    "shared": 184,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+    "parent": "artery.eca.maxillary.mma.right.left",
+    "shared": 124,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.maxillary.mma.petrosal.right.left",
+    "parent": "artery.eca.maxillary.mma.right.left",
+    "shared": 103,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_cavernous.right.left",
+    "parent": "artery.eca.maxillary.mma.right.left",
+    "shared": 107,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.mma_orbital.right.left",
+    "parent": "artery.eca.maxillary.mma.right.left",
+    "shared": 116,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.right.left",
+    "parent": "artery.carotid.external.right.left",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.pharyngeal_trunk.right.left",
+    "parent": "artery.eca.apa.right.left",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.inferior_pharyngeal.right.left",
+    "parent": "artery.eca.apa.pharyngeal_trunk.right.left",
+    "shared": 111,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.middle_pharyngeal.right.left",
+    "parent": "artery.eca.apa.pharyngeal_trunk.right.left",
+    "shared": 125,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.superior_pharyngeal.right.left",
+    "parent": "artery.eca.apa.pharyngeal_trunk.right.left",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.neuromeningeal_trunk.right.left",
+    "parent": "artery.eca.apa.right.left",
+    "shared": 58,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.hypoglossal.right.left",
+    "parent": "artery.eca.apa.neuromeningeal_trunk.right.left",
+    "shared": 74,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.medial_clival.right.left",
+    "parent": "artery.eca.apa.hypoglossal.right.left",
+    "shared": 146,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.descending_odontoid.right.left",
+    "parent": "artery.eca.apa.hypoglossal.right.left",
+    "shared": 137,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.posterior_meningeal.right.left",
+    "parent": "artery.eca.apa.hypoglossal.right.left",
+    "shared": 75,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.jugular.right.left",
+    "parent": "artery.eca.apa.neuromeningeal_trunk.right.left",
+    "shared": 64,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.lateral_clival.right.left",
+    "parent": "artery.eca.apa.jugular.right.left",
+    "shared": 152,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.sigmoid_sinus_branch.right.left",
+    "parent": "artery.eca.apa.jugular.right.left",
+    "shared": 70,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.eca.apa.inferior_tympanic.right.left",
+    "parent": "artery.eca.apa.right.left",
+    "shared": 6,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mandibular_ica_branch.right",
+    "parent": "artery.anterior.internal_carotid_right.segment.petrous",
+    "shared": 63,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mandibular_ica_branch.left",
+    "parent": "artery.anterior.internal_carotid_left.segment.petrous",
+    "shared": 62,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.basal_tentorial_mht_branch.right",
+    "parent": "artery.anterior.meningohypophyseal_trunk_right",
+    "shared": 29,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.basal_tentorial_mht_branch.left",
+    "parent": "artery.anterior.meningohypophyseal_trunk_left",
+    "shared": 35,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_clival_mht_branch.right",
+    "parent": "artery.anterior.dorsal_meningeal_right",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_clival_mht_branch.right",
+    "parent": "artery.anterior.dorsal_meningeal_right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_clival_mht_branch.left",
+    "parent": "artery.anterior.dorsal_meningeal_left",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ilt_superior_ramus.right",
+    "parent": "artery.anterior.inferolateral_trunk_right",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ilt_superior_ramus.left",
+    "parent": "artery.anterior.inferolateral_trunk_left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ilt_anterolateral_ramus.right",
+    "parent": "artery.anterior.inferolateral_trunk_right",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ilt_anterolateral_ramus.left",
+    "parent": "artery.anterior.inferolateral_trunk_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ilt_posteromedial_ramus.right",
+    "parent": "artery.anterior.ilt_posterior_branch_right",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ophthalmic_inferior_muscular_branch.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 120,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ophthalmic_inferior_muscular_branch.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 110,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ophthalmic_superior_muscular_branch.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 96,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.ophthalmic_superior_muscular_branch.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 79,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superficial_recurrent_meningeal.right",
+    "parent": "artery.anterior.lacrimal_right",
+    "shared": 96,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superficial_recurrent_meningeal.left",
+    "parent": "artery.anterior.lacrimal_left",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.deep_recurrent_ophthalmic.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 66,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.deep_recurrent_ophthalmic.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 66,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lacrimal_inferior_branch.right",
+    "parent": "artery.anterior.lacrimal_right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lacrimal_inferior_branch.left",
+    "parent": "artery.anterior.lacrimal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_falcine.right",
+    "parent": "artery.anterior.anterior_ethmoidal_right",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_falcine.left",
+    "parent": "artery.anterior.anterior_ethmoidal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_thyroid_scm_branch.right",
+    "parent": "artery.eca.superior_thyroid.right",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_thyroid_scm_branch.left",
+    "parent": "artery.eca.superior_thyroid.right.left",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.cricothyroid.right",
+    "parent": "artery.eca.superior_thyroid.right",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.cricothyroid.left",
+    "parent": "artery.eca.superior_thyroid.right.left",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.facial_submandibular_gland_branch.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 74,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.facial_submandibular_gland_branch.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 74,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.facial_masseteric_branch.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.facial_masseteric_branch.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.facial_buccal_branch.right",
+    "parent": "artery.eca.facial.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.facial_buccal_branch.left",
+    "parent": "artery.eca.facial.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_superior_palpebral.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_superior_palpebral.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_superior_palpebral.right",
+    "parent": "artery.anterior.lacrimal_right",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_superior_palpebral.left",
+    "parent": "artery.anterior.lacrimal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_inferior_palpebral.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_inferior_palpebral.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_inferior_palpebral.right",
+    "parent": "artery.anterior.lacrimal_right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_inferior_palpebral.left",
+    "parent": "artery.anterior.lacrimal_left",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_auricular_parotid_branch.right",
+    "parent": "artery.eca.posterior_auricular.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_auricular_parotid_branch.left",
+    "parent": "artery.eca.posterior_auricular.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_auricular_auricular_branch.right",
+    "parent": "artery.eca.posterior_auricular.right",
+    "shared": 130,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_auricular_auricular_branch.left",
+    "parent": "artery.eca.posterior_auricular.right.left",
+    "shared": 132,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.sta_anterior_auricular.right",
+    "parent": "artery.eca.superficial_temporal.right",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.sta_anterior_auricular.left",
+    "parent": "artery.eca.superficial_temporal.right.left",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_superior_division.right",
+    "parent": "artery.eca.superficial_temporal.transverse_facial.right",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_superior_division.left",
+    "parent": "artery.eca.superficial_temporal.transverse_facial.right.left",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_inferior_division.right",
+    "parent": "artery.eca.superficial_temporal.transverse_facial.right",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_inferior_division.left",
+    "parent": "artery.eca.superficial_temporal.transverse_facial.right.left",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_parotid_branch.right",
+    "parent": "artery.eca.superficial_temporal.transverse_facial.right",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_parotid_branch.left",
+    "parent": "artery.eca.superficial_temporal.transverse_facial.right.left",
+    "shared": 84,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_masseteric_branch.right",
+    "parent": "artery.amendment.transverse_facial_inferior_division.right",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.transverse_facial_masseteric_branch.left",
+    "parent": "artery.amendment.transverse_facial_inferior_division.left",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.zygomatico_orbital.right",
+    "parent": "artery.eca.superficial_temporal.right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.zygomatico_orbital.left",
+    "parent": "artery.eca.superficial_temporal.right.left",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_tympanic.right",
+    "parent": "artery.eca.maxillary.mma.petrosal.right",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_tympanic.left",
+    "parent": "artery.eca.maxillary.mma.petrosal.right.left",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_paramedian.right",
+    "parent": "artery.eca.maxillary.mma.frontal.right",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_paramedian.left",
+    "parent": "artery.eca.maxillary.mma.frontal.right.left",
+    "shared": 78,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_falcine_terminal.right",
+    "parent": "artery.amendment.mma_paramedian.right",
+    "shared": 50,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_falcine_terminal.left",
+    "parent": "artery.amendment.mma_paramedian.left",
+    "shared": 50,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_anterior_cavernous.right",
+    "parent": "artery.eca.mma_cavernous.right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_anterior_cavernous.left",
+    "parent": "artery.eca.mma_cavernous.right.left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_posterior_cavernous.right",
+    "parent": "artery.eca.mma_cavernous.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.mma_posterior_cavernous.left",
+    "parent": "artery.eca.mma_cavernous.right.left",
+    "shared": 181,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.accessory_meningeal_anterior_tubal.right",
+    "parent": "artery.eca.maxillary.accessory_meningeal.right",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.accessory_meningeal_anterior_tubal.left",
+    "parent": "artery.eca.maxillary.accessory_meningeal.right.left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+    "parent": "artery.eca.maxillary.accessory_meningeal.right",
+    "shared": 236,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.accessory_meningeal_posterior_intracranial.left",
+    "parent": "artery.eca.maxillary.accessory_meningeal.right.left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.artery_of_superior_orbital_fissure.right",
+    "parent": "artery.eca.maxillary.right",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.artery_of_superior_orbital_fissure.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.infraorbital_muscular_branch.right",
+    "parent": "artery.eca.maxillary.infraorbital.right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.infraorbital_muscular_branch.left",
+    "parent": "artery.eca.maxillary.infraorbital.right.left",
+    "shared": 93,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_septal_subdivision.right",
+    "parent": "artery.eca.posterior_septal.right",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_septal_subdivision.left",
+    "parent": "artery.eca.posterior_septal.right.left",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.inferior_septal_subdivision.right",
+    "parent": "artery.eca.posterior_septal.right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.inferior_septal_subdivision.left",
+    "parent": "artery.eca.posterior_septal.right.left",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.occipital_scm_branch.right",
+    "parent": "artery.eca.occipital.right",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.occipital_scm_branch.left",
+    "parent": "artery.eca.occipital.right.left",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.occipital_mastoid_dural_branch.right",
+    "parent": "artery.eca.occipital_mastoid.right",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.occipital_mastoid_dural_branch.left",
+    "parent": "artery.eca.occipital_mastoid.right.left",
+    "shared": 71,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_pharyngeal_tubal_branch.right",
+    "parent": "artery.eca.superior_pharyngeal.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_pharyngeal_tubal_branch.left",
+    "parent": "artery.eca.superior_pharyngeal.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_pharyngeal_carotid_branch.right",
+    "parent": "artery.eca.superior_pharyngeal.right",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.superior_pharyngeal_carotid_branch.left",
+    "parent": "artery.eca.superior_pharyngeal.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.apa_musculospinal.right",
+    "parent": "artery.eca.apa.right",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.apa_musculospinal.left",
+    "parent": "artery.eca.apa.right.left",
+    "shared": 108,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.apa_prevertebral_branch.right",
+    "parent": "artery.eca.apa.right",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.apa_prevertebral_branch.left",
+    "parent": "artery.eca.apa.right.left",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.falx_cerebelli_artery.right",
+    "parent": "artery.eca.apa.posterior_meningeal.right",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.falx_cerebelli_artery.left",
+    "parent": "artery.eca.apa.posterior_meningeal.right.left",
+    "shared": 98,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_optic_tract_branch.right",
+    "parent": "artery.anterior.anterior_choroidal_right",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_optic_tract_branch.left",
+    "parent": "artery.anterior.anterior_choroidal_left",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_capsular_branch.right",
+    "parent": "artery.anterior.anterior_choroidal_right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_capsular_branch.left",
+    "parent": "artery.anterior.anterior_choroidal_left",
+    "shared": 91,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_peduncular_branch.right",
+    "parent": "artery.anterior.anterior_choroidal_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_peduncular_branch.left",
+    "parent": "artery.anterior.anterior_choroidal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_temporal_branch.right",
+    "parent": "artery.anterior.anterior_choroidal_right",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acha_temporal_branch.left",
+    "parent": "artery.anterior.anterior_choroidal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_1.right",
+    "parent": "artery.anterior.internal_carotid_right.segment.terminus",
+    "shared": 45,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_2.right",
+    "parent": "artery.anterior.internal_carotid_right.segment.terminus",
+    "shared": 34,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.terminal_ica_perforator_2.left",
+    "parent": "artery.anterior.internal_carotid_left.segment.terminus",
+    "shared": 31,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.subcallosal_artery.midline",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 74,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acom_hypothalamic_perforator.right",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 32,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acom_hypothalamic_perforator.left",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 45,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acom_septal_perforator.right",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 66,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acom_septal_perforator.left",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 71,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acom_chiasmatic_perforator.right",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 48,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.acom_chiasmatic_perforator.left",
+    "parent": "artery.anterior.anterior_communicating",
+    "shared": 40,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_lenticulostriate_superior_representative.right",
+    "parent": "artery.anterior.medial_lenticulostriate_right",
+    "shared": 94,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_lenticulostriate_superior_representative.left",
+    "parent": "artery.anterior.medial_lenticulostriate_left",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_lenticulostriate_anterior_representative.right",
+    "parent": "artery.anterior.lateral_lenticulostriate_1_right",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_lenticulostriate_anterior_representative.left",
+    "parent": "artery.anterior.lateral_lenticulostriate_1_left",
+    "shared": 86,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.short_callosal_branch.right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a4",
+    "shared": 62,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.short_callosal_branch.left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a4",
+    "shared": 62,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.long_callosal_branch.right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
+    "shared": 72,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.long_callosal_branch.left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
+    "shared": 72,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.aca_falcine_branch.right",
+    "parent": "artery.anterior.aca_pericallosal_right.segment.a5",
+    "shared": 32,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.aca_falcine_branch.left",
+    "parent": "artery.anterior.aca_pericallosal_left.segment.a5",
+    "shared": 101,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.polar_temporal.right",
+    "parent": "artery.anterior.mca_inferior_division_right",
+    "shared": 81,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.polar_temporal.left",
+    "parent": "artery.anterior.mca_inferior_division_left",
+    "shared": 79,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.prefrontal_distal_ramus.right",
+    "parent": "artery.anterior.prefrontal_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.prefrontal_distal_ramus.left",
+    "parent": "artery.anterior.prefrontal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.precentral_distal_ramus.right",
+    "parent": "artery.anterior.precentral_right",
+    "shared": 96,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.precentral_distal_ramus.left",
+    "parent": "artery.anterior.precentral_left",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.central_distal_ramus.right",
+    "parent": "artery.anterior.central_right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.central_distal_ramus.left",
+    "parent": "artery.anterior.central_left",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_parietal_distal_ramus.right",
+    "parent": "artery.anterior.anterior_parietal_right",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_parietal_distal_ramus.left",
+    "parent": "artery.anterior.anterior_parietal_left",
+    "shared": 88,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_parietal_distal_ramus.right",
+    "parent": "artery.anterior.posterior_parietal_right",
+    "shared": 252,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_parietal_distal_ramus.left",
+    "parent": "artery.anterior.posterior_parietal_left",
+    "shared": 118,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.angular_distal_ramus.right",
+    "parent": "artery.anterior.angular_right",
+    "shared": 102,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.angular_distal_ramus.left",
+    "parent": "artery.anterior.angular_left",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.middle_temporal_distal_ramus.right",
+    "parent": "artery.anterior.middle_temporal_right",
+    "shared": 120,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.middle_temporal_distal_ramus.left",
+    "parent": "artery.anterior.middle_temporal_left",
+    "shared": 110,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_temporal_distal_ramus.right",
+    "parent": "artery.anterior.posterior_temporal_right",
+    "shared": 104,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.posterior_temporal_distal_ramus.left",
+    "parent": "artery.anterior.posterior_temporal_left",
+    "shared": 106,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.va_anterior_meningeal.right",
+    "parent": "artery.posterior.vertebral_right.segment.v2",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.va_anterior_meningeal.left",
+    "parent": "artery.posterior.vertebral_left.segment.v2",
+    "shared": 76,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.va_medullary_perforator_1.right",
+    "parent": "artery.posterior.vertebral_right.segment.v4",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.va_medullary_perforator_1.left",
+    "parent": "artery.posterior.vertebral_left.segment.v4",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.va_medullary_perforator_2.right",
+    "parent": "artery.posterior.vertebral_right.segment.v4",
+    "shared": 100,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.va_medullary_perforator_2.left",
+    "parent": "artery.posterior.vertebral_left.segment.v4",
+    "shared": 107,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.aica_subarcuate.right",
+    "parent": "artery.posterior.aica_right",
+    "shared": 162,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.aica_subarcuate.left",
+    "parent": "artery.posterior.aica_left",
+    "shared": 80,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.aica_fourth_ventricular_choroidal.right",
+    "parent": "artery.posterior.aica_rostral_branch_right",
+    "shared": 189,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.aica_fourth_ventricular_choroidal.left",
+    "parent": "artery.posterior.aica_rostral_branch_left",
+    "shared": 198,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.common_cochlear.right",
+    "parent": "artery.posterior.labyrinthine_right",
+    "shared": 27,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.common_cochlear.left",
+    "parent": "artery.posterior.labyrinthine_left",
+    "shared": 39,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_vestibular.right",
+    "parent": "artery.posterior.labyrinthine_right",
+    "shared": 24,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_vestibular.left",
+    "parent": "artery.posterior.labyrinthine_left",
+    "shared": 26,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.sca_proximal_perforator.right",
+    "parent": "artery.posterior.sca_right",
+    "shared": 64,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.sca_proximal_perforator.left",
+    "parent": "artery.posterior.sca_left",
+    "shared": 170,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.sca_tectal_branch.right",
+    "parent": "artery.posterior.sca_right",
+    "shared": 128,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.sca_tectal_branch.left",
+    "parent": "artery.posterior.sca_left",
+    "shared": 132,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.wollschlaeger_and_wollschlaeger_artery.right",
+    "parent": "artery.posterior.sca_right",
+    "shared": 231,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.wollschlaeger_and_wollschlaeger_artery.left",
+    "parent": "artery.posterior.sca_left",
+    "shared": 81,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.davidoff_and_schechter_artery.right",
+    "parent": "artery.posterior.pca_p2_p3_right",
+    "shared": 140,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.davidoff_and_schechter_artery.left",
+    "parent": "artery.posterior.pca_p2_p3_left",
+    "shared": 136,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pontine_short_circumflex.right",
+    "parent": "artery.posterior.basilar",
+    "shared": 114,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pontine_short_circumflex.left",
+    "parent": "artery.posterior.basilar",
+    "shared": 113,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pontine_long_circumflex.right",
+    "parent": "artery.posterior.basilar",
+    "shared": 117,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pontine_long_circumflex.left",
+    "parent": "artery.posterior.basilar",
+    "shared": 109,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pontine_median_perforator.midline",
+    "parent": "artery.posterior.basilar",
+    "shared": 105,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pca_short_circumflex.right",
+    "parent": "artery.posterior.pca_p1_right",
+    "shared": 12,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pca_short_circumflex.left",
+    "parent": "artery.posterior.pca_p1_left",
+    "shared": 35,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pca_long_circumflex.right",
+    "parent": "artery.posterior.pca_p1_right",
+    "shared": 67,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pca_long_circumflex.left",
+    "parent": "artery.posterior.pca_p1_left",
+    "shared": 148,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pca_collicular.right",
+    "parent": "artery.amendment.pca_long_circumflex.right",
+    "shared": 282,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.pca_collicular.left",
+    "parent": "artery.amendment.pca_long_circumflex.left",
+    "shared": 272,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.tuberothalamic_artery.right",
+    "parent": "artery.anterior.posterior_communicating_right",
+    "shared": 78,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.tuberothalamic_artery.left",
+    "parent": "artery.anterior.posterior_communicating_left",
+    "shared": 82,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_thalamoperforating_branch.right",
+    "parent": "artery.anterior.posterior_communicating_right",
+    "shared": 72,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_thalamoperforating_branch.left",
+    "parent": "artery.anterior.posterior_communicating_left",
+    "shared": 72,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_choroidal_plexal_representative.right",
+    "parent": "artery.anterior.anterior_choroidal_right",
+    "shared": 92,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.anterior_choroidal_plexal_representative.left",
+    "parent": "artery.anterior.anterior_choroidal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_posterior_choroidal_plexal_representative.right",
+    "parent": "artery.posterior.lateral_posterior_choroidal_right",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.lateral_posterior_choroidal_plexal_representative.left",
+    "parent": "artery.posterior.lateral_posterior_choroidal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_posterior_choroidal_plexal_representative.right",
+    "parent": "artery.posterior.medial_posterior_choroidal_right",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.amendment.medial_posterior_choroidal_plexal_representative.left",
+    "parent": "artery.posterior.medial_posterior_choroidal_left",
+    "shared": 90,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_lacrimal__meningolacrimal.right",
+    "parent": "artery.eca.mma_orbital.right",
+    "shared": 2,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.angular_dorsal_nasal.right",
+    "parent": "artery.eca.angular.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.infraorbital_ophthalmic.right",
+    "parent": "artery.amendment.infraorbital_muscular_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.accessory_meningeal_ilt.right",
+    "parent": "artery.amendment.accessory_meningeal_posterior_intracranial.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_cavernous_ilt.right",
+    "parent": "artery.amendment.mma_anterior_cavernous.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.inferior_tympanic_caroticotympanic.right",
+    "parent": "artery.eca.apa.inferior_tympanic.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_tentorial_marginal.right",
+    "parent": "artery.eca.maxillary.mma.petrosquamosal.right",
+    "shared": 65,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_lacrimal__meningolacrimal.left",
+    "parent": "artery.eca.mma_orbital.right.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.angular_dorsal_nasal.left",
+    "parent": "artery.eca.angular.right.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.infraorbital_ophthalmic.left",
+    "parent": "artery.amendment.infraorbital_muscular_branch.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.accessory_meningeal_ilt.left",
+    "parent": "artery.amendment.accessory_meningeal_posterior_intracranial.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_cavernous_ilt.left",
+    "parent": "artery.amendment.mma_anterior_cavernous.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.inferior_tympanic_caroticotympanic.left",
+    "parent": "artery.eca.apa.inferior_tympanic.right.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_tentorial_marginal.left",
+    "parent": "artery.eca.maxillary.mma.petrosquamosal.right.left",
+    "shared": 137,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.deep_recurrent_ophthalmic_ilt.right",
+    "parent": "artery.amendment.deep_recurrent_ophthalmic.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.posterior_cavernous_mma_posterolateral_ilt.right",
+    "parent": "artery.amendment.mma_posterior_cavernous.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.facial_nerve_arcade.right",
+    "parent": "artery.eca.maxillary.mma.petrosal.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.superior_anterior_tympanic.right",
+    "parent": "artery.amendment.superior_tympanic.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.superior_inferior_tympanic.right",
+    "parent": "artery.amendment.superior_tympanic.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.pharyngeal_carotid_recurrent_lacerum.right",
+    "parent": "artery.amendment.superior_pharyngeal_carotid_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.apa_musculospinal_va.right",
+    "parent": "artery.amendment.apa_musculospinal.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.apa_prevertebral_odontoid.right",
+    "parent": "artery.amendment.apa_prevertebral_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.tubal_accessory_meningeal_circle.right",
+    "parent": "artery.amendment.superior_pharyngeal_tubal_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.occipital_mastoid_hypoglossal_meningeal.right",
+    "parent": "artery.amendment.occipital_mastoid_dural_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.anterior_falcine_mma_paramedian.right",
+    "parent": "artery.amendment.anterior_falcine.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.aca_falcine_mma_falcine.right",
+    "parent": "artery.amendment.aca_falcine_branch.right",
+    "shared": 134,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.falx_cerebelli_va_posterior_meningeal.right",
+    "parent": "artery.amendment.falx_cerebelli_artery.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mma_tentorial_pca_dural.right",
+    "parent": "artery.eca.maxillary.mma.petrosquamosal.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.apa_tentorial_sca_dural.right",
+    "parent": "artery.eca.apa.posterior_meningeal.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.occipital_tentorial_pca_dural.right",
+    "parent": "artery.amendment.occipital_mastoid_dural_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.anterior_lateral_posterior_choroidal.right",
+    "parent": "artery.amendment.anterior_choroidal_plexal_representative.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.medial_lateral_posterior_choroidal.right",
+    "parent": "artery.amendment.medial_posterior_choroidal_plexal_representative.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.aca_mca_parietal_border_zone.right",
+    "parent": "artery.anterior.paracentral_right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mca_pca_temporal_border_zone.right",
+    "parent": "artery.anterior.posterior_temporal_cortical_branch_right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mca_pca_occipital_border_zone.right",
+    "parent": "artery.anterior.angular_cortical_branch_right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.superior_palpebral_arcade.right",
+    "parent": "artery.amendment.medial_superior_palpebral.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.inferior_palpebral_arcade.right",
+    "parent": "artery.amendment.medial_inferior_palpebral.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.facial_maxillary_buccal.right",
+    "parent": "artery.amendment.facial_buccal_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.facial_maxillary_masseteric.right",
+    "parent": "artery.amendment.facial_masseteric_branch.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.transverse_facial_facial.right",
+    "parent": "artery.amendment.transverse_facial_inferior_division.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.transverse_facial_infraorbital.right",
+    "parent": "artery.amendment.transverse_facial_superior_division.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.zygomatico_orbital_lacrimal.right",
+    "parent": "artery.amendment.zygomatico_orbital.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.sta_posterior_auricular_scalp.right",
+    "parent": "artery.amendment.sta_anterior_auricular.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.deep_recurrent_ophthalmic_ilt.left",
+    "parent": "artery.amendment.deep_recurrent_ophthalmic.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.posterior_cavernous_mma_posterolateral_ilt.left",
+    "parent": "artery.amendment.mma_posterior_cavernous.left",
+    "shared": 148,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.superior_anterior_tympanic.left",
+    "parent": "artery.amendment.superior_tympanic.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.superior_inferior_tympanic.left",
+    "parent": "artery.amendment.superior_tympanic.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.pharyngeal_carotid_recurrent_lacerum.left",
+    "parent": "artery.amendment.superior_pharyngeal_carotid_branch.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.apa_musculospinal_va.left",
+    "parent": "artery.amendment.apa_musculospinal.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.apa_prevertebral_odontoid.left",
+    "parent": "artery.amendment.apa_prevertebral_branch.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.tubal_accessory_meningeal_circle.left",
+    "parent": "artery.amendment.superior_pharyngeal_tubal_branch.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.occipital_mastoid_mma_petrosquamosal.left",
+    "parent": "artery.amendment.occipital_mastoid_dural_branch.left",
+    "shared": 142,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.anterior_falcine_mma_paramedian.left",
+    "parent": "artery.amendment.anterior_falcine.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.aca_falcine_mma_falcine.left",
+    "parent": "artery.amendment.aca_falcine_branch.left",
+    "shared": 137,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.falx_cerebelli_va_posterior_meningeal.left",
+    "parent": "artery.amendment.falx_cerebelli_artery.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.apa_tentorial_sca_dural.left",
+    "parent": "artery.eca.apa.posterior_meningeal.right.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.anterior_lateral_posterior_choroidal.left",
+    "parent": "artery.amendment.anterior_choroidal_plexal_representative.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.medial_lateral_posterior_choroidal.left",
+    "parent": "artery.amendment.medial_posterior_choroidal_plexal_representative.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.aca_mca_parietal_border_zone.left",
+    "parent": "artery.anterior.paracentral_left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mca_pca_temporal_border_zone.left",
+    "parent": "artery.anterior.posterior_temporal_cortical_branch_left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.mca_pca_occipital_border_zone.left",
+    "parent": "artery.anterior.angular_cortical_branch_left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.superior_palpebral_arcade.left",
+    "parent": "artery.amendment.medial_superior_palpebral.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.inferior_palpebral_arcade.left",
+    "parent": "artery.amendment.medial_inferior_palpebral.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.facial_maxillary_buccal.left",
+    "parent": "artery.amendment.facial_buccal_branch.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.facial_maxillary_masseteric.left",
+    "parent": "artery.amendment.facial_masseteric_branch.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.transverse_facial_facial.left",
+    "parent": "artery.amendment.transverse_facial_inferior_division.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.transverse_facial_infraorbital.left",
+    "parent": "artery.amendment.transverse_facial_superior_division.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.zygomatico_orbital_lacrimal.left",
+    "parent": "artery.amendment.zygomatico_orbital.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.sta_posterior_auricular_scalp.left",
+    "parent": "artery.amendment.sta_anterior_auricular.left",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.odontoid_transverse_arcade.midline",
+    "parent": "artery.eca.apa.descending_odontoid.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.odontoid_inferior_transverse_arcade.midline",
+    "parent": "artery.posterior.va_odontoid_contribution_right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.contralateral_superior_labial.midline",
+    "parent": "artery.eca.superior_labial.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  },
+  {
+    "id": "artery.connection.contralateral_inferior_labial.midline",
+    "parent": "artery.eca.inferior_labial.right",
+    "shared": 1,
+    "maximumGapMm": 0.0
+  }
+]
