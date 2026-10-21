@@ -1,6 +1,6 @@
-# Neurovascular Atlas v0.9.151
+# Neurovascular Atlas v0.9.153
 
-This release adds progressive arterial loading and incremental build caching. See [revision 151](docs/revision151-progressive-loading.md) for details and validation limits.
+This release loads and displays the skull first, then adds arteries progressively. Incremental pack generation and compression caching are retained. See [revision 151](docs/revision151-progressive-loading.md) for details and validation limits.
 
 The retained anatomy corrects both optic canal roofs and opening transitions. The existing lesser-wing bone is reshaped locally into a longer roof and shorter floor, with a variable oval bore and smooth fitting of the adjacent ophthalmic arterial segments and nearby veins. No separate projecting collars are added.
 
@@ -11,7 +11,7 @@ The mandible, temporal repairs, ethmoid rollback and other anatomy from v0.9.145
 Keep the ZIP intact beside the existing installer:
 
 ```bash
-./inr-anatomy.sh local ./inr-anatomy-atlas-v0.9.151.zip
+./inr-anatomy.sh local ./inr-anatomy-atlas-v0.9.153.zip
 ```
 
 Open http://localhost:5173.
@@ -19,7 +19,7 @@ Open http://localhost:5173.
 ## Update the configured online website
 
 ```bash
-./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.151.zip
+./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.153.zip
 ```
 
 This builds locally and publishes through the existing configured GitHub Pages workflow. Wait for the workflow to complete, then refresh the website without its old cache.
@@ -33,3 +33,7 @@ The app retains its existing mobile interaction, loading, DSA and PICA features.
 ## Progressive loading (0.9.151)
 
 The normal build automatically maintains lossless arterial download packs and a content-based gzip cache. Edit the complete source models as before, not generated packs. See [the loading/build notes](docs/revision151-progressive-loading.md) for ordering, validation, benchmarks and browser-test limits.
+
+See [revision 152](docs/revision152-skull-first.md) for the revised initial loading order.
+
+Revision 153 continues loading during touch/drag and camera damping. See [interaction pacing](docs/revision153-loading-interaction.md).

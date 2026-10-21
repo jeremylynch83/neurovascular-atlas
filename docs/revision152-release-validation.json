@@ -1,0 +1,18 @@
+{
+  "release": "0.9.152",
+  "firstScene": "skull, existing AP framing and ghosted visibility",
+  "then": "major arteries, main intracranial branches, smaller branches, anastomoses, veins, brain",
+  "sourceModelsAndGeneratedPacksByteIdenticalTo151": true,
+  "manifestEquivalentExceptRelease": true,
+  "DSAAndAuthoringDataByteIdentical": true,
+  "checks": [
+    "production build / TypeScript / full source validation",
+    "actual skull-only initial loader and fixed background order",
+    "CPU engine scene / materials / picking / append batching",
+    "exact decoded arterial mesh comparisons",
+    "catalogue and 15 DSA preset/side comparisons",
+    "initial HTML / startup success-failure controller / About content"
+  ],
+  "browserLimitation": "Successful GPU rendering and browser performance unverified; available browser lacks WebGL.",
+  "deployed": false
+}

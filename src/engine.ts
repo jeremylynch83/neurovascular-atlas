@@ -225,8 +225,8 @@ export class AnatomyEngine {
     // Every initial packet already yields through the worker message queue.
     // The first scene draw follows framing, avoiding uploads from inside the skull.
     if (!background) return;
-    // Resume after a paint, with one bounded packet in flight. During gestures
-    // the worker may finish downloading, but no new scene/GPU work is added.
+    // Resume after a paint, with one bounded packet in flight. Gestures
+    // modestly pace installation instead of blocking it until motion stops.
     do {
       await new Promise<void>(resolve => {
         let timer: ReturnType<typeof setTimeout> | undefined;
@@ -234,8 +234,9 @@ export class AnatomyEngine {
         const frame = requestAnimationFrame(() => { timer = setTimeout(finish, 0); });
         this.workWaiters.add(finish);
       });
-    } while (!this.disposed && background && (this.interacting || performance.now() < this.movingUntil || performance.now() < this.nextBackgroundSlot));
-    if (background) this.nextBackgroundSlot = performance.now() + Math.min(150, Math.max(0, Math.max(this.lastRenderDuration, this.frameInterval) - 18) * 4);
+    } while (!this.disposed && background && performance.now() < this.nextBackgroundSlot);
+    if (background) this.nextBackgroundSlot = performance.now() + Math.max(this.interacting ? 24 : 0,
+      Math.min(64, Math.max(0, Math.max(this.lastRenderDuration, this.frameInterval) - 18) * 4));
   }
   private installMeshes(packets: PreparedMesh[]) {
     const added: Entry[] = [];

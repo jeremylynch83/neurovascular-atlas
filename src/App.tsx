@@ -109,7 +109,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     };
     const publish = () => {
       if (cancelled || failed) return;
-      // Only starter circulation contributes to this bar. Deferred
+      // Only initial skull preparation contributes to this bar. Deferred
       // geometry keeps its existing inline feedback inside Layers.
       const states = e.getLoadStates();
       const percent = Math.min(99, initialGeometry.length ? 75 * e.initialDownloadProgress() + 24 * initialGeometry.filter(id => states.get(id)?.status === 'ready').length / initialGeometry.length : 0);

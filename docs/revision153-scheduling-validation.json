@@ -1,0 +1,12 @@
+{
+  "release": "0.9.153",
+  "checks": [
+    "Sustained drag and continually moving camera allow installation after a paint",
+    "Active drag applies a finite 24 ms minimum spacing instead of waiting for release",
+    "Slow rendering caps spacing at 64 ms, even during a sustained drag",
+    "Normal idle rendering has only the post-paint yield, with no motion quiet period",
+    "Disposal releases an outstanding work-slot waiter",
+    "Initial skull installation retains its existing startup path"
+  ],
+  "scope": "Actual AnatomyEngine.workSlot method under controlled animation frames and timing; no GPU/browser performance claim"
+}

@@ -1,0 +1,15 @@
+{
+  "release": "0.9.152",
+  "initialHtmlContent": "passed",
+  "reactRootIsolation": "passed",
+  "noJavascriptExplanation": "present in initial HTML",
+  "controllerChecks": [
+    "loading/progress",
+    "success hides fallback and enables viewer",
+    "focus transfer",
+    "failure restores fallback and retry",
+    "late success cannot hide a failed viewer"
+  ],
+  "sharedAboutContent": "passed",
+  "limitation": "Controller transitions use a DOM fixture. Full 3D success requires a WebGL-capable browser; the actual unsupported-WebGL case was checked separately."
+}

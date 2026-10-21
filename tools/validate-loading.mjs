@@ -16,14 +16,17 @@ try {
  const {StagedLoader,loadingAssets}=await server.ssrLoadModule('/src/stagedLoading.ts');
  const assets=loadingAssets(manifest),critical=assets.filter(a=>a.critical);
  assert.equal(critical.length,1);
- assert(critical[0].structures.some(s=>s.id==='artery.posterior.basilar'));
- assert.equal(critical[0].structures.filter(s=>/internal_carotid.*segment/.test(s.id)).length,14);
- assert.equal(critical[0].structures.filter(s=>/vertebral.*segment/.test(s.id)).length,8);
+ assert(critical[0].structures.every(s=>s.system==='bone'));
+ const firstArteries=assets.find(a=>a.order===1);
+ assert(firstArteries.structures.some(s=>s.id==='artery.posterior.basilar'));
+ assert.equal(assets[0].file,'models/craniofacial.glb');
+ assert.equal(firstArteries.structures.filter(s=>/internal_carotid.*segment/.test(s.id)).length,14);
+ assert.equal(firstArteries.structures.filter(s=>/vertebral.*segment/.test(s.id)).length,8);
  const all=assets.flatMap(a=>a.structures.map(s=>s.id));
  assert.equal(all.length,new Set(all).size);
  assert.equal(all.length,manifest.structures.filter(s=>s.asset).length);
  assert.deepEqual(assets.map(a=>a.order),assets.map(a=>a.order).sort((a,b)=>a-b));
- report.checks.push('Every geometry structure assigned exactly once; complete bilateral ICA/vertebral segments and Circle of Willis in starter; fixed arterial, skull, venous, brain order');
+ report.checks.push('Every geometry structure assigned exactly once; skull first, then complete bilateral ICA/vertebral segments and Circle of Willis; fixed skull, arterial, venous, brain order');
  const calls=[],slots=[],installed=new Set();let rejectOnce=null,loader;
  const source={async load(file){calls.push(file);if(file===rejectOnce){rejectOnce=null;throw Error('simulated download failure')}},async prepare(rows){return rows.slice(0,3).map(s=>({id:s.id}))},async release(){},dispose(){}};
  loader=new StagedLoader(manifest,source,async(meshes,background)=>{for(const m of meshes){assert(!installed.has(m.id));installed.add(m.id)}},async bg=>slots.push(bg),()=>{});
@@ -47,7 +50,7 @@ try {
  await assert.rejects(bad.loadCritical(),/starter failed/);bad.dispose();
  const stopped=new StagedLoader(manifest,source,async()=>{},async()=>{},()=>{});
  const pending=stopped.ensure([last]);stopped.dispose();await assert.rejects(pending,/closed/);
- report.checks.push('Actual loader: starter-only readiness; selection does not reorder; bounded packets; complete background loading; failure/retry; starter failure; disposal and pending waiters');
+ report.checks.push('Actual loader: skull-only readiness; selection does not reorder; bounded packets; complete background loading; failure/retry; initial skull failure; disposal and pending waiters');
  const {AnatomyEngine,pickAnatomy}=await server.ssrLoadModule('/src/engine.ts');
  const engine=Object.create(AnatomyEngine.prototype);
  Object.assign(engine,{manifest,entries:new Map(),objectToId:new Map(),root:new THREE.Group(),bounds:new THREE.Box3(),primaryPrepared:true,vascularBatches:[],renderer:{extensions:{has:()=>false}},camera:new THREE.PerspectiveCamera(),controls:{target:new THREE.Vector3(2,3,4)},landmarkMarker:new THREE.Group(),selected:null,hidden:new Set(),visibility:new Map(),layers:{artery:'on',bone:'ghost',vein:'off',brain:'off'},focusedMembers:null,injectionPick:null,selectionHalo:{setMeshes(){},setFade(){},setClip(){}},reducedMotion:{matches:false},clipEnabled:true,clipPlane:new THREE.Plane(new THREE.Vector3(1,0,0),0),segmentMembers:new Map(),render(){}});
@@ -96,16 +99,16 @@ try {
  async function load(file){const b=fs.readFileSync(base+file);const start=performance.now();const g=await decoder.parseAsync(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength),'');g.scene.updateMatrixWorld(true);return {g,ms:performance.now()-start,bytes:b.length}}
  function geometries(g){const rows=new Map();g.scene.traverse(o=>{if(!o.isMesh)return;const association=g.parser.associations.get(o);const name=g.parser.json.nodes[association.nodes]?.name;rows.set(name,o)});return rows}
  function release(g){g.scene.traverse(o=>{o.geometry?.dispose();if(o.material)for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose()})}
- const originals=new Map();let oldMs=0,oldInitialMs=0,oldInitialBytes=0;
+ const originals=new Map();let oldMs=0,oldInitialMs=0,oldInitialBytes=0,initialMs=0;
  for(const file of Object.keys(manifest.assetRevisions).filter(f=>f.startsWith('models/'))){
-  const {g,ms,bytes}=await load(file);oldMs+=ms;
+  const {g,ms,bytes}=await load(file);oldMs+=ms;if(critical.some(a=>a.file===file))initialMs+=ms;
   if(manifest.structures.some(s=>s.asset?.file===file&&['artery','bone'].includes(s.system))){oldInitialMs+=ms;oldInitialBytes+=bytes}
   if(file==='models/craniofacial.glb'){const box=new THREE.Box3();for(const [name,mesh] of geometries(g))if(name!=='bone.hyoid')box.expandByObject(mesh);assert.deepEqual(box.min.toArray(),manifest.startupBounds[0]);assert.deepEqual(box.max.toArray(),manifest.startupBounds[1]);}
   if(manifest.structures.some(s=>s.asset?.file===file&&s.system==='artery'))originals.set(file,{g,rows:geometries(g)});else release(g);
  }
- let compared=0,packMs=0,starterMs=0,packBytes=0;
+ let compared=0,packMs=0,packBytes=0;
  for(const a of assets.filter(a=>a.file.startsWith('packs/'))){
-  const {g,ms,bytes}=await load(a.file);packMs+=ms;packBytes+=bytes;if(a.critical)starterMs+=ms;
+  const {g,ms,bytes}=await load(a.file);packMs+=ms;packBytes+=bytes;
   assert.equal(hash(fs.readFileSync(base+a.file)).slice(0,20),manifest.assetRevisions[a.file]);
   const rows=geometries(g);assert.equal(rows.size,a.structures.length);
   for(const s of a.structures){
@@ -123,6 +126,6 @@ try {
  for(const {g} of originals.values())release(g);
  report.checks.push(`Decoded positions, normals, all other attributes, triangles and world transforms exactly match for all ${compared} packed arterial meshes`);
  const sourceArteryBytes=[...originals.keys()].reduce((n,f)=>n+fs.statSync(base+f).size,0);
- report.measurements={singleControlledNodeRun:true,previousInitial:{bytes:oldInitialBytes,decodeMs:oldInitialMs},starter:{bytes:critical.reduce((n,a)=>n+manifest.assetByteSizes[a.file],0),decodeMs:starterMs},previousAll:{decodeMs:oldMs},arteries:{sourceBytes:sourceArteryBytes,packBytes,packDecodeMs:packMs},structureCount:all.length,packCount:manifest.loadingPacks.length};
- fs.writeFileSync(root+'/docs/revision151-loading-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+ report.measurements={singleControlledNodeRun:true,previousInitial:{bytes:oldInitialBytes,decodeMs:oldInitialMs},initialSkull:{bytes:critical.reduce((n,a)=>n+manifest.assetByteSizes[a.file],0),decodeMs:initialMs},previousAll:{decodeMs:oldMs},arteries:{sourceBytes:sourceArteryBytes,packBytes,packDecodeMs:packMs},structureCount:all.length,packCount:manifest.loadingPacks.length};
+ fs.writeFileSync(root+'/docs/revision153-loading-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
 }finally{await server.close()}

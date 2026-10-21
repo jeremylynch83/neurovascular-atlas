@@ -1,0 +1,15 @@
+{
+  "release": "0.9.153",
+  "change": "Continue bounded background installation during drag and camera damping. Active drag spacing 24 ms; adaptive slow-frame spacing capped at 64 ms.",
+  "skullFirst": true,
+  "sourceModelsPacksAndDSAByteIdenticalTo152": true,
+  "checks": [
+    "web:scheduling: actual method, sustained interaction and continual motion, slow frames, idle, disposal",
+    "production build / TypeScript / anatomy validation",
+    "web:loading",
+    "web:validate",
+    "web:startup"
+  ],
+  "limitation": "No successful GPU rendering or real-device responsiveness benchmark in this environment.",
+  "deployed": false
+}

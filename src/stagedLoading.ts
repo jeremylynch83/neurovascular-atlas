@@ -25,7 +25,7 @@ export function loadingAssets(manifest: AnatomyManifest): LoadAsset[] {
       if (!row?.asset || row.system !== 'artery' || assigned.has(id)) throw new Error('Invalid loading pack binding: ' + id);
       assigned.add(id); return row;
     });
-    assets.push({ file: pack.file, structures, critical: pack.stage === 0, order: pack.stage });
+    assets.push({ file: pack.file, structures, critical: false, order: pack.stage + 1 });
   }
   const files = new Map<string, Structure[]>();
   for (const s of manifest.structures) if (s.asset && !assigned.has(s.id)) {
@@ -33,8 +33,8 @@ export function loadingAssets(manifest: AnatomyManifest): LoadAsset[] {
     const rows = files.get(s.asset.file) ?? []; rows.push(s); files.set(s.asset.file, rows);
   }
   for (const [file, structures] of files) {
-    const stage = Math.min(...structures.map(s => s.system === 'bone' ? 4 : s.system === 'vein' ? 5 : s.system === 'brain' ? 6 : 2));
-    assets.push({ file, structures, critical: !manifest.loadingPacks && structures.some(s => s.system === 'bone' || s.system === 'artery'), order: stage });
+    const stage = Math.min(...structures.map(s => s.system === 'bone' ? 0 : s.system === 'vein' ? 5 : s.system === 'brain' ? 6 : 2));
+    assets.push({ file, structures, critical: manifest.loadingPacks ? structures.some(s => s.system === 'bone') : structures.some(s => s.system === 'bone' || s.system === 'artery'), order: stage });
   }
   if (!assets.some(a => a.critical)) throw new Error('No initial anatomy in loading plan');
   return assets.sort((a,b) => Number(b.critical) - Number(a.critical) || a.order - b.order);

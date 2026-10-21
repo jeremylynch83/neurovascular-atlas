@@ -1,7 +1,7 @@
 {
   "name": "inr-anatomy-atlas",
   "private": true,
-  "version": "0.9.151",
+  "version": "0.9.153",
   "description": "Interactive 3D interventional neuroradiology anatomy atlas.",
   "type": "module",
   "license": "MIT",
@@ -16,7 +16,8 @@
     "web:audit": "python3 tools/audit-hosting.py",
     "web:validate": "node tools/validate-viewer-catalogue.mjs",
     "web:startup": "node tools/validate-startup.mjs",
-    "web:loading": "node tools/validate-loading.mjs"
+    "web:loading": "node tools/validate-loading.mjs",
+    "web:scheduling": "node tools/validate-scheduling.mjs"
   },
   "dependencies": {
     "@fontsource-variable/source-serif-4": "^5.3.0",
