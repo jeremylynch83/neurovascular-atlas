@@ -19,5 +19,5 @@ export function explanationSectionsMarkup(level: 2 | 3 = 2): string {
   }).join('');
 }
 export function explanationMarkup(): string {
-  return `<p>${escape(explanationSummary)}</p>${explanationSectionsMarkup()}`;
+  return `<p class="atlas-intro-tagline">${escape(content.intro.tagline)}</p><p class="atlas-intro-copy">${escape(content.intro.description)}</p>`;
 }

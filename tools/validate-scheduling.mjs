@@ -18,14 +18,14 @@ try {
  const e=Object.assign(Object.create(AnatomyEngine.prototype),{disposed:false,interacting:true,movingUntil:Infinity,nextBackgroundSlot:0,lastRenderDuration:1,frameInterval:16,workWaiters:new Set()});
  async function slot(maxFrames){let done=false;const p=e.workSlot(true).then(()=>done=true);assert.equal(done,false);let count=0;while(!done&&count<maxFrames){await frame();count++}assert(done,'Loading blocked during sustained interaction');await p;assert.equal(e.workWaiters.size,0);return count}
  assert.equal(await slot(2),1);checks.push('Sustained drag and continually moving camera allow installation after a paint');
- assert.equal(await slot(3),2);checks.push('Active drag applies a finite 24 ms minimum spacing instead of waiting for release');
- e.lastRenderDuration=100;await slot(3);assert.equal(e.nextBackgroundSlot-now,64);assert.equal(await slot(5),4);checks.push('Slow rendering caps spacing at 64 ms, even during a sustained drag');
+ assert.equal(await slot(2),1);checks.push('Consecutive packets continue on each paint without an interaction interval');
+ e.lastRenderDuration=100;e.frameInterval=100;assert.equal(await slot(2),1);checks.push('Slow rendering does not insert a timed loading delay');
  e.interacting=false;e.lastRenderDuration=1;e.nextBackgroundSlot=0;
- assert.equal(await slot(2),1);assert.equal(e.nextBackgroundSlot,now);checks.push('Normal idle rendering has only the post-paint yield, with no motion quiet period');
- e.nextBackgroundSlot=Infinity;
+ assert.equal(await slot(2),1);checks.push('Normal idle rendering uses the same post-paint yield');
+ e.nextBackgroundSlot=Infinity;assert.equal(await slot(2),1);checks.push('Legacy pacing deadlines are ignored');
  let ended=false;const disposed=e.workSlot(true).then(()=>ended=true);e.disposed=true;for(const finish of [...e.workWaiters])finish();await disposed;assert(ended);assert.equal(e.workWaiters.size,0);checks.push('Disposal releases an outstanding work-slot waiter');
  const p=e.workSlot(false);await p;assert.equal(frames.size,0);checks.push('Initial skull installation retains its existing startup path');
  const release=JSON.parse(fs.readFileSync(root+'/package.json')).version;
- fs.writeFileSync(root+'/docs/revision153-scheduling-validation.json',JSON.stringify({release,checks,scope:'Actual AnatomyEngine.workSlot method under controlled animation frames and timing; no GPU/browser performance claim'},null,2)+'\n');
+ fs.writeFileSync(root+'/docs/revision154-scheduling-validation.json',JSON.stringify({release,checks,scope:'Actual AnatomyEngine.workSlot method under controlled animation frames and timing; no GPU/browser performance claim'},null,2)+'\n');
 }finally{Object.assign(globalThis,saved);await server.close()}
 console.log(JSON.stringify({passed:true,checks},null,2));

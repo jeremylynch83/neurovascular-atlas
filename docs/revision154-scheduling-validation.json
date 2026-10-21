@@ -1,0 +1,13 @@
+{
+  "release": "0.9.154",
+  "checks": [
+    "Sustained drag and continually moving camera allow installation after a paint",
+    "Consecutive packets continue on each paint without an interaction interval",
+    "Slow rendering does not insert a timed loading delay",
+    "Normal idle rendering uses the same post-paint yield",
+    "Legacy pacing deadlines are ignored",
+    "Disposal releases an outstanding work-slot waiter",
+    "Initial skull installation retains its existing startup path"
+  ],
+  "scope": "Actual AnatomyEngine.workSlot method under controlled animation frames and timing; no GPU/browser performance claim"
+}

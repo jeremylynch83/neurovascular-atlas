@@ -50,11 +50,6 @@ export class AnatomyEngine {
   private objectToId = new Map<THREE.Object3D, string>();
   private loading: StagedLoader | null = null;
   private downloads = new Map<string, number>();
-  private interacting = false;
-  private nextBackgroundSlot = 0;
-  private lastRenderDuration = 0;
-  private frameInterval = 16.7;
-  private previousFrameTime = 0;
   private userChangedView = false;
   private vertexBudget = 30_000;
   private primaryPrepared = false;
@@ -136,15 +131,14 @@ export class AnatomyEngine {
   }
 
   private makeControls() {
-    this.interacting = false;
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.08;
     controls.addEventListener('start', () => {
       this.focusDistanceFloor = 0;
-      this.interacting = true; this.userChangedView = true; this.onInteraction?.();
+      this.userChangedView = true; this.onInteraction?.();
     });
-    controls.addEventListener('end', () => { this.interacting = false; this.movingUntil = performance.now() + 180; });
+    controls.addEventListener('end', () => { this.movingUntil = performance.now() + 180; });
     controls.addEventListener('change', () => { this.movingUntil = performance.now() + 180; this.render(); });
     return controls;
   }
@@ -225,19 +219,16 @@ export class AnatomyEngine {
     // Every initial packet already yields through the worker message queue.
     // The first scene draw follows framing, avoiding uploads from inside the skull.
     if (!background) return;
-    // Resume after a paint, with one bounded packet in flight. Gestures
-    // modestly pace installation instead of blocking it until motion stops.
-    do {
-      await new Promise<void>(resolve => {
-        let timer: ReturnType<typeof setTimeout> | undefined;
-        const finish = () => { cancelAnimationFrame(frame); clearTimeout(timer); this.workWaiters.delete(finish); resolve(); };
-        const frame = requestAnimationFrame(() => { timer = setTimeout(finish, 0); });
-        this.workWaiters.add(finish);
-      });
-    } while (!this.disposed && background && performance.now() < this.nextBackgroundSlot);
-    if (background) this.nextBackgroundSlot = performance.now() + Math.max(this.interacting ? 24 : 0,
-      Math.min(64, Math.max(0, Math.max(this.lastRenderDuration, this.frameInterval) - 18) * 4));
+    // Yield after a paint so controls can dispatch between bounded packets.
+    // No gesture, motion-quiet-period or slow-frame loading delays.
+    await new Promise<void>(resolve => {
+      let timer: ReturnType<typeof setTimeout> | undefined;
+      const finish = () => { cancelAnimationFrame(frame); clearTimeout(timer); this.workWaiters.delete(finish); resolve(); };
+      const frame = requestAnimationFrame(() => { timer = setTimeout(finish, 0); });
+      this.workWaiters.add(finish);
+    });
   }
+
   private installMeshes(packets: PreparedMesh[]) {
     const added: Entry[] = [];
     for (const packet of packets) {
@@ -706,10 +697,6 @@ export class AnatomyEngine {
     const centreWhileRotating = this.started && this.mobileView.matches && !this.dsaView && !this.injectionPick;
     const pivot = centreWhileRotating && this.rotationCentring.active ? this.selectedRotationPivot() : null;
     if (this.rotationCentring.step(this.camera, this.controls.target, pivot, centreWhileRotating, frameTime)) this.renderRequested = true;
-    const interval = frameTime - this.previousFrameTime;
-    // Ignore tab suspension; ordinary slow frames reduce background throughput.
-    if (this.previousFrameTime && interval < 250 && !document.hidden) this.frameInterval = this.frameInterval * .8 + interval * .2;
-    this.previousFrameTime = frameTime;
     const interactionRenderRequested = this.renderRequested;
     if (this.started && !this.dsaView && !this.injectionPick) this.updateSelectionGlow(frameTime);
     const rendered = this.renderRequested;
@@ -731,7 +718,6 @@ export class AnatomyEngine {
         this.onRenderError?.(error);
         return;
       }
-      this.lastRenderDuration = performance.now() - frameTime;
     }
     if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);
     this.raf = 0;

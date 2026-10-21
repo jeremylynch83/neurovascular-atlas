@@ -1,4 +1,4 @@
-# Neurovascular Atlas v0.9.153
+# Neurovascular Atlas v0.9.155
 
 This release loads and displays the skull first, then adds arteries progressively. Incremental pack generation and compression caching are retained. See [revision 151](docs/revision151-progressive-loading.md) for details and validation limits.
 
@@ -11,7 +11,7 @@ The mandible, temporal repairs, ethmoid rollback and other anatomy from v0.9.145
 Keep the ZIP intact beside the existing installer:
 
 ```bash
-./inr-anatomy.sh local ./inr-anatomy-atlas-v0.9.153.zip
+./inr-anatomy.sh local ./inr-anatomy-atlas-v0.9.155.zip
 ```
 
 Open http://localhost:5173.
@@ -19,7 +19,7 @@ Open http://localhost:5173.
 ## Update the configured online website
 
 ```bash
-./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.153.zip
+./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.155.zip
 ```
 
 This builds locally and publishes through the existing configured GitHub Pages workflow. Wait for the workflow to complete, then refresh the website without its old cache.
@@ -37,3 +37,7 @@ The normal build automatically maintains lossless arterial download packs and a 
 See [revision 152](docs/revision152-skull-first.md) for the revised initial loading order.
 
 Revision 153 continues loading during touch/drag and camera damping. See [interaction pacing](docs/revision153-loading-interaction.md).
+
+Revision 154 removes all timed loading pauses and interaction/slow-frame pacing. See [loading without timed pauses](docs/revision154-no-loading-pause.md). Earlier revision notes are historical.
+
+Revision 155 uses the approved concise introduction in a dark app-style panel. Author background remains in About. Progress bar and measured percentage are retained. See docs/revision155-intro.md.

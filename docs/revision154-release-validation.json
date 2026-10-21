@@ -1,0 +1,12 @@
+{
+  "release": "0.9.154",
+  "change": "Remove all timed loading delays. Background packets have only a zero-delay post-paint yield; no drag, camera-motion or slow-frame pause.",
+  "skullFirst": true,
+  "sourceModelsPacksAndDSAByteIdenticalTo153": true,
+  "checks": [
+    "production build / TypeScript / anatomy validation",
+    "actual workSlot method: sustained motion, consecutive packets, slow frames, idle, ignored legacy pacing deadline and disposal"
+  ],
+  "limitation": "No real-device GPU responsiveness benchmark.",
+  "deployed": false
+}

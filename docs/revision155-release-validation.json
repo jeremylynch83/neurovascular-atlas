@@ -1,0 +1,24 @@
+{
+  "release": "0.9.155",
+  "intro": "Approved copy only, no biography or loading-order explanation",
+  "theme": "Dark app palette, panel and font families; initial dark HTML",
+  "progress": "Native measured progress plus visible percentage, 0-99 until first successful draw",
+  "about": "Existing author names, roles, background, links and credits preserved",
+  "unchanged": [
+    "source models and packs",
+    "DSA data",
+    "anatomical catalogue except release",
+    "App and loader/engine source, including skull-first order and no timed pauses"
+  ],
+  "checks": [
+    "production build / TypeScript / anatomy validation",
+    "web:startup including approved copy, absence of biography, percentage/clamping/failure, About preservation",
+    "Browser visual check: actual production intro HTML/CSS at desktop width and 390px iframe width with a static 48% display",
+    "Browser runtime failure/retry check: production bootstrap and catalogue, WebGL-unavailable fallback retains intro and Retry, hides progress"
+  ],
+  "limitations": [
+    "Visual loading preview used a fixed percentage to inspect layout, not a loading speed measurement.",
+    "Successful 3D GPU rendering remains unverified; this browser cannot create WebGL."
+  ],
+  "deployed": false
+}
