@@ -1,0 +1,25 @@
+{
+  "release": "0.9.150",
+  "productionBuild": "passed",
+  "startupControllerAndHtmlTests": "passed",
+  "catalogueRegression": "passed; all 1730 structures and 15 DSA preset/side combinations",
+  "unchangedModelSha256": {
+    "complete-circulation.glb": "3f558f237fd940702fea6855a8d06bda2d7132a9cd3f9ff2eeefe1e7e4373830",
+    "brain-context.glb": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894",
+    "craniofacial.glb": "a4cad02becf3c50891548ec0c23d7724a74dd822cd90b2b480c6467b8cec878c",
+    "complete-anastomoses.glb": "d6671a58ea8188b702e1388729cbc19c086c49e47e2ff70a5ce36a019a825610",
+    "venous.glb": "7f192e8d9dddfd84664512c89b9c95c78c81dd2b51659123351f686d8215d0a9"
+  },
+  "fullManifestEqualExceptRelease": true,
+  "browserChecks": [
+    "Readable initial loading explanation",
+    "WebGL creation failure caught by ViewerBoundary",
+    "Explanation remains visible with retry link",
+    "Retry returns to loading with explanation retained"
+  ],
+  "limitations": [
+    "Full GPU-rendered success could not be visually checked because WebGL is disabled in the test browser.",
+    "Success/failure DOM transitions and late-callback handling were tested separately.",
+    "No live deployment or Google URL Inspection test performed."
+  ]
+}

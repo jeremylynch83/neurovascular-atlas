@@ -1,0 +1,31 @@
+{
+  "right": {
+    "restoredSourcePosteriorToY": -65,
+    "sourceNativeVertices": 5538,
+    "restoredTriangles": 85328,
+    "openEdges": 24
+  },
+  "left": {
+    "restoredSourcePosteriorToY": -65,
+    "sourceNativeVertices": 7729,
+    "restoredTriangles": 95260,
+    "openEdges": 16
+  },
+  "release": "0.9.144",
+  "optic": {
+    "nativeEnvelopeRestoredAboveZMm": 66,
+    "middleBoreNominalAxesMm": [
+      3.3,
+      4.2
+    ],
+    "method": "Straight locally flared oval subtraction from native superior sphenoid; no projecting collar or extra canal roof is added. Existing orbital vessels receive local geometric clearance.",
+    "status": "Partial source canal enclosure; open transitions are not assigned broad ray-chord diameters."
+  },
+  "earVessels": {
+    "baseline": "v0.9.135, before added acoustic canal",
+    "count": 10,
+    "limitation": "Original small ear-vessel/bone contacts remain unresolved; no replacement large canal is drilled."
+  },
+  "sourceSnapshot": "anatomy/source/foramina/revision144-native-sources.npz",
+  "otherDiameters": "Hypoglossal and incisive revisions retained. Unsupported posterior facial-canal construction removed with the native source restoration."
+}

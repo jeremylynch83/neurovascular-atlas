@@ -1,0 +1,104 @@
+[
+  {
+    "child": "artery.amendment.artery_of_superior_orbital_fissure.left",
+    "parent": "artery.eca.maxillary.right.left",
+    "pairedVertices": 76,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.central_retinal_left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "pairedVertices": 92,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.central_retinal_right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "pairedVertices": 92,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.amendment.deep_recurrent_ophthalmic.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "pairedVertices": 66,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.amendment.deep_recurrent_ophthalmic.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "pairedVertices": 66,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.inferior_hypophyseal_left",
+    "parent": "artery.anterior.meningohypophyseal_trunk_left",
+    "pairedVertices": 35,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.inferior_hypophyseal_right",
+    "parent": "artery.anterior.meningohypophyseal_trunk_right",
+    "pairedVertices": 16,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.medial_lenticulostriate_left",
+    "parent": "artery.anterior.aca_a1_left",
+    "pairedVertices": 84,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.medial_lenticulostriate_right",
+    "parent": "artery.anterior.aca_a1_right",
+    "pairedVertices": 84,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.amendment.ophthalmic_inferior_muscular_branch.left",
+    "parent": "artery.anterior.ophthalmic_left",
+    "pairedVertices": 110,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.amendment.ophthalmic_inferior_muscular_branch.right",
+    "parent": "artery.anterior.ophthalmic_right",
+    "pairedVertices": 120,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.posterior_communicating_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+    "pairedVertices": 115,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.posterior_communicating_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+    "pairedVertices": 112,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.amendment.superficial_recurrent_meningeal.left",
+    "parent": "artery.anterior.lacrimal_left",
+    "pairedVertices": 94,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.amendment.superficial_recurrent_meningeal.right",
+    "parent": "artery.anterior.lacrimal_right",
+    "pairedVertices": 96,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.superior_hypophyseal_left",
+    "parent": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+    "pairedVertices": 20,
+    "maximumPortGapMm": 0.0
+  },
+  {
+    "child": "artery.anterior.superior_hypophyseal_right",
+    "parent": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+    "pairedVertices": 19,
+    "maximumPortGapMm": 0.0
+  }
+]

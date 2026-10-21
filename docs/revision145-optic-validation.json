@@ -1,0 +1,183 @@
+{
+  "release": "0.9.145",
+  "optic": {
+    "right": {
+      "enclosedSections": [
+        {
+          "axisOffsetMm": -1.25,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000191874516,
+          "minorDiameterMm": 3.7000043753279352,
+          "maxRadialErrorMm": 0.0026140860480934336
+        },
+        {
+          "axisOffsetMm": -1.0,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000172526545,
+          "minorDiameterMm": 3.700004533255825,
+          "maxRadialErrorMm": 0.0026141709464204688
+        },
+        {
+          "axisOffsetMm": -0.75,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000146547447,
+          "minorDiameterMm": 3.7000046911837154,
+          "maxRadialErrorMm": 0.0026142558447461717
+        },
+        {
+          "axisOffsetMm": -0.5,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000096175961,
+          "minorDiameterMm": 3.700004849111604,
+          "maxRadialErrorMm": 0.002614340743073207
+        },
+        {
+          "axisOffsetMm": -0.25,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000045804475,
+          "minorDiameterMm": 3.7000050070394934,
+          "maxRadialErrorMm": 0.002614425641400686
+        },
+        {
+          "axisOffsetMm": 0.0,
+          "wallRays": 96,
+          "majorDiameterMm": 4.499999995432989,
+          "minorDiameterMm": 3.7000051649673686,
+          "maxRadialErrorMm": 0.0026144420960272363
+        },
+        {
+          "axisOffsetMm": 0.25,
+          "wallRays": 96,
+          "majorDiameterMm": 4.499999945061505,
+          "minorDiameterMm": 3.700005322895258,
+          "maxRadialErrorMm": 0.0026144563271723875
+        },
+        {
+          "axisOffsetMm": 0.5,
+          "wallRays": 96,
+          "majorDiameterMm": 4.499999894690017,
+          "minorDiameterMm": 3.7000054808231626,
+          "maxRadialErrorMm": 0.002614470558323312
+        }
+      ],
+      "centerlineClear": true,
+      "note": "Oblique source mouths have unequal wall lengths. Diameter tests refer to the fully enclosed isthmus, rather than the projected mouth."
+    },
+    "left": {
+      "enclosedSections": [
+        {
+          "axisOffsetMm": -1.25,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000472915966,
+          "minorDiameterMm": 3.6997698446717564,
+          "maxRadialErrorMm": 0.002679992089654526
+        },
+        {
+          "axisOffsetMm": -1.0,
+          "wallRays": 96,
+          "majorDiameterMm": 4.5000004942839205,
+          "minorDiameterMm": 3.699799697510234,
+          "maxRadialErrorMm": 0.002650915716764235
+        },
+        {
+          "axisOffsetMm": -0.75,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000515651876,
+          "minorDiameterMm": 3.6998295503486975,
+          "maxRadialErrorMm": 0.0026218393438708354
+        },
+        {
+          "axisOffsetMm": -0.5,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000537019827,
+          "minorDiameterMm": 3.699859403187147,
+          "maxRadialErrorMm": 0.002613513395082645
+        },
+        {
+          "axisOffsetMm": -0.25,
+          "wallRays": 96,
+          "majorDiameterMm": 4.5000005583877805,
+          "minorDiameterMm": 3.6998892560256103,
+          "maxRadialErrorMm": 0.0026135237197371097
+        },
+        {
+          "axisOffsetMm": 0.0,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000579755731,
+          "minorDiameterMm": 3.6999191088640737,
+          "maxRadialErrorMm": 0.0026135340443915744
+        },
+        {
+          "axisOffsetMm": 0.25,
+          "wallRays": 96,
+          "majorDiameterMm": 4.500000592342992,
+          "minorDiameterMm": 3.699948961702551,
+          "maxRadialErrorMm": 0.00261354436905048
+        },
+        {
+          "axisOffsetMm": 0.5,
+          "wallRays": 96,
+          "majorDiameterMm": 4.50000060388729,
+          "minorDiameterMm": 3.6999788145410006,
+          "maxRadialErrorMm": 0.0026135546937031684
+        }
+      ],
+      "centerlineClear": true,
+      "note": "Oblique source mouths have unequal wall lengths. Diameter tests refer to the fully enclosed isthmus, rather than the projected mouth."
+    }
+  },
+  "orbitalClearances": {
+    "artery.anterior.ophthalmic_right": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "artery.amendment.deep_recurrent_ophthalmic.right": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "artery.amendment.superficial_recurrent_meningeal.right": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "vein.superior_ophthalmic.right": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "artery.anterior.ophthalmic_left": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "artery.amendment.deep_recurrent_ophthalmic.left": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "artery.amendment.superficial_recurrent_meningeal.left": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    },
+    "vein.superior_ophthalmic.left": {
+      "candidateContacts": 0,
+      "materialCrossingsAbove002Mm": 0,
+      "maximumCrossingBoundMm": 0.0
+    }
+  },
+  "superiorSphenoidSelfIntersection": {
+    "candidateTrianglePairs": 0,
+    "materialCrossings": 0,
+    "maximumPlaneCrossingBoundMm": 0,
+    "examples": []
+  },
+  "nativeEnvelope": {
+    "sampledVertices": 3617,
+    "maximumSignedOutsideDistanceMm": 3.854938332533856e-06,
+    "toleranceMm": 0.004,
+    "addedSuperiorBoneVolume": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "models/complete-circulation.glb": {
+    "exactUnchangedNodes": 581,
+    "authorisedChangedNodes": [
+      "Artery of superior orbital fissure left",
+      "Artery of superior orbital fissure right",
+      "Buccal",
+      "Buccal left",
+      "Deep recurrent ophthalmic left",
+      "Deep recurrent ophthalmic right",
+      "Facial buccal branch left",
+      "Facial buccal branch right",
+      "Incisive",
+      "Incisive left",
+      "Inferior alveolar",
+      "Inferior alveolar left",
+      "Mental",
+      "Mental left",
+      "Mylohyoid",
+      "Mylohyoid left",
+      "Ophthalmic inferior muscular branch left",
+      "Ophthalmic inferior muscular branch right",
+      "Ophthalmic left",
+      "Ophthalmic right",
+      "PSA anterior division",
+      "PSA anterior division left",
+      "Posterior superior alveolar",
+      "Posterior superior alveolar left",
+      "Superficial recurrent meningeal left",
+      "Superficial recurrent meningeal right"
+    ]
+  },
+  "models/complete-anastomoses.glb": {
+    "exactUnchangedNodes": 159,
+    "authorisedChangedNodes": [
+      "Facial\u2013maxillary buccal left",
+      "Facial\u2013maxillary buccal right",
+      "MMA\u2013ophthalmic (recurrent meningeal) left",
+      "MMA\u2013ophthalmic (recurrent meningeal) right",
+      "SOF artery\u2013anteromedial ILT left",
+      "SOF artery\u2013anteromedial ILT right",
+      "SOF artery\u2013recurrent meningeal left",
+      "SOF artery\u2013recurrent meningeal right"
+    ]
+  },
+  "models/venous.glb": {
+    "exactUnchangedNodes": 229,
+    "authorisedChangedNodes": [
+      "vein.deep_facial.left",
+      "vein.deep_facial.right"
+    ]
+  }
+}

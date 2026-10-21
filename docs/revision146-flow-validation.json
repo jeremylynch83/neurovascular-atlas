@@ -1,0 +1,379 @@
+{
+  "release": "0.9.146",
+  "flows": [
+    {
+      "id": "artery.anterior.ophthalmic_right",
+      "selectable": true,
+      "lengthMm": 69.774175,
+      "safeRanges": [
+        [
+          0,
+          69.774175
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 2,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 4
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.superior_hypophyseal_right",
+      "selectable": true,
+      "lengthMm": 7.36644,
+      "safeRanges": [
+        [
+          0,
+          6.868601
+        ],
+        [
+          6.945893,
+          7.36644
+        ]
+      ],
+      "fullSafe": false,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [
+        36,
+        43,
+        50,
+        57,
+        64,
+        71,
+        78,
+        86,
+        93
+      ],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [
+        36,
+        43,
+        50,
+        57,
+        64,
+        71,
+        78,
+        86,
+        93
+      ],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.aca_a1_right",
+      "selectable": true,
+      "lengthMm": 21.833878,
+      "safeRanges": [
+        [
+          0,
+          21.833878
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 2
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.ophthalmic_left",
+      "selectable": true,
+      "lengthMm": 69.649292,
+      "safeRanges": [
+        [
+          0,
+          69.649292
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 2,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 4
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.superior_hypophyseal_left",
+      "selectable": true,
+      "lengthMm": 6.21,
+      "safeRanges": [
+        [
+          0,
+          6.21
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.aca_a1_left",
+      "selectable": true,
+      "lengthMm": 20.731852,
+      "safeRanges": [
+        [
+          0,
+          20.731852
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.cavernous",
+      "selectable": true,
+      "lengthMm": 27.793298,
+      "safeRanges": [
+        [
+          0,
+          27.793298
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 2
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "selectable": true,
+      "lengthMm": 7.761491,
+      "safeRanges": [
+        [
+          0,
+          7.761491
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+      "selectable": true,
+      "lengthMm": 6.333233,
+      "safeRanges": [
+        [
+          0,
+          6.333233
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.cavernous",
+      "selectable": true,
+      "lengthMm": 27.746387,
+      "safeRanges": [
+        [
+          0,
+          27.746387
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 2
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "selectable": true,
+      "lengthMm": 7.257762,
+      "safeRanges": [
+        [
+          0,
+          7.257762
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+      "selectable": true,
+      "lengthMm": 6.497918,
+      "safeRanges": [
+        [
+          0,
+          6.497918
+        ]
+      ],
+      "fullSafe": true,
+      "closedProjectionError": 0,
+      "splitSections": 1,
+      "openSplitSections": 0,
+      "sampledOutsideGuideIndices": [],
+      "precisionOnlyEndpointIndices": [],
+      "excludedUnsafeGuideIndices": [],
+      "injectionGateChecked": true,
+      "additionalSections": [
+        {
+          "fraction": 0.15,
+          "sections": 1
+        },
+        {
+          "fraction": 0.85,
+          "sections": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "closedSplitSections": 47
+}

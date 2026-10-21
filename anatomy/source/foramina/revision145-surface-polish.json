@@ -1,0 +1,47 @@
+{
+  "method": "Compact tangential contraction of elongated posterior superior alveolar cortical exits. No added bony volume or projecting sleeve. Calibre cross-section transverse to the vessel course retained.",
+  "maximumTangentialContraction": 0.65,
+  "supportRadiusMm": 5.5,
+  "centers": [
+    [
+      33.32,
+      -2.52,
+      20.64
+    ],
+    [
+      -33.32,
+      -2.52,
+      20.64
+    ]
+  ],
+  "axes": [
+    [
+      -0.3980148760839957,
+      0.5970223141259935,
+      -0.6965260331469924
+    ],
+    [
+      0.3980148760839957,
+      0.5970223141259935,
+      -0.6965260331469924
+    ]
+  ],
+  "structures": [
+    "bone.maxilla.right",
+    "bone.maxilla.left",
+    "artery.eca.maxillary.buccal.right",
+    "artery.eca.maxillary.posterior_superior_alveolar.right",
+    "artery.eca.psa_anterior_division.right",
+    "artery.eca.maxillary.buccal.right.left",
+    "artery.eca.maxillary.posterior_superior_alveolar.right.left",
+    "artery.eca.psa_anterior_division.right.left",
+    "bone.maxillary-alveolar-process-left",
+    "bone.maxillary-alveolar-process-right",
+    "artery.amendment.facial_buccal_branch.right",
+    "artery.amendment.facial_buccal_branch.left",
+    "artery.connection.facial_maxillary_buccal.right",
+    "artery.connection.facial_maxillary_buccal.left",
+    "vein.deep_facial.right",
+    "vein.deep_facial.left"
+  ]
+}

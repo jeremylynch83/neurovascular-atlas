@@ -143,3 +143,6 @@
 /* Progress interpolation is handled by the Loading component. */
 .loading-fill{transition:none}
 @media(prefers-reduced-motion:reduce){.loading-fill{transition:none}}
+
+.geometry-progress { padding: 8px 12px; font-size: 12px; }
+.geometry-progress progress { display: block; width: 100%; height: 5px; margin-top: 6px; accent-color: var(--accent); }

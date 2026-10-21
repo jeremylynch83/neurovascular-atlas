@@ -1,0 +1,25 @@
+{
+  "release": "0.9.145",
+  "opticIsthmusAxesMm": [
+    3.7,
+    4.5
+  ],
+  "superiorSphenoidConstruction": "Native source envelope minus the registered optic bores and vessel clearances. No added bony volume.",
+  "mentalExit": "One merged native mental opening per side, nominal 2.5 mm bore; pre-existing lowered duplicate removed.",
+  "facialSurface": "Native cortex restored; source cap normals corrected and blended across semantic boundaries.",
+  "alveolarChannels": "Registered intraosseous PSA divisions retained. Vascular envelope plus 0.10 mm radial clearance replaces broad surface cuts.",
+  "sourceControls": "Revision145 method and geometry supersede earlier static orbital/facial radius controls for the edited passages.",
+  "unchangedNodes": {
+    "craniofacial": 53,
+    "arterialCirculation": 581,
+    "arterialConnections": 159,
+    "venous": 229
+  },
+  "assetSha256": {
+    "models/craniofacial.glb": "18065cea1ed3ecba7e8b7aa08924a49b5db188ef0be4a9af57f16b43e963ba1d",
+    "models/complete-circulation.glb": "a4fe1046e9b5249e7c7dea268c7300642268a1d24415f1362ef5f040ab15be07",
+    "models/complete-anastomoses.glb": "0f9fd932cc0d10f25e23ebdea265fa3914e5c1bae1cb82b238967f412c8cf399",
+    "models/venous.glb": "ed269b58d8db059f6db38ae74e9a1ceb9763ede72163aceca9a58d319f33dfe2",
+    "models/brain-context.glb": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894"
+  }
+}

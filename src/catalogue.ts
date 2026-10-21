@@ -1,4 +1,5 @@
 import type { AnatomyManifest, Structure } from './types';
+import viewerCatalogueAsset from './viewerCatalogueAsset.json' with { type: 'json' };
 
 // Count modelled vessels, folding segment meshes into their whole vessel and
 // pairing bilateral names. Potential connection overlays are not vessels.
@@ -76,10 +77,20 @@ export function focusGeometryMembers(manifest: AnatomyManifest, id: string): Set
   return new Set([...targets].flatMap(target => [...(members.get(target) ?? [])]));
 }
 
-export async function loadCatalogue(file = 'manifest.json'): Promise<AnatomyManifest> {
-  const response = await fetch(`${import.meta.env.BASE_URL}anatomy/${file}`, { cache: 'no-store' });
+export async function loadCatalogue(file = viewerCatalogueAsset.file): Promise<AnatomyManifest> {
+  // The startup catalogue is content-addressed. Explicit full-manifest reads
+  // remain available and revalidate because their URL is not versioned.
+  const startup = file === viewerCatalogueAsset.file;
+  if (startup) performance.mark('atlas-catalogue-request');
+  const response = await fetch(`${import.meta.env.BASE_URL}anatomy/${file}`, { cache: startup ? 'default' : 'no-cache' });
   if (!response.ok) throw new Error(`Could not load anatomy manifest (${response.status})`);
-  return response.json() as Promise<AnatomyManifest>;
+  const manifest: AnatomyManifest = await response.json();
+  if (startup && manifest.release !== viewerCatalogueAsset.release) throw new Error('Catalogue release does not match the application');
+  if (startup) {
+    performance.mark('atlas-catalogue-ready');
+    performance.measure('atlas-catalogue-load', 'atlas-catalogue-request', 'atlas-catalogue-ready');
+  }
+  return manifest;
 }
 
 export function searchStructures(structures: Structure[], query: string): Structure[] {

@@ -1,0 +1,13 @@
+{
+  "release": "0.9.146",
+  "method": "Smooth local axial reshaping of existing optic roofs and floors, with modest variable oval calibre. No independent collars or tubes.",
+  "maximumVertexDisplacementMm": 5.801181542753719,
+  "watertight": true,
+  "windingConsistent": true,
+  "vertices": 62921,
+  "triangles": 125906,
+  "assetSha256": "f6803a0ea067cdc6c9df27c4b1e7af9aba2f27f77c4bbea97305d8445fbfb159",
+  "source": "revision145 craniofacial.glb; revision145-optic.json retains the registered axes",
+  "nativeEnvelope": "The local lesser-wing surface is intentionally reshaped to restore roof length. The former subtraction-only native-envelope condition is superseded in this patch.",
+  "vascularFitting": "Shared smooth inferomedial fitting of proximal ophthalmic segments and associated nearby arterial vertices; small superior lifts of posterior orbitofrontal venous segments. No subtractive vessel impressions."
+}

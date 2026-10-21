@@ -1,0 +1,34 @@
+{
+  "release": "0.9.151",
+  "checks": [
+    "Every geometry structure assigned exactly once; complete bilateral ICA/vertebral segments and Circle of Willis in starter; fixed arterial, skull, venous, brain order",
+    "Actual loader: starter-only readiness; selection does not reorder; bounded packets; complete background loading; failure/retry; starter failure; disposal and pending waiters",
+    "Actual BatchedMesh append path: multiple packets share fixed buffers; hidden arrival does not hide previous vessels; selection unbatches and restores correctly; camera remains unchanged",
+    "Actual engine installation/material/picking methods: arrival leaves camera and target unchanged; existing layer defaults, preselected visibility, clipping, hiding, duplicate protection and ghost-bone picking preserved (CPU scene fixture, no GPU)",
+    "Decoded positions, normals, all other attributes, triangles and world transforms exactly match for all 774 packed arterial meshes"
+  ],
+  "measurements": {
+    "singleControlledNodeRun": true,
+    "previousInitial": {
+      "bytes": 94615132,
+      "decodeMs": 608.8581760000001
+    },
+    "starter": {
+      "bytes": 6452632,
+      "decodeMs": 42.275093999999854
+    },
+    "previousAll": {
+      "decodeMs": 959.1602370000002
+    },
+    "arteries": {
+      "sourceBytes": 77109300,
+      "packBytes": 71279744,
+      "packDecodeMs": 392.0491010000003
+    },
+    "structureCount": 1258,
+    "packCount": 13
+  },
+  "limitations": [
+    "Node decoding excludes network, worker transfer, GPU upload and browser rendering. Browser timings must be measured on a WebGL-capable device."
+  ]
+}

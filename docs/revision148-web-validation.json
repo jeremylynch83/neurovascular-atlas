@@ -1,0 +1,70 @@
+{
+  "release": "0.9.148",
+  "comparison": "Locally built production assets; no live website or Core Web Vitals measurement",
+  "sizes": {
+    "mainJavaScript": {
+      "before": {
+        "file": "index-NKcMi9Ox.js",
+        "bytes": 926932,
+        "gzipBytes": 241084
+      },
+      "after": {
+        "file": "index-CWo48Pzn.js",
+        "bytes": 917219,
+        "gzipBytes": 238785
+      }
+    },
+    "stylesheet": {
+      "before": {
+        "file": "index-tmuOlP-j.css",
+        "bytes": 42825,
+        "gzipBytes": 14226
+      },
+      "after": {
+        "file": "index-EFQpO-hI.css",
+        "bytes": 38535,
+        "gzipBytes": 12204
+      }
+    },
+    "catalogue": {
+      "before": {
+        "bytes": 10283263,
+        "gzipBytes": 1609180
+      },
+      "after": {
+        "bytes": 6707924,
+        "gzipBytes": 1414672
+      },
+      "nodeParseMedianMs": {
+        "before": 28.227939999999762,
+        "after": 26.0791549999999,
+        "samples": 25,
+        "note": "Node microbenchmark only; not browser loading time"
+      }
+    },
+    "deferredDsaJavaScript": [
+      {
+        "file": "dsaRenderer-D1xUsX-I.js",
+        "bytes": 11726
+      }
+    ]
+  },
+  "preservation": {
+    "catalogueEqualExceptRelease": true,
+    "allCompactedJsonValuesIdentical": true,
+    "identicalModels": [
+      "brain-context.glb",
+      "complete-anastomoses.glb",
+      "complete-circulation.glb",
+      "craniofacial.glb",
+      "venous.glb"
+    ],
+    "viewerLayoutAndInteractionModulesUnchanged": true
+  },
+  "checks": {
+    "metadataAndSinglePageSitemap": "passed",
+    "build": "passed",
+    "updatedFlowCourses": "28 passed, 0 structural errors",
+    "browser": "Page title and boot observed. Full visual/interaction check blocked because the test browser disables WebGL."
+  }
+}

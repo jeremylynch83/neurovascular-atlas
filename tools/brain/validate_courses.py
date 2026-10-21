@@ -84,7 +84,7 @@ def validate_courses(manifest):
             if c['radiusPolicy']=='preserve-source-profile-with-measured-wall-deformation':
                 check=c['fitting']['calibreCheck']
                 assert check['method'] and len(check['ratioP05MedianP95'])==3 and check['p95AbsoluteFractionalRadiusChange']>=0
-                assert c['reviewStatus']=='requires-anatomical-review'
+                assert c['reviewStatus'] in {'requires-anatomical-review','requires-anatomical-target'}
             if c['radiusPolicy']=='reconstruct-tube-with-smoothed-source-radius':
                 profile=c['fitting']['radiusProfile']
                 assert profile['method'] and profile['node']==s['id']

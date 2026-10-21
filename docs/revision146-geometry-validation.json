@@ -1,0 +1,1884 @@
+{
+  "release": "0.9.146",
+  "preservedBones": [
+    "bone.ethmoid",
+    "bone.frontal",
+    "bone.hyoid",
+    "bone.inferior_nasal_concha.left",
+    "bone.inferior_nasal_concha.right",
+    "bone.lacrimal.left",
+    "bone.lacrimal.right",
+    "bone.mandible",
+    "bone.maxilla.left",
+    "bone.maxilla.right",
+    "bone.nasal.left",
+    "bone.nasal.right",
+    "bone.occipital",
+    "bone.palatine.left",
+    "bone.palatine.right",
+    "bone.parietal.left",
+    "bone.parietal.right",
+    "bone.temporal.left",
+    "bone.temporal.right",
+    "bone.vomer",
+    "bone.zygomatic.left",
+    "bone.zygomatic.right",
+    "mandibular-alveolar-process",
+    "mandibular-condyle-left",
+    "mandibular-condyle-right",
+    "maxillary-alveolar-process-left",
+    "maxillary-alveolar-process-right",
+    "tooth-11",
+    "tooth-12",
+    "tooth-13",
+    "tooth-14",
+    "tooth-15",
+    "tooth-16",
+    "tooth-17",
+    "tooth-18",
+    "tooth-21",
+    "tooth-22",
+    "tooth-23",
+    "tooth-24",
+    "tooth-25",
+    "tooth-26",
+    "tooth-27",
+    "tooth-28",
+    "tooth-31",
+    "tooth-32",
+    "tooth-33",
+    "tooth-34",
+    "tooth-35",
+    "tooth-36",
+    "tooth-37",
+    "tooth-38",
+    "tooth-41",
+    "tooth-42",
+    "tooth-43",
+    "tooth-44",
+    "tooth-45",
+    "tooth-46",
+    "tooth-47",
+    "tooth-48"
+  ],
+  "vesselContacts": {
+    "ACA A1 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACA A1 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACA A2 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACA A2 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACA orbitofrontal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACA orbitofrontal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "AChA capsular branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "AChA capsular branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "AChA optic tract branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "AChA optic tract branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACom chiasmatic perforator left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACom chiasmatic perforator right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACom hypothalamic perforator left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACom hypothalamic perforator right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACom septal perforator left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ACom septal perforator right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior choroidal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior choroidal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior communicating": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior deep temporal": {
+      "contacts": 282,
+      "crossings": 270,
+      "maxBoundMm": 0.09712323955693614,
+      "baseline": {
+        "contacts": 282,
+        "crossings": 270,
+        "maxBoundMm": 0.09712323955693614
+      }
+    },
+    "Anterior deep temporal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior ethmoidal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior ethmoidal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior falcine left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior falcine right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior temporal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior temporal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior thalamoperforating branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Anterior thalamoperforating branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Artery of foramen rotundum": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Artery of foramen rotundum left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Artery of superior orbital fissure left": {
+      "contacts": 508,
+      "crossings": 454,
+      "maxBoundMm": 0.03565806726986909,
+      "baseline": {
+        "contacts": 397,
+        "crossings": 338,
+        "maxBoundMm": 0.034868931886365584
+      }
+    },
+    "Artery of superior orbital fissure right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Basal tentorial MHT branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Basal tentorial MHT branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Basilar": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Central retinal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Central retinal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Deep recurrent ophthalmic left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Deep recurrent ophthalmic right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Dorsal meningeal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Dorsal meningeal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA anterior choroidal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA anterior choroidal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA cavernous left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA cavernous right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA paraophthalmic left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA paraophthalmic right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA posterior communicating left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA posterior communicating right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA terminus left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ICA terminus right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ILT anterior branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ILT anterior branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ILT anterolateral ramus left": {
+      "contacts": 102,
+      "crossings": 102,
+      "maxBoundMm": 0.11505870413406896,
+      "baseline": {
+        "contacts": 102,
+        "crossings": 102,
+        "maxBoundMm": 0.11505870413406896
+      }
+    },
+    "ILT anterolateral ramus right": {
+      "contacts": 100,
+      "crossings": 100,
+      "maxBoundMm": 0.1320591739383471,
+      "baseline": {
+        "contacts": 100,
+        "crossings": 100,
+        "maxBoundMm": 0.1320591739383471
+      }
+    },
+    "ILT recurrent lacerum ramus left": {
+      "contacts": 60,
+      "crossings": 58,
+      "maxBoundMm": 0.2617073064997616,
+      "baseline": {
+        "contacts": 60,
+        "crossings": 58,
+        "maxBoundMm": 0.2617073064997616
+      }
+    },
+    "ILT recurrent lacerum ramus right": {
+      "contacts": 52,
+      "crossings": 52,
+      "maxBoundMm": 0.3224376780731893,
+      "baseline": {
+        "contacts": 52,
+        "crossings": 52,
+        "maxBoundMm": 0.3224376780731893
+      }
+    },
+    "ILT superior ramus left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "ILT superior ramus right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Inferior hypophyseal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Inferior hypophyseal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Inferolateral trunk left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Inferolateral trunk right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lacrimal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lacrimal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral clival MHT branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral clival MHT branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate 1 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate 1 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate 2 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate 2 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate 3 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate 3 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate anterior representative left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Lateral lenticulostriate anterior representative right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA M1 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA M1 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA inferior division left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA inferior division right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA orbitofrontal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA orbitofrontal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA superior division left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MCA superior division right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA anterior cavernous left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA anterior cavernous right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA cavernous": {
+      "contacts": 318,
+      "crossings": 306,
+      "maxBoundMm": 0.09758429378008127,
+      "baseline": {
+        "contacts": 318,
+        "crossings": 306,
+        "maxBoundMm": 0.09758429378008127
+      }
+    },
+    "MMA cavernous left": {
+      "contacts": 337,
+      "crossings": 323,
+      "maxBoundMm": 0.10126142335615616,
+      "baseline": {
+        "contacts": 337,
+        "crossings": 323,
+        "maxBoundMm": 0.10126142335615616
+      }
+    },
+    "MMA frontal": {
+      "contacts": 185,
+      "crossings": 181,
+      "maxBoundMm": 0.09995440711123173,
+      "baseline": {
+        "contacts": 185,
+        "crossings": 181,
+        "maxBoundMm": 0.09995440711123173
+      }
+    },
+    "MMA frontal anterior division left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA frontal left": {
+      "contacts": 341,
+      "crossings": 318,
+      "maxBoundMm": 0.07523743403645114,
+      "baseline": {
+        "contacts": 341,
+        "crossings": 318,
+        "maxBoundMm": 0.07523743403645114
+      }
+    },
+    "MMA orbital": {
+      "contacts": 4,
+      "crossings": 4,
+      "maxBoundMm": 0.028564551749727052,
+      "baseline": {
+        "contacts": 4,
+        "crossings": 4,
+        "maxBoundMm": 0.028564551749727052
+      }
+    },
+    "MMA orbital left": {
+      "contacts": 135,
+      "crossings": 124,
+      "maxBoundMm": 0.065336657199631,
+      "baseline": {
+        "contacts": 135,
+        "crossings": 124,
+        "maxBoundMm": 0.065336657199631
+      }
+    },
+    "MMA parietal ascending": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA parietal ascending left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA posterior cavernous right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA posterior convexity": {
+      "contacts": 110,
+      "crossings": 104,
+      "maxBoundMm": 0.057379779316013346,
+      "baseline": {
+        "contacts": 110,
+        "crossings": 104,
+        "maxBoundMm": 0.057379779316013346
+      }
+    },
+    "MMA posterior convexity left": {
+      "contacts": 59,
+      "crossings": 55,
+      "maxBoundMm": 0.05200693218008093,
+      "baseline": {
+        "contacts": 59,
+        "crossings": 55,
+        "maxBoundMm": 0.05200693218008093
+      }
+    },
+    "Medial clival": {
+      "contacts": 82,
+      "crossings": 82,
+      "maxBoundMm": 0.11318440315617344,
+      "baseline": {
+        "contacts": 82,
+        "crossings": 82,
+        "maxBoundMm": 0.11318440315617344
+      }
+    },
+    "Medial clival left": {
+      "contacts": 84,
+      "crossings": 80,
+      "maxBoundMm": 0.08110021391463873,
+      "baseline": {
+        "contacts": 84,
+        "crossings": 80,
+        "maxBoundMm": 0.08110021391463873
+      }
+    },
+    "Medial lenticulostriate left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Medial lenticulostriate right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Medial lenticulostriate superior representative left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Medial lenticulostriate superior representative right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Meningohypophyseal trunk left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Meningohypophyseal trunk right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Middle meningeal": {
+      "contacts": 268,
+      "crossings": 255,
+      "maxBoundMm": 0.06958946249116843,
+      "baseline": {
+        "contacts": 268,
+        "crossings": 255,
+        "maxBoundMm": 0.06958946249116843
+      }
+    },
+    "Middle meningeal left": {
+      "contacts": 248,
+      "crossings": 238,
+      "maxBoundMm": 0.05325469289239121,
+      "baseline": {
+        "contacts": 248,
+        "crossings": 238,
+        "maxBoundMm": 0.05325469289239121
+      }
+    },
+    "Ophthalmic inferior muscular branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Ophthalmic inferior muscular branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Ophthalmic left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Ophthalmic right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Ophthalmic superior muscular branch left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Ophthalmic superior muscular branch right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "PCA P1 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "PCA P2-P3 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "PCA long circumflex right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "PCA short circumflex right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "PCom perforator left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "PCom perforator right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior communicating left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior communicating right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior deep temporal": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior deep temporal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior ethmoidal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior ethmoidal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Recurrent artery of Heubner left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Recurrent artery of Heubner right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "SCA right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "STA frontal": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "STA frontal anterior twig": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "STA frontal anterior twig left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "STA frontal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Subcallosal artery": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Superficial recurrent meningeal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Superficial recurrent meningeal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Superior hypophyseal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Superior hypophyseal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Tentorial marginal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Tentorial marginal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Terminal ICA perforator 1 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Terminal ICA perforator 1 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Terminal ICA perforator 2 left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Terminal ICA perforator 2 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Thalamoperforator 2 right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Tuberothalamic artery left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Tuberothalamic artery right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Contralateral lateral clival midline": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Contralateral superior hypophyseal midline": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Deep recurrent ophthalmic\u2013ILT left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Deep recurrent ophthalmic\u2013ILT right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Deep temporal\u2013lacrimal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Deep temporal\u2013lacrimal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Foramen rotundum\u2013ILT left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Foramen rotundum\u2013ILT right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA cavernous\u2013ILT left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA cavernous\u2013ILT right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "MMA\u2013lacrimal (meningolacrimal) left": {
+      "contacts": 70,
+      "crossings": 64,
+      "maxBoundMm": 0.11693860439545001,
+      "baseline": {
+        "contacts": 70,
+        "crossings": 64,
+        "maxBoundMm": 0.11693860439545001
+      }
+    },
+    "MMA\u2013lacrimal (meningolacrimal) right": {
+      "contacts": 34,
+      "crossings": 34,
+      "maxBoundMm": 0.10664621332618242,
+      "baseline": {
+        "contacts": 34,
+        "crossings": 34,
+        "maxBoundMm": 0.10664621332618242
+      }
+    },
+    "MMA\u2013ophthalmic (recurrent meningeal) left": {
+      "contacts": 216,
+      "crossings": 214,
+      "maxBoundMm": 0.12608496035363448,
+      "baseline": {
+        "contacts": 186,
+        "crossings": 184,
+        "maxBoundMm": 0.12608496035363448
+      }
+    },
+    "MMA\u2013ophthalmic (recurrent meningeal) right": {
+      "contacts": 149,
+      "crossings": 147,
+      "maxBoundMm": 0.0980264153468194,
+      "baseline": {
+        "contacts": 116,
+        "crossings": 114,
+        "maxBoundMm": 0.09802298519998592
+      }
+    },
+    "Posterior cavernous MMA\u2013posterolateral ILT right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior septal\u2013posterior ethmoidal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Posterior septal\u2013posterior ethmoidal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "SOF artery\u2013anteromedial ILT left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "SOF artery\u2013anteromedial ILT right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "SOF artery\u2013recurrent meningeal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "SOF artery\u2013recurrent meningeal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "STA\u2013supraorbital left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "STA\u2013supraorbital right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Septal\u2013anterior ethmoidal left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "Septal\u2013anterior ethmoidal right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.anterior_cerebral.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.anterior_cerebral.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.anterior_communicating": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.anterior_intercavernous": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.anterior_pontomesencephalic": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.basal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.basal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.basilar_plexus": {
+      "contacts": 890,
+      "crossings": 870,
+      "maxBoundMm": 0.2618335861493199,
+      "baseline": {
+        "contacts": 890,
+        "crossings": 870,
+        "maxBoundMm": 0.2618335861493199
+      }
+    },
+    "vein.cavernous.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.cavernous.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.central_retinal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.central_retinal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.cerebral_peduncular.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.cerebral_peduncular.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.deep_medullary.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.deep_medullary.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.deep_middle_cerebral.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.deep_middle_cerebral.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.hippocampal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.hippocampal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.hypothalamic_tributaries.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.hypothalamic_tributaries.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.inferior_ophthalmic.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.inferior_ophthalmic.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.inferior_striate.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.inferior_striate.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.inferior_ventricular.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.inferior_ventricular.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.insular.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.insular.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.lateral_mesencephalic.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.lateral_mesencephalic.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.middle_meningeal.anterior.left": {
+      "contacts": 553,
+      "crossings": 511,
+      "maxBoundMm": 0.08024834450085841,
+      "baseline": {
+        "contacts": 553,
+        "crossings": 511,
+        "maxBoundMm": 0.08024834450085841
+      }
+    },
+    "vein.middle_meningeal.anterior.right": {
+      "contacts": 304,
+      "crossings": 287,
+      "maxBoundMm": 0.1415576904766372,
+      "baseline": {
+        "contacts": 304,
+        "crossings": 287,
+        "maxBoundMm": 0.1415576904766372
+      }
+    },
+    "vein.middle_meningeal.posterior.left": {
+      "contacts": 393,
+      "crossings": 377,
+      "maxBoundMm": 0.08031504948716739,
+      "baseline": {
+        "contacts": 393,
+        "crossings": 377,
+        "maxBoundMm": 0.08031504948716739
+      }
+    },
+    "vein.middle_meningeal.posterior.right": {
+      "contacts": 220,
+      "crossings": 204,
+      "maxBoundMm": 0.08030304803441174,
+      "baseline": {
+        "contacts": 220,
+        "crossings": 204,
+        "maxBoundMm": 0.08030304803441174
+      }
+    },
+    "vein.olfactory.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.olfactory.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.ovale_emissary.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.ovale_emissary.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.posterior_communicating": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.posterior_intercavernous": {
+      "contacts": 255,
+      "crossings": 254,
+      "maxBoundMm": 0.1503793247760701,
+      "baseline": {
+        "contacts": 255,
+        "crossings": 254,
+        "maxBoundMm": 0.1503793247760701
+      }
+    },
+    "vein.posterior_orbitofrontal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.posterior_orbitofrontal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.sphenoparietal.left": {
+      "contacts": 322,
+      "crossings": 319,
+      "maxBoundMm": 0.592728848362764,
+      "baseline": {
+        "contacts": 306,
+        "crossings": 303,
+        "maxBoundMm": 0.592728848362764
+      }
+    },
+    "vein.sphenoparietal.right": {
+      "contacts": 266,
+      "crossings": 261,
+      "maxBoundMm": 0.5566710387576508,
+      "baseline": {
+        "contacts": 251,
+        "crossings": 246,
+        "maxBoundMm": 0.5566710387576508
+      }
+    },
+    "vein.superficial_middle_cerebral.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.superficial_middle_cerebral.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.superior_ophthalmic.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.superior_ophthalmic.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.superior_petrosal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.superior_petrosal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.superior_sagittal": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.uncal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "vein.uncal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.base-of-peduncle.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.base-of-peduncle.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.caudate-nucleus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.caudate-nucleus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.choroid-plexus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.choroid-plexus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.corpus-callosum": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.falx-cerebri": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.fornix.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.fornix.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.globus-pallidus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.globus-pallidus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.hippocampus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.hippocampus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.hypothalamus": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.inferior-temporal-gyrus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.inferior-temporal-gyrus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.inferior-temporal-sulcus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.inferior-temporal-sulcus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.insula-subcentral-gyrus-and-ant-and-post-sulci.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.lat-fis-ant-horizont.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.lat-fis-ant-horizont.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.lateral-ventricle.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.lateral-ventricle.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.medial-occipitotemporal-gyrus-parahippocampal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.medial-occipitotemporal-gyrus-parahippocampal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.midbrain.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.midbrain.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.middle-temporal-gyrus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.middle-temporal-gyrus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.olfactory-sulcus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.olfactory-sulcus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.opercular-part-of-inferior-frontal-gyrus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.opercular-part-of-inferior-frontal-gyrus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.optic-chiasm.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.optic-chiasm.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.optic-tract.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.optic-tract.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-gyri-frontomarginal-gyrus-and-sulcus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-gyri-frontomarginal-gyrus-and-sulcus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-gyri.left": {
+      "contacts": 85,
+      "crossings": 85,
+      "maxBoundMm": 1.8009263435244143,
+      "baseline": {
+        "contacts": 85,
+        "crossings": 85,
+        "maxBoundMm": 1.8009263435244143
+      }
+    },
+    "brain.orbital-gyri.right": {
+      "contacts": 69,
+      "crossings": 69,
+      "maxBoundMm": 1.3484960456674948,
+      "baseline": {
+        "contacts": 69,
+        "crossings": 69,
+        "maxBoundMm": 1.3484960456674948
+      }
+    },
+    "brain.orbital-part-of-inferior-frontal-gyrus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-part-of-inferior-frontal-gyrus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-sulci-h-shaped-orbital-sulci.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-sulci-h-shaped-orbital-sulci.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-sulci-lateral-orbital-sulcus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.orbital-sulci-lateral-orbital-sulcus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.petroclinoid-fold.anterior.left": {
+      "contacts": 20,
+      "crossings": 12,
+      "maxBoundMm": 0.08467651612354607,
+      "baseline": {
+        "contacts": 20,
+        "crossings": 12,
+        "maxBoundMm": 0.08467651612354607
+      }
+    },
+    "brain.petroclinoid-fold.anterior.right": {
+      "contacts": 22,
+      "crossings": 22,
+      "maxBoundMm": 0.11570365468164195,
+      "baseline": {
+        "contacts": 20,
+        "crossings": 20,
+        "maxBoundMm": 0.11570366590654202
+      }
+    },
+    "brain.petroclinoid-fold.posterior.left": {
+      "contacts": 34,
+      "crossings": 34,
+      "maxBoundMm": 0.056503736667632865,
+      "baseline": {
+        "contacts": 34,
+        "crossings": 34,
+        "maxBoundMm": 0.056503736667632865
+      }
+    },
+    "brain.petroclinoid-fold.posterior.right": {
+      "contacts": 38,
+      "crossings": 33,
+      "maxBoundMm": 0.05529287420989282,
+      "baseline": {
+        "contacts": 38,
+        "crossings": 33,
+        "maxBoundMm": 0.05529287420989282
+      }
+    },
+    "brain.putamen.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.putamen.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.septum-pellucidum": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.straight-gyrus-gyrus-rectus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.straight-gyrus-gyrus-rectus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.superior-temporal-sulcus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.superior-temporal-sulcus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.temporal-pole.left": {
+      "contacts": 10,
+      "crossings": 10,
+      "maxBoundMm": 0.22397888694623086,
+      "baseline": {
+        "contacts": 10,
+        "crossings": 10,
+        "maxBoundMm": 0.22397888694623086
+      }
+    },
+    "brain.temporal-pole.right": {
+      "contacts": 10,
+      "crossings": 10,
+      "maxBoundMm": 0.2886560718767692,
+      "baseline": {
+        "contacts": 10,
+        "crossings": 10,
+        "maxBoundMm": 0.2886560718767692
+      }
+    },
+    "brain.tentorium-cerebelli.left": {
+      "contacts": 102,
+      "crossings": 102,
+      "maxBoundMm": 0.7907647190916975,
+      "baseline": {
+        "contacts": 102,
+        "crossings": 102,
+        "maxBoundMm": 0.7907647190916975
+      }
+    },
+    "brain.tentorium-cerebelli.right": {
+      "contacts": 114,
+      "crossings": 113,
+      "maxBoundMm": 0.8616043135695479,
+      "baseline": {
+        "contacts": 112,
+        "crossings": 111,
+        "maxBoundMm": 0.8616043135695479
+      }
+    },
+    "brain.thalamus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.thalamus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.third-ventricle": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.triangular-part-of-inferior-frontal-gyrus.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "brain.triangular-part-of-inferior-frontal-gyrus.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    }
+  },
+  "otherBoneContacts": {
+    "bone.ethmoid": {
+      "contacts": 68,
+      "crossings": 68,
+      "maxBoundMm": 0.47801310366964866,
+      "baseline": {
+        "contacts": 68,
+        "crossings": 68,
+        "maxBoundMm": 0.47801310366964866
+      }
+    },
+    "bone.frontal": {
+      "contacts": 4479,
+      "crossings": 4356,
+      "maxBoundMm": 0.49747976543156536,
+      "baseline": {
+        "contacts": 3920,
+        "crossings": 3846,
+        "maxBoundMm": 0.49747976543156536
+      }
+    },
+    "bone.lacrimal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "bone.lacrimal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "bone.maxilla.left": {
+      "contacts": 37,
+      "crossings": 37,
+      "maxBoundMm": 0.5820827931020371,
+      "baseline": {
+        "contacts": 37,
+        "crossings": 37,
+        "maxBoundMm": 0.5820827931020371
+      }
+    },
+    "bone.maxilla.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "bone.nasal.left": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "bone.nasal.right": {
+      "contacts": 0,
+      "crossings": 0,
+      "maxBoundMm": 0
+    },
+    "bone.occipital": {
+      "contacts": 169,
+      "crossings": 169,
+      "maxBoundMm": 0.8212315585342564,
+      "baseline": {
+        "contacts": 169,
+        "crossings": 169,
+        "maxBoundMm": 0.8212315585342564
+      }
+    },
+    "bone.parietal.left": {
+      "contacts": 155,
+      "crossings": 148,
+      "maxBoundMm": 0.18589195554745644,
+      "baseline": {
+        "contacts": 155,
+        "crossings": 148,
+        "maxBoundMm": 0.18589195554745644
+      }
+    },
+    "bone.parietal.right": {
+      "contacts": 38,
+      "crossings": 35,
+      "maxBoundMm": 0.07075322013958149,
+      "baseline": {
+        "contacts": 38,
+        "crossings": 35,
+        "maxBoundMm": 0.07075322013958149
+      }
+    },
+    "bone.temporal.left": {
+      "contacts": 1388,
+      "crossings": 1044,
+      "maxBoundMm": 0.3411271091765057,
+      "baseline": {
+        "contacts": 1388,
+        "crossings": 1044,
+        "maxBoundMm": 0.3411271091765057
+      }
+    },
+    "bone.temporal.right": {
+      "contacts": 1283,
+      "crossings": 941,
+      "maxBoundMm": 0.34783955823034374,
+      "baseline": {
+        "contacts": 1283,
+        "crossings": 941,
+        "maxBoundMm": 0.34783955823034374
+      }
+    },
+    "bone.zygomatic.left": {
+      "contacts": 501,
+      "crossings": 495,
+      "maxBoundMm": 0.19811825829484025,
+      "baseline": {
+        "contacts": 501,
+        "crossings": 495,
+        "maxBoundMm": 0.19811825829484025
+      }
+    },
+    "bone.zygomatic.right": {
+      "contacts": 313,
+      "crossings": 310,
+      "maxBoundMm": 0.2756469444884199,
+      "baseline": {
+        "contacts": 313,
+        "crossings": 310,
+        "maxBoundMm": 0.2756469444884199
+      }
+    }
+  },
+  "failures": [],
+  "selfIntersection": {
+    "candidateTrianglePairs": 1175,
+    "materialCrossings": 0,
+    "maximumPlaneCrossingBoundMm": 0,
+    "examples": []
+  },
+  "topology": {
+    "watertight": true,
+    "windingConsistent": true
+  }
+}

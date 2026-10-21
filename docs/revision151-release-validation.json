@@ -1,0 +1,24 @@
+{
+  "release": "0.9.151",
+  "sourceModelSha256": {
+    "public/anatomy/models/complete-circulation.glb": "3f558f237fd940702fea6855a8d06bda2d7132a9cd3f9ff2eeefe1e7e4373830",
+    "public/anatomy/models/brain-context.glb": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894",
+    "public/anatomy/models/craniofacial.glb": "a4cad02becf3c50891548ec0c23d7724a74dd822cd90b2b480c6467b8cec878c",
+    "public/anatomy/models/complete-anastomoses.glb": "d6671a58ea8188b702e1388729cbc19c086c49e47e2ff70a5ce36a019a825610",
+    "public/anatomy/models/venous.glb": "7f192e8d9dddfd84664512c89b9c95c78c81dd2b51659123351f686d8215d0a9"
+  },
+  "allFiveSourceModelsByteIdentical": true,
+  "authoringManifestByteIdentical": true,
+  "dsaDataByteIdentical": true,
+  "fullManifestEquivalentExceptReleaseAndAdditiveLoadingMetadata": true,
+  "generatedPacks": 13,
+  "sourceValidation": "1258 named geometry parts, 5 source assets",
+  "checks": [
+    "production build and TypeScript",
+    "web:loading",
+    "web:validate",
+    "web:startup"
+  ],
+  "browser": "Unsupported-WebGL explanation/retry checked; successful GPU rendering and browser performance unverified",
+  "deployed": false
+}

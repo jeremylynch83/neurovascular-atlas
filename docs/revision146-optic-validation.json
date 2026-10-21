@@ -1,0 +1,169 @@
+{
+  "right": {
+    "enclosedIntervalMm": [
+      -4.3,
+      0.7
+    ],
+    "enclosedLengthMm": 5.0,
+    "diameters": [
+      {
+        "s": -5,
+        "complete": false,
+        "uMm": 4.551529713846407,
+        "vMm": 3.774095885741188
+      },
+      {
+        "s": -4,
+        "complete": true,
+        "uMm": 4.474393035257949,
+        "vMm": 3.7390459064457313
+      },
+      {
+        "s": -3,
+        "complete": true,
+        "uMm": 4.394633680050378,
+        "vMm": 3.7130321531980055
+      },
+      {
+        "s": -2,
+        "complete": true,
+        "uMm": 4.319617092702117,
+        "vMm": 3.710126961908799
+      },
+      {
+        "s": -1,
+        "complete": true,
+        "uMm": 4.231678136268204,
+        "vMm": 3.7475904567071545
+      },
+      {
+        "s": 0,
+        "complete": true,
+        "uMm": 4.128754540377749,
+        "vMm": 3.8489875109038048
+      },
+      {
+        "s": 0.5,
+        "complete": true,
+        "uMm": 4.08247916468741,
+        "vMm": 3.9019852662651244
+      },
+      {
+        "s": 1,
+        "complete": false,
+        "uMm": 4.043449088448225,
+        "vMm": 10.997458609895467
+      }
+    ],
+    "rims": {
+      "cranial": {
+        "approxMaxSpanMm": 6.190708801604726,
+        "minimumPlanarCaliperMm": 4.228642852169132,
+        "projectedAreaMm2": 18.83211277917105,
+        "rimMaximumDistanceToActualMeshMm": 1.818070473589573e-08,
+        "rmsPlanarityErrorMm": 0.31182717889221584
+      },
+      "orbital": {
+        "approxMaxSpanMm": 4.680104150091256,
+        "minimumPlanarCaliperMm": 4.070259234750942,
+        "projectedAreaMm2": 14.819155490814092,
+        "rimMaximumDistanceToActualMeshMm": 1.7360448040316745e-08,
+        "rmsPlanarityErrorMm": 0.2890271033156719
+      }
+    },
+    "roof": {
+      "lengthMm": 10.05213747450224,
+      "axialSpanMm": 10.04816149317672
+    },
+    "floor": {
+      "lengthMm": 6.211098362873347,
+      "axialSpanMm": 6.20796215236969
+    }
+  },
+  "left": {
+    "enclosedIntervalMm": [
+      -4.6,
+      0.6
+    ],
+    "enclosedLengthMm": 5.199999999999999,
+    "diameters": [
+      {
+        "s": -5,
+        "complete": false,
+        "uMm": 4.551482854539195,
+        "vMm": 3.773139872854336
+      },
+      {
+        "s": -4,
+        "complete": true,
+        "uMm": 4.474396340583288,
+        "vMm": 3.738221735630355
+      },
+      {
+        "s": -3,
+        "complete": true,
+        "uMm": 4.394622505978422,
+        "vMm": 3.712213657439814
+      },
+      {
+        "s": -2,
+        "complete": true,
+        "uMm": 4.319670559852198,
+        "vMm": 3.7097073880356475
+      },
+      {
+        "s": -1,
+        "complete": true,
+        "uMm": 4.231681660003526,
+        "vMm": 3.7480137462756433
+      },
+      {
+        "s": 0,
+        "complete": true,
+        "uMm": 4.12868976220549,
+        "vMm": 3.848715843930686
+      },
+      {
+        "s": 0.5,
+        "complete": true,
+        "uMm": 4.082610068512059,
+        "vMm": 3.901860571025269
+      },
+      {
+        "s": 1,
+        "complete": false,
+        "uMm": 4.043291065759414,
+        "vMm": 10.957522463937151
+      }
+    ],
+    "rims": {
+      "cranial": {
+        "approxMaxSpanMm": 6.081738494793208,
+        "minimumPlanarCaliperMm": 4.161328986240485,
+        "projectedAreaMm2": 18.46259590666255,
+        "rimMaximumDistanceToActualMeshMm": 1.3431277967147507e-08,
+        "rmsPlanarityErrorMm": 0.3104789049849495
+      },
+      "orbital": {
+        "approxMaxSpanMm": 4.723896250665774,
+        "minimumPlanarCaliperMm": 4.0697327944159465,
+        "projectedAreaMm2": 15.089045088520683,
+        "rimMaximumDistanceToActualMeshMm": 2.1330328713776045e-08,
+        "rmsPlanarityErrorMm": 0.26047945180134985
+      }
+    },
+    "roof": {
+      "lengthMm": 10.154255877876253,
+      "axialSpanMm": 10.150277209858412
+    },
+    "floor": {
+      "lengthMm": 6.366478815991619,
+      "axialSpanMm": 6.363355898336556
+    }
+  },
+  "deformation": {
+    "sampledPoints": 12000,
+    "minimumJacobianDeterminant": 0.4705525558206727,
+    "maximumJacobianDeterminant": 2.8285877110119553
+  }
+}

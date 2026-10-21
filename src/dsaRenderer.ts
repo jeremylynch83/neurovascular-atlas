@@ -13,7 +13,7 @@ const vertex = `varying vec3 viewPoint; varying float depth;
 const screenVertex = `varying vec2 uvScreen; void main(){uvScreen=uv;gl_Position=vec4(position.xy,0.,1.);}`;
 
 export async function loadInjectionFlow(manifest: AnatomyManifest): Promise<FlowData> {
-  const response=await fetch(`${import.meta.env.BASE_URL}anatomy/dsa-flow.json?v=${manifest.release}`,{cache:'no-cache'});
+  const response=await fetch(`${import.meta.env.BASE_URL}anatomy/dsa-flow.json?v=${manifest.release}`);
   if(!response.ok)throw Error('Could not load injection courses');
   const flow: FlowData=await response.json();
   if(flow.schema!==1||flow.graphSource!==flowGraphSource(manifest)||Object.entries(flow.sourceHashes).some(([file,h])=>!manifest.assetRevisions?.[file]||!h.startsWith(manifest.assetRevisions[file])))throw Error('Injection courses do not match the anatomy');
@@ -56,7 +56,7 @@ export class DsaRenderer {
 
   static async create(renderer: THREE.WebGLRenderer, manifest: AnatomyManifest, geometry: Map<string, THREE.BufferGeometry>, flow: FlowData) {
     const base = `${import.meta.env.BASE_URL}anatomy/dsa-surfaces`;
-    const response = await fetch(`${base}.json?v=${manifest.release}`,{cache:'no-cache'});
+    const response = await fetch(`${base}.json?v=${manifest.release}`);
     if (!response.ok) throw Error('Could not load DSA surfaces');
     const metadata: Surfaces = await response.json();
     if (metadata.schema !== 1 || Object.keys(metadata.sourceHashes).some(file => manifest.assetRevisions?.[file] !== metadata.assetRevisions[file])) throw Error('DSA surfaces do not match the anatomy');

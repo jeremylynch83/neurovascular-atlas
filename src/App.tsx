@@ -4,12 +4,14 @@ import { geometrySubtrees, searchStructures, uniqueVesselCounts } from './catalo
 import { AnatomyEngine } from './engine';
 import { Description } from './Description';
 import { Loading } from './Loading';
-import { structureDependencies, type LoadState } from './stagedLoading';
+import { loadingAssets, structureDependencies, type LoadState } from './stagedLoading';
 import { BookmarkIcon, PresetModal } from './PresetModal';
 import { injectionPreset, presetDirection, presetVesselIds, presetVisibility, type PresetId, type PresetSide } from './presets';
 import { DsaControls, DsaIcon, InjectionControls } from './DsaControls';
 import { makeDsaRun, DSA_START, DSA_END, type DsaRun } from './dsa';
 import type { InjectionPoint } from './flowGeometry';
+import { explanationSectionsMarkup, explanationSummary } from './explanationMarkup';
+import { reportStartupFailure, reportStartupProgress, reportStartupReady } from './startup';
 
 const DEFAULT_VISIBILITY: Record<SystemId, LayerState> = { bone: 'ghost', artery: 'on', vein: 'off', brain: 'off' };
 const NEXT: Record<LayerState, LayerState> = { on: 'ghost', ghost: 'off', off: 'on' };
@@ -33,7 +35,8 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
   const [dark, setDark] = useState(true);
   const [ready, setReady] = useState(false);
   const [progress, setProgress] = useState(0);
-  const initialGeometry = useMemo(() => manifest.structures.filter(s => s.asset && (s.system === 'bone' || s.system === 'artery')).map(s => s.id), [manifest]);
+  const [geometryProgress, setGeometryProgress] = useState({ ready: 0, total: 0, errors: 0 });
+  const initialGeometry = useMemo(() => loadingAssets(manifest).filter(a => a.critical).flatMap(a => a.structures.map(s => s.id)), [manifest]);
   const [loadStates, setLoadStates] = useState<ReadonlyMap<string, LoadState>>(() => new Map());
   const [vascularReady, setVascularReady] = useState(false);
   const [pendingId, setPendingId] = useState<string | null>(null);
@@ -93,20 +96,39 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       }
     }); engine.current = e; e.setTheme(dark);
     let notification: ReturnType<typeof setTimeout> | undefined;
+    let failed = false;
+    let disposed = false;
+    const dispose = () => { if (!disposed) { disposed = true; e.dispose(); } };
+    const fail = (error: unknown) => {
+      if (cancelled || failed) return;
+      failed = true;
+      clearTimeout(notification);
+      dispose(); engine.current = null;
+      setReady(false);
+      reportStartupFailure(error);
+    };
     const publish = () => {
-      if (cancelled) return;
-      // Only initial bone/artery preparation contributes to this bar. Deferred
+      if (cancelled || failed) return;
+      // Only starter circulation contributes to this bar. Deferred
       // geometry keeps its existing inline feedback inside Layers.
       const states = e.getLoadStates();
-      setProgress(Math.min(99, initialGeometry.length ? 75 * e.initialDownloadProgress() + 24 * initialGeometry.filter(id => states.get(id)?.status === 'ready').length / initialGeometry.length : 0));
+      const percent = Math.min(99, initialGeometry.length ? 75 * e.initialDownloadProgress() + 24 * initialGeometry.filter(id => states.get(id)?.status === 'ready').length / initialGeometry.length : 0);
+      setProgress(percent); reportStartupProgress(percent);
       setVascularReady(e.vascularGeometryReady());
+      const all = [...states.values()];
+      setGeometryProgress({ ready: all.filter(s => s.status === 'ready').length, total: all.length, errors: all.filter(s => s.status === 'error').length });
       if (controlsOpenRef.current) setLoadStates(new Map(e.getLoadStates()));
     };
+    e.onInitialRender = () => {
+      if (cancelled || failed) return;
+      setReady(true); publish(); reportStartupReady();
+    };
+    e.onRenderError = fail;
     e.onInteraction = () => { actionRevision.current++; setPendingId(null); };
     e.load(() => {
       if (!notification) notification = setTimeout(() => { notification = undefined; publish(); }, 100);
-    }).then(() => { if (cancelled) return; setReady(true); e.start(); publish(); }).catch(err => { if (!cancelled) console.error(err); });
-    return () => { cancelled = true; actionRevision.current++; clearTimeout(notification); e.dispose(); engine.current = null; };
+    }).then(() => { if (cancelled || failed) return; e.start(); publish(); }).catch(fail);
+    return () => { cancelled = true; actionRevision.current++; clearTimeout(notification); dispose(); engine.current = null; };
   }, [manifest, initialGeometry]);
   useEffect(() => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; engine.current?.setTheme(dark); }, [dark]);
   useEffect(() => { engine.current?.setSelected(selectedId); }, [selectedId]);
@@ -284,6 +306,10 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
     <section className="left-panel panel" hidden={dsa}>
       <button className="panel-title" aria-expanded={controlsOpen} aria-controls="anatomy-panel-body" onClick={toggleLayers}>Layers</button>
       <div className="panel-body" id="anatomy-panel-body" hidden={!controlsOpen}>
+      {ready && geometryProgress.ready < geometryProgress.total && <div className="geometry-progress" role="status">
+        <span>{geometryProgress.errors ? 'Some anatomy could not load. Use Retry below.' : 'Loading remaining anatomy…'} {geometryProgress.ready}/{geometryProgress.total}</span>
+        <progress aria-label="Anatomy prepared" value={geometryProgress.ready} max={geometryProgress.total} />
+      </div>}
       <StructureTree manifest={manifest} byId={byId} subtrees={subtrees} visibility={visibility} selectedId={selectedId} loadStates={loadStates} pendingId={pendingId} onSelect={select} onRetry={id=>{void withGeometry(id, structureDependencies(id, byId, subtrees), () => {});}} onVisibility={(ids, state, id) => {
         changeVisibility(ids, state);
         if (state === 'off') cancelPending();
@@ -310,7 +336,7 @@ export function App({ manifest }: { manifest: AnatomyManifest }) {
       </div>}
       <div className="views"><button onClick={()=>{cancelPending();engine.current?.setView('front')}}>AP</button><button onClick={()=>{cancelPending();engine.current?.setView('left')}}>L</button><button onClick={()=>{cancelPending();engine.current?.setView('right')}}>R</button><button onClick={()=>{cancelPending();engine.current?.setView('superior')}}>Sup</button><button onClick={()=>{cancelPending();engine.current?.setView('inferior')}}>Inf</button></div>
       <button className="bookmark-button" data-focus-control disabled={!ready} aria-label="Anatomical presets" aria-haspopup="dialog" aria-expanded={presetsOpen} onClick={() => setPresetsOpen(true)}><BookmarkIcon /></button>
-      <button className="bookmark-button dsa-button" data-focus-control disabled={!ready || !vascularReady || dsaBusy} aria-label="DSA mode" title={dsaBusy ? 'Preparing DSA…' : 'DSA mode'} aria-pressed={dsa} onClick={toggleDsa}><DsaIcon /></button>
+      <button className="bookmark-button dsa-button" data-focus-control disabled={!ready || !vascularReady || dsaBusy} aria-label="DSA mode" title={dsaBusy ? 'Preparing DSA…' : !vascularReady ? 'Loading vascular anatomy for DSA…' : 'DSA mode'} aria-pressed={dsa} onClick={toggleDsa}><DsaIcon /></button>
       {!dsa && <div className="clip-tools"><label><input type="checkbox" checked={clip.enabled} onChange={(e)=>changeClip({...clip,enabled:e.target.checked})}/> Section</label><select value={clip.axis} onChange={(e)=>changeClip({...clip,axis:e.target.value as typeof clip.axis})}><option value="sagittal">Sagittal</option><option value="coronal">Coronal</option><option value="axial">Axial</option></select><input type="range" min="-1" max="1" step="0.01" value={clip.offset} onChange={(e)=>changeClip({...clip,offset:Number(e.target.value)})}/></div>}
     </div>
     {dsa && (placing?<InjectionControls name={placementVessel?byId.get(placementVessel)?.name??null:null} busy={dsaBusy} onChange={changeArtery} onCancel={cancelPlacement}/>:<DsaControls time={dsaTime} playing={playing} onTime={setDsaTime} onPlaying={setPlaying} onPlacement={()=>startPlacement(null)} busy={dsaBusy}/>)}
@@ -371,15 +397,16 @@ function Detail({open,onOpenChange,structure,manifest,byId,onSelect}:{open:boole
   </section>;
 }
 
-function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
+export function About({manifest,onClose}:{manifest:AnatomyManifest;onClose:()=>void}) {
   const counts = uniqueVesselCounts(manifest.structures);
   return <div className="modal-scrim" onClick={onClose}><div className="about panel" role="dialog" aria-modal="true" aria-labelledby="about-title" onClick={(e)=>e.stopPropagation()}>
     <button className="detail-close" aria-label="Close information" onClick={onClose}>×</button>
     <h2 id="about-title">Neurovascular Atlas v{manifest.release}</h2>
-    <p>An interactive 3D atlas of neurovascular anatomy. Vascular structures original, skull and brain from existing sources (see below).</p>
+    <p>{explanationSummary}</p>
     <p>{counts.artery} unique arteries and {counts.vein} unique veins, sinuses and venous plexuses.</p>
     <p>Jeremy Lynch, Sean McIlhone</p>
     <div className="about-credits" role="region" aria-label="Credits" tabIndex={0}>
+      <div dangerouslySetInnerHTML={{__html:explanationSectionsMarkup(3)}} />
       <h3>Anatomical references</h3>
       <ul>
         <li><strong>Jeremy Lynch, Shelley Renowden and Philip White</strong>, editors. <a href="https://academic.oup.com/book/63036" target="_blank" rel="noopener noreferrer"><em>Neurointervention</em></a>. Oxford Specialist Handbooks. Oxford University Press, 2026.</li>

@@ -15,9 +15,8 @@ export function Loading({ progress = 0 }: { progress?: number }) {
     let frame = 0, previous = performance.now();
     const tick = (now: number) => {
       const dt = Math.min(.1, (now - previous) / 1000); previous = now;
-      // Follow measured progress smoothly, with a small estimated advance
-      // during download/decode gaps. Never report completion before readiness.
-      const speed = Math.max(0, actual.current - current.current) * 3 + (99 - current.current) * .004;
+      // Follow measured progress without estimating uncompleted work.
+      const speed = Math.max(0, actual.current - current.current) * 3;
       current.current = Math.min(99, current.current + speed * dt);
       setShown(current.current);
       frame = requestAnimationFrame(tick);

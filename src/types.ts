@@ -93,6 +93,8 @@ export interface AnatomyManifest {
   coordinateSystem?: 'RAS' | 'legacy-y-up';
   assetRevisions?: Record<string, string>;
   assetByteSizes?: Record<string, number>;
+  loadingPacks?: { file: string; stage: number; ids: string[] }[];
+  startupBounds?: [number[], number[]];
   reference?: { case: string; pipelineVersion: string };
   brainRegistration?: BrainRegistration;
   vesselCourseSchemaVersion?: string;

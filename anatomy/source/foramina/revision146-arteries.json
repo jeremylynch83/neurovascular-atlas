@@ -1,0 +1,90 @@
+{
+  "method": "Shared smooth local inferomedial fitting of short arterial segments into the corrected canal entrance. No connection topology or indices changed.",
+  "maximumControlDisplacementMm": 2.738612787525831,
+  "centres": [
+    [
+      -12.5,
+      -30.5,
+      76.6
+    ],
+    [
+      13.8,
+      -30.4,
+      76.7
+    ]
+  ],
+  "changed": [
+    {
+      "id": "artery.anterior.aca_a1_left",
+      "node": "ACA A1 left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.7172018247598666
+    },
+    {
+      "id": "artery.anterior.aca_a1_right",
+      "node": "ACA A1 right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.5884330143301745
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.cavernous",
+      "node": "ICA cavernous left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.5864212621435155
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.cavernous",
+      "node": "ICA cavernous right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.502386049384793
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.paraophthalmic",
+      "node": "ICA paraophthalmic left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.637182847436049
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.paraophthalmic",
+      "node": "ICA paraophthalmic right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.573151467060481
+    },
+    {
+      "id": "artery.anterior.internal_carotid_left.segment.posterior-communicating",
+      "node": "ICA posterior communicating left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.20517709745861762
+    },
+    {
+      "id": "artery.anterior.internal_carotid_right.segment.posterior-communicating",
+      "node": "ICA posterior communicating right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 0.029238827230125598
+    },
+    {
+      "id": "artery.anterior.ophthalmic_left",
+      "node": "Ophthalmic left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.73861278752583
+    },
+    {
+      "id": "artery.anterior.ophthalmic_right",
+      "node": "Ophthalmic right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 2.7386127875258293
+    },
+    {
+      "id": "artery.anterior.superior_hypophyseal_left",
+      "node": "Superior hypophyseal left",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.3769855939870213
+    },
+    {
+      "id": "artery.anterior.superior_hypophyseal_right",
+      "node": "Superior hypophyseal right",
+      "file": "models/complete-circulation.glb",
+      "maximumDisplacementMm": 1.2949076691166883
+    }
+  ]
+}

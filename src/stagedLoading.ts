@@ -12,14 +12,39 @@ export interface GeometrySource {
   release(): Promise<void>;
   dispose(): void;
 }
-type Asset = { file: string; structures: Structure[]; critical: boolean; order: number };
+export type LoadAsset = { file: string; structures: Structure[]; critical: boolean; order: number };
+
+/** Fixed download order; anatomical source bindings remain unchanged. */
+export function loadingAssets(manifest: AnatomyManifest): LoadAsset[] {
+  const byId = new Map(manifest.structures.map(s => [s.id, s]));
+  const assigned = new Set<string>();
+  const assets: LoadAsset[] = [];
+  for (const pack of manifest.loadingPacks ?? []) {
+    const structures = pack.ids.map(id => {
+      const row = byId.get(id);
+      if (!row?.asset || row.system !== 'artery' || assigned.has(id)) throw new Error('Invalid loading pack binding: ' + id);
+      assigned.add(id); return row;
+    });
+    assets.push({ file: pack.file, structures, critical: pack.stage === 0, order: pack.stage });
+  }
+  const files = new Map<string, Structure[]>();
+  for (const s of manifest.structures) if (s.asset && !assigned.has(s.id)) {
+    if (manifest.loadingPacks && s.system === 'artery') throw new Error('Artery missing from loading packs: ' + s.id);
+    const rows = files.get(s.asset.file) ?? []; rows.push(s); files.set(s.asset.file, rows);
+  }
+  for (const [file, structures] of files) {
+    const stage = Math.min(...structures.map(s => s.system === 'bone' ? 4 : s.system === 'vein' ? 5 : s.system === 'brain' ? 6 : 2));
+    assets.push({ file, structures, critical: !manifest.loadingPacks && structures.some(s => s.system === 'bone' || s.system === 'artery'), order: stage });
+  }
+  if (!assets.some(a => a.critical)) throw new Error('No initial anatomy in loading plan');
+  return assets.sort((a,b) => Number(b.critical) - Number(a.critical) || a.order - b.order);
+}
 type Waiter = { ids: string[]; resolve: () => void; reject: (error: Error) => void };
 
-/** Serial asset decoding, prioritised geometry requests and bounded installation. */
+/** Serial downloads in fixed anatomical order and bounded geometry installation. */
 export class StagedLoader {
   readonly states = new Map<string, LoadState>();
-  private assets: Asset[];
-  private requested = new Set<string>();
+  private assets: LoadAsset[];
   private waiters = new Set<Waiter>();
   private running: Promise<void> | null = null;
   private background = false;
@@ -28,13 +53,8 @@ export class StagedLoader {
   constructor(manifest: AnatomyManifest, private source: GeometrySource,
     private install: (meshes: PreparedMesh[], background: boolean) => Promise<void>,
     private slot: (background: boolean) => Promise<void>, private changed: () => void) {
-    const files = new Map<string, Structure[]>();
-    for (const s of manifest.structures) if (s.asset) {
-      const rows = files.get(s.asset.file) ?? []; rows.push(s); files.set(s.asset.file, rows);
-      this.states.set(s.id, { status: 'pending' });
-    }
-    this.assets = [...files].map(([file, structures], order) => ({ file, structures, order,
-      critical: structures.some(s => s.system === 'bone' || s.system === 'artery') }));
+    this.assets = loadingAssets(manifest);
+    for (const asset of this.assets) for (const s of asset.structures) this.states.set(s.id, { status: 'pending' });
   }
 
   private notify() {
@@ -45,19 +65,23 @@ export class StagedLoader {
     }
     this.changed();
   }
-  async loadCritical() { await this.pump(); }
+  async loadCritical() {
+    await this.pump();
+    if (this.closed) return;
+    const failed = this.assets.filter(a => a.critical).flatMap(a => a.structures).find(s => this.states.get(s.id)?.status !== 'ready');
+    if (failed) throw new Error(this.states.get(failed.id)?.error ?? 'Initial anatomy did not load');
+  }
   startBackground() { this.background = true; void this.pump(); }
   ensure(ids: readonly string[]): Promise<void> {
     if (this.closed) return Promise.reject(new Error('Atlas closed'));
     const required = [...new Set(ids)].filter(id => this.states.has(id));
     for (const id of required) {
       if (this.states.get(id)?.status === 'error') this.states.set(id, { status: 'pending' });
-      if (this.states.get(id)?.status !== 'ready') this.requested.add(id);
     }
     const result = new Promise<void>((resolve, reject) => this.waiters.add({ ids: required, resolve, reject }));
     this.notify(); void this.pump(); return result;
   }
-  private pending(asset: Asset) { return asset.structures.filter(s => this.states.get(s.id)?.status === 'pending'); }
+  private pending(asset: LoadAsset) { return asset.structures.filter(s => this.states.get(s.id)?.status === 'pending'); }
   private pump(): Promise<void> {
     if (this.running) return this.running;
     if (this.closed) return Promise.resolve();
@@ -70,9 +94,6 @@ export class StagedLoader {
   private async run() {
     while (!this.closed) {
       const assets = this.assets.filter(a => (a.critical || this.background) && this.pending(a).length);
-      assets.sort((a, b) => Number(b.critical) - Number(a.critical)
-        || Number(b.structures.some(s => this.requested.has(s.id))) - Number(a.structures.some(s => this.requested.has(s.id)))
-        || Number(a.structures.every(s => s.system === 'brain')) - Number(b.structures.every(s => s.system === 'brain')) || a.order - b.order);
       const asset = assets[0]; if (!asset) return;
       try {
         for (const s of this.pending(asset)) this.states.set(s.id, { status: 'loading' });
@@ -80,7 +101,6 @@ export class StagedLoader {
         while (!this.closed) {
           const pending = asset.structures.filter(s => this.states.get(s.id)?.status === 'loading');
           if (!pending.length) break;
-          pending.sort((a, b) => Number(this.requested.has(b.id)) - Number(this.requested.has(a.id)));
           const meshes = await this.source.prepare(pending.slice(0, 16));
           if (this.closed) break;
           if (!meshes.length) throw new Error('No geometry returned for requested structures');
@@ -88,14 +108,14 @@ export class StagedLoader {
           if (this.closed) break;
           await this.install(meshes, this.background);
           if (this.closed) break;
-          for (const mesh of meshes) { this.states.set(mesh.id, { status: 'ready' }); this.requested.delete(mesh.id); }
+          for (const mesh of meshes) { this.states.set(mesh.id, { status: 'ready' }); }
           this.notify();
         }
       } catch (error) {
         if (this.closed) return;
         const message = error instanceof Error ? error.message : String(error);
         for (const s of asset.structures) if (this.states.get(s.id)?.status !== 'ready') {
-          this.states.set(s.id, { status: 'error', error: message }); this.requested.delete(s.id);
+          this.states.set(s.id, { status: 'error', error: message });
         }
         this.notify();
       } finally { if (!this.closed) await this.source.release().catch(() => {}); }

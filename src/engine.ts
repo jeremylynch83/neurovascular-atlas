@@ -7,10 +7,10 @@ import type { AnatomyManifest, LayerState, Structure, SystemId } from './types';
 import { focusGeometryMembers, segmentGeometryMembers } from './catalogue';
 import { resolveSurfaceAnchor } from './brainAnchors';
 import { anatomicalView, coordinateSystem, sectionNormal, type AnatomicalView, type SectionAxis } from './coordinates';
-import { DsaRenderer, loadInjectionFlow } from './dsaRenderer';
+import type { DsaRenderer } from './dsaRenderer';
 import { injectionOnPath,type FlowData,type InjectionPoint } from './flowGeometry';
 import type { DsaRun } from './dsa';
-import { StagedLoader, type PreparedMesh } from './stagedLoading';
+import { StagedLoader, loadingAssets, type PreparedMesh } from './stagedLoading';
 import { WorkerGeometrySource } from './geometrySource';
 
 const COLOURS: Record<SystemId, number> = { bone: 0xd9d1c0, artery: 0xc4433c, vein: 0x416aa8, brain: 0xc5a7a1 };
@@ -58,6 +58,10 @@ export class AnatomyEngine {
   private userChangedView = false;
   private vertexBudget = 30_000;
   private primaryPrepared = false;
+  private initialRenderComplete = false;
+  private allGeometryComplete = false;
+  onInitialRender?: () => void;
+  onRenderError?: (error: unknown) => void;
   private workWaiters = new Set<() => void>();
   onInteraction?: () => void;
   private raycaster = new THREE.Raycaster();
@@ -169,10 +173,19 @@ export class AnatomyEngine {
         if (this.disposed) return;
         const start = performance.now(); this.installMeshes(meshes);
         const duration = performance.now() - start;
+        performance.measure('atlas-geometry-install', { start, duration, detail: { meshes: meshes.length } });
         if (duration > 2) this.vertexBudget = Math.max(8_000, Math.floor(this.vertexBudget * .65));
         else if (duration < 1) this.vertexBudget = Math.min(50_000, Math.floor(this.vertexBudget * 1.15));
       },
-      background => this.workSlot(background), () => { if (!this.disposed) onChange?.(); });
+      background => this.workSlot(background), () => {
+        if (this.disposed) return;
+        if (!this.allGeometryComplete && this.loading && [...this.loading.states.values()].every(s => s.status === 'ready')) {
+          this.allGeometryComplete = true;
+          performance.mark('atlas-all-geometry-ready');
+          if (performance.getEntriesByName('atlas-boot-start').length) performance.measure('atlas-full-loading', 'atlas-boot-start', 'atlas-all-geometry-ready');
+        }
+        onChange?.();
+      });
     onChange?.();
     await this.loading.loadCritical();
     if (this.disposed) return;
@@ -181,19 +194,20 @@ export class AnatomyEngine {
     this.primaryPrepared = true;
     if (!this.userChangedView) {
       const skull = [...this.entries].filter(([, e]) => e.structure.system === 'bone' && e.structure.id !== 'bone.hyoid').map(([id]) => id);
-      if (skull.length) {
+      if (this.manifest.startupBounds) {
+        this.frameBox(new THREE.Box3(new THREE.Vector3().fromArray(this.manifest.startupBounds[0]), new THREE.Vector3().fromArray(this.manifest.startupBounds[1])), [0, 1, 0]);
+        this.userChangedView = false;
+      } else if (skull.length) {
         this.framePreset(skull, [0, 1, 0]);
         this.userChangedView = false;
       } else this.fitAll(false);
     }
     this.refreshMaterials(); this.render();
-    performance.mark('atlas-primary-ready');
-    // Resolve primary readiness before running the deferred asset queue.
-    setTimeout(() => { if (!this.disposed) this.loading?.startBackground(); }, 0);
+    // Deferred downloads start only after the first successful scene draw.
   }
 
   initialDownloadProgress() {
-    const files = new Set(this.manifest.structures.filter(s => s.asset && (s.system === 'bone' || s.system === 'artery')).map(s => s.asset!.file));
+    const files = new Set(loadingAssets(this.manifest).filter(a => a.critical).map(a => a.file));
     let loaded = 0, total = 0;
     for (const file of files) {
       const bytes = this.manifest.assetByteSizes?.[file] ?? 1;
@@ -262,35 +276,34 @@ export class AnatomyEngine {
     // Without native multi-draw, retain the original path rather than add
     // batching texture work to millions of vertices without reducing draws.
     if (!this.renderer.extensions.has('WEBGL_multi_draw')) return;
-    const groups = new Map<string, Entry[]>();
     for (const e of entries) {
-      if (!['artery', 'vein'].includes(e.structure.system) || e.baseOpacity !== 1) continue;
-      const indexed = !!e.mesh.geometry.index;
-      const key = `${e.structure.system}:${indexed}`;
-      const group = groups.get(key) ?? [];
-      group.push(e); groups.set(key, group);
-    }
-    for (const group of groups.values()) {
-      if (group.length < 2) continue;
-      const vertices = group.reduce((n, e) => n + e.mesh.geometry.getAttribute('position').count, 0);
-      const indices = group.reduce((n, e) => n + (e.mesh.geometry.index?.count ?? 0), 0);
-      const material = (group[0].mesh.material as THREE.MeshStandardMaterial).clone();
-      material.color.setHex(0xffffff);
-      material.emissive.setHex(0x000000);
-      material.opacity = 1; material.transparent = false; material.depthWrite = true;
-      const batch = new THREE.BatchedMesh(group.length, vertices, indices, material);
-      batch.name = 'Opaque vasculature';
-      batch.userData.system = group[0].structure.system;
-      for (const e of group) {
-        // Copy every position, normal and triangle exactly. The individual
-        // mesh stays available for picking, bounds, highlighting and ghosting.
-        const instanceId = batch.addInstance(batch.addGeometry(e.mesh.geometry));
-        batch.setColorAt(instanceId, new THREE.Color(structureColour(e.structure)));
-        e.batch = { mesh: batch, instanceId };
-        yield;
+      if (!['artery', 'vein'].includes(e.structure.system) || e.baseOpacity !== 1 || e.batch) continue;
+      const geometry = e.mesh.geometry;
+      const vertices = geometry.getAttribute('position').count, indices = geometry.index?.count ?? 0;
+      const indexed = !!geometry.index;
+      // Reuse bounded allocations across worker packets. Existing vertex and
+      // index ranges stay in place, so later anatomy never repacks the scene.
+      let batch = this.vascularBatches.find(b => b.userData.system === e.structure.system && b.userData.indexed === indexed
+        && b.instanceCount < b.maxInstanceCount && b.unusedVertexCount >= vertices && (!indexed || b.unusedIndexCount >= indices));
+      if (!batch) {
+        const material = (e.mesh.material as THREE.MeshStandardMaterial).clone();
+        material.color.setHex(0xffffff); material.emissive.setHex(0x000000);
+        material.opacity = 1; material.transparent = false; material.depthWrite = true;
+        batch = new THREE.BatchedMesh(128, Math.max(250_000, vertices), indexed ? Math.max(1_500_000, indices) : 0, material);
+        batch.name = 'Opaque vasculature';
+        batch.userData.system = e.structure.system; batch.userData.indexed = indexed;
+        batch.userData.visibleInstances = new Set<number>();
+        this.vascularBatches.push(batch); this.root.add(batch);
       }
-      batch.computeBoundingBox(); batch.computeBoundingSphere();
-      this.vascularBatches.push(batch); this.root.add(batch);
+      const instanceId = batch.addInstance(batch.addGeometry(geometry));
+      batch.setColorAt(instanceId, new THREE.Color(structureColour(e.structure)));
+      e.batch = { mesh: batch, instanceId };
+      // Mesh transforms are already baked into worker geometry. Extending a
+      // conservative bound costs constant work and avoids scanning old meshes.
+      batch.boundingBox ??= new THREE.Box3();
+      batch.boundingBox.union(geometry.boundingBox!);
+      batch.boundingSphere = batch.boundingBox.getBoundingSphere(new THREE.Sphere());
+      yield;
     }
   }
 
@@ -416,7 +429,6 @@ export class AnatomyEngine {
     const selectedStructure = this.manifest.structures.find(s => s.id === this.selected);
     const markerState = this.selected ? this.visibility?.get(this.selected) ?? this.layers[selectedStructure?.system ?? 'bone'] : 'off';
     this.landmarkMarker.visible = !placing && markerState !== 'off' && !!this.selected && !this.hidden.has(this.selected);
-    const visibleBatches = new Set<THREE.BatchedMesh>();
     for (const e of only ?? this.entries.values()) {
       const id = e.structure.id;
       const state = placing ? (e.structure.system==='artery'?'on':'off') : this.visibility?.get(id) ?? this.layers[e.structure.system];
@@ -443,7 +455,8 @@ export class AnatomyEngine {
       this.updateClipping(mat);
       if (e.batch) {
         const useBatch = e.mesh.visible && state === 'on' && !selected && !transparent;
-        if (useBatch) visibleBatches.add(e.batch.mesh);
+        const visibleInstances = e.batch.mesh.userData.visibleInstances as Set<number>;
+        if (useBatch) visibleInstances.add(e.batch.instanceId); else visibleInstances.delete(e.batch.instanceId);
         e.batch.mesh.setVisibleAt(e.batch.instanceId, useBatch);
         // Detached meshes remain the authoritative per-structure pick/bounds
         // proxies. Only highlighted or transparent meshes render separately.
@@ -453,7 +466,7 @@ export class AnatomyEngine {
       }
     }
     for (const batch of only ? new Set(only.flatMap(e => e.batch ? [e.batch.mesh] : [])) : this.vascularBatches) {
-      batch.visible = visibleBatches.has(batch);
+      batch.visible = (batch.userData.visibleInstances as Set<number>).size > 0;
       this.updateClipping(batch.material as THREE.Material);
     }
     const haloChanged = !only || only.some(e => this.selected !== null && this.segmentMembers.get(this.selected)?.has(e.structure.id));
@@ -533,6 +546,9 @@ export class AnatomyEngine {
       if (entry) box.expandByObject(entry.mesh);
     }
     if (box.isEmpty()) return;
+    this.frameBox(box, rasDirection);
+  }
+  private frameBox(box: THREE.Box3, rasDirection: [number, number, number]) {
     const system = coordinateSystem(this.manifest);
     const direction = new THREE.Vector3(...(system === 'RAS'
       ? rasDirection : [rasDirection[0], rasDirection[2], rasDirection[1]])).normalize();
@@ -584,7 +600,7 @@ export class AnatomyEngine {
   }
   hasGeometry(id: string) { return [...this.segmentMembers.get(id) ?? []].some(key => this.entries.has(key)); }
   async prepareInjection() {
-    if(!this.flowRequest)this.flowRequest=loadInjectionFlow(this.manifest).catch(error=>{this.flowRequest=null;throw error});
+    if(!this.flowRequest)this.flowRequest=import('./dsaRenderer').then(({loadInjectionFlow})=>loadInjectionFlow(this.manifest)).catch(error=>{this.flowRequest=null;throw error});
     return this.injectionFlow=await this.flowRequest;
   }
   async prepareDsa() {
@@ -593,6 +609,7 @@ export class AnatomyEngine {
     if(!this.dsaRenderer) {
       this.dsaRequest??=(async()=>{
         const flow=await this.prepareInjection();
+        const {DsaRenderer}=await import('./dsaRenderer');
         const renderer=await DsaRenderer.create(this.renderer,this.manifest,new Map([...this.entries].map(([id,e])=>[id,e.mesh.geometry])),flow);
         if(this.disposed){renderer.dispose();throw Error('Atlas closed while loading injection courses')}
         return renderer;
@@ -697,8 +714,22 @@ export class AnatomyEngine {
     const rendered = this.renderRequested;
     if (rendered) {
       this.renderRequested = false;
-      if (this.dsaView && !this.injectionPick && this.dsaRenderer) this.dsaRenderer.render(this.camera,this.dsaTime);
-      else this.selectionHalo.render(this.scene, this.camera);
+      try {
+        if (this.dsaView && !this.injectionPick && this.dsaRenderer) this.dsaRenderer.render(this.camera,this.dsaTime);
+        else this.selectionHalo.render(this.scene, this.camera);
+        if (this.primaryPrepared && !this.initialRenderComplete) {
+          if (this.renderer.getContext().isContextLost()) throw new Error('WebGL context was lost before the first scene');
+          this.initialRenderComplete = true;
+          performance.mark('atlas-primary-ready');
+          if (performance.getEntriesByName('atlas-boot-start').length) performance.measure('atlas-startup', 'atlas-boot-start', 'atlas-primary-ready');
+          this.onInitialRender?.();
+          this.loading?.startBackground();
+        }
+      } catch (error) {
+        this.raf = 0;
+        this.onRenderError?.(error);
+        return;
+      }
       this.lastRenderDuration = performance.now() - frameTime;
     }
     if (this.started) this.updateFps(frameTime, rendered && interactionRenderRequested);

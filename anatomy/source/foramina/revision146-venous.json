@@ -1,0 +1,35 @@
+{
+  "method": "Smooth local superior displacement of posterior orbitofrontal venous segments to avoid impressions in the reconstructed bony roof. Shared local field preserves any nearby junction coordinates.",
+  "centres": [
+    [
+      -12.25,
+      -30.25,
+      77.95
+    ],
+    [
+      13.65,
+      -30.25,
+      77.95
+    ]
+  ],
+  "maximumLiftMm": 0.85,
+  "changed": [
+    {
+      "node": "vein.anterior_cerebral.left",
+      "maximumDisplacementMm": 0.00302735370816265
+    },
+    {
+      "node": "vein.anterior_cerebral.right",
+      "maximumDisplacementMm": 9.68891384474091e-05
+    },
+    {
+      "node": "vein.posterior_orbitofrontal.left",
+      "maximumDisplacementMm": 0.8499999999999943
+    },
+    {
+      "node": "vein.posterior_orbitofrontal.right",
+      "maximumDisplacementMm": 0.8499999999999943
+    }
+  ],
+  "assetSha256": "7f192e8d9dddfd84664512c89b9c95c78c81dd2b51659123351f686d8215d0a9"
+}

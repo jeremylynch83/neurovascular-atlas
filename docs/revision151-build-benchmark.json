@@ -1,0 +1,80 @@
+{
+  "release": "0.9.151",
+  "definition": "Single host, warm installed dependencies. Clean removes dist, generated packs and gzip cache. Timings include validation, pack generation, DSA hash checks, TypeScript, Vite and gzip.",
+  "runs": [
+    {
+      "scenario": "clean",
+      "seconds": 58.689,
+      "packs": {
+        "built": 13,
+        "assembled": 13,
+        "reused": 0,
+        "packs": 13,
+        "seconds": 2.0419,
+        "starterBytes": 6452632
+      },
+      "gzip": {
+        "built": 37,
+        "reused": 0
+      }
+    },
+    {
+      "scenario": "unchanged",
+      "seconds": 15.175,
+      "packs": {
+        "built": 0,
+        "assembled": 0,
+        "reused": 13,
+        "packs": 13,
+        "seconds": 0.73,
+        "starterBytes": 6452632
+      },
+      "gzip": {
+        "built": 0,
+        "reused": 47
+      }
+    },
+    {
+      "scenario": "single-anastomosis-edit",
+      "seconds": 18.838,
+      "packs": {
+        "built": 1,
+        "assembled": 1,
+        "reused": 12,
+        "packs": 13,
+        "seconds": 1.8633,
+        "starterBytes": 6452632
+      },
+      "gzip": {
+        "built": 11,
+        "reused": 27
+      }
+    },
+    {
+      "scenario": "restored-source",
+      "seconds": 26.586,
+      "packs": {
+        "built": 1,
+        "assembled": 1,
+        "reused": 12,
+        "packs": 13,
+        "seconds": 1.3188,
+        "starterBytes": 6452632
+      },
+      "gzip": {
+        "built": 0,
+        "reused": 54
+      }
+    }
+  ],
+  "syntheticEdit": {
+    "node": "ACA falcine\u2013MMA falcine left",
+    "translationMm": [
+      0.01,
+      0,
+      0
+    ],
+    "scope": "One anastomosis. These illustrative connections are excluded from DSA; this does not benchmark DSA regeneration after an injection-vessel edit."
+  },
+  "sourceRestoredExactly": true
+}

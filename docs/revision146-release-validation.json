@@ -1,0 +1,27 @@
+{
+  "release": "0.9.146",
+  "rendering": "Actual GLB meshes with the same camera and orthographic scale before/after.",
+  "assetSha256": {
+    "complete-anastomoses.glb": "0f9fd932cc0d10f25e23ebdea265fa3914e5c1bae1cb82b238967f412c8cf399",
+    "venous.glb": "7f192e8d9dddfd84664512c89b9c95c78c81dd2b51659123351f686d8215d0a9",
+    "complete-circulation.glb": "f00c865a3d0887a40a7efd183085ed01dba09dd4b70ea970c4ace3f728ce7d81",
+    "brain-context.glb": "362806214570c31ca756f297e592ea38f35863cbba1eac1b9337918ef8af5894",
+    "craniofacial.glb": "f6803a0ea067cdc6c9df27c4b1e7af9aba2f27f77c4bbea97305d8445fbfb159"
+  },
+  "checks": {
+    "productionBuild": "passed",
+    "opticWallAndBoreChecks": "passed",
+    "noNewContactFailures": "passed",
+    "watertightSphenoid": "passed",
+    "sphenoidSelfCrossings": 0,
+    "updatedFlowCourses": 12,
+    "closedFlowSplitSections": 47,
+    "preservedOtherCraniofacialNodes": 59,
+    "preservedOtherVascularAndBrainNodes": 1182
+  },
+  "limitations": [
+    "Optic nerves are not segmented.",
+    "Existing source contacts elsewhere are retained.",
+    "An unsupported portion of the right superior hypophyseal injection guide remains excluded by its declared safe ranges."
+  ]
+}

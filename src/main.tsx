@@ -1,18 +1,18 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App';
-import { loadCatalogue } from './catalogue';
-import '@fontsource/inter-tight/400.css';
-import '@fontsource/inter-tight/500.css';
-import '@fontsource/inter-tight/600.css';
-import '@fontsource/jetbrains-mono/400.css';
-import '@fontsource-variable/source-serif-4/opsz.css';
+import { ViewerBoundary } from './ViewerBoundary';
+import { reportStartupFailure } from './startup';
+import './fonts.css';
 import './styles.css';
 
 async function boot() {
+  performance.mark('atlas-boot-start');
   const root=createRoot(document.getElementById('root')!);
   root.render(<div className="atlas-app"><header className="identity"><h1>Neurovascular Atlas</h1></header></div>);
-  try { const manifest=await loadCatalogue(); root.render(<StrictMode><App manifest={manifest}/></StrictMode>); }
-  catch(e){ console.error(e); root.render(<div className="fatal"><h1>Neurovascular Atlas</h1><p>Could not start the anatomy viewer.</p></div>); }
+  try {
+    const [{App}, {loadCatalogue}] = await Promise.all([import('./App'), import('./catalogue')]);
+    const manifest = await loadCatalogue();
+    root.render(<StrictMode><ViewerBoundary><App manifest={manifest}/></ViewerBoundary></StrictMode>);
+  } catch(error) { reportStartupFailure(error); root.render(null); }
 }
 void boot();

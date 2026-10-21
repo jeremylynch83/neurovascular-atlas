@@ -1,17 +1,46 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#ebe8e1" />
-  <meta name="description" content="Interactive 3D interventional neuroradiology anatomy atlas." />
-  <title>Neurovascular Atlas</title>
+  <meta name="description" content="Explore interactive 3D neurovascular anatomy for neurointervention and interventional neuroradiology. Created by Jeremy Lynch and Sean McIlhone." />
+  <meta name="author" content="Jeremy Lynch, Sean McIlhone" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <title>Neurovascular Atlas | 3D Anatomy for Neurointervention</title>
+  <link rel="canonical" href="%ATLAS_SITE_URL%" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Neurovascular Atlas" />
+  <meta property="og:title" content="Neurovascular Atlas | 3D Anatomy for Neurointervention" />
+  <meta property="og:description" content="Interactive neurovascular anatomy for interventional neuroradiology education. By Jeremy Lynch and Sean McIlhone." />
+  <meta property="og:url" content="%ATLAS_SITE_URL%" />
+  <meta property="og:image" content="%ATLAS_SITE_URL%social-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Neurovascular Atlas: interactive 3D anatomy, by Jeremy Lynch and Sean McIlhone" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
-  <link rel="preload" href="%BASE_URL%anatomy/manifest.json" as="fetch" crossorigin />
+  <link rel="preload" href="%BASE_URL%anatomy/%ATLAS_CATALOGUE%" as="fetch" type="application/json" crossorigin />
+  <style>
+    .atlas-fallback{position:fixed;inset:0;z-index:100;overflow:auto;box-sizing:border-box;padding:clamp(20px,5vw,56px);background:#ebe8e1;color:#171716;font:15px/1.6 system-ui,sans-serif;color-scheme:light}
+    .atlas-fallback[hidden]{display:none!important}.atlas-fallback-card{max-width:720px;margin:0 auto}.atlas-fallback h1{font:600 clamp(27px,5vw,38px)/1.15 Georgia,serif;margin:0 0 20px}.atlas-fallback h2{font:600 18px/1.4 Georgia,serif;margin:24px 0 8px}.atlas-fallback p{margin:0 0 14px}.atlas-fallback a{color:#2d3ed0;text-underline-offset:3px}.atlas-fallback a:focus-visible{outline:2px solid #2d3ed0;outline-offset:4px}.atlas-startup{border-bottom:1px solid #ccc6bd;margin-bottom:24px;padding-bottom:20px}.atlas-startup progress{display:block;width:100%;height:10px;margin:12px 0;accent-color:#635d53}.atlas-startup [hidden]{display:none!important}.atlas-startup-retry{display:inline-block;padding:7px 14px;border:1px solid #aaa49b;border-radius:6px;text-decoration:none}.atlas-fallback noscript p{margin-top:12px}
+  </style>
 </head>
 <body>
-  <div id="root"></div>
-  <noscript>Neurovascular Atlas requires JavaScript and WebGL.</noscript>
+  <main id="atlas-fallback" class="atlas-fallback" aria-labelledby="atlas-fallback-title">
+    <div class="atlas-fallback-card">
+      <h1 id="atlas-fallback-title">Neurovascular Atlas</h1>
+      <div class="atlas-startup" data-nosnippet>
+        <p id="atlas-startup-status" role="status" aria-live="polite">Loading the 3D anatomy viewer…</p>
+        <progress id="atlas-startup-progress" max="100" aria-label="Loading anatomy"></progress>
+        <a id="atlas-startup-retry" class="atlas-startup-retry" href="" hidden>Retry loading</a>
+        <noscript><style>#atlas-startup-status,#atlas-startup-progress{display:none!important}</style><p>The interactive 3D viewer requires JavaScript and WebGL. The atlas information remains available below.</p></noscript>
+      </div>
+      <div class="atlas-explanation">%ATLAS_EXPLANATION%</div>
+    </div>
+  </main>
+  <div id="root" inert aria-hidden="true"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>

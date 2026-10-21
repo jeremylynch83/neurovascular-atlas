@@ -31,6 +31,7 @@ export class WorkerGeometrySource implements GeometrySource {
     });
   }
   load(file: string) {
+    const start = performance.now();
     if (this.failure && !this.closed) { this.worker.terminate(); this.failure = null; this.createWorker(); }
     if (!this.worker && !this.closed) this.createWorker();
     const revision = this.manifest.assetRevisions?.[file] ?? this.manifest.release;
@@ -39,7 +40,10 @@ export class WorkerGeometrySource implements GeometrySource {
       // Fetch streams report decoded bytes even when the HTTP response is gzip.
       const size = this.manifest.assetByteSizes?.[file] ?? total;
       if (size > 0) this.downloaded(file, Math.min(.99, loaded / size));
-    }).then(() => this.downloaded(file, 1));
+    }).then(() => {
+      performance.measure('atlas-download-decode', { start, duration: performance.now() - start, detail: { file } });
+      this.downloaded(file, 1);
+    });
   }
   prepare(structures: Structure[]) { return this.call<PreparedMesh[]>('prepare', { vertexBudget: this.budget(), structures: structures.map(s => ({ id: s.id, node: s.asset!.node })) }); }
   release() { return this.call<void>('release'); }

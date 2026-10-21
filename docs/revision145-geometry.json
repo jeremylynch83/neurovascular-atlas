@@ -1,0 +1,146 @@
+{
+  "bone.sphenoid": {
+    "topology": {
+      "triangles": 47172,
+      "nonManifoldEdges": 0,
+      "openEdges": 0,
+      "consistentWinding": true,
+      "degenerateTriangles": 0
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 0,
+      "materialCrossings": 0,
+      "maximumPlaneCrossingBoundMm": 0,
+      "examples": [],
+      "inheritedCrossingsExactFrom144": 0,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "92d59f228206f5e8cf8519aa8b2d54c60b050b00497db8a53920b9b7df5a707b"
+  },
+  "bone.mandible": {
+    "topology": {
+      "triangles": 38195,
+      "nonManifoldEdges": 0,
+      "openEdges": 1923,
+      "consistentWinding": true,
+      "degenerateTriangles": 0
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 0,
+      "materialCrossings": 0,
+      "maximumPlaneCrossingBoundMm": 0,
+      "examples": [],
+      "inheritedCrossingsExactFrom144": 0,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "524addf7e943a974f03f552961bd0dc5a5de413a5760a9b3f2653429744b9382"
+  },
+  "mandibular-alveolar-process": {
+    "topology": {
+      "triangles": 15263,
+      "nonManifoldEdges": 0,
+      "openEdges": 1819,
+      "consistentWinding": true,
+      "degenerateTriangles": 0
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 0,
+      "materialCrossings": 0,
+      "maximumPlaneCrossingBoundMm": 0,
+      "examples": [],
+      "inheritedCrossingsExactFrom144": 0,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "8c83e882ee8e607c80805f71e0bd5ba2395639019955a37f3d43049244d101eb"
+  },
+  "bone.maxilla.right": {
+    "topology": {
+      "triangles": 15989,
+      "nonManifoldEdges": 0,
+      "openEdges": 335,
+      "consistentWinding": true,
+      "degenerateTriangles": 0
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 0,
+      "materialCrossings": 0,
+      "maximumPlaneCrossingBoundMm": 0,
+      "examples": [],
+      "inheritedCrossingsExactFrom144": 0,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "521cf7f4d5c6d2544430297dbaea4af42d1834721982f9c5e7b325fee0e6ca10"
+  },
+  "bone.maxilla.left": {
+    "topology": {
+      "triangles": 26163,
+      "nonManifoldEdges": 0,
+      "openEdges": 245,
+      "consistentWinding": true,
+      "degenerateTriangles": 0
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 0,
+      "materialCrossings": 0,
+      "maximumPlaneCrossingBoundMm": 0,
+      "examples": [],
+      "inheritedCrossingsExactFrom144": 0,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "3d20c92aec8048616fae526563cf02b5a1912205bea9506b782f44ac3d4938b8"
+  },
+  "maxillary-alveolar-process-left": {
+    "topology": {
+      "triangles": 24787,
+      "nonManifoldEdges": 0,
+      "openEdges": 2993,
+      "consistentWinding": true,
+      "degenerateTriangles": 42
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 462,
+      "materialCrossings": 2,
+      "maximumPlaneCrossingBoundMm": 0.036465632175534446,
+      "examples": [
+        [
+          8996,
+          8997
+        ],
+        [
+          14863,
+          14865
+        ]
+      ],
+      "inheritedCrossingsExactFrom144": 2,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "076038addc03068edb7154618ad7ad62600157a1001539862a638a5a31790f61"
+  },
+  "maxillary-alveolar-process-right": {
+    "topology": {
+      "triangles": 20412,
+      "nonManifoldEdges": 0,
+      "openEdges": 1186,
+      "consistentWinding": true,
+      "degenerateTriangles": 29
+    },
+    "selfIntersection": {
+      "candidateTrianglePairs": 300,
+      "materialCrossings": 2,
+      "maximumPlaneCrossingBoundMm": 0.008097672014411146,
+      "examples": [
+        [
+          141,
+          1222
+        ],
+        [
+          1130,
+          15141
+        ]
+      ],
+      "inheritedCrossingsExactFrom144": 2,
+      "introducedMaterialCrossings": 0
+    },
+    "geometrySha256": "77297e6f74dd5bc8903b6a4bc41663cb60021e71302406c0be20389bbe8d619a"
+  }
+}
