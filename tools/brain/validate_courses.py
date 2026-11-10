@@ -80,11 +80,18 @@ def validate_courses(manifest):
             assert c['geometrySha256']==hashes[file]
             validate_targets(c, rows)
             assert all(k in rows and rows[k].get('surfaceAnchor') for k in c['stationIds'])
-            assert c['radiusPolicy'] in ['preserve-delivered-profile','preserve-source-profile-with-measured-wall-deformation','reconstruct-tube-with-smoothed-source-radius','reconstruct-illustrative-tube']
+            assert c['radiusPolicy'] in ['preserve-delivered-profile','preserve-source-profile-with-measured-wall-deformation','reconstruct-tube-with-smoothed-source-radius','reconstruct-illustrative-tube','reconstruct-local-tubular-wall']
             if c['radiusPolicy']=='preserve-source-profile-with-measured-wall-deformation':
                 check=c['fitting']['calibreCheck']
                 assert check['method'] and len(check['ratioP05MedianP95'])==3 and check['p95AbsoluteFractionalRadiusChange']>=0
                 assert c['reviewStatus'] in {'requires-anatomical-review','requires-anatomical-target'}
+            if c['radiusPolicy']=='reconstruct-local-tubular-wall':
+                repair=c['fitting']['revision160']
+                assert repair['sourceBoundaryLoops']==repair['outputBoundaryLoops']
+                assert repair['sourceBoundaryLoops']>0 and repair['rebuiltSidePorts']>0
+                assert repair['illustrativeRadiusMm']>0 and repair['measuredPatientProfile'] is False
+                assert repair['retainedDistalCutS']<0
+                assert c['reviewStatus']=='requires-anatomical-review'
             if c['radiusPolicy']=='reconstruct-tube-with-smoothed-source-radius':
                 profile=c['fitting']['radiusProfile']
                 assert profile['method'] and profile['node']==s['id']
@@ -99,7 +106,7 @@ def validate_courses(manifest):
                 assert len(radii)==3 and all(r>0 for r in radii) and radii==sorted(radii)
                 assert c['meshQuality']['watertightScope']=='individual branch exterior'
                 assert c['meshQuality']['parentJoinType']=='overlapping exteriors'
-                assert c['reviewStatus']=='requires-anatomical-review'
+                assert c['reviewStatus'] in {'requires-anatomical-review','requires-anatomical-target'}
             assert c['scope'] in ['intracranial','intracranial-and-upper-cervical','protected-baseline','potential-anastomosis','reference-corridor']
             assert c['reviewStatus'] in ['requires-anatomical-review','requires-anatomical-target','protected-baseline']
             assert bool(c['segments'])==(c['scope'] in ['intracranial','intracranial-and-upper-cervical'])

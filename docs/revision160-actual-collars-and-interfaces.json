@@ -1,0 +1,211 @@
+{
+  "collars": [],
+  "interfaces": [
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.superior_thyroid.right",
+      "vertices": 130,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.lingual.right",
+      "vertices": 139,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.facial.right",
+      "vertices": 159,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.occipital.right",
+      "vertices": 172,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.posterior_auricular.right",
+      "vertices": 131,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.superficial_temporal.right",
+      "vertices": 112,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.maxillary.right",
+      "vertices": 152,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.eca.apa.right",
+      "vertices": 109,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right",
+      "b": "artery.anterior.internal_carotid_right.segment.cervical",
+      "vertices": 409,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.carotid.external.right",
+      "vertices": 112,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.eca.superficial_temporal.frontal.right",
+      "vertices": 133,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.eca.superficial_temporal.parietal.right",
+      "vertices": 58,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.eca.superficial_temporal.transverse_facial.right",
+      "vertices": 138,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.eca.middle_temporal.right",
+      "vertices": 270,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.eca.maxillary.right",
+      "vertices": 23,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.amendment.sta_anterior_auricular.right",
+      "vertices": 76,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right",
+      "b": "artery.amendment.zygomatico_orbital.right",
+      "vertices": 88,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.superior_thyroid.right.left",
+      "vertices": 130,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.lingual.right.left",
+      "vertices": 139,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.facial.right.left",
+      "vertices": 159,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.occipital.right.left",
+      "vertices": 172,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.posterior_auricular.right.left",
+      "vertices": 131,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.superficial_temporal.right.left",
+      "vertices": 112,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.maxillary.right.left",
+      "vertices": 153,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.eca.apa.right.left",
+      "vertices": 109,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.carotid.external.right.left",
+      "b": "artery.anterior.internal_carotid_left.segment.cervical",
+      "vertices": 523,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.carotid.external.right.left",
+      "vertices": 112,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.eca.superficial_temporal.frontal.right.left",
+      "vertices": 133,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.eca.superficial_temporal.parietal.right.left",
+      "vertices": 58,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.eca.superficial_temporal.transverse_facial.right.left",
+      "vertices": 138,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.eca.middle_temporal.right.left",
+      "vertices": 270,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.eca.maxillary.right.left",
+      "vertices": 23,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.amendment.sta_anterior_auricular.left",
+      "vertices": 76,
+      "maximumMm": 0.0
+    },
+    {
+      "a": "artery.eca.superficial_temporal.right.left",
+      "b": "artery.amendment.zygomatico_orbital.left",
+      "vertices": 88,
+      "maximumMm": 0.0
+    }
+  ],
+  "maximumInterfaceGapMm": 0.0,
+  "exactUnchangedMainNodes": 601
+}

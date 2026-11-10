@@ -1,3 +1,28 @@
+## v0.9.161: MCA morphology
+
+Both MCA trees are rebuilt as smooth, tapered illustrative tubes along the reviewed courses. All 70 MCA parts and eight MCA-related potential connection channels are retained. Small lenticulostriate diameters are reduced. ACA meshes are retained for a subsequent revision. Brain intersections are accepted in this approximate fit; the final vessel walls pass the conservative inner-skull envelope check.
+
+Named parts meet through overlapping closed exteriors. This is a display and DSA reconstruction, not a Boolean-unioned lumen suitable for physics export without further processing. Potential links retain their existing classification. Physical joins, unchanged geometry, mesh containment and all 70 changed DSA courses are checked in docs/revision161-*. The production build passes.
+
+Run the included installer as for earlier atlas releases. The ordinary build restores the complete circulation authoring GLB from the included packs and source fragments. Do not reapply tools/remesh-mca.py during ordinary builds; it is an offline authoring tool requiring the original v0.9.160 baseline alongside this release.
+
+## v0.9.160: proximal maxillary artery and distal ECA correction
+
+The proximal maxillary walls and the ECA/superficial temporal junction are
+corrected on both sides. Native small branches, their attachment rings and the
+distal maxillary course are retained. Six main arterial nodes change; 601 retain
+their original decoded geometry. The existing loading packs and GitHub file-size
+handling remain in place.
+
+```sh
+bash ./inr-anatomy.sh update ./inr-anatomy-atlas-v0.9.160.zip
+```
+
+The source comparison render and validation records are in `docs/revision160-*`.
+The reconstruction is an educational wall fit, not a measured patient lumen.
+Small residual seam contacts are recorded in the surface checks; this release
+does not claim that every source arterial surface is free of self-contact.
+
 ## v0.9.159 GitHub file-size repair
 
 Use the **v0.9.159 installer** included in this release. Replace any older copy

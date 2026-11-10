@@ -1,0 +1,483 @@
+{
+  "release": "0.9.161",
+  "method": "Smooth individual capped tubes with overlapping exterior junctions",
+  "MCAparts": 70,
+  "connectionParts": 8,
+  "changed": [
+    {
+      "id": "artery.amendment.angular_distal_ramus.left",
+      "vertices": 702,
+      "faces": 1400,
+      "radiusMm": 0.3376869272819698
+    },
+    {
+      "id": "artery.amendment.angular_distal_ramus.right",
+      "vertices": 722,
+      "faces": 1440,
+      "radiusMm": 0.3316138480691999
+    },
+    {
+      "id": "artery.amendment.anterior_parietal_distal_ramus.left",
+      "vertices": 530,
+      "faces": 1056,
+      "radiusMm": 0.2977027221217566
+    },
+    {
+      "id": "artery.amendment.anterior_parietal_distal_ramus.right",
+      "vertices": 922,
+      "faces": 1840,
+      "radiusMm": 0.3042865521473858
+    },
+    {
+      "id": "artery.amendment.central_distal_ramus.left",
+      "vertices": 1542,
+      "faces": 3080,
+      "radiusMm": 0.3089708700936642
+    },
+    {
+      "id": "artery.amendment.central_distal_ramus.right",
+      "vertices": 1462,
+      "faces": 2920,
+      "radiusMm": 0.30239709782691276
+    },
+    {
+      "id": "artery.amendment.lateral_lenticulostriate_anterior_representative.left",
+      "vertices": 422,
+      "faces": 840,
+      "radiusMm": 0.14096418401373553
+    },
+    {
+      "id": "artery.amendment.lateral_lenticulostriate_anterior_representative.right",
+      "vertices": 422,
+      "faces": 840,
+      "radiusMm": 0.13989736436119735
+    },
+    {
+      "id": "artery.amendment.middle_temporal_distal_ramus.left",
+      "vertices": 702,
+      "faces": 1400,
+      "radiusMm": 0.32609796529333407
+    },
+    {
+      "id": "artery.amendment.middle_temporal_distal_ramus.right",
+      "vertices": 422,
+      "faces": 840,
+      "radiusMm": 0.29104495383455586
+    },
+    {
+      "id": "artery.amendment.polar_temporal.left",
+      "vertices": 1782,
+      "faces": 3560,
+      "radiusMm": 0.4854891604485929
+    },
+    {
+      "id": "artery.amendment.polar_temporal.right",
+      "vertices": 1802,
+      "faces": 3600,
+      "radiusMm": 0.481120297337385
+    },
+    {
+      "id": "artery.amendment.posterior_parietal_distal_ramus.left",
+      "vertices": 842,
+      "faces": 1680,
+      "radiusMm": 0.308009510752379
+    },
+    {
+      "id": "artery.amendment.posterior_parietal_distal_ramus.right",
+      "vertices": 842,
+      "faces": 1680,
+      "radiusMm": 0.3084363140511989
+    },
+    {
+      "id": "artery.amendment.posterior_temporal_distal_ramus.left",
+      "vertices": 702,
+      "faces": 1400,
+      "radiusMm": 0.3077608530768801
+    },
+    {
+      "id": "artery.amendment.posterior_temporal_distal_ramus.right",
+      "vertices": 422,
+      "faces": 840,
+      "radiusMm": 0.27266027071027277
+    },
+    {
+      "id": "artery.amendment.precentral_distal_ramus.left",
+      "vertices": 882,
+      "faces": 1760,
+      "radiusMm": 0.32388614163160095
+    },
+    {
+      "id": "artery.amendment.precentral_distal_ramus.right",
+      "vertices": 882,
+      "faces": 1760,
+      "radiusMm": 0.32764952733775676
+    },
+    {
+      "id": "artery.amendment.prefrontal_distal_ramus.left",
+      "vertices": 762,
+      "faces": 1520,
+      "radiusMm": 0.31703107113355716
+    },
+    {
+      "id": "artery.amendment.prefrontal_distal_ramus.right",
+      "vertices": 762,
+      "faces": 1520,
+      "radiusMm": 0.31855995000473586
+    },
+    {
+      "id": "artery.anterior.angular_cortical_branch_left",
+      "vertices": 1942,
+      "faces": 3880,
+      "radiusMm": 0.3538823910262687
+    },
+    {
+      "id": "artery.anterior.angular_cortical_branch_right",
+      "vertices": 1942,
+      "faces": 3880,
+      "radiusMm": 0.3582521602157484
+    },
+    {
+      "id": "artery.anterior.angular_left",
+      "vertices": 3622,
+      "faces": 7240,
+      "radiusMm": 0.5861912709696825
+    },
+    {
+      "id": "artery.anterior.angular_right",
+      "vertices": 3662,
+      "faces": 7320,
+      "radiusMm": 0.5740455641813013
+    },
+    {
+      "id": "artery.anterior.anterior_parietal_cortical_branch_left",
+      "vertices": 1882,
+      "faces": 3760,
+      "radiusMm": 0.3502358937231889
+    },
+    {
+      "id": "artery.anterior.anterior_parietal_cortical_branch_right",
+      "vertices": 1902,
+      "faces": 3800,
+      "radiusMm": 0.35302097403230415
+    },
+    {
+      "id": "artery.anterior.anterior_parietal_left",
+      "vertices": 4102,
+      "faces": 8200,
+      "radiusMm": 0.6069670304994347
+    },
+    {
+      "id": "artery.anterior.anterior_parietal_right",
+      "vertices": 4202,
+      "faces": 8400,
+      "radiusMm": 0.6006013483316344
+    },
+    {
+      "id": "artery.anterior.anterior_temporal_left",
+      "vertices": 2062,
+      "faces": 4120,
+      "radiusMm": 0.5680887043634816
+    },
+    {
+      "id": "artery.anterior.anterior_temporal_right",
+      "vertices": 2082,
+      "faces": 4160,
+      "radiusMm": 0.5744711325620511
+    },
+    {
+      "id": "artery.anterior.central_cortical_branch_left",
+      "vertices": 1742,
+      "faces": 3480,
+      "radiusMm": 0.3430025445167697
+    },
+    {
+      "id": "artery.anterior.central_cortical_branch_right",
+      "vertices": 1722,
+      "faces": 3440,
+      "radiusMm": 0.3361377831602967
+    },
+    {
+      "id": "artery.anterior.central_left",
+      "vertices": 4962,
+      "faces": 9920,
+      "radiusMm": 0.5625325982383806
+    },
+    {
+      "id": "artery.anterior.central_right",
+      "vertices": 5062,
+      "faces": 10120,
+      "radiusMm": 0.5618627582009287
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_1_left",
+      "vertices": 458,
+      "faces": 912,
+      "radiusMm": 0.13403123411985382
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_1_right",
+      "vertices": 470,
+      "faces": 936,
+      "radiusMm": 0.14389565239838667
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_2_left",
+      "vertices": 422,
+      "faces": 840,
+      "radiusMm": 0.12845218076697634
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_2_right",
+      "vertices": 434,
+      "faces": 864,
+      "radiusMm": 0.12633273877702142
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_3_left",
+      "vertices": 458,
+      "faces": 912,
+      "radiusMm": 0.13350637911840801
+    },
+    {
+      "id": "artery.anterior.lateral_lenticulostriate_3_right",
+      "vertices": 458,
+      "faces": 912,
+      "radiusMm": 0.13279949947494726
+    },
+    {
+      "id": "artery.anterior.mca_inferior_division_left",
+      "vertices": 2422,
+      "faces": 4840,
+      "radiusMm": 0.8762917905996406
+    },
+    {
+      "id": "artery.anterior.mca_inferior_division_right",
+      "vertices": 2442,
+      "faces": 4880,
+      "radiusMm": 0.8813859214137344
+    },
+    {
+      "id": "artery.anterior.mca_m1_left",
+      "vertices": 1642,
+      "faces": 3280,
+      "radiusMm": 1.4301285933639274
+    },
+    {
+      "id": "artery.anterior.mca_m1_right",
+      "vertices": 1642,
+      "faces": 3280,
+      "radiusMm": 1.4170970576689415
+    },
+    {
+      "id": "artery.anterior.mca_orbitofrontal_left",
+      "vertices": 2302,
+      "faces": 4600,
+      "radiusMm": 0.5463370112050968
+    },
+    {
+      "id": "artery.anterior.mca_orbitofrontal_right",
+      "vertices": 2302,
+      "faces": 4600,
+      "radiusMm": 0.5402929183248905
+    },
+    {
+      "id": "artery.anterior.mca_superior_division_left",
+      "vertices": 2442,
+      "faces": 4880,
+      "radiusMm": 0.8921923749696523
+    },
+    {
+      "id": "artery.anterior.mca_superior_division_right",
+      "vertices": 2422,
+      "faces": 4840,
+      "radiusMm": 0.8995974361466408
+    },
+    {
+      "id": "artery.anterior.middle_temporal_cortical_branch_left",
+      "vertices": 1442,
+      "faces": 2880,
+      "radiusMm": 0.36877136054070364
+    },
+    {
+      "id": "artery.anterior.middle_temporal_cortical_branch_right",
+      "vertices": 1502,
+      "faces": 3000,
+      "radiusMm": 0.37012857758420376
+    },
+    {
+      "id": "artery.anterior.middle_temporal_left",
+      "vertices": 3062,
+      "faces": 6120,
+      "radiusMm": 0.5563575496124047
+    },
+    {
+      "id": "artery.anterior.middle_temporal_right",
+      "vertices": 3162,
+      "faces": 6320,
+      "radiusMm": 0.563150708645175
+    },
+    {
+      "id": "artery.anterior.posterior_parietal_cortical_branch_left",
+      "vertices": 1642,
+      "faces": 3280,
+      "radiusMm": 0.3630868703581345
+    },
+    {
+      "id": "artery.anterior.posterior_parietal_cortical_branch_right",
+      "vertices": 1642,
+      "faces": 3280,
+      "radiusMm": 0.35375013234162045
+    },
+    {
+      "id": "artery.anterior.posterior_parietal_left",
+      "vertices": 3642,
+      "faces": 7280,
+      "radiusMm": 0.5803813391077748
+    },
+    {
+      "id": "artery.anterior.posterior_parietal_right",
+      "vertices": 3682,
+      "faces": 7360,
+      "radiusMm": 0.5740448109475248
+    },
+    {
+      "id": "artery.anterior.posterior_temporal_cortical_branch_left",
+      "vertices": 2402,
+      "faces": 4800,
+      "radiusMm": 0.3330936822440298
+    },
+    {
+      "id": "artery.anterior.posterior_temporal_cortical_branch_right",
+      "vertices": 2402,
+      "faces": 4800,
+      "radiusMm": 0.33326842463213646
+    },
+    {
+      "id": "artery.anterior.posterior_temporal_left",
+      "vertices": 3302,
+      "faces": 6600,
+      "radiusMm": 0.5467985296569029
+    },
+    {
+      "id": "artery.anterior.posterior_temporal_right",
+      "vertices": 3302,
+      "faces": 6600,
+      "radiusMm": 0.5434405771708402
+    },
+    {
+      "id": "artery.anterior.precentral_cortical_branch_left",
+      "vertices": 1302,
+      "faces": 2600,
+      "radiusMm": 0.34570389497517473
+    },
+    {
+      "id": "artery.anterior.precentral_cortical_branch_right",
+      "vertices": 1322,
+      "faces": 2640,
+      "radiusMm": 0.35108786014202503
+    },
+    {
+      "id": "artery.anterior.precentral_left",
+      "vertices": 3962,
+      "faces": 7920,
+      "radiusMm": 0.5943668996014919
+    },
+    {
+      "id": "artery.anterior.precentral_right",
+      "vertices": 4022,
+      "faces": 8040,
+      "radiusMm": 0.5921889039600539
+    },
+    {
+      "id": "artery.anterior.prefrontal_cortical_branch_left",
+      "vertices": 2302,
+      "faces": 4600,
+      "radiusMm": 0.3332374722786941
+    },
+    {
+      "id": "artery.anterior.prefrontal_cortical_branch_right",
+      "vertices": 2382,
+      "faces": 4760,
+      "radiusMm": 0.33301263104498063
+    },
+    {
+      "id": "artery.anterior.prefrontal_left",
+      "vertices": 3442,
+      "faces": 6880,
+      "radiusMm": 0.5600896976790822
+    },
+    {
+      "id": "artery.anterior.prefrontal_right",
+      "vertices": 3502,
+      "faces": 7000,
+      "radiusMm": 0.5639663149348995
+    },
+    {
+      "id": "artery.anterior.temporo_occipital_left",
+      "vertices": 4022,
+      "faces": 8040,
+      "radiusMm": 0.533460342412879
+    },
+    {
+      "id": "artery.anterior.temporo_occipital_right",
+      "vertices": 4082,
+      "faces": 8160,
+      "radiusMm": 0.526794295124357
+    },
+    {
+      "id": "artery.connection.aca_mca_frontal_border_zone.left",
+      "vertices": 818,
+      "faces": 1632,
+      "radiusMm": 0.16150721667046392
+    },
+    {
+      "id": "artery.connection.aca_mca_frontal_border_zone.right",
+      "vertices": 746,
+      "faces": 1488,
+      "radiusMm": 0.1841019865080855
+    },
+    {
+      "id": "artery.connection.aca_mca_parietal_border_zone.left",
+      "vertices": 1022,
+      "faces": 2040,
+      "radiusMm": 0.18603573787793043
+    },
+    {
+      "id": "artery.connection.aca_mca_parietal_border_zone.right",
+      "vertices": 914,
+      "faces": 1824,
+      "radiusMm": 0.1865435674800717
+    },
+    {
+      "id": "artery.connection.mca_pca_occipital_border_zone.left",
+      "vertices": 614,
+      "faces": 1224,
+      "radiusMm": 0.16479781967070153
+    },
+    {
+      "id": "artery.connection.mca_pca_occipital_border_zone.right",
+      "vertices": 494,
+      "faces": 984,
+      "radiusMm": 0.19566281458101029
+    },
+    {
+      "id": "artery.connection.mca_pca_temporal_border_zone.left",
+      "vertices": 458,
+      "faces": 912,
+      "radiusMm": 0.1290796940671798
+    },
+    {
+      "id": "artery.connection.mca_pca_temporal_border_zone.right",
+      "vertices": 434,
+      "faces": 864,
+      "radiusMm": 0.1333092742245038
+    }
+  ],
+  "ACAmeshChanges": 0,
+  "verification": {
+    "exactUnchangedNodes": 696,
+    "ACAunchanged": true,
+    "outsideEnvelope": {},
+    "degenerateFaces": {}
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "checks": [
+    {
+      "child": "artery.amendment.angular_distal_ramus.left",
+      "parent": "artery.anterior.angular_left",
+      "centreDistanceMm": -0.47442888950973416,
+      "wallOverlapDistanceMm": -0.41933597642421094,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.angular_distal_ramus.right",
+      "parent": "artery.anterior.angular_right",
+      "centreDistanceMm": -0.4641552380670172,
+      "wallOverlapDistanceMm": -0.41138319703431236,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.anterior_parietal_distal_ramus.left",
+      "parent": "artery.anterior.anterior_parietal_left",
+      "centreDistanceMm": -0.4056804611756967,
+      "wallOverlapDistanceMm": -0.3332897180789766,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.anterior_parietal_distal_ramus.right",
+      "parent": "artery.anterior.anterior_parietal_right",
+      "centreDistanceMm": 0.266715146201267,
+      "wallOverlapDistanceMm": -0.24828492879795908,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.central_distal_ramus.left",
+      "parent": "artery.anterior.central_left",
+      "centreDistanceMm": -0.4569607877808592,
+      "wallOverlapDistanceMm": -0.30539996549037635,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.central_distal_ramus.right",
+      "parent": "artery.anterior.central_right",
+      "centreDistanceMm": -0.4613084662315365,
+      "wallOverlapDistanceMm": -0.43523693490598253,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.lateral_lenticulostriate_anterior_representative.left",
+      "parent": "artery.anterior.lateral_lenticulostriate_1_left",
+      "centreDistanceMm": -0.11371590205979655,
+      "wallOverlapDistanceMm": -0.08525726184560499,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.lateral_lenticulostriate_anterior_representative.right",
+      "parent": "artery.anterior.lateral_lenticulostriate_1_right",
+      "centreDistanceMm": -0.12161344462936537,
+      "wallOverlapDistanceMm": -0.10096817840380372,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.middle_temporal_distal_ramus.left",
+      "parent": "artery.anterior.middle_temporal_left",
+      "centreDistanceMm": -0.35257183345695675,
+      "wallOverlapDistanceMm": -0.23803974086087337,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.middle_temporal_distal_ramus.right",
+      "parent": "artery.anterior.middle_temporal_right",
+      "centreDistanceMm": -0.4559550528548385,
+      "wallOverlapDistanceMm": -0.37105489441352413,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.polar_temporal.left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.8599555505073572,
+      "wallOverlapDistanceMm": -0.6004842258661721,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.polar_temporal.right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.863322034563648,
+      "wallOverlapDistanceMm": -0.7938157897333957,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.posterior_parietal_distal_ramus.left",
+      "parent": "artery.anterior.posterior_parietal_left",
+      "centreDistanceMm": -0.46791674678550343,
+      "wallOverlapDistanceMm": -0.2650798481843128,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.posterior_parietal_distal_ramus.right",
+      "parent": "artery.anterior.posterior_parietal_right",
+      "centreDistanceMm": 0.33568733886175056,
+      "wallOverlapDistanceMm": -0.3745849003170044,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.posterior_temporal_distal_ramus.left",
+      "parent": "artery.anterior.posterior_temporal_left",
+      "centreDistanceMm": -0.442065049805427,
+      "wallOverlapDistanceMm": -0.3200239779422029,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.posterior_temporal_distal_ramus.right",
+      "parent": "artery.anterior.posterior_temporal_right",
+      "centreDistanceMm": -0.43935518600199697,
+      "wallOverlapDistanceMm": -0.3752458981673664,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.precentral_distal_ramus.left",
+      "parent": "artery.anterior.precentral_left",
+      "centreDistanceMm": -0.4812246772206957,
+      "wallOverlapDistanceMm": -0.3057852491079184,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.precentral_distal_ramus.right",
+      "parent": "artery.anterior.precentral_right",
+      "centreDistanceMm": -0.47883685987404695,
+      "wallOverlapDistanceMm": -0.32277814136593036,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.prefrontal_distal_ramus.left",
+      "parent": "artery.anterior.prefrontal_left",
+      "centreDistanceMm": 0.22766232377464418,
+      "wallOverlapDistanceMm": -0.23415909577989696,
+      "insideParent": true
+    },
+    {
+      "child": "artery.amendment.prefrontal_distal_ramus.right",
+      "parent": "artery.anterior.prefrontal_right",
+      "centreDistanceMm": -0.4009385352581712,
+      "wallOverlapDistanceMm": -0.37220723763623415,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.angular_cortical_branch_left",
+      "parent": "artery.anterior.angular_left",
+      "centreDistanceMm": -0.47120763448832115,
+      "wallOverlapDistanceMm": -0.40686696131221123,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.angular_cortical_branch_right",
+      "parent": "artery.anterior.angular_right",
+      "centreDistanceMm": 0.3186184325885643,
+      "wallOverlapDistanceMm": -0.3815346200153634,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.angular_left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.30687551623658443,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.angular_right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.3216717740331849,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.anterior_parietal_cortical_branch_left",
+      "parent": "artery.anterior.anterior_parietal_left",
+      "centreDistanceMm": 0.3826324706563265,
+      "wallOverlapDistanceMm": -0.3797054668665048,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.anterior_parietal_cortical_branch_right",
+      "parent": "artery.anterior.anterior_parietal_right",
+      "centreDistanceMm": 0.2777640539346663,
+      "wallOverlapDistanceMm": -0.3882911303197116,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.anterior_parietal_left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.7013965086292107,
+      "wallOverlapDistanceMm": -0.6318852438081253,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.anterior_parietal_right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.7050112553722753,
+      "wallOverlapDistanceMm": -0.649179658178178,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.anterior_temporal_left",
+      "parent": "artery.anterior.mca_m1_left",
+      "centreDistanceMm": -1.229290305167127,
+      "wallOverlapDistanceMm": -1.13960313982813,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.anterior_temporal_right",
+      "parent": "artery.anterior.mca_m1_right",
+      "centreDistanceMm": -1.2181070782621128,
+      "wallOverlapDistanceMm": -1.1133560107881415,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.central_cortical_branch_left",
+      "parent": "artery.anterior.central_left",
+      "centreDistanceMm": -0.4610410753117466,
+      "wallOverlapDistanceMm": -0.4204745301772093,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.central_cortical_branch_right",
+      "parent": "artery.anterior.central_right",
+      "centreDistanceMm": -0.4635120978879316,
+      "wallOverlapDistanceMm": -0.4382354861211596,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.central_left",
+      "parent": "artery.anterior.mca_superior_division_left",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.3354867672878216,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.central_right",
+      "parent": "artery.anterior.mca_superior_division_right",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.3875694021426299,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.lateral_lenticulostriate_1_left",
+      "parent": "artery.anterior.mca_m1_left",
+      "centreDistanceMm": -1.2990409780897718,
+      "wallOverlapDistanceMm": -1.2625750787220553,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.lateral_lenticulostriate_1_right",
+      "parent": "artery.anterior.mca_m1_right",
+      "centreDistanceMm": -1.2871173249064503,
+      "wallOverlapDistanceMm": -1.2428768924178017,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.lateral_lenticulostriate_2_left",
+      "parent": "artery.anterior.mca_m1_left",
+      "centreDistanceMm": -1.237992633834191,
+      "wallOverlapDistanceMm": -1.2118009641015057,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.lateral_lenticulostriate_2_right",
+      "parent": "artery.anterior.mca_m1_right",
+      "centreDistanceMm": -1.226743214920922,
+      "wallOverlapDistanceMm": -1.2057804786367017,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.lateral_lenticulostriate_3_left",
+      "parent": "artery.anterior.mca_m1_left",
+      "centreDistanceMm": -1.1723778421495774,
+      "wallOverlapDistanceMm": -1.1525579096929883,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.lateral_lenticulostriate_3_right",
+      "parent": "artery.anterior.mca_m1_right",
+      "centreDistanceMm": -1.1661185333336335,
+      "wallOverlapDistanceMm": -1.1506045990308178,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_inferior_division_left",
+      "parent": "artery.anterior.mca_m1_left",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.5734796698301484,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_inferior_division_right",
+      "parent": "artery.anterior.mca_m1_right",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.5850699545062212,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_m1_left",
+      "parent": "artery.anterior.internal_carotid_left.segment.terminus",
+      "centreDistanceMm": 0.3093606118748694,
+      "wallOverlapDistanceMm": -0.22293173019507848,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_m1_right",
+      "parent": "artery.anterior.internal_carotid_right.segment.terminus",
+      "centreDistanceMm": 0.36891637287531687,
+      "wallOverlapDistanceMm": -0.27389303644755153,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_orbitofrontal_left",
+      "parent": "artery.anterior.mca_superior_division_left",
+      "centreDistanceMm": -0.8538238636215222,
+      "wallOverlapDistanceMm": -0.8229822995964118,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_orbitofrontal_right",
+      "parent": "artery.anterior.mca_superior_division_right",
+      "centreDistanceMm": -0.8606853667931931,
+      "wallOverlapDistanceMm": -0.7631018637373483,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_superior_division_left",
+      "parent": "artery.anterior.mca_m1_left",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.47908118051127185,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.mca_superior_division_right",
+      "parent": "artery.anterior.mca_m1_right",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.4199060340308928,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.middle_temporal_cortical_branch_left",
+      "parent": "artery.anterior.middle_temporal_left",
+      "centreDistanceMm": -0.4699642496181294,
+      "wallOverlapDistanceMm": -0.43059507887308646,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.middle_temporal_cortical_branch_right",
+      "parent": "artery.anterior.middle_temporal_right",
+      "centreDistanceMm": -0.47561253304971485,
+      "wallOverlapDistanceMm": -0.4007691518845936,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.middle_temporal_left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.7930811588377821,
+      "wallOverlapDistanceMm": -0.6368821847972159,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.middle_temporal_right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.7965668609411749,
+      "wallOverlapDistanceMm": -0.7217401010980963,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_parietal_cortical_branch_left",
+      "parent": "artery.anterior.posterior_parietal_left",
+      "centreDistanceMm": -0.4726704487010818,
+      "wallOverlapDistanceMm": -0.32137235243134027,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_parietal_cortical_branch_right",
+      "parent": "artery.anterior.posterior_parietal_right",
+      "centreDistanceMm": -0.34747799193395035,
+      "wallOverlapDistanceMm": -0.41328965016189834,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_parietal_left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.2551164404611956,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_parietal_right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.0,
+      "wallOverlapDistanceMm": -0.28944048069252953,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_temporal_cortical_branch_left",
+      "parent": "artery.anterior.posterior_temporal_left",
+      "centreDistanceMm": -0.45021354732090635,
+      "wallOverlapDistanceMm": -0.32975763560536364,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_temporal_cortical_branch_right",
+      "parent": "artery.anterior.posterior_temporal_right",
+      "centreDistanceMm": -0.44662195485166806,
+      "wallOverlapDistanceMm": -0.3577781197907558,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_temporal_left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.7481397781953418,
+      "wallOverlapDistanceMm": -0.5995277891625737,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.posterior_temporal_right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.751686336200573,
+      "wallOverlapDistanceMm": -0.7124208777555441,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.precentral_cortical_branch_left",
+      "parent": "artery.anterior.precentral_left",
+      "centreDistanceMm": -0.4864631321224167,
+      "wallOverlapDistanceMm": -0.38875049910137194,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.precentral_cortical_branch_right",
+      "parent": "artery.anterior.precentral_right",
+      "centreDistanceMm": -0.4403297637237759,
+      "wallOverlapDistanceMm": -0.42823993389646337,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.precentral_left",
+      "parent": "artery.anterior.mca_superior_division_left",
+      "centreDistanceMm": -0.7628377868953767,
+      "wallOverlapDistanceMm": -0.7402963067945934,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.precentral_right",
+      "parent": "artery.anterior.mca_superior_division_right",
+      "centreDistanceMm": -0.7700025177551366,
+      "wallOverlapDistanceMm": -0.7492470930196424,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.prefrontal_cortical_branch_left",
+      "parent": "artery.anterior.prefrontal_left",
+      "centreDistanceMm": -0.4828010072330297,
+      "wallOverlapDistanceMm": -0.38306789993223184,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.prefrontal_cortical_branch_right",
+      "parent": "artery.anterior.prefrontal_right",
+      "centreDistanceMm": 0.06893360733225236,
+      "wallOverlapDistanceMm": -0.4040341995010211,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.prefrontal_left",
+      "parent": "artery.anterior.mca_superior_division_left",
+      "centreDistanceMm": -0.8045783777035667,
+      "wallOverlapDistanceMm": -0.7055188286264422,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.prefrontal_right",
+      "parent": "artery.anterior.mca_superior_division_right",
+      "centreDistanceMm": -0.8107500160949863,
+      "wallOverlapDistanceMm": -0.7659326487686122,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.temporo_occipital_left",
+      "parent": "artery.anterior.mca_inferior_division_left",
+      "centreDistanceMm": -0.7194302201527024,
+      "wallOverlapDistanceMm": -0.6308038634675567,
+      "insideParent": true
+    },
+    {
+      "child": "artery.anterior.temporo_occipital_right",
+      "parent": "artery.anterior.mca_inferior_division_right",
+      "centreDistanceMm": -0.7230361059448769,
+      "wallOverlapDistanceMm": -0.65520242585942,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_frontal_border_zone.left",
+      "parent": "artery.anterior.anterior_internal_frontal_left",
+      "distanceMm": -0.1404851644621312,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_frontal_border_zone.left",
+      "parent": "artery.anterior.prefrontal_cortical_branch_left",
+      "distanceMm": -0.2555071429215152,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_frontal_border_zone.right",
+      "parent": "artery.anterior.anterior_internal_frontal_right",
+      "distanceMm": -0.14674865551658917,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_frontal_border_zone.right",
+      "parent": "artery.anterior.prefrontal_cortical_branch_right",
+      "distanceMm": -0.25295041672474383,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_parietal_border_zone.left",
+      "parent": "artery.anterior.paracentral_left",
+      "distanceMm": -0.0,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_parietal_border_zone.left",
+      "parent": "artery.anterior.anterior_parietal_cortical_branch_left",
+      "distanceMm": -0.2603635651115354,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_parietal_border_zone.right",
+      "parent": "artery.anterior.paracentral_right",
+      "distanceMm": -0.0,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.aca_mca_parietal_border_zone.right",
+      "parent": "artery.anterior.anterior_parietal_cortical_branch_right",
+      "distanceMm": -0.26242785034590743,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_occipital_border_zone.left",
+      "parent": "artery.anterior.angular_cortical_branch_left",
+      "distanceMm": -0.0,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_occipital_border_zone.left",
+      "parent": "artery.posterior.pca_parieto_occipital_left",
+      "distanceMm": -0.024989861708532124,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_occipital_border_zone.right",
+      "parent": "artery.anterior.angular_cortical_branch_right",
+      "distanceMm": -0.0,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_occipital_border_zone.right",
+      "parent": "artery.posterior.pca_parieto_occipital_right",
+      "distanceMm": -0.02498946828967373,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_temporal_border_zone.left",
+      "parent": "artery.anterior.posterior_temporal_cortical_branch_left",
+      "distanceMm": -0.0,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_temporal_border_zone.left",
+      "parent": "artery.posterior.pca_posterior_inferior_temporal_left",
+      "distanceMm": -0.1989093846197318,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_temporal_border_zone.right",
+      "parent": "artery.anterior.posterior_temporal_cortical_branch_right",
+      "distanceMm": -0.0,
+      "insideParent": true
+    },
+    {
+      "child": "artery.connection.mca_pca_temporal_border_zone.right",
+      "parent": "artery.posterior.pca_posterior_inferior_temporal_right",
+      "distanceMm": -0.19004859140848748,
+      "insideParent": true
+    }
+  ],
+  "failed": []
+}

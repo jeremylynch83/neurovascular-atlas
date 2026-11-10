@@ -1,0 +1,61 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> inr-anatomy-atlas@0.9.161 build
+> sh ./build-anatomy.sh && node tools/build-dsa-flow.mjs && tsc -b && vite build && node tools/optimise-web.mjs && python3 tools/precompress.py
+
+Authoring source: {"restored": false, "reason": "authoring file already present"}
+Validated one combined scene, 1258 named parts, 5 assets.
+Loading packs: {"built": 7, "assembled": 7, "reused": 6, "packs": 13, "seconds": 1.6183, "starterBytes": 6936748}
+Authoring source: {"reused": false, "sourceBytes": 142240260, "reusedPackBytes": 98335574, "fragmentBytes": 43904686, "fragments": 3}
+Viewer catalogue: 2287707 bytes; full authoring manifest retained.
+DSA flow data match the geometry and branch graph.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 47 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/robots.txt                                                       0.08 kB │ gzip:   0.09 kB
+dist/sitemap.xml                                                      0.16 kB │ gzip:   0.15 kB
+dist/assets/dsaWorker-CwtI0Xz9.js                                     3.98 kB
+dist/assets/jetbrains-mono-greek-400-normal-C190GLew.woff2            4.22 kB
+dist/assets/inter-tight-vietnamese-400-normal-CqzIqjuX.woff2          4.94 kB
+dist/assets/inter-tight-vietnamese-500-normal-C7jl9LDK.woff2          5.02 kB
+dist/assets/inter-tight-vietnamese-600-normal-FGgebaLI.woff2          5.06 kB
+dist/assets/jetbrains-mono-cyrillic-400-normal-BEIGL1Tu.woff2         5.32 kB
+dist/assets/inter-tight-greek-ext-400-normal-C3GMUg_S.woff2           5.33 kB
+dist/assets/inter-tight-greek-ext-500-normal-Be7hKmpC.woff2           5.44 kB
+dist/assets/inter-tight-greek-ext-600-normal-CiDI6ET5.woff2           5.50 kB
+dist/assets/inter-tight-cyrillic-400-normal-G7BuwYWK.woff2            6.78 kB
+dist/assets/inter-tight-cyrillic-600-normal-BERwQ0yl.woff2            6.98 kB
+dist/assets/inter-tight-cyrillic-500-normal-5ykfyGeh.woff2            7.09 kB
+dist/index.html                                                       7.13 kB │ gzip:   2.36 kB
+dist/assets/jetbrains-mono-latin-ext-400-normal-Bc8Ftmh3.woff2        7.33 kB
+dist/assets/inter-tight-greek-400-normal-Br_GQm5W.woff2               8.68 kB
+dist/assets/inter-tight-greek-500-normal-kave9HZE.woff2               8.94 kB
+dist/assets/inter-tight-greek-600-normal-BIqmcc-q.woff2               8.98 kB
+dist/assets/inter-tight-cyrillic-ext-400-normal-CKO3cWyd.woff2       10.14 kB
+dist/assets/inter-tight-cyrillic-ext-600-normal-B4SKDMEv.woff2       10.48 kB
+dist/assets/inter-tight-cyrillic-ext-500-normal-BZAF-_VI.woff2       10.52 kB
+dist/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2           21.16 kB
+dist/assets/inter-tight-latin-400-normal-iW8qmuJY.woff2              22.01 kB
+dist/assets/inter-tight-latin-500-normal-BFXNXuvF.woff2              22.61 kB
+dist/assets/inter-tight-latin-600-normal-BgSTtRxb.woff2              22.66 kB
+dist/assets/source-serif-4-vietnamese-opsz-normal-BOyYyU_V.woff2     29.65 kB
+dist/assets/inter-tight-latin-ext-400-normal-DN7wyBvd.woff2          36.22 kB
+dist/assets/inter-tight-latin-ext-500-normal-D3akd6m-.woff2          37.72 kB
+dist/assets/inter-tight-latin-ext-600-normal-BgMgWFts.woff2          37.90 kB
+dist/assets/source-serif-4-cyrillic-ext-opsz-normal-DIwfbPUE.woff2   45.22 kB
+dist/assets/source-serif-4-greek-opsz-normal-DrHU7SY7.woff2          49.33 kB
+dist/assets/source-serif-4-cyrillic-opsz-normal-C0olyEE-.woff2       93.44 kB
+dist/assets/source-serif-4-latin-ext-opsz-normal-HoL-AExg.woff2     100.87 kB
+dist/assets/source-serif-4-latin-opsz-normal-BpEBLj1O.woff2         122.36 kB
+dist/assets/geometryWorker-DSLdSQ4D.js                              264.58 kB
+dist/assets/index-BGk1GfCL.css                                       38.80 kB │ gzip:  12.33 kB
+dist/assets/catalogue-DIIYEMTq.js                                     2.70 kB │ gzip:   1.30 kB
+dist/assets/dsaRenderer-MWQAfNXl.js                                  11.72 kB │ gzip:   4.23 kB
+dist/assets/index-DZZxexz0.js                                       223.21 kB │ gzip:  70.04 kB
+dist/assets/App-aafz7Zx0.js                                         697.58 kB │ gzip: 173.88 kB
+
+✓ built in 1.63s
+Compacted 11 distribution JSON files: 34823825 -> 29221261 bytes; values preserved.
+Gzip cache: {"built": 20, "reused": 17}

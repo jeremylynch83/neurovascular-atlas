@@ -1,0 +1,17 @@
+{
+  "exactRestoration": {
+    "restored": true,
+    "bytes": 142240260,
+    "sha256": "447d15ae6651ea18aef9cdd66348b5a5dabc3e63882c557b57ac691ea3ec8a32"
+  },
+  "editedSourceRoundTrip": true,
+  "missingDependencyRejected": true,
+  "unpublishedHistoryRepair": {
+    "repaired": true,
+    "backupBranch": "backup/atlas-before-size-fix-20261110-111417-906c49052579",
+    "removedOversizedBlobsFromPush": 2
+  },
+  "realPushWithBlobLimitHook": true,
+  "oversizedIndexRejected": true,
+  "remoteDivergenceProtected": true
+}

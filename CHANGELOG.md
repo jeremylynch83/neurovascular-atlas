@@ -1,3 +1,11 @@
+## 0.9.160
+
+- Reconstruct bilateral proximal maxillary artery walls with a tubular profile.
+- Fit the larger wall to native side-branch rings and retain the native small branches.
+- Correct the adjoining distal ECA/ST junction and reconcile shared interfaces.
+- Preserve the distal IMA, ICA/ophthalmic, V4/PICA and other reviewed geometry.
+- Retain lossless loading packs and the GitHub publishing repair from v0.9.159.
+
 ## 0.9.159
 
 Reuse lossless arterial packs and small fragments for GitHub storage. Restore the
